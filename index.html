@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OpenEvidence Insights — Dashboard</title>
 <meta name="description" content="Comprehensive tracking of OpenEvidence platform: partnerships, products, funding, adoption metrics, competitor landscape, and tech stack.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
 :root {
@@ -23,8 +25,8 @@
   --oe-text-dim: #9CA8A0;
   --oe-text-muted: #6B7872;
   --oe-white: #FAFAF8;
-  --oe-font: 'Georgia', 'Times New Roman', serif;
-  --oe-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --oe-font: 'DM Serif Display', 'Century Gothic', 'CenturyGothic', 'Apple Gothic', Georgia, serif;
+  --oe-font-sans: 'Jost', 'Century Gothic', 'CenturyGothic', 'Apple Gothic', 'ITC Avant Garde Gothic', -apple-system, system-ui, sans-serif;
   --oe-font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
   --oe-radius: 8px;
   --oe-radius-lg: 12px;
@@ -253,6 +255,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
       <a href="#competitors">Competitors</a>
       <a href="#partnerships">Partnerships</a>
       <a href="#tech">Tech Stack</a>
+      <a href="#pharma">Pharma</a>
       <a href="#future">Future</a>
     </div>
     <button class="theme-toggle" onclick="toggleTheme()">☀ Light</button>
@@ -490,6 +493,15 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   </div>
 </section>
 
+<!-- PHARMA -->
+<section id="pharma">
+  <div class="container">
+    <h2>Pharma <span class="accent">Products & Features</span></h2>
+    <p class="section-sub">How OpenEvidence builds for pharmaceutical companies — from ad platform to clinical trial matching to commercial infrastructure.</p>
+    <div id="pharmaList"></div>
+  </div>
+</section>
+
 <!-- SOURCES -->
 <section id="sources">
   <div class="container">
@@ -570,7 +582,7 @@ const competitorsData = [
   {name:"Abridge",type:"Private · Best in KLAS 2025 & 2026",badge:"CONVERGING",stats:[{l:"Health systems",v:"300+"},{l:"Specialties",v:"200+"},{l:"Languages",v:"28"},{l:"EHR",v:"Epic native"}],desc:"AI scribe leader expanding into clinical evidence search. Announced NEJM/JAMA partnership Apr 15, 2026 — same content partners as OpenEvidence. Kaiser Permanente, Johns Hopkins, Mayo Clinic. 78% reduced cognitive load, 30 min/day saved.",url:"https://www.abridge.com"},
   {name:"Ambience Healthcare",type:"Private · AI scribe + coding",badge:"ADJACENT",stats:[{l:"Utilization",v:"80%"},{l:"Revenue/clinician",v:"$13K/yr"},{l:"Specialties",v:"200+"},{l:"NPS",v:"60"}],desc:"AI documentation + coding platform. 80% utilization vs competitors at 26-40%. Deep Epic integration. 27% improvement in ICD-10 coding accuracy. Different category from OpenEvidence but competes for clinician attention.",url:"https://www.ambiencehealthcare.com"},
   {name:"UpToDate / Wolters Kluwer",type:"Public (EURONEXT: WKL)",badge:"INCUMBENT",stats:[{l:"Founded",v:"1992"},{l:"Clinicians",v:"2M global"},{l:"Countries",v:"180"},{l:"Price",v:"$579/yr"}],desc:"The incumbent being disrupted. 30+ year brand, 7,600+ expert authors. ~70% of digital revenues from AI-powered solutions. Retrofitting AI but slower than AI-native competitors. OpenEvidence is free — UpToDate charges $579/year.",url:"https://en.wikipedia.org/wiki/UpToDate"},
-  {name:"Microsoft Dragon Copilot",type:"Microsoft · Former Nuance DAX",badge:"ADJACENT",stats:[{l:"Acquisition",v:"$19.7B (Nuance)"},{{l:"Category",v:"Speech + docs"}],desc:"Ambient documentation + speech recognition for EHR. Former Nuance DAX, now Microsoft. Deep Epic integration. Part of Microsoft Cloud for Healthcare. Different category — documentation, not medical search.",url:"https://www.microsoft.com/en-us/health-solutions"},
+  {name:"Microsoft Dragon Copilot",type:"Microsoft · Former Nuance DAX",badge:"ADJACENT",stats:[{l:"Acquisition",v:"$19.7B (Nuance)"},{l:"Category",v:"Speech + docs"}],desc:"Ambient documentation + speech recognition for EHR. Former Nuance DAX, now Microsoft. Deep Epic integration. Part of Microsoft Cloud for Healthcare. Different category — documentation, not medical search.",url:"https://www.microsoft.com/en-us/health-solutions"},
   {name:"Pathway Medical",type:"Acquired by Doximity ($63M)",badge:"ACQUIRED",stats:[{l:"Status",v:"Acquired Jul 2025"},{l:"Sued by",v:"OpenEvidence Feb 2025"},{l:"Now part of",v:"Doximity AI Suite"}],desc:"Canadian AI startup building competing clinical reference tool. Sued by OpenEvidence for prompt injection attacks. Acquired by Doximity. Technology now integrated into Doximity's Clinical AI Suite.",url:"https://news.bloomberglaw.com/ip-law/medical-ai-firm-suit-says-prompt-stealing-hacks-stole-secrets"},
   {name:"Vera Health",type:"Private · Limited info",badge:"SUED",stats:[{l:"Sued by",v:"OpenEvidence Jun 2025"},{l:"Claims",v:"Prompt injection"}],desc:"Sued by OpenEvidence in June 2025 on similar prompt injection claims as Pathway Medical and Doximity. Limited public information available about the company.",url:"https://news.bloomberglaw.com/ip-law/medical-ai-firm-says-competitor-hacked-prompts-to-steal-secrets"},
   {name:"Glass Health",type:"Pivoted/Acquired",badge:"PIVOTED",stats:[{l:"Domain",v:"Redirects to glassmedical.ai"},{l:"Current focus",v:"Oncology trials"}],desc:"Original Glass Health was a clinical AI documentation startup. Domain now redirects to Glass Medical AI — a University of Amsterdam spin-out focused on oncology drug development. No longer a direct competitor.",url:"https://www.glassmedical.ai"},
@@ -601,6 +613,17 @@ const partnersData = [
   {name:"Baseten",type:"AI Inference"},{name:"Google Cloud",type:"Backend Cloud"},
   {name:"Nvidia",type:"Investor + Compute"},{name:"Amaro",type:"Ad Tech (Acquired)"},
   {name:"Veeva Systems",type:"Commercial Partnership"},{name:"Tandem",type:"Prescriptions & Prior Auth"},
+];
+
+const pharmaData = [
+  {icon:"🎯",name:"Pharma Advertising Platform",status:"Active",statusClass:"status-released",desc:"Core revenue engine. Pharma and medical device companies buy targeted video ads at $70-$1,000+ CPM. ARPU ~$124. 90% gross margins. Ads shown at highest-intent moment — during clinical research. Amaro acquisition strengthened this infrastructure."},
+  {icon:"💰",name:"Open Vista (with Veeva Systems)",status:"In Development",statusClass:"status-dev",desc:"Joint product with Veeva Systems targeting clinical-trial matching, drug discovery insight, and adoption of approved medicines. Positions OpenEvidence as infrastructure layer for pharmaceutical commercial operations."},
+  {icon:"🧪",name:"Clinical Trial Matching",status:"Released",statusClass:"status-released",desc:"Automatically surfaces active/recruiting clinical trials and evaluates each against patient clinical context. Enables pharma sponsors to reach physicians at the exact moment they're treating eligible patients. Filters by disease, treatment history, eligibility, location."},
+  {icon:"📊",name:"Enterprise Analytics (Inferred)",status:"Inferred",statusClass:"status-inferred-future",desc:"Based on Amaro's advertising optimization technology and the ad-supported model, OpenEvidence likely provides advertisers with analytics dashboards showing physician engagement, reach, and ROI metrics."},
+  {icon:"🏥",name:"Non-Ad Enterprise Tier",status:"In Development",statusClass:"status-dev",desc:"Separate non-ad-supported enterprise version for large health systems requiring greater customization. Distinct pricing tier above current free and ad-supported tiers. This creates a dual revenue model: pharma ads (consumer side) + enterprise per-seat licensing (health system side)."},
+  {icon:"📡",name:"Ad Infrastructure via Amaro",status:"Active",statusClass:"status-released",desc:"Amaro's AI-native advertising automation analyzes and optimizes end-to-end advertising deployment. Enables pharma companies to streamline campaigns and maximize performance across OpenEvidence's platform. Founded by Kush and Sauren Khosla, backed by GV and Greycroft."},
+  {icon:"💊",name:"Tandem Partnership (Prescriptions & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the platform. Creates a closed-loop from clinical decision → evidence check → prescription → prior auth, capturing pharma-relevant workflow data."},
+  {icon:"🌐",name:"Total Ad Inventory Potential",status:"Inferred",statusClass:"status-inferred-future",desc:"Nadler claims total potential ad inventory is ~$1 billion if fully sold. Current $150M annualized revenue means only ~15% of inventory is monetized. Massive headroom for pharma ad revenue growth as platform usage continues to scale."},
 ];
 
 const sourcesData = [
@@ -665,61 +688,6 @@ document.getElementById('timelineFilters').addEventListener('click', (e) => {
     renderTimeline(e.target.dataset.filter);
   }
 });
-
-renderTimeline('all');
-
-// RENDER PRODUCTS
-document.getElementById('productsList').innerHTML = productsData.map(p => `
-  <div class="feature-card">
-    <div class="icon">${p.icon}</div>
-    <div class="content">
-      <h4>${p.name} <span class="status-badge status-released">${p.status}</span></h4>
-      <p><strong>Launched:</strong> ${p.date}</p>
-      <p>${p.desc}</p>
-    </div>
-  </div>
-`).join('');
-
-// RENDER COMPETITORS
-document.getElementById('competitorGrid').innerHTML = competitorsData.map(c => `
-  <div class="competitor-card">
-    <div class="badge">${c.badge}</div>
-    <h3>${c.name}</h3>
-    <div class="type">${c.type}</div>
-    <div class="stats">
-      ${c.stats.map(s => `<div class="stat"><span style="color:var(--oe-text-muted)">${s.l}:</span> <span class="v">${s.v}</span></div>`).join('')}
-    </div>
-    <div class="desc">${c.desc}</div>
-    <div class="source"><a href="${c.url}" target="_blank" rel="noopener">Source →</a></div>
-  </div>
-`).join('');
-
-// RENDER FUTURE
-document.getElementById('futureList').innerHTML = futureData.map(f => `
-  <div class="feature-card">
-    <div class="icon">${f.icon}</div>
-    <div class="content">
-      <h4>${f.name} <span class="status-badge ${f.statusClass}">${f.status}</span></h4>
-      <p>${f.desc}</p>
-    </div>
-  </div>
-`).join('');
-
-// RENDER PARTNERS
-document.getElementById('partnerGrid').innerHTML = partnersData.map(p => `
-  <div class="partner-item">
-    <div class="name">${p.name}</div>
-    <div class="type">${p.type}</div>
-  </div>
-`).join('');
-
-// RENDER SOURCES
-document.getElementById('sourceList').innerHTML = sourcesData.map(s => `
-  <div class="source-item">
-    <a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>
-    <div class="name">${s.url}</div>
-  </div>
-`).join('');
 
 // CHARTS
 const chartColor = '#E4643D';
@@ -857,7 +825,69 @@ function buildCharts() {
   }));
 }
 
-buildCharts();
+// Wait for DOM and Chart.js to be ready
+document.addEventListener('DOMContentLoaded', function() {
+  renderTimeline('all');
+  document.getElementById('productsList').innerHTML = productsData.map(p => `
+    <div class="feature-card">
+      <div class="icon">${p.icon}</div>
+      <div class="content">
+        <h4>${p.name} <span class="status-badge status-released">${p.status}</span></h4>
+        <p><strong>Launched:</strong> ${p.date}</p>
+        <p>${p.desc}</p>
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('competitorGrid').innerHTML = competitorsData.map(c => `
+    <div class="competitor-card">
+      <div class="badge">${c.badge}</div>
+      <h3>${c.name}</h3>
+      <div class="type">${c.type}</div>
+      <div class="stats">
+        ${c.stats.map(s => `<div class="stat"><span style="color:var(--oe-text-muted)">${s.l}:</span> <span class="v">${s.v}</span></div>`).join('')}
+      </div>
+      <div class="desc">${c.desc}</div>
+      <div class="source"><a href="${c.url}" target="_blank" rel="noopener">Source →</a></div>
+    </div>
+  `).join('');
+
+  document.getElementById('futureList').innerHTML = futureData.map(f => `
+    <div class="feature-card">
+      <div class="icon">${f.icon}</div>
+      <div class="content">
+        <h4>${f.name} <span class="status-badge ${f.statusClass}">${f.status}</span></h4>
+        <p>${f.desc}</p>
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('partnerGrid').innerHTML = partnersData.map(p => `
+    <div class="partner-item">
+      <div class="name">${p.name}</div>
+      <div class="type">${p.type}</div>
+    </div>
+  `).join('');
+
+  document.getElementById('sourceList').innerHTML = sourcesData.map(s => `
+    <div class="source-item">
+      <a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>
+      <div class="name">${s.url}</div>
+    </div>
+  `).join('');
+
+  document.getElementById('pharmaList').innerHTML = pharmaData.map(p => `
+    <div class="feature-card">
+      <div class="icon">${p.icon}</div>
+      <div class="content">
+        <h4>${p.name} <span class="status-badge ${p.statusClass}">${p.status}</span></h4>
+        <p>${p.desc}</p>
+      </div>
+    </div>
+  `).join('');
+
+  buildCharts();
+});
 
 // THEME TOGGLE
 function toggleTheme() {
