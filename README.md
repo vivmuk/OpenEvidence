@@ -23,7 +23,18 @@ A comprehensive dashboard tracking OpenEvidence — the fastest-growing medical 
 9. **Future Roadmap** — Released, in-development, and inferred future directions
 10. **Source Index** — 35+ verified sources
 
-## Auto-Updates
+## Deployment
+
+**Railway (primary):**
+```bash
+cd OpenEvidence
+railway up
+```
+Or connect the GitHub repo at railway.app → New Project → Deploy from GitHub.
+
+**GitHub Pages (fallback):** Already configured at https://vivmuk.github.io/OpenEvidence/
+
+Both serve the same static `index.html` — Railway uses `server.js` (Express) to serve it.
 
 A cron job runs every Sunday at 5 PM ET to:
 1. Search for new OpenEvidence news from the past week
