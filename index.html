@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenEvidence Insights — Dashboard</title>
+<meta name="description" content="Comprehensive tracking of OpenEvidence platform: partnerships, products, funding, adoption metrics, competitor landscape, and tech stack.">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --oe-orange: #E4643D;
+  --oe-orange-light: #F08A6A;
+  --oe-orange-dark: #C44A28;
+  --oe-orange-50: #FDF2ED;
+  --oe-orange-100: #FAE0D5;
+  --oe-orange-200: #F5C1AC;
+  --oe-dark: #0C130D;
+  --oe-dark-soft: #1A2520;
+  --oe-dark-card: #1E2A22;
+  --oe-dark-border: #2D3D32;
+  --oe-green: #2D5A3D;
+  --oe-text: #E8E6E1;
+  --oe-text-dim: #9CA8A0;
+  --oe-text-muted: #6B7872;
+  --oe-white: #FAFAF8;
+  --oe-font: 'Georgia', 'Times New Roman', serif;
+  --oe-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --oe-font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+  --oe-radius: 8px;
+  --oe-radius-lg: 12px;
+  --oe-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  --oe-shadow-lg: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+[data-theme="light"] {
+  --oe-dark: #FAFAF8;
+  --oe-dark-soft: #F5F3F0;
+  --oe-dark-card: #FFFFFF;
+  --oe-dark-border: #E5E2DC;
+  --oe-text: #1A2520;
+  --oe-text-dim: #4A5A50;
+  --oe-text-muted: #8A9A90;
+  --oe-orange-50: #FDF2ED;
+  --oe-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --oe-shadow-lg: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--oe-dark);
+  color: var(--oe-text);
+  font-family: var(--oe-font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* NAV */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(12,19,13,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--oe-dark-border);
+  padding: 12px 0;
+}
+[data-theme="light"] nav { background: rgba(250,250,248,0.85); }
+nav .container { display: flex; align-items: center; justify-content: space-between; }
+nav .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; }
+nav .brand-dot { width: 10px; height: 10px; background: var(--oe-orange); border-radius: 50%; }
+nav .links { display: flex; gap: 24px; font-size: 14px; }
+nav .links a { color: var(--oe-text-dim); text-decoration: none; transition: color 0.2s; }
+nav .links a:hover { color: var(--oe-orange); }
+nav .theme-toggle { background: none; border: 1px solid var(--oe-dark-border); color: var(--oe-text-dim); padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+
+/* HERO */
+.hero { padding: 80px 0 60px; text-align: center; }
+.hero h1 { font-family: var(--oe-font); font-size: clamp(36px, 5vw, 56px); font-weight: 400; letter-spacing: -1px; margin-bottom: 16px; }
+.hero h1 .accent { color: var(--oe-orange); font-style: italic; }
+.hero p { font-size: clamp(16px, 2vw, 20px); color: var(--oe-text-dim); max-width: 600px; margin: 0 auto 8px; }
+.hero .updated { font-size: 13px; color: var(--oe-text-muted); margin-top: 12px; }
+
+/* STAT CARDS */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 48px 0; }
+.stat-card {
+  background: var(--oe-dark-card);
+  border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg);
+  padding: 24px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+.stat-card:hover { border-color: var(--oe-orange); }
+.stat-card .value { font-family: var(--oe-font); font-size: 32px; font-weight: 400; color: var(--oe-orange); margin-bottom: 4px; }
+.stat-card .label { font-size: 13px; color: var(--oe-text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-card .sub { font-size: 12px; color: var(--oe-text-dim); margin-top: 4px; }
+
+/* SECTIONS */
+section { padding: 60px 0; border-top: 1px solid var(--oe-dark-border); }
+section h2 { font-family: var(--oe-font); font-size: 32px; font-weight: 400; margin-bottom: 8px; }
+section h2 .accent { color: var(--oe-orange); }
+section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bottom: 32px; }
+
+/* CHARTS */
+.chart-container {
+  background: var(--oe-dark-card);
+  border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.chart-container h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.chart-container .chart-sub { font-size: 13px; color: var(--oe-text-muted); margin-bottom: 16px; }
+.chart-wrapper { position: relative; height: 300px; }
+.charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 24px; }
+
+/* TIMELINE */
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--oe-dark-border); }
+.timeline-item { position: relative; margin-bottom: 24px; }
+.timeline-item::before {
+  content: ''; position: absolute; left: -28px; top: 8px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--oe-dark); border: 2px solid var(--oe-orange);
+}
+.timeline-item .date { font-size: 13px; color: var(--oe-orange); font-weight: 600; margin-bottom: 2px; }
+.timeline-item .title { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.timeline-item .desc { font-size: 14px; color: var(--oe-text-dim); margin-bottom: 4px; }
+.timeline-item .source { font-size: 12px; color: var(--oe-text-muted); }
+.timeline-item .source a { color: var(--oe-orange); text-decoration: none; }
+.timeline-item .source a:hover { text-decoration: underline; }
+.timeline-item .category-tag {
+  display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px;
+  margin-right: 8px; font-weight: 600; letter-spacing: 0.3px;
+}
+.cat-Funding { background: rgba(228,100,61,0.15); color: var(--oe-orange); }
+.cat-Product { background: rgba(45,90,61,0.25); color: #6BAF7D; }
+.cat-Partnership { background: rgba(70,130,180,0.15); color: #6B9ABF; }
+.cat-Legal { background: rgba(180,70,70,0.15); color: #BF7A6B; }
+.cat-Metric { background: rgba(150,100,200,0.15); color: #B89AC4; }
+.cat-Acquisition { background: rgba(200,150,50,0.15); color: #D4A94E; }
+.cat-Milestone { background: rgba(50,150,120,0.15); color: #5DAE8E; }
+.cat-Company { background: rgba(100,100,100,0.15); color: var(--oe-text-dim); }
+.cat-Research { background: rgba(80,130,100,0.15); color: #7BAE8B; }
+.cat-Tech { background: rgba(60,100,140,0.15); color: #6B8FAD; }
+
+/* FILTERS */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.filter-btn {
+  font-size: 13px; padding: 6px 14px; border-radius: 20px;
+  border: 1px solid var(--oe-dark-border); background: var(--oe-dark-card);
+  color: var(--oe-text-dim); cursor: pointer; transition: all 0.2s;
+}
+.filter-btn:hover { border-color: var(--oe-orange); }
+.filter-btn.active { background: var(--oe-orange); color: white; border-color: var(--oe-orange); }
+
+/* COMPETITOR CARDS */
+.competitor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+.competitor-card {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 24px; transition: border-color 0.2s;
+}
+.competitor-card:hover { border-color: var(--oe-orange); }
+.competitor-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.competitor-card .type { font-size: 12px; color: var(--oe-text-muted); margin-bottom: 12px; }
+.competitor-card .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+.competitor-card .stat { font-size: 13px; }
+.competitor-card .stat .v { color: var(--oe-orange); font-weight: 600; }
+.competitor-card .desc { font-size: 14px; color: var(--oe-text-dim); margin-bottom: 8px; }
+.competitor-card .source { font-size: 12px; }
+.competitor-card .source a { color: var(--oe-orange); text-decoration: none; }
+.competitor-card .badge {
+  display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px;
+  background: rgba(228,100,61,0.15); color: var(--oe-orange); margin-bottom: 8px;
+}
+
+/* PARTNERSHIP GRID */
+.partner-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+.partner-item {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius); padding: 14px; text-align: center;
+}
+.partner-item .name { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.partner-item .type { font-size: 11px; color: var(--oe-text-muted); }
+
+/* TECH STACK */
+.tech-layer {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 20px; margin-bottom: 16px;
+}
+.tech-layer h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.tech-layer h3 .icon { font-size: 18px; }
+.tech-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--oe-dark-border); font-size: 14px; }
+.tech-row:last-child { border-bottom: none; }
+.tech-row .label { color: var(--oe-text-dim); }
+.tech-row .value { font-weight: 600; }
+.tech-row .status { font-size: 11px; padding: 2px 6px; border-radius: 4px; margin-left: 8px; }
+.status-known { background: rgba(45,90,61,0.3); color: #6BAF7D; }
+.status-inferred { background: rgba(200,150,50,0.15); color: #D4A94E; }
+
+/* FUNDING TABLE */
+.funding-table { width: 100%; border-collapse: collapse; }
+.funding-table th { text-align: left; font-size: 12px; text-transform: uppercase; color: var(--oe-text-muted); padding: 12px 16px; border-bottom: 1px solid var(--oe-dark-border); }
+.funding-table td { padding: 12px 16px; border-bottom: 1px solid var(--oe-dark-border); font-size: 14px; }
+.funding-table tr:hover { background: var(--oe-dark-soft); }
+.funding-table .amount { color: var(--oe-orange); font-weight: 600; }
+
+/* SOURCE LIST */
+.source-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 8px; }
+.source-item { font-size: 13px; padding: 8px 12px; background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: 6px; }
+.source-item a { color: var(--oe-orange); text-decoration: none; }
+.source-item a:hover { text-decoration: underline; }
+.source-item .name { color: var(--oe-text-muted); font-size: 11px; }
+
+/* FUTURE FEATURES */
+.feature-card {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 20px; margin-bottom: 12px;
+  display: flex; gap: 16px;
+}
+.feature-card .icon { font-size: 24px; flex-shrink: 0; }
+.feature-card .content h4 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+.feature-card .content .status-badge { font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-left: 8px; }
+.feature-card .content p { font-size: 14px; color: var(--oe-text-dim); }
+.status-released { background: rgba(45,90,61,0.3); color: #6BAF7D; }
+.status-dev { background: rgba(200,150,50,0.15); color: #D4A94E; }
+.status-inferred-future { background: rgba(100,100,100,0.15); color: var(--oe-text-dim); }
+
+/* FOOTER */
+footer { padding: 40px 0; border-top: 1px solid var(--oe-dark-border); text-align: center; }
+footer p { font-size: 13px; color: var(--oe-text-muted); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .charts-grid { grid-template-columns: 1fr; }
+  nav .links { display: none; }
+  .competitor-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+    <div class="links">
+      <a href="#metrics">Metrics</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#funding">Funding</a>
+      <a href="#products">Products</a>
+      <a href="#competitors">Competitors</a>
+      <a href="#partnerships">Partnerships</a>
+      <a href="#tech">Tech Stack</a>
+      <a href="#future">Future</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light</button>
+  </div>
+</nav>
+
+<div class="hero container">
+  <h1>Open<span class="accent">Evidence</span> Insights</h1>
+  <p>Comprehensive tracking of the fastest-growing medical AI platform in history.</p>
+  <p>Partnerships, products, funding, adoption metrics, competitor landscape & tech stack.</p>
+  <p class="updated">Last updated: June 23, 2026 · Next update: June 29, 2026 (Sunday 5PM ET)</p>
+</div>
+
+<div class="container">
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="value">$12B</div>
+      <div class="label">Valuation</div>
+      <div class="sub">Jan 2026 · Series D</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">50%+</div>
+      <div class="label">US Physicians</div>
+      <div class="sub">Daily active users</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">30M</div>
+      <div class="label">Monthly Consultations</div>
+      <div class="sub">May 2026 · NYT</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">$150M</div>
+      <div class="label">Annualized Revenue</div>
+      <div class="sub">Nov 2025 · 90% margins</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">$700M</div>
+      <div class="label">Total Funding</div>
+      <div class="sub">4 rounds in 12 months</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">10K+</div>
+      <div class="label">Hospitals</div>
+      <div class="sub">Nationwide</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">25+</div>
+      <div class="label">Content Partners</div>
+      <div class="sub">NEJM · JAMA · NCCN · Cochrane</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">123</div>
+      <div class="label">Employees</div>
+      <div class="sub">LinkedIn · Miami HQ</div>
+    </div>
+  </div>
+</div>
+
+<!-- METRICS / CHARTS -->
+<section id="metrics">
+  <div class="container">
+    <h2>Adoption <span class="accent">Metrics</span></h2>
+    <p class="section-sub">Physician growth, consultation volume, revenue trajectory, and valuation — sourced from Sacra, PRNewswire, Forbes, and Wikipedia.</p>
+    <div class="charts-grid">
+      <div class="chart-container">
+        <h3>Monthly Consultations Over Time</h3>
+        <p class="chart-sub">From 358K/month (Jul 2024) to 27M/month (Apr 2026) — 75x growth</p>
+        <div class="chart-wrapper"><canvas id="chartConsultations"></canvas></div>
+      </div>
+      <div class="chart-container">
+        <h3>Registered Physicians Over Time</h3>
+        <p class="chart-sub">From 358K to 760K+ — reaching 80%+ of all US physicians</p>
+        <div class="chart-wrapper"><canvas id="chartPhysicians"></canvas></div>
+      </div>
+      <div class="chart-container">
+        <h3>Valuation Growth ($B)</h3>
+        <p class="chart-sub">$1B → $3.5B → $6B → $12B in 12 months</p>
+        <div class="chart-wrapper"><canvas id="chartValuation"></canvas></div>
+      </div>
+      <div class="chart-container">
+        <h3>Annualized Revenue ($M)</h3>
+        <p class="chart-sub">$7.9M → $50M → $150M — 1,803% YoY growth</p>
+        <div class="chart-wrapper"><canvas id="chartRevenue"></canvas></div>
+      </div>
+      <div class="chart-container" style="grid-column: 1 / -1;">
+        <h3>Total Funding Raised ($M)</h3>
+        <p class="chart-sub">Cumulative funding across 4 rounds: Series A ($75M) → B ($210M) → C ($200M) → D ($250M)</p>
+        <div class="chart-wrapper"><canvas id="chartFunding"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="container">
+    <h2>Master <span class="accent">Timeline</span></h2>
+    <p class="section-sub">Every major event with exact dates and source links. Filter by category.</p>
+    <div class="filters" id="timelineFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Funding">Funding</button>
+      <button class="filter-btn" data-filter="Product">Product Launch</button>
+      <button class="filter-btn" data-filter="Partnership">Partnership</button>
+      <button class="filter-btn" data-filter="Legal">Legal</button>
+      <button class="filter-btn" data-filter="Metric">Metrics</button>
+      <button class="filter-btn" data-filter="Acquisition">Acquisitions</button>
+      <button class="filter-btn" data-filter="Milestone">Milestones</button>
+    </div>
+    <div class="timeline" id="timelineList"></div>
+  </div>
+</section>
+
+<!-- FUNDING -->
+<section id="funding">
+  <div class="container">
+    <h2>Funding <span class="accent">Tracker</span></h2>
+    <p class="section-sub">Four rounds in twelve months — from $1B to $12B valuation.</p>
+    <div class="chart-container" style="margin-bottom: 24px;">
+      <div class="chart-wrapper" style="height: 350px;"><canvas id="chartFundingWaterfall"></canvas></div>
+    </div>
+    <div class="chart-container">
+      <table class="funding-table">
+        <thead>
+          <tr><th>Date</th><th>Round</th><th>Amount</th><th>Valuation</th><th>Lead Investor(s)</th><th>Source</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Feb 19, 2025</td><td>Series A</td><td class="amount">$75M</td><td>$1B</td><td>Sequoia Capital</td><td><a href="https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html" style="color:var(--oe-orange);text-decoration:none;">CNBC</a></td></tr>
+          <tr><td>Jul 15, 2025</td><td>Series B</td><td class="amount">$210M</td><td>$3.5B</td><td>GV + Kleiner Perkins</td><td><a href="https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html" style="color:var(--oe-orange);text-decoration:none;">PRNewswire</a></td></tr>
+          <tr><td>Oct 20, 2025</td><td>Series C</td><td class="amount">$200M</td><td>$6B</td><td>GV</td><td><a href="https://www.forbes.com/sites/amyfeldman/2025/10/20/openevidences-daniel-nadler-13-billion-richer-in-just-three-months-after-the-ai-startup-hits-6-billion-valuation/" style="color:var(--oe-orange);text-decoration:none;">Forbes</a></td></tr>
+          <tr><td>Jan 21, 2026</td><td>Series D</td><td class="amount">$250M</td><td>$12B</td><td>Thrive Capital + DST Global</td><td><a href="https://sacra.com/c/openevidence/" style="color:var(--oe-orange);text-decoration:none;">Sacra</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <h2>Product <span class="accent">Launches</span></h2>
+    <p class="section-sub">From core search to AI scribe to coding intelligence — the full product evolution.</p>
+    <div id="productsList"></div>
+  </div>
+</section>
+
+<!-- COMPETITORS -->
+<section id="competitors">
+  <div class="container">
+    <h2>Competitive <span class="accent">Landscape</span></h2>
+    <p class="section-sub">12 competitors tracked — from direct threats to adjacent market players.</p>
+    <div class="competitor-grid" id="competitorGrid"></div>
+  </div>
+</section>
+
+<!-- PARTNERSHIPS -->
+<section id="partnerships">
+  <div class="container">
+    <h2>Partnership <span class="accent">Ecosystem</span></h2>
+    <p class="section-sub">25+ content partners, 3 health system deployments, and key tech infrastructure partnerships.</p>
+    <div class="chart-container" style="margin-bottom: 24px;">
+      <h3>Partnership Timeline</h3>
+      <p class="chart-sub">When each partnership was announced</p>
+      <div class="chart-wrapper" style="height: 400px;"><canvas id="chartPartnerships"></canvas></div>
+    </div>
+    <div class="partner-grid" id="partnerGrid"></div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech">
+  <div class="container">
+    <h2>Tech <span class="accent">Stack</span></h2>
+    <p class="section-sub">Known (disclosed by OpenEvidence or verified sources) vs Inferred (deduced from public data).</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 16px;">
+      <div class="tech-layer">
+        <h3><span class="icon">🎨</span> Frontend</h3>
+        <div class="tech-row"><span class="label">Framework</span><span class="value">Next.js <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Hosting</span><span class="value">Vercel (Fluid Compute) <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">CDN</span><span class="value">Vercel Edge Network <span class="status status-inferred">INFERRED</span></span></div>
+        <div class="tech-row"><span class="label">Cost</span><span class="value"><5% of total infra <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Deploy pipeline</span><span class="value">Auto-deploy on commit ~5min <span class="status status-known">KNOWN</span></span></div>
+      </div>
+      <div class="tech-layer">
+        <h3><span class="icon">⚙️</span> Backend</h3>
+        <div class="tech-row"><span class="label">Language</span><span class="value">Python <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Cloud</span><span class="value">Google Cloud Platform <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Container orchestration</span><span class="value">Kubernetes (via Baseten MCM) <span class="status status-inferred">INFERRED</span></span></div>
+        <div class="tech-row"><span class="label">API layer</span><span class="value">REST/GraphQL <span class="status status-inferred">INFERRED</span></span></div>
+        <div class="tech-row"><span class="label">Monitoring</span><span class="value">GCP-native + Baseten observability <span class="status status-inferred">INFERRED</span></span></div>
+      </div>
+      <div class="tech-layer">
+        <h3><span class="icon">🧠</span> AI / ML Infrastructure</h3>
+        <div class="tech-row"><span class="label">Inference platform</span><span class="value">Baseten Inference Stack <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Model type</span><span class="value">Vertical LLM on licensed medical texts <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Embeddings</span><span class="value">Baseten BEI (160ms latency) <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Training</span><span class="value">Baseten Training (23x faster) <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Multi-cloud compute</span><span class="value">Baseten MCM (10+ clouds) <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">RAG pipeline</span><span class="value">Deterministic citation linking <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Vector database</span><span class="value">Dedicated vector store <span class="status status-inferred">INFERRED</span></span></div>
+        <div class="tech-row"><span class="label">Volume</span><span class="value">Billions of requests/week <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">USMLE score</span><span class="value">100% (first AI to achieve) <span class="status status-known">KNOWN</span></span></div>
+      </div>
+      <div class="tech-layer">
+        <h3><span class="icon">🏥</span> EHR & Compliance</h3>
+        <div class="tech-row"><span class="label">EHR integration</span><span class="value">Epic (FHIR API) <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Compliance</span><span class="value">HIPAA + BAA support <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Physician verification</span><span class="value">NPI registry API <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Data handling</span><span class="value">Patient data not stored <span class="status status-known">KNOWN</span></span></div>
+      </div>
+      <div class="tech-layer">
+        <h3><span class="icon">💰</span> Ad Tech & Revenue</h3>
+        <div class="tech-row"><span class="label">Ad infrastructure</span><span class="value">Amaro (acquired GV-backed) <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">CPM range</span><span class="value">$70–$1,000+ <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">ARPU</span><span class="value">~$124 <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Gross margins</span><span class="value">90% <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Advertisers</span><span class="value">Pharma & medical device companies <span class="status status-known">KNOWN</span></span></div>
+      </div>
+      <div class="tech-layer">
+        <h3><span class="icon">📚</span> Licensed Data Sources</h3>
+        <div class="tech-row"><span class="label">Journals</span><span class="value">NEJM, JAMA (11 specialty), Wiley <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Societies</span><span class="value">NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Research</span><span class="value">Cochrane Systematic Reviews <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Drug database</span><span class="value">Likely integrated (not disclosed) <span class="status status-inferred">INFERRED</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE FEATURES -->
+<section id="future">
+  <div class="container">
+    <h2>Future <span class="accent">Roadmap</span></h2>
+    <p class="section-sub">Released products, confirmed in-development items, and inferred future directions.</p>
+    <div id="futureList"></div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section id="sources">
+  <div class="container">
+    <h2>Source <span class="accent">Index</span></h2>
+    <p class="section-sub">Every source used in this dashboard, linked and verified.</p>
+    <div class="source-list" id="sourceList"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>OpenEvidence Insights · Built by Kriya · Auto-updated every Sunday 5PM ET</p>
+    <p style="margin-top: 4px;">Data sourced from public information. Not affiliated with OpenEvidence Inc.</p>
+  </div>
+</footer>
+
+<script>
+// DATA
+const timelineData = [
+  {date:"2022-01-01",cat:"Company",title:"OpenEvidence Founded",desc:"Daniel Nadler and Zachary Ziegler found OpenEvidence to organize medical knowledge using AI.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {date:"2023-01-01",cat:"Milestone",title:"AI scores 90% on USMLE",desc:"OpenEvidence's AI model achieves 90% on the United States Medical Licensing Examination.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {date:"2023-06-01",cat:"Partnership",title:"Mayo Clinic Accelerator",desc:"Participated in Mayo Clinic health-technology accelerator program.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {date:"2024-12-01",cat:"Metric",title:"$7.9M Annualized Revenue",desc:"Sacra estimates OpenEvidence at $7.9M in annualized revenue.",src:"Sacra",url:"https://sacra.com/c/openevidence/"},
+  {date:"2025-02-19",cat:"Funding",title:"Series A: $75M at $1B Valuation",desc:"Sequoia Capital leads $75M Series A, making OpenEvidence a unicorn.",src:"CNBC",url:"https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html"},
+  {date:"2025-02-26",cat:"Legal",title:"Sues Pathway Medical",desc:"Files lawsuit against Canadian AI startup for prompt injection attacks to steal trade secrets.",src:"Bloomberg Law",url:"https://news.bloomberglaw.com/ip-law/medical-ai-firm-suit-says-prompt-stealing-hacks-stole-secrets"},
+  {date:"2025-04-01",cat:"Milestone",title:"Forbes AI 50 List",desc:"OpenEvidence featured in Forbes AI 50 list.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {date:"2025-05-01",cat:"Milestone",title:"Daniel Nadler — TIME100 Health",desc:"Founder named to TIME100 Health list of 100 most influential people in global health.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {date:"2025-06-01",cat:"Metric",title:"$50M Annualized Revenue",desc:"Revenue growing 30% month-over-month.",src:"Sacra",url:"https://sacra.com/c/openevidence/"},
+  {date:"2025-06-20",cat:"Legal",title:"Sues Doximity for Corporate Espionage",desc:"Federal lawsuit alleging Doximity executives impersonated physicians to steal trade secrets via prompt injection. Case 1:25-cv-11802.",src:"Boston Globe",url:"https://www.bostonglobe.com/2025/06/24/business/openevidence-ai-doximity-lawsuit/"},
+  {date:"2025-07-15",cat:"Funding",title:"Series B: $210M at $3.5B Valuation",desc:"GV and Kleiner Perkins co-lead. 430K+ physicians, 8.5M monthly consultations, 10K+ hospitals.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {date:"2025-07-15",cat:"Product",title:"DeepConsult Launched",desc:"First AI agent purpose-built for physicians. Uses reasoning models to cross-reference hundreds of peer-reviewed studies. 100x compute of standard search.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {date:"2025-07-29",cat:"Acquisition",title:"Doximity acquires Pathway Medical ($63M)",desc:"Doximity acquires the competitor OpenEvidence had sued for prompt injection attacks.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/Doximity"},
+  {date:"2025-08-15",cat:"Milestone",title:"AI scores 100% on USMLE",desc:"First AI to achieve perfect score on USMLE.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {date:"2025-08-15",cat:"Product",title:"Visits (AI Scribe) Launched",desc:"Clinical documentation tool that transcribes patient encounters and enriches notes with evidence-based guidelines. Competes with Abridge.",src:"OpenEvidence",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
+  {date:"2025-09-10",cat:"Acquisition",title:"Acquires Amaro (Ad Tech)",desc:"Acquires GV-backed AI-native advertising startup to strengthen ad-monetization infrastructure.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
+  {date:"2025-10-20",cat:"Funding",title:"Series C: $200M at $6B Valuation",desc:"Nadler's net worth increases by $1.3B. Total funding reaches ~$485M.",src:"Forbes",url:"https://www.forbes.com/sites/amyfeldman/2025/10/20/openevidences-daniel-nadler-13-billion-richer-in-just-three-months-after-the-ai-startup-hits-6-billion-valuation/"},
+  {date:"2025-11-01",cat:"Metric",title:"$150M Annualized Revenue",desc:"Sacra estimates $150M annualized revenue — 20x YoY growth, 90% gross margins.",src:"Sacra",url:"https://sacra.com/research/openevidence-vs-doximity/"},
+  {date:"2025-12-01",cat:"Metric",title:"760K Physicians / 18M Consultations/month",desc:"Registered physicians reach 760K. Monthly consultations hit 18M.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {date:"2025-12-15",cat:"Product",title:"Doctor Dialer Launched (Limited)",desc:"HIPAA-secure dialer for doctor-patient communication. 37M minutes since limited release.",src:"Sacra",url:"https://sacra.com/research/openevidence-vs-doximity/"},
+  {date:"2026-01-07",cat:"Product",title:"ChatGPT Health Launched (Competitor)",desc:"OpenAI launches consumer-facing ChatGPT Health. 260+ physicians, 60 countries, 600K feedback interactions.",src:"OpenAI",url:"https://openai.com/index/introducing-chatgpt-health/"},
+  {date:"2026-01-21",cat:"Funding",title:"Series D: $250M at $12B Valuation",desc:"Thrive Capital and DST Global co-lead. Valuation doubles from $6B to $12B in 3 months.",src:"Sacra",url:"https://sacra.com/c/openevidence/"},
+  {date:"2026-02-01",cat:"Product",title:"Clinical Trial Matching Launched",desc:"Filters trials by study design, enrollment status, and geographic proximity.",src:"Healthcare IT News",url:"https://www.healthcareitnews.com/news/mount-sinai-integrate-openevidence-ai-enterprise-wide"},
+  {date:"2026-02-11",cat:"Partnership",title:"Sutter Health Deployment",desc:"OpenEvidence embedded into Epic EHR workflows for Sutter Health physicians across California.",src:"OpenEvidence",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
+  {date:"2026-02-25",cat:"Tech",title:"Vercel Case Study Published",desc:"Reveals Next.js frontend on Vercel with Fluid Compute. <5% of infra spend, 90% serverless cost reduction.",src:"Vercel Blog",url:"https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust"},
+  {date:"2026-03-03",cat:"Partnership",title:"Wiley Partnership",desc:"Wiley and OpenEvidence partner to deliver trusted research to physicians at point of care.",src:"OpenEvidence",url:"https://www.openevidence.com/announcements/wiley-and-openevidence-partner-to-deliver-trusted-research-to-physicians-at-the-point-of-care"},
+  {date:"2026-03-10",cat:"Milestone",title:"1M Consultations in a Single Day",desc:"First time in history — one million clinical consultations between NPI-verified physicians and an AI in 24 hours.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
+  {date:"2026-03-24",cat:"Product",title:"Coding Intelligence Launched",desc:"Automates medical coding — ICD-10, E/M, CPT suggestions inline. RVU values. Medicare MPPR optimization.",src:"OpenEvidence",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {date:"2026-03-31",cat:"Partnership",title:"Mount Sinai Deployment",desc:"Enterprise-wide deployment across 7 hospitals in Epic EHR. First to extend to nurses and pharmacists.",src:"OpenEvidence",url:"https://www.openevidence.com/announcements/mount-sinai-health-system-collaborates-with-openevidence-to-provide-evidence-based-knowledge-within-electronic-medical-record"},
+  {date:"2026-04-07",cat:"Product",title:"Dotflows Launched",desc:"AI-native customization — reusable natural language prompts. Community library. Type '.' to invoke.",src:"OpenEvidence",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
+  {date:"2026-04-15",cat:"Product",title:"Abridge NEJM/JAMA Partnership (Competitor)",desc:"Abridge announces evidence integration with same journal partners as OpenEvidence — direct convergence.",src:"Abridge",url:"https://www.abridge.com"},
+  {date:"2026-04-22",cat:"Product",title:"ChatGPT for Clinicians Launched (Competitor)",desc:"OpenAI launches free clinical AI for verified US physicians. GPT-5.4 model. CME credits. HealthBench Professional benchmark.",src:"PYMNTS",url:"https://www.pymnts.com/artificial-intelligence-2/2026/openai-treats-healthcare-with-new-chatgpt-for-clinicians/"},
+  {date:"2026-05-01",cat:"Partnership",title:"Cedars-Sinai Deployment",desc:"Third health system. Patient-profile-tailored queries from EHR. Access for physicians, nurses, pharmacists, therapists.",src:"Sacra",url:"https://sacra.com/c/openevidence/"},
+  {date:"2026-05-13",cat:"Partnership",title:"Doximity + Aledade Partnership (Competitor)",desc:"Doximity integrates Clinical AI Suite into Aledade Assist for value-based care.",src:"Doximity",url:"https://press.doximity.com/"},
+  {date:"2026-05-13",cat:"Media",title:"NBC News Major Profile",desc:"NBC News publishes major profile: 'Most physicians quietly use this medical AI tool.' Confirms cultural dominance through stealth adoption.",src:"NBC News",url:"https://www.nbcnews.com"},
+  {date:"2026-05-01",cat:"Product",title:"Voice Mode Launched",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. YouTube teaser video published.",src:"OpenEvidence",url:"https://www.youtube.com"},
+  {date:"2026-02-01",cat:"Product",title:"Voices (Note Formatting) Launched",desc:"Customizable note formatting styles within Visits documentation workflow.",src:"OpenEvidence",url:"https://www.openevidence.com"},
+  {date:"2026-05-01",cat:"Metric",title:"50%+ of US physicians / 30M monthly consultations",desc:"NYT reports 50%+ of US physicians are regular users. 30M monthly consultations confirmed.",src:"NYT",url:"https://www.nytimes.com"},
+];
+
+const productsData = [
+  {icon:"🔍",name:"Core Search Platform",date:"2022",status:"Released",desc:"AI-powered medical search engine for verified U.S. physicians. Returns evidence-based answers in 5-10 seconds with citations from NEJM, JAMA, NCCN, Cochrane, and 20+ more partners."},
+  {icon:"🧠",name:"DeepConsult",date:"Jul 15, 2025",status:"Released",desc:"First AI agent purpose-built for physicians. Uses advanced reasoning models to cross-reference hundreds of peer-reviewed studies in parallel. Each run requires 100x+ compute of standard search. Delivers PhD-level research reports."},
+  {icon:"📝",name:"Visits (AI Scribe)",date:"Aug 15, 2025",status:"Released",desc:"Clinical documentation tool that transcribes patient encounters and enriches assessment & plan with latest guidelines and research. Competes with Abridge, Ambience, and Microsoft Dragon. Free for verified clinicians."},
+  {icon:"💰",name:"Amaro Acquisition (Ad Tech)",date:"Sep 10, 2025",status:"Released",desc:"Acquired GV-backed AI-native advertising startup to strengthen ad-monetization infrastructure. Founded by Kush and Sauren Khosla. Enables optimized pharma ad deployment."},
+  {icon:"📞",name:"Doctor Dialer",date:"Dec 2025",status:"Released",desc:"HIPAA-secure dialer for doctor-patient communication. Calling, messaging, faxing, voicemail. 37M minutes of communication since limited release. Caller ID shows hospital number, not personal."},
+  {icon:"🧬",name:"Clinical Trial Matching",date:"Feb 2026",status:"Released",desc:"Filters clinical trials by study design, enrollment status, and geographic proximity. Helps care teams find accessible, medically appropriate options for patients."},
+  {icon:"💳",name:"Coding Intelligence",date:"Mar 24, 2026",status:"Released",desc:"Automates medical coding — ICD-10, E/M, CPT suggestions inline as clinicians document. Shows RVU values. Automatic CPT sequencing to maximize reimbursement. MDM rationale generation."},
+  {icon:"⚡",name:"Dotflows",date:"Apr 7, 2026",status:"Released",desc:"AI-native customization — reusable natural language prompts that customize how OpenEvidence responds. Community library of shared workflows. Type '.' in search bar to invoke. Examples: .avs, .fmla, .discharge, .prior_auth."},
+  {icon:"🎤",name:"Voice Mode",date:"May 2026",status:"Released",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 26-second teaser video published on YouTube. Enables clinicians to ask questions verbally and receive spoken answers."},
+  {icon:"🗣️",name:"Voices (Note Formatting)",date:"Feb 2026",status:"Released",desc:"Customizable note formatting styles. Clinicians can define how their clinical notes are structured and formatted through the Visits documentation workflow."},
+];
+
+const competitorsData = [
+  {name:"ChatGPT for Clinicians",type:"OpenAI · Launched Apr 22, 2026",badge:"DIRECT COMPETITOR",stats:[{l:"Model",v:"GPT-5.4"},{l:"Cost",v:"Free for verified"},{l:"CME",v:"Yes"},{l:"Benchmark",v:"HealthBench Pro 59.0"}],desc:"OpenAI's clinical AI workspace for verified US physicians, NPs, PAs, and pharmacists. Clinical search, deep research, workflow templates, CME credits. 40M daily health queries on ChatGPT. Conversations not used for training.",url:"https://www.pymnts.com/artificial-intelligence-2/2026/openai-treats-healthcare-with-new-chatgpt-for-clinicians/"},
+  {name:"Doximity (NYSE: DOCS)",type:"Public · $8.75B market cap",badge:"BIGGEST THREAT",stats:[{l:"Revenue",v:"$620M TTM"},{l:"Members",v:"2M+ (85% US MDs)"},{l:"ARPU",v:"$228"},{l:"Employees",v:"827"}],desc:"Largest physician network. Doximity Ask AI assistant + Scribe. Acquired Pathway Medical (Aug 2025). Sued by OpenEvidence for trade secret theft. Partnered with Aledade (May 2026). Diversified revenue: pharma ads, recruiting, telehealth.",url:"https://en.wikipedia.org/wiki/Doximity"},
+  {name:"Google MedGemma",type:"Alphabet · Open weights",badge:"FOUNDATION MODEL",stats:[{l:"Sizes",v:"4B + 27B"},{l:"Context",v:"128K tokens"},{l:"MedQA",v:"64.4%"},{l:"License",v:"Open (HuggingFace)"}],desc:"Open medical AI foundation models on Gemma 3. MedGemma 1.0 (Jul 2025), MedGemma 1.5 (Apr 2026). Developer-focused, not a finished clinical product. Enables competitors to build cheaply. Multimodal (text + images).",url:"https://huggingface.co/google/medgemma-4b-it"},
+  {name:"Abridge",type:"Private · Best in KLAS 2025 & 2026",badge:"CONVERGING",stats:[{l:"Health systems",v:"300+"},{l:"Specialties",v:"200+"},{l:"Languages",v:"28"},{l:"EHR",v:"Epic native"}],desc:"AI scribe leader expanding into clinical evidence search. Announced NEJM/JAMA partnership Apr 15, 2026 — same content partners as OpenEvidence. Kaiser Permanente, Johns Hopkins, Mayo Clinic. 78% reduced cognitive load, 30 min/day saved.",url:"https://www.abridge.com"},
+  {name:"Ambience Healthcare",type:"Private · AI scribe + coding",badge:"ADJACENT",stats:[{l:"Utilization",v:"80%"},{l:"Revenue/clinician",v:"$13K/yr"},{l:"Specialties",v:"200+"},{l:"NPS",v:"60"}],desc:"AI documentation + coding platform. 80% utilization vs competitors at 26-40%. Deep Epic integration. 27% improvement in ICD-10 coding accuracy. Different category from OpenEvidence but competes for clinician attention.",url:"https://www.ambiencehealthcare.com"},
+  {name:"UpToDate / Wolters Kluwer",type:"Public (EURONEXT: WKL)",badge:"INCUMBENT",stats:[{l:"Founded",v:"1992"},{l:"Clinicians",v:"2M global"},{l:"Countries",v:"180"},{l:"Price",v:"$579/yr"}],desc:"The incumbent being disrupted. 30+ year brand, 7,600+ expert authors. ~70% of digital revenues from AI-powered solutions. Retrofitting AI but slower than AI-native competitors. OpenEvidence is free — UpToDate charges $579/year.",url:"https://en.wikipedia.org/wiki/UpToDate"},
+  {name:"Microsoft Dragon Copilot",type:"Microsoft · Former Nuance DAX",badge:"ADJACENT",stats:[{l:"Acquisition",v:"$19.7B (Nuance)"},{{l:"Category",v:"Speech + docs"}],desc:"Ambient documentation + speech recognition for EHR. Former Nuance DAX, now Microsoft. Deep Epic integration. Part of Microsoft Cloud for Healthcare. Different category — documentation, not medical search.",url:"https://www.microsoft.com/en-us/health-solutions"},
+  {name:"Pathway Medical",type:"Acquired by Doximity ($63M)",badge:"ACQUIRED",stats:[{l:"Status",v:"Acquired Jul 2025"},{l:"Sued by",v:"OpenEvidence Feb 2025"},{l:"Now part of",v:"Doximity AI Suite"}],desc:"Canadian AI startup building competing clinical reference tool. Sued by OpenEvidence for prompt injection attacks. Acquired by Doximity. Technology now integrated into Doximity's Clinical AI Suite.",url:"https://news.bloomberglaw.com/ip-law/medical-ai-firm-suit-says-prompt-stealing-hacks-stole-secrets"},
+  {name:"Vera Health",type:"Private · Limited info",badge:"SUED",stats:[{l:"Sued by",v:"OpenEvidence Jun 2025"},{l:"Claims",v:"Prompt injection"}],desc:"Sued by OpenEvidence in June 2025 on similar prompt injection claims as Pathway Medical and Doximity. Limited public information available about the company.",url:"https://news.bloomberglaw.com/ip-law/medical-ai-firm-says-competitor-hacked-prompts-to-steal-secrets"},
+  {name:"Glass Health",type:"Pivoted/Acquired",badge:"PIVOTED",stats:[{l:"Domain",v:"Redirects to glassmedical.ai"},{l:"Current focus",v:"Oncology trials"}],desc:"Original Glass Health was a clinical AI documentation startup. Domain now redirects to Glass Medical AI — a University of Amsterdam spin-out focused on oncology drug development. No longer a direct competitor.",url:"https://www.glassmedical.ai"},
+];
+
+const futureData = [
+  {icon:"🏥",name:"Non-Ad Enterprise Version",status:"In Development",statusClass:"status-dev",desc:"Separate non-ad-supported enterprise version for large health systems requiring greater customization. Distinct pricing tier above current free and ad-supported tiers. FHIR-based Epic integration."},
+  {icon:"💊",name:"Open Vista (with Veeva Systems)",status:"In Development",statusClass:"status-dev",desc:"Joint product with Veeva Systems targeting clinical-trial matching, drug discovery insight, and adoption of approved medicines. Positions OpenEvidence as infrastructure layer for pharmaceutical commercial operations."},
+  {icon:"📋",name:"Tandem Partnership (Prescribe & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the OpenEvidence platform."},
+  {icon:"🌐",name:"Global Expansion",status:"Inferred",statusClass:"status-inferred-future",desc:"Currently US-only. Nadler's mission references 'organize and expand global medical knowledge.' Wiley partnership mentions global expansion. No specific international launch announced."},
+  {icon:"📈",name:"IPO Potential",status:"Inferred",statusClass:"status-inferred-future",desc:"$12B valuation, $150M revenue, 90% margins, $700M funding. Comparable: Doximity IPO'd at ~$300M revenue. No public statements about IPO plans."},
+  {icon:"🤖",name:"Additional AI Agents",status:"Inferred",statusClass:"status-inferred-future",desc:"DeepConsult described as 'first AI agent' — implying more are planned. Potential: differential diagnosis, order set recommendations, discharge summaries."},
+  {icon:"🔌",name:"Deeper EHR Integration",status:"Inferred",statusClass:"status-inferred-future",desc:"Current: Epic FHIR at 3 health systems. Future: likely expansion to more EHR systems (Oracle-Cerner). Enterprise per-seat pricing would significantly increase ARPU from ~$124."},
+  {icon:"🏛️",name:"Institutional Care Pathways",status:"In Progress",statusClass:"status-dev",desc:"Cedars-Sinai plans to layer internal care pathways and protocols. Clinicians view external evidence alongside institutional guidance in single interface. Pattern likely to extend to other deployments."},
+];
+
+const partnersData = [
+  {name:"NEJM",type:"Content/Journal"},{name:"JAMA Network",type:"Content/Journal (11 journals)"},{name:"NCCN",type:"Cancer Guidelines"},
+  {name:"Cochrane",type:"Systematic Reviews"},{name:"Wiley",type:"Publisher"},{name:"ACC",type:"Cardiology"},
+  {name:"ADA",type:"Diabetes"},{name:"AAFP",type:"Family Physicians"},{name:"ACOG",type:"OB/GYN"},
+  {name:"ACEP",type:"Emergency Physicians"},{name:"NORD",type:"Rare Diseases"},{name:"AAOS",type:"Orthopaedic Surgeons"},
+  {name:"AAO",type:"Ophthalmology"},{name:"AAO-HNS",type:"Otolaryngology"},{name:"AUA",type:"Urology"},
+  {name:"AMA",type:"Medical Association"},{name:"GINA",type:"Asthma"},{name:"SSO",type:"Surgical Oncology"},
+  {name:"ASAM",type:"Addiction Medicine"},{name:"SNO",type:"Neuro-Oncology"},{name:"WMS",type:"Wilderness Medicine"},
+  {name:"IPMDS",type:"Postconcussive Symptoms"},{name:"Mayo Clinic",type:"Accelerator (2023)"},
+  {name:"Sutter Health",type:"Health System (Feb 2026)"},{name:"Mount Sinai",type:"Health System (Mar 2026)"},
+  {name:"Cedars-Sinai",type:"Health System (May 2026)"},{name:"Vercel",type:"Frontend Hosting"},
+  {name:"Baseten",type:"AI Inference"},{name:"Google Cloud",type:"Backend Cloud"},
+  {name:"Nvidia",type:"Investor + Compute"},{name:"Amaro",type:"Ad Tech (Acquired)"},
+  {name:"Veeva Systems",type:"Commercial Partnership"},{name:"Tandem",type:"Prescriptions & Prior Auth"},
+];
+
+const sourcesData = [
+  {name:"Sacra Equity Research",url:"https://sacra.com/c/openevidence/"},
+  {name:"Sacra — OpenEvidence vs Doximity",url:"https://sacra.com/research/openevidence-vs-doximity/"},
+  {name:"PRNewswire — Series B + DeepConsult",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {name:"PRNewswire — Amaro Acquisition",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
+  {name:"PRNewswire — Coding Intelligence",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
+  {name:"Forbes — Series C $6B Valuation",url:"https://www.forbes.com/sites/amyfeldman/2025/10/20/openevidences-daniel-nadler-13-billion-richer-in-just-three-months-after-the-ai-startup-hits-6-billion-valuation/"},
+  {name:"CNBC — Series A Announcement",url:"https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html"},
+  {name:"Vercel Blog — How OpenEvidence Built a Healthcare AI",url:"https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust"},
+  {name:"Baseten — OpenEvidence Case Study",url:"https://www.baseten.co/resources/customers/openevidence-delivers-instant-medical-information-with-baseten/"},
+  {name:"Baseten — Training Case Study",url:"https://www.baseten.co/resources/customers/openevidence-baseten-training/"},
+  {name:"Bloomberg Law — Doximity Lawsuit",url:"https://news.bloomberglaw.com/ip-law/medical-ai-firm-says-competitor-hacked-prompts-to-steal-secrets"},
+  {name:"Bloomberg Law — Pathway Lawsuit",url:"https://news.bloomberglaw.com/ip-law/medical-ai-firm-suit-says-prompt-stealing-hacks-stole-secrets"},
+  {name:"Bloomberg Law — Doximity Motion to Dismiss",url:"https://news.bloomberglaw.com/ip-law/openevidence-rips-doximity-harassment-defamation-counterclaims"},
+  {name:"Boston Globe — OpenEvidence vs Doximity",url:"https://www.bostonglobe.com/2025/06/24/business/openevidence-ai-doximity-lawsuit/"},
+  {name:"Business Insider — OpenEvidence vs Doximity Clash",url:"https://www.businessinsider.com/doximity-openevidence-suing-each-other-as-doctor-ai-war-rages-2025-9"},
+  {name:"Wikipedia — OpenEvidence",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {name:"Wikipedia — Doximity",url:"https://en.wikipedia.org/wiki/Doximity"},
+  {name:"Wikipedia — UpToDate",url:"https://en.wikipedia.org/wiki/UpToDate"},
+  {name:"OpenEvidence — Announcements",url:"https://www.openevidence.com/announcements"},
+  {name:"OpenEvidence — Sutter Health",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
+  {name:"OpenEvidence — Mount Sinai",url:"https://www.openevidence.com/announcements/mount-sinai-health-system-collaborates-with-openevidence-to-provide-evidence-based-knowledge-within-electronic-medical-record"},
+  {name:"OpenEvidence — Dotflows",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
+  {name:"OpenEvidence — Coding Intelligence",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {name:"OpenEvidence — Visits",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
+  {name:"Healthcare IT News — Mount Sinai",url:"https://www.healthcareitnews.com/news/mount-sinai-integrate-openevidence-ai-enterprise-wide"},
+  {name:"Fierce Healthcare — $210M Series B",url:"https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-raises-210m-unveils-ai-agents-built-advanced-medical-research"},
+  {name:"Fierce Healthcare — Coding Intelligence",url:"https://www.fiercehealthcare.com/health-tech/openevidence-rolls-out-ai-medical-coding-feature"},
+  {name:"Modern Healthcare — Coding Intelligence",url:"https://www.modernhealthcare.com/health-tech/mh--4/"},
+  {name:"PYMNTS — ChatGPT for Clinicians",url:"https://www.pymnts.com/artificial-intelligence-2/2026/openai-treats-healthcare-with-new-chatgpt-for-clinicians/"},
+  {name:"MobiHealthNews — ChatGPT for Clinicians",url:"https://www.mobihealthnews.com/news/openai-launches-chatgpt-clinicians"},
+  {name:"Brandfetch — OpenEvidence Brand",url:"https://brandfetch.com/openevidence.com"},
+  {name:"Beck Reed Riden — Legal Analysis",url:"https://beckreedriden.com/trade-secrets-and-ai-litigation-doximitys-motion-to-dismiss-in-the-openevidence-case/"},
+  {name:"Tracxn — Company Profile",url:"https://tracxn.com/d/companies/openevidence/__bEDUDh0-_ZXcG4j_siS3Wy4Feg6wbJzz7p9PcC6aIQk"},
+  {name:"IatroX — Clinical AI Analysis",url:"https://www.iatrox.com/blog/openevidence-coding-intelligence-why-evidence-engine-moving-into-billing-2026"},
+  {name:"Cadepartners — Clinical AI Stack",url:"https://www.cadepartners.com/insights/openai-openevidence-and-the-new-clinical-ai-stack"},
+  {name:"Healthcare Digital — 2026 Outlook",url:"https://www.healthcare.digital/single-post/openevidence-chatgpt-for-doctors-2026-plans-and-strategic-outlook"},
+];
+
+// RENDER TIMELINE
+function renderTimeline(filter) {
+  const el = document.getElementById('timelineList');
+  const filtered = filter === 'all' ? timelineData : timelineData.filter(d => d.cat === filter);
+  el.innerHTML = filtered.map(d => `
+    <div class="timeline-item">
+      <div class="date">${d.date}</div>
+      <div><span class="category-tag cat-${d.cat}">${d.cat}</span></div>
+      <div class="title">${d.title}</div>
+      <div class="desc">${d.desc}</div>
+      <div class="source">Source: <a href="${d.url}" target="_blank" rel="noopener">${d.src}</a></div>
+    </div>
+  `).join('');
+}
+
+// FILTERS
+document.getElementById('timelineFilters').addEventListener('click', (e) => {
+  if (e.target.classList.contains('filter-btn')) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    renderTimeline(e.target.dataset.filter);
+  }
+});
+
+renderTimeline('all');
+
+// RENDER PRODUCTS
+document.getElementById('productsList').innerHTML = productsData.map(p => `
+  <div class="feature-card">
+    <div class="icon">${p.icon}</div>
+    <div class="content">
+      <h4>${p.name} <span class="status-badge status-released">${p.status}</span></h4>
+      <p><strong>Launched:</strong> ${p.date}</p>
+      <p>${p.desc}</p>
+    </div>
+  </div>
+`).join('');
+
+// RENDER COMPETITORS
+document.getElementById('competitorGrid').innerHTML = competitorsData.map(c => `
+  <div class="competitor-card">
+    <div class="badge">${c.badge}</div>
+    <h3>${c.name}</h3>
+    <div class="type">${c.type}</div>
+    <div class="stats">
+      ${c.stats.map(s => `<div class="stat"><span style="color:var(--oe-text-muted)">${s.l}:</span> <span class="v">${s.v}</span></div>`).join('')}
+    </div>
+    <div class="desc">${c.desc}</div>
+    <div class="source"><a href="${c.url}" target="_blank" rel="noopener">Source →</a></div>
+  </div>
+`).join('');
+
+// RENDER FUTURE
+document.getElementById('futureList').innerHTML = futureData.map(f => `
+  <div class="feature-card">
+    <div class="icon">${f.icon}</div>
+    <div class="content">
+      <h4>${f.name} <span class="status-badge ${f.statusClass}">${f.status}</span></h4>
+      <p>${f.desc}</p>
+    </div>
+  </div>
+`).join('');
+
+// RENDER PARTNERS
+document.getElementById('partnerGrid').innerHTML = partnersData.map(p => `
+  <div class="partner-item">
+    <div class="name">${p.name}</div>
+    <div class="type">${p.type}</div>
+  </div>
+`).join('');
+
+// RENDER SOURCES
+document.getElementById('sourceList').innerHTML = sourcesData.map(s => `
+  <div class="source-item">
+    <a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>
+    <div class="name">${s.url}</div>
+  </div>
+`).join('');
+
+// CHARTS
+const chartColor = '#E4643D';
+const chartColorLight = 'rgba(228,100,61,0.15)';
+const gridColor = 'rgba(255,255,255,0.05)';
+const textColor = '#9CA8A0';
+
+function getThemeColors() {
+  const isDark = document.documentElement.classList.contains('dark');
+  return {
+    grid: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)',
+    text: isDark ? '#9CA8A0' : '#4A5A50'
+  };
+}
+
+function makeChart(id, labels, data, label, type='line') {
+  const ctx = document.getElementById(id).getContext('2d');
+  const tc = getThemeColors();
+  return new Chart(ctx, {
+    type: type,
+    data: {
+      labels: labels,
+      datasets: [{
+        label: label,
+        data: data,
+        borderColor: chartColor,
+        backgroundColor: chartColorLight,
+        borderWidth: 2,
+        fill: type === 'line',
+        tension: 0.3,
+        pointBackgroundColor: chartColor,
+        pointRadius: 5,
+        pointHoverRadius: 7,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#1A2520',
+          titleColor: chartColor,
+          bodyColor: '#E8E6E1',
+          borderColor: '#2D3D32',
+          borderWidth: 1,
+        }
+      },
+      scales: {
+        x: { grid: { color: tc.grid }, ticks: { color: tc.text } },
+        y: { grid: { color: tc.grid }, ticks: { color: tc.text } }
+      }
+    }
+  });
+}
+
+let charts = [];
+
+function buildCharts() {
+  charts.forEach(c => c.destroy());
+  charts = [];
+
+  // Consultations
+  charts.push(makeChart('chartConsultations',
+    ['Jul 2024','Jan 2025','Jul 2025','Oct 2025','Dec 2025','Jan 2026','May 2026'],
+    [358000, 3000000, 8500000, 16500000, 18000000, 20000000, 30000000],
+    'Monthly Consultations'
+  ));
+
+  // Physicians
+  charts.push(makeChart('chartPhysicians',
+    ['Jul 2024','Jul 2025','Oct 2025','Dec 2025','Jan 2026','May 2026'],
+    [358000, 430000, 600000, 760000, 760000, 900000],
+    'Registered Physicians'
+  ));
+
+  // Valuation
+  charts.push(makeChart('chartValuation',
+    ['Feb 2025','Jul 2025','Oct 2025','Jan 2026'],
+    [1, 3.5, 6, 12],
+    'Valuation ($B)'
+  ));
+
+  // Revenue
+  charts.push(makeChart('chartRevenue',
+    ['Dec 2024','Jun 2025','Oct 2025','Nov 2025','Jan 2026'],
+    [7.9, 50, 100, 150, 150],
+    'Annualized Revenue ($M)'
+  ));
+
+  // Funding cumulative
+  charts.push(makeChart('chartFunding',
+    ['Series A\nFeb 2025','Series B\nJul 2025','Series C\nOct 2025','Series D\nJan 2026'],
+    [75, 285, 485, 735],
+    'Cumulative Funding ($M)'
+  ));
+
+  // Funding waterfall — bar chart
+  const ctx6 = document.getElementById('chartFundingWaterfall').getContext('2d');
+  const tc = getThemeColors();
+  charts.push(new Chart(ctx6, {
+    type: 'bar',
+    data: {
+      labels: ['Series A\nFeb 2025','Series B\nJul 2025','Series C\nOct 2025','Series D\nJan 2026'],
+      datasets: [{
+        label: 'Round Amount ($M)',
+        data: [75, 210, 200, 250],
+        backgroundColor: [chartColorLight, 'rgba(228,100,61,0.3)', 'rgba(228,100,61,0.5)', 'rgba(228,100,61,0.7)'],
+        borderColor: chartColor,
+        borderWidth: 2,
+        borderRadius: 6,
+      },{
+        label: 'Valuation ($B)',
+        data: [1, 3.5, 6, 12],
+        backgroundColor: 'rgba(45,90,61,0.3)',
+        borderColor: '#6BAF7D',
+        borderWidth: 2,
+        borderRadius: 6,
+        yAxisID: 'y1',
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: tc.text } },
+        tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' }
+      },
+      scales: {
+        x: { grid: { color: tc.grid }, ticks: { color: tc.text } },
+        y: { grid: { color: tc.grid }, ticks: { color: tc.text }, title: { display: true, text: 'Funding ($M)', color: tc.text } },
+        y1: { position: 'right', grid: { display: false }, ticks: { color: tc.text }, title: { display: true, text: 'Valuation ($B)', color: tc.text } }
+      }
+    }
+  }));
+}
+
+buildCharts();
+
+// THEME TOGGLE
+function toggleTheme() {
+  const isDark = document.documentElement.classList.toggle('dark');
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  document.querySelector('.theme-toggle').textContent = isDark ? '☀ Light' : '☾ Dark';
+  buildCharts();
+}
+</script>
+
+</body>
+</html>
