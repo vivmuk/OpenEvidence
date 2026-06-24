@@ -97,6 +97,10 @@ nav .theme-toggle { background: none; border: 1px solid var(--oe-dark-border); c
 .stat-card .value { font-family: var(--oe-font); font-size: 32px; font-weight: 400; color: var(--oe-orange); margin-bottom: 4px; }
 .stat-card .label { font-size: 13px; color: var(--oe-text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
 .stat-card .sub { font-size: 12px; color: var(--oe-text-dim); margin-top: 4px; }
+.stat-card .source-link { display: block; font-size: 11px; color: var(--oe-orange); text-decoration: none; margin-top: 4px; opacity: 0.7; }
+.stat-card .source-link:hover { opacity: 1; text-decoration: underline; }
+.stat-card .sub a { color: var(--oe-text-dim); text-decoration: none; }
+.stat-card .sub a:hover { color: var(--oe-orange); text-decoration: underline; }
 
 /* SECTIONS */
 section { padding: 60px 0; border-top: 1px solid var(--oe-dark-border); }
@@ -116,6 +120,10 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 .chart-container .chart-sub { font-size: 13px; color: var(--oe-text-muted); margin-bottom: 16px; }
 .chart-wrapper { position: relative; height: 300px; }
 .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 24px; }
+
+.chart-container .chart-sources { font-size: 11px; color: var(--oe-text-muted); margin-top: 8px; }
+.chart-container .chart-sources a { color: var(--oe-orange); text-decoration: none; }
+.chart-container .chart-sources a:hover { text-decoration: underline; }
 
 /* TIMELINE */
 .timeline { position: relative; padding-left: 32px; }
@@ -201,6 +209,9 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 .status-known { background: rgba(45,90,61,0.3); color: #6BAF7D; }
 .status-inferred { background: rgba(200,150,50,0.15); color: #D4A94E; }
 
+.tech-row .source-link { font-size: 10px; color: var(--oe-orange); text-decoration: none; margin-left: 4px; }
+.tech-row .source-link:hover { text-decoration: underline; }
+
 /* FUNDING TABLE */
 .funding-table { width: 100%; border-collapse: collapse; }
 .funding-table th { text-align: left; font-size: 12px; text-transform: uppercase; color: var(--oe-text-muted); padding: 12px 16px; border-bottom: 1px solid var(--oe-dark-border); }
@@ -228,6 +239,10 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 .status-released { background: rgba(45,90,61,0.3); color: #6BAF7D; }
 .status-dev { background: rgba(200,150,50,0.15); color: #D4A94E; }
 .status-inferred-future { background: rgba(100,100,100,0.15); color: var(--oe-text-dim); }
+
+.feature-card .content .src-link { font-size: 12px; margin-top: 6px; }
+.feature-card .content .src-link a { color: var(--oe-orange); text-decoration: none; }
+.feature-card .content .src-link a:hover { text-decoration: underline; }
 
 /* FOOTER */
 footer { padding: 40px 0; border-top: 1px solid var(--oe-dark-border); text-align: center; }
@@ -275,42 +290,42 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <div class="stat-card">
       <div class="value">$12B</div>
       <div class="label">Valuation</div>
-      <div class="sub">Jan 2026 · Series D</div>
+      <div class="sub">Jan 2026 · Series D · <a href="https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html" target="_blank">CNBC</a></div>
     </div>
     <div class="stat-card">
       <div class="value">50%+</div>
       <div class="label">US Physicians</div>
-      <div class="sub">Daily active users</div>
+      <div class="sub">Daily active · <a href="https://www.nytimes.com" target="_blank">NYT</a></div>
     </div>
     <div class="stat-card">
       <div class="value">30M</div>
       <div class="label">Monthly Consultations</div>
-      <div class="sub">May 2026 · NYT</div>
+      <div class="sub">May 2026 · <a href="https://www.nytimes.com" target="_blank">NYT</a></div>
     </div>
     <div class="stat-card">
       <div class="value">$150M</div>
       <div class="label">Annualized Revenue</div>
-      <div class="sub">Nov 2025 · 90% margins</div>
+      <div class="sub">Nov 2025 · 90% margins · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></div>
     </div>
     <div class="stat-card">
       <div class="value">$700M</div>
       <div class="label">Total Funding</div>
-      <div class="sub">4 rounds in 12 months</div>
+      <div class="sub">4 rounds · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></div>
     </div>
     <div class="stat-card">
       <div class="value">10K+</div>
       <div class="label">Hospitals</div>
-      <div class="sub">Nationwide</div>
+      <div class="sub">Nationwide · <a href="https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html" target="_blank">PRNewswire</a></div>
     </div>
     <div class="stat-card">
       <div class="value">25+</div>
       <div class="label">Content Partners</div>
-      <div class="sub">NEJM · JAMA · NCCN · Cochrane</div>
+      <div class="sub"><a href="https://www.openevidence.com" target="_blank">OpenEvidence.com</a></div>
     </div>
     <div class="stat-card">
       <div class="value">123</div>
       <div class="label">Employees</div>
-      <div class="sub">LinkedIn · Miami HQ</div>
+      <div class="sub"><a href="https://www.linkedin.com/company/openevidence/" target="_blank">LinkedIn</a></div>
     </div>
   </div>
 </div>
@@ -323,27 +338,27 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <div class="charts-grid">
       <div class="chart-container">
         <h3>Monthly Consultations Over Time</h3>
-        <p class="chart-sub">From 358K/month (Jul 2024) to 27M/month (Apr 2026) — 75x growth</p>
+        <p class="chart-sub">From 358K/month (Jul 2024) to 30M/month (May 2026) — 75x growth · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a> · <a href="https://www.nytimes.com" target="_blank">NYT</a></p>
         <div class="chart-wrapper"><canvas id="chartConsultations"></canvas></div>
       </div>
       <div class="chart-container">
         <h3>Registered Physicians Over Time</h3>
-        <p class="chart-sub">From 358K to 760K+ — reaching 80%+ of all US physicians</p>
+        <p class="chart-sub">From 358K to 760K+ — reaching 80%+ of all US physicians · <a href="https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html" target="_blank">PRNewswire</a></p>
         <div class="chart-wrapper"><canvas id="chartPhysicians"></canvas></div>
       </div>
       <div class="chart-container">
         <h3>Valuation Growth ($B)</h3>
-        <p class="chart-sub">$1B → $3.5B → $6B → $12B in 12 months</p>
+        <p class="chart-sub">$1B → $3.5B → $6B → $12B in 12 months · <a href="https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html" target="_blank">CNBC</a></p>
         <div class="chart-wrapper"><canvas id="chartValuation"></canvas></div>
       </div>
       <div class="chart-container">
         <h3>Annualized Revenue ($M)</h3>
-        <p class="chart-sub">$7.9M → $50M → $150M — 1,803% YoY growth</p>
+        <p class="chart-sub">$7.9M → $50M → $150M — 1,803% YoY growth · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></p>
         <div class="chart-wrapper"><canvas id="chartRevenue"></canvas></div>
       </div>
       <div class="chart-container" style="grid-column: 1 / -1;">
         <h3>Total Funding Raised ($M)</h3>
-        <p class="chart-sub">Cumulative funding across 4 rounds: Series A ($75M) → B ($210M) → C ($200M) → D ($250M)</p>
+        <p class="chart-sub">Cumulative funding across 4 rounds: Series A ($75M) → B ($210M) → C ($200M) → D ($250M) · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></p>
         <div class="chart-wrapper"><canvas id="chartFunding"></canvas></div>
       </div>
     </div>
@@ -548,52 +563,52 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 16px;">
       <div class="tech-layer">
         <h3><span class="icon">🎨</span> Frontend</h3>
-        <div class="tech-row"><span class="label">Framework</span><span class="value">Next.js <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Hosting</span><span class="value">Vercel (Fluid Compute) <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Framework</span><span class="value">Next.js <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+        <div class="tech-row"><span class="label">Hosting</span><span class="value">Vercel (Fluid Compute) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
         <div class="tech-row"><span class="label">CDN</span><span class="value">Vercel Edge Network <span class="status status-inferred">INFERRED</span></span></div>
-        <div class="tech-row"><span class="label">Cost</span><span class="value"><5% of total infra <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Deploy pipeline</span><span class="value">Auto-deploy on commit ~5min <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Cost</span><span class="value"><5% of total infra <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+        <div class="tech-row"><span class="label">Deploy pipeline</span><span class="value">Auto-deploy on commit ~5min <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
       </div>
       <div class="tech-layer">
         <h3><span class="icon">⚙️</span> Backend</h3>
-        <div class="tech-row"><span class="label">Language</span><span class="value">Python <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Cloud</span><span class="value">Google Cloud Platform <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Container orchestration</span><span class="value">Kubernetes (via Baseten MCM) <span class="status status-inferred">INFERRED</span></span></div>
+        <div class="tech-row"><span class="label">Language</span><span class="value">Python <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+        <div class="tech-row"><span class="label">Cloud</span><span class="value">Google Cloud Platform <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+        <div class="tech-row"><span class="label">Container orchestration</span><span class="value">Kubernetes (via Baseten MCM) <span class="status status-inferred">INFERRED</span> <a class="source-link" href="https://www.baseten.co/blog/how-we-built-multi-cloud-capacity-management/" target="_blank">Baseten</a></span></div>
         <div class="tech-row"><span class="label">API layer</span><span class="value">REST/GraphQL <span class="status status-inferred">INFERRED</span></span></div>
-        <div class="tech-row"><span class="label">Monitoring</span><span class="value">GCP-native + Baseten observability <span class="status status-inferred">INFERRED</span></span></div>
+        <div class="tech-row"><span class="label">Monitoring</span><span class="value">GCP-native + Baseten <span class="status status-inferred">INFERRED</span></span></div>
       </div>
       <div class="tech-layer">
         <h3><span class="icon">🧠</span> AI / ML Infrastructure</h3>
-        <div class="tech-row"><span class="label">Inference platform</span><span class="value">Baseten Inference Stack <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Model type</span><span class="value">Vertical LLM on licensed medical texts <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Embeddings</span><span class="value">Baseten BEI (160ms latency) <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Training</span><span class="value">Baseten Training (23x faster) <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Multi-cloud compute</span><span class="value">Baseten MCM (10+ clouds) <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">RAG pipeline</span><span class="value">Deterministic citation linking <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Inference platform</span><span class="value">Baseten Inference Stack <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/resources/customers/openevidence-delivers-instant-medical-information-with-baseten/" target="_blank">Baseten</a></span></div>
+        <div class="tech-row"><span class="label">Model type</span><span class="value">Vertical LLM on licensed medical texts <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        <div class="tech-row"><span class="label">Embeddings</span><span class="value">Baseten BEI (160ms latency) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/blog/introducing-baseten-embeddings-inference-bei/" target="_blank">Baseten</a></span></div>
+        <div class="tech-row"><span class="label">Training</span><span class="value">Baseten Training (23x faster) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/resources/customers/openevidence-baseten-training/" target="_blank">Baseten</a></span></div>
+        <div class="tech-row"><span class="label">Multi-cloud compute</span><span class="value">Baseten MCM (10+ clouds) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/blog/how-we-built-multi-cloud-capacity-management/" target="_blank">Baseten</a></span></div>
+        <div class="tech-row"><span class="label">RAG pipeline</span><span class="value">Deterministic citation linking <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
         <div class="tech-row"><span class="label">Vector database</span><span class="value">Dedicated vector store <span class="status status-inferred">INFERRED</span></span></div>
-        <div class="tech-row"><span class="label">Volume</span><span class="value">Billions of requests/week <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">USMLE score</span><span class="value">100% (first AI to achieve) <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Volume</span><span class="value">Billions of requests/week <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/resources/customers/openevidence-delivers-instant-medical-information-with-baseten/" target="_blank">Baseten</a></span></div>
+        <div class="tech-row"><span class="label">USMLE score</span><span class="value">100% (first AI to achieve) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://en.wikipedia.org/wiki/OpenEvidence" target="_blank">Wikipedia</a></span></div>
       </div>
       <div class="tech-layer">
         <h3><span class="icon">🏥</span> EHR & Compliance</h3>
-        <div class="tech-row"><span class="label">EHR integration</span><span class="value">Epic (FHIR API) <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Compliance</span><span class="value">HIPAA + BAA support <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Physician verification</span><span class="value">NPI registry API <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Data handling</span><span class="value">Patient data not stored <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">EHR integration</span><span class="value">Epic (FHIR API) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        <div class="tech-row"><span class="label">Compliance</span><span class="value">HIPAA + BAA support <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        <div class="tech-row"><span class="label">Physician verification</span><span class="value">NPI registry API <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        <div class="tech-row"><span class="label">Data handling</span><span class="value">Patient data not stored <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
       </div>
       <div class="tech-layer">
         <h3><span class="icon">💰</span> Ad Tech & Revenue</h3>
-        <div class="tech-row"><span class="label">Ad infrastructure</span><span class="value">Amaro (acquired GV-backed) <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">CPM range</span><span class="value">$70–$1,000+ <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">ARPU</span><span class="value">~$124 <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Gross margins</span><span class="value">90% <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Advertisers</span><span class="value">Pharma & medical device companies <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Ad infrastructure</span><span class="value">Amaro (acquired GV-backed) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html" target="_blank">PRNewswire</a></span></div>
+        <div class="tech-row"><span class="label">CPM range</span><span class="value">$70–$1,000+ <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        <div class="tech-row"><span class="label">ARPU</span><span class="value">~$124 <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        <div class="tech-row"><span class="label">Gross margins</span><span class="value">90% <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        <div class="tech-row"><span class="label">Advertisers</span><span class="value">Pharma & medical device companies <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
       </div>
       <div class="tech-layer">
         <h3><span class="icon">📚</span> Licensed Data Sources</h3>
-        <div class="tech-row"><span class="label">Journals</span><span class="value">NEJM, JAMA (11 specialty), Wiley <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Societies</span><span class="value">NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more <span class="status status-known">KNOWN</span></span></div>
-        <div class="tech-row"><span class="label">Research</span><span class="value">Cochrane Systematic Reviews <span class="status status-known">KNOWN</span></span></div>
+        <div class="tech-row"><span class="label">Journals</span><span class="value">NEJM, JAMA (11 specialty), Wiley <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.openevidence.com" target="_blank">OpenEvidence</a></span></div>
+        <div class="tech-row"><span class="label">Societies</span><span class="value">NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.openevidence.com" target="_blank">OpenEvidence</a></span></div>
+        <div class="tech-row"><span class="label">Research</span><span class="value">Cochrane Systematic Reviews <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.openevidence.com" target="_blank">OpenEvidence</a></span></div>
         <div class="tech-row"><span class="label">Drug database</span><span class="value">Likely integrated (not disclosed) <span class="status status-inferred">INFERRED</span></span></div>
       </div>
     </div>
@@ -679,16 +694,16 @@ const timelineData = [
 ];
 
 const productsData = [
-  {icon:"🔍",name:"Core Search Platform",date:"2022",status:"Released",desc:"AI-powered medical search engine for verified U.S. physicians. Returns evidence-based answers in 5-10 seconds with citations from NEJM, JAMA, NCCN, Cochrane, and 20+ more partners."},
-  {icon:"🧠",name:"DeepConsult",date:"Jul 15, 2025",status:"Released",desc:"First AI agent purpose-built for physicians. Uses advanced reasoning models to cross-reference hundreds of peer-reviewed studies in parallel. Each run requires 100x+ compute of standard search. Delivers PhD-level research reports."},
-  {icon:"📝",name:"Visits (AI Scribe)",date:"Aug 15, 2025",status:"Released",desc:"Clinical documentation tool that transcribes patient encounters and enriches assessment & plan with latest guidelines and research. Competes with Abridge, Ambience, and Microsoft Dragon. Free for verified clinicians."},
-  {icon:"💰",name:"Amaro Acquisition (Ad Tech)",date:"Sep 10, 2025",status:"Released",desc:"Acquired GV-backed AI-native advertising startup to strengthen ad-monetization infrastructure. Founded by Kush and Sauren Khosla. Enables optimized pharma ad deployment."},
-  {icon:"📞",name:"Doctor Dialer",date:"Dec 2025",status:"Released",desc:"HIPAA-secure dialer for doctor-patient communication. Calling, messaging, faxing, voicemail. 37M minutes of communication since limited release. Caller ID shows hospital number, not personal."},
-  {icon:"🧬",name:"Clinical Trial Matching",date:"Feb 2026",status:"Released",desc:"Filters clinical trials by study design, enrollment status, and geographic proximity. Helps care teams find accessible, medically appropriate options for patients."},
-  {icon:"💳",name:"Coding Intelligence",date:"Mar 24, 2026",status:"Released",desc:"Automates medical coding — ICD-10, E/M, CPT suggestions inline as clinicians document. Shows RVU values. Automatic CPT sequencing to maximize reimbursement. MDM rationale generation."},
-  {icon:"⚡",name:"Dotflows",date:"Apr 7, 2026",status:"Released",desc:"AI-native customization — reusable natural language prompts that customize how OpenEvidence responds. Community library of shared workflows. Type '.' in search bar to invoke. Examples: .avs, .fmla, .discharge, .prior_auth."},
-  {icon:"🎤",name:"Voice Mode",date:"May 2026",status:"Released",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 26-second teaser video published on YouTube. Enables clinicians to ask questions verbally and receive spoken answers."},
-  {icon:"🗣️",name:"Voices (Note Formatting)",date:"Feb 2026",status:"Released",desc:"Customizable note formatting styles. Clinicians can define how their clinical notes are structured and formatted through the Visits documentation workflow."},
+  {icon:"🔍",name:"Core Search Platform",date:"2022",status:"Released",desc:"AI-powered medical search engine for verified U.S. physicians. Returns evidence-based answers in 5-10 seconds with citations from NEJM, JAMA, NCCN, Cochrane, and 20+ more partners.",url:"https://www.openevidence.com"},
+  {icon:"🧠",name:"DeepConsult",date:"Jul 15, 2025",status:"Released",desc:"First AI agent purpose-built for physicians. Uses advanced reasoning models to cross-reference hundreds of peer-reviewed studies in parallel. Each run requires 100x+ compute of standard search. Delivers PhD-level research reports.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {icon:"📝",name:"Visits (AI Scribe)",date:"Aug 21, 2025",status:"Released",desc:"Clinical documentation tool that transcribes patient encounters and enriches assessment & plan with latest guidelines and research. Competes with Abridge, Ambience, and Microsoft Dragon. Free for verified clinicians.",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
+  {icon:"💰",name:"Amaro Acquisition (Ad Tech)",date:"Sep 10, 2025",status:"Released",desc:"Acquired GV-backed AI-native advertising startup to strengthen ad-monetization infrastructure. Founded by Kush and Sauren Khosla. Enables optimized pharma ad deployment.",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
+  {icon:"📞",name:"Doctor Dialer",date:"Dec 2025",status:"Released",desc:"HIPAA-secure dialer for doctor-patient communication. Calling, messaging, faxing, voicemail. 37M minutes of communication since limited release. Caller ID shows hospital number, not personal.",url:"https://www.openevidence.com/announcements/messaging-faxing-and-voicemail-are-now-live-in-the-openevidence-dialer"},
+  {icon:"🧬",name:"Clinical Trial Matching",date:"Feb 2026",status:"Released",desc:"Automatically surfaces active/recruiting clinical trials and evaluates each against patient clinical context. Filters by disease, treatment history, eligibility, location.",url:"https://www.openevidence.com/user-guide/clinical-trials"},
+  {icon:"💳",name:"Coding Intelligence",date:"Mar 24, 2026",status:"Released",desc:"Automates medical coding — ICD-10, E/M, CPT suggestions inline as clinicians document. Shows RVU values. Automatic CPT sequencing to maximize reimbursement. MDM rationale generation.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {icon:"⚡",name:"Dotflows",date:"Apr 7, 2026",status:"Released",desc:"AI-native customization — reusable natural language prompts that customize how OpenEvidence responds. Community library of shared workflows. Type '.' in search bar to invoke. Examples: .avs, .fmla, .discharge, .prior_auth.",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
+  {icon:"🎤",name:"Voice Mode",date:"May 2026",status:"Released",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 26-second teaser video published on YouTube. Enables clinicians to ask questions verbally and receive spoken answers.",url:"https://www.youtube.com/@OpenEvidence"},
+  {icon:"🗣️",name:"Voices (Note Formatting)",date:"Feb 2026",status:"Released",desc:"Customizable note formatting styles. Clinicians can define how their clinical notes are structured and formatted through the Visits documentation workflow.",url:"https://www.openevidence.com"},
 ];
 
 const competitorsData = [
@@ -705,14 +720,14 @@ const competitorsData = [
 ];
 
 const futureData = [
-  {icon:"🏥",name:"Non-Ad Enterprise Version",status:"In Development",statusClass:"status-dev",desc:"Separate non-ad-supported enterprise version for large health systems requiring greater customization. Distinct pricing tier above current free and ad-supported tiers. FHIR-based Epic integration."},
-  {icon:"💊",name:"Open Vista (with Veeva Systems)",status:"In Development",statusClass:"status-dev",desc:"Joint product with Veeva Systems targeting clinical-trial matching, drug discovery insight, and adoption of approved medicines. Positions OpenEvidence as infrastructure layer for pharmaceutical commercial operations."},
-  {icon:"📋",name:"Tandem Partnership (Prescribe & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the OpenEvidence platform."},
-  {icon:"🌐",name:"Global Expansion",status:"Inferred",statusClass:"status-inferred-future",desc:"Currently US-only. Nadler's mission references 'organize and expand global medical knowledge.' Wiley partnership mentions global expansion. No specific international launch announced."},
-  {icon:"📈",name:"IPO Potential",status:"Inferred",statusClass:"status-inferred-future",desc:"$12B valuation, $150M revenue, 90% margins, $700M funding. Comparable: Doximity IPO'd at ~$300M revenue. No public statements about IPO plans."},
-  {icon:"🤖",name:"Additional AI Agents",status:"Inferred",statusClass:"status-inferred-future",desc:"DeepConsult described as 'first AI agent' — implying more are planned. Potential: differential diagnosis, order set recommendations, discharge summaries."},
-  {icon:"🔌",name:"Deeper EHR Integration",status:"Inferred",statusClass:"status-inferred-future",desc:"Current: Epic FHIR at 3 health systems. Future: likely expansion to more EHR systems (Oracle-Cerner). Enterprise per-seat pricing would significantly increase ARPU from ~$124."},
-  {icon:"🏛️",name:"Institutional Care Pathways",status:"In Progress",statusClass:"status-dev",desc:"Cedars-Sinai plans to layer internal care pathways and protocols. Clinicians view external evidence alongside institutional guidance in single interface. Pattern likely to extend to other deployments."},
+  {icon:"🏥",name:"Non-Ad Enterprise Version",status:"In Development",statusClass:"status-dev",desc:"Separate non-ad-supported enterprise version for large health systems requiring greater customization. Distinct pricing tier above current free and ad-supported tiers. FHIR-based Epic integration.",url:"https://sacra.com/c/openevidence/"},
+  {icon:"💊",name:"Open Vista (with Veeva Systems)",status:"In Development",statusClass:"status-dev",desc:"Joint product with Veeva Systems targeting clinical-trial matching, drug discovery insight, and adoption of approved medicines. Positions OpenEvidence as infrastructure layer for pharmaceutical commercial operations.",url:"https://sacra.com/c/openevidence/"},
+  {icon:"📋",name:"Tandem Partnership (Prescribe & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the OpenEvidence platform.",url:"https://sacra.com/c/openevidence/"},
+  {icon:"🌐",name:"Global Expansion",status:"Inferred",statusClass:"status-inferred-future",desc:"Currently US-only. Nadler's mission references 'organize and expand global medical knowledge.' Wiley partnership mentions global expansion. No specific international launch announced.",url:"https://www.openevidence.com"},
+  {icon:"📈",name:"IPO Potential",status:"Inferred",statusClass:"status-inferred-future",desc:"$12B valuation, $150M revenue, 90% margins, $700M funding. Comparable: Doximity IPO'd at ~$300M revenue. No public statements about IPO plans.",url:"https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html"},
+  {icon:"🤖",name:"Additional AI Agents",status:"Inferred",statusClass:"status-inferred-future",desc:"DeepConsult described as 'first AI agent' — implying more are planned. Potential: differential diagnosis, order set recommendations, discharge summaries.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {icon:"🔌",name:"Deeper EHR Integration",status:"Inferred",statusClass:"status-inferred-future",desc:"Current: Epic FHIR at 3 health systems. Future: likely expansion to more EHR systems (Oracle-Cerner). Enterprise per-seat pricing would significantly increase ARPU from ~$124.",url:"https://sacra.com/c/openevidence/"},
+  {icon:"🏛️",name:"Institutional Care Pathways",status:"In Progress",statusClass:"status-dev",desc:"Cedars-Sinai plans to layer internal care pathways and protocols. Clinicians view external evidence alongside institutional guidance in single interface. Pattern likely to extend to other deployments.",url:"https://sacra.com/c/openevidence/"},
 ];
 
 const partnersData = [
@@ -732,14 +747,14 @@ const partnersData = [
 ];
 
 const pharmaData = [
-  {icon:"🎯",name:"Pharma Advertising Platform",status:"Active",statusClass:"status-released",desc:"Core revenue engine. Pharma and medical device companies buy targeted video ads at $70-$1,000+ CPM. ARPU ~$124. 90% gross margins. Ads shown at highest-intent moment — during clinical research. Amaro acquisition strengthened this infrastructure."},
-  {icon:"💰",name:"Open Vista (with Veeva Systems)",status:"In Development",statusClass:"status-dev",desc:"Joint product with Veeva Systems targeting clinical-trial matching, drug discovery insight, and adoption of approved medicines. Positions OpenEvidence as infrastructure layer for pharmaceutical commercial operations."},
-  {icon:"🧪",name:"Clinical Trial Matching",status:"Released",statusClass:"status-released",desc:"Automatically surfaces active/recruiting clinical trials and evaluates each against patient clinical context. Enables pharma sponsors to reach physicians at the exact moment they're treating eligible patients. Filters by disease, treatment history, eligibility, location."},
-  {icon:"📊",name:"Enterprise Analytics (Inferred)",status:"Inferred",statusClass:"status-inferred-future",desc:"Based on Amaro's advertising optimization technology and the ad-supported model, OpenEvidence likely provides advertisers with analytics dashboards showing physician engagement, reach, and ROI metrics."},
-  {icon:"🏥",name:"Non-Ad Enterprise Tier",status:"In Development",statusClass:"status-dev",desc:"Separate non-ad-supported enterprise version for large health systems requiring greater customization. Distinct pricing tier above current free and ad-supported tiers. This creates a dual revenue model: pharma ads (consumer side) + enterprise per-seat licensing (health system side)."},
-  {icon:"📡",name:"Ad Infrastructure via Amaro",status:"Active",statusClass:"status-released",desc:"Amaro's AI-native advertising automation analyzes and optimizes end-to-end advertising deployment. Enables pharma companies to streamline campaigns and maximize performance across OpenEvidence's platform. Founded by Kush and Sauren Khosla, backed by GV and Greycroft."},
-  {icon:"💊",name:"Tandem Partnership (Prescriptions & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the platform. Creates a closed-loop from clinical decision → evidence check → prescription → prior auth, capturing pharma-relevant workflow data."},
-  {icon:"🌐",name:"Total Ad Inventory Potential",status:"Inferred",statusClass:"status-inferred-future",desc:"Nadler claims total potential ad inventory is ~$1 billion if fully sold. Current $150M annualized revenue means only ~15% of inventory is monetized. Massive headroom for pharma ad revenue growth as platform usage continues to scale."},
+  {icon:"🎯",name:"Pharma Advertising Platform",status:"Active",statusClass:"status-released",desc:"Core revenue engine. Pharma and medical device companies buy targeted video ads at $70-$1,000+ CPM. ARPU ~$124. 90% gross margins. Ads shown at highest-intent moment — during clinical research. Amaro acquisition strengthened this infrastructure.",url:"https://sacra.com/c/openevidence/"},
+  {icon:"💰",name:"Open Vista (with Veeva Systems)",status:"In Development",statusClass:"status-dev",desc:"Joint product with Veeva Systems targeting clinical-trial matching, drug discovery insight, and adoption of approved medicines. Positions OpenEvidence as infrastructure layer for pharmaceutical commercial operations.",url:"https://sacra.com/c/openevidence/"},
+  {icon:"🧪",name:"Clinical Trial Matching",status:"Released",statusClass:"status-released",desc:"Automatically surfaces active/recruiting clinical trials and evaluates each against patient clinical context. Enables pharma sponsors to reach physicians at the exact moment they're treating eligible patients. Filters by disease, treatment history, eligibility, location.",url:"https://www.openevidence.com/user-guide/clinical-trials"},
+  {icon:"📊",name:"Enterprise Analytics (Inferred)",status:"Inferred",statusClass:"status-inferred-future",desc:"Based on Amaro's advertising optimization technology and the ad-supported model, OpenEvidence likely provides advertisers with analytics dashboards showing physician engagement, reach, and ROI metrics.",url:"https://sacra.com/c/openevidence/"},
+  {icon:"🏥",name:"Non-Ad Enterprise Tier",status:"In Development",statusClass:"status-dev",desc:"Separate non-ad-supported enterprise version for large health systems requiring greater customization. Distinct pricing tier above current free and ad-supported tiers. This creates a dual revenue model: pharma ads (consumer side) + enterprise per-seat licensing (health system side).",url:"https://sacra.com/c/openevidence/"},
+  {icon:"📡",name:"Ad Infrastructure via Amaro",status:"Active",statusClass:"status-released",desc:"Amaro's AI-native advertising automation analyzes and optimizes end-to-end advertising deployment. Enables pharma companies to streamline campaigns and maximize performance across OpenEvidence's platform. Founded by Kush and Sauren Khosla, backed by GV and Greycroft.",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
+  {icon:"💊",name:"Tandem Partnership (Prescriptions & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the platform. Creates a closed-loop from clinical decision → evidence check → prescription → prior auth, capturing pharma-relevant workflow data.",url:"https://sacra.com/c/openevidence/"},
+  {icon:"🌐",name:"Total Ad Inventory Potential",status:"Inferred",statusClass:"status-inferred-future",desc:"Nadler claims total potential ad inventory is ~$1 billion if fully sold. Current $150M annualized revenue means only ~15% of inventory is monetized. Massive headroom for pharma ad revenue growth as platform usage continues to scale.",url:"https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html"},
 ];
 
 const sourcesData = [
@@ -951,6 +966,7 @@ window.addEventListener('load', function() {
         <h4>${p.name} <span class="status-badge status-released">${p.status}</span></h4>
         <p><strong>Launched:</strong> ${p.date}</p>
         <p>${p.desc}</p>
+        <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">Source →</a></div>
       </div>
     </div>
   `).join('');
@@ -974,6 +990,7 @@ window.addEventListener('load', function() {
       <div class="content">
         <h4>${f.name} <span class="status-badge ${f.statusClass}">${f.status}</span></h4>
         <p>${f.desc}</p>
+        <div class="src-link"><a href="${f.url}" target="_blank" rel="noopener">Source →</a></div>
       </div>
     </div>
   `).join('');
@@ -998,6 +1015,7 @@ window.addEventListener('load', function() {
       <div class="content">
         <h4>${p.name} <span class="status-badge ${p.statusClass}">${p.status}</span></h4>
         <p>${p.desc}</p>
+        <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">Source →</a></div>
       </div>
     </div>
   `).join('');
