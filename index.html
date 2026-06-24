@@ -242,6 +242,71 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
   .dx-timeline-item { grid-template-columns: 1fr; }
 }
 
+/* NEW BADGE */
+.new-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+  padding: 3px 8px; border-radius: 4px;
+  background: rgba(46,196,64,0.15); color: #2EC440;
+  border: 1px solid rgba(46,196,64,0.3);
+  animation: newPulse 2s ease-in-out infinite;
+  white-space: nowrap;
+}
+@keyframes newPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(46,196,64,0.4); }
+  50% { box-shadow: 0 0 0 4px rgba(46,196,64,0); }
+}
+.new-badge::before { content: '✦'; font-size: 9px; }
+
+/* WHATS NEW BANNER */
+.whats-new {
+  background: linear-gradient(135deg, rgba(46,196,64,0.08), rgba(46,196,64,0.03));
+  border: 1px solid rgba(46,196,64,0.25);
+  border-radius: var(--oe-radius-lg);
+  padding: 24px 28px;
+  margin: 0 0 48px;
+  position: relative;
+  overflow: hidden;
+}
+.whats-new::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, #2EC440, transparent);
+  animation: shimmer 3s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.whats-new h3 {
+  font-family: var(--oe-font); font-size: 22px; font-weight: 400;
+  margin-bottom: 4px; color: #2EC440;
+}
+.whats-new .wn-date { font-size: 12px; color: var(--oe-text-muted); margin-bottom: 16px; }
+.whats-new .wn-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+.whats-new .wn-item {
+  background: rgba(46,196,64,0.05); border-radius: var(--oe-radius);
+  padding: 14px 16px; border-left: 3px solid #2EC440;
+}
+.whats-new .wn-item .wn-cat {
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  color: #2EC440; margin-bottom: 4px; letter-spacing: 0.5px;
+}
+.whats-new .wn-item .wn-title { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.whats-new .wn-item .wn-desc { font-size: 12px; color: var(--oe-text-dim); line-height: 1.5; }
+.whats-new .wn-dismiss {
+  position: absolute; top: 16px; right: 16px;
+  background: none; border: none; color: var(--oe-text-muted);
+  font-size: 18px; cursor: pointer; padding: 4px 8px;
+  border-radius: 4px; transition: color 0.2s;
+}
+.whats-new .wn-dismiss:hover { color: var(--oe-text); }
+@media (max-width: 768px) {
+  .whats-new .wn-grid { grid-template-columns: 1fr; }
+}
+
 /* COMPETITOR CARDS */
 .competitor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
 .competitor-card {
@@ -574,7 +639,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <a href="#tech">⚙️ Tech Stack</a>
     <a href="#pharma">💊 Pharma</a>
     <a href="#publications">📄 Publications</a>
-    <a href="#doximity">🩺 Doximity Ask</a>
+    <a href="#doximity">🩺 Doximity Ask <span class="new-badge" style="margin-left:4px;">NEW</span></a>
     <a href="#future">🔮 Future</a>
     <a href="#sources">📚 Sources</a>
   </div>
@@ -591,7 +656,53 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   <h1>Open<span class="accent">Evidence</span> Insights</h1>
   <p>Comprehensive tracking of the fastest-growing medical AI platform in history.</p>
   <p>Partnerships, products, funding, adoption metrics, competitor landscape & tech stack.</p>
-  <p class="updated">Last updated: June 24, 2026 · Next update: June 30, 2026 (Monday 5PM ET)</p>
+  <p class="updated">Last updated: June 24, 2026 · Next update: July 1, 2026 (Sunday 5PM ET)</p>
+</div>
+
+<!-- WHATS NEW BANNER -->
+<div class="container">
+  <div class="whats-new" id="whatsNew">
+    <button class="wn-dismiss" onclick="document.getElementById('whatsNew').style.display='none'">✕</button>
+    <h3>✦ What's New — June 24 Update</h3>
+    <div class="wn-date">Added June 24, 2026 · 7 new data points aggregated</div>
+    <div class="wn-grid">
+      <div class="wn-item">
+        <div class="wn-cat">New Section</div>
+        <div class="wn-title">🩺 Doximity Ask Tracking Tab</div>
+        <div class="wn-desc">Full deep-dive into Doximity Ask: architecture, Instant/Thinking modes, PeerCheck™ program, V6 evaluation, head-to-head comparison with OpenEvidence, timeline, and corporate context.</div>
+      </div>
+      <div class="wn-item">
+        <div class="wn-cat">New Partnership</div>
+        <div class="wn-title">SNO + OpenEvidence Official AI Partnership</div>
+        <div class="wn-desc">Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. Date corrected from May 8 to June 23.</div>
+      </div>
+      <div class="wn-item">
+        <div class="wn-cat">New Partnership</div>
+        <div class="wn-title">Pathway Labs EchoNext FDA Clearance + Partnership</div>
+        <div class="wn-desc">World's first FDA-cleared multicondition AI for cardiology. EchoNext reads ECGs to detect structural heart disease. Now integrated into OpenEvidence for 500K+ physicians.</div>
+      </div>
+      <div class="wn-item">
+        <div class="wn-cat">New Milestone</div>
+        <div class="wn-title">First AI-Detected Heart Transplant (Nature Medicine)</div>
+        <div class="wn-desc">Peer-reviewed case published in Nature Medicine. EchoNext detected undiagnosed heart failure from ECG that doctors missed, leading to world's first heart transplant due to AI detection.</div>
+      </div>
+      <div class="wn-item">
+        <div class="wn-cat">New Media Coverage</div>
+        <div class="wn-title">NYT — Doctors Thought It Was Asthma, AI Flagged Heart Problem</div>
+        <div class="wn-desc">Major NYT article on EchoNext AI detecting structural heart disease invisible on routine ECG. Features patient story and Dr. Pierre Elias at NewYork-Presbyterian.</div>
+      </div>
+      <div class="wn-item">
+        <div class="wn-cat">New Partnership</div>
+        <div class="wn-title">AAO — American Academy of Ophthalmology</div>
+        <div class="wn-desc">Strategic partnership to close the gap between evidence and eye care. Announced June 9, 2026.</div>
+      </div>
+      <div class="wn-item">
+        <div class="wn-cat">UI Update</div>
+        <div class="wn-title">📱 Mobile Hamburger Menu</div>
+        <div class="wn-desc">Sidebar replaced with slide-in hamburger drawer on mobile. Full screen width for content. Auto-close on nav tap.</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="container">
@@ -1187,12 +1298,12 @@ const timelineData = [
   {date:"2026-06-23",cat:"Partnership",title:"SNO and OpenEvidence Launch Official Generative AI Partnership",desc:"Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. SNO embeds OpenEvidence across member-facing digital properties for neuro-oncology clinicians.",src:"OpenEvidence",url:"https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership"},
   {date:"2026-05-20",cat:"Media",title:"STAT Breakthrough Summit — Hospital Pitch",desc:"CTO Zachary Ziegler pitches hospitals for formal enterprise relationships at STAT Breakthrough Summit West. 650K physicians claimed.",src:"STAT",url:"https://www.statnews.com/2026/05/20/openevidence-pitches-hospitals-we-are-not-monsters/"},
   {date:"2026-05-27",cat:"Partnership",title:"ASCO Guidelines Integration",desc:"ASCO Guidelines figures and flowcharts integrated into OpenEvidence oncology model. Direct links to source documents.",src:"BusinessWire",url:"https://www.businesswire.com/news/home/20260527477369/en/OpenEvidence-Integrates-ASCO-Guidelines-Figures-and-Flowcharts-into-Specialty-Oncology-Model"},
-  {date:"2026-06-23",cat:"Partnership",title:"Pathway Labs EchoNext FDA + OpenEvidence Partnership (TODAY)",desc:"Worlds first FDA-cleared multicondition AI for cardiology. EchoNext reads ECGs to detect structural heart disease. Partnership puts it on OpenEvidence for 500K+ physicians. Nature Medicine publishes world-first heart transplant due to AI detection.",src:"BusinessWire",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
-  {date:"2026-06-22",cat:"Milestone",title:"Nature Medicine — World-First AI Heart Transplant Case",desc:"Nature Medicine publishes peer-reviewed case where EchoNext detected undiagnosed heart failure leading to worlds first heart transplant due to AI detection.",src:"Nature Medicine",url:"https://www.nature.com/articles/s41591-026-04454-y"},
-  {date:"2026-06-22",cat:"Media",title:"NYT — Doctors Thought It Was Asthma, AI Flagged Heart Problem",desc:"New York Times publishes major article on EchoNext AI detecting structural heart disease from ECGs that doctors missed. Features patient story and Dr Pierre Elias at NewYork-Presbyterian.",src:"NYT",url:"https://www.nytimes.com/2026/06/22/health/artificial-intelligence-heart-damage.html"},
-  {date:"2026-06-23",cat:"Milestone",title:"First FDA-cleared AI tool integrated into OpenEvidence",desc:"Travis Zack CMO confirms EchoNext is the first FDA-cleared AI tool available within OpenEvidence. Free to any doctor using the platform. First time OpenEvidence offers an AI diagnostic tool.",src:"STAT",url:"https://www.statnews.com/2026/06/23/pathway-labs-echonext-ai-tool-heart-disease-detection/"},
-  {date:"2026-06-23",cat:"Media",title:"Jim Breyer posts about Pathway Labs on X",desc:"Jim Breyer (Breyer Capital) posts on X about leading Pathway Labs financing and OpenEvidence partnership. EchoNext detects disease invisible on routine ECG.",src:"X/Twitter",url:"https://x.com/jimihendrixlive/status/2069427390942736437"},
-  {date:"2026-06-23",cat:"Media",title:"STAT tweets EchoNext FDA clearance",desc:"STAT News tweets about EchoNext FDA clearance and OpenEvidence integration.",src:"X/Twitter",url:"https://x.com/statnews/status/2069346524178325747"},
+  {date:"2026-06-23",cat:"Partnership",title:"Pathway Labs EchoNext FDA + OpenEvidence Partnership (TODAY)",desc:"Worlds first FDA-cleared multicondition AI for cardiology. EchoNext reads ECGs to detect structural heart disease. Partnership puts it on OpenEvidence for 500K+ physicians. Nature Medicine publishes world-first heart transplant due to AI detection.",src:"BusinessWire",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence",new:true},
+  {date:"2026-06-22",cat:"Milestone",title:"Nature Medicine — World-First AI Heart Transplant Case",desc:"Nature Medicine publishes peer-reviewed case where EchoNext detected undiagnosed heart failure leading to worlds first heart transplant due to AI detection.",src:"Nature Medicine",url:"https://www.nature.com/articles/s41591-026-04454-y",new:true},
+  {date:"2026-06-22",cat:"Media",title:"NYT — Doctors Thought It Was Asthma, AI Flagged Heart Problem",desc:"New York Times publishes major article on EchoNext AI detecting structural heart disease from ECGs that doctors missed. Features patient story and Dr Pierre Elias at NewYork-Presbyterian.",src:"NYT",url:"https://www.nytimes.com/2026/06/22/health/artificial-intelligence-heart-damage.html",new:true},
+  {date:"2026-06-23",cat:"Milestone",title:"First FDA-cleared AI tool integrated into OpenEvidence",desc:"Travis Zack CMO confirms EchoNext is the first FDA-cleared AI tool available within OpenEvidence. Free to any doctor using the platform. First time OpenEvidence offers an AI diagnostic tool.",src:"STAT",url:"https://www.statnews.com/2026/06/23/pathway-labs-echonext-ai-tool-heart-disease-detection/",new:true},
+  {date:"2026-06-23",cat:"Media",title:"Jim Breyer posts about Pathway Labs on X",desc:"Jim Breyer (Breyer Capital) posts on X about leading Pathway Labs financing and OpenEvidence partnership. EchoNext detects disease invisible on routine ECG.",src:"X/Twitter",url:"https://x.com/jimihendrixlive/status/2069427390942736437",new:true},
+  {date:"2026-06-23",cat:"Media",title:"STAT tweets EchoNext FDA clearance",desc:"STAT News tweets about EchoNext FDA clearance and OpenEvidence integration.",src:"X/Twitter",url:"https://x.com/statnews/status/2069346524178325747",new:true},
   {date:"2026-04-28",cat:"Media",title:"OpenEvidence no longer available in EU",desc:"Mushtaq Bilal PhD posts on X that OpenEvidence is no longer available in the EU due to EU regulation. Spanish doctors also react.",src:"X/Twitter",url:"https://x.com/MushtaqBilalPhD/status/2049039072941985895"},
   {date:"2026-04-30",cat:"Company",title:"OpenEvidence withdraws from EU and UK",desc:"OpenEvidence formally withdraws from EU and UK markets. Privacy policy updated to state EU safeguards do not govern the service. Telecare Aware reports access termination.",src:"Telecare Aware",url:"https://clinicalaireport.com/open-evidence-outside-us"},
   {date:"2026-03-10",cat:"Media",title:"LinkedIn — AI Collaborates with Physicians in 1M Clinical Consultations",desc:"OpenEvidence posts on LinkedIn about the March 10 1M consultations milestone. New era of medicine announced.",src:"LinkedIn",url:"https://www.linkedin.com/posts/openevidence_on-march-10-2026-a-new-era-of-medicine-activity-7439029330254569472-ODUj"},
@@ -1250,14 +1361,14 @@ const partnersData = [
   {name:"ACEP",type:"Emergency Physicians",date:"Dec 11, 2025",url:"https://www.openevidence.com/announcements/acep"},
   {name:"NORD",type:"Rare Diseases",date:"Mar 12, 2026",url:"https://www.openevidence.com/announcements/national-organization-for-rare-disorders-and-openevidence-partner-to-bring-ai-powered-rare-disease-resources-to-clinicians-and-patients-worldwide"},
   {name:"AAOS",type:"Orthopaedic Surgeons",date:"2025",url:"https://www.openevidence.com"},
-  {name:"AAO",type:"Ophthalmology",date:"Jun 9, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-the-american-academy-of-ophthalmology-partner-to-close-the-gap-between-evidence-and-eye-care"},
+  {name:"AAO",type:"Ophthalmology",date:"Jun 9, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-the-american-academy-of-ophthalmology-partner-to-close-the-gap-between-evidence-and-eye-care",new:true},
   {name:"AAO-HNS",type:"Otolaryngology",date:"Mar 16, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-aao-hnsf-pioneer-a-new-model-for-updating-clinical-practice-guidelines"},
   {name:"AUA",type:"Urology",date:"2025",url:"https://sacra.com/c/openevidence/"},
   {name:"AMA",type:"Medical Association",date:"2025",url:"https://www.prnewswire.com"},
   {name:"GINA",type:"Asthma",date:"May 5, 2026",url:"https://www.openevidence.com/announcements/the-global-initiative-for-asthma-and-openevidence-partner-to-deliver-asthma-strategy-to-physicians-worldwide"},
   {name:"SSO",type:"Surgical Oncology",date:"May 11, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-society-of-surgical-oncology-announce-strategic-partnership-to-advance-surgical-cancer-care-and-launch-sso-innovator-grant"},
   {name:"ASAM",type:"Addiction Medicine",date:"2025",url:"https://www.openevidence.com/announcements/asam"},
-  {name:"SNO",type:"Neuro-Oncology",date:"Jun 2026",url:"https://www.openevidence.com"},
+  {name:"SNO",type:"Neuro-Oncology",date:"Jun 2026",url:"https://www.openevidence.com",new:true},
   {name:"WMS",type:"Wilderness Medicine",date:"2025",url:"https://www.openevidence.com/announcements/wms"},
   {name:"IPMDS",type:"Postconcussive Symptoms",date:"2025",url:"https://www.openevidence.com/announcements/ipmds"},
   {name:"Mayo Clinic",type:"Accelerator (2023)",date:"2023",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
@@ -1274,7 +1385,7 @@ const partnersData = [
   {name:"SNO",type:"Neuro-Oncology",date:"May 8, 2026",url:"https://www.openevidence.com"},
   {name:"ASCO",type:"Oncology Guidelines",date:"May 27, 2026",url:"https://www.businesswire.com/news/home/20260527477369/en/OpenEvidence-Integrates-ASCO-Guidelines-Figures-and-Flowcharts-into-Specialty-Oncology-Model"},
   {name:"Elsevier",type:"ClinicalKey AI (Nov 2023)",date:"Nov 17, 2023",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
-  {name:"Pathway Labs",type:"FDA-Cleared AI Cardiology",date:"Jun 23, 2026",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
+  {name:"Pathway Labs",type:"FDA-Cleared AI Cardiology",date:"Jun 23, 2026",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence",new:true},
 ];
 
 const pharmaData = [
@@ -1289,11 +1400,11 @@ const pharmaData = [
 ];
 
 const publicationsData = [
-  {date:"Jun 12, 2026",title:"General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",journal:"Nature Medicine",authors:"Vishwanath K et al.",pmid:"42286322",url:"https://pubmed.ncbi.nlm.nih.gov/42286322/"},
-  {date:"Jun 12, 2026",title:"Reproducibility of AI-Generated Antibiotic Recommendations in Standardized Clinical Scenarios",journal:"Int J Antimicrob Agents",authors:"De Vito A et al.",pmid:"42285312",url:"https://pubmed.ncbi.nlm.nih.gov/42285312/"},
-  {date:"Jun 13, 2026",title:"Prescribing Caution: A Critique of OpenEvidence to Answer Medication-Related Questions",journal:"J Am Coll Clin Pharm",authors:"Bergsbaken JM et al.",pmid:"42286997",url:"https://pubmed.ncbi.nlm.nih.gov/42286997/"},
-  {date:"Jun 10, 2026",title:"Large Language Models and Retrieval-Augmented Platforms for Dental Implant Complications",journal:"J Dent",authors:"Mayer Y et al.",pmid:"42269758",url:"https://pubmed.ncbi.nlm.nih.gov/42269758/"},
-  {date:"Jun 10, 2026",title:"Large-Scale Evaluation of Five Large Language Models in Anesthesia Decision-Making",journal:"Anesth Analg",authors:"Chen R et al.",pmid:"42268736",url:"https://pubmed.ncbi.nlm.nih.gov/42268736/"},
+  {date:"Jun 12, 2026",title:"General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",journal:"Nature Medicine",authors:"Vishwanath K et al.",pmid:"42286322",url:"https://pubmed.ncbi.nlm.nih.gov/42286322/",new:true},
+  {date:"Jun 12, 2026",title:"Reproducibility of AI-Generated Antibiotic Recommendations in Standardized Clinical Scenarios",journal:"Int J Antimicrob Agents",authors:"De Vito A et al.",pmid:"42285312",url:"https://pubmed.ncbi.nlm.nih.gov/42285312/",new:true},
+  {date:"Jun 13, 2026",title:"Prescribing Caution: A Critique of OpenEvidence to Answer Medication-Related Questions",journal:"J Am Coll Clin Pharm",authors:"Bergsbaken JM et al.",pmid:"42286997",url:"https://pubmed.ncbi.nlm.nih.gov/42286997/",new:true},
+  {date:"Jun 10, 2026",title:"Large Language Models and Retrieval-Augmented Platforms for Dental Implant Complications",journal:"J Dent",authors:"Mayer Y et al.",pmid:"42269758",url:"https://pubmed.ncbi.nlm.nih.gov/42269758/",new:true},
+  {date:"Jun 10, 2026",title:"Large-Scale Evaluation of Five Large Language Models in Anesthesia Decision-Making",journal:"Anesth Analg",authors:"Chen R et al.",pmid:"42268736",url:"https://pubmed.ncbi.nlm.nih.gov/42268736/",new:true},
   {date:"Jun 12, 2026",title:"Public Interest in an AI-Enabled Clinical Decision Support Tool (OpenEvidence vs UpToDate trends)",journal:"JAMA Network Open",authors:"Multiple",pmid:"42299154",url:"https://pubmed.ncbi.nlm.nih.gov/42299154/"},
   {date:"Mar 2026",title:"The Use of an AI Platform OpenEvidence to Augment Clinical Decision-Making for Primary Care Physicians",journal:"J Prim Care Community Health",authors:"Multiple",pmid:"40238861",url:"https://pubmed.ncbi.nlm.nih.gov/40238861/"},
   {date:"Mar 2026",title:"Real World Human-LLM Interactions — Prospective blinded versus unblinded expert physician assessments",journal:"PLOS Digit Health",authors:"Multiple",pmid:"PMC12981447",url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC12981447/"},
@@ -1371,7 +1482,7 @@ function renderTimeline(filter) {
   const sorted = [...filtered].sort((a,b) => new Date(b.date) - new Date(a.date));
   el.innerHTML = sorted.map((d, i) => `
     <div class="timeline-item" style="animation-delay: ${i * 0.03}s">
-      <div class="date">${d.date}</div>
+      <div class="date">${d.date} ${d.new ? '<span class="new-badge">NEW</span>' : ''}</div>
       <div><span class="category-tag cat-${d.cat}">${d.cat}</span></div>
       <div class="title">${d.title}</div>
       <div class="desc">${d.desc}</div>
@@ -1568,7 +1679,7 @@ window.addEventListener('load', function() {
   document.getElementById('partnerGrid').innerHTML = partnersData.map(p => `
     <a href="${p.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
     <div class="partner-item">
-      <div class="name">${p.name}</div>
+      <div class="name">${p.name} ${p.new ? '<span class="new-badge">NEW</span>' : ''}</div>
       <div class="type">${p.type}</div>
       <div class="type" style="color:var(--oe-orange);margin-top:2px;">${p.date} →</div>
     </div>
@@ -1595,7 +1706,7 @@ window.addEventListener('load', function() {
     <div class="feature-card">
       <div class="icon">📄</div>
       <div class="content">
-        <h4>${p.title}</h4>
+        <h4>${p.title} ${p.new ? '<span class="new-badge">NEW</span>' : ''}</h4>
         <p><strong>${p.journal}</strong> · ${p.authors} · ${p.date}</p>
         <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">PubMed ${p.pmid} →</a></div>
       </div>
