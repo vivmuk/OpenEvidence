@@ -898,6 +898,9 @@ const timelineData = [
   {date:"2026-06-23",cat:"Media",title:"Jim Breyer posts about Pathway Labs on X",desc:"Jim Breyer (Breyer Capital) posts on X about leading Pathway Labs financing and OpenEvidence partnership. EchoNext detects disease invisible on routine ECG.",src:"X/Twitter",url:"https://x.com/jimihendrixlive/status/2069427390942736437"},
   {date:"2026-06-23",cat:"Media",title:"STAT tweets EchoNext FDA clearance",desc:"STAT News tweets about EchoNext FDA clearance and OpenEvidence integration.",src:"X/Twitter",url:"https://x.com/statnews/status/2069346524178325747"},
   {date:"2026-04-28",cat:"Media",title:"OpenEvidence no longer available in EU",desc:"Mushtaq Bilal PhD posts on X that OpenEvidence is no longer available in the EU due to EU regulation. Spanish doctors also react.",src:"X/Twitter",url:"https://x.com/MushtaqBilalPhD/status/2049039072941985895"},
+  {date:"2026-03-10",cat:"Media",title:"LinkedIn — AI Collaborates with Physicians in 1M Clinical Consultations",desc:"OpenEvidence posts on LinkedIn about the March 10 1M consultations milestone. New era of medicine announced.",src:"LinkedIn",url:"https://www.linkedin.com/posts/openevidence_on-march-10-2026-a-new-era-of-medicine-activity-7439029330254569472-ODUj"},
+  {date:"2026-03-15",cat:"Media",title:"LinkedIn — Match Day 2026 Advice from Physician Team",desc:"OpenEvidence posts congratulating newly matched residents. Physician team shares advice for Match Day class of 2026.",src:"LinkedIn",url:"https://www.linkedin.com/company/openevidence"},
+  {date:"2026-07-15",cat:"Media",title:"LinkedIn — GV announces investment in OpenEvidence",desc:"GV (Google Ventures) posts on LinkedIn announcing investment. Sangeen Zeb: Physicians are drowning in information but starving for timely insights.",src:"LinkedIn",url:"https://www.linkedin.com/in/evandez/"},
 ];
 
 const productsData = [
@@ -1042,8 +1045,9 @@ const sourcesData = [
 function renderTimeline(filter) {
   const el = document.getElementById('timelineList');
   const filtered = filter === 'all' ? timelineData : timelineData.filter(d => d.cat === filter);
-  el.innerHTML = filtered.map(d => `
-    <div class="timeline-item">
+  const sorted = [...filtered].sort((a,b) => new Date(b.date) - new Date(a.date));
+  el.innerHTML = sorted.map((d, i) => `
+    <div class="timeline-item" style="animation-delay: ${i * 0.03}s">
       <div class="date">${d.date}</div>
       <div><span class="category-tag cat-${d.cat}">${d.cat}</span></div>
       <div class="title">${d.title}</div>
