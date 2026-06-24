@@ -87,6 +87,14 @@ def check_for_new_announcements():
         except:
             pass
     
+    # Doximity Ask tracking queries
+    print(f"\nDoximity Ask tracking:")
+    print(f"  'Doximity Ask update 2026'")
+    print(f"  'site:technology.doximity.com/articles doximity-ask'")
+    print(f"  'site:blog.doximity.com clinical AI 2026'")
+    print(f"  'Doximity Clinical AI Suite health system 2026'")
+    print(f"  'Doximity PeerCheck physician review 2026'")
+    
     return KNOWN_DATES
 
 if __name__ == "__main__":
