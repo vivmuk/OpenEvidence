@@ -213,6 +213,181 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 .tech-row .source-link { font-size: 10px; color: var(--oe-orange); text-decoration: none; margin-left: 4px; }
 .tech-row .source-link:hover { text-decoration: underline; }
 
+/* PARTNERSHIP HORIZONTAL TIMELINE */
+.partner-timeline {
+  position: relative;
+  padding: 40px 0 20px;
+  overflow-x: auto;
+  overflow-y: visible;
+  scrollbar-width: thin;
+  scrollbar-color: var(--oe-orange) var(--oe-dark-border);
+}
+.partner-timeline::-webkit-scrollbar { height: 6px; }
+.partner-timeline::-webkit-scrollbar-track { background: var(--oe-dark-border); border-radius: 3px; }
+.partner-timeline::-webkit-scrollbar-thumb { background: var(--oe-orange); border-radius: 3px; }
+.partner-timeline-track {
+  display: flex;
+  gap: 0;
+  min-width: 2200px;
+  position: relative;
+  padding-top: 60px;
+}
+.partner-timeline-line {
+  position: absolute;
+  top: 80px; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--oe-orange-dark), var(--oe-orange), var(--oe-orange-light));
+  border-radius: 2px;
+}
+.partner-timeline-item {
+  flex: 0 0 auto;
+  width: 100px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  animation: fadeUp 0.5s ease-out both;
+}
+.partner-timeline-item:nth-child(1) { animation-delay: 0.03s; }
+.partner-timeline-item:nth-child(2) { animation-delay: 0.06s; }
+.partner-timeline-item:nth-child(3) { animation-delay: 0.09s; }
+.partner-timeline-item:nth-child(4) { animation-delay: 0.12s; }
+.partner-timeline-item:nth-child(5) { animation-delay: 0.15s; }
+.partner-timeline-item:nth-child(6) { animation-delay: 0.18s; }
+.partner-timeline-item:nth-child(7) { animation-delay: 0.21s; }
+.partner-timeline-item:nth-child(8) { animation-delay: 0.24s; }
+.partner-timeline-item:nth-child(9) { animation-delay: 0.27s; }
+.partner-timeline-item:nth-child(10) { animation-delay: 0.3s; }
+.partner-timeline-item:nth-child(n+11) { animation-delay: 0.35s; }
+.partner-timeline-dot {
+  width: 14px; height: 14px;
+  background: var(--oe-dark);
+  border: 3px solid var(--oe-orange);
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -7px;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 2;
+}
+.partner-timeline-item:hover .partner-timeline-dot {
+  transform: scale(1.6);
+  background: var(--oe-orange);
+  box-shadow: 0 0 0 6px rgba(228,100,61,0.2);
+}
+.partner-timeline-date {
+  font-size: 10px;
+  color: var(--oe-orange);
+  font-weight: 600;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+.partner-timeline-name {
+  font-size: 11px;
+  color: var(--oe-text-dim);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.partner-timeline-popup {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--oe-dark-card);
+  border: 1px solid var(--oe-orange);
+  border-radius: var(--oe-radius-lg);
+  padding: 14px 16px;
+  min-width: 220px;
+  max-width: 280px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 50;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+.partner-timeline-item:hover .partner-timeline-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.partner-timeline-popup .pop-name {
+  font-size: 14px; font-weight: 700; color: var(--oe-orange); margin-bottom: 2px;
+}
+.partner-timeline-popup .pop-type {
+  font-size: 11px; color: var(--oe-text-muted); margin-bottom: 6px;
+}
+.partner-timeline-popup .pop-date {
+  font-size: 12px; color: var(--oe-text-dim); margin-bottom: 6px;
+}
+.partner-timeline-popup .pop-link a {
+  color: var(--oe-orange); text-decoration: none; font-weight: 600; font-size: 11px;
+}
+.partner-timeline-popup .pop-link a:hover { text-decoration: underline; }
+.partner-timeline-popup::after {
+  content: ''; position: absolute;
+  top: 100%; left: 50%; transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: var(--oe-orange);
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(228,100,61,0.1); }
+  50% { box-shadow: 0 0 20px rgba(228,100,61,0.3); }
+}
+
+/* SCROLL ANIMATIONS */
+section { animation: fadeIn 0.6s ease-out both; }
+.stat-card { animation: fadeUp 0.4s ease-out both; }
+.stat-card:nth-child(1) { animation-delay: 0.05s; }
+.stat-card:nth-child(2) { animation-delay: 0.1s; }
+.stat-card:nth-child(3) { animation-delay: 0.15s; }
+.stat-card:nth-child(4) { animation-delay: 0.2s; }
+.stat-card:nth-child(5) { animation-delay: 0.25s; }
+.stat-card:nth-child(6) { animation-delay: 0.3s; }
+.stat-card:nth-child(7) { animation-delay: 0.35s; }
+.stat-card:nth-child(8) { animation-delay: 0.4s; }
+.timeline-item { animation: slideInLeft 0.4s ease-out both; }
+.competitor-card { animation: fadeUp 0.5s ease-out both; }
+.competitor-card:nth-child(1) { animation-delay: 0.05s; }
+.competitor-card:nth-child(2) { animation-delay: 0.1s; }
+.competitor-card:nth-child(3) { animation-delay: 0.15s; }
+.competitor-card:nth-child(4) { animation-delay: 0.2s; }
+.competitor-card:nth-child(n+5) { animation-delay: 0.25s; }
+.feature-card { animation: fadeUp 0.4s ease-out both; transition: transform 0.3s; }
+.feature-card:hover { transform: translateY(-2px); }
+.chart-container { animation: fadeIn 0.8s ease-out both; animation-delay: 0.2s; }
+.hero h1 .accent { animation: pulse 3s ease-in-out infinite; display: inline-block; }
+.partner-item { transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.partner-item:hover { transform: translateY(-3px) scale(1.03); }
+.tech-layer { transition: all 0.3s; animation: fadeUp 0.5s ease-out both; }
+.tech-layer:hover { transform: translateX(4px); }
+.stat-card { transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.stat-card:hover { transform: translateY(-4px); animation: glow 2s ease-in-out infinite; }
+
 /* FUNDING TABLE */
 .funding-table { width: 100%; border-collapse: collapse; }
 .funding-table th { text-align: left; font-size: 12px; text-transform: uppercase; color: var(--oe-text-muted); padding: 12px 16px; border-bottom: 1px solid var(--oe-dark-border); }
@@ -553,11 +728,15 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
 <section id="partnerships">
   <div class="container">
     <h2>Partnership <span class="accent">Ecosystem</span></h2>
-    <p class="section-sub">25+ content partners, 3 health system deployments, and key tech infrastructure partnerships.</p>
-    <div class="chart-container" style="margin-bottom: 24px;">
+    <p class="section-sub">25+ content partners, 3 health system deployments, and key tech infrastructure partnerships. Hover for details · scroll horizontally.</p>
+    <div class="chart-container" style="margin-bottom: 24px; overflow: visible;">
       <h3>Partnership Timeline</h3>
-      <p class="chart-sub">When each partnership was announced</p>
-      <div class="chart-wrapper" style="height: 400px;"><canvas id="chartPartnerships"></canvas></div>
+      <p class="chart-sub">Every partnership in chronological order — hover any dot for animated popup</p>
+      <div class="partner-timeline">
+        <div class="partner-timeline-track" id="partnerTimelineTrack">
+          <div class="partner-timeline-line"></div>
+        </div>
+      </div>
     </div>
     <div class="partner-grid" id="partnerGrid"></div>
   </div>
@@ -1012,38 +1191,6 @@ function buildCharts() {
     }
   }));
 
-  // Partnerships over time
-  const ctxP = document.getElementById('chartPartnerships');
-  if (ctxP) {
-    const pctx = ctxP.getContext('2d');
-    const ptc = getThemeColors();
-    charts.push(new Chart(pctx, {
-      type: 'bar',
-      data: {
-        labels: ['Elsevier\nNov 2023','NEJM\nFeb 2025','JAMA\nJun 2025','NCCN\nNov 2025','ACEP\nDec 2025','Sutter\nFeb 2026','Wiley+Cochrane\nMar 2026','NORD\nMar 2026','AAO-HNS\nMar 2026','Tandem\nApr 2026','Mt Sinai\nMar 2026','NCCN Algo\nApr 2026','Wiley Neuro\nApr 2026','ACOG\nMay 2026','SNO\nMay 2026','GINA\nMay 2026','SSO\nMay 2026','ASCO\nMay 2026','Cedars-Sinai\nMay 2026','AAO\nJun 2026','Pathway Labs\nJun 2026'],
-        datasets: [{
-          label: 'Partnerships',
-          data: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
-          backgroundColor: chartColorLight,
-          borderColor: chartColor,
-          borderWidth: 1,
-          borderRadius: 4,
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' }
-        },
-        scales: {
-          x: { grid: { color: ptc.grid }, ticks: { color: ptc.text, maxRotation: 90, minRotation: 45, font: { size: 10 } } },
-          y: { grid: { color: ptc.grid }, ticks: { color: ptc.text }, title: { display: true, text: 'Cumulative Partnerships', color: ptc.text } }
-        }
-      }
-    }));
-  }
 }
 
 // Wait for everything including Chart.js CDN to fully load
@@ -1093,6 +1240,22 @@ window.addEventListener('load', function() {
       <div class="type" style="color:var(--oe-orange);margin-top:2px;">${p.date} →</div>
     </div>
     </a>
+  `).join('');
+
+  // Render horizontal partnership timeline
+  const sortedPartners = [...partnersData].sort((a,b) => new Date(a.date) - new Date(b.date));
+  document.getElementById('partnerTimelineTrack').innerHTML = '<div class="partner-timeline-line"></div>' + sortedPartners.map(p => `
+    <div class="partner-timeline-item">
+      <div class="partner-timeline-dot"></div>
+      <div class="partner-timeline-date">${p.date}</div>
+      <div class="partner-timeline-name">${p.name}</div>
+      <div class="partner-timeline-popup">
+        <div class="pop-name">${p.name}</div>
+        <div class="pop-type">${p.type}</div>
+        <div class="pop-date">${p.date}</div>
+        <div class="pop-link"><a href="${p.url}" target="_blank" rel="noopener">View announcement →</a></div>
+      </div>
+    </div>
   `).join('');
 
   document.getElementById('sourceList').innerHTML = sourcesData.map(s => `
