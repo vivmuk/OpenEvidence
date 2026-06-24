@@ -198,6 +198,50 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 .filter-btn:hover { border-color: var(--oe-orange); }
 .filter-btn.active { background: var(--oe-orange); color: white; border-color: var(--oe-orange); }
 
+/* DOXIMITY ASK */
+.dx-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+.dx-overview { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 28px; }
+.dx-overview h3 { font-family: var(--oe-font); font-size: 28px; font-weight: 400; margin-bottom: 12px; }
+.dx-overview .dx-tagline { color: var(--oe-orange); font-size: 14px; font-weight: 600; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+.dx-overview p { color: var(--oe-text-dim); font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
+.dx-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 20px; }
+.dx-stat { background: var(--oe-dark-soft); border-radius: var(--oe-radius); padding: 16px; text-align: center; }
+.dx-stat .v { font-family: var(--oe-font); font-size: 28px; color: var(--oe-orange); display: block; }
+.dx-stat .l { font-size: 12px; color: var(--oe-text-muted); margin-top: 4px; }
+.dx-architecture { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 28px; }
+.dx-architecture h3 { font-family: var(--oe-font); font-size: 24px; font-weight: 400; margin-bottom: 16px; }
+.dx-pillars { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 16px; }
+.dx-pillar { background: var(--oe-dark-soft); border-radius: var(--oe-radius); padding: 16px; border-left: 3px solid var(--oe-orange); }
+.dx-pillar h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+.dx-pillar p { font-size: 13px; color: var(--oe-text-dim); line-height: 1.6; }
+.dx-modes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+.dx-mode { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 24px; }
+.dx-mode .mode-label { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; border-radius: 4px; margin-bottom: 12px; }
+.dx-mode.instant .mode-label { background: rgba(228,100,61,0.15); color: var(--oe-orange); }
+.dx-mode.thinking .mode-label { background: rgba(107,175,125,0.15); color: #6BAF7D; }
+.dx-mode h4 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.dx-mode p { font-size: 13px; color: var(--oe-text-dim); line-height: 1.6; }
+.dx-comparison { width: 100%; border-collapse: collapse; margin: 24px 0; }
+.dx-comparison th { text-align: left; font-size: 12px; text-transform: uppercase; color: var(--oe-text-muted); padding: 14px 16px; border-bottom: 2px solid var(--oe-dark-border); }
+.dx-comparison td { padding: 14px 16px; border-bottom: 1px solid var(--oe-dark-border); font-size: 14px; line-height: 1.5; }
+.dx-comparison tr:hover { background: var(--oe-dark-soft); }
+.dx-comparison .col-oe { color: var(--oe-orange); font-weight: 600; }
+.dx-comparison .col-dx { color: #6BAF7D; font-weight: 600; }
+.dx-eval { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 24px; margin: 16px 0; }
+.dx-eval h4 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+.dx-eval-list { list-style: none; padding: 0; }
+.dx-eval-list li { padding: 8px 0; border-bottom: 1px solid var(--oe-dark-border); font-size: 13px; color: var(--oe-text-dim); display: flex; justify-content: space-between; align-items: center; }
+.dx-eval-list li:last-child { border-bottom: none; }
+.dx-eval-list .eval-v { color: var(--oe-orange); font-weight: 600; }
+.dx-timeline-item { padding: 16px; background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius); margin-bottom: 12px; display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: start; }
+.dx-timeline-item .dx-date { font-size: 13px; color: var(--oe-orange); font-weight: 600; }
+.dx-timeline-item .dx-content h5 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+.dx-timeline-item .dx-content p { font-size: 13px; color: var(--oe-text-dim); line-height: 1.5; }
+@media (max-width: 768px) {
+  .dx-hero, .dx-pillars, .dx-modes, .dx-stats { grid-template-columns: 1fr; }
+  .dx-timeline-item { grid-template-columns: 1fr; }
+}
+
 /* COMPETITOR CARDS */
 .competitor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
 .competitor-card {
@@ -489,6 +533,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <a href="#tech">⚙️ Tech Stack</a>
     <a href="#pharma">💊 Pharma</a>
     <a href="#publications">📄 Publications</a>
+    <a href="#doximity">🩺 Doximity Ask</a>
     <a href="#future">🔮 Future</a>
     <a href="#sources">📚 Sources</a>
   </div>
@@ -842,6 +887,172 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   </div>
 </section>
 
+<!-- DOXIMITY ASK -->
+<section id="doximity">
+  <div class="container">
+    <h2>Doximity <span class="accent">Ask</span></h2>
+    <p class="section-sub">Deep dive into OpenEvidence's biggest competitor — Doximity's clinical AI platform. Tracking architecture, features, evaluation, and head-to-head comparison.</p>
+
+    <div class="dx-hero">
+      <div class="dx-overview">
+        <div class="dx-tagline">HIPAA-Compliant Clinical AI Platform</div>
+        <h3>What is Doximity Ask?</h3>
+        <p>Doximity Ask is a composite clinical reference platform for point-of-care question answering. It combines retrieval-augmented generation over a physician-governed evidence library, multi-turn agentic tool use through validated calculators and structured lookups, and a post-trained reasoning model that orchestrates retrieval, tool calls, and citation-grounded generation.</p>
+        <p>Automated verifiers, physician-authored rubrics, and in-product physician review form an evaluation loop that grades releases, defines training rewards, and monitors production.</p>
+        <div class="dx-stats">
+          <div class="dx-stat"><span class="v">150+</span><span class="l">Health Systems</span></div>
+          <div class="dx-stat"><span class="v">8/20</span><span class="l">Top US Hospitals</span></div>
+          <div class="dx-stat"><span class="v">11K+</span><span class="l">Physician Reviewers</span></div>
+          <div class="dx-stat"><span class="v">50K+</span><span class="l">PeerCheck Reviews</span></div>
+          <div class="dx-stat"><span class="v">2,000+</span><span class="l">Medical Journals</span></div>
+          <div class="dx-stat"><span class="v">4.6/5</span><span class="l">Physician Audit Score</span></div>
+        </div>
+      </div>
+      <div class="dx-architecture">
+        <h3>System Architecture</h3>
+        <p style="font-size:13px;color:var(--oe-text-dim);margin-bottom:16px;">Reliability is treated as a system property — not just model capability. Four interdependent controls address different failure modes.</p>
+        <div class="dx-pillars">
+          <div class="dx-pillar">
+            <h4>🧠 Reasoning Model</h4>
+            <p>Post-trained for clinical Q&A, citation discipline, tool use, and appropriate deferral when evidence is insufficient.</p>
+          </div>
+          <div class="dx-pillar">
+            <h4>📚 Governed Evidence</h4>
+            <p>Physician-curated inventory: clinical guidelines, peer-reviewed literature, systematic reviews, regulatory drug labels, licensed drug-interaction data. Predatory journals and unvalidated preprints excluded.</p>
+          </div>
+          <div class="dx-pillar">
+            <h4>🔧 Deterministic Tools</h4>
+            <p>Fixed, auditable registry of validated calculators and structured lookups. Medication doses, scores, coded facts resolved through tools — never generated from model memory.</p>
+          </div>
+          <div class="dx-pillar">
+            <h4>⚡ Real-Time Retrieval</h4>
+            <p>Time-sensitive information fetched live. Superseded guideline versions retired as newer recommendations become available. Ensures current standards of care.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 16px;">Inference Modes</h3>
+    <p style="font-size:14px;color:var(--oe-text-dim);margin-bottom:16px;">Doximity Ask operates in two modes. The system can automatically escalate from Instant to Thinking when deeper analysis is needed.</p>
+    <div class="dx-modes">
+      <div class="dx-mode instant">
+        <span class="mode-label">Instant</span>
+        <h4>⚡ Rapid Point-of-Care</h4>
+        <p>Optimized for speed. Fast retrieval across medical knowledge systems, deterministic tool invocation when needed, minimal latency synthesis. Best-in-class speed for routine clinical questions while maintaining broad coverage.</p>
+      </div>
+      <div class="dx-mode thinking">
+        <span class="mode-label">Thinking</span>
+        <h4>🧠 Deep Analysis</h4>
+        <p>Allocates additional computation for complex questions. Performs additional retrieval rounds, invokes multiple tools, evaluates competing hypotheses, gathers further evidence before responding. Improves performance on ambiguity, interacting conditions, or incomplete information.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 16px;">PeerCheck™ — Physician Review Program</h3>
+    <div class="dx-eval">
+      <h4>The largest U.S. verified physician-review program in healthcare AI</h4>
+      <p style="font-size:14px;color:var(--oe-text-dim);margin-bottom:16px;">Practicing physicians review AI-generated answers for accuracy, evidence quality, safety, and potential bias. Feedback creates a continuous improvement loop between real-world clinical expertise and system development.</p>
+      <ul class="dx-eval-list">
+        <li><span>Physicians participated</span><span class="eval-v">11,000+</span></li>
+        <li><span>Total reviews contributed</span><span class="eval-v">50,000+</span></li>
+        <li><span>Specialties represented</span><span class="eval-v">All</span></li>
+        <li><span>Review dimensions</span><span class="eval-v">Accuracy, Evidence, Safety, Bias</span></li>
+        <li><span>Program status</span><span class="eval-v">Active & growing</span></li>
+      </ul>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 16px;">Evaluation & Performance (Doximity Ask V6)</h3>
+    <div class="dx-eval">
+      <h4>Physician-Validated Rubrics on Free-Text Clinical Responses</h4>
+      <p style="font-size:14px;color:var(--oe-text-dim);margin-bottom:16px;">Unlike public benchmarks (multiple-choice exams), Doximity Ask is evaluated using physician-validated rubrics applied directly to free-text clinical responses. The same framework is used across Doximity Ask V6 and frontier general-purpose models for direct comparison.</p>
+      <ul class="dx-eval-list">
+        <li><span>Evaluation scenarios</span><span class="eval-v">~2,000</span></li>
+        <li><span>Domains</span><span class="eval-v">Clinical reasoning, pharmacology, safety</span></li>
+        <li><span>Blinded physician audit score</span><span class="eval-v">4.6 / 5.0</span></li>
+        <li><span>Audit sample</span><span class="eval-v">50 real-world interactions</span></li>
+        <li><span>Audit dimensions</span><span class="eval-v">Citation fidelity, clinical accuracy, evidence strength, uncertainty communication</span></li>
+        <li><span>Omission handling</span><span class="eval-v">First-class safety failure</span></li>
+      </ul>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 16px;">OpenEvidence vs Doximity Ask</h3>
+    <table class="dx-comparison">
+      <thead>
+        <tr><th>Dimension</th><th class="col-oe">OpenEvidence</th><th class="col-dx">Doximity Ask</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Model</strong></td><td class="col-oe">Vertical LLM on licensed medical texts</td><td class="col-dx">Post-trained reasoning model + RAG + tools</td></tr>
+        <tr><td><strong>Evidence Library</strong></td><td class="col-oe">30+ society/journal partners (NEJM, JAMA, NCCN, Cochrane...)</td><td class="col-dx">Physician-governed: guidelines, peer-reviewed lit, drug labels, licensed interaction data</td></tr>
+        <tr><td><strong>Citations</strong></td><td class="col-oe">Deterministic citation linking</td><td class="col-dx">Bibliography service resolves DOI, PMID, authors — never from model memory</td></tr>
+        <tr><td><strong>Inference Modes</strong></td><td class="col-oe">Standard search + DeepConsult (100x compute)</td><td class="col-dx">Instant + Thinking (auto-escalation)</td></tr>
+        <tr><td><strong>Deterministic Tools</strong></td><td class="col-oe">Clinical Trial Matching, Coding Intelligence</td><td class="col-dx">Fixed registry: calculators, drug doses, scores, coded facts</td></tr>
+        <tr><td><strong>Knowledge Graph</strong></td><td class="col-oe">Inferred (vector store)</td><td class="col-dx">Structured medical KG: drugs, indications, contraindications, dosing</td></tr>
+        <tr><td><strong>Physician Review</strong></td><td class="col-oe">Physician feedback (scale not disclosed)</td><td class="col-dx">PeerCheck™: 11K+ physicians, 50K+ reviews</td></tr>
+        <tr><td><strong>Full-Text Access</strong></td><td class="col-oe">Citations link to source</td><td class="col-dx">2,000+ journal full-text articles free to eligible clinicians</td></tr>
+        <tr><td><strong>Deferral Policy</strong></td><td class="col-oe">Not explicitly documented</td><td class="col-dx">Explicit: no evidence = deferral (intended); inappropriate refusal measured separately</td></tr>
+        <tr><td><strong>Revenue Model</strong></td><td class="col-oe">Pharma ads ($70-$1K CPM, ARPU ~$124, 90% margins)</td><td class="col-dx">Doximity Suite (ads + recruiting + telehealth), ARPU $228</td></tr>
+        <tr><td><strong>Physician Reach</strong></td><td class="col-oe">900K+ registered (50%+ of US MDs)</td><td class="col-dx">2M+ members (85% of US MDs)</td></tr>
+        <tr><td><strong>Compliance</strong></td><td class="col-oe">HIPAA + BAA</td><td class="col-dx">HIPAA compliant</td></tr>
+        <tr><td><strong>Valuation</strong></td><td class="col-oe">$12B (private, Series D)</td><td class="col-dx">$8.75B market cap (NYSE: DOCS)</td></tr>
+        <tr><td><strong>Geography</strong></td><td class="col-oe">US only (withdrew from EU/UK Apr 2026)</td><td class="col-dx">US-focused</td></tr>
+        <tr><td><strong>Legal</strong></td><td class="col-oe">Sued Doximity for trade secret theft (Jun 2025)</td><td class="col-dx">Counter-sued; motion to dismiss filed</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 16px;">Key Architectural Differentiators</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:16px;">
+      <div class="dx-pillar">
+        <h4>📄 No Hallucinated Citations</h4>
+        <p>Citation metadata (DOI, PMID, author list, journal info, URLs) resolved through a dedicated bibliography service — never generated from model memory. Reduces a common class of hallucination.</p>
+      </div>
+      <div class="dx-pillar">
+        <h4>🚫 Deferral as Correct Behavior</h4>
+        <p>When no admissible supporting evidence exists, deferral is the intended outcome — not a failure. Inappropriate refusal (deferring despite sufficient evidence) is measured separately.</p>
+      </div>
+      <div class="dx-pillar">
+        <h4>🔗 Structured Knowledge Graph</h4>
+        <p>Clinical concepts as typed entities with validated relationships — drugs, indications, contraindications, interactions, dosing through explicit schemas. Supplements literature retrieval with exact facts.</p>
+      </div>
+      <div class="dx-pillar">
+        <h4>⚠️ Omissions as Safety Failures</h4>
+        <p>Omitted information treated as first-class safety failures during evaluation and optimization. Model rewarded not just for avoiding unsupported recommendations but for identifying important missing info.</p>
+      </div>
+      <div class="dx-pillar">
+        <h4>🔄 Continuous Evaluation Loop</h4>
+        <p>Physician-authored rubrics used during tuning, post-training, pre-release validation, and ongoing monitoring. Retrieval, prompts, verifiers, and model policies updated as new failure modes found.</p>
+      </div>
+      <div class="dx-pillar">
+        <h4>📈 Transparent Limitations</h4>
+        <p>Publicly acknowledges hallucinations as inevitable. Reports evaluation results transparently including domains where V6 performs less strongly. Philosophy: make errors measurable and visible.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 16px;">Doximity Ask Timeline</h3>
+    <div id="dxTimeline"></div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 16px;">Doximity Corporate Context</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:32px;">
+      <div class="dx-pillar">
+        <h4>📊 Corporate Stats</h4>
+        <p><strong>Ticker:</strong> NYSE: DOCS<br><strong>Market Cap:</strong> ~$8.75B<br><strong>Revenue (TTM):</strong> $620M<br><strong>Members:</strong> 2M+ (85% US MDs)<br><strong>ARPU:</strong> $228<br><strong>Employees:</strong> 827</p>
+      </div>
+      <div class="dx-pillar">
+        <h4>🤝 Key Partnerships</h4>
+        <p><strong>Aledade (May 2026):</strong> Clinical AI Suite integrated into Aledade Assist for value-based care.<br><strong>150+ Health Systems:</strong> Purchased Doximity Clinical AI Suite including 8 of top 20 hospitals.</p>
+      </div>
+      <div class="dx-pillar">
+        <h4>⚖️ Legal with OpenEvidence</h4>
+        <p><strong>Jun 2025:</strong> OpenEvidence sues Doximity for corporate espionage — alleges executives impersonated physicians to steal trade secrets via prompt injection. Case 1:25-cv-11802.<br><strong>Doximity:</strong> Filed motion to dismiss + counterclaims.</p>
+      </div>
+      <div class="dx-pillar">
+        <h4>🛠️ Head of Clinical AI</h4>
+        <p><strong>Louis-Antoine Mullie, MD</strong> — Leads Doximity Ask development. Philosophy: "The responsibility of developers is to make limitations measurable." Advocates transparent evaluation over perfection claims.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:24px;font-size:13px;color:var(--oe-text-muted);">Source: <a href="https://technology.doximity.com/articles/doximity-ask" target="_blank" rel="noopener" style="color:var(--oe-orange);">Doximity Ask — Official Technical Overview →</a></p>
+  </div>
+</section>
+
 <!-- FUTURE FEATURES -->
 <section id="future">
   <div class="container">
@@ -1050,6 +1261,7 @@ const publicationsData = [
 ];
 
 const sourcesData = [
+  {name:"Doximity Ask — Technical Overview",url:"https://technology.doximity.com/articles/doximity-ask"},
   {name:"Sacra Equity Research",url:"https://sacra.com/c/openevidence/"},
   {name:"Sacra — OpenEvidence vs Doximity",url:"https://sacra.com/research/openevidence-vs-doximity/"},
   {name:"PRNewswire — Series B + DeepConsult",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
@@ -1097,6 +1309,18 @@ const sourcesData = [
   {name:"X — NBC News on OpenEvidence",url:"https://x.com/NBCNews/status/2054577478614544573"},
   {name:"Reuters — OpenEvidence $12B Valuation",url:"https://www.reuters.com/business/healthcare-pharmaceuticals/medical-ai-startup-openevidence-doubles-valuation-12-billion-latest-round-2026-01-21/"},
   {name:"Crunchbase News — OpenEvidence Series D",url:"https://news.crunchbase.com/venture/openevidence-ai-doctors-doubles-valuation-seriesd/"},
+];
+
+const dxTimelineData = [
+  {date:"Jul 2025",title:"Doximity Ask Launch",desc:"Doximity Ask introduced as clinical AI question-answering platform. Combines RAG, agentic tools, and post-trained reasoning model. Announced alongside Clinical AI Suite.",url:"https://technology.doximity.com/articles/doximity-ask"},
+  {date:"Jul 29, 2025",title:"Acquires Pathway Medical ($63M)",desc:"Doximity acquires Canadian AI startup Pathway Medical — the same company OpenEvidence had sued for prompt injection attacks. Technology integrated into Doximity AI Suite.",url:"https://en.wikipedia.org/wiki/Doximity"},
+  {date:"Jun 20, 2025",title:"Sued by OpenEvidence for Corporate Espionage",desc:"OpenEvidence files federal lawsuit alleging Doximity executives impersonated physicians to steal trade secrets via prompt injection. Case 1:25-cv-11802.",url:"https://www.bostonglobe.com/2025/06/24/business/openevidence-ai-doximity-lawsuit/"},
+  {date:"Sep 2025",title:"Doximity Files Motion to Dismiss + Counterclaims",desc:"Doximity responds with motion to dismiss OpenEvidence's claims. Files counterclaims alleging harassment and defamation.",url:"https://news.bloomberglaw.com/ip-law/openevidence-rips-doximity-harassment-defamation-counterclaims"},
+  {date:"Early 2026",title:"Doximity Ask V6 Released",desc:"Current version. Evaluated on ~2,000 physician-validated scenarios across clinical reasoning, pharmacology, and safety. Blinded physician audit scores 4.6/5.0.",url:"https://technology.doximity.com/articles/doximity-ask"},
+  {date:"2025-2026",title:"150+ Health Systems Purchase Clinical AI Suite",desc:"8 of top 20 US hospitals adopt Doximity Clinical AI Suite. Major enterprise traction for the platform.",url:"https://blog.doximity.com/articles/150-health-systems-are-now-on-the-doximity-clinical-ai-suite"},
+  {date:"May 13, 2026",title:"Aledade Partnership",desc:"Doximity integrates Clinical AI Suite into Aledade Assist for value-based care. Expands reach into Aledade's network of primary care practices.",url:"https://press.doximity.com/"},
+  {date:"2026",title:"PeerCheck™ Reaches 11K Physicians, 50K Reviews",desc:"Largest U.S. verified physician-review program in healthcare AI. Physicians across all specialties contributing reviews on AI-generated answers.",url:"https://technology.doximity.com/articles/doximity-ask"},
+  {date:"Jun 2026",title:"Technical Overview Published",desc:"Doximity publishes comprehensive technical article detailing Ask architecture: reasoning model, governed evidence library, deterministic tools, real-time retrieval, PeerCheck program, and evaluation methodology.",url:"https://technology.doximity.com/articles/doximity-ask"},
 ];
 
 // RENDER TIMELINE
@@ -1333,6 +1557,17 @@ window.addEventListener('load', function() {
         <h4>${p.title}</h4>
         <p><strong>${p.journal}</strong> · ${p.authors} · ${p.date}</p>
         <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">PubMed ${p.pmid} →</a></div>
+      </div>
+    </div>
+  `).join('');
+
+  document.getElementById('dxTimeline').innerHTML = dxTimelineData.map(d => `
+    <div class="dx-timeline-item">
+      <div class="dx-date">${d.date}</div>
+      <div class="dx-content">
+        <h5>${d.title}</h5>
+        <p>${d.desc}</p>
+        <div class="src-link" style="margin-top:6px;"><a href="${d.url}" target="_blank" rel="noopener">Source →</a></div>
       </div>
     </div>
   `).join('');
