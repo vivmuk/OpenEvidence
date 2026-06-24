@@ -193,6 +193,7 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 }
 .partner-item .name { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
 .partner-item .type { font-size: 11px; color: var(--oe-text-muted); }
+.partner-item:hover { border-color: var(--oe-orange); cursor: pointer; }
 
 /* TECH STACK */
 .tech-layer {
@@ -731,19 +732,39 @@ const futureData = [
 ];
 
 const partnersData = [
-  {name:"NEJM",type:"Content/Journal"},{name:"JAMA Network",type:"Content/Journal (11 journals)"},{name:"NCCN",type:"Cancer Guidelines"},
-  {name:"Cochrane",type:"Systematic Reviews"},{name:"Wiley",type:"Publisher"},{name:"ACC",type:"Cardiology"},
-  {name:"ADA",type:"Diabetes"},{name:"AAFP",type:"Family Physicians"},{name:"ACOG",type:"OB/GYN"},
-  {name:"ACEP",type:"Emergency Physicians"},{name:"NORD",type:"Rare Diseases"},{name:"AAOS",type:"Orthopaedic Surgeons"},
-  {name:"AAO",type:"Ophthalmology"},{name:"AAO-HNS",type:"Otolaryngology"},{name:"AUA",type:"Urology"},
-  {name:"AMA",type:"Medical Association"},{name:"GINA",type:"Asthma"},{name:"SSO",type:"Surgical Oncology"},
-  {name:"ASAM",type:"Addiction Medicine"},{name:"SNO",type:"Neuro-Oncology"},{name:"WMS",type:"Wilderness Medicine"},
-  {name:"IPMDS",type:"Postconcussive Symptoms"},{name:"Mayo Clinic",type:"Accelerator (2023)"},
-  {name:"Sutter Health",type:"Health System (Feb 2026)"},{name:"Mount Sinai",type:"Health System (Mar 2026)"},
-  {name:"Cedars-Sinai",type:"Health System (May 2026)"},{name:"Vercel",type:"Frontend Hosting"},
-  {name:"Baseten",type:"AI Inference"},{name:"Google Cloud",type:"Backend Cloud"},
-  {name:"Nvidia",type:"Investor + Compute"},{name:"Amaro",type:"Ad Tech (Acquired)"},
-  {name:"Veeva Systems",type:"Commercial Partnership"},{name:"Tandem",type:"Prescriptions & Prior Auth"},
+  {name:"NEJM",type:"Content/Journal",date:"Feb 19, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-achieves-1-billion-valuation-in-sequoia-led-round-and-announces-content-partnership-with-the-new-england-journal-of-medicine-302380960.html"},
+  {name:"JAMA Network",type:"Content/Journal (11 journals)",date:"Jun 5, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-and-the-jama-network-sign-strategic-content-agreement-302473690.html"},
+  {name:"NCCN",type:"Cancer Guidelines",date:"Nov 5, 2025",url:"https://ascopost.com/news/november-2025/nccn-guidelines-to-be-integrated-into-openevidence-medical-ai-platform/"},
+  {name:"Cochrane",type:"Systematic Reviews",date:"Mar 3, 2026",url:"https://www.openevidence.com/announcements/wiley-and-openevidence-partner-to-deliver-trusted-research-to-physicians-at-the-point-of-care"},
+  {name:"Wiley",type:"Publisher",date:"Mar 3, 2026",url:"https://www.openevidence.com/announcements/wiley-and-openevidence-partner-to-deliver-trusted-research-to-physicians-at-the-point-of-care"},
+  {name:"ACC",type:"Cardiology",date:"2025",url:"https://sacra.com/c/openevidence/"},
+  {name:"ADA",type:"Diabetes",date:"2025",url:"https://sacra.com/c/openevidence/"},
+  {name:"AAFP",type:"Family Physicians",date:"2025",url:"https://www.openevidence.com"},
+  {name:"ACOG",type:"OB/GYN",date:"May 4, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-acog-announce-strategic-collaboration-to-advance-ob-gyn-health-care"},
+  {name:"ACEP",type:"Emergency Physicians",date:"Dec 11, 2025",url:"https://www.openevidence.com/announcements/acep"},
+  {name:"NORD",type:"Rare Diseases",date:"Mar 12, 2026",url:"https://www.openevidence.com/announcements/national-organization-for-rare-disorders-and-openevidence-partner-to-bring-ai-powered-rare-disease-resources-to-clinicians-and-patients-worldwide"},
+  {name:"AAOS",type:"Orthopaedic Surgeons",date:"2025",url:"https://www.openevidence.com"},
+  {name:"AAO",type:"Ophthalmology",date:"Jun 9, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-the-american-academy-of-ophthalmology-partner-to-close-the-gap-between-evidence-and-eye-care"},
+  {name:"AAO-HNS",type:"Otolaryngology",date:"Mar 16, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-aao-hnsf-pioneer-a-new-model-for-updating-clinical-practice-guidelines"},
+  {name:"AUA",type:"Urology",date:"2025",url:"https://sacra.com/c/openevidence/"},
+  {name:"AMA",type:"Medical Association",date:"2025",url:"https://www.prnewswire.com"},
+  {name:"GINA",type:"Asthma",date:"May 5, 2026",url:"https://www.openevidence.com/announcements/the-global-initiative-for-asthma-and-openevidence-partner-to-deliver-asthma-strategy-to-physicians-worldwide"},
+  {name:"SSO",type:"Surgical Oncology",date:"May 11, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-society-of-surgical-oncology-announce-strategic-partnership-to-advance-surgical-cancer-care-and-launch-sso-innovator-grant"},
+  {name:"ASAM",type:"Addiction Medicine",date:"2025",url:"https://www.openevidence.com/announcements/asam"},
+  {name:"SNO",type:"Neuro-Oncology",date:"Jun 2026",url:"https://www.openevidence.com"},
+  {name:"WMS",type:"Wilderness Medicine",date:"2025",url:"https://www.openevidence.com/announcements/wms"},
+  {name:"IPMDS",type:"Postconcussive Symptoms",date:"2025",url:"https://www.openevidence.com/announcements/ipmds"},
+  {name:"Mayo Clinic",type:"Accelerator (2023)",date:"2023",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {name:"Sutter Health",type:"Health System (Feb 2026)",date:"Feb 11, 2026",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
+  {name:"Mount Sinai",type:"Health System (Mar 2026)",date:"Mar 31, 2026",url:"https://www.openevidence.com/announcements/mount-sinai-health-system-collaborates-with-openevidence-to-provide-evidence-based-knowledge-within-electronic-medical-record"},
+  {name:"Cedars-Sinai",type:"Health System (May 2026)",date:"May 2026",url:"https://sacra.com/c/openevidence/"},
+  {name:"Vercel",type:"Frontend Hosting",date:"Ongoing",url:"https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust"},
+  {name:"Baseten",type:"AI Inference",date:"Ongoing",url:"https://www.baseten.co/resources/customers/openevidence-delivers-instant-medical-information-with-baseten/"},
+  {name:"Google Cloud",type:"Backend Cloud",date:"Ongoing",url:"https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust"},
+  {name:"Nvidia",type:"Investor + Compute",date:"Jan 2026",url:"https://sacra.com/c/openevidence/"},
+  {name:"Amaro",type:"Ad Tech (Acquired)",date:"Sep 10, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
+  {name:"Veeva Systems",type:"Commercial Partnership",date:"2026",url:"https://sacra.com/c/openevidence/"},
+  {name:"Tandem",type:"Prescriptions & Prior Auth",date:"2026",url:"https://sacra.com/c/openevidence/"},
 ];
 
 const pharmaData = [
@@ -954,6 +975,39 @@ function buildCharts() {
       }
     }
   }));
+
+  // Partnerships over time
+  const ctxP = document.getElementById('chartPartnerships');
+  if (ctxP) {
+    const pctx = ctxP.getContext('2d');
+    const ptc = getThemeColors();
+    charts.push(new Chart(pctx, {
+      type: 'bar',
+      data: {
+        labels: ['Mayo\n2023','NEJM\nFeb 2025','JAMA\nJun 2025','NCCN\nNov 2025','ACEP\nDec 2025','Wiley+Cochrane\nMar 2026','NORD\nMar 2026','AAO-HNS\nMar 2026','Sutter\nFeb 2026','Mt Sinai\nMar 2026','NCCN Algo\nApr 2026','Wiley Neuro\nApr 2026','ACOG\nMay 2026','GINA\nMay 2026','SSO\nMay 2026','Cedars-Sinai\nMay 2026','AAO\nJun 2026'],
+        datasets: [{
+          label: 'Partnerships',
+          data: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+          backgroundColor: chartColorLight,
+          borderColor: chartColor,
+          borderWidth: 1,
+          borderRadius: 4,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' }
+        },
+        scales: {
+          x: { grid: { color: ptc.grid }, ticks: { color: ptc.text, maxRotation: 90, minRotation: 45, font: { size: 10 } } },
+          y: { grid: { color: ptc.grid }, ticks: { color: ptc.text }, title: { display: true, text: 'Cumulative Partnerships', color: ptc.text } }
+        }
+      }
+    }));
+  }
 }
 
 // Wait for everything including Chart.js CDN to fully load
@@ -996,10 +1050,13 @@ window.addEventListener('load', function() {
   `).join('');
 
   document.getElementById('partnerGrid').innerHTML = partnersData.map(p => `
+    <a href="${p.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
     <div class="partner-item">
       <div class="name">${p.name}</div>
       <div class="type">${p.type}</div>
+      <div class="type" style="color:var(--oe-orange);margin-top:2px;">${p.date} →</div>
     </div>
+    </a>
   `).join('');
 
   document.getElementById('sourceList').innerHTML = sourcesData.map(s => `
