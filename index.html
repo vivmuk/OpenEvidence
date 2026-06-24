@@ -502,25 +502,66 @@ footer { padding: 40px 0; border-top: 1px solid var(--oe-dark-border); text-alig
 footer p { font-size: 13px; color: var(--oe-text-muted); }
 
 /* RESPONSIVE */
+/* HAMBURGER MENU (mobile) */
+.hamburger {
+  display: none;
+  position: fixed; top: 0; left: 0; z-index: 200;
+  width: 48px; height: 48px;
+  background: var(--oe-dark-soft); border: none;
+  border-right: 1px solid var(--oe-dark-border);
+  border-bottom: 1px solid var(--oe-dark-border);
+  cursor: pointer; padding: 0;
+  display: none; align-items: center; justify-content: center;
+}
+.hamburger span {
+  display: block; width: 20px; height: 2px; background: var(--oe-text);
+  border-radius: 1px; position: absolute;
+  transition: all 0.3s ease;
+}
+.hamburger span:nth-child(1) { transform: translateY(-6px); }
+.hamburger span:nth-child(2) { transform: translateY(0); }
+.hamburger span:nth-child(3) { transform: translateY(6px); }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg); }
+
+.sidebar-overlay {
+  display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); z-index: 90;
+}
+.sidebar-overlay.show { display: block; }
+
 @media (max-width: 768px) {
   .charts-grid { grid-template-columns: 1fr; }
   .competitor-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .sidebar { width: 60px; }
-  .sidebar .brand { font-size: 0; }
-  .sidebar .brand-dot { width: 8px; height: 8px; }
-  .sidebar .nav-links a { padding: 10px; font-size: 0; border-left: none; border-bottom: 2px solid transparent; }
-  .sidebar .nav-links a:hover { border-bottom-color: var(--oe-orange); }
-  .sidebar .sidebar-footer { display: none; }
-  .main-content { margin-left: 60px; }
+  .hamburger { display: flex; }
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    width: 240px;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.3);
+  }
+  .sidebar.open { transform: translateX(0); }
+  .sidebar .brand { font-size: 16px; padding-left: 56px; }
+  .sidebar .nav-links a { padding: 12px 20px; font-size: 14px; }
+  .sidebar .sidebar-footer { display: block; }
+  .main-content { margin-left: 0; }
   .container { padding: 0 16px; }
+  .hero { padding-top: 64px; }
 }
 </style>
 </head>
 <body>
 
+<!-- HAMBURGER (mobile) -->
+<button class="hamburger" id="hamburger" onclick="toggleSidebar()" aria-label="Menu">
+  <span></span><span></span><span></span>
+</button>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
 <!-- SIDEBAR -->
-<div class="sidebar">
+<div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
     <a href="#metrics">📊 Metrics</a>
@@ -1614,6 +1655,23 @@ function toggleTheme() {
   document.querySelector('.theme-toggle').textContent = isDark ? '☀ Light Mode' : '☾ Dark Mode';
   buildCharts();
 }
+
+// HAMBURGER MENU (mobile)
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const hamburger = document.getElementById('hamburger');
+  const overlay = document.getElementById('sidebarOverlay');
+  sidebar.classList.toggle('open');
+  hamburger.classList.toggle('open');
+  overlay.classList.toggle('show');
+}
+
+// Close sidebar on nav link click (mobile)
+document.querySelectorAll('.sidebar .nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    if (window.innerWidth <= 768) toggleSidebar();
+  });
+});
 </script>
 
 </body>
