@@ -252,9 +252,16 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .charts-grid { grid-template-columns: 1fr; }
-  nav .links { display: none; }
   .competitor-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .sidebar { width: 60px; }
+  .sidebar .brand { font-size: 0; }
+  .sidebar .brand-dot { width: 8px; height: 8px; }
+  .sidebar .nav-links a { padding: 10px; font-size: 0; border-left: none; border-bottom: 2px solid transparent; }
+  .sidebar .nav-links a:hover { border-bottom-color: var(--oe-orange); }
+  .sidebar .sidebar-footer { display: none; }
+  .main-content { margin-left: 60px; }
+  .container { padding: 0 16px; }
 }
 </style>
 </head>
@@ -649,6 +656,8 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <p style="margin-top: 4px;">Data sourced from public information. Not affiliated with OpenEvidence Inc.</p>
   </div>
 </footer>
+
+</div><!-- end main-content -->
 
 <script>
 // DATA
@@ -1090,11 +1099,25 @@ window.addEventListener('load', function() {
   buildCharts();
 });
 
+// SCROLLSPY — highlight active nav link
+const navLinks = document.querySelectorAll('.sidebar .nav-links a');
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+
 // THEME TOGGLE
 function toggleTheme() {
   const isDark = document.documentElement.classList.toggle('dark');
   document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-  document.querySelector('.theme-toggle').textContent = isDark ? '☀ Light' : '☾ Dark';
+  document.querySelector('.theme-toggle').textContent = isDark ? '☀ Light Mode' : '☾ Dark Mode';
   buildCharts();
 }
 </script>
