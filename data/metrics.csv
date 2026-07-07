@@ -27,3 +27,7 @@ Date,Metric,Value,Unit,Source_URL
 2026-05-13,Registered Physicians,650000,physicians,https://www.nbcnews.com
 2026-05-13,Monthly Consultations,27000000,consultations/month,https://www.nbcnews.com
 2026-06-23,Registered Physicians,860000,physicians,https://www.openevidence.com
+2026-06-25,Verified U.S. Clinicians,860000,physicians,https://www.openevidence.com
+2026-06-23,Physicians with EchoNext access,500000,physicians,https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence
+2026-05-21,Clinicians with Voice Mode access,860000,clinicians,https://www.openevidence.com
+2026-05-21,Total AI-powered clinical consultations,200000000,cumulative consultations,https://www.openevidence.com
