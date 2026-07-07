@@ -645,7 +645,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   </div>
   <div class="sidebar-footer">
     <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
-    <div class="updated-info">Updated: Jun 27, 2026<br>Next: Jul 4, 2026 (Sat)</div>
+    <div class="updated-info">Updated: Jul 7, 2026<br>Next: Jul 12, 2026 (Sun)</div>
   </div>
 </div>
 
@@ -656,25 +656,25 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   <h1>Open<span class="accent">Evidence</span> Insights</h1>
   <p>Comprehensive tracking of the fastest-growing medical AI platform in history.</p>
   <p>Partnerships, products, funding, adoption metrics, competitor landscape & tech stack.</p>
-  <p class="updated">Last updated: June 27, 2026 · Next update: July 4, 2026 (Saturday 9AM ET)</p>
+  <p class="updated">Last updated: July 7, 2026 · Next update: July 12, 2026 (Sunday 5PM ET)</p>
 </div>
 
 <!-- WHATS NEW BANNER -->
 <div class="container">
   <div class="whats-new" id="whatsNew">
     <button class="wn-dismiss" onclick="document.getElementById('whatsNew').style.display='none'">✕</button>
-    <h3>✦ What's New — June 27 Update</h3>
-    <div class="wn-date">Added June 27, 2026 · 1 new announcement tracked</div>
+    <h3>✦ What's New — July 7 Update</h3>
+    <div class="wn-date">Added July 7, 2026 · 11 new PubMed publications + competitor and metrics updates</div>
     <div class="wn-grid">
       <div class="wn-item">
-        <div class="wn-cat">New Partnership</div>
-        <div class="wn-title">JOMI — First Video Evidence Collaboration</div>
-        <div class="wn-desc">OpenEvidence partners with Journal of Medical Insight (JOMI) to bring 357 peer-reviewed surgical videos to the platform. First time AI medical retrieval includes video — AI highlights the exact moment in a surgical video where a technique is performed. Announced June 25, 2026.</div>
+        <div class="wn-cat">New Publications</div>
+        <div class="wn-title">11 new PubMed papers added</div>
+        <div class="wn-desc">Including AI infection control benchmarking across 3 regions, breast cancer decision support multicenter study, periodontal disease LLM comparison of 11 systems, medical students LLM national survey, pancreatic cancer biology review, functional hypothalamic amenorrhea LLM performance, and more. Total PubMed publications now at 134.</div>
       </div>
       <div class="wn-item">
-        <div class="wn-cat">Previous Update</div>
-        <div class="wn-title">June 24 — Doximity Ask Tab + SNO + Pathway Labs</div>
-        <div class="wn-desc">Added Doximity Ask deep-dive section, SNO partnership (Jun 23), Pathway Labs EchoNext FDA clearance, Nature Medicine AI heart transplant case, NYT coverage, and AAO partnership.</div>
+        <div class="wn-cat">Competitor & Metrics Updates</div>
+        <div class="wn-title">Doximity 100+ health systems, Abridge $5.3B, new physician metrics</div>
+        <div class="wn-desc">Doximity State of AI Report: 94% physicians using/interested in AI. Abridge Patient-Centered Clinician Intelligence Platform with Nvidia partnership and Eli Lilly investment. New metrics: 860K physicians (Jun 2026), 650K physicians and 27M monthly consultations (NBC News May 2026).</div>
       </div>
     </div>
   </div>
@@ -1202,9 +1202,9 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
 <section id="publications">
   <div class="container">
     <h2>PubMed <span class="accent">Publications</span></h2>
-    <p class="section-sub">123 papers mentioning OpenEvidence on PubMed. Latest publications from the past week. Updated daily via PubMed API.</p>
+    <p class="section-sub">134 papers mentioning OpenEvidence on PubMed. Latest publications from the past week. Updated daily via PubMed API.</p>
     <div id="pubList"></div>
-    <p style="margin-top:16px;font-size:13px;color:var(--oe-text-muted);">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/?term=OpenEvidence&sort=date" target="_blank" rel="noopener" style="color:var(--oe-orange);">PubMed — OpenEvidence search (123 results) →</a></p>
+    <p style="margin-top:16px;font-size:13px;color:var(--oe-text-muted);">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/?term=OpenEvidence&sort=date" target="_blank" rel="noopener" style="color:var(--oe-orange);">PubMed — OpenEvidence search (134 results) →</a></p>
   </div>
 </section>
 
@@ -1388,6 +1388,17 @@ const pharmaData = [
 ];
 
 const publicationsData = [
+  {date:"Jul 5, 2026",title:"Large Language Models and Retrieval-Augmented Platforms for the Diagnosis and Management of Periodontal Diseases: A Blinded Expert-Rated Comparative Study of 11 Systems",journal:"J Clin Periodontol",authors:"Mayer Y et al.",pmid:"42402252",url:"https://pubmed.ncbi.nlm.nih.gov/42402252/",new:true},
+  {date:"Jul 4, 2026",title:"AI-enabled clinical decision support in breast cancer care: a blinded multicenter benchmarking study comparing medically specialized with a general-purpose system",journal:"J Med Syst",authors:"Freudenberg J et al.",pmid:"42400697",url:"https://pubmed.ncbi.nlm.nih.gov/42400697/",new:true},
+  {date:"Jul 3, 2026",title:"Medical students' use of large language models: a national survey",journal:"Int J Med Inform",authors:"Barr AA et al.",pmid:"42400960",url:"https://pubmed.ncbi.nlm.nih.gov/42400960/",new:true},
+  {date:"Jul 1, 2026",title:"Pancreatic Cancer: Translating Tumor Biology into Actionability",journal:"Cancer Discov",authors:"Balogun FO et al.",pmid:"42381464",url:"https://pubmed.ncbi.nlm.nih.gov/42381464/",new:true},
+  {date:"Jun 27, 2026",title:"Update on intestinal ultrasound in pediatric inflammatory bowel disease",journal:"Eur J Pediatr",authors:"Dunay GA et al.",pmid:"42371204",url:"https://pubmed.ncbi.nlm.nih.gov/42371204/",new:true},
+  {date:"Jun 23, 2026",title:"When the Same Patient Is Not the Same Patient: The Will Rogers Phenomenon in Contemporary Cardiovascular Care",journal:"J Am Coll Cardiol",authors:"Krumholz HM",pmid:"42339795",url:"https://pubmed.ncbi.nlm.nih.gov/42339795/",new:true},
+  {date:"Jun 19, 2026",title:"Excess Cardiovascular Mortality Among Black Americans, 2000-2024: A JACC Progress Report",journal:"J Am Coll Cardiol",authors:"Arun AS et al.",pmid:"42319310",url:"https://pubmed.ncbi.nlm.nih.gov/42319310/",new:true},
+  {date:"Jun 15, 2026",title:"Performance of large language models as an information resource on functional hypothalamic amenorrhea for patients and healthcare professionals",journal:"Front Artif Intell",authors:"Safwan N et al.",pmid:"42376443",url:"https://pubmed.ncbi.nlm.nih.gov/42376443/",new:true},
+  {date:"Jun 10, 2026",title:"Eugene Braunwald: An Appreciation",journal:"J Am Coll Cardiol",authors:"Krumholz HM",pmid:"42268159",url:"https://pubmed.ncbi.nlm.nih.gov/42268159/",new:true},
+  {date:"Jun 8, 2026",title:"Unusual cause of small bowel obstruction in a liver transplant recipient: a case report and focused literature review",journal:"Front Surg",authors:"Sotiropoulou A et al.",pmid:"42339171",url:"https://pubmed.ncbi.nlm.nih.gov/42339171/",new:true},
+  {date:"Jun 2026",title:"Integrating AI into infection control: Evaluating the accuracy and consistency of four leading platforms across three regions",journal:"J Assoc Med Microbiol Infect Dis Can",authors:"Julkipli J et al.",pmid:"42403495",url:"https://pubmed.ncbi.nlm.nih.gov/42403495/",new:true},
   {date:"Jun 12, 2026",title:"General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",journal:"Nature Medicine",authors:"Vishwanath K et al.",pmid:"42286322",url:"https://pubmed.ncbi.nlm.nih.gov/42286322/",new:true},
   {date:"Jun 12, 2026",title:"Reproducibility of AI-Generated Antibiotic Recommendations in Standardized Clinical Scenarios",journal:"Int J Antimicrob Agents",authors:"De Vito A et al.",pmid:"42285312",url:"https://pubmed.ncbi.nlm.nih.gov/42285312/",new:true},
   {date:"Jun 13, 2026",title:"Prescribing Caution: A Critique of OpenEvidence to Answer Medication-Related Questions",journal:"J Am Coll Clin Pharm",authors:"Bergsbaken JM et al.",pmid:"42286997",url:"https://pubmed.ncbi.nlm.nih.gov/42286997/",new:true},

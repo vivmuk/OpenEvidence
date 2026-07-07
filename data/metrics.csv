@@ -23,3 +23,7 @@ Date,Metric,Value,Unit,Source_URL
 2026-06-12,Benchmark,89.6,MedQA accuracy percent,Nature Medicine study,Nature Medicine
 2026-06-12,Benchmark,3.24,Real Clinical Queries mean score,Nature Medicine study,Nature Medicine
 2026-06-12,Benchmark,52,Low-scoring responses flagged,Nature Medicine study error taxonomy,Nature Medicine
+2026-01-21,Annualized Revenue,100000000,USD,https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html
+2026-05-13,Registered Physicians,650000,physicians,https://www.nbcnews.com
+2026-05-13,Monthly Consultations,27000000,consultations/month,https://www.nbcnews.com
+2026-06-23,Registered Physicians,860000,physicians,https://www.openevidence.com
