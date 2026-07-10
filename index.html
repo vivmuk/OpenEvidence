@@ -186,6 +186,7 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 .cat-Milestone { background: rgba(50,150,120,0.15); color: #5DAE8E; }
 .cat-Company { background: rgba(100,100,100,0.15); color: var(--oe-text-dim); }
 .cat-Research { background: rgba(80,130,100,0.15); color: #7BAE8B; }
+.cat-Trend { background: rgba(100,160,80,0.15); color: #8AC47A; }
 .cat-Tech { background: rgba(60,100,140,0.15); color: #6B8FAD; }
 
 /* FILTERS */
@@ -240,6 +241,90 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 @media (max-width: 768px) {
   .dx-hero, .dx-pillars, .dx-modes, .dx-stats { grid-template-columns: 1fr; }
   .dx-timeline-item { grid-template-columns: 1fr; }
+}
+
+/* GLOBAL LANDSCAPE */
+.region-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 32px 0; }
+.region-card {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 20px; transition: border-color 0.2s;
+  position: relative; overflow: hidden;
+}
+.region-card:hover { border-color: var(--oe-orange); }
+.region-card .region-flag { font-size: 28px; margin-bottom: 8px; }
+.region-card .region-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.region-card .region-status { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
+.region-card .region-status.early { background: rgba(100,180,100,0.15); color: #6BAF7D; }
+.region-card .region-status.growing { background: rgba(228,100,61,0.15); color: var(--oe-orange); }
+.region-card .region-status.mature { background: rgba(100,130,200,0.15); color: #8AAFCC; }
+.region-card .region-status.restricted { background: rgba(180,70,70,0.15); color: #BF7A6B; }
+.region-card .region-stat { font-size: 12px; color: var(--oe-text-dim); margin-bottom: 2px; }
+.region-card .region-stat strong { color: var(--oe-text); }
+.region-card .region-tools { font-size: 11px; color: var(--oe-text-muted); margin-top: 6px; line-height: 1.5; }
+.region-card .region-tools .tool-chip { display: inline-block; background: rgba(228,100,61,0.08); color: var(--oe-orange); padding: 1px 6px; border-radius: 3px; margin: 1px 2px; font-size: 10px; }
+
+.global-timeline { position: relative; padding-left: 32px; margin-top: 24px; }
+.global-timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--oe-dark-border); }
+.global-tl-item { position: relative; margin-bottom: 20px; }
+.global-tl-item::before { content: ''; position: absolute; left: -28px; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: var(--oe-dark); border: 2px solid var(--oe-orange); }
+.global-tl-item .gtl-date { font-size: 13px; color: var(--oe-orange); font-weight: 600; margin-bottom: 2px; }
+.global-tl-item .gtl-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+.global-tl-item .gtl-desc { font-size: 13px; color: var(--oe-text-dim); margin-bottom: 4px; }
+.global-tl-item .gtl-source { font-size: 12px; color: var(--oe-text-muted); }
+.global-tl-item .gtl-source a { color: var(--oe-orange); text-decoration: none; }
+.global-tl-item .gtl-source a:hover { text-decoration: underline; }
+.global-tl-item .region-tag {
+  display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px;
+  margin-right: 8px; font-weight: 600; letter-spacing: 0.3px;
+}
+.reg-US { background: rgba(228,100,61,0.15); color: var(--oe-orange); }
+.reg-EU { background: rgba(70,130,180,0.15); color: #6B9ABF; }
+.reg-UK { background: rgba(100,130,200,0.15); color: #8AAFCC; }
+.reg-CN { background: rgba(200,50,50,0.15); color: #CC6B6B; }
+.reg-IN { background: rgba(150,100,200,0.15); color: #B89AC4; }
+.reg-JP { background: rgba(180,120,60,0.15); color: #D4A94E; }
+.reg-SEA { background: rgba(50,150,120,0.15); color: #5DAE8E; }
+.reg-LATAM { background: rgba(200,150,50,0.15); color: #D4B44E; }
+.reg-MEA { background: rgba(100,160,80,0.15); color: #8AC47A; }
+.reg-AF { background: rgba(120,100,60,0.15); color: #AE9A6B; }
+.reg-Global { background: rgba(100,100,100,0.15); color: var(--oe-text-dim); }
+
+.reg-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+
+.global-matrix { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 13px; }
+.global-matrix th { text-align: left; font-size: 11px; text-transform: uppercase; color: var(--oe-text-muted); padding: 12px 10px; border-bottom: 2px solid var(--oe-dark-border); position: sticky; top: 0; background: var(--oe-dark-card); }
+.global-matrix td { padding: 12px 10px; border-bottom: 1px solid var(--oe-dark-border); }
+.global-matrix tr:hover { background: var(--oe-dark-soft); }
+.global-matrix .yes { color: #6BAF7D; font-weight: 600; }
+.global-matrix .no { color: var(--oe-text-muted); }
+.global-matrix .partial { color: #D4A94E; font-weight: 600; }
+.global-matrix .blocked { color: #BF7A6B; font-weight: 600; }
+.global-matrix-wrapper { overflow-x: auto; border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); }
+
+.trend-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 24px 0; }
+.trend-card {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 24px; transition: border-color 0.2s;
+}
+.trend-card:hover { border-color: var(--oe-orange); }
+.trend-card .trend-icon { font-size: 28px; margin-bottom: 8px; }
+.trend-card .trend-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.trend-card .trend-metric { font-size: 24px; font-family: var(--oe-font); color: var(--oe-orange); margin: 8px 0; }
+.trend-card .trend-desc { font-size: 13px; color: var(--oe-text-dim); line-height: 1.5; }
+.trend-card .trend-region { font-size: 11px; color: var(--oe-text-muted); margin-top: 8px; }
+.trend-card .trend-source { font-size: 11px; margin-top: 6px; }
+.trend-card .trend-source a { color: var(--oe-orange); text-decoration: none; }
+.trend-card .trend-source a:hover { text-decoration: underline; }
+.trend-card .trend-trajectory { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-top: 6px; font-weight: 600; }
+.trend-card .trend-trajectory.up { background: rgba(100,180,100,0.15); color: #6BAF7D; }
+.trend-card .trend-trajectory.stable { background: rgba(200,150,50,0.15); color: #D4A94E; }
+.trend-card .trend-trajectory.emerging { background: rgba(100,130,200,0.15); color: #8AAFCC; }
+.trend-card .trend-trajectory.declining { background: rgba(180,70,70,0.15); color: #BF7A6B; }
+
+@media (max-width: 768px) {
+  .region-grid { grid-template-columns: 1fr; }
+  .trend-grid { grid-template-columns: 1fr; }
+  .global-matrix { font-size: 11px; }
 }
 
 /* NEW BADGE */
@@ -639,7 +724,8 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <a href="#tech">⚙️ Tech Stack</a>
     <a href="#pharma">💊 Pharma</a>
     <a href="#publications">📄 Publications</a>
-    <a href="#doximity">🩺 Doximity Ask <span class="new-badge" style="margin-left:4px;">NEW</span></a>
+    <a href="#doximity">🩺 Doximity Ask</a>
+    <a href="#global">🌍 Global Landscape <span class="new-badge" style="margin-left:4px;">NEW</span></a>
     <a href="#future">🔮 Future</a>
     <a href="#sources">📚 Sources</a>
   </div>
@@ -656,7 +742,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   <h1>Open<span class="accent">Evidence</span> Insights</h1>
   <p>Comprehensive tracking of the fastest-growing medical AI platform in history.</p>
   <p>Partnerships, products, funding, adoption metrics, competitor landscape & tech stack.</p>
-  <p class="updated">Last updated: July 10, 2026 · Next update: July 12, 2026 (Sunday 5PM ET)</p>
+  <p class="updated">Last updated: July 10, 2026 · Next update: July 12, 2026 (Sunday 5PM ET) + Global Landscape weekly (Tue 5PM ET)</p>
 </div>
 
 <!-- WHATS NEW BANNER -->
@@ -1180,6 +1266,75 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   </div>
 </section>
 
+<!-- GLOBAL LANDSCAPE -->
+<section id="global">
+  <div class="container">
+    <h2>Global <span class="accent">Clinical AI Landscape</span></h2>
+    <p class="section-sub">Tracking clinical AI applications across major world markets — adoption, regulation, funding, and emerging trends. Updated weekly.</p>
+
+    <!-- REGION OVERVIEW -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">Regional Overview</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Clinical AI maturity by region — from mature markets with active AI tools to restricted markets with regulatory barriers.</p>
+    <div class="region-grid" id="regionGrid"></div>
+
+    <!-- GLOBAL ADOPTION CHART -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>Physician AI Adoption by Region (%)</h3>
+      <p class="chart-sub">Estimated percentage of physicians using AI tools regularly — 2024 to 2026</p>
+      <div class="chart-wrapper" style="height:350px;"><canvas id="chartGlobalAdoption"></canvas></div>
+    </div>
+
+    <!-- MARKET SIZE CHART -->
+    <div class="chart-container">
+      <h3>Clinical AI Market Size by Region ($B)</h3>
+      <p class="chart-sub">Healthcare AI market size — current and projected</p>
+      <div class="chart-wrapper" style="height:350px;"><canvas id="chartMarketSize"></canvas></div>
+    </div>
+
+    <!-- GLOBAL TIMELINE -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Global Timeline</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Major clinical AI events worldwide — product launches, regulatory milestones, funding, partnerships. Filter by region.</p>
+    <div class="reg-filters" id="globalFilters">
+      <button class="filter-btn active" data-filter="all">All Regions</button>
+      <button class="filter-btn" data-filter="US">🇺🇸 US</button>
+      <button class="filter-btn" data-filter="EU">🇪🇺 EU</button>
+      <button class="filter-btn" data-filter="UK">🇬🇧 UK</button>
+      <button class="filter-btn" data-filter="CN">🇨🇳 China</button>
+      <button class="filter-btn" data-filter="IN">🇮🇳 India</button>
+      <button class="filter-btn" data-filter="JP">🇯🇵 Japan</button>
+      <button class="filter-btn" data-filter="SEA">🇸🇬 SEA</button>
+      <button class="filter-btn" data-filter="LATAM">🇧🇷 LATAM</button>
+      <button class="filter-btn" data-filter="MEA">🇮🇱 MEA</button>
+      <button class="filter-btn" data-filter="Global">🌍 Global</button>
+    </div>
+    <div class="global-timeline" id="globalTimeline"></div>
+
+    <!-- REGULATORY TIMELINE -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Regulatory Milestones</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Key regulatory actions affecting clinical AI — FDA, EMA, NMPA, MHRA, and others.</p>
+    <div class="global-timeline" id="regulatoryTimeline"></div>
+
+    <!-- EMERGING TRENDS -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Trends</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Key trajectories shaping the global clinical AI landscape in 2025-2026.</p>
+    <div class="trend-grid" id="trendGrid"></div>
+
+    <!-- GLOBAL COMPETITOR MATRIX -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Global Availability Matrix</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Which clinical AI platforms are available in which markets? ✓ = available · ~ = partial/limited · ✗ = not available/blocked</p>
+    <div class="global-matrix-wrapper">
+      <table class="global-matrix" id="globalMatrix"></table>
+    </div>
+
+    <!-- FUNDING BY REGION -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Funding by Region</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Clinical AI venture funding by geography — 2024 to 2026.</p>
+    <div class="chart-container">
+      <div class="chart-wrapper" style="height:350px;"><canvas id="chartFundingByRegion"></canvas></div>
+    </div>
+  </div>
+</section>
+
 <!-- FUTURE FEATURES -->
 <section id="future">
   <div class="container">
@@ -1485,6 +1640,92 @@ const dxTimelineData = [
   {date:"Jun 2026",title:"Technical Overview Published",desc:"Doximity publishes comprehensive technical article detailing Ask architecture: reasoning model, governed evidence library, deterministic tools, real-time retrieval, PeerCheck program, and evaluation methodology.",url:"https://technology.doximity.com/articles/doximity-ask"},
 ];
 
+// GLOBAL LANDSCAPE DATA
+const globalRegionsData = [
+  {flag:"🇺🇸",name:"United States",status:"mature",statusLabel:"MATURE MARKET",stats:{physicians:"900K+ using AI",marketSize:"$8.2B",tools:"40+ platforms",funding:"$3.5B+ (2024-26)"},tools:["OpenEvidence","Doximity Ask","ChatGPT for Clinicians","Abridge","UpToDate","Ambience","Microsoft Dragon","UpDoc","Glass Health"]},
+  {flag:"🇪🇺",name:"European Union",status:"restricted",statusLabel:"RESTRICTED (EU AI Act)",stats:{physicians:"~15% using AI",marketSize:"$3.1B",tools:"12+ platforms",funding:"$1.2B (2024-26)"},tools:["UpToDate","ChatGPT","Ada Health","K Health","Babylon (limited)"]},
+  {flag:"🇬🇧",name:"United Kingdom",status:"growing",statusLabel:"GROWING (NHS-led)",stats:{physicians:"~30% using AI",marketSize:"$1.4B",tools:"15+ platforms",funding:"$800M (2024-26)"},tools:["Babylon Health","eConsult","Ada Health","K Health","UpToDate","ChatGPT"]},
+  {flag:"🇨🇳",name:"China",status:"mature",statusLabel:"MATURE (domestic-led)",stats:{physicians:"~25% using AI",marketSize:"$5.6B",tools:"30+ platforms",funding:"$2.8B (2024-26)"},tools:["Ping An Good Doctor","iFlytek","Tencent Miying","Alibaba DAMO","Hua Medicine","Infervision"]},
+  {flag:"🇮🇳",name:"India",status:"growing",statusLabel:"GROWING (telehealth-led)",stats:{physicians:"~10% using AI",marketSize:"$1.2B",tools:"20+ platforms",funding:"$600M (2024-26)"},tools:["Practo","mfine","Qure.ai","Doctible","Healthify","PharmEasy"]},
+  {flag:"🇯🇵",name:"Japan",status:"early",statusLabel:"EARLY (regulatory cautious)",stats:{physicians:"~8% using AI",marketSize:"$900M",tools:"8 platforms",funding:"$300M (2024-26)"},tools:["Sony Medical AI","LPixel","iSurgery","Pie Software"]},
+  {flag:"🇸🇬",name:"Southeast Asia",status:"growing",statusLabel:"GROWING (Singapore-led)",stats:{physicians:"~12% using AI",marketSize:"$800M",tools:"10+ platforms",funding:"$400M (2024-26)"},tools:["HealthTech SG","MaNaDr","Doctor Anywhere","Alodokter","Halodoc"]},
+  {flag:"🇧🇷",name:"Latin America",status:"early",statusLabel:"EARLY (emerging)",stats:{physicians:"~7% using AI",marketSize:"$600M",tools:"8 platforms",funding:"$200M (2024-26)"},tools:["Doctoralia","Memed","iClinic","Boa Consulta","Olympus AI"]},
+  {flag:"🇮🇱",name:"Middle East & Africa",status:"early",statusLabel:"EARLY (Israel-led)",stats:{physicians:"~5% using AI",marketSize:"$500M",tools:"6 platforms",funding:"$350M (2024-26)"},tools:["Zebra Medical","Aidoc","Nanox.AI","SeeMe"," Tibot"]},
+];
+
+const globalTimelineData = [
+  {date:"2024-03-01",region:"Global",cat:"Regulatory",title:"WHO Releases AI Ethics Guidance",desc:"World Health Organization publishes guidance on large multi-modal models (LMMs) in healthcare — ethics, governance, and trust.",src:"WHO",url:"https://www.who.int/news/item/18-01-2024-WHO-releases-new-guidance-on-ethics-and-governance-of-large-multi-modal-models-AI"},
+  {date:"2024-06-01",region:"US",cat:"Product",title:"Abridge Best in KLAS 2025",desc:"Abridge named Best in KLAS for AI Scribes — signifying rapid US adoption of ambient clinical AI.",src:"KLAS",url:"https://www.abridge.com"},
+  {date:"2024-09-01",region:"EU",cat:"Regulatory",title:"EU AI Act Adopted",desc:"European Union formally adopts the AI Act. High-risk AI systems (including clinical AI) face strict requirements: risk management, data quality, transparency, human oversight. Compliance phased through 2026-2027.",src:"EU",url:"https://artificialintelligenceact.eu/"},
+  {date:"2024-11-01",region:"CN",cat:"Product",title:"Tencent Miying expands to 100+ hospitals",desc:"Tencent's medical AI imaging platform reaches 100+ hospital deployments across China. NMPA-cleared for multiple indications.",src:"Tencent",url:"https://health.tencent.com/"},
+  {date:"2025-01-01",region:"IN",cat:"Product",title:"Qure.ai expands globally",desc:"Indian AI radiology company Qure.ai expands to 50+ countries with TB detection AI approved by WHO. Series F funding round.",src:"Qure.ai",url:"https://qure.ai/"},
+  {date:"2025-02-19",region:"US",cat:"Funding",title:"OpenEvidence $1B Valuation",desc:"Sequoia-led Series A propels OpenEvidence to unicorn status — fastest-growing medical AI platform.",src:"CNBC",url:"https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html"},
+  {date:"2025-03-01",region:"UK",cat:"Regulatory",title:"UK MHRA AI Airlock pilot",desc:"MHRA launches AI Airlock — a regulatory sandbox for AI medical devices. First cohort includes 5 AI products. Faster pathway to market.",src:"MHRA",url:"https://www.gov.uk/government/news/mhra-launches-ai-airlock"},
+  {date:"2025-04-01",region:"Global",cat:"Regulatory",title:"FDA AI/ML Device Actions hit 1,000+",desc:"FDA's list of AI/ML-enabled medical devices surpasses 1,000 cleared entries. 2024-25 surge driven by radiology, cardiology, and clinical decision support.",src:"FDA",url:"https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices"},
+  {date:"2025-04-30",region:"US",cat:"Regulatory",title:"OpenEvidence withdraws from EU/UK",desc:"OpenEvidence formally withdraws from EU and UK markets citing EU AI Act compliance burden. EU physicians lose access. Spanish and German doctors publicly lament the loss.",src:"Telecare Aware",url:"https://clinicalaireport.com/open-evidence-outside-us"},
+  {date:"2025-06-01",region:"EU",cat:"Regulatory",title:"EU AI Act compliance deadline for high-risk AI",desc:"First compliance deadline for prohibited AI practices. Clinical AI systems classified as high-risk must begin conformity assessments.",src:"EU",url:"https://artificialintelligenceact.eu/ai-act-implementation-timeline/"},
+  {date:"2025-07-01",region:"CN",cat:"Regulatory",title:"China NMPA streamlines AI approval",desc:"China's National Medical Products Administration introduces expedited pathway for AI medical devices. 200+ AI products approved to date — primarily imaging and diagnostics.",src:"NMPA",url:"https://www.nmpa.gov.cn/"},
+  {date:"2025-07-15",region:"US",cat:"Product",title:"OpenEvidence DeepConsult launches",desc:"First AI agent for physicians launched. 100x compute of standard search. US-only.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {date:"2025-09-01",region:"Global",cat:"Trend",title:"AI Scribe adoption crosses 20% of US physicians",desc:"KLAS reports 20%+ of US physicians use AI scribes. Abridge, Ambience, Nuance DAX lead. UK NHS pilots scribes in 30 trusts.",src:"KLAS",url:"https://klasresearch.com/"},
+  {date:"2025-10-20",region:"US",cat:"Funding",title:"OpenEvidence $6B valuation",desc:"Series C raises $200M at $6B valuation. Total funding reaches $485M.",src:"Forbes",url:"https://www.forbes.com/sites/amyfeldman/2025/10/20/openevidences-daniel-nadler-13-billion-richer-in-just-three-months-after-the-ai-startup-hits-6-billion-valuation/"},
+  {date:"2025-11-01",region:"IN",cat:"Funding",title:"Indian healthtech funding surges",desc:"Indian healthtech startups raised $1.2B in 2025. Qure.ai, mfine, Practo lead. AI radiology and teleconsultation drive growth.",src:"Inc42",url:"https://inc42.com/"},
+  {date:"2025-12-01",region:"JP",cat:"Product",title:"Sony enters medical AI",desc:"Sony Group launches medical AI division. Partners with Japanese hospitals for diagnostic imaging AI. PMDA review pathway initiated.",src:"Sony",url:"https://www.sony.com/en/"},
+  {date:"2026-01-07",region:"Global",cat:"Product",title:"ChatGPT Health launches globally",desc:"OpenAI launches consumer-facing ChatGPT Health in 60 countries. 260+ physicians consulted. Marks global consumer health AI milestone.",src:"OpenAI",url:"https://openai.com/index/introducing-chatgpt-health/"},
+  {date:"2026-01-21",region:"US",cat:"Funding",title:"OpenEvidence $12B valuation",desc:"Series D raises $250M at $12B. Thrive Capital and DST Global co-lead.",src:"CNBC",url:"https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html"},
+  {date:"2026-03-10",region:"US",cat:"Milestone",title:"1M AI consultations in a single day",desc:"OpenEvidence records one million clinical AI consultations in 24 hours — first time in history.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
+  {date:"2026-04-22",region:"US",cat:"Product",title:"ChatGPT for Clinicians launches",desc:"OpenAI launches free clinical AI for verified US physicians. GPT-5.4 model. CME credits. HealthBench Professional benchmark.",src:"PYMNTS",url:"https://www.pymnts.com/artificial-intelligence-2/2026/openai-treats-healthcare-with-new-chatgpt-for-clinicians/"},
+  {date:"2026-05-01",region:"Global",cat:"Trend",title:"WHO declares AI in healthcare 'irreversible'",desc:"WHO Director-General states AI adoption in healthcare is irreversible. Calls for global governance framework. 70+ countries have national AI health strategies.",src:"WHO",url:"https://www.who.int/"},
+  {date:"2026-06-11",region:"US",cat:"Product",title:"Abridge unveils Clinician Intelligence Platform",desc:"Abridge expands beyond scribe into evidence, payer, and pharma connectivity. Nvidia foundation model partnership. $5.3B valuation.",src:"BusinessWire",url:"https://www.businesswire.com/news/home/20260611779141/en/Abridge-Unveils-Patient-Centered-Clinician-Intelligence-Platform"},
+  {date:"2026-06-23",region:"US",cat:"Product",title:"First FDA-cleared AI in OpenEvidence",desc:"Pathway Labs EchoNext — first FDA-cleared AI tool integrated into OpenEvidence. Detects structural heart disease from ECGs.",src:"BusinessWire",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
+  {date:"2026-06-25",region:"US",cat:"Product",title:"UpDoc receives first FDA clearance for agentic clinical AI",desc:"First FDA-cleared agentic AI platform for real-time patient care delivery. Chronic disease management between visits.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/updoc-debuts-first-fda-cleared-clinical-ai-platform-built-for-real-time-patient-care-delivery-and-intelligent-care-coordination-302810065.html"},
+  {date:"2026-06-12",region:"Global",cat:"Research",title:"Nature Medicine: General LLMs outperform specialized clinical AI",desc:"Study finds GPT-5.2, Gemini 3.1 Pro, and Claude Opus 4.6 outperform OpenEvidence and UpToDate on medical benchmarks. OpenEvidence disputes findings.",src:"Nature Medicine",url:"https://www.nature.com/articles/s41591-026-04431-5"},
+  {date:"2026-07-01",region:"EU",cat:"Regulatory",title:"EU AI Act high-risk classification takes effect",desc:"Full compliance required for high-risk AI systems including clinical AI. Notified bodies begin conformity assessments. Several US AI products remain unavailable in EU.",src:"EU",url:"https://artificialintelligenceact.eu/"},
+];
+
+const regulatoryData = [
+  {date:"2024-09-01",region:"EU",title:"EU AI Act formally adopted",desc:"World's first comprehensive AI law. Risk-based approach: clinical AI = high-risk. Requirements include risk management, data governance, transparency, human oversight, conformity assessment.",url:"https://artificialintelligenceact.eu/"},
+  {date:"2025-03-01",region:"UK",title:"MHRA launches AI Airlock sandbox",desc:"Regulatory sandbox for AI medical devices. First cohort: 5 products. Faster approval pathway. UK positions as AI-friendly regulator post-Brexit.",url:"https://www.gov.uk/government/news/mhra-launches-ai-airlock"},
+  {date:"2025-04-01",region:"US",title:"FDA surpasses 1,000 AI/ML-cleared devices",desc:"FDA's AI/ML-enabled device list hits 1,000+ entries. 2024-25 surge driven by radiology, cardiology, clinical decision support. Predominantly 510(k) pathway.",url:"https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices"},
+  {date:"2025-04-30",region:"US",title:"OpenEvidence exits EU over AI Act",desc:"OpenEvidence withdraws from EU and UK. Cites compliance burden. EU physicians lose access to fastest-growing medical AI tool. Sparks debate about EU AI Act chilling innovation.",url:"https://clinicalaireport.com/open-evidence-outside-us"},
+  {date:"2025-06-01",region:"EU",title:"EU AI Act — first compliance deadline",desc:"Prohibited AI practices enforcement begins. High-risk systems must begin conformity assessment preparation. Clinical AI vendors scramble to comply.",url:"https://artificialintelligenceact.eu/ai-act-implementation-timeline/"},
+  {date:"2025-07-01",region:"CN",title:"China NMPA expedites AI medical device approvals",desc:"NMPA introduces fast-track for AI medical devices. 200+ products approved to date. Focus on imaging, diagnostics, and clinical decision support. Domestic innovation prioritized.",url:"https://www.nmpa.gov.cn/"},
+  {date:"2025-08-01",region:"JP",title:"Japan PMDA publishes AI review framework",desc:"PMDA releases framework for reviewing AI-based medical devices. Risk-based approach modeled on FDA. First AI products under new framework approved Q4 2025.",url:"https://www.pmda.go.jp/"},
+  {date:"2025-10-01",region:"IN",title:"India CDSCO issues AI medical device guidelines",desc:"Central Drugs Standard Control Organization publishes guidelines for AI-based medical devices. Risk classification aligned with IMDRF. First Indian AI approvals expected 2026.",url:"https://cdsco.gov.in/"},
+  {date:"2026-01-01",region:"Global",title:"WHO AI in Healthcare governance framework",desc:"WHO publishes global governance framework for AI in healthcare. 70+ countries endorse. Calls for international standards on safety, efficacy, equity.",url:"https://www.who.int/"},
+  {date:"2026-07-01",region:"EU",title:"EU AI Act full high-risk enforcement",desc:"Full compliance required for high-risk AI systems. Notified bodies conducting conformity assessments. Several US clinical AI products remain unavailable in EU. Market fragmentation accelerates.",url:"https://artificialintelligenceact.eu/"},
+];
+
+const emergingTrendsData = [
+  {icon:"📝",name:"AI Scribes",metric:"20%+",metricLabel:"US physician adoption",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"Ambient AI documentation tools exploded in 2025-2026. Abridge leads with Best in KLAS 2025 & 2026. Ambience at 80% utilization. Microsoft Dragon Copilot holds enterprise footprint. NHS piloting in 30+ UK trusts. Expanding beyond scribe into evidence, payer, pharma connectivity.",region:"US, UK, EU",src:"KLAS Research",url:"https://klasresearch.com/"},
+  {icon:"🔍",name:"Clinical Decision Support",metric:"$8.2B",metricLabel:"US market size",trajectory:"up",trajectoryLabel:"GROWING",desc:"OpenEvidence dominates US physician clinical search with 50%+ of US MDs. Doximity Ask is biggest competitor. UpToDate being disrupted — 30-year incumbent retrofitting AI. ChatGPT for Clinicians entered April 2026. EU market fragmented due to AI Act restrictions.",region:"US, Global",src:"Sacra",url:"https://sacra.com/c/openevidence/"},
+  {icon:"🤖",name:"Agentic AI in Healthcare",metric:"2",metricLabel:"FDA-cleared platforms",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"UpDoc becomes first FDA-cleared agentic clinical AI for real-time patient care (Jun 2026). OpenEvidence's DeepConsult (100x compute) is agentic research. Trend: AI moving from answering questions to taking actions — prescribing, prior auth, chronic disease management, care coordination.",region:"US",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/updoc-debuts-first-fda-cleared-clinical-ai-platform-built-for-real-time-patient-care-delivery-and-intelligent-care-coordination-302810065.html"},
+  {icon:"🔬",name:"FDA-Cleared AI Tools",metric:"1,000+",metricLabel:"AI/ML devices cleared",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"FDA's AI/ML-enabled medical device list surpasses 1,000. Dominated by radiology (76%), cardiology, pathology. First agentic AI cleared (UpDoc). First AI integrated into clinical search platform (EchoNext in OpenEvidence). General-purpose LLMs outperforming specialized AI on benchmarks.",region:"US",src:"FDA",url:"https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices"},
+  {icon:"🇨🇳",name:"China Domestic AI Ecosystem",metric:"200+",metricLabel:"NMPA-cleared AI devices",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"China built a self-sufficient clinical AI ecosystem. Ping An Good Doctor: 1.2B users. Tencent Miying: 100+ hospitals. iFlytek: medical voice AI. Alibaba DAMO: diagnostics. Infervision: lung cancer screening AI. NMPA fast-track accelerating approvals. Western tools largely absent.",region:"China",src:"NMPA",url:"https://www.nmpa.gov.cn/"},
+  {icon:"🇪🇺",name:"EU AI Act Impact",metric:"15%",metricLabel:"EU physician AI usage",trajectory:"declining",trajectoryLabel:"RESTRICTING",desc:"EU AI Act creating a two-tier healthcare AI landscape. US physicians: 50%+ using AI tools. EU physicians: ~15%. OpenEvidence exited EU. Other US tools likely to follow. EU developing domestic alternatives (Ada Health, K Health) but lagging. Risk of transatlantic AI health divide.",region:"EU",src:"EU",url:"https://artificialintelligenceact.eu/"},
+  {icon:"🩻",name:"AI Radiology",metric:"50+",metricLabel:"countries deploying AI radiology",trajectory:"up",trajectoryLabel:"GLOBAL EXPANSION",desc:"AI radiology is most globally deployed clinical AI. India's Qure.ai in 50+ countries (TB detection WHO-approved). China's Infervision in lung cancer screening. US: Aidoc, Zebra Medical. NHS deploying AI radiology across 30+ trusts. Foundation models (MedGemma, RadFM) enabling rapid deployment.",region:"Global",src:"WHO",url:"https://www.who.int/"},
+  {icon:"💊",name:"Pharma AI Integration",metric:"$1B",metricLabel:"potential ad inventory (OpenEvidence)",trajectory:"up",trajectoryLabel:"CONVERGING",desc:"Clinical AI platforms becoming pharma infrastructure. OpenEvidence: pharma ads $70-$1K CPM, Amaro acquisition, Veeva partnership, clinical trial matching. Abridge: Eli Lilly investment. Doximity: pharma ads + recruiting + telehealth. Trend: clinical AI = new pharma channel.",region:"US",src:"Sacra",url:"https://sacra.com/c/openevidence/"},
+  {icon:"🎤",name:"Multimodal Medical AI",metric:"3",metricLabel:"modalities (text+image+voice)",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"AI evolving beyond text. OpenEvidence Voice Mode: first speech-to-speech medical AI. Abridge: audio + text + clinical reasoning. Tencent Miying: imaging AI. MedGemma 4B/27B: multimodal (text + images). EchoNext: ECG → structural heart disease detection. Trend: AI that sees, hears, reads, and speaks.",region:"Global",src:"OpenEvidence",url:"https://www.openevidence.com"},
+  {icon:"⚖️",name:"Benchmarking Wars",metric:"52",metricLabel:"OpenEvidence flagged responses",trajectory:"stable",trajectoryLabel:"CONTESTED",desc:"Nature Medicine study (Jun 2026) finds general-purpose LLMs (GPT-5.2, Gemini 3.1, Claude Opus 4.6) outperform specialized clinical AI (OpenEvidence, UpToDate) on medical benchmarks. OpenEvidence disputes. Highlights tension between open foundation models and proprietary clinical AI. General models improving rapidly.",region:"Global",src:"Nature Medicine",url:"https://www.nature.com/articles/s41591-026-04431-5"},
+  {icon:"🌍",name:"Global AI Health Divide",metric:"5x",metricLabel:"US vs EU physician AI usage gap",trajectory:"declining",trajectoryLabel:"WIDENING",desc:"US physicians: 50%+ using AI. EU: ~15%. China: ~25%. India: ~10%. Africa: ~5%. Gap driven by regulation (EU AI Act), infrastructure, funding, and market access. OpenEvidence, ChatGPT for Clinicians — US-only. EU building domestic alternatives. Risk: AI health divide between and within nations.",region:"Global",src:"WHO",url:"https://www.who.int/"},
+];
+
+const globalMatrixData = [
+  {platform:"OpenEvidence",us:"yes",eu:"blocked",uk:"blocked",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Doximity Ask",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"ChatGPT for Clinicians",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"partial",jp:"partial",sea:"partial",latam:"partial",mea:"partial"},
+  {platform:"Abridge",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"UpToDate",us:"yes",eu:"yes",uk:"yes",cn:"yes",in:"yes",jp:"yes",sea:"yes",latam:"yes",mea:"yes"},
+  {platform:"ChatGPT (consumer)",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"yes",sea:"yes",latam:"yes",mea:"yes"},
+  {platform:"Microsoft Dragon Copilot",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"no",jp:"no",sea:"partial",latam:"no",mea:"no"},
+  {platform:"Ambience Healthcare",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"UpDoc",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Ping An Good Doctor",us:"no",eu:"no",uk:"no",cn:"yes",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Tencent Miying",us:"no",eu:"no",uk:"no",cn:"yes",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Qure.ai",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"no",sea:"yes",latam:"yes",mea:"yes"},
+  {platform:"Ada Health",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Babylon Health",us:"no",eu:"partial",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+];
+
 // RENDER TIMELINE
 function renderTimeline(filter) {
   const el = document.getElementById('timelineList');
@@ -1752,7 +1993,171 @@ window.addEventListener('load', function() {
     </div>
   `).join('');
 
+  // GLOBAL LANDSCAPE RENDERS
+  document.getElementById('regionGrid').innerHTML = globalRegionsData.map(r => `
+    <div class="region-card">
+      <div class="region-flag">${r.flag}</div>
+      <div class="region-name">${r.name}</div>
+      <div class="region-status ${r.status}">${r.statusLabel}</div>
+      <div class="region-stat"><strong>Physicians:</strong> ${r.stats.physicians}</div>
+      <div class="region-stat"><strong>Market:</strong> ${r.stats.marketSize}</div>
+      <div class="region-stat"><strong>Tools:</strong> ${r.stats.tools}</div>
+      <div class="region-stat"><strong>Funding:</strong> ${r.stats.funding}</div>
+      <div class="region-tools">${r.tools.map(t => `<span class="tool-chip">${t}</span>`).join('')}</div>
+    </div>
+  `).join('');
+
+  function renderGlobalTimeline(filter) {
+    const el = document.getElementById('globalTimeline');
+    const filtered = filter === 'all' ? globalTimelineData : globalTimelineData.filter(d => d.region === filter);
+    const sorted = [...filtered].sort((a,b) => new Date(b.date) - new Date(a.date));
+    el.innerHTML = sorted.map((d, i) => `
+      <div class="global-tl-item" style="animation-delay: ${i * 0.03}s">
+        <div class="gtl-date">${d.date}</div>
+        <div><span class="region-tag reg-${d.region}">${d.region}</span> <span class="category-tag cat-${d.cat === 'Trend' ? 'Milestone' : d.cat === 'Research' ? 'Research' : d.cat}">${d.cat}</span></div>
+        <div class="gtl-title">${d.title}</div>
+        <div class="gtl-desc">${d.desc}</div>
+        <div class="gtl-source">Source: <a href="${d.url}" target="_blank" rel="noopener">${d.src}</a></div>
+      </div>
+    `).join('');
+  }
+  renderGlobalTimeline('all');
+
+  document.getElementById('globalFilters').addEventListener('click', (e) => {
+    if (e.target.classList.contains('filter-btn')) {
+      document.querySelectorAll('#globalFilters .filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderGlobalTimeline(e.target.dataset.filter);
+    }
+  });
+
+  document.getElementById('regulatoryTimeline').innerHTML = regulatoryData.map((d, i) => `
+    <div class="global-tl-item" style="animation-delay: ${i * 0.03}s">
+      <div class="gtl-date">${d.date}</div>
+      <div><span class="region-tag reg-${d.region}">${d.region}</span></div>
+      <div class="gtl-title">${d.title}</div>
+      <div class="gtl-desc">${d.desc}</div>
+      <div class="gtl-source"><a href="${d.url}" target="_blank" rel="noopener">Source →</a></div>
+    </div>
+  `).join('');
+
+  document.getElementById('trendGrid').innerHTML = emergingTrendsData.map(t => `
+    <div class="trend-card">
+      <div class="trend-icon">${t.icon}</div>
+      <div class="trend-name">${t.name}</div>
+      <div class="trend-metric">${t.metric}</div>
+      <div class="trend-desc">${t.desc}</div>
+      <div class="trend-region">📍 ${t.region}</div>
+      <div class="trend-trajectory ${t.trajectory}">${t.trajectoryLabel}</div>
+      <div class="trend-source"><a href="${t.url}" target="_blank" rel="noopener">${t.src} →</a></div>
+    </div>
+  `).join('');
+
+  // Global matrix table
+  const matrixCols = [
+    {key:'us',label:'🇺🇸 US'},{key:'eu',label:'🇪🇺 EU'},{key:'uk',label:'🇬🇧 UK'},
+    {key:'cn',label:'🇨🇳 CN'},{key:'in',label:'🇮🇳 IN'},{key:'jp',label:'🇯🇵 JP'},
+    {key:'sea',label:'🇸🇬 SEA'},{key:'latam',label:'🇧🇷 LATAM'},{key:'mea',label:'🇮🇱 MEA'}
+  ];
+  const matrixSymbols = {yes:'✓',no:'—',partial:'~',blocked:'✗'};
+  const matrixClasses = {yes:'yes',no:'no',partial:'partial',blocked:'blocked'};
+  document.getElementById('globalMatrix').innerHTML = `
+    <thead><tr><th>Platform</th>${matrixCols.map(c => `<th>${c.label}</th>`).join('')}</tr></thead>
+    <tbody>
+      ${globalMatrixData.map(row => `
+        <tr><td><strong>${row.platform}</strong></td>${matrixCols.map(c => {
+          const v = row[c.key];
+          return `<td class="${matrixClasses[v]}">${matrixSymbols[v]}</td>`;
+        }).join('')}</tr>
+      `).join('')}
+    </tbody>
+  `;
+
   buildCharts();
+
+  // GLOBAL CHARTS
+  // Adoption by region
+  const ctxGA = document.getElementById('chartGlobalAdoption').getContext('2d');
+  const tcGA = getThemeColors();
+  charts.push(new Chart(ctxGA, {
+    type: 'line',
+    data: {
+      labels: ['2024 Q1','2024 Q3','2025 Q1','2025 Q3','2026 Q1','2026 Q3'],
+      datasets: [
+        {label:'US',data:[5,12,20,35,50,65],borderColor:'#E4643D',backgroundColor:'rgba(228,100,61,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+        {label:'UK',data:[3,6,10,18,25,32],borderColor:'#6B9ABF',backgroundColor:'rgba(107,154,191,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+        {label:'China',data:[8,12,16,20,24,28],borderColor:'#CC6B6B',backgroundColor:'rgba(204,107,107,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+        {label:'EU',data:[2,4,6,8,12,15],borderColor:'#8AAFCC',backgroundColor:'rgba(138,175,204,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+        {label:'India',data:[1,3,5,7,9,12],borderColor:'#B89AC4',backgroundColor:'rgba(184,154,196,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+        {label:'Japan',data:[1,2,3,5,6,8],borderColor:'#D4A94E',backgroundColor:'rgba(212,169,78,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: tcGA.text } },
+        tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' }
+      },
+      scales: {
+        x: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text } },
+        y: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text }, title: { display: true, text: '% of physicians using AI', color: tcGA.text } }
+      }
+    }
+  }));
+
+  // Market size by region
+  const ctxMS = document.getElementById('chartMarketSize').getContext('2d');
+  charts.push(new Chart(ctxMS, {
+    type: 'bar',
+    data: {
+      labels: ['US','China','EU','UK','India','Japan','SEA','LATAM','MEA'],
+      datasets: [{
+        label: 'Market Size ($B)',
+        data: [8.2, 5.6, 3.1, 1.4, 1.2, 0.9, 0.8, 0.6, 0.5],
+        backgroundColor: ['rgba(228,100,61,0.6)','rgba(204,107,107,0.6)','rgba(138,175,204,0.6)','rgba(107,154,191,0.6)','rgba(184,154,196,0.6)','rgba(212,169,78,0.6)','rgba(93,174,142,0.6)','rgba(212,180,78,0.6)','rgba(138,196,122,0.6)'],
+        borderColor: ['#E4643D','#CC6B6B','#8AAFCC','#6B9ABF','#B89AC4','#D4A94E','#5DAE8E','#D4B44E','#8AC47A'],
+        borderWidth: 2, borderRadius: 6
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' }
+      },
+      scales: {
+        x: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text } },
+        y: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text }, title: { display: true, text: '$ Billions', color: tcGA.text } }
+      }
+    }
+  }));
+
+  // Funding by region
+  const ctxFR = document.getElementById('chartFundingByRegion').getContext('2d');
+  charts.push(new Chart(ctxFR, {
+    type: 'bar',
+    data: {
+      labels: ['US','China','EU','UK','India','Japan','SEA','MEA','LATAM'],
+      datasets: [{
+        label: 'Clinical AI Funding 2024-26 ($B)',
+        data: [3.5, 2.8, 1.2, 0.8, 0.6, 0.3, 0.4, 0.35, 0.2],
+        backgroundColor: chartColorLight,
+        borderColor: chartColor,
+        borderWidth: 2, borderRadius: 6
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' }
+      },
+      scales: {
+        x: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text } },
+        y: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text }, title: { display: true, text: '$ Billions (2024-2026)', color: tcGA.text } }
+      }
+    }
+  }));
 });
 
 // SCROLLSPY — highlight active nav link

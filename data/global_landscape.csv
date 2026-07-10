@@ -1,0 +1,27 @@
+Date,Region,Category,Title,Description,Source,URL
+2024-03-01,Global,Regulatory,WHO Releases AI Ethics Guidance,WHO publishes guidance on large multi-modal models in healthcare,WHO,https://www.who.int/news/item/18-01-2024-WHO-releases-new-guidance-on-ethics-and-governance-of-large-multi-modal-models-AI
+2024-06-01,US,Product,Abridge Best in KLAS 2025,Abridge named Best in KLAS for AI Scribes,KLAS,https://www.abridge.com
+2024-09-01,EU,Regulatory,EU AI Act Adopted,EU formally adopts AI Act with high-risk classification for clinical AI,EU,https://artificialintelligenceact.eu/
+2024-11-01,CN,Product,Tencent Miying 100+ hospitals,Tencent medical AI imaging reaches 100+ hospital deployments,Tencent,https://health.tencent.com/
+2025-01-01,IN,Product,Qure.ai expands globally,Indian AI radiology company expands to 50+ countries with TB detection AI,Qure.ai,https://qure.ai/
+2025-02-19,US,Funding,OpenEvidence $1B Valuation,Sequoia-led Series A propels OpenEvidence to unicorn status,CNBC,https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html
+2025-03-01,UK,Regulatory,MHRA AI Airlock pilot,UK launches regulatory sandbox for AI medical devices,MHRA,https://www.gov.uk/government/news/mhra-launches-ai-airlock
+2025-04-01,US,Regulatory,FDA AI/ML Devices 1000+,FDA list of AI/ML-enabled medical devices surpasses 1000,FDA,https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices
+2025-04-30,US,Regulatory,OpenEvidence exits EU/UK,OpenEvidence withdraws from EU and UK markets citing AI Act,Telecare Aware,https://clinicalaireport.com/open-evidence-outside-us
+2025-06-01,EU,Regulatory,EU AI Act first compliance deadline,Prohibited AI practices enforcement begins,EUR,https://artificialintelligenceact.eu/ai-act-implementation-timeline/
+2025-07-01,CN,Regulatory,China NMPA streamlines AI approval,Expedited pathway for AI medical devices 200+ approved,NMPA,https://www.nmpa.gov.cn/
+2025-07-15,US,Product,OpenEvidence DeepConsult launches,First AI agent for physicians 100x compute,PRNewswire,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
+2025-09-01,Global,Trend,AI Scribe adoption crosses 20%,KLAS reports 20%+ of US physicians use AI scribes,KLAS,https://klasresearch.com/
+2025-10-20,US,Funding,OpenEvidence $6B valuation,Series C raises $200M at $6B valuation,Forbes,https://www.forbes.com/sites/amyfeldman/2025/10/20/openevidences-daniel-nadler-13-billion-richer-in-just-three-months-after-the-ai-startup-hits-6-billion-valuation/
+2025-11-01,IN,Funding,Indian healthtech funding surges,Indian healthtech startups raised $1.2B in 2025,Inc42,https://inc42.com/
+2025-12-01,JP,Product,Sony enters medical AI,Sony launches medical AI division with hospital partnerships,Sony,https://www.sony.com/en/
+2026-01-07,Global,Product,ChatGPT Health launches globally,OpenAI launches ChatGPT Health in 60 countries,OpenAI,https://openai.com/index/introducing-chatgpt-health/
+2026-01-21,US,Funding,OpenEvidence $12B valuation,Series D raises $250M at $12B Thrive and DST co-lead,CNBC,https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html
+2026-03-10,US,Milestone,1M AI consultations in single day,OpenEvidence records one million clinical AI consultations in 24 hours,PRNewswire,https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html
+2026-04-22,US,Product,ChatGPT for Clinicians launches,OpenAI launches free clinical AI for verified US physicians GPT-5.4,PYMNTS,https://www.pymnts.com/artificial-intelligence-2/2026/openai-treats-healthcare-with-new-chatgpt-for-clinicians/
+2026-05-01,Global,Trend,WHO declares AI in healthcare irreversible,WHO DG states AI adoption irreversible calls for global governance,WHO,https://www.who.int/
+2026-06-11,US,Product,Abridge unveils Clinician Intelligence Platform,Abridge expands beyond scribe into evidence payer pharma,BusinessWire,https://www.businesswire.com/news/home/20260611779141/en/Abridge-Unveils-Patient-Centered-Clinician-Intelligence-Platform
+2026-06-23,US,Product,First FDA-cleared AI in OpenEvidence,Pathway Labs EchoNext first FDA-cleared AI integrated into OpenEvidence,BusinessWire,https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence
+2026-06-25,US,Product,UpDoc first FDA-cleared agentic clinical AI,First FDA-cleared agentic AI for real-time patient care delivery,PRNewswire,https://www.prnewswire.com/news-releases/updoc-debuts-first-fda-cleared-clinical-ai-platform-built-for-real-time-patient-care-delivery-and-intelligent-care-coordination-302810065.html
+2026-06-12,Global,Research,Nature Medicine general LLMs outperform specialized AI,Study finds GPT-5.2 Gemini 3.1 Claude Opus 4.6 outperform OpenEvidence UpToDate,Nature Medicine,https://www.nature.com/articles/s41591-026-04431-5
+2026-07-01,EU,Regulatory,EU AI Act full high-risk enforcement,Full compliance required for high-risk AI systems including clinical AI,EU,https://artificialintelligenceact.eu/
