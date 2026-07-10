@@ -17,11 +17,15 @@ A comprehensive dashboard tracking OpenEvidence — the fastest-growing medical 
 3. **Master Timeline** — Every major event filterable by category, with source links
 4. **Funding Tracker** — Waterfall chart + table of 4 funding rounds ($1B → $12B)
 5. **Product Launches** — DeepConsult, Visits, Coding Intelligence, Dotflows, Voice Mode, more
-6. **Competitive Landscape** — 10 competitors with mini-profiles (ChatGPT, Doximity, Abridge, etc.)
-7. **Partnership Ecosystem** — 25+ content partners, 3 health systems, tech infrastructure
+6. **Competitive Landscape** — 12 competitors with mini-profiles (ChatGPT, Doximity, Abridge, etc.)
+7. **Partnership Ecosystem** — 30+ content partners, 4 health systems, tech infrastructure
 8. **Tech Stack** — Known vs Inferred (Next.js, Vercel, Baseten, GCP, Epic FHIR)
-9. **Future Roadmap** — Released, in-development, and inferred future directions
-10. **Source Index** — 35+ verified sources
+9. **Pharma Products** — Ad platform, clinical trial matching, Veeva partnership, Amaro acquisition
+10. **Publications** — PubMed papers mentioning OpenEvidence, updated daily
+11. **Doximity Ask** — Deep dive into biggest competitor's architecture and evaluation
+12. **Global Clinical AI Landscape** — Regional overview (US, EU, UK, China, India, Japan, SEA, LATAM, MEA), global timeline, regulatory milestones, emerging trends, availability matrix, market/funding charts. Updated weekly (Tue 5PM ET).
+13. **Future Roadmap** — Released, in-development, and inferred future directions
+14. **Source Index** — 40+ verified sources
 
 ## Deployment
 
@@ -41,6 +45,12 @@ A cron job runs every Sunday at 5 PM ET to:
 2. Update CSVs with new events
 3. Rebuild the static site
 4. Push to GitHub → auto-deploys via GitHub Pages
+
+A second cron job runs every Tuesday at 5 PM ET to update the Global Clinical AI Landscape section:
+1. Search for clinical AI news across 10+ regional markets
+2. Track regulatory milestones (FDA, EMA, NMPA, MHRA, etc.)
+3. Update emerging trends and global availability matrix
+4. Push updates to GitHub
 
 ## Brand Colors
 
