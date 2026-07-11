@@ -327,6 +327,81 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
   .global-matrix { font-size: 11px; }
 }
 
+
+/* OE FEATURES TIMELINE */
+.oe-features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 24px 0; }
+.oe-feature-card {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 20px; transition: border-color 0.2s;
+  position: relative; overflow: hidden;
+}
+.oe-feature-card:hover { border-color: var(--oe-orange); }
+.oe-feature-card .feat-icon { font-size: 24px; margin-bottom: 8px; }
+.oe-feature-card .feat-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.oe-feature-card .feat-date { font-size: 12px; color: var(--oe-orange); margin-bottom: 8px; }
+.oe-feature-card .feat-desc { font-size: 13px; color: var(--oe-text-dim); line-height: 1.5; }
+.oe-feature-card .feat-status { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-top: 8px; font-weight: 600; }
+.oe-feature-card .feat-status.live { background: rgba(100,180,100,0.15); color: #6BAF7D; }
+.oe-feature-card .feat-status.beta { background: rgba(200,150,50,0.15); color: #D4A94E; }
+.oe-feature-card .feat-status.announced { background: rgba(100,130,200,0.15); color: #8AAFCC; }
+.oe-feature-card .feat-link { font-size: 12px; margin-top: 8px; display: block; }
+.oe-feature-card .feat-link a { color: var(--oe-orange); text-decoration: none; }
+.oe-feature-card .feat-link a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .oe-features-grid { grid-template-columns: 1fr; }
+}
+
+
+/* OE FEATURES TIMELINE */
+.oe-features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 24px 0; }
+.oe-feature-card {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 20px; transition: border-color 0.2s;
+  position: relative; overflow: hidden;
+}
+.oe-feature-card:hover { border-color: var(--oe-orange); }
+.oe-feature-card .feat-icon { font-size: 24px; margin-bottom: 8px; }
+.oe-feature-card .feat-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.oe-feature-card .feat-date { font-size: 12px; color: var(--oe-orange); margin-bottom: 8px; }
+.oe-feature-card .feat-desc { font-size: 13px; color: var(--oe-text-dim); line-height: 1.5; }
+.oe-feature-card .feat-status { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-top: 8px; font-weight: 600; }
+.oe-feature-card .feat-status.live { background: rgba(100,180,100,0.15); color: #6BAF7D; }
+.oe-feature-card .feat-status.beta { background: rgba(200,150,50,0.15); color: #D4A94E; }
+.oe-feature-card .feat-status.announced { background: rgba(100,130,200,0.15); color: #8AAFCC; }
+.oe-feature-card .feat-link { font-size: 12px; margin-top: 8px; display: block; }
+.oe-feature-card .feat-link a { color: var(--oe-orange); text-decoration: none; }
+.oe-feature-card .feat-link a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .oe-features-grid { grid-template-columns: 1fr; }
+}
+
+
+/* OE FEATURES TIMELINE */
+.oe-features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 24px 0; }
+.oe-feature-card {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 20px; transition: border-color 0.2s;
+  position: relative; overflow: hidden;
+}
+.oe-feature-card:hover { border-color: var(--oe-orange); }
+.oe-feature-card .feat-icon { font-size: 24px; margin-bottom: 8px; }
+.oe-feature-card .feat-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.oe-feature-card .feat-date { font-size: 12px; color: var(--oe-orange); margin-bottom: 8px; }
+.oe-feature-card .feat-desc { font-size: 13px; color: var(--oe-text-dim); line-height: 1.5; }
+.oe-feature-card .feat-status { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-top: 8px; font-weight: 600; }
+.oe-feature-card .feat-status.live { background: rgba(100,180,100,0.15); color: #6BAF7D; }
+.oe-feature-card .feat-status.beta { background: rgba(200,150,50,0.15); color: #D4A94E; }
+.oe-feature-card .feat-status.announced { background: rgba(100,130,200,0.15); color: #8AAFCC; }
+.oe-feature-card .feat-link { font-size: 12px; margin-top: 8px; display: block; }
+.oe-feature-card .feat-link a { color: var(--oe-orange); text-decoration: none; }
+.oe-feature-card .feat-link a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .oe-features-grid { grid-template-columns: 1fr; }
+}
+
 /* NEW BADGE */
 .new-badge {
   display: inline-flex; align-items: center; gap: 4px;
@@ -1314,6 +1389,18 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Key regulatory actions affecting clinical AI — FDA, EMA, NMPA, MHRA, and others.</p>
     <div class="global-timeline" id="regulatoryTimeline"></div>
 
+    <!-- EMERGING CLINICAL AI TOOLS -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Clinical AI Tools</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">New chatbots and AI platforms that healthcare professionals are using for clinical decisions. Updated weekly. Click source links for more info.</p>
+
+    <!-- EMERGING CLINICAL AI TOOLS -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Clinical AI Tools</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">New chatbots and AI platforms that healthcare professionals are using for clinical decisions. Updated weekly. Click source links for more info.</p>
+
+    <!-- EMERGING CLINICAL AI TOOLS -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Clinical AI Tools</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">New chatbots and AI platforms that healthcare professionals are using for clinical decisions. Updated weekly. Click source links for more info.</p>
+
     <!-- EMERGING TRENDS -->
     <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Trends</h3>
     <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Key trajectories shaping the global clinical AI landscape in 2025-2026.</p>
@@ -1332,6 +1419,60 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <div class="chart-container">
       <div class="chart-wrapper" style="height:350px;"><canvas id="chartFundingByRegion"></canvas></div>
     </div>
+  </div>
+</section>
+
+<!-- OE FEATURES -->
+<section id="oe-features">
+  <div class="container">
+    <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
+    <p class="section-sub">Every known OpenEvidence feature â launched, in beta, and announced. Updated daily. Click links for source.</p>
+
+    <div class="chart-container" style="margin-top:24px;">
+      <h3>Feature Launch Timeline</h3>
+      <p class="chart-sub">When each feature shipped â from founding to present</p>
+      <div class="chart-wrapper" style="height:400px;"><canvas id="chartOeFeatures"></canvas></div>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete feature inventory with launch dates, descriptions, and source links.</p>
+    <div class="oe-features-grid" id="oeFeaturesGrid"></div>
+  </div>
+</section>
+
+<!-- OE FEATURES -->
+<section id="oe-features">
+  <div class="container">
+    <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
+    <p class="section-sub">Every known OpenEvidence feature â launched, in beta, and announced. Updated daily. Click links for source.</p>
+
+    <div class="chart-container" style="margin-top:24px;">
+      <h3>Feature Launch Timeline</h3>
+      <p class="chart-sub">When each feature shipped â from founding to present</p>
+      <div class="chart-wrapper" style="height:400px;"><canvas id="chartOeFeatures"></canvas></div>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete feature inventory with launch dates, descriptions, and source links.</p>
+    <div class="oe-features-grid" id="oeFeaturesGrid"></div>
+  </div>
+</section>
+
+<!-- OE FEATURES -->
+<section id="oe-features">
+  <div class="container">
+    <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
+    <p class="section-sub">Every known OpenEvidence feature â launched, in beta, and announced. Updated daily. Click links for source.</p>
+
+    <div class="chart-container" style="margin-top:24px;">
+      <h3>Feature Launch Timeline</h3>
+      <p class="chart-sub">When each feature shipped â from founding to present</p>
+      <div class="chart-wrapper" style="height:400px;"><canvas id="chartOeFeatures"></canvas></div>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete feature inventory with launch dates, descriptions, and source links.</p>
+    <div class="oe-features-grid" id="oeFeaturesGrid"></div>
   </div>
 </section>
 
@@ -1651,6 +1792,30 @@ const globalRegionsData = [
   {flag:"🇸🇬",name:"Southeast Asia",status:"growing",statusLabel:"GROWING (Singapore-led)",stats:{physicians:"~12% using AI",marketSize:"$800M",tools:"10+ platforms",funding:"$400M (2024-26)"},tools:["HealthTech SG","MaNaDr","Doctor Anywhere","Alodokter","Halodoc"]},
   {flag:"🇧🇷",name:"Latin America",status:"early",statusLabel:"EARLY (emerging)",stats:{physicians:"~7% using AI",marketSize:"$600M",tools:"8 platforms",funding:"$200M (2024-26)"},tools:["Doctoralia","Memed","iClinic","Boa Consulta","Olympus AI"]},
   {flag:"🇮🇱",name:"Middle East & Africa",status:"early",statusLabel:"EARLY (Israel-led)",stats:{physicians:"~5% using AI",marketSize:"$500M",tools:"6 platforms",funding:"$350M (2024-26)"},tools:["Zebra Medical","Aidoc","Nanox.AI","SeeMe"," Tibot"]},
+  {platform:"Vera Health",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"no",sea:"yes",latam:"yes",mea:"yes"},
+  {platform:"DeepCura",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Hippocratic AI",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"iatroX",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"K Health / PatientGPT",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Heidi Health",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"yes",latam:"no",mea:"no"},
+  {platform:"Infermedica",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"yes"},
+  {platform:"Freed AI",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Perplexity Health",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"partial",jp:"partial",sea:"partial",latam:"partial",mea:"partial"},
+  {platform:"Claude for Healthcare",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Epic Ambient AI",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"yes",latam:"partial",mea:"no"},
+  {platform:"athenaAmbient",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Vera Health",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"no",sea:"yes",latam:"yes",mea:"yes"},
+  {platform:"DeepCura",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Hippocratic AI",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"iatroX",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"K Health / PatientGPT",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Heidi Health",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"yes",latam:"no",mea:"no"},
+  {platform:"Infermedica",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"yes"},
+  {platform:"Freed AI",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Perplexity Health",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"partial",jp:"partial",sea:"partial",latam:"partial",mea:"partial"},
+  {platform:"Claude for Healthcare",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Epic Ambient AI",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"yes",latam:"partial",mea:"no"},
+  {platform:"athenaAmbient",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 ];
 
 const globalTimelineData = [
@@ -1680,6 +1845,14 @@ const globalTimelineData = [
   {date:"2026-06-25",region:"US",cat:"Product",title:"UpDoc receives first FDA clearance for agentic clinical AI",desc:"First FDA-cleared agentic AI platform for real-time patient care delivery. Chronic disease management between visits.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/updoc-debuts-first-fda-cleared-clinical-ai-platform-built-for-real-time-patient-care-delivery-and-intelligent-care-coordination-302810065.html"},
   {date:"2026-06-12",region:"Global",cat:"Research",title:"Nature Medicine: General LLMs outperform specialized clinical AI",desc:"Study finds GPT-5.2, Gemini 3.1 Pro, and Claude Opus 4.6 outperform OpenEvidence and UpToDate on medical benchmarks. OpenEvidence disputes findings.",src:"Nature Medicine",url:"https://www.nature.com/articles/s41591-026-04431-5"},
   {date:"2026-07-01",region:"EU",cat:"Regulatory",title:"EU AI Act high-risk classification takes effect",desc:"Full compliance required for high-risk AI systems including clinical AI. Notified bodies begin conformity assessments. Several US AI products remain unavailable in EU.",src:"EU",url:"https://artificialintelligenceact.eu/"},
+  {date:"2026-01-11",region:"US",cat:"Product",title:"Claude for Healthcare launched",desc:"Anthropic launches Claude for Healthcare at J.P. Morgan Healthcare Conference. HIPAA-compliant Claude with CMS, ICD-10, NPI, PubMed connectors. Agent Skills for prior auth, clinical trial protocols. Partners: Banner Health, AstraZeneca, Sanofi, Novo Nordisk, Veeva.",src:"Anthropic",url:"https://www.anthropic.com/news/healthcare-life-sciences"},
+  {date:"2026-02-01",region:"US",cat:"Product",title:"athenahealth launches free athenaAmbient",desc:"athenahealth announces athenaAmbient â free ambient AI scribe for all athenaOne customers. No additional cost. AI-native clinical encounter with ambient scribe + Sage copilot. General availability mid-to-late 2026.",src:"Becker's",url:"https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/athenahealth-adds-ambient-scribe-ai-copilot-to-ehr/"},
+  {date:"2026-03-01",region:"US",cat:"Product",title:"Vera Health emerges as global OpenEvidence competitor",desc:"MIT-founded Vera Health gains traction as free, globally available clinical AI. 250K+ HCPs. 60M+ papers, 900+ calculators. ACEP partnership. Scores 84.9% NEJM-AI, 97.5% USMLE. No pharma ads. HIPAA + GDPR compliant. Available in EU where OpenEvidence is not.",src:"Vera Health",url:"https://www.verahealth.ai/home"},
+  {date:"2026-03-19",region:"US",cat:"Product",title:"Perplexity Health launches",desc:"Perplexity launches Perplexity Health â AI-powered health search with personal data connectors (Apple Health, Android Health Connect, wearables, labs). Health Advisory Board with Dr Eric Topol. Citation-first approach from clinical guidelines and peer-reviewed journals.",src:"Perplexity",url:"https://www.perplexity.ai/hub/blog/introducing-perplexity-health"},
+  {date:"2026-03-26",region:"US",cat:"Product",title:"K Health launches PatientGPT at Hartford HealthCare",desc:"Hartford HealthCare and K Health launch PatientGPT â 24/7 AI bridge to clinical care team. Multi-agent system with EHR access. Patients get personalized answers from their medical records, seamless escalation to virtual or in-person care.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hartford-healthcare-and-k-health-launch-patientgpt-a-new-247-ai-bridge-to-the-clinical-care-team-302725573.html"},
+  {date:"2026-04-16",region:"US",cat:"Product",title:"Hippocratic AI launches AI Front Door + Nurse Co-Pilot",desc:"Hippocratic AI launches two industry-first Voice AI products. AI Front Door: omni-topic patient access agent. Nurse Co-Pilot: first AI voice assistant for inpatient nurses, co-developed with Cleveland Clinic, OhioHealth, Cincinnati Children's. 180M+ patient interactions. 99.90% correct clinical advice.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hippocratic-ai-launches-two-industry-firsts-ai-front-door-and-nurse-co-pilot-to-expand-clinical-care-and-access-302745186.html"},
+  {date:"2026-02-01",region:"Global",cat:"Product",title:"Heidi Health rebrands + launches Evidence and Comms",desc:"Heidi Health launches Heidi Evidence (citation-backed CDS with BMJ, NICE, HealthPathways) and Heidi Comms (AI patient calls, bookings, reminders). Heidi Remote wearable mic. 2.4M patient visits/week. 110+ languages, 116 countries.",src:"Heidi Health",url:"https://www.heidihealth.com/en-us"},
+  {date:"2026-05-15",region:"UK",cat:"Milestone",title:"iatroX surpasses 500K clinical queries",desc:"UK's iatroX announces 500K+ clinical queries answered, 30K+ verified clinicians, 10% of UK GP workforce as monthly active users. MHRA-registered, UKCA-marked. Free for individual clinicians.",src:"iatroX",url:"https://www.iatrox.com/"},
 ];
 
 const regulatoryData = [
@@ -1693,6 +1866,14 @@ const regulatoryData = [
   {date:"2025-10-01",region:"IN",title:"India CDSCO issues AI medical device guidelines",desc:"Central Drugs Standard Control Organization publishes guidelines for AI-based medical devices. Risk classification aligned with IMDRF. First Indian AI approvals expected 2026.",url:"https://cdsco.gov.in/"},
   {date:"2026-01-01",region:"Global",title:"WHO AI in Healthcare governance framework",desc:"WHO publishes global governance framework for AI in healthcare. 70+ countries endorse. Calls for international standards on safety, efficacy, equity.",url:"https://www.who.int/"},
   {date:"2026-07-01",region:"EU",title:"EU AI Act full high-risk enforcement",desc:"Full compliance required for high-risk AI systems. Notified bodies conducting conformity assessments. Several US clinical AI products remain unavailable in EU. Market fragmentation accelerates.",url:"https://artificialintelligenceact.eu/"},
+  {date:"2026-01-11",region:"US",cat:"Product",title:"Claude for Healthcare launched",desc:"Anthropic launches Claude for Healthcare at J.P. Morgan Healthcare Conference. HIPAA-compliant Claude with CMS, ICD-10, NPI, PubMed connectors. Agent Skills for prior auth, clinical trial protocols. Partners: Banner Health, AstraZeneca, Sanofi, Novo Nordisk, Veeva.",src:"Anthropic",url:"https://www.anthropic.com/news/healthcare-life-sciences"},
+  {date:"2026-02-01",region:"US",cat:"Product",title:"athenahealth launches free athenaAmbient",desc:"athenahealth announces athenaAmbient â free ambient AI scribe for all athenaOne customers. No additional cost. AI-native clinical encounter with ambient scribe + Sage copilot. General availability mid-to-late 2026.",src:"Becker's",url:"https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/athenahealth-adds-ambient-scribe-ai-copilot-to-ehr/"},
+  {date:"2026-03-01",region:"US",cat:"Product",title:"Vera Health emerges as global OpenEvidence competitor",desc:"MIT-founded Vera Health gains traction as free, globally available clinical AI. 250K+ HCPs. 60M+ papers, 900+ calculators. ACEP partnership. Scores 84.9% NEJM-AI, 97.5% USMLE. No pharma ads. HIPAA + GDPR compliant. Available in EU where OpenEvidence is not.",src:"Vera Health",url:"https://www.verahealth.ai/home"},
+  {date:"2026-03-19",region:"US",cat:"Product",title:"Perplexity Health launches",desc:"Perplexity launches Perplexity Health â AI-powered health search with personal data connectors (Apple Health, Android Health Connect, wearables, labs). Health Advisory Board with Dr Eric Topol. Citation-first approach from clinical guidelines and peer-reviewed journals.",src:"Perplexity",url:"https://www.perplexity.ai/hub/blog/introducing-perplexity-health"},
+  {date:"2026-03-26",region:"US",cat:"Product",title:"K Health launches PatientGPT at Hartford HealthCare",desc:"Hartford HealthCare and K Health launch PatientGPT â 24/7 AI bridge to clinical care team. Multi-agent system with EHR access. Patients get personalized answers from their medical records, seamless escalation to virtual or in-person care.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hartford-healthcare-and-k-health-launch-patientgpt-a-new-247-ai-bridge-to-the-clinical-care-team-302725573.html"},
+  {date:"2026-04-16",region:"US",cat:"Product",title:"Hippocratic AI launches AI Front Door + Nurse Co-Pilot",desc:"Hippocratic AI launches two industry-first Voice AI products. AI Front Door: omni-topic patient access agent. Nurse Co-Pilot: first AI voice assistant for inpatient nurses, co-developed with Cleveland Clinic, OhioHealth, Cincinnati Children's. 180M+ patient interactions. 99.90% correct clinical advice.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hippocratic-ai-launches-two-industry-firsts-ai-front-door-and-nurse-co-pilot-to-expand-clinical-care-and-access-302745186.html"},
+  {date:"2026-02-01",region:"Global",cat:"Product",title:"Heidi Health rebrands + launches Evidence and Comms",desc:"Heidi Health launches Heidi Evidence (citation-backed CDS with BMJ, NICE, HealthPathways) and Heidi Comms (AI patient calls, bookings, reminders). Heidi Remote wearable mic. 2.4M patient visits/week. 110+ languages, 116 countries.",src:"Heidi Health",url:"https://www.heidihealth.com/en-us"},
+  {date:"2026-05-15",region:"UK",cat:"Milestone",title:"iatroX surpasses 500K clinical queries",desc:"UK's iatroX announces 500K+ clinical queries answered, 30K+ verified clinicians, 10% of UK GP workforce as monthly active users. MHRA-registered, UKCA-marked. Free for individual clinicians.",src:"iatroX",url:"https://www.iatrox.com/"},
 ];
 
 const emergingTrendsData = [
@@ -1707,6 +1888,50 @@ const emergingTrendsData = [
   {icon:"🎤",name:"Multimodal Medical AI",metric:"3",metricLabel:"modalities (text+image+voice)",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"AI evolving beyond text. OpenEvidence Voice Mode: first speech-to-speech medical AI. Abridge: audio + text + clinical reasoning. Tencent Miying: imaging AI. MedGemma 4B/27B: multimodal (text + images). EchoNext: ECG → structural heart disease detection. Trend: AI that sees, hears, reads, and speaks.",region:"Global",src:"OpenEvidence",url:"https://www.openevidence.com"},
   {icon:"⚖️",name:"Benchmarking Wars",metric:"52",metricLabel:"OpenEvidence flagged responses",trajectory:"stable",trajectoryLabel:"CONTESTED",desc:"Nature Medicine study (Jun 2026) finds general-purpose LLMs (GPT-5.2, Gemini 3.1, Claude Opus 4.6) outperform specialized clinical AI (OpenEvidence, UpToDate) on medical benchmarks. OpenEvidence disputes. Highlights tension between open foundation models and proprietary clinical AI. General models improving rapidly.",region:"Global",src:"Nature Medicine",url:"https://www.nature.com/articles/s41591-026-04431-5"},
   {icon:"🌍",name:"Global AI Health Divide",metric:"5x",metricLabel:"US vs EU physician AI usage gap",trajectory:"declining",trajectoryLabel:"WIDENING",desc:"US physicians: 50%+ using AI. EU: ~15%. China: ~25%. India: ~10%. Africa: ~5%. Gap driven by regulation (EU AI Act), infrastructure, funding, and market access. OpenEvidence, ChatGPT for Clinicians — US-only. EU building domestic alternatives. Risk: AI health divide between and within nations.",region:"Global",src:"WHO",url:"https://www.who.int/"},
+  {icon:"ð",name:"Vera Health",metric:"250K+",metricLabel:"HCPs globally",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"Free global clinical AI built by MIT AI researchers and clinicians from Mayo Clinic and Yale. 60M+ peer-reviewed papers, 900+ integrated calculators, CME credits per search. ACEP partnership for emergency medicine. Scores 84.9% on NEJM-AI, 97.5% on USMLE. HIPAA + GDPR compliant. Available worldwide â no NPI requirement. No pharma ads. Direct competitor to OpenEvidence globally.",region:"Global (US, EU, UK, India)",src:"Vera Health",url:"https://www.verahealth.ai/home"},
+  {icon:"ð¤",name:"DeepCura",metric:"6,000+",metricLabel:"clinicians on platform",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"First agent-operated clinical AI platform â 8 AI agents covering scribe, receptionist, billing, fax, prior auth, payments, and clinical copilot. $129/mo all-in-one. Bidirectional EHR integration across 9 systems (Epic, eCW, Athena, OptiMantra, Veradigm). 50+ specialties. ICD-10 + E&M coding. HIPAA compliant. Two-person team supporting 6,000+ clinicians.",region:"US",src:"DeepCura",url:"https://www.deepcura.com/"},
+  {icon:"ðï¸",name:"Hippocratic AI",metric:"180M+",metricLabel:"patient interactions",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"Safety-first voice AI for healthcare. Polaris architecture: 31 coordinated LLMs, 99.90% correct clinical advice, 0.00% severe harm events. Two products launched Apr 2026: AI Front Door (patient access, replaces call centers) and Nurse Co-Pilot (first AI voice assistant for inpatient nurses, co-developed with Cleveland Clinic, OhioHealth, Cincinnati Children's). 7,500+ US-licensed clinician validators. Returns 1-4 hours per nurse per shift.",region:"US",src:"Hippocratic AI",url:"https://hippocraticai.com/"},
+  {icon:"ð¬ð§",name:"iatroX",metric:"30K+",metricLabel:"UK clinicians",trajectory:"up",trajectoryLabel:"GROWING",desc:"UK's leading clinical AI platform. MHRA-registered, UKCA-marked. Free for individual clinicians. NICE/CKS guideline search, BNF/SmPC drug references, 15+ exam Q-banks (UKMLA, PLAB, MRCGP), 80+ calculators, CPD logging. 500K+ clinical queries answered. 10% of UK GPs as monthly active users. Sub-20-second average time-to-answer. Founded by NHS GP Dr Kola Tytler. The UK's answer to OpenEvidence.",region:"UK",src:"iatroX",url:"https://www.iatrox.com/"},
+  {icon:"ð©º",name:"K Health / PatientGPT",metric:"6+",metricLabel:"US health system partners",trajectory:"up",trajectoryLabel:"GROWING",desc:"Clinical AI company powering PatientGPT at Hartford HealthCare (launched Mar 2026). Multi-agent system with EHR access â reads patient medical records, answers health questions, escalates to virtual care or in-person visits. Partners: Mayo Clinic, Cedars-Sinai, Mass General Brigham, Northwell, Hackensack Meridian, Hartford HealthCare. Expanding into specialty care (endocrinology). 9 years of clinical AI development. Trained on anonymized EMR data.",region:"US",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hartford-healthcare-and-k-health-launch-patientgpt-a-new-247-ai-bridge-to-the-clinical-care-team-302725573.html"},
+  {icon:"ð",name:"Heidi Health",metric:"2.4M",metricLabel:"patient visits/week",trajectory:"up",trajectoryLabel:"GROWING",desc:"AI medical scribe from Australia, now global. 110+ languages, 116 countries, 200+ specialties. Free tier available. Feb 2026 rebrand: launched Heidi Evidence (citation-backed CDS with BMJ, NICE, HealthPathways) and Heidi Comms (AI patient calls, bookings, reminders). Heidi Remote wearable mic (Mar 2026). NHSE AVT registry listed, DTAC compliant. EMIS/SystmOne integration. Expanding from scribe to full clinical AI platform.",region:"Global (UK, AU, US, EU)",src:"Heidi Health",url:"https://www.heidihealth.com/en-us"},
+  {icon:"â¡ï¸",name:"Infermedica",metric:"1.55M",metricLabel:"encounters evaluated",trajectory:"up",trajectoryLabel:"GROWING",desc:"Polish-origin agentic AI triage platform. Neurosymbolic architecture: LLM + verified medical knowledge engine. CE-MDR Class IIb certification pending. Conversational Triage launched Apr 2025 â natural language patient interviews with clinically validated triage. 17+ languages. API-first integration. Nurse Triage Co-Pilot reduces call time from 11-20 min to under 5 min. Working on Agent-to-Agent systems for EHR coordination. Mayo Clinic Proceedings validation.",region:"EU, Global",src:"Infermedica",url:"https://infermedica.com/"},
+  {icon:"ð",name:"Freed AI",metric:"25K+",metricLabel:"clinicians",trajectory:"up",trajectoryLabel:"GROWING",desc:"AI medical scribe purpose-built for community care and small clinics. $39-$119/mo. SOAP note generation from ambient listening. Custom templates per specialty. EHR integration with Athena and eClinicalWorks. Expanding into Front Desk (AI receptionist) and revenue cycle tools. HIPAA compliant, discards recordings. Simple setup â 'just works out of the box.' Popular on Reddit r/medicine and r/FamilyMedicine.",region:"US",src:"Freed AI",url:"https://www.getfreed.ai/"},
+  {icon:"ð",name:"Perplexity Health",metric:"â",metricLabel:"consumer health launch",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"AI-powered answer engine entering healthcare. Perplexity Health connects personal health data (Apple Health, Android Health Connect, wearables, labs) to AI search. Health Advisory Board with Dr Eric Topol. Citation-first approach â draws from clinical guidelines and peer-reviewed journals. b.well Connected Health partnership for EHR data. Educational, not diagnostic. Competes with ChatGPT Health for consumer health AI.",region:"US, Global",src:"Perplexity",url:"https://www.perplexity.ai/hub/blog/introducing-perplexity-health"},
+  {icon:"ð§ ",name:"Claude for Healthcare",metric:"â",metricLabel:"enterprise launch",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"Anthropic launches Claude for Healthcare at JPM 2026 (Jan 2026). HIPAA-compliant Claude with connectors: CMS Coverage Database, ICD-10, NPI registry, PubMed. Agent Skills for prior auth, clinical trial protocols, bioinformatics. Partners: Banner Health, AstraZeneca, Sanofi, Genmab, Novo Nordisk, Veeva, Flatiron Health. Commure uses Claude for ambient AI at scale. Claude Opus 4.6 + Sonnet 4.6 â 90%+ on medical benchmarks. Apple Health integration. Enterprise focus.",region:"US",src:"Anthropic",url:"https://www.anthropic.com/news/healthcare-life-sciences"},
+  {icon:"ð¥",name:"EHR-Native AI (Epic + Athena)",metric:"150+",metricLabel:"Epic AI features live",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"EHR vendors building AI directly into platforms. Epic: 150+ AI features including ambient scribe, conversational search, AI agents. 85% of Epic customer base live with generative AI. athenahealth: athenaAmbient launched Feb 2026 â FREE ambient scribe for all athenaOne customers. Oracle Health introducing acute care AI. VA expanding ambient scribes to all VA medical centers nationwide. Trend: AI becoming a baseline EHR feature, not a premium add-on.",region:"US",src:"Healthcare IT News",url:"https://www.healthcareitnews.com/news/epic-unveils-ai-agents-showcases-new-foundational-models"},
+  {icon:"ð",name:"UpToDate Expert AI",metric:"2M",metricLabel:"global clinicians",trajectory:"stable",trajectoryLabel:"RETROFITTING",desc:"UpToDate's conversational AI â 'Expert AI' delivers generative AI answers powered by rigorously vetted, expert-authored content. Combines LLM with 30+ years of curated clinical knowledge. Wolters Kluwer reports ~70% of digital revenues from AI-powered solutions. The incumbent pivoting to AI. Still charges $579/yr. Global availability in 180 countries. Race: can the 30-year incumbent retrofit AI fast enough to survive AI-native challengers?",region:"Global",src:"Wolters Kluwer",url:"https://www.wolterskluwer.com/en/solutions/uptodate/ai-clinical-decision-support"},
+  {icon:"ð",name:"Vera Health",metric:"250K+",metricLabel:"HCPs globally",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"Free global clinical AI built by MIT AI researchers and clinicians from Mayo Clinic and Yale. 60M+ peer-reviewed papers, 900+ integrated calculators, CME credits per search. ACEP partnership for emergency medicine. Scores 84.9% on NEJM-AI, 97.5% on USMLE. HIPAA + GDPR compliant. Available worldwide â no NPI requirement. No pharma ads. Direct competitor to OpenEvidence globally.",region:"Global (US, EU, UK, India)",src:"Vera Health",url:"https://www.verahealth.ai/home"},
+  {icon:"ð¤",name:"DeepCura",metric:"6,000+",metricLabel:"clinicians on platform",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"First agent-operated clinical AI platform â 8 AI agents covering scribe, receptionist, billing, fax, prior auth, payments, and clinical copilot. $129/mo all-in-one. Bidirectional EHR integration across 9 systems (Epic, eCW, Athena, OptiMantra, Veradigm). 50+ specialties. ICD-10 + E&M coding. HIPAA compliant. Two-person team supporting 6,000+ clinicians.",region:"US",src:"DeepCura",url:"https://www.deepcura.com/"},
+  {icon:"ðï¸",name:"Hippocratic AI",metric:"180M+",metricLabel:"patient interactions",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"Safety-first voice AI for healthcare. Polaris architecture: 31 coordinated LLMs, 99.90% correct clinical advice, 0.00% severe harm events. Two products launched Apr 2026: AI Front Door (patient access, replaces call centers) and Nurse Co-Pilot (first AI voice assistant for inpatient nurses, co-developed with Cleveland Clinic, OhioHealth, Cincinnati Children's). 7,500+ US-licensed clinician validators. Returns 1-4 hours per nurse per shift.",region:"US",src:"Hippocratic AI",url:"https://hippocraticai.com/"},
+  {icon:"ð¬ð§",name:"iatroX",metric:"30K+",metricLabel:"UK clinicians",trajectory:"up",trajectoryLabel:"GROWING",desc:"UK's leading clinical AI platform. MHRA-registered, UKCA-marked. Free for individual clinicians. NICE/CKS guideline search, BNF/SmPC drug references, 15+ exam Q-banks (UKMLA, PLAB, MRCGP), 80+ calculators, CPD logging. 500K+ clinical queries answered. 10% of UK GPs as monthly active users. Sub-20-second average time-to-answer. Founded by NHS GP Dr Kola Tytler. The UK's answer to OpenEvidence.",region:"UK",src:"iatroX",url:"https://www.iatrox.com/"},
+  {icon:"ð©º",name:"K Health / PatientGPT",metric:"6+",metricLabel:"US health system partners",trajectory:"up",trajectoryLabel:"GROWING",desc:"Clinical AI company powering PatientGPT at Hartford HealthCare (launched Mar 2026). Multi-agent system with EHR access â reads patient medical records, answers health questions, escalates to virtual care or in-person visits. Partners: Mayo Clinic, Cedars-Sinai, Mass General Brigham, Northwell, Hackensack Meridian, Hartford HealthCare. Expanding into specialty care (endocrinology). 9 years of clinical AI development. Trained on anonymized EMR data.",region:"US",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hartford-healthcare-and-k-health-launch-patientgpt-a-new-247-ai-bridge-to-the-clinical-care-team-302725573.html"},
+  {icon:"ð",name:"Heidi Health",metric:"2.4M",metricLabel:"patient visits/week",trajectory:"up",trajectoryLabel:"GROWING",desc:"AI medical scribe from Australia, now global. 110+ languages, 116 countries, 200+ specialties. Free tier available. Feb 2026 rebrand: launched Heidi Evidence (citation-backed CDS with BMJ, NICE, HealthPathways) and Heidi Comms (AI patient calls, bookings, reminders). Heidi Remote wearable mic (Mar 2026). NHSE AVT registry listed, DTAC compliant. EMIS/SystmOne integration. Expanding from scribe to full clinical AI platform.",region:"Global (UK, AU, US, EU)",src:"Heidi Health",url:"https://www.heidihealth.com/en-us"},
+  {icon:"â¡ï¸",name:"Infermedica",metric:"1.55M",metricLabel:"encounters evaluated",trajectory:"up",trajectoryLabel:"GROWING",desc:"Polish-origin agentic AI triage platform. Neurosymbolic architecture: LLM + verified medical knowledge engine. CE-MDR Class IIb certification pending. Conversational Triage launched Apr 2025 â natural language patient interviews with clinically validated triage. 17+ languages. API-first integration. Nurse Triage Co-Pilot reduces call time from 11-20 min to under 5 min. Working on Agent-to-Agent systems for EHR coordination. Mayo Clinic Proceedings validation.",region:"EU, Global",src:"Infermedica",url:"https://infermedica.com/"},
+  {icon:"ð",name:"Freed AI",metric:"25K+",metricLabel:"clinicians",trajectory:"up",trajectoryLabel:"GROWING",desc:"AI medical scribe purpose-built for community care and small clinics. $39-$119/mo. SOAP note generation from ambient listening. Custom templates per specialty. EHR integration with Athena and eClinicalWorks. Expanding into Front Desk (AI receptionist) and revenue cycle tools. HIPAA compliant, discards recordings. Simple setup â 'just works out of the box.' Popular on Reddit r/medicine and r/FamilyMedicine.",region:"US",src:"Freed AI",url:"https://www.getfreed.ai/"},
+  {icon:"ð",name:"Perplexity Health",metric:"â",metricLabel:"consumer health launch",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"AI-powered answer engine entering healthcare. Perplexity Health connects personal health data (Apple Health, Android Health Connect, wearables, labs) to AI search. Health Advisory Board with Dr Eric Topol. Citation-first approach â draws from clinical guidelines and peer-reviewed journals. b.well Connected Health partnership for EHR data. Educational, not diagnostic. Competes with ChatGPT Health for consumer health AI.",region:"US, Global",src:"Perplexity",url:"https://www.perplexity.ai/hub/blog/introducing-perplexity-health"},
+  {icon:"ð§ ",name:"Claude for Healthcare",metric:"â",metricLabel:"enterprise launch",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"Anthropic launches Claude for Healthcare at JPM 2026 (Jan 2026). HIPAA-compliant Claude with connectors: CMS Coverage Database, ICD-10, NPI registry, PubMed. Agent Skills for prior auth, clinical trial protocols, bioinformatics. Partners: Banner Health, AstraZeneca, Sanofi, Genmab, Novo Nordisk, Veeva, Flatiron Health. Commure uses Claude for ambient AI at scale. Claude Opus 4.6 + Sonnet 4.6 â 90%+ on medical benchmarks. Apple Health integration. Enterprise focus.",region:"US",src:"Anthropic",url:"https://www.anthropic.com/news/healthcare-life-sciences"},
+  {icon:"ð¥",name:"EHR-Native AI (Epic + Athena)",metric:"150+",metricLabel:"Epic AI features live",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"EHR vendors building AI directly into platforms. Epic: 150+ AI features including ambient scribe, conversational search, AI agents. 85% of Epic customer base live with generative AI. athenahealth: athenaAmbient launched Feb 2026 â FREE ambient scribe for all athenaOne customers. Oracle Health introducing acute care AI. VA expanding ambient scribes to all VA medical centers nationwide. Trend: AI becoming a baseline EHR feature, not a premium add-on.",region:"US",src:"Healthcare IT News",url:"https://www.healthcareitnews.com/news/epic-unveils-ai-agents-showcases-new-foundational-models"},
+  {icon:"ð",name:"UpToDate Expert AI",metric:"2M",metricLabel:"global clinicians",trajectory:"stable",trajectoryLabel:"RETROFITTING",desc:"UpToDate's conversational AI â 'Expert AI' delivers generative AI answers powered by rigorously vetted, expert-authored content. Combines LLM with 30+ years of curated clinical knowledge. Wolters Kluwer reports ~70% of digital revenues from AI-powered solutions. The incumbent pivoting to AI. Still charges $579/yr. Global availability in 180 countries. Race: can the 30-year incumbent retrofit AI fast enough to survive AI-native challengers?",region:"Global",src:"Wolters Kluwer",url:"https://www.wolterskluwer.com/en/solutions/uptodate/ai-clinical-decision-support"},
+  {icon:"ð",name:"Vera Health",metric:"250K+",metricLabel:"HCPs globally",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"Free global clinical AI built by MIT AI researchers and clinicians from Mayo Clinic and Yale. 60M+ peer-reviewed papers, 900+ integrated calculators, CME credits per search. ACEP partnership for emergency medicine. Scores 84.9% on NEJM-AI, 97.5% on USMLE. HIPAA + GDPR compliant. Available worldwide â no NPI requirement. No pharma ads. Direct competitor to OpenEvidence globally.",region:"Global (US, EU, UK, India)",src:"Vera Health",url:"https://www.verahealth.ai/home"},
+  {icon:"ð¤",name:"DeepCura",metric:"6,000+",metricLabel:"clinicians on platform",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"First agent-operated clinical AI platform â 8 AI agents covering scribe, receptionist, billing, fax, prior auth, payments, and clinical copilot. $129/mo all-in-one. Bidirectional EHR integration across 9 systems (Epic, eCW, Athena, OptiMantra, Veradigm). 50+ specialties. ICD-10 + E&M coding. HIPAA compliant. Two-person team supporting 6,000+ clinicians.",region:"US",src:"DeepCura",url:"https://www.deepcura.com/"},
+  {icon:"ðï¸",name:"Hippocratic AI",metric:"180M+",metricLabel:"patient interactions",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"Safety-first voice AI for healthcare. Polaris architecture: 31 coordinated LLMs, 99.90% correct clinical advice, 0.00% severe harm events. Two products launched Apr 2026: AI Front Door (patient access, replaces call centers) and Nurse Co-Pilot (first AI voice assistant for inpatient nurses, co-developed with Cleveland Clinic, OhioHealth, Cincinnati Children's). 7,500+ US-licensed clinician validators. Returns 1-4 hours per nurse per shift.",region:"US",src:"Hippocratic AI",url:"https://hippocraticai.com/"},
+  {icon:"ð¬ð§",name:"iatroX",metric:"30K+",metricLabel:"UK clinicians",trajectory:"up",trajectoryLabel:"GROWING",desc:"UK's leading clinical AI platform. MHRA-registered, UKCA-marked. Free for individual clinicians. NICE/CKS guideline search, BNF/SmPC drug references, 15+ exam Q-banks (UKMLA, PLAB, MRCGP), 80+ calculators, CPD logging. 500K+ clinical queries answered. 10% of UK GPs as monthly active users. Sub-20-second average time-to-answer. Founded by NHS GP Dr Kola Tytler. The UK's answer to OpenEvidence.",region:"UK",src:"iatroX",url:"https://www.iatrox.com/"},
+  {icon:"ð©º",name:"K Health / PatientGPT",metric:"6+",metricLabel:"US health system partners",trajectory:"up",trajectoryLabel:"GROWING",desc:"Clinical AI company powering PatientGPT at Hartford HealthCare (launched Mar 2026). Multi-agent system with EHR access â reads patient medical records, answers health questions, escalates to virtual care or in-person visits. Partners: Mayo Clinic, Cedars-Sinai, Mass General Brigham, Northwell, Hackensack Meridian, Hartford HealthCare. Expanding into specialty care (endocrinology). 9 years of clinical AI development. Trained on anonymized EMR data.",region:"US",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hartford-healthcare-and-k-health-launch-patientgpt-a-new-247-ai-bridge-to-the-clinical-care-team-302725573.html"},
+  {icon:"ð",name:"Heidi Health",metric:"2.4M",metricLabel:"patient visits/week",trajectory:"up",trajectoryLabel:"GROWING",desc:"AI medical scribe from Australia, now global. 110+ languages, 116 countries, 200+ specialties. Free tier available. Feb 2026 rebrand: launched Heidi Evidence (citation-backed CDS with BMJ, NICE, HealthPathways) and Heidi Comms (AI patient calls, bookings, reminders). Heidi Remote wearable mic (Mar 2026). NHSE AVT registry listed, DTAC compliant. EMIS/SystmOne integration. Expanding from scribe to full clinical AI platform.",region:"Global (UK, AU, US, EU)",src:"Heidi Health",url:"https://www.heidihealth.com/en-us"},
+  {icon:"â¡ï¸",name:"Infermedica",metric:"1.55M",metricLabel:"encounters evaluated",trajectory:"up",trajectoryLabel:"GROWING",desc:"Polish-origin agentic AI triage platform. Neurosymbolic architecture: LLM + verified medical knowledge engine. CE-MDR Class IIb certification pending. Conversational Triage launched Apr 2025 â natural language patient interviews with clinically validated triage. 17+ languages. API-first integration. Nurse Triage Co-Pilot reduces call time from 11-20 min to under 5 min. Working on Agent-to-Agent systems for EHR coordination. Mayo Clinic Proceedings validation.",region:"EU, Global",src:"Infermedica",url:"https://infermedica.com/"},
+  {icon:"ð",name:"Freed AI",metric:"25K+",metricLabel:"clinicians",trajectory:"up",trajectoryLabel:"GROWING",desc:"AI medical scribe purpose-built for community care and small clinics. $39-$119/mo. SOAP note generation from ambient listening. Custom templates per specialty. EHR integration with Athena and eClinicalWorks. Expanding into Front Desk (AI receptionist) and revenue cycle tools. HIPAA compliant, discards recordings. Simple setup â 'just works out of the box.' Popular on Reddit r/medicine and r/FamilyMedicine.",region:"US",src:"Freed AI",url:"https://www.getfreed.ai/"},
+  {icon:"ð",name:"Perplexity Health",metric:"â",metricLabel:"consumer health launch",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"AI-powered answer engine entering healthcare. Perplexity Health connects personal health data (Apple Health, Android Health Connect, wearables, labs) to AI search. Health Advisory Board with Dr Eric Topol. Citation-first approach â draws from clinical guidelines and peer-reviewed journals. b.well Connected Health partnership for EHR data. Educational, not diagnostic. Competes with ChatGPT Health for consumer health AI.",region:"US, Global",src:"Perplexity",url:"https://www.perplexity.ai/hub/blog/introducing-perplexity-health"},
+  {icon:"ð§ ",name:"Claude for Healthcare",metric:"â",metricLabel:"enterprise launch",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"Anthropic launches Claude for Healthcare at JPM 2026 (Jan 2026). HIPAA-compliant Claude with connectors: CMS Coverage Database, ICD-10, NPI registry, PubMed. Agent Skills for prior auth, clinical trial protocols, bioinformatics. Partners: Banner Health, AstraZeneca, Sanofi, Genmab, Novo Nordisk, Veeva, Flatiron Health. Commure uses Claude for ambient AI at scale. Claude Opus 4.6 + Sonnet 4.6 â 90%+ on medical benchmarks. Apple Health integration. Enterprise focus.",region:"US",src:"Anthropic",url:"https://www.anthropic.com/news/healthcare-life-sciences"},
+  {icon:"ð¥",name:"EHR-Native AI (Epic + Athena)",metric:"150+",metricLabel:"Epic AI features live",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"EHR vendors building AI directly into platforms. Epic: 150+ AI features including ambient scribe, conversational search, AI agents. 85% of Epic customer base live with generative AI. athenahealth: athenaAmbient launched Feb 2026 â FREE ambient scribe for all athenaOne customers. Oracle Health introducing acute care AI. VA expanding ambient scribes to all VA medical centers nationwide. Trend: AI becoming a baseline EHR feature, not a premium add-on.",region:"US",src:"Healthcare IT News",url:"https://www.healthcareitnews.com/news/epic-unveils-ai-agents-showcases-new-foundational-models"},
+  {icon:"ð",name:"UpToDate Expert AI",metric:"2M",metricLabel:"global clinicians",trajectory:"stable",trajectoryLabel:"RETROFITTING",desc:"UpToDate's conversational AI â 'Expert AI' delivers generative AI answers powered by rigorously vetted, expert-authored content. Combines LLM with 30+ years of curated clinical knowledge. Wolters Kluwer reports ~70% of digital revenues from AI-powered solutions. The incumbent pivoting to AI. Still charges $579/yr. Global availability in 180 countries. Race: can the 30-year incumbent retrofit AI fast enough to survive AI-native challengers?",region:"Global",src:"Wolters Kluwer",url:"https://www.wolterskluwer.com/en/solutions/uptodate/ai-clinical-decision-support"},
+  {date:"2026-01-11",region:"US",cat:"Product",title:"Claude for Healthcare launched",desc:"Anthropic launches Claude for Healthcare at J.P. Morgan Healthcare Conference. HIPAA-compliant Claude with CMS, ICD-10, NPI, PubMed connectors. Agent Skills for prior auth, clinical trial protocols. Partners: Banner Health, AstraZeneca, Sanofi, Novo Nordisk, Veeva.",src:"Anthropic",url:"https://www.anthropic.com/news/healthcare-life-sciences"},
+  {date:"2026-02-01",region:"US",cat:"Product",title:"athenahealth launches free athenaAmbient",desc:"athenahealth announces athenaAmbient â free ambient AI scribe for all athenaOne customers. No additional cost. AI-native clinical encounter with ambient scribe + Sage copilot. General availability mid-to-late 2026.",src:"Becker's",url:"https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/athenahealth-adds-ambient-scribe-ai-copilot-to-ehr/"},
+  {date:"2026-03-01",region:"US",cat:"Product",title:"Vera Health emerges as global OpenEvidence competitor",desc:"MIT-founded Vera Health gains traction as free, globally available clinical AI. 250K+ HCPs. 60M+ papers, 900+ calculators. ACEP partnership. Scores 84.9% NEJM-AI, 97.5% USMLE. No pharma ads. HIPAA + GDPR compliant. Available in EU where OpenEvidence is not.",src:"Vera Health",url:"https://www.verahealth.ai/home"},
+  {date:"2026-03-19",region:"US",cat:"Product",title:"Perplexity Health launches",desc:"Perplexity launches Perplexity Health â AI-powered health search with personal data connectors (Apple Health, Android Health Connect, wearables, labs). Health Advisory Board with Dr Eric Topol. Citation-first approach from clinical guidelines and peer-reviewed journals.",src:"Perplexity",url:"https://www.perplexity.ai/hub/blog/introducing-perplexity-health"},
+  {date:"2026-03-26",region:"US",cat:"Product",title:"K Health launches PatientGPT at Hartford HealthCare",desc:"Hartford HealthCare and K Health launch PatientGPT â 24/7 AI bridge to clinical care team. Multi-agent system with EHR access. Patients get personalized answers from their medical records, seamless escalation to virtual or in-person care.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hartford-healthcare-and-k-health-launch-patientgpt-a-new-247-ai-bridge-to-the-clinical-care-team-302725573.html"},
+  {date:"2026-04-16",region:"US",cat:"Product",title:"Hippocratic AI launches AI Front Door + Nurse Co-Pilot",desc:"Hippocratic AI launches two industry-first Voice AI products. AI Front Door: omni-topic patient access agent. Nurse Co-Pilot: first AI voice assistant for inpatient nurses, co-developed with Cleveland Clinic, OhioHealth, Cincinnati Children's. 180M+ patient interactions. 99.90% correct clinical advice.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/hippocratic-ai-launches-two-industry-firsts-ai-front-door-and-nurse-co-pilot-to-expand-clinical-care-and-access-302745186.html"},
+  {date:"2026-02-01",region:"Global",cat:"Product",title:"Heidi Health rebrands + launches Evidence and Comms",desc:"Heidi Health launches Heidi Evidence (citation-backed CDS with BMJ, NICE, HealthPathways) and Heidi Comms (AI patient calls, bookings, reminders). Heidi Remote wearable mic. 2.4M patient visits/week. 110+ languages, 116 countries.",src:"Heidi Health",url:"https://www.heidihealth.com/en-us"},
+  {date:"2026-05-15",region:"UK",cat:"Milestone",title:"iatroX surpasses 500K clinical queries",desc:"UK's iatroX announces 500K+ clinical queries answered, 30K+ verified clinicians, 10% of UK GP workforce as monthly active users. MHRA-registered, UKCA-marked. Free for individual clinicians.",src:"iatroX",url:"https://www.iatrox.com/"},
 ];
 
 const globalMatrixData = [
@@ -1724,8 +1949,89 @@ const globalMatrixData = [
   {platform:"Qure.ai",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"no",sea:"yes",latam:"yes",mea:"yes"},
   {platform:"Ada Health",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Babylon Health",us:"no",eu:"partial",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Vera Health",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"no",sea:"yes",latam:"yes",mea:"yes"},
+  {platform:"DeepCura",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Hippocratic AI",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"iatroX",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"K Health / PatientGPT",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Heidi Health",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"yes",latam:"no",mea:"no"},
+  {platform:"Infermedica",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"yes"},
+  {platform:"Freed AI",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Perplexity Health",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"partial",jp:"partial",sea:"partial",latam:"partial",mea:"partial"},
+  {platform:"Claude for Healthcare",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Epic Ambient AI",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"yes",latam:"partial",mea:"no"},
+  {platform:"athenaAmbient",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 ];
 
+
+// OE FEATURES DATA
+const oeFeaturesData = [
+  {icon:"ð",name:"Clinical Search",date:"2022-01-01",status:"live",statusLabel:"LIVE",desc:"Core product â AI-powered clinical question answering with cited, peer-reviewed evidence. 30+ journal partners including NEJM, JAMA, The Lancet. 50%+ of US physicians use this regularly.",url:"https://www.openevidence.com"},
+  {icon:"ð§ ",name:"DeepConsult",date:"2025-07-15",status:"live",statusLabel:"LIVE",desc:"First AI agent purpose-built for physicians. Uses reasoning models to cross-reference hundreds of peer-reviewed studies. 100x compute of standard search. Agentic research â not just answering questions but investigating them.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {icon:"ð",name:"Visits (AI Scribe)",date:"2025-08-15",status:"live",statusLabel:"LIVE",desc:"Clinical documentation tool that transcribes patient encounters and enriches notes with evidence-based guidelines. Competes with Abridge, Ambience, Microsoft Dragon. Part of the ambient AI scribe wave sweeping US healthcare.",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
+  {icon:"ðï¸",name:"Doctor Dialer",date:"2025-12-15",status:"live",statusLabel:"LIVE",desc:"HIPAA-secure dialer for doctor-patient communication. 37M minutes powered since limited release. Feb 2026 wide release added messaging, faxing, voicemail. Competes with traditional phone/portal communication.",url:"https://www.openevidence.com/announcements/messaging-faxing-and-voicemail-are-now-live-in-the-openevidence-dialer"},
+  {icon:"ð",name:"Clinical Trial Matching",date:"2026-02-06",status:"live",statusLabel:"LIVE",desc:"Automatically surfaces active/recruiting clinical trials and compares inclusion criteria against patient characteristics. Location filtering and distance display. Bridges the gap between evidence search and clinical trial enrollment.",url:"https://www.openevidence.com/announcements/new-feature-clinical-trials-matching-in-openevidence"},
+  {icon:"ð",name:"Coding Intelligence",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"Automates medical coding â ICD-10, E/M, CPT suggestions inline. RVU values. Medicare MPPR optimization. Helps physicians 'capture every dollar they've earned.' Revenue-cycle integration.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {icon:"â¡",name:"Dotflows",date:"2026-04-07",status:"live",statusLabel:"LIVE",desc:"AI-native customization â reusable natural language prompts. Community library. Type '.' to invoke custom workflows. Physicians share and borrow prompt templates. OpenEvidence's answer to workflow automation.",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
+  {icon:"ð¤",name:"Voice Mode",date:"2026-05-21",status:"live",statusLabel:"LIVE",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 860K clinicians get voice access. YouTube teaser video published. Enables clinicians to ask questions aloud during procedures or while examining patients.",url:"https://www.youtube.com"},
+  {icon:"ð",name:"Voices (Note Formatting)",date:"2026-02-01",status:"live",statusLabel:"LIVE",desc:"Customizable note formatting styles within Visits documentation workflow. Physicians can match their preferred documentation style.",url:"https://www.openevidence.com"},
+  {icon:"ð¤",name:"EHR Integration (Epic)",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"OpenEvidence embedded into Epic EHR workflows. Sutter Health (Feb 2026), Mount Sinai (Mar 2026), Cedars-Sinai (May 2026). Extends to nurses and pharmacists at Mount Sinai.",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
+  {icon:"ð¥",name:"Health System Deployments",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"Three health systems deployed: Sutter Health (7 hospitals, Epic), Mount Sinai (7 hospitals, Epic, extended to nurses/pharmacists), Cedars-Sinai (EHR-tailored queries). Enterprise trajectory accelerating.",url:"https://www.openevidence.com/announcements/mount-sinai-health-system-collaborates-with-openevidence-to-provide-evidence-based-knowledge-within-electronic-medical-record"},
+  {icon:"ð¤",name:"Tandem Partnership (Prescribe & Prior Auth)",date:"2026-04-02",status:"live",statusLabel:"LIVE",desc:"OpenEvidence and Tandem partner to streamline evidence-based prescribing and prior auth directly within platform. Bridges clinical evidence to administrative workflow.",url:"https://www.businesswire.com/news/home/20260402254260/en/OpenEvidence-and-Tandem-Partner-to-Streamline-Evidence-Based-Prescribing-and-Prior-Authorizations"},
+  {icon:"ð§¬",name:"SNO Partnership (Neuro-Oncology)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. SNO embeds OpenEvidence across member-facing digital properties.",url:"https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership"},
+  {icon:"ð",name:"Pathway Labs EchoNext (FDA-cleared AI)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"First FDA-cleared AI tool integrated into OpenEvidence. Pathway Labs EchoNext detects structural heart disease from ECGs. Multicondition AI in cardiology. Marks OpenEvidence's transition from reference tool to clinical AI platform.",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
+  {icon:"ð",name:"Journal Partnerships (30+)",date:"2023-11-17",status:"live",statusLabel:"LIVE",desc:"Elsevier ClinicalKey AI (Lancet, Cell, Gray's Anatomy), Wiley, NEJM, JAMA, Cochrane, NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more. 30+ content partners providing peer-reviewed evidence.",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
+  {icon:"ð¬",name:"Coding Intelligence + Billing",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"ICD-10, E/M, CPT suggestions with RVU values and Medicare MPPR optimization. Part of Coding Intelligence launch. Revenue-cycle management embedded in clinical workflow.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {icon:"ð",name:"1M Consultations/Day Milestone",date:"2026-03-10",status:"live",statusLabel:"LIVE",desc:"First time in history â one million clinical consultations between NPI-verified physicians and an AI in 24 hours. 30M monthly consultations. 50%+ of US physicians as regular users.",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
+];
+
+// OE FEATURES RENDER
+
+// OE FEATURES DATA
+const oeFeaturesData = [
+  {icon:"ð",name:"Clinical Search",date:"2022-01-01",status:"live",statusLabel:"LIVE",desc:"Core product â AI-powered clinical question answering with cited, peer-reviewed evidence. 30+ journal partners including NEJM, JAMA, The Lancet. 50%+ of US physicians use this regularly.",url:"https://www.openevidence.com"},
+  {icon:"ð§ ",name:"DeepConsult",date:"2025-07-15",status:"live",statusLabel:"LIVE",desc:"First AI agent purpose-built for physicians. Uses reasoning models to cross-reference hundreds of peer-reviewed studies. 100x compute of standard search. Agentic research â not just answering questions but investigating them.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {icon:"ð",name:"Visits (AI Scribe)",date:"2025-08-15",status:"live",statusLabel:"LIVE",desc:"Clinical documentation tool that transcribes patient encounters and enriches notes with evidence-based guidelines. Competes with Abridge, Ambience, Microsoft Dragon. Part of the ambient AI scribe wave sweeping US healthcare.",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
+  {icon:"ðï¸",name:"Doctor Dialer",date:"2025-12-15",status:"live",statusLabel:"LIVE",desc:"HIPAA-secure dialer for doctor-patient communication. 37M minutes powered since limited release. Feb 2026 wide release added messaging, faxing, voicemail. Competes with traditional phone/portal communication.",url:"https://www.openevidence.com/announcements/messaging-faxing-and-voicemail-are-now-live-in-the-openevidence-dialer"},
+  {icon:"ð",name:"Clinical Trial Matching",date:"2026-02-06",status:"live",statusLabel:"LIVE",desc:"Automatically surfaces active/recruiting clinical trials and compares inclusion criteria against patient characteristics. Location filtering and distance display. Bridges the gap between evidence search and clinical trial enrollment.",url:"https://www.openevidence.com/announcements/new-feature-clinical-trials-matching-in-openevidence"},
+  {icon:"ð",name:"Coding Intelligence",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"Automates medical coding â ICD-10, E/M, CPT suggestions inline. RVU values. Medicare MPPR optimization. Helps physicians 'capture every dollar they've earned.' Revenue-cycle integration.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {icon:"â¡",name:"Dotflows",date:"2026-04-07",status:"live",statusLabel:"LIVE",desc:"AI-native customization â reusable natural language prompts. Community library. Type '.' to invoke custom workflows. Physicians share and borrow prompt templates. OpenEvidence's answer to workflow automation.",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
+  {icon:"ð¤",name:"Voice Mode",date:"2026-05-21",status:"live",statusLabel:"LIVE",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 860K clinicians get voice access. YouTube teaser video published. Enables clinicians to ask questions aloud during procedures or while examining patients.",url:"https://www.youtube.com"},
+  {icon:"ð",name:"Voices (Note Formatting)",date:"2026-02-01",status:"live",statusLabel:"LIVE",desc:"Customizable note formatting styles within Visits documentation workflow. Physicians can match their preferred documentation style.",url:"https://www.openevidence.com"},
+  {icon:"ð¤",name:"EHR Integration (Epic)",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"OpenEvidence embedded into Epic EHR workflows. Sutter Health (Feb 2026), Mount Sinai (Mar 2026), Cedars-Sinai (May 2026). Extends to nurses and pharmacists at Mount Sinai.",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
+  {icon:"ð¥",name:"Health System Deployments",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"Three health systems deployed: Sutter Health (7 hospitals, Epic), Mount Sinai (7 hospitals, Epic, extended to nurses/pharmacists), Cedars-Sinai (EHR-tailored queries). Enterprise trajectory accelerating.",url:"https://www.openevidence.com/announcements/mount-sinai-health-system-collaborates-with-openevidence-to-provide-evidence-based-knowledge-within-electronic-medical-record"},
+  {icon:"ð¤",name:"Tandem Partnership (Prescribe & Prior Auth)",date:"2026-04-02",status:"live",statusLabel:"LIVE",desc:"OpenEvidence and Tandem partner to streamline evidence-based prescribing and prior auth directly within platform. Bridges clinical evidence to administrative workflow.",url:"https://www.businesswire.com/news/home/20260402254260/en/OpenEvidence-and-Tandem-Partner-to-Streamline-Evidence-Based-Prescribing-and-Prior-Authorizations"},
+  {icon:"ð§¬",name:"SNO Partnership (Neuro-Oncology)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. SNO embeds OpenEvidence across member-facing digital properties.",url:"https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership"},
+  {icon:"ð",name:"Pathway Labs EchoNext (FDA-cleared AI)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"First FDA-cleared AI tool integrated into OpenEvidence. Pathway Labs EchoNext detects structural heart disease from ECGs. Multicondition AI in cardiology. Marks OpenEvidence's transition from reference tool to clinical AI platform.",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
+  {icon:"ð",name:"Journal Partnerships (30+)",date:"2023-11-17",status:"live",statusLabel:"LIVE",desc:"Elsevier ClinicalKey AI (Lancet, Cell, Gray's Anatomy), Wiley, NEJM, JAMA, Cochrane, NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more. 30+ content partners providing peer-reviewed evidence.",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
+  {icon:"ð¬",name:"Coding Intelligence + Billing",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"ICD-10, E/M, CPT suggestions with RVU values and Medicare MPPR optimization. Part of Coding Intelligence launch. Revenue-cycle management embedded in clinical workflow.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {icon:"ð",name:"1M Consultations/Day Milestone",date:"2026-03-10",status:"live",statusLabel:"LIVE",desc:"First time in history â one million clinical consultations between NPI-verified physicians and an AI in 24 hours. 30M monthly consultations. 50%+ of US physicians as regular users.",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
+];
+
+// OE FEATURES RENDER
+
+// OE FEATURES DATA
+const oeFeaturesData = [
+  {icon:"ð",name:"Clinical Search",date:"2022-01-01",status:"live",statusLabel:"LIVE",desc:"Core product â AI-powered clinical question answering with cited, peer-reviewed evidence. 30+ journal partners including NEJM, JAMA, The Lancet. 50%+ of US physicians use this regularly.",url:"https://www.openevidence.com"},
+  {icon:"ð§ ",name:"DeepConsult",date:"2025-07-15",status:"live",statusLabel:"LIVE",desc:"First AI agent purpose-built for physicians. Uses reasoning models to cross-reference hundreds of peer-reviewed studies. 100x compute of standard search. Agentic research â not just answering questions but investigating them.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {icon:"ð",name:"Visits (AI Scribe)",date:"2025-08-15",status:"live",statusLabel:"LIVE",desc:"Clinical documentation tool that transcribes patient encounters and enriches notes with evidence-based guidelines. Competes with Abridge, Ambience, Microsoft Dragon. Part of the ambient AI scribe wave sweeping US healthcare.",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
+  {icon:"ðï¸",name:"Doctor Dialer",date:"2025-12-15",status:"live",statusLabel:"LIVE",desc:"HIPAA-secure dialer for doctor-patient communication. 37M minutes powered since limited release. Feb 2026 wide release added messaging, faxing, voicemail. Competes with traditional phone/portal communication.",url:"https://www.openevidence.com/announcements/messaging-faxing-and-voicemail-are-now-live-in-the-openevidence-dialer"},
+  {icon:"ð",name:"Clinical Trial Matching",date:"2026-02-06",status:"live",statusLabel:"LIVE",desc:"Automatically surfaces active/recruiting clinical trials and compares inclusion criteria against patient characteristics. Location filtering and distance display. Bridges the gap between evidence search and clinical trial enrollment.",url:"https://www.openevidence.com/announcements/new-feature-clinical-trials-matching-in-openevidence"},
+  {icon:"ð",name:"Coding Intelligence",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"Automates medical coding â ICD-10, E/M, CPT suggestions inline. RVU values. Medicare MPPR optimization. Helps physicians 'capture every dollar they've earned.' Revenue-cycle integration.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {icon:"â¡",name:"Dotflows",date:"2026-04-07",status:"live",statusLabel:"LIVE",desc:"AI-native customization â reusable natural language prompts. Community library. Type '.' to invoke custom workflows. Physicians share and borrow prompt templates. OpenEvidence's answer to workflow automation.",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
+  {icon:"ð¤",name:"Voice Mode",date:"2026-05-21",status:"live",statusLabel:"LIVE",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 860K clinicians get voice access. YouTube teaser video published. Enables clinicians to ask questions aloud during procedures or while examining patients.",url:"https://www.youtube.com"},
+  {icon:"ð",name:"Voices (Note Formatting)",date:"2026-02-01",status:"live",statusLabel:"LIVE",desc:"Customizable note formatting styles within Visits documentation workflow. Physicians can match their preferred documentation style.",url:"https://www.openevidence.com"},
+  {icon:"ð¤",name:"EHR Integration (Epic)",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"OpenEvidence embedded into Epic EHR workflows. Sutter Health (Feb 2026), Mount Sinai (Mar 2026), Cedars-Sinai (May 2026). Extends to nurses and pharmacists at Mount Sinai.",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
+  {icon:"ð¥",name:"Health System Deployments",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"Three health systems deployed: Sutter Health (7 hospitals, Epic), Mount Sinai (7 hospitals, Epic, extended to nurses/pharmacists), Cedars-Sinai (EHR-tailored queries). Enterprise trajectory accelerating.",url:"https://www.openevidence.com/announcements/mount-sinai-health-system-collaborates-with-openevidence-to-provide-evidence-based-knowledge-within-electronic-medical-record"},
+  {icon:"ð¤",name:"Tandem Partnership (Prescribe & Prior Auth)",date:"2026-04-02",status:"live",statusLabel:"LIVE",desc:"OpenEvidence and Tandem partner to streamline evidence-based prescribing and prior auth directly within platform. Bridges clinical evidence to administrative workflow.",url:"https://www.businesswire.com/news/home/20260402254260/en/OpenEvidence-and-Tandem-Partner-to-Streamline-Evidence-Based-Prescribing-and-Prior-Authorizations"},
+  {icon:"ð§¬",name:"SNO Partnership (Neuro-Oncology)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. SNO embeds OpenEvidence across member-facing digital properties.",url:"https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership"},
+  {icon:"ð",name:"Pathway Labs EchoNext (FDA-cleared AI)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"First FDA-cleared AI tool integrated into OpenEvidence. Pathway Labs EchoNext detects structural heart disease from ECGs. Multicondition AI in cardiology. Marks OpenEvidence's transition from reference tool to clinical AI platform.",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
+  {icon:"ð",name:"Journal Partnerships (30+)",date:"2023-11-17",status:"live",statusLabel:"LIVE",desc:"Elsevier ClinicalKey AI (Lancet, Cell, Gray's Anatomy), Wiley, NEJM, JAMA, Cochrane, NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more. 30+ content partners providing peer-reviewed evidence.",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
+  {icon:"ð¬",name:"Coding Intelligence + Billing",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"ICD-10, E/M, CPT suggestions with RVU values and Medicare MPPR optimization. Part of Coding Intelligence launch. Revenue-cycle management embedded in clinical workflow.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {icon:"ð",name:"1M Consultations/Day Milestone",date:"2026-03-10",status:"live",statusLabel:"LIVE",desc:"First time in history â one million clinical consultations between NPI-verified physicians and an AI in 24 hours. 30M monthly consultations. 50%+ of US physicians as regular users.",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
+];
+
+// OE FEATURES RENDER
 // RENDER TIMELINE
 function renderTimeline(filter) {
   const el = document.getElementById('timelineList');
@@ -2072,6 +2378,144 @@ window.addEventListener('load', function() {
       `).join('')}
     </tbody>
   `;
+
+  // OE FEATURES RENDER
+  document.getElementById('oeFeaturesGrid').innerHTML = oeFeaturesData.map(f => `
+    <div class="oe-feature-card">
+      <div class="feat-icon">${f.icon}</div>
+      <div class="feat-name">${f.name}</div>
+      <div class="feat-date">${f.date}</div>
+      <div class="feat-desc">${f.desc}</div>
+      <div class="feat-status ${f.status}">${f.statusLabel}</div>
+      <div class="feat-link"><a href="${f.url}" target="_blank" rel="noopener">Source â</a></div>
+    </div>
+  `).join('');
+
+  // OE Features timeline chart
+  const ctxOE = document.getElementById('chartOeFeatures').getContext('2d');
+  const tcOE = getThemeColors();
+  const featureDates = ['2022-01','2023-11','2025-07','2025-08','2025-12','2026-02','2026-02','2026-02','2026-03','2026-04','2026-05'];
+  const featureLabels = ['Search','Journals','DeepConsult','Visits','Dialer','Trials','EHR','Voices','Coding','Dotflows','Voice Mode'];
+  charts.push(new Chart(ctxOE, {
+    type: 'bar',
+    data: {
+      labels: featureLabels,
+      datasets: [{
+        label: 'Feature Launch',
+        data: [1,2,3,4,5,6,7,8,9,10,11],
+        backgroundColor: chartColorLight,
+        borderColor: chartColor,
+        borderWidth: 2, borderRadius: 6
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1',
+          callbacks: { label: (ctx) => featureDates[ctx.dataIndex] }
+        }
+      },
+      scales: {
+        x: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text }, title: { display: true, text: 'Feature #', color: tcOE.text } },
+        y: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text } }
+      }
+    }
+  }));
+
+  // OE FEATURES RENDER
+  document.getElementById('oeFeaturesGrid').innerHTML = oeFeaturesData.map(f => `
+    <div class="oe-feature-card">
+      <div class="feat-icon">${f.icon}</div>
+      <div class="feat-name">${f.name}</div>
+      <div class="feat-date">${f.date}</div>
+      <div class="feat-desc">${f.desc}</div>
+      <div class="feat-status ${f.status}">${f.statusLabel}</div>
+      <div class="feat-link"><a href="${f.url}" target="_blank" rel="noopener">Source â</a></div>
+    </div>
+  `).join('');
+
+  // OE Features timeline chart
+  const ctxOE = document.getElementById('chartOeFeatures').getContext('2d');
+  const tcOE = getThemeColors();
+  const featureDates = ['2022-01','2023-11','2025-07','2025-08','2025-12','2026-02','2026-02','2026-02','2026-03','2026-04','2026-05'];
+  const featureLabels = ['Search','Journals','DeepConsult','Visits','Dialer','Trials','EHR','Voices','Coding','Dotflows','Voice Mode'];
+  charts.push(new Chart(ctxOE, {
+    type: 'bar',
+    data: {
+      labels: featureLabels,
+      datasets: [{
+        label: 'Feature Launch',
+        data: [1,2,3,4,5,6,7,8,9,10,11],
+        backgroundColor: chartColorLight,
+        borderColor: chartColor,
+        borderWidth: 2, borderRadius: 6
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1',
+          callbacks: { label: (ctx) => featureDates[ctx.dataIndex] }
+        }
+      },
+      scales: {
+        x: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text }, title: { display: true, text: 'Feature #', color: tcOE.text } },
+        y: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text } }
+      }
+    }
+  }));
+
+  // OE FEATURES RENDER
+  document.getElementById('oeFeaturesGrid').innerHTML = oeFeaturesData.map(f => `
+    <div class="oe-feature-card">
+      <div class="feat-icon">${f.icon}</div>
+      <div class="feat-name">${f.name}</div>
+      <div class="feat-date">${f.date}</div>
+      <div class="feat-desc">${f.desc}</div>
+      <div class="feat-status ${f.status}">${f.statusLabel}</div>
+      <div class="feat-link"><a href="${f.url}" target="_blank" rel="noopener">Source â</a></div>
+    </div>
+  `).join('');
+
+  // OE Features timeline chart
+  const ctxOE = document.getElementById('chartOeFeatures').getContext('2d');
+  const tcOE = getThemeColors();
+  const featureDates = ['2022-01','2023-11','2025-07','2025-08','2025-12','2026-02','2026-02','2026-02','2026-03','2026-04','2026-05'];
+  const featureLabels = ['Search','Journals','DeepConsult','Visits','Dialer','Trials','EHR','Voices','Coding','Dotflows','Voice Mode'];
+  charts.push(new Chart(ctxOE, {
+    type: 'bar',
+    data: {
+      labels: featureLabels,
+      datasets: [{
+        label: 'Feature Launch',
+        data: [1,2,3,4,5,6,7,8,9,10,11],
+        backgroundColor: chartColorLight,
+        borderColor: chartColor,
+        borderWidth: 2, borderRadius: 6
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1',
+          callbacks: { label: (ctx) => featureDates[ctx.dataIndex] }
+        }
+      },
+      scales: {
+        x: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text }, title: { display: true, text: 'Feature #', color: tcOE.text } },
+        y: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text } }
+      }
+    }
+  }));
 
   buildCharts();
 
