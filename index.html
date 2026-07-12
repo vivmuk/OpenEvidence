@@ -7,7 +7,18 @@
 <meta name="description" content="Comprehensive tracking of OpenEvidence platform: partnerships, products, funding, adoption metrics, competitor landscape, and tech stack.">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js">
+// FEATURE DETAIL
+function showFeatureDetail(detailKey) {
+  if (detailKey === 'grade') {
+    var explainer = document.getElementById('gradeExplainer');
+    if (explainer) {
+      explainer.style.display = 'block';
+      explainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
+</script>
 <style>
 :root {
   --oe-orange: #E4643D;
@@ -346,56 +357,12 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 .oe-feature-card .feat-status.announced { background: rgba(100,130,200,0.15); color: #8AAFCC; }
 .oe-feature-card .feat-link { font-size: 12px; margin-top: 8px; display: block; }
 .oe-feature-card .feat-link a { color: var(--oe-orange); text-decoration: none; }
-.oe-feature-card .feat-link a:hover { text-decoration: underline; }
-
-@media (max-width: 768px) {
-  .oe-features-grid { grid-template-columns: 1fr; }
+.oe-feature-card .feat-info-btn {
+  display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 4px;
+  margin-left: 8px; background: rgba(228,100,61,0.1); border: 1px solid rgba(228,100,61,0.2);
+  color: var(--oe-orange); cursor: pointer; transition: all 0.2s; font-weight: 600;
 }
-
-
-/* OE FEATURES TIMELINE */
-.oe-features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 24px 0; }
-.oe-feature-card {
-  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
-  border-radius: var(--oe-radius-lg); padding: 20px; transition: border-color 0.2s;
-  position: relative; overflow: hidden;
-}
-.oe-feature-card:hover { border-color: var(--oe-orange); }
-.oe-feature-card .feat-icon { font-size: 24px; margin-bottom: 8px; }
-.oe-feature-card .feat-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
-.oe-feature-card .feat-date { font-size: 12px; color: var(--oe-orange); margin-bottom: 8px; }
-.oe-feature-card .feat-desc { font-size: 13px; color: var(--oe-text-dim); line-height: 1.5; }
-.oe-feature-card .feat-status { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-top: 8px; font-weight: 600; }
-.oe-feature-card .feat-status.live { background: rgba(100,180,100,0.15); color: #6BAF7D; }
-.oe-feature-card .feat-status.beta { background: rgba(200,150,50,0.15); color: #D4A94E; }
-.oe-feature-card .feat-status.announced { background: rgba(100,130,200,0.15); color: #8AAFCC; }
-.oe-feature-card .feat-link { font-size: 12px; margin-top: 8px; display: block; }
-.oe-feature-card .feat-link a { color: var(--oe-orange); text-decoration: none; }
-.oe-feature-card .feat-link a:hover { text-decoration: underline; }
-
-@media (max-width: 768px) {
-  .oe-features-grid { grid-template-columns: 1fr; }
-}
-
-
-/* OE FEATURES TIMELINE */
-.oe-features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 24px 0; }
-.oe-feature-card {
-  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
-  border-radius: var(--oe-radius-lg); padding: 20px; transition: border-color 0.2s;
-  position: relative; overflow: hidden;
-}
-.oe-feature-card:hover { border-color: var(--oe-orange); }
-.oe-feature-card .feat-icon { font-size: 24px; margin-bottom: 8px; }
-.oe-feature-card .feat-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
-.oe-feature-card .feat-date { font-size: 12px; color: var(--oe-orange); margin-bottom: 8px; }
-.oe-feature-card .feat-desc { font-size: 13px; color: var(--oe-text-dim); line-height: 1.5; }
-.oe-feature-card .feat-status { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-top: 8px; font-weight: 600; }
-.oe-feature-card .feat-status.live { background: rgba(100,180,100,0.15); color: #6BAF7D; }
-.oe-feature-card .feat-status.beta { background: rgba(200,150,50,0.15); color: #D4A94E; }
-.oe-feature-card .feat-status.announced { background: rgba(100,130,200,0.15); color: #8AAFCC; }
-.oe-feature-card .feat-link { font-size: 12px; margin-top: 8px; display: block; }
-.oe-feature-card .feat-link a { color: var(--oe-orange); text-decoration: none; }
+.oe-feature-card .feat-info-btn:hover { background: rgba(228,100,61,0.2); }
 .oe-feature-card .feat-link a:hover { text-decoration: underline; }
 
 @media (max-width: 768px) {
@@ -794,6 +761,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <a href="#funding">💰 Funding</a>
     <a href="#investors">👥 Investors</a>
     <a href="#products">🚀 Products</a>
+    <a href="#oe-features">🧩 Features <span class="new-badge" style="margin-left:4px;">NEW</span></a>
     <a href="#competitors">⚔️ Competitors</a>
     <a href="#partnerships">🤝 Partnerships</a>
     <a href="#tech">⚙️ Tech Stack</a>
@@ -1421,55 +1389,108 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
 <section id="oe-features">
   <div class="container">
     <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
-    <p class="section-sub">Every known OpenEvidence feature â launched, in beta, and announced. Updated daily. Click links for source.</p>
+    <p class="section-sub">Every known OpenEvidence feature — launched, in beta, and announced. Updated daily. Click feature names for details, or source links for original announcements.</p>
 
     <div class="chart-container" style="margin-top:24px;">
       <h3>Feature Launch Timeline</h3>
-      <p class="chart-sub">When each feature shipped â from founding to present</p>
+      <p class="chart-sub">When each feature shipped — from founding to present</p>
       <div class="chart-wrapper" style="height:400px;"><canvas id="chartOeFeatures"></canvas></div>
     </div>
 
     <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features</h3>
-    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete feature inventory with launch dates, descriptions, and source links.</p>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete feature inventory with launch dates, descriptions, and source links. Click <strong>Details</strong> on any feature for deeper context.</p>
     <div class="oe-features-grid" id="oeFeaturesGrid"></div>
-  </div>
-</section>
 
-<!-- OE FEATURES -->
-<section id="oe-features">
-  <div class="container">
-    <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
-    <p class="section-sub">Every known OpenEvidence feature â launched, in beta, and announced. Updated daily. Click links for source.</p>
+    <!-- GRADE FRAMEWORK EXPLAINER -->
+    <div id="gradeExplainer" style="display:none;margin-top:48px;">
+      <div class="chart-container" style="border:1px solid var(--oe-orange);border-radius:var(--oe-radius-lg);padding:32px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;">
+          <div>
+            <h3 style="font-family:var(--oe-font);font-size:28px;font-weight:400;margin-bottom:4px;">The <span style="color:var(--oe-orange);">GRADE</span> Framework</h3>
+            <p style="font-size:14px;color:var(--oe-text-muted);">Grading of Recommendations, Assessment, Development and Evaluations — the global standard for rating evidence quality, used by OpenEvidence's EvidenceGrade feature.</p>
+          </div>
+          <button onclick="document.getElementById('gradeExplainer').style.display='none'" style="background:none;border:1px solid var(--oe-dark-border);color:var(--oe-text-dim);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px;">✕ Close</button>
+        </div>
 
-    <div class="chart-container" style="margin-top:24px;">
-      <h3>Feature Launch Timeline</h3>
-      <p class="chart-sub">When each feature shipped â from founding to present</p>
-      <div class="chart-wrapper" style="height:400px;"><canvas id="chartOeFeatures"></canvas></div>
+        <div style="margin:24px 0;">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--oe-orange);">What It Is</h4>
+          <p style="font-size:14px;color:var(--oe-text-dim);line-height:1.7;">GRADE is the most widely adopted system worldwide for rating how confident you should be in a body of scientific evidence. Developed by the GRADE Working Group (est. 2000), it's been adopted by 110+ organizations including Cochrane, WHO, NICE, CDC, and UpToDate. Before GRADE, dozens of incompatible rating systems existed with no validation — GRADE created a single, transparent, standardized approach.</p>
+        </div>
+
+        <div style="margin:24px 0;">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--oe-orange);">How It Works — Two Stages</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:12px;">
+            <div style="background:var(--oe-dark-soft);border-radius:var(--oe-radius);padding:16px;">
+              <p style="font-size:13px;font-weight:600;margin-bottom:8px;">Stage 1: Starting Point</p>
+              <ul style="font-size:13px;color:var(--oe-text-dim);line-height:1.8;padding-left:20px;">
+                <li>Randomized controlled trials (RCTs) → start at <strong style="color:#6BAF7D;">High</strong></li>
+                <li>Observational studies (cohorts, case-control) → start at <strong style="color:#D4A94E;">Low</strong></li>
+              </ul>
+            </div>
+            <div style="background:var(--oe-dark-soft);border-radius:var(--oe-radius);padding:16px;">
+              <p style="font-size:13px;font-weight:600;margin-bottom:8px;">Stage 2: Adjust Up or Down</p>
+              <p style="font-size:12px;color:var(--oe-text-muted);margin-bottom:4px;">5 factors can LOWER the rating:</p>
+              <ul style="font-size:12px;color:var(--oe-text-dim);line-height:1.7;padding-left:20px;">
+                <li>Risk of bias — methodological flaws</li>
+                <li>Inconsistency — results disagree across studies</li>
+                <li>Indirectness — population/intervention doesn't match</li>
+                <li>Imprecision — confidence intervals too wide</li>
+                <li>Publication bias — selective reporting</li>
+              </ul>
+              <p style="font-size:12px;color:var(--oe-text-muted);margin:8px 0 4px;">3 factors can RAISE it (observational only):</p>
+              <ul style="font-size:12px;color:var(--oe-text-dim);line-height:1.7;padding-left:20px;">
+                <li>Large magnitude of effect</li>
+                <li>Dose-response gradient</li>
+                <li>Plausible confounding would reduce effect</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:24px 0;">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--oe-orange);">The Four Final Ratings</h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px;">
+            <div style="background:rgba(100,180,100,0.08);border:1px solid rgba(100,180,100,0.2);border-radius:var(--oe-radius);padding:16px;text-align:center;">
+              <div style="font-family:var(--oe-font);font-size:22px;color:#6BAF7D;">High</div>
+              <div style="font-size:12px;color:var(--oe-text-dim);margin-top:4px;">Very confident the true effect is close to the estimate</div>
+            </div>
+            <div style="background:rgba(200,150,50,0.08);border:1px solid rgba(200,150,50,0.2);border-radius:var(--oe-radius);padding:16px;text-align:center;">
+              <div style="font-family:var(--oe-font);font-size:22px;color:#D4A94E;">Moderate</div>
+              <div style="font-size:12px;color:var(--oe-text-dim);margin-top:4px;">Moderately confident; further research may change it</div>
+            </div>
+            <div style="background:rgba(200,120,50,0.08);border:1px solid rgba(200,120,50,0.2);border-radius:var(--oe-radius);padding:16px;text-align:center;">
+              <div style="font-family:var(--oe-font);font-size:22px;color:#E08A4E;">Low</div>
+              <div style="font-size:12px;color:var(--oe-text-dim);margin-top:4px;">Confidence is limited; true effect may differ substantially</div>
+            </div>
+            <div style="background:rgba(180,70,70,0.08);border:1px solid rgba(180,70,70,0.2);border-radius:var(--oe-radius);padding:16px;text-align:center;">
+              <div style="font-family:var(--oe-font);font-size:22px;color:#BF7A6B;">Very Low</div>
+              <div style="font-size:12px;color:var(--oe-text-dim);margin-top:4px;">Very little confidence; any estimate is uncertain</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:24px 0;">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--oe-orange);">Why EvidenceGrade Matters</h4>
+          <p style="font-size:14px;color:var(--oe-text-dim);line-height:1.7;">When an AI summarizes medical evidence, it typically blends sources together — a Cochrane systematic review and a small observational study might get weighted similarly. EvidenceGrade applies the GRADE framework to each cited source in real time, so a physician reading an AI-generated answer can immediately see: "This recommendation rests on High-quality evidence" vs. "This comes from Very Low-quality observational data." It brings the rigor that Cochrane and WHO already use in systematic reviews into the AI answer interface — making evidence quality visible rather than buried.</p>
+        </div>
+
+        <div style="margin:24px 0 8px;padding-top:16px;border-top:1px solid var(--oe-dark-border);">
+          <h4 style="font-size:14px;font-weight:600;margin-bottom:8px;">Sources & Further Reading</h4>
+          <ul style="font-size:12px;color:var(--oe-text-dim);line-height:2;padding-left:20px;">
+            <li>GRADE Working Group — <a href="https://www.gradeworkinggroup.org" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">gradeworkinggroup.org</a></li>
+            <li>Cochrane Handbook Ch. 12: The GRADE Approach — <a href="https://handbook-5-1.cochrane.org/chapter_12/12_2_1_the_grade_approach.htm" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">handbook-5-1.cochrane.org/chapter_12</a></li>
+            <li>Guyatt GH et al. "GRADE: an emerging consensus on rating quality of evidence and strength of recommendations." BMJ 2008 — <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2335261/" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">PMC2335261</a></li>
+            <li>GRADE Handbook (Schünemann HJ et al.) — <a href="https://gradepro.org/handbook/" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">gradepro.org/handbook</a></li>
+            <li>Cochrane GRADE page — <a href="https://www.cochrane.org/learn/courses-and-resources/cochrane-methodology/grade" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">cochrane.org/learn/grade</a></li>
+            <li>OpenEvidence EvidenceGrade announcement — <a href="https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">openevidence.com/announcements</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features</h3>
-    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete feature inventory with launch dates, descriptions, and source links.</p>
-    <div class="oe-features-grid" id="oeFeaturesGrid"></div>
   </div>
 </section>
 
-<!-- OE FEATURES -->
-<section id="oe-features">
-  <div class="container">
-    <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
-    <p class="section-sub">Every known OpenEvidence feature â launched, in beta, and announced. Updated daily. Click links for source.</p>
 
-    <div class="chart-container" style="margin-top:24px;">
-      <h3>Feature Launch Timeline</h3>
-      <p class="chart-sub">When each feature shipped â from founding to present</p>
-      <div class="chart-wrapper" style="height:400px;"><canvas id="chartOeFeatures"></canvas></div>
-    </div>
-
-    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features</h3>
-    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete feature inventory with launch dates, descriptions, and source links.</p>
-    <div class="oe-features-grid" id="oeFeaturesGrid"></div>
-  </div>
-</section>
 
 <!-- FUTURE FEATURES -->
 <section id="future">
@@ -1980,58 +2001,9 @@ const oeFeaturesData = [
   {icon:"ð",name:"Journal Partnerships (30+)",date:"2023-11-17",status:"live",statusLabel:"LIVE",desc:"Elsevier ClinicalKey AI (Lancet, Cell, Gray's Anatomy), Wiley, NEJM, JAMA, Cochrane, NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more. 30+ content partners providing peer-reviewed evidence.",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
   {icon:"ð¬",name:"Coding Intelligence + Billing",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"ICD-10, E/M, CPT suggestions with RVU values and Medicare MPPR optimization. Part of Coding Intelligence launch. Revenue-cycle management embedded in clinical workflow.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
   {icon:"ð",name:"1M Consultations/Day Milestone",date:"2026-03-10",status:"live",statusLabel:"LIVE",desc:"First time in history â one million clinical consultations between NPI-verified physicians and an AI in 24 hours. 30M monthly consultations. 50%+ of US physicians as regular users.",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
-  {icon:"âï¸",name:"EvidenceGrade",date:"2026-07-10",status:"live",statusLabel:"LIVE",desc:"Real-time evidence quality grading. Grades and visualizes the strength of cited evidence behind every AI answer. Builds on GRADE framework (Cochrane, WHO). Solves AI problem of glossing over differences in source quality. Developed by physicians led by Samuel Finlayson MD PhD.",url:"https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer"},
+  {icon:"âï¸",name:"EvidenceGrade",date:"2026-07-10",status:"live",statusLabel:"LIVE",desc:"Real-time evidence quality grading. Grades and visualizes the strength of cited evidence behind every AI answer. Builds on GRADE framework (Cochrane, WHO). Solves AI problem of glossing over differences in source quality. Developed by physicians led by Samuel Finlayson MD PhD.",detail:"grade",url:"https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer"},
 ];
 
-// OE FEATURES RENDER
-
-// OE FEATURES DATA
-const oeFeaturesData = [
-  {icon:"ð",name:"Clinical Search",date:"2022-01-01",status:"live",statusLabel:"LIVE",desc:"Core product â AI-powered clinical question answering with cited, peer-reviewed evidence. 30+ journal partners including NEJM, JAMA, The Lancet. 50%+ of US physicians use this regularly.",url:"https://www.openevidence.com"},
-  {icon:"ð§ ",name:"DeepConsult",date:"2025-07-15",status:"live",statusLabel:"LIVE",desc:"First AI agent purpose-built for physicians. Uses reasoning models to cross-reference hundreds of peer-reviewed studies. 100x compute of standard search. Agentic research â not just answering questions but investigating them.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
-  {icon:"ð",name:"Visits (AI Scribe)",date:"2025-08-15",status:"live",statusLabel:"LIVE",desc:"Clinical documentation tool that transcribes patient encounters and enriches notes with evidence-based guidelines. Competes with Abridge, Ambience, Microsoft Dragon. Part of the ambient AI scribe wave sweeping US healthcare.",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
-  {icon:"ðï¸",name:"Doctor Dialer",date:"2025-12-15",status:"live",statusLabel:"LIVE",desc:"HIPAA-secure dialer for doctor-patient communication. 37M minutes powered since limited release. Feb 2026 wide release added messaging, faxing, voicemail. Competes with traditional phone/portal communication.",url:"https://www.openevidence.com/announcements/messaging-faxing-and-voicemail-are-now-live-in-the-openevidence-dialer"},
-  {icon:"ð",name:"Clinical Trial Matching",date:"2026-02-06",status:"live",statusLabel:"LIVE",desc:"Automatically surfaces active/recruiting clinical trials and compares inclusion criteria against patient characteristics. Location filtering and distance display. Bridges the gap between evidence search and clinical trial enrollment.",url:"https://www.openevidence.com/announcements/new-feature-clinical-trials-matching-in-openevidence"},
-  {icon:"ð",name:"Coding Intelligence",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"Automates medical coding â ICD-10, E/M, CPT suggestions inline. RVU values. Medicare MPPR optimization. Helps physicians 'capture every dollar they've earned.' Revenue-cycle integration.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
-  {icon:"â¡",name:"Dotflows",date:"2026-04-07",status:"live",statusLabel:"LIVE",desc:"AI-native customization â reusable natural language prompts. Community library. Type '.' to invoke custom workflows. Physicians share and borrow prompt templates. OpenEvidence's answer to workflow automation.",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
-  {icon:"ð¤",name:"Voice Mode",date:"2026-05-21",status:"live",statusLabel:"LIVE",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 860K clinicians get voice access. YouTube teaser video published. Enables clinicians to ask questions aloud during procedures or while examining patients.",url:"https://www.youtube.com"},
-  {icon:"ð",name:"Voices (Note Formatting)",date:"2026-02-01",status:"live",statusLabel:"LIVE",desc:"Customizable note formatting styles within Visits documentation workflow. Physicians can match their preferred documentation style.",url:"https://www.openevidence.com"},
-  {icon:"ð¤",name:"EHR Integration (Epic)",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"OpenEvidence embedded into Epic EHR workflows. Sutter Health (Feb 2026), Mount Sinai (Mar 2026), Cedars-Sinai (May 2026). Extends to nurses and pharmacists at Mount Sinai.",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
-  {icon:"ð¥",name:"Health System Deployments",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"Three health systems deployed: Sutter Health (7 hospitals, Epic), Mount Sinai (7 hospitals, Epic, extended to nurses/pharmacists), Cedars-Sinai (EHR-tailored queries). Enterprise trajectory accelerating.",url:"https://www.openevidence.com/announcements/mount-sinai-health-system-collaborates-with-openevidence-to-provide-evidence-based-knowledge-within-electronic-medical-record"},
-  {icon:"ð¤",name:"Tandem Partnership (Prescribe & Prior Auth)",date:"2026-04-02",status:"live",statusLabel:"LIVE",desc:"OpenEvidence and Tandem partner to streamline evidence-based prescribing and prior auth directly within platform. Bridges clinical evidence to administrative workflow.",url:"https://www.businesswire.com/news/home/20260402254260/en/OpenEvidence-and-Tandem-Partner-to-Streamline-Evidence-Based-Prescribing-and-Prior-Authorizations"},
-  {icon:"ð§¬",name:"SNO Partnership (Neuro-Oncology)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. SNO embeds OpenEvidence across member-facing digital properties.",url:"https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership"},
-  {icon:"ð",name:"Pathway Labs EchoNext (FDA-cleared AI)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"First FDA-cleared AI tool integrated into OpenEvidence. Pathway Labs EchoNext detects structural heart disease from ECGs. Multicondition AI in cardiology. Marks OpenEvidence's transition from reference tool to clinical AI platform.",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
-  {icon:"ð",name:"Journal Partnerships (30+)",date:"2023-11-17",status:"live",statusLabel:"LIVE",desc:"Elsevier ClinicalKey AI (Lancet, Cell, Gray's Anatomy), Wiley, NEJM, JAMA, Cochrane, NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more. 30+ content partners providing peer-reviewed evidence.",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
-  {icon:"ð¬",name:"Coding Intelligence + Billing",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"ICD-10, E/M, CPT suggestions with RVU values and Medicare MPPR optimization. Part of Coding Intelligence launch. Revenue-cycle management embedded in clinical workflow.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
-  {icon:"ð",name:"1M Consultations/Day Milestone",date:"2026-03-10",status:"live",statusLabel:"LIVE",desc:"First time in history â one million clinical consultations between NPI-verified physicians and an AI in 24 hours. 30M monthly consultations. 50%+ of US physicians as regular users.",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
-  {icon:"âï¸",name:"EvidenceGrade",date:"2026-07-10",status:"live",statusLabel:"LIVE",desc:"Real-time evidence quality grading. Grades and visualizes the strength of cited evidence behind every AI answer. Builds on GRADE framework (Cochrane, WHO). Solves AI problem of glossing over differences in source quality. Developed by physicians led by Samuel Finlayson MD PhD.",url:"https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer"},
-];
-
-// OE FEATURES RENDER
-
-// OE FEATURES DATA
-const oeFeaturesData = [
-  {icon:"ð",name:"Clinical Search",date:"2022-01-01",status:"live",statusLabel:"LIVE",desc:"Core product â AI-powered clinical question answering with cited, peer-reviewed evidence. 30+ journal partners including NEJM, JAMA, The Lancet. 50%+ of US physicians use this regularly.",url:"https://www.openevidence.com"},
-  {icon:"ð§ ",name:"DeepConsult",date:"2025-07-15",status:"live",statusLabel:"LIVE",desc:"First AI agent purpose-built for physicians. Uses reasoning models to cross-reference hundreds of peer-reviewed studies. 100x compute of standard search. Agentic research â not just answering questions but investigating them.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
-  {icon:"ð",name:"Visits (AI Scribe)",date:"2025-08-15",status:"live",statusLabel:"LIVE",desc:"Clinical documentation tool that transcribes patient encounters and enriches notes with evidence-based guidelines. Competes with Abridge, Ambience, Microsoft Dragon. Part of the ambient AI scribe wave sweeping US healthcare.",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
-  {icon:"ðï¸",name:"Doctor Dialer",date:"2025-12-15",status:"live",statusLabel:"LIVE",desc:"HIPAA-secure dialer for doctor-patient communication. 37M minutes powered since limited release. Feb 2026 wide release added messaging, faxing, voicemail. Competes with traditional phone/portal communication.",url:"https://www.openevidence.com/announcements/messaging-faxing-and-voicemail-are-now-live-in-the-openevidence-dialer"},
-  {icon:"ð",name:"Clinical Trial Matching",date:"2026-02-06",status:"live",statusLabel:"LIVE",desc:"Automatically surfaces active/recruiting clinical trials and compares inclusion criteria against patient characteristics. Location filtering and distance display. Bridges the gap between evidence search and clinical trial enrollment.",url:"https://www.openevidence.com/announcements/new-feature-clinical-trials-matching-in-openevidence"},
-  {icon:"ð",name:"Coding Intelligence",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"Automates medical coding â ICD-10, E/M, CPT suggestions inline. RVU values. Medicare MPPR optimization. Helps physicians 'capture every dollar they've earned.' Revenue-cycle integration.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
-  {icon:"â¡",name:"Dotflows",date:"2026-04-07",status:"live",statusLabel:"LIVE",desc:"AI-native customization â reusable natural language prompts. Community library. Type '.' to invoke custom workflows. Physicians share and borrow prompt templates. OpenEvidence's answer to workflow automation.",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
-  {icon:"ð¤",name:"Voice Mode",date:"2026-05-21",status:"live",statusLabel:"LIVE",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 860K clinicians get voice access. YouTube teaser video published. Enables clinicians to ask questions aloud during procedures or while examining patients.",url:"https://www.youtube.com"},
-  {icon:"ð",name:"Voices (Note Formatting)",date:"2026-02-01",status:"live",statusLabel:"LIVE",desc:"Customizable note formatting styles within Visits documentation workflow. Physicians can match their preferred documentation style.",url:"https://www.openevidence.com"},
-  {icon:"ð¤",name:"EHR Integration (Epic)",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"OpenEvidence embedded into Epic EHR workflows. Sutter Health (Feb 2026), Mount Sinai (Mar 2026), Cedars-Sinai (May 2026). Extends to nurses and pharmacists at Mount Sinai.",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
-  {icon:"ð¥",name:"Health System Deployments",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"Three health systems deployed: Sutter Health (7 hospitals, Epic), Mount Sinai (7 hospitals, Epic, extended to nurses/pharmacists), Cedars-Sinai (EHR-tailored queries). Enterprise trajectory accelerating.",url:"https://www.openevidence.com/announcements/mount-sinai-health-system-collaborates-with-openevidence-to-provide-evidence-based-knowledge-within-electronic-medical-record"},
-  {icon:"ð¤",name:"Tandem Partnership (Prescribe & Prior Auth)",date:"2026-04-02",status:"live",statusLabel:"LIVE",desc:"OpenEvidence and Tandem partner to streamline evidence-based prescribing and prior auth directly within platform. Bridges clinical evidence to administrative workflow.",url:"https://www.businesswire.com/news/home/20260402254260/en/OpenEvidence-and-Tandem-Partner-to-Streamline-Evidence-Based-Prescribing-and-Prior-Authorizations"},
-  {icon:"ð§¬",name:"SNO Partnership (Neuro-Oncology)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. SNO embeds OpenEvidence across member-facing digital properties.",url:"https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership"},
-  {icon:"ð",name:"Pathway Labs EchoNext (FDA-cleared AI)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"First FDA-cleared AI tool integrated into OpenEvidence. Pathway Labs EchoNext detects structural heart disease from ECGs. Multicondition AI in cardiology. Marks OpenEvidence's transition from reference tool to clinical AI platform.",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
-  {icon:"ð",name:"Journal Partnerships (30+)",date:"2023-11-17",status:"live",statusLabel:"LIVE",desc:"Elsevier ClinicalKey AI (Lancet, Cell, Gray's Anatomy), Wiley, NEJM, JAMA, Cochrane, NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more. 30+ content partners providing peer-reviewed evidence.",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
-  {icon:"ð¬",name:"Coding Intelligence + Billing",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"ICD-10, E/M, CPT suggestions with RVU values and Medicare MPPR optimization. Part of Coding Intelligence launch. Revenue-cycle management embedded in clinical workflow.",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
-  {icon:"ð",name:"1M Consultations/Day Milestone",date:"2026-03-10",status:"live",statusLabel:"LIVE",desc:"First time in history â one million clinical consultations between NPI-verified physicians and an AI in 24 hours. 30M monthly consultations. 50%+ of US physicians as regular users.",url:"https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html"},
-  {icon:"âï¸",name:"EvidenceGrade",date:"2026-07-10",status:"live",statusLabel:"LIVE",desc:"Real-time evidence quality grading. Grades and visualizes the strength of cited evidence behind every AI answer. Builds on GRADE framework (Cochrane, WHO). Solves AI problem of glossing over differences in source quality. Developed by physicians led by Samuel Finlayson MD PhD.",url:"https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer"},
-];
-
-// OE FEATURES RENDER
 // RENDER TIMELINE
 function renderTimeline(filter) {
   const el = document.getElementById('timelineList');
@@ -2387,7 +2359,10 @@ window.addEventListener('load', function() {
       <div class="feat-date">${f.date}</div>
       <div class="feat-desc">${f.desc}</div>
       <div class="feat-status ${f.status}">${f.statusLabel}</div>
-      <div class="feat-link"><a href="${f.url}" target="_blank" rel="noopener">Source â</a></div>
+      <div class="feat-link">
+        <a href="${f.url}" target="_blank" rel="noopener">Source →</a>
+        ${f.detail ? '<button class="feat-info-btn" onclick="showFeatureDetail(\''+f.detail+'\')">ℹ️ Details</button>' : ''}
+      </div>
     </div>
   `).join('');
 
@@ -2425,97 +2400,7 @@ window.addEventListener('load', function() {
     }
   }));
 
-  // OE FEATURES RENDER
-  document.getElementById('oeFeaturesGrid').innerHTML = oeFeaturesData.map(f => `
-    <div class="oe-feature-card">
-      <div class="feat-icon">${f.icon}</div>
-      <div class="feat-name">${f.name}</div>
-      <div class="feat-date">${f.date}</div>
-      <div class="feat-desc">${f.desc}</div>
-      <div class="feat-status ${f.status}">${f.statusLabel}</div>
-      <div class="feat-link"><a href="${f.url}" target="_blank" rel="noopener">Source â</a></div>
-    </div>
-  `).join('');
 
-  // OE Features timeline chart
-  const ctxOE = document.getElementById('chartOeFeatures').getContext('2d');
-  const tcOE = getThemeColors();
-  const featureDates = ['2022-01','2023-11','2025-07','2025-08','2025-12','2026-02','2026-02','2026-02','2026-03','2026-04','2026-05'];
-  const featureLabels = ['Search','Journals','DeepConsult','Visits','Dialer','Trials','EHR','Voices','Coding','Dotflows','Voice Mode'];
-  charts.push(new Chart(ctxOE, {
-    type: 'bar',
-    data: {
-      labels: featureLabels,
-      datasets: [{
-        label: 'Feature Launch',
-        data: [1,2,3,4,5,6,7,8,9,10,11],
-        backgroundColor: chartColorLight,
-        borderColor: chartColor,
-        borderWidth: 2, borderRadius: 6
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      responsive: true, maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1',
-          callbacks: { label: (ctx) => featureDates[ctx.dataIndex] }
-        }
-      },
-      scales: {
-        x: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text }, title: { display: true, text: 'Feature #', color: tcOE.text } },
-        y: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text } }
-      }
-    }
-  }));
-
-  // OE FEATURES RENDER
-  document.getElementById('oeFeaturesGrid').innerHTML = oeFeaturesData.map(f => `
-    <div class="oe-feature-card">
-      <div class="feat-icon">${f.icon}</div>
-      <div class="feat-name">${f.name}</div>
-      <div class="feat-date">${f.date}</div>
-      <div class="feat-desc">${f.desc}</div>
-      <div class="feat-status ${f.status}">${f.statusLabel}</div>
-      <div class="feat-link"><a href="${f.url}" target="_blank" rel="noopener">Source â</a></div>
-    </div>
-  `).join('');
-
-  // OE Features timeline chart
-  const ctxOE = document.getElementById('chartOeFeatures').getContext('2d');
-  const tcOE = getThemeColors();
-  const featureDates = ['2022-01','2023-11','2025-07','2025-08','2025-12','2026-02','2026-02','2026-02','2026-03','2026-04','2026-05'];
-  const featureLabels = ['Search','Journals','DeepConsult','Visits','Dialer','Trials','EHR','Voices','Coding','Dotflows','Voice Mode'];
-  charts.push(new Chart(ctxOE, {
-    type: 'bar',
-    data: {
-      labels: featureLabels,
-      datasets: [{
-        label: 'Feature Launch',
-        data: [1,2,3,4,5,6,7,8,9,10,11],
-        backgroundColor: chartColorLight,
-        borderColor: chartColor,
-        borderWidth: 2, borderRadius: 6
-      }]
-    },
-    options: {
-      indexAxis: 'y',
-      responsive: true, maintainAspectRatio: false,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1',
-          callbacks: { label: (ctx) => featureDates[ctx.dataIndex] }
-        }
-      },
-      scales: {
-        x: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text }, title: { display: true, text: 'Feature #', color: tcOE.text } },
-        y: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text } }
-      }
-    }
-  }));
 
   buildCharts();
 
