@@ -9,16 +9,41 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
-// FEATURE DETAIL
+// FEATURE DETAIL MODAL
 function showFeatureDetail(detailKey) {
+  // Check for GRADE explainer (special case — inline panel)
   if (detailKey === 'grade') {
     var explainer = document.getElementById('gradeExplainer');
     if (explainer) {
       explainer.style.display = 'block';
       explainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+    return;
+  }
+  // Generic modal popup
+  var modal = document.getElementById('featureModal');
+  var modalBody = document.getElementById('featureModalBody');
+  var content = window.__featureDetails && window.__featureDetails[detailKey];
+  if (content && modal && modalBody) {
+    modalBody.innerHTML = content;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
   }
 }
+function closeFeatureModal() {
+  var modal = document.getElementById('featureModal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+}
+// Close on outside click or Escape
+document.addEventListener('click', function(e) {
+  if (e.target && e.target.id === 'featureModal') closeFeatureModal();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeFeatureModal();
+});
 </script>
 <style>
 :root {
@@ -743,6 +768,119 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   .container { padding: 0 16px; }
   .hero { padding-top: 64px; }
 }
+
+/* FEATURE MODAL */
+.feature-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+}
+.feature-modal-content {
+  background: var(--oe-dark-soft, #1A2520);
+  border: 1px solid var(--oe-orange, #E4643D);
+  border-radius: var(--oe-radius-lg, 12px);
+  max-width: 700px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+}
+.feature-modal-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: none;
+  border: 1px solid var(--oe-dark-border, #2D3D32);
+  color: var(--oe-text-dim, #9CA8A0);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: var(--oe-font-sans);
+}
+.feature-modal-close:hover { border-color: var(--oe-orange); color: var(--oe-orange); }
+.feature-modal-content h3 {
+  font-family: var(--oe-font);
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.feature-modal-content h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: var(--oe-orange);
+}
+.feature-modal-content p {
+  font-size: 14px;
+  color: var(--oe-text-dim);
+  line-height: 1.7;
+}
+.feature-modal-content ul {
+  font-size: 13px;
+  color: var(--oe-text-dim);
+  line-height: 1.8;
+  padding-left: 20px;
+}
+.feature-modal-content .modal-source {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--oe-dark-border);
+  font-size: 12px;
+}
+.feature-modal-content .modal-source a {
+  color: var(--oe-orange);
+  text-decoration: none;
+}
+/* FEATURE CATEGORY BADGES */
+.feat-cat-badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.feat-cat-badge.cat-feature { background: rgba(228,100,61,0.15); color: var(--oe-orange); }
+.feat-cat-badge.cat-milestone { background: rgba(100,180,100,0.15); color: #6BAF7D; }
+.feat-cat-badge.cat-partnership { background: rgba(100,130,200,0.15); color: #8AAFCC; }
+.feat-cat-badge.cat-deployment { background: rgba(184,154,196,0.15); color: #B89AC4; }
+.feat-cat-badge.cat-acquisition { background: rgba(212,169,78,0.15); color: #D4A94E; }
+/* FEATURE FILTERS */
+.oe-feature-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 16px 0 24px;
+}
+.oe-feature-filters .filter-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--oe-dark-border);
+  background: transparent;
+  color: var(--oe-text-dim);
+  cursor: pointer;
+  font-family: var(--oe-font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.oe-feature-filters .filter-btn:hover { border-color: var(--oe-orange); color: var(--oe-orange); }
+.oe-feature-filters .filter-btn.active {
+  background: var(--oe-orange);
+  color: white;
+  border-color: var(--oe-orange);
+}
+
 </style>
 </head>
 <body>
@@ -1390,7 +1528,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
 <section id="oe-features">
   <div class="container">
     <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
-    <p class="section-sub">Every known OpenEvidence feature — launched, in beta, and announced. Updated daily. Click feature names for details, or source links for original announcements.</p>
+    <p class="section-sub">Every known OpenEvidence feature, milestone, partnership, and deployment — organized by category. Click <strong>Details</strong> on any product feature for a deeper explainer. Updated regularly.</p>
 
     <div class="chart-container" style="margin-top:24px;">
       <h3>Feature Launch Timeline</h3>
@@ -1398,8 +1536,16 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
       <div class="chart-wrapper" style="height:400px;"><canvas id="chartOeFeatures"></canvas></div>
     </div>
 
-    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features</h3>
-    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete feature inventory with launch dates, descriptions, and source links. Click <strong>Details</strong> on any feature for deeper context.</p>
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features & Milestones</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete inventory with launch dates, descriptions, and source links. Click <strong>Details</strong> on any product feature for a deeper explainer. Use filters to focus on product features, milestones, partnerships, or deployments.</p>
+    <div class="oe-feature-filters" id="oeFeatureFilters">
+      <button class="filter-btn active" data-filter="all">All Items</button>
+      <button class="filter-btn" data-filter="feature">🧩 Product Features</button>
+      <button class="filter-btn" data-filter="milestone">🏆 Milestones</button>
+      <button class="filter-btn" data-filter="partnership">🤝 Partnerships</button>
+      <button class="filter-btn" data-filter="deployment">🏥 Deployments</button>
+      <button class="filter-btn" data-filter="acquisition">💼 Acquisitions</button>
+    </div>
     <div class="oe-features-grid" id="oeFeaturesGrid"></div>
 
     <!-- GRADE FRAMEWORK EXPLAINER -->
@@ -1486,6 +1632,14 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
             <li>OpenEvidence EvidenceGrade announcement — <a href="https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">openevidence.com/announcements</a></li>
           </ul>
         </div>
+      </div>
+    </div>
+
+    <!-- FEATURE DETAIL MODAL -->
+    <div class="feature-modal" id="featureModal" onclick="if(event.target===this)closeFeatureModal()">
+      <div class="feature-modal-content">
+        <button class="feature-modal-close" onclick="closeFeatureModal()">✕ Close</button>
+        <div id="featureModalBody"></div>
       </div>
     </div>
   </div>
@@ -1986,34 +2140,50 @@ const globalMatrixData = [
 // OE FEATURES DATA
 const oeFeaturesData = [
   // 2023 — FOUNDING & CORE PLATFORM
-  {icon:"🔍",name:"Clinical Search Engine",date:"2023-01-01",status:"live",statusLabel:"LIVE",desc:"Core product launched from Mayo Clinic Platform Accelerate program. AI-powered clinical question answering with cited, peer-reviewed evidence. Free for verified US physicians. Reached 100K+ doctors in first year — fastest in medical history.",url:"https://www.openevidence.com"},
-  {icon:"🎓",name:"USMLE 90% Score",date:"2023-06-01",status:"live",statusLabel:"LIVE",desc:"OpenEvidence\'s AI became the first to score over 90% on the USMLE, making 77% fewer errors than ChatGPT, 24% fewer than GPT-4, and 31% fewer than Google Med-PaLM 2. Validated the platform\'s accuracy for clinical use.",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
-  {icon:"📚",name:"Journal Partnerships (30+)",date:"2023-11-17",status:"live",statusLabel:"LIVE",desc:"Elsevier ClinicalKey AI (Lancet, Cell, Gray\'s Anatomy), Wiley, NEJM (Feb 2025), JAMA Network (Jun 2025), Cochrane (Mar 2026), NCCN, ACC, ADA, AAFP, ACEP, ACOG, AUA, AAO, ASCO, AAN, NORD, GINA, JOMI + more. 30+ content partners providing peer-reviewed evidence, figures, tables, and full-text.",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
+  {cat:"feature",icon:"🔍",name:"Clinical Search Engine",date:"2023-01-01",status:"live",statusLabel:"LIVE",desc:"AI-powered clinical question answering with cited, peer-reviewed evidence. Free for verified US physicians. Reached 100K+ doctors in first year.",detail:"search_engine",url:"https://www.openevidence.com"},
+  {cat:"milestone",icon:"🎓",name:"USMLE 90% Score",date:"2023-06-01",status:"live",statusLabel:"MILESTONE",desc:"First AI to score over 90% on the USMLE — 77% fewer errors than ChatGPT, 24% fewer than GPT-4, 31% fewer than Google Med-PaLM 2. Validated platform accuracy for clinical use.",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
+  {cat:"partnership",icon:"📚",name:"Journal Partnerships (30+)",date:"2023-11-17",status:"live",statusLabel:"PARTNERSHIP",desc:"Elsevier ClinicalKey AI, Wiley, NEJM, JAMA Network, Cochrane, NCCN, ACC, ADA, AAFP, ACEP, ACOG, AUA, AAO, ASCO, AAN, NORD, GINA, JOMI + more. 30+ content partners providing peer-reviewed evidence.",url:"https://www.elsevier.com/about/press-releases/elsevier-health-partners-with-openevidence-to-deliver-trusted-evidence-based"},
   // 2025 — PRODUCT EXPANSION
-  {icon:"🧠",name:"DeepConsult",date:"2025-07-15",status:"live",statusLabel:"LIVE",desc:"First AI agent purpose-built for physicians. Uses reasoning models to cross-reference hundreds of peer-reviewed studies. 100x compute of standard search. Agentic research — not just answering questions but investigating them. Free for all verified US clinicians.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
-  {icon:"📝",name:"Visits (AI Scribe)",date:"2025-08-15",status:"live",statusLabel:"LIVE",desc:"Clinical documentation tool that transcribes patient encounters and enriches notes with evidence-based guidelines. Competes with Abridge, Ambience, Microsoft Dragon. Part of the ambient AI scribe wave sweeping US healthcare.",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
-  {icon:"💰",name:"Amaro Acquisition (Ad Platform)",date:"2025-09-10",status:"live",statusLabel:"LIVE",desc:"OpenEvidence acquires Amaro, a GV-backed AI-native advertising company. Forms the backbone of OpenEvidence\'s pharma ad platform — AI-powered advertising to 760K+ verified physicians. Revenue engine that keeps the platform free for doctors.",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
-  {icon:"🩺",name:"USMLE 100% Perfect Score",date:"2025-08-15",status:"live",statusLabel:"LIVE",desc:"First AI in history to score a perfect 100% on the USMLE. Result of a six-month effort to improve core AI models. Included question-by-question explanations with reasoning and references from NEJM and JAMA.",url:"https://www.prnewswire.com/news-releases/openevidence-creates-the-first-ai-in-history-to-score-a-perfect-100-on-the-united-states-medical-licensing-examination-usmle-302531156.html"},
-  {icon:"🖥️",name:"Microsoft Dragon Copilot Integration",date:"2025-10-19",status:"live",statusLabel:"LIVE",desc:"OpenEvidence collaborates with Microsoft to integrate its technology across Microsoft clinical applications, starting with Dragon Copilot ambient platform. Brings OpenEvidence\'s evidence-based answers into Microsoft\'s enterprise clinical workflow.",url:"https://www.openevidence.com/announcements/openevidence-collaborates-with-microsoft-to-expand-ai-leadership-in-healthcare-bringing-clinical-evidence-and-guidelines-to-enterprise-clinician-workflows"},
-  {icon:"🗒️",name:"Voices (Note Formatting)",date:"2025-12-01",status:"live",statusLabel:"LIVE",desc:"Customizable note formatting styles within Visits documentation workflow. Physicians can match their preferred documentation style and output format.",url:"https://www.openevidence.com"},
-  {icon:"🗨️",name:"Doctor Dialer (Limited Release)",date:"2025-12-15",status:"live",statusLabel:"LIVE",desc:"HIPAA-secure dialer for doctor-patient communication. Multi-step AI operates throughout clinical workflow — call documentation to real-time clinical decision support during patient calls. 37M minutes powered since limited release.",url:"https://www.prnewswire.com/news-releases/openevidence-wide-releases-ai-integrated-doctor-dialer-for-privacy-centric-doctor-patient-telemedicine-calls-messaging-and-voicemail-in-one-unified-clinical-platformwith-live-clinical-decision-ai-deeply-integrated-302698511.html"},
+  {cat:"feature",icon:"🧠",name:"DeepConsult",date:"2025-07-15",status:"live",statusLabel:"LIVE",desc:"First AI agent purpose-built for physicians. Uses reasoning models to cross-reference hundreds of peer-reviewed studies. 100x compute of standard search. Agentic research — investigates, not just answers.",detail:"deepconsult",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
+  {cat:"feature",icon:"📝",name:"Visits (AI Scribe)",date:"2025-08-15",status:"live",statusLabel:"LIVE",desc:"Ambient clinical documentation tool. Transcribes patient encounters and generates structured notes enriched with evidence-based guidelines. Competes with Abridge, Ambience, Microsoft Dragon.",detail:"visits",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
+  {cat:"acquisition",icon:"💰",name:"Amaro Acquisition (Ad Platform)",date:"2025-09-10",status:"live",statusLabel:"ACQUISITION",desc:"OpenEvidence acquires Amaro, a GV-backed AI-native advertising company. Forms the backbone of OpenEvidence's pharma ad platform — AI-powered advertising to 760K+ verified physicians.",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
+  {cat:"milestone",icon:"🩺",name:"USMLE 100% Perfect Score",date:"2025-08-15",status:"live",statusLabel:"MILESTONE",desc:"First AI in history to score a perfect 100% on the USMLE. Six-month effort to improve core AI models. Included question-by-question explanations with reasoning and references from NEJM and JAMA.",url:"https://www.prnewswire.com/news-releases/openevidence-creates-the-first-ai-in-history-to-score-a-perfect-100-on-the-united-states-medical-licensing-examination-usmle-302531156.html"},
+  {cat:"partnership",icon:"🖥️",name:"Microsoft Dragon Copilot Integration",date:"2025-10-19",status:"live",statusLabel:"PARTNERSHIP",desc:"OpenEvidence collaborates with Microsoft to integrate its technology across Microsoft clinical applications, starting with Dragon Copilot ambient platform. Brings evidence-based answers into Microsoft's enterprise clinical workflow.",url:"https://www.openevidence.com/announcements/openevidence-collaborates-with-microsoft-to-expand-ai-leadership-in-healthcare-bringing-clinical-evidence-and-guidelines-to-enterprise-clinician-workflows"},
+  {cat:"feature",icon:"🗒️",name:"Voices (Note Formatting)",date:"2025-12-01",status:"live",statusLabel:"LIVE",desc:"Customizable note formatting styles within Visits documentation workflow. Physicians can match their preferred documentation style and output format.",detail:"voices",url:"https://www.openevidence.com"},
+  {cat:"feature",icon:"🗨️",name:"Doctor Dialer (Limited Release)",date:"2025-12-15",status:"live",statusLabel:"LIVE",desc:"HIPAA-secure dialer for doctor-patient communication. Multi-step AI operates throughout clinical workflow — call documentation to real-time clinical decision support during patient calls. 37M minutes powered since limited release.",detail:"doctor_dialer",url:"https://www.prnewswire.com/news-releases/openevidence-wide-releases-ai-integrated-doctor-dialer-for-privacy-centric-doctor-patient-telemedicine-calls-messaging-and-voicemail-in-one-unified-clinical-platformwith-live-clinical-decision-ai-deeply-integrated-302698511.html"},
   // 2026 — RAPID EXPANSION
-  {icon:"💉",name:"Doctor Dialer (Wide Release)",date:"2026-02-26",status:"live",statusLabel:"LIVE",desc:"Wide release adds messaging, faxing, and voicemail to the dialer. Unifies patient communication, clinical decision support, and documentation into a single workflow. Competes directly with Doximity.",url:"https://www.prnewswire.com/news-releases/openevidence-wide-releases-ai-integrated-doctor-dialer-for-privacy-centric-doctor-patient-telemedicine-calls-messaging-and-voicemail-in-one-unified-clinical-platformwith-live-clinical-decision-ai-deeply-integrated-302698511.html"},
-  {icon:"💊",name:"Clinical Trial Matching",date:"2026-02-06",status:"live",statusLabel:"LIVE",desc:"Automatically surfaces active/recruiting clinical trials and compares inclusion criteria against patient characteristics. Location filtering and distance display. Bridges the gap between evidence search and clinical trial enrollment.",url:"https://www.openevidence.com/announcements/new-feature-clinical-trials-matching-in-openevidence"},
-  {icon:"🌐",name:"EHR Integration (Epic)",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"OpenEvidence embedded into Epic EHR workflows. Sutter Health (Feb 2026, 7 hospitals), Mount Sinai (Mar 2026, 7 hospitals, extended to nurses/pharmacists), Cedars-Sinai (May 2026, patient-aware clinical intelligence), NewYork-Presbyterian/Columbia/Weill Cornell (Jul 2026).",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
-  {icon:"📈",name:"1M Consultations/Day Milestone",date:"2026-03-10",status:"live",statusLabel:"LIVE",desc:"First time in history — one million clinical consultations between NPI-verified physicians and an AI in 24 hours. 30M monthly consultations. 50%+ of US physicians as regular users. Took UpToDate two decades to reach comparable adoption; OpenEvidence did it in two years.",url:"https://www.prnewswire.com/news-releases/openevidence-achieves-historic-milestone-1-million-clinical-consultations-between-verified-doctors-and-an-artificial-intelligence-system-in-a-single-day-302712459.html"},
-  {icon:"📊",name:"Coding Intelligence",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"Automates medical coding — ICD-10, E/M, CPT suggestions inline. RVU values. Medicare MPPR optimization. Revenue-cycle management embedded in clinical workflow. Helps physicians \'capture every dollar they\'ve earned.\'",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
-  {icon:"🧬",name:"Cochrane Partnership",date:"2026-03-01",status:"live",statusLabel:"LIVE",desc:"OpenEvidence partners with Cochrane, the global nonprofit that produces independent systematic reviews of medical research. Cochrane content including figures, tables, multimedia, and full-text systematic reviews integrated into platform.",url:"https://www.cochrane.org/learn/courses-and-resources/cochrane-methodology/grade"},
-  {icon:"⚡",name:"Dotflows",date:"2026-04-07",status:"live",statusLabel:"LIVE",desc:"AI-native customization — reusable natural language prompts. Community library where clinicians share and borrow templates. Type \'.\' to invoke custom workflows. Examples: .discharge, .prior_auth, .avs, .fmla. OpenEvidence\'s answer to workflow automation.",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
-  {icon:"📋",name:"Tandem Partnership (Prescribe & Prior Auth)",date:"2026-04-02",status:"live",statusLabel:"LIVE",desc:"OpenEvidence and Tandem partner to streamline evidence-based prescribing and prior auth directly within platform. Bridges clinical evidence to administrative workflow.",url:"https://www.businesswire.com/news/home/20260402254260/en/OpenEvidence-and-Tandem-Partner-to-Streamline-Evidence-Based-Prescribing-and-Prior-Authorizations"},
-  {icon:"🎙️",name:"Cedars-Sinai Patient-Aware AI",date:"2026-05-20",status:"live",statusLabel:"LIVE",desc:"OpenEvidence partners with Cedars-Sinai to create patient-aware clinical intelligence with agentic clinical AI. EHR-tailored queries that incorporate patient-specific data into evidence-based answers.",url:"https://www.openevidence.com/announcements/openevidence-partners-with-cedars-sinai-to-create-patient-aware-clinical-intelligence-with-agentic-clinical-ai"},
-  {icon:"🎤",name:"Voice Mode",date:"2026-05-21",status:"live",statusLabel:"LIVE",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 860K clinicians get voice access. Enables clinicians to ask questions aloud during procedures or while examining patients. CEO announced enterprise model in development.",url:"https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-launches-hands-free-voice-ai-feature-expands-hospital"},
-  {icon:"🔬",name:"SNO Partnership (Neuro-Oncology)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. SNO embeds OpenEvidence across member-facing digital properties.",url:"https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership"},
-  {icon:"💖",name:"Pathway Labs EchoNext (FDA-cleared AI)",date:"2026-06-23",status:"live",statusLabel:"LIVE",desc:"First FDA-cleared AI tool integrated into OpenEvidence. Pathway Labs EchoNext detects structural heart disease from ECGs. Multicondition AI in cardiology. Marks OpenEvidence\'s transition from reference tool to clinical AI platform.",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
-  {icon:"🎥",name:"JOMI Partnership (Surgical Videos)",date:"2026-06-25",status:"live",statusLabel:"LIVE",desc:"Journal of Medical Insight partners with OpenEvidence to bring peer-reviewed surgical videos to clinicians. First video-based content integration on the platform.",url:"https://www.openevidence.com/announcements/openevidence-and-journal-of-medical-insight-jomi-partner-to-bring-peer-reviewed-surgical-videos-to-clinicians"},
-  {icon:"🏭",name:"NewYork-Presbyterian / Columbia / Weill Cornell",date:"2026-07-09",status:"live",statusLabel:"LIVE",desc:"Major NYC health system deployment across NewYork-Presbyterian, Columbia University Irving Medical Center, and Weill Cornell Medicine. Expands clinical AI tools across NYC and Westchester.",url:"https://www.openevidence.com/announcements/openevidence-and-newyork-presbyterian-columbia-university-and-weill-cornell-medicine-expand-clinical-ai-tools-across-new-york-city-and-westchester"},
-  {icon:"⚖️",name:"EvidenceGrade",date:"2026-07-10",status:"live",statusLabel:"LIVE",desc:"Real-time evidence quality grading. Grades and visualizes the strength of cited evidence behind every AI answer. Builds on GRADE framework (Cochrane, WHO). Solves AI problem of glossing over differences in source quality. Developed by physicians led by Samuel Finlayson MD PhD, SVP of Medical AI.",detail:"grade",url:"https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer"}
+  {cat:"feature",icon:"💉",name:"Doctor Dialer (Wide Release)",date:"2026-02-26",status:"live",statusLabel:"LIVE",desc:"Wide release adds messaging, faxing, and voicemail to the dialer. Unifies patient communication, clinical decision support, and documentation into a single workflow. Competes directly with Doximity.",detail:"doctor_dialer_wide",url:"https://www.prnewswire.com/news-releases/openevidence-wide-releases-ai-integrated-doctor-dialer-for-privacy-centric-doctor-patient-telemedicine-calls-messaging-and-voicemail-in-one-unified-clinical-platformwith-live-clinical-decision-ai-deeply-integrated-302698511.html"},
+  {cat:"feature",icon:"💊",name:"Clinical Trial Matching",date:"2026-02-06",status:"live",statusLabel:"LIVE",desc:"Automatically surfaces active/recruiting clinical trials and compares inclusion criteria against patient characteristics. Location filtering and distance display. Bridges evidence search and clinical trial enrollment.",detail:"trial_matching",url:"https://www.openevidence.com/announcements/new-feature-clinical-trials-matching-in-openevidence"},
+  {cat:"feature",icon:"🌐",name:"EHR Integration (Epic)",date:"2026-02-11",status:"live",statusLabel:"LIVE",desc:"OpenEvidence embedded into Epic EHR workflows. Physicians access evidence-based answers without leaving their EHR. Deployed at Sutter Health, Mount Sinai, Cedars-Sinai, NewYork-Presbyterian.",detail:"ehr_integration",url:"https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows"},
+  {cat:"milestone",icon:"📈",name:"1M Consultations/Day Milestone",date:"2026-03-10",status:"live",statusLabel:"MILESTONE",desc:"First time in history — one million clinical consultations between NPI-verified physicians and an AI in 24 hours. 30M monthly consultations. 50%+ of US physicians as regular users.",url:"https://www.prnewswire.com/news-releases/openevidence-achieves-historic-milestone-1-million-clinical-consultations-between-verified-doctors-and-an-artificial-intelligence-system-in-a-single-day-302712459.html"},
+  {cat:"feature",icon:"📊",name:"Coding Intelligence",date:"2026-03-24",status:"live",statusLabel:"LIVE",desc:"Automates medical coding — ICD-10, E/M, CPT suggestions inline. RVU values. Medicare MPPR optimization. Revenue-cycle management embedded in clinical workflow.",detail:"coding_intelligence",url:"https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned"},
+  {cat:"partnership",icon:"🧬",name:"Cochrane Partnership",date:"2026-03-01",status:"live",statusLabel:"PARTNERSHIP",desc:"OpenEvidence partners with Cochrane, the global nonprofit that produces independent systematic reviews. Cochrane content including figures, tables, multimedia, and full-text systematic reviews integrated into platform.",url:"https://www.cochrane.org/learn/courses-and-resources/cochrane-methodology/grade"},
+  {cat:"feature",icon:"⚡",name:"Dotflows",date:"2026-04-07",status:"live",statusLabel:"LIVE",desc:"AI-native customization — reusable natural language prompts. Community library where clinicians share and borrow templates. Type '.' to invoke custom workflows. Examples: .discharge, .prior_auth, .avs, .fmla.",detail:"dotflows",url:"https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician"},
+  {cat:"partnership",icon:"📋",name:"Tandem Partnership (Prescribe & Prior Auth)",date:"2026-04-02",status:"live",statusLabel:"PARTNERSHIP",desc:"OpenEvidence and Tandem partner to streamline evidence-based prescribing and prior auth directly within platform. Bridges clinical evidence to administrative workflow.",url:"https://www.businesswire.com/news/home/20260402254260/en/OpenEvidence-and-Tandem-Partner-to-Streamline-Evidence-Based-Prescribing-and-Prior-Authorizations"},
+  {cat:"deployment",icon:"🎙️",name:"Cedars-Sinai Patient-Aware AI",date:"2026-05-20",status:"live",statusLabel:"DEPLOYMENT",desc:"OpenEvidence partners with Cedars-Sinai to create patient-aware clinical intelligence with agentic clinical AI. EHR-tailored queries that incorporate patient-specific data into evidence-based answers.",url:"https://www.openevidence.com/announcements/openevidence-partners-with-cedars-sinai-to-create-patient-aware-clinical-intelligence-with-agentic-clinical-ai"},
+  {cat:"feature",icon:"🎤",name:"Voice Mode",date:"2026-05-21",status:"live",statusLabel:"LIVE",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 860K clinicians get voice access. Enables clinicians to ask questions aloud during procedures or while examining patients.",detail:"voice_mode",url:"https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-launches-hands-free-voice-ai-feature-expands-hospital"},
+  {cat:"partnership",icon:"🔬",name:"SNO Partnership (Neuro-Oncology)",date:"2026-06-23",status:"live",statusLabel:"PARTNERSHIP",desc:"Society for Neuro-Oncology (3,000+ members, 60 countries) designates OpenEvidence as official generative AI partner. SNO embeds OpenEvidence across member-facing digital properties.",url:"https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership"},
+  {cat:"partnership",icon:"💖",name:"Pathway Labs EchoNext (FDA-cleared AI)",date:"2026-06-23",status:"live",statusLabel:"PARTNERSHIP",desc:"First FDA-cleared AI tool integrated into OpenEvidence. Pathway Labs EchoNext detects structural heart disease from ECGs. Multicondition AI in cardiology. Marks transition from reference tool to clinical AI platform.",url:"https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence"},
+  {cat:"partnership",icon:"🎥",name:"JOMI Partnership (Surgical Videos)",date:"2026-06-25",status:"live",statusLabel:"PARTNERSHIP",desc:"Journal of Medical Insight partners with OpenEvidence to bring peer-reviewed surgical videos to clinicians. First video-based content integration on the platform.",url:"https://www.openevidence.com/announcements/openevidence-and-journal-of-medical-insight-jomi-partner-to-bring-peer-reviewed-surgical-videos-to-clinicians"},
+  {cat:"deployment",icon:"🏭",name:"NewYork-Presbyterian / Columbia / Weill Cornell",date:"2026-07-09",status:"live",statusLabel:"DEPLOYMENT",desc:"Major NYC health system deployment across NewYork-Presbyterian, Columbia University Irving Medical Center, and Weill Cornell Medicine. Expands clinical AI tools across NYC and Westchester.",url:"https://www.openevidence.com/announcements/openevidence-and-newyork-presbyterian-columbia-university-and-weill-cornell-medicine-expand-clinical-ai-tools-across-new-york-city-and-westchester"},
+  {cat:"feature",icon:"⚖️",name:"EvidenceGrade",date:"2026-07-10",status:"live",statusLabel:"LIVE",desc:"Real-time evidence quality grading. Grades and visualizes the strength of cited evidence behind every AI answer. Builds on GRADE framework (Cochrane, WHO). Solves AI problem of glossing over differences in source quality.",detail:"grade",url:"https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer"}
 ];
+
+// FEATURE DETAIL CONTENT (for modal popups)
+window.__featureDetails = {
+  "search_engine": `<h3>🔍 Clinical Search Engine</h3><p style="color:var(--oe-orange);font-size:13px;">Launched January 2023 · Core Product</p><h4>What It Does</h4><p>Type any clinical question — get an AI-generated answer with citations from peer-reviewed medical literature. Every response includes direct links to source articles, figures, tables, and full-text where available.</p><h4>How It Works</h4><ul><li><strong>Query:</strong> Physician enters a natural language clinical question (e.g., "What is the first-line treatment for H. pylori?")</li><li><strong>Retrieval:</strong> AI searches through 30+ journal partners including NEJM, JAMA, Cochrane, Elsevier, Wiley, and specialty society guidelines</li><li><strong>Synthesis:</strong> AI synthesizes evidence into a structured answer with inline citations</li><li><strong>Verification:</strong> Every citation links directly to the source article for one-click verification</li></ul><h4>Key Differentiators</h4><ul><li>Free for all NPI-verified US physicians</li><li>Only uses peer-reviewed, published medical literature — no unverified web content</li><li>Reached 100K+ doctors in first year — fastest medical tool adoption in history</li><li>Now handles ~15M consultations per month</li></ul><div class="modal-source">Source: <a href="https://www.openevidence.com" target="_blank" rel="noopener">openevidence.com →</a></div>`,
+  "deepconsult": `<h3>🧠 DeepConsult</h3><p style="color:var(--oe-orange);font-size:13px;">Launched July 2025 · AI Agent</p><h4>What It Does</h4><p>An AI agent that doesn't just answer clinical questions — it <em>investigates</em> them. Uses advanced reasoning models to cross-reference hundreds of peer-reviewed studies, weigh conflicting evidence, and produce in-depth analyses.</p><h4>How It Differs from Standard Search</h4><ul><li><strong>Standard search:</strong> "What are the treatment options for Stage III NSCLC?" → Quick answer with citations</li><li><strong>DeepConsult:</strong> Same question → AI agent breaks it into sub-questions, retrieves evidence for each, evaluates study quality, identifies gaps in evidence, and produces a structured clinical brief</li><li>Uses <strong>100x more compute</strong> than a standard search query</li><li>Cross-references <strong>hundreds of studies</strong> in a single consultation</li></ul><h4>Use Cases</h4><ul><li>Complex diagnostic reasoning with multiple competing hypotheses</li><li>Treatment decisions where guidelines conflict or are silent</li><li>Preparation for tumor board or complex case conferences</li><li>Deep dives into rare conditions with limited literature</li></ul><h4>Access</h4><p>Free for all verified US clinicians. Available within the OpenEvidence platform alongside standard search.</p><div class="modal-source">Source: <a href="https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html" target="_blank" rel="noopener">PR Newswire announcement →</a></div>`,
+  "visits": `<h3>📝 Visits (AI Scribe)</h3><p style="color:var(--oe-orange);font-size:13px;">Launched August 2025 · Clinical Documentation</p><h4>What It Does</h4><p>Ambient AI documentation tool that listens to patient encounters, transcribes them, and generates structured clinical notes enriched with evidence-based guidelines. Eliminates after-hours charting.</p><h4>How It Works</h4><ul><li><strong>Capture:</strong> Securely records the patient encounter (with consent)</li><li><strong>Transcribe:</strong> AI converts conversation to text with medical terminology accuracy</li><li><strong>Structure:</strong> Generates SOAP note, APSO, or custom format (see Voices feature)</li><li><strong>Enrich:</strong> Automatically links relevant clinical guidelines and evidence to the note</li><li><strong>Integrate:</strong> Exports to EHR systems</li></ul><h4>Key Features</h4><ul><li>Real-time transcription with medical terminology support</li><li>Evidence-based guideline enrichment within the note</li><li>Multiple note format options (SOAP, APSO, custom)</li><li>Works with Visits → Voices for custom formatting</li></ul><h4>Competitive Landscape</h4><p>Competes with Abridge, Ambience Healthcare, Microsoft Dragon Copilot, Suki, and DeepScribe. OpenEvidence's differentiator is evidence enrichment — notes aren't just transcriptions, they're linked to the underlying clinical evidence.</p><div class="modal-source">Source: <a href="https://www.openevidence.com/announcements/visits-real-time-medical-intelligence" target="_blank" rel="noopener">OpenEvidence announcement →</a></div>`,
+  "voices": `<h3>🗒️ Voices (Note Formatting)</h3><p style="color:var(--oe-orange);font-size:13px;">Launched December 2025 · Documentation Customization</p><h4>What It Does</h4><p>Customizable note formatting styles within the Visits documentation workflow. Physicians choose their preferred documentation style, structure, and output format — matching their specialty and personal workflow.</p><h4>How It Works</h4><ul><li>Select from pre-built formatting "voices" (SOAP, APSO, specialty-specific templates)</li><li>Create custom formats using natural language instructions</li><li>AI applies the chosen formatting consistently across all notes</li><li>Adjust section ordering, heading styles, verbosity, and clinical detail level</li></ul><h4>Why It Matters</h4><p>Every physician documents differently. A surgeon needs operative-style notes; a psychiatrist needs different structure than a pediatrician. Voices lets clinicians customize the AI's output to match their specialty's conventions and their personal preferences — rather than forcing a one-size-fits-all format.</p><div class="modal-source">Source: <a href="https://www.openevidence.com" target="_blank" rel="noopener">openevidence.com →</a></div>`,
+  "doctor_dialer": `<h3>🗨️ Doctor Dialer (Limited Release)</h3><p style="color:var(--oe-orange);font-size:13px;">Launched December 2025 · Telemedicine + AI</p><h4>What It Does</h4><p>HIPAA-secure telephony platform for doctor-patient communication. AI documents calls in real-time and provides live clinical decision support during patient conversations.</p><h4>Key Capabilities</h4><ul><li><strong>Secure calling:</strong> HIPAA-compliant VoIP calls between physician and patient</li><li><strong>Real-time AI:</strong> AI listens to the call and provides clinical decision support — surfacing relevant evidence, drug interactions, and guidelines on-screen</li><li><strong>Auto-documentation:</strong> Calls are automatically transcribed and summarized into clinical notes</li><li><strong>Call routing:</strong> AI can help route patient calls to the right provider</li></ul><h4>Scale</h4><p>37 million minutes of doctor-patient communication powered since limited release.</p><div class="modal-source">Source: <a href="https://www.prnewswire.com/news-releases/openevidence-wide-releases-ai-integrated-doctor-dialer-for-privacy-centric-doctor-patient-telemedicine-calls-messaging-and-voicemail-in-one-unified-clinical-platformwith-live-clinical-decision-ai-deeply-integrated-302698511.html" target="_blank" rel="noopener">PR Newswire announcement →</a></div>`,
+  "doctor_dialer_wide": `<h3>💉 Doctor Dialer (Wide Release)</h3><p style="color:var(--oe-orange);font-size:13px;">Launched February 2026 · Unified Communication Platform</p><h4>What It Does</h4><p>Wide release expands Doctor Dialer from voice-only to a full unified communication platform — calls, messaging, faxing, and voicemail in one HIPAA-secure workflow with AI integrated throughout.</p><h4>What's New in Wide Release</h4><ul><li><strong>Secure messaging:</strong> Two-way text communication with patients</li><li><strong>Faxing:</strong> Send and receive faxes through the platform</li><li><strong>Voicemail:</strong> AI-powered voicemail with automatic transcription and clinical summarization</li><li><strong>Unified inbox:</strong> All patient communication channels in one view</li><li><strong>AI throughout:</strong> Clinical decision support, documentation, and coding across every channel</li></ul><h4>Competitive Position</h4><p>Competes directly with Doximity's Dialer product, but with deeper AI integration — Doximity offers calling/messaging/ fax, while OpenEvidence adds real-time clinical AI, auto-documentation, and evidence-based decision support throughout every interaction.</p><div class="modal-source">Source: <a href="https://www.prnewswire.com/news-releases/openevidence-wide-releases-ai-integrated-doctor-dialer-for-privacy-centric-doctor-patient-telemedicine-calls-messaging-and-voicemail-in-one-unified-clinical-platformwith-live-clinical-decision-ai-deeply-integrated-302698511.html" target="_blank" rel="noopener">PR Newswire announcement →</a></div>`,
+  "trial_matching": `<h3>💊 Clinical Trial Matching</h3><p style="color:var(--oe-orange);font-size:13px;">Launched February 2026 · Clinical Trial Discovery</p><h4>What It Does</h4><p>Automatically surfaces active and recruiting clinical trials that match a patient's characteristics. Compares trial inclusion/exclusion criteria against patient data and displays distance to trial sites.</p><h4>How It Works</h4><ul><li><strong>Enter patient context:</strong> Physician provides patient demographics, diagnosis, stage, biomarkers, prior treatments</li><li><strong>AI matches:</strong> System searches ClinicalTrials.gov and identifies trials where the patient likely meets inclusion criteria</li><li><strong>Location filtering:</strong> Shows trial sites with distance from patient location</li><li><strong>Inclusion check:</strong> AI compares patient characteristics against each trial's specific inclusion/exclusion criteria</li></ul><h4>Why It Matters</h4><p>Only ~8% of cancer patients enroll in clinical trials in the US. One major barrier is that physicians don't have time to search ClinicalTrials.gov for each patient. OpenEvidence brings trial matching into the same workflow where physicians are already searching for evidence — making it feasible to find trials for patients during a standard clinical encounter.</p><div class="modal-source">Source: <a href="https://www.openevidence.com/announcements/new-feature-clinical-trials-matching-in-openevidence" target="_blank" rel="noopener">OpenEvidence announcement →</a></div>`,
+  "ehr_integration": `<h3>🌐 EHR Integration (Epic)</h3><p style="color:var(--oe-orange);font-size:13px;">Launched February 2026 · Enterprise Integration</p><h4>What It Does</h4><p>Embeds OpenEvidence's evidence-based clinical AI directly within the Epic EHR workflow. Physicians can ask clinical questions and get cited answers without leaving their EHR.</p><h4>Deployments</h4><ul><li><strong>Sutter Health</strong> (Feb 2026) — 7 hospitals, integrated into Epic workflows</li><li><strong>Mount Sinai</strong> (Mar 2026) — 7 hospitals, extended to nurses and pharmacists</li><li><strong>Cedars-Sinai</strong> (May 2026) — Patient-aware AI that incorporates EHR patient data into answers</li><li><strong>NewYork-Presbyterian / Columbia / Weill Cornell</strong> (Jul 2026) — Major NYC health system</li></ul><h4>How It Works</h4><ul><li>OpenEvidence is embedded as a sidebar or overlay within Epic</li><li>Physician can ask questions in natural language while viewing patient charts</li><li>At Cedars-Sinai, the AI is "patient-aware" — it incorporates the specific patient's data from the EHR into its evidence-based answers</li><li>Answers include citations and links to source literature</li></ul><h4>Significance</h4><p>This marks OpenEvidence's transition from a standalone website to an enterprise clinical AI platform embedded in the systems physicians already use. Epic holds ~38% of US hospital EHR market share.</p><div class="modal-source">Source: <a href="https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows" target="_blank" rel="noopener">OpenEvidence announcement →</a></div>`,
+  "coding_intelligence": `<h3>📊 Coding Intelligence</h3><p style="color:var(--oe-orange);font-size:13px;">Launched March 2026 · Revenue Cycle AI</p><h4>What It Does</h4><p>Automates medical coding within the clinical workflow. Suggests ICD-10 diagnosis codes, Evaluation & Management (E/M) levels, CPT procedure codes, and RVU values inline — helping physicians "capture every dollar they've earned."</p><h4>Key Capabilities</h4><ul><li><strong>ICD-10 suggestions:</strong> AI reads the clinical note and suggests appropriate diagnosis codes</li><li><strong>E/M level coding:</strong> Determines the correct Evaluation & Management billing level based on note complexity</li><li><strong>CPT codes:</strong> Suggests procedure codes based on documented services</li><li><strong>RVU values:</strong> Shows Relative Value Units for each code — physicians see the work value immediately</li><li><strong>Medicare MPPR:</strong> Optimizes Multiple Procedure Payment Reduction calculations</li></ul><h4>Why It Matters</h4><p>Medical coding errors cost the US healthcare system billions annually — both in lost revenue from under-coding and compliance risk from over-coding. By embedding coding intelligence directly in the documentation workflow, OpenEvidence ensures codes are captured at the point of care, not retroactively by billing teams who weren't in the room.</p><div class="modal-source">Source: <a href="https://www.openevidence.com/announcements/openevidence-launches-coding-intelligencetm-to-help-physicians-capture-every-dollar-theyve-earned" target="_blank" rel="noopener">OpenEvidence announcement →</a></div>`,
+  "dotflows": `<h3>⚡ Dotflows</h3><p style="color:var(--oe-orange);font-size:13px;">Launched April 2026 · Workflow Customization</p><h4>What It Does</h4><p>AI-native workflow customization. Create reusable natural language prompts that automate clinical workflows. Community library lets clinicians share and borrow templates. Type "." to invoke custom workflows.</p><h4>How It Works</h4><ul><li>Type "." in OpenEvidence to see available workflows</li><li>Select or create a "dotflow" — a reusable prompt template</li><li>AI executes the workflow with current patient/context data</li><li>Save custom dotflows for recurring tasks</li></ul><h4>Example Dotflows</h4><ul><li><strong>.discharge</strong> — Generate a discharge summary from the encounter</li><li><strong>.prior_auth</strong> — Draft a prior authorization letter with evidence justification</li><li><strong>.avs</strong> — Create an After Visit Summary for the patient</li><li><strong>.fmla</strong> — Generate FMLA paperwork from clinical documentation</li></ul><h4>Community Library</h4><p>Clinicians can publish their dotflows to a shared library, allowing others to discover and use them. This creates a crowdsourced ecosystem of clinical workflow automations — a physician who builds a great .op_note template can share it with thousands of colleagues.</p><div class="modal-source">Source: <a href="https://www.openevidence.com/announcements/openevidence-introduces-dotflows-flexible-natural-language-customization-for-every-clinician" target="_blank" rel="noopener">OpenEvidence announcement →</a></div>`,
+  "voice_mode": `<h3>🎤 Voice Mode</h3><p style="color:var(--oe-orange);font-size:13px;">Launched May 2026 · Speech-to-Speech AI</p><h4>What It Does</h4><p>First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. Ask questions aloud and hear spoken answers — no typing required. Enables clinical queries during procedures, exams, or any hands-busy scenario.</p><h4>How It Works</h4><ul><li><strong>Speak:</strong> Physician asks a clinical question aloud (e.g., "What's the recommended starting dose of metformin for a CKD stage 3 patient?")</li><li><strong>Process:</strong> AI transcribes the question, searches evidence, synthesizes an answer</li><li><strong>Speak back:</strong> AI reads the answer aloud with citations referenced verbally</li><li><strong>Hands-free:</strong> No keyboard, no screen interaction needed</li></ul><h4>Why It Matters</h4><ul><li>Surgeons can ask questions during procedures without breaking sterile field</li><li>Physicians can query during patient exams while maintaining eye contact</li><li>Accessibility for clinicians with mobility or visual impairments</li></ul><h4>Scale</h4><p>860,000 clinicians get voice access through this launch. CEO Daniel Nadler announced an enterprise model is in development for hospital-wide voice AI deployment.</p><div class="modal-source">Source: <a href="https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-launches-hands-free-voice-ai-feature-expands-hospital" target="_blank" rel="noopener">Fierce Healthcare →</a></div>`,
+  "grade": ""  // GRADE uses the inline explainer panel, not the modal
+};
 
 // RENDER TIMELINE
 function renderTimeline(filter) {
@@ -2363,34 +2533,52 @@ window.addEventListener('load', function() {
   `;
 
   // OE FEATURES RENDER
-  document.getElementById('oeFeaturesGrid').innerHTML = oeFeaturesData.map(f => `
-    <div class="oe-feature-card">
-      <div class="feat-icon">${f.icon}</div>
-      <div class="feat-name">${f.name}</div>
-      <div class="feat-date">${f.date}</div>
-      <div class="feat-desc">${f.desc}</div>
-      <div class="feat-status ${f.status}">${f.statusLabel}</div>
-      <div class="feat-link">
-        <a href="${f.url}" target="_blank" rel="noopener">Source →</a>
-        ${f.detail ? '<button class="feat-info-btn" onclick="showFeatureDetail(\''+f.detail+'\')">ℹ️ Details</button>' : ''}
+  function renderOeFeatures(filter) {
+    const filtered = filter === 'all' ? oeFeaturesData : oeFeaturesData.filter(f => f.cat === filter);
+    document.getElementById('oeFeaturesGrid').innerHTML = filtered.map(f => `
+      <div class="oe-feature-card">
+        <div class="feat-cat-badge cat-${f.cat}">${f.cat}</div>
+        <div class="feat-icon">${f.icon}</div>
+        <div class="feat-name">${f.name}</div>
+        <div class="feat-date">${f.date}</div>
+        <div class="feat-desc">${f.desc}</div>
+        <div class="feat-status ${f.status}">${f.statusLabel}</div>
+        <div class="feat-link">
+          <a href="${f.url}" target="_blank" rel="noopener">Source →</a>
+          ${f.detail ? '<button class="feat-info-btn" onclick="showFeatureDetail(\''+f.detail+'\')">ℹ️ Details</button>' : ''}
+        </div>
       </div>
-    </div>
-  `).join('');
+    `).join('');
+  }
+  renderOeFeatures('all');
 
-  // OE Features timeline chart
+  // OE Feature filters
+  document.getElementById('oeFeatureFilters').addEventListener('click', (e) => {
+    if (e.target.classList.contains('filter-btn')) {
+      document.querySelectorAll('#oeFeatureFilters .filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderOeFeatures(e.target.dataset.filter);
+    }
+  });
+
+  // OE Features timeline chart — color-coded by category
   const ctxOE = document.getElementById('chartOeFeatures').getContext('2d');
   const tcOE = getThemeColors();
-  const featureDates = ['2023-01','2023-06','2023-11','2025-07','2025-08','2025-08','2025-09','2025-10','2025-12','2025-12','2026-02','2026-02','2026-02','2026-03','2026-03','2026-03','2026-04','2026-04','2026-05','2026-05','2026-06','2026-06','2026-06','2026-07','2026-07'];
-  const featureLabels = ['Search','USMLE 90%','Journals','DeepConsult','Visits','USMLE 100%','Amaro','MS Dragon','Voices','Dialer LR','Dialer WR','Trials','EHR','1M/day','Coding','Cochrane','Dotflows','Tandem','Cedars','Voice','SNO','EchoNext','JOMI','NYP','EvidenceGrade'];
+  const featureDates = oeFeaturesData.map(f => f.date.substring(0,7));
+  const featureLabels = oeFeaturesData.map(f => f.name.length > 18 ? f.name.substring(0,16)+'…' : f.name);
+  const catColors = {feature:'#E4643D',milestone:'#6BAF7D',partnership:'#8AAFCC',deployment:'#B89AC4',acquisition:'#D4A94E'};
+  const catBgColors = {feature:'rgba(228,100,61,0.4)',milestone:'rgba(107,175,125,0.3)',partnership:'rgba(138,175,204,0.3)',deployment:'rgba(184,154,196,0.3)',acquisition:'rgba(212,169,78,0.3)'};
+  const featureBarColors = oeFeaturesData.map(f => catBgColors[f.cat] || chartColorLight);
+  const featureBorderColors = oeFeaturesData.map(f => catColors[f.cat] || chartColor);
   charts.push(new Chart(ctxOE, {
     type: 'bar',
     data: {
       labels: featureLabels,
       datasets: [{
         label: 'Feature Launch',
-        data: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
-        backgroundColor: chartColorLight,
-        borderColor: chartColor,
+        data: oeFeaturesData.map((f,i) => i+1),
+        backgroundColor: featureBarColors,
+        borderColor: featureBorderColors,
         borderWidth: 2, borderRadius: 6
       }]
     },
@@ -2401,11 +2589,16 @@ window.addEventListener('load', function() {
         legend: { display: false },
         tooltip: {
           backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1',
-          callbacks: { label: (ctx) => featureDates[ctx.dataIndex] }
+          callbacks: {
+            label: (ctx) => {
+              const f = oeFeaturesData[ctx.dataIndex];
+              return f.date + ' · ' + f.cat;
+            }
+          }
         }
       },
       scales: {
-        x: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text }, title: { display: true, text: 'Feature #', color: tcOE.text } },
+        x: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text }, title: { display: true, text: 'Item #', color: tcOE.text } },
         y: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text } }
       }
     }
