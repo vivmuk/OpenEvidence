@@ -122,7 +122,9 @@
     "journal": "J Clin Periodontol",
     "tools_evaluated": "11 LLM/RAG platforms",
     "scale": "Periodontal disease scenarios, blinded expert rating",
-    "key_findings": ["11 systems compared in largest dental AI benchmark"],
+    "key_findings": [
+      "11 systems compared in largest dental AI benchmark"
+    ],
     "relevance": "medium",
     "status": "published"
   },
@@ -138,7 +140,9 @@
     "journal": "J Med Syst",
     "tools_evaluated": "Specialized medical AI vs general-purpose LLM",
     "scale": "Multicenter, breast cancer",
-    "key_findings": ["Blinded multicenter comparison in oncology"],
+    "key_findings": [
+      "Blinded multicenter comparison in oncology"
+    ],
     "relevance": "medium",
     "status": "published"
   },
@@ -154,7 +158,9 @@
     "journal": "Anesth Analg",
     "tools_evaluated": "5 LLMs",
     "scale": "Anesthesia decision-making scenarios",
-    "key_findings": ["5 LLMs evaluated on anesthesia decisions"],
+    "key_findings": [
+      "5 LLMs evaluated on anesthesia decisions"
+    ],
     "relevance": "medium",
     "status": "published"
   },
@@ -170,7 +176,9 @@
     "journal": "Appl Clin Inform",
     "tools_evaluated": "ChatGPT, Gemini, OpenEvidence",
     "scale": "OB/GYN clinical decision scenarios",
-    "key_findings": ["Three major AI tools compared in OB/GYN"],
+    "key_findings": [
+      "Three major AI tools compared in OB/GYN"
+    ],
     "relevance": "high",
     "status": "published"
   },
@@ -186,7 +194,9 @@
     "journal": "J Am Coll Clin Pharm",
     "tools_evaluated": "OpenEvidence",
     "scale": "Medication-related clinical questions",
-    "key_findings": ["Identified gaps in OpenEvidence medication recommendations"],
+    "key_findings": [
+      "Identified gaps in OpenEvidence medication recommendations"
+    ],
     "relevance": "high",
     "status": "published"
   },
@@ -202,7 +212,9 @@
     "journal": "J ISAKOS",
     "tools_evaluated": "OpenEvidence",
     "scale": "ACL reconstruction guideline scenarios",
-    "key_findings": ["Assesses OpenEvidence adherence to AAOS guidelines"],
+    "key_findings": [
+      "Assesses OpenEvidence adherence to AAOS guidelines"
+    ],
     "relevance": "medium",
     "status": "published"
   },
@@ -218,7 +230,9 @@
     "journal": "J Assoc Med Microbiol Infect Dis Can",
     "tools_evaluated": "4 AI platforms",
     "scale": "Infection control, 3 geographic regions",
-    "key_findings": ["4 platforms evaluated across 3 regions"],
+    "key_findings": [
+      "4 platforms evaluated across 3 regions"
+    ],
     "relevance": "medium",
     "status": "published"
   },
@@ -234,7 +248,9 @@
     "journal": "Int J Antimicrob Agents",
     "tools_evaluated": "AI platforms",
     "scale": "Standardized antibiotic clinical scenarios",
-    "key_findings": ["Tests reproducibility of AI antibiotic recommendations"],
+    "key_findings": [
+      "Tests reproducibility of AI antibiotic recommendations"
+    ],
     "relevance": "medium",
     "status": "published"
   },
@@ -250,7 +266,9 @@
     "journal": "Neurogastroenterol Motil",
     "tools_evaluated": "AI platforms",
     "scale": "DGBI diagnosis and treatment scenarios",
-    "key_findings": ["Evaluates AI accuracy for gut-brain disorders"],
+    "key_findings": [
+      "Evaluates AI accuracy for gut-brain disorders"
+    ],
     "relevance": "medium",
     "status": "published"
   },
@@ -266,8 +284,157 @@
     "journal": "J Am Coll Clin Pharm",
     "tools_evaluated": "Multiple LLM-based systems",
     "scale": "Internal medicine pharmacy cases",
-    "key_findings": ["Compares LLM systems and prompt engineering for pharmacy"],
+    "key_findings": [
+      "Compares LLM systems and prompt engineering for pharmacy"
+    ],
     "relevance": "medium",
     "status": "published"
+  },
+  {
+    "id": "arxiv:2607.12051",
+    "source": "arxiv",
+    "type": "clinical_ai_evaluation",
+    "title": "Agentic LLM Systems for Breast Cancer Treatment Recommendations",
+    "authors": "Vinicius Anjos de Almeida et al.",
+    "url": "https://arxiv.org/abs/2607.12051",
+    "published": "2026-07-13",
+    "updated": "2026-07-13",
+    "journal": "arXiv preprint (cs.CL) [Under peer review]",
+    "tools_evaluated": "Claude Opus 4.8, single-LLM baselines, tool-augmented systems, multi-agent architectures",
+    "scale": "72 clinical cases, 1,147 case-specific rubrics, 7 pipelines",
+    "key_findings": [
+      "Best system achieved 0.594 global score - insufficient for unsupervised use",
+      "Persistent clinically relevant failures: incorrect recommendations, citation errors, overconfidence",
+      "Tool use and agent autonomy had mixed effects"
+    ],
+    "relevance": "high",
+    "status": "under_peer_review",
+    "new": true
+  },
+  {
+    "id": "arxiv:2607.09880",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "CLIR-Bench: Benchmarking Multimodal QA over Irregular Clinical Time Series",
+    "authors": "Frank Nie, Ethan B. Liu, Yuan Zhu, et al.",
+    "url": "https://arxiv.org/abs/2607.09880",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "journal": "arXiv preprint (cs.CL, cs.AI)",
+    "tools_evaluated": "Existing generalist models",
+    "scale": "6,600 QA instances, 11 clinical variables, 4 capability dimensions",
+    "key_findings": [
+      "Generalist models struggle with sparse clinical evidence retrieval",
+      "Evaluates both answer accuracy and evidence use",
+      "First benchmark for irregular clinical time series QA"
+    ],
+    "relevance": "medium",
+    "status": "preprint_v1",
+    "new": true
+  },
+  {
+    "id": "arxiv:2607.01440",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning",
+    "authors": "Zhiyun Zhang, Liwen Sun, Xiang Qian, Chenyan Xiong",
+    "url": "https://arxiv.org/abs/2607.01440",
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "journal": "arXiv preprint (cs.CL)",
+    "tools_evaluated": "FaithMed (custom), Agentic-search Qwen3 baselines",
+    "scale": "7 medical benchmarks",
+    "key_findings": [
+      "+9% improvement over agentic-search baselines",
+      "+15.5% improvement in evidence-based medicine rubric scores",
+      "Step-level supervision improves both task success and reasoning faithfulness"
+    ],
+    "relevance": "high",
+    "status": "preprint_v1",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.28556",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "IMCBench: Multimodal LLM Benchmark for Image-grounded Medical Conversations",
+    "authors": "Maria Xenochristou et al.",
+    "url": "https://arxiv.org/abs/2606.28556",
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "journal": "arXiv preprint (cs.AI) [Accepted ECML PKDD 2026]",
+    "tools_evaluated": "8 multimodal frontier models: Claude Opus 4.6, Claude Sonnet 4.6, GPT-5.2, Nova, Llama",
+    "scale": "Clinical images with synthetic patient profiles, 3 evaluation dimensions",
+    "key_findings": [
+      "Claude Opus 4.6 highest (3.61/5)",
+      "Safety degrades for malignant and rare conditions",
+      "Accurate clinical description does not guarantee safe patient guidance"
+    ],
+    "relevance": "high",
+    "status": "accepted_ecml_pkdd_2026",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.24155",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "MedBench v5: Dynamic, Process-Oriented, Hallucination-Aware Benchmark for Clinical Multimodal Models",
+    "authors": "Jinru Ding et al.",
+    "url": "https://arxiv.org/abs/2606.24155",
+    "published": "2026-06-23",
+    "updated": "2026-07-06",
+    "journal": "arXiv preprint (cs.CL)",
+    "tools_evaluated": "Frontier multimodal models (language, vision-language, agent systems)",
+    "scale": "63 tasks, 13 sub-dimensions, 4 agent environments, 3 stressors",
+    "key_findings": [
+      "Strong overall performance does not guarantee process stability",
+      "Stressors disrupt contradiction detection and hallucination propagation",
+      "Silent hallucination captured through 4 interaction stages"
+    ],
+    "relevance": "high",
+    "status": "preprint_v4",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.18613",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "PhysAssistBench: Interactive Doctor-Patient-EHR Assistance Benchmark",
+    "authors": "Tianming Du et al.",
+    "url": "https://arxiv.org/abs/2606.18613",
+    "published": "2026-06-17",
+    "updated": "2026-07-10",
+    "journal": "arXiv preprint (cs.CL, cs.AI)",
+    "tools_evaluated": "Leading LLMs",
+    "scale": "1,296 physician-validated turns from real MIMIC-IV cases",
+    "key_findings": [
+      "Current models remain unreliable for interactive clinical assistance",
+      "Reliable assistance requires coordination across knowledge, communication, and systems",
+      "Key bottleneck: coordination across capabilities, not isolated gains"
+    ],
+    "relevance": "high",
+    "status": "preprint_v3",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.17474",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "AIPatient Arena: EHR-grounded Evaluation of LLMs in Clinical Consultation Workflows",
+    "authors": "Jiahui Niu et al.",
+    "url": "https://arxiv.org/abs/2606.17474",
+    "published": "2026-06-16",
+    "updated": "2026-06-16",
+    "journal": "arXiv preprint (cs.CL, cs.AI)",
+    "tools_evaluated": "Multiple LLMs across 8 clinical competence dimensions",
+    "scale": "437 primary + 119 + 67 OOD patients, 8 competence dimensions",
+    "key_findings": [
+      "Persistent weaknesses in handling ambiguity (2.57-3.32/5) and diagnostic accuracy (2.63-3.55/5)",
+      "Recurrent failures: repetitive questioning, omission of medical history",
+      "Final-answer accuracy alone insufficient for clinical readiness evaluation"
+    ],
+    "relevance": "high",
+    "status": "preprint_v1",
+    "new": true
   }
 ]
