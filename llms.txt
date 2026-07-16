@@ -1,0 +1,43 @@
+# OpenEvidence Insights Dashboard
+
+> Tracking OpenEvidence and the broader clinical AI landscape: partnerships, products, funding, adoption metrics, competitor analysis, research publications, and benchmark studies.
+
+## Data Endpoints (JSON)
+- /data/timeline.json — chronological event log (newest first)
+- /data/publications.json — academic publications referencing clinical AI
+- /data/benchmarks.json — clinical AI benchmark and evaluation studies
+- /data/competitors.json — competitor landscape
+- /data/partnerships.json — partnership tracker
+- /data/metrics.json — adoption metrics over time
+- /data/global_landscape.json — global CDS events
+- /data/research.json — consolidated research studies (PubMed + arXiv + Semantic Scholar)
+
+## Data Endpoints (CSV, original format)
+- /data/timeline.csv
+- /data/publications.csv
+- /data/competitors.csv
+- /data/partnerships.csv
+- /data/metrics.csv
+- /data/global_landscape.csv
+
+## Website
+- Main dashboard: / (index.html)
+- All data updated by automated cron jobs (daily announcement check + weekly research sweep)
+
+## Notes for Agents
+- Timeline is descending (newest first)
+- Publications include PMID, arXiv ID, and DOI where available
+- Benchmarks are categorized by type: tool_comparison, safety_evaluation, knowledge_test, clinical_reasoning, methodology
+- All JSON endpoints are served with Content-Type: application/json
+- CSV files are served with Content-Type: text/csv
+- The dashboard is a single-page app (index.html) with embedded JS data arrays
+- JSON endpoints parse the CSV files on-the-fly for structured access
+
+## Research Discovery Methodology
+Automated cron jobs monitor:
+- PubMed (NCBI E-utilities) for clinical AI publications
+- arXiv API for preprints in cs.AI, cs.CL, cs.CY related to clinical AI
+- Web search for announcements, news, and coverage
+- OpenEvidence announcements page (openevidence.com/announcements)
+
+QC filtering: Results are filtered for relevance to clinical AI decision support tools (OpenEvidence, UpToDate, Doximity, ChatGPT for Clinicians, etc.). Non-relevant results are discarded.

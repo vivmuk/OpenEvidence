@@ -8,6 +8,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "OpenEvidence Insights Dashboard",
+  "description": "Tracking OpenEvidence and the clinical AI landscape: partnerships, products, funding, metrics, competitors, publications, and benchmark studies.",
+  "creator": {"@type": "Person", "name": "Kriya"},
+  "distribution": [
+    {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "/data/research.json", "name": "Consolidated research studies"},
+    {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "/data/benchmarks.json", "name": "Clinical AI benchmark studies"},
+    {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "/data/timeline.csv", "name": "Chronological event log"},
+    {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "/data/competitors.csv", "name": "Competitor landscape"},
+    {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "/data/partnerships.csv", "name": "Partnership tracker"},
+    {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "/data/metrics.csv", "name": "Adoption metrics"},
+    {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "/data/global_landscape.csv", "name": "Global CDS landscape"}
+  ],
+  "about": ["OpenEvidence", "clinical AI", "medical AI", "clinical decision support", "LLM evaluation", "medical AI benchmarks"],
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true
+}
+</script>
 <script>
 // FEATURE DETAIL MODAL
 function showFeatureDetail(detailKey) {
@@ -905,6 +926,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <a href="#partnerships">🤝 Partnerships</a>
     <a href="#tech">⚙️ Tech Stack</a>
     <a href="#pharma">💊 Pharma</a>
+    <a href="#benchmarks">🔬 Benchmarks <span class="new-badge" style="margin-left:4px;">NEW</span></a>
     <a href="#publications">📄 Publications</a>
     <a href="#doximity">🩺 Doximity Ask</a>
     <a href="#global">🌍 Global Landscape <span class="new-badge" style="margin-left:4px;">NEW</span></a>
@@ -913,7 +935,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   </div>
   <div class="sidebar-footer">
     <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
-    <div class="updated-info">Updated: Jul 16, 2026<br>Next: Jul 21, 2026 (Tue)</div>
+    <div class="updated-info">Updated: Jul 16, 2026<br>Next: Jul 21, 2026 (Sun)</div>
   </div>
 </div>
 
@@ -1690,6 +1712,16 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   </div>
 </section>
 
+<!-- BENCHMARKS -->
+<section id="benchmarks">
+  <div class="container">
+    <h2>Clinical AI <span class="accent">Benchmarks & Evaluations</span></h2>
+    <p class="section-sub">Independent benchmark studies evaluating clinical AI tools — safety, accuracy, and head-to-head comparisons. Sourced from arXiv, PubMed, and peer-reviewed journals. Updated weekly.</p>
+    <div id="benchmarkList"></div>
+    <p style="margin-top:16px;font-size:13px;color:var(--oe-text-muted);">Data also available as structured JSON: <a href="/data/benchmarks.json" target="_blank" rel="noopener" style="color:var(--oe-orange);">/data/benchmarks.json</a> · <a href="/data/research.json" target="_blank" rel="noopener" style="color:var(--oe-orange);">/data/research.json</a></p>
+  </div>
+</section>
+
 <!-- PUBLICATIONS -->
 <section id="publications">
   <div class="container">
@@ -1892,6 +1924,25 @@ const pharmaData = [
   {icon:"📡",name:"Ad Infrastructure via Amaro",status:"Active",statusClass:"status-released",desc:"Amaro's AI-native advertising automation analyzes and optimizes end-to-end advertising deployment. Enables pharma companies to streamline campaigns and maximize performance across OpenEvidence's platform. Founded by Kush and Sauren Khosla, backed by GV and Greycroft.",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
   {icon:"💊",name:"Tandem Partnership (Prescriptions & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the platform. Creates a closed-loop from clinical decision → evidence check → prescription → prior auth, capturing pharma-relevant workflow data.",url:"https://sacra.com/c/openevidence/"},
   {icon:"🌐",name:"Total Ad Inventory Potential",status:"Inferred",statusClass:"status-inferred-future",desc:"Nadler claims total potential ad inventory is ~$1 billion if fully sold. Current $150M annualized revenue means only ~15% of inventory is monetized. Massive headroom for pharma ad revenue growth as platform usage continues to scale.",url:"https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html"},
+];
+
+// BENCHMARKS DATA
+const benchmarksData = [
+  {id:"arxiv:2512.01241",type:"safety_evaluation",title:"NOHARM: Medical Safety Benchmark & Physician-AI Teaming Study",authors:"David Wu, Ethan Goh, Adam Rodman, Jonathan H. Chen et al.",url:"https://arxiv.org/abs/2512.01241",published:"Dec 1, 2025",updated:"Jul 13, 2026",journal:"arXiv preprint (v4)",tools:"20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",scale:"1,100 tasks · 10 specialties · 12,747 annotations · 101 physicians",findings:["24.6% severe harm potential from AI recommendations","Omission errors >80% of severe errors","Clinical AI tools outperformed generalist LLMs","Multi-agent AI teaming improved performance","AI-assisted physicians improved vs conventional resources","Combined human-AI would outperform both if recommendations fully incorporated"],relevance:"high",status:"preprint_v4",new:true},
+  {id:"arxiv:2512.01191",pmid:"42286322",type:"tool_comparison",title:"Generalist LLMs Outperform Clinical Tools on Medical Benchmarks",authors:"Vishwanath K et al.",url:"https://arxiv.org/abs/2512.01191",published:"Dec 1, 2025",updated:"Jun 12, 2026",journal:"Nature Medicine",tools:"OpenEvidence, UpToDate Expert AI, GPT-5, Gemini 3 Pro, Claude Sonnet 4.5",scale:"1,000 items (500 MedQA + 500 HealthBench)",findings:["GPT-5 highest scores across all stages","OpenEvidence/UpToDate showed deficits in completeness, communication, safety","Frontier LLMs outperformed specialized clinical tools"],relevance:"high",status:"published"},
+  {id:"arxiv:2606.28960",type:"tool_comparison",title:"Expert Evaluation on Real Point-of-Care Clinical Queries (Real-POCQi)",authors:"Jean Feng et al.",url:"https://arxiv.org/abs/2606.28960",published:"Jun 27, 2026",updated:"Jun 27, 2026",journal:"arXiv preprint",tools:"OpenEvidence, Claude Opus 4.8, Gemini 3.1 Pro, GPT-5.5",scale:"620 real-world queries + 187 HealthBench · 149 physicians · 30 specialties",findings:["OpenEvidence outperformed frontier LLMs on real-world clinical questions","Contradicts June 2026 Nature Medicine paper","149 physicians in specialty-matched comparisons vs 12 in earlier study","Uses real queries from OpenEvidence platform"],relevance:"high",status:"preprint",new:true},
+  {id:"arxiv:2507.23486",type:"safety_evaluation",title:"CSEDB: Clinical Safety-Effectiveness Dual-Track Benchmark for Medical LLMs",authors:"Multiple",url:"https://arxiv.org/abs/2507.23486",published:"Jul 31, 2025",updated:"Jul 14, 2026",journal:"npj Digital Medicine",tools:"6 LLMs (domain-specific and general-purpose)",scale:"2,069 Q&A · 26 departments · 32 physicians · 30 criteria",findings:["Average LLM performance only 57.2% — moderate","Safety scores (54.7%) lower than effectiveness (62.3%)","13.3% performance drop in high-risk scenarios","Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"],relevance:"high",status:"published",new:true},
+  {id:"arxiv:2508.04325",type:"methodology",title:"MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",authors:"Wenxuan Wang et al.",url:"https://arxiv.org/abs/2508.04325",published:"Aug 6, 2025",updated:"Apr 29, 2026",journal:"arXiv preprint (v2)",tools:"56 medical LLM benchmarks (meta-evaluation)",scale:"56 benchmarks analyzed",findings:["Widespread data contamination risks","Disconnect from real clinical practice","Neglect of safety-critical dimensions (robustness, uncertainty)","75% of benchmarks focus on clinical workflow"],relevance:"medium",status:"preprint_v2",new:true},
+  {id:"pmid:42402252",type:"tool_comparison",title:"11-System Blinded Comparison for Periodontal Disease Diagnosis",authors:"Mayer Y et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42402252/",published:"Jul 5, 2026",journal:"J Clin Periodontol",tools:"11 LLM/RAG platforms",scale:"Periodontal disease scenarios, blinded expert rating",findings:["11 systems compared in largest dental AI benchmark"],relevance:"medium",status:"published"},
+  {id:"pmid:42400697",type:"tool_comparison",title:"Blinded Multicenter: Specialized vs General AI in Breast Cancer Care",authors:"Freudenberg J et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42400697/",published:"Jul 4, 2026",journal:"J Med Syst",tools:"Specialized medical AI vs general-purpose LLM",scale:"Multicenter, breast cancer",findings:["Blinded multicenter comparison in oncology"],relevance:"medium",status:"published"},
+  {id:"pmid:42268736",type:"tool_comparison",title:"Large-Scale Evaluation of 5 LLMs in Anesthesia Decision-Making",authors:"Chen R et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42268736/",published:"Jun 10, 2026",journal:"Anesth Analg",tools:"5 LLMs",scale:"Anesthesia decision-making scenarios",findings:["5 LLMs evaluated on anesthesia decisions"],relevance:"medium",status:"published"},
+  {id:"pmid:42320884",type:"tool_comparison",title:"ChatGPT vs Gemini vs OpenEvidence in OB/GYN Clinical Decisions",authors:"Atay AO et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42320884/",published:"Jun 19, 2026",journal:"Appl Clin Inform",tools:"ChatGPT, Gemini, OpenEvidence",scale:"OB/GYN clinical decision scenarios",findings:["Three major AI tools compared in OB/GYN"],relevance:"high",status:"published"},
+  {id:"pmid:42286997",type:"tool_comparison",title:"Prescribing Caution: Critique of OpenEvidence for Medication Questions",authors:"Bergsbaken JM et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42286997/",published:"Jun 13, 2026",journal:"J Am Coll Clin Pharm",tools:"OpenEvidence",scale:"Medication-related clinical questions",findings:["Identified gaps in OpenEvidence medication recommendations"],relevance:"high",status:"published"},
+  {id:"pmid:42263851",type:"tool_comparison",title:"OpenEvidence vs AAOS Guidelines for ACL Reconstruction",authors:"El Kayali MK et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42263851/",published:"Jun 9, 2026",journal:"J ISAKOS",tools:"OpenEvidence",scale:"ACL reconstruction guideline scenarios",findings:["Assesses OpenEvidence adherence to AAOS guidelines"],relevance:"medium",status:"published"},
+  {id:"pmid:42403495",type:"tool_comparison",title:"4 AI Platforms for Infection Control Across 3 Regions",authors:"Julkipli J et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42403495/",published:"Jun 1, 2026",journal:"J Assoc Med Microbiol Infect Dis Can",tools:"4 AI platforms",scale:"Infection control, 3 geographic regions",findings:["4 platforms evaluated across 3 regions"],relevance:"medium",status:"published"},
+  {id:"pmid:42285312",type:"tool_comparison",title:"Reproducibility of AI-Generated Antibiotic Recommendations",authors:"De Vito A et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42285312/",published:"Jun 12, 2026",journal:"Int J Antimicrob Agents",tools:"AI platforms",scale:"Standardized antibiotic clinical scenarios",findings:["Tests reproducibility of AI antibiotic recommendations"],relevance:"medium",status:"published"},
+  {id:"pmid:42432865",type:"tool_comparison",title:"AI Accuracy for Disorders of Gut-Brain Interaction",authors:"Ahn M, Parker CH",url:"https://pubmed.ncbi.nlm.nih.gov/42432865/",published:"Jul 1, 2026",journal:"Neurogastroenterol Motil",tools:"AI platforms",scale:"DGBI diagnosis and treatment scenarios",findings:["Evaluates AI accuracy for gut-brain disorders"],relevance:"medium",status:"published"},
+  {id:"pmid:42324177",type:"tool_comparison",title:"LLM Systems & Prompt Engineering for Internal Medicine Pharmacy Cases",authors:"Yang SS et al.",url:"https://pubmed.ncbi.nlm.nih.gov/42324177/",published:"Jun 24, 2026",journal:"J Am Coll Clin Pharm",tools:"Multiple LLM-based systems",scale:"Internal medicine pharmacy cases",findings:["Compares LLM systems and prompt engineering for pharmacy"],relevance:"medium",status:"published"},
 ];
 
 const publicationsData = [
@@ -2498,6 +2549,24 @@ window.addEventListener('load', function() {
         <div class="pop-type">${p.type}</div>
         <div class="pop-date">${p.date}</div>
         <div class="pop-link"><a href="${p.url}" target="_blank" rel="noopener">View announcement →</a></div>
+      </div>
+    </div>
+  `).join('');
+
+  // RENDER BENCHMARKS
+  const typeLabels = {safety_evaluation:'⚠️ Safety',tool_comparison:'⚔️ Comparison',knowledge_test:'📚 Knowledge',clinical_reasoning:'🧠 Reasoning',methodology:'🔧 Methodology'};
+  const typeColors = {safety_evaluation:'rgba(228,100,61,0.15)',tool_comparison:'rgba(80,130,100,0.15)',knowledge_test:'rgba(60,100,180,0.15)',clinical_reasoning:'rgba(140,80,160,0.15)',methodology:'rgba(120,120,120,0.15)'};
+  document.getElementById('benchmarkList').innerHTML = benchmarksData.map(b => `
+    <div class="feature-card" style="border-left:3px solid var(--oe-orange);">
+      <div class="icon">${typeLabels[b.type] ? typeLabels[b.type].split(' ')[0] : '🔬'}</div>
+      <div class="content">
+        <h4>${b.title} ${b.new ? '<span class="new-badge">NEW</span>' : ''}</h4>
+        <p><strong>${b.journal}</strong> · ${b.authors} · ${b.date}${b.updated && b.updated !== b.published ? ' (updated ' + b.updated + ')' : ''}</p>
+        <p style="margin-top:6px;font-size:13px;"><span style="background:${typeColors[b.type] || 'rgba(120,120,120,0.15)'};padding:2px 8px;border-radius:4px;font-size:11px;">${typeLabels[b.type] || 'Benchmark'}</span> · <strong>Tools:</strong> ${b.tools} · <strong>Scale:</strong> ${b.scale}</p>
+        <ul style="margin-top:8px;padding-left:20px;font-size:13px;line-height:1.6;">
+          ${b.findings.map(f => `<li>${f}</li>`).join('')}
+        </ul>
+        <div class="src-link" style="margin-top:8px;"><a href="${b.url}" target="_blank" rel="noopener">${b.id} →</a></div>
       </div>
     </div>
   `).join('');
