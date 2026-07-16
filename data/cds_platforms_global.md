@@ -664,3 +664,72 @@
 ---
 
 *Sources: platform websites, Wikipedia, medicalstartups.org, Crunchbase, aifundingtracker.com, techtarget.com, Menlo Ventures, MedCity News, KLAS, PRNewswire, BusinessWire, CNBC, Mayo Clinic Proceedings: Digital Health, JMIR, Stanford-Harvard NOHARM Study*
+
+---
+
+## 15. New & Emerging Platforms (Added July 2026)
+
+### Vera Health
+- **URL:** https://www.verahealth.ai
+- **Category:** AI clinical search engine / evidence platform
+- **Target users:** Physicians, nurses, students globally
+- **Key features:** AI-powered search over 60M+ peer-reviewed papers. 900+ clinical calculators. Multilingual. ACEP partnership for emergency medicine. CME credits. No pharma ads. HIPAA + GDPR compliant. Free globally — no NPI requirement. Scores 84.9% NEJM-AI, 97.5% USMLE.
+- **Geographic reach:** Global (US, EU, UK, India, SE Asia, LATAM, MEA)
+- **Notable:** Top-ranked CDS in multiple 2026 reviews. Direct competitor to OpenEvidence, especially in EU/UK where OpenEvidence withdrew. Built by MIT AI researchers and clinicians from Mayo Clinic, Yale.
+
+### Heidi Evidence (Heidi Health)
+- **URL:** https://www.heidihealth.com
+- **Category:** AI clinical search + ambient documentation
+- **Target users:** Physicians, nurses globally
+- **Key features:** Heidi Evidence launched Feb 2026 — AI clinical search with BMJ, NICE, HealthPathways, EMGuidance, MIMS partnerships. Built on Anthropic Claude models. Free tier + paid premium. Heidi Comms for patient calls/bookings/reminders. Heidi Remote wearable mic. 110+ languages, 116 countries, 200+ specialties. 2.4M patient visits/week.
+- **Geographic reach:** Global (strong in UK, Australia, Europe)
+- **Notable:** Expanding from scribe to full clinical AI platform. NHSE AVT registry listed, DTAC compliant. EMIS/SystmOne integration.
+
+### UpDoc
+- **URL:** https://www.updoc.com
+- **Category:** Agentic clinical AI for patient care delivery
+- **Target users:** Health systems, physicians (for deploying AI agents)
+- **Key features:** First FDA-cleared agentic clinical AI platform (510(k) K253281, cleared Dec 23, 2025, announced Jun 25, 2026). Uses patient-facing LLMs for chronic disease management between visits. EHR-integrated. Physician oversight with AI agents. $18M seed from Mayo Clinic and Eli Lilly.
+- **Geographic reach:** United States
+- **Notable:** Deployments at Cleveland Clinic, Allegheny Health Network, UCSF Health. First SaMD with patient-facing LLMs. ADA strategic investment (Jun 2, 2026).
+
+### iatroX
+- **URL:** https://www.iatrox.com
+- **Category:** UK clinical AI platform
+- **Target users:** UK clinicians (GPs, trainees, pharmacists)
+- **Key features:** MHRA-registered, UKCA-marked. NICE/CKS guideline search, BNF/SmPC drug references, 15+ exam Q-banks (UKMLA, PLAB, MRCGP), 80+ calculators, CPD logging. Free for individual clinicians. 500K+ clinical queries answered. 30K+ verified clinicians. 10% of UK GPs as monthly active users. Sub-20-second time-to-answer.
+- **Geographic reach:** United Kingdom
+- **Notable:** Founded by NHS GP Dr Kola Tytler. The UK's answer to OpenEvidence. Only MHRA-registered clinical AI for individual clinicians.
+
+### AvoMD (Avo AI)
+- **URL:** https://avomd.com
+- **Category:** AI clinical workflow + decision support
+- **Target users:** Health systems, physicians
+- **Key features:** AI copilots for clinical workflows — Chart Assist, Ask Avo (AI consult). No-code platform for building custom CDS. Partnership with EBSCO Clinical Decisions (DynaMed). $10M Series A (Mar 2026) led by Noro-Moseley Partners.
+- **Geographic reach:** United States
+- **Notable:** Reduces point solution fatigue by supporting entire workflows (admission, discharge, rounding).
+
+### Bot MD
+- **URL:** https://botmd.io
+- **Category:** AI clinical assistant (Southeast Asia)
+- **Target users:** Hospitals, healthcare workers in SE Asia
+- **Key features:** AI-powered clinical assistance and patient engagement platform. Automates workflows and remote monitoring for hospitals. Designed for SE Asian healthcare context.
+- **Geographic reach:** Southeast Asia (Singapore, Malaysia, Indonesia, Philippines)
+- **Notable:** Addresses healthcare access challenges in remote/isolated areas across SE Asian islands.
+
+### Lyrebird Health
+- **URL:** https://lyrebirdhealth.com
+- **Category:** AI medical scribe (Australia)
+- **Target users:** Australian GP clinics, specialists, allied health
+- **Key features:** AI scribe free for Best Practice Premier users. Compliant with Australian Privacy Act. Integrates with Best Practice, Gentu, Cliniko. Cheapest compliant AI scribe in Australian market.
+- **Geographic reach:** Australia
+- **Notable:** Australian Privacy Act AI compliance deadline set for Dec 11, 2026.
+
+### Knit Health
+- **URL:** https://knithealth.com
+- **Category:** AI clinical behavior model
+- **Target users:** Health systems, clinicians
+- **Key features:** Large Clinical Behavior Model (LCBM) built from Truveta EMR Data — 130M+ patients across 30 U.S. health systems. Learns clinical decision-making patterns and applies them to operational and care delivery workflows.
+- **Geographic reach:** United States
+- **Notable:** Launched from stealth with $11.6M seed funding (2026). UC Berkeley origin.
+
