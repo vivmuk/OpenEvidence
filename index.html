@@ -927,6 +927,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <a href="#tech">⚙️ Tech Stack</a>
     <a href="#pharma">💊 Pharma</a>
     <a href="#benchmarks">🔬 Benchmarks <span class="new-badge" style="margin-left:4px;">NEW</span></a>
+    <a href="#sct-benchmark">🧪 SCT Benchmark <span class="new-badge" style="margin-left:4px;">NEW</span></a>
     <a href="#publications">📄 Publications</a>
     <a href="#doximity">🩺 Doximity Ask</a>
     <a href="#global">🌍 Global Landscape <span class="new-badge" style="margin-left:4px;">NEW</span></a>
@@ -1729,6 +1730,220 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
     <p class="section-sub">140 papers mentioning OpenEvidence on PubMed. Latest publications from the past week. Updated daily via PubMed API.</p>
     <div id="pubList"></div>
     <p style="margin-top:16px;font-size:13px;color:var(--oe-text-muted);">Source: <a href="https://pubmed.ncbi.nlm.nih.gov/?term=OpenEvidence&sort=date" target="_blank" rel="noopener" style="color:var(--oe-orange);">PubMed — OpenEvidence search (140 results) →</a></p>
+  </div>
+</section>
+
+<!-- SCT BENCHMARK -->
+<section id="sct-benchmark">
+  <div class="container">
+    <h2>SCT <span class="accent">Benchmark — Venice API Evaluation</span></h2>
+    <p class="section-sub">Independent evaluation of 5 frontier AI models on the Script Concordance Test (174 clinical reasoning items) — run entirely through Venice API with deterministic scoring. July 17, 2026.</p>
+
+    <!-- WHAT IS SCT -->
+    <div class="chart-container" style="margin-top:24px;">
+      <h3>What Is the Script Concordance Test?</h3>
+      <p class="chart-sub">A validated clinical reasoning assessment used in medical education for 30+ years — now repurposed to evaluate AI models.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:20px;margin-top:20px;">
+        <div class="tech-layer">
+          <h3><span class="icon">🧠</span> Clinical Reasoning Under Uncertainty</h3>
+          <p style="font-size:14px;line-height:1.7;color:var(--oe-text);">SCT measures how well a model interprets <strong>new clinical information</strong> in the context of diagnostic or therapeutic hypotheses. It does not test factual recall — it tests whether the model can reason like an expert physician when given ambiguous or incomplete data.</p>
+          <p style="font-size:14px;line-height:1.7;color:var(--oe-text);margin-top:8px;">Originally developed for medical education by Fournier et al. (2008). Now part of the <strong>MAST (Medical AI Superintelligence Test)</strong> suite by ARISE Network, which benchmarks frontier AI models on clinically realistic tasks.</p>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">📋</span> Task Structure</h3>
+          <p style="font-size:14px;line-height:1.7;color:var(--oe-text);">Each item presents three components:</p>
+          <ul style="font-size:13px;line-height:1.8;color:var(--oe-text);margin-top:4px;padding-left:20px;">
+            <li><strong>Scenario:</strong> A real clinical case (e.g., "66-year-old male, 1 day post-hip replacement, complains of shortness of breath")</li>
+            <li><strong>Hypothesis:</strong> A diagnostic or therapeutic consideration (e.g., "If you were thinking of: Ordering a CTPA")</li>
+            <li><strong>New Information:</strong> A finding that may change the hypothesis likelihood (e.g., "CXR demonstrates no abnormalities")</li>
+          </ul>
+          <p style="font-size:14px;line-height:1.7;color:var(--oe-text);margin-top:8px;">The model must rate how the new information affects the hypothesis on a 5-point scale.</p>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">📊</span> Rating Scale</h3>
+          <div style="margin-top:8px;">
+            <div style="display:flex;justify-content:space-between;gap:4px;margin-bottom:4px;">
+              <span style="background:rgba(228,100,61,0.2);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>-2</strong><br>Strongly<br>decreases</span>
+              <span style="background:rgba(228,100,61,0.12);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>-1</strong><br>Slightly<br>decreases</span>
+              <span style="background:rgba(120,120,120,0.15);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>0</strong><br>No<br>effect</span>
+              <span style="background:rgba(107,175,125,0.15);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>+1</strong><br>Slightly<br>increases</span>
+              <span style="background:rgba(107,175,125,0.25);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>+2</strong><br>Strongly<br>increases</span>
+            </div>
+          </div>
+          <p style="font-size:13px;color:var(--oe-text-muted);margin-top:8px;">The model returns <code style="font-size:12px;">{"Rating": 1, "Rationale": "..."}</code> — a single integer rating with brief clinical justification.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCORING METHODOLOGY -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>How Scoring Works</h3>
+      <p class="chart-sub">Deterministic scoring against expert physician panel distributions — no LLM judge required. Fully reproducible.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:20px;margin-top:20px;">
+        <div class="tech-layer">
+          <h3><span class="icon">🎯</span> SCT Score (0–1)</h3>
+          <p style="font-size:14px;line-height:1.7;color:var(--oe-text);">The headline metric. Each item has an <strong>expert distribution</strong> — how a panel of expert physicians rated the same case. If the model's rating matches the most common expert answer, it scores 1.0. Less common expert answers score proportionally lower.</p>
+          <p style="font-size:13px;color:var(--oe-text-muted);margin-top:8px;">Formula: for each item, <code>score = expert_dist[response] / max(expert_dist)</code>. Final score = mean across all items.</p>
+          <p style="font-size:13px;color:var(--oe-text-muted);margin-top:4px;">95% CI via item-level percentile bootstrap (B=2000, seed=0).</p>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">✅</span> In Expert Set</h3>
+          <p style="font-size:14px;line-height:1.7;color:var(--oe-text);">A secondary metric — binary measure of whether the model's rating matches <em>any</em> expert's answer. More lenient than SCT Score: if even one physician on the panel gave the same rating, it counts as a match.</p>
+          <p style="font-size:13px;color:var(--oe-text-muted);margin-top:8px;">This captures whether the model is at least "in the conversation" even if not aligned with the majority.</p>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">🔬</span> Why No LLM Judge?</h3>
+          <p style="font-size:14px;line-height:1.7;color:var(--oe-text);">Unlike the NOHARM benchmark (which uses a Gemini LLM judge), SCT scoring is <strong>fully deterministic</strong>. The expert distributions are fixed ground-truth data collected from real physician panels. Scoring is a simple lookup — no model calls, no judge bias, no judge drift.</p>
+          <p style="font-size:13px;color:var(--oe-text-muted);margin-top:8px;">This means results are exactly reproducible. Same model + same inputs = same score, every time.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DATA SOURCES -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>Data &amp; Provenance</h3>
+      <p class="chart-sub">174 open items from 10 medical institutions worldwide. The open subset is MIT-licensed.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin-top:16px;">
+        <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:14px;margin-bottom:8px;">📊 Scale</div>
+          <div style="font-size:13px;color:var(--oe-text);">174 items (open subset of 750 total)<br>Each item = 1 scenario + 1 hypothesis + 1 new finding<br>Expert distributions from physician panels</div>
+        </div>
+        <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:14px;margin-bottom:8px;">🏥 Sources</div>
+          <div style="font-size:13px;color:var(--oe-text);">Adelaide SCT (Medicine, Surgery, Psychiatry, Pediatrics, OB-Gyn)<br>IU Emergency Medicine (3 cohorts)<br>McGill Neurology<br>Singapore Internal Medicine &amp; Neurology<br>Indianapolis Physiotherapy<br>Montefiore Pediatrics</div>
+        </div>
+        <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:14px;margin-bottom:8px;">📜 License</div>
+          <div style="font-size:13px;color:var(--oe-text);">Code: MIT<br>Data &amp; rubrics: CC-BY-4.0<br>Source: HealthRex-ARISE/sctbench<br>Reference: SCT-Bench paper (NEJM AI 2025)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUR TEST METHODOLOGY -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>Our Evaluation Methodology</h3>
+      <p class="chart-sub">5 frontier AI models tested via Venice API — OpenAI-compatible inference, temperature=0.0, 10 concurrent threads.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:16px;margin-top:16px;">
+        <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:14px;margin-bottom:6px;">🔧 Inference Setup</div>
+          <ul style="font-size:13px;line-height:1.8;color:var(--oe-text);padding-left:18px;">
+            <li><strong>API:</strong> Venice AI (api.venice.ai/api/v1)</li>
+            <li><strong>Compatibility:</strong> OpenAI chat completions format</li>
+            <li><strong>Temperature:</strong> 0.0 (deterministic)</li>
+            <li><strong>Max tokens:</strong> 4096</li>
+            <li><strong>Prompt:</strong> Unprompted (bare clinical case, no format instructions)</li>
+            <li><strong>Few-shot:</strong> None (zero-shot)</li>
+            <li><strong>Threads:</strong> 10 concurrent</li>
+            <li><strong>Trials:</strong> 1 per item</li>
+          </ul>
+        </div>
+        <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:14px;margin-bottom:6px;">⚖️ Scoring</div>
+          <ul style="font-size:13px;line-height:1.8;color:var(--oe-text);padding-left:18px;">
+            <li><strong>Method:</strong> Deterministic (score.py)</li>
+            <li><strong>LLM judge:</strong> None required</li>
+            <li><strong>Bootstrap:</strong> B=2000, seed=0</li>
+            <li><strong>Metrics:</strong> SCT Score + In Expert Set</li>
+            <li><strong>Response parsing:</strong> Looks for "Rating: X" pattern in model output</li>
+            <li><strong>Reproducibility:</strong> Exact — same inputs always produce same scores</li>
+          </ul>
+        </div>
+        <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:14px;margin-bottom:6px;">🤖 Models Tested</div>
+          <ul style="font-size:13px;line-height:1.8;color:var(--oe-text);padding-left:18px;">
+            <li><strong>Claude Opus 4.7</strong> — Anthropic's flagship (via Venice)</li>
+            <li><strong>Gemini 3 Flash</strong> — Google's fast model (via Venice)</li>
+            <li><strong>GLM 5.2</strong> — ZAI's frontier model (via Venice)</li>
+            <li><strong>Kimi K2.5</strong> — Moonshot's latest (via Venice)</li>
+            <li><strong>DeepSeek V3.2</strong> — DeepSeek's reasoning model (via Venice)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTS TABLE -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>Results — Venice API Evaluation</h3>
+      <p class="chart-sub">5 models × 174 items = 870 total API calls. All completed successfully. SCT Score = alignment with expert consensus (0–1 scale, higher is better).</p>
+      <div id="sctResultsTable"></div>
+    </div>
+
+    <!-- RESULTS CHART -->
+    <div class="chart-container" style="margin-top:24px;">
+      <h3>SCT Score Comparison — Venice API vs MAST Published Scores</h3>
+      <p class="chart-sub">Our 5 models (run via Venice API) compared against MAST's published reference scores on the same 174-item open subset.</p>
+      <div class="chart-wrapper" style="height:450px;"><canvas id="chartSctResults"></canvas></div>
+    </div>
+
+    <!-- EXAMPLE CASE -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>Example Clinical Case</h3>
+      <p class="chart-sub">A sample SCT item showing the scenario, hypothesis, new information, and how expert physicians rated it.</p>
+      <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:20px;margin-top:16px;">
+        <div style="margin-bottom:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:13px;text-transform:uppercase;margin-bottom:4px;">Scenario</div>
+          <div style="font-size:14px;color:var(--oe-text);line-height:1.6;">A 66-year-old male is in hospital for an elective total hip replacement. He is 1 day post-op. During the night the patient complains of shortness of breath of 1 hour in duration.</div>
+        </div>
+        <div style="margin-bottom:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:13px;text-transform:uppercase;margin-bottom:4px;">Hypothesis</div>
+          <div style="font-size:14px;color:var(--oe-text);line-height:1.6;">If you were thinking of: Ordering a CTPA (CT pulmonary angiogram)</div>
+        </div>
+        <div style="margin-bottom:16px;">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:13px;text-transform:uppercase;margin-bottom:4px;">New Information</div>
+          <div style="font-size:14px;color:var(--oe-text);line-height:1.6;">And then you find: CXR demonstrates no abnormalities</div>
+        </div>
+        <div style="padding-top:12px;border-top:1px solid var(--oe-dark-border);">
+          <div style="font-weight:600;color:var(--oe-orange);font-size:13px;text-transform:uppercase;margin-bottom:4px;">Expert Consensus</div>
+          <div style="font-size:14px;color:var(--oe-text);line-height:1.6;">Most experts rated <strong>+1</strong> — a normal chest X-ray slightly increases the likelihood that a pulmonary embolism is present (making CTPA appropriate), since PE often presents with a normal CXR while other causes of dyspnea (pneumonia, effusion) would show abnormalities.</div>
+          <div style="margin-top:8px;font-size:12px;color:var(--oe-text-muted);">A model answering +1 scores 1.0 (perfect alignment with expert majority). A model answering +2 scores ~0.3 (only a few experts chose this). A model answering 0 or -1 scores ~0.1.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY FINDINGS -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>Key Findings</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin-top:16px;">
+        <div style="background:var(--oe-dark-soft);border-left:3px solid var(--oe-orange);border-radius:8px;padding:16px;">
+          <div style="font-weight:600;font-size:14px;margin-bottom:4px;">🏆 Claude Opus 4.7 leads</div>
+          <div style="font-size:13px;color:var(--oe-text);line-height:1.6;">Scored 0.782 — outperforming even MAST's published Claude Opus 4.7 score of 0.756. Claude also had the highest In Expert Set match rate after Gemini Flash (90.8%).</div>
+        </div>
+        <div style="background:var(--oe-dark-soft);border-left:3px solid #6BAF7D;border-radius:8px;padding:16px;">
+          <div style="font-weight:600;font-size:14px;margin-bottom:4px;">⚡ Gemini Flash punches above weight</div>
+          <div style="font-size:13px;color:var(--oe-text);line-height:1.6;">Gemini 3 Flash (0.739) nearly matched Gemini 3.1 Pro's published score (0.721) despite being the smaller, faster model. Highest In Expert Set rate at 91.4%.</div>
+        </div>
+        <div style="background:var(--oe-dark-soft);border-left:3px solid #8AAFCC;border-radius:8px;padding:16px;">
+          <div style="font-weight:600;font-size:14px;margin-bottom:4px;">🇨🇳 GLM 5.2 and Kimi K2.5 competitive</div>
+          <div style="font-size:13px;color:var(--oe-text);line-height:1.6;">GLM 5.2 (0.714) and Kimi K2.5 (0.700) both scored within the range of published frontier model scores. 2 parse errors each — models occasionally formatted responses differently from the expected "Rating: X" pattern.</div>
+        </div>
+        <div style="background:var(--oe-dark-soft);border-left:3px solid #D4A94E;border-radius:8px;padding:16px;">
+          <div style="font-weight:600;font-size:14px;margin-bottom:4px;">📉 DeepSeek V3.2 trails</div>
+          <div style="font-size:13px;color:var(--oe-text);line-height:1.6;">DeepSeek V3.2 (0.691) scored lowest but had 0 parse errors — consistent formatting but more conservative clinical reasoning. In Expert Set at 85.6%.</div>
+        </div>
+        <div style="background:var(--oe-dark-soft);border-left:3px solid #B89AC4;border-radius:8px;padding:16px;">
+          <div style="font-weight:600;font-size:14px;margin-bottom:4px;">🔍 All models within expert range</div>
+          <div style="font-size:13px;color:var(--oe-text);line-height:1.6;">Every model scored above 0.69 — meaning all 5 models align with expert consensus more than two-thirds of the time. The spread between best and worst is only 0.091 points, showing clinical reasoning is converging across frontier models.</div>
+        </div>
+        <div style="background:var(--oe-dark-soft);border-left:3px solid #5DAE8E;border-radius:8px;padding:16px;">
+          <div style="font-weight:600;font-size:14px;margin-bottom:4px;">💰 Zero inference cost</div>
+          <div style="font-size:13px;color:var(--oe-text);line-height:1.6;">All 870 API calls were made through Venice API at zero cost. Deterministic scoring required no Gemini judge calls. The entire benchmark ran in under 6 minutes per model.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REFERENCES -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>References &amp; Source Code</h3>
+      <div style="font-size:13px;line-height:2;color:var(--oe-text);margin-top:12px;">
+        <div><strong>SCT-Bench paper:</strong> McCoy et al., "Script Concordance Testing for AI Clinical Reasoning," NEJM AI 2025 — <a href="https://ai.nejm.org/doi/full/10.1056/AIdbp2500120" target="_blank" rel="noopener" style="color:var(--oe-orange);">ai.nejm.org →</a></div>
+        <div><strong>MAST benchmark suite:</strong> ARISE Network — <a href="https://github.com/ARISENetwork/mast" target="_blank" rel="noopener" style="color:var(--oe-orange);">github.com/ARISENetwork/mast →</a></div>
+        <div><strong>SCT methodology:</strong> Fournier et al., 2008 — <a href="https://pubmed.ncbi.nlm.nih.gov/18785963/" target="_blank" rel="noopener" style="color:var(--oe-orange);">PubMed →</a></div>
+        <div><strong>Public examples:</strong> SCT-Bench/sctpublic — <a href="https://github.com/SCT-Bench/sctpublic" target="_blank" rel="noopener" style="color:var(--oe-orange);">github.com/SCT-Bench/sctpublic →</a></div>
+        <div><strong>MAST leaderboard:</strong> <a href="https://arise-ai.org/mast/technical" target="_blank" rel="noopener" style="color:var(--oe-orange);">arise-ai.org/mast/technical →</a></div>
+      </div>
+      <p style="margin-top:16px;font-size:12px;color:var(--oe-text-muted);">Evaluation run: July 17, 2026 · Venice API · MAST SCT open subset v1 · Code: MIT · Data: CC-BY-4.0</p>
+    </div>
+
   </div>
 </section>
 
@@ -2773,6 +2988,8 @@ window.addEventListener('load', function() {
 
 
   buildCharts();
+  renderSctTable();
+  charts.push(renderSctChart());
 
   // GLOBAL CHARTS
   // Adoption by region
@@ -2858,6 +3075,94 @@ window.addEventListener('load', function() {
     }
   }));
 });
+
+
+// SCT BENCHMARK DATA
+const sctResultsData = [
+  {model:'Claude Opus 4.7',score:0.782,ci:0.052,ciLo:0.729,ciHi:0.834,expertSet:0.908,expertSetCi:0.043,parseErrors:0,n:174,source:'Venice API',color:'#E4643D'},
+  {model:'Gemini 3 Flash',score:0.739,ci:0.056,ciLo:0.683,ciHi:0.794,expertSet:0.914,expertSetCi:0.043,parseErrors:0,n:174,source:'Venice API',color:'#6BAF7D'},
+  {model:'GLM 5.2',score:0.714,ci:0.054,ciLo:0.658,ciHi:0.766,expertSet:0.895,expertSetCi:0.044,parseErrors:2,n:172,source:'Venice API',color:'#8AAFCC'},
+  {model:'Kimi K2.5',score:0.700,ci:0.059,ciLo:0.641,ciHi:0.758,expertSet:0.884,expertSetCi:0.049,parseErrors:2,n:172,source:'Venice API',color:'#B89AC4'},
+  {model:'DeepSeek V3.2',score:0.691,ci:0.058,ciLo:0.633,ciHi:0.750,expertSet:0.856,expertSetCi:0.052,parseErrors:0,n:174,source:'Venice API',color:'#D4A94E'},
+];
+
+const sctPublishedData = [
+  {model:'GPT-5.5 (MAST ref)',score:0.745,ci:0.052,source:'MAST published',color:'#666'},
+  {model:'Claude Opus 4.7 (MAST ref)',score:0.756,ci:0.056,source:'MAST published',color:'#999'},
+  {model:'Gemini 3.1 Pro (MAST ref)',score:0.721,ci:0.053,source:'MAST published',color:'#aaa'},
+];
+
+// RENDER SCT RESULTS TABLE
+function renderSctTable() {
+  const el = document.getElementById('sctResultsTable');
+  if (!el) return;
+  const allData = [...sctResultsData.map(d => ({...d, type:'venice'})), ...sctPublishedData.map(d => ({...d, type:'ref'}))];
+  allData.sort((a,b) => b.score - a.score);
+  el.innerHTML = '<table class="funding-table" style="margin-top:12px;">' +
+    '<thead><tr><th>Model</th><th>SCT Score</th><th>95% CI</th><th>In Expert Set</th><th>Parse Errors</th><th>Source</th></tr></thead>' +
+    '<tbody>' + allData.map(d => {
+    const badge = d.type === 'venice' ? '<span class="new-badge" style="margin-left:4px;">VENEICE</span>' : '<span style="font-size:10px;color:var(--oe-text-muted);margin-left:4px;">REF</span>';
+    const scoreColor = d.type === 'venice' ? 'color:var(--oe-orange);font-weight:600;' : 'color:var(--oe-text-muted);';
+    return '<tr>' +
+      '<td><strong>' + d.model + '</strong>' + badge + '</td>' +
+      '<td style="' + scoreColor + '">' + d.score.toFixed(3) + '</td>' +
+      '<td>±' + d.ci.toFixed(3) + ' [' + (d.score - d.ci).toFixed(3) + ', ' + (d.score + d.ci).toFixed(3) + ']</td>' +
+      '<td>' + (d.expertSet ? (d.expertSet * 100).toFixed(1) + '%' : '—') + '</td>' +
+      '<td>' + (d.parseErrors !== undefined ? d.parseErrors : '—') + '</td>' +
+      '<td style="font-size:12px;color:var(--oe-text-muted);">' + d.source + '</td>' +
+    '</tr>';
+  }).join('') + '</tbody></table>';
+}
+
+// RENDER SCT CHART
+function renderSctChart() {
+  const ctx = document.getElementById('chartSctResults');
+  if (!ctx) return;
+  const tc = getThemeColors();
+  const allData = [...sctResultsData.map(d => ({...d, type:'venice'})), ...sctPublishedData.map(d => ({...d, type:'ref'}))];
+  allData.sort((a,b) => b.score - a.score);
+  const labels = allData.map(d => d.model);
+  const scores = allData.map(d => d.score);
+  const colors = allData.map(d => d.type === 'venice' ? d.color : '#666');
+  const bgColors = allData.map(d => d.type === 'venice' ? d.color + '40' : 'rgba(102,102,102,0.2)');
+  const errorBars = allData.map(d => d.ci);
+  return new Chart(ctx.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'SCT Score',
+        data: scores,
+        backgroundColor: bgColors,
+        borderColor: colors,
+        borderWidth: 2,
+        borderRadius: 6,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#1A2520',
+          titleColor: chartColor,
+          bodyColor: '#E8E6E1',
+          callbacks: {
+            label: (ctx) => {
+              const d = allData[ctx.dataIndex];
+              return d.score.toFixed(3) + ' ±' + d.ci.toFixed(3) + ' (' + d.source + ')';
+            }
+          }
+        }
+      },
+      scales: {
+        x: { grid: { color: tc.grid }, ticks: { color: tc.text, font: { size: 11 } } },
+        y: { grid: { color: tc.grid }, ticks: { color: tc.text }, title: { display: true, text: 'SCT Score (0-1)', color: tc.text }, min: 0.5, max: 0.85 }
+      }
+    }
+  });
+}
 
 // SCROLLSPY — highlight active nav link
 const navLinks = document.querySelectorAll('.sidebar .nav-links a');
