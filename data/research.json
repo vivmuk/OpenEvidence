@@ -121,7 +121,7 @@
     "type": "safety_evaluation",
     "title": "A Novel Evaluation Benchmark for Medical LLMs: Illuminating Safety and Effectiveness in Clinical Domains (CSEDB)",
     "authors": "Multiple",
-    "abstract": "Clinical Safety-Effectiveness Dual-Track Benchmark (CSEDB) — 30-criteria framework built on clinical expert consensus. 2,069 open-ended Q&A items across 26 clinical departments. Tested 6 LLMs: moderate overall performance (57.2%), safety 54.7%, effectiveness 62.3%. 13.3% performance drop in high-risk scenarios. Domain-specific medical LLMs outperformed general-purpose models.",
+    "abstract": "Clinical Safety-Effectiveness Dual-Track Benchmark (CSEDB) \u2014 30-criteria framework built on clinical expert consensus. 2,069 open-ended Q&A items across 26 clinical departments. Tested 6 LLMs: moderate overall performance (57.2%), safety 54.7%, effectiveness 62.3%. 13.3% performance drop in high-risk scenarios. Domain-specific medical LLMs outperformed general-purpose models.",
     "url": "https://arxiv.org/abs/2507.23486",
     "pdf_url": "https://arxiv.org/pdf/2507.23486",
     "published": "2025-07-31",
@@ -137,7 +137,7 @@
     ],
     "relevance": "Comprehensive safety+effectiveness benchmark for medical LLMs across 26 departments",
     "key_findings": [
-      "Average LLM performance only 57.2% — moderate, not ready for unsupervised clinical use",
+      "Average LLM performance only 57.2% \u2014 moderate, not ready for unsupervised clinical use",
       "Safety scores (54.7%) lower than effectiveness (62.3%)",
       "13.3% performance drop in high-risk scenarios",
       "Domain-specific medical LLMs outperformed general-purpose models by 15.3% overall, 19.8% in safety"
@@ -168,7 +168,7 @@
       "robustness",
       "safety evaluation"
     ],
-    "relevance": "Evaluates the benchmark landscape itself — important context for interpreting all other benchmark results",
+    "relevance": "Evaluates the benchmark landscape itself \u2014 important context for interpreting all other benchmark results",
     "key_findings": [
       "75% of benchmarks focus on clinical workflow applications",
       "Widespread data contamination risks unmitigated",
@@ -263,7 +263,7 @@
       "multi-turn",
       "calibration"
     ],
-    "relevance": "Addresses reliability and confidence calibration — critical for clinical deployment safety",
+    "relevance": "Addresses reliability and confidence calibration \u2014 critical for clinical deployment safety",
     "key_findings": [
       "Existing benchmarks overlook confidence-correctness coupling in multi-turn consultations",
       "Models show poor confidence calibration as evidence accumulates",
@@ -378,7 +378,7 @@
       "5 LLMs",
       "perioperative"
     ],
-    "relevance": "Evaluation of LLMs in anesthesia — specialty-specific benchmarking",
+    "relevance": "Evaluation of LLMs in anesthesia \u2014 specialty-specific benchmarking",
     "key_findings": [
       "5 LLMs evaluated on anesthesia decision-making"
     ],
@@ -551,7 +551,7 @@
       "standardized scenarios",
       "consistency"
     ],
-    "relevance": "Reproducibility evaluation — critical for clinical AI reliability assessment",
+    "relevance": "Reproducibility evaluation \u2014 critical for clinical AI reliability assessment",
     "key_findings": [
       "Tests reproducibility of AI antibiotic recommendations"
     ],
@@ -1173,6 +1173,79 @@
       "GPT-5.4"
     ],
     "scale": "313 MedAlign EHR QA pairs, 4 hop levels, 3 models, 2 providers",
+    "status": "preprint_v1"
+  },
+  {
+    "id": "arxiv:2607.15166",
+    "source": "arxiv",
+    "type": "safety_benchmark",
+    "title": "MedFailBench: A Clinician-Built Open-Source Benchmark for Medical AI Safety Boundary Inspection",
+    "authors": "Goktug Ozkan",
+    "abstract": "Most medical AI benchmarks measure whether a model knows the correct answer. MedFailBench asks a different question: which safety boundary failed? A clinician-built synthetic benchmark and failure atlas that labels medical AI errors by severity (1-5) and safety gate type: missed urgent escalation, unsafe remote dosing, unsafe discharge reassurance, evidence fabrication, unsafe protocol execution, source support gap. Contains 44 clinician-reviewed synthetic cases with severity annotations, a live HuggingFace leaderboard preview, a safety gate taxonomy, a clinical severity rubric, and an automated pipeline for archiving model-response screening runs. Released under Apache-2.0 and CC-BY-4.0.",
+    "url": "https://arxiv.org/abs/2607.15166",
+    "pdf_url": "https://arxiv.org/pdf/2607.15166",
+    "doi": "10.48550/arXiv.2607.15166",
+    "published": "2026-07-16",
+    "updated": "2026-07-16",
+    "journal": "arXiv preprint (cs.AI, cs.CL)",
+    "tags": [
+      "safety",
+      "benchmark",
+      "clinical AI",
+      "error taxonomy",
+      "severity grading",
+      "open-source",
+      "HuggingFace"
+    ],
+    "relevance": "Clinician-built benchmark for medical AI safety boundary inspection \u2014 directly relevant to clinical AI safety evaluation",
+    "key_findings": [
+      "Introduces a safety gate taxonomy with 6 failure types: missed urgent escalation, unsafe remote dosing, unsafe discharge reassurance, evidence fabrication, unsafe protocol execution, source support gap",
+      "44 clinician-reviewed synthetic cases with severity annotations on a 1-5 scale",
+      "Open-source under Apache-2.0 and CC-BY-4.0 with Zenodo DOI",
+      "Live HuggingFace leaderboard preview",
+      "No patient data, clinical validation claims, or model rankings included in current release (v0.2.1)"
+    ],
+    "tools_evaluated": [
+      "Any medical AI system (framework is model-agnostic)"
+    ],
+    "scale": "44 clinician-reviewed synthetic cases, 6 safety gate types, 5 severity levels",
+    "status": "preprint_v0.2.1"
+  },
+  {
+    "id": "arxiv:2607.14385",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "MamaBench: Benchmarking LLM Robustness in Maternal and Child Health Diagnosis through Counterfactual Clinical Perturbation",
+    "authors": "Thanni Adewuyi, Anuoluwa Sotome, Samuel Okoko, Angel Ezendu, Oluwafunke Akinbuwa, Oluwaseun Odunsi, Oluwasegun Oguntuase, Oluwadarasimi Oguntuase, Ifeoma Nwabueze, Abiodun Adereni",
+    "abstract": "First counterfactual benchmark for maternal and paediatric AI: 434 expert-authored clinical narratives in 217 pairs across 371 pathologies, evaluated via the Bias Trap Rate (BTR) \u2014 the conditional probability that a model fails the counterfactual given success on the base case. Proposes Evidence-Anchored RAG (EA-RAG), a three-stage retrieval method replacing aggregate similarity with an evidence coverage objective. Across eight configurations of four frontier LLMs, base accuracy overstates robust accuracy by 16-28 percentage points. EA-RAG achieves 20.3% BTR and 65.0% robust accuracy on Claude Sonnet 4.6, a 5.5 percentage point BTR reduction without degrading base accuracy. Residual 20% BTR confirms counterfactual robustness in clinical AI remains an open challenge.",
+    "url": "https://arxiv.org/abs/2607.14385",
+    "pdf_url": "https://arxiv.org/pdf/2607.14385",
+    "doi": "10.48550/arXiv.2607.14385",
+    "published": "2026-07-15",
+    "updated": "2026-07-15",
+    "journal": "arXiv preprint (cs.CL, cs.LG)",
+    "tags": [
+      "benchmark",
+      "counterfactual",
+      "clinical AI",
+      "maternal health",
+      "pediatric health",
+      "RAG",
+      "diagnostic robustness",
+      "LLM"
+    ],
+    "relevance": "Counterfactual benchmark for maternal/pediatric clinical AI with novel RAG approach \u2014 directly evaluates clinical AI decision support robustness",
+    "key_findings": [
+      "Base accuracy overstates robust accuracy by 16-28 percentage points in every model tested",
+      "Introduces Bias Trap Rate (BTR) as a novel metric for counterfactual robustness in clinical AI",
+      "Evidence-Anchored RAG (EA-RAG) reduces BTR by 5.5 percentage points without degrading base accuracy",
+      "Residual 20% BTR confirms counterfactual robustness in clinical AI remains an open challenge",
+      "434 expert-authored clinical narratives in 217 pairs across 371 pathologies"
+    ],
+    "tools_evaluated": [
+      "4 frontier LLMs (8 configurations), Claude Sonnet 4.6 with EA-RAG"
+    ],
+    "scale": "434 clinical narratives, 217 counterfactual pairs, 371 pathologies, 4 LLMs",
     "status": "preprint_v1"
   }
 ]

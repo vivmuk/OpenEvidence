@@ -79,7 +79,7 @@
     "tools_evaluated": "6 LLMs (domain-specific and general-purpose)",
     "scale": "2,069 Q&A, 26 departments, 32 physicians, 30 criteria",
     "key_findings": [
-      "Average LLM performance 57.2% — moderate",
+      "Average LLM performance 57.2% \u2014 moderate",
       "Safety 54.7%, effectiveness 62.3%",
       "13.3% performance drop in high-risk scenarios",
       "Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"
@@ -92,7 +92,7 @@
     "id": "arxiv:2508.04325",
     "source": "arxiv",
     "type": "methodology",
-    "title": "MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",
+    "title": "MedCheck: Beyond the Leaderboard \u2014 Rethinking Medical Benchmarks for LLMs",
     "authors": "Wenxuan Wang et al.",
     "url": "https://arxiv.org/abs/2508.04325",
     "published": "2025-08-06",
@@ -436,5 +436,59 @@
     "relevance": "high",
     "status": "preprint_v1",
     "new": true
+  },
+  {
+    "id": "arxiv:2607.15166",
+    "title": "MedFailBench: A Clinician-Built Open-Source Benchmark for Medical AI Safety Boundary Inspection",
+    "authors": "Goktug Ozkan",
+    "url": "https://arxiv.org/abs/2607.15166",
+    "published": "2026-07-16",
+    "journal": "arXiv preprint (cs.AI, cs.CL)",
+    "type": "safety_benchmark",
+    "description": "Clinician-built synthetic benchmark and failure atlas that labels medical AI errors by severity (1-5) and safety gate type (6 categories: missed urgent escalation, unsafe remote dosing, unsafe discharge reassurance, evidence fabrication, unsafe protocol execution, source support gap). 44 clinician-reviewed cases with HuggingFace leaderboard.",
+    "key_findings": [
+      "Introduces structured safety gate taxonomy for medical AI failures",
+      "44 clinician-reviewed synthetic cases with severity annotations",
+      "Open-source (Apache-2.0, CC-BY-4.0) with Zenodo DOI",
+      "Model-agnostic framework applicable to any clinical AI system"
+    ],
+    "models_evaluated": "Model-agnostic (no specific model rankings in current release)",
+    "dataset_size": "44 clinician-reviewed synthetic cases",
+    "categories": [
+      "safety",
+      "error_taxonomy",
+      "severity_grading"
+    ],
+    "open_source": true,
+    "huggingface": true,
+    "status": "preprint_v0.2.1"
+  },
+  {
+    "id": "arxiv:2607.14385",
+    "title": "MamaBench: Benchmarking LLM Robustness in Maternal and Child Health Diagnosis through Counterfactual Clinical Perturbation",
+    "authors": "Thanni Adewuyi et al.",
+    "url": "https://arxiv.org/abs/2607.14385",
+    "published": "2026-07-15",
+    "journal": "arXiv preprint (cs.CL, cs.LG)",
+    "type": "robustness_benchmark",
+    "description": "First counterfactual benchmark for maternal and paediatric AI. 434 expert-authored clinical narratives in 217 pairs across 371 pathologies. Introduces Bias Trap Rate (BTR) metric and Evidence-Anchored RAG (EA-RAG) method. Base accuracy overstates robust accuracy by 16-28 percentage points.",
+    "key_findings": [
+      "Base accuracy overstates robust accuracy by 16-28 percentage points in every model",
+      "EA-RAG reduces BTR by 5.5pp without degrading base accuracy",
+      "Residual 20% BTR confirms counterfactual robustness remains an open challenge",
+      "First counterfactual benchmark specifically for maternal/pediatric AI"
+    ],
+    "models_evaluated": "4 frontier LLMs (8 configurations), including Claude Sonnet 4.6",
+    "dataset_size": "434 clinical narratives, 217 counterfactual pairs, 371 pathologies",
+    "categories": [
+      "counterfactual",
+      "robustness",
+      "RAG",
+      "maternal_health",
+      "pediatric_health"
+    ],
+    "open_source": true,
+    "huggingface": false,
+    "status": "preprint_v1"
   }
 ]
