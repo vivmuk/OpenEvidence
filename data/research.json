@@ -1247,5 +1247,36 @@
     ],
     "scale": "434 clinical narratives, 217 counterfactual pairs, 371 pathologies, 4 LLMs",
     "status": "preprint_v1"
+  },
+  {
+    "id": "pmid:42462288",
+    "source": "pubmed",
+    "type": "tool_comparison",
+    "title": "Guideline-anchored retrieval-augmented generation outperforms baseline and literature-only configurations in gynecologic oncology decision support: A pre-integration benchmark",
+    "authors": "Dukes D, Yost C, Wang R, et al.",
+    "abstract": "Pre-integration benchmark evaluating guideline-anchored RAG vs baseline and literature-only configurations in gynecologic oncology decision support. Demonstrates RAG with guideline anchoring outperforms alternatives.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42462288/",
+    "pmid": "42462288",
+    "doi": "10.1016/j.ygyno.2026.07.005",
+    "published": "2026-07-16",
+    "updated": "2026-07-16",
+    "journal": "Gynecologic Oncology",
+    "tags": [
+      "RAG",
+      "gynecologic oncology",
+      "clinical decision support",
+      "guideline-anchored",
+      "benchmark"
+    ],
+    "relevance": "Direct evaluation of RAG-based clinical decision support in gynecologic oncology - relevant to OpenEvidence's RAG architecture",
+    "key_findings": [
+      "Guideline-anchored RAG outperforms baseline and literature-only configurations",
+      "Pre-integration benchmark for gynecologic oncology CDS"
+    ],
+    "tools_evaluated": [
+      "Guideline-anchored RAG system"
+    ],
+    "scale": "Gynecologic oncology decision support benchmark",
+    "status": "published"
   }
 ]
