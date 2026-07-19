@@ -79,7 +79,7 @@
     "tools_evaluated": "6 LLMs (domain-specific and general-purpose)",
     "scale": "2,069 Q&A, 26 departments, 32 physicians, 30 criteria",
     "key_findings": [
-      "Average LLM performance 57.2% \u2014 moderate",
+      "Average LLM performance 57.2% — moderate",
       "Safety 54.7%, effectiveness 62.3%",
       "13.3% performance drop in high-risk scenarios",
       "Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"
@@ -92,7 +92,7 @@
     "id": "arxiv:2508.04325",
     "source": "arxiv",
     "type": "methodology",
-    "title": "MedCheck: Beyond the Leaderboard \u2014 Rethinking Medical Benchmarks for LLMs",
+    "title": "MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",
     "authors": "Wenxuan Wang et al.",
     "url": "https://arxiv.org/abs/2508.04325",
     "published": "2025-08-06",
@@ -490,5 +490,34 @@
     "open_source": true,
     "huggingface": false,
     "status": "preprint_v1"
+  },
+  {
+    "id": "arxiv:2607.01103",
+    "title": "MedQADE: LLM Evaluator Limits in Medical AI Benchmarking",
+    "type": "benchmark_methodology",
+    "description": "First standardized open-response clinical benchmark for German. 3,800 items, 10 physicians, 9 LLM evaluators. Shows statistical alignment without clinical caution.",
+    "key_findings": [
+      "LLM evaluators achieve statistical alignment but lack clinical metacognition",
+      "Models assign definitive scores in every case vs physicians who abstain on difficult items",
+      "Lineage-dependent biases: models preferentially score architectural siblings"
+    ],
+    "scale": "3,800 items, 10 physicians, 9 LLM evaluators",
+    "url": "https://arxiv.org/abs/2607.01103",
+    "published": "2026-07-01",
+    "status": "preprint"
+  },
+  {
+    "id": "arxiv:2604.14892",
+    "title": "LLM Jury vs Expert Panels for Medical Diagnosis Scoring",
+    "type": "benchmark_methodology",
+    "description": "Evaluates LLM jury of 3 frontier models scoring 3,333 diagnoses on 300 real-world MIC hospital cases. Validates calibrated multi-model LLM jury as proxy for expert evaluation.",
+    "key_findings": [
+      "Calibrated multi-model LLM jury is trustworthy proxy for expert evaluation",
+      "3,333 diagnoses on 300 MIC hospital cases"
+    ],
+    "scale": "3,333 diagnoses, 300 cases",
+    "url": "https://arxiv.org/abs/2604.14892",
+    "published": "2026-04-16",
+    "status": "preprint_v2"
   }
 ]

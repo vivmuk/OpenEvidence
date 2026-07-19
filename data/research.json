@@ -121,7 +121,7 @@
     "type": "safety_evaluation",
     "title": "A Novel Evaluation Benchmark for Medical LLMs: Illuminating Safety and Effectiveness in Clinical Domains (CSEDB)",
     "authors": "Multiple",
-    "abstract": "Clinical Safety-Effectiveness Dual-Track Benchmark (CSEDB) \u2014 30-criteria framework built on clinical expert consensus. 2,069 open-ended Q&A items across 26 clinical departments. Tested 6 LLMs: moderate overall performance (57.2%), safety 54.7%, effectiveness 62.3%. 13.3% performance drop in high-risk scenarios. Domain-specific medical LLMs outperformed general-purpose models.",
+    "abstract": "Clinical Safety-Effectiveness Dual-Track Benchmark (CSEDB) — 30-criteria framework built on clinical expert consensus. 2,069 open-ended Q&A items across 26 clinical departments. Tested 6 LLMs: moderate overall performance (57.2%), safety 54.7%, effectiveness 62.3%. 13.3% performance drop in high-risk scenarios. Domain-specific medical LLMs outperformed general-purpose models.",
     "url": "https://arxiv.org/abs/2507.23486",
     "pdf_url": "https://arxiv.org/pdf/2507.23486",
     "published": "2025-07-31",
@@ -137,7 +137,7 @@
     ],
     "relevance": "Comprehensive safety+effectiveness benchmark for medical LLMs across 26 departments",
     "key_findings": [
-      "Average LLM performance only 57.2% \u2014 moderate, not ready for unsupervised clinical use",
+      "Average LLM performance only 57.2% — moderate, not ready for unsupervised clinical use",
       "Safety scores (54.7%) lower than effectiveness (62.3%)",
       "13.3% performance drop in high-risk scenarios",
       "Domain-specific medical LLMs outperformed general-purpose models by 15.3% overall, 19.8% in safety"
@@ -168,7 +168,7 @@
       "robustness",
       "safety evaluation"
     ],
-    "relevance": "Evaluates the benchmark landscape itself \u2014 important context for interpreting all other benchmark results",
+    "relevance": "Evaluates the benchmark landscape itself — important context for interpreting all other benchmark results",
     "key_findings": [
       "75% of benchmarks focus on clinical workflow applications",
       "Widespread data contamination risks unmitigated",
@@ -263,7 +263,7 @@
       "multi-turn",
       "calibration"
     ],
-    "relevance": "Addresses reliability and confidence calibration \u2014 critical for clinical deployment safety",
+    "relevance": "Addresses reliability and confidence calibration — critical for clinical deployment safety",
     "key_findings": [
       "Existing benchmarks overlook confidence-correctness coupling in multi-turn consultations",
       "Models show poor confidence calibration as evidence accumulates",
@@ -378,7 +378,7 @@
       "5 LLMs",
       "perioperative"
     ],
-    "relevance": "Evaluation of LLMs in anesthesia \u2014 specialty-specific benchmarking",
+    "relevance": "Evaluation of LLMs in anesthesia — specialty-specific benchmarking",
     "key_findings": [
       "5 LLMs evaluated on anesthesia decision-making"
     ],
@@ -551,7 +551,7 @@
       "standardized scenarios",
       "consistency"
     ],
-    "relevance": "Reproducibility evaluation \u2014 critical for clinical AI reliability assessment",
+    "relevance": "Reproducibility evaluation — critical for clinical AI reliability assessment",
     "key_findings": [
       "Tests reproducibility of AI antibiotic recommendations"
     ],
@@ -1197,7 +1197,7 @@
       "open-source",
       "HuggingFace"
     ],
-    "relevance": "Clinician-built benchmark for medical AI safety boundary inspection \u2014 directly relevant to clinical AI safety evaluation",
+    "relevance": "Clinician-built benchmark for medical AI safety boundary inspection — directly relevant to clinical AI safety evaluation",
     "key_findings": [
       "Introduces a safety gate taxonomy with 6 failure types: missed urgent escalation, unsafe remote dosing, unsafe discharge reassurance, evidence fabrication, unsafe protocol execution, source support gap",
       "44 clinician-reviewed synthetic cases with severity annotations on a 1-5 scale",
@@ -1217,7 +1217,7 @@
     "type": "benchmark",
     "title": "MamaBench: Benchmarking LLM Robustness in Maternal and Child Health Diagnosis through Counterfactual Clinical Perturbation",
     "authors": "Thanni Adewuyi, Anuoluwa Sotome, Samuel Okoko, Angel Ezendu, Oluwafunke Akinbuwa, Oluwaseun Odunsi, Oluwasegun Oguntuase, Oluwadarasimi Oguntuase, Ifeoma Nwabueze, Abiodun Adereni",
-    "abstract": "First counterfactual benchmark for maternal and paediatric AI: 434 expert-authored clinical narratives in 217 pairs across 371 pathologies, evaluated via the Bias Trap Rate (BTR) \u2014 the conditional probability that a model fails the counterfactual given success on the base case. Proposes Evidence-Anchored RAG (EA-RAG), a three-stage retrieval method replacing aggregate similarity with an evidence coverage objective. Across eight configurations of four frontier LLMs, base accuracy overstates robust accuracy by 16-28 percentage points. EA-RAG achieves 20.3% BTR and 65.0% robust accuracy on Claude Sonnet 4.6, a 5.5 percentage point BTR reduction without degrading base accuracy. Residual 20% BTR confirms counterfactual robustness in clinical AI remains an open challenge.",
+    "abstract": "First counterfactual benchmark for maternal and paediatric AI: 434 expert-authored clinical narratives in 217 pairs across 371 pathologies, evaluated via the Bias Trap Rate (BTR) — the conditional probability that a model fails the counterfactual given success on the base case. Proposes Evidence-Anchored RAG (EA-RAG), a three-stage retrieval method replacing aggregate similarity with an evidence coverage objective. Across eight configurations of four frontier LLMs, base accuracy overstates robust accuracy by 16-28 percentage points. EA-RAG achieves 20.3% BTR and 65.0% robust accuracy on Claude Sonnet 4.6, a 5.5 percentage point BTR reduction without degrading base accuracy. Residual 20% BTR confirms counterfactual robustness in clinical AI remains an open challenge.",
     "url": "https://arxiv.org/abs/2607.14385",
     "pdf_url": "https://arxiv.org/pdf/2607.14385",
     "doi": "10.48550/arXiv.2607.14385",
@@ -1234,7 +1234,7 @@
       "diagnostic robustness",
       "LLM"
     ],
-    "relevance": "Counterfactual benchmark for maternal/pediatric clinical AI with novel RAG approach \u2014 directly evaluates clinical AI decision support robustness",
+    "relevance": "Counterfactual benchmark for maternal/pediatric clinical AI with novel RAG approach — directly evaluates clinical AI decision support robustness",
     "key_findings": [
       "Base accuracy overstates robust accuracy by 16-28 percentage points in every model tested",
       "Introduces Bias Trap Rate (BTR) as a novel metric for counterfactual robustness in clinical AI",
@@ -1278,5 +1278,107 @@
     ],
     "scale": "Gynecologic oncology decision support benchmark",
     "status": "published"
+  },
+  {
+    "id": "arxiv:2607.01103",
+    "source": "arxiv",
+    "type": "benchmark_methodology",
+    "title": "Clinician-Level Agreement Without Clinical Caution: LLM Evaluator Limits in Medical AI Benchmarking",
+    "authors": "William Philipp, Finn Fassbender, Thorsten Langer, Martje Pauly, Rebecca Herzog, Alexander Baumann, Markus Hobert, Theresa Paulus, Ip Chi Wang, Lukas Goede, Johanna Reimer, Sebastian Löns, Ronald Böck, Sebastian Fudickar",
+    "abstract": "Open-response evaluation provides stronger clinical validity than multiple-choice benchmarks but creates a scoring bottleneck that motivates automated LLM-as-a-Judge approaches. We introduce MedQADE, the first standardized open-response clinical benchmark for German, comprising 3,800 items annotated by ten practicing physicians and nine LLM evaluators. The top-performing evaluator (Gemini 3 Flash) reached alignment consistent with the physician ceiling (kappa=0.694 vs kappa=0.709), but automated evaluators exhibited near-absent clinical metacognition: physicians scaled abstention with item difficulty, while frontier models assigned definitive scores in every case. Systematic lineage-dependent biases found models preferentially scored architectural siblings.",
+    "url": "https://arxiv.org/abs/2607.01103",
+    "pdf_url": "https://arxiv.org/pdf/2607.01103",
+    "doi": "10.48550/arXiv.2607.01103",
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "journal": "arXiv preprint (cs.CL)",
+    "tags": [
+      "benchmark methodology",
+      "LLM-as-judge",
+      "evaluator limits",
+      "clinical caution",
+      "metacognition",
+      "lineage bias",
+      "MedQADE"
+    ],
+    "relevance": "Evaluates limits of LLM-as-judge approaches in medical AI benchmarking — critical context for interpreting all benchmark results using automated evaluators",
+    "key_findings": [
+      "LLM evaluators can achieve statistical alignment with physician ceiling but lack clinical metacognition",
+      "Physicians scaled abstention with item difficulty; frontier models assigned definitive scores in every case",
+      "Systematic lineage-dependent biases: models preferentially scored architectural siblings",
+      "Statistical alignment does not ensure clinical caution",
+      "Evaluator independence requires explicit verification"
+    ],
+    "tools_evaluated": [
+      "9 LLM evaluators including Gemini 3 Flash"
+    ],
+    "scale": "3,800 items, 10 practicing physicians, 9 LLM evaluators",
+    "status": "preprint"
+  },
+  {
+    "id": "arxiv:2604.14892",
+    "source": "arxiv",
+    "type": "benchmark_methodology",
+    "title": "Can LLMs Score Medical Diagnoses and Clinical Reasoning as well as Expert Panels?",
+    "authors": "Amy Rouillard et al.",
+    "abstract": "Evaluating medical AI systems using expert clinician panels is costly and slow, motivating the use of LLMs as alternative adjudicators. We evaluate an LLM jury composed of three frontier AI models scoring 3,333 diagnoses on 300 real-world middle-income country (MIC) hospital cases. Results provide compelling evidence that a calibrated, multi-model LLM jury can serve as a trustworthy and reliable proxy for expert clinician evaluation in medical AI benchmarking.",
+    "url": "https://arxiv.org/abs/2604.14892",
+    "pdf_url": "https://arxiv.org/pdf/2604.14892",
+    "doi": "10.48550/arXiv.2604.14892",
+    "published": "2026-04-16",
+    "updated": "2026-04-17",
+    "journal": "arXiv preprint",
+    "tags": [
+      "benchmark methodology",
+      "LLM jury",
+      "expert panel",
+      "medical AI evaluation",
+      "diagnosis scoring"
+    ],
+    "relevance": "Validates LLM jury approach as proxy for expert clinician evaluation in medical AI benchmarking — important for scaling benchmark evaluations",
+    "key_findings": [
+      "Calibrated multi-model LLM jury can serve as trustworthy proxy for expert clinician evaluation",
+      "3,333 diagnoses scored on 300 real-world MIC hospital cases",
+      "Compelling evidence for reliability of LLM-based evaluation in medical AI"
+    ],
+    "tools_evaluated": [
+      "3 frontier AI models as jury"
+    ],
+    "scale": "3,333 diagnoses, 300 MIC hospital cases",
+    "status": "preprint_v2"
+  },
+  {
+    "id": "arxiv:2507.16947",
+    "source": "arxiv",
+    "type": "clinical_evaluation",
+    "title": "AI-based Clinical Decision Support for Primary Care: A Real-World Study",
+    "authors": "Multiple (Penda Health team)",
+    "abstract": "Real-world study of an LLM-based clinical decision support tool (AI Consult) at Penda Health clinics in Nairobi, Kenya. The system triggers asynchronously during clinical workflow decision points in the EMR. AI group clinicians saw significant reductions in clinical failure modes including incorrect primary diagnosis, inappropriate medications, missing patient education and follow-up plans, and missing history/investigation details. LLM evaluators found greater differences than physician evaluators (22% reduction in treatment errors, 19% in diagnostic errors).",
+    "url": "https://arxiv.org/abs/2507.16947",
+    "pdf_url": "https://arxiv.org/pdf/2507.16947",
+    "published": "2025-07-22",
+    "updated": "2025-07-22",
+    "journal": "arXiv preprint",
+    "tags": [
+      "real-world evaluation",
+      "clinical decision support",
+      "LLM",
+      "primary care",
+      "error reduction",
+      "EMR integration",
+      "Kenya"
+    ],
+    "relevance": "Real-world evaluation of LLM-based CDS tool showing significant error reduction in live clinical setting — important evidence for CDS effectiveness",
+    "key_findings": [
+      "Significant reductions in incorrect primary diagnosis, inappropriate medications, missing education/follow-up",
+      "LLM evaluators found 22% reduction in treatment errors, 19% in diagnostic errors",
+      "Effect became more pronounced after active clinician uptake strategies",
+      "Demonstrates potential for LLM-based CDS in real-world primary care settings"
+    ],
+    "tools_evaluated": [
+      "Penda Health AI Consult (LLM-based CDS)"
+    ],
+    "scale": "39,849 visits across Penda Health clinics in Nairobi, Kenya",
+    "status": "preprint"
   }
 ]
