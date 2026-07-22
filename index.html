@@ -2305,8 +2305,36 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
 </div><!-- end main-content -->
 
 <script>
+// Global error handler — logs to console so silent chart failures become visible.
+window.addEventListener('error', function(e) {
+  console.error('[OE-GLOBAL] Error:', e.message, '@', e.filename || '(inline)', 'line', e.lineno || '?');
+});
+window.addEventListener('unhandledrejection', function(e) {
+  console.error('[OE-GLOBAL] Unhandled promise rejection:', e.reason && e.reason.message ? e.reason.message : e.reason);
+});
+
+// === Data-array declarations (var so try/catch can assign even on syntax error) ===
+var sctPublishedData;
+var sctResultsData;
+var oeFeaturesData;
+var globalMatrixData;
+var emergingTrendsData;
+var regulatoryData;
+var globalTimelineData;
+var globalRegionsData;
+var dxTimelineData;
+var sourcesData;
+var publicationsData;
+var benchmarksData;
+var pharmaData;
+var partnersData;
+var futureData;
+var competitorsData;
+var productsData;
+var timelineData;
+
 // DATA
-const timelineData = [
+try { timelineData =[
   {date:"2022-01-01",cat:"Company",title:"OpenEvidence Founded",desc:"Daniel Nadler and Zachary Ziegler found OpenEvidence to organize medical knowledge using AI.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
   {date:"2023-01-01",cat:"Milestone",title:"AI scores 90% on USMLE",desc:"OpenEvidence's AI model achieves 90% on the United States Medical Licensing Examination.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
   {date:"2023-06-01",cat:"Partnership",title:"Mayo Clinic Accelerator",desc:"Participated in Mayo Clinic health-technology accelerator program.",src:"Wikipedia",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
@@ -2398,9 +2426,8 @@ const timelineData = [
   {date:"2026-06-23",cat:"Competitor",title:"Wolters Kluwer: Clinical AI Evaluation Must Go Beyond Benchmark Wins",desc:"UpToDate parent company publishes framework arguing clinical AI effectiveness must go beyond benchmarks. Proposes clinical intent, knowledge integrity, and risk evaluation framework. Benchmarks are often too generic for point-of-care fitness.",src:"Wolters Kluwer",url:"https://www.wolterskluwer.com/en/expert-insights/clinical-ai-evaluation-must-go-beyond-benchmark-wins"},
   {date:"2026-07-20",cat:"Research",title:"Stanford-Harvard NOHARM Study: OpenEvidence Most-Used AI in Physician Free-Choice Arm",desc:"OpenEvidence announced a central finding of the independent Stanford-Harvard NOHARM study: when 101 board-certified U.S. physicians were free to consult any clinical decision support AI tool, they chose OpenEvidence in 22.3% of responses — more than ChatGPT, Claude, Gemini, and every other external AI chatbot combined (19.8%). NOHARM (Numerous Options Harm Assessment for Risk in Medicine) was conducted by ARISE, a clinical AI research network led by physicians from Stanford and Harvard Medical Schools. Evaluated 45 large language models and 4 clinical AI systems with 12,747 expert annotations across 4,249 potential clinical actions. OpenEvidence frames this as 'revealed preference' — physicians reaching for OpenEvidence on their own, unprompted, 22.3% of the time. Doximity's Ask number (zero of any responses) was not released. Pairs with EvidenceGrade (launched Jul 10) as the public benchmark that grades evidence strength in the open, on every answer.",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/physicians-choose-openevidence-over-every-other-ai-chatbot-combined-in-independent-stanford-harvard-study-of-clinical-ai-302829633.html",new:true},
   {date:"2026-07-20",cat:"Media",title:"Health Technology Net & Newswise Mirror the PRNewswire NOHARM Coverage",desc:"Independent tech-health outlets Health Technology Net and Newswise republish the Jul 20 PRNewswire announcement that physicians chose OpenEvidence more than every other AI chatbot combined in the Stanford-Harvard NOHARM free-choice arm. Reinforces message that the study's benchmark component is unofficial while the revealed-preference data is what matters.",src:"Health Technology Net",url:"https://healthtechnologynet.com/2026/07/20/physicians-choose-openevidence-over-every-other-ai-chatbot-combined-in-independent-stanford-harvard-study-of-clinical-ai/",new:true},
-];
-
-const productsData = [
+]; } catch (e) { console.error("[OE-DATA] timelineData failed to parse:", e.message); timelineData = []; }
+try { productsData =[
   {icon:"🔍",name:"Core Search Platform",date:"2022",status:"Released",desc:"AI-powered medical search engine for verified U.S. physicians. Returns evidence-based answers in 5-10 seconds with citations from NEJM, JAMA, NCCN, Cochrane, and 20+ more partners.",url:"https://www.openevidence.com"},
   {icon:"🧠",name:"DeepConsult",date:"Jul 15, 2025",status:"Released",desc:"First AI agent purpose-built for physicians. Uses advanced reasoning models to cross-reference hundreds of peer-reviewed studies in parallel. Each run requires 100x+ compute of standard search. Delivers PhD-level research reports.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
   {icon:"📝",name:"Visits (AI Scribe)",date:"Aug 21, 2025",status:"Released",desc:"Clinical documentation tool that transcribes patient encounters and enriches assessment & plan with latest guidelines and research. Competes with Abridge, Ambience, and Microsoft Dragon. Free for verified clinicians.",url:"https://www.openevidence.com/announcements/visits-real-time-medical-intelligence"},
@@ -2412,9 +2439,8 @@ const productsData = [
   {icon:"🎤",name:"Voice Mode",date:"May 2026",status:"Released",desc:"First speech-to-speech medical AI. Hands-free spoken Q&A for clinicians. 26-second teaser video published on YouTube. Enables clinicians to ask questions verbally and receive spoken answers.",url:"https://www.youtube.com/@OpenEvidence"},
   {icon:"🗣️",name:"Voices (Note Formatting)",date:"Feb 2026",status:"Released",desc:"Customizable note formatting styles. Clinicians can define how their clinical notes are structured and formatted through the Visits documentation workflow.",url:"https://www.openevidence.com"},
   {icon:"📊",name:"EvidenceGrade",date:"Jul 10, 2026",status:"Released",desc:"Grades and visualizes the strength of cited evidence behind every AI answer in real time. Builds on the GRADE framework used by Cochrane, WHO, and major clinical guidelines. Solves the critical problem of AI systems glossing over differences in evidence quality — enables physicians to assess how much weight underlying evidence can bear for clinical decisions.",url:"https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer"},
-];
-
-const competitorsData = [
+]; } catch (e) { console.error("[OE-DATA] productsData failed to parse:", e.message); productsData = []; }
+try { competitorsData =[
   {name:"ChatGPT for Clinicians",type:"OpenAI · Launched Apr 22, 2026",badge:"DIRECT COMPETITOR",stats:[{l:"Model",v:"GPT-5.4"},{l:"Cost",v:"Free for verified"},{l:"CME",v:"Yes"},{l:"Benchmark",v:"HealthBench Pro 59.0"}],desc:"OpenAI's clinical AI workspace for verified US physicians, NPs, PAs, and pharmacists. Clinical search, deep research, workflow templates, CME credits. 40M daily health queries on ChatGPT. Conversations not used for training.",url:"https://www.pymnts.com/artificial-intelligence-2/2026/openai-treats-healthcare-with-new-chatgpt-for-clinicians/"},
   {name:"Doximity (NYSE: DOCS)",type:"Public · $8.75B market cap",badge:"BIGGEST THREAT",stats:[{l:"Revenue",v:"$620M TTM"},{l:"Members",v:"2M+ (85% US MDs)"},{l:"ARPU",v:"$228"},{l:"NOHARM",v:"#1 (Jul 2026)"}],desc:"Largest physician network. Doximity Ask AI assistant + Scribe. Acquired Pathway Medical (Aug 2025). Sued by OpenEvidence for trade secret theft. Partnered with Aledade (May 2026). Diversified revenue: pharma ads, recruiting, telehealth. NOHARM benchmark (Jul 2026): Doximity Ask topped independent Stanford-Harvard ARISE safety evaluation, outperforming OpenEvidence and frontier LLMs. PeerCheck program with 11,000+ physician reviewers. 150+ health systems and 8 of top 20 hospitals implemented Clinical AI Suite.",url:"https://healthtechinsiders.com/doximity-clinical-ai-platform-tops-safety-benchmark/"},
   {name:"Google MedGemma",type:"Alphabet · Open weights",badge:"FOUNDATION MODEL",stats:[{l:"Sizes",v:"4B + 27B"},{l:"Context",v:"128K tokens"},{l:"MedQA",v:"64.4%"},{l:"License",v:"Open (HuggingFace)"}],desc:"Open medical AI foundation models on Gemma 3. MedGemma 1.0 (Jul 2025), MedGemma 1.5 (Apr 2026). Developer-focused, not a finished clinical product. Enables competitors to build cheaply. Multimodal (text + images).",url:"https://huggingface.co/google/medgemma-4b-it"},
@@ -2426,9 +2452,8 @@ const competitorsData = [
   {name:"Vera Health",type:"Private · Limited info",badge:"SUED",stats:[{l:"Sued by",v:"OpenEvidence Jun 2025"},{l:"Claims",v:"Prompt injection"}],desc:"Sued by OpenEvidence in June 2025 on similar prompt injection claims as Pathway Medical and Doximity. Limited public information available about the company.",url:"https://news.bloomberglaw.com/ip-law/medical-ai-firm-says-competitor-hacked-prompts-to-steal-secrets"},
   {name:"Glass Health",type:"Pivoted/Acquired",badge:"PIVOTED",stats:[{l:"Domain",v:"Redirects to glassmedical.ai"},{l:"Current focus",v:"Oncology trials"}],desc:"Original Glass Health was a clinical AI documentation startup. Domain now redirects to Glass Medical AI — a University of Amsterdam spin-out focused on oncology drug development. No longer a direct competitor.",url:"https://www.glassmedical.ai"},
   {name:"UpDoc",type:"Private · FDA-cleared 2026",badge:"NEW COMPETITOR",stats:[{l:"FDA clearance",v:"Jun 25, 2026"},{l:"Category",v:"Agentic clinical AI"},{l:"Health systems",v:"4"},{l:"Focus",v:"Chronic disease mgmt"}],desc:"First FDA-cleared agentic clinical AI platform for real-time patient care delivery. Not a search tool — delivers care between visits. Insulin titration, chronic disease management. Physician oversight with AI agents. New category — clinical AI vs clinical AI search.",url:"https://www.prnewswire.com/news-releases/updoc-debuts-first-fda-cleared-clinical-ai-platform-built-for-real-time-patient-care-delivery-and-intelligent-care-coordination-302810065.html"},
-];
-
-const futureData = [
+]; } catch (e) { console.error("[OE-DATA] competitorsData failed to parse:", e.message); competitorsData = []; }
+try { futureData =[
   {icon:"🏥",name:"Non-Ad Enterprise Version",status:"In Development",statusClass:"status-dev",desc:"Separate non-ad-supported enterprise version for large health systems requiring greater customization. Distinct pricing tier above current free and ad-supported tiers. FHIR-based Epic integration.",url:"https://sacra.com/c/openevidence/"},
   {icon:"💊",name:"Open Vista (with Veeva Systems)",status:"In Development",statusClass:"status-dev",desc:"Joint product with Veeva Systems targeting clinical-trial matching, drug discovery insight, and adoption of approved medicines. Positions OpenEvidence as infrastructure layer for pharmaceutical commercial operations.",url:"https://sacra.com/c/openevidence/"},
   {icon:"📋",name:"Tandem Partnership (Prescribe & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the OpenEvidence platform.",url:"https://sacra.com/c/openevidence/"},
@@ -2437,9 +2462,8 @@ const futureData = [
   {icon:"🤖",name:"Additional AI Agents",status:"Inferred",statusClass:"status-inferred-future",desc:"DeepConsult described as 'first AI agent' — implying more are planned. Potential: differential diagnosis, order set recommendations, discharge summaries.",url:"https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html"},
   {icon:"🔌",name:"Deeper EHR Integration",status:"Inferred",statusClass:"status-inferred-future",desc:"Current: Epic FHIR at 3 health systems. Future: likely expansion to more EHR systems (Oracle-Cerner). Enterprise per-seat pricing would significantly increase ARPU from ~$124.",url:"https://sacra.com/c/openevidence/"},
   {icon:"🏛️",name:"Institutional Care Pathways",status:"In Progress",statusClass:"status-dev",desc:"Cedars-Sinai plans to layer internal care pathways and protocols. Clinicians view external evidence alongside institutional guidance in single interface. Pattern likely to extend to other deployments.",url:"https://sacra.com/c/openevidence/"},
-];
-
-const partnersData = [
+]; } catch (e) { console.error("[OE-DATA] futureData failed to parse:", e.message); futureData = []; }
+try { partnersData =[
   {name:"NEJM",type:"Content/Journal",date:"Feb 19, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-achieves-1-billion-valuation-in-sequoia-led-round-and-announces-content-partnership-with-the-new-england-journal-of-medicine-302380960.html"},
   {name:"JAMA Network",type:"Content/Journal (11 journals)",date:"Jun 5, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-and-the-jama-network-sign-strategic-content-agreement-302473690.html"},
   {name:"NCCN",type:"Cancer Guidelines",date:"Nov 5, 2025",url:"https://ascopost.com/news/november-2025/nccn-guidelines-to-be-integrated-into-openevidence-medical-ai-platform/"},
@@ -2482,9 +2506,8 @@ const partnersData = [
   {name:"NewYork-Presbyterian",type:"Health System (Jul 2026)",date:"Jul 9, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-newyork-presbyterian-columbia-university-and-weill-cornell-medicine-expand-clinical-ai-tools-across-new-york-city-and-westchester",new:true},
   {name:"AAP",type:"Pediatrics",date:"Jul 15, 2026",url:"https://www.openevidence.com/announcements/american-academy-of-pediatrics-and-openevidence-announce-collaboration-to-improve-pediatric-care",new:true},
   {name:"Boston Children's Hospital",type:"Health System (Jul 2026)",date:"Jul 16, 2026",url:"https://www.openevidence.com/announcements/boston-childrens-hospital-and-openevidence-collaborate-to-advance-ai-powered-analysis-of-clinical-practice-patterns",new:true},
-];
-
-const pharmaData = [
+]; } catch (e) { console.error("[OE-DATA] partnersData failed to parse:", e.message); partnersData = []; }
+try { pharmaData =[
   {icon:"🎯",name:"Pharma Advertising Platform",status:"Active",statusClass:"status-released",desc:"Core revenue engine. Pharma and medical device companies buy targeted video ads at $70-$1,000+ CPM. ARPU ~$124. 90% gross margins. Ads shown at highest-intent moment — during clinical research. Amaro acquisition strengthened this infrastructure.",url:"https://sacra.com/c/openevidence/"},
   {icon:"💰",name:"Open Vista (with Veeva Systems)",status:"In Development",statusClass:"status-dev",desc:"Joint product with Veeva Systems targeting clinical-trial matching, drug discovery insight, and adoption of approved medicines. Positions OpenEvidence as infrastructure layer for pharmaceutical commercial operations.",url:"https://sacra.com/c/openevidence/"},
   {icon:"🧪",name:"Clinical Trial Matching",status:"Released",statusClass:"status-released",desc:"Automatically surfaces active/recruiting clinical trials and evaluates each against patient clinical context. Enables pharma sponsors to reach physicians at the exact moment they're treating eligible patients. Filters by disease, treatment history, eligibility, location.",url:"https://www.openevidence.com/user-guide/clinical-trials"},
@@ -2493,10 +2516,9 @@ const pharmaData = [
   {icon:"📡",name:"Ad Infrastructure via Amaro",status:"Active",statusClass:"status-released",desc:"Amaro's AI-native advertising automation analyzes and optimizes end-to-end advertising deployment. Enables pharma companies to streamline campaigns and maximize performance across OpenEvidence's platform. Founded by Kush and Sauren Khosla, backed by GV and Greycroft.",url:"https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html"},
   {icon:"💊",name:"Tandem Partnership (Prescriptions & Prior Auth)",status:"Released/In Progress",statusClass:"status-released",desc:"Partnership with Tandem brings prescription generation and prior-authorization submission directly within the platform. Creates a closed-loop from clinical decision → evidence check → prescription → prior auth, capturing pharma-relevant workflow data.",url:"https://sacra.com/c/openevidence/"},
   {icon:"🌐",name:"Total Ad Inventory Potential",status:"Inferred",statusClass:"status-inferred-future",desc:"Nadler claims total potential ad inventory is ~$1 billion if fully sold. Current $150M annualized revenue means only ~15% of inventory is monetized. Massive headroom for pharma ad revenue growth as platform usage continues to scale.",url:"https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html"},
-];
-
+]; } catch (e) { console.error("[OE-DATA] pharmaData failed to parse:", e.message); pharmaData = []; }
 // BENCHMARKS DATA
-const benchmarksData = [
+try { benchmarksData =[
   {id:"arxiv:2512.01241",type:"safety_evaluation",title:"NOHARM: Medical Safety Benchmark & Physician-AI Teaming Study",authors:"David Wu, Ethan Goh, Adam Rodman, Jonathan H. Chen et al.",url:"https://arxiv.org/abs/2512.01241",published:"Dec 1, 2025",updated:"Jul 13, 2026",journal:"arXiv preprint (v4)",tools:"20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",scale:"1,100 tasks · 10 specialties · 12,747 annotations · 101 physicians",findings:["24.6% severe harm potential from AI recommendations","Omission errors >80% of severe errors","Clinical AI tools outperformed generalist LLMs","Multi-agent AI teaming improved performance","AI-assisted physicians improved vs conventional resources","Combined human-AI would outperform both if recommendations fully incorporated"],relevance:"high",status:"preprint_v4",new:true},
   {id:"arxiv:2512.01191",pmid:"42286322",type:"tool_comparison",title:"Generalist LLMs Outperform Clinical Tools on Medical Benchmarks",authors:"Vishwanath K et al.",url:"https://arxiv.org/abs/2512.01191",published:"Dec 1, 2025",updated:"Jun 12, 2026",journal:"Nature Medicine",tools:"OpenEvidence, UpToDate Expert AI, GPT-5, Gemini 3 Pro, Claude Sonnet 4.5",scale:"1,000 items (500 MedQA + 500 HealthBench)",findings:["GPT-5 highest scores across all stages","OpenEvidence/UpToDate showed deficits in completeness, communication, safety","Frontier LLMs outperformed specialized clinical tools"],relevance:"high",status:"published"},
   {id:"arxiv:2606.28960",type:"tool_comparison",title:"Expert Evaluation on Real Point-of-Care Clinical Queries (Real-POCQi)",authors:"Jean Feng et al.",url:"https://arxiv.org/abs/2606.28960",published:"Jun 27, 2026",updated:"Jun 27, 2026",journal:"arXiv preprint",tools:"OpenEvidence, Claude Opus 4.8, Gemini 3.1 Pro, GPT-5.5",scale:"620 real-world queries + 187 HealthBench · 149 physicians · 30 specialties",findings:["OpenEvidence outperformed frontier LLMs on real-world clinical questions","Contradicts June 2026 Nature Medicine paper","149 physicians in specialty-matched comparisons vs 12 in earlier study","Uses real queries from OpenEvidence platform"],relevance:"high",status:"preprint",new:true},
@@ -2519,9 +2541,8 @@ const benchmarksData = [
   {id:"arxiv:2606.24155",type:"benchmark",title:"MedBench v5: Dynamic, Process-Oriented, Hallucination-Aware Benchmark",authors:"Jinru Ding et al.",url:"https://arxiv.org/abs/2606.24155",published:"Jun 23, 2026",journal:"arXiv preprint (cs.CL)",tools:"Frontier multimodal models (language, vision-language, agent systems)",scale:"63 tasks, 13 sub-dimensions, 4 agent environments, 3 stressors",findings:["Strong overall performance does not guarantee process stability","Stressors disrupt contradiction detection and hallucination propagation","Silent hallucination captured through 4 interaction stages"],relevance:"high",status:"preprint",new:true},
   {id:"arxiv:2606.18613",type:"benchmark",title:"PhysAssistBench: Interactive Doctor-Patient-EHR Assistance Benchmark",authors:"Tianming Du et al.",url:"https://arxiv.org/abs/2606.18613",published:"Jun 17, 2026",journal:"arXiv preprint (cs.CL, cs.AI)",tools:"Leading LLMs",scale:"1,296 physician-validated turns from real MIMIC-IV cases",findings:["Current models remain unreliable for interactive clinical assistance","Reliable assistance requires coordination across knowledge, communication, and systems","Key bottleneck: coordination across capabilities, not isolated gains"],relevance:"high",status:"preprint",new:true},
   {id:"arxiv:2606.17474",type:"benchmark",title:"AIPatient Arena: EHR-grounded Evaluation of LLMs in Clinical Consultation Workflows",authors:"Jiahui Niu et al.",url:"https://arxiv.org/abs/2606.17474",published:"Jun 16, 2026",journal:"arXiv preprint (cs.CL, cs.AI)",tools:"Multiple LLMs across 8 clinical competence dimensions",scale:"437 primary + 119 + 67 OOD patients, 8 competence dimensions",findings:["Persistent weaknesses in handling ambiguity (2.57-3.32/5) and diagnostic accuracy (2.63-3.55/5)","Recurrent failures: repetitive questioning, omission of medical history","Final-answer accuracy alone insufficient for clinical readiness evaluation"],relevance:"high",status:"preprint",new:true},
-];
-
-const publicationsData = [
+]; } catch (e) { console.error("[OE-DATA] benchmarksData failed to parse:", e.message); benchmarksData = []; }
+try { publicationsData =[
   {date:"Jul 16, 2026",title:"Guideline-anchored retrieval-augmented generation outperforms baseline and literature-only configurations in gynecologic oncology decision support: A pre-integration benchmark",journal:"Gynecol Oncol",authors:"Dukes D et al.",pmid:"42462288",url:"https://pubmed.ncbi.nlm.nih.gov/42462288/",new:true},
   {date:"Jul 14, 2026",title:"Who Dies Suddenly, and Why We Miss Them",journal:"J Am Coll Cardiol",authors:"Krumholz HM",pmid:"42454776",url:"https://pubmed.ncbi.nlm.nih.gov/42454776/",new:true},
   {date:"Jul 2026",title:"Gut Instincts, Machine Decisions: Evaluating AI Accuracy in the Diagnosis and Treatment of Disorders of Gut-Brain Interaction",journal:"Neurogastroenterol Motil",authors:"Ahn M, Parker CH",pmid:"42432865",url:"https://pubmed.ncbi.nlm.nih.gov/42432865/",new:true},
@@ -2556,9 +2577,8 @@ const publicationsData = [
   {date:"Jun 19, 2026",title:"Evaluation of ChatGPT, Gemini, and OpenEvidence in Obstetric and Gynecologic Clinical Decision Scenarios",journal:"Appl Clin Inform",authors:"Atay AO et al.",pmid:"42320884",url:"https://pubmed.ncbi.nlm.nih.gov/42320884/",new:true},
   {date:"Jun 24, 2026",title:"Comparison of Large Language Model-Based Systems and Prompt Engineering for Internal Medicine Clinical Pharmacy Cases",journal:"J Am Coll Clin Pharm",authors:"Yang SS et al.",pmid:"42324177",url:"https://pubmed.ncbi.nlm.nih.gov/42324177/",new:true},
   {date:"Jun 24, 2026",title:"Leveraging simulation to provide a practical framework for estimating the novel scope of risk of LLMs in healthcare",journal:"BMJ Ment Health",authors:"Kalinich M et al.",pmid:"42342371",url:"https://pubmed.ncbi.nlm.nih.gov/42342371/",new:true},
-];
-
-const sourcesData = [
+]; } catch (e) { console.error("[OE-DATA] publicationsData failed to parse:", e.message); publicationsData = []; }
+try { sourcesData =[
   {name:"Doximity Ask — Technical Overview",url:"https://technology.doximity.com/articles/doximity-ask"},
   {name:"Sacra Equity Research",url:"https://sacra.com/c/openevidence/"},
   {name:"Sacra — OpenEvidence vs Doximity",url:"https://sacra.com/research/openevidence-vs-doximity/"},
@@ -2610,9 +2630,8 @@ const sourcesData = [
   {name:"PRNewswire — NOHARM Free-Choice Arm (Jul 20)",url:"https://www.prnewswire.com/news-releases/physicians-choose-openevidence-over-every-other-ai-chatbot-combined-in-independent-stanford-harvard-study-of-clinical-ai-302829633.html"},
   {name:"Newswise — Stanford-Harvard NOHARM",url:"https://www.newswise.com/articles/physicians-choose-openevidence-over-every-other-ai-chatbot-combined-in-independent-stanford-harvard-study-of-clinical-ai"},
   {name:"Health Technology Net — Stanford-Harvard NOHARM",url:"https://healthtechnologynet.com/2026/07/20/physicians-choose-openevidence-over-every-other-ai-chatbot-combined-in-independent-stanford-harvard-study-of-clinical-ai/"},
-];
-
-const dxTimelineData = [
+]; } catch (e) { console.error("[OE-DATA] sourcesData failed to parse:", e.message); sourcesData = []; }
+try { dxTimelineData =[
   {date:"Jul 2025",title:"Doximity Ask Launch",desc:"Doximity Ask introduced as clinical AI question-answering platform. Combines RAG, agentic tools, and post-trained reasoning model. Announced alongside Clinical AI Suite.",url:"https://technology.doximity.com/articles/doximity-ask"},
   {date:"Jul 29, 2025",title:"Acquires Pathway Medical ($63M)",desc:"Doximity acquires Canadian AI startup Pathway Medical — the same company OpenEvidence had sued for prompt injection attacks. Technology integrated into Doximity AI Suite.",url:"https://en.wikipedia.org/wiki/Doximity"},
   {date:"Jun 20, 2025",title:"Sued by OpenEvidence for Corporate Espionage",desc:"OpenEvidence files federal lawsuit alleging Doximity executives impersonated physicians to steal trade secrets via prompt injection. Case 1:25-cv-11802.",url:"https://www.bostonglobe.com/2025/06/24/business/openevidence-ai-doximity-lawsuit/"},
@@ -2622,10 +2641,9 @@ const dxTimelineData = [
   {date:"May 13, 2026",title:"Aledade Partnership",desc:"Doximity integrates Clinical AI Suite into Aledade Assist for value-based care. Expands reach into Aledade's network of primary care practices.",url:"https://press.doximity.com/"},
   {date:"2026",title:"PeerCheck™ Reaches 11K Physicians, 50K Reviews",desc:"Largest U.S. verified physician-review program in healthcare AI. Physicians across all specialties contributing reviews on AI-generated answers.",url:"https://technology.doximity.com/articles/doximity-ask"},
   {date:"Jun 2026",title:"Technical Overview Published",desc:"Doximity publishes comprehensive technical article detailing Ask architecture: reasoning model, governed evidence library, deterministic tools, real-time retrieval, PeerCheck program, and evaluation methodology.",url:"https://technology.doximity.com/articles/doximity-ask"},
-];
-
+]; } catch (e) { console.error("[OE-DATA] dxTimelineData failed to parse:", e.message); dxTimelineData = []; }
 // GLOBAL LANDSCAPE DATA
-const globalRegionsData = [
+try { globalRegionsData =[
   {flag:"🇺🇸",name:"United States",status:"mature",statusLabel:"MATURE MARKET",stats:{physicians:"65% of US doctors using AI",marketSize:"$15.85B",tools:"45+ platforms",funding:"$4.1B+ (Q2 2026 alone)"},tools:["OpenEvidence","Doximity Ask","ChatGPT for Clinicians","Abridge","UpToDate","Ambience","Microsoft Dragon","UpDoc","Glass Health","Vera Health"]},
   {flag:"🇪🇺",name:"European Union",status:"restricted",statusLabel:"RESTRICTED (EU AI Act)",stats:{physicians:"~15% using AI",marketSize:"$3.1B",tools:"12+ platforms",funding:"$1.2B (2024-26)"},tools:["UpToDate","ChatGPT","Ada Health","K Health","Babylon (limited)"]},
   {flag:"🇬🇧",name:"United Kingdom",status:"growing",statusLabel:"GROWING (NHS-led)",stats:{physicians:"~30% using AI",marketSize:"$1.4B",tools:"18+ platforms",funding:"$800M (2024-26)"},tools:["iatroX","Babylon Health","eConsult","Ada Health","UpToDate","ChatGPT","Microsoft Copilot","Heidi Health"]},
@@ -2636,9 +2654,8 @@ const globalRegionsData = [
   {flag:"🇦🇺",name:"Australia",status:"growing",statusLabel:"GROWING (CSIRO-led)",stats:{physicians:"12% of clinics use AI",marketSize:"$380M funded (early 2026)",tools:"10+ platforms",funding:"$380M (Jan-Feb 2026)"},tools:["Heidi Health","Lyrebird Health","Coviu","Medow Health","PatientNotes"]},
   {flag:"🇧🇷",name:"Latin America",status:"early",statusLabel:"EARLY (emerging)",stats:{physicians:"~7% using AI",marketSize:"$600M",tools:"8 platforms",funding:"$200M (2024-26)"},tools:["Doctoralia","Memed","iClinic","Boa Consulta","Olympus AI"]},
   {flag:"🇮🇱",name:"Middle East & Africa",status:"early",statusLabel:"EARLY (Israel-led)",stats:{physicians:"~5% using AI",marketSize:"$500M",tools:"6 platforms",funding:"$350M (2024-26)"},tools:["Zebra Medical","Aidoc","Nanox.AI","SeeMe"," Tibot"]},
-];
-
-const globalTimelineData = [
+]; } catch (e) { console.error("[OE-DATA] globalRegionsData failed to parse:", e.message); globalRegionsData = []; }
+try { globalTimelineData =[
   {date:"2024-03-01",region:"Global",cat:"Regulatory",title:"WHO Releases AI Ethics Guidance",desc:"World Health Organization publishes guidance on large multi-modal models (LMMs) in healthcare — ethics, governance, and trust.",src:"WHO",url:"https://www.who.int/news/item/18-01-2024-WHO-releases-new-guidance-on-ethics-and-governance-of-large-multi-modal-models-AI"},
   {date:"2024-06-01",region:"US",cat:"Product",title:"Abridge Best in KLAS 2025",desc:"Abridge named Best in KLAS for AI Scribes — signifying rapid US adoption of ambient clinical AI.",src:"KLAS",url:"https://www.abridge.com"},
   {date:"2024-09-01",region:"EU",cat:"Regulatory",title:"EU AI Act Adopted",desc:"European Union formally adopts the AI Act. High-risk AI systems (including clinical AI) face strict requirements: risk management, data quality, transparency, human oversight. Compliance phased through 2026-2027.",src:"EU",url:"https://artificialintelligenceact.eu/"},
@@ -2694,9 +2711,8 @@ const globalTimelineData = [
   {date:"2026-02-01",region:"US",cat:"Product",title:"CodaMetrix named KLAS #1 Autonomous Medical Coding",desc:"CodaMetrix CMX CARE platform ranked #1 in KLAS 2026 for Autonomous Medical Coding. First Contextual Coding Automation Platform using longitudinal patient record. Enterprise-grade AI coding for health systems.",src:"CodaMetrix",url:"https://www.rapidclaims.ai/blogs/top-10-ai-medical-coding-solutions"},
   {date:"2026-02-01",region:"US",cat:"Product",title:"EBSCO launches Dyna AI Mode",desc:"EBSCO ships Dyna AI — generative AI conversational search over DynaMedex clinical reference content. Joins UpToDate Expert AI and ClinicalKey AI in legacy reference platform AI retrofit wave.",src:"iatroX",url:"https://www.iatrox.com/blog/best-ai-clinical-decision-support-tools-2026-uptodate-ai-dynamed-iatrox"},
   {date:"2026-03-12",region:"US",cat:"Product",title:"Qualified Health enterprise AI platform launches",desc:"Qualified Health launches enterprise AI platform deploying at Mercy, Emory Healthcare, and University of Rochester Medicine. Care gap identification, clinician productivity tools, clinical quality registries, and AI-powered workflow automation across hospital networks.",src:"Becker's",url:"https://www.beckershospitalreview.com/healthcare-information-technology/ai/15-health-systems-that-have-signed-enterprise-ai-deals-in-2026/"},
-];
-
-const regulatoryData = [
+]; } catch (e) { console.error("[OE-DATA] globalTimelineData failed to parse:", e.message); globalTimelineData = []; }
+try { regulatoryData =[
   {date:"2024-09-01",region:"EU",title:"EU AI Act formally adopted",desc:"World's first comprehensive AI law. Risk-based approach: clinical AI = high-risk. Requirements include risk management, data governance, transparency, human oversight, conformity assessment.",url:"https://artificialintelligenceact.eu/"},
   {date:"2025-03-01",region:"UK",title:"MHRA launches AI Airlock sandbox",desc:"Regulatory sandbox for AI medical devices. First cohort: 5 products. Faster approval pathway. UK positions as AI-friendly regulator post-Brexit.",url:"https://www.gov.uk/government/news/mhra-launches-ai-airlock"},
   {date:"2025-04-01",region:"US",title:"FDA surpasses 1,000 AI/ML-cleared devices",desc:"FDA's AI/ML-enabled device list hits 1,000+ entries. 2024-25 surge driven by radiology, cardiology, clinical decision support. Predominantly 510(k) pathway.",url:"https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices"},
@@ -2728,9 +2744,8 @@ const regulatoryData = [
   {date:"2026-07-07",region:"EU",title:"EU Commission Cybersecurity and AI Action Plan",desc:"Action plan on cybersecurity and advanced AI models, including clinical AI. Published 7 Jul 2026 ahead of 2 Aug 2026 high-risk effective date.",url:"https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",new:true,src:"European Commission"},
   {date:"2026-07-20",region:"EU",title:"EU Commission: AI Act transparency guidelines",desc:"Commission issues practical guidelines for providers and deployers of certain AI systems ahead of the 2 Aug 2026 effective date for transparency obligations.",url:"https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",new:true,src:"European Commission"},
   {date:"2026-08-02",region:"EU",title:"EU AI Act high-risk obligations in force",desc:"From 2 August 2026 the full set of EU AI Act high-risk obligations enters into force. Most CDS meeting Article 6(3) criteria is high-risk.",url:"https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",new:true,src:"European Commission"},
-];
-
-const emergingTrendsData = [
+]; } catch (e) { console.error("[OE-DATA] regulatoryData failed to parse:", e.message); regulatoryData = []; }
+try { emergingTrendsData =[
   {icon:"📝",name:"AI Scribes",metric:"20%+",metricLabel:"US physician adoption",trajectory:"up",trajectoryLabel:"ACCELERATING",desc:"Ambient AI documentation tools exploded in 2025-2026. Abridge leads with Best in KLAS 2025 & 2026. Ambience at 80% utilization. Microsoft Dragon Copilot holds enterprise footprint. NHS piloting in 30+ UK trusts. Expanding beyond scribe into evidence, payer, pharma connectivity.",region:"US, UK, EU",src:"KLAS Research",url:"https://klasresearch.com/"},
   {icon:"🔍",name:"Clinical Decision Support",metric:"$8.2B",metricLabel:"US market size",trajectory:"up",trajectoryLabel:"GROWING",desc:"OpenEvidence dominates US physician clinical search with 50%+ of US MDs. Doximity Ask is biggest competitor. UpToDate being disrupted — 30-year incumbent retrofitting AI. ChatGPT for Clinicians entered April 2026. EU market fragmented due to AI Act restrictions.",region:"US, Global",src:"Sacra",url:"https://sacra.com/c/openevidence/"},
   {icon:"🤖",name:"Agentic AI in Healthcare",metric:"2",metricLabel:"FDA-cleared platforms",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"UpDoc becomes first FDA-cleared agentic clinical AI for real-time patient care (Jun 2026). OpenEvidence's DeepConsult (100x compute) is agentic research. Trend: AI moving from answering questions to taking actions — prescribing, prior auth, chronic disease management, care coordination.",region:"US",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/updoc-debuts-first-fda-cleared-clinical-ai-platform-built-for-real-time-patient-care-delivery-and-intelligent-care-coordination-302810065.html"},
@@ -2799,9 +2814,8 @@ const emergingTrendsData = [
   {icon:"🏥",name:"NHS App AI Triage (NHS England)",metric:"200K+",metricLabel:"patients year one",trajectory:"up",trajectoryLabel:"HIGH – POPULATION-SCALE",desc:"NHS App AI triage — 200K patients in year one, full rollout by April 2028. Sussex GP pilot showed 29% reduction in phone-queue volume. NHS AI notetaking study: clinicians spend 25% more time with patients.",region:"UK",src:"NHS England",url:"https://www.england.nhs.uk/2026/07/nhs-accelerates-artificial-intelligence-rollout-to-cut-waiting-times-and-improve-care-for-millions/",new:true},
   {icon:"🇪🇺",name:"EU AI Act — High-Risk Phase-In (Aug 2026)",metric:"2 Aug 2026",metricLabel:"high-risk obligations go-live",trajectory:"emerging",trajectoryLabel:"ACCELERATING",desc:"From 2 Aug 2026 the full EU AI Act high-risk obligations take force. Commission has published transparency guidelines (20 Jul) and Cybersecurity/AI action plan (7 Jul) ahead of the effective date.",region:"EU",src:"European Commission",url:"https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",new:true},
   {icon:"🎤",name:"Real-World Physician-Preference Benchmarks",metric:"22.3%",metricLabel:"OpenEvidence free choice",trajectory:"emerging",trajectoryLabel:"EMERGING",desc:"Stanford–Harvard NOHARM (ARISE) free-choice arm (Jul 20): 101 board-certified US physicians chose OpenEvidence 22.3% vs ChatGPT/Claude/Gemini/others combined 19.8%. Captures revealed physician preferences — complements Q2 2026 Nature Medicine benchmark wars.",region:"Global",src:"PRNewswire",url:"https://www.prnewswire.com/news-releases/physicians-choose-openevidence-over-every-other-ai-chatbot-combined-in-independent-stanford-harvard-study-of-clinical-ai-302829633.html",new:true},
-];
-
-const globalMatrixData = [
+]; } catch (e) { console.error("[OE-DATA] emergingTrendsData failed to parse:", e.message); emergingTrendsData = []; }
+try { globalMatrixData =[
   {platform:"OpenEvidence",us:"yes",eu:"blocked",uk:"blocked",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Doximity Ask",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"ChatGPT for Clinicians",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"partial",jp:"partial",sea:"partial",latam:"partial",mea:"partial"},
@@ -2841,10 +2855,9 @@ const globalMatrixData = [
   {platform:"Microsoft 365 Copilot (NHS)",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"NHS App AI Triage",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"CliniComp PACS Viewer (AI-enabled)",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
-];
+]; } catch (e) { console.error("[OE-DATA] globalMatrixData failed to parse:", e.message); globalMatrixData = []; }
 
-
-const oeFeaturesData = [const oeFeaturesData = [
+try { oeFeaturesData =[
   // 2023 — FOUNDING & CORE PLATFORM
   {cat:"feature",icon:"🔍",name:"Clinical Search Engine",date:"2023-01-01",status:"live",statusLabel:"LIVE",desc:"AI-powered clinical question answering with cited, peer-reviewed evidence. Free for verified US physicians. Reached 100K+ doctors in first year.",detail:"search_engine",url:"https://www.openevidence.com"},
   {cat:"milestone",icon:"🎓",name:"USMLE 90% Score",date:"2023-06-01",status:"live",statusLabel:"MILESTONE",desc:"First AI to score over 90% on the USMLE — 77% fewer errors than ChatGPT, 24% fewer than GPT-4, 31% fewer than Google Med-PaLM 2. Validated platform accuracy for clinical use.",url:"https://en.wikipedia.org/wiki/OpenEvidence"},
@@ -2878,8 +2891,7 @@ const oeFeaturesData = [const oeFeaturesData = [
   {cat:"deployment",icon:"👶",name:"Boston Children's Hospital Research Collab",date:"2026-07-16",status:"live",statusLabel:"DEPLOYMENT",desc:"Multi-year collaboration with Boston Children's Hospital to study how AI use at point of care correlates with care delivery patterns. OpenEvidence integrated into EHR. No patient data accessed. First pediatric research collaboration.",url:"https://www.mobihealthnews.com/news/openevidence-boston-childrens-partner-study-ais-impact-clinical-care"},
   {cat:"partnership",icon:"🧒",name:"AAP Partnership (Pediatrics)",date:"2026-07-15",status:"live",statusLabel:"PARTNERSHIP",desc:"American Academy of Pediatrics partners with OpenEvidence. Clinicians can access AAP policies, recommendations, and pediatric research through OpenEvidence with citations to original sources.",url:"https://www.openevidence.com/announcements/american-academy-of-pediatrics-and-openevidence-announce-collaboration-to-improve-pediatric-care"},
 {cat:"feature",icon:"⚖️",name:"EvidenceGrade",date:"2026-07-10",status:"live",statusLabel:"LIVE",desc:"Real-time evidence quality grading. Grades and visualizes the strength of cited evidence behind every AI answer. Builds on GRADE framework (Cochrane, WHO). Solves AI problem of glossing over differences in source quality.",detail:"grade",url:"https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer"}
-];
-
+]; } catch (e) { console.error("[OE-DATA] oeFeaturesData failed to parse:", e.message); oeFeaturesData = []; }
 // FEATURE DETAIL CONTENT (for modal popups)
 window.__featureDetails = {
   "search_engine": `<h3>🔍 Clinical Search Engine</h3><p style="color:var(--oe-orange);font-size:13px;">Launched January 2023 · Core Product</p><h4>What It Does</h4><p>Type any clinical question — get an AI-generated answer with citations from peer-reviewed medical literature. Every response includes direct links to source articles, figures, tables, and full-text where available.</p><h4>How It Works</h4><ul><li><strong>Query:</strong> Physician enters a natural language clinical question (e.g., "What is the first-line treatment for H. pylori?")</li><li><strong>Retrieval:</strong> AI searches through 30+ journal partners including NEJM, JAMA, Cochrane, Elsevier, Wiley, and specialty society guidelines</li><li><strong>Synthesis:</strong> AI synthesizes evidence into a structured answer with inline citations</li><li><strong>Verification:</strong> Every citation links directly to the source article for one-click verification</li></ul><h4>Key Differentiators</h4><ul><li>Free for all NPI-verified US physicians</li><li>Only uses peer-reviewed, published medical literature — no unverified web content</li><li>Reached 100K+ doctors in first year — fastest medical tool adoption in history</li><li>Now handles ~15M consultations per month</li></ul><div class="modal-source">Source: <a href="https://www.openevidence.com" target="_blank" rel="noopener">openevidence.com →</a></div>`,
@@ -2918,7 +2930,9 @@ document.getElementById('timelineFilters').addEventListener('click', (e) => {
   if (e.target.classList.contains('filter-btn')) {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     e.target.classList.add('active');
-    renderTimeline(e.target.dataset.filter);
+    try {
+      renderTimeline(e.target.dataset.filter);
+    } catch(e) { console.error("[OE-FUNC] renderTimeline failed:", e.message); }
   }
 });
 
@@ -2984,44 +2998,55 @@ function buildCharts() {
   charts = [];
 
   // Consultations
-  charts.push(makeChart('chartConsultations',
+  try {
+    charts.push(makeChart('chartConsultations',
     ['Jul 2024','Jan 2025','Jul 2025','Oct 2025','Dec 2025','Jan 2026','May 2026'],
     [358000, 3000000, 8500000, 16500000, 18000000, 20000000, 30000000],
     'Monthly Consultations'
   ));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
   // Physicians
-  charts.push(makeChart('chartPhysicians',
+  try {
+    charts.push(makeChart('chartPhysicians',
     ['Jul 2024','Jul 2025','Oct 2025','Dec 2025','Jan 2026','May 2026'],
     [358000, 430000, 600000, 760000, 760000, 900000],
     'Registered Physicians'
   ));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
   // Valuation
-  charts.push(makeChart('chartValuation',
+  try {
+    charts.push(makeChart('chartValuation',
     ['Feb 2025','Jul 2025','Oct 2025','Jan 2026'],
     [1, 3.5, 6, 12],
     'Valuation ($B)'
   ));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
   // Revenue
-  charts.push(makeChart('chartRevenue',
+  try {
+    charts.push(makeChart('chartRevenue',
     ['Dec 2024','Jun 2025','Oct 2025','Nov 2025','Jan 2026'],
     [7.9, 50, 100, 150, 150],
     'Annualized Revenue ($M)'
   ));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
   // Funding cumulative
-  charts.push(makeChart('chartFunding',
+  try {
+    charts.push(makeChart('chartFunding',
     ['Series A\nFeb 2025','Series B\nJul 2025','Series C\nOct 2025','Series D\nJan 2026'],
     [75, 285, 485, 735],
     'Cumulative Funding ($M)'
   ));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
   // Funding waterfall — bar chart
   const ctx6 = document.getElementById('chartFundingWaterfall').getContext('2d');
   const tc = getThemeColors();
-  charts.push(new Chart(ctx6, {
+  try {
+    charts.push(new Chart(ctx6, {
     type: 'bar',
     data: {
       labels: ['Series A\nFeb 2025','Series B\nJul 2025','Series C\nOct 2025','Series D\nJan 2026'],
@@ -3056,12 +3081,15 @@ function buildCharts() {
       }
     }
   }));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
 }
 
 // Wait for everything including Chart.js CDN to fully load
 window.addEventListener('load', function() {
-  renderTimeline('all');
+  try {
+    renderTimeline('all');
+  } catch(e) { console.error("[OE-FUNC] renderTimeline failed:", e.message); }
   document.getElementById('productsList').innerHTML = productsData.map(p => `
     <div class="feature-card">
       <div class="icon">${p.icon}</div>
@@ -3295,14 +3323,18 @@ window.addEventListener('load', function() {
       </div>
     `).join('');
   }
-  renderOeFeatures('all');
+  try {
+    renderOeFeatures('all');
+  } catch(e) { console.error("[OE-FUNC] renderOeFeatures failed:", e.message); }
 
   // OE Feature filters
   document.getElementById('oeFeatureFilters').addEventListener('click', (e) => {
     if (e.target.classList.contains('filter-btn')) {
       document.querySelectorAll('#oeFeatureFilters .filter-btn').forEach(b => b.classList.remove('active'));
       e.target.classList.add('active');
-      renderOeFeatures(e.target.dataset.filter);
+      try {
+        renderOeFeatures(e.target.dataset.filter);
+      } catch(e) { console.error("[OE-FUNC] renderOeFeatures failed:", e.message); }
     }
   });
 
@@ -3315,7 +3347,8 @@ window.addEventListener('load', function() {
   const catBgColors = {feature:'rgba(228,100,61,0.4)',milestone:'rgba(107,175,125,0.3)',partnership:'rgba(138,175,204,0.3)',deployment:'rgba(184,154,196,0.3)',acquisition:'rgba(212,169,78,0.3)'};
   const featureBarColors = oeFeaturesData.map(f => catBgColors[f.cat] || chartColorLight);
   const featureBorderColors = oeFeaturesData.map(f => catColors[f.cat] || chartColor);
-  charts.push(new Chart(ctxOE, {
+  try {
+    charts.push(new Chart(ctxOE, {
     type: 'bar',
     data: {
       labels: featureLabels,
@@ -3348,18 +3381,24 @@ window.addEventListener('load', function() {
       }
     }
   }));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
 
 
   buildCharts();
-  renderSctTable();
-  charts.push(renderSctChart());
+  try {
+    renderSctTable();
+  } catch(e) { console.error("[OE-FUNC] renderSctTable failed:", e.message); }
+  try {
+    charts.push(renderSctChart());
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
   // GLOBAL CHARTS
   // Adoption by region
   const ctxGA = document.getElementById('chartGlobalAdoption').getContext('2d');
   const tcGA = getThemeColors();
-  charts.push(new Chart(ctxGA, {
+  try {
+    charts.push(new Chart(ctxGA, {
     type: 'line',
     data: {
       labels: ['2024 Q1','2024 Q3','2025 Q1','2025 Q3','2026 Q1','2026 Q3'],
@@ -3384,10 +3423,12 @@ window.addEventListener('load', function() {
       }
     }
   }));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
   // Market size by region
   const ctxMS = document.getElementById('chartMarketSize').getContext('2d');
-  charts.push(new Chart(ctxMS, {
+  try {
+    charts.push(new Chart(ctxMS, {
     type: 'bar',
     data: {
       labels: ['US','China','EU','UK','India','Japan','SEA','LATAM','MEA'],
@@ -3411,10 +3452,12 @@ window.addEventListener('load', function() {
       }
     }
   }));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 
   // Funding by region
   const ctxFR = document.getElementById('chartFundingByRegion').getContext('2d');
-  charts.push(new Chart(ctxFR, {
+  try {
+    charts.push(new Chart(ctxFR, {
     type: 'bar',
     data: {
       labels: ['US','China','EU','UK','India','Japan','SEA','MEA','LATAM'],
@@ -3438,24 +3481,23 @@ window.addEventListener('load', function() {
       }
     }
   }));
+  } catch(e) { console.error("[OE-CHART] chart init failed:", e.message); }
 });
 
 
 // SCT BENCHMARK DATA
-const sctResultsData = [
+try { sctResultsData =[
   {model:'Claude Opus 4.7',score:0.782,ci:0.052,ciLo:0.729,ciHi:0.834,expertSet:0.908,expertSetCi:0.043,parseErrors:0,n:174,source:'Venice API',color:'#E4643D'},
   {model:'Gemini 3 Flash',score:0.739,ci:0.056,ciLo:0.683,ciHi:0.794,expertSet:0.914,expertSetCi:0.043,parseErrors:0,n:174,source:'Venice API',color:'#6BAF7D'},
   {model:'GLM 5.2',score:0.714,ci:0.054,ciLo:0.658,ciHi:0.766,expertSet:0.895,expertSetCi:0.044,parseErrors:2,n:172,source:'Venice API',color:'#8AAFCC'},
   {model:'Kimi K2.5',score:0.700,ci:0.059,ciLo:0.641,ciHi:0.758,expertSet:0.884,expertSetCi:0.049,parseErrors:2,n:172,source:'Venice API',color:'#B89AC4'},
   {model:'DeepSeek V3.2',score:0.691,ci:0.058,ciLo:0.633,ciHi:0.750,expertSet:0.856,expertSetCi:0.052,parseErrors:0,n:174,source:'Venice API',color:'#D4A94E'},
-];
-
-const sctPublishedData = [
+]; } catch (e) { console.error("[OE-DATA] sctResultsData failed to parse:", e.message); sctResultsData = []; }
+try { sctPublishedData =[
   {model:'GPT-5.5 (MAST ref)',score:0.745,ci:0.052,source:'MAST published',color:'#666'},
   {model:'Claude Opus 4.7 (MAST ref)',score:0.756,ci:0.056,source:'MAST published',color:'#999'},
   {model:'Gemini 3.1 Pro (MAST ref)',score:0.721,ci:0.053,source:'MAST published',color:'#aaa'},
-];
-
+]; } catch (e) { console.error("[OE-DATA] sctPublishedData failed to parse:", e.message); sctPublishedData = []; }
 // RENDER SCT RESULTS TABLE
 function renderSctTable() {
   const el = document.getElementById('sctResultsTable');
