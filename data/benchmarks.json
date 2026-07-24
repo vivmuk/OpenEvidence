@@ -12,7 +12,7 @@
     "tools_evaluated": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
     "scale": "1,100 tasks, 10 specialties, 12,747 annotations, 101 physicians",
     "key_findings": [
-      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases \u2014 more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
+      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
       "24.6% severe harm potential from AI recommendations",
       "Omission errors >80% of severe errors",
       "Clinical AI tools outperformed generalist LLMs",
@@ -80,7 +80,7 @@
     "tools_evaluated": "6 LLMs (domain-specific and general-purpose)",
     "scale": "2,069 Q&A, 26 departments, 32 physicians, 30 criteria",
     "key_findings": [
-      "Average LLM performance 57.2% \u2014 moderate",
+      "Average LLM performance 57.2% — moderate",
       "Safety 54.7%, effectiveness 62.3%",
       "13.3% performance drop in high-risk scenarios",
       "Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"
@@ -93,7 +93,7 @@
     "id": "arxiv:2508.04325",
     "source": "arxiv",
     "type": "methodology",
-    "title": "MedCheck: Beyond the Leaderboard \u2014 Rethinking Medical Benchmarks for LLMs",
+    "title": "MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",
     "authors": "Wenxuan Wang et al.",
     "url": "https://arxiv.org/abs/2508.04325",
     "published": "2025-08-06",
@@ -541,7 +541,7 @@
       "Selective adaptation preserved physiological representation and improved vasopressor/septic shock discrimination",
       "Framework correctly identified 26 septic shock cases the retrained baseline missed",
       "PubMed-grounded Temporal RAG preserved retrieval consistency with pre-adaptation source",
-      "Drift localized entirely to treatment stream \u2014 supports governable clinical AI deployment"
+      "Drift localized entirely to treatment stream — supports governable clinical AI deployment"
     ],
     "relevance": "high",
     "status": "preprint_v1",
@@ -577,7 +577,7 @@
     "id": "arxiv:2606.23992",
     "source": "arxiv",
     "type": "rag_clinical_evaluation",
-    "title": "RASC+ Retrieval-Constrained LLM Adjudication \u2014 Clinical Value Sets CDSS",
+    "title": "RASC+ Retrieval-Constrained LLM Adjudication — Clinical Value Sets CDSS",
     "authors": "Sumit Mukherjee",
     "url": "https://arxiv.org/abs/2606.23992",
     "published": "2026-06-22",
@@ -623,7 +623,183 @@
       "Inverse relationship: higher expert quality = lower readability (OpenEvidence at postgraduate level)"
     ],
     "open_evidence_rank": 1,
-    "open_evidence_score": "4.45\u00b10.72",
+    "open_evidence_score": "4.45±0.72",
     "status": "published"
+  },
+  {
+    "id": "arxiv:2607.20848",
+    "source": "arxiv",
+    "type": "behavioral_audit",
+    "title": "Auditing Evidence Use in Medical LLM Diagnosis",
+    "authors": "Multiple authors",
+    "url": "https://arxiv.org/abs/2607.20848",
+    "published": "2026-07-23",
+    "updated": "2026-07-23",
+    "journal": "arXiv preprint",
+    "tools_evaluated": "Medical LLMs (general)",
+    "scale": "Multi-case behavioral perturbation study",
+    "key_findings": [
+      "Fine-grained behavioral perturbation audit of medical LLM evidence use",
+      "High diagnostic accuracy does not guarantee appropriate evidence use",
+      "Methodology for detecting clinically inappropriate evidence utilization",
+      "Complements endpoint-accuracy benchmarks like NOHARM and HealthBench"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2607.20582",
+    "source": "arxiv",
+    "type": "uncertainty_calibration",
+    "title": "Bayesian uncertainty estimation improves clinical decision making in medical AI agents",
+    "authors": "Multiple authors",
+    "url": "https://arxiv.org/abs/2607.20582",
+    "published": "2026-07-22",
+    "updated": "2026-07-22",
+    "journal": "arXiv preprint",
+    "tools_evaluated": "Multi-task chest-radiograph classifier + MC Dropout uncertainty",
+    "scale": "137,593 training images, 8 thoracic findings",
+    "key_findings": [
+      "Monte Carlo dropout provides reliable confidence measures for medical image AI",
+      "Especially valuable in ambiguous or atypical clinical cases",
+      "Improves clinical decision safety by surfacing uncertainty",
+      "Methodology deployment-ready for clinical AI safety applications"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.14697",
+    "source": "arxiv",
+    "type": "hallucination_benchmark",
+    "title": "ClinHallu: Stage-Wise Hallucinations in Medical MLLM Reasoning",
+    "authors": "Multiple authors",
+    "url": "https://arxiv.org/abs/2606.14697",
+    "published": "2026-06-12",
+    "updated": "2026-06-12",
+    "journal": "arXiv preprint",
+    "tools_evaluated": "Medical multimodal LLMs (multiple)",
+    "scale": "Multi-stage medical MLLM reasoning evaluation",
+    "key_findings": [
+      "Identifies stage-wise hallucinations at specific points in medical MLLM reasoning",
+      "More actionable than endpoint accuracy-only hallucination benchmarks",
+      "Enables targeted mitigation at specific reasoning stages",
+      "Critical for clinical deployment where hallucination anywhere in reasoning chain causes harm"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.14460",
+    "source": "arxiv",
+    "type": "fairness_audit",
+    "title": "Computational Audit of Demographic Encoding in ClinicalBERT",
+    "authors": "Multiple authors",
+    "url": "https://arxiv.org/abs/2606.14460",
+    "published": "2026-06-12",
+    "updated": "2026-06-12",
+    "journal": "arXiv preprint",
+    "tools_evaluated": "ClinicalBERT",
+    "scale": "Computational audit of demographic encoding pathways",
+    "key_findings": [
+      "Quantifies demographic associations encoded in ClinicalBERT probability distributions",
+      "Maps how demographic bias propagates from training documentation to predictions",
+      "Identifies specific encoding pathways affecting fairness",
+      "Applies to all clinical decision support tools built on ClinicalBERT"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.11337",
+    "source": "arxiv",
+    "type": "synthesis_benchmark",
+    "title": "SciConBench: AI Agents Synthesizing Scientific Conclusions",
+    "authors": "Multiple authors",
+    "url": "https://arxiv.org/abs/2606.11337",
+    "published": "2026-06-09",
+    "updated": "2026-06-09",
+    "journal": "arXiv preprint",
+    "tools_evaluated": "AI agents + RAG systems across multiple scientific domains",
+    "scale": "9,110 questions across domains including health",
+    "key_findings": [
+      "Large-scale live benchmark of 9,110 scientific synthesis questions",
+      "Tests AI agent retrieval, cross-source reasoning, and conclusion synthesis",
+      "Includes high-stakes health-domain questions",
+      "Directly applicable to evaluating RAG-based clinical AI like OpenEvidence"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.07237",
+    "source": "arxiv",
+    "type": "robustness_safety",
+    "title": "LLMs Fail in Healthcare: Sensitivity to Prompt Variations",
+    "authors": "Multiple authors",
+    "url": "https://arxiv.org/abs/2606.07237",
+    "published": "2026-06-05",
+    "updated": "2026-06-05",
+    "journal": "arXiv preprint",
+    "tools_evaluated": "Multiple LLMs in clinical QA, diagnosis support, report summarization",
+    "scale": "Prompt perturbation study across healthcare tasks",
+    "key_findings": [
+      "Quantifies medical LLM sensitivity to subtle prompt perturbations",
+      "Lexical and syntactic changes from clinicians produce materially different outputs",
+      "Serious safety risk in clinical contexts with free-text queries",
+      "Implications for all clinical query-answering tools"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.03198",
+    "source": "arxiv",
+    "type": "methodology_audit",
+    "title": "AI Rater Discrimination Depends on Scoring Protocol in Clinical Decision-Making",
+    "authors": "Multiple authors",
+    "url": "https://arxiv.org/abs/2606.03198",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "journal": "arXiv preprint",
+    "tools_evaluated": "Multiple AI raters + varying scoring protocols",
+    "scale": "Factorial evaluation design across clinical decision scenarios",
+    "key_findings": [
+      "Factorial study reveals scoring-protocol-dependent AI rater discrimination",
+      "Adult type 2 diabetes clinical decision-making as worked example",
+      "Different scoring protocols produce materially different clinical AI quality assessments",
+      "Methodological implication for NOHARM, HealthBench, MedQA scoring validity"
+    ],
+    "relevance": "medium-high",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.03157",
+    "source": "arxiv",
+    "type": "multi_course_benchmark",
+    "title": "ClinicalMC: Multi-Course Clinical Decision-Making Benchmark",
+    "authors": "Multiple authors",
+    "url": "https://arxiv.org/abs/2606.03157",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "journal": "arXiv preprint",
+    "tools_evaluated": "Multiple LLMs in multi-course clinical decision-making",
+    "scale": "Multi-course clinical decision benchmark",
+    "key_findings": [
+      "Introduces ClinicalMC benchmark for multi-course clinical decision-making",
+      "Fills evaluation gap (existing benchmarks focus on single-course)",
+      "Systematic evaluation of LLM performance in complex multi-course scenarios",
+      "Identifies specific failure modes in multi-course clinical reasoning"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
   }
 ]
