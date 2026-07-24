@@ -12,7 +12,7 @@
     "tools_evaluated": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
     "scale": "1,100 tasks, 10 specialties, 12,747 annotations, 101 physicians",
     "key_findings": [
-      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
+      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases \u2014 more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
       "24.6% severe harm potential from AI recommendations",
       "Omission errors >80% of severe errors",
       "Clinical AI tools outperformed generalist LLMs",
@@ -80,7 +80,7 @@
     "tools_evaluated": "6 LLMs (domain-specific and general-purpose)",
     "scale": "2,069 Q&A, 26 departments, 32 physicians, 30 criteria",
     "key_findings": [
-      "Average LLM performance 57.2% — moderate",
+      "Average LLM performance 57.2% \u2014 moderate",
       "Safety 54.7%, effectiveness 62.3%",
       "13.3% performance drop in high-risk scenarios",
       "Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"
@@ -93,7 +93,7 @@
     "id": "arxiv:2508.04325",
     "source": "arxiv",
     "type": "methodology",
-    "title": "MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",
+    "title": "MedCheck: Beyond the Leaderboard \u2014 Rethinking Medical Benchmarks for LLMs",
     "authors": "Wenxuan Wang et al.",
     "url": "https://arxiv.org/abs/2508.04325",
     "published": "2025-08-06",
@@ -541,7 +541,7 @@
       "Selective adaptation preserved physiological representation and improved vasopressor/septic shock discrimination",
       "Framework correctly identified 26 septic shock cases the retrained baseline missed",
       "PubMed-grounded Temporal RAG preserved retrieval consistency with pre-adaptation source",
-      "Drift localized entirely to treatment stream — supports governable clinical AI deployment"
+      "Drift localized entirely to treatment stream \u2014 supports governable clinical AI deployment"
     ],
     "relevance": "high",
     "status": "preprint_v1",
@@ -577,7 +577,7 @@
     "id": "arxiv:2606.23992",
     "source": "arxiv",
     "type": "rag_clinical_evaluation",
-    "title": "RASC+ Retrieval-Constrained LLM Adjudication — Clinical Value Sets CDSS",
+    "title": "RASC+ Retrieval-Constrained LLM Adjudication \u2014 Clinical Value Sets CDSS",
     "authors": "Sumit Mukherjee",
     "url": "https://arxiv.org/abs/2606.23992",
     "published": "2026-06-22",
@@ -596,5 +596,34 @@
     "relevance": "high",
     "status": "preprint_v1",
     "new": true
+  },
+  {
+    "id": "pmid:42473942",
+    "title": "Quality of Tinnitus Information From Generative AI Systems and Web Search (QAMI)",
+    "authors": "Hack S, Tessler I, et al.",
+    "journal": "Otology & Neurotology",
+    "published": "2026-07-20",
+    "doi": "10.1097/MAO.0000000000005015",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42473942/",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "Claude",
+      "DeepSeek",
+      "GPT-5",
+      "Gemini",
+      "GPT-4",
+      "Google Search"
+    ],
+    "scale": "30 tinnitus questions, 6 expert raters, QAMI framework",
+    "domain": "otology/tinnitus patient-facing information",
+    "key_findings": [
+      "OpenEvidence ranked #1 with highest expert-rated quality (4.45/5)",
+      "Significant pairwise differences between OpenEvidence and all other systems (r=0.49-0.86)",
+      "Completeness was weakest domain across all systems",
+      "Inverse relationship: higher expert quality = lower readability (OpenEvidence at postgraduate level)"
+    ],
+    "open_evidence_rank": 1,
+    "open_evidence_score": "4.45\u00b10.72",
+    "status": "published"
   }
 ]
