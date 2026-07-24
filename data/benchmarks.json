@@ -12,7 +12,7 @@
     "tools_evaluated": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
     "scale": "1,100 tasks, 10 specialties, 12,747 annotations, 101 physicians",
     "key_findings": [
-      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases \u2014 more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
+      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
       "24.6% severe harm potential from AI recommendations",
       "Omission errors >80% of severe errors",
       "Clinical AI tools outperformed generalist LLMs",
@@ -80,7 +80,7 @@
     "tools_evaluated": "6 LLMs (domain-specific and general-purpose)",
     "scale": "2,069 Q&A, 26 departments, 32 physicians, 30 criteria",
     "key_findings": [
-      "Average LLM performance 57.2% \u2014 moderate",
+      "Average LLM performance 57.2% — moderate",
       "Safety 54.7%, effectiveness 62.3%",
       "13.3% performance drop in high-risk scenarios",
       "Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"
@@ -93,7 +93,7 @@
     "id": "arxiv:2508.04325",
     "source": "arxiv",
     "type": "methodology",
-    "title": "MedCheck: Beyond the Leaderboard \u2014 Rethinking Medical Benchmarks for LLMs",
+    "title": "MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",
     "authors": "Wenxuan Wang et al.",
     "url": "https://arxiv.org/abs/2508.04325",
     "published": "2025-08-06",
@@ -520,5 +520,81 @@
     "url": "https://arxiv.org/abs/2604.14892",
     "published": "2026-04-16",
     "status": "preprint_v2"
+  },
+  {
+    "id": "arxiv:2607.19020",
+    "source": "arxiv",
+    "type": "clinical_decision_support",
+    "title": "ICU Time-Series CDSS Benchmark with Drift Adaptation and Temporal RAG (MIMIC-IV)",
+    "authors": "Fatema Ferdous Tamanna, K. M. Merajul Arefin, Md. Abdul Masud",
+    "url": "https://arxiv.org/abs/2607.19020",
+    "published": "2026-07-21",
+    "updated": "2026-07-21",
+    "journal": "arXiv preprint (cs.AI)",
+    "tools_evaluated": [
+      "Two-Stream Drift-Adaptive Clinical AI",
+      "Temporal RAG module (PubMed-grounded)",
+      "Fully retrained baseline"
+    ],
+    "scale": "84,792 MIMIC-IV ICU stays (2008-2022)",
+    "key_findings": [
+      "Selective adaptation preserved physiological representation and improved vasopressor/septic shock discrimination",
+      "Framework correctly identified 26 septic shock cases the retrained baseline missed",
+      "PubMed-grounded Temporal RAG preserved retrieval consistency with pre-adaptation source",
+      "Drift localized entirely to treatment stream — supports governable clinical AI deployment"
+    ],
+    "relevance": "high",
+    "status": "preprint_v1",
+    "new": true
+  },
+  {
+    "id": "arxiv:2607.06163",
+    "source": "arxiv",
+    "type": "benchmark_methodology",
+    "title": "X-FEMR Clinical Alignment Metric for EHR Foundation Model Explainability",
+    "authors": "Jie Huang, Pengfei Yin, Zihan Xu, Daniel Capurro, Mike Conway, Ting Dang",
+    "url": "https://arxiv.org/abs/2607.06163",
+    "published": "2026-07-07",
+    "updated": "2026-07-07",
+    "journal": "arXiv preprint (cs.LG)",
+    "tools_evaluated": [
+      "EHR Foundation Model (FEMR)",
+      "Transformer surrogate explainer",
+      "Novel clinical alignment metric"
+    ],
+    "scale": "Two FM-EHR prediction tasks",
+    "key_findings": [
+      "First token-level explainability framework for EHR foundation models",
+      "Novel clinical alignment metric quantifies key-token correspondence with clinically validated features",
+      "Surrogate approximates FEMR behavior while preserving temporal dynamics",
+      "Supports trustworthy clinical AI evaluation"
+    ],
+    "relevance": "high",
+    "status": "preprint_v1",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.23992",
+    "source": "arxiv",
+    "type": "rag_clinical_evaluation",
+    "title": "RASC+ Retrieval-Constrained LLM Adjudication — Clinical Value Sets CDSS",
+    "authors": "Sumit Mukherjee",
+    "url": "https://arxiv.org/abs/2606.23992",
+    "published": "2026-06-22",
+    "updated": "2026-06-22",
+    "journal": "arXiv preprint (cs.CL)",
+    "tools_evaluated": [
+      "RASC+ retrieval-constrained LLM pipeline",
+      "Zero-shot LLM baseline"
+    ],
+    "scale": "RASC benchmark value set authoring tasks",
+    "key_findings": [
+      "Direct zero-shot LLM poorly suited to clinical value set construction",
+      "Retrieval-constrained adjudication yields higher-quality value sets with audit trail",
+      "Supports CDSS, quality measurement, and EHR phenotyping"
+    ],
+    "relevance": "high",
+    "status": "preprint_v1",
+    "new": true
   }
 ]
