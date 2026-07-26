@@ -2019,5 +2019,44 @@
     "scale": "Multi-course clinical decision scenarios (LLM evaluation benchmark)",
     "status": "preprint",
     "new": true
+  },
+  {
+    "id": "medrxiv:2025.11.29.25341091",
+    "source": "medrxiv",
+    "type": "accuracy_evaluation",
+    "title": "The accuracy and repeatability of OpenEvidence on complex medical subspecialty scenarios: a pilot study",
+    "authors": "Jagarapu J, Babata K, Chamarthi S, Hoyt R",
+    "abstract": "OpenEvidence scored 100% on USMLE-type multiple-choice questions, but has not been tested on more complex medical scenarios. This study tested OE and Deep Consult (DC) models using questions from the MedXpertQA dataset comprising 100 medical subspecialty scenarios with two independent evaluators. The highest accuracy for DC was 41%, and for OE, 34%. Repeatability testing revealed evaluator concordance of 77% for OE and 72% for DC. Results indicate OE is suitable for straightforward guideline lookups but struggles with complex multi-step reasoning.",
+    "url": "https://www.medrxiv.org/content/10.1101/2025.11.29.25341091v1",
+    "pdf_url": "https://www.medrxiv.org/content/10.1101/2025.11.29.25341091v1.full.pdf",
+    "doi": "10.64898/2025.11.29.25341091",
+    "published": "2025-12-04",
+    "updated": "2026-07-26",
+    "journal": "medRxiv preprint",
+    "tags": [
+      "OpenEvidence",
+      "Deep Consult",
+      "MedXpertQA",
+      "accuracy",
+      "repeatability",
+      "subspecialty",
+      "clinical reasoning",
+      "benchmark"
+    ],
+    "relevance": "Direct evaluation of OpenEvidence accuracy and repeatability on complex subspecialty scenarios — reveals significant limitations vs USMLE performance",
+    "key_findings": [
+      "Deep Consult max accuracy: 41% on MedXpertQA subspecialty scenarios",
+      "Quick Consult max accuracy: 34% on same dataset",
+      "Repeatability: 77% concordance for OE, 72% for DC between two evaluators",
+      "No statistically significant difference between OE and DC accuracy (p=0.09)",
+      "DC provides ~6.7x more references than OE (34.7 vs 5.2 average) but accuracy gain not significant",
+      "Treatment tasks had highest accuracy (OE: 43.9%, DC: 47%); Basic science lowest (OE: 23.5%, DC: 32.4%)",
+      "75% of the time OE and DC were discordant on the same question",
+      "Conclusion: OE suitable for straightforward guideline lookups, not complex multi-step reasoning"
+    ],
+    "tools_evaluated": "OpenEvidence Quick Consult, OpenEvidence Deep Consult",
+    "scale": "100 MedXpertQA subspecialty scenarios, 2 independent evaluators",
+    "status": "preprint",
+    "new": true
   }
 ]

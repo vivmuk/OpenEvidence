@@ -801,5 +801,29 @@
     "relevance": "high",
     "status": "preprint",
     "new": true
+  },
+  {
+    "id": "medrxiv:2025.11.29.25341091",
+    "source": "medrxiv",
+    "type": "accuracy_repeatability_evaluation",
+    "title": "OpenEvidence Accuracy and Repeatability on MedXpertQA Subspecialty Scenarios",
+    "authors": "Jagarapu J, Babata K, Chamarthi S, Hoyt R",
+    "url": "https://www.medrxiv.org/content/10.1101/2025.11.29.25341091v1",
+    "published": "2025-12-04",
+    "updated": "2026-07-26",
+    "journal": "medRxiv preprint",
+    "tools_evaluated": "OpenEvidence Quick Consult (31% avg), Deep Consult (39.5% avg)",
+    "scale": "100 MedXpertQA text-reasoning scenarios, 2 evaluators, 10-choice MCQ",
+    "key_findings": [
+      "OE accuracy: 28-34% across evaluators (avg 31%)",
+      "DC accuracy: 38-41% across evaluators (avg 39.5%)",
+      "Repeatability: OE 77%, DC 72% evaluator concordance (Cohen's kappa 0.74 and 0.69)",
+      "No significant correlation between reference count and accuracy",
+      "DC response time ~20x longer than OE (259s vs 13s avg)",
+      "Compared to 11 LLMs tested on MedXpertQA: GPT-o1 scored 46%, Qwen2.5-32B scored 14%"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
   }
 ]
