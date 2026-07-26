@@ -1,5 +1,26 @@
 [
   {
+    "id": "arxiv:2606.01301",
+    "source": "arxiv",
+    "type": "safety_evaluation",
+    "title": "Med-HEAL: Hallucination-Aware In-Context Learning for Medical LLMs",
+    "authors": "Yiming Liao, Zeno Franco, Jose Eduardo Lizarraga Mazaba",
+    "url": "https://arxiv.org/abs/2606.01301",
+    "published": "2026-05-31",
+    "updated": "2026-05-31",
+    "journal": "arXiv preprint (cs.CL)",
+    "tools_evaluated": "Medical LLMs (multiple) + Med-HEAL mitigation framework",
+    "scale": "EHR-grounded clinical scenarios",
+    "key_findings": [
+      "Formalizes hallucination detection at the process level within realistic clinical contexts",
+      "Hallucination-aware in-context learning reduces critical errors during EHR-grounded reasoning",
+      "Reproducible methodology for evaluating RAG-enhanced medical LLM hallucination rates"
+    ],
+    "relevance": "medium-high",
+    "status": "preprint",
+    "new": true
+  },
+  {
     "id": "arxiv:2512.01241",
     "source": "arxiv",
     "type": "safety_evaluation",
@@ -824,6 +845,191 @@
     ],
     "relevance": "high",
     "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "pmid:42181555",
+    "type": "tool_comparison",
+    "title": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch: Are They Objectively up to Medical Standards? A Real-Life Assessment of LLM Chatbots in Health Care",
+    "authors": "Castaño-Villegas N, Villa MC, Barrientos KM, Llano I, Velásquez L, Zea J",
+    "abstract": "Independent comparative study of four LLM chatbots — OpenEvidence, ChatGPT, Medisearch, and Arkangel AI — on four clinical vignettes (orthopedics, pediatrics, gynecology, psychiatry) with four questions each (diagnosis, clinical management, research, general knowledge); evaluated by external clinicians on 8-criterion Likert scale. Response times also captured.",
+    "published": "2026-06-01",
+    "updated": "2026-06-01",
+    "journal": "Mayo Clin Proc Digit Health",
+    "doi": "10.1016/j.mcpdig.2026.XXXXX",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42181555/",
+    "pdf_url": null,
+    "tags": [
+      "OpenEvidence",
+      "multi-vendor",
+      "tool comparison",
+      "Likert",
+      "real-world",
+      "vignettes"
+    ],
+    "tools_evaluated": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch",
+    "scale": "4 clinical vignettes × 4 questions = 16 queries per chatbot × 4 chatbots",
+    "key_findings": [
+      "Eight-criterion Likert evaluation (correctness, consensus, bias, standards-of-care adherence, timeliness, patient safety, citation authenticity, contextual appropriateness)",
+      "Real-world style clinical vignettes spanning four specialties",
+      "Response times captured",
+      "Independent (commercial Latin-American) clinical AI vendor initiative — adds geographic diversity beyond US-centric NOHARM/Real-POCQi"
+    ],
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42232526",
+    "type": "safety_evaluation",
+    "title": "Large Language Model Hallucinations in Spine Surgery: A Comparative Analysis of Clinician vs Patient-Level Prompts",
+    "authors": "McLaughlin ND, Srinivas AN, Lowe ZF, Botterbush KS, Patel MS, Avila MJ",
+    "abstract": "Quantifies fabricated citations (\"hallucinations\") produced by five LLMs (ChatGPT, Gemini, Claude, Microsoft Copilot, OpenEvidence) on common neurosurgical spine topics. Compares clinician-level vs patient-level prompts to test whether physician framing reduces misinformation risk.",
+    "published": "2026-06-01",
+    "updated": "2026-06-01",
+    "journal": "Neurosurg Pract",
+    "doi": "10.1227/neuropract.XXXXX",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42232526/",
+    "pdf_url": null,
+    "tags": [
+      "OpenEvidence",
+      "hallucinations",
+      "spine surgery",
+      "safety",
+      "citation accuracy",
+      "prompt comparison"
+    ],
+    "tools_evaluated": "ChatGPT, Gemini, Claude, Microsoft Copilot, OpenEvidence",
+    "scale": "Common neurosurgical spine topics; clinician- vs patient-level prompts",
+    "key_findings": [
+      "Five-LLM head-to-head on spine-surgery citation accuracy",
+      "OpenEvidence included in spine comparison",
+      "Clinician-level vs patient-level prompt comparison — first such decomposition for spine topics",
+      "Quantifies fabricated citations across all five systems"
+    ],
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42203638",
+    "type": "tool_comparison",
+    "title": "Evaluation of Clinically-Focused Artificial Intelligence Chatbots for Answering Drug Information Questions",
+    "authors": "Ipema H, Munir F, Sarna K, Wasynczuk J, Saiyad Z",
+    "abstract": "Comparative study of four clinically-focused AI chatbots (OpenEvidence, Clair, GlassHealth, DougallGPT) and one general-purpose chatbot (ChatGPT) on 30 drug-information questions. Three pharmacy faculty scored responses using the validated 25-point CLEAR framework (Completeness, Lack of false info, Evidence, Appropriateness, Relevance).",
+    "published": "2026-06-01",
+    "updated": "2026-06-01",
+    "journal": "J Am Coll Clin Pharm",
+    "doi": "10.1002/jac5.70231",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42203638/",
+    "pdf_url": null,
+    "tags": [
+      "OpenEvidence",
+      "pharmacy",
+      "CLEAR score",
+      "drug information",
+      "tool comparison",
+      "pharmacist"
+    ],
+    "tools_evaluated": "OpenEvidence, Clair, GlassHealth, DougallGPT, ChatGPT",
+    "scale": "30 drug-information questions; 3 pharmacy-faculty raters; CLEAR framework",
+    "key_findings": [
+      "OpenEvidence highest CLEAR score (17.82/25)",
+      "ChatGPT second at 15.72/25",
+      "All AI chatbots statistically lower than faculty responses",
+      "Few \"very good\" responses from any chatbot — pharmacist expertise remains essential"
+    ],
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42500998",
+    "type": "accuracy_evaluation",
+    "title": "Diagnostic Ambiguity in Appendicitis: Comparing Failure Modes of Large Language Models and Surgeons",
+    "authors": "Çalışkan YK, Başak F, Erdem O, Kudaş İ",
+    "abstract": "Six frontier AI systems vs two board-certified general surgeons evaluated 150 standardized ED vignettes (90 appendicitis, 60 mimics enriched for difficult scenarios). GPT-5 95.3% accuracy; GPT-4o 82.0%; specialist consensus 92.7%. Distinct failure modes identified including search-induced hallucinations in web-augmented systems.",
+    "published": "2026-07-25",
+    "updated": "2026-07-25",
+    "journal": "Am Surg",
+    "doi": "10.1177/00031348261471464",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42500998/",
+    "pdf_url": null,
+    "tags": [
+      "appendicitis",
+      "emergency",
+      "GPT-5",
+      "GPT-4o",
+      "vignette",
+      "failure modes",
+      "hallucinations"
+    ],
+    "tools_evaluated": "Six frontier AI systems (incl. GPT-5, GPT-4o) + two board-certified general surgeons",
+    "scale": "150 ED vignettes; 6 LLMs vs 2 surgeons; diagnostic accuracy + sensitivity + specificity + triage priority + error taxonomy",
+    "key_findings": [
+      "Six frontier AI systems vs two general surgeons on 150 standardized ED vignettes",
+      "GPT-5 accuracy 95.3% exceeds GPT-4o (82.0%) and approaches specialist consensus (92.7%)",
+      "Failure modes including search-induced hallucinations in web-augmented systems",
+      "Authors caution: vignette studies should not be interpreted as evidence of clinical readiness"
+    ],
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.20874",
+    "type": "accuracy_evaluation",
+    "title": "Machine Learning Classification of Cryopathy Syndromes: A Comprehensive Comparative Study",
+    "authors": "Nataliya Shakhovska, Valentyna Chopyak, Ivan Izonin, Vira Haievska",
+    "abstract": "Comparative ML evaluation to classify cryopathy syndromes from laboratory data; 2,686 patient records across 14 diagnostic categories. Identifies practical ML strategy to reduce expert-judgment dependency in a rare-disease domain where lab patterns overlap.",
+    "published": "2026-06-18",
+    "updated": "2026-06-18",
+    "journal": "arXiv preprint",
+    "doi": "10.48550/arXiv.2606.20874",
+    "url": "https://arxiv.org/abs/2606.20874",
+    "pdf_url": "https://arxiv.org/pdf/2606.20874.pdf",
+    "tags": [
+      "cryopathy",
+      "cryoglobulin",
+      "lab data",
+      "rare disease",
+      "classification",
+      "comparative"
+    ],
+    "tools_evaluated": "Multiple ML algorithms",
+    "scale": "2,686 patient records; 14 cryopathy categories",
+    "key_findings": [
+      "Direct clinical-AI decision-support study using ML classification on lab data",
+      "Targets rare-disease overlap (cryopathy) where lab patterns are hard to disambiguate",
+      "Practical strategy for clinical decision support in rare-disease domain"
+    ],
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "arxiv:2606.03305",
+    "type": "methodology",
+    "title": "The Reliability Gap in Benchmark Auditing: Distribution Shift and Scale as Failure Modes of Contamination Detection",
+    "authors": "Wojciech Zarzecki, Jan Dubiński, Sebastian Cygert",
+    "abstract": "Identifies two understudied failure modes in benchmark contamination detection — distribution shift and scale constraints — that affect validity of LLM clinical AI benchmark scoring (NOHARM, HealthBench, MedQA, USMLE, MedCheck).",
+    "published": "2026-06-02",
+    "updated": "2026-07-01",
+    "journal": "arXiv preprint",
+    "doi": "10.48550/arXiv.2606.03305",
+    "url": "https://arxiv.org/abs/2606.03305",
+    "pdf_url": "https://arxiv.org/pdf/2606.03305.pdf",
+    "tags": [
+      "benchmark contamination",
+      "NOHARM",
+      "HealthBench",
+      "MedQA",
+      "methodology",
+      "clinical AI benchmark"
+    ],
+    "tools_evaluated": "Multiple contamination-detection methods",
+    "scale": "Methodological failure-mode analysis",
+    "key_findings": [
+      "Two understudied contamination-detection failure modes",
+      "Implications for NOHARM/HealthBench/MedQA scoring integrity",
+      "Realistic clinical-AI auditing scenarios violate the IID assumption that statistical tools were validated under"
+    ],
+    "status": "published",
     "new": true
   }
 ]
