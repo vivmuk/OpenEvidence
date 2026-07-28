@@ -57,5 +57,38 @@
 
 </div>
 <script src="/shared.js"></script>
+<script src="/data/partners.js"></script>
+<script src="/data/dxTimeline.js"></script>
+<script>
+window.addEventListener('load', function() {
+  try {
+    document.getElementById('partnerGrid').innerHTML = partnersData.map(p => `
+      <a href="${p.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+      <div class="partner-item">
+        <div class="name">${p.name} ${p.new ? '<span class="new-badge">NEW</span>' : ''}</div>
+        <div class="type">${p.type}</div>
+        <div class="type" style="color:var(--oe-orange);margin-top:2px;">${p.date} →</div>
+      </div>
+      </a>
+    `).join('');
+  } catch(e) { console.error("[OE] partnerGrid render failed:", e.message); }
+  try {
+    const sortedPartners = [...partnersData].sort((a,b) => new Date(a.date) - new Date(b.date));
+    document.getElementById('partnerTimelineTrack').innerHTML = '<div class="partner-timeline-line"></div>' + sortedPartners.map(p => `
+      <div class="partner-timeline-item">
+        <div class="partner-timeline-dot"></div>
+        <div class="partner-timeline-date">${p.date}</div>
+        <div class="partner-timeline-name">${p.name}</div>
+        <div class="partner-timeline-popup">
+          <div class="pop-name">${p.name}</div>
+          <div class="pop-type">${p.type}</div>
+          <div class="pop-date">${p.date}</div>
+          <div class="pop-link"><a href="${p.url}" target="_blank" rel="noopener">View announcement →</a></div>
+        </div>
+      </div>
+    `).join('');
+  } catch(e) { console.error("[OE] partnerTimeline render failed:", e.message); }
+});
+</script>
 </body>
 </html>
