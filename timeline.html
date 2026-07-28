@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timeline — OpenEvidence Insights</title>
+<meta name="description" content="Chronological timeline of OpenEvidence announcements, partnerships, and milestones.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline" class="active">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Jul 28, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+<section id="timeline">
+  <div class="container">
+    <h2>Master <span class="accent">Timeline</span></h2>
+    <p class="section-sub">Every major event with exact dates and source links. Filter by category.</p>
+    <div class="filters" id="timelineFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Funding">Funding</button>
+      <button class="filter-btn" data-filter="Product">Product Launch</button>
+      <button class="filter-btn" data-filter="Partnership">Partnership</button>
+      <button class="filter-btn" data-filter="Legal">Legal</button>
+      <button class="filter-btn" data-filter="Metric">Metrics</button>
+      <button class="filter-btn" data-filter="Acquisition">Acquisitions</button>
+      <button class="filter-btn" data-filter="Milestone">Milestones</button>
+    </div>
+    <div class="timeline" id="timelineList"></div>
+  </div>
+</section>
+</div>
+<script src="/shared.js"></script>
+<script src="data/timeline.js"></script>
+<script>
+
+function renderTimeline(filter) {
+  const el = document.getElementById('timelineList');
+  if (!el) return;
+  const filtered = filter === 'all' ? timelineData : timelineData.filter(d => d.cat === filter);
+  const sorted = [...filtered].sort((a,b) => new Date(b.date) - new Date(a.date));
+  el.innerHTML = sorted.map((d, i) => `
+    <div class="timeline-item" style="animation-delay: ${i * 0.03}s">
+      <div class="date">${d.date} ${d.new ? '<span class="new-badge">NEW</span>' : ''}</div>
+      <div><span class="category-tag cat-${d.cat}">${d.cat}</span></div>
+      <div class="title">${d.title}</div>
+      <div class="desc">${d.desc}</div>
+      <div class="src-link"><a href="${d.url}" target="_blank" rel="noopener">${d.src} →</a></div>
+    </div>
+  `).join('');
+}
+window.addEventListener('load', function() {
+  try { renderTimeline('all'); } catch(e) { console.error("[OE] renderTimeline failed:", e.message); }
+  document.getElementById('timelineFilters').addEventListener('click', (e) => {
+    if (e.target.classList.contains('filter-btn')) {
+      document.querySelectorAll('#timelineFilters .filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderTimeline(e.target.dataset.filter);
+    }
+  });
+});
+
+</script>
+</body>
+</html>

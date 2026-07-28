@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Landscape — OpenEvidence Insights</title>
+<meta name="description" content="Global clinical AI decision support landscape by region.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global" class="active">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Jul 28, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+<section id="global">
+  <div class="container">
+    <h2>Global <span class="accent">Clinical AI Landscape</span></h2>
+    <p class="section-sub">Tracking clinical AI applications across major world markets — adoption, regulation, funding, and emerging trends. Updated weekly.</p>
+
+    <!-- REGION OVERVIEW -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">Regional Overview</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Clinical AI maturity by region — from mature markets with active AI tools to restricted markets with regulatory barriers.</p>
+    <div class="region-grid" id="regionGrid"></div>
+
+    <!-- GLOBAL ADOPTION CHART -->
+    <div class="chart-container" style="margin-top:32px;">
+      <h3>Physician AI Adoption by Region (%)</h3>
+      <p class="chart-sub">Estimated percentage of physicians using AI tools regularly — 2024 to 2026</p>
+      <div class="chart-wrapper" style="height:350px;"><canvas id="chartGlobalAdoption"></canvas></div>
+    </div>
+
+    <!-- MARKET SIZE CHART -->
+    <div class="chart-container">
+      <h3>Clinical AI Market Size by Region ($B)</h3>
+      <p class="chart-sub">Healthcare AI market size — current and projected</p>
+      <div class="chart-wrapper" style="height:350px;"><canvas id="chartMarketSize"></canvas></div>
+    </div>
+
+    <!-- GLOBAL TIMELINE -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Global Timeline</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Major clinical AI events worldwide — product launches, regulatory milestones, funding, partnerships. Filter by region.</p>
+    <div class="reg-filters" id="globalFilters">
+      <button class="filter-btn active" data-filter="all">All Regions</button>
+      <button class="filter-btn" data-filter="US">🇺🇸 US</button>
+      <button class="filter-btn" data-filter="EU">🇪🇺 EU</button>
+      <button class="filter-btn" data-filter="UK">🇬🇧 UK</button>
+      <button class="filter-btn" data-filter="CN">🇨🇳 China</button>
+      <button class="filter-btn" data-filter="IN">🇮🇳 India</button>
+      <button class="filter-btn" data-filter="JP">🇯🇵 Japan</button>
+      <button class="filter-btn" data-filter="SEA">🇸🇬 SEA</button>
+      <button class="filter-btn" data-filter="LATAM">🇧🇷 LATAM</button>
+      <button class="filter-btn" data-filter="MEA">🇮🇱 MEA</button>
+      <button class="filter-btn" data-filter="Global">🌍 Global</button>
+    </div>
+    <div class="global-timeline" id="globalTimeline"></div>
+
+    <!-- REGULATORY TIMELINE -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Regulatory Milestones</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Key regulatory actions affecting clinical AI — FDA, EMA, NMPA, MHRA, and others.</p>
+    <div class="global-timeline" id="regulatoryTimeline"></div>
+
+    <!-- EMERGING CLINICAL AI TOOLS -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Clinical AI Tools</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">New chatbots and AI platforms that healthcare professionals are using for clinical decisions. Updated weekly. Click source links for more info.</p>
+
+    <!-- EMERGING CLINICAL AI TOOLS -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Clinical AI Tools</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">New chatbots and AI platforms that healthcare professionals are using for clinical decisions. Updated weekly. Click source links for more info.</p>
+
+    <!-- EMERGING CLINICAL AI TOOLS -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Clinical AI Tools</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">New chatbots and AI platforms that healthcare professionals are using for clinical decisions. Updated weekly. Click source links for more info.</p>
+
+    <!-- EMERGING TRENDS -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Emerging Trends</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Key trajectories shaping the global clinical AI landscape in 2025-2026.</p>
+    <div class="trend-grid" id="trendGrid"></div>
+
+    <!-- GLOBAL COMPETITOR MATRIX -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Global Availability Matrix</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Which clinical AI platforms are available in which markets? ✓ = available · ~ = partial/limited · ✗ = not available/blocked</p>
+    <div class="global-matrix-wrapper">
+      <table class="global-matrix" id="globalMatrix"></table>
+    </div>
+
+    <!-- FUNDING BY REGION -->
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Funding by Region</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Clinical AI venture funding by geography — 2024 to 2026.</p>
+    <div class="chart-container">
+      <div class="chart-wrapper" style="height:350px;"><canvas id="chartFundingByRegion"></canvas></div>
+    </div>
+  </div>
+</section>
+</div>
+<script src="/shared.js"></script>
+<script src="data/globalRegions.js"></script>
+<script src="data/globalTimeline.js"></script>
+<script src="data/regulatory.js"></script>
+<script src="data/emergingTrends.js"></script>
+<script src="data/globalMatrix.js"></script>
+<script>
+
+function renderGlobalTimeline(filter) {
+  const el = document.getElementById('globalTimeline');
+  if (!el) return;
+  const filtered = filter === 'all' ? globalTimelineData : globalTimelineData.filter(d => d.region === filter);
+  const sorted = [...filtered].sort((a,b) => new Date(b.date) - new Date(a.date));
+  el.innerHTML = sorted.map((d, i) => `
+    <div class="global-tl-item" style="animation-delay: ${i * 0.03}s">
+      <div class="gtl-date">${d.date}</div>
+      <div><span class="region-tag reg-${d.region}">${d.region}</span> <span class="category-tag cat-${d.cat === 'Trend' ? 'Milestone' : d.cat === 'Research' ? 'Research' : d.cat}">${d.cat}</span></div>
+      <div class="gtl-title">${d.title}</div>
+      <div class="gtl-desc">${d.desc}</div>
+      <div class="gtl-source">Source: <a href="${d.url}" target="_blank" rel="noopener">${d.src}</a></div>
+    </div>
+  `).join('');
+}
+
+function buildPageCharts() {
+  charts.forEach(c => { try { c.destroy(); } catch(e){} });
+  charts = [];
+  const tcGA = getThemeColors();
+  try {
+    const ctxGA = document.getElementById('chartGlobalAdoption');
+    if (ctxGA) charts.push(new Chart(ctxGA.getContext('2d'), {
+      type: 'line',
+      data: { labels: ['2024 Q1','2024 Q3','2025 Q1','2025 Q3','2026 Q1','2026 Q3'],
+        datasets: [
+          {label:'US',data:[5,12,20,35,50,65],borderColor:'#E4643D',backgroundColor:'rgba(228,100,61,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+          {label:'UK',data:[3,6,10,18,25,32],borderColor:'#6B9ABF',backgroundColor:'rgba(107,154,191,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+          {label:'China',data:[8,12,16,20,24,28],borderColor:'#CC6B6B',backgroundColor:'rgba(204,107,107,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+          {label:'EU',data:[2,4,6,8,12,15],borderColor:'#8AAFCC',backgroundColor:'rgba(138,175,204,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+          {label:'India',data:[1,3,5,7,9,12],borderColor:'#B89AC4',backgroundColor:'rgba(184,154,196,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+          {label:'Japan',data:[1,2,3,5,6,8],borderColor:'#D4A94E',backgroundColor:'rgba(212,169,78,0.1)',borderWidth:2,tension:0.3,pointRadius:4},
+        ]
+      },
+      options: { responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { labels: { color: tcGA.text } }, tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' } },
+        scales: { x: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text } },
+          y: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text }, title: { display: true, text: '% of physicians using AI', color: tcGA.text } } }
+      }
+    }));
+  } catch(e) { console.error("[OE-CHART] chartGlobalAdoption failed:", e.message); }
+  try {
+    const ctxMS = document.getElementById('chartMarketSize');
+    if (ctxMS) charts.push(new Chart(ctxMS.getContext('2d'), {
+      type: 'bar',
+      data: { labels: ['US','China','EU','UK','India','Japan','SEA','LATAM','MEA'],
+        datasets: [{ label: 'Market Size ($B)', data: [8.2, 5.6, 3.1, 1.4, 1.2, 0.9, 0.8, 0.6, 0.5],
+          backgroundColor: ['rgba(228,100,61,0.6)','rgba(204,107,107,0.6)','rgba(138,175,204,0.6)','rgba(107,154,191,0.6)','rgba(184,154,196,0.6)','rgba(212,169,78,0.6)','rgba(93,174,142,0.6)','rgba(212,180,78,0.6)','rgba(138,196,122,0.6)'],
+          borderColor: ['#E4643D','#CC6B6B','#8AAFCC','#6B9ABF','#B89AC4','#D4A94E','#5DAE8E','#D4B44E','#8AC47A'], borderWidth: 2, borderRadius: 6 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' } },
+        scales: { x: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text } },
+          y: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text }, title: { display: true, text: '$ Billions', color: tcGA.text } } }
+      }
+    }));
+  } catch(e) { console.error("[OE-CHART] chartMarketSize failed:", e.message); }
+  try {
+    const ctxFR = document.getElementById('chartFundingByRegion');
+    if (ctxFR) charts.push(new Chart(ctxFR.getContext('2d'), {
+      type: 'bar',
+      data: { labels: ['US','China','EU','UK','India','Japan','SEA','MEA','LATAM'],
+        datasets: [{ label: 'Clinical AI Funding 2024-26 ($B)', data: [3.5, 2.8, 1.2, 0.8, 0.6, 0.3, 0.4, 0.35, 0.2],
+          backgroundColor: chartColorLight, borderColor: chartColor, borderWidth: 2, borderRadius: 6 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1' } },
+        scales: { x: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text } },
+          y: { grid: { color: tcGA.grid }, ticks: { color: tcGA.text }, title: { display: true, text: '$ Billions (2024-2026)', color: tcGA.text } } }
+      }
+    }));
+  } catch(e) { console.error("[OE-CHART] chartFundingByRegion failed:", e.message); }
+}
+
+window.addEventListener('load', function() {
+  try {
+    document.getElementById('regionGrid').innerHTML = globalRegionsData.map(r => `
+      <div class="region-card">
+        <div class="region-flag">${r.flag}</div>
+        <div class="region-name">${r.name}</div>
+        <div class="region-status ${r.status}">${r.statusLabel}</div>
+        <div class="region-stat"><strong>Physicians:</strong> ${r.stats.physicians}</div>
+        <div class="region-stat"><strong>Market:</strong> ${r.stats.marketSize}</div>
+        <div class="region-stat"><strong>Tools:</strong> ${r.stats.tools}</div>
+        <div class="region-stat"><strong>Funding:</strong> ${r.stats.funding}</div>
+        <div class="region-tools">${r.tools.map(t => `<span class="tool-chip">${t}</span>`).join('')}</div>
+      </div>
+    `).join('');
+  } catch(e) { console.error("[OE] regionGrid failed:", e.message); }
+  try { renderGlobalTimeline('all'); } catch(e) { console.error("[OE] renderGlobalTimeline failed:", e.message); }
+  try {
+    document.getElementById('globalFilters').addEventListener('click', (e) => {
+      if (e.target.classList.contains('filter-btn')) {
+        document.querySelectorAll('#globalFilters .filter-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        renderGlobalTimeline(e.target.dataset.filter);
+      }
+    });
+  } catch(e) { console.error("[OE] globalFilters failed:", e.message); }
+  try {
+    document.getElementById('regulatoryTimeline').innerHTML = regulatoryData.map((d, i) => `
+      <div class="global-tl-item" style="animation-delay: ${i * 0.03}s">
+        <div class="gtl-date">${d.date}</div>
+        <div><span class="region-tag reg-${d.region}">${d.region}</span></div>
+        <div class="gtl-title">${d.title}</div>
+        <div class="gtl-desc">${d.desc}</div>
+        <div class="gtl-source"><a href="${d.url}" target="_blank" rel="noopener">Source →</a></div>
+      </div>
+    `).join('');
+  } catch(e) { console.error("[OE] regulatoryTimeline failed:", e.message); }
+  try {
+    document.getElementById('trendGrid').innerHTML = emergingTrendsData.map(t => `
+      <div class="trend-card">
+        <div class="trend-icon">${t.icon}</div>
+        <div class="trend-name">${t.name}</div>
+        <div class="trend-metric">${t.metric}</div>
+        <div class="trend-desc">${t.desc}</div>
+        <div class="trend-region">📍 ${t.region}</div>
+        <div class="trend-trajectory ${t.trajectory}">${t.trajectoryLabel}</div>
+        <div class="trend-source"><a href="${t.url}" target="_blank" rel="noopener">${t.src} →</a></div>
+      </div>
+    `).join('');
+  } catch(e) { console.error("[OE] trendGrid failed:", e.message); }
+  try {
+    const matrixCols = [{key:'us',label:'🇺🇸 US'},{key:'eu',label:'🇪🇺 EU'},{key:'uk',label:'🇬🇧 UK'},{key:'cn',label:'🇨🇳 CN'},{key:'in',label:'🇮🇳 IN'},{key:'jp',label:'🇯🇵 JP'},{key:'sea',label:'🇸🇬 SEA'},{key:'latam',label:'🇧🇷 LATAM'},{key:'mea',label:'🇮🇱 MEA'}];
+    const matrixSymbols = {yes:'✓',no:'—',partial:'~',blocked:'✗'};
+    const matrixClasses = {yes:'yes',no:'no',partial:'partial',blocked:'blocked'};
+    document.getElementById('globalMatrix').innerHTML = '<thead><tr><th>Platform</th>' + matrixCols.map(c => '<th>' + c.label + '</th>').join('') + '</tr></thead><tbody>' +
+      globalMatrixData.map(row => '<tr><td><strong>' + row.platform + '</strong></td>' + matrixCols.map(c => { const v = row[c.key]; return '<td class="' + matrixClasses[v] + '">' + matrixSymbols[v] + '</td>'; }).join('') + '</tr>').join('') +
+      '</tbody>';
+  } catch(e) { console.error("[OE] globalMatrix failed:", e.message); }
+  buildPageCharts();
+});
+
+</script>
+</body>
+</html>

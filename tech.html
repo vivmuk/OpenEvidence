@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Stack — OpenEvidence Insights</title>
+<meta name="description" content="OpenEvidence technology stack: frontend, backend, AI/ML infrastructure, EHR integration, and ad tech.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/tech" class="active">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Jul 28, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+  <section id="tech">
+    <div class="container">
+      <h2>Tech <span class="accent">Stack</span></h2>
+      <p class="section-sub">Known (disclosed by OpenEvidence or verified sources) vs Inferred (deduced from public data).</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 16px;">
+        <div class="tech-layer">
+          <h3><span class="icon">🎨</span> Frontend</h3>
+          <div class="tech-row"><span class="label">Framework</span><span class="value">Next.js <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+          <div class="tech-row"><span class="label">Hosting</span><span class="value">Vercel (Fluid Compute) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+          <div class="tech-row"><span class="label">CDN</span><span class="value">Vercel Edge Network <span class="status status-inferred">INFERRED</span></span></div>
+          <div class="tech-row"><span class="label">Cost</span><span class="value"><5% of total infra <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+          <div class="tech-row"><span class="label">Deploy pipeline</span><span class="value">Auto-deploy on commit ~5min <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">⚙️</span> Backend</h3>
+          <div class="tech-row"><span class="label">Language</span><span class="value">Python <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+          <div class="tech-row"><span class="label">Cloud</span><span class="value">Google Cloud Platform <span class="status status-known">KNOWN</span> <a class="source-link" href="https://vercel.com/blog/how-openevidence-built-a-healthcare-ai-that-physicians-can-trust" target="_blank">Vercel Blog</a></span></div>
+          <div class="tech-row"><span class="label">Container orchestration</span><span class="value">Kubernetes (via Baseten MCM) <span class="status status-inferred">INFERRED</span> <a class="source-link" href="https://www.baseten.co/blog/how-we-built-multi-cloud-capacity-management/" target="_blank">Baseten</a></span></div>
+          <div class="tech-row"><span class="label">API layer</span><span class="value">REST/GraphQL <span class="status status-inferred">INFERRED</span></span></div>
+          <div class="tech-row"><span class="label">Monitoring</span><span class="value">GCP-native + Baseten <span class="status status-inferred">INFERRED</span></span></div>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">🧠</span> AI / ML Infrastructure</h3>
+          <div class="tech-row"><span class="label">Inference platform</span><span class="value">Baseten Inference Stack <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/resources/customers/openevidence-delivers-instant-medical-information-with-baseten/" target="_blank">Baseten</a></span></div>
+          <div class="tech-row"><span class="label">Model type</span><span class="value">Vertical LLM on licensed medical texts <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+          <div class="tech-row"><span class="label">Embeddings</span><span class="value">Baseten BEI (160ms latency) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/blog/introducing-baseten-embeddings-inference-bei/" target="_blank">Baseten</a></span></div>
+          <div class="tech-row"><span class="label">Training</span><span class="value">Baseten Training (23x faster) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/resources/customers/openevidence-baseten-training/" target="_blank">Baseten</a></span></div>
+          <div class="tech-row"><span class="label">Multi-cloud compute</span><span class="value">Baseten MCM (10+ clouds) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/blog/how-we-built-multi-cloud-capacity-management/" target="_blank">Baseten</a></span></div>
+          <div class="tech-row"><span class="label">RAG pipeline</span><span class="value">Deterministic citation linking <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+          <div class="tech-row"><span class="label">Vector database</span><span class="value">Dedicated vector store <span class="status status-inferred">INFERRED</span></span></div>
+          <div class="tech-row"><span class="label">Volume</span><span class="value">Billions of requests/week <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.baseten.co/resources/customers/openevidence-delivers-instant-medical-information-with-baseten/" target="_blank">Baseten</a></span></div>
+          <div class="tech-row"><span class="label">USMLE score</span><span class="value">100% (first AI to achieve) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://en.wikipedia.org/wiki/OpenEvidence" target="_blank">Wikipedia</a></span></div>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">🏥</span> EHR & Compliance</h3>
+          <div class="tech-row"><span class="label">EHR integration</span><span class="value">Epic (FHIR API) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+          <div class="tech-row"><span class="label">Compliance</span><span class="value">HIPAA + BAA support <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+          <div class="tech-row"><span class="label">Physician verification</span><span class="value">NPI registry API <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+          <div class="tech-row"><span class="label">Data handling</span><span class="value">Patient data not stored <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">💰</span> Ad Tech & Revenue</h3>
+          <div class="tech-row"><span class="label">Ad infrastructure</span><span class="value">Amaro (acquired GV-backed) <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.prnewswire.com/news-releases/openevidence-acquires-google-ventures-backed-ai-startup-amaro-302547047.html" target="_blank">PRNewswire</a></span></div>
+          <div class="tech-row"><span class="label">CPM range</span><span class="value">$70–$1,000+ <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+          <div class="tech-row"><span class="label">ARPU</span><span class="value">~$124 <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+          <div class="tech-row"><span class="label">Gross margins</span><span class="value">90% <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+          <div class="tech-row"><span class="label">Advertisers</span><span class="value">Pharma & medical device companies <span class="status status-known">KNOWN</span> <a class="source-link" href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></span></div>
+        </div>
+        <div class="tech-layer">
+          <h3><span class="icon">📚</span> Licensed Data Sources</h3>
+          <div class="tech-row"><span class="label">Journals</span><span class="value">NEJM, JAMA (11 specialty), Wiley <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.openevidence.com" target="_blank">OpenEvidence</a></span></div>
+          <div class="tech-row"><span class="label">Societies</span><span class="value">NCCN, ACC, ADA, AAFP, ACEP, ACOG + 14 more <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.openevidence.com" target="_blank">OpenEvidence</a></span></div>
+          <div class="tech-row"><span class="label">Research</span><span class="value">Cochrane Systematic Reviews <span class="status status-known">KNOWN</span> <a class="source-link" href="https://www.openevidence.com" target="_blank">OpenEvidence</a></span></div>
+          <div class="tech-row"><span class="label">Drug database</span><span class="value">Likely integrated (not disclosed) <span class="status status-inferred">INFERRED</span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="/shared.js"></script>
+</body>
+</html>

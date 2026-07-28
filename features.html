@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OE Features — OpenEvidence Insights</title>
+<meta name="description" content="OpenEvidence platform features and capabilities.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features" class="active">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Jul 28, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+<section id="oe-features">
+  <div class="container">
+    <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
+    <p class="section-sub">Every known OpenEvidence feature, milestone, partnership, and deployment — organized by category. Click <strong>Details</strong> on any product feature for a deeper explainer. Updated regularly.</p>
+
+    <div class="chart-container" style="margin-top:24px;">
+      <h3>Feature Launch Timeline</h3>
+      <p class="chart-sub">When each feature shipped — from founding to present</p>
+      <div class="chart-wrapper" style="height:400px;"><canvas id="chartOeFeatures"></canvas></div>
+    </div>
+
+    <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">All Features & Milestones</h3>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Complete inventory with launch dates, descriptions, and source links. Click <strong>Details</strong> on any product feature for a deeper explainer. Use filters to focus on product features, milestones, partnerships, or deployments.</p>
+    <div class="oe-feature-filters" id="oeFeatureFilters">
+      <button class="filter-btn active" data-filter="all">All Items</button>
+      <button class="filter-btn" data-filter="feature">🧩 Product Features</button>
+      <button class="filter-btn" data-filter="milestone">🏆 Milestones</button>
+      <button class="filter-btn" data-filter="partnership">🤝 Partnerships</button>
+      <button class="filter-btn" data-filter="deployment">🏥 Deployments</button>
+      <button class="filter-btn" data-filter="acquisition">💼 Acquisitions</button>
+    </div>
+    <div class="oe-features-grid" id="oeFeaturesGrid"></div>
+
+    <!-- GRADE FRAMEWORK EXPLAINER -->
+    <div id="gradeExplainer" style="display:none;margin-top:48px;">
+      <div class="chart-container" style="border:1px solid var(--oe-orange);border-radius:var(--oe-radius-lg);padding:32px;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;">
+          <div>
+            <h3 style="font-family:var(--oe-font);font-size:28px;font-weight:400;margin-bottom:4px;">The <span style="color:var(--oe-orange);">GRADE</span> Framework</h3>
+            <p style="font-size:14px;color:var(--oe-text-muted);">Grading of Recommendations, Assessment, Development and Evaluations — the global standard for rating evidence quality, used by OpenEvidence's EvidenceGrade feature.</p>
+          </div>
+          <button onclick="document.getElementById('gradeExplainer').style.display='none'" style="background:none;border:1px solid var(--oe-dark-border);color:var(--oe-text-dim);padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px;">✕ Close</button>
+        </div>
+
+        <div style="margin:24px 0;">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--oe-orange);">What It Is</h4>
+          <p style="font-size:14px;color:var(--oe-text-dim);line-height:1.7;">GRADE is the most widely adopted system worldwide for rating how confident you should be in a body of scientific evidence. Developed by the GRADE Working Group (est. 2000), it's been adopted by 110+ organizations including Cochrane, WHO, NICE, CDC, and UpToDate. Before GRADE, dozens of incompatible rating systems existed with no validation — GRADE created a single, transparent, standardized approach.</p>
+        </div>
+
+        <div style="margin:24px 0;">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--oe-orange);">How It Works — Two Stages</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:12px;">
+            <div style="background:var(--oe-dark-soft);border-radius:var(--oe-radius);padding:16px;">
+              <p style="font-size:13px;font-weight:600;margin-bottom:8px;">Stage 1: Starting Point</p>
+              <ul style="font-size:13px;color:var(--oe-text-dim);line-height:1.8;padding-left:20px;">
+                <li>Randomized controlled trials (RCTs) → start at <strong style="color:#6BAF7D;">High</strong></li>
+                <li>Observational studies (cohorts, case-control) → start at <strong style="color:#D4A94E;">Low</strong></li>
+              </ul>
+            </div>
+            <div style="background:var(--oe-dark-soft);border-radius:var(--oe-radius);padding:16px;">
+              <p style="font-size:13px;font-weight:600;margin-bottom:8px;">Stage 2: Adjust Up or Down</p>
+              <p style="font-size:12px;color:var(--oe-text-muted);margin-bottom:4px;">5 factors can LOWER the rating:</p>
+              <ul style="font-size:12px;color:var(--oe-text-dim);line-height:1.7;padding-left:20px;">
+                <li>Risk of bias — methodological flaws</li>
+                <li>Inconsistency — results disagree across studies</li>
+                <li>Indirectness — population/intervention doesn't match</li>
+                <li>Imprecision — confidence intervals too wide</li>
+                <li>Publication bias — selective reporting</li>
+              </ul>
+              <p style="font-size:12px;color:var(--oe-text-muted);margin:8px 0 4px;">3 factors can RAISE it (observational only):</p>
+              <ul style="font-size:12px;color:var(--oe-text-dim);line-height:1.7;padding-left:20px;">
+                <li>Large magnitude of effect</li>
+                <li>Dose-response gradient</li>
+                <li>Plausible confounding would reduce effect</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:24px 0;">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--oe-orange);">The Four Final Ratings</h4>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px;">
+            <div style="background:rgba(100,180,100,0.08);border:1px solid rgba(100,180,100,0.2);border-radius:var(--oe-radius);padding:16px;text-align:center;">
+              <div style="font-family:var(--oe-font);font-size:22px;color:#6BAF7D;">High</div>
+              <div style="font-size:12px;color:var(--oe-text-dim);margin-top:4px;">Very confident the true effect is close to the estimate</div>
+            </div>
+            <div style="background:rgba(200,150,50,0.08);border:1px solid rgba(200,150,50,0.2);border-radius:var(--oe-radius);padding:16px;text-align:center;">
+              <div style="font-family:var(--oe-font);font-size:22px;color:#D4A94E;">Moderate</div>
+              <div style="font-size:12px;color:var(--oe-text-dim);margin-top:4px;">Moderately confident; further research may change it</div>
+            </div>
+            <div style="background:rgba(200,120,50,0.08);border:1px solid rgba(200,120,50,0.2);border-radius:var(--oe-radius);padding:16px;text-align:center;">
+              <div style="font-family:var(--oe-font);font-size:22px;color:#E08A4E;">Low</div>
+              <div style="font-size:12px;color:var(--oe-text-dim);margin-top:4px;">Confidence is limited; true effect may differ substantially</div>
+            </div>
+            <div style="background:rgba(180,70,70,0.08);border:1px solid rgba(180,70,70,0.2);border-radius:var(--oe-radius);padding:16px;text-align:center;">
+              <div style="font-family:var(--oe-font);font-size:22px;color:#BF7A6B;">Very Low</div>
+              <div style="font-size:12px;color:var(--oe-text-dim);margin-top:4px;">Very little confidence; any estimate is uncertain</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin:24px 0;">
+          <h4 style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--oe-orange);">Why EvidenceGrade Matters</h4>
+          <p style="font-size:14px;color:var(--oe-text-dim);line-height:1.7;">When an AI summarizes medical evidence, it typically blends sources together — a Cochrane systematic review and a small observational study might get weighted similarly. EvidenceGrade applies the GRADE framework to each cited source in real time, so a physician reading an AI-generated answer can immediately see: "This recommendation rests on High-quality evidence" vs. "This comes from Very Low-quality observational data." It brings the rigor that Cochrane and WHO already use in systematic reviews into the AI answer interface — making evidence quality visible rather than buried.</p>
+        </div>
+
+        <div style="margin:24px 0 8px;padding-top:16px;border-top:1px solid var(--oe-dark-border);">
+          <h4 style="font-size:14px;font-weight:600;margin-bottom:8px;">Sources & Further Reading</h4>
+          <ul style="font-size:12px;color:var(--oe-text-dim);line-height:2;padding-left:20px;">
+            <li>GRADE Working Group — <a href="https://www.gradeworkinggroup.org" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">gradeworkinggroup.org</a></li>
+            <li>Cochrane Handbook Ch. 12: The GRADE Approach — <a href="https://handbook-5-1.cochrane.org/chapter_12/12_2_1_the_grade_approach.htm" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">handbook-5-1.cochrane.org/chapter_12</a></li>
+            <li>Guyatt GH et al. "GRADE: an emerging consensus on rating quality of evidence and strength of recommendations." BMJ 2008 — <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2335261/" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">PMC2335261</a></li>
+            <li>GRADE Handbook (Schünemann HJ et al.) — <a href="https://gradepro.org/handbook/" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">gradepro.org/handbook</a></li>
+            <li>Cochrane GRADE page — <a href="https://www.cochrane.org/learn/courses-and-resources/cochrane-methodology/grade" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">cochrane.org/learn/grade</a></li>
+            <li>OpenEvidence EvidenceGrade announcement — <a href="https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">openevidence.com/announcements</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURE DETAIL MODAL -->
+    <div class="feature-modal" id="featureModal" onclick="if(event.target===this)closeFeatureModal()">
+      <div class="feature-modal-content">
+        <button class="feature-modal-close" onclick="closeFeatureModal()">✕ Close</button>
+        <div id="featureModalBody"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<script src="/shared.js"></script>
+<script src="data/oeFeatures.js"></script>
+<script src="data/feature-details.js"></script>
+<script>
+
+function showFeatureDetail(detailKey) {
+  if (detailKey === 'grade') {
+    var explainer = document.getElementById('gradeExplainer');
+    if (explainer) { explainer.style.display = 'block'; explainer.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    return;
+  }
+  var modal = document.getElementById('featureModal');
+  var modalBody = document.getElementById('featureModalBody');
+  var content = window.__featureDetails && window.__featureDetails[detailKey];
+  if (content && modal && modalBody) {
+    modalBody.innerHTML = content;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeFeatureModal() {
+  var modal = document.getElementById('featureModal');
+  if (modal) { modal.style.display = 'none'; document.body.style.overflow = ''; }
+}
+document.addEventListener('click', function(e) { if (e.target && e.target.id === 'featureModal') closeFeatureModal(); });
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeFeatureModal(); });
+
+function updateOeFeatureFilterCounts() {
+  const counts = { all: oeFeaturesData.length };
+  oeFeaturesData.forEach(f => { counts[f.cat] = (counts[f.cat] || 0) + 1; });
+  document.querySelectorAll('#oeFeatureFilters .filter-btn').forEach(b => {
+    const f = b.dataset.filter;
+    const n = counts[f] != null ? counts[f] : 0;
+    const orig = b.getAttribute('data-orig-label') || b.textContent.trim();
+    if (!b.hasAttribute('data-orig-label')) b.setAttribute('data-orig-label', orig);
+    b.innerHTML = orig + ' <span class="feat-filter-count">' + n + '</span>';
+  });
+}
+
+function renderOeFeatures(filter) {
+  const filtered = filter === 'all' ? oeFeaturesData : oeFeaturesData.filter(f => f.cat === filter);
+  document.getElementById('oeFeaturesGrid').innerHTML = filtered.map(f => `
+    <div class="oe-feature-card">
+      <div class="feat-cat-badge cat-${f.cat}">${f.cat}</div>
+      <div class="feat-icon">${f.icon}</div>
+      <div class="feat-name">${f.name}</div>
+      <div class="feat-date">${f.date}</div>
+      <div class="feat-desc">${f.desc}</div>
+      <div class="feat-status ${f.status}">${f.statusLabel}</div>
+      <div class="feat-link">
+        <a href="${f.url}" target="_blank" rel="noopener">Source →</a>
+        ${f.detail ? '<button class="feat-info-btn" onclick="showFeatureDetail(\''+f.detail+'\')">ℹ️ Details</button>' : ''}
+      </div>
+    </div>
+  `).join('');
+}
+
+function buildPageCharts() {
+  charts.forEach(c => { try { c.destroy(); } catch(e){} });
+  charts = [];
+  const ctxOE = document.getElementById('chartOeFeatures');
+  if (!ctxOE) return;
+  const tcOE = getThemeColors();
+  const featureDates = oeFeaturesData.map(f => f.date.substring(0,7));
+  const featureLabels = oeFeaturesData.map(f => f.name.length > 18 ? f.name.substring(0,16)+'…' : f.name);
+  const catColors = {feature:'#E4643D',milestone:'#6BAF7D',partnership:'#8AAFCC',deployment:'#B89AC4',acquisition:'#D4A94E'};
+  const catBgColors = {feature:'rgba(228,100,61,0.4)',milestone:'rgba(107,175,125,0.3)',partnership:'rgba(138,175,204,0.3)',deployment:'rgba(184,154,196,0.3)',acquisition:'rgba(212,169,78,0.3)'};
+  const featureBarColors = oeFeaturesData.map(f => catBgColors[f.cat] || chartColorLight);
+  const featureBorderColors = oeFeaturesData.map(f => catColors[f.cat] || chartColor);
+  try {
+    charts.push(new Chart(ctxOE.getContext('2d'), {
+      type: 'bar',
+      data: { labels: featureLabels, datasets: [{
+        label: 'Feature Launch',
+        data: oeFeaturesData.map((f,i) => i+1),
+        backgroundColor: featureBarColors, borderColor: featureBorderColors, borderWidth: 2, borderRadius: 6
+      }]},
+      options: {
+        indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { backgroundColor: '#1A2520', titleColor: chartColor, bodyColor: '#E8E6E1',
+            callbacks: { label: (ctx) => { const f = oeFeaturesData[ctx.dataIndex]; return f.date + ' · ' + f.cat; } }
+          }
+        },
+        scales: {
+          x: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text }, title: { display: true, text: 'Item #', color: tcOE.text } },
+          y: { grid: { color: tcOE.grid }, ticks: { color: tcOE.text } }
+        }
+      }
+    }));
+  } catch(e) { console.error("[OE-CHART] chartOeFeatures failed:", e.message); }
+}
+
+window.addEventListener('load', function() {
+  try { renderOeFeatures('all'); } catch(e) { console.error("[OE] renderOeFeatures failed:", e.message); }
+  try { updateOeFeatureFilterCounts(); } catch(e) { console.error("[OE] updateFilterCounts failed:", e.message); }
+  document.getElementById('oeFeatureFilters').addEventListener('click', (e) => {
+    if (e.target.classList.contains('filter-btn')) {
+      document.querySelectorAll('#oeFeatureFilters .filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      try { renderOeFeatures(e.target.dataset.filter); } catch(e2) { console.error("[OE] filter render failed:", e2.message); }
+    }
+  });
+  buildPageCharts();
+});
+
+</script>
+</body>
+</html>

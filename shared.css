@@ -1,3 +1,4 @@
+
 :root {
   --oe-orange: #E4643D;
   --oe-orange-light: #F08A6A;
@@ -847,24 +848,3 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   color: var(--oe-orange);
 }
 
-
-/* ========================================================================
-   OE TOP NAV (multi-page site)
-   Sticky top nav bar with horizontal scrolling links to all pages.
-   Uses the OpenEvidence orange #E4643D (--oe-orange) as accent color.
-   ======================================================================== */
-
-.oe-nav { position: sticky; top: 0; z-index: 100; background: var(--oe-dark-soft); border-bottom: 1px solid var(--oe-dark-border); padding: 0 20px; }
-.oe-nav-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 4px; overflow-x: auto; padding: 10px 0; }
-.oe-nav-brand { font-family: var(--oe-font); font-size: 18px; color: var(--oe-orange); white-space: nowrap; margin-right: 16px; }
-.oe-nav a { color: var(--oe-text-dim); text-decoration: none; font-size: 13px; font-family: var(--oe-font-sans); padding: 6px 12px; border-radius: 6px; white-space: nowrap; transition: all 0.2s; }
-.oe-nav a:hover { color: var(--oe-text); background: var(--oe-dark-card); }
-.oe-nav a.active { color: var(--oe-orange); background: var(--oe-dark-card); }
-
-/* Responsive nav: tighter spacing & smaller fonts on narrow viewports */
-@media (max-width: 768px) {
-  .oe-nav { padding: 0 12px; }
-  .oe-nav-inner { gap: 2px; padding: 8px 0; }
-  .oe-nav-brand { font-size: 16px; margin-right: 10px; }
-  .oe-nav a { font-size: 12px; padding: 5px 9px; }
-}

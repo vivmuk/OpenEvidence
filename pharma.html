@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharma — OpenEvidence Insights</title>
+<meta name="description" content="OpenEvidence pharmaceutical industry integrations.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma" class="active">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Jul 28, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+<section id="pharma">
+  <div class="container">
+    <h2>Pharma <span class="accent">Products & Features</span></h2>
+    <p class="section-sub">How OpenEvidence builds for pharmaceutical companies — from ad platform to clinical trial matching to commercial infrastructure.</p>
+    <div id="pharmaList"></div>
+  </div>
+</section>
+</div>
+<script src="/shared.js"></script>
+<script src="data/pharma.js"></script>
+<script>
+
+window.addEventListener('load', function() {
+  try {
+    document.getElementById('pharmaList').innerHTML = pharmaData.map(p => `
+      <div class="feature-card">
+        <div class="icon">${p.icon}</div>
+        <div class="content">
+          <h4>${p.name} <span class="status-badge ${p.statusClass}">${p.status}</span></h4>
+          <p>${p.desc}</p>
+          <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">Source →</a></div>
+        </div>
+      </div>
+    `).join('');
+  } catch(e) { console.error("[OE] pharma render failed:", e.message); }
+});
+
+</script>
+</body>
+</html>

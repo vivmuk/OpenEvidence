@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benchmarks — OpenEvidence Insights</title>
+<meta name="description" content="Clinical AI benchmark studies evaluating OpenEvidence and competitors.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks" class="active">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Jul 28, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+<section id="benchmarks">
+  <div class="container">
+    <h2>Clinical AI <span class="accent">Benchmarks & Evaluations</span></h2>
+    <p class="section-sub">Independent benchmark studies evaluating clinical AI tools — safety, accuracy, and head-to-head comparisons. Sourced from arXiv, PubMed, and peer-reviewed journals. Updated weekly.</p>
+    <div id="benchmarkList"></div>
+    <p style="margin-top:16px;font-size:13px;color:var(--oe-text-muted);">Data also available as structured JSON: <a href="/data/benchmarks.json" target="_blank" rel="noopener" style="color:var(--oe-orange);">/data/benchmarks.json</a> · <a href="/data/research.json" target="_blank" rel="noopener" style="color:var(--oe-orange);">/data/research.json</a></p>
+  </div>
+</section>
+</div>
+<script src="/shared.js"></script>
+<script src="data/benchmarks.js"></script>
+<script>
+
+window.addEventListener('load', function() {
+  try {
+    const typeLabels = {safety_evaluation:'⚠️ Safety',tool_comparison:'⚔️ Comparison',knowledge_test:'📚 Knowledge',clinical_reasoning:'🧠 Reasoning',methodology:'🔧 Methodology'};
+    const typeColors = {safety_evaluation:'rgba(228,100,61,0.15)',tool_comparison:'rgba(80,130,100,0.15)',knowledge_test:'rgba(60,100,180,0.15)',clinical_reasoning:'rgba(140,80,160,0.15)',methodology:'rgba(120,120,120,0.15)'};
+    document.getElementById('benchmarkList').innerHTML = benchmarksData.map(b => `
+      <div class="feature-card" style="border-left:3px solid var(--oe-orange);">
+        <div class="icon">${typeLabels[b.type] ? typeLabels[b.type].split(' ')[0] : '🔬'}</div>
+        <div class="content">
+          <h4>${b.title} ${b.new ? '<span class="new-badge">NEW</span>' : ''}</h4>
+          <p><strong>${b.journal}</strong> · ${b.authors} · ${b.date}${b.updated && b.updated !== b.published ? ' (updated ' + b.updated + ')' : ''}</p>
+          <p style="margin-top:6px;font-size:13px;"><span style="background:${typeColors[b.type] || 'rgba(120,120,120,0.15)'};padding:2px 8px;border-radius:4px;font-size:11px;">${typeLabels[b.type] || 'Benchmark'}</span> · <strong>Tools:</strong> ${b.tools} · <strong>Scale:</strong> ${b.scale}</p>
+          <ul style="margin-top:8px;padding-left:20px;font-size:13px;line-height:1.6;">${b.findings.map(f => `<li>${f}</li>`).join('')}</ul>
+          <div class="src-link" style="margin-top:8px;"><a href="${b.url}" target="_blank" rel="noopener">${b.id} →</a></div>
+        </div>
+      </div>
+    `).join('');
+  } catch(e) { console.error("[OE] benchmarks render failed:", e.message); }
+});
+
+</script>
+</body>
+</html>

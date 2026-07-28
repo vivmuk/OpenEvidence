@@ -8,8 +8,17 @@ const PORT = process.env.PORT || 3000;
 // Serve static files from root directory
 app.use(express.static(__dirname, {
   index: 'index.html',
-  extensions: ['html', 'csv', 'md', 'json']
+  extensions: ['html', 'css', 'js', 'csv', 'md', 'json']
 }));
+
+// Serve data/*.js files with correct content type
+app.get('/data/*.js', (req, res) => {
+  const file = path.join(__dirname, req.path);
+  res.setHeader('Content-Type', 'application/javascript');
+  res.sendFile(file, (err) => {
+    if (err) res.status(404).send('Not found');
+  });
+});
 
 // --- JSON API ENDPOINTS (for agent ingestion) ---
 
@@ -79,7 +88,7 @@ app.get('/llms.txt', (req, res) => {
   res.sendFile(path.join(__dirname, 'llms.txt'));
 });
 
-// CSV files from /data — ensure proper content type (original route, kept for compat)
+// CSV files from /data — ensure proper content type
 app.get('/data/:file', (req, res) => {
   const file = path.join(__dirname, 'data', req.params.file);
   if (file.endsWith('.csv')) {
@@ -92,7 +101,23 @@ app.get('/data/:file', (req, res) => {
   });
 });
 
-// SPA fallback — serve index.html for any route (but not /data/ or /api/)
+// Page routes — serve specific HTML pages by route name
+const pageRoutes = [
+  'timeline', 'funding', 'products', 'features', 'competitors',
+  'partnerships', 'tech', 'pharma', 'benchmarks', 'publications',
+  'sct', 'doximity', 'global', 'future', 'sources'
+];
+
+for (const route of pageRoutes) {
+  const filePath = path.join(__dirname, `${route}.html`);
+  if (fs.existsSync(filePath)) {
+    app.get(`/${route}`, (req, res) => {
+      res.sendFile(filePath);
+    });
+  }
+}
+
+// SPA fallback — serve index.html for root and any unmatched route
 app.get('*', (req, res) => {
   if (req.path.startsWith('/data/') || req.path.startsWith('/api/')) {
     return res.status(404).json({ error: 'Not found' });
@@ -102,6 +127,7 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`OpenEvidence Insights running on port ${PORT}`);
+  console.log(`Pages: /, /timeline, /funding, /products, /features, /competitors, /partnerships, /tech, /pharma, /benchmarks, /publications, /sct, /doximity, /global, /future, /sources`);
   console.log(`JSON API: /api/timeline, /api/competitors, /api/partnerships, /api/metrics, /api/global_landscape`);
   console.log(`Pre-built JSON: /data/research.json, /data/benchmarks.json`);
   console.log(`Agent manifest: /llms.txt`);

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partnerships — OpenEvidence Insights</title>
+<meta name="description" content="OpenEvidence partnerships and integrations.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships" class="active">🤝 Partnerships</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Jul 28, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+<section id="partnerships">
+  <div class="container">
+    <h2>Partnership <span class="accent">Ecosystem</span></h2>
+    <p class="section-sub">25+ content partners, 3 health system deployments, and key tech infrastructure partnerships. Hover for details · scroll horizontally.</p>
+    <div class="chart-container" style="margin-bottom: 24px; overflow: visible;">
+      <h3>Partnership Timeline</h3>
+      <p class="chart-sub">Every partnership in chronological order — hover any dot for animated popup</p>
+      <div class="partner-timeline">
+        <div class="partner-timeline-track" id="partnerTimelineTrack">
+          <div class="partner-timeline-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="partner-grid" id="partnerGrid"></div>
+  </div>
+</section>
+
+</div>
+<script src="/shared.js"></script>
+</body>
+</html>

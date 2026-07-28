@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future — OpenEvidence Insights</title>
+<meta name="description" content="Upcoming OpenEvidence features and roadmap.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future" class="active">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Jul 28, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+<section id="future">
+  <div class="container">
+    <h2>Future <span class="accent">Roadmap</span></h2>
+    <p class="section-sub">Released products, confirmed in-development items, and inferred future directions.</p>
+    <div id="futureList"></div>
+  </div>
+</section>
+</div>
+<script src="/shared.js"></script>
+<script src="data/future.js"></script>
+<script>
+
+window.addEventListener('load', function() {
+  try {
+    document.getElementById('futureList').innerHTML = futureData.map(f => `
+      <div class="feature-card">
+        <div class="icon">${f.icon}</div>
+        <div class="content">
+          <h4>${f.name} <span class="status-badge ${f.statusClass}">${f.status}</span></h4>
+          <p>${f.desc}</p>
+          <div class="src-link"><a href="${f.url}" target="_blank" rel="noopener">Source →</a></div>
+        </div>
+      </div>
+    `).join('');
+  } catch(e) { console.error("[OE] future render failed:", e.message); }
+});
+
+</script>
+</body>
+</html>
