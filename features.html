@@ -176,7 +176,7 @@ window.addEventListener('load', function() {
         <div class="feat-status ${f.status}">${f.statusLabel}</div>
         <div class="feat-link">
           <a href="${f.url}" target="_blank" rel="noopener">Source →</a>
-          ${f.detail ? '<button class="feat-info-btn" onclick="showFeatureDetail(\\''+f.detail+'\\')">ℹ️ Details</button>' : ''}
+          ${f.detail ? '<button class="feat-info-btn" onclick="showFeatureDetail(\''+f.detail+'\')">ℹ️ Details</button>' : ''}
         </div>
       </div>
     `).join('');
