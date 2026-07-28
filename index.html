@@ -969,58 +969,13 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
 <div class="container">
   <div class="whats-new" id="whatsNew">
     <button class="wn-dismiss" onclick="document.getElementById('whatsNew').style.display='none'">✕</button>
-    <h3>✦ What's New — July 26 Weekly Update — OpenEvidence 2.0 (Workflows + Calculators) + Forbes Feature + Head-to-Head Tool Comparison Studies + 2 New Benchmark Studies</h3>
-    <div class="wn-date">Updated July 26, 2026 · New this week: · OpenEvidence announcements: OE 2.0 (Jun 22 URL archived — workflows + calculators + enhanced primary-evidence modules — distinct from Dec 2024 platform-upgrade OE 2.0) + Beckers coverage of $200M Series D round at $20B valuation (Jul 20) + Forbes feature by Garth Friesen on physician adoption (Jul 25) + Stanford-Harvard NOHARM physician-preference study fully reflected. New research (10 entries): +6 PubMed (PMID 42203638 — OpenEvidence highest CLEAR score 17.82 of 5 AI chatbots for drug-info questions; PMID 42181555 — Arkangel AI / OE / ChatGPT / Medisearch head-to-head on 4 clinical vignettes; PMID 42232526 — Spinal-surgery hallucinations incl. OE across 5 LLMs comparing clinician vs patient prompts; PMID 42226867 — Duke case report: OE used in workup of 100 cerebral microhemorrhages; PMID 42447946 — Runtime hidden-state hallucination detection probes; PMID 42500998 — GPT-5 vs surgeons on 150 ED appendicitis vignettes — companion piece to NOHARM result) +4 arXiv (ChatHealthAI structured-EHR / LLM multimodal reasoning; Benchmark contamination reliability gap affecting NOHARM/HealthBench/MedQA; Synthetic longitudinal clinical-notes pipeline; Cryopathy classification ML comparative study). Benchmarks.json now 46 entries (+6). Tool failure-mode insight: Multiple disparate tool comparisons converge on a pattern — (a) clinical-context framing (clinician vs patient prompts) materially changes citation and hallucination rates, (b) search-augmented systems carry distinct search-induced hallucinations, (c) OE competes favorably on drug-info but lags frontier LLMs on surgical decision-vignette head-to-heads. Sources: research.json +6 PubMed +4 arXiv; benchmarks.json +6; timeline.csv +4 entries; publicationsData +6; sourcesData +7. Next: Aug 2 weekly sweep — incorporate OE Series D noise + continue monitoring physician-preference replication studies.</div>
+    <h3>✦ What's New — July 28, 2026 — OpenEvidence Launches Education Platform with CE & MOC Credits</h3>
+    <div class="wn-date">Updated July 28, 2026</div>
     <div class="wn-grid">
       <div class="wn-item">
-        <div class="wn-cat">Regulatory</div>
-        <div class="wn-title">FDA CDS Guidance + 1,524 AI/ML Devices (Jan-Jun 2026)</div>
-        <div class="wn-desc">FDA updated CDS software guidance (Jan 6) with enforcement discretion for single-recommendation outputs. Device list now at 1,524 cleared AI/ML devices — radiology holds 76%. 86 authorized in Q2 2026 alone.</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">Global</div>
-        <div class="wn-title">India SAHI strategy + 70K hospital AI rollout</div>
-        <div class="wn-desc">India launches SAHI national AI healthcare strategy and BODH platform. AIIMS-built Smart Doctor AI CDS deploying across 70,000 hospitals under ABDM. Google partners with NHA for FHIR data conversion.</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">NHS</div>
-        <div class="wn-title">UK NHS: 500K Copilot rollout + AI triage in NHS App</div>
-        <div class="wn-desc">NHS England rolls out Microsoft 365 Copilot to 505,000 staff (largest healthcare AI deployment globally). AI triage announced for NHS App as part of £10bn tech investment. AI scribe registry published with 19 suppliers.</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">China</div>
-        <div class="wn-title">NMPA Class III AI devices + draft AI diagnostic guideline</div>
-        <div class="wn-desc">China approves Class III AI medical devices in 2026 expanding into pathology, endoscopy, and surgical navigation. NMPA releases draft guideline on clinical evaluation of AI-assisted diagnostic devices (Jun 17).</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">New Partnership</div>
-        <div class="wn-title">AAP and OpenEvidence Collaborate (Jul 15)</div>
-        <div class="wn-desc">American Academy of Pediatrics (67,000 members) partners with OpenEvidence to integrate pediatric clinical guidance into the platform. Content from Pediatrics, Hospital Pediatrics, Pediatrics in Review, Red Book, and Bright Futures. AAP CEO Mark Del Monte: pediatricians can spend more time with patients and less time searching for information.</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">Frontier AI</div>
-        <div class="wn-title">OpenAI launches GPT-5.6 + GPT-Live (Jul 8-9)</div>
-        <div class="wn-desc">GPT-5.6 family (Sol, Terra, Luna) launches with new ultra mode for parallel agents. Becomes preferred model in Microsoft 365 Copilot — directly upgrading NHS England's 505K staff rollout. GPT-Live introduces full-duplex voice AI with simultaneous listening and speaking. Both have major implications for clinical AI benchmarks and voice-based clinical tools.</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">Health System</div>
-        <div class="wn-title">Mount Sinai Enterprise-Wide Deployment (Jul 13)</div>
-        <div class="wn-desc">Mount Sinai deploys OpenEvidence across 7 hospitals — first enterprise-wide AI deployment extending to ALL care team members: physicians, nurses, pharmacists, therapists. Integrated into Epic EHR. 4th major health system deployment.</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">Research</div>
-        <div class="wn-title">Boston Children's Hospital Research Collaboration (Jul 16)</div>
-        <div class="wn-desc">Multi-year collaboration to study how AI use at point of care correlates with care delivery patterns. OpenEvidence integrated into EHR. No patient data accessed. First pediatric research collaboration.</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">Competitor</div>
-        <div class="wn-title">Doximity Tops NOHARM Safety Benchmark (Jul 16)</div>
-        <div class="wn-desc">Doximity Clinical AI (Ask) outperforms OpenEvidence and frontier models in independent Stanford-Harvard ARISE NOHARM safety evaluation. PeerCheck program with 11,000+ physician reviewers cited as key differentiator. 150+ health systems implemented Doximity Clinical AI Suite.</div>
-      </div>
-      <div class="wn-item">
-        <div class="wn-cat">Research</div>
-        <div class="wn-title">New PubMed: RAG in Gynecologic Oncology CDS (Jul 16)</div>
-        <div class="wn-desc">Gynecologic Oncology publishes pre-integration benchmark showing guideline-anchored RAG outperforms baseline and literature-only configurations in gynecologic oncology decision support. Directly relevant to OpenEvidence's RAG architecture.</div>
+        <div class="wn-cat">Product Launch</div>
+        <div class="wn-title">OpenEvidence Launches Education Platform — CE & MOC Credits</div>
+        <div class="wn-desc">OpenEvidence launches new education platform offering accredited interprofessional continuing education (CE) and Maintenance of Certification (MOC) credits for NPI-verified physicians, nurse practitioners, and physician associates. Powered by same underlying models as OpenEvidence, adapted for personalized accredited learning. AKH Inc. as accredited provider. Jointly accredited by ACCME, ACPE, and ANCC. Clinicians earn credit by reflecting on real-world evidence-based content engagement linked to certifying board content blueprints. Led by Mondira Ray MD MBI (SVP Clinical Informatics) and Vishal Patel MD (VP Clinical Partnerships and AI Education). Available at openevidence.com/cme.</div>
       </div>
     </div>
   </div>
