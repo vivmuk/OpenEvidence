@@ -164,8 +164,8 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close
 
 window.addEventListener('load', function() {
   try {
-    // Sort newest first
-    const sorted = [...oeFeaturesData].sort((a,b) => new Date(b.date) - new Date(a.date));
+    // Only actual product features, sorted newest first
+    const sorted = oeFeaturesData.filter(f => f.cat === 'feature').sort((a,b) => new Date(b.date) - new Date(a.date));
     document.getElementById('oeFeaturesGrid').innerHTML = sorted.map(f => `
       <div class="oe-feature-card">
         <div class="feat-cat-badge cat-${f.cat}">${f.cat}</div>
