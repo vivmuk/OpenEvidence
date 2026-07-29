@@ -2615,5 +2615,109 @@
     "scale": "2,996 questions, 5 core medical areas",
     "status": "preprint",
     "new": false
+  },
+  {
+    "id": "arxiv:2607.25038",
+    "source": "arxiv",
+    "type": "tool_evaluation",
+    "title": "Grounded in Consensus, In Step With Emerging Science: A Consensus-Anchored Multi-Corpus Clinical Chatbot for Long COVID",
+    "authors": "Yining Wu, Philip DiGiacomo, Ying Ding, William Brode",
+    "abstract": "Long COVID poses a challenge for clinical decision support because relevant evidence is distributed across sources with different update cycles, evidentiary roles, and levels of clinical maturity. The authors present a clinician-facing chatbot that organizes four sources within a retrieval-augmented workflow: expert-curated consensus guidance, current PubMed literature, registered interventional trials, and evidence from living systematic reviews. Consensus guidance is always included to frame responses, while the remaining sources are retrieved in parallel when selected by the user. In an exploratory automated evaluation on 50 clinician-facing questions, the chatbot showed comparable mean ratings to OpenEvidence, with numerically higher scores and lower score variability in an LLM-judged comparison.",
+    "url": "https://arxiv.org/abs/2607.25038",
+    "pdf_url": "https://arxiv.org/pdf/2607.25038",
+    "doi": "10.48550/arXiv.2607.25038",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "journal": "arXiv preprint",
+    "tags": [
+      "OpenEvidence",
+      "RAG",
+      "clinical decision support",
+      "Long COVID",
+      "clinician-facing chatbot",
+      "retrieval-augmented generation",
+      "tool comparison"
+    ],
+    "relevance": "Directly compares a new RAG-based clinical chatbot against OpenEvidence on 50 clinician-facing questions, demonstrating comparable performance with lower score variability",
+    "key_findings": [
+      "Presents a consensus-anchored multi-corpus RAG chatbot for Long COVID clinical decision support",
+      "Organizes four evidence sources: consensus guidance, PubMed literature, clinical trials, and living systematic reviews",
+      "Shows comparable mean ratings to OpenEvidence on 50 clinician-facing questions with numerically higher scores and lower score variability",
+      "Demonstrates that consensus-anchored retrieval can match or exceed specialized clinical AI tools on specific clinical domains"
+    ],
+    "tools_evaluated": "OpenEvidence; custom consensus-anchored RAG chatbot",
+    "scale": "50 clinician-facing questions, automated LLM-judged evaluation",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2607.24814",
+    "source": "arxiv",
+    "type": "system_design",
+    "title": "Aletheia: An Offline-First Clinical Decision Support System for Differential Diagnosis in Low-Resource Healthcare Settings",
+    "authors": "Joseph Walusimbi, Ann Move Oguti, Abubakhari Sserwadda, Precious Boss Kasasira, Charles Brian Okoboi",
+    "abstract": "Access to specialist clinical expertise remains severely limited across sub-Saharan Africa, where physician-to-patient ratios can fall below 1:25,000 in rural settings. Existing AI-assisted diagnostic tools predominantly require reliable internet connectivity and high-specification hardware, rendering them impractical for frontline healthcare workers in district hospitals and health centres. This paper presents Aletheia, an offline-first clinical decision support system designed for low-resource healthcare contexts across sub-Saharan Africa. Aletheia is built upon Qwen2.5-3B-Instruct, fine-tuned using Quantised Low-Rank Adaptation (QLoRA) on a curated dataset of 27,000 clinical reasoning samples spanning 50 disease conditions with elevated prevalence in East Africa. Evaluation demonstrates a Top-1 diagnostic accuracy of 80.0%, Top-3 accuracy of 100.0%, BERTScore-F1 of 0.909, and METEOR of 0.467 across ten representative clinical case categories. The system achieves an Expected Calibration Error (ECE) of 0.275 and passes the Africa Deep Tech Challenge 2026 memory budget constraint of 7,168 MB, achieving a peak inference RAM of approximately 3,630 MB.",
+    "url": "https://arxiv.org/abs/2607.24814",
+    "pdf_url": "https://arxiv.org/pdf/2607.24814",
+    "doi": "10.48550/arXiv.2607.24814",
+    "published": "2026-07-14",
+    "updated": "2026-07-14",
+    "journal": "arXiv preprint",
+    "tags": [
+      "clinical decision support",
+      "offline-first",
+      "low-resource settings",
+      "differential diagnosis",
+      "LLM",
+      "QLoRA",
+      "sub-Saharan Africa",
+      "Qwen2.5"
+    ],
+    "relevance": "Presents a novel offline-first clinical decision support system using fine-tuned LLM for differential diagnosis, demonstrating feasibility of deployable clinical AI in resource-constrained settings without cloud infrastructure",
+    "key_findings": [
+      "Offline-first CDSS using Qwen2.5-3B-Instruct with QLoRA fine-tuning on 27,000 clinical reasoning samples",
+      "Top-1 diagnostic accuracy of 80.0% and Top-3 accuracy of 100.0% across 50 disease conditions",
+      "Peak inference RAM of ~3,630 MB, meeting the ADTC 2026 memory budget constraint",
+      "Demonstrates feasibility of LLM-based clinical reasoning at primary care level without cloud infrastructure"
+    ],
+    "tools_evaluated": "Aletheia (custom); Qwen2.5-3B-Instruct base model",
+    "scale": "27,000 training samples; 50 disease conditions; 10 representative clinical case categories",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "arxiv:2607.24793",
+    "source": "arxiv",
+    "type": "perspective",
+    "title": "Retrieval, not hallucinations, will be the limiting factor for LLM-based clinical AI tools",
+    "authors": "Kirk Roberts, Steven Bedrick, Kurt Miller, William R. Hersh, Hongfang Liu",
+    "abstract": "Discussions around large language model (LLM) errors in clinical artificial intelligence (AI) generally center around precision errors like hallucinations. This perspective, targeting both clinicians and AI researchers, seeks to shift that discussion to recall errors, particularly in retrieval of patient-level data needed for many clinical AI tools. The perspective outlines types of errors and mitigation strategies, describes research directions in LLMs and retrieval, and provides an overview of retrieval evaluation.",
+    "url": "https://arxiv.org/abs/2607.24793",
+    "pdf_url": "https://arxiv.org/pdf/2607.24793",
+    "doi": "10.48550/arXiv.2607.24793",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "journal": "arXiv preprint",
+    "tags": [
+      "retrieval",
+      "clinical AI",
+      "RAG",
+      "recall errors",
+      "hallucination",
+      "patient-level data",
+      "safety",
+      "perspective"
+    ],
+    "relevance": "Shifts focus from hallucination (precision) to retrieval (recall) as the key limiting factor for LLM-based clinical AI tools, directly relevant to RAG-based systems like OpenEvidence",
+    "key_findings": [
+      "Argues that recall errors in retrieval of patient-level data, not hallucinations, will be the primary limiting factor for clinical AI tools",
+      "Outlines types of retrieval errors and mitigation strategies for LLM-based clinical AI",
+      "Describes research directions in LLMs and retrieval for clinical applications",
+      "Provides overview of retrieval evaluation methodologies relevant to RAG-based clinical decision support"
+    ],
+    "tools_evaluated": "N/A (perspective piece)",
+    "scale": "Perspective/review",
+    "status": "preprint",
+    "new": true
   }
 ]
