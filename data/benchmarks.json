@@ -1057,5 +1057,34 @@
     "relevance": "high",
     "status": "preprint_v1",
     "new": true
+  },
+  {
+    "id": "arxiv:2607.29085",
+    "source": "arxiv",
+    "type": "triage_safety_benchmark",
+    "title": "IyawoBench v2.0: Extended Diagnostic Evaluation of LLM Clinical Triage in Nigerian Primary Care",
+    "authors": "Anthonio Oladimeji Gabriel, Dimeji Olawuyi",
+    "url": "https://arxiv.org/abs/2607.29085",
+    "published": "2026-07-31",
+    "journal": "arXiv preprint (cs.CY)",
+    "tools_evaluated": [
+      "Claude Sonnet 4.6",
+      "Llama 3.3 70B",
+      "Llama 3.1 8B"
+    ],
+    "scale": "200 synthetic vignettes from 1,200 real encounters, 19 Nigerian PHCs",
+    "domain": "Clinical triage safety in LMIC primary care",
+    "key_findings": [
+      "Introduces Escalation Bias Index and Expected Deployment Cost as novel triage safety metrics",
+      "Three formal failure modes: Conservative Escalation Bias, Systematic Downgrade Bias, Middle-Tier Instability",
+      "All three frontier models exhibit at least one formal failure mode",
+      "77 percentage point under-triage gap hidden by traditional sensitivity metrics in Llama 3.1 8B",
+      "Single-ranking benchmarks inadequate for LMIC clinical AI selection \u2014 optimal model varies by deployment scenario"
+    ],
+    "open_evidence_rank": null,
+    "open_evidence_score": null,
+    "relevance": "medium",
+    "status": "preprint_v1",
+    "new": true
   }
 ]
