@@ -33,7 +33,7 @@
     "tools_evaluated": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
     "scale": "1,100 tasks, 10 specialties, 12,747 annotations, 101 physicians",
     "key_findings": [
-      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases \u2014 more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
+      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
       "24.6% severe harm potential from AI recommendations",
       "Omission errors >80% of severe errors",
       "Clinical AI tools outperformed generalist LLMs",
@@ -101,7 +101,7 @@
     "tools_evaluated": "6 LLMs (domain-specific and general-purpose)",
     "scale": "2,069 Q&A, 26 departments, 32 physicians, 30 criteria",
     "key_findings": [
-      "Average LLM performance 57.2% \u2014 moderate",
+      "Average LLM performance 57.2% — moderate",
       "Safety 54.7%, effectiveness 62.3%",
       "13.3% performance drop in high-risk scenarios",
       "Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"
@@ -114,7 +114,7 @@
     "id": "arxiv:2508.04325",
     "source": "arxiv",
     "type": "methodology",
-    "title": "MedCheck: Beyond the Leaderboard \u2014 Rethinking Medical Benchmarks for LLMs",
+    "title": "MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",
     "authors": "Wenxuan Wang et al.",
     "url": "https://arxiv.org/abs/2508.04325",
     "published": "2025-08-06",
@@ -562,7 +562,7 @@
       "Selective adaptation preserved physiological representation and improved vasopressor/septic shock discrimination",
       "Framework correctly identified 26 septic shock cases the retrained baseline missed",
       "PubMed-grounded Temporal RAG preserved retrieval consistency with pre-adaptation source",
-      "Drift localized entirely to treatment stream \u2014 supports governable clinical AI deployment"
+      "Drift localized entirely to treatment stream — supports governable clinical AI deployment"
     ],
     "relevance": "high",
     "status": "preprint_v1",
@@ -598,7 +598,7 @@
     "id": "arxiv:2606.23992",
     "source": "arxiv",
     "type": "rag_clinical_evaluation",
-    "title": "RASC+ Retrieval-Constrained LLM Adjudication \u2014 Clinical Value Sets CDSS",
+    "title": "RASC+ Retrieval-Constrained LLM Adjudication — Clinical Value Sets CDSS",
     "authors": "Sumit Mukherjee",
     "url": "https://arxiv.org/abs/2606.23992",
     "published": "2026-06-22",
@@ -644,7 +644,7 @@
       "Inverse relationship: higher expert quality = lower readability (OpenEvidence at postgraduate level)"
     ],
     "open_evidence_rank": 1,
-    "open_evidence_score": "4.45\u00b10.72",
+    "open_evidence_score": "4.45±0.72",
     "status": "published"
   },
   {
@@ -851,8 +851,8 @@
     "id": "pmid:42181555",
     "type": "tool_comparison",
     "title": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch: Are They Objectively up to Medical Standards? A Real-Life Assessment of LLM Chatbots in Health Care",
-    "authors": "Casta\u00f1o-Villegas N, Villa MC, Barrientos KM, Llano I, Vel\u00e1squez L, Zea J",
-    "abstract": "Independent comparative study of four LLM chatbots \u2014 OpenEvidence, ChatGPT, Medisearch, and Arkangel AI \u2014 on four clinical vignettes (orthopedics, pediatrics, gynecology, psychiatry) with four questions each (diagnosis, clinical management, research, general knowledge); evaluated by external clinicians on 8-criterion Likert scale. Response times also captured.",
+    "authors": "Castaño-Villegas N, Villa MC, Barrientos KM, Llano I, Velásquez L, Zea J",
+    "abstract": "Independent comparative study of four LLM chatbots — OpenEvidence, ChatGPT, Medisearch, and Arkangel AI — on four clinical vignettes (orthopedics, pediatrics, gynecology, psychiatry) with four questions each (diagnosis, clinical management, research, general knowledge); evaluated by external clinicians on 8-criterion Likert scale. Response times also captured.",
     "published": "2026-06-01",
     "updated": "2026-06-01",
     "journal": "Mayo Clin Proc Digit Health",
@@ -868,12 +868,12 @@
       "vignettes"
     ],
     "tools_evaluated": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch",
-    "scale": "4 clinical vignettes \u00d7 4 questions = 16 queries per chatbot \u00d7 4 chatbots",
+    "scale": "4 clinical vignettes × 4 questions = 16 queries per chatbot × 4 chatbots",
     "key_findings": [
       "Eight-criterion Likert evaluation (correctness, consensus, bias, standards-of-care adherence, timeliness, patient safety, citation authenticity, contextual appropriateness)",
       "Real-world style clinical vignettes spanning four specialties",
       "Response times captured",
-      "Independent (commercial Latin-American) clinical AI vendor initiative \u2014 adds geographic diversity beyond US-centric NOHARM/Real-POCQi"
+      "Independent (commercial Latin-American) clinical AI vendor initiative — adds geographic diversity beyond US-centric NOHARM/Real-POCQi"
     ],
     "status": "published",
     "new": true
@@ -903,7 +903,7 @@
     "key_findings": [
       "Five-LLM head-to-head on spine-surgery citation accuracy",
       "OpenEvidence included in spine comparison",
-      "Clinician-level vs patient-level prompt comparison \u2014 first such decomposition for spine topics",
+      "Clinician-level vs patient-level prompt comparison — first such decomposition for spine topics",
       "Quantifies fabricated citations across all five systems"
     ],
     "status": "published",
@@ -935,7 +935,7 @@
       "OpenEvidence highest CLEAR score (17.82/25)",
       "ChatGPT second at 15.72/25",
       "All AI chatbots statistically lower than faculty responses",
-      "Few \"very good\" responses from any chatbot \u2014 pharmacist expertise remains essential"
+      "Few \"very good\" responses from any chatbot — pharmacist expertise remains essential"
     ],
     "status": "published",
     "new": true
@@ -944,7 +944,7 @@
     "id": "pmid:42500998",
     "type": "accuracy_evaluation",
     "title": "Diagnostic Ambiguity in Appendicitis: Comparing Failure Modes of Large Language Models and Surgeons",
-    "authors": "\u00c7al\u0131\u015fkan YK, Ba\u015fak F, Erdem O, Kuda\u015f \u0130",
+    "authors": "Çalışkan YK, Başak F, Erdem O, Kudaş İ",
     "abstract": "Six frontier AI systems vs two board-certified general surgeons evaluated 150 standardized ED vignettes (90 appendicitis, 60 mimics enriched for difficult scenarios). GPT-5 95.3% accuracy; GPT-4o 82.0%; specialist consensus 92.7%. Distinct failure modes identified including search-induced hallucinations in web-augmented systems.",
     "published": "2026-07-25",
     "updated": "2026-07-25",
@@ -1006,8 +1006,8 @@
     "id": "arxiv:2606.03305",
     "type": "methodology",
     "title": "The Reliability Gap in Benchmark Auditing: Distribution Shift and Scale as Failure Modes of Contamination Detection",
-    "authors": "Wojciech Zarzecki, Jan Dubi\u0144ski, Sebastian Cygert",
-    "abstract": "Identifies two understudied failure modes in benchmark contamination detection \u2014 distribution shift and scale constraints \u2014 that affect validity of LLM clinical AI benchmark scoring (NOHARM, HealthBench, MedQA, USMLE, MedCheck).",
+    "authors": "Wojciech Zarzecki, Jan Dubiński, Sebastian Cygert",
+    "abstract": "Identifies two understudied failure modes in benchmark contamination detection — distribution shift and scale constraints — that affect validity of LLM clinical AI benchmark scoring (NOHARM, HealthBench, MedQA, USMLE, MedCheck).",
     "published": "2026-06-02",
     "updated": "2026-07-01",
     "journal": "arXiv preprint",
@@ -1079,12 +1079,71 @@
       "Three formal failure modes: Conservative Escalation Bias, Systematic Downgrade Bias, Middle-Tier Instability",
       "All three frontier models exhibit at least one formal failure mode",
       "77 percentage point under-triage gap hidden by traditional sensitivity metrics in Llama 3.1 8B",
-      "Single-ranking benchmarks inadequate for LMIC clinical AI selection \u2014 optimal model varies by deployment scenario"
+      "Single-ranking benchmarks inadequate for LMIC clinical AI selection — optimal model varies by deployment scenario"
     ],
     "open_evidence_rank": null,
     "open_evidence_score": null,
     "relevance": "medium",
     "status": "preprint_v1",
+    "new": true
+  },
+  {
+    "id": "arxiv:2608.02520",
+    "title": "MedPRESS: Multi-turn Benchmark for Patient-Pressure-Induced Medical Sycophancy in LLMs",
+    "authors": "Saman Sarker Joy, Niloy Farhan",
+    "published": "2026-08-03",
+    "url": "https://arxiv.org/abs/2608.02520v1",
+    "type": "safety_benchmark",
+    "tags": [
+      "sycophancy",
+      "safety",
+      "multi-turn",
+      "patient pressure",
+      "conversational robustness"
+    ],
+    "summary": "600 medically grounded 5-turn dialogues testing whether LLMs maintain safe recommendations under patient pressure. 20 LLMs evaluated. Models frequently shift toward unsafe agreement; anti-sycophancy prompting helps but doesn't eliminate the problem.",
+    "scale": "600 dialogues, 20 LLMs, 3 scenario families",
+    "key_metric": "Unsafe agreement rate under pressure; anti-sycophancy prompting effect",
+    "new": true
+  },
+  {
+    "id": "arxiv:2608.01012",
+    "title": "MedUPS: Diagnostic Assistance in Uncommon Medical Cases via Intermediate Decision Benchmarking",
+    "authors": "Ofir Ben Shoham, Oriel Perets, Nir Grinberg, Nadav Rappoport",
+    "published": "2026-08-02",
+    "url": "https://arxiv.org/abs/2608.01012v1",
+    "type": "clinical_decision_benchmark",
+    "tags": [
+      "intermediate decisions",
+      "next-step prediction",
+      "RL alignment",
+      "GRPO",
+      "uncommon cases",
+      "clinical decision support"
+    ],
+    "summary": "MedUPSQA dataset of 21,874 mid-stream clinical decision points from 5,535 real case reports. Evaluates LLMs on next appropriate action (test, imaging, specialist, differential) rather than just final diagnosis. RL alignment with GRPO improves next-step accuracy significantly.",
+    "scale": "21,874 decision points, 5,535 case reports, 3 model backbones",
+    "key_metric": "Next-step accuracy improvement: Qwen3.6-27B 55.2→66.7, Qwen3.5-9B 47.2→57.8, HuatuoGPT-3-8B 37.8→44.4",
+    "new": true
+  },
+  {
+    "id": "arxiv:2608.00207",
+    "title": "AraClinicDialog: Clinician-Constructed Arabic Medical Dialogue Benchmark",
+    "authors": "Chaimae Abouzahir et al.",
+    "published": "2026-07-31",
+    "url": "https://arxiv.org/abs/2608.00207v1",
+    "type": "multilingual_clinical_benchmark",
+    "tags": [
+      "multilingual",
+      "Arabic",
+      "clinical dialogue",
+      "MSA",
+      "dialects",
+      "TLoRA"
+    ],
+    "summary": "Introduces AraClinicDialog, a clinician-constructed Arabic medical dialogue benchmark in Modern Standard Arabic with validated variants across four Arabic dialects. Also proposes Targeted LoRA (TLoRA) that outperforms full-network LoRA by targeting the specific layer window where cross-lingual representations diverge.",
+    "scale": "4 Arabic dialects, multiple evaluation tasks (MC QA, short-answer, multi-turn dialogue)",
+    "key_metric": "TLoRA outperforms full-network LoRA, zero-shot, and few-shot on Arabic medical QA and clinical dialogue",
     "new": true
   }
 ]
