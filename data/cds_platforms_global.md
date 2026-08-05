@@ -10,7 +10,7 @@
 - **URL:** https://www.openevidence.com
 - **Category:** AI clinical search engine / evidence platform
 - **Target users:** Physicians, nurses, pharmacists, NPs, PAs
-- **Key features:** AI-powered medical search built on peer-reviewed literature from NEJM, JAMA, Cochrane, NCCN, Wiley. Free for verified U.S. HCPs. 760K+ registered physicians, 18M+ clinical consultations/month. DeepConsult AI agent. $12B valuation (Series D, Jan 2026). Official AI partnerships with NEJM, JAMA, NCCN, Cochrane.
+- **Key features:** AI-powered medical search built on peer-reviewed literature from NEJM, JAMA, Cochrane, NCCN, Wiley, Springer Nature. Free for verified U.S. HCPs. 760K+ registered physicians, 18M+ clinical consultations/month. DeepConsult AI agent. $12B valuation (Series D, Jan 2026). Official content partnerships with NEJM, JAMA, NCCN, Cochrane, Wiley, Springer Nature. EvidenceGrade (GRADE-based citation strength, Jul 2026).
 - **Geographic reach:** United States (withdrew from EU/UK Apr 2025 due to AI Act)
 - **Notable:** Series D $250M at $12B valuation (Thrive + DST, Jan 2026); 1M consultations/day milestone (Mar 2026)
 
