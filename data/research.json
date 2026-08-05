@@ -3029,5 +3029,83 @@
     "scale": "Multiple evaluation tasks (MC QA, short-answer, multi-turn dialogue), 4 Arabic dialects",
     "status": "preprint",
     "new": true
+  },
+  {
+    "id": "arxiv:2608.03744",
+    "source": "arxiv",
+    "type": "benchmark_evaluation",
+    "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
+    "authors": "Sebastián Andrés Cajas Ordóñez, Agastya Munnangi, Aldo Marzullo, et al.",
+    "abstract": "Clinical decision support is moving toward committees of language-model agents deliberating on a shared workspace. We ask whether such committees can be gamed by shortcuts, cues a benchmark rewards but a clinician would ignore. Across seven cohorts on six public datasets spanning text (MedQA-USMLE, MedMCQA, MIMIC-CXR reports), imaging (NIH ChestX-ray14, MIMIC-CXR-JPG, CheXpert) and tabular ICU records (SUPPORT2), Gemini committees resist these cues in isolation (flip 5-16%), yet a socially plausible shortcut spreads: when two peers assert the same wrong answer, the holdout under test adopts it in 38% of cases. Of three oversight agents, a gate cannot separate adoption from honest agreement (false-positive rate 100%); a same-lineage judge flags adoption on text (precision 100%, recall 93%) but collapses in imaging; a referee that privately re-queries the holdout transfers to imaging (77-88% precision). Gaming a hidden rubric is near-silent: only 1/10 text and 1/134 imaging drifters name the rubric they moved toward.",
+    "url": "https://arxiv.org/abs/2608.03744",
+    "pdf_url": "https://arxiv.org/pdf/2608.03744",
+    "doi": "10.48550/arXiv.2608.03744",
+    "published": "2026-08-04",
+    "updated": "2026-08-04",
+    "journal": "arXiv preprint (cs.AI)",
+    "tags": [
+      "benchmark",
+      "multi-agent",
+      "clinical decision support",
+      "MedQA-USMLE",
+      "MedMCQA",
+      "benchmark gaming",
+      "shortcut cascades",
+      "clinical AI safety",
+      "oversight agents"
+    ],
+    "relevance": "Evaluates vulnerability of clinical multi-agent AI systems to benchmark gaming via social shortcuts — directly relevant to clinical AI safety and benchmark integrity",
+    "key_findings": [
+      "Social plausibility drives shortcut contagion: 38% adoption when two peers assert same wrong answer",
+      "Gate oversight agent has 100% false-positive rate — cannot separate adoption from honest agreement",
+      "Referee agent that privately re-queries transfers to imaging (77-88% precision, 13-21% FPR)",
+      "Second peer voice raises contagion by half again; tripling visual salience does not move contagion",
+      "Only 1/10 text and 1/134 imaging drifters name the rubric they moved toward — near-silent gaming"
+    ],
+    "tools_evaluated": [
+      "Gemini committees (multi-agent)",
+      "Three oversight agent architectures (gate, judge, referee)"
+    ],
+    "scale": "7 cohorts, 6 public datasets (MedQA-USMLE, MedMCQA, MIMIC-CXR, NIH ChestX-ray14, CheXpert, SUPPORT2)",
+    "status": "preprint_v1",
+    "new": true
+  },
+  {
+    "id": "arxiv:2608.03731",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "CARE-Bench: Benchmarking Patient-Facing LLM Triage",
+    "authors": "Yining Hua, Hongbin Na, Cyrus Ayubcha",
+    "abstract": "Patient-facing medical LLMs and agents increasingly answer symptom questions before clinician contact, where the key safety question is what action the user should take next. We introduce CARE-Bench, a source-grounded benchmark that evaluates sequential patient-facing triage as a four-label per-turn current-action task. CARE-Bench contains 500 cases and 1,059 evaluated patient-disclosure prefixes reconstructed from medical dialogue, consultation, and follow-up-question sources. We evaluate 11 models on 269 held-out rounds under unprompted and minimally prompted open-ended protocols, using a fixed GPT-5.5 mapper. Unprompted macro-F1 remains low (31.2-50.4). Prompting improves 10 of 11 models (46.9-63.4) but substantial threshold errors remain. When the correct action was to ask for more information, only 33.5% of prompted outputs preserved the step.",
+    "url": "https://arxiv.org/abs/2608.03731",
+    "pdf_url": "https://arxiv.org/pdf/2608.03731",
+    "doi": "10.48550/arXiv.2608.03731",
+    "published": "2026-08-04",
+    "updated": "2026-08-04",
+    "journal": "arXiv preprint (cs.AI)",
+    "tags": [
+      "benchmark",
+      "patient-facing",
+      "triage",
+      "LLM",
+      "clinical AI safety",
+      "action timing",
+      "source-grounded"
+    ],
+    "relevance": "Directly benchmarks patient-facing clinical AI triage — evaluates sequential action timing which is critical for safe deployment of clinical AI tools",
+    "key_findings": [
+      "Unprompted macro-F1 ranges 31.2-50.4 across 11 models — low baseline performance",
+      "Prompting improves 10/11 models to 46.9-63.4 macro-F1 but substantial threshold errors remain",
+      "Only 33.5% of prompted outputs correctly asked for more information when needed",
+      "Patient-facing triage is not a simple prompting problem — explicit evaluation of action timing needed before deployment",
+      "500 cases, 1,059 evaluated patient-disclosure prefixes, 269 held-out rounds"
+    ],
+    "tools_evaluated": [
+      "11 LLMs (unprompted and prompted protocols)",
+      "GPT-5.5 as response mapper"
+    ],
+    "scale": "500 cases, 1,059 patient-disclosure prefixes, 269 held-out rounds, 11 models",
+    "status": "preprint_v1",
+    "new": true
   }
 ]

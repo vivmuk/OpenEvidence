@@ -1145,5 +1145,65 @@
     "scale": "4 Arabic dialects, multiple evaluation tasks (MC QA, short-answer, multi-turn dialogue)",
     "key_metric": "TLoRA outperforms full-network LoRA, zero-shot, and few-shot on Arabic medical QA and clinical dialogue",
     "new": true
+  },
+  {
+    "id": "arxiv:2608.03744",
+    "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
+    "authors": "Sebastián Andrés Cajas Ordóñez et al.",
+    "url": "https://arxiv.org/abs/2608.03744",
+    "published": "2026-08-04",
+    "journal": "arXiv preprint (cs.AI)",
+    "type": "multi_agent_safety_benchmark",
+    "description": "Evaluates whether clinical multi-agent LLM committees can be gamed by social shortcuts. Tests 7 cohorts across 6 public datasets (MedQA-USMLE, MedMCQA, MIMIC-CXR, ChestX-ray14, CheXpert, SUPPORT2). 38% shortcut adoption rate when two peers assert wrong answer.",
+    "key_findings": [
+      "38% shortcut adoption when two peers assert same wrong answer",
+      "Gate oversight: 100% FPR — cannot distinguish adoption from honest agreement",
+      "Referee oversight: 77-88% precision, 13-21% FPR — transfers across modalities",
+      "Near-silent gaming: only 1/10 text and 1/134 imaging drifters name the moved-toward rubric",
+      "Social plausibility, not visual salience, drives contagion"
+    ],
+    "models_evaluated": "Gemini committees (multi-agent), 3 oversight agent architectures",
+    "dataset_size": "7 cohorts, 6 public datasets spanning text, imaging, and tabular ICU records",
+    "categories": [
+      "multi-agent",
+      "benchmark_gaming",
+      "clinical_ai_safety",
+      "shortcut_cascades",
+      "oversight"
+    ],
+    "open_source": true,
+    "huggingface": false,
+    "status": "preprint_v1",
+    "new": true
+  },
+  {
+    "id": "arxiv:2608.03731",
+    "title": "CARE-Bench: Benchmarking Patient-Facing LLM Triage",
+    "authors": "Yining Hua, Hongbin Na, Cyrus Ayubcha",
+    "url": "https://arxiv.org/abs/2608.03731",
+    "published": "2026-08-04",
+    "journal": "arXiv preprint (cs.AI)",
+    "type": "triage_action_benchmark",
+    "description": "Source-grounded benchmark evaluating sequential patient-facing triage as a four-label per-turn current-action task. 500 cases, 1,059 prefixes, 11 models evaluated. Unprompted macro-F1 31.2-50.4; prompted 46.9-63.4. Only 33.5% of prompted outputs correctly asked for more information when needed.",
+    "key_findings": [
+      "Unprompted macro-F1 31.2-50.4 across 11 models",
+      "Prompting improves to 46.9-63.4 but substantial threshold errors remain",
+      "Only 33.5% of prompted outputs preserve 'ask for more info' step",
+      "Patient-facing triage is not a simple prompting problem",
+      "Supports explicit evaluation of action timing before deployment"
+    ],
+    "models_evaluated": "11 LLMs under unprompted and prompted open-ended protocols; GPT-5.5 mapper",
+    "dataset_size": "500 cases, 1,059 evaluated patient-disclosure prefixes, 269 held-out rounds",
+    "categories": [
+      "patient-facing",
+      "triage",
+      "action_timing",
+      "clinical_ai_safety",
+      "sequential_decision"
+    ],
+    "open_source": true,
+    "huggingface": true,
+    "status": "preprint_v1",
+    "new": true
   }
 ]
