@@ -33,7 +33,7 @@
     "tools_evaluated": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
     "scale": "1,100 tasks, 10 specialties, 12,747 annotations, 101 physicians",
     "key_findings": [
-      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
+      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases \u2014 more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
       "24.6% severe harm potential from AI recommendations",
       "Omission errors >80% of severe errors",
       "Clinical AI tools outperformed generalist LLMs",
@@ -101,7 +101,7 @@
     "tools_evaluated": "6 LLMs (domain-specific and general-purpose)",
     "scale": "2,069 Q&A, 26 departments, 32 physicians, 30 criteria",
     "key_findings": [
-      "Average LLM performance 57.2% — moderate",
+      "Average LLM performance 57.2% \u2014 moderate",
       "Safety 54.7%, effectiveness 62.3%",
       "13.3% performance drop in high-risk scenarios",
       "Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"
@@ -114,7 +114,7 @@
     "id": "arxiv:2508.04325",
     "source": "arxiv",
     "type": "methodology",
-    "title": "MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",
+    "title": "MedCheck: Beyond the Leaderboard \u2014 Rethinking Medical Benchmarks for LLMs",
     "authors": "Wenxuan Wang et al.",
     "url": "https://arxiv.org/abs/2508.04325",
     "published": "2025-08-06",
@@ -562,7 +562,7 @@
       "Selective adaptation preserved physiological representation and improved vasopressor/septic shock discrimination",
       "Framework correctly identified 26 septic shock cases the retrained baseline missed",
       "PubMed-grounded Temporal RAG preserved retrieval consistency with pre-adaptation source",
-      "Drift localized entirely to treatment stream — supports governable clinical AI deployment"
+      "Drift localized entirely to treatment stream \u2014 supports governable clinical AI deployment"
     ],
     "relevance": "high",
     "status": "preprint_v1",
@@ -598,7 +598,7 @@
     "id": "arxiv:2606.23992",
     "source": "arxiv",
     "type": "rag_clinical_evaluation",
-    "title": "RASC+ Retrieval-Constrained LLM Adjudication — Clinical Value Sets CDSS",
+    "title": "RASC+ Retrieval-Constrained LLM Adjudication \u2014 Clinical Value Sets CDSS",
     "authors": "Sumit Mukherjee",
     "url": "https://arxiv.org/abs/2606.23992",
     "published": "2026-06-22",
@@ -644,7 +644,7 @@
       "Inverse relationship: higher expert quality = lower readability (OpenEvidence at postgraduate level)"
     ],
     "open_evidence_rank": 1,
-    "open_evidence_score": "4.45±0.72",
+    "open_evidence_score": "4.45\u00b10.72",
     "status": "published"
   },
   {
@@ -851,8 +851,8 @@
     "id": "pmid:42181555",
     "type": "tool_comparison",
     "title": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch: Are They Objectively up to Medical Standards? A Real-Life Assessment of LLM Chatbots in Health Care",
-    "authors": "Castaño-Villegas N, Villa MC, Barrientos KM, Llano I, Velásquez L, Zea J",
-    "abstract": "Independent comparative study of four LLM chatbots — OpenEvidence, ChatGPT, Medisearch, and Arkangel AI — on four clinical vignettes (orthopedics, pediatrics, gynecology, psychiatry) with four questions each (diagnosis, clinical management, research, general knowledge); evaluated by external clinicians on 8-criterion Likert scale. Response times also captured.",
+    "authors": "Casta\u00f1o-Villegas N, Villa MC, Barrientos KM, Llano I, Vel\u00e1squez L, Zea J",
+    "abstract": "Independent comparative study of four LLM chatbots \u2014 OpenEvidence, ChatGPT, Medisearch, and Arkangel AI \u2014 on four clinical vignettes (orthopedics, pediatrics, gynecology, psychiatry) with four questions each (diagnosis, clinical management, research, general knowledge); evaluated by external clinicians on 8-criterion Likert scale. Response times also captured.",
     "published": "2026-06-01",
     "updated": "2026-06-01",
     "journal": "Mayo Clin Proc Digit Health",
@@ -868,12 +868,12 @@
       "vignettes"
     ],
     "tools_evaluated": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch",
-    "scale": "4 clinical vignettes × 4 questions = 16 queries per chatbot × 4 chatbots",
+    "scale": "4 clinical vignettes \u00d7 4 questions = 16 queries per chatbot \u00d7 4 chatbots",
     "key_findings": [
       "Eight-criterion Likert evaluation (correctness, consensus, bias, standards-of-care adherence, timeliness, patient safety, citation authenticity, contextual appropriateness)",
       "Real-world style clinical vignettes spanning four specialties",
       "Response times captured",
-      "Independent (commercial Latin-American) clinical AI vendor initiative — adds geographic diversity beyond US-centric NOHARM/Real-POCQi"
+      "Independent (commercial Latin-American) clinical AI vendor initiative \u2014 adds geographic diversity beyond US-centric NOHARM/Real-POCQi"
     ],
     "status": "published",
     "new": true
@@ -903,7 +903,7 @@
     "key_findings": [
       "Five-LLM head-to-head on spine-surgery citation accuracy",
       "OpenEvidence included in spine comparison",
-      "Clinician-level vs patient-level prompt comparison — first such decomposition for spine topics",
+      "Clinician-level vs patient-level prompt comparison \u2014 first such decomposition for spine topics",
       "Quantifies fabricated citations across all five systems"
     ],
     "status": "published",
@@ -935,7 +935,7 @@
       "OpenEvidence highest CLEAR score (17.82/25)",
       "ChatGPT second at 15.72/25",
       "All AI chatbots statistically lower than faculty responses",
-      "Few \"very good\" responses from any chatbot — pharmacist expertise remains essential"
+      "Few \"very good\" responses from any chatbot \u2014 pharmacist expertise remains essential"
     ],
     "status": "published",
     "new": true
@@ -944,7 +944,7 @@
     "id": "pmid:42500998",
     "type": "accuracy_evaluation",
     "title": "Diagnostic Ambiguity in Appendicitis: Comparing Failure Modes of Large Language Models and Surgeons",
-    "authors": "Çalışkan YK, Başak F, Erdem O, Kudaş İ",
+    "authors": "\u00c7al\u0131\u015fkan YK, Ba\u015fak F, Erdem O, Kuda\u015f \u0130",
     "abstract": "Six frontier AI systems vs two board-certified general surgeons evaluated 150 standardized ED vignettes (90 appendicitis, 60 mimics enriched for difficult scenarios). GPT-5 95.3% accuracy; GPT-4o 82.0%; specialist consensus 92.7%. Distinct failure modes identified including search-induced hallucinations in web-augmented systems.",
     "published": "2026-07-25",
     "updated": "2026-07-25",
@@ -1006,8 +1006,8 @@
     "id": "arxiv:2606.03305",
     "type": "methodology",
     "title": "The Reliability Gap in Benchmark Auditing: Distribution Shift and Scale as Failure Modes of Contamination Detection",
-    "authors": "Wojciech Zarzecki, Jan Dubiński, Sebastian Cygert",
-    "abstract": "Identifies two understudied failure modes in benchmark contamination detection — distribution shift and scale constraints — that affect validity of LLM clinical AI benchmark scoring (NOHARM, HealthBench, MedQA, USMLE, MedCheck).",
+    "authors": "Wojciech Zarzecki, Jan Dubi\u0144ski, Sebastian Cygert",
+    "abstract": "Identifies two understudied failure modes in benchmark contamination detection \u2014 distribution shift and scale constraints \u2014 that affect validity of LLM clinical AI benchmark scoring (NOHARM, HealthBench, MedQA, USMLE, MedCheck).",
     "published": "2026-06-02",
     "updated": "2026-07-01",
     "journal": "arXiv preprint",
@@ -1079,7 +1079,7 @@
       "Three formal failure modes: Conservative Escalation Bias, Systematic Downgrade Bias, Middle-Tier Instability",
       "All three frontier models exhibit at least one formal failure mode",
       "77 percentage point under-triage gap hidden by traditional sensitivity metrics in Llama 3.1 8B",
-      "Single-ranking benchmarks inadequate for LMIC clinical AI selection — optimal model varies by deployment scenario"
+      "Single-ranking benchmarks inadequate for LMIC clinical AI selection \u2014 optimal model varies by deployment scenario"
     ],
     "open_evidence_rank": null,
     "open_evidence_score": null,
@@ -1123,7 +1123,7 @@
     ],
     "summary": "MedUPSQA dataset of 21,874 mid-stream clinical decision points from 5,535 real case reports. Evaluates LLMs on next appropriate action (test, imaging, specialist, differential) rather than just final diagnosis. RL alignment with GRPO improves next-step accuracy significantly.",
     "scale": "21,874 decision points, 5,535 case reports, 3 model backbones",
-    "key_metric": "Next-step accuracy improvement: Qwen3.6-27B 55.2→66.7, Qwen3.5-9B 47.2→57.8, HuatuoGPT-3-8B 37.8→44.4",
+    "key_metric": "Next-step accuracy improvement: Qwen3.6-27B 55.2\u219266.7, Qwen3.5-9B 47.2\u219257.8, HuatuoGPT-3-8B 37.8\u219244.4",
     "new": true
   },
   {
@@ -1149,7 +1149,7 @@
   {
     "id": "arxiv:2608.03744",
     "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
-    "authors": "Sebastián Andrés Cajas Ordóñez et al.",
+    "authors": "Sebasti\u00e1n Andr\u00e9s Cajas Ord\u00f3\u00f1ez et al.",
     "url": "https://arxiv.org/abs/2608.03744",
     "published": "2026-08-04",
     "journal": "arXiv preprint (cs.AI)",
@@ -1157,8 +1157,8 @@
     "description": "Evaluates whether clinical multi-agent LLM committees can be gamed by social shortcuts. Tests 7 cohorts across 6 public datasets (MedQA-USMLE, MedMCQA, MIMIC-CXR, ChestX-ray14, CheXpert, SUPPORT2). 38% shortcut adoption rate when two peers assert wrong answer.",
     "key_findings": [
       "38% shortcut adoption when two peers assert same wrong answer",
-      "Gate oversight: 100% FPR — cannot distinguish adoption from honest agreement",
-      "Referee oversight: 77-88% precision, 13-21% FPR — transfers across modalities",
+      "Gate oversight: 100% FPR \u2014 cannot distinguish adoption from honest agreement",
+      "Referee oversight: 77-88% precision, 13-21% FPR \u2014 transfers across modalities",
       "Near-silent gaming: only 1/10 text and 1/134 imaging drifters name the moved-toward rubric",
       "Social plausibility, not visual salience, drives contagion"
     ],
@@ -1204,6 +1204,110 @@
     "open_source": true,
     "huggingface": true,
     "status": "preprint_v1",
+    "new": true
+  },
+  {
+    "id": "pmid:42569795",
+    "title": "Sociodemographic bias in LLMs' clinical decision-making for dizziness.",
+    "source": "pubmed",
+    "type": "bias_evaluation",
+    "date_published": "2026-08-08",
+    "journal": "Journal of Vestibular Research",
+    "authors": "Tessler I, Omar M, Wolfovitz A, Gimmon Y, Hack S",
+    "doi": "10.3233/VES-250041",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42569795/",
+    "tools_evaluated": [
+      "12 instruction-tuned LLMs from multiple model families"
+    ],
+    "scale": "100 ED dizziness vignettes \u00d7 34 sociodemographic variants \u00d7 12 models \u00d7 10 repetitions = 2,040,000 responses",
+    "key_findings": [
+      "Largest descriptor-driven deviations in clinical decisions across 5 decision domains",
+      "2,040,000 LLM responses analyzed (12 models \u00d7 100 cases \u00d7 34 descriptors \u00d7 10 reps)",
+      "Sociodemographic descriptors materially shift LLM recommendations despite identical clinical content",
+      "TiTrATE / GRACE-3 / B\u00e1r\u00e1ny Society frameworks used to construct ED dizziness vignettes",
+      "Quantifies magnitude of bias with 95% confidence intervals vs neutral control"
+    ],
+    "relevance": "Quantifies sociodemographic bias in LLM clinical decisions at population scale (2M+ responses) \u2014 directly relevant for OE-style tool fairness & safety posture",
+    "tags": [
+      "bias evaluation",
+      "sociodemographic bias",
+      "dizziness",
+      "TiTrATE",
+      "ED triage",
+      "vignette study",
+      "LLM fairness",
+      "GRACE-3",
+      "B\u00e1r\u00e1ny"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42570253",
+    "title": "Benchmarking Language Models for Clinical Safety: A Primer for Mental Health Professionals.",
+    "source": "pubmed",
+    "type": "benchmark",
+    "date_published": "2026-08-08",
+    "journal": "Psychotherapy and Psychosomatics",
+    "authors": "Flathers M, Nguyen PA, Herpertz J, Granof M, Ryan S",
+    "doi": "10.1159/000548721",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42570253/",
+    "tools_evaluated": [
+      "9 commercial language models from 3 providers"
+    ],
+    "scale": "9 models \u00d7 SIRI-2 instrument \u00d7 60 reps each = 27,000 responses vs expert consensus baseline",
+    "key_findings": [
+      "27,000 individually scored responses; 9 LMs \u00d7 3 prompt variants \u00d7 2 temperatures \u00d7 10 reps",
+      "Total scores 19.5-84.0 across models (expert panel baseline 32.5)",
+      "Prompt design alone shifted individual model scores by as much as the gap between models \u2014 critical confounding factor",
+      "SIRI-2 (validated suicide intervention response inventory) used as clinician gold standard",
+      "Configuration decisions, measurement limitations, scoring context all materially affect interpretation"
+    ],
+    "relevance": "Clinician-facing benchmark primer showing how prompt-design variance can rival inter-model variance \u2014 critical context for evaluating OE-style LLM tools in high-stakes domains",
+    "tags": [
+      "benchmark",
+      "SIRI-2",
+      "mental health",
+      "suicide intervention",
+      "LLM safety",
+      "prompt sensitivity",
+      "psychiatric evaluation"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42570145",
+    "title": "Beyond Accuracy: A Mixed-Methods Audit of Chain-of-Thought Failures in LLM-Based COVID-19 Vaccine Stance Detection.",
+    "source": "pubmed",
+    "type": "mixed_methods",
+    "date_published": "2026-08-08",
+    "journal": "Journal of Medical Systems",
+    "authors": "Praschk A, Fischill-Neudeck V, Caspari T, Wiesinger HP",
+    "doi": "10.1007/s10916-026-05128-9",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42570145/",
+    "tools_evaluated": [
+      "OpenAI o4-mini",
+      "Google Gemini 2.5 Flash"
+    ],
+    "scale": "3,060 rehydrated COVID-19 vaccination tweets vs human annotations; 1,981 tweets with dual CoT; dual-error qualitative analysis",
+    "key_findings": [
+      "Both models hit macro-F1 ~0.8 (o4-mini 0.819 vs Gemini 0.799, McNemar p=0.0015)",
+      "14.9% of dual-error cases produced identical wrong reasoning patterns across two different models",
+      "CoT availability differed by model: Gemini returned reasoning for all; o4-mini only 64.7%",
+      "Mayring content analysis via FUTURE-AI framework reveals reasoning failures",
+      "Shared logic gaps across model families argue against ensembling as a fix"
+    ],
+    "relevance": "Audits CoT reasoning failures in medical-domain stance classification; surfaces shared failure modes across model families \u2014 relevant to OE-style explanation/evidence-tracing UX",
+    "tags": [
+      "mixed-methods",
+      "audit",
+      "chain-of-thought",
+      "CoT failures",
+      "COVID-19",
+      "vaccine stance",
+      "o4-mini",
+      "Gemini",
+      "FUTURE-AI"
+    ],
     "new": true
   }
 ]

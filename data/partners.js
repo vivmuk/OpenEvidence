@@ -1,4 +1,5 @@
 var partnersData = [
+{name:"OneOncology",type:"Oncology Network",date:"Aug 6, 2026",url:"https://www.openevidence.com/announcements/oneoncology-and-openevidence-partner-to-improve-cancer-care-nationwide",new:true},
   {name:"NEJM",type:"Content/Journal",date:"Feb 19, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-achieves-1-billion-valuation-in-sequoia-led-round-and-announces-content-partnership-with-the-new-england-journal-of-medicine-302380960.html"},
   {name:"JAMA Network",type:"Content/Journal (11 journals)",date:"Jun 5, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-and-the-jama-network-sign-strategic-content-agreement-302473690.html"},
   {name:"NCCN",type:"Cancer Guidelines",date:"Nov 5, 2025",url:"https://ascopost.com/news/november-2025/nccn-guidelines-to-be-integrated-into-openevidence-medical-ai-platform/"},
