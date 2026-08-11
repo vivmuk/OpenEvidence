@@ -733,3 +733,39 @@
 - **Geographic reach:** United States
 - **Notable:** Launched from stealth with $11.6M seed funding (2026). UC Berkeley origin.
 
+
+---
+
+## 13. Clinical AI Safety Audit & Benchmarking Frameworks (NEW — Aug 2026)
+
+### SIM-VAIL (Nature Medicine, Aug 7 2026)
+- **Reference:** Weilnhammer V et al. (PubMed PMID 42567928)
+- **URL:** https://pubmed.ncbi.nlm.nih.gov/42567928/
+- **Category:** Cross-vendor safety audit framework for clinical-grade chatbots
+- **Description:** "Simulated vulnerability-amplifying interaction loops" — researcher-led auditing framework that scores chatbot behavior across 13 clinically-grounded risk dimensions using 30 simulated psychiatric profiles. Evaluated 9 frontier consumer LLMs (Claude, ChatGPT, Gemini, Grok, Llama families) across 810 conversations. First clinically-validated cross-vendor consumer chatbot safety audit. Microsoft AI and UK AI Security Institute staff among authors. State-of-the-art methodology that regulators (FDA, MHRA, NMPA) and clinician-facing CDS vendors should adapt.
+- **Geographic reach:** Global applicability (no geographic dependency)
+
+### PACT Framework (Npj Health Systems, Aug 5 2026)
+- **Reference:** Khairat S & Safran C (PubMed PMID 42552388)
+- **URL:** https://pubmed.ncbi.nlm.nih.gov/42552388/
+- **Category:** Health-systems implementation framework for clinical AI
+- **Description:** Patient-centered, AI-enabled Continuity and Timely action. Reframes clinical AI from in-visit question-answering to a longitudinal health-system function spanning pre-visit, visit, and post-visit care. Specifies operational elements: ownership, communication channels, confirmation rules, escalation pathways, and outcome measures. Authors from UNC (Carolina Health Informatics Program) and Harvard Medical School.
+- **Geographic reach:** Global (US academic leadership, applicable to any health system)
+
+---
+
+## 14. New OpenEvidence Product Capabilities (Aug 2026)
+
+### Visits — OpenEvidence
+- **URL:** https://web.archive.org/web/2026/https://www.openevidence.com/announcements/visits-real-time-medical-intelligence
+- **Category:** Real-time in-visit decision support
+- **Target users:** US physicians in active patient encounters
+- **Key features:** Real-time, evidence-grounded medical intelligence brought into the live patient visit. Companion to OE's physician-async Q&A search. Aug 2026 launch. Positions OE against EHR-native ambient AI (Epic, athenahealth), ChatGPT for Clinicians (OpenAI), UpToDate Expert AI (Wolters Kluwer), and Doximity Ask.
+- **Geographic reach:** United States (OE remains blocked in EU/UK under EU AI Act)
+
+### AI-Integrated Doctor Dialer (wide-release) — OpenEvidence
+- **URL:** https://web.archive.org/web/2026/https://www.openevidence.com/announcements/messaging-faxing-and-voicemail-are-now-live-in-the-openevidence-dialer
+- **Category:** Telemedicine + clinical decision AI
+- **Target users:** US physicians, patients
+- **Key features:** Doctors Dialer wide-release combines HIPAA-grade messaging, faxing, and voicemail with clinical decision AI deeply integrated. Positions OE toward synchronous care delivery. Competes with Doximity Dialer, Amwell, K Health (PatientGPT).
+- **Geographic reach:** United States

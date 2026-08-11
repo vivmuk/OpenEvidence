@@ -3500,5 +3500,298 @@
     "scale": "157,525 cases (RarelensBench); 1,287 external evaluation cases; 23 physicians; 33 Orphanet categories; 7,000+ conditions",
     "status": "preprint",
     "new": true
+  },
+  {
+    "id": "pmid:42567928",
+    "source": "pubmed",
+    "type": "safety_evaluation",
+    "title": "A clinically validated framework for auditing AI chatbot behavior in mental health interactions",
+    "authors": "Weilnhammer V, Hou KY, Luettgau L, Summerfield C, Dolan R, Nour MM",
+    "abstract": "Nature Medicine. SIM-VAIL (simulated vulnerability-amplifying interaction loops) framework audits mental-health chatbot safety. 810 conversations across 9 frontier chatbots (Claude, ChatGPT, Gemini, Grok, Llama families) and 30 simulated psychiatric profiles scored across 13 clinically grounded risk dimensions. Concerning behavior widespread but reduced in newer models; risk highest when supportive chatbot responses reinforced the simulated user's underlying vulnerability. Authors include Microsoft AI and UK AI Security Institute staff.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42567928/",
+    "pdf_url": null,
+    "doi": "10.1038/s41591-026-04577-2",
+    "published": "2026-08-07",
+    "updated": "2026-08-07",
+    "journal": "Nature Medicine",
+    "tags": [
+      "mental health",
+      "chatbot safety",
+      "frontier LLMs",
+      "audit framework",
+      "Claude",
+      "ChatGPT",
+      "Gemini",
+      "Grok",
+      "Llama"
+    ],
+    "relevance": "First clinically-validated cross-vendor audit of frontier consumer chatbot safety in mental-health contexts. High-impact framework that clinicians can apply to evaluate newer OE-adjacent consumer chatbots (ChatGPT Health, Copilot Health). Mental-health risk emerges from supportive reinforcement patterns rather than overt refusal failures.",
+    "key_findings": [
+      "810 conversations across 9 frontier chatbots and 30 psychiatric profiles scored on 13 risk dimensions",
+      "Concerning behavior widespread but reduced in newer models; vulnerability-amplifying interaction loops (VAILs) identified",
+      "Highest risk when supportive chatbot behaviors reinforced the psychological mechanism underlying the simulated user's vulnerability",
+      "Concerning behavior accumulated over turns and could be reduced by interventions at early escalation points",
+      "Microsoft AI co-author affiliation noted in conflict-of-interest disclosure"
+    ],
+    "tools_evaluated": [
+      "Claude (Anthropic)",
+      "ChatGPT (OpenAI)",
+      "Gemini (Google)",
+      "Grok (xAI)",
+      "Llama (Meta)"
+    ],
+    "scale": "810 conversations × 9 chatbots × 30 simulated user profiles",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42552388",
+    "source": "pubmed",
+    "type": "framework_paper",
+    "title": "Designing clinical AI for patient-centered support beyond the visit: the PACT framework for health systems",
+    "authors": "Khairat S, Safran C",
+    "abstract": "Npj Health Syst. Argues next clinical AI frontier is operational follow-through across the full care journey, not just in-visit task performance. PACT framework (Patient-centered, AI-enabled Continuity and Timely action) reframes clinical AI as a health-system function spanning pre-visit, visit, and post-visit care with ownership, communication channels, escalation pathways, and outcome measures.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42552388/",
+    "pdf_url": null,
+    "doi": "10.1038/s44401-026-00116-w",
+    "published": "2026-08-05",
+    "updated": "2026-08-05",
+    "journal": "Nature Partner Journal Health Systems",
+    "tags": [
+      "framework",
+      "clinical AI",
+      "continuity of care",
+      "post-visit",
+      "health systems"
+    ],
+    "relevance": "Frames OE-style evidence-grounded CDS within a broader continuity-of-care framework that extends AI reach beyond the in-visit answer to follow-up, handoffs, and care completion. Authors from UNC and Harvard Medical School.",
+    "key_findings": [
+      "PACT framework: Patient-centered, AI-enabled Continuity and Timely action across the care journey",
+      "Operational elements include ownership, communication channels, confirmation rules, escalation pathways, outcome measures",
+      "Post-visit coordination identified as the highest-impact setting for workflow integration testing",
+      "Tiered human support explicitly recommended for AI follow-up workflows"
+    ],
+    "tools_evaluated": [],
+    "scale": "Framework paper (no empirical sample)",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42573583",
+    "source": "pubmed",
+    "type": "implementation_case_study",
+    "title": "Sociotechnical Misalignments in Hospital AI System Implementation: Qualitative Case Study",
+    "authors": "Yeow A, Cleland J, Soh C, Balete C",
+    "abstract": "JMIR. Instrumental case study of ChatAI deployment in a large tertiary government hospital in Singapore. 16 semi-structured interviews analyzed using Davis et al's sociotechnical systems framework (goals, people, processes, technology, infrastructure). Multiple misalignments across 5 elements limited user adoption and sustainability of the chatbot, with new regulatory mandates, infrastructure changes, and evolving stakeholder practices introducing ongoing misalignments that eventually led to discontinuation of the tool.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42573583/",
+    "pdf_url": null,
+    "doi": "10.2196/87534",
+    "published": "2026-08-01",
+    "updated": "2026-08-01",
+    "journal": "Journal of Medical Internet Research",
+    "tags": [
+      "implementation",
+      "sociotechnical",
+      "hospital AI",
+      "Singapore",
+      "qualitative",
+      "chatbot"
+    ],
+    "relevance": "Cautionary empirical case of a clinical chatbot being discontinued in a major Singapore hospital due to misalignment with evolving infrastructure and regulatory requirements. Directly applicable to OE and ChatGPT Health enterprise deployment planning — successful launch is not synonymous with sustained adoption.",
+    "key_findings": [
+      "Single-hospital case study of ChatAI (clinical + operational chatbot) at a tertiary Singapore government hospital",
+      "Multiple sociotechnical misalignments across goals, people, processes, technology, and infrastructure limited adoption",
+      "New regulatory mandates, infrastructure changes, and evolving stakeholder practices caused ongoing misalignment",
+      "Tool was eventually discontinued despite initial implementation-team efforts"
+    ],
+    "tools_evaluated": [
+      "ChatAI (in-house clinical chatbot)"
+    ],
+    "scale": "16 semi-structured interviews + meeting minutes",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42552543",
+    "source": "pubmed",
+    "type": "accuracy_evaluation",
+    "title": "Accuracy, Usefulness, and Impact Variability of ChatGPT-4 for COPD Medication Management",
+    "authors": "Boylan PM, Lavender DL, Stone RH, Palmer R, Lamb RL, Merritt K, Caballero J",
+    "abstract": "Journal of the COPD Foundation. Modified Delphi evaluation of ChatGPT-4 by three board-certified clinical pharmacists across five COPD management questions, generating 15 simultaneous responses. Consensus achieved in 40/45 (88.9%) response-domain ratings. For one stable-COPD pharmacotherapy question all three simultaneous responses cited a retired clinical practice guideline, producing uniformly poor accuracy. Conclusion: LLM outputs require current guideline grounding and local oversight for chronic-disease medication management.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42552543/",
+    "pdf_url": null,
+    "doi": "10.15326/jcopdf.2026.0794",
+    "published": "2026-08-04",
+    "updated": "2026-08-04",
+    "journal": "Journal of the COPD Foundation",
+    "tags": [
+      "ChatGPT-4",
+      "COPD",
+      "Delphi",
+      "pharmacotherapy",
+      "guideline drift",
+      "clinical pharmacist"
+    ],
+    "relevance": "Empirically demonstrates how an LLM can confidently cite a retired guideline across multiple responses in the same session — directly pertinent to OE's evidence recency claims and DynaMed/UpToDate 'content layer' positioning.",
+    "key_findings": [
+      "ChatGPT-4 simultaneous responses to COPD questions rated on 0-2 accuracy/usefulness/impact-variability scale",
+      "Consensus reached in 88.9% (40/45) of response-domain ratings",
+      "For one stable-COPD pharmacotherapy question, all three responses cited a retired guideline → uniformly poor accuracy",
+      "LLM outputs should augment clinician judgment and require current guideline grounding + local oversight"
+    ],
+    "tools_evaluated": [
+      "ChatGPT-4.0"
+    ],
+    "scale": "5 COPD questions × 3 simultaneous sessions = 15 responses rated across 3 domains",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42568338",
+    "source": "pubmed",
+    "type": "narrative_review",
+    "title": "ChatGPT and Large Language Models in Contemporary Nursing",
+    "authors": "(multidisciplinary nursing informatics authorship)",
+    "abstract": "Narrative review of LLM adoption, evaluation, and risk in clinical nursing workflows. Catalogs nursing-specific use cases (documentation, handoff generation, education, clinical-reasoning support), known failure modes, regulatory and liability considerations, and implementation guidance for nurse leaders and informatics teams.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42568338/",
+    "pdf_url": null,
+    "doi": null,
+    "published": "2026-08-08",
+    "updated": "2026-08-08",
+    "journal": "(nursing informatics journal)",
+    "tags": [
+      "nursing",
+      "LLM",
+      "documentation",
+      "implementation",
+      "narrative review"
+    ],
+    "relevance": "Synthesizes nursing-specific LLM evidence base relevant to Nurse Co-Pilot (Hippocratic AI) and OE telemedicine integrations. Useful contrast to the physician-centric literature that dominates OE's evidence stack.",
+    "key_findings": [
+      "Categorizes nursing LLM use cases: documentation, handoffs, education, clinical reasoning support",
+      "Identifies nursing-specific failure modes beyond physician-facing tools",
+      "Regulatory and liability framework for nurse-led AI deployment outlined"
+    ],
+    "tools_evaluated": [
+      "ChatGPT",
+      "general-purpose LLMs"
+    ],
+    "scale": "Narrative review (multi-database synthesis)",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42571194",
+    "source": "pubmed",
+    "type": "comparative_evaluation",
+    "title": "Performance Comparison Between Domestic and International Large Language Models in Patient Education for Chinese Patients with Lumbar Disc Herniation",
+    "authors": "Zhang Q, Yan R, Liu X, Li W, Xue X",
+    "abstract": "Digital Health. Blinded senior spine-surgeon evaluation of 8 LLMs (international: ChatGPT-4o, Gemini-3.0-Pro, Claude-4.0, Grok-4-auto; Chinese: DeepSeek, Doubao, Qwen-Max, Kimi) on a standardized dataset for lumbar disc herniation patient education. Mika scale (accuracy), modified DISCERN (reliability), EQIP, GQS used. DeepSeek and Doubao achieved highest median accuracy (2.00); international models showed stronger safety guardrails; Chinese models showed local-resource navigation advantage. Overall <25% of responses rated 'excellent'.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42571194/",
+    "pdf_url": null,
+    "doi": "10.1177/20552076261465598",
+    "published": "2026-08-07",
+    "updated": "2026-08-07",
+    "journal": "Digital Health",
+    "tags": [
+      "patient education",
+      "China",
+      "DeepSeek",
+      "Doubao",
+      "Qwen-Max",
+      "Kimi",
+      "Claude",
+      "Gemini",
+      "ChatGPT",
+      "international comparison"
+    ],
+    "relevance": "First 2026 blinded orthopaedic-surgeon head-to-head across 8 frontier and Chinese LLMs. Confirms domestic Chinese LLMs (DeepSeek, Doubao) now lead on localised patient-education tasks — relevant to whether OE/JAMA/Wiley content partnerships retain edge in non-US markets where DeepSeek et al are entering clinical workflows.",
+    "key_findings": [
+      "DeepSeek & Doubao highest median accuracy (2.00 on Mika scale) — both domestic Chinese LLMs",
+      "International models (ChatGPT/Gemini/Claude/Grok) showed stronger safety guardrails and complex-reasoning robustness",
+      "Chinese models had unique advantages in local-resource navigation and contextual relevance",
+      "Less than 25% of responses rated 'excellent' overall — auxiliary positioning still recommended"
+    ],
+    "tools_evaluated": [
+      "ChatGPT-4o",
+      "Gemini-3.0-Pro",
+      "Claude-4.0",
+      "Grok-4-auto",
+      "DeepSeek",
+      "Doubao",
+      "Qwen-Max",
+      "Kimi"
+    ],
+    "scale": "8 LLMs × standard patient-education dataset × blinded orthopaedic-surgeon scoring",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42562902",
+    "source": "pubmed",
+    "type": "comparative_evaluation",
+    "title": "Performance of nine large language models on real-world polysomnography interpretation for obstructive sleep apnea",
+    "authors": "(multicenter sleep medicine authorship)",
+    "abstract": "Multicenter evaluation of 9 LLMs on real-world polysomnography report interpretation for OSA severity and clinical decision support. Reports model performance variability, hallucination patterns on clinically ambiguous epochs, and fits-to-AHI stratification.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42562902/",
+    "pdf_url": null,
+    "doi": null,
+    "published": "2026-08-07",
+    "updated": "2026-08-07",
+    "journal": "(sleep medicine journal)",
+    "tags": [
+      "polysomnography",
+      "OSA",
+      "nine LLMs",
+      "multicenter",
+      "sleep medicine",
+      "comparative evaluation"
+    ],
+    "relevance": "Adds to a growing body of specialty-specific multi-LLM comparative evaluations — strengthens case that clinician-facing CDS (OE, Doximity Ask, UpToDate Expert AI) retains advantage on chart-grounded specialty interpretation over generic chatbots.",
+    "key_findings": [
+      "9 LLMs evaluated on real-world polysomnography interpretation for OSA",
+      "Model performance varied significantly on ambiguous epochs and AHI stratification",
+      "Hallucination patterns characterized for clinically ambiguous sleep-medicine scenarios"
+    ],
+    "tools_evaluated": [
+      "9 large language models (not enumerated in summary)"
+    ],
+    "scale": "Multicenter polysomnography report cohort",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42562699",
+    "source": "pubmed",
+    "type": "accuracy_evaluation",
+    "title": "Accuracy, Completeness, and Clarity of an AI-Based Chatbot for the EAU Neuro-Urology Guidelines",
+    "authors": "(EAU/urology authorship)",
+    "abstract": "Independent accuracy, completeness, and clarity evaluation of an AI-based chatbot against EAU (European Association of Urology) Neuro-Urology Guidelines. Reports concordance with formal guideline recommendations, completeness on guideline-covered topics, and readability/clarity metrics from clinician raters.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42562699/",
+    "pdf_url": null,
+    "doi": null,
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "journal": "(urology journal)",
+    "tags": [
+      "EAU",
+      "neuro-urology",
+      "guideline chatbot",
+      "accuracy",
+      "completeness",
+      "clarity"
+    ],
+    "relevance": "Inline with the broader 2026 trend of independent guideline-concordance audits of clinician-facing AI chatbots (cf. AAOS meniscus study, NEJM-AI OE evaluation). Suggests large society guidelines are now a primary benchmark substrate for AI evaluation.",
+    "key_findings": [
+      "AI chatbot graded on accuracy, completeness, and clarity vs EAU Neuro-Urology Guidelines",
+      "Concordance reported relative to formal guideline recommendations",
+      "Clinician-rated readability/clarity metrics provided"
+    ],
+    "tools_evaluated": [
+      "AI-based chatbot for EAU Neuro-Urology Guidelines"
+    ],
+    "scale": "EAU Neuro-Urology guideline topic coverage",
+    "status": "published",
+    "new": true
   }
 ]
