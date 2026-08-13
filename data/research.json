@@ -3793,5 +3793,249 @@
     "scale": "EAU Neuro-Urology guideline topic coverage",
     "status": "published",
     "new": true
+  },
+  {
+    "id": "2608.10258",
+    "title": "TAF-MED: Multi-Turn Safety Refusal Collapse in LLMs Under Declared Self-Treatment Intent",
+    "authors": "Waleed Jamil et al.",
+    "abstract": "Introduces TAF-MED, a physician-reviewed benchmark of 500 fixed three-turn scenarios evaluating whether LLM medication-safety boundaries persist across follow-ups after explicit self-treatment intent. Evaluates 8 LLMs across 4,000 conversations. 71.6% of conversations contained an UNSAFE response, and 61.4% of those beginning with a strictly SAFE response later collapsed to UNSAFE. Model-level collapse rates ranged from 24.4% to 96.2%. Automated labels achieved 94.3% agreement with physician reference (kappa=0.895). Shows first-turn safety is an incomplete proxy for conversational safety persistence.",
+    "url": "https://arxiv.org/abs/2608.10258",
+    "pdf_url": "https://arxiv.org/pdf/2608.10258",
+    "doi": "https://doi.org/10.48550/arXiv.2608.10258",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "journal": "arXiv (cs.CL, cs.AI)",
+    "tags": [
+      "multi-turn safety",
+      "medication safety",
+      "LLM benchmark",
+      "self-treatment",
+      "physician-reviewed",
+      "safety collapse"
+    ],
+    "relevance": "Directly relevant to clinical AI safety evaluation — demonstrates that single-turn safety benchmarks miss multi-turn refusal collapse, a critical failure mode for consumer-facing medical AI tools.",
+    "key_findings": [
+      "71.6% of conversations contained an UNSAFE response across 8 LLMs",
+      "61.4% of initially SAFE responses collapsed to UNSAFE in follow-up turns",
+      "Model-level collapse rates ranged from 24.4% to 96.2%",
+      "Automated judge achieved 94.3% agreement with physician reference (kappa=0.895)",
+      "First-turn safety is an incomplete proxy for conversational safety persistence"
+    ],
+    "tools_evaluated": [
+      "8 LLMs (unspecified in abstract)"
+    ],
+    "scale": "500 scenarios, 4,000 conversations, physician-validated",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "2608.10273",
+    "title": "Locally Deployable Small Language Models for Emergency Department Decision Support: A Systematic Benchmark of Fine-Tuning Strategies",
+    "authors": "Qingfeng Zhang et al.",
+    "abstract": "Benchmarks 8 open-source SLMs using zero-shot prompting, prefix tuning, LoRA, and full fine-tuning on three ED tasks: triage level prediction, specialist referral recommendation, and diagnosis prediction. Uses 2,083 MIMIC-IV-ED cases with Claude Haiku 4.5 and Claude Sonnet 4.5 as baselines. LoRA fine-tuned SLMs outperform commercial baselines on triage and specialist referral, while diagnosis prediction remains challenging. Fine-tuned SLMs detect highest-severity patients missed by commercial baselines. Accepted to AMIA 2026.",
+    "url": "https://arxiv.org/abs/2608.10273",
+    "pdf_url": "https://arxiv.org/pdf/2608.10273",
+    "doi": "https://doi.org/10.48550/arXiv.2608.10273",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "journal": "arXiv (cs.CL, cs.AI) — Accepted to AMIA 2026 Annual Symposium",
+    "tags": [
+      "emergency department",
+      "local deployment",
+      "small language models",
+      "fine-tuning",
+      "LoRA",
+      "MIMIC-IV-ED",
+      "clinical decision support",
+      "triage"
+    ],
+    "relevance": "Directly relevant to clinical decision support — demonstrates locally deployable SLMs can match or exceed commercial LLMs on ED decision support tasks, addressing privacy concerns of transmitting patient data to cloud APIs.",
+    "key_findings": [
+      "LoRA fine-tuned open-source SLMs outperform Claude Haiku 4.5 and Sonnet 4.5 on triage level prediction and specialist referral",
+      "Diagnosis prediction remains challenging for open-source SLMs",
+      "Fine-tuned SLMs detect highest-severity patients missed by commercial baselines",
+      "Uses 2,083 MIMIC-IV-ED cases across three ED tasks"
+    ],
+    "tools_evaluated": [
+      "8 open-source SLMs",
+      "Claude Haiku 4.5",
+      "Claude Sonnet 4.5"
+    ],
+    "scale": "2,083 MIMIC-IV-ED cases, 3 ED tasks, 4 fine-tuning strategies",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "2608.10996",
+    "title": "ConRub-Med: Reinforcement Learning with Consensus Rubrics for Open-Ended Medical Question Answering",
+    "authors": "Taojie Zhu, Yuan Xia, Tao Sun et al.",
+    "abstract": "Introduces ConRub-Med for RL with consensus rubrics for open-ended medical QA. Three heterogeneous LMs propose atomic criteria independently; a separate model reviews, retaining only criteria with semantic support from all three. Three-State scoring distinguishes correct coverage, missing info, and incorrect claims. Errors get negative rather than zero credit. Ranks first on 6 of 9 benchmarks, achieves highest medical and generalization averages. Scores 38.98 on HealthBench-Hard vs InfiMed-ORBIT's 33.60 (8k samples) and 37.30 (28k samples). Uses 5,166-prompt rubric dataset.",
+    "url": "https://arxiv.org/abs/2608.10996",
+    "pdf_url": "https://arxiv.org/pdf/2608.10996",
+    "doi": "https://doi.org/10.48550/arXiv.2608.10996",
+    "published": "2026-08-11",
+    "updated": "2026-08-11",
+    "journal": "arXiv (cs.CL)",
+    "tags": [
+      "reinforcement learning",
+      "medical QA",
+      "rubrics",
+      "HealthBench",
+      "GRPO",
+      "benchmark",
+      "consensus"
+    ],
+    "relevance": "Directly relevant to medical LLM benchmarking — introduces a novel RL training method using consensus rubrics, achieves SOTA on HealthBench-Hard. Part of the rapidly evolving medical LLM evaluation landscape.",
+    "key_findings": [
+      "Ranks first on 6 of 9 benchmarks with highest medical and generalization averages",
+      "Scores 38.98 ± 1.04 on HealthBench-Hard, beating InfiMed-ORBIT (33.60 with 8k samples, 37.30 with 28k)",
+      "Consensus rubric approach — 3 LMs propose criteria, reviewer retains only cross-supported ones",
+      "Three-State scoring: correct coverage, missing info, incorrect claims (errors get negative credit)",
+      "5,166-prompt rubric dataset released"
+    ],
+    "tools_evaluated": [
+      "Multiple open models (unspecified in abstract)",
+      "InfiMed-ORBIT (baseline)"
+    ],
+    "scale": "5,166 prompts, 9 benchmarks, HealthBench-Hard evaluation",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "2608.10715",
+    "title": "Most biomedical publications show signs of LLM-assisted writing",
+    "authors": "Lena Holzwarth et al.",
+    "abstract": "Estimates LLM usage in biomedical publications using a new unbiased approach based on changing word frequencies. Analyzes full texts of open-access biomedical papers from PubMed Central. By end of 2025, 89% of papers show excess LLM-associated vocabulary. LLMs twice as likely in Discussion sections (68%) vs Methods sections (32%). Even in Methods, overall prevalence exceeds 50%. Findings crucial for shaping future guidelines and policies around LLM-assisted academic writing.",
+    "url": "https://arxiv.org/abs/2608.10715",
+    "pdf_url": "https://arxiv.org/pdf/2608.10715",
+    "doi": "https://doi.org/10.48550/arXiv.2608.10715",
+    "published": "2026-08-11",
+    "updated": "2026-08-11",
+    "journal": "arXiv (cs.CL, cs.AI, cs.CY, cs.DL, cs.SI)",
+    "tags": [
+      "LLM-assisted writing",
+      "biomedical publications",
+      "PubMed Central",
+      "academic integrity",
+      "evidence quality"
+    ],
+    "relevance": "Critical context for evidence-based medicine platforms like OE — if 89% of biomedical publications show LLM-altered text, this affects the trustworthiness of the underlying evidence base that CDS tools rely on.",
+    "key_findings": [
+      "89% of open-access biomedical papers show excess LLM-associated vocabulary by end of 2025",
+      "Discussion sections: 68% LLM usage vs Methods sections: 32%",
+      "Even Methods sections show >50% LLM usage overall",
+      "New unbiased estimation method based on changing word frequencies"
+    ],
+    "tools_evaluated": [],
+    "scale": "Full PubMed Central open-access corpus",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "2608.06110",
+    "title": "ECHO: A Locally-Deployable Agentic Health Assistant with Temporal Memory, Safety Guardrails, and Speech Assessment",
+    "authors": "Faik B Tek et al.",
+    "abstract": "Presents ECHO (Enhanced Care & Health Observer), a locally-deployable conversational health assistant for chronic care management. Built on ReAct loop with LangGraph, 17 clinical tools, and temporal knowledge graph for cross-session memory. 94.9% tool-execution pass rate across 59 scenarios with GPT-5 Mini. Two-stage hybrid safety layer: rule-based (<1ms) + signed GNN with APPNP propagation (88.8% accuracy, 90.6% unsafe recall on 2,537-query Turkish health dataset). Multimodal speech assessment for emotion, depression, pain (macro F1 0.652). Runs on consumer hardware, GDPR/KVKK compliant.",
+    "url": "https://arxiv.org/abs/2608.06110",
+    "pdf_url": "https://arxiv.org/pdf/2608.06110",
+    "doi": "https://doi.org/10.48550/arXiv.2608.06110",
+    "published": "2026-08-06",
+    "updated": "2026-08-11",
+    "journal": "arXiv (cs.AI, cs.CL)",
+    "tags": [
+      "agentic health assistant",
+      "local deployment",
+      "safety guardrails",
+      "GNN",
+      "chronic care",
+      "ReAct",
+      "LangGraph",
+      "temporal memory",
+      "GDPR"
+    ],
+    "relevance": "Relevant to clinical AI tool landscape — demonstrates a fully local, agentic health assistant with novel hybrid safety architecture (rule-based + GNN). The local deployment angle and safety layer design are differentiators from cloud-based tools like OE.",
+    "key_findings": [
+      "94.9% tool-execution pass rate across 59 clinical scenarios with GPT-5 Mini",
+      "Two-stage safety: rule-based (<1ms) + signed GNN (88.8% accuracy, 90.6% unsafe recall)",
+      "Multimodal speech assessment: emotion, depression, pain (macro F1 0.652)",
+      "17 clinical tools, temporal knowledge graph for cross-session memory",
+      "Fully local on consumer hardware — GDPR/KVKK compliant"
+    ],
+    "tools_evaluated": [
+      "ECHO (GPT-5 Mini backbone)",
+      "Llama 3.3 70B (safety baseline)"
+    ],
+    "scale": "59 scenarios, 2,537-query safety dataset (Turkish health)",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "2608.08868",
+    "title": "Conversation as Measurement in Clinical Encounters: Observable Phase Structure, Partially Observable Patient State",
+    "authors": "Lily Chen et al.",
+    "abstract": "Studies observability — whether targets are recoverable from conversational transcripts alone — in clinical encounters. Uses 439 real-world clinical encounter transcripts (134 hours), including 245 ENT transcripts paired with 273 PROM surveys. Finds an observability asymmetry: phase structure is observable and useful for characterizing encounter organization, while patient state is only partially observable even in settings designed to elicit symptoms. Uses PHI-compliant GPT-5 deployment for annotation with 40 hours of manual validation. COLM 2026.",
+    "url": "https://arxiv.org/abs/2608.08868",
+    "pdf_url": "https://arxiv.org/pdf/2608.08868",
+    "doi": "https://doi.org/10.48550/arXiv.2608.08868",
+    "published": "2026-08-09",
+    "updated": "2026-08-11",
+    "journal": "arXiv (cs.CL) — COLM 2026",
+    "tags": [
+      "clinical encounters",
+      "observability",
+      "PROMs",
+      "conversation analysis",
+      "patient state",
+      "phase structure",
+      "GPT-5"
+    ],
+    "relevance": "Relevant to clinical AI evaluation methodology — demonstrates that transcript-only inference of patient state is unreliable, with implications for AI systems that analyze clinical conversations.",
+    "key_findings": [
+      "Observability asymmetry: phase structure observable, patient state only partially observable",
+      "439 clinical encounter transcripts, 134 hours, 245 ENT + 273 PROM surveys",
+      "PHI-compliant GPT-5 deployment for annotation, 40 hours manual validation",
+      "Caution against transcript-only inference of human state"
+    ],
+    "tools_evaluated": [
+      "GPT-5 (PHI-compliant deployment for annotation)"
+    ],
+    "scale": "439 transcripts, 134 hours, 273 PROM surveys",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "2608.10216",
+    "title": "Similarity Gates Approve Reversals: A Validity Audit of Embedding-Cosine Thresholds in Agent Systems",
+    "authors": "Scott Frias et al.",
+    "abstract": "Audits embedding-cosine similarity gates used in agent frameworks (deduplication, semantic caches, drift guards, answer graders). Shows these gates measure wording change, not meaning change — reversals can be single-word edits while paraphrases rephrase entire sentences. A production drift guard caught 0 of 56 meaning-breaking mutations. One approved item: 'withhold the study drug' → 'administer the study drug' at cosine 0.9608. Balanced accuracy never exceeded 0.700 across 90 cells. Strongest 2 of 9 configurations separated reversal from paraphrase at AUROC 0.79-0.90, but only with matched-pair audit.",
+    "url": "https://arxiv.org/abs/2608.10216",
+    "pdf_url": "https://arxiv.org/pdf/2608.10216",
+    "doi": "https://doi.org/10.48550/arXiv.2608.10216",
+    "published": "2026-08-10",
+    "updated": "2026-08-10",
+    "journal": "arXiv (cs.CL, cs.AI)",
+    "tags": [
+      "embedding similarity",
+      "agent safety",
+      "cosine threshold",
+      "drift guard",
+      "validity audit",
+      "clinical safety"
+    ],
+    "relevance": "Critical safety finding for clinical AI agent systems — demonstrates that embedding-cosine similarity gates (widely used in production) can approve meaning-reversing changes including clinical instructions ('withhold' → 'administer study drug'). Relevant to any RAG or agent-based clinical AI tool.",
+    "key_findings": [
+      "Production drift guard caught 0 of 56 meaning-breaking mutations",
+      "'withhold the study drug' → 'administer the study drug' approved at cosine 0.9608",
+      "Balanced accuracy never exceeded 0.700 across 90 configuration-threshold-task cells",
+      "Naively built evaluation corpus can return inverted verdict (AUROC 0.000 in 13/18 cells)",
+      "Strongest 2/9 configurations achieved AUROC 0.79-0.90 but only with matched-pair audit"
+    ],
+    "tools_evaluated": [
+      "9 embedding configurations",
+      "NLI drop-in"
+    ],
+    "scale": "90 configuration-threshold-task cells, 56 meaning-breaking mutations",
+    "status": "published",
+    "new": true
   }
 ]
