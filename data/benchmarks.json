@@ -1417,5 +1417,41 @@
     "relevance": "high",
     "status": "published",
     "new": true
+  },
+  {
+    "id": "arxiv:2608.10964",
+    "source": "arxiv",
+    "type": "benchmark",
+    "title": "CARE: Confidence-Aware Reasoning for Reliable Medical VQA",
+    "authors": "Yuetian Du, Yucheng Wang, Zhenyuan Chen, Luyuan Chen, Rongyu Zhang, Jinjian Zhang, Wei Zhou, Zhijie Xu, Ming Kong, Zhan Zhou, Jie Liu, Qiang Zhu",
+    "abstract": "Reinforcement Fine-Tuning (RFT) has enabled medical Multimodal LLMs (MLLMs) to produce Chain-of-Thought reasoning for visual question answering, yet they suffer from confidence miscalibration — a systematic gap between expressed certainty and actual diagnostic accuracy that undermines clinical trust. CARE is a Confidence-Aware REasoning framework that jointly optimizes accuracy and calibration via dual-stage pipeline (Medical-CoT SFT + GRPO with Confidence-Aware Reward). Across three Medical VQA benchmarks, CARE achieves highest diagnostic accuracy with lowest Expected Calibration Error and Hallucination Rate. (Accepted at MICCAI 2026)",
+    "url": "https://arxiv.org/abs/2608.10964",
+    "pdf_url": "https://arxiv.org/pdf/2608.10964",
+    "doi": "10.48550/arXiv.2608.10964",
+    "published": "2026-08-11",
+    "updated": "2026-08-11",
+    "journal": "arXiv preprint",
+    "tags": [
+      "medical VQA",
+      "calibration",
+      "confidence",
+      "clinical reasoning",
+      "GRPO",
+      "hallucination",
+      "reliability"
+    ],
+    "relevance": "Methodology for confidence-aware clinical VQA reasoning — directly relevant to clinical AI safety/calibration and OE-style physician-AI teaming at point of care",
+    "key_findings": [
+      "Identifies confidence miscalibration as a systematic gap in medical MLLMs",
+      "Dual-stage pipeline: cold-start Medical-CoT SFT + GRPO with Confidence-Aware Reward tying confidence to correctness",
+      "Best diagnostic accuracy + lowest Expected Calibration Error (ECE) + lowest Hallucination Rate across 3 Medical VQA benchmarks",
+      "Frames CARE as foundation for trustworthy clinical decision support",
+      "Code released at github.com/anotherbricki/CARE",
+      "Accepted at MICCAI 2026"
+    ],
+    "tools_evaluated": "Medical MLLMs (general); benchmarks specific to paper",
+    "scale": "3 medical VQA benchmarks",
+    "status": "preprint",
+    "new": true
   }
 ]
