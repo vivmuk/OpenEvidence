@@ -1,6 +1,6 @@
 # Global Clinical Decision Support (CDS) Apps & Platforms for Healthcare Professionals
 
-*Comprehensive landscape — July 2026 | 60+ platforms across 12 categories*
+*Comprehensive landscape — August 2026 | 60+ platforms across 12 categories*
 
 ---
 

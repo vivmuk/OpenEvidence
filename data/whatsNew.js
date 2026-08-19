@@ -5,6 +5,52 @@
 
 var whatsNewData = [
   {
+    date: "August 19, 2026",
+    updated: "Global CDS weekly sweep (Tue Aug 19, 9:18 AM ET) — web_search unavailable on this lane; update built from data/research.json cache (9 fresh arxiv/PubMed papers Aug 11-17) and prior dashboard state. No live product/regulatory news this week — next live sweep on a web-enabled run.",
+    items: [
+      {
+        cat: "Benchmarking / RAG vs Frontier LLMs",
+        title: "VITA corpus-specific clinical RAG matches or beats newer frontier LLMs on HealthBench (Aug 12, arXiv 2608.12138)",
+        desc: "Reddy et al. publish VITA: V1 ranked #1 on HealthBench with 51.9% rubric points vs GPT-5.4 (46.1%), o4-mini (44.3%), Gemini 3.1 Pro (42.6%), Claude Sonnet 4.6 (37.3%). Head-to-head with newer frontier models (GPT-5.5, Claude Opus 4.8, Gemini 3.5 Pro, Grok 4.3) under neutral DeepSeek-V4-Pro judging: VITA and GPT-5.5 statistically indistinguishable on mean per-question score; VITA led on points-weighted score. Tradeoff explicit: corpus specificity improves grounding at the cost of lower communication scores. Reflects OE's corpus-anchored RAG design philosophy and adds external validation against the OpenAI/Anthropic/Google camps."
+      },
+      {
+        cat: "Benchmarking / Medical VQA",
+        title: "CARE: Confidence-Aware Reasoning for Reliable Medical VQA (Aug 11, arXiv 2608.10964)",
+        desc: "Du et al. (multi-institution) introduce CARE: dual-stage pipeline (Medical-CoT SFT cold-start + GRPO with Confidence-Aware Reward). Reports best diagnostic accuracy, lowest Expected Calibration Error, and lowest hallucination rate across 3 medical VQA benchmarks. Frames CARE as a foundation for trustworthy clinical decision support. Code at github.com/anotherbricki/CARE. Directly relevant to physician-AI teaming at point of care and to OE-class citation-first CDS calibration."
+      },
+      {
+        cat: "Benchmarking / SOTA on HealthBench-Hard",
+        title: "ConRub-Med: consensus-rubric RL for open-ended medical QA ranks #1 on 6/9 benchmarks (Aug 11, arXiv 2608.10996)",
+        desc: "Zhu et al. propose consensus-rubric reinforcement learning: 3 LMs propose criteria, reviewer retains only cross-supported ones. Three-state scoring (correct coverage, missing info, incorrect claims with negative credit). Scores 38.98 ± 1.04 on HealthBench-Hard vs InfiMed-ORBIT 33.60 (8k samples) and 37.30 (28k). New SOTA on medical and generalization averages. Indicates that purpose-built RLHF-style training for medical QA is closing the frontier-LLM gap on rubric-grounded evaluation."
+      },
+      {
+        cat: "Evidence Base Integrity — Cautionary",
+        title: "89% of open-access biomedical papers show LLM-assisted writing by end of 2025 (Aug 11, arXiv 2608.10715)",
+        desc: "Holzwarth et al. introduce an unbiased estimator based on changing word frequencies. Findings: 89% of open-access biomedical papers show excess LLM-associated vocabulary by end of 2025; Discussion sections 68% LLM-usage vs Methods 32%, but >50% LLM-usage in Methods overall. Pertinent to OE-class evidence-based medicine platforms: if nearly the entire biomedical corpus now contains LLM-influenced text, RAG systems, citation integrity auditing, and EvidenceGrade-style strength-of-evidence grading become more (not less) important downstream."
+      },
+      {
+        cat: "Safety / Ethics Framework",
+        title: "ETHOS: modular ethics framework for clinical multi-agent AI systems (Aug 15, arXiv 2608.15424)",
+        desc: "Sharma, Pugh, Beeche et al. (Penn, submitted to PSB 2027) publish ETHOS — a practical, modular ethics governance framework for clinical multi-agent AI. Targeted squarely at supervisory gaps in agentic CDS rollouts like UpDoc, DeepConsult, and Visits. As 2026 OE-class platforms move from Q&A to in-visit and post-visit agentic execution, external governance frameworks become procurement-relevant for hospital AI committees."
+      },
+      {
+        cat: "Safety / Demographic Bias",
+        title: "Demographic Injection under DEI prompts: novel medical-LLM safety failure mode (Aug 15, arXiv 2608.15254)",
+        desc: "Mardian & Liu run a 47-model × 4-benchmark audit and identify a previously unnamed safety failure mode: when demographic descriptors are injected under DEI/marginalized-group framings, medical LLM outputs degrade in clinically meaningful directions. Adds to the bias landscape (cf. Aug 8 Tessler et al. sociodemographic dizziness study) and argues for both adversarial demographic testing and explicit DEI-prompt hygiene in clinical LLM evaluation."
+      },
+      {
+        cat: "CDSS Methodology — ICU Reinforcement Learning",
+        title: "Offline RL for ICU sepsis hemodynamic management with MIMIC-IV dual off-policy evaluation (Aug 17, arXiv 2608.16482)",
+        desc: "Pérez-Roig, Fernández-Narro, and Sáez (cs.AI) publish offline RL for sepsis hemodynamic management on MIMIC-IV with dual off-policy evaluation — meaningfully advances RL-based CDSS rigor and indicates that 2026 academic CDSS work is increasingly evidence-validated on public ICU datasets rather than vendor-private data."
+      },
+      {
+        cat: "CDSS Methodology — Multimodal RL",
+        title: "Removing temporal note redundancy improves multimodal RL for medicine (Aug 14, arXiv 2608.14157)",
+        desc: "Weng, Lee, Mahendra, and Aswani show that pruning temporal redundancy in clinical notes lifts multimodal RL CDSS performance. Argues for both simpler note preprocessing and richer multimodal training in next-gen clinical decision-support pipelines."
+      }
+    ]
+  },
+  {
     date: "August 16, 2026",
     updated: "Daily announcement check (Sat Aug 15, 10:54 PM ET)",
     items: [
