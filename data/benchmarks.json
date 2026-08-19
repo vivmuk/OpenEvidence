@@ -1453,5 +1453,47 @@
     "scale": "3 medical VQA benchmarks",
     "status": "preprint",
     "new": true
+  },
+  {
+    "id": "arxiv:2608.15424",
+    "source": "arxiv",
+    "type": "safety_evaluation",
+    "title": "ETHOS: Modular Ethics Framework for Clinical Multi-Agent Systems",
+    "authors": "Rakesh Sharma et al.",
+    "url": "https://arxiv.org/abs/2608.15424",
+    "published": "2026-08-15",
+    "updated": "2026-08-15",
+    "journal": "arXiv preprint (cs.MA, cs.AI) — Pacific Symposium on Biocomputing 2027 submission",
+    "tools_evaluated": "Clinical multi-agent systems (generic framework, demonstrated on hepatology MAS)",
+    "scale": "Hepatology clinical decision-support MAS",
+    "key_findings": [
+      "Modular ethics governance meta-agent integrable into any clinical MAS without architecture changes",
+      "Layered oversight: deterministic checks + contextual reviews + ethics critic",
+      "Improves decision reliability by detecting incomplete, inconsistent, or out-of-scope evidence",
+      "Appropriately increases abstention when safe recommendations cannot be supported",
+      "Translates high-level ethics principles into deployable, auditable runtime safeguards"
+    ],
+    "relevance": "Clinical AI safety governance framework — practical implementation of ethics oversight for multi-agent clinical decision support."
+  },
+  {
+    "id": "arxiv:2608.15254",
+    "source": "arxiv",
+    "type": "safety_evaluation",
+    "title": "Demographic Injection in Medical Language Models under DEI Prompts",
+    "authors": "Diego Mardian, Frank Liu",
+    "url": "https://arxiv.org/abs/2608.15254",
+    "published": "2026-08-15",
+    "updated": "2026-08-15",
+    "journal": "arXiv preprint (cs.AI, cs.CL)",
+    "tools_evaluated": "47 LLMs across general, medical-domain, open-weight, and proprietary families",
+    "scale": "4 medical benchmarks, 376,000 responses, validated model-judge pipeline",
+    "key_findings": [
+      "DEI prompt raises demographic injection rate from 0.7% to 33.1% (47x) in all 47/47 models tested",
+      "Effect attributable to equity content, not length (18x above length-matched control, p=1.4x10^-14)",
+      "0.25-2.4% of responses: invented demographic changes the answer, 99.8% toward incorrect option",
+      "Phrasing scales effect from 14% to 56%",
+      "General mechanism: any reasoning nudge can cause unrequested patient detail fabrication"
+    ],
+    "relevance": "Large-scale safety evaluation revealing novel failure mode in medical LLMs — demographic hallucination from prompting that can alter clinical recommendations."
   }
 ]

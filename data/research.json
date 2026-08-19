@@ -4165,5 +4165,98 @@
     "scale": "3 medical VQA benchmarks",
     "status": "preprint",
     "new": true
+  },
+  {
+    "id": "arxiv:2608.16482",
+    "source": "arxiv",
+    "type": "clinical_decision_support",
+    "title": "Offline Reinforcement Learning for Hemodynamic Management of Sepsis in the ICU: a MIMIC-IV Study with Dual Off-Policy Evaluation",
+    "authors": "Marc Pérez-Roig, David Fernández-Narro, Carlos Sáez",
+    "abstract": "Models fluid and vasopressor dosing for sepsis on 36,872 MIMIC-IV ICU stays as a discretized MDP (1,000 states, 25 actions). Estimates clinician behavior policy with random forest, evaluates learned policy with WIS and FQE. Learned policy exceeds clinician return (WIS 50.8, FQE 46.8 vs 38.2) while departing modestly from observed practice (TV 0.18), favoring less IV fluid. Proposes discordance-based clinical decision-support approach for sepsis management.",
+    "url": "https://arxiv.org/abs/2608.16482",
+    "pdf_url": "https://arxiv.org/pdf/2608.16482",
+    "doi": "10.48550/arXiv.2608.16482",
+    "published": "2026-08-17",
+    "updated": "2026-08-17",
+    "journal": "arXiv preprint (cs.AI)",
+    "tags": [
+      "reinforcement learning",
+      "sepsis",
+      "ICU",
+      "clinical decision support",
+      "MIMIC-IV",
+      "off-policy evaluation"
+    ],
+    "relevance": "Clinical decision support system for ICU hemodynamic management using RL with rigorous off-policy evaluation — directly relevant to CDSS methodology."
+  },
+  {
+    "id": "arxiv:2608.15424",
+    "source": "arxiv",
+    "type": "safety_evaluation",
+    "title": "ETHOS: Towards a Modular Ethics Framework for Clinical Multi-Agent Systems",
+    "authors": "Rakesh Sharma, Sydney Pugh, Cameron Beeche, Pankhuri Singhal, Rachel Wu, Margaret Eby, Jeffrey Duda, James Gee, Kyra O'Brien, Hersh Sagreiya, Marina Serper, Victoria Gershuni, Angela Bradbury, Anurag Verma, Eric Eaton, Kevin B. Johnson, Walter Witschey",
+    "abstract": "Modular ethics framework (ETHOS) designed as a governance meta-agent integrable into any clinical multi-agent system without architectural changes. Translates ethical requirements into runtime oversight via deterministic checks, contextual reviews, and a final ethics critic. Demonstrated in hepatology clinical decision-support MAS — improves decision reliability by detecting incomplete, inconsistent, or out-of-scope evidence and increasing abstention when safe recommendations cannot be supported.",
+    "url": "https://arxiv.org/abs/2608.15424",
+    "pdf_url": "https://arxiv.org/pdf/2608.15424",
+    "doi": "10.48550/arXiv.2608.15424",
+    "published": "2026-08-15",
+    "updated": "2026-08-15",
+    "journal": "arXiv preprint (cs.MA, cs.AI) — submitted to Pacific Symposium on Biocomputing 2027",
+    "tags": [
+      "clinical AI safety",
+      "multi-agent systems",
+      "ethics framework",
+      "governance",
+      "abstention",
+      "hepatology"
+    ],
+    "relevance": "Practical ethics governance framework for clinical multi-agent AI systems — directly addresses safety oversight in clinical decision support."
+  },
+  {
+    "id": "arxiv:2608.15254",
+    "source": "arxiv",
+    "type": "safety_evaluation",
+    "title": "Demographic Injection in Medical Language Models under Diversity, Equity, and Inclusion Prompts",
+    "authors": "Diego Mardian, Frank Liu",
+    "abstract": "Shows that a one-sentence DEI prompt appended to medical questions causes 47 LLMs to inject patient demographic attributes (race, SES, sex) the question never stated — raising injection rate from 0.7% to 33.1% (47x) across 47 models, 4 medical benchmarks, and 376,000 responses. A smaller subset (0.25-2.4%) attaches invented demographics to specific patients or changes the selected answer, 99.8% toward the incorrect option. Demonstrates a general mechanism: any instruction nudging model reasoning can introduce unrequested patient details that alter clinical recommendations.",
+    "url": "https://arxiv.org/abs/2608.15254",
+    "pdf_url": "https://arxiv.org/pdf/2608.15254",
+    "doi": "10.48550/arXiv.2608.15254",
+    "published": "2026-08-15",
+    "updated": "2026-08-15",
+    "journal": "arXiv preprint (cs.AI, cs.CL)",
+    "tags": [
+      "medical AI safety",
+      "benchmark",
+      "demographic injection",
+      "DEI prompts",
+      "hallucination",
+      "47 models",
+      "medical benchmarks"
+    ],
+    "relevance": "Large-scale evaluation across 47 models and 4 medical benchmarks revealing a novel safety failure mode in medical LLMs — directly relevant to clinical AI safety and benchmarking."
+  },
+  {
+    "id": "arxiv:2608.14157",
+    "source": "arxiv",
+    "type": "clinical_decision_support",
+    "title": "Removing Temporal Note Redundancy Improves Multimodal Reinforcement Learning for Medicine",
+    "authors": "Chenran Weng, Joo Seung Lee, Malini Mahendra, Anil Aswani",
+    "abstract": "Proposes redundancy-aware multimodal state representation for RL in mechanical ventilation management. Removes temporal note redundancy (copy-forward, templating) via embedding-space SVD decomposition and sentence-level diffing before policy learning. Using real ICU data, stripped-redundancy representations significantly outperform structured-only and raw-note baselines across multiple off-policy evaluation methods (MBR, FQE, WIS, WDR). Shows that isolating new clinical information from repeated note text improves RL performance for clinical decision support.",
+    "url": "https://arxiv.org/abs/2608.14157",
+    "pdf_url": "https://arxiv.org/pdf/2608.14157",
+    "doi": "10.48550/arXiv.2608.14157",
+    "published": "2026-08-14",
+    "updated": "2026-08-14",
+    "journal": "arXiv preprint (cs.AI, cs.LG)",
+    "tags": [
+      "reinforcement learning",
+      "mechanical ventilation",
+      "ICU",
+      "clinical notes",
+      "multimodal",
+      "clinical decision support"
+    ],
+    "relevance": "Clinical decision support methodology improvement — demonstrates that temporal redundancy removal in clinical notes improves RL-based CDSS performance."
   }
 ]
