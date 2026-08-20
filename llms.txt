@@ -24,6 +24,9 @@
 - Main dashboard: / (index.html)
 - All data updated by automated cron jobs (daily announcement check + weekly research sweep)
 
+## Agent Context File
+- /OPENEVIDENCE_CONTEXT.md — comprehensive single-file snapshot: company overview, funding, adoption metrics, complete feature list (2023–2026), all partnerships, competitive landscape, research benchmarks, data endpoints, and website structure. Any agent can download and ingest this to get full context without crawling the site.
+
 ## Notes for Agents
 - Timeline is descending (newest first)
 - Publications include PMID, arXiv ID, and DOI where available
