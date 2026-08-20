@@ -4258,5 +4258,80 @@
       "clinical decision support"
     ],
     "relevance": "Clinical decision support methodology improvement — demonstrates that temporal redundancy removal in clinical notes improves RL-based CDSS performance."
+  },
+  {
+    "id": "arxiv:2608.14804",
+    "source": "arxiv",
+    "type": "clinical_ai_safety",
+    "title": "Generated Context versus Governed State: Functional Conditions for Accountable Longitudinal Clinical Reasoning",
+    "authors": "Augusto Bernardo Pissarra, Victor Lorena de Farias Souza",
+    "abstract": "Argues that longitudinal clinical reasoning is a state-estimation problem under partial observability, and that the axis on which clinical AI succeeds or fails is not the fluency of the model reading the record but the governance of the patient state it reasons over. Distinguishes generated context from governed state; separates five objects that clinical AI habitually conflates (true state, observations, evidence, belief, and simulated state); defines a tiered governance standard against which any clinical AI system can be audited; and shows that an operational definition of accountability decomposes into four information requirements: an immutable evidence ledger with awareness-time versioning, a belief state distinct from accumulated evidence, an observation-process model, and claim-level causal typing. A six-level maturity framework locates current LLM-centric practice at high capability but low maturity.",
+    "url": "https://arxiv.org/abs/2608.14804",
+    "pdf_url": "https://arxiv.org/pdf/2608.14804",
+    "doi": "10.48550/arXiv.2608.14804",
+    "published": "2026-08-14",
+    "updated": "2026-08-14",
+    "journal": "arXiv preprint (cs.AI)",
+    "tags": [
+      "clinical AI",
+      "accountability",
+      "governance",
+      "longitudinal reasoning",
+      "LLM",
+      "patient state",
+      "audit framework"
+    ],
+    "relevance": "Conceptual framework for clinical AI accountability and governance — directly relevant to evaluating how clinical AI tools like OpenEvidence maintain and govern patient state over time. The six-level maturity framework provides an audit instrument for current LLM-centric clinical AI systems."
+  },
+  {
+    "id": "arxiv:2608.18135",
+    "source": "arxiv",
+    "type": "scoping_review",
+    "title": "Improving Rural Medication Safety with AI: A Scoping Review",
+    "authors": "Ashad Kabir",
+    "abstract": "Scoping review of 12 primary studies from 9 nations examining AI applications for medication safety in rural healthcare settings (2012-2025). AI technologies including Clinical Decision Support Systems, Machine Learning, NLP, and smart pumps were integrated across prescribing, dispensing, administration, and monitoring. ML-based surveillance improved incident detection and reduced prescribing/transcription errors by 34-80%. Barriers included lack of governance frameworks, financial limitations, clinician resistance, and alert fatigue. AI technologies hold potential for enhancing pharmaceutical safety in rural healthcare through data-driven monitoring, automated processes, and clinical decision assistance.",
+    "url": "https://arxiv.org/abs/2608.18135",
+    "pdf_url": "https://arxiv.org/pdf/2608.18135",
+    "doi": "10.48550/arXiv.2608.18135",
+    "published": "2026-07-29",
+    "updated": "2026-07-29",
+    "journal": "arXiv preprint (cs.AI)",
+    "tags": [
+      "medication safety",
+      "rural healthcare",
+      "clinical decision support",
+      "scoping review",
+      "AI",
+      "CDSS",
+      "machine learning",
+      "NLP"
+    ],
+    "relevance": "Directly relevant to clinical AI decision support tools — evaluates CDSS and AI applications for medication safety in resource-limited settings, a key deployment context for tools like OpenEvidence."
+  },
+  {
+    "id": "arxiv:2607.23290",
+    "source": "arxiv",
+    "type": "clinical_decision_support",
+    "title": "RareLens: Towards End-to-End Rare Disease Care via Aligning Divergent Large Language Model Reasoning",
+    "authors": "Xi Chen, Hongru Zhou, Shiyu Feng, Hanyu Zhou, Huahui Yi, Rongsheng Wang, Tiancheng He, Kun Wang, Pingping Liu, Qiankun Li, Sicheng Lin, Huiying Ou, Xiaohong Zheng, Tianying Zang, Zhuohang Wu, Leheng Jiang, Kexin Cao, Wenhan Zhang, ChengYi Li, Zhiyang Wang, Songlin Li, Benyou Wang, Ningbei Yin, Shaoting Zhang, Weili Fu, Jian Li, Kang Li",
+    "abstract": "Exploits diversity of multiple imperfect LLM reasoning systems for rare disease clinical decision-making. Identifies divergent reasoning trajectories with complementary error patterns across heterogeneous LLMs and develops RareLens, which reconciles these perspectives into actionable decisions across four stages: risk screening, diagnosis, treatment planning, and prognosis prediction. Built on RarelensBench (157,525 cases, 33 Orphanet categories, 7,000+ conditions). RareLens outperformed GPT-5, DeepSeek-R1, Claude-3.7-Sonnet, and Gemini-2.5-Pro across all stages. External evaluation with 1,287 cases and 23 physicians showed autonomous RareLens and physician+RareLens both outperformed unaided physicians.",
+    "url": "https://arxiv.org/abs/2607.23290",
+    "pdf_url": "https://arxiv.org/pdf/2607.23290",
+    "doi": "10.48550/arXiv.2607.23290",
+    "published": "2026-07-25",
+    "updated": "2026-07-25",
+    "journal": "arXiv preprint (cs.AI)",
+    "tags": [
+      "rare disease",
+      "clinical decision support",
+      "LLM",
+      "multi-model",
+      "benchmark",
+      "RarelensBench",
+      "physician-AI teaming",
+      "diagnosis",
+      "treatment planning"
+    ],
+    "relevance": "Highly relevant — multi-LLM ensemble approach for clinical decision support across full care pathway. RarelensBench benchmarks frontier models on rare disease care. Physician-AI teaming evaluation with 23 physicians directly comparable to OpenEvidence's clinical AI deployment model."
   }
 ]

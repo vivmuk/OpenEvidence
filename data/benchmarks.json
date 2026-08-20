@@ -1495,5 +1495,27 @@
       "General mechanism: any reasoning nudge can cause unrequested patient detail fabrication"
     ],
     "relevance": "Large-scale safety evaluation revealing novel failure mode in medical LLMs — demographic hallucination from prompting that can alter clinical recommendations."
+  },
+  {
+    "id": "arxiv:2607.23290",
+    "source": "arxiv",
+    "type": "benchmark_evaluation",
+    "title": "RareLens: Towards End-to-End Rare Disease Care via Aligning Divergent Large Language Model Reasoning",
+    "authors": "Xi Chen et al.",
+    "url": "https://arxiv.org/abs/2607.23290",
+    "published": "2026-07-25",
+    "updated": "2026-07-25",
+    "journal": "arXiv preprint (cs.AI)",
+    "tools_evaluated": "GPT-5, DeepSeek-R1, Claude-3.7-Sonnet, Gemini-2.5-Pro, RareLens ensemble",
+    "scale": "RarelensBench: 157,525 cases, 33 Orphanet categories, 7,000+ conditions; external eval: 1,287 cases, 23 physicians",
+    "key_findings": [
+      "RareLens outperformed all frontier models (GPT-5, DeepSeek-R1, Claude-3.7-Sonnet, Gemini-2.5-Pro) across all four stages of rare disease care",
+      "Achieved AUC 0.917 for screening, top-1 accuracy 65.5% for diagnosis and 89.8% for treatment",
+      "Both autonomous RareLens and physician+RareLens outperformed unaided physicians in external evaluation",
+      "Divergent model reasoning is an exploitable source of information for clinical AI under high uncertainty"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
   }
 ]
