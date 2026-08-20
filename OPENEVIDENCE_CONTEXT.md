@@ -119,6 +119,7 @@
 | Jul 28, 2026 | **Education Platform (CE & MOC Credits)** | Accredited interprofessional CE and MOC credits for NPI-verified physicians, NPs, and PAs. AKH Inc. as accredited provider. Jointly accredited by ACCME, ACPE, and ANCC. |
 | Aug 5, 2026 | **Springer Nature Partnership** | Peer-reviewed content from Springer Nature (Nature, Nature Medicine, 180+ years of publications) integrated into platform. |
 | Aug 6, 2026 | **OneOncology Partnership** | AI-enabled, evidence-grounded clinical decision support brought to one of the largest US community oncology networks. |
+| Aug 19, 2026 | **Patient Take-Homes** | Fully optional feature for sharing curated clinical evidence with patients. Converts OpenEvidence answers into patient handouts. Physicians can optionally share appropriate, high-quality, evidence-based medical information with patients. Fully curated and controlled by the physician. Dedicated site at takehome.openevidence.com. |
 | Aug 10, 2026 | **OpenEvidence Games (MedMini & Synapses)** | Suite of medical puzzle games for clinicians. MedMini (daily medical mini crossword) and Synapses (daily diagnostic reasoning puzzle). Live in Discover on web and app. |
 
 ---
