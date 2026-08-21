@@ -5,8 +5,24 @@
 
 var whatsNewData = [
   {
+    date: "August 21, 2026",
+    updated: "Daily announcement check (Fri Aug 21, 9:00 AM ET) — Venice Augment Search + scrape. 2 missing timeline entries found and added: Patient Take-Homes (Aug 19) and Springer Nature content agreement (Aug 5). No new arXiv papers (all 30 results already in research.json).",
+    items: [
+      {
+        cat: "OE Product Launch — Patient Communication",
+        title: "OpenEvidence Launches Patient Take-Homes (Aug 19, 2026)",
+        desc: "New fully optional feature lets physicians convert OpenEvidence answers into curated patient handouts. Physicians control what gets shared — evidence-based medical information delivered at physician's discretion. Extends OE from clinician-only tool toward physician-mediated patient education, a new product category for clinical AI platforms."
+      },
+      {
+        cat: "OE Partnership — Publisher Content",
+        title: "Springer Nature and OpenEvidence Announce Content Agreement (Aug 5, 2026)",
+        desc: "Subscription agreement brings peer-reviewed content from Springer Nature's portfolio (Nature, Nature Medicine, and 3,000+ journals) into OpenEvidence. Part of Springer Nature's ARC3 AI-ready content licensing framework. Ensures author attribution and source linking. Adds to existing publisher partnerships with NEJM, JAMA, Wiley, and Cochrane."
+      }
+    ]
+  },
+  {
     date: "August 19, 2026",
-    updated: "Global CDS weekly sweep (Tue Aug 19, 9:18 AM ET) — web_search unavailable on this lane; update built from data/research.json cache (9 fresh arxiv/PubMed papers Aug 11-17) and prior dashboard state. No live product/regulatory news this week — next live sweep on a web-enabled run.",
+    updated: "Global CDS weekly sweep (Tue Aug 19, 9:18 AM ET) — web_search unavailable on this lane; update built from data/research.json cache (9 fresh arxiv/PubMed papers Aug 11-17) and prior dashboard state.",
     items: [
       {
         cat: "Benchmarking / RAG vs Frontier LLMs",
