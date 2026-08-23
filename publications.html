@@ -33,7 +33,7 @@
   </div>
   <div class="sidebar-footer">
     <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
-    <div class="updated-info">Updated: Aug 16, 2026</div>
+    <div class="updated-info">Updated: Aug 23, 2026</div>
   </div>
 </div>
 <div class="main-content">
@@ -59,7 +59,7 @@ window.addEventListener('load', function() {
         <div class="content">
           <h4>${p.title} ${p.new ? '<span class="new-badge">NEW</span>' : ''}</h4>
           <p><strong>${p.journal}</strong> · ${p.authors} · ${p.date}</p>
-          <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">PubMed ${p.pmid} →</a></div>
+          <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">${p.pmid ? 'PubMed ' + p.pmid : 'Source'} →</a></div>
         </div>
       </div>
     `).join('');

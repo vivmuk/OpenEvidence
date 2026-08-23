@@ -5,6 +5,17 @@
 
 var whatsNewData = [
   {
+    date: "August 23, 2026",
+    updated: "Manual research update (Sun Aug 23, 9:16 AM ET) — ClinicalTrials.gov registry record verified via API.",
+    items: [
+      {
+        cat: "Research — First Registered Clinical Trial of OpenEvidence",
+        title: "NCT07199231: Cambridge Health Alliance study compares OpenEvidence vs ChatGPT, Claude & Gemini in real clinical practice",
+        desc: "First clinical trial registration evaluating OpenEvidence safety and comparative efficacy. Observational prospective cohort at CHA (Harvard/Tufts-affiliated safety-net system, Boston): 20 residents (family medicine, internal medicine, psychiatry) use OpenEvidence during real patient care, cross-checking every query against gold-standard references (PubMed/UpToDate). Attending-physician SMEs (5+ yrs post-training) rate clinical appropriateness on a 10-point Likert scale with ICC inter-rater checks; Part 2 rates OpenEvidence vs ChatGPT/Gemini/Claude outputs on accuracy, completeness, and bias. Key detail: OpenEvidence is blacklisted from CHA network services pending study results — an evidence-gated adoption model. Primary completion July 30, 2026; study completion est. Sept 30, 2026. PI/Responsible party: Hannah Galvin, Chief Health Information Officer, CHA."
+      }
+    ]
+  },
+  {
     date: "August 21, 2026",
     updated: "Daily announcement check (Fri Aug 21, 9:00 AM ET) — Venice Augment Search + scrape. 2 missing timeline entries found and added: Patient Take-Homes (Aug 19) and Springer Nature content agreement (Aug 5). No new arXiv papers (all 30 results already in research.json).",
     items: [
