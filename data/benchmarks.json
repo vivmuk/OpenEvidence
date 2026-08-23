@@ -1517,5 +1517,94 @@
     "relevance": "high",
     "status": "preprint",
     "new": true
+  },
+  {
+    "id": "pmid:42629964",
+    "title": "Multidisciplinary dental treatment planning by artificial intelligence: A comparative evaluation",
+    "authors": "Kazim SA, Alnoman BA, Hashim RM, Goodacre CJ",
+    "journal": "Journal of Prosthodontics",
+    "published": "2026-08-21",
+    "doi": "10.1111/jopr.70226",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42629964/",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "ChatGPT-5",
+      "Google Gemini (v2.5)",
+      "Microsoft Copilot"
+    ],
+    "scale": "10 cases, 4 AI systems, 4 calibrated specialists, 5-domain rubric (kappa=0.74)",
+    "domain": "prosthodontic/dental treatment planning",
+    "key_findings": [
+      "OpenEvidence highest mean score (7.7+/-1.4) vs ChatGPT-5 (7.6+/-1.1), Gemini (5.1+/-1.2), Copilot (4.7+/-3.1)",
+      "Copilot failed 3/10 cases due to content filtering",
+      "Clinically significant diagnostic errors across all systems - adjunctive use only"
+    ],
+    "open_evidence_rank": 1,
+    "open_evidence_score": "7.7+/-1.4 (of 10)",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42609726",
+    "title": "Vocal Cord Dysfunction: Evaluating the Utility of AI LLMs for Patient Education",
+    "authors": "Cook K, Tseng P, Ahmadian D, Demirjian N, Liu V, Weinstein T, Yip H",
+    "journal": "World Journal of Otorhinolaryngology - Head and Neck Surgery",
+    "published": "2026-08-17",
+    "doi": "10.1002/wjo2.70158",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42609726/",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "ChatGPT 5 Extended Thinking",
+      "fellowship-trained laryngologist"
+    ],
+    "scale": "4 patient questions, 45 provider raters, Friedman + chi-square analysis",
+    "domain": "laryngology patient education",
+    "key_findings": [
+      "AI preferred over expert-authored response for definition, diagnosis and treatment-process questions (all Friedman p<=0.001)",
+      "ChatGPT 5 Extended Thinking best overall; OpenEvidence comparable on definition question and several items"
+    ],
+    "open_evidence_rank": 2,
+    "status": "published"
+  },
+  {
+    "id": "pmid:42513458",
+    "title": "The Role of Large Language Models in Hormonal Contraception Consultation",
+    "authors": "Psilopatis I, Emons J, Zwimpfer TA",
+    "journal": "Journal of Clinical Medicine",
+    "published": "2026-07-15",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42513458/",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "ChatGPT",
+      "Google Gemini"
+    ],
+    "scale": "10 fictitious counseling cases, 2 board-certified OB-GYN raters",
+    "domain": "contraception counseling",
+    "key_findings": [
+      "Accuracy and comprehensiveness of LLM counseling evaluated against evidence-based guidelines across eligibility screening, contraindications, drug interactions, side-effect management and emergency contraception"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pmid:42462288",
+    "title": "Guideline-anchored RAG outperforms baseline and literature-only configurations in gynecologic oncology decision support: A pre-integration benchmark",
+    "authors": "Dukes D, Yost C, Wang R, Diagne YF, Garr L, Yost M, Owaka J, York M, Kang P, Sookram J, Huh W, Loaiza A, Farley J",
+    "journal": "Gynecologic Oncology",
+    "published": "2026-07-16",
+    "doi": "10.1016/j.ygyno.2026.07.005",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42462288/",
+    "tools_evaluated": [
+      "Baseline GPT-5",
+      "NCCN-anchored GPT-5 RAG",
+      "OpenEvidence"
+    ],
+    "scale": "50 de-identified gyn-onc cases, 3 gynecologic oncologists, modified Generative Performance Score (mGPS)",
+    "domain": "gynecologic oncology decision support",
+    "key_findings": [
+      "NCCN-guideline-anchored GPT-5 RAG outperformed both baseline GPT-5 and OpenEvidence (literature-anchored) on mGPS",
+      "OpenEvidence lacked NCCN guideline access during the study window - literature-only retrieval trailed guideline-anchored retrieval for guideline-driven oncology decisions",
+      "Pre-integration benchmark informing health-system CDS procurement"
+    ],
+    "open_evidence_rank": 3,
+    "status": "published"
   }
 ]

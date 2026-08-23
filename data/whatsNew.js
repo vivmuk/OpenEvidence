@@ -6,6 +6,48 @@
 var whatsNewData = [
   {
     date: "August 23, 2026",
+    updated: "Weekly sweep verification pass (Sun Aug 23, 5:15 PM ET) — arXiv API (50 entries) and PubMed re-checked; 3 new OpenEvidence-relevant PubMed papers ingested. No new announcements since Aug 19.",
+    items: [
+      {
+        cat: "Research — OpenEvidence as Formal Research Instrument",
+        title: "J Gastrointest Surg 'Augmented Evidence Review' series uses OpenEvidence as an AI evidence stream (PMIDs 42508724, 42586233)",
+        desc: "Two papers (Cleveland Clinic Jul 27; Ohio State Aug 12) introduce the AER framework — registry data + surgeon social-media poll + OpenEvidence literature synthesis as three independent evidence streams. OE output corroborated registry findings in both; institutionalizes OE as an evidence-synthesis instrument in peer-reviewed surgical research methodology. Added to Publications, Research and Timeline."
+      },
+      {
+        cat: "Research — Clinical AI Policy Agenda",
+        title: "ACNP study group: five priority themes for responsible AI in mental health care (NPP Digit Psychiatry, Aug 20, PMID 42624890)",
+        desc: "Paulus, Torous, Perlis et al. argue clinical AI's barriers are now infrastructural, not computational; name clinician-facing augmentation and structured decision-support pipelines as the most immediate scalable impact, and call for rigorous safety evaluation of patient-facing AI (esp. suicide risk). Added to Publications, Research and Timeline."
+      },
+      {
+        cat: "QC Notes",
+        title: "arXiv: 6 candidates screened out; PubMed: 10 tangential hits discarded",
+        desc: "arXiv feed had 6 untracked papers — all QC-excluded (general LLM methodology, medical coding, imaging segmentation, governance-taxonomy, pathology indexing). PubMed broad query returned Krumholz JACC editorials and pure-clinical reviews that mention AI only tangentially — skipped per QC policy. All 50 arXiv API results otherwise already tracked."
+      }
+    ]
+  },
+  {
+    date: "August 23, 2026",
+    updated: "Weekly research sweep (Sun Aug 23, 5:00 PM ET) — arXiv API + PubMed + announcements-page audit. Daily checks had already ingested all Jul 10–Aug 19 announcements into timeline.js; this sweep backfilled the CSVs and added new research.",
+    items: [
+      {
+        cat: "Research — New Head-to-Head: Dental AI Treatment Planning",
+        title: "OpenEvidence tops 4-way dental AI evaluation (J Prosthodont, Aug 21, PMID 42629964)",
+        desc: "10 prosthodontic cases × 4 AI systems (OpenEvidence, ChatGPT-5, Gemini 2.5, Copilot) scored by 4 calibrated specialists against consensus reference (κ=0.74). OpenEvidence highest mean score 7.7±1.4, edging ChatGPT-5 (7.6±1.1); Gemini 5.1; Copilot 4.7 (failed 3/10 cases to content filtering). Clinically significant diagnostic errors across ALL systems — authors recommend adjunctive use with specialist oversight. Added to Publications, Research and Benchmarks."
+      },
+      {
+        cat: "Research — AI Patient Education vs Expert Author",
+        title: "LLMs beat expert-authored patient education for vocal cord dysfunction (World J Otorhinolaryngol HNS, Aug 17, PMID 42609726)",
+        desc: "45 providers ranked OpenEvidence vs ChatGPT-5 Extended Thinking vs a fellowship-trained laryngologist on 4 common VCD patient questions. AI preferred over the expert response for definition, diagnosis and treatment questions (all Friedman p≤0.001); ChatGPT-5 ET best overall (3/4 first-choice), OpenEvidence comparable on the definition question. Added to Publications, Research and Benchmarks."
+      },
+      {
+        cat: "Data Backfill — Timeline & Partnership CSVs",
+        title: "CSV event log synchronized with Jul 8 – Aug 19 announcements; gyn-onc RAG benchmark added",
+        desc: "timeline.csv: added Patient Take-Homes (Aug 19), OpenEvidence Games/MedMini/Synapses (Aug 10), Springer Nature agreement (Aug 5), LA County DPH partnership (Jul 23), Anticoagulation Forum partnership (Jul 8) + 2 research rows. partnerships.csv: added Anticoagulation Forum, LA County DPH, Springer Nature rows. benchmarks.json: added Gynecologic Oncology pre-integration benchmark (PMID 42462288 — NCCN-anchored GPT-5 RAG beat baseline GPT-5 and OpenEvidence, which lacked NCCN access during the study window) and hormonal-contraception LLM consultation study (PMID 42513458). No new arXiv papers — all 50 API results already tracked or out of QC scope."
+      }
+    ]
+  },
+  {
+    date: "August 23, 2026",
     updated: "Manual research update (Sun Aug 23, 9:16 AM ET) — ClinicalTrials.gov registry record verified via API.",
     items: [
       {
