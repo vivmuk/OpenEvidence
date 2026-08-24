@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publishers — OpenEvidence Insights</title>
+<meta name="description" content="Every publisher, society, and content partner onboarded to OpenEvidence — where the data comes from.">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared.css">
+<style>
+.pub-hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 20px 0 28px; }
+.pub-stat { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 16px 18px; }
+.pub-stat .num { font-size: 28px; font-weight: 700; color: var(--oe-orange); line-height: 1.1; }
+.pub-stat .lbl { font-size: 12px; color: var(--oe-text-muted); margin-top: 4px; text-transform: uppercase; letter-spacing: .06em; }
+
+.pub-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 20px; }
+.pub-filter-btn { background: var(--oe-dark-card); color: var(--oe-text-dim); border: 1px solid var(--oe-dark-border); border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer; font-family: var(--oe-font-sans); transition: all .15s; }
+.pub-filter-btn:hover { border-color: var(--oe-orange); color: var(--oe-text); }
+.pub-filter-btn.active { background: var(--oe-orange); border-color: var(--oe-orange); color: #fff; font-weight: 600; }
+
+.pub-cat-head { display: flex; align-items: baseline; gap: 10px; margin: 30px 0 12px; border-bottom: 1px solid var(--oe-dark-border); padding-bottom: 8px; }
+.pub-cat-head h3 { font-size: 18px; font-weight: 600; }
+.pub-cat-head .count { font-size: 12px; color: var(--oe-text-muted); }
+
+.pub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 14px; }
+.pub-card { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 16px; display: flex; flex-direction: column; gap: 8px; transition: transform .15s, border-color .15s, box-shadow .15s; animation: fadeIn .5s ease-out both; }
+.pub-card:hover { transform: translateY(-3px); border-color: var(--oe-orange); box-shadow: var(--oe-shadow-lg); }
+.pub-top { display: flex; align-items: center; gap: 12px; }
+.pub-logo { width: 52px; height: 52px; flex: 0 0 52px; background: #fff; border-radius: var(--oe-radius); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.pub-logo img { max-width: 86%; max-height: 86%; object-fit: contain; }
+.pub-logo.mono { color: #fff; font-weight: 700; font-size: 15px; letter-spacing: .02em; }
+.pub-name { font-size: 15px; font-weight: 600; line-height: 1.25; }
+.pub-org { font-size: 12px; color: var(--oe-text-muted); margin-top: 2px; }
+.pub-date { align-self: flex-start; background: var(--oe-orange-50); color: var(--oe-orange-dark); border: 1px solid var(--oe-orange-200); font-size: 11px; font-weight: 600; padding: 2px 10px; border-radius: 999px; }
+[data-theme="light"] .pub-date, html:not(.dark) .pub-date { background: var(--oe-orange-50); }
+html.dark .pub-date { background: rgba(228,100,61,.12); color: var(--oe-orange-light); border-color: rgba(228,100,61,.3); }
+.pub-scope { font-size: 12.5px; color: var(--oe-text); line-height: 1.45; }
+.pub-scope b { color: var(--oe-orange-light); font-weight: 600; }
+.pub-desc { font-size: 12px; color: var(--oe-text-dim); line-height: 1.5; }
+.pub-src { font-size: 11px; color: var(--oe-text-muted); margin-top: auto; }
+.pub-src a { color: var(--oe-orange); text-decoration: none; }
+.pub-src a:hover { text-decoration: underline; }
+
+.pub-timeline { display: flex; overflow-x: auto; gap: 0; padding: 18px 0 8px; position: relative; }
+.pub-tl-item { flex: 0 0 auto; width: 118px; text-align: center; position: relative; padding-top: 18px; }
+.pub-tl-item::before { content: ''; position: absolute; top: 10px; left: 0; right: 0; height: 2px; background: var(--oe-dark-border); }
+.pub-tl-item::after { content: ''; position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 10px; height: 10px; border-radius: 50%; background: var(--oe-orange); box-shadow: 0 0 0 3px var(--oe-dark); }
+.pub-tl-date { font-size: 10.5px; color: var(--oe-orange-light); font-weight: 600; }
+.pub-tl-name { font-size: 11px; color: var(--oe-text-dim); line-height: 1.3; margin-top: 2px; }
+.pub-note { font-size: 12px; color: var(--oe-text-muted); margin-top: 10px; }
+.pub-note a { color: var(--oe-orange); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/publishers" class="active">🗞️ Publishers</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Aug 24, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+<section id="publishers">
+  <div class="container">
+    <h2>Publisher <span class="accent">Network</span></h2>
+    <p class="section-sub">Where OpenEvidence's data comes from: every journal publisher, medical society, research body, clinical network, and public health agency whose content is licensed into the platform — compiled from official announcements going back to launch.</p>
+
+    <div class="pub-hero-stats" id="pubStats"></div>
+
+    <div class="chart-container">
+      <h3>Onboarding Timeline</h3>
+      <p class="chart-sub">Every content deal in chronological order (excludes open-access backbone indexed since launch) — scroll horizontally</p>
+      <div class="pub-timeline" id="pubTimeline"></div>
+    </div>
+
+    <div class="pub-filters" id="pubFilters"></div>
+    <div id="pubSections"></div>
+
+    <p class="pub-note">Sources: official announcements at <a href="https://www.openevidence.com/announcements" target="_blank">openevidence.com/announcements</a>, PRNewswire, ACC/NCCN/AAP press releases, and the Springer Nature ARC3 licensing announcement. Wiley partnership alone spans 300+ medical journals and society titles. Last verified Aug 24, 2026.</p>
+  </div>
+</section>
+</div>
+<script src="/shared.js"></script>
+<script src="data/publishers.js"></script>
+<script>
+(function () {
+  var CAT_ORDER = ['journal','publisher','research','society','network','publichealth','backbone'];
+  var contracted = PUBLISHERS.filter(p => p.cat !== 'backbone');
+
+  // ── stats ──
+  var societies = PUBLISHERS.filter(p => p.cat === 'society').length;
+  var stats = [
+    { n: contracted.length, l: 'Licensed content partners' },
+    { n: '300+', l: 'Journals via Wiley alone' },
+    { n: societies, l: 'Medical societies & colleges' },
+    { n: '1990', l: 'Deepest archive (NEJM)' },
+    { n: PUBLISHERS.filter(p => p.date >= '2026-07-01').length, l: 'Added since Jul 2026' },
+  ];
+  document.getElementById('pubStats').innerHTML = stats.map(s =>
+    '<div class="pub-stat"><div class="num">' + s.n + '</div><div class="lbl">' + s.l + '</div></div>').join('');
+
+  // ── timeline ──
+  var tl = contracted.slice().sort((a,b) => a.date.localeCompare(b.date));
+  document.getElementById('pubTimeline').innerHTML = tl.map(p =>
+    '<div class="pub-tl-item"><div class="pub-tl-date">' + p.dateLabel + '</div><div class="pub-tl-name">' + p.name + '</div></div>').join('');
+
+  // ── filters ──
+  var filtersEl = document.getElementById('pubFilters');
+  var btns = [{ key:'all', label:'All (' + PUBLISHERS.length + ')' }].concat(
+    CAT_ORDER.filter(k => PUBLISHERS.some(p => p.cat === k)).map(k => ({
+      key: k, label: (PUBLISHER_CATEGORIES[k].icon + ' ' + PUBLISHER_CATEGORIES[k].label.split(' (')[0])
+    })));
+  filtersEl.innerHTML = btns.map(b =>
+    '<button class="pub-filter-btn' + (b.key === 'all' ? ' active' : '') + '" data-cat="' + b.key + '">' + b.label + '</button>').join('');
+
+  function card(p) {
+    var logoHtml;
+    if (p.logo) {
+      logoHtml = '<div class="pub-logo"><img loading="lazy" src="/' + p.logo + '" alt="' + p.name + ' logo" onerror="this.parentNode.classList.add(\'mono\');this.outerHTML=\'' + (p.mono || p.name.slice(0,3).toUpperCase()) + '\'"></div>';
+    } else {
+      logoHtml = '<div class="pub-logo mono" style="background:' + (p.monoColor || '#E4643D') + '">' + (p.mono || p.name.slice(0,3).toUpperCase()) + '</div>';
+    }
+    return '<div class="pub-card" data-cat="' + p.cat + '">' +
+      '<div class="pub-top">' + logoHtml + '<div><div class="pub-name">' + p.name + '</div><div class="pub-org">' + p.org + '</div></div></div>' +
+      '<span class="pub-date">' + p.dateLabel + '</span>' +
+      '<div class="pub-scope"><b>Content:</b> ' + p.scope + '</div>' +
+      '<div class="pub-desc">' + p.desc + '</div>' +
+      (p.src ? '<div class="pub-src"><a href="' + p.src + '" target="_blank" rel="noopener">📄 Announcement source ↗</a></div>' : '') +
+      '</div>';
+  }
+
+  function render(filter) {
+    var html = '';
+    CAT_ORDER.forEach(function (k) {
+      var items = PUBLISHERS.filter(p => p.cat === k && (filter === 'all' || filter === k));
+      if (!items.length) return;
+      var c = PUBLISHER_CATEGORIES[k];
+      html += '<div class="pub-cat-head"><h3>' + c.icon + ' ' + c.label + '</h3><span class="count">' + items.length + (items.length === 1 ? ' partner' : ' partners') + '</span></div>';
+      html += '<div class="pub-grid">' + items.map(card).join('') + '</div>';
+    });
+    document.getElementById('pubSections').innerHTML = html;
+  }
+
+  filtersEl.addEventListener('click', function (e) {
+    var btn = e.target.closest('.pub-filter-btn');
+    if (!btn) return;
+    filtersEl.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    render(btn.dataset.cat);
+  });
+
+  render('all');
+})();
+</script>
+</body>
+</html>

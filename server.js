@@ -104,7 +104,7 @@ app.get('/data/:file', (req, res) => {
 // Page routes — serve specific HTML pages by route name
 const pageRoutes = [
   'timeline', 'funding', 'products', 'features', 'competitors',
-  'partnerships', 'tech', 'pharma', 'benchmarks', 'publications',
+  'partnerships', 'publishers', 'tech', 'pharma', 'benchmarks', 'publications',
   'sct', 'doximity', 'global', 'future', 'sources'
 ];
 
