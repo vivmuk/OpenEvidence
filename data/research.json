@@ -4547,5 +4547,150 @@
   "scale": "10 clinical case scenarios, 3 LLMs, 2 board-certified OB-GYN raters",
   "status": "published",
   "new": true
+ },
+ {
+  "id": "arxiv:2608.24790",
+  "source": "arxiv",
+  "type": "safety_evaluation",
+  "title": "Right Diagnoses, Decorative Reasoning: A Perturbation Audit of Medical Chain-of-Thought",
+  "authors": "Mengzhu Xu, Jifan Gao, Xia Jiang, Yaoxin Wu, Xi Long",
+  "abstract": "Clinicians read chain-of-thought (CoT) rationales as evidence of medical reasoning, but whether the visible chain plays that role is rarely tested. We close this gap with a medical perturbation audit: a 30-operator battery edits both the chain and the question with clinically motivated operators (severity reversal, negation flip, demographic swap, evidence ablation), paired with a chain-update times answer-flip joint analysis. Applied to 14 LLMs on four medical QA benchmarks, three independent tests converge: the Chain-Decoupling Rate (CDR) is 72.9% panel-wide on clinically meaningful destructive edits, chain corruption leaves accuracy unchanged, and removing CoT prompting does not reduce accuracy. Two board-certified clinicians re-annotate N=197 perturbed questions; 98.5% leave the gold defensible.",
+  "url": "https://arxiv.org/abs/2608.24790",
+  "pdf_url": "https://arxiv.org/pdf/2608.24790",
+  "doi": null,
+  "published": "2026-08-25",
+  "updated": "2026-08-25",
+  "journal": "arXiv preprint (cs.AI)",
+  "tags": [
+   "medical CoT",
+   "chain-of-thought faithfulness",
+   "clinical AI safety",
+   "LLM benchmark",
+   "perturbation audit",
+   "medical QA"
+  ],
+  "relevance": "Directly evaluates clinical AI safety by auditing whether chain-of-thought reasoning in medical LLMs is faithful or merely decorative. Introduces the Chain-Decoupling Rate (CDR) as a reusable yardstick. 14 LLMs tested on 4 medical QA benchmarks including MedQA.",
+  "key_findings": [
+   "72.9% Chain-Decoupling Rate — chain does not register clinically meaningful edits and answer does not flip",
+   "Chain corruption leaves accuracy unchanged, removing CoT prompting does not reduce accuracy",
+   "Pattern holds across medical and reasoning fine-tuning and scale",
+   "Two board-certified clinicians confirm 98.5% of gold answers remain defensible after perturbation"
+  ],
+  "tools_evaluated": [
+   "14 LLMs (panel including medical and general-purpose models)"
+  ],
+  "scale": "14 LLMs, 4 medical QA benchmarks, 197 clinician-annotated perturbed questions",
+  "status": "preprint"
+ },
+ {
+  "id": "arxiv:2608.22802",
+  "source": "arxiv",
+  "type": "bias_evaluation",
+  "title": "SDoH-Aware Narrative Anchoring Bias in Medical LLMs for Trustworthy Clinical Decision Support",
+  "authors": "Ahnaf Atef Choudhury, Ramkrishna Saha",
+  "abstract": "Medical LLMs may know the right answer and still change their response when the same case is written in a different patient voice. This paper evaluates SDoH-aware narrative anchoring bias using NarrativeShield SDoH MedQA, a counterfactual medical QA dataset. Three open-source LLMs from the Qwen2.5 family (1.5B, 3B, 7B) were evaluated. 300 clinical cases produce 8,100 model responses. Qwen2.5 7B achieves best accuracy at 56.33% and correct consistency at 40.33%. Lowest narrative sensitivity error still at 31.67%.",
+  "url": "https://arxiv.org/abs/2608.22802",
+  "pdf_url": "https://arxiv.org/pdf/2608.22802",
+  "doi": null,
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "journal": "arXiv preprint (cs.CL) — Accepted at IDAP'26",
+  "tags": [
+   "clinical decision support",
+   "SDoH bias",
+   "narrative anchoring",
+   "medical LLM",
+   "counterfactual evaluation",
+   "trustworthy AI"
+  ],
+  "relevance": "Directly evaluates clinical decision support safety by measuring whether medical LLMs change answers based on patient narrative voice rather than clinical content. Introduces narrative sensitivity error metric.",
+  "key_findings": [
+   "31.67% narrative sensitivity error — models change answers when same case written in different patient voice",
+   "Qwen2.5 7B: 56.33% accuracy, 40.33% correct consistency",
+   "Paired McNemar tests show significant accuracy gains for 7B over 3B in all prompt settings",
+   "Trustworthy clinical decision support requires evaluating stability across medically equivalent patient narratives"
+  ],
+  "tools_evaluated": [
+   "Qwen2.5 1.5B",
+   "Qwen2.5 3B",
+   "Qwen2.5 7B"
+  ],
+  "scale": "300 clinical cases, 8,100 model responses, 3 prompting conditions",
+  "status": "accepted"
+ },
+ {
+  "id": "arxiv:2608.22797",
+  "source": "arxiv",
+  "type": "tool_comparison",
+  "title": "Performance of a domain-specific large language model in answering patient questions in psychiatry",
+  "authors": "Alexander J. Hish, Arjun Nagendran, Scott N. Compton",
+  "abstract": "Evaluates whether a domain-specific LLM (MIND) fine-tuned on patient education resources can answer questions about psychiatric medications better than LLM chatbots. Compares MIND, ChatGPT, and OpenEvidence on patient questions about escitalopram. When rated by rubric, MIND was highest in all domains (p<0.001). When rated by 10 board-licensed psychiatrists, ChatGPT was rated accurate more often than MIND (negligible effect size), MIND was rated complete more often (small effect size). 57.6% of psychiatrists preferred ChatGPT responses vs 42.4% MIND (p=0.003).",
+  "url": "https://arxiv.org/abs/2608.22797",
+  "pdf_url": "https://arxiv.org/pdf/2608.22797",
+  "doi": null,
+  "published": "2026-08-24",
+  "updated": "2026-08-24",
+  "journal": "arXiv preprint (cs.AI)",
+  "tags": [
+   "OpenEvidence",
+   "ChatGPT",
+   "psychiatry",
+   "domain-specific LLM",
+   "patient education",
+   "tool comparison",
+   "escitalopram"
+  ],
+  "relevance": "Directly evaluates OpenEvidence alongside ChatGPT and a domain-specific LLM (MIND) in psychiatry. One of the few studies comparing OpenEvidence to other tools in a specific clinical specialty.",
+  "key_findings": [
+   "MIND rated highest by rubric in all domains (accuracy, clarity, completeness, nuance, safety, referral appropriateness)",
+   "Psychiatrists preferred ChatGPT (57.6%) over MIND (42.4%, p=0.003)",
+   "MIND rated more complete than ChatGPT (small effect size, p<0.001)",
+   "MIND and ChatGPT rated safe with same frequency (p=0.955)",
+   "OpenEvidence included in comparison but not top-rated"
+  ],
+  "tools_evaluated": [
+   "MIND (domain-specific LLM)",
+   "ChatGPT",
+   "OpenEvidence"
+  ],
+  "scale": "Patient questions about escitalopram, 10 board-licensed psychiatrists",
+  "status": "preprint"
+ },
+ {
+  "id": "arxiv:2608.22622",
+  "source": "arxiv",
+  "type": "rag_evaluation",
+  "title": "Teaching LLMs How ICU Physicians Approach Clinical Reasoning Through OMOP-Aligned Retrieval Improves Reasoning Across Clinical Domains",
+  "authors": "Miguel Contreras, Scott Siegel, Subhash Nerella, Jessica Sena, Jiaqing Zhang, Heng Sun, et al.",
+  "abstract": "Introduces ICU-REACT, a reasoning dataset developed with 19 clinicians through a clinician-in-the-loop framework to teach LLMs information retrieval and context-aware clinical reasoning in the ICU. Fine-tuned Clin-REACT models (8B-70B, three model families) consistently outperformed backbone models and open-source general-purpose and medical LLMs across five clinical reasoning benchmarks. Gains extended to script concordance tests and downstream diagnosis/treatment tasks.",
+  "url": "https://arxiv.org/abs/2608.22622",
+  "pdf_url": "https://arxiv.org/pdf/2608.22622",
+  "doi": null,
+  "published": "2026-08-23",
+  "updated": "2026-08-23",
+  "journal": "arXiv preprint (cs.CL)",
+  "tags": [
+   "RAG",
+   "clinical reasoning",
+   "ICU",
+   "OMOP",
+   "retrieval-augmented generation",
+   "clinical decision support",
+   "fine-tuning"
+  ],
+  "relevance": "RAG-based clinical AI evaluation — demonstrates that expert reasoning supervision in critical care improves broader clinical reasoning. Directly relevant to OpenEvidence's RAG architecture and clinical decision support approach.",
+  "key_findings": [
+   "Clin-REACT models outperformed backbone models across 5 clinical reasoning benchmarks",
+   "Gains extended to script concordance tests and downstream diagnosis/treatment tasks",
+   "Expert ICU reasoning supervision generalizes beyond critical care",
+   "19 clinicians contributed to dataset through clinician-in-the-loop framework"
+  ],
+  "tools_evaluated": [
+   "Clin-REACT (8B-70B, 3 model families)",
+   "open-source general-purpose LLMs",
+   "medical LLMs"
+  ],
+  "scale": "19 clinicians, 5 clinical reasoning benchmarks, 8B-70B parameter models",
+  "status": "preprint"
  }
 ]
