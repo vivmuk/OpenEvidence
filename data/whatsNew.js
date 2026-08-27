@@ -5,6 +5,17 @@
 
 var whatsNewData = [
   {
+    date: "August 27, 2026",
+    updated: "Daily announcement check (Thu Aug 27, 9:00 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements scrape + arXiv API (30 entries). 1 new timeline entry: Zeke Emanuel MS NOW mention (Aug 26). All 30 arXiv results already in research.json (132 papers).",
+    items: [
+      {
+        cat: "Media — National TV Mention",
+        title: "Zeke Emanuel on MS NOW: 'Two-thirds of doctors regularly consult OpenEvidence' (Aug 26, 2026)",
+        desc: "Dr. Ezekiel Emanuel (former Obama health policy advisor, VP University of Pennsylvania) mentions OpenEvidence on MS NOW (MSNBC), citing two-thirds physician adoption. @OpenEvidence highlights the quote on X. Same day, physician @gruntdoc posts a clinical thread using OpenEvidence for STD treatment info, calling it 'astonishingly useful.' Added to Timeline as Media entry."
+      }
+    ]
+  },
+  {
     date: "August 23, 2026",
     updated: "Weekly sweep verification pass (Sun Aug 23, 5:15 PM ET) — arXiv API (50 entries) and PubMed re-checked; 3 new OpenEvidence-relevant PubMed papers ingested. No new announcements since Aug 19.",
     items: [
