@@ -4692,5 +4692,32 @@
   ],
   "scale": "19 clinicians, 5 clinical reasoning benchmarks, 8B-70B parameter models",
   "status": "preprint"
+ },
+ {
+  "id": "arxiv:2608.26592",
+  "source": "arxiv",
+  "pmid": "",
+  "type": "benchmark",
+  "title": "Benchmarking Clinical Decision Pathway Adherence in Large Language Models",
+  "authors": "Nuo Chen, Xinyang Jiang, Zilong Wang, Zhifei Zhang, Xiaoye Qu, Jiajun Deng, Yulan Guo, Cairong Zhao",
+  "abstract": "Following clinical decision pathways (CDPs) defined by clinical practice guidelines is essential for safe and reliable medical decision-making. However, existing medical large language model (LLM) benchmarks mainly evaluate final-answer accuracy, providing limited evaluation of models' ability to adhere to guidelines. To address this gap, we introduce MEGA-CDP, a benchmark for evaluating whether medical LLMs can generate guideline-adherent CDPs using provided guidelines as references. MEGA-CDP is constructed from 2,274 English and Chinese clinical practice guidelines through a guideline-to-case pipeline, yielding 42,353 clinical cases with explicit reference CDPs. It supports both single-turn vignette and multi-turn interactive settings, and introduces a CDP-oriented evaluation framework for measuring pathway consistency. Experiments on 16 representative LLMs show that reliable clinical decision support remains challenging for current models, demonstrating the need for CDP-oriented evaluation and the value of MEGA-CDP for advancing guideline adherence in medical LLMs.",
+  "url": "https://arxiv.org/abs/2608.26592v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.26592v1",
+  "doi": "",
+  "published": "2026-08-27",
+  "updated": "2026-08-27",
+  "journal": "arXiv preprint (cs.CL)",
+  "tags": [
+   "clinical decision support",
+   "LLM benchmark",
+   "guideline adherence",
+   "clinical practice guidelines",
+   "medical LLM"
+  ],
+  "relevance": "high",
+  "key_findings": "Introduces MEGA-CDP, a benchmark with 42,353 clinical cases from 2,274 guidelines evaluating whether medical LLMs can generate guideline-adherent clinical decision pathways. Tests 16 LLMs in single-turn and multi-turn settings. Finds that reliable clinical decision support remains challenging for current models.",
+  "tools_evaluated": "16 representative LLMs (unspecified which specific clinical AI tools)",
+  "scale": "42,353 clinical cases from 2,274 English and Chinese clinical practice guidelines",
+  "status": "new"
  }
 ]

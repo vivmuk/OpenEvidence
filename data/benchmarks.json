@@ -1701,5 +1701,22 @@
    "19 clinicians contributed to dataset through clinician-in-the-loop framework"
   ],
   "relevance": "RAG-based clinical AI evaluation — demonstrates that expert reasoning supervision in critical care improves broader clinical reasoning. Directly relevant to OpenEvidence's RAG architecture and clinical decision support approach."
+ },
+ {
+  "id": "arxiv:2608.26592",
+  "source": "arxiv",
+  "type": "guideline_adherence_benchmark",
+  "title": "Benchmarking Clinical Decision Pathway Adherence in Large Language Models",
+  "authors": "Nuo Chen, Xinyang Jiang, Zilong Wang, Zhifei Zhang, Xiaoye Qu, Jiajun Deng, Yulan Guo, Cairong Zhao",
+  "url": "https://arxiv.org/abs/2608.26592v1",
+  "published": "2026-08-27",
+  "updated": "2026-08-27",
+  "journal": "arXiv preprint (cs.CL)",
+  "tools_evaluated": "16 representative LLMs",
+  "scale": "42,353 clinical cases from 2,274 English and Chinese clinical practice guidelines",
+  "key_findings": "MEGA-CDP benchmark evaluates guideline adherence in clinical decision pathways. 16 LLMs tested in single-turn vignette and multi-turn interactive settings. Reliable clinical decision support remains challenging. Introduces CDP-oriented evaluation framework for pathway consistency.",
+  "relevance": "high",
+  "status": "new",
+  "new": true
  }
 ]
