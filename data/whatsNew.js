@@ -5,6 +5,18 @@
 
 var whatsNewData = [
   {
+    date: "August 29, 2026",
+    updated: "Daily announcement check (Sat Aug 29, 9:00 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements scrape + arXiv API (30 entries). 1 new timeline entry: Daniel Nadler TIME100 AI 2026 (Aug 27). All 30 arXiv results already in research.json.",
+    items: [
+      {
+        cat: "Milestone — TIME100 AI Recognition",
+        title: "Daniel Nadler Named to TIME100 AI 2026 (Aug 27, 2026)",
+        desc: "OpenEvidence founder and CEO Daniel Nadler named to TIME's TIME100 AI 2026 list of the world's most influential people in artificial intelligence. TIME profile quotes Nadler: 'Over 300 million Americans will be treated by a doctor using OpenEvidence to help make a treatment decision.' Companion recognition to his 2025 TIME100 Health inclusion. GV (Google Ventures) congratulates Nadler on X alongside other AI leaders. Added to Timeline as Milestone entry."
+      }
+    ]
+  },
+
+  {
     date: "August 27, 2026",
     updated: "Daily announcement check (Thu Aug 27, 9:00 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements scrape + arXiv API (30 entries). 1 new timeline entry: Zeke Emanuel MS NOW mention (Aug 26). All 30 arXiv results already in research.json (132 papers).",
     items: [
