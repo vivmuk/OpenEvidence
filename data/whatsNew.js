@@ -5,6 +5,33 @@
 
 var whatsNewData = [
   {
+    date: "September 5, 2026",
+    updated: "Daily announcement check (Sat Sep 5, 5:28 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements + arXiv API (30 entries). 1 new timeline entry: OpenEvidence Model Family launch (Sep 3). 3 new arXiv papers added to research.json.",
+    items: [
+      {
+        cat: "OE Product Launch — Model Family",
+        title: "OpenEvidence Model Family Launched: Osler, Sackett, Snow, and Darwin (Sep 3, 2026)",
+        desc: "OpenEvidence releases a new family of medical AI models named for founders of modern medicine. Osler (~5s) becomes the new default model for point-of-care answers. Sackett (~30s) is a deeper search model that interactively asks clinicians for context. Snow (~5m) succeeds Deep Consult with full parallel literature investigation. Darwin — the most advanced medical AI model in the world — is in research preview (application only): first AI to score perfect 100% on MedQA, also leading MedXpertQA (72.8%), HealthBench Professional (82.7%), and NOHARM (87.2%). Available to institutional partners like NORD and accredited researchers as safeguards are validated. Osler, Sackett, and Snow are free to all verified clinicians on web, iOS, and Android."
+      },
+      {
+        cat: "Research — Clinical AI Safety Framework",
+        title: "AI Morbidity and Mortality: First structured framework for clinical AI failure review (Aug 31, arXiv 2609.00076)",
+        desc: "Mui, Sittig, Labkoff, Basu propose AI M&M — a blameless, case-based review framework for clinical AI failures. Four-axis classification (Trigger-Mechanism-Clinical Pathway-Corrective Action) with tool-in-loop attribution. Two clinician reviewers reached agreement on all 20 axis-level classifications across 5 outpatient CDS cases. Complements model monitoring and patient safety reporting for institutional learning. Added to research.json."
+      },
+      {
+        cat: "Research — Guideline-Grounded RAG CDS",
+        title: "DIASENTINEL: Auditable multi-agent RAG system for diabetes risk screening (Aug 31, arXiv 2608.31128)",
+        desc: "Shueh et al. present a fully on-premise multi-agent system for T2DM risk screening from EHRs, integrating Reciprocal Rank Fusion over ADA guidelines with hybrid rule-based + LLM entailment verification. Provides cited recommendations with audit trail. Directly relevant to OE-class RAG architecture patterns. Added to research.json."
+      },
+      {
+        cat: "Research — Medical LLM Reliability",
+        title: "Decodability criterion predicts when hidden-state selection beats majority voting in medical LLMs (Aug 17, arXiv 2608.17124)",
+        desc: "Wang, Hong, Bagci introduce CASE (Correctness-Axis Selection) and decodability — a leakage-free measure predicting whether learned selection outperforms majority voting. CASE improves medical LLM accuracy by up to 19 points on medium-difficulty questions. Practical criterion for medical LLM deployment reliability. Added to research.json."
+      }
+    ]
+  },
+
+  {
     date: "August 29, 2026",
     updated: "Daily announcement check (Sat Aug 29, 9:00 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements scrape + arXiv API (30 entries). 1 new timeline entry: Daniel Nadler TIME100 AI 2026 (Aug 27). All 30 arXiv results already in research.json.",
     items: [

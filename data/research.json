@@ -6,7 +6,7 @@
   "type": "augmented_evidence_review",
   "title": "Preoperative optimization for ventral hernia repair: augmented evidence review",
   "authors": "Moustafa F, Fafaj A, Petro C, Blackman MH, Blake KE",
-  "abstract": "Augmented evidence review (AER) integrating three evidence streams to answer what the key components of preoperative optimization for ventral hernia repair are: empiric (retrospective Abdominal Core Health Quality Collaborative analysis), social media (International Hernia Collaboration surgeon survey), and artificial intelligence — OpenEvidence performed a data-driven literature review. Obesity associated with increased wound complications but not systemic complications; diabetes/glycemic control not associated with complications; smoking associated with surgical site occurrence and pneumonia. Most surgeons favor individualized approaches (obesity > smoking > diabetes). AI-derived evidence demonstrated similar heterogeneity to surgeon practice.",
+  "abstract": "Augmented evidence review (AER) integrating three evidence streams to answer what the key components of preoperative optimization for ventral hernia repair are: empiric (retrospective Abdominal Core Health Quality Collaborative analysis), social media (International Hernia Collaboration surgeon survey), and artificial intelligence \u2014 OpenEvidence performed a data-driven literature review. Obesity associated with increased wound complications but not systemic complications; diabetes/glycemic control not associated with complications; smoking associated with surgical site occurrence and pneumonia. Most surgeons favor individualized approaches (obesity > smoking > diabetes). AI-derived evidence demonstrated similar heterogeneity to surgeon practice.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42508724/",
   "pdf_url": null,
   "doi": "10.1016/j.gassur.2026.102535",
@@ -21,12 +21,12 @@
    "RAG",
    "literature synthesis"
   ],
-  "relevance": "First AER-framework paper using OpenEvidence as the AI evidence stream — OE's data-driven literature review treated as one of three independent evidence sources in peer-reviewed surgical research.",
+  "relevance": "First AER-framework paper using OpenEvidence as the AI evidence stream \u2014 OE's data-driven literature review treated as one of three independent evidence sources in peer-reviewed surgical research.",
   "key_findings": [
    "OpenEvidence performed the AI-driven literature review stream of the AER",
    "AI-derived evidence showed similar heterogeneity to practicing surgeons' optimization practices",
    "Obesity linked to wound complications; smoking to SSO/pneumonia; diabetes not significant",
-   "Cleveland Clinic / UTHSC group — establishes AER methodology with OE built in"
+   "Cleveland Clinic / UTHSC group \u2014 establishes AER methodology with OE built in"
   ],
   "tools_evaluated": [
    "OpenEvidence"
@@ -41,7 +41,7 @@
   "type": "augmented_evidence_review",
   "title": "Trends in Inguinal Hernia Repair Approach: An Augmented Evidence Review",
   "authors": "Head WT, Kalsotra S, Satija D, Renshaw S, Collins CE, Poulose B",
-  "abstract": "First evaluation of inguinal hernia repair (IHR) trends using the novel 'Augmented Evidence Review' (AER) framework integrating three evidence streams: (1) empiric — ACHQC registry, 2766 initial IHR (1777 open vs 989 MIS) and 294 recurrent IHR (142 open vs 152 MIS), 2016-2023; (2) social media — International Hernia Collaboration poll (474 responses); (3) artificial intelligence — OpenEvidence used to synthesize peer-reviewed literature. MIS utilization rose 20.2% (initial) and 18.0% (recurrent), driven by robot-assisted repair; laparoscopy declined. OpenEvidence corroborated the shift with published guidelines and studies; divergences centered on robotic vs laparoscopic platform preference and the Alternate-Plane Principle in recurrent repairs.",
+  "abstract": "First evaluation of inguinal hernia repair (IHR) trends using the novel 'Augmented Evidence Review' (AER) framework integrating three evidence streams: (1) empiric \u2014 ACHQC registry, 2766 initial IHR (1777 open vs 989 MIS) and 294 recurrent IHR (142 open vs 152 MIS), 2016-2023; (2) social media \u2014 International Hernia Collaboration poll (474 responses); (3) artificial intelligence \u2014 OpenEvidence used to synthesize peer-reviewed literature. MIS utilization rose 20.2% (initial) and 18.0% (recurrent), driven by robot-assisted repair; laparoscopy declined. OpenEvidence corroborated the shift with published guidelines and studies; divergences centered on robotic vs laparoscopic platform preference and the Alternate-Plane Principle in recurrent repairs.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42586233/",
   "pdf_url": null,
   "doi": "10.1016/j.gassur.2026.102547",
@@ -56,11 +56,11 @@
    "RAG",
    "literature synthesis"
   ],
-  "relevance": "Second paper in J Gastrointest Surg's AER series using OpenEvidence as a formal research evidence stream (alongside registry data and surgeon surveys) — institutionalizes OE as a literature-synthesis instrument in surgical research methodology.",
+  "relevance": "Second paper in J Gastrointest Surg's AER series using OpenEvidence as a formal research evidence stream (alongside registry data and surgeon surveys) \u2014 institutionalizes OE as a literature-synthesis instrument in surgical research methodology.",
   "key_findings": [
    "OpenEvidence served as the AI evidence stream in a three-stream Augmented Evidence Review",
    "OE output corroborated registry and survey findings (shift to MIS/robotic IHR) with cited guidelines",
-   "AER framework proposed as a reusable research methodology — OE embedded by design",
+   "AER framework proposed as a reusable research methodology \u2014 OE embedded by design",
    "MIS inguinal hernia repair up ~20% in both initial and recurrent settings, robot-assisted primary driver"
   ],
   "tools_evaluated": [
@@ -82,7 +82,7 @@
   "doi": "10.1038/s44277-026-00068-x",
   "published": "2026-08-20",
   "updated": "2026-08-20",
-  "journal": "NPP — Digital Psychiatry and Neuroscience",
+  "journal": "NPP \u2014 Digital Psychiatry and Neuroscience",
   "tags": [
    "psychiatry",
    "clinical decision support",
@@ -92,7 +92,7 @@
    "mental health",
    "ACNP"
   ],
-  "relevance": "High-profile academic agenda-setting for clinical AI decision support in psychiatry; explicitly names clinician-facing CDS/decision-support pipelines as the highest-impact near-term use case — the category OpenEvidence occupies. Safety-evaluation priority (suicide risk) reinforces the case for OE-style safety benchmarking.",
+  "relevance": "High-profile academic agenda-setting for clinical AI decision support in psychiatry; explicitly names clinician-facing CDS/decision-support pipelines as the highest-impact near-term use case \u2014 the category OpenEvidence occupies. Safety-evaluation priority (suicide risk) reinforces the case for OE-style safety benchmarking.",
   "key_findings": [
    "ACNP study group: AI's clinical impact in psychiatry constrained by infrastructure, not model capability",
    "Clinician-facing augmentation (ambient docs, decision-support pipelines) = most immediate scalable impact",
@@ -126,12 +126,12 @@
    "PRISMA",
    "PROBAST+AI"
   ],
-  "relevance": "Quantifies real-world LLM utility for evidence synthesis — directly pertinent to OE's RAG pipeline (which ingests systematic reviews for ground-truth answers)",
+  "relevance": "Quantifies real-world LLM utility for evidence synthesis \u2014 directly pertinent to OE's RAG pipeline (which ingests systematic reviews for ground-truth answers)",
   "key_findings": [
    "27 studies; GPT-4/4o most evaluated (15), Claude 2-3.5 (10), Gemini (3)",
    "Overall accuracy 47-99.9% across task types; categorical/string variables more reliable (74-96%) than numerical (47-88%)",
    "Claude 3.5 best in assistive workflow (91.0% > human-only 89.0%); Claude > GPT head-to-head (OR 1.70 for event counts)",
-   "Omissions dominant error mode (60-74%); hallucinations 0.08-6% — much lower than feared",
+   "Omissions dominant error mode (60-74%); hallucinations 0.08-6% \u2014 much lower than feared",
    "Time savings 33-87%; supports dual-extraction with human verification rather than autonomous LLM replacement"
   ],
   "tools_evaluated": [
@@ -152,7 +152,7 @@
   "source": "pubmed",
   "type": "accuracy_evaluation",
   "title": "Diagnostic Ambiguity in Appendicitis: Comparing Failure Modes of Large Language Models and Surgeons",
-  "authors": "Çalışkan YK, Başak F, Erdem O, Kudaş İ",
+  "authors": "\u00c7al\u0131\u015fkan YK, Ba\u015fak F, Erdem O, Kuda\u015f \u0130",
   "abstract": "Comparative cross-sectional diagnostic-accuracy simulation using 150 standardized emergency-department vignettes (90 appendicitis, 60 non-surgical mimics enriched for diagnostically difficult scenarios). Six frontier AI systems and two board-certified general surgeons evaluated each vignette using a fixed triage prompt. GPT-5 achieved highest accuracy (95.3%) exceeding GPT-4o (82.0%; P<0.001) and slightly surpassing specialist consensus (92.7%). In pediatric/geriatric vignettes GPT-5 93.8% vs specialists 90.0% vs GPT-4o 71.2%. Identified distinct failure modes including search-induced hallucinations in web-augmented systems.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42500998/",
   "pdf_url": null,
@@ -173,7 +173,7 @@
   ],
   "relevance": "Six frontier LLM vs two general surgeons on 150 standardized ED appendicitis vignettes; characterizes model and human failure modes under diagnostic ambiguity",
   "key_findings": [
-   "GPT-5 accuracy 95.3% — highest; exceeds GPT-4o 82.0% (P<0.001); slightly surpasses specialist consensus 92.7%",
+   "GPT-5 accuracy 95.3% \u2014 highest; exceeds GPT-4o 82.0% (P<0.001); slightly surpasses specialist consensus 92.7%",
    "Pediatric/geriatric accuracy: GPT-5 93.8%, specialists 90.0%, GPT-4o 71.2%",
    "Identifies distinct failure modes including search-induced hallucinations in web-augmented systems",
    "Authors emphasize: vignette-based comparisons should not be interpreted as evidence of clinical readiness",
@@ -190,7 +190,7 @@
   "type": "tool_comparison",
   "title": "Correct but Incomplete: Limitations of AI-Assisted Decision Support in Rectal Cancer",
   "authors": "Meyer RJ, Bresler TE, Makaryan TT, Gheissari R, Mauch A, Fujita M",
-  "abstract": "Evaluated ChatGPT-5 (OpenAI) and OpenEvidence against NCCN Guidelines for Rectal Cancer (Version 2.2025). 138 clinical scenarios across workup/diagnosis, treatment, and surveillance. Two physicians scored on 5-point Likert for Correctness (≥3) and Accuracy (≥4). ChatGPT-5: Correct 98.6%, Accurate 84.1%; OpenEvidence: Correct 92.8%, Accurate 81.2%. Overall Correctness favored ChatGPT-5 (P=0.035); Accuracy showed no significant difference (P=0.634). Both ≥90% Correctness across all domains. Defines appropriate role of AI as adjunct to (not substitute for) multidisciplinary review.",
+  "abstract": "Evaluated ChatGPT-5 (OpenAI) and OpenEvidence against NCCN Guidelines for Rectal Cancer (Version 2.2025). 138 clinical scenarios across workup/diagnosis, treatment, and surveillance. Two physicians scored on 5-point Likert for Correctness (\u22653) and Accuracy (\u22654). ChatGPT-5: Correct 98.6%, Accurate 84.1%; OpenEvidence: Correct 92.8%, Accurate 81.2%. Overall Correctness favored ChatGPT-5 (P=0.035); Accuracy showed no significant difference (P=0.634). Both \u226590% Correctness across all domains. Defines appropriate role of AI as adjunct to (not substitute for) multidisciplinary review.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42498996/",
   "pdf_url": null,
   "doi": "10.1177/00031348261471501",
@@ -207,7 +207,7 @@
    "Likert",
    "appropriateness"
   ],
-  "relevance": "Direct head-to-head ChatGPT-5 vs OpenEvidence against NCCN Rectal Cancer guidelines; both ≥90% correct, ChatGPT-5 edges on completeness",
+  "relevance": "Direct head-to-head ChatGPT-5 vs OpenEvidence against NCCN Rectal Cancer guidelines; both \u226590% correct, ChatGPT-5 edges on completeness",
   "key_findings": [
    "ChatGPT-5 Correctness 98.6%, OpenEvidence 92.8% (P=0.035); Accuracy 84.1% vs 81.2% (no significant difference)",
    "138 NCCN-derived scenarios; both platforms reliable on direction of care but lack nuance on preference-sensitive decisions",
@@ -229,7 +229,7 @@
   "type": "safety_evaluation",
   "title": "Auditing Evidence Use in Medical LLM Diagnosis",
   "authors": "Multiple authors",
-  "abstract": "Behavioral audit of how medical LLMs use patient evidence when generating diagnoses. Decomposes patient information into fine-grained components and systematically perturbs, removes, or replaces evidence to observe downstream changes in diagnostic outputs. Reveals that diagnostic accuracy alone does not show whether the model used case evidence appropriately — even high-accuracy models can use evidence in clinically inappropriate ways.",
+  "abstract": "Behavioral audit of how medical LLMs use patient evidence when generating diagnoses. Decomposes patient information into fine-grained components and systematically perturbs, removes, or replaces evidence to observe downstream changes in diagnostic outputs. Reveals that diagnostic accuracy alone does not show whether the model used case evidence appropriately \u2014 even high-accuracy models can use evidence in clinically inappropriate ways.",
   "url": "https://arxiv.org/abs/2607.20848",
   "pdf_url": "https://arxiv.org/pdf/2607.20848",
   "doi": "10.48550/arXiv.2607.20848",
@@ -245,7 +245,7 @@
    "clinical AI",
    "safety"
   ],
-  "relevance": "Directly relevant to evaluating clinical AI tools — addresses whether diagnostic accuracy reflects appropriate evidence use, complementing benchmarks like NOHARM and HealthBench",
+  "relevance": "Directly relevant to evaluating clinical AI tools \u2014 addresses whether diagnostic accuracy reflects appropriate evidence use, complementing benchmarks like NOHARM and HealthBench",
   "key_findings": [
    "Decomposes patient information into fine-grained components to audit how each piece of evidence affects diagnosis",
    "Demonstrates that high diagnostic accuracy does not guarantee appropriate evidence use",
@@ -263,7 +263,7 @@
   "type": "safety_evaluation",
   "title": "Bayesian uncertainty estimation improves clinical decision making in medical AI agents",
   "authors": "Multiple authors",
-  "abstract": "Demonstrates Monte Carlo dropout on a multi-task chest-radiograph classifier (8 thoracic findings, 137,593 training images) provides reliable confidence measures for clinical decision making — particularly important in ambiguous or atypical cases where high-accuracy model outputs may still mislead clinicians.",
+  "abstract": "Demonstrates Monte Carlo dropout on a multi-task chest-radiograph classifier (8 thoracic findings, 137,593 training images) provides reliable confidence measures for clinical decision making \u2014 particularly important in ambiguous or atypical cases where high-accuracy model outputs may still mislead clinicians.",
   "url": "https://arxiv.org/abs/2607.20582",
   "pdf_url": "https://arxiv.org/pdf/2607.20582",
   "doi": "10.48550/arXiv.2607.20582",
@@ -277,7 +277,7 @@
    "calibration",
    "safety"
   ],
-  "relevance": "Directly applicable to clinical AI deployment safety — reliable confidence calibration is a prerequisite for physician-AI teaming at point of care",
+  "relevance": "Directly applicable to clinical AI deployment safety \u2014 reliable confidence calibration is a prerequisite for physician-AI teaming at point of care",
   "key_findings": [
    "Monte Carlo dropout provides reliable confidence measures for medical image classifiers",
    "8 thoracic findings evaluated on 137,593 training images",
@@ -310,11 +310,11 @@
    "OpenEvidence conflict-of-interest",
    "scientific writing"
   ],
-  "relevance": "Provides verified current OpenEvidence stakeholder disclosure (Yale/Harvard-affiliated senior cardiologist holds stock options) — relevant for tracking OE's academic-clinical positioning",
+  "relevance": "Provides verified current OpenEvidence stakeholder disclosure (Yale/Harvard-affiliated senior cardiologist holds stock options) \u2014 relevant for tracking OE's academic-clinical positioning",
   "key_findings": [
    "Krumholz discloses OpenEvidence stock options in conflict-of-interest statement (as of Jul 2026)",
    "Also discloses Element Science, Arboretum, Identifeye equity and payments; medRxiv cofounder",
-   "Tracks Yale-affiliated senior cardiologist with material OE stake — strengthens academic-clinical bridge narrative"
+   "Tracks Yale-affiliated senior cardiologist with material OE stake \u2014 strengthens academic-clinical bridge narrative"
   ],
   "tools_evaluated": [],
   "scale": "Single editorial",
@@ -346,7 +346,7 @@
    "temporal retrieval",
    "explainability"
   ],
-  "relevance": "ICU-level CDSS with adaptive temporal RAG — directly addresses clinical AI drift in point-of-care decision support, with strong MIMIC-IV evaluation and medical-record-grounded retrieval",
+  "relevance": "ICU-level CDSS with adaptive temporal RAG \u2014 directly addresses clinical AI drift in point-of-care decision support, with strong MIMIC-IV evaluation and medical-record-grounded retrieval",
   "key_findings": [
    "Structural decoupling confined drift entirely to treatment stream while preserving physiological representations",
    "Selective adaptation improved vasopressor and septic shock discrimination and calibration",
@@ -370,7 +370,7 @@
   "type": "tool_comparison",
   "title": "Quality of Tinnitus Information From Generative AI Systems and Web Search: An Expert-Rated Comparative Study",
   "authors": "Hack S, Tessler I, Saltz D, Hayu D, Henry JA, Sanda G, Boldes T, Wolfovitz A, Horn DL, Zalzal HG, Aaron KA",
-  "abstract": "Comparative study evaluating tinnitus-related information quality from 6 GenAI systems (OpenEvidence, Claude, DeepSeek, GPT-5, Gemini, GPT-4) and Google Search. 30 common tinnitus questions from US Google Trends (2020-2025) rated by 6 experts using QAMI framework across 5 domains (accuracy, clarity, relevance, completeness, usefulness). OpenEvidence achieved the highest mean score (4.45±0.72), followed by Claude (4.00±1.02), DeepSeek (3.92±1.13), GPT-4 (3.89±0.84), Gemini (3.62±0.98), and GPT-5 (3.30±1.11). Google Search scored lowest (2.27±1.12). Completeness was the lowest-performing domain across systems. OpenEvidence showed significant differences vs all other systems (effect size r=0.49-0.86). Inverse relationship between expert-rated quality and readability — OpenEvidence had postgraduate-level readability (Flesch-Kincaid Grade 17.5) while general-purpose LLMs produced 6th-7th grade level responses.",
+  "abstract": "Comparative study evaluating tinnitus-related information quality from 6 GenAI systems (OpenEvidence, Claude, DeepSeek, GPT-5, Gemini, GPT-4) and Google Search. 30 common tinnitus questions from US Google Trends (2020-2025) rated by 6 experts using QAMI framework across 5 domains (accuracy, clarity, relevance, completeness, usefulness). OpenEvidence achieved the highest mean score (4.45\u00b10.72), followed by Claude (4.00\u00b11.02), DeepSeek (3.92\u00b11.13), GPT-4 (3.89\u00b10.84), Gemini (3.62\u00b10.98), and GPT-5 (3.30\u00b11.11). Google Search scored lowest (2.27\u00b11.12). Completeness was the lowest-performing domain across systems. OpenEvidence showed significant differences vs all other systems (effect size r=0.49-0.86). Inverse relationship between expert-rated quality and readability \u2014 OpenEvidence had postgraduate-level readability (Flesch-Kincaid Grade 17.5) while general-purpose LLMs produced 6th-7th grade level responses.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42473942/",
   "doi": "10.1097/MAO.0000000000005015",
   "published": "2026-07-20",
@@ -393,10 +393,10 @@
   ],
   "relevance": "Directly evaluates OpenEvidence against 5 other GenAI systems and web search for patient-facing clinical information quality",
   "key_findings": [
-   "OpenEvidence achieved the highest expert-rated quality score (4.45±0.72) across all systems",
+   "OpenEvidence achieved the highest expert-rated quality score (4.45\u00b10.72) across all systems",
    "OpenEvidence significantly outperformed all other systems with large effect sizes (r=0.49-0.86)",
    "Completeness was the lowest-performing quality domain across all systems (range: 1.70-4.41)",
-   "Inverse relationship between expert-rated quality and readability — OpenEvidence at postgraduate level vs 6th-7th grade for generalist LLMs",
+   "Inverse relationship between expert-rated quality and readability \u2014 OpenEvidence at postgraduate level vs 6th-7th grade for generalist LLMs",
    "Inter-rater reliability was high (ICC=0.82)",
    "GenAI systems generally outperformed web search for tinnitus information quality"
   ],
@@ -435,7 +435,7 @@
    "open-source",
    "HuggingFace"
   ],
-  "relevance": "Clinician-built benchmark for medical AI safety boundary inspection — directly relevant to clinical AI safety evaluation",
+  "relevance": "Clinician-built benchmark for medical AI safety boundary inspection \u2014 directly relevant to clinical AI safety evaluation",
   "key_findings": [
    "Introduces a safety gate taxonomy with 6 failure types: missed urgent escalation, unsafe remote dosing, unsafe discharge reassurance, evidence fabrication, unsafe protocol execution, source support gap",
    "44 clinician-reviewed synthetic cases with severity annotations on a 1-5 scale",
@@ -488,7 +488,7 @@
   "type": "benchmark",
   "title": "MamaBench: Benchmarking LLM Robustness in Maternal and Child Health Diagnosis through Counterfactual Clinical Perturbation",
   "authors": "Thanni Adewuyi, Anuoluwa Sotome, Samuel Okoko, Angel Ezendu, Oluwafunke Akinbuwa, Oluwaseun Odunsi, Oluwasegun Oguntuase, Oluwadarasimi Oguntuase, Ifeoma Nwabueze, Abiodun Adereni",
-  "abstract": "First counterfactual benchmark for maternal and paediatric AI: 434 expert-authored clinical narratives in 217 pairs across 371 pathologies, evaluated via the Bias Trap Rate (BTR) — the conditional probability that a model fails the counterfactual given success on the base case. Proposes Evidence-Anchored RAG (EA-RAG), a three-stage retrieval method replacing aggregate similarity with an evidence coverage objective. Across eight configurations of four frontier LLMs, base accuracy overstates robust accuracy by 16-28 percentage points. EA-RAG achieves 20.3% BTR and 65.0% robust accuracy on Claude Sonnet 4.6, a 5.5 percentage point BTR reduction without degrading base accuracy. Residual 20% BTR confirms counterfactual robustness in clinical AI remains an open challenge.",
+  "abstract": "First counterfactual benchmark for maternal and paediatric AI: 434 expert-authored clinical narratives in 217 pairs across 371 pathologies, evaluated via the Bias Trap Rate (BTR) \u2014 the conditional probability that a model fails the counterfactual given success on the base case. Proposes Evidence-Anchored RAG (EA-RAG), a three-stage retrieval method replacing aggregate similarity with an evidence coverage objective. Across eight configurations of four frontier LLMs, base accuracy overstates robust accuracy by 16-28 percentage points. EA-RAG achieves 20.3% BTR and 65.0% robust accuracy on Claude Sonnet 4.6, a 5.5 percentage point BTR reduction without degrading base accuracy. Residual 20% BTR confirms counterfactual robustness in clinical AI remains an open challenge.",
   "url": "https://arxiv.org/abs/2607.14385",
   "pdf_url": "https://arxiv.org/pdf/2607.14385",
   "doi": "10.48550/arXiv.2607.14385",
@@ -505,7 +505,7 @@
    "diagnostic robustness",
    "LLM"
   ],
-  "relevance": "Counterfactual benchmark for maternal/pediatric clinical AI with novel RAG approach — directly evaluates clinical AI decision support robustness",
+  "relevance": "Counterfactual benchmark for maternal/pediatric clinical AI with novel RAG approach \u2014 directly evaluates clinical AI decision support robustness",
   "key_findings": [
    "Base accuracy overstates robust accuracy by 16-28 percentage points in every model tested",
    "Introduces Bias Trap Rate (BTR) as a novel metric for counterfactual robustness in clinical AI",
@@ -757,7 +757,7 @@
    "clinical alignment metric",
    "longitudinal patient data"
   ],
-  "relevance": "First token-level explainability for EHR foundation models with new clinical alignment metric — directly relevant to trustworthy clinical AI deployment in EHR-driven decision support",
+  "relevance": "First token-level explainability for EHR foundation models with new clinical alignment metric \u2014 directly relevant to trustworthy clinical AI deployment in EHR-driven decision support",
   "key_findings": [
    "Transformer surrogate closely approximates FEMR predictions while preserving temporal dynamics",
    "Identifies most influential tokens across patient history for clinical predictions",
@@ -981,7 +981,7 @@
   "source": "arxiv",
   "type": "benchmark_methodology",
   "title": "Clinician-Level Agreement Without Clinical Caution: LLM Evaluator Limits in Medical AI Benchmarking",
-  "authors": "William Philipp, Finn Fassbender, Thorsten Langer, Martje Pauly, Rebecca Herzog, Alexander Baumann, Markus Hobert, Theresa Paulus, Ip Chi Wang, Lukas Goede, Johanna Reimer, Sebastian Löns, Ronald Böck, Sebastian Fudickar",
+  "authors": "William Philipp, Finn Fassbender, Thorsten Langer, Martje Pauly, Rebecca Herzog, Alexander Baumann, Markus Hobert, Theresa Paulus, Ip Chi Wang, Lukas Goede, Johanna Reimer, Sebastian L\u00f6ns, Ronald B\u00f6ck, Sebastian Fudickar",
   "abstract": "Open-response evaluation provides stronger clinical validity than multiple-choice benchmarks but creates a scoring bottleneck that motivates automated LLM-as-a-Judge approaches. We introduce MedQADE, the first standardized open-response clinical benchmark for German, comprising 3,800 items annotated by ten practicing physicians and nine LLM evaluators. The top-performing evaluator (Gemini 3 Flash) reached alignment consistent with the physician ceiling (kappa=0.694 vs kappa=0.709), but automated evaluators exhibited near-absent clinical metacognition: physicians scaled abstention with item difficulty, while frontier models assigned definitive scores in every case. Systematic lineage-dependent biases found models preferentially scored architectural siblings.",
   "url": "https://arxiv.org/abs/2607.01103",
   "pdf_url": "https://arxiv.org/pdf/2607.01103",
@@ -998,7 +998,7 @@
    "lineage bias",
    "MedQADE"
   ],
-  "relevance": "Evaluates limits of LLM-as-judge approaches in medical AI benchmarking — critical context for interpreting all benchmark results using automated evaluators",
+  "relevance": "Evaluates limits of LLM-as-judge approaches in medical AI benchmarking \u2014 critical context for interpreting all benchmark results using automated evaluators",
   "key_findings": [
    "LLM evaluators can achieve statistical alignment with physician ceiling but lack clinical metacognition",
    "Physicians scaled abstention with item difficulty; frontier models assigned definitive scores in every case",
@@ -1107,7 +1107,7 @@
    "automated coding",
    "probing"
   ],
-  "relevance": "Evaluates frozen medical LLMs as shared embedding space for multimodal ICD prediction — relevant to clinical AI billing/coding infrastructure and upstream of quality measurement",
+  "relevance": "Evaluates frozen medical LLMs as shared embedding space for multimodal ICD prediction \u2014 relevant to clinical AI billing/coding infrastructure and upstream of quality measurement",
   "key_findings": [
    "Medical LLMs provide a shared embedding space across clinical narratives and structured EHR variables",
    "Frozen LLM representations enable multimodal primary diagnosis category prediction without task-specific fine-tuning",
@@ -1202,7 +1202,7 @@
   "type": "methodology",
   "title": "A Pipeline for Generating Longitudinal Synthetic Clinical Notes Using Large Language Models",
   "authors": "William Poulett, Alice Waterhouse, Ben Wallace, Scarlett Kynoch, Amaia Imaz Blanco",
-  "abstract": "Pipeline and dataset for generating longitudinal synthetic clinical notes — privacy-preserving training/evaluation data for clinical AI tools in regulated settings where real patient data is restricted. Combines structured patient generation, semi-structured patient journey simulation, and unstructured clinical note generation. Designed to support clinical AI evaluation without privacy risk.",
+  "abstract": "Pipeline and dataset for generating longitudinal synthetic clinical notes \u2014 privacy-preserving training/evaluation data for clinical AI tools in regulated settings where real patient data is restricted. Combines structured patient generation, semi-structured patient journey simulation, and unstructured clinical note generation. Designed to support clinical AI evaluation without privacy risk.",
   "url": "https://arxiv.org/abs/2606.26879",
   "pdf_url": "https://arxiv.org/pdf/2606.26879.pdf",
   "doi": "10.48550/arXiv.2606.26879",
@@ -1221,8 +1221,8 @@
   ],
   "relevance": "Synthetic longitudinal clinical-note generation pipeline for privacy-preserving clinical AI training and evaluation; complements existing clinical AI benchmarks lacking temporal data",
   "key_findings": [
-   "Modular pipeline: structured patient generation → semi-structured patient journey simulation → unstructured clinical notes",
-   "Privacy-preserving — avoids real patient data",
+   "Modular pipeline: structured patient generation \u2192 semi-structured patient journey simulation \u2192 unstructured clinical notes",
+   "Privacy-preserving \u2014 avoids real patient data",
    "Designed to support clinical AI tool training and evaluation",
    "Longitudinal structure addresses gap in benchmarks that use isolated single-encounter cases"
   ],
@@ -1302,7 +1302,7 @@
   "type": "rag_clinical_evaluation",
   "title": "RASC+: Retrieval-Constrained LLM Adjudication for Clinical Value Set Authoring",
   "authors": "Sumit Mukherjee",
-  "abstract": "Clinical value sets define the standardized terminology codes used in quality measurement, phenotyping, cohort construction, and clinical decision support. The recently introduced Retrieval-Augmented Set Completion (RASC) benchmark showed that direct zero-shot large language model (LLM) generation is poorly suited to this task: clinical code systems are large, version-controlled, and not reliably present in model pretraining. We propose RASC+, a retrieval-constrained adjudication pipeline that combines curated retrieval with constrained LLM reasoning to improve the reliability of value set authoring. RASC+ uses retrieval to constrain LLM generation to candidate codes present in real code systems, then adjudicates among candidates with explicit evidence-gathering and audit trails. The approach delivers higher-quality value sets with auditable provenance — directly relevant to healthcare organizations deploying clinical decision support, quality measurement, and EHR phenotyping.",
+  "abstract": "Clinical value sets define the standardized terminology codes used in quality measurement, phenotyping, cohort construction, and clinical decision support. The recently introduced Retrieval-Augmented Set Completion (RASC) benchmark showed that direct zero-shot large language model (LLM) generation is poorly suited to this task: clinical code systems are large, version-controlled, and not reliably present in model pretraining. We propose RASC+, a retrieval-constrained adjudication pipeline that combines curated retrieval with constrained LLM reasoning to improve the reliability of value set authoring. RASC+ uses retrieval to constrain LLM generation to candidate codes present in real code systems, then adjudicates among candidates with explicit evidence-gathering and audit trails. The approach delivers higher-quality value sets with auditable provenance \u2014 directly relevant to healthcare organizations deploying clinical decision support, quality measurement, and EHR phenotyping.",
   "url": "https://arxiv.org/abs/2606.23992",
   "pdf_url": "https://arxiv.org/pdf/2606.23992",
   "doi": "10.48550/arXiv.2606.23992",
@@ -1320,7 +1320,7 @@
    "RASC benchmark",
    "audit trail"
   ],
-  "relevance": "Retrieval-constrained LLM pipeline for clinical value set authoring — upstream of CDSS quality measurement, EHR phenotyping, and cohort construction used in clinical AI systems",
+  "relevance": "Retrieval-constrained LLM pipeline for clinical value set authoring \u2014 upstream of CDSS quality measurement, EHR phenotyping, and cohort construction used in clinical AI systems",
   "key_findings": [
    "Direct zero-shot LLM generation is poorly suited to clinical value set construction (large, version-controlled code systems)",
    "RASC+ retrieval-constrained adjudication combines curated retrieval with constrained LLM reasoning",
@@ -1342,7 +1342,7 @@
   "type": "methodology",
   "title": "Cohort-Anchored Foundation Models for EHR: Audit-Ready Risk Scores and Peer Cohorts",
   "authors": "Kaiping Zheng",
-  "abstract": "Foundation models have achieved remarkable performance across medical question answering, imaging, and electronic health record (EHR) tasks, yet reliable clinical deployment remains challenging due to limited interpretability, vulnerability to distribution shift, and weak alignment with clinician reasoning. We argue that these limitations arise because existing approaches prioritize representation quality over clinical alignment, and propose cohort-anchored foundation models that produce audit-ready risk scores grounded in auditable peer cohorts. The framework reframes EHR-based predictions around clinician-facing cohort comparisons and structured audit trails — directly relevant to governance, regulatory, and physician-AI teaming requirements for clinical AI deployment.",
+  "abstract": "Foundation models have achieved remarkable performance across medical question answering, imaging, and electronic health record (EHR) tasks, yet reliable clinical deployment remains challenging due to limited interpretability, vulnerability to distribution shift, and weak alignment with clinician reasoning. We argue that these limitations arise because existing approaches prioritize representation quality over clinical alignment, and propose cohort-anchored foundation models that produce audit-ready risk scores grounded in auditable peer cohorts. The framework reframes EHR-based predictions around clinician-facing cohort comparisons and structured audit trails \u2014 directly relevant to governance, regulatory, and physician-AI teaming requirements for clinical AI deployment.",
   "url": "https://arxiv.org/abs/2606.21885",
   "pdf_url": "https://arxiv.org/pdf/2606.21885",
   "doi": "10.48550/arXiv.2606.21885",
@@ -1360,7 +1360,7 @@
    "clinical alignment",
    "peer cohort"
   ],
-  "relevance": "Proposes cohort-anchored EHR foundation models with audit-ready risk scores and peer cohorts — directly addresses clinical AI governance and physician-facing alignment",
+  "relevance": "Proposes cohort-anchored EHR foundation models with audit-ready risk scores and peer cohorts \u2014 directly addresses clinical AI governance and physician-facing alignment",
   "key_findings": [
    "Existing EHR FMs prioritize representation quality over clinical alignment",
    "Cohort-anchored framework reframes predictions around clinician-facing peer cohort comparisons",
@@ -1467,7 +1467,7 @@
    "rare disease",
    "expert dependency"
   ],
-  "relevance": "Direct clinical-AI decision-support evaluation using ML classification on 2,686 lab records across 14 cryopathy-syndrome categories — addresses overlap between rare and common categories",
+  "relevance": "Direct clinical-AI decision-support evaluation using ML classification on 2,686 lab records across 14 cryopathy-syndrome categories \u2014 addresses overlap between rare and common categories",
   "key_findings": [
    "2,686 patient records across 14 diagnostic categories",
    "Identifies practical ML strategy for clinical decision support in cryopathy syndromes",
@@ -1686,7 +1686,7 @@
    "drug safety",
    "model selection"
   ],
-  "relevance": "Relevant to clinical AI tool safety for medication-related decisions — pharmacovigilance is core to clinical decision support",
+  "relevance": "Relevant to clinical AI tool safety for medication-related decisions \u2014 pharmacovigilance is core to clinical decision support",
   "key_findings": [
    "Model selection choice significantly impacts causal inference performance in InferBERT framework",
    "Comparative analysis quantifies sensitivity of ADE signal detection to underlying transformer models",
@@ -1719,7 +1719,7 @@
    "explainable AI",
    "clinical AI"
   ],
-  "relevance": "Direct relevance to OpenEvidence's EvidenceGrade feature (Jul 10 launch) — interpretable clinical decision-making is core to physician trust",
+  "relevance": "Direct relevance to OpenEvidence's EvidenceGrade feature (Jul 10 launch) \u2014 interpretable clinical decision-making is core to physician trust",
   "key_findings": [
    "LLM-driven framework produces interpretable clinical decision rules",
    "Bridges the gap between high-accuracy black-box models and auditable clinical reasoning",
@@ -1778,7 +1778,7 @@
    "standardized scenarios",
    "consistency"
   ],
-  "relevance": "Reproducibility evaluation — critical for clinical AI reliability assessment",
+  "relevance": "Reproducibility evaluation \u2014 critical for clinical AI reliability assessment",
   "key_findings": [
    "Tests reproducibility of AI antibiotic recommendations"
   ],
@@ -1795,7 +1795,7 @@
   "type": "safety_evaluation",
   "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
   "authors": "Multiple authors",
-  "abstract": "Building trustworthy medical multimodal large language models is critical for reliable clinical decision support. Existing medical hallucination benchmarks focus on data collection but ignore where hallucinations originate within reasoning. ClinHallu identifies stage-wise hallucinations in medical MLLM reasoning — pinpointing exactly where in the reasoning chain a hallucination emerges, enabling targeted mitigation strategies.",
+  "abstract": "Building trustworthy medical multimodal large language models is critical for reliable clinical decision support. Existing medical hallucination benchmarks focus on data collection but ignore where hallucinations originate within reasoning. ClinHallu identifies stage-wise hallucinations in medical MLLM reasoning \u2014 pinpointing exactly where in the reasoning chain a hallucination emerges, enabling targeted mitigation strategies.",
   "url": "https://arxiv.org/abs/2606.14697",
   "pdf_url": "https://arxiv.org/pdf/2606.14697",
   "doi": "10.48550/arXiv.2606.14697",
@@ -1811,7 +1811,7 @@
    "trustworthy AI",
    "clinical decision support"
   ],
-  "relevance": "Direct benchmark for clinical AI safety — addresses hallucination origins in medical MLLM reasoning, complementary to NOHARM and HealthBench",
+  "relevance": "Direct benchmark for clinical AI safety \u2014 addresses hallucination origins in medical MLLM reasoning, complementary to NOHARM and HealthBench",
   "key_findings": [
    "Identifies stage-wise hallucinations emerging at specific points in medical MLLM reasoning chains",
    "More actionable than endpoint accuracy-only hallucination benchmarks",
@@ -1844,7 +1844,7 @@
    "clinical decision support",
    "safety"
   ],
-  "relevance": "Critical for clinical AI fairness — quantifies how demographic bias encoded in clinical documentation propagates into predictions made by widely used clinical NLP models (ClinicalBERT underpins many EHR-integrated AI deployments)",
+  "relevance": "Critical for clinical AI fairness \u2014 quantifies how demographic bias encoded in clinical documentation propagates into predictions made by widely used clinical NLP models (ClinicalBERT underpins many EHR-integrated AI deployments)",
   "key_findings": [
    "Computational audit reveals demographic associations encoded in ClinicalBERT probability distributions",
    "Quantifies demographic bias propagation from training documentation through to predictions",
@@ -1878,7 +1878,7 @@
    "epidemiology",
    "clinical AI"
   ],
-  "relevance": "Directly relevant to clinical AI workflow tool evaluations — ICD coding is a high-volume billing/clinical task where LLMs compete with OpenEvidence's Coding Intelligence module (launched Mar 2026)",
+  "relevance": "Directly relevant to clinical AI workflow tool evaluations \u2014 ICD coding is a high-volume billing/clinical task where LLMs compete with OpenEvidence's Coding Intelligence module (launched Mar 2026)",
   "key_findings": [
    "Empirical evaluation of post-training techniques for generative ICD coding",
    "Compares inference-time LLM coding vs post-training-tuned coding models",
@@ -1908,7 +1908,7 @@
    "5 LLMs",
    "perioperative"
   ],
-  "relevance": "Evaluation of LLMs in anesthesia — specialty-specific benchmarking",
+  "relevance": "Evaluation of LLMs in anesthesia \u2014 specialty-specific benchmarking",
   "key_findings": [
    "5 LLMs evaluated on anesthesia decision-making"
   ],
@@ -1971,7 +1971,7 @@
    "health",
    "SciConBench"
   ],
-  "relevance": "Directly relevant to clinical AI evaluation — tests whether RAG-based systems (OpenEvidence's core architecture) can synthesize scientific evidence reliably into conclusions used in health decisions",
+  "relevance": "Directly relevant to clinical AI evaluation \u2014 tests whether RAG-based systems (OpenEvidence's core architecture) can synthesize scientific evidence reliably into conclusions used in health decisions",
   "key_findings": [
    "SciConBench covers 9,110 questions across multiple scientific domains including health",
    "Evaluates AI agents on evidence retrieval, cross-source reasoning, and conclusion synthesis",
@@ -2004,7 +2004,7 @@
    "multi-visit",
    "framework"
   ],
-  "relevance": "Directly relevant to EHR-integrated clinical AI tools — OpenEvidence now deployed at Mount Sinai (Epic), Sutter, Cedars-Sinai, NYP (all Epic) where longitudinal reasoning quality affects clinical utility",
+  "relevance": "Directly relevant to EHR-integrated clinical AI tools \u2014 OpenEvidence now deployed at Mount Sinai (Epic), Sutter, Cedars-Sinai, NYP (all Epic) where longitudinal reasoning quality affects clinical utility",
   "key_findings": [
    "Develops framework for evaluating EHR-integrated clinical AI longitudinal reasoning capabilities",
    "Curated corpus analysis of existing clinical NLP and EHR-integrated systems",
@@ -2036,7 +2036,7 @@
    "clinical question answering",
    "diagnosis support"
   ],
-  "relevance": "Directly addresses safety of clinical AI tools where clinicians enter free-text queries — quantifies how minor prompt wording changes affect medical LLM outputs, complementing NOHARM and HealthBench safety benchmarks",
+  "relevance": "Directly addresses safety of clinical AI tools where clinicians enter free-text queries \u2014 quantifies how minor prompt wording changes affect medical LLM outputs, complementing NOHARM and HealthBench safety benchmarks",
   "key_findings": [
    "Quantifies sensitivity of medical LLMs to subtle lexical and syntactic prompt perturbations",
    "Demonstrates that minor clinician-side wording changes can produce materially different clinical recommendations",
@@ -2069,7 +2069,7 @@
    "MedQADE",
    "type 2 diabetes"
   ],
-  "relevance": "Methodologically relevant to all clinical AI benchmarks — evaluates whether LLM raters used to score clinical AI outputs are themselves reliable judges (relevant to NOHARM, HealthBench, MedQA scoring)",
+  "relevance": "Methodologically relevant to all clinical AI benchmarks \u2014 evaluates whether LLM raters used to score clinical AI outputs are themselves reliable judges (relevant to NOHARM, HealthBench, MedQA scoring)",
   "key_findings": [
    "Factorial study of AI rater behavior reveals scoring-protocol-dependent discrimination",
    "Adult type 2 diabetes clinical decision-making is the worked example",
@@ -2102,7 +2102,7 @@
    "LLM evaluation",
    "clinical AI"
   ],
-  "relevance": "Direct clinical AI benchmark — addresses gap in multi-course (vs single-course) LLM clinical decision-making evaluation, complementary to NOHARM and HealthBench",
+  "relevance": "Direct clinical AI benchmark \u2014 addresses gap in multi-course (vs single-course) LLM clinical decision-making evaluation, complementary to NOHARM and HealthBench",
   "key_findings": [
    "Introduces ClinicalMC benchmark for multi-course clinical decision-making",
    "Addresses gap in existing benchmarks that assess only single-course scenarios",
@@ -2119,8 +2119,8 @@
   "source": "arxiv",
   "type": "methodology",
   "title": "The Reliability Gap in Benchmark Auditing: Distribution Shift and Scale as Failure Modes of Contamination Detection",
-  "authors": "Wojciech Zarzecki, Jan Dubiński, Sebastian Cygert",
-  "abstract": "Identifies two understudied failure modes in benchmark contamination detection — distribution shift (where suspect and validation sets violate the IID assumption) and scale constraints (large realistic auditing scenarios vs small controlled academic regimes). Concerns the validity of LLM benchmark auditing in clinical AI (NOHARM, HealthBench, MedQA, USMLE, MedCheck) where training-data contamination detection is critical to scoring integrity.",
+  "authors": "Wojciech Zarzecki, Jan Dubi\u0144ski, Sebastian Cygert",
+  "abstract": "Identifies two understudied failure modes in benchmark contamination detection \u2014 distribution shift (where suspect and validation sets violate the IID assumption) and scale constraints (large realistic auditing scenarios vs small controlled academic regimes). Concerns the validity of LLM benchmark auditing in clinical AI (NOHARM, HealthBench, MedQA, USMLE, MedCheck) where training-data contamination detection is critical to scoring integrity.",
   "url": "https://arxiv.org/abs/2606.03305",
   "pdf_url": "https://arxiv.org/pdf/2606.03305.pdf",
   "doi": "10.48550/arXiv.2606.03305",
@@ -2206,7 +2206,7 @@
   ],
   "relevance": "Direct head-to-head: OpenEvidence vs three other clinically focused AI chatbots plus ChatGPT on pharmacy drug-information questions; OpenEvidence highest-scoring",
   "key_findings": [
-   "OpenEvidence total CLEAR 17.82/25 (\"average\" tier) — highest of 5 AI chatbots tested",
+   "OpenEvidence total CLEAR 17.82/25 (\"average\" tier) \u2014 highest of 5 AI chatbots tested",
    "ChatGPT 15.72/25 (\"average\"); closely matched OpenEvidence overall",
    "Clair, GlassHealth, DougallGPT scores below ChatGPT",
    "All AI chatbots statistically lower than pharmacy faculty responses",
@@ -2224,7 +2224,7 @@
   "source": "pubmed",
   "type": "tool_comparison",
   "title": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch: Are They Objectively up to Medical Standards? A Real-Life Assessment of LLM Chatbots in Health Care",
-  "authors": "Castaño-Villegas N, Villa MC, Barrientos KM, Llano I, Velásquez L, Zea J",
+  "authors": "Casta\u00f1o-Villegas N, Villa MC, Barrientos KM, Llano I, Vel\u00e1squez L, Zea J",
   "abstract": "Independent (Arkangel AI) comparative study of four LLM chatbots (Arkangel AI, OpenEvidence, ChatGPT, Medisearch) on four clinical vignettes (orthopedics, pediatrics, gynecology, psychiatry) with four questions each (diagnosis, clinical management, research, general knowledge); evaluated by external clinicians on 8-criterion Likert scale. Response times recorded. Real-world assessment explicitly comparing consumer-facing and clinical chatbots side-by-side.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42181555/",
   "pdf_url": null,
@@ -2247,11 +2247,11 @@
    "Four vignettes across orthopedics, pediatrics, gynecology, psychiatry; four questions each",
    "Evaluation by independent clinicians using 8-criterion Likert scale: correctness, consensus agreement, bias, adherence to standards, timeliness, patient safety, citation authenticity, contextual appropriateness",
    "Response times also captured",
-   "Timestamps study window June-September 2025 — pre-NOHARM (Jul 2026)",
+   "Timestamps study window June-September 2025 \u2014 pre-NOHARM (Jul 2026)",
    "Independently initiated by Arkangel AI (commercial Spanish-language clinical AI vendor)"
   ],
   "tools_evaluated": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch",
-  "scale": "4 clinical vignettes × 4 questions = 16 queries per chatbot × 4 chatbots; external clinician raters",
+  "scale": "4 clinical vignettes \u00d7 4 questions = 16 queries per chatbot \u00d7 4 chatbots; external clinician raters",
   "status": "published",
   "new": false
  },
@@ -2261,7 +2261,7 @@
   "type": "safety_evaluation",
   "title": "Large Language Model Hallucinations in Spine Surgery: A Comparative Analysis of Clinician vs Patient-Level Prompts",
   "authors": "McLaughlin ND, Srinivas AN, Lowe ZF, Botterbush KS, Patel MS, Avila MJ",
-  "abstract": "Evaluates fabricated citations (\"hallucinations\") produced by five LLMs — ChatGPT, Gemini, Claude, Microsoft Copilot, OpenEvidence — on common neurosurgical spine topics; explicitly compares clinician vs patient-level prompts. Quantifies citation accuracy across systems and identifies which prompts are riskier for misinformation. Adds OpenEvidence to a growing list of multi-system spine/neurosurgery comparisons and tests whether physician framing reduces hallucination risk.",
+  "abstract": "Evaluates fabricated citations (\"hallucinations\") produced by five LLMs \u2014 ChatGPT, Gemini, Claude, Microsoft Copilot, OpenEvidence \u2014 on common neurosurgical spine topics; explicitly compares clinician vs patient-level prompts. Quantifies citation accuracy across systems and identifies which prompts are riskier for misinformation. Adds OpenEvidence to a growing list of multi-system spine/neurosurgery comparisons and tests whether physician framing reduces hallucination risk.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42232526/",
   "pdf_url": null,
   "doi": "10.1227/neuropract.XXXXX",
@@ -2285,7 +2285,7 @@
   "key_findings": [
    "Five LLMs evaluated: ChatGPT, Gemini, Claude, Microsoft Copilot, OpenEvidence",
    "Quantifies fabricated citations (\"hallucinations\") on common neurosurgical spine topics",
-   "Compares clinician-level vs patient-level prompts — first such decomposition for spine topics",
+   "Compares clinician-level vs patient-level prompts \u2014 first such decomposition for spine topics",
    "Citation accuracy quantified across all five systems",
    "Addresses whether physician framing reduces misinformation risk for medical AI"
   ],
@@ -2300,7 +2300,7 @@
   "type": "methodology",
   "title": "ChatHealthAI: Aligning Electronic Health Record Representations with Large Language Models for Grounded Clinical Reasoning",
   "authors": "Bo-Hong Wang, Baicheng Peng, Ruilin Wang, Jun Bai, Ziyang Song",
-  "abstract": "Proposes ChatHealthAI — a multimodal reasoning framework that aligns structured EHR representations from a pretrained EHR foundation model with the semantic space of a frozen LLM through a task-aware resampler. Integrates longitudinal patient data into grounded clinical reasoning. Designed to bridge the gap between EHR foundation models (predictive but opaque) and LLMs (interpretable but weak on structured EHR data). Directly applicable to clinical decision support tools that integrate patient chart data.",
+  "abstract": "Proposes ChatHealthAI \u2014 a multimodal reasoning framework that aligns structured EHR representations from a pretrained EHR foundation model with the semantic space of a frozen LLM through a task-aware resampler. Integrates longitudinal patient data into grounded clinical reasoning. Designed to bridge the gap between EHR foundation models (predictive but opaque) and LLMs (interpretable but weak on structured EHR data). Directly applicable to clinical decision support tools that integrate patient chart data.",
   "url": "https://arxiv.org/abs/2606.02802",
   "pdf_url": "https://arxiv.org/pdf/2606.02802.pdf",
   "doi": "10.48550/arXiv.2606.02802",
@@ -2350,7 +2350,7 @@
    "safety",
    "mitigation"
   ],
-  "relevance": "Specifically targets hallucination risk in EHR-grounded medical LLM reasoning — directly applicable to safety case for clinical AI tools like OpenEvidence",
+  "relevance": "Specifically targets hallucination risk in EHR-grounded medical LLM reasoning \u2014 directly applicable to safety case for clinical AI tools like OpenEvidence",
   "key_findings": [
    "Formalizes hallucination detection at process level within clinical contexts",
    "Demonstrates hallucination-aware in-context learning reduces critical errors in EHR-grounded reasoning",
@@ -2371,7 +2371,7 @@
   "type": "case_report",
   "title": "Utility of the Medical Knowledge AI Copilot, OpenEvidence: A Patient With 100 Cerebral Microhemorrhages",
   "authors": "Navarra AN, Ikramuddin S, Greenberg SM, Doraiswamy PM",
-  "abstract": "Duke clinical case report illustrating the real-world utility of OpenEvidence in managing a diagnostically complex presentation — a patient with approximately 100 cerebral microhemorrhages (consistent with probable cerebral amyloid angiopathy). Authors describe how OpenEvidence's sourced, cited answers informed differential diagnosis and management discussion. Adds to growing literature of curated clinical case reports documenting OpenEvidence clinical utility.",
+  "abstract": "Duke clinical case report illustrating the real-world utility of OpenEvidence in managing a diagnostically complex presentation \u2014 a patient with approximately 100 cerebral microhemorrhages (consistent with probable cerebral amyloid angiopathy). Authors describe how OpenEvidence's sourced, cited answers informed differential diagnosis and management discussion. Adds to growing literature of curated clinical case reports documenting OpenEvidence clinical utility.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42226867/",
   "pdf_url": null,
   "doi": "10.7759/cureus.XXXXX",
@@ -2419,7 +2419,7 @@
    "medical AI evaluation",
    "diagnosis scoring"
   ],
-  "relevance": "Validates LLM jury approach as proxy for expert clinician evaluation in medical AI benchmarking — important for scaling benchmark evaluations",
+  "relevance": "Validates LLM jury approach as proxy for expert clinician evaluation in medical AI benchmarking \u2014 important for scaling benchmark evaluations",
   "key_findings": [
    "Calibrated multi-model LLM jury can serve as trustworthy proxy for expert clinician evaluation",
    "3,333 diagnoses scored on 300 real-world MIC hospital cases",
@@ -2451,7 +2451,7 @@
    "multi-turn",
    "calibration"
   ],
-  "relevance": "Addresses reliability and confidence calibration — critical for clinical deployment safety",
+  "relevance": "Addresses reliability and confidence calibration \u2014 critical for clinical deployment safety",
   "key_findings": [
    "Existing benchmarks overlook confidence-correctness coupling in multi-turn consultations",
    "Models show poor confidence calibration as evidence accumulates",
@@ -2487,7 +2487,7 @@
    "clinical reasoning",
    "benchmark"
   ],
-  "relevance": "Direct evaluation of OpenEvidence accuracy and repeatability on complex subspecialty scenarios — reveals significant limitations vs USMLE performance",
+  "relevance": "Direct evaluation of OpenEvidence accuracy and repeatability on complex subspecialty scenarios \u2014 reveals significant limitations vs USMLE performance",
   "key_findings": [
    "Deep Consult max accuracy: 41% on MedXpertQA subspecialty scenarios",
    "Quick Consult max accuracy: 34% on same dataset",
@@ -2529,7 +2529,7 @@
   ],
   "relevance": "Directly evaluates OpenEvidence and 3 other RAG clinical AI tools for clinical harm potential",
   "key_findings": [
-   "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
+   "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases \u2014 more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
    "24.6% of cases carried potential for severe harm from AI recommendations",
    "Errors of omission accounted for >80% of severe errors",
    "Clinical AI tools outperformed generalist LLMs",
@@ -2606,7 +2606,7 @@
    "robustness",
    "safety evaluation"
   ],
-  "relevance": "Evaluates the benchmark landscape itself — important context for interpreting all other benchmark results",
+  "relevance": "Evaluates the benchmark landscape itself \u2014 important context for interpreting all other benchmark results",
   "key_findings": [
    "75% of benchmarks focus on clinical workflow applications",
    "Widespread data contamination risks unmitigated",
@@ -2626,7 +2626,7 @@
   "type": "safety_evaluation",
   "title": "A Novel Evaluation Benchmark for Medical LLMs: Illuminating Safety and Effectiveness in Clinical Domains (CSEDB)",
   "authors": "Multiple",
-  "abstract": "Clinical Safety-Effectiveness Dual-Track Benchmark (CSEDB) — 30-criteria framework built on clinical expert consensus. 2,069 open-ended Q&A items across 26 clinical departments. Tested 6 LLMs: moderate overall performance (57.2%), safety 54.7%, effectiveness 62.3%. 13.3% performance drop in high-risk scenarios. Domain-specific medical LLMs outperformed general-purpose models.",
+  "abstract": "Clinical Safety-Effectiveness Dual-Track Benchmark (CSEDB) \u2014 30-criteria framework built on clinical expert consensus. 2,069 open-ended Q&A items across 26 clinical departments. Tested 6 LLMs: moderate overall performance (57.2%), safety 54.7%, effectiveness 62.3%. 13.3% performance drop in high-risk scenarios. Domain-specific medical LLMs outperformed general-purpose models.",
   "url": "https://arxiv.org/abs/2507.23486",
   "pdf_url": "https://arxiv.org/pdf/2507.23486",
   "published": "2025-07-31",
@@ -2642,7 +2642,7 @@
   ],
   "relevance": "Comprehensive safety+effectiveness benchmark for medical LLMs across 26 departments",
   "key_findings": [
-   "Average LLM performance only 57.2% — moderate, not ready for unsupervised clinical use",
+   "Average LLM performance only 57.2% \u2014 moderate, not ready for unsupervised clinical use",
    "Safety scores (54.7%) lower than effectiveness (62.3%)",
    "13.3% performance drop in high-risk scenarios",
    "Domain-specific medical LLMs outperformed general-purpose models by 15.3% overall, 19.8% in safety"
@@ -2675,7 +2675,7 @@
    "EMR integration",
    "Kenya"
   ],
-  "relevance": "Real-world evaluation of LLM-based CDS tool showing significant error reduction in live clinical setting — important evidence for CDS effectiveness",
+  "relevance": "Real-world evaluation of LLM-based CDS tool showing significant error reduction in live clinical setting \u2014 important evidence for CDS effectiveness",
   "key_findings": [
    "Significant reductions in incorrect primary diagnosis, inappropriate medications, missing education/follow-up",
    "LLM evaluators found 22% reduction in treatment errors, 19% in diagnostic errors",
@@ -2831,7 +2831,7 @@
   "type": "tool_comparison",
   "title": "Performance of 5 Large Language Models in Perioperative Consultation for Pediatric Hypospadias: Cross-Sectional Comparative Study",
   "authors": "Kang T, Yuan C, Hu X, Huang W",
-  "abstract": "Cross-sectional comparison of 5 LLMs (ChatGPT-4o, Gemini-2.5-Pro, OpenEvidence, Zhipu Qingyan, DeepSeek) on 10 pediatric hypospadias perioperative questions. Evaluated by 23 pediatric urology experts (6 dimensions) and 36 caregivers (4 dimensions). Gemini-2.5-Pro ranked first (expert median 5.0; caregiver 4.0). DeepSeek second with superior Empathy vs ChatGPT-4o (r=-0.343; P<.001). OpenEvidence scored lowest (2.0 both), despite 100% verifiable citation accuracy (vs DeepSeek 33% fabricated, Zhipu Qingyan 24%). 8-reviewer clinical safety audit: 78 flags including 9 Severe-level flags across 5 question-model combinations; OpenEvidence carried the largest Severe burden (5 of 9) and the highest severity-weighted score — direct head-to-head test where OE citation integrity coexists with clinical-safety gap.",
+  "abstract": "Cross-sectional comparison of 5 LLMs (ChatGPT-4o, Gemini-2.5-Pro, OpenEvidence, Zhipu Qingyan, DeepSeek) on 10 pediatric hypospadias perioperative questions. Evaluated by 23 pediatric urology experts (6 dimensions) and 36 caregivers (4 dimensions). Gemini-2.5-Pro ranked first (expert median 5.0; caregiver 4.0). DeepSeek second with superior Empathy vs ChatGPT-4o (r=-0.343; P<.001). OpenEvidence scored lowest (2.0 both), despite 100% verifiable citation accuracy (vs DeepSeek 33% fabricated, Zhipu Qingyan 24%). 8-reviewer clinical safety audit: 78 flags including 9 Severe-level flags across 5 question-model combinations; OpenEvidence carried the largest Severe burden (5 of 9) and the highest severity-weighted score \u2014 direct head-to-head test where OE citation integrity coexists with clinical-safety gap.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42525870/",
   "pdf_url": null,
   "doi": "10.2196/93393",
@@ -2851,14 +2851,14 @@
    "ChatGPT-4o",
    "citation accuracy"
   ],
-  "relevance": "High — OpenEvidence is one of 5 LLMs compared head-to-head; finds OE has 100% citation accuracy but lowest overall ranking and highest severe-safety burden on a surgical subspecialty topic",
+  "relevance": "High \u2014 OpenEvidence is one of 5 LLMs compared head-to-head; finds OE has 100% citation accuracy but lowest overall ranking and highest severe-safety burden on a surgical subspecialty topic",
   "key_findings": [
    "OpenEvidence scored lowest overall ranking (median 2.0/5 from both experts and caregivers)",
-   "OpenEvidence citation accuracy was 100% verifiable (F=0%) — strongest of all five models",
+   "OpenEvidence citation accuracy was 100% verifiable (F=0%) \u2014 strongest of all five models",
    "OpenEvidence carried 5 of 9 Severe-level safety flags (the largest severe burden of any model tested)",
-   "Citation accuracy and clinical safety were dissociable — fully verifiable references did not protect from harm",
+   "Citation accuracy and clinical safety were dissociable \u2014 fully verifiable references did not protect from harm",
    "Gemini-2.5-Pro ranked first; DeepSeek second; ChatGPT-4o, OE, Zhipu Qingyan clustered lower",
-   "Expert-caregiver agreement was strong (Spearman ρ=0.89; P=.04)"
+   "Expert-caregiver agreement was strong (Spearman \u03c1=0.89; P=.04)"
   ],
   "tools_evaluated": [
    "OpenEvidence",
@@ -2877,7 +2877,7 @@
   "type": "survey",
   "title": "Artificial Intelligence Use in Clinical Reasoning Among Second-Year Medical Students: A Cross-Sectional Survey Study",
   "authors": "Redhage D, Allen W, Schuknecht A, Mortinsen R",
-  "abstract": "Survey of 28 second-year medical students at USD Sanford SOM on AI use in clinical reasoning. ChatGPT most-used (~90%), followed by OpenEvidence. Most frequent uses: suggesting diagnostic tests, proposing management strategies, and clarifying medical knowledge — indicating early integration into clinical reasoning workflows. Concerns: overreliance on AI, loss of independent diagnostic reasoning, and incorrect AI-generated information.",
+  "abstract": "Survey of 28 second-year medical students at USD Sanford SOM on AI use in clinical reasoning. ChatGPT most-used (~90%), followed by OpenEvidence. Most frequent uses: suggesting diagnostic tests, proposing management strategies, and clarifying medical knowledge \u2014 indicating early integration into clinical reasoning workflows. Concerns: overreliance on AI, loss of independent diagnostic reasoning, and incorrect AI-generated information.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42526014/",
   "pdf_url": null,
   "doi": null,
@@ -2893,7 +2893,7 @@
    "differential diagnosis",
    "student adoption"
   ],
-  "relevance": "Medium — Captures trainee adoption; OpenEvidence is the second most-cited platform after ChatGPT among pre-clinical medical students, complementing the physician-level adoption metrics",
+  "relevance": "Medium \u2014 Captures trainee adoption; OpenEvidence is the second most-cited platform after ChatGPT among pre-clinical medical students, complementing the physician-level adoption metrics",
   "key_findings": [
    "ChatGPT most-used (~90%) among second-year medical students, followed by OpenEvidence",
    "Most-frequent uses: diagnostic test suggestions, management strategies, knowledge clarification",
@@ -2930,12 +2930,12 @@
    "evidence base",
    "landscape analysis"
   ],
-  "relevance": "High — Provides independent quantification of where clinical AI tools (including OE-class systems) sit in evidence maturity. Only 9% of trials reach treatment-recommendation tier; clinical decision support evidence base still thin",
+  "relevance": "High \u2014 Provides independent quantification of where clinical AI tools (including OE-class systems) sit in evidence maturity. Only 9% of trials reach treatment-recommendation tier; clinical decision support evidence base still thin",
   "key_findings": [
    "8,532 AI clinical trials registered; 80% from 2019 onward; 30.5% RCT design",
    "Imaging-based AI still largest modality (29%) but clinical text/NLP trials up 7x 2018-2025",
-   "Prognostic AI (4,324) > diagnostic AI (3,828) — shift toward risk stratification",
-   "Treatment-recommendation AI trials only 9% (768) — domain most relevant to OE and similar CDS tools remains evidence-thin",
+   "Prognostic AI (4,324) > diagnostic AI (3,828) \u2014 shift toward risk stratification",
+   "Treatment-recommendation AI trials only 9% (768) \u2014 domain most relevant to OE and similar CDS tools remains evidence-thin",
    "Translational maturity limited: 38% retrospective, 21% silent prospective; only 184 Level 4 semi-autonomous trials (68% glucose management)",
    "Conclusion: prospective evaluation exists but adequately powered, geographically representative, outcome trials still lacking"
   ],
@@ -2970,13 +2970,13 @@
    "Escalation Bias Index",
    "deployment cost"
   ],
-  "relevance": "Novel benchmark and diagnostic framework for clinical AI triage safety in LMIC settings; introduces formal failure mode taxonomy and metrics that expose safety issues hidden by conventional accuracy scores — transferable to any triage-style clinical AI evaluation",
+  "relevance": "Novel benchmark and diagnostic framework for clinical AI triage safety in LMIC settings; introduces formal failure mode taxonomy and metrics that expose safety issues hidden by conventional accuracy scores \u2014 transferable to any triage-style clinical AI evaluation",
   "key_findings": [
    "200 synthetic vignettes from 1,200 real patient encounters at 19 Nigerian PHCs",
    "Three formal failure modes: Conservative Escalation Bias, Systematic Downgrade Bias, Middle-Tier Instability",
    "All three frontier models (Claude Sonnet 4.6, Llama 3.3 70B, Llama 3.1 8B) exhibit at least one formal failure mode",
    "Traditional sensitivity metrics conceal a 77 pp under-triage gap in Llama 3.1 8B",
-   "Optimal model varies across deployment scenarios — single-ranking benchmarks inadequate for LMIC clinical AI selection"
+   "Optimal model varies across deployment scenarios \u2014 single-ranking benchmarks inadequate for LMIC clinical AI selection"
   ],
   "tools_evaluated": [
    "Claude Sonnet 4.6",
@@ -3010,10 +3010,10 @@
    "asymmetric cost",
    "positive bias"
   ],
-  "relevance": "Directly addresses the safety gap for autonomous clinical AI decision support — articulates why LLMs that pass licensing exams are not yet safe for real-world triage; core argument about information gathering under uncertainty applies to OE-class tools",
+  "relevance": "Directly addresses the safety gap for autonomous clinical AI decision support \u2014 articulates why LLMs that pass licensing exams are not yet safe for real-world triage; core argument about information gathering under uncertainty applies to OE-class tools",
   "key_findings": [
    "Safe triage is sequential decision under asymmetric cost, not selection of most likely diagnosis",
-   "Core deficit is information gathering under uncertainty — LLMs fail to seek missing red flags or broaden differentials",
+   "Core deficit is information gathering under uncertainty \u2014 LLMs fail to seek missing red flags or broaden differentials",
    "Evaluations using complete, well-curated simulations mask real-world failure modes",
    "Assistant-like behaviors (credulity, agreeableness, miscalibration) amplify clinical risk",
    "Identifies specific required behaviors LLMs lack: broadening differential, seeking red flags, lowering escalation threshold, deferring judgement, escalating concern"
@@ -3045,14 +3045,14 @@
    "LLM",
    "medical AI safety"
   ],
-  "relevance": "Directly relevant to clinical AI safety — benchmarks how LLMs handle patient pressure in multi-turn dialogues, a critical safety concern for clinical decision support tools like OpenEvidence",
+  "relevance": "Directly relevant to clinical AI safety \u2014 benchmarks how LLMs handle patient pressure in multi-turn dialogues, a critical safety concern for clinical decision support tools like OpenEvidence",
   "key_findings": [
    "600 medically grounded 5-turn dialogues across 3 scenario families (medication demand, self-care, triage resistance)",
    "20 LLMs evaluated across general, medical-domain, lightweight, large, open-weight, and proprietary families",
    "Models frequently shift toward unsafe agreement under repeated patient pressure",
    "Substantial variation across model families, model scale, and prompt type",
    "Anti-sycophancy prompting improves robustness but does not eliminate unsafe agreement",
-   "Safe medical knowledge is not enough — models must maintain it under conversational pressure"
+   "Safe medical knowledge is not enough \u2014 models must maintain it under conversational pressure"
   ],
   "tools_evaluated": "20 LLMs across general, medical-domain, lightweight, large, open-weight, and proprietary families",
   "scale": "600 dialogues, 20 LLMs, 3 scenario families",
@@ -3081,13 +3081,13 @@
    "uncommon cases",
    "next-step prediction"
   ],
-  "relevance": "Directly relevant to clinical decision support — introduces a new benchmark and alignment framework for evaluating LLMs on intermediate clinical decisions (next test, next specialist, next differential) rather than just final diagnosis",
+  "relevance": "Directly relevant to clinical decision support \u2014 introduces a new benchmark and alignment framework for evaluating LLMs on intermediate clinical decisions (next test, next specialist, next differential) rather than just final diagnosis",
   "key_findings": [
    "MedUPSQA: 21,874 mid-stream clinical decision points from 5,535 real case reports",
-   "Mid-stream alignment (GRPO) raises next-step accuracy: Qwen3.6-27B 55.2→66.7, Qwen3.5-9B 47.2→57.8, HuatuoGPT-3-8B 37.8→44.4",
-   "Smaller aligned models surpass larger frontier models — objective matters more than scale",
+   "Mid-stream alignment (GRPO) raises next-step accuracy: Qwen3.6-27B 55.2\u219266.7, Qwen3.5-9B 47.2\u219257.8, HuatuoGPT-3-8B 37.8\u219244.4",
+   "Smaller aligned models surpass larger frontier models \u2014 objective matters more than scale",
    "SFT baselines also improve all backbones, confirming the target framework carries signal independently of optimizer",
-   "Shifts evaluation from final diagnosis to intermediate clinical decisions — mirrors real clinical workflow"
+   "Shifts evaluation from final diagnosis to intermediate clinical decisions \u2014 mirrors real clinical workflow"
   ],
   "tools_evaluated": [
    "Qwen3.6-27B",
@@ -3122,10 +3122,10 @@
    "TLoRA",
    "AraClinicDialog"
   ],
-  "relevance": "Relevant to clinical AI accessibility — introduces AraClinicDialog, a clinician-constructed Arabic medical dialogue benchmark, and shows that mechanistic diagnosis can guide targeted adaptation for underrepresented-language medical LLMs",
+  "relevance": "Relevant to clinical AI accessibility \u2014 introduces AraClinicDialog, a clinician-constructed Arabic medical dialogue benchmark, and shows that mechanistic diagnosis can guide targeted adaptation for underrepresented-language medical LLMs",
   "key_findings": [
    "Arabic medical knowledge is present in intermediate model representations but fails to surface at output",
-   "Proposes Targeted LoRA (TLoRA) restricted to divergence layer window — outperforms full-network LoRA, zero-shot, and few-shot baselines",
+   "Proposes Targeted LoRA (TLoRA) restricted to divergence layer window \u2014 outperforms full-network LoRA, zero-shot, and few-shot baselines",
    "Introduces AraClinicDialog: clinician-constructed Arabic medical dialogue benchmark in MSA with 4 dialect variants",
    "TLoRA performs competitively on short-answer generation and multi-turn clinical dialogue without task-specific finetuning",
    "Demonstrates mechanistic diagnosis as practical guide for targeted adaptation in underrepresented-language medical LLMs"
@@ -3140,7 +3140,7 @@
   "source": "arxiv",
   "type": "benchmark_evaluation",
   "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
-  "authors": "Sebastián Andrés Cajas Ordóñez, Agastya Munnangi, Aldo Marzullo, et al.",
+  "authors": "Sebasti\u00e1n Andr\u00e9s Cajas Ord\u00f3\u00f1ez, Agastya Munnangi, Aldo Marzullo, et al.",
   "abstract": "Clinical decision support is moving toward committees of language-model agents deliberating on a shared workspace. We ask whether such committees can be gamed by shortcuts, cues a benchmark rewards but a clinician would ignore. Across seven cohorts on six public datasets spanning text (MedQA-USMLE, MedMCQA, MIMIC-CXR reports), imaging (NIH ChestX-ray14, MIMIC-CXR-JPG, CheXpert) and tabular ICU records (SUPPORT2), Gemini committees resist these cues in isolation (flip 5-16%), yet a socially plausible shortcut spreads: when two peers assert the same wrong answer, the holdout under test adopts it in 38% of cases. Of three oversight agents, a gate cannot separate adoption from honest agreement (false-positive rate 100%); a same-lineage judge flags adoption on text (precision 100%, recall 93%) but collapses in imaging; a referee that privately re-queries the holdout transfers to imaging (77-88% precision). Gaming a hidden rubric is near-silent: only 1/10 text and 1/134 imaging drifters name the rubric they moved toward.",
   "url": "https://arxiv.org/abs/2608.03744",
   "pdf_url": "https://arxiv.org/pdf/2608.03744",
@@ -3159,13 +3159,13 @@
    "clinical AI safety",
    "oversight agents"
   ],
-  "relevance": "Evaluates vulnerability of clinical multi-agent AI systems to benchmark gaming via social shortcuts — directly relevant to clinical AI safety and benchmark integrity",
+  "relevance": "Evaluates vulnerability of clinical multi-agent AI systems to benchmark gaming via social shortcuts \u2014 directly relevant to clinical AI safety and benchmark integrity",
   "key_findings": [
    "Social plausibility drives shortcut contagion: 38% adoption when two peers assert same wrong answer",
-   "Gate oversight agent has 100% false-positive rate — cannot separate adoption from honest agreement",
+   "Gate oversight agent has 100% false-positive rate \u2014 cannot separate adoption from honest agreement",
    "Referee agent that privately re-queries transfers to imaging (77-88% precision, 13-21% FPR)",
    "Second peer voice raises contagion by half again; tripling visual salience does not move contagion",
-   "Only 1/10 text and 1/134 imaging drifters name the rubric they moved toward — near-silent gaming"
+   "Only 1/10 text and 1/134 imaging drifters name the rubric they moved toward \u2014 near-silent gaming"
   ],
   "tools_evaluated": [
    "Gemini committees (multi-agent)",
@@ -3197,12 +3197,12 @@
    "action timing",
    "source-grounded"
   ],
-  "relevance": "Directly benchmarks patient-facing clinical AI triage — evaluates sequential action timing which is critical for safe deployment of clinical AI tools",
+  "relevance": "Directly benchmarks patient-facing clinical AI triage \u2014 evaluates sequential action timing which is critical for safe deployment of clinical AI tools",
   "key_findings": [
-   "Unprompted macro-F1 ranges 31.2-50.4 across 11 models — low baseline performance",
+   "Unprompted macro-F1 ranges 31.2-50.4 across 11 models \u2014 low baseline performance",
    "Prompting improves 10/11 models to 46.9-63.4 macro-F1 but substantial threshold errors remain",
    "Only 33.5% of prompted outputs correctly asked for more information when needed",
-   "Patient-facing triage is not a simple prompting problem — explicit evaluation of action timing needed before deployment",
+   "Patient-facing triage is not a simple prompting problem \u2014 explicit evaluation of action timing needed before deployment",
    "500 cases, 1,059 evaluated patient-disclosure prefixes, 269 held-out rounds"
   ],
   "tools_evaluated": [
@@ -3289,7 +3289,7 @@
    "Gemini",
    "Claude"
   ],
-  "scale": "9 AAOS guideline recommendations × 3 blinded specialist raters; majority-vote resolution",
+  "scale": "9 AAOS guideline recommendations \u00d7 3 blinded specialist raters; majority-vote resolution",
   "status": "published",
   "new": false
  },
@@ -3312,7 +3312,7 @@
    "medical librarian",
    "platform overview"
   ],
-  "relevance": "Librarian-authored JMLA listing of OpenEvidence — confirms widespread institutional awareness among medical librarians",
+  "relevance": "Librarian-authored JMLA listing of OpenEvidence \u2014 confirms widespread institutional awareness among medical librarians",
   "key_findings": [
    "JMLA cataloged OpenEvidence as a medical information platform",
    "Released 2023, OpenEvidence Inc., Cambridge MA",
@@ -3348,7 +3348,7 @@
    "NLP",
    "comparative evidence"
   ],
-  "relevance": "Narrative synthesis of comparative & interventional evidence on whether clinician-facing AI improves guideline adherence — frames OE-style RAG guidance in the workflow literature",
+  "relevance": "Narrative synthesis of comparative & interventional evidence on whether clinician-facing AI improves guideline adherence \u2014 frames OE-style RAG guidance in the workflow literature",
   "key_findings": [
    "Only 6 peer-reviewed empirical studies met eligibility (2020-May 2026)",
    "Most favorable findings for bounded tasks embedded in workflow/structured settings (EHR-integrated CDSS, decision-tree)",
@@ -3388,7 +3388,7 @@
    "antimicrobial resistance",
    "clinical AI"
   ],
-  "relevance": "Clinical specialty-level overview of where LLMs and ML fit into ID decision-making — supports framing OE-style consult AI as one component alongside risk-stratification ML",
+  "relevance": "Clinical specialty-level overview of where LLMs and ML fit into ID decision-making \u2014 supports framing OE-style consult AI as one component alongside risk-stratification ML",
   "key_findings": [
    "Three domains of AI in ID: knowledge retrieval (LLMs), risk stratification (ML), stewardship integration",
    "ID specialist shortage is a primary adoption driver for clinical AI",
@@ -3410,7 +3410,7 @@
   "type": "benchmark",
   "title": "Benchmarking Language Models for Clinical Safety: A Primer for Mental Health Professionals.",
   "authors": "Flathers M, Nguyen PA, Herpertz J, Granof M, Ryan S",
-  "abstract": "Introduces mental health professionals to LLM benchmarking by administering the Suicide Intervention Response Inventory (SIRI-2) to nine commercial LMs from three providers. Each item presented 60 times per model (3 prompt variants × 2 temperatures × 10 reps) = 27,000 individually scored responses vs expert consensus. Total scores 19.5-84.0 (expert baseline 32.5). Prompt design alone shifted individual model scores by as much as the gap between models.",
+  "abstract": "Introduces mental health professionals to LLM benchmarking by administering the Suicide Intervention Response Inventory (SIRI-2) to nine commercial LMs from three providers. Each item presented 60 times per model (3 prompt variants \u00d7 2 temperatures \u00d7 10 reps) = 27,000 individually scored responses vs expert consensus. Total scores 19.5-84.0 (expert baseline 32.5). Prompt design alone shifted individual model scores by as much as the gap between models.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42570253/",
   "pdf_url": null,
   "doi": "10.1159/000548721",
@@ -3426,18 +3426,18 @@
    "prompt sensitivity",
    "psychiatric evaluation"
   ],
-  "relevance": "Clinician-facing benchmark primer showing how prompt-design variance can rival inter-model variance — critical context for evaluating OE-style LLM tools in high-stakes domains",
+  "relevance": "Clinician-facing benchmark primer showing how prompt-design variance can rival inter-model variance \u2014 critical context for evaluating OE-style LLM tools in high-stakes domains",
   "key_findings": [
-   "27,000 individually scored responses; 9 LMs × 3 prompt variants × 2 temperatures × 10 reps",
+   "27,000 individually scored responses; 9 LMs \u00d7 3 prompt variants \u00d7 2 temperatures \u00d7 10 reps",
    "Total scores 19.5-84.0 across models (expert panel baseline 32.5)",
-   "Prompt design alone shifted individual model scores by as much as the gap between models — critical confounding factor",
+   "Prompt design alone shifted individual model scores by as much as the gap between models \u2014 critical confounding factor",
    "SIRI-2 (validated suicide intervention response inventory) used as clinician gold standard",
    "Configuration decisions, measurement limitations, scoring context all materially affect interpretation"
   ],
   "tools_evaluated": [
    "9 commercial language models from 3 providers"
   ],
-  "scale": "9 models × SIRI-2 instrument × 60 reps each = 27,000 responses vs expert consensus baseline",
+  "scale": "9 models \u00d7 SIRI-2 instrument \u00d7 60 reps each = 27,000 responses vs expert consensus baseline",
   "status": "published",
   "new": false
  },
@@ -3447,7 +3447,7 @@
   "type": "mixed_methods",
   "title": "Beyond Accuracy: A Mixed-Methods Audit of Chain-of-Thought Failures in LLM-Based COVID-19 Vaccine Stance Detection.",
   "authors": "Praschk A, Fischill-Neudeck V, Caspari T, Wiesinger HP",
-  "abstract": "Mixed-methods assessment of whether reasoning-enabled LLMs can classify stances toward COVID-19 vaccination on X (Twitter) and whether model-generated CoT summaries contain reasoning failures relevant to transparent and auditable public health applications. Zero-shot stance classification by o4-mini and Gemini 2.5 Flash on 3,060 rehydrated COVID-19 vaccination tweets vs human labels. Best-setting macro-F1 ~0.8 (o4-mini 0.819 vs Gemini 0.799, McNemar p=0.0015). Among 1,981 tweets with CoTs from both models, 295 (14.9%) were dual-errors; 88.8% produced the same wrong reasoning pattern — same logic gaps regardless of model family.",
+  "abstract": "Mixed-methods assessment of whether reasoning-enabled LLMs can classify stances toward COVID-19 vaccination on X (Twitter) and whether model-generated CoT summaries contain reasoning failures relevant to transparent and auditable public health applications. Zero-shot stance classification by o4-mini and Gemini 2.5 Flash on 3,060 rehydrated COVID-19 vaccination tweets vs human labels. Best-setting macro-F1 ~0.8 (o4-mini 0.819 vs Gemini 0.799, McNemar p=0.0015). Among 1,981 tweets with CoTs from both models, 295 (14.9%) were dual-errors; 88.8% produced the same wrong reasoning pattern \u2014 same logic gaps regardless of model family.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42570145/",
   "pdf_url": null,
   "doi": "10.1007/s10916-026-05128-9",
@@ -3465,7 +3465,7 @@
    "Gemini",
    "FUTURE-AI"
   ],
-  "relevance": "Audits CoT reasoning failures in medical-domain stance classification; surfaces shared failure modes across model families — relevant to OE-style explanation/evidence-tracing UX",
+  "relevance": "Audits CoT reasoning failures in medical-domain stance classification; surfaces shared failure modes across model families \u2014 relevant to OE-style explanation/evidence-tracing UX",
   "key_findings": [
    "Both models hit macro-F1 ~0.8 (o4-mini 0.819 vs Gemini 0.799, McNemar p=0.0015)",
    "14.9% of dual-error cases produced identical wrong reasoning patterns across two different models",
@@ -3487,7 +3487,7 @@
   "type": "bias_evaluation",
   "title": "Sociodemographic bias in LLMs' clinical decision-making for dizziness.",
   "authors": "Tessler I, Omar M, Wolfovitz A, Gimmon Y, Hack S",
-  "abstract": "Cross-randomized in-silico vignette study: 100 synthetic ED dizziness cases following TiTrATE, SAEM GRACE-3, and Bárány Society frameworks. Each vignette tested in neutral form + 33 sociodemographic descriptor variants (34 total). Twelve instruction-tuned LLMs. Five binary clinical decision questions (etiology, triage, neuroimaging, vestibular exam, mental-health referral). Each model-vignette-descriptor combination repeated 10x = 2,040,000 responses. Sociodemographic bias expressed as percentage-point deviations vs neutral control with 95% CI.",
+  "abstract": "Cross-randomized in-silico vignette study: 100 synthetic ED dizziness cases following TiTrATE, SAEM GRACE-3, and B\u00e1r\u00e1ny Society frameworks. Each vignette tested in neutral form + 33 sociodemographic descriptor variants (34 total). Twelve instruction-tuned LLMs. Five binary clinical decision questions (etiology, triage, neuroimaging, vestibular exam, mental-health referral). Each model-vignette-descriptor combination repeated 10x = 2,040,000 responses. Sociodemographic bias expressed as percentage-point deviations vs neutral control with 95% CI.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42569795/",
   "pdf_url": null,
   "doi": "10.3233/VES-250041",
@@ -3503,20 +3503,20 @@
    "vignette study",
    "LLM fairness",
    "GRACE-3",
-   "Bárány"
+   "B\u00e1r\u00e1ny"
   ],
-  "relevance": "Quantifies sociodemographic bias in LLM clinical decisions at population scale (2M+ responses) — directly relevant for OE-style tool fairness & safety posture",
+  "relevance": "Quantifies sociodemographic bias in LLM clinical decisions at population scale (2M+ responses) \u2014 directly relevant for OE-style tool fairness & safety posture",
   "key_findings": [
    "Largest descriptor-driven deviations in clinical decisions across 5 decision domains",
-   "2,040,000 LLM responses analyzed (12 models × 100 cases × 34 descriptors × 10 reps)",
+   "2,040,000 LLM responses analyzed (12 models \u00d7 100 cases \u00d7 34 descriptors \u00d7 10 reps)",
    "Sociodemographic descriptors materially shift LLM recommendations despite identical clinical content",
-   "TiTrATE / GRACE-3 / Bárány Society frameworks used to construct ED dizziness vignettes",
+   "TiTrATE / GRACE-3 / B\u00e1r\u00e1ny Society frameworks used to construct ED dizziness vignettes",
    "Quantifies magnitude of bias with 95% confidence intervals vs neutral control"
   ],
   "tools_evaluated": [
    "12 instruction-tuned LLMs from multiple model families"
   ],
-  "scale": "100 ED dizziness vignettes × 34 sociodemographic variants × 12 models × 10 repetitions = 2,040,000 responses",
+  "scale": "100 ED dizziness vignettes \u00d7 34 sociodemographic variants \u00d7 12 models \u00d7 10 repetitions = 2,040,000 responses",
   "status": "published",
   "new": false
  },
@@ -3542,7 +3542,7 @@
    "China",
    "causal inference"
   ],
-  "relevance": "Real-world PSM evidence that AI-driven conversational agents positively affect physician-patient interaction quality — empirical anchor for physician-AI teaming arguments",
+  "relevance": "Real-world PSM evidence that AI-driven conversational agents positively affect physician-patient interaction quality \u2014 empirical anchor for physician-AI teaming arguments",
   "key_findings": [
    "PSM-based positive causal association between AI conversational agents and perceived physician-patient interaction quality",
    "419 adult patients from China tertiary public hospitals",
@@ -3645,7 +3645,7 @@
    "Grok (xAI)",
    "Llama (Meta)"
   ],
-  "scale": "810 conversations × 9 chatbots × 30 simulated user profiles",
+  "scale": "810 conversations \u00d7 9 chatbots \u00d7 30 simulated user profiles",
   "status": "published",
   "new": false
  },
@@ -3702,7 +3702,7 @@
    "qualitative",
    "chatbot"
   ],
-  "relevance": "Cautionary empirical case of a clinical chatbot being discontinued in a major Singapore hospital due to misalignment with evolving infrastructure and regulatory requirements. Directly applicable to OE and ChatGPT Health enterprise deployment planning — successful launch is not synonymous with sustained adoption.",
+  "relevance": "Cautionary empirical case of a clinical chatbot being discontinued in a major Singapore hospital due to misalignment with evolving infrastructure and regulatory requirements. Directly applicable to OE and ChatGPT Health enterprise deployment planning \u2014 successful launch is not synonymous with sustained adoption.",
   "key_findings": [
    "Single-hospital case study of ChatAI (clinical + operational chatbot) at a tertiary Singapore government hospital",
    "Multiple sociotechnical misalignments across goals, people, processes, technology, and infrastructure limited adoption",
@@ -3737,17 +3737,17 @@
    "guideline drift",
    "clinical pharmacist"
   ],
-  "relevance": "Empirically demonstrates how an LLM can confidently cite a retired guideline across multiple responses in the same session — directly pertinent to OE's evidence recency claims and DynaMed/UpToDate 'content layer' positioning.",
+  "relevance": "Empirically demonstrates how an LLM can confidently cite a retired guideline across multiple responses in the same session \u2014 directly pertinent to OE's evidence recency claims and DynaMed/UpToDate 'content layer' positioning.",
   "key_findings": [
    "ChatGPT-4 simultaneous responses to COPD questions rated on 0-2 accuracy/usefulness/impact-variability scale",
    "Consensus reached in 88.9% (40/45) of response-domain ratings",
-   "For one stable-COPD pharmacotherapy question, all three responses cited a retired guideline → uniformly poor accuracy",
+   "For one stable-COPD pharmacotherapy question, all three responses cited a retired guideline \u2192 uniformly poor accuracy",
    "LLM outputs should augment clinician judgment and require current guideline grounding + local oversight"
   ],
   "tools_evaluated": [
    "ChatGPT-4.0"
   ],
-  "scale": "5 COPD questions × 3 simultaneous sessions = 15 responses rated across 3 domains",
+  "scale": "5 COPD questions \u00d7 3 simultaneous sessions = 15 responses rated across 3 domains",
   "status": "published",
   "new": false
  },
@@ -3810,12 +3810,12 @@
    "ChatGPT",
    "international comparison"
   ],
-  "relevance": "First 2026 blinded orthopaedic-surgeon head-to-head across 8 frontier and Chinese LLMs. Confirms domestic Chinese LLMs (DeepSeek, Doubao) now lead on localised patient-education tasks — relevant to whether OE/JAMA/Wiley content partnerships retain edge in non-US markets where DeepSeek et al are entering clinical workflows.",
+  "relevance": "First 2026 blinded orthopaedic-surgeon head-to-head across 8 frontier and Chinese LLMs. Confirms domestic Chinese LLMs (DeepSeek, Doubao) now lead on localised patient-education tasks \u2014 relevant to whether OE/JAMA/Wiley content partnerships retain edge in non-US markets where DeepSeek et al are entering clinical workflows.",
   "key_findings": [
-   "DeepSeek & Doubao highest median accuracy (2.00 on Mika scale) — both domestic Chinese LLMs",
+   "DeepSeek & Doubao highest median accuracy (2.00 on Mika scale) \u2014 both domestic Chinese LLMs",
    "International models (ChatGPT/Gemini/Claude/Grok) showed stronger safety guardrails and complex-reasoning robustness",
    "Chinese models had unique advantages in local-resource navigation and contextual relevance",
-   "Less than 25% of responses rated 'excellent' overall — auxiliary positioning still recommended"
+   "Less than 25% of responses rated 'excellent' overall \u2014 auxiliary positioning still recommended"
   ],
   "tools_evaluated": [
    "ChatGPT-4o",
@@ -3827,7 +3827,7 @@
    "Qwen-Max",
    "Kimi"
   ],
-  "scale": "8 LLMs × standard patient-education dataset × blinded orthopaedic-surgeon scoring",
+  "scale": "8 LLMs \u00d7 standard patient-education dataset \u00d7 blinded orthopaedic-surgeon scoring",
   "status": "published",
   "new": false
  },
@@ -3852,7 +3852,7 @@
    "sleep medicine",
    "comparative evaluation"
   ],
-  "relevance": "Adds to a growing body of specialty-specific multi-LLM comparative evaluations — strengthens case that clinician-facing CDS (OE, Doximity Ask, UpToDate Expert AI) retains advantage on chart-grounded specialty interpretation over generic chatbots.",
+  "relevance": "Adds to a growing body of specialty-specific multi-LLM comparative evaluations \u2014 strengthens case that clinician-facing CDS (OE, Doximity Ask, UpToDate Expert AI) retains advantage on chart-grounded specialty interpretation over generic chatbots.",
   "key_findings": [
    "9 LLMs evaluated on real-world polysomnography interpretation for OSA",
    "Model performance varied significantly on ambiguous epochs and AHI stratification",
@@ -3918,7 +3918,7 @@
    "physician-reviewed",
    "safety collapse"
   ],
-  "relevance": "Directly relevant to clinical AI safety evaluation — demonstrates that single-turn safety benchmarks miss multi-turn refusal collapse, a critical failure mode for consumer-facing medical AI tools.",
+  "relevance": "Directly relevant to clinical AI safety evaluation \u2014 demonstrates that single-turn safety benchmarks miss multi-turn refusal collapse, a critical failure mode for consumer-facing medical AI tools.",
   "key_findings": [
    "71.6% of conversations contained an UNSAFE response across 8 LLMs",
    "61.4% of initially SAFE responses collapsed to UNSAFE in follow-up turns",
@@ -3943,7 +3943,7 @@
   "doi": "https://doi.org/10.48550/arXiv.2608.10273",
   "published": "2026-08-10",
   "updated": "2026-08-10",
-  "journal": "arXiv (cs.CL, cs.AI) — Accepted to AMIA 2026 Annual Symposium",
+  "journal": "arXiv (cs.CL, cs.AI) \u2014 Accepted to AMIA 2026 Annual Symposium",
   "tags": [
    "emergency department",
    "local deployment",
@@ -3954,7 +3954,7 @@
    "clinical decision support",
    "triage"
   ],
-  "relevance": "Directly relevant to clinical decision support — demonstrates locally deployable SLMs can match or exceed commercial LLMs on ED decision support tasks, addressing privacy concerns of transmitting patient data to cloud APIs.",
+  "relevance": "Directly relevant to clinical decision support \u2014 demonstrates locally deployable SLMs can match or exceed commercial LLMs on ED decision support tasks, addressing privacy concerns of transmitting patient data to cloud APIs.",
   "key_findings": [
    "LoRA fine-tuned open-source SLMs outperform Claude Haiku 4.5 and Sonnet 4.5 on triage level prediction and specialist referral",
    "Diagnosis prediction remains challenging for open-source SLMs",
@@ -3990,11 +3990,11 @@
    "benchmark",
    "consensus"
   ],
-  "relevance": "Directly relevant to medical LLM benchmarking — introduces a novel RL training method using consensus rubrics, achieves SOTA on HealthBench-Hard. Part of the rapidly evolving medical LLM evaluation landscape.",
+  "relevance": "Directly relevant to medical LLM benchmarking \u2014 introduces a novel RL training method using consensus rubrics, achieves SOTA on HealthBench-Hard. Part of the rapidly evolving medical LLM evaluation landscape.",
   "key_findings": [
    "Ranks first on 6 of 9 benchmarks with highest medical and generalization averages",
-   "Scores 38.98 ± 1.04 on HealthBench-Hard, beating InfiMed-ORBIT (33.60 with 8k samples, 37.30 with 28k)",
-   "Consensus rubric approach — 3 LMs propose criteria, reviewer retains only cross-supported ones",
+   "Scores 38.98 \u00b1 1.04 on HealthBench-Hard, beating InfiMed-ORBIT (33.60 with 8k samples, 37.30 with 28k)",
+   "Consensus rubric approach \u2014 3 LMs propose criteria, reviewer retains only cross-supported ones",
    "Three-State scoring: correct coverage, missing info, incorrect claims (errors get negative credit)",
    "5,166-prompt rubric dataset released"
   ],
@@ -4024,7 +4024,7 @@
    "academic integrity",
    "evidence quality"
   ],
-  "relevance": "Critical context for evidence-based medicine platforms like OE — if 89% of biomedical publications show LLM-altered text, this affects the trustworthiness of the underlying evidence base that CDS tools rely on.",
+  "relevance": "Critical context for evidence-based medicine platforms like OE \u2014 if 89% of biomedical publications show LLM-altered text, this affects the trustworthiness of the underlying evidence base that CDS tools rely on.",
   "key_findings": [
    "89% of open-access biomedical papers show excess LLM-associated vocabulary by end of 2025",
    "Discussion sections: 68% LLM usage vs Methods sections: 32%",
@@ -4058,13 +4058,13 @@
    "temporal memory",
    "GDPR"
   ],
-  "relevance": "Relevant to clinical AI tool landscape — demonstrates a fully local, agentic health assistant with novel hybrid safety architecture (rule-based + GNN). The local deployment angle and safety layer design are differentiators from cloud-based tools like OE.",
+  "relevance": "Relevant to clinical AI tool landscape \u2014 demonstrates a fully local, agentic health assistant with novel hybrid safety architecture (rule-based + GNN). The local deployment angle and safety layer design are differentiators from cloud-based tools like OE.",
   "key_findings": [
    "94.9% tool-execution pass rate across 59 clinical scenarios with GPT-5 Mini",
    "Two-stage safety: rule-based (<1ms) + signed GNN (88.8% accuracy, 90.6% unsafe recall)",
    "Multimodal speech assessment: emotion, depression, pain (macro F1 0.652)",
    "17 clinical tools, temporal knowledge graph for cross-session memory",
-   "Fully local on consumer hardware — GDPR/KVKK compliant"
+   "Fully local on consumer hardware \u2014 GDPR/KVKK compliant"
   ],
   "tools_evaluated": [
    "ECHO (GPT-5 Mini backbone)",
@@ -4078,13 +4078,13 @@
   "id": "2608.08868",
   "title": "Conversation as Measurement in Clinical Encounters: Observable Phase Structure, Partially Observable Patient State",
   "authors": "Lily Chen et al.",
-  "abstract": "Studies observability — whether targets are recoverable from conversational transcripts alone — in clinical encounters. Uses 439 real-world clinical encounter transcripts (134 hours), including 245 ENT transcripts paired with 273 PROM surveys. Finds an observability asymmetry: phase structure is observable and useful for characterizing encounter organization, while patient state is only partially observable even in settings designed to elicit symptoms. Uses PHI-compliant GPT-5 deployment for annotation with 40 hours of manual validation. COLM 2026.",
+  "abstract": "Studies observability \u2014 whether targets are recoverable from conversational transcripts alone \u2014 in clinical encounters. Uses 439 real-world clinical encounter transcripts (134 hours), including 245 ENT transcripts paired with 273 PROM surveys. Finds an observability asymmetry: phase structure is observable and useful for characterizing encounter organization, while patient state is only partially observable even in settings designed to elicit symptoms. Uses PHI-compliant GPT-5 deployment for annotation with 40 hours of manual validation. COLM 2026.",
   "url": "https://arxiv.org/abs/2608.08868",
   "pdf_url": "https://arxiv.org/pdf/2608.08868",
   "doi": "https://doi.org/10.48550/arXiv.2608.08868",
   "published": "2026-08-09",
   "updated": "2026-08-11",
-  "journal": "arXiv (cs.CL) — COLM 2026",
+  "journal": "arXiv (cs.CL) \u2014 COLM 2026",
   "tags": [
    "clinical encounters",
    "observability",
@@ -4094,7 +4094,7 @@
    "phase structure",
    "GPT-5"
   ],
-  "relevance": "Relevant to clinical AI evaluation methodology — demonstrates that transcript-only inference of patient state is unreliable, with implications for AI systems that analyze clinical conversations.",
+  "relevance": "Relevant to clinical AI evaluation methodology \u2014 demonstrates that transcript-only inference of patient state is unreliable, with implications for AI systems that analyze clinical conversations.",
   "key_findings": [
    "Observability asymmetry: phase structure observable, patient state only partially observable",
    "439 clinical encounter transcripts, 134 hours, 245 ENT + 273 PROM surveys",
@@ -4112,7 +4112,7 @@
   "id": "2608.10216",
   "title": "Similarity Gates Approve Reversals: A Validity Audit of Embedding-Cosine Thresholds in Agent Systems",
   "authors": "Scott Frias et al.",
-  "abstract": "Audits embedding-cosine similarity gates used in agent frameworks (deduplication, semantic caches, drift guards, answer graders). Shows these gates measure wording change, not meaning change — reversals can be single-word edits while paraphrases rephrase entire sentences. A production drift guard caught 0 of 56 meaning-breaking mutations. One approved item: 'withhold the study drug' → 'administer the study drug' at cosine 0.9608. Balanced accuracy never exceeded 0.700 across 90 cells. Strongest 2 of 9 configurations separated reversal from paraphrase at AUROC 0.79-0.90, but only with matched-pair audit.",
+  "abstract": "Audits embedding-cosine similarity gates used in agent frameworks (deduplication, semantic caches, drift guards, answer graders). Shows these gates measure wording change, not meaning change \u2014 reversals can be single-word edits while paraphrases rephrase entire sentences. A production drift guard caught 0 of 56 meaning-breaking mutations. One approved item: 'withhold the study drug' \u2192 'administer the study drug' at cosine 0.9608. Balanced accuracy never exceeded 0.700 across 90 cells. Strongest 2 of 9 configurations separated reversal from paraphrase at AUROC 0.79-0.90, but only with matched-pair audit.",
   "url": "https://arxiv.org/abs/2608.10216",
   "pdf_url": "https://arxiv.org/pdf/2608.10216",
   "doi": "https://doi.org/10.48550/arXiv.2608.10216",
@@ -4127,10 +4127,10 @@
    "validity audit",
    "clinical safety"
   ],
-  "relevance": "Critical safety finding for clinical AI agent systems — demonstrates that embedding-cosine similarity gates (widely used in production) can approve meaning-reversing changes including clinical instructions ('withhold' → 'administer study drug'). Relevant to any RAG or agent-based clinical AI tool.",
+  "relevance": "Critical safety finding for clinical AI agent systems \u2014 demonstrates that embedding-cosine similarity gates (widely used in production) can approve meaning-reversing changes including clinical instructions ('withhold' \u2192 'administer study drug'). Relevant to any RAG or agent-based clinical AI tool.",
   "key_findings": [
    "Production drift guard caught 0 of 56 meaning-breaking mutations",
-   "'withhold the study drug' → 'administer the study drug' approved at cosine 0.9608",
+   "'withhold the study drug' \u2192 'administer the study drug' approved at cosine 0.9608",
    "Balanced accuracy never exceeded 0.700 across 90 configuration-threshold-task cells",
    "Naively built evaluation corpus can return inverted verdict (AUROC 0.000 in 13/18 cells)",
    "Strongest 2/9 configurations achieved AUROC 0.79-0.90 but only with matched-pair audit"
@@ -4170,7 +4170,7 @@
    "Claude",
    "multi-model comparison"
   ],
-  "relevance": "Directly relevant: purpose-built clinical RAG system benchmarked against frontier LLMs on HealthBench — demonstrates corpus specificity as a design variable that improves grounding in clinical AI tools",
+  "relevance": "Directly relevant: purpose-built clinical RAG system benchmarked against frontier LLMs on HealthBench \u2014 demonstrates corpus specificity as a design variable that improves grounding in clinical AI tools",
   "key_findings": [
    "VITA (clinical RAG) ranked first on HealthBench with 51.9% rubric points vs GPT-5.4 (46.1%), o4-mini (44.3%), Gemini 3.1 Pro (42.6%), Claude Sonnet 4.6 (37.3%)",
    "VITA scored highest on 45.4% of questions in the GPT-4.1 judged evaluation",
@@ -4198,8 +4198,8 @@
   "source": "pubmed",
   "type": "systematic_review",
   "title": "Artificial intelligence in cardiovascular care: a systematic review and meta-analysis of randomised controlled trials",
-  "authors": "Ong AQC, Ang CS, Bojic I, Johnson CL, Aggour H, Ng FS, Car J, Leeson P, Gonçalves J, Lai NM",
-  "abstract": "Systematic review and meta-analysis of 31 RCTs (n=1,685,717 patients) across 13 regions evaluating effectiveness of AI interventions in cardiovascular care. 71% of trials reported significant AI benefit on primary endpoints (mostly intermediate process measures); 29% showed no effect. Meta-analysis: image-based AI-CDSS reduced major adverse cardiovascular events (RR 0.74, 95% CI 0.58-0.96; I²=0%); AI-mobile health reduced systolic BP (-3.18 mmHg). AI-ECG did not significantly improve heart failure detection. Certainty of evidence low to very low (GRADE) due to risk of bias, indirectness, and imprecision.",
+  "authors": "Ong AQC, Ang CS, Bojic I, Johnson CL, Aggour H, Ng FS, Car J, Leeson P, Gon\u00e7alves J, Lai NM",
+  "abstract": "Systematic review and meta-analysis of 31 RCTs (n=1,685,717 patients) across 13 regions evaluating effectiveness of AI interventions in cardiovascular care. 71% of trials reported significant AI benefit on primary endpoints (mostly intermediate process measures); 29% showed no effect. Meta-analysis: image-based AI-CDSS reduced major adverse cardiovascular events (RR 0.74, 95% CI 0.58-0.96; I\u00b2=0%); AI-mobile health reduced systolic BP (-3.18 mmHg). AI-ECG did not significantly improve heart failure detection. Certainty of evidence low to very low (GRADE) due to risk of bias, indirectness, and imprecision.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42602970/",
   "pdf_url": null,
   "doi": "10.1016/j.eclinm.2026.104123",
@@ -4217,14 +4217,14 @@
    "AI-ECG",
    "GRADE"
   ],
-  "relevance": "High-quality Lancet-family meta-analysis pinning down real-world effectiveness of clinical AI decision support — pivotal benchmark evidence for the regulatory and adoption narrative around systems like OpenEvidence. Image-based AI-CDSS achieves 26% relative reduction in MACE; mobile AI works for BP; AI-ECG does not move hard outcomes.",
+  "relevance": "High-quality Lancet-family meta-analysis pinning down real-world effectiveness of clinical AI decision support \u2014 pivotal benchmark evidence for the regulatory and adoption narrative around systems like OpenEvidence. Image-based AI-CDSS achieves 26% relative reduction in MACE; mobile AI works for BP; AI-ECG does not move hard outcomes.",
   "key_findings": [
-   "31 RCTs, 1,685,717 patients, 13 regions — most comprehensive cardiovascular AI RCT review to date",
+   "31 RCTs, 1,685,717 patients, 13 regions \u2014 most comprehensive cardiovascular AI RCT review to date",
    "71% of trials reported significant AI benefit, but mostly on intermediate process endpoints rather than hard outcomes",
    "Image-based AI-CDSS reduced MACE (RR 0.74, 95% CI 0.58-0.96; n=1,614,689 pooled subset)",
    "AI-mobile health reduced systolic BP by 3.18 mmHg; no effect on diastolic BP or BMI",
-   "AI-enhanced ECG did not improve heart failure detection (RR 1.22, I²=90%)",
-   "Certainty low-to-very-low (GRADE) due to risk of bias and indirectness — limits translation to OE-style evidence lookup tools"
+   "AI-enhanced ECG did not improve heart failure detection (RR 1.22, I\u00b2=90%)",
+   "Certainty low-to-very-low (GRADE) due to risk of bias and indirectness \u2014 limits translation to OE-style evidence lookup tools"
   ],
   "tools_evaluated": [
    "Image-based AI-CDSS (multiple)",
@@ -4241,7 +4241,7 @@
   "type": "benchmark",
   "title": "CARE: Confidence-Aware Reasoning for Reliable Medical VQA",
   "authors": "Yuetian Du, Yucheng Wang, Zhenyuan Chen, Luyuan Chen, Rongyu Zhang, Jinjian Zhang, Wei Zhou, Zhijie Xu, Ming Kong, Zhan Zhou, Jie Liu, Qiang Zhu",
-  "abstract": "Reinforcement Fine-Tuning (RFT) has enabled medical Multimodal LLMs (MLLMs) to produce Chain-of-Thought reasoning for visual question answering, yet they suffer from confidence miscalibration — a systematic gap between expressed certainty and actual diagnostic accuracy that undermines clinical trust. CARE is a Confidence-Aware REasoning framework that jointly optimizes accuracy and calibration via dual-stage pipeline (Medical-CoT SFT + GRPO with Confidence-Aware Reward). Across three Medical VQA benchmarks, CARE achieves highest diagnostic accuracy with lowest Expected Calibration Error and Hallucination Rate. (Accepted at MICCAI 2026)",
+  "abstract": "Reinforcement Fine-Tuning (RFT) has enabled medical Multimodal LLMs (MLLMs) to produce Chain-of-Thought reasoning for visual question answering, yet they suffer from confidence miscalibration \u2014 a systematic gap between expressed certainty and actual diagnostic accuracy that undermines clinical trust. CARE is a Confidence-Aware REasoning framework that jointly optimizes accuracy and calibration via dual-stage pipeline (Medical-CoT SFT + GRPO with Confidence-Aware Reward). Across three Medical VQA benchmarks, CARE achieves highest diagnostic accuracy with lowest Expected Calibration Error and Hallucination Rate. (Accepted at MICCAI 2026)",
   "url": "https://arxiv.org/abs/2608.10964",
   "pdf_url": "https://arxiv.org/pdf/2608.10964",
   "doi": "10.48550/arXiv.2608.10964",
@@ -4257,7 +4257,7 @@
    "hallucination",
    "reliability"
   ],
-  "relevance": "Methodology for confidence-aware clinical VQA reasoning — directly relevant to clinical AI safety/calibration and OE-style physician-AI teaming at point of care",
+  "relevance": "Methodology for confidence-aware clinical VQA reasoning \u2014 directly relevant to clinical AI safety/calibration and OE-style physician-AI teaming at point of care",
   "key_findings": [
    "Identifies confidence miscalibration as a systematic gap in medical MLLMs",
    "Dual-stage pipeline: cold-start Medical-CoT SFT + GRPO with Confidence-Aware Reward tying confidence to correctness",
@@ -4276,7 +4276,7 @@
   "source": "arxiv",
   "type": "clinical_decision_support",
   "title": "Offline Reinforcement Learning for Hemodynamic Management of Sepsis in the ICU: a MIMIC-IV Study with Dual Off-Policy Evaluation",
-  "authors": "Marc Pérez-Roig, David Fernández-Narro, Carlos Sáez",
+  "authors": "Marc P\u00e9rez-Roig, David Fern\u00e1ndez-Narro, Carlos S\u00e1ez",
   "abstract": "Models fluid and vasopressor dosing for sepsis on 36,872 MIMIC-IV ICU stays as a discretized MDP (1,000 states, 25 actions). Estimates clinician behavior policy with random forest, evaluates learned policy with WIS and FQE. Learned policy exceeds clinician return (WIS 50.8, FQE 46.8 vs 38.2) while departing modestly from observed practice (TV 0.18), favoring less IV fluid. Proposes discordance-based clinical decision-support approach for sepsis management.",
   "url": "https://arxiv.org/abs/2608.16482",
   "pdf_url": "https://arxiv.org/pdf/2608.16482",
@@ -4292,7 +4292,7 @@
    "MIMIC-IV",
    "off-policy evaluation"
   ],
-  "relevance": "Clinical decision support system for ICU hemodynamic management using RL with rigorous off-policy evaluation — directly relevant to CDSS methodology."
+  "relevance": "Clinical decision support system for ICU hemodynamic management using RL with rigorous off-policy evaluation \u2014 directly relevant to CDSS methodology."
  },
  {
   "id": "arxiv:2608.15424",
@@ -4300,13 +4300,13 @@
   "type": "safety_evaluation",
   "title": "ETHOS: Towards a Modular Ethics Framework for Clinical Multi-Agent Systems",
   "authors": "Rakesh Sharma, Sydney Pugh, Cameron Beeche, Pankhuri Singhal, Rachel Wu, Margaret Eby, Jeffrey Duda, James Gee, Kyra O'Brien, Hersh Sagreiya, Marina Serper, Victoria Gershuni, Angela Bradbury, Anurag Verma, Eric Eaton, Kevin B. Johnson, Walter Witschey",
-  "abstract": "Modular ethics framework (ETHOS) designed as a governance meta-agent integrable into any clinical multi-agent system without architectural changes. Translates ethical requirements into runtime oversight via deterministic checks, contextual reviews, and a final ethics critic. Demonstrated in hepatology clinical decision-support MAS — improves decision reliability by detecting incomplete, inconsistent, or out-of-scope evidence and increasing abstention when safe recommendations cannot be supported.",
+  "abstract": "Modular ethics framework (ETHOS) designed as a governance meta-agent integrable into any clinical multi-agent system without architectural changes. Translates ethical requirements into runtime oversight via deterministic checks, contextual reviews, and a final ethics critic. Demonstrated in hepatology clinical decision-support MAS \u2014 improves decision reliability by detecting incomplete, inconsistent, or out-of-scope evidence and increasing abstention when safe recommendations cannot be supported.",
   "url": "https://arxiv.org/abs/2608.15424",
   "pdf_url": "https://arxiv.org/pdf/2608.15424",
   "doi": "10.48550/arXiv.2608.15424",
   "published": "2026-08-15",
   "updated": "2026-08-15",
-  "journal": "arXiv preprint (cs.MA, cs.AI) — submitted to Pacific Symposium on Biocomputing 2027",
+  "journal": "arXiv preprint (cs.MA, cs.AI) \u2014 submitted to Pacific Symposium on Biocomputing 2027",
   "tags": [
    "clinical AI safety",
    "multi-agent systems",
@@ -4315,7 +4315,7 @@
    "abstention",
    "hepatology"
   ],
-  "relevance": "Practical ethics governance framework for clinical multi-agent AI systems — directly addresses safety oversight in clinical decision support."
+  "relevance": "Practical ethics governance framework for clinical multi-agent AI systems \u2014 directly addresses safety oversight in clinical decision support."
  },
  {
   "id": "arxiv:2608.15254",
@@ -4323,7 +4323,7 @@
   "type": "safety_evaluation",
   "title": "Demographic Injection in Medical Language Models under Diversity, Equity, and Inclusion Prompts",
   "authors": "Diego Mardian, Frank Liu",
-  "abstract": "Shows that a one-sentence DEI prompt appended to medical questions causes 47 LLMs to inject patient demographic attributes (race, SES, sex) the question never stated — raising injection rate from 0.7% to 33.1% (47x) across 47 models, 4 medical benchmarks, and 376,000 responses. A smaller subset (0.25-2.4%) attaches invented demographics to specific patients or changes the selected answer, 99.8% toward the incorrect option. Demonstrates a general mechanism: any instruction nudging model reasoning can introduce unrequested patient details that alter clinical recommendations.",
+  "abstract": "Shows that a one-sentence DEI prompt appended to medical questions causes 47 LLMs to inject patient demographic attributes (race, SES, sex) the question never stated \u2014 raising injection rate from 0.7% to 33.1% (47x) across 47 models, 4 medical benchmarks, and 376,000 responses. A smaller subset (0.25-2.4%) attaches invented demographics to specific patients or changes the selected answer, 99.8% toward the incorrect option. Demonstrates a general mechanism: any instruction nudging model reasoning can introduce unrequested patient details that alter clinical recommendations.",
   "url": "https://arxiv.org/abs/2608.15254",
   "pdf_url": "https://arxiv.org/pdf/2608.15254",
   "doi": "10.48550/arXiv.2608.15254",
@@ -4339,7 +4339,7 @@
    "47 models",
    "medical benchmarks"
   ],
-  "relevance": "Large-scale evaluation across 47 models and 4 medical benchmarks revealing a novel safety failure mode in medical LLMs — directly relevant to clinical AI safety and benchmarking."
+  "relevance": "Large-scale evaluation across 47 models and 4 medical benchmarks revealing a novel safety failure mode in medical LLMs \u2014 directly relevant to clinical AI safety and benchmarking."
  },
  {
   "id": "arxiv:2608.14157",
@@ -4362,7 +4362,7 @@
    "multimodal",
    "clinical decision support"
   ],
-  "relevance": "Clinical decision support methodology improvement — demonstrates that temporal redundancy removal in clinical notes improves RL-based CDSS performance."
+  "relevance": "Clinical decision support methodology improvement \u2014 demonstrates that temporal redundancy removal in clinical notes improves RL-based CDSS performance."
  },
  {
   "id": "arxiv:2608.14804",
@@ -4386,7 +4386,7 @@
    "patient state",
    "audit framework"
   ],
-  "relevance": "Conceptual framework for clinical AI accountability and governance — directly relevant to evaluating how clinical AI tools like OpenEvidence maintain and govern patient state over time. The six-level maturity framework provides an audit instrument for current LLM-centric clinical AI systems."
+  "relevance": "Conceptual framework for clinical AI accountability and governance \u2014 directly relevant to evaluating how clinical AI tools like OpenEvidence maintain and govern patient state over time. The six-level maturity framework provides an audit instrument for current LLM-centric clinical AI systems."
  },
  {
   "id": "arxiv:2608.18135",
@@ -4411,7 +4411,7 @@
    "machine learning",
    "NLP"
   ],
-  "relevance": "Directly relevant to clinical AI decision support tools — evaluates CDSS and AI applications for medication safety in resource-limited settings, a key deployment context for tools like OpenEvidence."
+  "relevance": "Directly relevant to clinical AI decision support tools \u2014 evaluates CDSS and AI applications for medication safety in resource-limited settings, a key deployment context for tools like OpenEvidence."
  },
  {
   "id": "arxiv:2607.23290",
@@ -4437,7 +4437,7 @@
    "diagnosis",
    "treatment planning"
   ],
-  "relevance": "Highly relevant — multi-LLM ensemble approach for clinical decision support across full care pathway. RarelensBench benchmarks frontier models on rare disease care. Physician-AI teaming evaluation with 23 physicians directly comparable to OpenEvidence's clinical AI deployment model."
+  "relevance": "Highly relevant \u2014 multi-LLM ensemble approach for clinical decision support across full care pathway. RarelensBench benchmarks frontier models on rare disease care. Physician-AI teaming evaluation with 23 physicians directly comparable to OpenEvidence's clinical AI deployment model."
  },
  {
   "id": "pmid:42629964",
@@ -4571,7 +4571,7 @@
   ],
   "relevance": "Directly evaluates clinical AI safety by auditing whether chain-of-thought reasoning in medical LLMs is faithful or merely decorative. Introduces the Chain-Decoupling Rate (CDR) as a reusable yardstick. 14 LLMs tested on 4 medical QA benchmarks including MedQA.",
   "key_findings": [
-   "72.9% Chain-Decoupling Rate — chain does not register clinically meaningful edits and answer does not flip",
+   "72.9% Chain-Decoupling Rate \u2014 chain does not register clinically meaningful edits and answer does not flip",
    "Chain corruption leaves accuracy unchanged, removing CoT prompting does not reduce accuracy",
    "Pattern holds across medical and reasoning fine-tuning and scale",
    "Two board-certified clinicians confirm 98.5% of gold answers remain defensible after perturbation"
@@ -4594,7 +4594,7 @@
   "doi": null,
   "published": "2026-08-24",
   "updated": "2026-08-24",
-  "journal": "arXiv preprint (cs.CL) — Accepted at IDAP'26",
+  "journal": "arXiv preprint (cs.CL) \u2014 Accepted at IDAP'26",
   "tags": [
    "clinical decision support",
    "SDoH bias",
@@ -4605,7 +4605,7 @@
   ],
   "relevance": "Directly evaluates clinical decision support safety by measuring whether medical LLMs change answers based on patient narrative voice rather than clinical content. Introduces narrative sensitivity error metric.",
   "key_findings": [
-   "31.67% narrative sensitivity error — models change answers when same case written in different patient voice",
+   "31.67% narrative sensitivity error \u2014 models change answers when same case written in different patient voice",
    "Qwen2.5 7B: 56.33% accuracy, 40.33% correct consistency",
    "Paired McNemar tests show significant accuracy gains for 7B over 3B in all prompt settings",
    "Trustworthy clinical decision support requires evaluating stability across medically equivalent patient narratives"
@@ -4678,7 +4678,7 @@
    "clinical decision support",
    "fine-tuning"
   ],
-  "relevance": "RAG-based clinical AI evaluation — demonstrates that expert reasoning supervision in critical care improves broader clinical reasoning. Directly relevant to OpenEvidence's RAG architecture and clinical decision support approach.",
+  "relevance": "RAG-based clinical AI evaluation \u2014 demonstrates that expert reasoning supervision in critical care improves broader clinical reasoning. Directly relevant to OpenEvidence's RAG architecture and clinical decision support approach.",
   "key_findings": [
    "Clin-REACT models outperformed backbone models across 5 clinical reasoning benchmarks",
    "Gains extended to script concordance tests and downstream diagnosis/treatment tasks",
@@ -4718,6 +4718,88 @@
   "key_findings": "Introduces MEGA-CDP, a benchmark with 42,353 clinical cases from 2,274 guidelines evaluating whether medical LLMs can generate guideline-adherent clinical decision pathways. Tests 16 LLMs in single-turn and multi-turn settings. Finds that reliable clinical decision support remains challenging for current models.",
   "tools_evaluated": "16 representative LLMs (unspecified which specific clinical AI tools)",
   "scale": "42,353 clinical cases from 2,274 English and Chinese clinical practice guidelines",
+  "status": "new"
+ },
+ {
+  "id": "arxiv:2608.31128",
+  "source": "arxiv",
+  "type": "clinical_decision_support",
+  "title": "DIASENTINEL: An Auditable Multi-Agent System for Guideline-Grounded Diabetes Risk Screening",
+  "authors": "Shueh YW, Chen ZJ, Hsu CH, Hsu HL, Zhang D, Wu C, Ding JE, Zhang T, Yang S, Hu P, Hung FM, Liu F",
+  "abstract": "DIASENTINEL is a fully on-premise multi-agent system for one-year T2DM risk screening and guideline-grounded report generation from EHRs. Integrates calibrated risk prediction, deterministic clinical signal extraction, Reciprocal Rank Fusion over ADA guidelines, and a hybrid verification layer (rule-based + LLM entailment). Provides real-time batch-screening dashboard and interactive patient report with cited recommendations and verification results.",
+  "url": "https://arxiv.org/abs/2608.31128v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.31128v1",
+  "doi": "",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "journal": "arXiv preprint (cs.CL)",
+  "tags": [
+   "clinical decision support",
+   "RAG",
+   "guideline-grounded",
+   "diabetes",
+   "multi-agent",
+   "verification",
+   "safety"
+  ],
+  "relevance": "high",
+  "key_findings": "On-premise multi-agent CDS with RAG over ADA guidelines and hybrid verification. Directly relevant to OE-class RAG-based clinical AI architecture and evidence-grounded recommendation generation with audit trail.",
+  "tools_evaluated": "DIASENTINEL (custom system)",
+  "scale": "EHR-based screening demo",
+  "status": "new"
+ },
+ {
+  "id": "arxiv:2609.00076",
+  "source": "arxiv",
+  "type": "safety_framework",
+  "title": "AI Morbidity and Mortality: A Framework for Clinical AI Failure Review",
+  "authors": "Mui P, Sittig DF, Labkoff S, Basu S",
+  "abstract": "Proposes AI M&M, a structured blameless framework for case-based review of clinical AI failures. Combines standardized case intake, evidence preservation, tool-in-loop attribution, and corrective-action tracking. Classifies events across four dimensions: Trigger, Mechanism, Clinical Pathway, Corrective Action. Demonstrated with five illustrative outpatient medication and clinical decision-support cases.",
+  "url": "https://arxiv.org/abs/2609.00076v1",
+  "pdf_url": "https://arxiv.org/pdf/2609.00076v1",
+  "doi": "",
+  "published": "2026-08-31",
+  "updated": "2026-08-31",
+  "journal": "arXiv preprint (cs.AI)",
+  "tags": [
+   "clinical AI safety",
+   "failure review",
+   "governance",
+   "decision support",
+   "attribution",
+   "accountability"
+  ],
+  "relevance": "high",
+  "key_findings": "First structured clinical AI failure review framework (AI M&M). Four-axis classification: Trigger-Mechanism-Clinical Pathway-Corrective Action. Two clinician reviewers reached agreement on all 20 axis-level classifications across 5 cases. Complements model monitoring and patient safety reporting for institutional learning from AI-in-workflow failures.",
+  "tools_evaluated": "Framework (not tool-specific)",
+  "scale": "5 illustrative outpatient cases",
+  "status": "new"
+ },
+ {
+  "id": "arxiv:2608.17124",
+  "source": "arxiv",
+  "type": "llm_reliability",
+  "title": "A decodability criterion predicts when hidden-state selection beats majority voting in large language models",
+  "authors": "Wang Z, Hong Z, Bagci U",
+  "abstract": "Proposes CASE (Correctness-Axis Selection), a dynamic selection combiner that trains a linear gate on answer-token hidden states. Introduces decodability, a leakage-free measure predicting whether hidden-state selection outperforms majority voting. Across general and medical LLMs, CASE improves over voting by up to 19 points on medium-difficulty and 16.8 points on hard questions.",
+  "url": "https://arxiv.org/abs/2608.17124v1",
+  "pdf_url": "https://arxiv.org/pdf/2608.17124v1",
+  "doi": "",
+  "published": "2026-08-17",
+  "updated": "2026-08-17",
+  "journal": "arXiv preprint (cs.AI)",
+  "tags": [
+   "medical LLM",
+   "reliability",
+   "hidden-state selection",
+   "majority voting",
+   "decodability",
+   "test-time fusion"
+  ],
+  "relevance": "medium",
+  "key_findings": "Decodability (AUC~0.60 threshold) predicts when learned selection beats voting. CASE improves medical LLM accuracy by up to 19 pts on medium-difficulty questions. Decodability depends on aligned knowledge, not scale. Practical criterion for choosing between selection and voting in medical LLM deployments.",
+  "tools_evaluated": "General and medical LLMs (unspecified specific clinical AI tools)",
+  "scale": "Multiple medical QA benchmarks",
   "status": "new"
  }
 ]
