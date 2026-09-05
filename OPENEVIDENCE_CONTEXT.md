@@ -248,6 +248,9 @@
 ### This File
 - `/OPENEVIDENCE_CONTEXT.md` — this comprehensive agent context file
 
+### Progressive Disclosure Entry Point
+- `/SKILL.md` — start here if you are an AI agent. It tells you what to read first, what to load only when needed, and how to avoid context overload.
+
 ---
 
 ## 8. Website Structure

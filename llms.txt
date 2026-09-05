@@ -27,6 +27,9 @@
 ## Agent Context File
 - /OPENEVIDENCE_CONTEXT.md — comprehensive single-file snapshot: company overview, funding, adoption metrics, complete feature list (2023–2026), all partnerships, competitive landscape, research benchmarks, data endpoints, and website structure. Any agent can download and ingest this to get full context without crawling the site.
 
+## Agent Skill / Progressive Disclosure Guide
+- /SKILL.md — the entry point for AI agents. Start here for ordered, progressive context: what to read first, which endpoints to use for chronology, and which pages to visit for each domain. Prevents context overload by only loading deeper resources when needed.
+
 ## Notes for Agents
 - Timeline is descending (newest first)
 - Publications include PMID, arXiv ID, and DOI where available
