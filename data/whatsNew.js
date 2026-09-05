@@ -6,6 +6,53 @@
 var whatsNewData = [
   {
     date: "September 5, 2026",
+    updated: "Weekly update (Sat Sep 5, 6:20 AM ET) — Venice Augment Search (15 queries) + arXiv API (50 entries) + PubMed eUtils (30 broad + 20 narrow) + openevidence.com/announcements scrape. 7 new PubMed papers added to research.json. 6 new benchmark entries. 12 new timeline entries. All 50 arXiv results already in research.json.",
+    items: [
+      {
+        cat: "OE Product — Model Family Launch",
+        title: "OpenEvidence Model Family: Osler, Sackett, Snow, and Darwin (Sep 3, 2026)",
+        desc: "OpenEvidence releases a new family of medical AI models named for founders of modern medicine. Osler (~5s) becomes the new default model. Sackett (~30s) is a deeper interactive search model. Snow (~5m) succeeds Deep Consult with full parallel literature investigation. Darwin — the most advanced medical AI model in the world — is in research preview: first AI to score perfect 100% on MedQA, also leading MedXpertQA (72.8%), HealthBench Professional (82.7%), and NOHARM (87.2%). Free to all verified clinicians on web, iOS, and Android."
+      },
+      {
+        cat: "Research — Reference Quality Audit",
+        title: "OpenEvidence reference quality validated across five medical specialties (PMID 42686938, npj Health Systems)",
+        desc: "Lotan et al. evaluated all 4,979 citations from 150 standardized prompts across five specialties. Zero fabricated references. Only 3 attribution errors. Most references recent and high-impact. First systematic reference-quality audit of OpenEvidence confirms RAG architecture integrity."
+      },
+      {
+        cat: "Research — Triage Safety",
+        title: "OpenEvidence errs on the safe side in structured triage benchmark (PMID 42673790, Int J Med Inform)",
+        desc: "Jia et al. tested 60 clinician-authored vignettes using the identical benchmark that found ChatGPT Health under-triaged 51.6% of emergencies. OpenEvidence demonstrated a conservative safety profile, erring on the safe side. Physician-facing RAG architecture produced safer triage than consumer chatbots."
+      },
+      {
+        cat: "Research — Randomized Vignette Study",
+        title: "Physicians rate OpenEvidence e-consultation advice 4.2-4.7/5 in randomized trial (PMID 42690592, J Gen Intern Med)",
+        desc: "Desjardins et al. randomized 44 internal medicine faculty to receive advice labeled as human- or AI-generated. OE advice rated highly across all domains. Management adoption jumped from 37.5% to 81.8% (OR 8.43). Source labeling had no significant effect — physicians trusted the content regardless."
+      },
+      {
+        cat: "Research — OE vs ChatGPT in Spine Care",
+        title: "OpenEvidence 2.0 outperforms ChatGPT-4o on citation validity in spine guideline queries (PMID 42674131, Spine J)",
+        desc: "Avrumova et al. conducted the first head-to-head comparison using cervical spine clinical guideline queries. OE superior on citation validity with verified peer-reviewed literature. ChatGPT generated fabricated references. Evaluated guideline alignment, sourcing, and prompt-engineering effects."
+      },
+      {
+        cat: "Research — Four-Way LLM Comparison in Orthopaedics",
+        title: "OpenEvidence tops four-LLM comparison on MIRCT surgical recommendations (PMID 42692242, J Shoulder Elbow Surg)",
+        desc: "Vauclin et al. tested 61 MIRCT Delphi consensus scenarios across OE, ChatGPT-4o, Gemini, and DeepSeek (976 recommendations). OE achieved highest concordance with expert consensus (65-69%). All LLMs fell short of expert-level decision-making."
+      },
+      {
+        cat: "Competitor — ChatGPT Health Epic Integration",
+        title: "ChatGPT Health adds Epic EHR integration for clinicians (Sep 1, 2026)",
+        desc: "TechCrunch reports ChatGPT Health now integrates with Epic EHR, enabling clinicians to access appointment notes, lab results, medications, and specialist documentation. Direct competitor to OpenEvidence's Epic integration. Free for verified US physicians, NPs, PAs, and pharmacists."
+      },
+      {
+        cat: "Competitor — Doximity AI Surge",
+        title: "Doximity stock surges 52.7% as CEO cites AI search profitability (Aug 7, 2026)",
+        desc: "Doximity CEO says each AI search generates 10x its cost in revenue. Q1 beat estimates, raised FY2027 guidance. 150+ health systems implemented. Doximity Ask topped NOHARM safety benchmark. Direct competitor to OpenEvidence's ad-supported model."
+      }
+    ]
+  },
+
+  {
+    date: "September 5, 2026",
     updated: "Daily announcement check (Sat Sep 5, 5:28 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements + arXiv API (30 entries). 1 new timeline entry: OpenEvidence Model Family launch (Sep 3). 3 new arXiv papers added to research.json.",
     items: [
       {
