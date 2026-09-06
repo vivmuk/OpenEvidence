@@ -5058,5 +5058,240 @@
     "tools_evaluated": [],
     "scale": "In silico study",
     "status": "published"
+  },
+  {
+    "id": "pmid:42543136",
+    "source": "pubmed",
+    "pmid": "42543136",
+    "type": "augmented_evidence_review",
+    "title": "Are retromuscular repairs always the best option for ventral hernias? Augmented evidence review",
+    "authors": "Melland-Smith M, Ly N, Kalsotra S, Blackman MH, Rosen MJ",
+    "abstract": "Third Augmented Evidence Review (AER) paper using OpenEvidence as the AI evidence stream. Examines whether retromuscular repairs are always optimal for ventral hernias, integrating ACHQC registry data, International Hernia Collaboration surgeon survey, and OpenEvidence AI-driven literature synthesis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42543136/",
+    "pdf_url": null,
+    "doi": "10.1016/j.gassur.2026.102539",
+    "published": "2026-08-02",
+    "updated": "2026-08-02",
+    "journal": "Journal of Gastrointestinal Surgery",
+    "tags": [
+      "OpenEvidence",
+      "augmented evidence review",
+      "ventral hernia",
+      "retromuscular repair",
+      "RAG",
+      "literature synthesis"
+    ],
+    "relevance": "Third AER-framework paper using OpenEvidence as the AI evidence stream for ventral hernia repair approach evaluation.",
+    "key_findings": [
+      "OpenEvidence performed the AI-driven literature review stream of the AER",
+      "Examines whether retromuscular repairs are always the best option for ventral hernias",
+      "Integrates ACHQC registry, IHC surgeon survey, and OE AI literature synthesis as three evidence streams",
+      "Published in Journal of Gastrointestinal Surgery"
+    ],
+    "tools_evaluated": [
+      "OpenEvidence"
+    ],
+    "scale": "ACHQC registry + IHC survey + AI literature synthesis",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42690663",
+    "source": "pubmed",
+    "pmid": "42690663",
+    "type": "llm_clinical_application",
+    "title": "Large Language Models and Adverse Event Detection Within Immunotherapy Clinical Trials",
+    "authors": "Elia MV, Friesner ID, Kwon D",
+    "abstract": "Study evaluating large language models for adverse event detection within immunotherapy clinical trials. Published in JAMA Network Open.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42690663/",
+    "pdf_url": null,
+    "doi": "10.1001/jamanetworkopen.2026.31840",
+    "published": "2026-09-01",
+    "updated": "2026-09-01",
+    "journal": "JAMA Network Open",
+    "tags": [
+      "LLM",
+      "adverse event detection",
+      "immunotherapy",
+      "clinical trials",
+      "AI clinical application"
+    ],
+    "relevance": "Evaluates LLMs for automated adverse event detection in immunotherapy clinical trials — relevant to clinical AI safety and decision support.",
+    "key_findings": [
+      "LLMs applied to adverse event detection in immunotherapy trials",
+      "Published in JAMA Network Open",
+      "Demonstrates LLM utility for clinical trial safety monitoring"
+    ],
+    "tools_evaluated": [
+      "Large Language Models (general)"
+    ],
+    "scale": "Immunotherapy clinical trials",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42658846",
+    "source": "pubmed",
+    "pmid": "42658846",
+    "type": "llm_clinical_application",
+    "title": "Extracting adverse event nature, severity, timelines and resulting interventions from clinical notes of patients receiving CAR-T cell therapy using large language models",
+    "authors": "Guillot J, Miao B, Suresh A",
+    "abstract": "Study using large language models to extract adverse event nature, severity, timelines, and resulting interventions from clinical notes of CAR-T cell therapy patients. Published in PLOS Digital Health.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42658846/",
+    "pdf_url": null,
+    "doi": "10.1371/journal.pdig.0001426",
+    "published": "2026-08-27",
+    "updated": "2026-08-27",
+    "journal": "PLOS Digital Health",
+    "tags": [
+      "LLM",
+      "adverse event",
+      "CAR-T cell therapy",
+      "clinical notes",
+      "NLP",
+      "AI clinical application"
+    ],
+    "relevance": "LLMs for clinical adverse event extraction from notes — relevant to clinical AI safety monitoring and decision support.",
+    "key_findings": [
+      "LLMs used to extract adverse event details from CAR-T therapy clinical notes",
+      "Captures nature, severity, timelines, and interventions",
+      "Published in PLOS Digital Health"
+    ],
+    "tools_evaluated": [
+      "Large Language Models (general)"
+    ],
+    "scale": "CAR-T cell therapy patients",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42700364",
+    "source": "pubmed",
+    "pmid": "42700364",
+    "type": "llm_healthcare_evaluation",
+    "title": "Less can be better: decomposing clinical data modalities in large language model-based healthcare applications",
+    "authors": "Peng C, Lyu M, Chen Z",
+    "abstract": "Study decomposing clinical data modalities in LLM-based healthcare applications, finding that fewer modalities can outperform comprehensive data inputs. Published in JAMIA.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42700364/",
+    "pdf_url": null,
+    "doi": "10.1093/jamia/ocag146",
+    "published": "2026-09-05",
+    "updated": "2026-09-05",
+    "journal": "Journal of the American Medical Informatics Association",
+    "tags": [
+      "LLM",
+      "clinical data",
+      "data modalities",
+      "healthcare AI",
+      "evaluation"
+    ],
+    "relevance": "Evaluates how different clinical data modalities affect LLM-based healthcare applications — relevant to clinical AI optimization.",
+    "key_findings": [
+      "Decomposing clinical data modalities reveals fewer inputs can outperform comprehensive data",
+      "Published in JAMIA",
+      "Implications for clinical AI tool design and data integration strategies"
+    ],
+    "tools_evaluated": [
+      "Large Language Models (general)"
+    ],
+    "scale": "Multi-modal clinical data",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42700049",
+    "source": "pubmed",
+    "pmid": "42700049",
+    "type": "llm_diagnostic_evaluation",
+    "title": "Comparative evaluation of large language models for text-based diagnostic reasoning in fetal central nervous system MRI: A retrospective single-center diagnostic accuracy study",
+    "authors": "Yu R, Peng M, Li H",
+    "abstract": "Comparative evaluation of LLMs for text-based diagnostic reasoning in fetal CNS MRI. Retrospective single-center diagnostic accuracy study. Published in Medicine.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42700049/",
+    "pdf_url": null,
+    "doi": "10.1097/MD.0000000000050485",
+    "published": "2026-09-05",
+    "updated": "2026-09-05",
+    "journal": "Medicine (Baltimore)",
+    "tags": [
+      "LLM",
+      "diagnostic reasoning",
+      "fetal MRI",
+      "comparative evaluation",
+      "AI clinical"
+    ],
+    "relevance": "Head-to-head LLM comparison for diagnostic reasoning in fetal CNS MRI — relevant to clinical AI evaluation.",
+    "key_findings": [
+      "Comparative evaluation of multiple LLMs for fetal CNS MRI diagnostic reasoning",
+      "Retrospective single-center design",
+      "Published in Medicine"
+    ],
+    "tools_evaluated": [
+      "Large Language Models (multiple)"
+    ],
+    "scale": "Single-center retrospective",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42700004",
+    "source": "pubmed",
+    "pmid": "42700004",
+    "type": "chatgpt_education_rct",
+    "title": "A comparative evaluation of ChatGPT-assisted and traditional methods of teaching diagnostic assessments to medical students: A randomized controlled study",
+    "authors": "Xu H, Sun Y, Mo ZW",
+    "abstract": "Randomized controlled trial comparing ChatGPT-assisted teaching with traditional methods for diagnostic assessments in medical student education. Published in Medicine.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42700004/",
+    "pdf_url": null,
+    "doi": "10.1097/MD.0000000000050512",
+    "published": "2026-09-05",
+    "updated": "2026-09-05",
+    "journal": "Medicine (Baltimore)",
+    "tags": [
+      "ChatGPT",
+      "medical education",
+      "randomized controlled trial",
+      "diagnostic assessment",
+      "AI clinical"
+    ],
+    "relevance": "RCT of ChatGPT-assisted medical education — relevant to clinical AI tool evaluation and physician-AI teaming.",
+    "key_findings": [
+      "RCT comparing ChatGPT-assisted vs traditional diagnostic assessment teaching",
+      "Medical students as participants",
+      "Published in Medicine"
+    ],
+    "tools_evaluated": [
+      "ChatGPT"
+    ],
+    "scale": "RCT, medical students",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42701163",
+    "source": "pubmed",
+    "pmid": "42701163",
+    "type": "llm_clinical_application",
+    "title": "From zero-shot to fine-tuning: optimize large language models for error detection of ultrasound reports",
+    "authors": "Lai M, Zhang J, Lv Y",
+    "abstract": "Study optimizing LLMs from zero-shot to fine-tuning for error detection in ultrasound reports. Published in Insights into Imaging.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42701163/",
+    "pdf_url": null,
+    "doi": "10.1186/s13244-026-02394-2",
+    "published": "2026-09-05",
+    "updated": "2026-09-05",
+    "journal": "Insights into Imaging",
+    "tags": [
+      "LLM",
+      "error detection",
+      "ultrasound",
+      "zero-shot",
+      "fine-tuning",
+      "AI clinical"
+    ],
+    "relevance": "LLM optimization for clinical report error detection — relevant to clinical AI safety and quality assurance.",
+    "key_findings": [
+      "LLMs optimized from zero-shot to fine-tuning for ultrasound report error detection",
+      "Published in Insights into Imaging",
+      "Demonstrates practical clinical AI quality assurance pipeline"
+    ],
+    "tools_evaluated": [
+      "Large Language Models (general)"
+    ],
+    "scale": "Ultrasound reports",
+    "status": "published"
   }
 ]

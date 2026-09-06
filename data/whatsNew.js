@@ -5,6 +5,47 @@
 
 var whatsNewData = [
   {
+    date: "September 6, 2026",
+    updated: "Weekly update (Sun Sep 6, 5:00 PM ET) — Venice Augment Search (15 queries) + arXiv API (50 entries) + PubMed eutils (30 broad + 30 narrow) + openevidence.com/announcements. 7 new PubMed papers added to research.json. 2 new benchmark entries. 8 new timeline entries. AMSSM partnership added. All 50 arXiv results already in research.json. Key findings: OpenEvidence $300M annualized revenue (Becker's/The Information Jul 17). STAT benchmark trust article (Jul 29). FDA GenAI device discussion paper (Aug 15). ARISE MAST benchmark launch. Pacific AI testing report. Clinical readiness claims article (Sep 6).",
+    items: [
+      {
+        cat: "Funding — Revenue Milestone",
+        title: "OpenEvidence annualized revenue hits $300M (Jul 2026)",
+        desc: "Sacra estimates OpenEvidence hit $300M annualized revenue in July 2026, doubling from $150M at end of 2025. The Information reports OpenEvidence weighed $200M raise at $20B valuation but is unlikely to proceed. Acquisition talks with a large technology company also reported."
+      },
+      {
+        cat: "Media — Benchmark Trust Debate",
+        title: "STAT examines whether doctors can trust clinical AI benchmarks (Jul 29)",
+        desc: "STAT News Katie Palmer reports on conflicting benchmark studies. NYU Langone Nature Medicine study found frontier LLMs beat specialized tools. Real-POCQi preprint using OE's own queries found OpenEvidence ahead. Article explores why two rigorous 2026 studies reached opposite conclusions and what it means for clinical AI trust."
+      },
+      {
+        cat: "Research — 7 New PubMed Papers",
+        title: "Weekly PubMed sweep adds 7 new papers to research.json",
+        desc: "AER ventral hernia retromuscular repair (PMID 42543136, J Gastrointest Surg). LLM adverse event detection in immunotherapy trials (PMID 42690663, JAMA Netw Open). LLM CAR-T adverse event extraction (PMID 42658846, PLOS Digit Health). LLM clinical data modality decomposition (PMID 42700364, JAMIA). LLM fetal CNS MRI diagnostic reasoning (PMID 42700049, Medicine). ChatGPT diagnostic assessment teaching RCT (PMID 42700004, Medicine). LLM ultrasound report error detection (PMID 42701163, Insights Imaging)."
+      },
+      {
+        cat: "Regulatory — FDA GenAI Devices",
+        title: "FDA issues discussion paper on GenAI-enabled medical devices (Aug 15)",
+        desc: "FDA seeks public feedback by Oct 19 2026 on risk assessment, premarket evaluation, and postmarket monitoring for generative AI-enabled medical devices. Proposes competency-based assessment inspired by physician training. Covers foundation models and agentic AI systems. Impacts all clinical AI tools."
+      },
+      {
+        cat: "Research — ARISE MAST Benchmark",
+        title: "ARISE launches MAST benchmark suite for clinical AI safety",
+        desc: "Stanford-Harvard ARISE Network launches Medical AI Superintelligence Test (MAST). Evaluates clinical AI systems for safety, accuracy, and reliability across medical domains. Highest-scoring system did not reach 63%. Clinician-focused ranking includes medical-specialized models."
+      },
+      {
+        cat: "Research — Clinical Readiness Claims",
+        title: "Academic analysis calls for trustworthy clinical readiness claims from benchmark scores (Sep 6)",
+        desc: "Peer-reviewed analysis argues medical AI benchmark scores do not reliably predict clinical readiness. Calls for standardized reporting guidelines, regulatory oversight, and benchmark validation frameworks. Highlights gap between controlled test performance and real-world deployment."
+      },
+      {
+        cat: "Partnership — AMSSM",
+        title: "American Medical Society for Sports Medicine partners with OpenEvidence (Aug 27)",
+        desc: "Exclusive collaboration to co-develop AI-powered educational resources on sports medicine for both patients and clinicians. Brings AMSSM sports medicine physician expertise to the OpenEvidence platform."
+      }
+    ]
+  },
+  {
     date: "September 5, 2026",
     updated: "Weekly update (Sat Sep 5, 6:20 AM ET) — Venice Augment Search (15 queries) + arXiv API (50 entries) + PubMed eUtils (30 broad + 20 narrow) + openevidence.com/announcements scrape. 7 new PubMed papers added to research.json. 6 new benchmark entries. 12 new timeline entries. All 50 arXiv results already in research.json.",
     items: [

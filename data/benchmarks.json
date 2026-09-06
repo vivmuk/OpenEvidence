@@ -1861,5 +1861,47 @@
     "scale": "Framework paper",
     "domain": "cross-domain",
     "status": "published"
+  },
+  {
+    "id": "pmid:42700004",
+    "source": "pubmed",
+    "type": "education_rct",
+    "title": "ChatGPT-assisted vs Traditional Teaching of Diagnostic Assessments: RCT",
+    "authors": "Xu H, Sun Y, Mo ZW",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42700004/",
+    "published": "2026-09-05",
+    "updated": "2026-09-05",
+    "journal": "Medicine (Baltimore)",
+    "tools_evaluated": "ChatGPT vs traditional methods",
+    "scale": "RCT, medical students",
+    "key_findings": [
+      "Randomized controlled trial of ChatGPT-assisted diagnostic assessment teaching",
+      "Comparative evaluation against traditional teaching methods",
+      "Medical education AI integration study"
+    ],
+    "relevance": "medium",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42700049",
+    "source": "pubmed",
+    "type": "diagnostic_accuracy",
+    "title": "Comparative LLM Evaluation for Fetal CNS MRI Diagnostic Reasoning",
+    "authors": "Yu R, Peng M, Li H",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42700049/",
+    "published": "2026-09-05",
+    "updated": "2026-09-05",
+    "journal": "Medicine (Baltimore)",
+    "tools_evaluated": "Multiple LLMs (comparative)",
+    "scale": "Single-center retrospective",
+    "key_findings": [
+      "Head-to-head LLM comparison for fetal CNS MRI diagnostic reasoning",
+      "Retrospective diagnostic accuracy study",
+      "Multi-model evaluation in radiology context"
+    ],
+    "relevance": "medium",
+    "status": "published",
+    "new": true
   }
 ]
