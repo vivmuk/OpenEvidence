@@ -1903,5 +1903,29 @@
     "relevance": "medium",
     "status": "published",
     "new": true
+  },
+  {
+    "id": "arxiv:2609.09070",
+    "source": "arxiv",
+    "type": "benchmark_evaluation",
+    "title": "Performance of Clinical AI System and Physicians and Frontier Language Models in primary care diagnostics",
+    "authors": "Andy Nkansah, Hanna Plotnitskaya, Stanislau Salavei, Anna Kozlova, Piotr Gibas, Julian Milek, Viktar Harbachou, Aleksey Ropan, Pavel Satalkin",
+    "url": "https://arxiv.org/abs/2609.09070v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.09070v1",
+    "published": "2026-09-08",
+    "journal": "arXiv preprint (cs.CL, cs.AI, cs.HC)",
+    "tools_evaluated": "Doctorina, 8 physicians, 4 frontier LLMs (incl. Kimi K3, Claude Opus 5)",
+    "scale": "150 synthetic Polish-language primary-care consultations",
+    "key_findings": [
+      "Doctorina 82.0% Top-1 concordance vs physicians 57.0% (25.0 pp difference, 95% CI 17.7-32.7)",
+      "97.3% primary-or-reference-differential concordance vs 85.0% for physicians",
+      "Workup scores: Doctorina 89.4 vs physicians 66.9",
+      "Treatment scores: Doctorina 83.7 vs physicians 61.2",
+      "Doctorina highest diagnostic point estimates; Kimi K3 next; Claude Opus 5 led management estimates",
+      "Second execution reproduced advantages"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
   }
 ]

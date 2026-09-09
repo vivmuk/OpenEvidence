@@ -5293,5 +5293,47 @@
     ],
     "scale": "Ultrasound reports",
     "status": "published"
+  },
+  {
+    "id": "arxiv:2609.09070",
+    "source": "arxiv",
+    "type": "benchmark_evaluation",
+    "title": "Performance of Clinical AI System and Physicians and Frontier Language Models in primary care diagnostics",
+    "authors": "Andy Nkansah, Hanna Plotnitskaya, Stanislau Salavei, Anna Kozlova, Piotr Gibas, Julian Milek, Viktar Harbachou, Aleksey Ropan, Pavel Satalkin",
+    "abstract": "Clinical AI evaluation comparing Doctorina, eight physicians, and four standalone frontier language models in 150 synthetic Polish-language primary-care consultations. Doctorina achieved 82.0% Top-1 concordance versus 57.0% for physicians (difference 25.0 pp; 95% CI 17.7-32.7) and 97.3% versus 85.0% primary-or-reference-differential concordance. Normalized workup and treatment scores were 89.4 vs 66.9 and 83.7 vs 61.2. Doctorina had highest diagnostic point estimates among all six groups; Kimi K3 ranked next, while Claude Opus 5 led closely spaced management estimates. A second Doctorina execution reproduced advantages over physicians across all outcomes.",
+    "url": "https://arxiv.org/abs/2609.09070v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.09070v1",
+    "doi": "10.48550/arXiv.2609.09070",
+    "published": "2026-09-08",
+    "updated": "2026-09-08",
+    "journal": "arXiv preprint (cs.CL, cs.AI, cs.HC)",
+    "tags": [
+      "clinical AI benchmark",
+      "Doctorina",
+      "primary care",
+      "diagnostics",
+      "frontier LLMs",
+      "physician comparison",
+      "Kimi K3",
+      "Claude Opus 5"
+    ],
+    "relevance": "Direct benchmark of a clinical AI system (Doctorina) against physicians and frontier LLMs in primary care diagnostics — comparative evaluation across diagnosis, workup, and treatment in 150 consultations.",
+    "key_findings": [
+      "Doctorina achieved 82.0% Top-1 diagnostic concordance vs 57.0% for physicians (25.0 pp difference)",
+      "97.3% primary-or-reference-differential concordance vs 85.0% for physicians",
+      "Doctorina had highest diagnostic point estimates among all six groups tested",
+      "Kimi K3 ranked next after Doctorina in diagnostic performance",
+      "Claude Opus 5 led management estimates among frontier LLMs",
+      "Second Doctorina execution reproduced advantages over physicians across all outcomes",
+      "150 synthetic Polish-language primary-care consultations used as test cases"
+    ],
+    "tools_evaluated": [
+      "Doctorina (clinical AI system)",
+      "Kimi K3",
+      "Claude Opus 5",
+      "Four standalone frontier language models"
+    ],
+    "scale": "150 synthetic primary-care consultations, 8 physicians, 4 frontier LLMs",
+    "status": "preprint"
   }
 ]
