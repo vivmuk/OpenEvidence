@@ -36,6 +36,5 @@ var globalMatrixData = [
   {platform:"Keragon",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"NHS App AI Triage",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Microsoft 365 Copilot (NHS)",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
-  {platform:"NHS App AI Triage",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"CliniComp PACS Viewer (AI-enabled)",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
-];
+];;
