@@ -1,4 +1,5 @@
 var partnersData = [
+{name:"MINC#NIMC",type:"Canadian Physician Verification",date:"Sep 11, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-mincnimc-partner-to-ensure-free-access-for-canadian-physicians-to-leading-medical-ai-platform",new:true},
 {name:"OneOncology",type:"Oncology Network",date:"Aug 6, 2026",url:"https://www.openevidence.com/announcements/oneoncology-and-openevidence-partner-to-improve-cancer-care-nationwide",new:true},
   {name:"NEJM",type:"Content/Journal",date:"Feb 19, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-achieves-1-billion-valuation-in-sequoia-led-round-and-announces-content-partnership-with-the-new-england-journal-of-medicine-302380960.html"},
   {name:"JAMA Network",type:"Content/Journal (11 journals)",date:"Jun 5, 2025",url:"https://www.prnewswire.com/news-releases/openevidence-and-the-jama-network-sign-strategic-content-agreement-302473690.html"},

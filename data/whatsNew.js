@@ -5,6 +5,18 @@
 
 var whatsNewData = [
   {
+    date: "September 12, 2026",
+    updated: "Daily announcement check (Sat Sep 12, 9:00 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements scrape + arXiv API (30 entries). 1 new timeline entry: MINC#NIMC Canadian physician verification partnership (Sep 11). All 30 arXiv results already in research.json.",
+    items: [
+      {
+        cat: "Partnership — Canadian Physician Verification",
+        title: "OpenEvidence and MINC#NIMC partner to ensure free access for Canadian physicians (Sep 11, 2026)",
+        desc: "OpenEvidence and the Medical Identification Number for Canada Corporation (MINC#NIMC) announce a partnership to streamline physician verification for Canada and support continued free access for verified Canadian clinicians. MINC is the trusted physician identification system used by 95%+ of Canadian physicians. Partnership strengthens physician identity checks for Canadian users and streamlines clinician access to the platform. First Canadian physician verification partnership."
+      }
+    ]
+  },
+
+  {
     date: "September 6, 2026",
     updated: "Weekly update (Sun Sep 6, 5:00 PM ET) — Venice Augment Search (15 queries) + arXiv API (50 entries) + PubMed eutils (30 broad + 30 narrow) + openevidence.com/announcements. 7 new PubMed papers added to research.json. 2 new benchmark entries. 8 new timeline entries. AMSSM partnership added. All 50 arXiv results already in research.json. Key findings: OpenEvidence $300M annualized revenue (Becker's/The Information Jul 17). STAT benchmark trust article (Jul 29). FDA GenAI device discussion paper (Aug 15). ARISE MAST benchmark launch. Pacific AI testing report. Clinical readiness claims article (Sep 6).",
     items: [
