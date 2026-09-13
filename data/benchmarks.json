@@ -1927,5 +1927,92 @@
     "relevance": "high",
     "status": "preprint",
     "new": true
+  },
+  {
+    "id": "pmid:42729682",
+    "source": "PubMed",
+    "type": "research",
+    "title": "Development and validation of a human-supervised AI-augmented living oncology evidence platform: a breast cancer pilot study",
+    "authors": [
+      "Rugo H",
+      "Forsythe A",
+      "Flora D",
+      "Glück S",
+      "Grieve S",
+      "Campden R",
+      "Liu RJ",
+      "Musat M",
+      "Rege JM",
+      "Kaufman PA",
+      "Coleman RL",
+      "Tarantino P",
+      "O'Shaughnessy J",
+      "Schwartzberg L"
+    ],
+    "abstract": "Oncologists face increasing difficulty staying current with rapidly evolving clinical data, guidelines, and regulatory updates. An agentic AI system (GPT-4.1, o3, Claude Sonnet-4) was designed to emulate expert-led Cochrane-compliant SLR workflows. Training data included 29,236 clinical trial abstracts. Living-OEP evidence quality was compared with ChatGPT, Perplexity, Consensus, and OpenEvidence using six criteria across eight BC treatment scenarios. The agentic AI review accuracy ranged from 95.1% to 97.2%. Compared with other AI tools, the Living-OEP provided more comprehensive and accurate evidence and linked all data to original publications and FDA labels.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42729682/",
+    "pdf_url": "",
+    "published": "2026-09-01",
+    "updated": "2026-09-01",
+    "journal": "ESMO Real World Data Digit Oncol",
+    "tags": [
+      "OpenEvidence",
+      "clinical AI",
+      "oncology",
+      "benchmark",
+      "RAG",
+      "evidence platform",
+      "head-to-head"
+    ],
+    "relevance": "high",
+    "key_findings": "Human-conducted AI-augmented living SLR integrated with guidelines outperformed ChatGPT, Perplexity, Consensus, and OpenEvidence on evidence quality across six criteria in eight breast cancer treatment scenarios. Agentic AI review accuracy 95.1-97.2%. Living-OEP linked all data to original publications and FDA labels. OpenEvidence compared as one of four AI chatbot tools.",
+    "tools_evaluated": [
+      "Living-OEP (GPT-4.1 + o3 + Claude Sonnet-4)",
+      "ChatGPT",
+      "Perplexity",
+      "Consensus",
+      "OpenEvidence"
+    ],
+    "scale": "29,236 training abstracts; 1,997 human annotations; 8 BC treatment scenarios",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42732183",
+    "source": "PubMed",
+    "type": "research",
+    "title": "High Accuracy, Questionable References: Large Language Models' Performance and Citation Reliability in Foot and Ankle Surgery Examinations",
+    "authors": [
+      "Nieves-Lopez B",
+      "Fabregas A",
+      "Del Rio Montesinos GF",
+      "Rosario-González JA",
+      "Santos-Agrait JL",
+      "Haupt ET",
+      "Aziz KT"
+    ],
+    "abstract": "Compared accuracy and citation reliability of ChatGPT-5.4, Gemini-3, and Copilot on 192 foot and ankle surgery SAE questions. ChatGPT-5.4 achieved highest accuracy (89.6%) vs Gemini-3 (76.6%) and Copilot (74.0%). ChatGPT-5.4 fabricated 22.9% of references, Gemini-3 16.1%, Copilot 2.8%. All models produced fabricated citations, underscoring need to verify AI-generated references.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42732183/",
+    "pdf_url": "",
+    "published": "2026-09-11",
+    "updated": "2026-09-11",
+    "journal": "Foot Ankle Orthop",
+    "tags": [
+      "LLM",
+      "medical education",
+      "benchmark",
+      "citation reliability",
+      "ChatGPT",
+      "Gemini",
+      "Copilot"
+    ],
+    "relevance": "medium",
+    "key_findings": "ChatGPT-5.4 highest accuracy (89.6%) on foot/ankle surgery board questions but highest citation fabrication rate (22.9%). All models fabricated references. Highlights safety concern with LLM-generated citations in clinical education.",
+    "tools_evaluated": [
+      "ChatGPT-5.4",
+      "Gemini-3",
+      "Copilot"
+    ],
+    "scale": "192 multiple-choice questions, 3 LLMs",
+    "status": "published"
   }
 ]

@@ -5,6 +5,33 @@
 
 var whatsNewData = [
   {
+    date: "September 13, 2026",
+    updated: "Weekly update (Sun Sep 13, 5:00 PM ET) — Venice Augment Search (8 OE queries + 4 competitor/benchmark queries) + PubMed eutils (30 broad + 10 narrow) + openevidence.com/announcements scrape. arXiv API rate-limited (429) on 3 attempts — skipped this week. 4 new PubMed papers added to research.json (Living-OEP vs OpenEvidence oncology comparison, LLM citation reliability, AI discharge letters, CustomGPT ophthalmology curriculum). 2 new benchmark entries (Living-OEP head-to-head, LLM citation reliability). 3 new timeline entries (Cortico MedSafe-Dx safety benchmark Sep 9, Abridge Best in KLAS 2026 Sep 1, MINC partnership Sep 11 — already added Sep 12). 1 new partnership (MINC#NIMC — already added Sep 12). 1 new competitor (Cortico MedSafe-Dx). Key finding: Living-OEP agentic AI system outperformed OpenEvidence and 3 other AI chatbots on oncology evidence quality in head-to-head comparison.",
+    items: [
+      {
+        cat: "Research — Oncology AI Head-to-Head",
+        title: "Living-OEP agentic AI outperforms OpenEvidence and other chatbots on breast cancer evidence quality (Sep 1, 2026)",
+        desc: "ESMO Real World Data study (PMID 42729682) compared a human-supervised AI-augmented living oncology evidence platform (Living-OEP, powered by GPT-4.1 + o3 + Claude Sonnet-4) against ChatGPT, Perplexity, Consensus, and OpenEvidence across 8 breast cancer treatment scenarios. Living-OEP provided more comprehensive and accurate evidence, linked all data to original publications and FDA labels. Agentic AI review accuracy 95.1-97.2%. First study to benchmark OpenEvidence against an agentic AI evidence platform in oncology."
+      },
+      {
+        cat: "Research — LLM Citation Reliability",
+        title: "ChatGPT-5.4 highest accuracy but highest citation fabrication rate in foot and ankle surgery (Sep 11, 2026)",
+        desc: "Foot Ankle Orthop study (PMID 42732183) tested ChatGPT-5.4, Gemini-3, and Copilot on 192 foot and ankle surgery board questions. ChatGPT-5.4 achieved 89.6% accuracy but fabricated 22.9% of references. All models produced fabricated citations. Highlights persistent safety concern with LLM-generated references in clinical education and decision support."
+      },
+      {
+        cat: "Benchmark — Clinical AI Safety",
+        title: "Cortico launches MedSafe-Dx — open benchmark for clinical AI safety (Sep 9, 2026)",
+        desc: "Vancouver-based Cortico launched MedSafe-Dx, a free open benchmark testing whether AI models can safely support clinical decisions. Evaluates escalation of urgent cases, avoidance of false reassurance, and appropriate uncertainty across 250 simulated patient cases. 11 frontier models evaluated. GPT-5.2 highest safety pass rate (97.6%) but over-escalated 71% of routine cases. Gemini 3 Pro highest diagnostic recall (87.2%) but lowest safety pass rate (62.4%). Public code, dataset, and medRxiv preprint. Live leaderboard expanded to 12 models from 6 AI labs."
+      },
+      {
+        cat: "Competitor — Abridge",
+        title: "Abridge wins #1 Best in KLAS 2026 for Ambient AI (second consecutive year, Sep 1, 2026)",
+        desc: "Abridge earns No. 1 Best in KLAS 2026 ranking for Ambient AI in Revenue Cycle category for the second year. Based on independent customer feedback from largest enterprise healthcare systems. At $5.3B valuation with 300+ health systems, 200+ specialties, 28 languages. Nvidia and Eli Lilly strategic investment. Direct convergence with OpenEvidence on evidence and payer connectivity."
+      }
+    ]
+  },
+
+  {
     date: "September 12, 2026",
     updated: "Daily announcement check (Sat Sep 12, 9:00 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements scrape + arXiv API (30 entries). 1 new timeline entry: MINC#NIMC Canadian physician verification partnership (Sep 11). All 30 arXiv results already in research.json.",
     items: [
