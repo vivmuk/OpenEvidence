@@ -5491,5 +5491,216 @@
     ],
     "scale": "28 participants, 3-month pilot",
     "status": "published"
+  },
+  {
+    "id": "pmid:42731360",
+    "source": "pubmed",
+    "pmid": "42731360",
+    "type": "systematic_review",
+    "title": "Human in the loop in AI-enabled clinical decision support: a systematic scoping review and reporting checklist for lifecycle governance",
+    "authors": "Bakker M, Van Garderen A, Paget T, Zhao L, Naicker L, Radhakrishnan A, Bidargarddi N",
+    "abstract": "Systematic scoping review examining Human-in-the-Loop (HITL) processes across the lifecycle of AI-enabled Clinical Decision Support Systems (CDSS). Comprehensive search across MEDLINE, Embase, Web of Science, PsycINFO, Google Scholar, and Scopus. Twelve studies met inclusion criteria. All included clinician involvement during development (primarily expert annotation and rule-based model design). Fewer studies reported HITL during review (n=11), oversight (n=0), or maintenance (n=2). HITL was frequently limited to static or retrospective contributions. Proposes a pragmatic HITL reporting checklist structured around six domains of the AI-CDSS lifecycle.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42731360/",
+    "pdf_url": null,
+    "doi": "10.1016/j.ijmedinf.2026.106701",
+    "published": "2026-09-10",
+    "updated": "2026-09-14",
+    "journal": "International Journal of Medical Informatics",
+    "tags": [
+      "clinical decision support",
+      "human-in-the-loop",
+      "AI governance",
+      "CDSS lifecycle",
+      "systematic review"
+    ],
+    "relevance": "Systematic scoping review of HITL in AI-enabled CDSS — directly addresses governance and lifecycle management of clinical AI decision support tools. Proposes standardized reporting checklist for clinical AI research.",
+    "key_findings": [
+      "Only 12 studies described HITL processes in AI-CDSS across full lifecycle",
+      "HITL concentrated in development phase; oversight and maintenance phases neglected",
+      "No studies reported real-time or iterative HITL engagement",
+      "Proposes 6-domain HITL reporting checklist for AI-CDSS governance"
+    ],
+    "tools_evaluated": [],
+    "scale": "12 studies (systematic scoping review)",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42727207",
+    "source": "pubmed",
+    "pmid": "42727207",
+    "type": "benchmark",
+    "title": "Comparative quality, accuracy, and readability of large language model responses to patient questions about robotic-assisted total knee arthroplasty",
+    "authors": "Kolac UC, Sili MV, Karademir OM, Ayik G, Akkaya M, Çakmak G",
+    "abstract": "Compared information quality, accuracy, and readability of patient-directed responses from ChatGPT-o3, ChatGPT-5.2, Gemini 3, and DeepSeek regarding robotic-assisted total knee arthroplasty (RA-TKA). 30 FAQ identified using LLM outputs and Google search. Evaluated using DISCERN, QAMAI, 5-point clinical accuracy, PEMAT Understandability, and Flesch-Kincaid Reading Ease. All models demonstrated acceptable clinical accuracy (median 4.0) but differed in information quality and readability. All responses remained above recommended patient-education reading levels.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42727207/",
+    "pdf_url": null,
+    "doi": "10.1016/j.knee.2026.104635",
+    "published": "2026-09-11",
+    "updated": "2026-09-14",
+    "journal": "The Knee",
+    "tags": [
+      "LLM benchmark",
+      "ChatGPT",
+      "Gemini",
+      "DeepSeek",
+      "patient education",
+      "orthopedics",
+      "knee arthroplasty",
+      "medical accuracy"
+    ],
+    "relevance": "LLM benchmark comparing 4 frontier models on medical patient questions in orthopedics. Uses standardized evaluation instruments (DISCERN, QAMAI, PEMAT). Relevant to medical AI accuracy and safety evaluation.",
+    "key_findings": [
+      "ChatGPT-o3 highest DISCERN score (46.0); no significant clinical accuracy difference across models",
+      "All models exceeded recommended patient-education reading levels",
+      "QAMAI scores similar across all models (median 23.0)",
+      "Gemini 3 and DeepSeek showed higher readability but lower information quality"
+    ],
+    "tools_evaluated": [
+      "ChatGPT-o3",
+      "ChatGPT-5.2",
+      "Gemini 3",
+      "DeepSeek"
+    ],
+    "scale": "30 patient questions, 4 LLMs, 5 evaluation instruments",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42727093",
+    "source": "pubmed",
+    "pmid": "42727093",
+    "type": "evaluation",
+    "title": "Comparative analysis of AI enhancements to rules-based clinical triage chatbot: Convergent mixed-methods study",
+    "authors": "Stankić A, Vujošević D, Radosavljević N, Jeremić A",
+    "abstract": "Convergent mixed-methods study evaluating three AI enhancements (Dialogflow, ChatGPT, Gemini) to a rules-based triage chatbot. 13 testers completed 156 vignette-based interactions. Rules-based chatbot most accurate (71.8%) outperforming Dialogflow (30.8%) and Gemini (41.0%). ChatGPT and Gemini statistically indistinguishable from each other. Qualitative analysis revealed user preference for ChatGPT and Gemini despite equal or worse performance than rules-based. Divergence between user preference and measured accuracy underscores safe clinical deployment challenges.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42727093/",
+    "pdf_url": null,
+    "doi": "10.1177/14604582261485150",
+    "published": "2026-09-11",
+    "updated": "2026-09-14",
+    "journal": "Health Informatics Journal",
+    "tags": [
+      "clinical triage",
+      "chatbot",
+      "ChatGPT",
+      "Gemini",
+      "Dialogflow",
+      "AI safety",
+      "clinical decision support",
+      "benchmark"
+    ],
+    "relevance": "Comparative evaluation of AI chatbots in clinical triage — directly relevant to clinical AI decision support safety. Key finding that conversational fluency masks poorer accuracy highlights deployment risks.",
+    "key_findings": [
+      "Rules-based triage chatbot (71.8%) outperformed Dialogflow (30.8%) and Gemini (41.0%) in accuracy",
+      "Users preferred ChatGPT/Gemini despite equal or worse accuracy than rules-based",
+      "Conversational fluency masks poorer clinical accuracy — safety concern for deployment",
+      "Safe clinical deployment of LLM chatbots requires governance addressing accuracy and interpretability"
+    ],
+    "tools_evaluated": [
+      "Dialogflow",
+      "ChatGPT",
+      "Gemini"
+    ],
+    "scale": "156 vignette interactions, 13 testers, 52 Likert evaluations",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42727086",
+    "source": "pubmed",
+    "pmid": "42727086",
+    "type": "benchmark",
+    "title": "Evaluating Large Language Models in Clinical Audiology (AUDIOLOGYBENCH): Benchmark Development and Validation Study",
+    "authors": "Li L, Mo C, Zhou H, Yu H, Lu C, Wang S, Athreya VM, Fitzgerald MB, Wang SX",
+    "abstract": "Developed AUDIOLOGYBENCH, a 3-tier benchmark for characterizing frontier LLM capability in clinical audiology: (1) curated domain knowledge (3,139 items), (2) literature-derived evidence (3,175 items), and (3) clinical reasoning under multimodal case input (67 cases, 804 evaluations). Eight models evaluated. Striking task-type dissociation: clinical recommendations achieved 89.74 mean score (98.1% pass rate, no dangerous recommendations) while audiometric numerical interpretation achieved only 67.89 (35.4% critical-error rate). Question type, not model selection, dominated performance. Automated adjudicator partially miscalibrated at per-item level but headline rates consistent with human estimates.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42727086/",
+    "pdf_url": null,
+    "doi": "10.2196/94755",
+    "published": "2026-09-11",
+    "updated": "2026-09-14",
+    "journal": "Journal of Medical Internet Research",
+    "tags": [
+      "LLM benchmark",
+      "audiology",
+      "clinical reasoning",
+      "medical AI safety",
+      "critical errors",
+      "multimodal",
+      "evaluation"
+    ],
+    "relevance": "Novel clinical AI benchmark with safety-focused evaluation across multiple LLMs. Key finding that LLMs excel at recommendations but fail on numerical interpretation has implications for all clinical AI tools. Includes human audit of automated adjudicator.",
+    "key_findings": [
+      "LLMs strong on clinical recommendations (89.74 mean, 98.1% pass) but weak on audiometric numerical interpretation (67.89, 35.4% critical-error rate)",
+      "Question type dominated performance over model selection (eta-squared=0.333 vs 0.001)",
+      "No dangerous recommendations generated in clinical recommendation task",
+      "Automated adjudicator overflagged critical errors at per-item level (PPV 36%) but headline rates consistent with human estimates"
+    ],
+    "tools_evaluated": [
+      "Gemini 2.5 Pro",
+      "Grok 4",
+      "OpenAI O3",
+      "Claude Sonnet 4 Thinking",
+      "Claude Opus 4.5"
+    ],
+    "scale": "3,139 objective items + 3,175 research-derived items + 67 multimodal clinical cases (804 evaluations)",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42739278",
+    "pmid": "42739278",
+    "doi": "10.3390/diagnostics16172848",
+    "title": "Large Language Models in Perioperative Antithrombotic Management: A Blinded Scenario-Based Expert Evaluation",
+    "authors": [
+      "Durmuş İ",
+      "Bulun Yediyıldız M"
+    ],
+    "journal": "Diagnostics (Basel)",
+    "pub_date": "2026-09-04",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42739278/",
+    "abstract": "Blinded scenario-based evaluation of 4 LLMs (GPT-5.4 Thinking, Claude Opus 4.5, DeepSeek v3.2 Reasoning, Qwen3.5-Plus) for perioperative antithrombotic management. 100 elective surgical cases including grey-zone scenarios developed to reflect clinically relevant perioperative antithrombotic decisions. ESAIC/ESRA 2022 guideline incorporated into standardized prompt. Two experienced anesthesiologists independently assessed responses across 5 clinical domains on 5-point Likert scale. Claude had highest median primary composite score, though difference from DeepSeek was not statistically significant. Performance variable especially in complex situations. LLMs should be used cautiously and always under expert supervision rather than as independent decision-makers.",
+    "category": "clinical_ai_evaluation",
+    "tags": [
+      "LLM",
+      "clinical decision support",
+      "antithrombotic",
+      "perioperative",
+      "benchmark",
+      "GPT-5.4",
+      "Claude",
+      "DeepSeek",
+      "Qwen"
+    ],
+    "source": "pubmed",
+    "added": "2026-09-15"
+  },
+  {
+    "id": "pmid:42739140",
+    "pmid": "42739140",
+    "doi": "10.3390/diagnostics16172708",
+    "title": "Comparison of OneChoice AI-Based Clinical Decision Support Recommendations with Infectious Disease Specialists and Non-Specialists for Empirical Urinary Tract Infection Therapy in Lima, Peru",
+    "authors": [
+      "Gómez de la Torre JC",
+      "Frenkel A",
+      "Chavez-Lencinis C",
+      "Rendon A",
+      "Fabian M",
+      "Cáceres-DelAguila JA",
+      "Minchon-Vizconde D",
+      "Hueda-Zavaleta M"
+    ],
+    "journal": "Diagnostics (Basel)",
+    "pub_date": "2026-08-25",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42739140/",
+    "abstract": "Cross-sectional survey-based concordance study evaluating OneChoice ML-HITL CDSS for UTI therapy in Lima, Peru. 194 physicians contributed 224 evaluations across 42 real UTI case codes. ID specialists showed higher concordance with CDSS than non-ID physicians (65.7% vs 44.2%). External blinded adjudication panel judged CDSS recommendation preferable in 90.5-93.2% of discordant cases. Suggests CDSS aligns with expert reasoning and may support antimicrobial selection in high-resistance settings.",
+    "category": "clinical_ai_evaluation",
+    "tags": [
+      "clinical decision support",
+      "CDSS",
+      "OneChoice",
+      "UTI",
+      "antimicrobial resistance",
+      "concordance study",
+      "benchmark"
+    ],
+    "source": "pubmed",
+    "added": "2026-09-15"
   }
 ]

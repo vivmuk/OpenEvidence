@@ -2014,5 +2014,110 @@
     ],
     "scale": "192 multiple-choice questions, 3 LLMs",
     "status": "published"
+  },
+  {
+    "id": "pmid:42727207",
+    "source": "pubmed",
+    "type": "benchmark",
+    "title": "Comparative quality, accuracy, and readability of large language model responses to patient questions about robotic-assisted total knee arthroplasty",
+    "authors": "Kolac UC, Sili MV, Karademir OM, Ayik G, Akkaya M, Çakmak G",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42727207/",
+    "published": "2026-09-11",
+    "updated": "2026-09-14",
+    "journal": "The Knee",
+    "tools_evaluated": "ChatGPT-o3, ChatGPT-5.2, Gemini 3, DeepSeek",
+    "scale": "30 patient questions, 4 LLMs, 5 evaluation instruments",
+    "key_findings": [
+      "ChatGPT-o3 highest DISCERN score (46.0); no significant clinical accuracy difference across models",
+      "All models exceeded recommended patient-education reading levels",
+      "QAMAI scores similar across all models (median 23.0)",
+      "Gemini 3 and DeepSeek showed higher readability but lower information quality"
+    ],
+    "relevance": "medium",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42727093",
+    "source": "pubmed",
+    "type": "evaluation",
+    "title": "Comparative analysis of AI enhancements to rules-based clinical triage chatbot: Convergent mixed-methods study",
+    "authors": "Stankić A, Vujošević D, Radosavljević N, Jeremić A",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42727093/",
+    "published": "2026-09-11",
+    "updated": "2026-09-14",
+    "journal": "Health Informatics Journal",
+    "tools_evaluated": "Dialogflow, ChatGPT, Gemini",
+    "scale": "156 vignette interactions, 13 testers, 52 Likert evaluations",
+    "key_findings": [
+      "Rules-based triage chatbot (71.8%) outperformed Dialogflow (30.8%) and Gemini (41.0%) in accuracy",
+      "Users preferred ChatGPT/Gemini despite equal or worse accuracy than rules-based",
+      "Conversational fluency masks poorer clinical accuracy — safety concern for deployment",
+      "Safe clinical deployment of LLM chatbots requires governance addressing accuracy and interpretability"
+    ],
+    "relevance": "high",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42727086",
+    "source": "pubmed",
+    "type": "benchmark",
+    "title": "Evaluating Large Language Models in Clinical Audiology (AUDIOLOGYBENCH): Benchmark Development and Validation Study",
+    "authors": "Li L, Mo C, Zhou H, Yu H, Lu C, Wang S, Athreya VM, Fitzgerald MB, Wang SX",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42727086/",
+    "published": "2026-09-11",
+    "updated": "2026-09-14",
+    "journal": "Journal of Medical Internet Research",
+    "tools_evaluated": "Gemini 2.5 Pro, Grok 4, OpenAI O3, Claude Sonnet 4 Thinking, Claude Opus 4.5",
+    "scale": "3,139 objective items + 3,175 research-derived items + 67 multimodal clinical cases (804 evaluations)",
+    "key_findings": [
+      "LLMs strong on clinical recommendations (89.74 mean, 98.1% pass) but weak on audiometric numerical interpretation (67.89, 35.4% critical-error rate)",
+      "Question type dominated performance over model selection (eta-squared=0.333 vs 0.001)",
+      "No dangerous recommendations generated in clinical recommendation task",
+      "Automated adjudicator overflagged critical errors at per-item level (PPV 36%) but headline rates consistent with human estimates"
+    ],
+    "relevance": "medium",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42739278",
+    "pmid": "42739278",
+    "doi": "10.3390/diagnostics16172848",
+    "title": "Large Language Models in Perioperative Antithrombotic Management: A Blinded Scenario-Based Expert Evaluation",
+    "journal": "Diagnostics (Basel)",
+    "pub_date": "2026-09-04",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42739278/",
+    "models_evaluated": [
+      "GPT-5.4 Thinking",
+      "Claude Opus 4.5",
+      "DeepSeek v3.2 Reasoning",
+      "Qwen3.5-Plus"
+    ],
+    "benchmark_type": "blinded_scenario_expert_evaluation",
+    "clinical_domain": "perioperative antithrombotic management",
+    "key_finding": "Claude had highest median composite score; performance variable in complex scenarios; LLMs promising but need expert supervision",
+    "n_cases": 100,
+    "source": "pubmed",
+    "added": "2026-09-15"
+  },
+  {
+    "id": "pmid:42739140",
+    "pmid": "42739140",
+    "doi": "10.3390/diagnostics16172708",
+    "title": "Comparison of OneChoice AI-Based Clinical Decision Support Recommendations with Infectious Disease Specialists and Non-Specialists for Empirical Urinary Tract Infection Therapy in Lima, Peru",
+    "journal": "Diagnostics (Basel)",
+    "pub_date": "2026-08-25",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42739140/",
+    "models_evaluated": [
+      "OneChoice ML-HITL CDSS"
+    ],
+    "benchmark_type": "concordance_study",
+    "clinical_domain": "urinary tract infection therapy",
+    "key_finding": "ID specialist concordance 65.7% vs non-ID 44.2%; external panel preferred CDSS in 90.5-93.2% of discordant cases",
+    "n_cases": 224,
+    "source": "pubmed",
+    "added": "2026-09-15"
   }
 ]
