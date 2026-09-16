@@ -5,6 +5,38 @@
 
 var whatsNewData = [
   {
+    date: "September 16, 2026",
+    updated: "Daily announcement check (Wed Sep 16, 9:00 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). 1 NEW ANNOUNCEMENT: Penn Medicine global partnership (Sep 15) — 10,000+ clinicians, 7 hospitals, Botswana-UPenn Partnership for global health. 7 new research papers added to research.json (KnowBench ER benchmark, VeriDx diagnostic verification, non-institutional AI clinician survey, on-premise clinical AI agents Nature Medicine, prompt injection patient safety hazard, JMIR healthcare professional LLM attitudes survey, Doctorina primary care diagnostics evaluation). 1 new benchmark added to benchmarks.json (KnowBench). Key finding: Penn Medicine is first global health partnership for OpenEvidence, extending AI clinical decision support to low-resource settings via Botswana-UPenn Partnership.",
+    items: [
+      {
+        cat: "Partnership — Health System + Global Health",
+        title: "OpenEvidence and Penn Medicine partner for global clinical AI deployment (Sep 15, 2026)",
+        desc: "OpenEvidence and Penn Medicine announce global partnership to bring AI-powered clinical decision support to 10,000+ clinicians across 7 hospitals in Pennsylvania and New Jersey. Partnership extends to low- and middle-income countries through the Botswana-UPenn Partnership (BUP) — 25-year academic health partnership in sub-Saharan Africa. Penn Medicine teams will co-design purpose-built tools for Botswana clinicians adapted to local resource constraints. Integration with Penn Pathways clinical decision support program and EHR. Penn Medicine: University of Pennsylvania Health System + Perelman School of Medicine, 49,000+ team members, ~500K emergency patients annually. Srinath Adusumalli (VP & Chief Health Information Officer) leads deployment. Travis Zack (CMO, OpenEvidence): 'The best available medical evidence should reach every clinician, not only those working inside the world's best resourced hospitals.' First global health partnership for OpenEvidence."
+      },
+      {
+        cat: "Research — Clinical AI Benchmark",
+        title: "KnowBench introduces Effort Reduction as unified clinical AI benchmark metric (Sep 14, 2026)",
+        desc: "Knowtex introduces KnowBench, a deployment-grounded clinical AI benchmark measuring Effort Reduction (ER): proportion of AI-generated clinical work product accepted by clinicians under expert review. Initial measurement: 97.99% aggregate ER across 1M+ encounters, 13 specialties. Covers documentation, coding, orders, chart summarization, patient summaries, and clinical decision support. First benchmark to measure real-world clinician acceptance rather than reference-based similarity."
+      },
+      {
+        cat: "Research — Clinical AI Safety",
+        title: "Nature Medicine: On-premise medical AI agents for reliable clinical decision-making (Sep 15, 2026)",
+        desc: "Zhang et al. (TU Dresden / Heidelberg) publish in Nature Medicine a fully on-premise clinical AI agent with multi-perspective reliability framework. 90.04% accuracy on 7-disease MIMIC-IV benchmark. Behavioral consistency strongest discriminator of diagnostic correctness (AUC=0.860). At 0.90 consistency threshold, 49.4% of cases retained at 98.9% accuracy — framework for selective autonomy in clinical AI deployment."
+      },
+      {
+        cat: "Research — Clinical AI Security",
+        title: "Prompt injection classified as patient safety hazard in clinical AI systems (Sep 15, 2026)",
+        desc: "Waisberg & Guarnieri (Annals of Biomedical Engineering) argue prompt injection warrants classification as patient safety hazard, not technical curiosity. Medicine particularly exposed due to external content in clinical records. Improved prompting and input filtering insufficient — need provenance-aware context handling, restricted privileges, and adversarial testing. Directly relevant to OpenEvidence's own legal cases against Pathway Medical and Doximity for prompt injection attacks."
+      },
+      {
+        cat: "Research — Physician AI Attitudes",
+        title: "JMIR survey: 62.7% of healthcare professionals use or contemplate LLMs; decision support top application (Sep 15, 2026)",
+        desc: "Rao et al. (Harvard Medical School / Mass General Brigham) survey 335 healthcare professionals. Literature review (73.4%) and decision support (57%) identified as most valuable LLM applications. 75.5% concerned about decision errors, 96.4% about bias. 65.4% prefer professional association regulation over tech companies (29%). 87.8% support professional guidelines; 66.6% have no confidence in existing oversight."
+      }
+    ]
+  },
+
+  {
     date: "September 13, 2026",
     updated: "Weekly update (Sun Sep 13, 5:00 PM ET) — Venice Augment Search (8 OE queries + 4 competitor/benchmark queries) + PubMed eutils (30 broad + 10 narrow) + openevidence.com/announcements scrape. arXiv API rate-limited (429) on 3 attempts — skipped this week. 4 new PubMed papers added to research.json (Living-OEP vs OpenEvidence oncology comparison, LLM citation reliability, AI discharge letters, CustomGPT ophthalmology curriculum). 2 new benchmark entries (Living-OEP head-to-head, LLM citation reliability). 3 new timeline entries (Cortico MedSafe-Dx safety benchmark Sep 9, Abridge Best in KLAS 2026 Sep 1, MINC partnership Sep 11 — already added Sep 12). 1 new partnership (MINC#NIMC — already added Sep 12). 1 new competitor (Cortico MedSafe-Dx). Key finding: Living-OEP agentic AI system outperformed OpenEvidence and 3 other AI chatbots on oncology evidence quality in head-to-head comparison.",
     items: [
