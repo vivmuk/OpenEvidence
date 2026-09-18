@@ -5,6 +5,32 @@
 
 var whatsNewData = [
   {
+    date: "September 18, 2026",
+    updated: "Daily announcement check (Fri Sep 18, 4:50 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/news scrape + PubMed eutils (30 results). arXiv API returned empty (retried). 1 NEW ANNOUNCEMENT: MSK + OpenEvidence precision oncology partnership (Sep 16) — OncoKB integration + Epic EHR. 6 new PubMed papers added to research.json (Fine-tuning/RAG/hybrid systematic review JMIR, HPB oncology LLM MDT comparison JMIR, DiagnosticXchange open-source clinical AI eval framework JAMIA, AI-assisted childhood cancer LTFU J Pediatr Hematol Oncol, Cross-site CDSS transfer Stud Health Technol Inform, Medical LLM history-taking Cureus). 5 new benchmark entries. Key finding: MSK partnership brings FDA-recognized OncoKB precision oncology knowledge base into OpenEvidence for all clinicians nationwide — first somatic cancer variant knowledge base with FDA recognition.",
+    items: [
+      {
+        cat: "Partnership — Precision Oncology",
+        title: "Memorial Sloan Kettering and OpenEvidence partner to advance precision oncology (Sep 16, 2026)",
+        desc: "MSK and OpenEvidence announce partnership integrating OpenEvidence into MSK's Epic EHR workflow and bringing MSK's OncoKB — the first and only FDA-recognized somatic cancer variant knowledge base — directly into OpenEvidence for nationwide use. OncoKB expert knowledge paired with patient clinical context for point-of-care clinical decision support in complex oncology cases. OncoKB levels of evidence aligned with AMP/ASCO/CAP consensus. More than half of US hematologist-oncologists already use OpenEvidence. Debyani Chakravarty PhD (Lead Scientist, OncoKB): 'OpenEvidence will widen OncoKB's reach.' Anaeze Offodile MD (Chief Strategy Officer, MSK): 'Embedding trusted tools into clinical practice in ways that augment the expertise of our clinicians.' Travis Zack MD (CMO, OpenEvidence): 'Bringing MSK-curated interpretation of cancer genetics to physicians anywhere.' Samyukta Mullangi MD (VP Clinical Strategy, OpenEvidence): 'Democratizing the power of MSK's genomic curation.' First partnership to integrate an FDA-recognized cancer variant knowledge base into a clinical AI platform."
+      },
+      {
+        cat: "Research — RAG Systematic Review",
+        title: "JMIR systematic review: RAG improves guideline adherence 71%->92% in clinical decision support (Sep 17, 2026)",
+        desc: "Patel et al. (Mayo Clinic) publish PRISMA systematic review of 35 studies (2024-2026) evaluating fine-tuning, RAG, and hybrid post-training strategies for clinical decision-making. RAG improved guideline adherence from 71.1% to 92.1% and diagnostic accuracy from 78.9% to 94.7%. Fine-tuning achieved AUC up to 0.912 for cancer detection. Hybrid systems exceeded 90% accuracy in complex workflows (stroke triage, dermatology, multimodal imaging, oncology). 25/35 studies judged high risk of bias. Directly relevant to OpenEvidence's RAG architecture."
+      },
+      {
+        cat: "Research — Clinical AI Evaluation Framework",
+        title: "DiagnosticXchange: open-source framework for multi-dimensional clinical AI evaluation (Sep 17, 2026)",
+        desc: "Sorka et al. (Technion Israel) publish in JAMIA an open-source evaluation framework assessing clinical AI across accuracy, cost, time, invasiveness, physician effort, and safety behaviors. 8 LLMs on 216 peer-reviewed cases across 19 specialties (1728 sessions). Three systems achieved near-identical accuracy (93.5%-94.0%) yet differed 1.75x in cost and 2.1x in physician oversight. Safety analysis revealed premature diagnosis (9.3%), noncontributory invasive procedures (29.9%). Accuracy-only benchmarks are insufficient for safe clinical AI deployment."
+      },
+      {
+        cat: "Research — LLM Stability in Oncology MDT",
+        title: "LLM treatment recommendations show moderate concordance with MDT decisions in HPB oncology (Sep 17, 2026)",
+        desc: "Jo et al. (CHA University) compared 4 LLMs (GPT-4o, GPT-5.2, Gemini 3 Pro, Claude Sonnet 4.5) on 107 hepatopancreatobiliary MDT cases. Concordance ranged 48.6%-72.9%. Response stability varied substantially (Gemini 3 Pro Fleiss kappa=0.737 vs GPT-4o kappa=0.430). Response stability must be systematically characterized before clinical integration."
+      }
+    ]
+  },
+  {
     date: "September 16, 2026",
     updated: "Daily announcement check (Wed Sep 16, 9:00 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). 1 NEW ANNOUNCEMENT: Penn Medicine global partnership (Sep 15) — 10,000+ clinicians, 7 hospitals, Botswana-UPenn Partnership for global health. 7 new research papers added to research.json (KnowBench ER benchmark, VeriDx diagnostic verification, non-institutional AI clinician survey, on-premise clinical AI agents Nature Medicine, prompt injection patient safety hazard, JMIR healthcare professional LLM attitudes survey, Doctorina primary care diagnostics evaluation). 1 new benchmark added to benchmarks.json (KnowBench). Key finding: Penn Medicine is first global health partnership for OpenEvidence, extending AI clinical decision support to low-resource settings via Botswana-UPenn Partnership.",
     items: [

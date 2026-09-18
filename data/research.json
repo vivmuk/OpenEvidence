@@ -5946,5 +5946,122 @@
     ],
     "scale": "65 TBI/concussion questions, 325 responses, 5 blinded raters",
     "status": "published"
+  },
+  {
+    "id": "pmid:42753254",
+    "pmid": "42753254",
+    "doi": "10.2196/104092",
+    "title": "Fine-Tuning, Retrieval-Augmented Generation, and Hybrid Adaptation of Language Models for Clinical Decision-Making in Health Care: Systematic Review",
+    "authors": "Patel A, Khand Y, Vallamchetla SK, Li P, Tao C, Cheung J",
+    "journal": "J Med Internet Res",
+    "pub_date": "2026-09-17",
+    "source": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42753254/",
+    "abstract": "Systematic review (PRISMA 2020) of 35 studies (2024-2026) evaluating fine-tuning, RAG, and hybrid post-training strategies for clinical diagnosis and decision-support tasks. RAG improved guideline adherence (71.1% to 92.1%) and diagnostic accuracy (78.9% to 94.7%). Fine-tuning achieved AUC up to 0.912 for cancer detection. Hybrid systems achieved strongest performance in complex workflows (>90% accuracy in stroke triage, dermatology, multimodal imaging, oncology). 25/35 studies high risk of bias. Adaptation strategies should align with task needs: fine-tuning for narrow classification, RAG for guideline-grounded reasoning, hybrid for complex multimodal tasks.",
+    "qc_tags": [
+      "RAG",
+      "clinical decision support",
+      "systematic review",
+      "fine-tuning",
+      "benchmark"
+    ],
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42753242",
+    "pmid": "42753242",
+    "doi": "10.2196/101137",
+    "title": "Large Language Models in Multidisciplinary Decision-Making for Hepatopancreatobiliary Oncology: Retrospective Comparative Feasibility Study",
+    "authors": "Jo SJ, Chong EH, Kang I, Yang SJ, Kang B, Kim JS, Chon HJ, Kwon CI, Sung MJ, Shin SP, An C, Lim HY, Yu JS, Jang S, Im JH, Ko KH, Lee SH",
+    "journal": "J Med Internet Res",
+    "pub_date": "2026-09-17",
+    "source": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42753242/",
+    "abstract": "Retrospective study of 107 HPB MDT cases comparing 4 LLMs (GPT-4o, GPT-5.2, Gemini 3 Pro, Claude Sonnet 4.5) against institutional MDT decisions. Gemini 3 Pro most stable (Fleiss kappa=0.737), GPT-4o least stable (kappa=0.430). Concordance with MDT decisions ranged 48.6%-72.9%. Response stability varied substantially across models, indicating concordance alone is insufficient for evaluating LLMs as clinical decision support tools.",
+    "qc_tags": [
+      "LLM comparison",
+      "clinical decision support",
+      "oncology",
+      "benchmark",
+      "multidisciplinary decision-making"
+    ],
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42752607",
+    "pmid": "42752607",
+    "doi": "10.1093/jamia/ocag143",
+    "title": "DiagnosticXchange: an open-source framework for evaluating safety, efficiency, and diagnostic reasoning in clinical AI systems",
+    "authors": "Sorka M, Gorenshtein A, Abramovitch H, Soontrapa P, Shelly S, Aran D",
+    "journal": "J Am Med Inform Assoc",
+    "pub_date": "2026-09-17",
+    "source": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42752607/",
+    "abstract": "Open-source evaluation framework assessing clinical AI diagnostic systems across accuracy, cost, time, invasiveness, physician effort, and safety behaviors. Validated with 8 LLMs on 216 peer-reviewed cases across 19 specialties (1728 sessions). Three systems achieved near-identical accuracy (93.5%-94.0%) yet differed significantly in cost (1.75-fold) and physician oversight (2.1-fold). Safety analysis revealed premature diagnosis (up to 9.3%), noncontributory invasive procedures (8.7%-29.9%). Accuracy-only evaluation is insufficient for safe clinical AI deployment.",
+    "qc_tags": [
+      "clinical AI benchmark",
+      "safety",
+      "diagnostic reasoning",
+      "evaluation framework",
+      "open-source"
+    ],
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42752525",
+    "pmid": "42752525",
+    "doi": "10.1097/MPH.0000000000003281",
+    "title": "AI-Assisted Generation of Long-Term Follow-Up Recommendations for Survivors of Childhood Cancer and Hematopoietic Stem Cell Transplantation",
+    "authors": "Truong B, Wu N, Murphy P, Goldsby R",
+    "journal": "J Pediatr Hematol Oncol",
+    "pub_date": "2026-09-17",
+    "source": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42752525/",
+    "abstract": "Evaluated GPT-4o for generating long-term follow-up (LTFU) care recommendations for childhood cancer and HSCT survivors. 40 survivors in validation cohort. AI-generated 467 items vs 446 clinician-generated. 86.3% of clinician recommendations identified by AI; 82.4% of AI recommendations present in clinician plans. Most discordant recommendations involved radiation-related exposures requiring nuanced clinical interpretation. Demonstrates feasibility of LLM-assisted survivorship care workflows.",
+    "qc_tags": [
+      "LLM evaluation",
+      "clinical decision support",
+      "oncology",
+      "survivorship care"
+    ],
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42752474",
+    "pmid": "42752474",
+    "doi": "10.3233/SHTI260991",
+    "title": "Cross-Site Transfer and Adaptation of an In-House CDSS: First Lessons Learned",
+    "authors": "Hoffmann K, Schuler K, Malkawi C, Twrdik A, Federbusch M, Kirsten T, Sedlmayr M",
+    "journal": "Stud Health Technol Inform",
+    "pub_date": "2026-09-17",
+    "source": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42752474/",
+    "abstract": "Study of transferring core components of an in-house clinical decision support system (CDSS) between two university hospitals in Germany. Frames transfer as structured recontextualization using NASSS framework. Key lessons: importance of modular adaptable components, transparent data pipelines, tailored UIs, early stakeholder engagement, robust regulatory capacity. Supports patients at risk of acute kidney injury.",
+    "qc_tags": [
+      "clinical decision support",
+      "CDSS implementation",
+      "cross-site transfer",
+      "NASSS framework"
+    ],
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42751277",
+    "pmid": "42751277",
+    "doi": "10.7759/cureus.114656",
+    "title": "A Medical Large Language Model-Based System Improves History-Taking Performance Among Medical Students",
+    "authors": "Not specified in summary",
+    "journal": "Cureus",
+    "pub_date": "2026-08",
+    "source": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42751277/",
+    "abstract": "Study evaluating a medical LLM-based system for improving history-taking performance among medical students. Demonstrates potential of LLM-based systems in clinical training and history-taking skill development.",
+    "qc_tags": [
+      "medical LLM",
+      "history-taking",
+      "clinical training",
+      "LLM evaluation"
+    ],
+    "added_date": "2026-09-18"
   }
 ]

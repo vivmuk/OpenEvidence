@@ -2147,5 +2147,65 @@
       "production"
     ],
     "relevance": "New benchmark paradigm for clinical AI \u2014 measures real-world clinician acceptance rather than reference-based similarity"
+  },
+  {
+    "id": "pmid:42753254",
+    "pmid": "42753254",
+    "doi": "10.2196/104092",
+    "title": "Fine-Tuning, RAG, and Hybrid Adaptation for Clinical Decision-Making: Systematic Review",
+    "journal": "J Med Internet Res",
+    "pub_date": "2026-09-17",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42753254/",
+    "benchmark_type": "Systematic Review",
+    "key_findings": "RAG improved guideline adherence 71.1%->92.1% and diagnostic accuracy 78.9%->94.7%. Hybrid systems >90% accuracy in complex workflows. 25/35 studies high risk of bias.",
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42753242",
+    "pmid": "42753242",
+    "doi": "10.2196/101137",
+    "title": "LLMs in Multidisciplinary Decision-Making for HPB Oncology",
+    "journal": "J Med Internet Res",
+    "pub_date": "2026-09-17",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42753242/",
+    "benchmark_type": "LLM Head-to-Head Comparison",
+    "key_findings": "4 LLMs (GPT-4o, GPT-5.2, Gemini 3 Pro, Claude Sonnet 4.5) compared on 107 HPB MDT cases. Concordance 48.6%-72.9%. Gemini 3 Pro most stable (Fleiss kappa=0.737). Response stability varies substantially.",
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42752607",
+    "pmid": "42752607",
+    "doi": "10.1093/jamia/ocag143",
+    "title": "DiagnosticXchange: Open-Source Framework for Evaluating Clinical AI Systems",
+    "journal": "J Am Med Inform Assoc",
+    "pub_date": "2026-09-17",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42752607/",
+    "benchmark_type": "Evaluation Framework",
+    "key_findings": "8 LLMs on 216 cases across 19 specialties. Three systems near-identical accuracy (93.5%-94.0%) but 1.75x cost difference. Safety issues: premature diagnosis (9.3%), noncontributory invasive procedures (29.9%).",
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42752525",
+    "pmid": "42752525",
+    "doi": "10.1097/MPH.0000000000003281",
+    "title": "AI-Assisted LTFU Recommendations for Childhood Cancer Survivors",
+    "journal": "J Pediatr Hematol Oncol",
+    "pub_date": "2026-09-17",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42752525/",
+    "benchmark_type": "LLM Evaluation",
+    "key_findings": "GPT-4o for LTFU recommendations in 40 childhood cancer survivors. 86.3% concordance with clinician recommendations. Most discordances in radiation-related exposures.",
+    "added_date": "2026-09-18"
+  },
+  {
+    "id": "pmid:42751277",
+    "pmid": "42751277",
+    "doi": "10.7759/cureus.114656",
+    "title": "Medical LLM-Based System Improves History-Taking Performance Among Medical Students",
+    "journal": "Cureus",
+    "pub_date": "2026-08",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42751277/",
+    "benchmark_type": "LLM Evaluation",
+    "key_findings": "Medical LLM system improves history-taking performance among medical students.",
+    "added_date": "2026-09-18"
   }
 ]

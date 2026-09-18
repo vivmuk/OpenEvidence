@@ -1,4 +1,5 @@
 var partnersData = [
+  {name:"Memorial Sloan Kettering (MSK)",type:"Precision Oncology + OncoKB Integration",date:"Sep 16, 2026",url:"https://www.openevidence.com/announcements/memorial-sloan-kettering-cancer-center-msk-and-openevidence-partner-to-advance-precision-oncology-at-the-point-of-care",new:true},
 {name:"Penn Medicine",type:"Health System + Global Health (Botswana-UPenn)",date:"Sep 15, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-penn-medicine-partner-to-advance-medical-intelligence-for-global-health",new:true},
 {name:"MINC#NIMC",type:"Canadian Physician Verification",date:"Sep 11, 2026",url:"https://www.openevidence.com/announcements/openevidence-and-mincnimc-partner-to-ensure-free-access-for-canadian-physicians-to-leading-medical-ai-platform",new:true},
 {name:"OneOncology",type:"Oncology Network",date:"Aug 6, 2026",url:"https://www.openevidence.com/announcements/oneoncology-and-openevidence-partner-to-improve-cancer-care-nationwide",new:true},
