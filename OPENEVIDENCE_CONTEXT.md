@@ -291,7 +291,7 @@ Single-page Express app deployed on Railway (https://oe.up.railway.app).
 2. **QC filter:** Research results are filtered for relevance to clinical AI decision support. Non-relevant results (imaging-only, bioinformatics, surgical robotics) are discarded.
 3. **No fabrication policy:** If web search is unavailable, do NOT invent data. Skip gracefully.
 4. **NOHARM benchmark:** User explicitly said NOT to run the noharm benchmark for OE site. A weekly cron job did it anyway once (Jul 19). Check cron prompts for unwanted behaviors.
-5. **Venice API:** Use `POST /api/v1/augment/search` for web search and `venice_parameters.enable_x_search: true` with `grok-4-20` model for X/Twitter search. Do NOT use DuckDuckGo (CAPTCHA blocks).
+5. **Venice API:** Use `POST /api/v1/augment/search` for web search. The correct provider field is `search_provider` (`brave` default, `google` optional); `provider` is ignored. Use `venice_parameters.enable_x_search: true` with `grok-4-20` model for X/Twitter search. Do NOT use DuckDuckGo (CAPTCHA blocks).
 6. **File edits:** Use `exec` for edits to files outside the workspace sandbox (the OE repo is at `/home/vivgates/OpenEvidence/`).
 7. **Git push:** `cd /home/vivgates/OpenEvidence && git add -A && git commit -m '<message>' && git push origin main`
 8. **llms.txt** at the root lists all data endpoints — this file complements it with structured content for direct ingestion.

@@ -6094,5 +6094,527 @@
       "Estimated $6.3M-$18.9M perceived productivity value"
     ],
     "new": true
+  },
+  {
+    "id": "pmid:42760898",
+    "pmid": "42760898",
+    "doi": "10.12688/f1000research.178438.2",
+    "source": "PubMed",
+    "type": "clinical_decision_support_evaluation",
+    "title": "Improving Medication Safety in Chronic Kidney Disease Using Rule-Based and Artificial Intelligence-Based Clinical Decision Support Systems: A Systematic Review of Randomized Controlled Trials",
+    "authors": "Ismail A, Sauriasari R, Yanuar A, Sudiana D, Cokro F",
+    "journal": "F1000Res",
+    "pub_date": "2026-08-28",
+    "updated": "2026-09-19",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42760898/",
+    "abstract": "PRISMA-guided systematic review and meta-analysis of 20 RCTs comparing rule-based or AI/ML CDSS with usual care for CKD medication safety. Pooled across four trials, CDSS improved appropriate renal dosing (RR 1.76; 95% CI 1.13-2.74) but heterogeneity was extreme (I2=97%). Best Evidence Synthesis showed consistent direction favoring CDSS. Clinician compliance ranged 17-74% owing to alert fatigue.",
+    "tags": [
+      "clinical decision support",
+      "CDSS",
+      "medication safety",
+      "CKD",
+      "systematic review",
+      "RCT"
+    ],
+    "relevance": "Systematic review of clinical decision support systems for medication safety — directly relevant to CDSS evaluation.",
+    "key_findings": [
+      "20 RCTs met inclusion criteria; 6 provided meta-analytic data",
+      "CDSS improved appropriate renal dosing (RR 1.76; 95% CI 1.13-2.74)",
+      "Extreme heterogeneity (I2=97%) limits transportability",
+      "Clinician compliance 17-74% due to alert fatigue",
+      "CKD documentation in EHR improved consistently (RR 1.19; 95% CI 1.07-1.32)"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42759813",
+    "pmid": "42759813",
+    "doi": "10.1016/j.japh.2026.103524",
+    "source": "PubMed",
+    "type": "llm_benchmark",
+    "title": "Performance of large language models on narrow therapeutic index drug monitoring: Implications for clinical pharmacy practice",
+    "authors": "Azmakan H, Azamakan T",
+    "journal": "J Am Pharm Assoc (2003)",
+    "pub_date": "2026-09-18",
+    "updated": "2026-09-19",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42759813/",
+    "abstract": "Evaluated three LLMs (Claude Sonnet 4.6, ChatGPT 5.5, Gemini 3.1 Pro) on phenytoin and digoxin TDM interpretation across 30 structured clinical vignettes. Claude achieved highest performance (94.9%), significantly outperforming ChatGPT (84.5%) and Gemini (83.4%). Overconfident reasoning was most common error category (45.4%).",
+    "tags": [
+      "LLM benchmark",
+      "clinical pharmacy",
+      "therapeutic drug monitoring",
+      "Claude",
+      "ChatGPT",
+      "Gemini",
+      "multi-model comparison"
+    ],
+    "relevance": "Multi-system LLM comparison on clinical reasoning tasks — directly relevant to medical AI accuracy comparison.",
+    "key_findings": [
+      "Claude Sonnet 4.6: 94.9% mean performance vs ChatGPT 5.5 (84.5%) and Gemini 3.1 Pro (83.4%)",
+      "30 structured clinical vignettes on phenytoin and digoxin TDM",
+      "Overconfident reasoning was most common error (45.4% of total errors)",
+      "High test-retest agreement across generations (ICC=0.90)",
+      "Pharmacist oversight remains essential for TDM tasks"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42758740",
+    "pmid": "42758740",
+    "doi": "10.1371/journal.pdig.0001182",
+    "source": "PubMed",
+    "type": "llm_benchmark",
+    "title": "The economics of accuracy for medical reasoning with large language models",
+    "authors": "Bhattacharyya K, Kamabattula S",
+    "journal": "PLOS Digit Health",
+    "pub_date": "2026-09-18",
+    "updated": "2026-09-19",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758740/",
+    "abstract": "Compared test-time scaling, fine-tuning, and context grounding using Gemma and MedGemma LLMs (1B to 27B) across medical QA datasets. Medical fine-tuning benefit grew from +4.6 to +15.7 pp with self-consistency. Extended reasoning raised MedGemma 27B from 58.1% to 80.1%. Identified overthinking inflection where extended reasoning degrades accuracy by 7-13 pp when context is available.",
+    "tags": [
+      "LLM benchmark",
+      "medical reasoning",
+      "MedGemma",
+      "test-time scaling",
+      "fine-tuning",
+      "RAG",
+      "accuracy-efficiency tradeoffs"
+    ],
+    "relevance": "LLM benchmark on medical knowledge tests — directly evaluates strategies for improving medical AI accuracy.",
+    "key_findings": [
+      "Medical fine-tuning benefit grew from +4.6 to +15.7 pp with self-consistency",
+      "Extended reasoning raised MedGemma 27B from 58.1% to 80.1% accuracy",
+      "Overthinking inflection: extended reasoning degrades accuracy 7-13 pp when context available",
+      "Equivalency points where smaller models match larger ones via reasoning budgets",
+      "General framework with equations for cost-benefit trade-offs in medical LLM systems"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42759259",
+    "pmid": "42759259",
+    "doi": "10.1016/j.jcrc.2026.155748",
+    "source": "PubMed",
+    "type": "clinical_decision_support_evaluation",
+    "title": "Development and usability testing of a machine learning clinical decision support tool for suggesting etiologies and treatment of clinical deterioration",
+    "authors": "Nguyen OT, Wiegmann DA, Haddad J, Doerr SA, Ahmad A, Oguss M, Akel M, Wieben A, Reid J, Allan J, Edelson D, Churpek MM",
+    "journal": "J Crit Care",
+    "pub_date": "2026-09-18",
+    "updated": "2026-09-19",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42759259/",
+    "abstract": "Mixed-methods study developing ML-CDS tool for clinical deterioration etiology and treatment. Focus groups (26 clinicians) identified design requirements. Usability tests (23 clinicians) showed improvements in diagnostic accuracy, perceived workload, and satisfaction vs control. Design requirements included rationale transparency, data quality assessment, and pathway integration.",
+    "tags": [
+      "clinical decision support",
+      "machine learning",
+      "clinical deterioration",
+      "usability",
+      "EHR integration"
+    ],
+    "relevance": "Clinical decision support tool development and usability evaluation — directly relevant to CDSS evaluation.",
+    "key_findings": [
+      "Focus groups (n=26) identified key design requirements for ML-CDS",
+      "Usability tests (n=23) showed improved diagnostic accuracy, workload, and satisfaction",
+      "Design requirements: rationale transparency, data quality assessment, single-screen consolidation, pathway integration",
+      "Experimental EHR interface with ML-CDS outperformed control on all metrics"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42757812",
+    "pmid": "42757812",
+    "doi": "10.1097/XCS.0000000000002211",
+    "source": "PubMed",
+    "type": "llm_evaluation",
+    "title": "Large Language Model Data Abstraction Demonstrates Accuracy and Reliability for NSQIP",
+    "authors": "Alnaseri T, Ibrahim Y, Grunseid A, Siavoshi M, Matthews A, Ko CY, DeLong MR",
+    "journal": "J Am Coll Surg",
+    "pub_date": "2026-09-18",
+    "updated": "2026-09-19",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42757812/",
+    "abstract": "Proof-of-concept evaluating customized ChatGPT 4.1 for NSQIP breast reconstruction data abstraction. 105 patients, 9,048 data points. LLM accuracy 99.33% vs 98.19% for human abstraction (McNemar p<0.001). LLM exceeded human for operative/postoperative variables. Supports LLM-assisted abstraction for NSQIP efficiency.",
+    "tags": [
+      "LLM evaluation",
+      "ChatGPT",
+      "data abstraction",
+      "NSQIP",
+      "surgical quality",
+      "accuracy comparison"
+    ],
+    "relevance": "LLM vs human accuracy benchmark in clinical data abstraction — directly evaluates LLM performance for clinical quality metrics.",
+    "key_findings": [
+      "LLM accuracy 99.33% vs 98.19% for human abstraction (p<0.001)",
+      "105 patients, 9,048 data points evaluated",
+      "LLM exceeded human for operative/postoperative variables",
+      "Supports LLM-assisted abstraction for NSQIP efficiency and expansion"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42760707",
+    "pmid": "42760707",
+    "doi": "10.1097/MD.0000000000050741",
+    "source": "PubMed",
+    "type": "llm_clinical_tool",
+    "title": "An intelligent OCR-LLM prescription review system for inpatient narcotic and psychotropic drugs: Development and retrospective validation",
+    "authors": "Ma R, Xu K, Zhang M, Li X, Ma X, Wang J, Li J",
+    "journal": "Medicine (Baltimore)",
+    "pub_date": "2026-09-18",
+    "updated": "2026-09-19",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42760707/",
+    "abstract": "Developed OCR+local LLM system for prescription review of inpatient narcotic and psychotropic drugs. 500 prescriptions evaluated. System performed image recognition, text structuring, rule-based validation, signature verification, and residual drug calculation vs pharmacist manual review as reference standard.",
+    "tags": [
+      "LLM",
+      "OCR",
+      "prescription review",
+      "clinical tool",
+      "medication safety"
+    ],
+    "relevance": "LLM-based clinical tool development and validation — demonstrates practical LLM deployment for medication safety.",
+    "key_findings": [
+      "Combined OCR and local LLM for prescription review of controlled substances",
+      "500 inpatient prescriptions evaluated vs pharmacist manual review",
+      "System covers completeness, dosage limits, medication instructions, signatures, residual drug handling",
+      "Retrospective validation with accuracy, sensitivity, specificity, PPV, NPV, F1, and Cohen's kappa"
+    ],
+    "new": true
+  },
+  {
+    "id": "arxiv:2609.24480",
+    "arxiv_id": "2609.24480",
+    "source": "arXiv",
+    "type": "medical_llm_benchmark",
+    "title": "Fathom-Vaidya: Advancing Medical Reasoning with Rubric-Based Rewards",
+    "authors": "Shah K, Singh K, Snehan J, Singh S",
+    "pub_date": "2026-09-21",
+    "url": "https://arxiv.org/abs/2609.24480",
+    "abstract": "Sequential training framework targeting diagnostic reasoning and clinical healthcare reasoning using synthetic data and rubric-based RL. Uses MedBullets-derived questions with rule- and rubric-guided RL, then 5.3k synthetic multi-turn scenarios with multi-dimensional rubrics. Yields over 10% improvement on MedXpertQA, 30B model achieves 50.1% on HealthBench-Hard, surpassing GPT-5 (thinking).",
+    "tags": [
+      "HealthBench",
+      "MedXpertQA",
+      "medical reasoning",
+      "rubric-based RL",
+      "benchmark"
+    ],
+    "relevance": "LLM benchmark on medical knowledge tests (HealthBench, MedXpertQA) — directly evaluates medical reasoning improvements.",
+    "key_findings": [
+      "Over 10% improvement on MedXpertQA",
+      "30B model achieves 50.1% accuracy on HealthBench-Hard, surpassing GPT-5 (thinking)",
+      "Sequential training: diagnostic reasoning then clinical reasoning with rubric-based RL",
+      "5.3k synthetic multi-turn clinical scenarios generated for training"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42770666",
+    "pmid": "42770666",
+    "doi": "10.2196/92090",
+    "source": "PubMed",
+    "type": "rag_clinical_evaluation",
+    "title": "Improving Reliability and Explainability of Medical Question Answering Through Atomic Fact-Checking in Retrieval-Augmented Large Language Models: Creation and Validation Study",
+    "authors": "Vladika J, Domres A, Nguyen M, Moser R, Nano J, Busch F, et al",
+    "journal": "J Med Internet Res",
+    "pub_date": "2026-09-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42770666/",
+    "abstract": "Atomic fact-checking framework for RAG-based medical LLM Q&A. Decomposes answers into atomic facts, verifies each against medical guideline knowledge base. 50% overall answer improvement, 80% hallucination detection rate. Tested on prostate cancer, tumor board cases, and neurology Q&A.",
+    "tags": [
+      "RAG",
+      "fact-checking",
+      "hallucination detection",
+      "clinical decision support",
+      "benchmark"
+    ],
+    "relevance": "RAG-based clinical AI tool evaluation — directly evaluates fact-checking methodology for medical LLMs with clinical guidelines.",
+    "key_findings": [
+      "Atomic fact-checking achieves up to 50% overall answer improvement",
+      "80% hallucination detection rate",
+      "Strongest gains on real tumor-board questions (most clinically realistic)",
+      "Tested across radiooncology and neurology Q&A sets",
+      "Compares open-source generalist vs medical fine-tuned models"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42770562",
+    "pmid": "42770562",
+    "doi": "10.1097/ALN.0000000000006388",
+    "source": "PubMed",
+    "type": "cdss_evaluation",
+    "title": "Effect of In-line Clinical Decision Support to Improve Accuracy of American Society of Anesthesiologists Physical Status Documentation: A Two Center Evaluation of a Quality Intervention",
+    "authors": "Murphy ZR, Colquhoun DA, Mentz GB, Burns ML, Mathis MR, Jiao Y, et al",
+    "journal": "Anesthesiology",
+    "pub_date": "2026-09-22",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42770562/",
+    "abstract": "In-line real-time CDS using anesthesia clinicians' documentation to highlight potential ASA PS under-classification. 51 conditions embedded. Site 1: ASA PS 3+ increased from 52.9% to 61.7% (aOR 1.42). Site 2 control: minimal change. 251,944 anesthetics at Site 1, 286,172 at Site 2.",
+    "tags": [
+      "clinical decision support",
+      "CDS",
+      "ASA PS",
+      "anesthesiology",
+      "quality intervention"
+    ],
+    "relevance": "Clinical decision support systems evaluation — real-world CDS deployment with controlled evaluation across two centers.",
+    "key_findings": [
+      "In-line CDS increased ASA PS 3+ classification from 52.9% to 61.7% at intervention site",
+      "Difference-in-difference vs control site: significant improvement",
+      "251,944 anesthetics at intervention site, 286,172 at control",
+      "50 conditions addressed by CDS, proportion correct increased from 83.6% to 94.0%"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42769379",
+    "pmid": "42769379",
+    "doi": "10.1093/haschl/qxag218",
+    "source": "PubMed",
+    "type": "physician_ai_teaming",
+    "title": "When nurses are held accountable for AI-driven clinical decisions, they must be engaged early and meaningfully",
+    "authors": "Reading Turchioe M, Wieben A, Sun C, Baker C, Galatzan BJ",
+    "journal": "Health Aff Sch",
+    "pub_date": "2026-09",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42769379/",
+    "abstract": "Examines whether nurses should be held liable for AI-assisted clinical decisions. AMIA 2025 structured debate. Proponents: professional ethics, tort precedent, human-in-the-loop. Opponents: AI opacity, unfair liability, limited nurse agency. Two reforms: meaningful nurse engagement throughout AI lifecycle and nursing-specific considerations in AI legislation.",
+    "tags": [
+      "nursing",
+      "AI accountability",
+      "clinical decisions",
+      "policy",
+      "human-in-the-loop"
+    ],
+    "relevance": "Physician-AI teaming studies — examines clinician accountability and responsibility in AI-augmented clinical decisions.",
+    "key_findings": [
+      "Nurses as largest healthcare profession and most proximal to patients face AI accountability questions",
+      "AMIA 2025 structured debate on nurse liability for AI decisions",
+      "Two reforms: nurse engagement throughout AI lifecycle, nursing-specific AI legislation",
+      "AI opacity and limited nurse agency in procurement preclude fair responsibility assignment"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42769222",
+    "pmid": "42769222",
+    "doi": "10.3389/fmed.2026.1908569",
+    "source": "PubMed",
+    "type": "llm_clinical_comparison",
+    "title": "Evaluating LLMs in non-metastatic melanoma care: a comparative analysis",
+    "authors": "Wu X, Zhong W, Ye W, Jin X, Zhang J, Wu L",
+    "journal": "Front Med (Lausanne)",
+    "pub_date": "2026-09-07",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42769222/",
+    "abstract": "Comparative evaluation of 7 LLMs (GPT-5.2, Gemini-3.1, medically enhanced models) on 59 virtual melanoma cases across TNM stages. GPT-5.2 (5.56+/-1.12) and Gemini-3.1 (5.25+/-1.3) highest staging accuracy. Performance declined significantly in complex Stage III cases. Gemini-3.1 excelled in protocol standardization.",
+    "tags": [
+      "LLM comparison",
+      "melanoma",
+      "oncology",
+      "benchmark",
+      "GPT-5.2",
+      "Gemini-3.1"
+    ],
+    "relevance": "Medical AI accuracy comparison across multiple systems — directly compares frontier LLMs on clinical decision support in oncology.",
+    "key_findings": [
+      "7 LLMs evaluated on 59 virtual melanoma cases",
+      "GPT-5.2 and Gemini-3.1 highest staging accuracy",
+      "Performance declined significantly in complex Stage III cases",
+      "Some models posed risks like insufficient surgical margin recommendations",
+      "Model performances converged in early stages but diverged in advanced ones"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42768966",
+    "pmid": "42768966",
+    "doi": "10.1177/0272989X261484927",
+    "source": "PubMed",
+    "type": "physician_ai_teaming",
+    "title": "AI Quality and Clinical Roles Impact Decision Quality in AI-Augmented Medical Decisions More than AI Explanations",
+    "authors": "Clement J, Ren Y, Curley S",
+    "journal": "Med Decis Making",
+    "pub_date": "2026-09-22",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42768966/",
+    "abstract": "3 experiments with clinicians making drug-dosing decisions using AI recommendations of differing quality and 4 types of explanations. AI recommendation quality more important than explanations for decision quality. Clinical roles moderated effects — midlevel providers and nurses more susceptible to low-quality AI recommendations. Local AI explanations increased trust but did not improve decision quality.",
+    "tags": [
+      "AI explanations",
+      "decision quality",
+      "clinical roles",
+      "physician-AI teaming",
+      "drug dosing"
+    ],
+    "relevance": "Physician-AI teaming studies — evaluates how AI quality, explanations, and clinical roles affect AI-augmented medical decisions.",
+    "key_findings": [
+      "AI recommendation quality more important than AI explanations for decision quality",
+      "Clinical roles moderate effects — midlevel providers and nurses more susceptible to low-quality AI",
+      "Local AI explanations increased trust but did not improve decision quality",
+      "Trust in AI largely unrelated to clinical decision quality",
+      "3 experiments with pharmacists, physicians, nurses, midlevel providers"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42767739",
+    "pmid": "42767739",
+    "doi": "10.1136/bmjopen-2026-116525",
+    "source": "PubMed",
+    "type": "cdss_review",
+    "title": "Scoping review of the methods used to map clinical expertise and knowledge in the creation of knowledge-based clinical decision support systems",
+    "authors": "Bounsall K, Cong C, Downey J, Onyeachu P, Haunton V, Allgar V, et al",
+    "journal": "BMJ Open",
+    "pub_date": "2026-09-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42767739/",
+    "abstract": "Scoping review of 67 studies across 24 countries and 46 clinical areas on methods for knowledge-base creation in CDSSs. Five main approaches: domain expert input (65%), clinical practice guidelines, literature reviews, ontologies, historical clinical data. Substantial variation and gaps in documentation of knowledge-capture processes.",
+    "tags": [
+      "CDSS",
+      "knowledge base",
+      "scoping review",
+      "clinical decision support",
+      "methodology"
+    ],
+    "relevance": "Clinical decision support systems evaluation/benchmarking — comprehensive review of CDSS development methodology.",
+    "key_findings": [
+      "67 studies across 24 countries and 46 clinical areas reviewed",
+      "Five approaches to knowledge-base creation: domain experts, guidelines, literature, ontologies, clinical data",
+      "Domain expert input most common (65%) but reporting inconsistent",
+      "61% of studies not specifying number of experts involved",
+      "Methods highly heterogeneous and often poorly reported"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42767470",
+    "pmid": "42767470",
+    "doi": "10.1016/j.clindermatol.2026.09.012",
+    "source": "PubMed",
+    "type": "clinical_ai_adoption",
+    "title": "Practical Considerations for Adopting AI Clinical Decision Support Tools and Large Language Models in Dermatology",
+    "authors": "Dhamsania IR, Zhou AE, Khalilzadeh DM, Vidal NY, Ferris LK, Grant-Kels JM",
+    "journal": "Clin Dermatol",
+    "pub_date": "2026-09-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42767470/",
+    "abstract": "Review of AI technologies in dermatology including diagnostic imaging tools, workflow-integrated systems, and generative AI models. Evaluates advantages, limitations, workflow optimization, patient trust, and physician-patient relationship with AI integration. Key challenges: dataset diversity, medicolegal ambiguity, transparency.",
+    "tags": [
+      "dermatology",
+      "AI adoption",
+      "clinical decision support",
+      "LLM",
+      "skin cancer"
+    ],
+    "relevance": "Clinical decision support systems evaluation — reviews practical adoption considerations for AI CDS tools and LLMs in clinical practice.",
+    "key_findings": [
+      "Reviews AI diagnostic imaging, workflow-integrated systems, and generative AI in dermatology",
+      "Key challenges: dataset diversity, medicolegal ambiguity, transparency of AI outputs",
+      "Importance of preserving physician-patient relationship with AI integration",
+      "Practical and ethical considerations for widespread adoption"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42766289",
+    "pmid": "42766289",
+    "doi": "10.2196/95157",
+    "source": "PubMed",
+    "type": "clinical_ai_review",
+    "title": "AI for Health Care Quality and Patient Safety: Scoping Review of Diagnostic, Predictive, and Decision Support Applications",
+    "authors": "Xu Y, Veillard J, Kong JD",
+    "journal": "J Med Internet Res",
+    "pub_date": "2026-09-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42766289/",
+    "abstract": "Scoping review of 275 studies on AI for healthcare quality and patient safety. 4 domains: diagnostic AI (51.6%), predictive analytics (69.8%), CDS (84.7%), economic assessment (19.3%). 5 recurring barriers: limited prospective validation, workflow effectiveness, infrastructure fragmentation, equity gaps, governance uncertainty.",
+    "tags": [
+      "AI healthcare quality",
+      "patient safety",
+      "decision support",
+      "scoping review",
+      "barriers"
+    ],
+    "relevance": "Clinical decision support systems evaluation/benchmarking — comprehensive review of AI CDS applications across healthcare.",
+    "key_findings": [
+      "275 studies reviewed across 4 application domains",
+      "CDS applications most common (84.7% of studies)",
+      "5 recurring barriers: limited prospective validation, workflow, infrastructure, equity, governance",
+      "Prospective and external validation uncommon",
+      "Economic evaluations found in only 1.5% of records"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42765512",
+    "pmid": "42765512",
+    "doi": "",
+    "source": "PubMed",
+    "type": "physician_ai_teaming",
+    "title": "Nursing Involvement and Nurse-Patient Relational Indicators in Algorithm-Assisted Digital Monitoring in Adult Inpatient Psychiatry: A Scoping Review",
+    "authors": "Sarpini M, Gamba A, Colombo NT",
+    "journal": "J Psychiatr Ment Health Nurs",
+    "pub_date": "2026-09-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42765512/",
+    "abstract": "Scoping review mapping evidence on algorithm-assisted digital monitoring in adult inpatient mental health settings, focusing on nursing practice and nurse-patient relational care implications. First review to address this intersection.",
+    "tags": [
+      "nursing",
+      "algorithm-assisted monitoring",
+      "psychiatry",
+      "AI accountability"
+    ],
+    "relevance": "Physician-AI teaming studies — examines clinician involvement and relational care in AI-assisted clinical monitoring.",
+    "key_findings": [
+      "First scoping review on algorithm-assisted monitoring in inpatient psychiatry",
+      "Focus on nursing practice and nurse-patient relational care",
+      "Implications for mental health nursing practice"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42765337",
+    "pmid": "42765337",
+    "doi": "10.1177/21501319261491056",
+    "source": "PubMed",
+    "type": "llm_clinical_framework",
+    "title": "Beyond the Black Box: A Point-Of-Care Framework for LLM Literacy and Critical Appraisal",
+    "authors": "Stephenson CR, Aakre CA, Croghan IT, Hurt RT, West CP",
+    "journal": "J Prim Care Community Health",
+    "pub_date": "2026-09-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42765337/",
+    "abstract": "Evidence-based framework for critically appraising LLM output at point of care. Three levels: internal validation (stability, logical soundness), external verification (accuracy, evidence support), contextual application (patient-specific appropriateness). Rigor scaled to clinical risk. From Mayo Clinic.",
+    "tags": [
+      "LLM literacy",
+      "critical appraisal",
+      "point of care",
+      "framework",
+      "evidence-based medicine"
+    ],
+    "relevance": "Clinical decision support systems evaluation — framework for evaluating LLM outputs in clinical decision support.",
+    "key_findings": [
+      "Three-level appraisal framework: internal validation, external verification, contextual application",
+      "Built on evidence-based medicine principles",
+      "Rigor scaled to clinical risk — lower risk uses need less appraisal",
+      "LLMs may reduce cognitive load but do not replace clinical judgment",
+      "From Mayo Clinic Division of General Internal Medicine"
+    ],
+    "new": true
+  },
+  {
+    "id": "pmid:42764575",
+    "pmid": "42764575",
+    "doi": "10.4274/tjh.galenos.2026.82621",
+    "source": "PubMed",
+    "type": "agentic_ai_clinical",
+    "title": "From Answers to Agents: What Must Change Before Generative and Agentic AI Become Clinical Infrastructure in Hematology",
+    "authors": "Gozden HE",
+    "journal": "Turk J Haematol",
+    "pub_date": "2026-09-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42764575/",
+    "abstract": "Examines shift from AI answering questions to acting in hematology. 2026 hematology agent achieved 83% concordance with tumor-board decisions in prospective silent trial, 0.3% hallucinations. Four changes needed: validate trajectories not answers, allocate autonomy inversely to complexity, treat deployed models as regulated instruments, engineer against automation bias.",
+    "tags": [
+      "agentic AI",
+      "hematology",
+      "clinical infrastructure",
+      "governance",
+      "tumor board"
+    ],
+    "relevance": "Clinical decision support systems evaluation — evaluates agentic AI deployment in clinical hematology with prospective trial data.",
+    "key_findings": [
+      "Hematology agent achieved 83% concordance with tumor-board decisions in prospective silent trial",
+      "Hallucinations in only 0.3% of cases",
+      "Binding constraint shifting from accuracy to governability",
+      "Four changes needed: trajectory validation, inverse autonomy allocation, regulated instrument treatment, automation bias engineering"
+    ],
+    "new": true
   }
 ]

@@ -95,7 +95,7 @@ Each page below is self-contained and links back to the data endpoints it uses.
 2. **Respect the NOHARM policy.** The user explicitly asked NOT to run or re-run the NOHARM benchmark from this site.
 3. **Timeline order is descending** almost everywhere (newest first). Check `date` fields before assuming chronological order.
 4. **This is an unofficial tracker.** Do not present it as OpenEvidence Inc.'s official website; official site is `openevidence.com`.
-5. **Web search path.** If you must search the live web for OpenEvidence news, use the Venice API (`POST api.venice.ai/api/v1/augment/search`) or Grok X search; do not rely on DuckDuckGo (CAPTCHA blocks).
+5. **Web search path.** If you must search the live web for OpenEvidence news, use the Venice API (`POST api.venice.ai/api/v1/augment/search`) or Grok X search; do not rely on DuckDuckGo (CAPTCHA blocks). Use `search_provider: brave` (default) or `search_provider: google`; the older `provider` field is ignored by the API.
 
 ---
 
