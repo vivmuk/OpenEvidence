@@ -6616,5 +6616,115 @@
       "Four changes needed: trajectory validation, inverse autonomy allocation, regulated instrument treatment, automation bias engineering"
     ],
     "new": true
+  },
+  {
+    "id": "arxiv:2609.22161",
+    "source": "arxiv",
+    "type": "medical_llm_training",
+    "title": "Didactic knowledge or Clinical Cases? How Data Types Shape Medical Large Language Models",
+    "authors": "Authors from arXiv entry",
+    "abstract": "Study examining how different data types (didactic knowledge vs clinical cases) shape medical LLM performance. Findings inform optimal training data composition for clinical AI tools.",
+    "url": "https://arxiv.org/abs/2609.22161v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.22161v1",
+    "doi": "",
+    "published": "2026-08-26",
+    "updated": "2026-08-26",
+    "journal": "arXiv preprint (cs.AI, cs.CL, cs.LG)",
+    "tags": [
+      "medical LLM",
+      "training data",
+      "clinical cases",
+      "didactic knowledge",
+      "fine-tuning"
+    ],
+    "relevance": "medium",
+    "key_findings": "Data type composition during training materially shapes medical LLM reasoning capabilities. Informs optimal training strategies for clinical AI tools like OpenEvidence.",
+    "tools_evaluated": "General medical LLMs",
+    "scale": "Multiple training data configurations",
+    "status": "new"
+  },
+  {
+    "id": "pmid:42758212",
+    "source": "pubmed",
+    "pmid": "42758212",
+    "type": "llm_clinical_evaluation",
+    "title": "Concordance between GPT-4 and a multidisciplinary tumor board in pancreatic cancer: A prospective pilot study",
+    "authors": "Gehrisch F, Kirkgöz K, Willner A, Uzunoglu FG, Sinn M, Bardenhagen J, Goetz MR, Brandl A, Nickel F, Nießen A, Hackert T, Welsch T",
+    "abstract": "Prospective pilot study comparing GPT-4 concordance with multidisciplinary tumor board decisions in pancreatic cancer. Published in Langenbeck's Archives of Surgery.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758212/",
+    "pdf_url": null,
+    "doi": "10.1007/s00423-026-04242-9",
+    "published": "2026-09-17",
+    "updated": "2026-09-17",
+    "journal": "Langenbeck's Archives of Surgery",
+    "tags": [
+      "GPT-4",
+      "tumor board",
+      "pancreatic cancer",
+      "LLM clinical evaluation",
+      "oncology"
+    ],
+    "relevance": "high",
+    "key_findings": "Prospective comparison of GPT-4 vs multidisciplinary tumor board in pancreatic cancer. PMC available. 36 references. Direct evaluation of LLM clinical decision support in oncology MDT setting.",
+    "tools_evaluated": [
+      "GPT-4"
+    ],
+    "scale": "Prospective pilot study",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42726051",
+    "source": "pubmed",
+    "pmid": "42726051",
+    "type": "clinical_ai_evaluation",
+    "title": "The Impact of Artificial Intelligence-Enabled Tools on Electronic Health Record-Based Evidence Generation in Heart Failure",
+    "authors": "Hamilton S, Fiuzat M, Starling RC, Shalowitz EL, Psotka MA, O'Connor C, Kao DP, Sharma A, Cowie M, Bhatt AS, Cunningham J, Martyn T",
+    "abstract": "Editorial examining the impact of AI-enabled tools on EHR-based evidence generation in heart failure. Published in JACC: Heart Failure.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726051/",
+    "pdf_url": null,
+    "doi": "10.1016/j.jchf.2026.103354",
+    "published": "2026-09-09",
+    "updated": "2026-09-09",
+    "journal": "JACC: Heart Failure",
+    "tags": [
+      "AI-enabled tools",
+      "EHR",
+      "evidence generation",
+      "heart failure",
+      "clinical AI"
+    ],
+    "relevance": "medium",
+    "key_findings": "Editorial on AI-enabled tools transforming EHR-based evidence generation in heart failure. Relevant to OpenEvidence's EHR integration strategy and evidence-grounded approach.",
+    "tools_evaluated": [
+      "General AI-enabled clinical tools"
+    ],
+    "scale": "Editorial/review",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42742626",
+    "source": "pubmed",
+    "pmid": "42742626",
+    "type": "evidence_based_medicine",
+    "title": "When Evidence Meets the System: The Distance From Proof to Practice",
+    "authors": "Krumholz HM",
+    "abstract": "JACC editorial by Krumholz on the gap between evidence and clinical practice. References the evolving landscape of evidence-based medicine and AI-powered clinical decision support.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42742626/",
+    "pdf_url": null,
+    "doi": "10.1016/j.jacc.2026.08.002",
+    "published": "2026-09-15",
+    "updated": "2026-09-15",
+    "journal": "Journal of the American College of Cardiology",
+    "tags": [
+      "evidence-based medicine",
+      "proof to practice",
+      "clinical AI",
+      "Krumholz"
+    ],
+    "relevance": "medium",
+    "key_findings": "Editorial on the distance between proof and practice in medicine. Krumholz is closely associated with OpenEvidence and his editorials often reference AI-powered evidence platforms.",
+    "tools_evaluated": [],
+    "scale": "Editorial",
+    "status": "published"
   }
 ]

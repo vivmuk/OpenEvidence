@@ -5,6 +5,47 @@
 
 var whatsNewData = [
   {
+    date: "September 22, 2026",
+    updated: "Weekly research sweep (Sun Sep 22, 3:10 PM ET) — Venice Augment Search (8 queries) + arXiv API (50 results) + PubMed eutils (30 broad + 20 narrow). 3 NEW PARTNERSHIPS: Penn Medicine global health partnership (Sep 15) + MSK precision oncology partnership with OncoKB integration (Sep 16) + UTMB Health Epic EHR integration (Sep 22). 4 new research papers added to research.json (GPT-4 pancreatic cancer MDT concordance, AI quality vs explanations in augmented decisions, AI-enabled EHR evidence generation in HF, Krumholz editorial on proof-to-practice). 3 new arXiv papers added (Fathom-Vaidya surpassing GPT-5 on HealthBench-Hard, Didactic vs Clinical Cases training data, Accountable Longitudinal Clinical AI). 5 new timeline entries. 3 new partnership entries. 4 new global landscape entries. 3 new benchmark entries (Fathom-Vaidya, KnowBench effort-reduction benchmark, AI decision quality study). New metrics: $300M annualized revenue (Sacra/Becker's), $20B considered valuation, 650K physicians, 27M monthly consultations.",
+    items: [
+      {
+        cat: "Partnership — Health System",
+        title: "UTMB Health integrates OpenEvidence into clinical workflows (Sep 22, 2026)",
+        desc: "The University of Texas Medical Branch (UTMB Health) and OpenEvidence announce a collaboration to integrate OpenEvidence directly into clinical workflows across UTMB's Texas health system. UTMB is the first academic health center in Texas and one of the largest in the nation, with a 134-year history and more than 1,000 beds. The integration will put OpenEvidence's AI-powered medical knowledge and clinical decision support at the point of care for UTMB clinicians through Epic EHR and clinical systems."
+      },
+      {
+        cat: "Partnership — Global Health",
+        title: "OpenEvidence and Penn Medicine partner to advance medical intelligence for global health (Sep 15, 2026)",
+        desc: "Penn Medicine partnership bringing AI-powered clinical decision support to 10,000+ clinicians across seven-hospital U.S. network plus Botswana-UPenn Partnership for lower-resource settings. Srinath Adusumalli (VP CHIO): 'ability to instantly surface the best available medical evidence in context of the patient in front of them.' Farouk Dako (BUP Director): 'model for extending Penn Medicine's resources to lower-resource settings through sustainable partnerships.' First OE partnership explicitly extending to African lower-resource clinical settings."
+      },
+      {
+        cat: "Partnership — Precision Oncology",
+        title: "Memorial Sloan Kettering and OpenEvidence partner with OncoKB integration (Sep 16, 2026)",
+        desc: "MSK and OpenEvidence announce partnership integrating OpenEvidence into MSK's Epic EHR workflow and bringing MSK's OncoKB — first FDA-recognized somatic cancer variant knowledge base — into OpenEvidence for nationwide use. OncoKB levels of evidence aligned with AMP/ASCO/CAP consensus. First partnership to integrate an FDA-recognized cancer variant knowledge base into a clinical AI platform. More than half of US hematologist-oncologists already use OpenEvidence."
+      },
+      {
+        cat: "Research — Clinical AI Benchmark",
+        title: "Fathom-Vaidya 30B surpasses GPT-5 (thinking) on HealthBench-Hard (Sep 21, 2026)",
+        desc: "Sequential training framework using synthetic data and rubric-based RL achieves 50.1% on HealthBench-Hard. >10% improvement on MedXpertQA. 5.3k synthetic multi-turn clinical scenarios with multi-dimensional rubrics. Shows targeted training can systematically improve both diagnostic and interactive clinical reasoning in medical LLMs."
+      },
+      {
+        cat: "Research — Deployment-Grounded Benchmark",
+        title: "KnowBench: Effort Reduction as unified metric for clinical AI (Sep 14, 2026)",
+        desc: "Knowtex introduces KnowBench — Effort Reduction (ER) as unifying metric: proportion of system-generated clinical work product accepted by clinician under expert/safety review. 1M+ signed encounters across 13 specialties, 6+ months production. Knowtex fine-tuned models achieve 97.99% aggregate ER (96.8-98.9% per specialty). First deployment-grounded benchmark for clinical AI."
+      },
+      {
+        cat: "Research — AI-Augmented Decisions",
+        title: "AI quality and clinical roles matter more than AI explanations (PMID 42768966, Med Decis Making, Sep 22)",
+        desc: "Clement et al. show AI quality and clinical roles impact decision quality in AI-augmented medical decisions more than AI explanations. Implications for clinical AI tool design: focus on AI quality and role-appropriate deployment over explainability features."
+      },
+      {
+        cat: "Research — LLM in Oncology MDT",
+        title: "GPT-4 vs pancreatic cancer tumor board concordance (PMID 42758212, Langenbecks Arch Surg, Sep 17)",
+        desc: "Gehrisch et al. prospective pilot comparing GPT-4 concordance with multidisciplinary tumor board decisions in pancreatic cancer. Published in Langenbeck's Archives of Surgery with PMC access."
+      }
+    ]
+  },
+  {
     date: "September 18, 2026",
     updated: "Daily announcement check (Fri Sep 18, 4:50 AM ET) — Venice Augment Search (5 queries) + Grok X/Twitter search + openevidence.com/news scrape + PubMed eutils (30 results). arXiv API returned empty (retried). 1 NEW ANNOUNCEMENT: MSK + OpenEvidence precision oncology partnership (Sep 16) — OncoKB integration + Epic EHR. 6 new PubMed papers added to research.json (Fine-tuning/RAG/hybrid systematic review JMIR, HPB oncology LLM MDT comparison JMIR, DiagnosticXchange open-source clinical AI eval framework JAMIA, AI-assisted childhood cancer LTFU J Pediatr Hematol Oncol, Cross-site CDSS transfer Stud Health Technol Inform, Medical LLM history-taking Cureus). 5 new benchmark entries. Key finding: MSK partnership brings FDA-recognized OncoKB precision oncology knowledge base into OpenEvidence for all clinicians nationwide — first somatic cancer variant knowledge base with FDA recognition.",
     items: [

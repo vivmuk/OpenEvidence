@@ -62,6 +62,7 @@ KNOWN_DATES = {
     "2026-09-11": "MINC#NIMC Canadian physician verification partnership",
     "2026-09-15": "Penn Medicine partnership",
     "2026-09-16": "MSK precision oncology partnership",
+    "2026-09-22": "UTMB health system collaboration",
 }
 
 

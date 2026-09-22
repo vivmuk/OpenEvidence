@@ -165,6 +165,7 @@
 - **NewYork-Presbyterian / Columbia / Weill Cornell** (Jul 2026) — NYC + Westchester
 - **Boston Children's Hospital** (Jul 2026) — Research collaboration, EHR integration
 - **OneOncology** (Aug 2026) — Community oncology network
+- **UTMB Health** (Sep 2026) — First academic health center in Texas; Epic EHR integration
 
 ### Public Health
 - **LA County Department of Public Health** (Jul 2026) — First public health department partnership
