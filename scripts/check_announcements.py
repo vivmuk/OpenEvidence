@@ -63,6 +63,8 @@ KNOWN_DATES = {
     "2026-09-15": "Penn Medicine partnership",
     "2026-09-16": "MSK precision oncology partnership",
     "2026-09-22": "UTMB health system collaboration",
+    "2026-08-27": "AMSSM sports medicine partnership",
+    "2026-06-25": "JOMI surgical video partnership",
 }
 
 
