@@ -5,6 +5,42 @@
 
 var whatsNewData = [
   {
+    date: "September 23, 2026",
+    updated: "Daily check (Wed Sep 23, 9:20 AM ET) — Venice Augment Search (5 queries) + openevidence.com/announcements scrape + Grok X/Twitter search + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements. 6 new PubMed papers added to research.json (safety-oriented LLM benchmark in cervical screening, multistep clinical case LLM performance, real-time AI diagnostic copilot RCT, specialized LLM for dental treatment planning, LLM conversational vs structured triage comparison, REACT-AI clinical reasoning assessment protocol). 3 new benchmark entries added to benchmarks.json. 6 new timeline entries. Key findings: GPT-5.3 achieved 100% unsafe error-free rate with guideline prompts but error rates rise to 29% in complex scenarios. Real-time AI diagnostic copilot improved physician Top-3 accuracy by +12.3pp in randomized simulation. Specialized LLM outperformed general-purpose models in domain-specific clinical task.",
+    items: [
+      {
+        cat: "Research — LLM Safety Benchmark",
+        title: "Safety-oriented LLM benchmark in cervical screening management (PMID 42772748, JMIR, Sep 22)",
+        desc: "Eroglu & Eroglu benchmarked GPT-5.3, Gemini 3 Flash, and DeepSeek V3.2 on 60 ASCCP cervical screening scenarios (1080 observations). Guideline-directed prompts improved safety (OR 3.76) and concordance (OR 8.27). GPT-5.3 achieved 100% unsafe major error-free rate; DeepSeek V3.2 at 75%. Error rates rose from 3.1% (low complexity) to 29% (high complexity). Most frequent errors: undermanagement, genotype misinterpretation, history neglect."
+      },
+      {
+        cat: "Research — LLM Benchmark",
+        title: "LLM multistep clinical case performance: question vs case pass rates (PMID 42772745, JMIR Med Educ, Sep 22)",
+        desc: "Cha et al. evaluated 4 LLMs on 189 multistep clinical cases (473 questions). All LLMs >83% question pass rate but case pass rate substantially lower (65.6%-79.9%). DeepSeek-R1 best with 10% consistency gap; GPT-4o worst at 17.9%. Model scaling from 3B to 32B reduced consistency gap by ~50%. LLMs should be support tools, not independent decision-makers."
+      },
+      {
+        cat: "Research — Physician-AI Teaming",
+        title: "Real-time AI diagnostic copilot improves physician accuracy in simulated primary care (PMID 42771885, JMIR Form Res, Sep 22)",
+        desc: "Cusacovich et al. randomized simulation: 13 board-certified physicians, 260 simulated consultations. AI-assisted Top-3 diagnostic accuracy 74.6% vs 62.3% unassisted (AOR 2.68, P=.01), +12.3pp absolute improvement. Consultation time increased 10.7%. Safety analysis suggested possible overreliance. First formative randomized evidence for real-time voice-based AI diagnostic copilot."
+      },
+      {
+        cat: "Research — Specialized LLM",
+        title: "RTP-GPT outperforms ChatGPT and Gemini in restorative treatment planning (PMID 42773006, J Prosthet Dent, Sep 22)",
+        desc: "Shirani developed a domain-specific LLM with RAG for restorative treatment planning. 20 scenarios, 5 scoring domains, blinded evaluators. RTP-GPT significantly outperformed ChatGPT and Gemini in all domains. RAG improved reproducibility but reduced peak accuracy. Trade-off between accuracy and reliability in specialized clinical LLMs."
+      },
+      {
+        cat: "Research — Clinical Triage",
+        title: "LLM conversational triage vs traditional structured questionnaire (PMID 42772750, JMIR AI, Sep 22)",
+        desc: "Marecka et al. compared LLM-enabled conversational triage vs traditional structured questionnaire across 116,890 encounters. Same Bayesian reasoning engine. CT elicited more clinical findings, surfaced more mental health evidence, and showed higher adherence to care recommendations (34.3% vs 29.2%, P<.001). Differences attributable to interaction modality."
+      },
+      {
+        cat: "Research — Evaluation Methodology",
+        title: "REACT-AI: behaviorally anchored assessment of LLM clinical reasoning (PMID 42772746, JMIR Res Protoc, Sep 22)",
+        desc: "Agha et al. introduce REACT-AI, a 13-subdomain Behaviorally Anchored Rating Scale for process-oriented AI clinical reasoning assessment. Tests 6 flagship models in standard vs extended thinking modes. Conflict-of-interest-controlled LLM-as-judge pipeline. Results expected winter 2027. First validated instrument for reasoning quality beyond final-answer accuracy."
+      }
+    ]
+  },
+  {
     date: "September 22, 2026",
     updated: "Live sweep (Tue Sep 22, 9:46 PM ET) — Venice Augment Search (LinkedIn, OE news, OE announcements with brave + google providers) + openevidence.com/announcements scrape + Grok X/Twitter search + PubMed eutils + arXiv API. 3 NEW PARTNERSHIPS: Anthropic global health AI technology partner (Sep 22) + UTMB Health Epic EHR integration (Sep 22). Penn Medicine (Sep 15) and MSK (Sep 16) already added. 4 new research papers added to research.json (GPT-4 pancreatic cancer MDT concordance, AI quality vs explanations in augmented decisions, AI-enabled EHR evidence generation in HF, Krumholz editorial on proof-to-practice). 3 new arXiv papers added (Fathom-Vaidya surpassing GPT-5 on HealthBench-Hard, Didactic vs Clinical Cases training data, Accountable Longitudinal Clinical AI). 6 new timeline entries. 4 new partnership entries. 4 new global landscape entries. 3 new benchmark entries (Fathom-Vaidya, KnowBench effort-reduction benchmark, AI decision quality study). New metrics: $300M annualized revenue (Sacra/Becker's), $20B considered valuation, 650K physicians, 27M monthly consultations.",
     items: [

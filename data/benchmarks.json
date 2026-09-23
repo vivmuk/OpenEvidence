@@ -2302,5 +2302,76 @@
     "benchmark_type": "Agentic AI Clinical Evaluation",
     "key_findings": "Hematology agent achieved 83% concordance with tumor-board decisions in prospective silent trial, 0.3% hallucinations. Binding constraint shifting from accuracy to governability. Four changes needed for clinical infrastructure.",
     "added_date": "2026-09-22"
+  },
+  {
+    "id": "pmid:42772748",
+    "source": "pubmed",
+    "pmid": "42772748",
+    "type": "safety_benchmark",
+    "title": "Safety-Oriented Benchmarking of LLMs in Risk-Based Management of Abnormal Cervical Screening Results",
+    "authors": "Eroglu OO, Eroglu C",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42772748/",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "Journal of Medical Internet Research",
+    "tools_evaluated": "GPT-5.3, Gemini 3 Flash, DeepSeek V3.2",
+    "scale": "60 synthetic scenarios, 3 models, 2 prompt conditions, 1080 observations",
+    "key_findings": [
+      "GPT-5.3 achieved 100% unsafe major error-free rate with guideline-directed prompts",
+      "DeepSeek V3.2 unsafe error rate 25% despite guideline prompts",
+      "Guideline-directed prompts improved safety (OR 3.76) and concordance (OR 8.27)",
+      "Error rates rise from 3.1% (low complexity) to 29% (high complexity)",
+      "Most frequent errors: undermanagement, genotype misinterpretation, history neglect"
+    ],
+    "relevance": "high",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42772745",
+    "source": "pubmed",
+    "pmid": "42772745",
+    "type": "llm_benchmark",
+    "title": "LLM Performance on Multistep Clinical Cases: Question vs Case Level Analysis",
+    "authors": "Cha J, Zhao Y, Zong H",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42772745/",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "JMIR Medical Education",
+    "tools_evaluated": "DeepSeek-R1, GPT-4o, Gemini-2.5-Flash, Qwen2.5 (3B/7B/14B/32B)",
+    "scale": "189 clinical cases, 473 questions, 4 LLMs",
+    "key_findings": [
+      "All LLMs >83% question pass rate but case pass rate substantially lower (65.6%-79.9%)",
+      "DeepSeek-R1 best overall (89.9% QPR, 79.9% CPR, 10% consistency gap)",
+      "GPT-4o largest consistency gap (17.9%)",
+      "Model scaling from 3B to 32B reduces consistency gap by ~50%",
+      "Consistency gap widens with more questions per case"
+    ],
+    "relevance": "medium-high",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42773006",
+    "source": "pubmed",
+    "pmid": "42773006",
+    "type": "rag_benchmark",
+    "title": "Specialized LLM (RTP-GPT) for Restorative Treatment Planning: Performance vs General-Purpose LLMs",
+    "authors": "Shirani M",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42773006/",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "Journal of Prosthetic Dentistry",
+    "tools_evaluated": "RTP-GPT, RTP-GPT+RAG, ChatGPT, Gemini",
+    "scale": "20 clinical scenarios, 5 scoring domains, 3 testing days",
+    "key_findings": [
+      "RTP-GPT significantly outperformed ChatGPT and Gemini in all domains",
+      "RAG integration improved reproducibility but reduced peak accuracy",
+      "Trade-off between accuracy and reliability across model configurations",
+      "Blinded evaluators with ICC measurement across 3 testing days"
+    ],
+    "relevance": "medium",
+    "status": "published",
+    "new": true
   }
 ]

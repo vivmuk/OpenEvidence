@@ -6726,5 +6726,231 @@
     "tools_evaluated": [],
     "scale": "Editorial",
     "status": "published"
+  },
+  {
+    "id": "pmid:42773006",
+    "source": "pubmed",
+    "pmid": "42773006",
+    "type": "rag_evaluation",
+    "title": "Development and performance of a specialized large language model for restorative treatment planning",
+    "authors": "Shirani M",
+    "abstract": "Developed RTP-GPT, a domain-specific LLM for restorative treatment planning of endodontically treated teeth, with supervised fine-tuning and RAG integration. Benchmarked against ChatGPT and Gemini across 20 scenarios scored in 5 domains (accuracy, conservativeness, recommendation completeness, justification completeness, analytical reasoning). RTP-GPT significantly outperformed ChatGPT and RTP-GPT+RAG in all domains (Bonferroni-corrected P<.05). Gemini ranked second overall. RTP-GPT+RAG demonstrated highest reproducibility (good-to-excellent ICCs) while RTP-GPT showed lowest reproducibility despite superior accuracy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42773006/",
+    "pdf_url": null,
+    "doi": "10.1016/j.prosdent.2026.08.012",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "Journal of Prosthetic Dentistry",
+    "tags": [
+      "specialized LLM",
+      "RAG",
+      "clinical decision support",
+      "dental",
+      "benchmark",
+      "fine-tuning"
+    ],
+    "relevance": "Evaluates specialized LLM with RAG for clinical treatment planning — directly relevant to RAG-based clinical AI tool evaluation. Shows specialized models outperform general-purpose LLMs but with reproducibility trade-offs.",
+    "key_findings": [
+      "RTP-GPT (specialized LLM) significantly outperformed ChatGPT and Gemini in restorative treatment planning",
+      "RAG integration improved reproducibility but reduced peak accuracy",
+      "Trade-off between accuracy and reliability across model configurations",
+      "Benchmarked across 5 domains with blinded evaluators and ICC measurement"
+    ],
+    "tools_evaluated": [
+      "RTP-GPT",
+      "RTP-GPT+RAG",
+      "ChatGPT",
+      "Gemini"
+    ],
+    "scale": "20 clinical scenarios, 4 models, 3 testing days",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42772750",
+    "source": "pubmed",
+    "pmid": "42772750",
+    "type": "clinical_ai_evaluation",
+    "title": "Demographics, Clinical Content, Use Patterns, and Care-Seeking Intent Across Two Generations of AI-Enabled Clinical Triage Tools",
+    "authors": "Marecka M, Nowicka A, Suwinska A, Orzechowski P",
+    "abstract": "Comparative retrospective observational study of 116,890 encounters comparing a traditional structured questionnaire triage (TT) vs LLM-enabled conversational triage (CT) interface sharing the same validated Bayesian reasoning engine. CT was used by more demographically diverse users, elicited more clinical findings (median 36 vs 32, P<.001), surfaced more mental health evidence, and showed higher self-reported intended adherence to recommended care (34.3% vs 29.2%, P<.001), especially at extremes of acuity (self-care 85.4% vs 61.9%, emergency room 23.7% vs 10.5%). CT sessions were longer (8m21s vs 4m25s). Results highlight potential of hybrid LLM tools integrating validated clinical logic for digital front door settings.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42772750/",
+    "pdf_url": null,
+    "doi": "10.2196/84469",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "JMIR AI",
+    "tags": [
+      "clinical triage",
+      "LLM",
+      "conversational AI",
+      "Bayesian reasoning",
+      "comparative study",
+      "digital front door"
+    ],
+    "relevance": "Directly evaluates LLM-enabled conversational interface vs traditional AI triage tool — relevant to clinical AI tool evaluation and physician-AI interaction. Shows LLM interface improves engagement and adherence without changing underlying reasoning engine.",
+    "key_findings": [
+      "LLM-enabled conversational triage used by more demographically diverse user base",
+      "CT elicited more clinical findings and mental health evidence than traditional triage",
+      "Higher self-reported adherence to care recommendations with CT (34.3% vs 29.2%)",
+      "Same Bayesian reasoning engine — differences attributable to interaction mode",
+      "116,890 encounters over 28 weeks"
+    ],
+    "tools_evaluated": [
+      "Infermedica Traditional Triage (TT)",
+      "Infermedaca Conversational Triage (CT)"
+    ],
+    "scale": "116,890 encounters, 28 weeks",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42772748",
+    "source": "pubmed",
+    "pmid": "42772748",
+    "type": "safety_benchmark",
+    "title": "Safety-Oriented Benchmarking of Large Language Models in Risk-Based Management of Abnormal Cervical Screening Results",
+    "authors": "Eroglu OO, Eroglu C",
+    "abstract": "Benchmarked guideline concordance and safety of 3 LLMs (GPT-5.3, Gemini 3 Flash, DeepSeek V3.2) in ASCCP risk-based management of abnormal cervical screening. 60 synthetic clinical scenarios, 2 prompt conditions (Baseline Clinical vs Guideline-Directed), 1080 total observations. Under guideline-directed prompts: unsafe major error-free rate was 100% for GPT-5.3, 98.9% for Gemini 3 Flash, 75% for DeepSeek V3.2. Guideline-directed prompts improved both safety (OR 3.76) and exact concordance (OR 8.27). Error rates rose from 3.1% (low complexity) to 29% (high complexity). Most frequent errors: undermanagement, genotype misinterpretation, history neglect.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42772748/",
+    "pdf_url": null,
+    "doi": "10.2196/98131",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "Journal of Medical Internet Research",
+    "tags": [
+      "LLM benchmark",
+      "safety",
+      "cervical screening",
+      "ASCCP guidelines",
+      "guideline concordance",
+      "prompt engineering"
+    ],
+    "relevance": "Safety-oriented LLM benchmark on clinical decision support — directly evaluates whether LLMs can safely support clinical decisions in risk-based management. Shows prompt engineering impact on safety and that even best models vulnerable in complex scenarios.",
+    "key_findings": [
+      "GPT-5.3 achieved 100% unsafe major error-free rate with guideline-directed prompts",
+      "DeepSeek V3.2 unsafe error rate of 25% despite guideline prompts",
+      "Guideline-directed prompts significantly improved both safety (OR 3.76) and concordance (OR 8.27)",
+      "Error rates rise from 3.1% (low complexity) to 29% (high complexity scenarios)",
+      "Most frequent errors: undermanagement, genotype misinterpretation, history neglect",
+      "Authors caution against autonomous clinical use despite benchmark performance"
+    ],
+    "tools_evaluated": [
+      "GPT-5.3",
+      "Gemini 3 Flash",
+      "DeepSeek V3.2"
+    ],
+    "scale": "60 scenarios, 3 models, 2 prompt conditions, 1080 observations",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42772746",
+    "source": "pubmed",
+    "pmid": "42772746",
+    "type": "evaluation_protocol",
+    "title": "Process-Oriented, Behaviorally Anchored Assessment of Clinical Reasoning in Large Language Models and the Effect of Extended Thinking",
+    "authors": "Agha A, Jalil M, Anwar E, Bakoush O",
+    "abstract": "Protocol for a prospective, multigroup, comparative study introducing REACT-AI, a Behaviorally Anchored Rating Scale (BARS) with 13 subdomains for process-oriented assessment of AI clinical reasoning. Tests whether extended thinking improves reasoning quality. 6 flagship models in standard and extended thinking modes (12 conditions). Phase 1: 5 urgent care vignettes, 180 AI outputs, dual-blind human raters + LLM judges (no model judging its own family). Phase 2: 3600 AI outputs. Acceptance criteria: weighted kappa >=0.60, ICC >0.75. Registered on OSF. Results expected winter 2027.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42772746/",
+    "pdf_url": null,
+    "doi": "10.2196/103220",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "JMIR Research Protocols",
+    "tags": [
+      "LLM assessment",
+      "clinical reasoning",
+      "behaviorally anchored rating",
+      "extended thinking",
+      "protocol",
+      "REACT-AI"
+    ],
+    "relevance": "Introduces a validated process-oriented instrument for assessing LLM clinical reasoning quality — addresses gap between accuracy benchmarks and genuine reasoning evaluation. Relevant to physician-AI interaction and clinical AI safety assessment methodology.",
+    "key_findings": [
+      "REACT-AI: 13-subdomain Behaviorally Anchored Rating Scale for AI clinical reasoning assessment",
+      "Conflict-of-interest-controlled LLM-as-judge pipeline (no model judges its own family)",
+      "Tests whether extended thinking/reasoning mode improves clinical reasoning quality",
+      "Phase 1: 180 AI outputs from 12 conditions; Phase 2: 3600 outputs",
+      "Results expected winter 2027"
+    ],
+    "tools_evaluated": [
+      "6 flagship LLMs (standard + extended thinking modes)"
+    ],
+    "scale": "Protocol: 12 conditions, 3780 total planned AI outputs",
+    "status": "protocol"
+  },
+  {
+    "id": "pmid:42772745",
+    "source": "pubmed",
+    "pmid": "42772745",
+    "type": "llm_benchmark",
+    "title": "Large Language Model Performance on Multistep Clinical Cases: Comparative Study Across Question and Case Levels",
+    "authors": "Cha J, Zhao Y, Zong H",
+    "abstract": "Evaluated 4 LLMs (DeepSeek-R1, GPT-4o, Gemini-2.5-Flash, Qwen2.5) on 189 multistep clinical cases (473 questions) from Chinese National Medical Licensing Examination. All LLMs achieved >83% question pass rate, but case pass rate (all questions correct) was substantially lower. DeepSeek-R1 had highest QPR (89.9%) and CPR (79.9%), smallest consistency gap (10%). GPT-4o had largest consistency gap (17.9%). Increasing model size from 3B to 32B reduced consistency gap by ~50%. Consistency gap increases with more questions per case. Authors recommend LLMs as support tools, not independent decision-makers.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42772745/",
+    "pdf_url": null,
+    "doi": "10.2196/95342",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "JMIR Medical Education",
+    "tags": [
+      "LLM benchmark",
+      "multistep clinical cases",
+      "consistency gap",
+      "model scaling",
+      "medical licensing exam"
+    ],
+    "relevance": "LLM benchmark on multistep clinical case management — reveals that single-question accuracy masks performance degradation across complete clinical cases. Directly relevant to medical AI accuracy comparison across multiple systems.",
+    "key_findings": [
+      "All LLMs >83% question pass rate but case pass rate substantially lower (65.6%-79.9%)",
+      "DeepSeek-R1 best overall (89.9% QPR, 79.9% CPR, 10% consistency gap)",
+      "GPT-4o largest consistency gap (17.9%) despite 83.5% QPR",
+      "Model scaling from 3B to 32B reduces consistency gap by ~50%",
+      "Consistency gap widens with more questions per case",
+      "LLMs should be support tools, not independent decision-makers"
+    ],
+    "tools_evaluated": [
+      "DeepSeek-R1",
+      "GPT-4o",
+      "Gemini-2.5-Flash",
+      "Qwen2.5 (3B/7B/14B/32B)"
+    ],
+    "scale": "189 clinical cases, 473 questions, 4 LLMs",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42771885",
+    "source": "pubmed",
+    "pmid": "42771885",
+    "type": "physician_ai_teaming",
+    "title": "Real-Time Artificial Intelligence Diagnostic Copilot in Simulated Primary Care Consultations: Randomized Simulation Study",
+    "authors": "Cusacovich I, Pinilla M, Garcia Castro R",
+    "abstract": "Randomized, adjudicator-blinded simulation study of a real-time, voice-based AI diagnostic assistant in primary care. 13 board-certified physicians managed 260 simulated consultations. AI-assisted condition achieved 74.6% Top-3 diagnostic accuracy vs 62.3% unassisted (AOR 2.68, P=.01), +12.3 percentage points absolute difference. Top-2 analysis supportive (AOR 2.59, P=.01). Top-1 favored AI but inconclusive (AOR 1.83, P=.08). Consultation time increased 10.7%. Safety analysis suggested possible overreliance without statistical significance. Physicians rated system highly for usefulness and satisfaction.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42771885/",
+    "pdf_url": null,
+    "doi": "10.2196/104579",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "JMIR Formative Research",
+    "tags": [
+      "AI diagnostic copilot",
+      "physician-AI teaming",
+      "randomized simulation",
+      "primary care",
+      "diagnostic accuracy",
+      "overreliance"
+    ],
+    "relevance": "Physician-AI teaming study — directly evaluates real-time AI diagnostic assistant in simulated clinical encounters. Shows significant diagnostic accuracy improvement with AI assistance, with potential overreliance risk requiring further study.",
+    "key_findings": [
+      "AI-assisted Top-3 diagnostic accuracy 74.6% vs 62.3% unassisted (AOR 2.68, P=.01)",
+      "+12.3 percentage point absolute improvement (NNT equivalent 8.1)",
+      "Top-2 supportive (AOR 2.59, P=.01); Top-1 inconclusive (AOR 1.83, P=.08)",
+      "Consultation time increased 10.7% with AI assistance",
+      "Safety analysis suggested possible overreliance without statistical significance",
+      "13 board-certified physicians, 260 simulated consultations"
+    ],
+    "tools_evaluated": [
+      "Real-time voice-based AI diagnostic assistant (unspecified)"
+    ],
+    "scale": "260 simulated consultations, 13 physicians",
+    "status": "published"
   }
 ]
