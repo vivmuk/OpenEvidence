@@ -167,6 +167,9 @@
 - **OneOncology** (Aug 2026) — Community oncology network
 - **UTMB Health** (Sep 2026) — First academic health center in Texas; Epic EHR integration
 
+### Technology Partners
+- **Anthropic** (Sep 2026) — Global health AI technology partner; back-end AI for OpenEvidence in ~100 low- and middle-income countries
+
 ### Public Health
 - **LA County Department of Public Health** (Jul 2026) — First public health department partnership
 
