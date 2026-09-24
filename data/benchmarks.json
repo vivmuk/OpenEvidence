@@ -2373,5 +2373,74 @@
     "relevance": "medium",
     "status": "published",
     "new": true
+  },
+  {
+    "id": "pmid:42778754",
+    "source": "pubmed",
+    "type": "rag_benchmark",
+    "title": "RADAR: RAG-Based Consult Support with Citation Validation and Abstention",
+    "authors": "Vantaku C, Avakian A",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778754/",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "journal": "Journal of Imaging Informatics in Medicine",
+    "tools_evaluated": "claude-sonnet-4-6 + BM25 retriever + RADAR pipeline",
+    "scale": "36 held-out scenarios, 22 clinically adjacent probes, 5 independent runs",
+    "key_findings": [
+      "91.7% correct variant selection (33/36); no wrong-variant recommendations",
+      "100% citation resolution: all 721 citations traced to retrieved chunks",
+      "77.3% refusal rate for off-domain probes; all failures were false abstentions",
+      "Demonstrates deterministic citation validation feasibility in clinical RAG"
+    ],
+    "relevance": "high",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42777239",
+    "source": "pubmed",
+    "type": "bias_benchmark",
+    "title": "Implicit Bias in LLM Diagnosis of Eating Disorders: 1152 Vignette Study Across 10 LLM Configurations",
+    "authors": "McCalla D, Li B, Jaeger S, Jacques J, Gonzalez L Jr, Silber C, Dykeman C",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777239/",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "journal": "JMIR AI",
+    "tools_evaluated": "10 LLM configurations across 5 model families",
+    "scale": "1152 matched-pair vignettes, 5 model families, 10 configurations",
+    "key_findings": [
+      "Black patients 6x more likely to receive MDD vs AN (OR 6.09, 95% CI 5.13-7.24)",
+      "Latine patients 9.6x more likely to receive MDD (OR 9.57, 95% CI 8.00-11.45)",
+      "Asian patients 2.9x more likely to receive AN (OR 2.88, 95% CI 2.44-3.42)",
+      "Female patients less likely diagnosed with AN (OR 0.43, 95% CI 0.37-0.49)",
+      "Moderate intermodel agreement (Fleiss κ=0.410) for ambiguous cases"
+    ],
+    "relevance": "medium-high",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42776332",
+    "source": "pubmed",
+    "type": "safety_benchmark",
+    "title": "Framework for Evaluating LLM Safety and Reliability: Catastrophic-Failure Frequency and Reproducibility",
+    "authors": "Liu F, Liu Z, Fei X, He J, Xing J, Li J, Chan P",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776332/",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "journal": "Journal of Medical Systems",
+    "tools_evaluated": "6 LLMs via API (incl. GPT-5.1, Gemini 3 Pro, DeepSeek R1)",
+    "scale": "54 emergency cases, 972 physician-scored responses, 3 queries per case",
+    "key_findings": [
+      "Catastrophic failure rates two-tiered: 1.5% vs 6.0% (p<0.001)",
+      "91% of dangerous outputs (31/34) were stochastic, not systematic",
+      "Anchoring-bias failure varied 4-fold; rare-disease recognition 6-fold across models",
+      "GPT-5.1 least reproducible (SD 2.69) despite middle-tier mean accuracy",
+      "DeepSeek R1 equivalent to Gemini 3 Pro (TOST margin 1.5 points)",
+      "Framework addresses SaMD and EU AI Act conformity assessment"
+    ],
+    "relevance": "high",
+    "status": "published",
+    "new": true
   }
 ]

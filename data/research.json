@@ -6952,5 +6952,268 @@
     ],
     "scale": "260 simulated consultations, 13 physicians",
     "status": "published"
+  },
+  {
+    "id": "pmid:42778754",
+    "source": "pubmed",
+    "pmid": "42778754",
+    "type": "rag_evaluation",
+    "title": "RADAR: A Prototype for Grounding Large Language Model Consult Support in an ACR-Structured Appropriateness Knowledge Base with Citation Validation and Abstention",
+    "authors": "Vantaku C, Avakian A",
+    "abstract": "Large language models (LLMs) answer medical questions fluently but fabricate statements and citations too often to be trusted unaided at the point of care. We describe RADAR (Radiology Appropriateness Decision and Advisory Resource), a prototype retrieval-augmented consult-support pipeline that grounds an LLM in a knowledge base structured like the American College of Radiology (ACR) Appropriateness Criteria at the level of individual clinical variants. The knowledge base is synthetic (twelve variants across five topics). The design is deliberately conservative: a BM25 retriever, an absolute-score abstention gate, a structured-output generator bound by an in-prompt grounding contract, and a deterministic validator that strips any recommendation whose citation does not resolve to a retrieved chunk. The full pipeline (claude-sonnet-4-6, temperature 0, five runs) selected the correct variant and top procedure in every run for 33 of 36 scenarios (91.7%; 95% CI 77.5-98.2); every failed run was a false abstention on a thunderclap-headache presentation, and no run of any scenario recommended a wrong variant. It refused 17 of 22 clinically adjacent probes (77.3%). All 721 emitted citations resolved to a retrieved chunk.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778754/",
+    "pdf_url": null,
+    "doi": "10.1007/s10278-026-02326-y",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "journal": "Journal of Imaging Informatics in Medicine",
+    "tags": [
+      "RAG",
+      "clinical decision support",
+      "citation validation",
+      "abstention",
+      "LLM safety",
+      "radiology appropriateness"
+    ],
+    "relevance": "RAG-based clinical AI tool evaluation with citation validation and abstention — directly relevant to OpenEvidence's RAG architecture and evidence citation approach.",
+    "key_findings": [
+      "91.7% correct variant selection (33/36 scenarios) with no wrong-variant recommendations across 5 runs",
+      "100% citation resolution: all 721 emitted citations traced to retrieved chunks",
+      "77.3% refusal rate for clinically adjacent off-domain probes",
+      "All failures were false abstentions (over-conservative), not wrong answers",
+      "Demonstrates feasibility of deterministic citation validation in RAG-based clinical AI"
+    ],
+    "tools_evaluated": [
+      "claude-sonnet-4-6",
+      "BM25 retriever",
+      "RADAR pipeline"
+    ],
+    "scale": "36 held-out scenarios, 22 clinically adjacent probes, 5 independent runs",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42777239",
+    "source": "pubmed",
+    "pmid": "42777239",
+    "type": "safety_evaluation",
+    "title": "Implicit Bias in Large Language Model Diagnosis of Eating Disorders: Experimental Vignette Study",
+    "authors": "McCalla D, Li B, Jaeger S, Jacques J, Gonzalez L Jr, Silber C, Dykeman C",
+    "abstract": "Large language models (LLMs) are increasingly deployed in mental health applications, yet growing evidence suggests they encode algorithmic biases that influence clinical outputs. This study examined whether LLMs exhibit implicit demographic biases when generating psychiatric diagnoses. 1152 synthetic clinical vignettes using a matched-pair design manipulated gender, race/ethnicity, age, socioeconomic status, English proficiency, and urbanicity while holding clinical content constant. Ten LLM configurations across 5 model families were tested. Control vignettes produced near-unanimous AN diagnoses (mean 100%), while ambiguous vignettes elicited greater variability (mean 23.6%). Black patients were over 6 times more likely to receive MDD diagnosis than White patients (OR 6.09, 95% CI 5.13-7.24), Latine patients over 9 times more likely (OR 9.57, 95% CI 8.00-11.45), and Asian patients nearly 3 times more likely to receive AN diagnosis (OR 2.88). Female patients less likely than males to be diagnosed with AN (OR 0.43).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777239/",
+    "pdf_url": null,
+    "doi": "10.2196/93498",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "journal": "JMIR AI",
+    "tags": [
+      "LLM bias",
+      "psychiatric diagnosis",
+      "demographic bias",
+      "clinical AI safety",
+      "vignette study"
+    ],
+    "relevance": "Directly evaluates LLM safety in clinical diagnosis — systematic demographic biases in psychiatric diagnosis with clinical content held constant. Implications for clinical AI tool deployment equity.",
+    "key_findings": [
+      "Black patients 6x more likely to receive MDD vs AN diagnosis than White patients with identical presentations (OR 6.09)",
+      "Latine patients 9.6x more likely to receive MDD (OR 9.57)",
+      "Asian patients 2.9x more likely to receive AN diagnosis (OR 2.88)",
+      "Female patients less likely to be diagnosed with AN than males (OR 0.43)",
+      "10 LLM configurations across 5 model families; 1152 matched-pair vignettes",
+      "Moderate intermodel agreement for ambiguous cases (Fleiss κ=0.410)"
+    ],
+    "tools_evaluated": [
+      "10 LLM configurations across 5 model families"
+    ],
+    "scale": "1152 synthetic vignettes, 10 LLM configurations, 5 model families",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42777235",
+    "source": "pubmed",
+    "pmid": "42777235",
+    "type": "cdss_evaluation",
+    "title": "A Hybrid Rule-Based and Machine Learning-Based Clinical Decision Support System to Support Prescription Review: Development and External Validation Study",
+    "authors": "Jeong J, Heo KN, Kim AJ, Baek JH, Jo YH, Kim S, Jo M, Ah YM, Han JM, Choi SW, Song J, Min S, Lee JY",
+    "abstract": "Anticoagulants are high-alert medications with substantial risk of serious bleeding, yet dosing and prescribing errors remain common. A hybrid CDSS integrating rule-based logic with machine learning was developed to improve safe use of anticoagulants. The system combined 44 patient-specific rules and 1129 drug-drug interaction rules with a CatBoost classifier for alert prioritization. During internal validation, 88.6% of alerts were clinically relevant and 86.4% clinically useful. External validation across 2 hospitals showed alert rates of 22.6-32.1% with strong discrimination (AUC 0.871-0.963). No false negatives were identified.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777235/",
+    "pdf_url": null,
+    "doi": "10.2196/101202",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "journal": "Journal of Medical Internet Research",
+    "tags": [
+      "clinical decision support",
+      "CDSS",
+      "anticoagulants",
+      "prescription safety",
+      "hybrid system",
+      "external validation"
+    ],
+    "relevance": "Directly evaluates a hybrid CDSS integrating rule-based logic with ML for prescription safety — multi-center external validation relevant to clinical AI tool design.",
+    "key_findings": [
+      "Hybrid CDSS with 44 patient-specific rules + 1129 DDI rules + CatBoost classifier",
+      "Internal validation: 88.6% alerts clinically relevant, 86.4% clinically useful",
+      "External validation AUC 0.871-0.963 across 2 hospitals",
+      "No false negatives identified across validation sites",
+      "75,200 anticoagulant prescriptions for model development"
+    ],
+    "tools_evaluated": [
+      "Hybrid CDSS (rule-based + CatBoost ML)",
+      "Anticoagulant prescription review system"
+    ],
+    "scale": "75,200 prescriptions, 3 tertiary hospitals, multicenter external validation",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42776404",
+    "source": "pubmed",
+    "pmid": "42776404",
+    "type": "safety_framework",
+    "title": "Agentic AI in Medicine: Challenges for Responsible Development and the Case for Clinical Testing Harnesses",
+    "authors": "Waisberg E, Guarnieri JW",
+    "abstract": "Clinical medicine evaluates decision-support technology using methods built around a single output presented for clinician review. Agentic artificial intelligence does not fit this design. Agent scaffolding turns passive text generation into active, multi-step execution, retrieving information, invoking external tools, and acting on results before a clinician sees any of it. The relevant unit of clinical risk shifts from a single inference to a trajectory of actions. Four challenges: silent error propagation across multi-step tasks, oversight that reviews conclusions rather than processes, validation that does not survive changes to model or tooling, and scope that widens faster than the evidence supporting it. Each is addressed by a clinical testing harness: scenario libraries built from clinical edge cases, full-trajectory observability, explicit escalation testing, and staged evidence thresholds tied to scope of practice.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776404/",
+    "pdf_url": null,
+    "doi": "10.1007/s10439-026-04381-6",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "journal": "Annals of Biomedical Engineering",
+    "tags": [
+      "agentic AI",
+      "clinical AI safety",
+      "testing harness",
+      "multi-step reasoning",
+      "oversight"
+    ],
+    "relevance": "Directly addresses clinical AI safety for agentic AI systems — proposes testing harnesses for multi-step AI clinical tools, relevant to next-generation clinical AI like OpenEvidence's multi-agent architecture.",
+    "key_findings": [
+      "Agentic AI shifts clinical risk unit from single inference to trajectory of actions",
+      "Four challenges: silent error propagation, process-blind oversight, validation fragility, scope creep",
+      "Proposes clinical testing harnesses with scenario libraries, full-trajectory observability, escalation testing",
+      "Adapts existing medical safety tools (simulation, credentialing, M&M review) for AI"
+    ],
+    "tools_evaluated": [
+      "Agentic AI systems (general framework)"
+    ],
+    "scale": "Conceptual/perspective paper",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42776332",
+    "source": "pubmed",
+    "pmid": "42776332",
+    "type": "safety_benchmark",
+    "title": "Development of a Framework for Evaluating Large Language Model Safety and Reliability: a Proof-of-Concept Evaluation",
+    "authors": "Liu F, Liu Z, Fei X, He J, Xing J, Li J, Chan P",
+    "abstract": "A framework for evaluating LLM safety and reliability using catastrophic-failure frequency and response reproducibility was developed and applied to 54 diagnostically challenging emergency cases. Six LLMs were queried three times each, producing 972 physician-scored responses. Aggregate scores concealed heterogeneity: anchoring-bias failure varied nearly four-fold (6.9%-26.4%) and rare-disease recognition six-fold (6.1%-37.9%); catastrophic rates were two-tiered (1.5% for safest two vs. 6.0% for rest; p<0.001). 31 of 34 dangerous combinations were stochastic, not systematic. Open-source DeepSeek R1 was statistically equivalent to Gemini 3 Pro within a 1.5-point margin (TOST: Δ -0.09; 90% CI -0.47 to 0.30; p<0.001).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776332/",
+    "pdf_url": null,
+    "doi": "10.1007/s10916-026-02459-1",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "journal": "Journal of Medical Systems",
+    "tags": [
+      "LLM safety",
+      "benchmark",
+      "catastrophic failure",
+      "reproducibility",
+      "emergency medicine",
+      "SaMD",
+      "EU AI Act"
+    ],
+    "relevance": "Directly about LLM safety benchmarking in clinical settings — proposes framework going beyond aggregate accuracy to catastrophic-failure frequency and reproducibility profiling. Highly relevant to clinical AI safety evaluation.",
+    "key_findings": [
+      "972 physician-scored responses across 6 LLMs and 54 emergency cases",
+      "Catastrophic failure rates two-tiered: 1.5% (safest 2) vs 6.0% (rest), p<0.001",
+      "91% of dangerous combinations (31/34) were stochastic, not systematic — hidden by aggregate metrics",
+      "Anchoring-bias failure varied 4-fold (6.9-26.4%); rare-disease recognition 6-fold (6.1-37.9%)",
+      "GPT-5.1 least reproducible (within-case SD 2.69) despite middle-tier mean accuracy",
+      "DeepSeek R1 equivalent to Gemini 3 Pro (TOST: Δ -0.09; 90% CI -0.47 to 0.30; p<0.001)",
+      "Framework addresses SaMD and EU AI Act conformity assessment needs"
+    ],
+    "tools_evaluated": [
+      "6 LLMs via API (text-only, zero-shot)",
+      "GPT-5.1",
+      "Gemini 3 Pro",
+      "DeepSeek R1"
+    ],
+    "scale": "54 emergency cases, 6 LLMs, 972 physician-scored responses, 3 queries per case",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42773784",
+    "source": "pubmed",
+    "pmid": "42773784",
+    "type": "cds_development",
+    "title": "Building Computable Guidelines and Clinical Decision Support Tools for Cervical, Breast and Colorectal Cancer Screening and Risk Management: A CDC Initiative Update",
+    "authors": "Rim SH, Colbert J, Kobernik E, Richards TB, Miller JW, Coleman King S, Townsend J, Nosal MR, O'Hanlon M, Martins R, Karipineni N, Richardson LC",
+    "abstract": "The CDC collaborated with MITRE Corporation and subject matter experts to translate narrative guidelines for cervical, breast, and colorectal cancer screening and management into standards-based computable guidelines and interoperable CDS tools. The tools apply guideline logic in real-time to patient EHR data to assess screening history and risk and generate recommended actions. The cervical cancer CDS was integrated into EHRs and underwent a 6-month clinical pilot evaluation. Breast and colorectal cancer CDS tools progressed to executable code tested with synthetic patient data. All three CDS tools are open source.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42773784/",
+    "pdf_url": null,
+    "doi": "10.1177/15409996261489070",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "journal": "Journal of Women's Health",
+    "tags": [
+      "clinical decision support",
+      "computable guidelines",
+      "cancer screening",
+      "CDS tools",
+      "EHR integration",
+      "CDC",
+      "open source"
+    ],
+    "relevance": "About building CDS tools for cancer screening — demonstrates real-world EHR integration of computable guidelines. Relevant to clinical decision support system development and deployment.",
+    "key_findings": [
+      "CDC + MITRE collaboration: narrative guidelines → computable CDS tools for 3 cancer types",
+      "Cervical cancer CDS underwent 6-month EHR clinical pilot",
+      "Breast and colorectal CDS tools tested with synthetic patient data",
+      "All three tools are open source with downloadable code",
+      "Demonstrates standards-based approach to guideline computability and EHR interoperability"
+    ],
+    "tools_evaluated": [
+      "CDC/MITRE computable guideline CDS tools (cervical, breast, colorectal)"
+    ],
+    "scale": "3 cancer screening CDS tools, 6-month clinical pilot (cervical)",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42778426",
+    "source": "pubmed",
+    "pmid": "42778426",
+    "type": "perspective",
+    "title": "Rethinking medical AI: from model performance to governed agentic clinical intelligence",
+    "authors": "Liu X, Zhang F, Yang Z, Hu L, Qiao X, Yu Y, Li Y, Wu H, Wang Z",
+    "abstract": "Perspective on shifting medical AI evaluation from model-level performance metrics to governed agentic clinical intelligence. Argues that clinical AI deployment requires governance frameworks addressing multi-step agentic workflows, tool use, and clinical safety beyond single-inference accuracy. Published in Science Bulletin.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778426/",
+    "pdf_url": null,
+    "doi": "10.1016/j.scib.2026.09.028",
+    "published": "2026-09-10",
+    "updated": "2026-09-10",
+    "journal": "Science Bulletin",
+    "tags": [
+      "agentic AI",
+      "clinical AI governance",
+      "medical AI",
+      "perspective"
+    ],
+    "relevance": "Perspective on clinical AI governance for agentic systems — relevant to next-generation clinical AI tools that use multi-agent architectures.",
+    "key_findings": [
+      "Argues for shift from model performance to governed agentic clinical intelligence",
+      "Addresses gap between single-inference evaluation and multi-step agentic workflows",
+      "Proposes governance framework for clinical AI deployment"
+    ],
+    "tools_evaluated": [
+      "N/A (perspective/editorial)"
+    ],
+    "scale": "Perspective paper",
+    "status": "published",
+    "new": true
   }
 ]
