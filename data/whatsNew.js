@@ -5,6 +5,42 @@
 
 var whatsNewData = [
   {
+    date: "September 25, 2026",
+    updated: "Daily check (Fri Sep 25, 9:00 AM ET) — Venice Augment Search (5 queries) + openevidence.com/announcements scrape + Grok X/Twitter search + arXiv API (30 entries) + PubMed eutils (30 results). 1 NEW FUNDING: $250M at $15B valuation (a16z/Byers Capital, Sep 24) — second doubling in 9 months, drug development pivot. 7 new research papers added to research.json (Synthetic Hospital EHR benchmark, Prediction Is Not Detection methodology, ProMem-agent ICU trajectory reasoning, AI diagnostic decision support for primary care older adults, LLM social bias in resource allocation, endodontic LLM consistency benchmark, patient AI-CDSS trust qualitative study). 4 new benchmark entries. Key findings: Synthetic Hospital — best model misses ~50% of clinically relevant findings in chart summarization. Penn imitation learning DDSS — micro c-statistic 0.995 across 669 diagnoses with clinician-validated equivalence. GPT-5 resource allocation showed large racial and social-status bias (Indigenous OR 16.48 vs White). No new OE announcements; all scraped dates already in timeline.",
+    items: [
+      {
+        cat: "Funding — $15B Valuation",
+        title: "OpenEvidence raises $250M at $15B, pivots into drug development (Sep 24, 2026)",
+        desc: "Business Insider reports OpenEvidence quietly closed a $250M late-stage round at a $15B valuation, led by a16z and Byers Capital. Second doubling in nine months ($6B → $12B → $15B). Raise disclosed in a single sentence appended to the MSK partnership announcement. Dealroom reports OpenEvidence entering drug development with oncology therapy candidates expected to enter trials. Sacra estimates ~$300M annualized revenue. 40% of US physicians now use the platform."
+      },
+      {
+        cat: "Research — EHR Benchmark",
+        title: "Synthetic Hospital: open longitudinal EHR benchmark — best model misses ~50% of findings (Sep 24, 2026)",
+        desc: "Park et al. introduce Synthetic Hospital — 1,268 synthetic patients, 5,602 encounters with verifiable ground truth. Physicians distinguished synthetic from real at near-chance (53%). 10 frontier models tested; best achieves F1 0.73 for problem list reconstruction, matching mean of 7 physicians but well below best (0.89). First open, fully synthetic longitudinal EHR benchmark."
+      },
+      {
+        cat: "Research — AI Diagnostic Decision Support",
+        title: "Penn imitation learning DDSS: micro c-statistic 0.995 across 669 diagnoses (PMID 42784704, JAMIA, Sep 24)",
+        desc: "Streiffer et al. (Penn PAIR Center) develop deep learning DDSS using imitation learning and collective clinician intelligence for primary care of older adults. 707,598 encounters, 669 diagnoses, 1000 orders. Randomized blinded clinician validation: diagnostic recommendations equivalent to observed practice. First pragmatic clinical validity via imitation learning without expert-adjudicated labels."
+      },
+      {
+        cat: "Research — LLM Bias",
+        title: "GPT-5 resource allocation shows large racial and social-status bias (PMID 42783479, J Pers Med, Aug 28)",
+        desc: "Gandhi & Balas audit 30,618 forced-choice clinical resource allocation decisions. Indigenous race OR 16.48, Black race OR 8.07 for higher selection vs White. High-status occupation OR 0.064, donor status OR 0.092 for lower selection. Non-clinical attributes drove allocation despite identical clinical need. Authors call for explicit safeguards and systematic auditing."
+      },
+      {
+        cat: "Research — Clinical AI Methodology",
+        title: "Prediction Is Not Detection: framework for pre-recognition claims in longitudinal clinical AI (Sep 22, 2026)",
+        desc: "Yang et al. formalize interval-censored pre-recognition transition and independent reference standard. Shows event-based evaluations can inflate apparent performance and lead time by treating recognition-mediated signals as shortcuts. Recognition-dependent endpoints as reference standards create circularity."
+      },
+      {
+        cat: "Research — Patient Trust",
+        title: "Patients require physician competence and AI disclosure for trustworthy AI-CDSS (PMID 42781538, BMJ Digit Health Ai, Sep 21)",
+        desc: "Schaffernak et al. qualitative study of 23 ophthalmology patients. Generally open to AI-CDSS but require physician AI competence, critical evaluation of outputs, transparency. Physician as trust mediator. Almost all expected disclosure when AI-CDSS was used. Three trust domains: physician, AI system, governance."
+      }
+    ]
+  },
+  {
     date: "September 23, 2026",
     updated: "Daily check (Wed Sep 23, 9:20 AM ET) — Venice Augment Search (5 queries) + openevidence.com/announcements scrape + Grok X/Twitter search + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements. 6 new PubMed papers added to research.json (safety-oriented LLM benchmark in cervical screening, multistep clinical case LLM performance, real-time AI diagnostic copilot RCT, specialized LLM for dental treatment planning, LLM conversational vs structured triage comparison, REACT-AI clinical reasoning assessment protocol). 3 new benchmark entries added to benchmarks.json. 6 new timeline entries. Key findings: GPT-5.3 achieved 100% unsafe error-free rate with guideline prompts but error rates rise to 29% in complex scenarios. Real-time AI diagnostic copilot improved physician Top-3 accuracy by +12.3pp in randomized simulation. Specialized LLM outperformed general-purpose models in domain-specific clinical task.",
     items: [
