@@ -5,6 +5,47 @@
 
 var whatsNewData = [
   {
+    date: "September 27, 2026",
+    updated: "Daily check (Sun Sep 27, 9:00 AM ET) — Venice Augment Search (5 queries) + openevidence.com/announcements scrape + Grok X/Twitter search (timed out) + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline. All 30 arXiv results already in research.json. 7 new PubMed papers added to research.json (5-tools anticoagulation CDS comparison, AI epilepsy diagnosis clinical readiness, agentic AI pharmacy governance framework, LLM ophthalmic exam CDS review, AI-physician trust scale for cardiology, BRACE reciprocal human-AI CDS framework, Sutter Health CVD prevention CDS user-centered design). 1 new benchmark entry (5-tool anticoagulation CDS comparison). Grok X/Twitter search timed out after 60s — noted as gap.",
+    items: [
+      {
+        cat: "Research — CDS Tool Comparison",
+        title: "Five CDS tools compared for periprocedural anticoagulation — call for common output standard (PMID 42800908, Ann Pharmacother, Sep 27)",
+        desc: "Carter compares 5 clinical decision support tools on the same periprocedural anticoagulation scenario, highlighting output variability across tools for identical clinical inputs. Proposes a common output standard to improve cross-tool comparability and clinical utility. First structured multi-tool CDS comparison for anticoagulation management."
+      },
+      {
+        cat: "Research — Clinical AI Safety",
+        title: "AI in epilepsy diagnosis: clinical readiness, failure modes, and implementation standards (PMID 42800085, Seizure, Sep 16)",
+        desc: "Escobar-Montalvo et al. comprehensive review of AI across epilepsy diagnosis — EEG interpretation most mature but false-positive epileptiform activity and automation bias remain concerns. Language models vulnerable to missing context, hallucination, inherited documentation bias. Decisive transition from algorithmic performance to clinical utility assessment. AI should support accountable clinician-patient decisions."
+      },
+      {
+        cat: "Research — Agentic AI Governance",
+        title: "AI should not prescribe alone: risk-stratified pharmacy governance framework for agentic clinical systems (PMID 42799235, Cureus, Aug 26)",
+        desc: "Zavaleta-Monestel et al. editorial argues benchmark performance does not establish safety of autonomous prescribing. Proposes risk-stratified governance: lower-risk functions may support medication reconciliation/monitoring; treatment initiation, dose adjustment, antimicrobial selection require explicit pharmacist/prescriber validation. Agentic AI prescribing should remain pharmacist-governed, locally validated, auditable."
+      },
+      {
+        cat: "Research — LLM Clinical Review",
+        title: "LLMs for ophthalmic examination: from information extraction to clinical decision support (PMID 42798723, Front Med, Sep 11)",
+        desc: "Wang et al. review 37 studies of LLMs/MLLMs across ophthalmic examination types. Consistent task gradient: structured extraction more reliable than open-ended interpretation or treatment planning. Performance sensitive to report layout, prompt design, model updates. Task-layered validation framework recommended — verification increases with clinical consequences of error."
+      },
+      {
+        cat: "Research — Physician-AI Teaming",
+        title: "PACT-12: perceived AI-physician consistency and trust scale for cardiology (PMID 42798683, Front Digit Health, Sep 11)",
+        desc: "Yan et al. three-round Delphi study develops 12-item scale (PACT-12) across 4 domains: AI-physician perceived consistency, AI competence trust, AI benevolence trust, physician reference trust. Addresses safety risks when AI and physician outputs diverge — algorithm-reassured delay can convert outpatient consultations to ICU admissions. Content validation only; psychometric validation pending."
+      },
+      {
+        cat: "Research — CDS Framework",
+        title: "BRACE framework: reciprocal human-AI interaction for clinical decision support (PMID 42798647, Front Digit Health, Sep 11)",
+        desc: "Greengrass proposes Bounded Reciprocal Adaptation for Clinician Engagement (BRACE) — within-case, across-encounter, and institutional levels. Addresses design inversion where support amplifies cognitive vulnerability through overreliance. Repeated cognitive offloading may disrupt illness-script formation (never-skilling, deskilling, mis-skilling). Developmental interaction separated from evaluative use."
+      },
+      {
+        cat: "Research — CDS Implementation",
+        title: "Sutter Health user-centered design for CVD prevention CDS in primary care (PMID 42793475, Healthcare, Sep 10)",
+        desc: "Husby et al. survey 62 primary care clinicians at Sutter Health. Limited time, primary care variability, and lack of personalized CDS tools constrain CVD prevention. Team-based approach with digital CDS more effective. Highlights gap between at-risk patient identification and downstream care resources."
+      }
+    ]
+  },
+  {
     date: "September 25, 2026",
     updated: "Daily check (Fri Sep 25, 9:00 AM ET) — Venice Augment Search (5 queries) + openevidence.com/announcements scrape + Grok X/Twitter search + arXiv API (30 entries) + PubMed eutils (30 results). 1 NEW FUNDING: $250M at $15B valuation (a16z/Byers Capital, Sep 24) — second doubling in 9 months, drug development pivot. 7 new research papers added to research.json (Synthetic Hospital EHR benchmark, Prediction Is Not Detection methodology, ProMem-agent ICU trajectory reasoning, AI diagnostic decision support for primary care older adults, LLM social bias in resource allocation, endodontic LLM consistency benchmark, patient AI-CDSS trust qualitative study). 4 new benchmark entries. Key findings: Synthetic Hospital — best model misses ~50% of clinically relevant findings in chart summarization. Penn imitation learning DDSS — micro c-statistic 0.995 across 669 diagnoses with clinician-validated equivalence. GPT-5 resource allocation showed large racial and social-status bias (Indigenous OR 16.48 vs White). No new OE announcements; all scraped dates already in timeline.",
     items: [
