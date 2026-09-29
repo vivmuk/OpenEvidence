@@ -769,3 +769,39 @@
 - **Target users:** US physicians, patients
 - **Key features:** Doctors Dialer wide-release combines HIPAA-grade messaging, faxing, and voicemail with clinical decision AI deeply integrated. Positions OE toward synchronous care delivery. Competes with Doximity Dialer, Amwell, K Health (PatientGPT).
 - **Geographic reach:** United States
+
+---
+
+## 15. Weekly Global Sweep — Sept 29, 2026 (New Platforms & Developments)
+
+### Tandem Health (Stockholm, Sweden)
+- **Category:** Clinical documentation + source-linked clinical decision support
+- **URL:** https://www.tandemhealth.ai/
+- **Funding:** $100M Series B announced Sept 14, 2026 (Scaleup Europe Fund/EQT lead; Kinnevik, Northzone, Amino Collective, Visionaries). ~$160M total.
+- **Description:** European clinical AI platform extending from ambient voice documentation into source-linked decision support. Its CDS page describes answers that can use the documented consultation as context and incorporate local hospital protocols. Positions as the EU-native challenger to US incumbents (OpenEvidence, UpToDate Expert AI) at a time when OpenEvidence remains blocked in the EU/UK under the AI Act.
+- **Geographic reach:** Europe (EU/UK), expanding.
+
+### Heidi Health / Heidi Evidence (Melbourne, Australia)
+- **Category:** Ambient scribing + citation-backed clinical decision support
+- **URL:** https://www.heidihealth.com/en-us
+- **Funding:** $340M package announced Sept 22, 2026 ($100M equity + $240M non-dilutive financing, General Catalyst-led; total >= ~$436.6M).
+- **Description:** Heidi Evidence (launched Feb 2026) bundles BMJ, NICE, HealthPathways and MIMS content into citation-backed answers inside the scribing workflow. Operates across 116 countries / 110+ languages; 2.4M patient visits per week. Direct overlap with OpenEvidence's evidence-retrieval wedge, though Heidi leads with documentation rather than search.
+- **Geographic reach:** Global (US, EU, UK, SEA).
+
+### Aidoc (Tel Aviv, Israel)
+- **Category:** Imaging clinical AI / AI triage foundation model
+- **URL:** https://www.aidoc.com/
+- **Funding:** $150M raise led by Growth Equity at Goldman Sachs Alternatives (total >$500M), reported Sept 2026.
+- **Description:** Radiology foundation model analyzing scans holistically across dozens of findings simultaneously (97% sensitivity / 98% specificity in FDA evaluations). Follows January 2026 FDA clearance of the first comprehensive foundation-model AI triage solution (CARE). Represents the imaging branch of clinical AI, distinct from evidence-retrieval CDS.
+- **Geographic reach:** Global (US, EU, UK).
+
+### IQVIA Clinical Decision Support
+- **Category:** Enterprise clinical decision support / predictive modeling
+- **URL:** https://www.iqvia.com/
+- **Description:** IQVIA's AI-enabled clinical decision support tool won the 2026 AI Breakthrough Award for Predictive Modeling Solution of the Year (Aug 20, 2026). Enterprise real-world-data and payer/provider analytics player entering the CDS layer; advantage is claims/RWD scale rather than point-of-care evidence retrieval.
+- **Geographic reach:** Global enterprise.
+
+### Market context — healthcare AI funding (Q2 2025���Q2 2026)
+- **Source:** New Market Pitch (https://newmarketpitch.com/blogs/news/healthcare-ai-funding-deals)
+- **Detail:** 88 announced healthcare AI funding rounds totaling ~$4.24B. Clinical AI tools raised $1.47B (~35%). Q2 2026 was the most active quarter (26 deals, $1.09B). Top-three deal share fell from 59% (Q2 2025) to 34% (Q2 2026). Clinical documentation category (Abridge, Ambience, Suki, Nabla, Tandem Health, DeepScribe) exceeds $1.3B combined.
+

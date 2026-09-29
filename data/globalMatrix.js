@@ -1,4 +1,9 @@
 var globalMatrixData = [
+  {platform:"Tandem Health",us:"no",eu:"yes",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"UpHill",us:"no",eu:"yes",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Heidi Evidence",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"yes",latam:"no",mea:"no"},
+  {platform:"IQVIA CDS",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"partial",jp:"partial",sea:"partial",latam:"partial",mea:"partial"},
+
   {platform:"OpenEvidence",us:"yes",eu:"blocked",uk:"blocked",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Doximity Ask",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"ChatGPT for Clinicians",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"partial",jp:"partial",sea:"partial",latam:"partial",mea:"partial"},

@@ -5,6 +5,43 @@
 
 var whatsNewData = [
   {
+    date: "September 29, 2026",
+    updated: "Weekly Global Clinical AI Landscape sweep (Tue Sep 29, 5:00 PM ET) — Venice web search (13 of 40 queries returned; remaining queries hit upstream 429 rate limits). Key findings: Tandem Health $100M Series B (EU), Heidi Health $340M package (AU), Aidoc $150M raise, IQVIA CDS award, FDA AI/ML device list passes 1,600, FDA denies radiology CAD 510(k) exemption, healthcare AI funding $4.24B across 88 rounds. Added 7 timeline entries, 3 regional entries, 3 regulatory entries, 4 matrix rows, 4 competitor rows, 7 landscape rows, and this CDS platform section. Rate-limit gaps noted for competitor-specific, regional and LinkedIn/X queries.",
+    items: [
+      {
+        cat: "Funding — European Clinical AI",
+        title: "Tandem Health raises $100M Series B — Europe's answer to US clinical AI (Sep 14)",
+        desc: "Stockholm's Tandem Health raised $100M Series B led by the Scaleup Europe Fund (managed by EQT), with Kinnevik, Northzone, Amino Collective and Visionaries — ~$160M total. The raise funds expansion from ambient documentation into source-linked decision support that can use the documented consultation as context and fold in local hospital protocols. Directly benefits from OpenEvidence's continued absence from the EU/UK under the AI Act."
+      },
+      {
+        cat: "Funding — Clinical Documentation",
+        title: "Heidi Health raises $340M package — largest 2026 clinical documentation round (Sep 22)",
+        desc: "Melbourne-based Heidi Health raised a $340M package ($100M equity + $240M non-dilutive financing led by General Catalyst; total >= ~$436.6M). Heidi Evidence bundles BMJ, NICE, HealthPathways and MIMS citation-backed answers inside the scribing workflow across 116 countries. Overlaps OpenEvidence's evidence-retrieval wedge while leading with documentation."
+      },
+      {
+        cat: "Funding — Imaging AI",
+        title: "Aidoc raises $150M for radiology foundation model (Sep 2026)",
+        desc: "Aidoc raised $150M led by Growth Equity at Goldman Sachs Alternatives (>$500M total), backing a radiology foundation model that analyzes scans holistically across dozens of findings (97% sensitivity / 98% specificity in FDA evaluations). Follows its January 2026 FDA clearance of the first comprehensive foundation-model AI triage solution (CARE)."
+      },
+      {
+        cat: "Regulatory — FDA",
+        title: "FDA AI/ML-enabled device list passes 1,600; radiology 510(k) exemption denied",
+        desc: "FDA has authorized 1,600+ AI-enabled medical devices as of September 2026 (up from 1,524 in March 2026), predominantly Class II 510(k) with radiology at ~76%. Separately, FDA's Sept 17 final order denied a proposed partial 510(k) exemption for radiology CAD/triage software. Imaging AI stays regulated while non-imaging, clinician-reviewed CDS can remain non-device under the January 2026 CDS guidance."
+      },
+      {
+        cat: "Market — Funding",
+        title: "Healthcare AI funding reaches $4.24B across 88 rounds (Q2 2025–Q2 2026)",
+        desc: "88 announced healthcare AI rounds totaling ~$4.24B; clinical AI tools raised $1.47B (~35%). Q2 2026 was the most active quarter (26 deals, $1.09B). Abridge raised $300M. Top-three deal share fell from 59% (Q2 2025) to 34% (Q2 2026), indicating a broadening market beyond a few mega-rounds."
+      },
+      {
+        cat: "Competitor — Enterprise CDS",
+        title: "IQVIA AI-enabled CDS tool wins 2026 AI Breakthrough Award (Aug 20)",
+        desc: "IQVIA's AI-enabled clinical decision support tool won the 2026 AI Breakthrough Award for Predictive Modeling Solution of the Year. Signals enterprise real-world-data and payer/provider analytics players entering the clinical decision support layer alongside physician-facing platforms."
+      }
+    ]
+  },
+
+  {
     date: "September 27, 2026",
     updated: "Daily check (Sun Sep 27, 9:00 AM ET) — Venice Augment Search (5 queries) + openevidence.com/announcements scrape + Grok X/Twitter search (timed out) + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline. All 30 arXiv results already in research.json. 7 new PubMed papers added to research.json (5-tools anticoagulation CDS comparison, AI epilepsy diagnosis clinical readiness, agentic AI pharmacy governance framework, LLM ophthalmic exam CDS review, AI-physician trust scale for cardiology, BRACE reciprocal human-AI CDS framework, Sutter Health CVD prevention CDS user-centered design). 1 new benchmark entry (5-tool anticoagulation CDS comparison). Grok X/Twitter search timed out after 60s — noted as gap.",
     items: [
