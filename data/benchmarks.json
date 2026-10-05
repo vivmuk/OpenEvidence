@@ -3203,5 +3203,95 @@
       "Blinded clinician validation: concept center activation predicts clinician preferences"
     ],
     "relevance": "Clinical AI evaluation methodology \u2014 first mechanistic interpretability framework applied to clinical decision support LLMs"
+  },
+  {
+    "id": "pmid:42286322",
+    "source": "PubMed",
+    "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
+    "authors": [
+      "(Nature Medicine authors)"
+    ],
+    "journal": "Nature Medicine",
+    "published": "2026-06",
+    "url": "https://www.nature.com/articles/s41591-026-04431-5",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "UpToDate Expert AI",
+      "GPT-5.2",
+      "Gemini 3.1 Pro",
+      "Claude Opus 4.6",
+      "Google Search AI Overview"
+    ],
+    "benchmark_type": "head-to-head clinical AI comparison",
+    "scale": "500 MedQA + 500 HealthBench + 100 real clinical queries (RCQ), 12 US clinicians, 1800 annotations",
+    "key_findings": "Frontier LLMs outperformed specialized clinical AI tools (OpenEvidence, UpToDate Expert AI) across all three evaluations. Clinical AI tools performed comparably to Google Search AI Overview on real clinical queries. Challenges assumption that specialized clinical AI tools outperform general-purpose LLMs. Matters Arising published Sep 3, 2026.",
+    "relevance": "critical",
+    "tags": [
+      "MedQA",
+      "HealthBench",
+      "RCQ",
+      "OpenEvidence",
+      "UpToDate",
+      "independent evaluation"
+    ]
+  },
+  {
+    "id": "pmid:42831263",
+    "source": "PubMed",
+    "title": "Comparative Performance of Large Language Models in Urodynamic Trace Interpretation Using ELEGANCE Framework",
+    "authors": [
+      "Akpinar O",
+      "Erkan A",
+      "Keskin A",
+      "Guzelsoy M"
+    ],
+    "journal": "Neurourol Urodyn",
+    "published": "2026-10-05",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42831263/",
+    "tools_evaluated": [
+      "ChatGPT-5.2",
+      "Gemini 3",
+      "Perplexity AI Pro",
+      "DeepSeek-V3.2",
+      "Grok 4.1"
+    ],
+    "benchmark_type": "multi-model clinical AI comparison",
+    "scale": "119 urodynamic traces \u00d7 5 LLMs, 3 expert urologists, ELEGANCE framework",
+    "key_findings": "Gemini 3 highest mean ELEGANCE score (25.77), followed by Perplexity, DeepSeek, ChatGPT-5.2. Grok significantly lower. No hallucinations. ICC=0.898. LLMs useful as assistive tools but not for autonomous decision-making.",
+    "relevance": "high",
+    "tags": [
+      "ELEGANCE",
+      "urodynamics",
+      "multi-model",
+      "clinical AI evaluation"
+    ]
+  },
+  {
+    "id": "pmid:42830368",
+    "source": "PubMed",
+    "title": "Nationwide Multicentre Evaluation of Guideline-Grounded LLM Chatbots in Rheumatology",
+    "authors": [
+      "Wilhelmi T",
+      "Bartsch V",
+      "Knitza J",
+      "et al."
+    ],
+    "journal": "J Med Syst",
+    "published": "2026-10-05",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42830368/",
+    "tools_evaluated": [
+      "10 guideline-grounded disease-specific LLM chatbots"
+    ],
+    "benchmark_type": "real-world multicentre deployment evaluation",
+    "scale": "6291 questions, 13 rheumatology centres, 6 patient organisations, 602 questionnaire respondents",
+    "key_findings": "92.9% positive user ratings. 95.3% completely safe, 79.1% completely correct. 45.0% fully guideline-adherent with weak physician agreement. Demonstrates feasibility and safety of guideline-grounded clinical AI chatbots in real-world rheumatology.",
+    "relevance": "high",
+    "tags": [
+      "guideline-grounded",
+      "rheumatology",
+      "multicentre",
+      "real-world evaluation",
+      "patient education"
+    ]
   }
 ]

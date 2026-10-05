@@ -5,6 +5,48 @@
 
 var whatsNewData = [
   {
+    date: "October 5, 2026",
+    updated: "Weekly OpenEvidence research sweep (Mon Oct 5, 3:51 PM ET) — Venice Augment Search (20 queries), arXiv API (50 results, 3 new QC-passed), PubMed eutils (30 results, 7 new relevant), openevidence.com/announcements scrape. Key findings: AdventHealth partnership (Oct 1), Sage Publishing partnership (Sep 29), Nature Medicine benchmark study added (PMID 42286322 — frontier LLMs outperform OE and UpToDate on MedQA/HealthBench/RCQ), urodynamic trace LLM comparison (5 models, ELEGANCE framework), rheumatology guideline-grounded chatbot nationwide evaluation (6291 questions, 13 centres). 10 new research.json entries, 3 new benchmarks.json entries, 2 new partnerships, 6 new publications.",
+    items: [
+      {
+        cat: "Partnership — Health System",
+        title: "AdventHealth deploys OpenEvidence across 110K+ team members (Oct 1)",
+        desc: "AdventHealth — not-for-profit network with 110K+ team members and 2,000+ care sites — deploys OpenEvidence to physicians, nurses, pharmacists, care managers and therapists. Integrated into existing EHR workflows. Chief Clinical Officer Michael Cacciatore: 'OpenEvidence gives our care teams a practical way to access current clinical evidence... more time for listening, explaining and caring for the whole person.' Latest in deployment streak: UTMB (Sep 22), MSK (Sep 16), Penn Medicine (Sep 15)."
+      },
+      {
+        cat: "Partnership — Publisher",
+        title: "Sage and OpenEvidence partner to bring 300+ journals to point of care (Sep 29)",
+        desc: "Sage Publishing content agreement brings peer-reviewed research from 300+ Sage journals into OpenEvidence, spanning life/biomedical sciences, health sciences, medicine, and nursing. Includes society journals from American Orthopaedic Society for Sports Medicine, World Stroke Organization, International Headache Society, and others. Announcement notes OpenEvidence now used by 60% of practicing US physicians."
+      },
+      {
+        cat: "Research — Benchmark (CRITICAL)",
+        title: "Nature Medicine: General-purpose LLMs outperform OpenEvidence and UpToDate on medical benchmarks (PMID 42286322)",
+        desc: "Independent quantitative comparison: GPT-5.2, Gemini 3.1 Pro, and Claude Opus 4.6 outperformed OpenEvidence and UpToDate Expert AI across all three evaluations — 500 MedQA questions, 500 HealthBench items, and 100 real clinical queries (RCQ) with 12 US clinicians performing randomized blinded review (1,800 annotations). Clinical AI tools performed comparably to Google Search AI Overview on real queries. Matters Arising published Sep 3, 2026. Challenges assumption that specialized clinical AI tools outperform general-purpose LLMs."
+      },
+      {
+        cat: "Research — LLM Comparison",
+        title: "Five LLMs compared on urodynamic trace interpretation using ELEGANCE framework (PMID 42831263)",
+        desc: "119 urodynamic traces interpreted by ChatGPT-5.2, Gemini 3, Perplexity AI Pro, DeepSeek-V3.2, and Grok 4.1. Gemini 3 highest mean ELEGANCE score (25.77), Grok significantly lower. No hallucinations in any model. Inter-rater ICC=0.898. LLMs valuable as assistive tools for standardization but not suitable for autonomous decision-making."
+      },
+      {
+        cat: "Research — Clinical AI Deployment",
+        title: "Nationwide multicentre evaluation of guideline-grounded rheumatology chatbots (PMID 42830368)",
+        desc: "10 disease-specific guideline-grounded LLM chatbots deployed across 13 rheumatology centres and 6 patient organisations. 6,291 questions recorded Sep 2025–Jan 2026. 92.9% positive user ratings. 95.3% completely safe, 79.1% completely correct. 45% fully guideline-adherent with weak physician agreement. Largest real-world deployment evaluation of guideline-grounded clinical AI chatbots."
+      },
+      {
+        cat: "Research — RAG Clinical Application",
+        title: "RAG-LLM optimizes cardiac MRI protocols — prospective 68-patient comparison (PMID 42830255)",
+        desc: "LLM-RAG framework generated cardiac MRI protocols noninferior to technologist-optimized protocols with significantly higher image quality (3.69 vs 3.00, p<0.001) and 68% fewer repeat acquisitions. First prospective comparison of RAG-based clinical AI for imaging protocol optimization."
+      },
+      {
+        cat: "Research — AI Consultation Framework",
+        title: "Visible Reasoning: turning AI consultation into diagnostic learning (PMID 42829814)",
+        desc: "Shimizu proposes two-stage framework where clinicians record diagnostic judgment before viewing AI output, then revisit after follow-up. AI consultation becomes both a decision aid and a reusable learning record. Novel framework for physician-AI teaming in diagnostic work, published in Diagnosis."
+      }
+    ]
+  },
+
+  {
     date: "September 29, 2026",
     updated: "Weekly Global Clinical AI Landscape sweep (Tue Sep 29, 5:00 PM ET) — Venice web search (13 of 40 queries returned; remaining queries hit upstream 429 rate limits). Key findings: Tandem Health $100M Series B (EU), Heidi Health $340M package (AU), Aidoc $150M raise, IQVIA CDS award, FDA AI/ML device list passes 1,600, FDA denies radiology CAD 510(k) exemption, healthcare AI funding $4.24B across 88 rounds. Added 7 timeline entries, 3 regional entries, 3 regulatory entries, 4 matrix rows, 4 competitor rows, 7 landscape rows, and this CDS platform section. Rate-limit gaps noted for competitor-specific, regional and LinkedIn/X queries.",
     items: [

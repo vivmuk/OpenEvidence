@@ -47,4 +47,7 @@ var partnersData = [
   {name:"AAP",type:"Pediatrics",date:"Jul 15, 2026",url:"https://www.openevidence.com/announcements/american-academy-of-pediatrics-and-openevidence-announce-collaboration-to-improve-pediatric-care",new:true},
   {name:"Boston Children's Hospital",type:"Health System (Jul 2026)",date:"Jul 16, 2026",url:"https://www.openevidence.com/announcements/boston-childrens-hospital-and-openevidence-collaborate-to-advance-ai-powered-analysis-of-clinical-practice-patterns",new:true},
   {name:"Springer Nature",type:"Publisher (Nature / Nature Medicine)",date:"Aug 5, 2026",url:"https://www.linkedin.com/company/openevidence",new:true},
+  {name:"AdventHealth",type:"Health System (Oct 2026)",date:"Oct 1, 2026",url:"https://www.openevidence.com/announcements/adventhealth-and-openevidence-together-support-more-time-for-patient-care",new:true},
+  {name:"Sage Publishing",type:"Content/Publisher (Sep 2026)",date:"Sep 29, 2026",url:"https://www.openevidence.com/announcements/sage-and-openevidence-partner-to-bring-peer-reviewed-research-to-clinicians-at-the-point-of-care",new:true},
+
 ];
