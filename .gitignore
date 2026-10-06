@@ -5,3 +5,8 @@ node_modules/
 .secrets/
 *.bak
 split-site.js
+
+# data-integrity working files
+scripts/__pycache__/
+data/*.prehardening
+data/*.bak

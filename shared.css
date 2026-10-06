@@ -848,3 +848,78 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   color: var(--oe-orange);
 }
 
+
+/* ==========================================================================
+   POLISH PASS — freshness indicator, accessibility, print
+   ========================================================================== */
+
+/* --- Data freshness (rendered by shared.js from whatsNew.js) -------------
+   Replaces the hardcoded "Updated: <date>" that had drifted on all 17 pages. */
+.sidebar .updated-info.freshness {
+  display: flex; align-items: center; gap: 7px;
+  margin-top: 10px; font-size: 11px; line-height: 1.4;
+  color: var(--oe-text-dim);
+}
+.freshness-dot {
+  width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0;
+  background: var(--oe-text-muted);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.05);
+}
+.updated-info.freshness.fresh  .freshness-dot { background: #4CAF7D; box-shadow: 0 0 0 3px rgba(76,175,125,0.18); }
+.updated-info.freshness.aging  .freshness-dot { background: #E0A83C; box-shadow: 0 0 0 3px rgba(224,168,60,0.18); }
+.updated-info.freshness.stale  .freshness-dot { background: #D9534F; box-shadow: 0 0 0 3px rgba(217,83,79,0.20); }
+.updated-info.freshness.stale  { color: #E08B88; }
+
+/* Hero updated line inherits the same state via [data-freshness] */
+.hero .updated[data-freshness="aging"] { color: #E0A83C; }
+.hero .updated[data-freshness="stale"] { color: #E08B88; }
+
+/* --- Keyboard accessibility ---------------------------------------------
+   The stylesheet had no focus styles at all, so keyboard users got the
+   browser default ring or nothing. */
+:focus-visible {
+  outline: 2px solid var(--oe-orange);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+.sidebar .nav-links a:focus-visible { outline-offset: -2px; }
+a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --- Reading comfort ----------------------------------------------------- */
+.sidebar .nav-links a { border-radius: 0 6px 6px 0; }
+
+.stat-card .value, .hero h1 { letter-spacing: -0.015em; }
+
+/* Tables and long data blocks shouldn't blow out narrow screens */
+@media (max-width: 860px) {
+  .stats-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .whats-new .wn-grid { grid-template-columns: 1fr; }
+  .container { padding: 0 18px; }
+}
+
+/* --- Print ---------------------------------------------------------------
+   People do print/share these pages. Drop chrome, keep the data. */
+@media print {
+  .sidebar, .sidebar-overlay, .hamburger, .theme-toggle,
+  .whats-new .wn-dismiss, .oe-feature-filters { display: none !important; }
+  .main-content { margin-left: 0 !important; }
+  body { background: #fff !important; color: #111 !important; }
+  .container { max-width: 100% !important; padding: 0 !important; }
+  .stat-card, .chart-container, .whats-new {
+    border: 1px solid #ccc !important; box-shadow: none !important;
+    break-inside: avoid; page-break-inside: avoid;
+  }
+  .chart-container, .timeline-item { break-inside: avoid; page-break-inside: avoid; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9px; color: #666; }
+  .hero .updated { border: 1px solid #ccc; padding: 6px 8px; }
+}

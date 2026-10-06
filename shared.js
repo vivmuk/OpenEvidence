@@ -81,3 +81,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// === DATA FRESHNESS (derived, not hardcoded) ==============================
+// Every page used to hardcode "Updated: <date>" in the sidebar, so all 17
+// pages drifted out of sync with the data. Derive it from whatsNew.js instead.
+function parseWhatsNewDate(s) {
+  var t = Date.parse(String(s || '').replace(/(\d)(st|nd|rd|th)/i, '$1'));
+  return isNaN(t) ? null : new Date(t);
+}
+
+function renderFreshness() {
+  if (typeof whatsNewData === 'undefined' || !whatsNewData.length) return;
+  var newest = whatsNewData[0];
+  var d = parseWhatsNewDate(newest.date);
+  if (!d) return;
+
+  var days = Math.max(0, Math.floor((Date.now() - d.getTime()) / 86400000));
+  var state = days <= 2 ? 'fresh' : (days <= 7 ? 'aging' : 'stale');
+  var ago = days === 0 ? 'today' : (days === 1 ? '1 day ago' : days + ' days ago');
+
+  document.querySelectorAll('.updated-info').forEach(function (el) {
+    el.classList.remove('fresh', 'aging', 'stale');
+    el.classList.add('freshness', state);
+    el.setAttribute('title', 'Newest tracked entry: ' + newest.date);
+    el.innerHTML = '<span class="freshness-dot"></span>Data current to ' +
+      newest.date + ' · ' + ago;
+  });
+
+  // Hero "Last updated" line: add a matching status chip if the page has one.
+  var hero = document.querySelector('.hero .updated');
+  if (hero) hero.setAttribute('data-freshness', state);
+}
+
+document.addEventListener('DOMContentLoaded', renderFreshness);

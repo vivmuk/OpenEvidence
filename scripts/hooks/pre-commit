@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+# OpenEvidence data-integrity gate.
+#
+# Installed as .git/hooks/pre-commit (see scripts/install_hooks.sh).
+#
+# Runs on EVERY commit to this repo -- including the ones made by the daily and
+# weekly research jobs. It:
+#   1. auto-heals the research/benchmark data (merge duplicates, backfill ids,
+#      normalise dates) via scripts/dedupe_data.py
+#   2. validates the result via scripts/validate_data.py
+#   3. blocks the commit if the data is still broken
+#
+# Rationale: the update jobs deduplicate by matching PMID / arXiv id. PubMed
+# records were being written without a pmid field, making them invisible to that
+# check and allowing silent re-adds. Enforcing at commit time means every writer
+# is covered, not just the ones whose prompts we remembered to update.
+
+set -uo pipefail
+
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
+cd "$ROOT" || exit 0
+
+# Nothing to do if the tooling isn't present (e.g. shallow clone, docs-only change).
+[ -f scripts/validate_data.py ] || exit 0
+
+DATA_CHANGED=0
+if git diff --cached --name-only | grep -qE '^data/(research|benchmarks)\.json$'; then
+  DATA_CHANGED=1
+fi
+
+# Also heal when data files are dirty but not yet staged -- jobs often `git add -A`.
+if [ "$DATA_CHANGED" -eq 0 ]; then
+  if git status --porcelain -- data/research.json data/benchmarks.json | grep -q .; then
+    DATA_CHANGED=1
+  fi
+fi
+
+[ "$DATA_CHANGED" -eq 1 ] || exit 0
+
+# 1. Auto-heal (best effort -- never block on the healer itself failing).
+if [ -f scripts/dedupe_data.py ]; then
+  python3 scripts/dedupe_data.py --apply >/dev/null 2>&1 || true
+fi
+
+# 2. Re-stage anything the healer rewrote.
+git add data/research.json data/benchmarks.json 2>/dev/null || true
+
+# 3. Validate. Block on real errors.
+if ! python3 scripts/validate_data.py --quiet >/tmp/oe-validate.out 2>&1; then
+  echo "" >&2
+  echo "┌───────────────────────────────────────────────────────���──────┐" >&2
+  echo "│  COMMIT BLOCKED — OpenEvidence data failed validation        │" >&2
+  echo "└──────────────────────────────────────────────────────────────┘" >&2
+  cat /tmp/oe-validate.out >&2
+  echo "" >&2
+  echo "Fix the data, then commit again." >&2
+  echo "  python3 scripts/dedupe_data.py --apply   # auto-repair" >&2
+  echo "  python3 scripts/validate_data.py         # inspect" >&2
+  exit 1
+fi
+
+exit 0
