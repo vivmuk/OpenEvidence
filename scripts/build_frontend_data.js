@@ -190,10 +190,23 @@ function buildIndex({ timeline, competitors, partners, research, benchmarks }) {
 function positionOf(text) {
   const t = String(text || '');
   if (!/openevidence/i.test(t)) return null;
-  const oeWins = /\b(openevidence[^.]{0,80}(outperform|surpass|better|higher|more accurate|superior|excel)|outperform\w*[^.]{0,60}openevidence)\b/i.test(t);
-  const otherWins = /\b(gpt|gemini|claude|chatgpt|doximity|uptodate|general[- ]purpose|frontier)[^.]{0,90}(outperform|surpass|better|higher|more accurate|superior)\b/i.test(t);
-  if (otherWins && !oeWins) return 'competitor';
+
+  const OE = 'openevidence';
+  const OTHER = 'gpt|gemini|claude|chatgpt|doximity|uptodate|general[- ]purpose|frontier|base model|commercial llm';
+  const WIN = 'outperform|surpass|better|higher|more accurate|superior|excel|beat|ahead';
+
+  // Direction matters: "X outperformed OpenEvidence" is the opposite result to
+  // "OpenEvidence outperformed X", and a naive keyword test scores them the same.
+  const oeFirst = new RegExp(`${OE}[^.]{0,100}(${WIN})`, 'i');
+  const otherFirst = new RegExp(`(${OTHER})[^.]{0,100}(${WIN})`, 'i');
+  const oeBeaten = new RegExp(`(${WIN})[^.]{0,60}by[^.]{0,40}(${OTHER})`, 'i');
+  const oeBehind = new RegExp(`(${OTHER})[^.]{0,100}(${WIN})[^.]{0,60}${OE}`, 'i');
+
+  const oeWins = oeFirst.test(t) && !oeBehind.test(t);
+  const otherWins = (otherFirst.test(t) && /openevidence/i.test(t)) || oeBeaten.test(t) || oeBehind.test(t);
+
   if (oeWins && !otherWins) return 'oe';
+  if (otherWins && !oeWins) return 'competitor';
   return 'mixed';
 }
 
@@ -202,6 +215,10 @@ function buildScoreboard(benchmarks, research) {
   for (const b of [...benchmarks, ...research]) {
     const blob = `${b.title || ''} ${asText(b.key_findings)} ${asText(b.abstract)} ${asText(b.key_findings_summary)}`;
     if (!/openevidence/i.test(blob)) continue;
+    // A standing should only count studies that actually compare. Merely
+    // mentioning OpenEvidence is not a result, and counting those inflated
+    // the "mixed" bucket to 50 of 58.
+    if (!COMPARATIVE.test(blob)) continue;
     const pos = positionOf(blob);
     if (!pos) continue;
     rows.push({
@@ -219,6 +236,82 @@ function buildScoreboard(benchmarks, research) {
   const tally = { oe: 0, mixed: 0, competitor: 0 };
   rows.forEach(r => { tally[r.position] = (tally[r.position] || 0) + 1; });
   return { generated: new Date().toISOString().slice(0, 10), total: rows.length, tally, rows: rows.slice(0, 40) };
+}
+
+// ------------------------------------------- feature 5: matrix diffing
+
+// ISO week key, so a snapshot is taken at most once per week.
+function isoWeek(d) {
+  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const dayNum = date.getUTCDay() || 7;
+  date.setUTCDate(date.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  const week = Math.ceil((((date - yearStart) / 86400000) + 1) / 7);
+  return `${date.getUTCFullYear()}-W${String(week).padStart(2, '0')}`;
+}
+
+const REGIONS = ['us', 'eu', 'uk', 'cn', 'in', 'jp', 'sea', 'latam', 'mea'];
+
+/**
+ * Snapshot the availability matrix weekly and diff against the previous week.
+ * History lives in data/matrix-history.json (machine state, not shipped).
+ */
+function buildMatrixChanges(matrix) {
+  const state = {};
+  for (const r of matrix) {
+    state[r.platform] = {};
+    for (const k of REGIONS) state[r.platform][k] = r[k] || 'no';
+  }
+
+  const histPath = path.join(DATA, 'matrix-history.json');
+  let hist = { snapshots: [] };
+  try { hist = JSON.parse(fs.readFileSync(histPath, 'utf8')); } catch (e) { /* first run */ }
+  if (!Array.isArray(hist.snapshots)) hist.snapshots = [];
+
+  const thisWeek = isoWeek(new Date());
+  const prior = hist.snapshots
+    .filter(s => s.week !== thisWeek)
+    .sort((a, b) => String(b.week).localeCompare(String(a.week)));
+  const baseline = prior[0] || null;
+
+  const changes = [];
+  const platforms = new Set([...Object.keys(state), ...(baseline ? Object.keys(baseline.state) : [])]);
+  if (baseline) {
+    for (const p of platforms) {
+      const now = state[p] || {};
+      const was = baseline.state[p] || {};
+      const existed = Object.prototype.hasOwnProperty.call(baseline.state, p);
+      for (const k of REGIONS) {
+        const a = was[k] || (existed ? 'no' : null);
+        const b = now[k] || 'no';
+        if (a !== b) {
+          changes.push({
+            platform: p, region: k,
+            from: existed ? (was[k] || 'no') : null,
+            to: now[k] || 'no',
+            kind: existed ? 'changed' : 'added',
+          });
+        }
+      }
+    }
+  }
+
+  // Upsert this week's snapshot, keep a rolling window.
+  const idx = hist.snapshots.findIndex(s => s.week === thisWeek);
+  const snap = { week: thisWeek, date: new Date().toISOString().slice(0, 10), state };
+  if (idx >= 0) hist.snapshots[idx] = snap; else hist.snapshots.push(snap);
+  hist.snapshots.sort((a, b) => String(a.week).localeCompare(String(b.week)));
+  hist.snapshots = hist.snapshots.slice(-16);
+  fs.writeFileSync(histPath, JSON.stringify(hist, null, 1));
+
+  return {
+    generated: new Date().toISOString().slice(0, 10),
+    thisWeek,
+    baselineWeek: baseline ? baseline.week : null,
+    baselineDate: baseline ? baseline.date : null,
+    changeCount: changes.length,
+    changes,
+  };
 }
 
 // ------------------------------------------------------------------- main
@@ -242,6 +335,7 @@ function main() {
   const signals = buildSignals(timeline);
   const index = buildIndex({ timeline, competitors, partners, research, benchmarks });
   const scoreboard = buildScoreboard(benchmarks, research);
+  const matrixChanges = buildMatrixChanges(loadJsVar('globalMatrix.js', 'globalMatrixData'));
 
   fs.writeFileSync(path.join(DATA, 'signals.js'),
     banner('signals.js', 'Materiality-ranked events. score 1-100; confidence: confirmed|reported|inferred.') +
@@ -255,9 +349,14 @@ function main() {
     banner('scoreboard.js', 'Head-to-head standing derived from evaluation studies.') +
     `var scoreboardData = ${JSON.stringify(scoreboard, null, 1)};\n`);
 
+  fs.writeFileSync(path.join(DATA, 'matrix-changes.js'),
+    banner('matrix-changes.js', 'Availability movements vs the previous weekly snapshot.') +
+    `var matrixChangesData = ${JSON.stringify(matrixChanges, null, 1)};\n`);
+
   console.log(`signals:    ${signals.length} (top score ${signals[0] ? signals[0].score : 0})`);
   console.log(`index:      ${index.length} entries`);
-  console.log(`scoreboard: ${scoreboard.rows.length} studies`, JSON.stringify(scoreboard.tally));
+  console.log(`scoreboard: ${scoreboard.rows.length} shown of ${scoreboard.total} comparative studies`, JSON.stringify(scoreboard.tally));
+  console.log(`matrix:     ${matrixChanges.changeCount} changes vs ${matrixChanges.baselineWeek || '(no baseline yet)'}`);
   console.log('top 3 signals:');
   signals.slice(0, 3).forEach(s => console.log(`  [${s.score}] ${s.confidence} · ${s.title.slice(0, 70)}`));
 }

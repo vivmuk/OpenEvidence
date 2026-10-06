@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/shared.css">
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -40,7 +40,7 @@
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
   <section id="tech">
     <div class="container">
-      <h2>Tech <span class="accent">Stack</span></h2>
+      <h1 class="page-title">Tech <span class="accent">Stack</span></h1>
       <p class="section-sub">Known (disclosed by OpenEvidence or verified sources) vs Inferred (deduced from public data).</p>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: 16px;">
         <div class="tech-layer">

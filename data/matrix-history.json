@@ -1,0 +1,472 @@
+{
+ "snapshots": [
+  {
+   "week": "2026-W41",
+   "date": "2026-10-06",
+   "state": {
+    "Tandem Health": {
+     "us": "no",
+     "eu": "yes",
+     "uk": "partial",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "UpHill": {
+     "us": "no",
+     "eu": "yes",
+     "uk": "partial",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Heidi Evidence": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "yes",
+     "latam": "no",
+     "mea": "no"
+    },
+    "IQVIA CDS": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "partial",
+     "jp": "partial",
+     "sea": "partial",
+     "latam": "partial",
+     "mea": "partial"
+    },
+    "OpenEvidence": {
+     "us": "yes",
+     "eu": "blocked",
+     "uk": "blocked",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Doximity Ask": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "ChatGPT for Clinicians": {
+     "us": "yes",
+     "eu": "partial",
+     "uk": "partial",
+     "cn": "no",
+     "in": "partial",
+     "jp": "partial",
+     "sea": "partial",
+     "latam": "partial",
+     "mea": "partial"
+    },
+    "Abridge": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "UpToDate": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "yes",
+     "in": "yes",
+     "jp": "yes",
+     "sea": "yes",
+     "latam": "yes",
+     "mea": "yes"
+    },
+    "ChatGPT (consumer)": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "yes",
+     "jp": "yes",
+     "sea": "yes",
+     "latam": "yes",
+     "mea": "yes"
+    },
+    "Microsoft Dragon Copilot": {
+     "us": "yes",
+     "eu": "partial",
+     "uk": "partial",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "partial",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Ambience Healthcare": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "UpDoc": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Ping An Good Doctor": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "yes",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Tencent Miying": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "yes",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Qure.ai": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "yes",
+     "jp": "no",
+     "sea": "yes",
+     "latam": "yes",
+     "mea": "yes"
+    },
+    "Ada Health": {
+     "us": "no",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Babylon Health": {
+     "us": "no",
+     "eu": "partial",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Vera Health": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "yes",
+     "jp": "no",
+     "sea": "yes",
+     "latam": "yes",
+     "mea": "yes"
+    },
+    "DeepCura": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Hippocratic AI": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "iatroX": {
+     "us": "no",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "K Health / PatientGPT": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Heidi Health": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "yes",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Infermedica": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "yes"
+    },
+    "Freed AI": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Perplexity Health": {
+     "us": "yes",
+     "eu": "partial",
+     "uk": "partial",
+     "cn": "no",
+     "in": "partial",
+     "jp": "partial",
+     "sea": "partial",
+     "latam": "partial",
+     "mea": "partial"
+    },
+    "Claude for Healthcare": {
+     "us": "yes",
+     "eu": "partial",
+     "uk": "partial",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Epic Ambient AI": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "yes",
+     "latam": "partial",
+     "mea": "no"
+    },
+    "athenaAmbient": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Microsoft Copilot Health": {
+     "us": "yes",
+     "eu": "partial",
+     "uk": "partial",
+     "cn": "no",
+     "in": "partial",
+     "jp": "partial",
+     "sea": "partial",
+     "latam": "partial",
+     "mea": "partial"
+    },
+    "Aidoc": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Qualified Health": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Dyna AI (EBSCO)": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "ClinicalKey AI (Elsevier)": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "yes",
+     "jp": "yes",
+     "sea": "yes",
+     "latam": "yes",
+     "mea": "yes"
+    },
+    "AMBOSS": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Prosper AI": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "CodaMetrix": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Keragon": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "NHS App AI Triage": {
+     "us": "no",
+     "eu": "no",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Microsoft 365 Copilot (NHS)": {
+     "us": "no",
+     "eu": "no",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "CliniComp PACS Viewer (AI-enabled)": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    }
+   }
+  }
+ ]
+}

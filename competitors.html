@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/shared.css">
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -46,7 +46,7 @@
 
 <section id="competitors">
   <div class="container">
-    <h2>Competitive <span class="accent">Landscape</span></h2>
+    <h1 class="page-title">Competitive <span class="accent">Landscape</span></h1>
     <p class="section-sub">12 competitors tracked - from direct threats to adjacent market players.</p>
     <div class="competitor-grid" id="competitorGrid"></div>
   </div>

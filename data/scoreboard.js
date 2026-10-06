@@ -2,35 +2,13 @@
 // Head-to-head standing derived from evaluation studies.
 var scoreboardData = {
  "generated": "2026-10-06",
- "total": 58,
+ "total": 35,
  "tally": {
   "oe": 5,
-  "mixed": 50,
-  "competitor": 3
+  "mixed": 25,
+  "competitor": 5
  },
  "rows": [
-  {
-   "title": "When Evidence Meets the System: The Distance From Proof to Practice",
-   "journal": "Journal of the American College of Cardiology",
-   "published": "2026-09-15",
-   "tools": [],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42742626/",
-   "finding": "Editorial on the distance between proof and practice in medicine. Krumholz is closely associated with OpenEvidence and his editorials often reference AI-powered evidence platforms."
-  },
-  {
-   "title": "The Impact of Artificial Intelligence-Enabled Tools on Electronic Health Record-Based Evidence Generation in Heart Failure",
-   "journal": "JACC: Heart Failure",
-   "published": "2026-09-09",
-   "tools": [
-    "General AI-enabled clinical tools"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42726051/",
-   "finding": "Editorial on AI-enabled tools transforming EHR-based evidence generation in heart failure. Relevant to OpenEvidence's EHR integration strategy and evidence-grounded approach."
-  },
   {
    "title": "A Comparison of the Agreement of Four AI Models on Surgical Recommendations of MIRCTs Using the ASES Neer Circle Delphi Recommendations as a Baseline",
    "journal": "J Shoulder Elbow Surg",
@@ -59,30 +37,6 @@ var scoreboardData = {
    "finding": "Internal medicine faculty rated OpenEvidence-generated e-consultation advice highly (4.2-4.7/5). Physicians adopted AI-recommended management decisions 81.8% of the time vs 37.5% baseline (OR 8.43). Labeling advice as human- vs AI-generated had no significant "
   },
   {
-   "title": "Reference quality of OpenEvidence across five medical specialties",
-   "journal": "npj Health Systems",
-   "published": "2026-09-02",
-   "tools": [
-    "OpenEvidence"
-   ],
-   "position": "mixed",
-   "confidence": "inferred",
-   "url": "",
-   "finding": "Zero fabricated references across 4979 citations. 3 attribution errors. Most references recent and high-impact."
-  },
-  {
-   "title": "Reference quality of OpenEvidence across five medical specialties",
-   "journal": "npj Health Systems",
-   "published": "2026-09-02",
-   "tools": [
-    "OpenEvidence"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42686938/",
-   "finding": "Across 150 prompts and 4979 citations in five specialties, OpenEvidence had zero fabricated references. Only 3 abstract attribution errors found. Most references were recent and high-impact. Journal concentration varied by specialty. First systematic reference"
-  },
-  {
    "title": "Development and validation of a human-supervised AI-augmented living oncology evidence platform: a breast cancer pilot study",
    "journal": "ESMO Real World Data Digit Oncol",
    "published": "2026-09-01",
@@ -93,7 +47,7 @@ var scoreboardData = {
     "Consensus",
     "OpenEvidence"
    ],
-   "position": "oe",
+   "position": "mixed",
    "confidence": "reported",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42729682/",
    "finding": "Human-conducted AI-augmented living SLR integrated with guidelines outperformed ChatGPT, Perplexity, Consensus, and OpenEvidence on evidence quality across six criteria in eight breast cancer treatment scenarios. Agentic AI review accuracy 95.1-97.2%. Living-O"
@@ -109,7 +63,7 @@ var scoreboardData = {
     "Consensus",
     "OpenEvidence"
    ],
-   "position": "oe",
+   "position": "mixed",
    "confidence": "reported",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42729682/",
    "finding": "Human-conducted AI-augmented living SLR integrated with guidelines outperformed ChatGPT, Perplexity, Consensus, and OpenEvidence on evidence quality across six criteria in eight breast cancer treatment scenarios. Agentic AI review accuracy 95.1-97.2%. Living-O"
@@ -139,32 +93,6 @@ var scoreboardData = {
    "confidence": "reported",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42674131/",
    "finding": "First head-to-head comparison of OpenEvidence 2.0 vs ChatGPT-4o using cervical spine clinical guideline queries. OE prioritized verified peer-reviewed literature with superior citation validity. ChatGPT generated inaccurate or fabricated references. Study eval"
-  },
-  {
-   "title": "OpenEvidence errs on the safe side in a structured test of triage recommendations",
-   "journal": "Int J Med Inform",
-   "published": "2026-08-29",
-   "tools": [
-    "OpenEvidence",
-    "ChatGPT Health (benchmark comparison)"
-   ],
-   "position": "mixed",
-   "confidence": "inferred",
-   "url": "",
-   "finding": "OE conservative triage safety profile. Contrasts with ChatGPT Health 51.6% under-triage rate. Same benchmark."
-  },
-  {
-   "title": "OpenEvidence errs on the safe side in a structured test of triage recommendations",
-   "journal": "Int J Med Inform",
-   "published": "2026-08-29",
-   "tools": [
-    "OpenEvidence",
-    "ChatGPT Health (comparison)"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42673790/",
-   "finding": "OpenEvidence demonstrated a conservative triage safety profile, erring on the safe side. This contrasts sharply with ChatGPT Health which under-triaged 51.6% of true emergencies. OE's physician-facing RAG architecture produced safer triage recommendations than"
   },
   {
    "title": "Performance of a domain-specific large language model in answering patient questions in psychiatry",
@@ -210,49 +138,6 @@ var scoreboardData = {
    "finding": "OpenEvidence highest mean score (7.7+/-1.4) vs ChatGPT-5 (7.6+/-1.1), Gemini (5.1+/-1.2), Copilot (4.7+/-3.1)"
   },
   {
-   "title": "Multidisciplinary dental treatment planning by artificial intelligence: A comparative evaluation",
-   "journal": "Journal of Prosthodontics",
-   "published": "2026-08-21",
-   "tools": [
-    "OpenEvidence",
-    "ChatGPT-5",
-    "Google Gemini (v2.5)",
-    "Microsoft Copilot"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42629964/",
-   "finding": "OpenEvidence achieved the highest mean score (7.7+/-1.4), edging ChatGPT-5 (7.6+/-1.1); Gemini 5.1+/-1.2; Copilot 4.7+/-3.1"
-  },
-  {
-   "title": "Vocal Cord Dysfunction: Evaluating the Utility of AI LLMs for Patient Education",
-   "journal": "World Journal of Otorhinolaryngology - Head and Neck Surgery",
-   "published": "2026-08-17",
-   "tools": [
-    "OpenEvidence",
-    "ChatGPT 5 Extended Thinking",
-    "fellowship-trained laryngologist"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42609726/",
-   "finding": "AI preferred over expert-authored response for definition, diagnosis and treatment-process questions (all Friedman p<=0.001)"
-  },
-  {
-   "title": "Vocal Cord Dysfunction: Evaluating the Utility of AI Large Language Models for Patient Education",
-   "journal": "World Journal of Otorhinolaryngology - Head and Neck Surgery",
-   "published": "2026-08-17",
-   "tools": [
-    "OpenEvidence",
-    "ChatGPT 5 Extended Thinking",
-    "fellowship-trained laryngologist (expert reference)"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42609726/",
-   "finding": "AI-generated responses were preferred over the fellowship-trained laryngologist's response for definition, diagnosis and treatment-process questions"
-  },
-  {
    "title": "Trends in Inguinal Hernia Repair Approach: An Augmented Evidence Review",
    "journal": "Journal of Gastrointestinal Surgery",
    "published": "2026-08-12",
@@ -263,18 +148,6 @@ var scoreboardData = {
    "confidence": "reported",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42586233/",
    "finding": "OpenEvidence served as the AI evidence stream in a three-stream Augmented Evidence Review"
-  },
-  {
-   "title": "Are retromuscular repairs always the best option for ventral hernias? Augmented evidence review",
-   "journal": "Journal of Gastrointestinal Surgery",
-   "published": "2026-08-02",
-   "tools": [
-    "OpenEvidence"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42543136/",
-   "finding": "OpenEvidence performed the AI-driven literature review stream of the AER"
   },
   {
    "title": "Concordance of ChatGPT, Gemini, Claude, and OpenEvidence with the 2024 AAOS guidelines on acute isolated meniscal pathology.",
@@ -321,18 +194,6 @@ var scoreboardData = {
    "finding": "Consensus-anchored RAG chatbot showed comparable mean ratings to OpenEvidence"
   },
   {
-   "title": "Preoperative optimization for ventral hernia repair: augmented evidence review",
-   "journal": "Journal of Gastrointestinal Surgery",
-   "published": "2026-07-27",
-   "tools": [
-    "OpenEvidence"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42508724/",
-   "finding": "OpenEvidence performed the AI-driven literature review stream of the AER"
-  },
-  {
    "title": "Grounded in Consensus, In Step With Emerging Science: A Consensus-Anchored Multi-Corpus Clinical Chatbot for Long COVID",
    "journal": "arXiv preprint",
    "published": "2026-07-27",
@@ -354,16 +215,6 @@ var scoreboardData = {
    "confidence": "reported",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42498996/",
    "finding": "ChatGPT-5 Correctness 98.6%, OpenEvidence 92.8% (P=0.035); Accuracy 84.1% vs 81.2% (no significant difference)"
-  },
-  {
-   "title": "The Discussion: Where Every Paragraph Has a Job",
-   "journal": "Journal of the American College of Cardiology",
-   "published": "2026-07-21",
-   "tools": [],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42478810/",
-   "finding": "Krumholz discloses OpenEvidence stock options in conflict-of-interest statement (as of Jul 2026)"
   },
   {
    "title": "Quality of Tinnitus Information From Generative AI Systems and Web Search (QAMI)",
@@ -396,24 +247,10 @@ var scoreboardData = {
     "GPT-4",
     "Google Search"
    ],
-   "position": "mixed",
+   "position": "oe",
    "confidence": "reported",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42473942/",
    "finding": "OpenEvidence achieved the highest expert-rated quality score (4.45±0.72) across all systems"
-  },
-  {
-   "title": "Guideline-anchored RAG outperforms baseline and literature-only configurations in gynecologic oncology decision support: A pre-integration benchmark",
-   "journal": "Gynecologic Oncology",
-   "published": "2026-07-16",
-   "tools": [
-    "Baseline GPT-5",
-    "NCCN-anchored GPT-5 RAG",
-    "OpenEvidence"
-   ],
-   "position": "oe",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42462288/",
-   "finding": "NCCN-guideline-anchored GPT-5 RAG outperformed both baseline GPT-5 and OpenEvidence (literature-anchored) on mGPS"
   },
   {
    "title": "The Role of Large Language Models in Hormonal Contraception Consultation",
@@ -444,7 +281,7 @@ var scoreboardData = {
    "journal": "arXiv preprint",
    "published": "2026-06-27",
    "tools": "OpenEvidence, Claude Opus 4.8, Gemini 3.1 Pro, GPT-5.5",
-   "position": "mixed",
+   "position": "oe",
    "confidence": "reported",
    "url": "https://arxiv.org/abs/2606.28960",
    "finding": "OpenEvidence outperformed frontier LLMs on real-world clinical questions"
@@ -459,7 +296,7 @@ var scoreboardData = {
     "Gemini 3.1 Pro",
     "GPT-5.5"
    ],
-   "position": "mixed",
+   "position": "oe",
    "confidence": "reported",
    "url": "https://arxiv.org/abs/2606.28960",
    "finding": "OpenEvidence outperformed Claude Opus 4.8, Gemini 3.1 Pro, and GPT-5.5 on real-world clinical questions"
@@ -489,28 +326,6 @@ var scoreboardData = {
    "finding": "Three major AI tools compared in OB/GYN scenarios"
   },
   {
-   "title": "Prescribing Caution: Critique of OpenEvidence for Medication-Related Questions",
-   "journal": "J Am Coll Clin Pharm",
-   "published": "2026-06-13",
-   "tools": "OpenEvidence",
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42286997/",
-   "finding": "Identified gaps in OpenEvidence medication recommendations"
-  },
-  {
-   "title": "Prescribing Caution: A Critique of OpenEvidence to Answer Medication-Related Questions",
-   "journal": "J Am Coll Clin Pharm",
-   "published": "2026-06-13",
-   "tools": [
-    "OpenEvidence"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42286997/",
-   "finding": "Identified gaps in OpenEvidence medication recommendations"
-  },
-  {
    "title": "OpenEvidence vs AAOS Clinical Practice Guidelines for ACL Reconstruction",
    "journal": "J ISAKOS",
    "published": "2026-06-09",
@@ -521,14 +336,138 @@ var scoreboardData = {
    "finding": "Assesses OpenEvidence adherence to AAOS guidelines"
   },
   {
-   "title": "SciConBench: AI Agents Synthesizing Scientific Conclusions",
-   "journal": "arXiv preprint",
-   "published": "2026-06-09",
-   "tools": "AI agents + RAG systems across multiple scientific domains",
+   "title": "Large Language Model Hallucinations in Spine Surgery: A Comparative Analysis of Clinician vs Patient-Level Prompts",
+   "journal": "Neurosurg Pract",
+   "published": "2026-06-01",
+   "tools": "ChatGPT, Gemini, Claude, Microsoft Copilot, OpenEvidence",
    "position": "mixed",
    "confidence": "reported",
-   "url": "https://arxiv.org/abs/2606.11337",
-   "finding": "Large-scale live benchmark of 9,110 scientific synthesis questions"
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42232526/",
+   "finding": "Five-LLM head-to-head on spine-surgery citation accuracy"
+  },
+  {
+   "title": "Evaluation of Clinically-Focused Artificial Intelligence Chatbots for Answering Drug Information Questions",
+   "journal": "J Am Coll Clin Pharm",
+   "published": "2026-06-01",
+   "tools": "OpenEvidence, Clair, GlassHealth, DougallGPT, ChatGPT",
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42203638/",
+   "finding": "OpenEvidence highest CLEAR score (17.82/25)"
+  },
+  {
+   "title": "Evaluation of Clinically-Focused Artificial Intelligence Chatbots for Answering Drug Information Questions",
+   "journal": "J Am Coll Clin Pharm",
+   "published": "2026-06-01",
+   "tools": "OpenEvidence, Clair, GlassHealth, DougallGPT, ChatGPT",
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42203638/",
+   "finding": "OpenEvidence total CLEAR 17.82/25 (\"average\" tier) — highest of 5 AI chatbots tested"
+  },
+  {
+   "title": "Large Language Model Hallucinations in Spine Surgery: A Comparative Analysis of Clinician vs Patient-Level Prompts",
+   "journal": "Neurosurg Pract",
+   "published": "2026-06-01",
+   "tools": "ChatGPT, Gemini, Claude, Microsoft Copilot, OpenEvidence",
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42232526/",
+   "finding": "Five LLMs evaluated: ChatGPT, Gemini, Claude, Microsoft Copilot, OpenEvidence"
+  },
+  {
+   "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
+   "journal": "Nature Medicine",
+   "published": "2026-06",
+   "tools": [
+    "OpenEvidence",
+    "UpToDate Expert AI",
+    "GPT-5.2",
+    "Gemini 3.1 Pro",
+    "Claude Opus 4.6",
+    "Google Search AI Overview"
+   ],
+   "position": "competitor",
+   "confidence": "confirmed",
+   "url": "https://www.nature.com/articles/s41591-026-04431-5",
+   "finding": "Frontier LLMs outperformed specialized clinical AI tools (OpenEvidence, UpToDate Expert AI) across all three evaluations. Clinical AI tools performed comparably to Google Search AI Overview on real clinical queries. Challenges assumption that specialized clini"
+  },
+  {
+   "title": "Diagnostic performance of Prof. Valmed, ChatGPT-5 Thinking, and OpenEvidence in rheumatology: A comparative evaluation.",
+   "journal": "Rheumatology International",
+   "published": "2026-01-10",
+   "tools": [
+    "OpenEvidence",
+    "ChatGPT-5 Thinking",
+    "Prof. Valmed"
+   ],
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/41518413/",
+   "finding": "OpenEvidence had highest proportion of identical top diagnoses (35.0%) vs ChatGPT-5 Thinking 26.7% vs Prof. Valmed 23.3% (not statistically significant)"
+  },
+  {
+   "title": "OpenEvidence Accuracy and Repeatability on MedXpertQA Subspecialty Scenarios",
+   "journal": "medRxiv preprint",
+   "published": "2025-12-04",
+   "tools": "OpenEvidence Quick Consult (31% avg), Deep Consult (39.5% avg)",
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://www.medrxiv.org/content/10.1101/2025.11.29.25341091v1",
+   "finding": "OE accuracy: 28-34% across evaluators (avg 31%)"
+  },
+  {
+   "title": "The accuracy and repeatability of OpenEvidence on complex medical subspecialty scenarios: a pilot study",
+   "journal": "medRxiv preprint",
+   "published": "2025-12-04",
+   "tools": "OpenEvidence Quick Consult, OpenEvidence Deep Consult",
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://www.medrxiv.org/content/10.1101/2025.11.29.25341091v1",
+   "finding": "Deep Consult max accuracy: 41% on MedXpertQA subspecialty scenarios"
+  },
+  {
+   "title": "NOHARM: Medical Safety Benchmark and Randomized Study of Physician-AI Teaming",
+   "journal": "arXiv preprint (v4)",
+   "published": "2025-12-01",
+   "tools": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://arxiv.org/abs/2512.01241",
+   "finding": "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)"
+  },
+  {
+   "title": "NOHARM (Numerous Options Harm Assessment for Risk in Medicine): A medical safety benchmark and randomized study of physician and AI teaming on clinical consultations",
+   "journal": "arXiv preprint (cs.CY, cs.AI)",
+   "published": "2025-12-01",
+   "tools": [
+    "20 LLMs",
+    "4 RAG clinical AI tools (including OpenEvidence)"
+   ],
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://arxiv.org/abs/2512.01241",
+   "finding": "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)"
+  },
+  {
+   "title": "Generalist Large Language Models Outperform Clinical Tools on Medical Benchmarks",
+   "journal": "Nature Medicine",
+   "published": "2025-12-01",
+   "tools": [
+    "OpenEvidence",
+    "UpToDate Expert AI",
+    "GPT-5",
+    "Gemini 3 Pro",
+    "Claude Sonnet 4.5",
+    "GPT-5.2",
+    "Gemini 3.1 Pro",
+    "Claude Opus 4.6",
+    "Google Search AI Overview"
+   ],
+   "position": "competitor",
+   "confidence": "reported",
+   "url": "https://arxiv.org/abs/2512.01191",
+   "finding": "GPT-5 achieved highest scores across all stages"
   }
  ]
 };

@@ -52,7 +52,7 @@ html.dark .pub-date { background: rgba(228,100,61,.12); color: var(--oe-orange-l
 </style>
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -83,7 +83,7 @@ html.dark .pub-date { background: rgba(228,100,61,.12); color: var(--oe-orange-l
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
 <section id="publishers">
   <div class="container">
-    <h2>Publisher <span class="accent">Network</span></h2>
+    <h1 class="page-title">Publisher <span class="accent">Network</span></h1>
     <p class="section-sub">Where OpenEvidence's data comes from: every journal publisher, medical society, research body, clinical network, and public health agency whose content is licensed into the platform - compiled from official announcements going back to launch.</p>
 
     <div class="pub-hero-stats" id="pubStats"></div>

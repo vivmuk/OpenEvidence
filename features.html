@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/shared.css">
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -40,7 +40,7 @@
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
   <section id="oe-features">
     <div class="container">
-      <h2>OpenEvidence <span class="accent">Feature Evolution</span></h2>
+      <h1 class="page-title">OpenEvidence <span class="accent">Feature Evolution</span></h1>
       <p class="section-sub">Every known OpenEvidence feature, milestone, partnership, and deployment - newest first. Click <strong>Details</strong> on any product feature for a deeper explainer.</p>
       <div class="oe-features-grid" id="oeFeaturesGrid"></div>
 

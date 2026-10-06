@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/shared.css">
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -40,7 +40,7 @@
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
 <section id="partnerships">
   <div class="container">
-    <h2>Partnership <span class="accent">Ecosystem</span></h2>
+    <h1 class="page-title">Partnership <span class="accent">Ecosystem</span></h1>
     <p class="section-sub">25+ content partners, 3 health system deployments, and key tech infrastructure partnerships. Hover for details · scroll horizontally.</p>
     <div class="chart-container" style="margin-bottom: 24px; overflow: visible;">
       <h3>Partnership Timeline</h3>

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/shared.css">
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -40,7 +40,7 @@
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
 <section id="timeline">
   <div class="container">
-    <h2>Master <span class="accent">Timeline</span></h2>
+    <h1 class="page-title">Master <span class="accent">Timeline</span></h1>
     <p class="section-sub">Every major event with exact dates and source links. Filter by category.</p>
     <div class="filters" id="timelineFilters">
       <button class="filter-btn active" data-filter="all">All</button>

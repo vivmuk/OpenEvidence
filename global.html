@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -41,7 +41,7 @@
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
 <section id="global">
   <div class="container">
-    <h2>Global <span class="accent">Clinical AI Landscape</span></h2>
+    <h1 class="page-title">Global <span class="accent">Clinical AI Landscape</span></h1>
     <p class="section-sub">Tracking clinical AI applications across major world markets - adoption, regulation, funding, and emerging trends. Updated weekly.</p>
 
     <!-- REGION OVERVIEW -->
@@ -106,7 +106,9 @@
     <!-- GLOBAL COMPETITOR MATRIX -->
     <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Global Availability Matrix</h3>
     <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Which clinical AI platforms are available in which markets? ✓ = available · ~ = partial/limited · ✗ = not available/blocked</p>
-    <div class="global-matrix-wrapper">
+    <div class="region-coverage" id="regionCoverage"></div>
+
+      <div class="global-matrix-wrapper">
       <table class="global-matrix" id="globalMatrix"></table>
     </div>
 

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/shared.css">
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -40,7 +40,7 @@
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
 <section id="benchmarks">
   <div class="container">
-    <h2>Clinical AI <span class="accent">Benchmarks & Evaluations</span></h2>
+    <h1 class="page-title">Clinical AI <span class="accent">Benchmarks & Evaluations</span></h1>
     <p class="section-sub">Independent benchmark studies evaluating clinical AI tools - safety, accuracy, and head-to-head comparisons. Sourced from arXiv, PubMed, and peer-reviewed journals. Updated weekly.</p>
     <div id="benchmarkList"></div>
     <p style="margin-top:16px;font-size:13px;color:var(--oe-text-muted);">Data also available as structured JSON: <a href="/data/benchmarks.json" target="_blank" rel="noopener" style="color:var(--oe-orange);">/data/benchmarks.json</a> · <a href="/data/research.json" target="_blank" rel="noopener" style="color:var(--oe-orange);">/data/research.json</a></p>

@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -41,7 +41,7 @@
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
 <section id="funding">
   <div class="container">
-    <h2>Funding <span class="accent">Tracker</span></h2>
+    <h1 class="page-title">Funding <span class="accent">Tracker</span></h1>
     <p class="section-sub">Four rounds in twelve months - from $1B to $12B valuation.</p>
     <div class="chart-container" style="margin-bottom: 24px;">
       <div class="chart-wrapper" style="height: 350px;"><canvas id="chartFundingWaterfall"></canvas></div>

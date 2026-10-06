@@ -280,6 +280,11 @@ function initMatrix() {
       rows.sort(function(a,b){ return a.platform.localeCompare(b.platform); });
     }
 
+    // Movements since the previous weekly snapshot, keyed platform|region.
+    var changeMap = {};
+    var changes = (typeof matrixChangesData !== 'undefined' && matrixChangesData.changes) || [];
+    changes.forEach(function(c){ changeMap[c.platform + '|' + c.region] = c; });
+
     var head = '<thead><tr><th>Platform</th>' + REGIONS.map(function(r){
       return '<th title="'+REGION_LABEL[r]+'">'+REGION_LABEL[r]+'</th>'; }).join('') + '</tr></thead>';
     var body = '<tbody>' + rows.map(function(r){
@@ -287,9 +292,16 @@ function initMatrix() {
         var v = r[k] || 'no';
         var glyph = { yes:'\u2713', no:'\u2717', partial:'~', blocked:'\u2298' }[v] || v;
         var cls = { yes:'yes', no:'no', partial:'partial', blocked:'blocked' }[v] || '';
+        var ch = changeMap[r.platform + '|' + k];
+        if (ch) {
+          cls += ' changed';
+          var was = ch.from || 'not listed';
+          return '<td class="'+cls+'" title="'+REGION_LABEL[k]+': '+v+' (was '+was+')">'+glyph+'</td>';
+        }
         return '<td class="'+cls+'" title="'+REGION_LABEL[k]+': '+v+'">'+glyph+'</td>';
       }).join('');
-      return '<tr><td><strong>'+r.platform+'</strong></td>'+cells+'</tr>';
+      var moved = REGIONS.some(function(k){ return changeMap[r.platform + '|' + k]; });
+      return '<tr' + (moved ? ' class="matrix-changed"' : '') + '><td><strong>'+r.platform+'</strong></td>'+cells+'</tr>';
     }).join('') + '</tbody>';
 
     table.innerHTML = head + body;
@@ -302,7 +314,12 @@ function initMatrix() {
           ? ' \u00b7 ' + verb + (state.avail === 'yes' || state.avail === 'no' ? ' in every region' : ' in at least one region')
           : ' \u00b7 ' + verb + ' in ' + REGION_LABEL[state.region];
       }
-      c.textContent = rows.length + ' of ' + globalMatrixData.length + ' platforms' + scope;
+      var moved = '';
+      if (typeof matrixChangesData !== 'undefined' && matrixChangesData.changeCount) {
+        moved = ' \u00b7 ' + matrixChangesData.changeCount + ' moved since ' +
+                (matrixChangesData.baselineWeek || 'last snapshot');
+      }
+      c.textContent = rows.length + ' of ' + globalMatrixData.length + ' platforms' + scope + moved;
     }
   }
 
@@ -456,3 +473,59 @@ document.addEventListener('DOMContentLoaded', function () {
   initMatrix();
   initPalette();
 });
+
+// === REGIONAL COVERAGE =====================================================
+// A coverage view over the availability matrix. Not a geographic map: a real
+// map needs a vendored basemap and country-level data the tracker doesn't hold.
+function initRegionCoverage() {
+  var host = document.getElementById('regionCoverage');
+  if (!host || typeof globalMatrixData === 'undefined' || !globalMatrixData.length) return;
+  var REGIONS = ['us', 'eu', 'uk', 'cn', 'in', 'jp', 'sea', 'latam', 'mea'];
+  var LABEL = { us:'US', eu:'EU', uk:'UK', cn:'China', in:'India', jp:'Japan', sea:'SE Asia', latam:'LATAM', mea:'MEA' };
+  var total = globalMatrixData.length;
+
+  var rows = REGIONS.map(function (k) {
+    var c = { yes: 0, partial: 0, no: 0, blocked: 0 };
+    globalMatrixData.forEach(function (r) { c[r[k] || 'no']++; });
+    return { k: k, c: c, score: c.yes + c.partial * 0.5 };
+  });
+  rows.sort(function (a, b) { return b.score - a.score; });
+
+  var html = '<h2>Regional <span class="accent">Coverage</span></h2>';
+  html += '<p class="section-sub">Share of the ' + total + ' tracked platforms available in each region. ' +
+          'A coverage view, not a geographic map.</p>';
+  rows.forEach(function (r) {
+    html += '<div class="coverage-row"><div class="rname">' + LABEL[r.k] + '</div><div class="coverage-bar">';
+    ['yes', 'partial', 'no', 'blocked'].forEach(function (s) {
+      var n = r.c[s];
+      if (!n) return;
+      html += '<span class="seg-' + s + '" style="width:' + (n / total * 100).toFixed(2) +
+              '%" title="' + s + ': ' + n + ' of ' + total + '"></span>';
+    });
+    html += '</div><div class="rnum">' + r.c.yes + '/' + total + '</div></div>';
+  });
+  html += '<div class="coverage-legend">' +
+          '<span><i class="seg-yes"></i>Available</span>' +
+          '<span><i class="seg-partial"></i>Partial</span>' +
+          '<span><i class="seg-no"></i>Unavailable</span>' +
+          '<span><i class="seg-blocked"></i>Blocked</span></div>';
+  host.innerHTML = html;
+}
+
+// === KEYBOARD DISMISSAL ====================================================
+// The backdrop divs carry onclick but are presentational (no button semantics),
+// so Escape is the accessible route to the same action.
+document.addEventListener('keydown', function (ev) {
+  if (ev.key !== 'Escape') return;
+  var sb = document.getElementById('sidebar');
+  if (sb && sb.classList.contains('open')) {
+    if (typeof toggleSidebar === 'function') toggleSidebar();
+    return;
+  }
+  var fm = document.getElementById('featureModal');
+  if (fm && getComputedStyle(fm).display !== 'none' && typeof closeFeatureModal === 'function') {
+    closeFeatureModal();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', initRegionCoverage);

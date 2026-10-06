@@ -10,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
@@ -41,7 +41,7 @@
   <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
 <section id="sct-benchmark">
   <div class="container">
-    <h2>SCT <span class="accent">Benchmark - Venice API Evaluation</span></h2>
+    <h1 class="page-title">SCT <span class="accent">Benchmark - Venice API Evaluation</span></h1>
     <p class="section-sub">Independent evaluation of 5 frontier AI models on the Script Concordance Test (174 clinical reasoning items) - run entirely through Venice API with deterministic scoring. July 17, 2026.</p>
 
     <!-- WHAT IS SCT -->
