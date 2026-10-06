@@ -47,6 +47,11 @@
     <p class="updated">Last updated: October 5, 2026 (Mon 3:51 PM ET) - Weekly research sweep: 10 new papers (3 arXiv + 7 PubMed), 3 new benchmarks, 2 new partnerships (AdventHealth, Sage). · Next OE weekly: October 12, 2026 (Sun 5PM ET)</p>
   </div>
 
+  <!-- TOP SIGNALS (materiality-ranked, from data/signals.js) -->
+  <div class="container">
+    <section class="signal-feed" id="signalFeed" data-limit="8"></section>
+  </div>
+
   <!-- WHATS NEW BANNER (data-driven from data/whatsNew.js) -->
   <div class="container">
     <div class="whats-new" id="whatsNew">
@@ -137,6 +142,7 @@
   </section>
 </div>
 
+<script src="/data/signals.js"></script>
 <script src="/shared.js"></script>
 <script src="/data/whatsNew.js"></script>
 <script>

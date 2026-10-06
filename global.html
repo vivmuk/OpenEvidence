@@ -251,14 +251,10 @@ window.addEventListener('load', function() {
       </div>
     `).join('');
   } catch(e) { console.error("[OE] trendGrid failed:", e.message); }
-  try {
-    const matrixCols = [{key:'us',label:'🇺🇸 US'},{key:'eu',label:'🇪🇺 EU'},{key:'uk',label:'🇬🇧 UK'},{key:'cn',label:'🇨🇳 CN'},{key:'in',label:'🇮🇳 IN'},{key:'jp',label:'🇯🇵 JP'},{key:'sea',label:'🇸🇬 SEA'},{key:'latam',label:'🇧🇷 LATAM'},{key:'mea',label:'🇮🇱 MEA'}];
-    const matrixSymbols = {yes:'✓',no:' - ',partial:'~',blocked:'✗'};
-    const matrixClasses = {yes:'yes',no:'no',partial:'partial',blocked:'blocked'};
-    document.getElementById('globalMatrix').innerHTML = '<thead><tr><th>Platform</th>' + matrixCols.map(c => '<th>' + c.label + '</th>').join('') + '</tr></thead><tbody>' +
-      globalMatrixData.map(row => '<tr><td><strong>' + row.platform + '</strong></td>' + matrixCols.map(c => { const v = row[c.key]; return '<td class="' + matrixClasses[v] + '">' + matrixSymbols[v] + '</td>'; }).join('') + '</tr>').join('') +
-      '</tbody>';
-  } catch(e) { console.error("[OE] globalMatrix failed:", e.message); }
+  // The availability matrix is rendered by initMatrix() in shared.js,
+  // which also provides filtering, sorting and the platform count.
+  // Rendering it here as well meant two writers for one element.
+
   buildPageCharts();
 });
 
