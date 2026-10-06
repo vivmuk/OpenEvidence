@@ -42,4 +42,10 @@ var globalMatrixData = [
   {platform:"NHS App AI Triage",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Microsoft 365 Copilot (NHS)",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"CliniComp PACS Viewer (AI-enabled)",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"AIGP Health (Anzu)",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"yes",latam:"no",mea:"no"},
+  {platform:"Docquity Ask Dx",us:"no",eu:"no",uk:"no",cn:"no",in:"partial",jp:"yes",sea:"yes",latam:"no",mea:"no"},
+  {platform:"Telepatia",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"yes",mea:"no"},
+  {platform:"EvidenceMD",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"partial",sea:"yes",latam:"partial",mea:"partial"},
+  {platform:"Glass Health",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Deshi Bio (LLM karyotype)",us:"no",eu:"no",uk:"no",cn:"yes",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 ];;

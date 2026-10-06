@@ -805,3 +805,35 @@
 - **Source:** New Market Pitch (https://newmarketpitch.com/blogs/news/healthcare-ai-funding-deals)
 - **Detail:** 88 announced healthcare AI funding rounds totaling ~$4.24B. Clinical AI tools raised $1.47B (~35%). Q2 2026 was the most active quarter (26 deals, $1.09B). Top-three deal share fell from 59% (Q2 2025) to 34% (Q2 2026). Clinical documentation category (Abridge, Ambience, Suki, Nabla, Tandem Health, DeepScribe) exceeds $1.3B combined.
 
+
+
+---
+
+## Update - October 6, 2026 (Global CDS weekly sweep)
+
+### New / newly-tracked platforms
+
+- **Docquity Ask Dx** (Singapore) - clinical AI assistant from the Docquity physician network; expanded into Japan in Oct 2026 via exMedio Inc. (Hematology Pro, Hipokura), with Japan-SEA knowledge exchange under a "One Asia" strategy. Availability: SEA + Japan (partial India). Source: techedgeai.com
+- **AIGP Health - Anzu** (Singapore) - SEA-native clinical AI decision support; launched in Thailand (Sep 2026) via Borderless Healthcare Group, built on 3,000+ live patients in Singapore and Australia; Malaysia and Indonesia planned. Availability: SEA. Source: Media OutReach / The Manila Times
+- **Telepatia** (US / Latin America) - a16z-backed AI clinical assistant targeting 950,000 of Latin America's 1.9M doctors by end-2027. Availability: LatAm. Source: Bloomberg
+- **EvidenceMD** - transparent-reasoning CDS challenger; claims chain-of-thought over 40M+ papers, built-in AI scribe, 54.6% HealthBench Hard, free worldwide in 30 languages with no NPI or regional gate. Availability: global (US, EU, UK, India, SEA, partial JP/LatAm/MEA). Source: evidencemd.ai
+- **Glass Health** - agentic clinical intelligence platform ("NewGlass for Patients" consumer launch); differential-diagnosis and assessment/plan drafting; Lite free tier. Availability: US (Max plan adds Epic, eClinicalWorks, athenahealth, Elation). Source: glass.health
+- **Deshi Bio** (China) - first NMPA Class III medical device certificate for LLM-based chromosome karyotype diagnosis software (May 2026); a global first for an LLM-based device. Availability: China. Source: Chambers Healthcare AI 2026
+- **IQVIA AI-enabled CDS** - predictive-modelling CDS tool; won the 2026 AI Breakthrough Award for Predictive Modeling Solution of the Year (Aug 20, 2026). Availability: US + global enterprise. Source: Business Wire
+- **InTouchNow** (UK) - AI voice agent for NHS general practice (calls, booking, admin), GBP 2.3M seed, 150+ practices. Availability: UK. Source: Building Better Healthcare
+
+### Regional developments
+
+- **China** - NMPA released two draft guidelines (Sep 14-15, 2026): Draft Guideline on Artificial Intelligence Medical Devices, and Draft Guideline on Clinical Evaluation of Artificial Intelligence Multi-Disease Auxiliary Decision-Making Medical Device. Testing databases may support differential-diagnosis evaluation but do not replace clinical trials for primary endpoints; algorithm updates, continuous learning, large models and imported-device differences need change control and a China-specific strategy. Earlier: NMPA "AI + Drug Regulation" Implementation Opinions (Apr 2, 2026) and the Jun 17 AI diagnostic-device draft.
+- **European Union** - Regulation (EU) 2026/1744 (Digital Omnibus on AI) entered into force 27 July 2026, moving the AI Act high-risk deadline for AI embedded in regulated products (incl. AI-enabled medical devices) from 2 Aug 2027 to 2 Aug 2028. Prohibitions/AI literacy (Feb 2025), GPAI rules (Aug 2025) and most remaining provisions (Aug 2026) kept their original dates; AI Office enforcement began 2 Aug 2026.
+- **United Kingdom** - September 2026 wave: InTouchNow GBP 2.3M (NHS primary care AI voice agent); Aide Health COPD programme across six North West London PCNs; Imperial College Healthcare + Hillingdon Patient Service Centre. MHRA AI Airlock budget +GBP 4.1M (Apr 2026). OpenEvidence remains blocked in the UK.
+- **India** - Smart Doctor (AIIMS-built CDS) rolling out across ~70,000 hospitals under ABDM; SAHI national strategy and BODH open-data platform launched Jul 2026; AIIMS Delhi, PGIMER Chandigarh, AIIMS Rishikesh named Centres of Excellence for AI in Healthcare.
+- **Japan** - Docquity Ask Dx enters via exMedio (Oct 2026). Japan's 2025-26 reforms (APPI amendment bills, AI Promotion Act, SaMD framework, Single IRB reform) advance health-data and AI governance in parallel rather than via a single statute. Clinical AI review covering imaging, endoscopy, cardiology, infectious disease published Jun 2026 (Global Health & Medicine).
+- **Southeast Asia** - AIGP Health Anzu into Thailand; ASEAN Care Readiness Index 2026 (300 leaders, six markets): 94% feel prepared for 3-5 years but 54% cite technology-implementation capability as a barrier. Singapore General Hospital's PEACH perioperative AI chatbot shared at Medical Fair Asia.
+- **Latin America** - Telepatia (a16z) targets 950K doctors by 2027; LatAm VC reached USD 4.126B across 681 rounds in 2025 (+13.8%); cloud adoption in LatAm healthcare rose from <20% (2019) to >60% (2026). Regulatory and interoperability gaps persist.
+- **Middle East & Africa** - Elsevier 2026 Clinician of the Future: MEA clinical-specific AI adoption lowest globally (21% of AI-using clinicians use clinical tools frequently vs 41% in North America) despite Vision 2030/sovereign-wealth investment. UAE hospitals (Cleveland Clinic Abu Dhabi Transpara mammography, Burjeel) expand connected/imaging AI. MEA CDS market CAGR ~13.1% (2026-2033).
+
+### Regulatory watch
+
+- **FDA** - AI/ML device authorizations passed 1,600 (Sep 2026, up from 1,524 in Mar 2026; radiology ~76%). January 6, 2026 CDS Software final guidance (re-issued Jan 29; town hall Mar 11) keeps clinician-support, guideline-based CDS outside device regulation and grants enforcement discretion for single clinically-appropriate recommendations. FDA denies a partial 510(k) exemption for radiology CAD/triage AI (Sep 17), sharpening the imaging-vs-non-imaging split.
+- **WHO / IMDRF** - IMDRF Good Machine Learning Practice (10 principles) and ITU regulatory considerations continue to anchor international guidance; ARISE 2026 underscores that fewer than 5% of cleared AI/ML devices have peer-reviewed evaluation.

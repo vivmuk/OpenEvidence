@@ -5,6 +5,37 @@
 
 var whatsNewData = [
   {
+    date: "October 6, 2026",
+    updated: "Global CDS tracker weekly sweep (Tue Oct 6, 5:00 PM ET) - Venice web searches across global CDS platforms, regional markets (US/EU/China/India/Japan/SEA/LatAm/MEA), regulators (FDA/EMA/NMPA/MHRA/WHO) and competitor/LinkedIn/X queries. Key findings: NMPA two AI medical device draft guidelines (Sep 14-15), EU Digital Omnibus 2026/1744 pushes the device-AI compliance deadline to Aug 2028, Docquity Ask Dx into Japan, AIGP Health Anzu into Thailand, Telepatia targets 950K Latin American doctors, Deshi Bio wins the first NMPA Class III certificate for an LLM-based device, ARISE State of Clinical AI 2026 flags the evidence gap, IQVIA CDS tool wins a 2026 AI Breakthrough Award, and MENA clinical-specific AI adoption is the lowest globally. 10 new global timeline entries, 4 new regulatory entries, 6 new platforms in the availability matrix, 5 new competitors tracked.",
+    items: [
+      {
+        cat: "Regulatory - China",
+        title: "NMPA releases two AI medical device draft guidelines (Sep 14-15)",
+        desc: "China's NMPA issues the Draft Guideline on Artificial Intelligence Medical Devices (Sep 14) and the Draft Guideline on Clinical Evaluation of Artificial Intelligence Multi-Disease Auxiliary Decision-Making Medical Device (Sep 15). Together they extend China's AI device framework into multi-disease decision support - the closest NMPA analogue to clinician-facing CDS. Testing databases may support differential-diagnosis evaluation but do not replace clinical trials for primary endpoints; algorithm updates, continuous learning, large models and imported-device differences require change control and a China-specific regulatory strategy rather than a US/EU extension."
+      },
+      {
+        cat: "Regulatory - EU",
+        title: "Digital Omnibus on AI moves the medical-device AI deadline to August 2028",
+        desc: "Regulation (EU) 2026/1744 (Digital Omnibus on AI) enters into force on 27 July 2026, moving the EU AI Act high-risk deadline for AI embedded in regulated products - including AI-enabled medical devices - from 2 August 2027 to 2 August 2028. Prohibitions and AI-literacy provisions (Feb 2025), GPAI model rules (Aug 2025) and most remaining provisions (Aug 2026) kept their original dates and apply now, with AI Office enforcement from 2 Aug 2026. For clinical AI vendors the evidence that sells a product is no longer the evidence that gets it approved, and a model update can re-trigger deferred questions."
+      },
+      {
+        cat: "Product - Asia expansion",
+        title: "Docquity Ask Dx enters Japan; AIGP Health's Anzu launches in Thailand",
+        desc: "Docquity expands its Ask Dx clinical AI assistant into Japan via an expanded partnership with exMedio Inc. (specialist communities Hematology Pro and Hipokura), with knowledge exchange across Japanese and Southeast Asian clinician networks under its One Asia strategy. Separately, Singapore-founded AIGP Health launches its Anzu clinical AI platform in Thailand with Borderless Healthcare Group, built on 3,000+ live patients across Singapore and Australia, with Malaysia and Indonesia planned next. Clinical AI is spreading regionally beyond US/EU vendors."
+      },
+      {
+        cat: "Market - Latin America",
+        title: "Telepatia targets 950,000 Latin American doctors by 2027",
+        desc: "Andreessen Horowitz-backed Latin American health startup Telepatia aims to put its AI clinical assistant in the hands of half the region's 1.9M doctors by end-2027, betting AI can bridge specialist shortages across strained LatAm health systems. One of the largest explicitly regional clinical-AI deployment ambitions outside the US, and a shift from LatAm pure-adoption to LatAm-built (cf. Carecode, Patagon AI, Osigu, Davix)."
+      },
+      {
+        cat: "Research - Global (CRITICAL)",
+        title: "ARISE State of Clinical AI Report 2026: adoption outpaces evidence",
+        desc: "The ARISE network's State of Clinical AI Report 2026 finds more than 1,200 FDA-cleared AI/ML devices but fewer than 5% with peer-reviewed evaluation, and prospective randomised trials remain scarce, while frontier LLMs now match or exceed physician performance on simulated diagnostic and CDS tasks. Warns of physician deskilling and automation bias, and calls for safe human-computer interaction research; randomised prospective trials expected late 2026-2027."
+      }
+    ]
+  },
+  {
     date: "October 5, 2026",
     updated: "Weekly OpenEvidence research sweep (Mon Oct 5, 3:51 PM ET) - Venice Augment Search (20 queries), arXiv API (50 results, 3 new QC-passed), PubMed eutils (30 results, 7 new relevant), openevidence.com/announcements scrape. Key findings: AdventHealth partnership (Oct 1), Sage Publishing partnership (Sep 29), Nature Medicine benchmark study added (PMID 42286322 - frontier LLMs outperform OE and UpToDate on MedQA/HealthBench/RCQ), urodynamic trace LLM comparison (5 models, ELEGANCE framework), rheumatology guideline-grounded chatbot nationwide evaluation (6291 questions, 13 centres). 10 new research.json entries, 3 new benchmarks.json entries, 2 new partnerships, 6 new publications.",
     items: [
