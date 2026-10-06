@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/fonts/fonts.css">
 <link rel="stylesheet" href="/shared.css">
 <style>
-.pub-hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 20px 0 28px; }
+.pub-hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr)); gap: 12px; margin: 20px 0 28px; }
 .pub-stat { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 16px 18px; }
 .pub-stat .num { font-size: 28px; font-weight: 700; color: var(--oe-orange); line-height: 1.1; }
 .pub-stat .lbl { font-size: 12px; color: var(--oe-text-muted); margin-top: 4px; text-transform: uppercase; letter-spacing: .06em; }
@@ -22,7 +22,7 @@
 .pub-cat-head h3 { font-size: 18px; font-weight: 600; }
 .pub-cat-head .count { font-size: 12px; color: var(--oe-text-muted); }
 
-.pub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); gap: 14px; }
+.pub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(255px, 100%), 1fr)); gap: 14px; }
 .pub-card { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 16px; display: flex; flex-direction: column; gap: 8px; transition: transform .15s, border-color .15s, box-shadow .15s; animation: fadeIn .5s ease-out both; }
 .pub-card:hover { transform: translateY(-3px); border-color: var(--oe-orange); box-shadow: var(--oe-shadow-lg); }
 .pub-top { display: flex; align-items: center; gap: 12px; }

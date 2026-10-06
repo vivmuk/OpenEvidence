@@ -48,7 +48,7 @@
     <div class="chart-container" style="margin-top:24px;">
       <h3>What Is the Script Concordance Test?</h3>
       <p class="chart-sub">A validated clinical reasoning assessment used in medical education for 30+ years - now repurposed to evaluate AI models.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:20px;margin-top:20px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(350px, 100%), 1fr));gap:20px;margin-top:20px;">
         <div class="tech-layer">
           <h3><span class="icon">🧠</span> Clinical Reasoning Under Uncertainty</h3>
           <p style="font-size:14px;line-height:1.7;color:var(--oe-text);">SCT measures how well a model interprets <strong>new clinical information</strong> in the context of diagnostic or therapeutic hypotheses. It does not test factual recall - it tests whether the model can reason like an expert physician when given ambiguous or incomplete data.</p>
@@ -68,11 +68,11 @@
           <h3><span class="icon">📊</span> Rating Scale</h3>
           <div style="margin-top:8px;">
             <div style="display:flex;justify-content:space-between;gap:4px;margin-bottom:4px;">
-              <span style="background:rgba(228,100,61,0.2);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>-2</strong><br>Strongly<br>decreases</span>
-              <span style="background:rgba(228,100,61,0.12);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>-1</strong><br>Slightly<br>decreases</span>
-              <span style="background:rgba(120,120,120,0.15);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>0</strong><br>No<br>effect</span>
-              <span style="background:rgba(107,175,125,0.15);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>+1</strong><br>Slightly<br>increases</span>
-              <span style="background:rgba(107,175,125,0.25);padding:6px 12px;border-radius:6px;font-size:12px;text-align:center;flex:1;"><strong>+2</strong><br>Strongly<br>increases</span>
+              <span style="background:rgba(228,100,61,0.2);padding:6px 8px;border-radius:6px;font-size:12px;text-align:center;flex:1;min-width:0;"><strong>-2</strong><br>Strongly<br>decreases</span>
+              <span style="background:rgba(228,100,61,0.12);padding:6px 8px;border-radius:6px;font-size:12px;text-align:center;flex:1;min-width:0;"><strong>-1</strong><br>Slightly<br>decreases</span>
+              <span style="background:rgba(120,120,120,0.15);padding:6px 8px;border-radius:6px;font-size:12px;text-align:center;flex:1;min-width:0;"><strong>0</strong><br>No<br>effect</span>
+              <span style="background:rgba(107,175,125,0.15);padding:6px 8px;border-radius:6px;font-size:12px;text-align:center;flex:1;min-width:0;"><strong>+1</strong><br>Slightly<br>increases</span>
+              <span style="background:rgba(107,175,125,0.25);padding:6px 8px;border-radius:6px;font-size:12px;text-align:center;flex:1;min-width:0;"><strong>+2</strong><br>Strongly<br>increases</span>
             </div>
           </div>
           <p style="font-size:13px;color:var(--oe-text-muted);margin-top:8px;">The model returns <code style="font-size:12px;">{"Rating": 1, "Rationale": "..."}</code> - a single integer rating with brief clinical justification.</p>
@@ -84,7 +84,7 @@
     <div class="chart-container" style="margin-top:32px;">
       <h3>How Scoring Works</h3>
       <p class="chart-sub">Deterministic scoring against expert physician panel distributions - no LLM judge required. Fully reproducible.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:20px;margin-top:20px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px, 100%), 1fr));gap:20px;margin-top:20px;">
         <div class="tech-layer">
           <h3><span class="icon">🎯</span> SCT Score (0-1)</h3>
           <p style="font-size:14px;line-height:1.7;color:var(--oe-text);">The headline metric. Each item has an <strong>expert distribution</strong> - how a panel of expert physicians rated the same case. If the model's rating matches the most common expert answer, it scores 1.0. Less common expert answers score proportionally lower.</p>
@@ -108,7 +108,7 @@
     <div class="chart-container" style="margin-top:32px;">
       <h3>Data &amp; Provenance</h3>
       <p class="chart-sub">174 open items from 10 medical institutions worldwide. The open subset is MIT-licensed.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin-top:16px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px, 100%), 1fr));gap:12px;margin-top:16px;">
         <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:16px;">
           <div style="font-weight:600;color:var(--oe-orange);font-size:14px;margin-bottom:8px;">📊 Scale</div>
           <div style="font-size:13px;color:var(--oe-text);">174 items (open subset of 750 total)<br>Each item = 1 scenario + 1 hypothesis + 1 new finding<br>Expert distributions from physician panels</div>
@@ -128,7 +128,7 @@
     <div class="chart-container" style="margin-top:32px;">
       <h3>Our Evaluation Methodology</h3>
       <p class="chart-sub">5 frontier AI models tested via Venice API - OpenAI-compatible inference, temperature=0.0, 10 concurrent threads.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:16px;margin-top:16px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(350px, 100%), 1fr));gap:16px;margin-top:16px;">
         <div style="background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:8px;padding:16px;">
           <div style="font-weight:600;color:var(--oe-orange);font-size:14px;margin-bottom:6px;">🔧 Inference Setup</div>
           <ul style="font-size:13px;line-height:1.8;color:var(--oe-text);padding-left:18px;">
@@ -208,7 +208,7 @@
     <!-- KEY FINDINGS -->
     <div class="chart-container" style="margin-top:32px;">
       <h3>Key Findings</h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin-top:16px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px, 100%), 1fr));gap:12px;margin-top:16px;">
         <div style="background:var(--oe-dark-soft);border-left:3px solid var(--oe-orange);border-radius:8px;padding:16px;">
           <div style="font-weight:600;font-size:14px;margin-bottom:4px;">🏆 Claude Opus 4.7 leads</div>
           <div style="font-size:13px;color:var(--oe-text);line-height:1.6;">Scored 0.782 - outperforming even MAST's published Claude Opus 4.7 score of 0.756. Claude also had the highest In Expert Set match rate after Gemini Flash (90.8%).</div>
@@ -566,7 +566,7 @@ function renderSctTable() {
   if (!el) return;
   const allData = [...sctResultsData.map(d => ({...d, type:'venice'})), ...sctPublishedData.map(d => ({...d, type:'ref'}))];
   allData.sort((a,b) => b.score - a.score);
-  el.innerHTML = '<table class="funding-table" style="margin-top:12px;"><thead><tr><th>Model</th><th>SCT Score</th><th>95% CI</th><th>In Expert Set</th><th>Parse Errors</th><th>Source</th></tr></thead><tbody>' +
+  el.innerHTML = '<div class="table-wrap"><table class="funding-table" style="margin-top:12px;"><thead><tr><th>Model</th><th>SCT Score</th><th>95% CI</th><th>In Expert Set</th><th>Parse Errors</th><th>Source</th></tr></thead><tbody>' +
     allData.map(d => {
       const badge = d.type === 'venice' ? '<span class="new-badge" style="margin-left:4px;">VENICE</span>' : '<span style="font-size:10px;color:var(--oe-text-muted);margin-left:4px;">REF</span>';
       const scoreColor = d.type === 'venice' ? 'color:var(--oe-orange);font-weight:600;' : 'color:var(--oe-text-muted);';
@@ -576,7 +576,7 @@ function renderSctTable() {
         '<td>' + (d.expertSet ? (d.expertSet * 100).toFixed(1) + '%' : ' - ') + '</td>' +
         '<td>' + (d.parseErrors !== undefined ? d.parseErrors : ' - ') + '</td>' +
         '<td style="font-size:12px;color:var(--oe-text-muted);">' + d.source + '</td></tr>';
-    }).join('') + '</tbody></table>';
+    }).join('') + '</tbody></table></div>';
 }
 
 function renderSctChart() {
