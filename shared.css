@@ -1,40 +1,63 @@
 
 :root {
+  /* Brand accent (theme-independent) */
   --oe-orange: #E4643D;
   --oe-orange-light: #F08A6A;
   --oe-orange-dark: #C44A28;
   --oe-orange-50: #FDF2ED;
   --oe-orange-100: #FAE0D5;
   --oe-orange-200: #F5C1AC;
-  --oe-dark: #0C130D;
-  --oe-dark-soft: #1A2520;
-  --oe-dark-card: #1E2A22;
-  --oe-dark-border: #2D3D32;
   --oe-green: #2D5A3D;
-  --oe-text: #E8E6E1;
-  --oe-text-dim: #9CA8A0;
-  --oe-text-muted: #6B7872;
-  --oe-white: #FAFAF8;
+
+  /* Type + shape (theme-independent) */
   --oe-font: 'DM Serif Display', 'Century Gothic', 'CenturyGothic', 'Apple Gothic', Georgia, serif;
   --oe-font-sans: 'Jost', 'Century Gothic', 'CenturyGothic', 'Apple Gothic', 'ITC Avant Garde Gothic', -apple-system, system-ui, sans-serif;
   --oe-font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
   --oe-radius: 8px;
   --oe-radius-lg: 12px;
-  --oe-shadow: 0 1px 3px rgba(0,0,0,0.3);
-  --oe-shadow-lg: 0 4px 20px rgba(0,0,0,0.4);
-}
 
-[data-theme="light"] {
-  --oe-dark: #FAFAF8;
-  --oe-dark-soft: #F5F3F0;
-  --oe-dark-card: #FFFFFF;
-  --oe-dark-border: #E5E2DC;
+  /* ---- LIGHT IS THE DEFAULT THEME ---- */
+  --oe-dark: #FAFAF8;        /* page canvas   */
+  --oe-dark-soft: #F1EFEA;   /* sidebar / raised */
+  --oe-dark-card: #FFFFFF;   /* cards         */
+  --oe-dark-border: #E2DFD8; /* hairlines     */
   --oe-text: #1A2520;
   --oe-text-dim: #4A5A50;
-  --oe-text-muted: #8A9A90;
-  --oe-orange-50: #FDF2ED;
-  --oe-shadow: 0 1px 3px rgba(0,0,0,0.08);
-  --oe-shadow-lg: 0 4px 20px rgba(0,0,0,0.12);
+  --oe-text-muted: #78867E;
+  --oe-white: #FFFFFF;
+  --oe-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  --oe-shadow-lg: 0 4px 20px rgba(0,0,0,0.10);
+
+  /* Theme-aware utility tints (these were hardcoded white before) */
+  --oe-chip-bg: rgba(0,0,0,0.06);
+  --oe-ring: rgba(0,0,0,0.06);
+  --oe-tooltip-bg: #1A2520;
+  --oe-tooltip-text: #E8E6E1;
+  --oe-tooltip-border: #2D3D32;
+  --oe-grid-line: rgba(0,0,0,0.07);
+  --oe-chart-ink: #1A2520;
+}
+
+/* ---- DARK OVERRIDE ---- */
+[data-theme="dark"] {
+  --oe-dark: #0C130D;
+  --oe-dark-soft: #1A2520;
+  --oe-dark-card: #1E2A22;
+  --oe-dark-border: #2D3D32;
+  --oe-text: #E8E6E1;
+  --oe-text-dim: #9CA8A0;
+  --oe-text-muted: #6B7872;
+  --oe-white: #FAFAF8;
+  --oe-orange-50: #2A1A14;
+  --oe-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  --oe-shadow-lg: 0 4px 20px rgba(0,0,0,0.4);
+  --oe-chip-bg: rgba(255,255,255,0.15);
+  --oe-ring: rgba(255,255,255,0.06);
+  --oe-tooltip-bg: #1A2520;
+  --oe-tooltip-text: #E8E6E1;
+  --oe-tooltip-border: #2D3D32;
+  --oe-grid-line: rgba(255,255,255,0.06);
+  --oe-chart-ink: #E8E6E1;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -838,7 +861,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
   margin-left: 6px;
   padding: 1px 7px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.15);
+  background: var(--oe-chip-bg);
   font-size: 11px;
   font-weight: 600;
   vertical-align: 1px;
@@ -863,7 +886,7 @@ footer p { font-size: 13px; color: var(--oe-text-muted); }
 .freshness-dot {
   width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0;
   background: var(--oe-text-muted);
-  box-shadow: 0 0 0 3px rgba(255,255,255,0.05);
+  box-shadow: 0 0 0 3px var(--oe-ring);
 }
 .updated-info.freshness.fresh  .freshness-dot { background: #4CAF7D; box-shadow: 0 0 0 3px rgba(76,175,125,0.18); }
 .updated-info.freshness.aging  .freshness-dot { background: #E0A83C; box-shadow: 0 0 0 3px rgba(224,168,60,0.18); }
@@ -923,3 +946,100 @@ a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9px; color: #666; }
   .hero .updated { border: 1px solid #ccc; padding: 6px 8px; }
 }
+
+/* ==========================================================================
+   DATA TABLES
+   Four pages render tables (funding, doximity, global, sct) but the stylesheet
+   had no table styles at all, so they fell back to browser defaults.
+   ========================================================================== */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg);
+  background: var(--oe-dark-card);
+  margin: 0 0 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+table caption,
+.table-wrap caption {
+  caption-side: top;
+  text-align: left;
+  padding: 14px 16px 8px;
+  font-size: 12px;
+  color: var(--oe-text-muted);
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--oe-dark-soft);
+  color: var(--oe-text-dim);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--oe-dark-border);
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--oe-dark-border);
+  color: var(--oe-text);
+  vertical-align: top;
+}
+
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:nth-child(even) { background: var(--oe-dark-soft); }
+tbody tr { transition: background 0.15s ease; }
+tbody tr:hover { background: var(--oe-orange-50); }
+
+/* Numeric columns line up; first column reads as the row label */
+td:first-child, th:first-child { font-weight: 500; }
+td[data-num], th[data-num], .num { text-align: right; }
+
+tbody a { color: var(--oe-orange); text-decoration: none; }
+tbody a:hover { text-decoration: underline; }
+
+/* Print: tables should not be clipped by the scroll container */
+@media print {
+  .table-wrap { overflow: visible !important; border-color: #ccc !important; }
+  thead th { position: static; background: #f2f2f2 !important; color: #111 !important; }
+  tbody tr:nth-child(even) { background: #fafafa !important; }
+  table { font-size: 11px; }
+}
+
+/* ==========================================================================
+   LIGHT-THEME CONTRAST
+   Status pills and matrix marks were colour-tuned for dark backgrounds. On
+   light they rendered as pale text on pale tints, below WCAG AA for small
+   text. Darken the ink, strengthen the tint.
+   ========================================================================== */
+[data-theme="light"] .region-card .region-status.early      { background: rgba(37,107,55,0.12);  color: #1F5C2E; }
+[data-theme="light"] .region-card .region-status.growing    { background: rgba(180,70,40,0.12);  color: #A83C1C; }
+[data-theme="light"] .region-card .region-status.mature     { background: rgba(40,78,150,0.12);  color: #2B4C8C; }
+[data-theme="light"] .region-card .region-status.restricted { background: rgba(150,45,45,0.12);  color: #93302F; }
+
+[data-theme="light"] .status-known           { background: rgba(37,107,55,0.12);  color: #1F5C2E; }
+[data-theme="light"] .status-inferred        { background: rgba(140,100,15,0.14); color: #7A5A0C; }
+[data-theme="light"] .status-released        { background: rgba(37,107,55,0.12);  color: #1F5C2E; }
+[data-theme="light"] .status-dev             { background: rgba(140,100,15,0.14); color: #7A5A0C; }
+[data-theme="light"] .status-inferred-future { background: rgba(90,90,90,0.12);   color: #4A5A50; }
+
+[data-theme="light"] .global-matrix .yes     { color: #1F7A3D; }
+[data-theme="light"] .global-matrix .partial { color: #9A6E0A; }
+[data-theme="light"] .global-matrix .blocked { color: #A33232; }
+[data-theme="light"] .global-matrix .no      { color: #9AA39C; }
+[data-theme="light"] .global-matrix th       { color: #4A5A50; background: var(--oe-dark-soft); }

@@ -3,12 +3,57 @@
 var chartColor = '#E4643D';
 var chartColorLight = 'rgba(228,100,61,0.15)';
 
-function getThemeColors() {
-  const isDark = document.documentElement.classList.contains('dark');
-  return isDark
-    ? { text: '#E8E6E1', grid: 'rgba(255,255,255,0.06)', bg: '#1A2520' }
-    : { text: '#1A2520', grid: 'rgba(0,0,0,0.06)', bg: '#FFFFFF' };
+// === THEME (light is default; dark is the override) ======================
+function currentTheme() {
+  return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
 }
+
+function cssVar(name, fallback) {
+  var v = getComputedStyle(document.documentElement).getPropertyValue(name);
+  return (v && v.trim()) || fallback;
+}
+
+function getThemeColors() {
+  return {
+    text: cssVar('--oe-chart-ink', '#1A2520'),
+    grid: cssVar('--oe-grid-line', 'rgba(0,0,0,0.07)'),
+    bg: cssVar('--oe-dark-card', '#FFFFFF'),
+    tooltipBg: cssVar('--oe-tooltip-bg', '#1A2520'),
+    tooltipText: cssVar('--oe-tooltip-text', '#E8E6E1'),
+    tooltipBorder: cssVar('--oe-tooltip-border', '#2D3D32'),
+  };
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  try { localStorage.setItem('oe-theme', theme); } catch (e) {}
+  var btn = document.querySelector('.theme-toggle');
+  if (btn) {
+    btn.textContent = theme === 'dark' ? '☀ Light Mode' : '☾ Dark Mode';
+    btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+  }
+  // Charts bake their colours in at construction, so they must be rebuilt.
+  if (typeof buildPageCharts === 'function') buildPageCharts();
+}
+
+function toggleTheme() {
+  applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+}
+
+// Restore the reader's choice before first paint of the charts.
+(function restoreTheme() {
+  var saved = null;
+  try { saved = localStorage.getItem('oe-theme'); } catch (e) {}
+  var theme = saved || 'light';
+  document.documentElement.setAttribute('data-theme', theme);
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.querySelector('.theme-toggle');
+    if (btn) {
+      btn.textContent = theme === 'dark' ? '☀ Light Mode' : '☾ Dark Mode';
+      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+    }
+  });
+})();
 
 let charts = [];
 
@@ -40,10 +85,10 @@ function makeChart(id, labels, data, label, type='line') {
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: '#1A2520',
+          backgroundColor: tc.tooltipBg,
           titleColor: chartColor,
-          bodyColor: '#E8E6E1',
-          borderColor: '#2D3D32',
+          bodyColor: tc.tooltipText,
+          borderColor: tc.tooltipBorder,
           borderWidth: 1,
         }
       },
@@ -53,15 +98,6 @@ function makeChart(id, labels, data, label, type='line') {
       }
     }
   });
-}
-
-function toggleTheme() {
-  const isDark = document.documentElement.classList.toggle('dark');
-  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
-  const btn = document.querySelector('.theme-toggle');
-  if (btn) btn.textContent = isDark ? '☀ Light Mode' : '☾ Dark Mode';
-  // Rebuild charts on this page
-  if (typeof buildPageCharts === 'function') buildPageCharts();
 }
 
 function toggleSidebar() {
