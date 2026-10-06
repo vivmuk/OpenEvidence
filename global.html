@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Global Landscape — OpenEvidence Insights</title>
+<title>Global Landscape - OpenEvidence Insights</title>
 <meta name="description" content="Global clinical AI decision support landscape by region.">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fonts.css">
 <link rel="stylesheet" href="/shared.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
@@ -34,39 +33,39 @@
     <a href="/sources">📚 Sources</a>
   </div>
   <div class="sidebar-footer">
-    <button class="theme-toggle" onclick="toggleTheme()">☀ Light Mode</button>
+    <button class="theme-toggle" aria-pressed="false" onclick="toggleTheme()">☀ Light Mode</button>
     <div class="updated-info">Updated: Sep 29, 2026</div>
   </div>
 </div>
 <div class="main-content">
-  <button id="hamburger" class="hamburger" onclick="toggleSidebar()">☰</button>
+  <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
 <section id="global">
   <div class="container">
     <h2>Global <span class="accent">Clinical AI Landscape</span></h2>
-    <p class="section-sub">Tracking clinical AI applications across major world markets — adoption, regulation, funding, and emerging trends. Updated weekly.</p>
+    <p class="section-sub">Tracking clinical AI applications across major world markets - adoption, regulation, funding, and emerging trends. Updated weekly.</p>
 
     <!-- REGION OVERVIEW -->
     <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:32px 0 8px;">Regional Overview</h3>
-    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Clinical AI maturity by region — from mature markets with active AI tools to restricted markets with regulatory barriers.</p>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Clinical AI maturity by region - from mature markets with active AI tools to restricted markets with regulatory barriers.</p>
     <div class="region-grid" id="regionGrid"></div>
 
     <!-- GLOBAL ADOPTION CHART -->
     <div class="chart-container" style="margin-top:32px;">
       <h3>Physician AI Adoption by Region (%)</h3>
-      <p class="chart-sub">Estimated percentage of physicians using AI tools regularly — 2024 to 2026</p>
+      <p class="chart-sub">Estimated percentage of physicians using AI tools regularly - 2024 to 2026</p>
       <div class="chart-wrapper" style="height:350px;"><canvas id="chartGlobalAdoption"></canvas></div>
     </div>
 
     <!-- MARKET SIZE CHART -->
     <div class="chart-container">
       <h3>Clinical AI Market Size by Region ($B)</h3>
-      <p class="chart-sub">Healthcare AI market size — current and projected</p>
+      <p class="chart-sub">Healthcare AI market size - current and projected</p>
       <div class="chart-wrapper" style="height:350px;"><canvas id="chartMarketSize"></canvas></div>
     </div>
 
     <!-- GLOBAL TIMELINE -->
     <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Global Timeline</h3>
-    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Major clinical AI events worldwide — product launches, regulatory milestones, funding, partnerships. Filter by region.</p>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Major clinical AI events worldwide - product launches, regulatory milestones, funding, partnerships. Filter by region.</p>
     <div class="reg-filters" id="globalFilters">
       <button class="filter-btn active" data-filter="all">All Regions</button>
       <button class="filter-btn" data-filter="US">🇺🇸 US</button>
@@ -84,7 +83,7 @@
 
     <!-- REGULATORY TIMELINE -->
     <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Regulatory Milestones</h3>
-    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Key regulatory actions affecting clinical AI — FDA, EMA, NMPA, MHRA, and others.</p>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Key regulatory actions affecting clinical AI - FDA, EMA, NMPA, MHRA, and others.</p>
     <div class="global-timeline" id="regulatoryTimeline"></div>
 
     <!-- EMERGING CLINICAL AI TOOLS -->
@@ -113,7 +112,7 @@
 
     <!-- FUNDING BY REGION -->
     <h3 style="font-family:var(--oe-font);font-size:24px;font-weight:400;margin:48px 0 8px;">Funding by Region</h3>
-    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Clinical AI venture funding by geography — 2024 to 2026.</p>
+    <p style="font-size:13px;color:var(--oe-text-muted);margin-bottom:16px;">Clinical AI venture funding by geography - 2024 to 2026.</p>
     <div class="chart-container">
       <div class="chart-wrapper" style="height:350px;"><canvas id="chartFundingByRegion"></canvas></div>
     </div>
@@ -253,7 +252,7 @@ window.addEventListener('load', function() {
   } catch(e) { console.error("[OE] trendGrid failed:", e.message); }
   try {
     const matrixCols = [{key:'us',label:'🇺🇸 US'},{key:'eu',label:'🇪🇺 EU'},{key:'uk',label:'🇬🇧 UK'},{key:'cn',label:'🇨🇳 CN'},{key:'in',label:'🇮🇳 IN'},{key:'jp',label:'🇯🇵 JP'},{key:'sea',label:'🇸🇬 SEA'},{key:'latam',label:'🇧🇷 LATAM'},{key:'mea',label:'🇮🇱 MEA'}];
-    const matrixSymbols = {yes:'✓',no:'—',partial:'~',blocked:'✗'};
+    const matrixSymbols = {yes:'✓',no:' - ',partial:'~',blocked:'✗'};
     const matrixClasses = {yes:'yes',no:'no',partial:'partial',blocked:'blocked'};
     document.getElementById('globalMatrix').innerHTML = '<thead><tr><th>Platform</th>' + matrixCols.map(c => '<th>' + c.label + '</th>').join('') + '</tr></thead><tbody>' +
       globalMatrixData.map(row => '<tr><td><strong>' + row.platform + '</strong></td>' + matrixCols.map(c => { const v = row[c.key]; return '<td class="' + matrixClasses[v] + '">' + matrixSymbols[v] + '</td>'; }).join('') + '</tr>').join('') +

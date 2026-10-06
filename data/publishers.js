@@ -1,18 +1,18 @@
-// OpenEvidence Publishers — full dataset of content partners whose data powers OpenEvidence
+// OpenEvidence Publishers - full dataset of content partners whose data powers OpenEvidence
 // Compiled Aug 24, 2026 from openevidence.com/announcements, PRNewswire, ACC/NCCN/AAP press, Wikipedia
 // Categories: publisher | society | research | network | publichealth | backbone
 
 const PUBLISHERS = [
   // ── Landmark journal publishers ──────────────────────────────
   { id:'nejm', name:'NEJM Group', org:'Massachusetts Medical Society', cat:'journal', date:'2025-02-19', dateLabel:'Feb 19, 2025',
-    scope:'NEJM · NEJM Evidence · NEJM AI · NEJM Catalyst · NEJM Journal Watch — all content and multimedia from 1990 forward',
+    scope:'NEJM · NEJM Evidence · NEJM AI · NEJM Catalyst · NEJM Journal Watch - all content and multimedia from 1990 forward',
     desc:'First landmark content agreement, announced alongside OpenEvidence\u2019s $1B Sequoia-led round. Multi-year deal covering the world\u2019s most-cited medical journal.',
     logo:'logos/publishers/nejm.png', domain:'nejm.org',
     src:'https://www.prnewswire.com/news-releases/openevidence-achieves-1-billion-valuation-in-sequoia-led-round-and-announces-content-partnership-with-the-new-england-journal-of-medicine-302380960.html' },
 
   { id:'jama', name:'JAMA Network', org:'American Medical Association', cat:'journal', date:'2025-06-05', dateLabel:'Jun 5, 2025',
     scope:'JAMA · JAMA Network Open · 11 specialty journals',
-    desc:'Multi-year strategic content agreement with the JAMA Network — 13 peer-reviewed journals covering every medical specialty.',
+    desc:'Multi-year strategic content agreement with the JAMA Network - 13 peer-reviewed journals covering every medical specialty.',
     logo:'logos/publishers/jama.png', domain:'jamanetwork.com',
     src:'https://www.prnewswire.com/news-releases/openevidence-and-the-jama-network-sign-strategic-content-agreement-302473690.html' },
 
@@ -23,13 +23,13 @@ const PUBLISHERS = [
     src:'https://www.openevidence.com/announcements/springer-nature-and-openevidence-announce-agreement-to-maximise-exposure-of-trusted-findings-on-openevidence-platform' },
 
   { id:'wiley', name:'Wiley', org:'NYSE: WLY', cat:'publisher', date:'2026-03-03', dateLabel:'Mar 3, 2026',
-    scope:'Hundreds of Wiley-published society journals across medicine — expanded twice since launch (Cochrane, neurology)',
+    scope:'Hundreds of Wiley-published society journals across medicine - expanded twice since launch (Cochrane, neurology)',
     desc:'Partnership to deliver trusted research to physicians at the point of care. Expanded Apr 16, 2026 with four neurological societies\u2019 journals.',
     logo:'logos/publishers/wiley.png', domain:'wiley.com',
     src:'https://www.openevidence.com/announcements/wiley-and-openevidence-partner-to-deliver-trusted-research-to-physicians-at-the-point-of-care' },
 
   { id:'cochrane', name:'Cochrane', org:'The Cochrane Collaboration', cat:'research', date:'2026-03-03', dateLabel:'Mar 3, 2026',
-    scope:'Cochrane Library systematic reviews — the gold standard of evidence synthesis',
+    scope:'Cochrane Library systematic reviews - the gold standard of evidence synthesis',
     desc:'Cochrane\u2019s systematic reviews joined OpenEvidence as part of the Wiley agreement.',
     logo:'logos/publishers/cochrane.png', domain:'cochranelibrary.com',
     src:'https://www.openevidence.com/announcements/wiley-and-openevidence-partner-to-deliver-trusted-research-to-physicians-at-the-point-of-care' },
@@ -43,7 +43,7 @@ const PUBLISHERS = [
 
   { id:'ean', name:'European Academy of Neurology', org:'via Wiley', cat:'society', date:'2026-04-16', dateLabel:'Apr 16, 2026',
     scope:'European Journal of Neurology',
-    desc:'One of four neurological societies in the Wiley expansion — bringing European neurology research to the point of care.',
+    desc:'One of four neurological societies in the Wiley expansion - bringing European neurology research to the point of care.',
     logo:'logos/publishers/ean.png', domain:'ean.org',
     src:'https://www.openevidence.com/announcements/openevidence-expands-neurology-coverage-with-four-neurological-societies-now-participating-in-the-wiley-openevidence-agreement' },
 
@@ -55,7 +55,7 @@ const PUBLISHERS = [
 
   { id:'mds', name:'Intl. Parkinson & Movement Disorder Society', org:'via Wiley', cat:'society', date:'2026-04-16', dateLabel:'Apr 16, 2026',
     scope:'Movement Disorders · Movement Disorders Clinical Practice',
-    desc:'The fourth neurology society in the Wiley expansion — eight neurology titles in total across the four societies.',
+    desc:'The fourth neurology society in the Wiley expansion - eight neurology titles in total across the four societies.',
     logo:null, mono:'MDS', monoColor:'#7A1F2B', domain:'movementdisorders.org',
     src:'https://www.openevidence.com/announcements/openevidence-expands-neurology-coverage-with-four-neurological-societies-now-participating-in-the-wiley-openevidence-agreement' },
 
@@ -68,7 +68,7 @@ const PUBLISHERS = [
 
   { id:'nccn', name:'NCCN', org:'National Comprehensive Cancer Network', cat:'society', date:'2025-11-05', dateLabel:'Nov 5, 2025',
     scope:'NCCN Clinical Practice Guidelines in Oncology · JNCCN · Treatment Algorithms (added Apr 2026)',
-    desc:'Licensing agreement for NCCN\u2019s oncology guidelines — expanded Apr 27, 2026 with canonical treatment algorithms at the point of care.',
+    desc:'Licensing agreement for NCCN\u2019s oncology guidelines - expanded Apr 27, 2026 with canonical treatment algorithms at the point of care.',
     logo:'logos/publishers/nccn.png', domain:'nccn.org',
     src:'https://www.openevidence.com/announcements/nccn-and-openevidence-collaborate-to-bring-clinical-oncology-guidelines-to-medical-ai' },
 
@@ -96,7 +96,7 @@ const PUBLISHERS = [
     logo:'logos/publishers/aap.png', domain:'aap.org',
     src:'https://www.openevidence.com/announcements/american-academy-of-pediatrics-and-openevidence-announce-collaboration-to-improve-pediatric-care' },
 
-  { id:'aaohns', name:'AAO-HNSF', org:'American Academy of Otolaryngology–Head and Neck Surgery Foundation', cat:'society', date:'2026-03-16', dateLabel:'Mar 16, 2026',
+  { id:'aaohns', name:'AAO-HNSF', org:'American Academy of Otolaryngology - Head and Neck Surgery Foundation', cat:'society', date:'2026-03-16', dateLabel:'Mar 16, 2026',
     scope:'ENT clinical practice guidelines, kept live-updated with new evidence',
     desc:'First-of-its-kind partnership to keep clinical practice guidelines aligned with the latest evidence.',
     logo:'logos/publishers/aaohns.png', domain:'entnet.org',
@@ -110,7 +110,7 @@ const PUBLISHERS = [
 
   { id:'sno', name:'Society for Neuro-Oncology', org:'SNO · Official Generative AI Partner', cat:'society', date:'2026-06-23', dateLabel:'Jun 23, 2026',
     scope:'Neuro-oncology content; OpenEvidence embedded across SNO digital properties',
-    desc:'OpenEvidence named SNO\u2019s official generative AI partner — 3,000+ members across 60 countries.',
+    desc:'OpenEvidence named SNO\u2019s official generative AI partner - 3,000+ members across 60 countries.',
     logo:null, mono:'SNO', monoColor:'#274472', domain:'neuro-oncology.org',
     src:'https://www.openevidence.com/announcements/sno-and-openevidence-launch-official-generative-ai-partnership' },
 
@@ -139,14 +139,14 @@ const PUBLISHERS = [
     src:'https://www.openevidence.com/announcements/national-organization-for-rare-disorders-and-openevidence-partner-to-bring-ai-powered-rare-disease-resources-to-clinicians-and-patients-worldwide' },
 
   { id:'jomi', name:'JOMI', org:'Journal of Medical Insight', cat:'journal', date:'2026-06-25', dateLabel:'Jun 25, 2026',
-    scope:'357 peer-reviewed surgical videos — first video evidence on OpenEvidence',
+    scope:'357 peer-reviewed surgical videos - first video evidence on OpenEvidence',
     desc:'First video-evidence collaboration: narrated surgical videos brought to clinicians.',
     logo:'logos/publishers/jomi.png', domain:'jomi.com',
     src:'https://www.openevidence.com/announcements/openevidence-and-journal-of-medical-insight-jomi-partner-to-bring-peer-reviewed-surgical-videos-to-clinicians' },
 
   // ── Clinical networks & public health ────────────────────────
   { id:'oneoncology', name:'OneOncology', org:'Community oncology network', cat:'network', date:'2026-08-06', dateLabel:'Aug 6, 2026',
-    scope:'Real-world community oncology data — 1.5M patients; genomic data + trial matching planned',
+    scope:'Real-world community oncology data - 1.5M patients; genomic data + trial matching planned',
     desc:'Multi-year partnership delivering evidence-grounded AI decision support to community oncology practices nationwide.',
     logo:'logos/publishers/oneoncology.png', domain:'oneoncology.com',
     src:'https://www.openevidence.com/announcements/oneoncology-and-openevidence-partner-to-improve-cancer-care-nationwide' },
@@ -166,7 +166,7 @@ const PUBLISHERS = [
   // ── Open research backbone (indexed since launch) ────────────
   { id:'pubmed', name:'PubMed / PMC', org:'U.S. National Library of Medicine (NIH)', cat:'backbone', date:'2021-01-01', dateLabel:'Since launch',
     scope:'36M+ biomedical citations and full-text articles',
-    desc:'Core open-literature layer — every OpenEvidence answer is grounded in indexed biomedical literature.',
+    desc:'Core open-literature layer - every OpenEvidence answer is grounded in indexed biomedical literature.',
     logo:'logos/publishers/pubmed.png', domain:'pubmed.ncbi.nlm.nih.gov', src:'' },
 
   { id:'medrxiv', name:'medRxiv', org:'Cold Spring Harbor · Yale · BMJ', cat:'backbone', date:'2021-01-01', dateLabel:'Since launch',
