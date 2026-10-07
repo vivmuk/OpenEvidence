@@ -48,4 +48,7 @@ var globalMatrixData = [
   {platform:"EvidenceMD",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"partial",sea:"yes",latam:"partial",mea:"partial"},
   {platform:"Glass Health",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Deshi Bio (LLM karyotype)",us:"no",eu:"no",uk:"no",cn:"yes",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"RhythmX Pulse (GW RhythmX)",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Medwise AI",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Smart Doctor (AIIMS/NHA)",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"},
 ];;
