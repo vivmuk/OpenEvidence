@@ -3339,5 +3339,84 @@
     "key_findings": "ChatGPT-5: sensitivity 69.8%, specificity 52.4%, accuracy 65.5%, κ=0.19 (poor agreement). ChatGPT identified more pDDIs (median 6 vs 0). LLMs complementary, not standalone for ICU pharmacovigilance.",
     "relevance": "Head-to-head LLM vs named clinical decision support tool (UpToDate) in safety-critical ICU setting.",
     "pmid": "42835343"
+  },
+  {
+    "id": "pmid:42842945",
+    "source": "pubmed",
+    "title": "Gemini 2.5 Pro vs ChatGPT o4-mini for ROP Diagnosis and Treatment",
+    "authors": "Peng S et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42842945/",
+    "published": "2026-10-07",
+    "journal": "Journal of Medical Internet Research",
+    "benchmark_type": "clinical_ai_comparison",
+    "datasets": [
+      "70 infants (140 eyes) with treatment-requiring ROP"
+    ],
+    "models_evaluated": [
+      "Gemini 2.5 Pro",
+      "ChatGPT o4-mini"
+    ],
+    "metrics": [
+      "Diagnostic consistency",
+      "Treatment suggestion consistency",
+      "Global Quality Score (GQS)",
+      "Guideline adherence"
+    ],
+    "key_findings": "Gemini better at plus disease identification (77.1% vs 57.1%, P=.006). ChatGPT better at guideline-adherent treatment (65.0% vs 39.3%, P=.01) and GQS treatment scores (P=.001). Zone/staging comparable.",
+    "relevance": "Head-to-head AI chatbot comparison for clinical diagnosis and treatment in ophthalmology.",
+    "pmid": "42842945"
+  },
+  {
+    "id": "pmid:42840750",
+    "source": "pubmed",
+    "title": "MedNLI-Pain: LLM Alignment Benchmark for Clinical Patient Alignment",
+    "authors": "Wong C et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42840750/",
+    "published": "2026-10-06",
+    "journal": "JAMIA Open",
+    "benchmark_type": "llm_alignment",
+    "datasets": [
+      "MedNLI-Pain (adapted from MedNLI with pain annotations)"
+    ],
+    "models_evaluated": [
+      "Multiple LLMs (not specified in abstract)"
+    ],
+    "metrics": [
+      "Agreement with physician assessments",
+      "MedNLI vs MedNLI-Pain comparison",
+      "Counterfactual augmentation"
+    ],
+    "key_findings": "All LLMs performed worse on MedNLI-Pain than MedNLI. Clinical reasoning accuracy does not entail patient alignment capability. Training on MedNLI did not improve MedNLI-Pain performance.",
+    "relevance": "New benchmark for LLM clinical alignment with patients — addresses gap in clinical AI safety evaluation.",
+    "pmid": "42840750"
+  },
+  {
+    "id": "pmid:42837407",
+    "source": "pubmed",
+    "title": "Lab Panels vs Frontier LLMs vs Specialist for ICD-10 Classification",
+    "authors": "Yesil Y, Medetalibeyoglu A, Ademoglu E",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42837407/",
+    "published": "2026-10-05",
+    "journal": "Laboratory Medicine",
+    "benchmark_type": "clinical_ai_comparison",
+    "datasets": [
+      "242,648 internal medicine encounters (training)",
+      "80-patient temporal holdout"
+    ],
+    "models_evaluated": [
+      "XGBoost (17 classifiers)",
+      "3 frontier LLMs (via API)",
+      "Specialist physician (laboratory-only assessment)"
+    ],
+    "metrics": [
+      "AUC",
+      "Sensitivity at 95% specificity",
+      "Calibration",
+      "Brier score",
+      "Decision curve analysis"
+    ],
+    "key_findings": "XGBoost AUC 0.880 vs 0.729-0.739 for LLMs (paired diff 0.141-0.151, P<.005). Logistic regression AUC 0.809. Routine lab panels contain substantial ICD-10 classification information.",
+    "relevance": "Multi-model comparison: traditional ML vs frontier LLMs vs physician for clinical classification from lab data.",
+    "pmid": "42837407"
   }
 ]

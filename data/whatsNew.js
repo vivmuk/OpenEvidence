@@ -5,6 +5,47 @@
 
 var whatsNewData = [
   {
+    date: "October 8, 2026",
+    updated: "Daily check (Thu Oct 8, 9:00 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline. Grok X/Twitter search timed out - noted as gap. 9 new research papers added to research.json (BEACON-SP GraphRAG for suicide risk, RAS RAG for T1D digital twins, VALIDATE stroke CDSS protocol, CAP fairness for ICU mortality LLMs, Gemini vs ChatGPT for ROP, LLM EHR cognitive decline pipeline, MedNLI-Pain alignment benchmark, 286-study LLM chatbot scoping review, lab panels vs LLMs for ICD-10). 3 new benchmark entries added to benchmarks.json.",
+    items: [
+      {
+        cat: "Research - GraphRAG Clinical CDS",
+        title: "BEACON-SP: Ontology-grounded GraphRAG for clinical suicide risk assessment (Oct 6, 2026)",
+        desc: "Davaslioglu et al. introduce BEACON-SP - a GraphRAG framework combining patient knowledge graphs with ontology-guided retrieval for clinician-facing decision support in suicide prevention. Integrates Three-Step Theory, Integrated Motivational-Volitional Model, and Suicide Social Determinants of Health Ontology. On 1,500-query benchmark (15 clinical categories, 100 patients), GraphRAG preferred in 76.4% of paired comparisons vs vector-based RAG. arXiv 2610.09026."
+      },
+      {
+        cat: "Research - RAG Clinical Safety",
+        title: "RAS framework for T1D digital twins: LLM numerical faithfulness matters for safety (Oct 7, 2026)",
+        desc: "Mujahid et al. introduce retrieval-augmented simulation connecting probabilistic digital-twin simulation with guideline-grounded report generation for Type 1 Diabetes. LLaMA 3.1 achieved NumCov 0.98 but Qwen 3 systematically under-reported time in range by -10.6pp, inflating hypoglycemia risk. Aggregate framework scores alone insufficient for clinical validation. PMID 42844763."
+      },
+      {
+        cat: "Research - Prospective CDSS Validation",
+        title: "VALIDATE study protocol: prospective shadow-mode AI CDSS for acute stroke outcomes (Oct 7, 2026)",
+        desc: "Rubiera et al. prospective multicentre observational study at 3 tertiary stroke centres. AI-based CDSS operates in shadow mode without influencing clinical decisions, generating individualised 3-month mRS predictions for 4 treatment strategies at 3 time points. Primary outcome: real-world feasibility and usability in hyperacute stroke workflow. NCT05622539. PMID 42843886."
+      },
+      {
+        cat: "Research - LLM Fairness",
+        title: "Case-Based Prompting improves LLM ICU mortality prediction fairness (Sep 28, 2026)",
+        desc: "Zhang et al. propose CAP - a training-free framework retrieving clinically similar historical misprediction and demographic-sensitive cases. On MIMIC-IV: AUROC 0.806→0.873, AUPRC 0.497→0.694. Reduced sex and White-Black disparities; age disparities persisted. Removing demographic information did not uniformly improve both performance and fairness. PMID 42843123."
+      },
+      {
+        cat: "Research - AI Chatbot Comparison",
+        title: "Gemini 2.5 Pro vs ChatGPT o4-mini for retinopathy of prematurity diagnosis (Oct 7, 2026)",
+        desc: "Peng et al. retrospective comparison (70 infants, 140 eyes). Gemini better at plus disease identification (77.1% vs 57.1%, P=.006). ChatGPT better at guideline-adherent treatment suggestions (65.0% vs 39.3%, P=.01) and higher GQS treatment scores (P=.001). Zone and staging consistency comparable. PMID 42842945."
+      },
+      {
+        cat: "Research - LLM Clinical Application",
+        title: "2-stage LLM pipeline identifies cognitive decline in EHR with F1 0.945 (Oct 7, 2026)",
+        desc: "Wang et al. (Harvard/Mass General) developed Med42-v2-8B screening + GPT-4o confirmation pipeline for EHR-based subjective cognitive decline phenotyping. 15,750 older adults with normal cognitive testing. Sensitivity 0.957, specificity 0.985, F1 0.945. 13.8% had documented cognitive concern. PMID 42842937."
+      },
+      {
+        cat: "Research - LLM Alignment Benchmark",
+        title: "MedNLI-Pain: clinical reasoning accuracy does not entail patient alignment (Oct 6, 2026)",
+        desc: "Wong et al. adapt MedNLI to create MedNLI-Pain benchmark evaluating if LLMs that make accurate clinical inferences can also anticipate when patients are in pain. All LLMs performed worse on MedNLI-Pain than MedNLI. Training improvements on MedNLI did not transfer. Clinical reasoning accuracy may not entail patient alignment capability. PMID 42840750."
+      }
+    ]
+  },
+  {
     date: "October 6, 2026",
     updated: "Global CDS tracker weekly sweep (Tue Oct 6, 5:00 PM ET) - Venice web searches across global CDS platforms, regional markets (US/EU/China/India/Japan/SEA/LatAm/MEA), regulators (FDA/EMA/NMPA/MHRA/WHO) and competitor/LinkedIn/X queries. Key findings: NMPA two AI medical device draft guidelines (Sep 14-15), EU Digital Omnibus 2026/1744 pushes the device-AI compliance deadline to Aug 2028, Docquity Ask Dx into Japan, AIGP Health Anzu into Thailand, Telepatia targets 950K Latin American doctors, Deshi Bio wins the first NMPA Class III certificate for an LLM-based device, ARISE State of Clinical AI 2026 flags the evidence gap, IQVIA CDS tool wins a 2026 AI Breakthrough Award, and MENA clinical-specific AI adoption is the lowest globally. 10 new global timeline entries, 4 new regulatory entries, 6 new platforms in the availability matrix, 5 new competitors tracked.",
     items: [

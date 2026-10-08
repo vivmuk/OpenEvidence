@@ -9607,5 +9607,286 @@
       "Sensitivity 69.8%, specificity 52.4%, accuracy 65.5%",
       "LLMs may serve as complementary tools, not standalone solutions in ICU pharmacovigilance"
     ]
+  },
+  {
+    "id": "arxiv:2610.09026",
+    "source": "arxiv",
+    "arxiv_id": "2610.09026",
+    "type": "rag_clinical_ai",
+    "title": "BEACON-SP: Ontology-Grounded GraphRAG Framework for Clinical Suicide Risk Assessment",
+    "authors": "Davaslioglu K, Conger N, Kompella S, Sagduyu YE, Bastian ND",
+    "abstract": "BEACON-SP is an ontology-grounded Graph Retrieval-Augmented Generation (GraphRAG) framework for clinician-facing decision support in behavioral health settings such as suicide prevention. Combines patient knowledge graphs with ontology-guided retrieval for multi-hop reasoning across diagnoses, medications, risk and protective factors, life events, and temporal relationships. Evaluated on 1,500-query benchmark spanning 15 clinical categories and 100 patients. GraphRAG preferred in 76.4% of paired criterion-level comparisons vs vector-based RAG baseline.",
+    "url": "https://arxiv.org/abs/2610.09026v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.09026v1",
+    "doi": null,
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "journal": "arXiv",
+    "tags": [
+      "GraphRAG",
+      "clinical decision support",
+      "suicide prevention",
+      "RAG",
+      "behavioral health",
+      "ontology",
+      "knowledge graph"
+    ],
+    "relevance": "RAG-based clinical AI tool evaluation for clinician-facing decision support in behavioral health. Directly relevant to RAG architecture evaluation in clinical settings. GraphRAG outperforms vector-based RAG in 76.4% of comparisons.",
+    "key_findings": [
+      "GraphRAG framework for clinician-facing decision support in suicide prevention",
+      "1,500-query benchmark spanning 15 clinical categories and 100 patients",
+      "GraphRAG preferred in 76.4% of paired criterion-level comparisons vs vector RAG",
+      "Integrates Three-Step Theory, Integrated Motivational-Volitional Model, and Suicide Social Determinants of Health Ontology"
+    ]
+  },
+  {
+    "id": "pmid:42844763",
+    "source": "pubmed",
+    "pmid": "42844763",
+    "type": "rag_clinical_ai",
+    "title": "Retrieval-Augmented Simulation for Interpreting Probabilistic Digital Twins in Type 1 Diabetes",
+    "authors": "Mujahid O, Contreras I, Beneyto A, Vehi J",
+    "abstract": "Introduces retrieval-augmented simulation (RAS), a modular framework connecting probabilistic digital-twin simulation with guideline-grounded report generation for Type 1 Diabetes. Evaluated with 35 T1D patients using 2 locally hosted LLMs (LLaMA 3.1:8b, Qwen 3:8b). Two independent LLM evaluators (GPT-5.5 Thinking, Kimi 2.6 Thinking) assessed report quality. LLaMA achieved high numerical faithfulness (NumCov 0.98±0.03); Qwen exhibited safety risks with systematic under-reporting of time in range by -10.6pp and over-reporting hypoglycemia risk.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42844763/",
+    "pdf_url": null,
+    "doi": "10.1177/19322968261484150",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "journal": "Journal of Diabetes Science and Technology",
+    "tags": [
+      "RAG",
+      "Type 1 diabetes",
+      "digital twin",
+      "LLM",
+      "clinical decision support",
+      "guideline-grounded",
+      "safety"
+    ],
+    "relevance": "RAG-based clinical AI framework for diabetes management with LLM evaluation. Directly relevant to RAG-based clinical AI tool evaluation. Highlights safety risks in numerical faithfulness of LLM-generated clinical reports.",
+    "key_findings": [
+      "RAS framework: RAG + digital twin simulation for T1D clinical reports",
+      "35 patients, 2 local LLMs (LLaMA 3.1:8b, Qwen 3:8b), 2 independent LLM evaluators",
+      "LLaMA: NumCov 0.98±0.03 with consistent guideline coupling",
+      "Qwen: systematic -10.6pp under-reporting of time in range, safety risk",
+      "Aggregate framework scores alone insufficient for clinical validation"
+    ]
+  },
+  {
+    "id": "pmid:42843886",
+    "source": "pubmed",
+    "pmid": "42843886",
+    "type": "cds_evaluation",
+    "title": "Real-time prospective (shadow mode) validation of an AI-based clinical decision support system for predicting 3-month functional outcome in acute stroke: the VALIDATE study protocol",
+    "authors": "Rubiera M, Bendszus M, Leker RR, Hilbert A, Werren I, Lopez-Ramos LM, Ayesta M, Nguyen Q, Bonekamp S, Sala V, Jubran H, Meza C, Shalabi F, Schwartzmann Y, Cano D, von Tottleben M, Kelleher J, Frey D",
+    "abstract": "Prospective, multicentre observational study (VALIDATE) enrolling consecutive acute ischaemic stroke patients at 3 tertiary stroke centres. AI-based CDSS operates in shadow mode without influencing clinical decisions, generating individualised predictions of 3-month functional outcome (modified Rankin Scale) for 4 treatment strategies at 3 sequential time points. Primary outcome: real-world feasibility and usability within hyperacute stroke workflow. NCT05622539.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42843886/",
+    "pdf_url": null,
+    "doi": "10.1136/bmjopen-2026-120511",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "journal": "BMJ Open",
+    "tags": [
+      "clinical decision support",
+      "stroke",
+      "prospective validation",
+      "shadow mode",
+      "CDSS",
+      "predictive AI"
+    ],
+    "relevance": "Prospective clinical decision support system validation in acute stroke — directly evaluates AI-based CDSS in real clinical workflows. Shadow mode design is a model for safe CDS evaluation.",
+    "key_findings": [
+      "VALIDATE: prospective multicentre shadow-mode validation of AI-based CDSS for stroke",
+      "3 tertiary stroke centres, acute ischaemic stroke",
+      "Predicts 3-month mRS for 4 treatment strategies at 3 time points",
+      "Primary outcome: feasibility and usability in hyperacute workflow",
+      "NCT05622539"
+    ]
+  },
+  {
+    "id": "pmid:42843123",
+    "source": "pubmed",
+    "pmid": "42843123",
+    "type": "llm_clinical_evaluation",
+    "title": "Improving fairness of large language model-based ICU mortality prediction via case-based prompting",
+    "authors": "Zhang G, Long Y, Zhou Y, Zhang Y, Hong S",
+    "abstract": "Proposes Case-Based Prompting (CAP), a training-free framework to improve fairness of LLM-based ICU mortality prediction. CAP retrieves clinically similar historical misprediction and demographic-sensitive cases. On MIMIC-IV, CAP improved AUROC from 0.806 to 0.873 and AUPRC from 0.497 to 0.694. Reduced several subgroup disparities (sex, White-Black comparisons) though age-related disparities persisted. Removing demographic information did not uniformly improve both performance and fairness.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42843123/",
+    "pdf_url": null,
+    "doi": "10.1016/j.artmed.2026.103541",
+    "published": "2026-09-28",
+    "updated": "2026-10-07",
+    "journal": "Artificial Intelligence in Medicine",
+    "tags": [
+      "LLM",
+      "ICU mortality",
+      "fairness",
+      "bias",
+      "case-based prompting",
+      "MIMIC-IV",
+      "clinical prediction"
+    ],
+    "relevance": "LLM-based clinical prediction evaluation with fairness analysis. Directly relevant to clinical AI safety and bias evaluation in clinical decision support.",
+    "key_findings": [
+      "CAP: training-free framework for LLM fairness in ICU mortality prediction",
+      "MIMIC-IV: AUROC 0.806→0.873, AUPRC 0.497→0.694",
+      "Reduced sex and White-Black disparities; age disparities persisted",
+      "Demographic information removal did not uniformly improve performance+fairness"
+    ]
+  },
+  {
+    "id": "pmid:42842945",
+    "source": "pubmed",
+    "pmid": "42842945",
+    "type": "clinical_ai_comparison",
+    "title": "Comparison of Two AI Chatbots for Diagnosis and Providing Treatment Suggestions in Retinopathy of Prematurity: Retrospective Study",
+    "authors": "Peng S, Zhao X, Wu Z, Yuan D, Duan N, Cui K, Yu Z, Yang W, Wei W, Chi W, Zhang G",
+    "abstract": "Retrospective comparison of Gemini 2.5 Pro and ChatGPT o4-mini for ROP diagnosis and treatment suggestions in 70 infants (140 eyes). 2-stage prompting strategy. Gemini better at plus disease identification (77.1% vs 57.1%, P=.006). ChatGPT o4-mini better at guideline-adherent treatment suggestions (65.0% vs 39.3%, P=.01) and higher GQS treatment scores (P=.001). Zone and stage consistency comparable (P>.05).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42842945/",
+    "pdf_url": null,
+    "doi": "10.2196/86726",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "journal": "Journal of Medical Internet Research",
+    "tags": [
+      "AI chatbot comparison",
+      "retinopathy of prematurity",
+      "Gemini",
+      "ChatGPT",
+      "clinical AI",
+      "diagnosis",
+      "treatment"
+    ],
+    "relevance": "Direct head-to-head comparison of two AI chatbots for clinical diagnosis and treatment in ROP. Medical AI accuracy comparison across multiple systems.",
+    "key_findings": [
+      "Gemini 2.5 Pro vs ChatGPT o4-mini for ROP diagnosis (70 infants, 140 eyes)",
+      "Gemini better at plus disease identification (77.1% vs 57.1%, P=.006)",
+      "ChatGPT better at guideline-adherent treatment (65.0% vs 39.3%, P=.01)",
+      "Zone/staging consistency comparable (P>.05)",
+      "ChatGPT higher GQS for treatment suggestions (P=.001)"
+    ]
+  },
+  {
+    "id": "pmid:42842937",
+    "source": "pubmed",
+    "pmid": "42842937",
+    "type": "llm_clinical_application",
+    "title": "Large Language Model-Based Identification of Subjective Cognitive Decline in Electronic Health Records Among Older Adults With Normal Cognitive Testing: Retrospective Cohort Study",
+    "authors": "Wang L, Amariglio RE, Varghese S, Tian J, Seger D, Zhou L, Marshall GA",
+    "abstract": "2-stage LLM-based NLP pipeline (Med42-v2-8B screening + GPT-4o confirmation) to identify documented cognitive concerns in EHR among 15,750 older adults with normal cognitive testing. Pipeline achieved sensitivity 0.957, PPV 0.935, specificity 0.985, F1 0.945. 13.8% had documented cognitive concern. Parkinson disease (aOR 5.29), TBI (aOR 4.63), stroke/TIA (aOR 3.46) strongest correlates.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42842937/",
+    "pdf_url": null,
+    "doi": "10.2196/93011",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "journal": "JMIR Aging",
+    "tags": [
+      "LLM",
+      "EHR",
+      "cognitive decline",
+      "NLP",
+      "clinical application",
+      "GPT-4o",
+      "Med42"
+    ],
+    "relevance": "LLM-based clinical application using EHR data for cognitive decline identification. Demonstrates validated 2-stage LLM pipeline for clinical phenotyping from unstructured notes.",
+    "key_findings": [
+      "2-stage LLM pipeline (Med42-v2-8B + GPT-4o) for EHR-based SCD phenotyping",
+      "15,750 older adults with normal cognitive testing",
+      "Sensitivity 0.957, PPV 0.935, specificity 0.985, F1 0.945",
+      "13.8% had documented cognitive concern in prior year",
+      "Parkinson disease aOR 5.29 strongest correlate of cognitive concern"
+    ]
+  },
+  {
+    "id": "pmid:42840750",
+    "source": "pubmed",
+    "pmid": "42840750",
+    "type": "llm_benchmark",
+    "title": "MedNLI-Pain benchmarks a minimally necessary requirement for large language model alignment",
+    "authors": "Wong C, Kumar D, Muse A, Wang P, Wintz F, East SA, Lyou J, Yanamala N, Wood-Doughty Z",
+    "abstract": "Adapts MedNLI dataset to create MedNLI-Pain, a new benchmark evaluating if LLMs that make accurate clinical inferences can also anticipate when patients are in pain. All LLMs had higher agreement with physicians in MedNLI than in MedNLI-Pain. Performance improved with more MedNLI training data but not MedNLI-Pain. Suggests LLMs may lack necessary capabilities for clinical alignment with patients.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42840750/",
+    "pdf_url": null,
+    "doi": "10.1093/jamiaopen/ooag143",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "journal": "JAMIA Open",
+    "tags": [
+      "LLM benchmark",
+      "clinical alignment",
+      "MedNLI",
+      "pain",
+      "patient alignment",
+      "safety"
+    ],
+    "relevance": "New LLM benchmark for clinical alignment — evaluates whether clinical reasoning capability entails patient alignment. Directly relevant to clinical AI safety and benchmarking.",
+    "key_findings": [
+      "MedNLI-Pain: new benchmark for LLM clinical alignment with patients",
+      "All LLMs performed worse on MedNLI-Pain than MedNLI",
+      "MedNLI training improvements did not transfer to MedNLI-Pain",
+      "Clinical reasoning accuracy may not entail patient alignment capability"
+    ]
+  },
+  {
+    "id": "pmid:42840515",
+    "source": "pubmed",
+    "pmid": "42840515",
+    "type": "clinical_ai_review",
+    "title": "Mapping applications and evaluations of LLM-enabled AI chatbots for health purposes: a scoping review",
+    "authors": "Wang Y, Rw R, Deng Y, Chen X",
+    "abstract": "Scoping review of 286 peer-reviewed empirical studies of LLM-enabled AI chatbot applications in health across 4 stakeholder groups (patients, professionals, researchers, institutions). 93.4% used general-purpose LLMs. 10 health-related purposes identified including clinical decision support, symptom assessment, administrative efficiency. Evidence concentrated in text-based, lower-acuity contexts. Key gaps: institutional integration, higher-stakes contexts, longitudinal evaluation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42840515/",
+    "pdf_url": null,
+    "doi": "10.3389/fpubh.2026.1916780",
+    "published": "2026-09-22",
+    "updated": "2026-10-07",
+    "journal": "Frontiers in Public Health",
+    "tags": [
+      "LLM",
+      "AI chatbots",
+      "scoping review",
+      "health",
+      "clinical decision support",
+      "evaluation"
+    ],
+    "relevance": "Comprehensive scoping review of 286 studies of LLM-enabled AI chatbots in healthcare. Identifies clinical decision support as a key application. Maps evaluation patterns across stakeholder groups.",
+    "key_findings": [
+      "286 empirical studies of LLM-enabled AI chatbots for health (2023-2025)",
+      "93.4% used general-purpose LLMs",
+      "10 health purposes across 4 stakeholder groups",
+      "Clinical decision support is a key professional application",
+      "Evidence concentrated in text-based, lower-acuity contexts"
+    ]
+  },
+  {
+    "id": "pmid:42837407",
+    "source": "pubmed",
+    "pmid": "42837407",
+    "type": "llm_clinical_comparison",
+    "title": "Routine laboratory panels classify internal medicine ICD-10 code groups: comparison with frontier large language models and laboratory-only specialist assessment",
+    "authors": "Yesil Y, Medetalibeyoglu A, Ademoglu E",
+    "abstract": "Developed 17 XGBoost classifiers for ICD-10 code group classification from routine lab panels in 242,648 internal medicine encounters. Mean AUC 0.893. On 80-patient holdout, XGBoost micro-AUC 0.880 vs 0.729-0.739 for 3 frontier LLMs (paired differences 0.141-0.151, all P<.005). Also compared with specialist physician assessment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42837407/",
+    "pdf_url": null,
+    "doi": "10.1093/labmed/lmag074",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "journal": "Laboratory Medicine",
+    "tags": [
+      "LLM",
+      "ICD-10",
+      "laboratory panels",
+      "XGBoost",
+      "frontier LLM",
+      "comparison",
+      "clinical classification"
+    ],
+    "relevance": "Direct comparison of frontier LLMs with traditional ML and specialist physician for clinical classification. Medical AI accuracy comparison across multiple systems.",
+    "key_findings": [
+      "17 XGBoost classifiers for ICD-10 from lab panels in 242,648 encounters",
+      "Mean cross-validated AUC 0.893",
+      "Holdout: XGBoost AUC 0.880 vs 0.729-0.739 for 3 frontier LLMs (P<.005)",
+      "Also compared with specialist physician assessment"
+    ]
   }
 ]
