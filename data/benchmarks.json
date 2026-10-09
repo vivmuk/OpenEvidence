@@ -3418,5 +3418,92 @@
     "key_findings": "XGBoost AUC 0.880 vs 0.729-0.739 for LLMs (paired diff 0.141-0.151, P<.005). Logistic regression AUC 0.809. Routine lab panels contain substantial ICD-10 classification information.",
     "relevance": "Multi-model comparison: traditional ML vs frontier LLMs vs physician for clinical classification from lab data.",
     "pmid": "42837407"
+  },
+  {
+    "id": "arxiv:2610.11069",
+    "source": "arxiv",
+    "title": "Clinician use of language models diverges from how the models are evaluated (RCQ-Map / Clinical AI Benchmark Atlas)",
+    "authors": "Vishwanath K, Lin H, Alyakin A, Lee JV, et al.",
+    "url": "https://arxiv.org/abs/2610.11069v1",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "journal": "arXiv preprint (cs.CL)",
+    "tools_evaluated": "Institutional LLM assistant (unnamed) + 58 public benchmarks analyzed via RCQ-Map",
+    "scale": "127,833 queries, 6,342 clinicians, 35 specialties, 8-month deployment; 58 benchmarks in Atlas",
+    "key_findings": [
+      "Documentation/admin (36.2%) and knowledge retrieval (28.9%) = ~2/3 of real clinical LLM use; diagnosis only 3.7%",
+      "Median benchmark shared only 31% of real-use task mix; benchmarks designed to resemble practice were no closer to real use than frontier model report benchmarks",
+      ">1/3 of real clinical queries could not be answered well as posed",
+      "Benchmark scores say little about clinical AI performance on most actual clinical work"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true
+  },
+  {
+    "id": "pmid:42845635",
+    "source": "PubMed",
+    "title": "Comparative evaluation of 8 RAG LLM tools (OpenEvidence, Undermind, Consensus, SciSpace, Elicit, MediSearch, EvidenceHunt, Scite) on clinical questions",
+    "authors": "Krump PA, Blasingame MN, Koonce TY, Williams AM, Su J, Giuse NB",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42845635/",
+    "published": "2026-08-12",
+    "updated": "2026-10-08",
+    "journal": "medRxiv preprint",
+    "tools_evaluated": "OpenEvidence, Undermind, Consensus, SciSpace, Elicit, MediSearch, EvidenceHunt, Scite",
+    "scale": "12 ChatGPT-generated clinical questions (treatment, etiology, prognosis)",
+    "key_findings": [
+      "No significant differences among 8 RAG LLMs in coverage of must-have (p=0.95) or nice-to-have (p=0.16) medical concepts",
+      "No single tool consistently captured all identified concepts",
+      "RAG LLMs supplementary but cannot replace comprehensive expert literature review"
+    ],
+    "relevance": "high",
+    "status": "preprint",
+    "new": true,
+    "pmid": "42845635"
+  },
+  {
+    "id": "pmid:42849036",
+    "source": "PubMed",
+    "title": "Real-World Effectiveness of AI-Enabled Clinical Decision Support in Primary Care: Systematic Review",
+    "authors": "Jain Y, Wu D, Wang Z",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42849036/",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "journal": "J Med Internet Res",
+    "tools_evaluated": "10 AI-enabled CDSS studies in primary care (various tools, 2011-2025)",
+    "scale": "24 studies (10 AI-enabled, 14 deterministic contextual); PRISMA 2020",
+    "key_findings": [
+      "AI ECG increased new low EF diagnoses (OR 1.32, 95% CI 1.01-1.61)",
+      "EHR ML dementia marker alone did not improve detection (OR 0.84)",
+      "High melanoma discrimination (AUROC 0.960); moderate glaucoma (AUROC 0.80)",
+      "Neither trial for patient-important outcomes demonstrated benefit from AI-CDSS",
+      "Mixed evidence: some detection/care process improvements but no patient-important benefit demonstrated"
+    ],
+    "relevance": "high",
+    "status": "published",
+    "new": true,
+    "pmid": "42849036"
+  },
+  {
+    "id": "pmid:42849041",
+    "source": "PubMed",
+    "title": "Clinicians' Trust in AI-Based Clinical Recommendations: Nurse-Dominant Experimental Pilot",
+    "authors": "Choudhury A, Shahsavar Y, Gurses AP",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42849041/",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "journal": "JMIR Hum Factors",
+    "tools_evaluated": "AI-based clinical recommendations (unnamed, controlled vignettes)",
+    "scale": "68 clinicians (59 nurses, 9 physicians), 21 vignettes each, 748 incorrect + 680 correct recommendations",
+    "key_findings": [
+      "50% of incorrect AI recommendations accepted; 16.47% of correct ones rejected",
+      "Trust differentiated correct from incorrect (beta=-0.772) but acceptance/rejection not aligned with correctness",
+      "Lower trust in incorrect advice does not imply users will reject it — calibration gap",
+      "Baseline intention to use AI positively associated with trust; diagnostic difficulty negatively associated"
+    ],
+    "relevance": "medium-high",
+    "status": "published",
+    "new": true,
+    "pmid": "42849041"
   }
 ]

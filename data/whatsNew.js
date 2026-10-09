@@ -5,6 +5,42 @@
 
 var whatsNewData = [
   {
+    date: "October 9, 2026",
+    updated: "Daily check (Fri Oct 9, 9:09 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline (latest: AdventHealth Oct 1). Grok X/Twitter search timed out - noted as gap. 14 new research papers added to research.json. 4 new benchmark entries added to benchmarks.json.",
+    items: [
+      {
+        cat: "Research - Benchmark vs Real Clinical Use",
+        title: "RCQ-Map: Clinical AI benchmarks share only 31% of real-use task mix (Oct 8, 2026)",
+        desc: "Vishwanath et al. analyzed 127,833 queries from 6,342 clinicians to an institutional AI assistant. Documentation/admin (36.2%) and knowledge retrieval (28.9%) dominate real use; diagnosis only 3.7%. Clinical AI Benchmark Atlas (58 benchmarks) shows median benchmark shares 31% of real task mix. arXiv 2610.11069."
+      },
+      {
+        cat: "Research - RAG LLM Comparison",
+        title: "8 RAG LLM tools compared on clinical questions - OpenEvidence among them (Aug 12, 2026)",
+        desc: "Krump et al. compared OpenEvidence, Undermind, Consensus, SciSpace, Elicit, MediSearch, EvidenceHunt, and Scite on 12 clinical questions. No significant differences in coverage of critical medical concepts (p=0.95). PMID 42845635."
+      },
+      {
+        cat: "Research - AI CDSS Systematic Review",
+        title: "Real-world AI CDSS in primary care: mixed effects, no patient-important benefit (Oct 8, 2026)",
+        desc: "Jain et al. PRISMA systematic review of 10 AI-enabled CDSS studies. AI ECG increased low EF diagnosis (OR 1.32). But neither trial for patient-important outcomes showed benefit. PMID 42849036."
+      },
+      {
+        cat: "Research - AI Trust Calibration",
+        title: "Clinicians accept 50% of incorrect AI recommendations (Oct 8, 2026)",
+        desc: "Choudhury et al. (Johns Hopkins) pilot: 68 clinicians, 21 vignettes. 50% of incorrect recs accepted, 16.47% of correct rejected. Trust calibration gap. PMID 42849041."
+      },
+      {
+        cat: "Research - LLM Safety",
+        title: "Cancer survivorship LLM safety: CRAFT prompting fixes unsafe outputs (Oct 8, 2026)",
+        desc: "An et al. 4 LLMs on 25 cancer survivorship questions (EN + ZH). Gemini 3.1 Pro best. CRAFT prompting improved utility (P<.001) and corrected unsafe outputs. PMID 42849027."
+      },
+      {
+        cat: "Research - Knowledge Graph RAG",
+        title: "KGR-MAS: KG-enhanced multi-agent LLM achieves 87.2% on MedQA (Oct 8, 2026)",
+        desc: "Yin et al. KGR-MAS outperforms GPT-o1 (87.2% vs 72.0% on MedQA). Interpretable, clinically grounded reasoning. PMID 42848569."
+      }
+    ]
+  },
+  {
     date: "October 8, 2026",
     updated: "Daily check (Thu Oct 8, 9:00 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline. Grok X/Twitter search timed out - noted as gap. 9 new research papers added to research.json (BEACON-SP GraphRAG for suicide risk, RAS RAG for T1D digital twins, VALIDATE stroke CDSS protocol, CAP fairness for ICU mortality LLMs, Gemini vs ChatGPT for ROP, LLM EHR cognitive decline pipeline, MedNLI-Pain alignment benchmark, 286-study LLM chatbot scoping review, lab panels vs LLMs for ICD-10). 3 new benchmark entries added to benchmarks.json.",
     items: [
