@@ -5,6 +5,27 @@
 
 var whatsNewData = [
   {
+    date: "October 10, 2026",
+    updated: "Daily check (Sat Oct 10, 9:09 AM ET) - Venice Augment Search (2 queries) + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline (latest: AdventHealth Oct 1). Grok X/Twitter search timed out - noted as gap. All 30 arXiv results already in research.json. 5 new PubMed papers added to research.json. 3 new benchmark entries added to benchmarks.json.",
+    items: [
+      {
+        cat: "Research - Pragmatic RCT",
+        title: "AI-driven CDS for postoperative delirium prevention shows no benefit in pragmatic RCT (Oct 9, 2026)",
+        desc: "Scharp et al. (Mount Sinai) pragmatic RCT: 7,294 patients with cognitive impairment randomized to AI-driven non-interruptive CDS within EHR vs routine care. No significant difference in postoperative delirium (35.1% vs 32.7%, P=.37) or best practice adherence. Only 17.2% had documented delirium assessments due to variability in routine screening. PMID 42854247."
+      },
+      {
+        cat: "Research - LLM Benchmark",
+        title: "SCAI semantic augmentation improves USMLE accuracy across multiple LLMs (Oct 9, 2026)",
+        desc: "Elkin et al. Semantic Clinical AI pipeline with 33M triples across 246 relation labels improved accuracy: Gemini 90.7%->97.1%, Llama 3 70B 82.4%->92.0%, DeepSeek-R1-Distill 55.3%->81.8%. Best single result: Llama 3 70B + SCAI on Step 3 (98.4%). Strong general reasoning does not automatically translate to healthcare readiness. PMID 42853745."
+      },
+      {
+        cat: "Research - Knowledge Graphs",
+        title: "Evidence-weighted knowledge graph for chronic disease lifestyle management (Sep 24, 2026)",
+        desc: "Kang et al. constructed EW-LKG from 170K+ PubMed abstracts with schema-based LLM extraction. Path-aware retrieval and multi-hop reasoning for personalized lifestyle guidance. Benchmarked across 4 LLMs with expert scoring. PMID 42851580."
+      }
+    ]
+  },
+  {
     date: "October 9, 2026",
     updated: "Daily check (Fri Oct 9, 9:09 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline (latest: AdventHealth Oct 1). Grok X/Twitter search timed out - noted as gap. 14 new research papers added to research.json. 4 new benchmark entries added to benchmarks.json.",
     items: [

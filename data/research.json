@@ -10196,5 +10196,118 @@
       "clinical questions",
       "evidence synthesis"
     ]
+  },
+  {
+    "id": "pmid:42855697",
+    "source": "pubmed",
+    "pmid": "42855697",
+    "type": "knowledge_graph",
+    "title": "Application of knowledge graphs in health management for chronic disease patients: a scoping review",
+    "authors": "Xu Z, Dai C, Li H, Li W, Yang T, Yan L, Yang L, Leng M",
+    "abstract": "Scoping review of 15 studies (2018-2025) on KG applications in chronic disease health management. KG construction: data collection, information extraction, knowledge fusion, graph construction, visualization. Applications: self-health management (60%), clinical decision support (33.3%), intelligent QA (26.7%), health monitoring (6.7%). 80% prototype systems, none clinically deployed. Limited high-quality evidence regarding clinical effectiveness.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42855697/",
+    "pdf_url": null,
+    "doi": "10.1186/s12911-026-03704-w",
+    "published": "2026-07-25",
+    "updated": "2026-10-10",
+    "journal": "BMC Med Inform Decis Mak",
+    "tags": [
+      "knowledge graph",
+      "chronic disease",
+      "clinical decision support",
+      "scoping review",
+      "health management"
+    ]
+  },
+  {
+    "id": "pmid:42854247",
+    "source": "pubmed",
+    "pmid": "42854247",
+    "type": "rct",
+    "title": "Artificial Intelligence-Driven Clinical Decision Support for Postoperative Delirium Prevention: A Pragmatic Randomized Controlled Trial",
+    "authors": "Scharp D, Meyers K, Nadkarni G, Federman A, Sarkisian C, Levin MA, Perry S, Gownivaripally P, Egorova NN, Ouyang Y, Vacas S, Hofer I",
+    "abstract": "Pragmatic RCT at Mount Sinai: 7,294 patients with cognitive impairment randomized to AI-driven non-interruptive CDS intervention within EHR promoting perioperative best practices vs routine care. No statistically significant differences in postoperative delirium incidence (35.1% vs 32.7%, P=.37) or best practice adherence. Less than 20% had documented delirium assessments due to variability in routine screening. Intervention did not significantly change best practice adherence.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42854247/",
+    "pdf_url": null,
+    "doi": "10.1213/ANE.0000000000008318",
+    "published": "2026-10-09",
+    "updated": "2026-10-10",
+    "journal": "Anesth Analg",
+    "tags": [
+      "clinical decision support",
+      "postoperative delirium",
+      "pragmatic RCT",
+      "NLP",
+      "EHR",
+      "negative result"
+    ]
+  },
+  {
+    "id": "pmid:42853745",
+    "source": "pubmed",
+    "pmid": "42853745",
+    "type": "benchmark",
+    "title": "Semantic Clinical Knowledge Augmentation Improves Medical Question Answering Across Commercial and Open Large Language Models",
+    "authors": "Elkin PL, Elkin AN, Mehta G, LeHouillier F, Nebeker JR, Saquib N, Brown SH",
+    "abstract": "SCAI (Semantic Clinical AI) pipeline evaluated on 313 USMLE items (Step 1: 87, Step 2 CK: 103, Step 3: 123) with and without semantic knowledge augmentation across Gemini, Copilot, Llama 3 70B, and DeepSeek-R1-Distill. SCAI improved accuracy: Gemini 90.7%->97.1%, Llama 3 70B 82.4%->92.0%, DeepSeek-R1-Distill 55.3%->81.8%, Copilot 93.6%->94.2%. 33M triples across 246 relation labels. Best single result: Llama 3 70B + SCAI on Step 3 (98.4%). Supports semantically grounded pipeline for healthcare readiness.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42853745/",
+    "pdf_url": null,
+    "doi": "10.1109/JBHI.2026.3742187",
+    "published": "2026-10-09",
+    "updated": "2026-10-10",
+    "journal": "IEEE J Biomed Health Inform",
+    "tags": [
+      "USMLE",
+      "semantic knowledge augmentation",
+      "LLM benchmark",
+      "medical QA",
+      "knowledge graph",
+      "confabulation"
+    ]
+  },
+  {
+    "id": "pmid:42852981",
+    "source": "pubmed",
+    "pmid": "42852981",
+    "type": "comparative_evaluation",
+    "title": "Evaluation of artificial intelligence chatbots for generating management plans in paediatric intensive care and pulmonology cases: A comparative study",
+    "authors": "Takia L, Godhwal P, Mishra V, Das D, Narayan A",
+    "abstract": "Comparative evaluation of 4 AI chatbots on accuracy, completeness, readability, and real-world applicability for generating treatment plans in paediatric pulmonology and ICU cases. AIIMS New Delhi. Evaluates chatbots as clinical decision support tools.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42852981/",
+    "pdf_url": null,
+    "doi": "10.1177/00494755261493668",
+    "published": "2026-10-09",
+    "updated": "2026-10-10",
+    "journal": "Trop Doct",
+    "tags": [
+      "AI chatbot",
+      "paediatric intensive care",
+      "pulmonology",
+      "comparative evaluation",
+      "clinical decision support"
+    ]
+  },
+  {
+    "id": "pmid:42851580",
+    "source": "pubmed",
+    "pmid": "42851580",
+    "type": "knowledge_graph",
+    "title": "An evidence-weighted knowledge framework with path-aware reasoning for personalized lifestyle management in chronic disease",
+    "authors": "Kang H, Xu X, Xiao N, Hou L, Li Q, Feng X, Li J",
+    "abstract": "Evidence-Weighted Lifestyle Knowledge Graph (EW-LKG) constructed from 170,000+ PubMed abstracts with schema-based LLM extraction. Heuristic confidence scoring by study design hierarchy. Path-aware retrieval and multi-hop reasoning for LLM answer generation. Benchmarked across 4 LLMs with external validation on PubMedQA chronic disease subset and expert scoring.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42851580/",
+    "pdf_url": null,
+    "doi": "10.3389/fpubh.2026.1924985",
+    "published": "2026-09-24",
+    "updated": "2026-10-10",
+    "journal": "Front Public Health",
+    "tags": [
+      "knowledge graph",
+      "evidence-weighted",
+      "RAG",
+      "chronic disease",
+      "lifestyle management",
+      "clinical decision support"
+    ]
   }
 ]
