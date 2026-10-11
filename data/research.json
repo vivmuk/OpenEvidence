@@ -10176,26 +10176,39 @@
     ]
   },
   {
-    "id": "pmid:42845635",
-    "source": "pubmed",
-    "pmid": "42845635",
-    "type": "rag_evaluation",
+    "id": "42845635",
+    "source": "PubMed",
+    "type": "preprint",
     "title": "Evaluating Eight Retrieval-Augmented Generation (RAG) Large Language Models' Responses to Clinical Questions: A Comparative Study",
-    "authors": "Krump PA, Blasingame MN, Koonce TY, Williams AM, Su J, Giuse NB",
-    "abstract": "8 RAG LLM tools compared (OpenEvidence, Undermind, Consensus, SciSpace, Elicit, MediSearch, EvidenceHunt, Scite) on 12 ChatGPT-generated clinical questions across treatment, etiology, prognosis. No significant differences among tools in coverage of must-have (p=0.95) or nice-to-have (p=0.16) medical concepts. No single tool captured all identified concepts. RAG LLMs supplementary but cannot replace comprehensive expert review.",
+    "authors": [
+      {
+        "name": "(see PubMed)"
+      }
+    ],
+    "abstract": "Comparative study evaluating eight RAG-based LLMs' responses to clinical questions.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42845635/",
     "pdf_url": null,
-    "doi": "10.64898/2026.08.10.26360108",
     "published": "2026-08-12",
-    "updated": "2026-10-08",
-    "journal": "medRxiv preprint",
+    "updated": "2026-10-09",
+    "journal": "medRxiv",
     "tags": [
       "RAG",
-      "OpenEvidence",
-      "comparative evaluation",
+      "LLM",
       "clinical questions",
+      "comparative evaluation",
+      "benchmark",
+      "OpenEvidence",
       "evidence synthesis"
-    ]
+    ],
+    "relevance": "high",
+    "key_findings": "Head-to-head comparison of 8 RAG-based clinical LLMs on clinical question answering.",
+    "tools_evaluated": [
+      "8 RAG LLMs"
+    ],
+    "scale": "multi-model comparison",
+    "status": "new",
+    "pmid": "42845635",
+    "doi": "10.64898/2026.08.10.26360108"
   },
   {
     "id": "pmid:42855697",
@@ -10319,7 +10332,7 @@
     "authors": "Kumarapuram S, Satti M, Xu S, Kavia J, Bhaskar A, Azmi A, Goldszal AF, Soliman A, Sundararajan S, Gupta G, Roychowdhury S",
     "abstract": "Evaluation of OpenEvidence, ChatGPT-3.5, and ChatGPT-5.0 for neuroradiology imaging selection using ACR Appropriateness Criteria as reference standard. 78 prompts across 11 priority clinical areas including cerebrovascular conditions, neurological pain, and spine pathologies. OpenEvidence performed best for both open-ended (86.3%) and select-all-that-apply (79.5%) prompts. ChatGPT-5 achieved 80.6% OE and 71.2% SATA. ChatGPT-3.5 scored 69.2% OE and 44.4% SATA. No performance differences based on case acuity. Rutgers-Robert Wood Johnson Medical School.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42859098/",
-    "pdf_url": null,
+    "pdf_url": "",
     "doi": "10.1016/j.acra.2026.09.049",
     "published": "2026-10-10",
     "updated": "2026-10-11",
@@ -10331,7 +10344,9 @@
       "ACR Appropriateness Criteria",
       "comparative evaluation",
       "clinical decision support",
-      "imaging selection"
+      "imaging selection",
+      "appropriateness criteria",
+      "clinical AI comparison"
     ],
     "relevance": "Direct head-to-head evaluation of OpenEvidence vs ChatGPT models on imaging appropriateness criteria — OpenEvidence outperforms both ChatGPT-3.5 and ChatGPT-5 on SATA prompts, and outperforms ChatGPT-3.5 on open-ended prompts. Extends OE evaluation literature into radiology decision support.",
     "key_findings": [
@@ -10343,7 +10358,8 @@
     "tools_evaluated": [
       "OpenEvidence",
       "ChatGPT-3.5",
-      "ChatGPT-5.0"
+      "ChatGPT-5.0",
+      "ChatGPT"
     ],
     "scale": "78 prompts, 11 clinical areas, 3 LLMs",
     "status": "published"
@@ -10419,5 +10435,132 @@
     ],
     "scale": "PPI deprescribing proof-of-concept",
     "status": "published"
+  },
+  {
+    "id": "42844685",
+    "source": "PubMed",
+    "type": "journal_article",
+    "title": "Medical Literature-Specific Artificial Intelligence: Analyzing the performance of OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai in the context of Lacrimal Drainage Disorders",
+    "authors": [
+      {
+        "name": "(see PubMed)"
+      }
+    ],
+    "abstract": "Study analyzing performance of OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai for lacrimal drainage disorders.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42844685/",
+    "pdf_url": "",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "journal": "Ophthalmic Plastic and Reconstructive Surgery",
+    "tags": [
+      "OpenEvidence",
+      "Heidi Evidence",
+      "Consensus",
+      "PubMed.ai",
+      "clinical AI comparison",
+      "lacrimal drainage"
+    ],
+    "relevance": "high",
+    "key_findings": "Multi-tool comparison of OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai for a specific clinical domain.",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "Heidi Evidence",
+      "Consensus",
+      "PubMed.ai"
+    ],
+    "scale": "4-tool comparison",
+    "status": "new"
+  },
+  {
+    "id": "42817723",
+    "source": "PubMed",
+    "type": "evaluation_study",
+    "title": "User Beware: Inaccuracy and Inconsistency of Large Language Models in Providing Precision Dosing Recommendations for Patients With Kidney Impairment - A Case Series",
+    "authors": [
+      {
+        "name": "Stitt G"
+      }
+    ],
+    "abstract": "Case series evaluating LLM inaccuracy and inconsistency in precision dosing for kidney impairment patients.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42817723/",
+    "pdf_url": "",
+    "published": "2026-10-01",
+    "updated": "2026-10-01",
+    "journal": "Pharmacotherapy",
+    "tags": [
+      "LLM",
+      "precision dosing",
+      "kidney impairment",
+      "safety",
+      "clinical AI safety",
+      "case series"
+    ],
+    "relevance": "high",
+    "key_findings": "LLMs show inaccuracy and inconsistency in precision dosing for kidney impairment patients, raising patient safety concerns.",
+    "tools_evaluated": [
+      "LLMs (multiple)"
+    ],
+    "scale": "case series",
+    "status": "new"
+  },
+  {
+    "id": "42813715",
+    "source": "PubMed",
+    "type": "editorial",
+    "title": "Beyond Information Asymmetry in Medicine: The Changing Nature of Medical Authority and Expertise",
+    "authors": [
+      {
+        "name": "Krumholz HM"
+      }
+    ],
+    "abstract": "Editorial discussing how AI is changing the nature of medical authority and expertise, moving beyond traditional information asymmetry.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42813715/",
+    "pdf_url": "",
+    "published": "2026-09-29",
+    "updated": "2026-09-29",
+    "journal": "Journal of the American College of Cardiology",
+    "tags": [
+      "AI",
+      "medical authority",
+      "information asymmetry",
+      "clinical AI",
+      "editorial"
+    ],
+    "relevance": "medium",
+    "key_findings": "Editorial by Krumholz on how AI tools are reshaping medical authority and the physician-patient information asymmetry.",
+    "tools_evaluated": [],
+    "scale": "editorial",
+    "status": "new"
+  },
+  {
+    "id": "42780068",
+    "source": "PubMed",
+    "type": "preprint",
+    "title": "Automated Identification of Complex Percutaneous Coronary Intervention from Cardiac Catheterization Reports using Large Language Models",
+    "authors": [
+      {
+        "name": "Murugiah K"
+      }
+    ],
+    "abstract": "Study using LLMs to automatically identify complex PCI from cardiac catheterization reports.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42780068/",
+    "pdf_url": "",
+    "published": "2026-09-16",
+    "updated": "2026-09-16",
+    "journal": "medRxiv",
+    "tags": [
+      "LLM",
+      "cardiac catheterization",
+      "PCI",
+      "automated identification",
+      "clinical NLP"
+    ],
+    "relevance": "medium",
+    "key_findings": "LLMs can automate identification of complex PCI from clinical reports, supporting clinical workflows.",
+    "tools_evaluated": [
+      "LLMs"
+    ],
+    "scale": "retrospective study",
+    "status": "new"
   }
 ]

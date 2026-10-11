@@ -5,6 +5,67 @@
 
 var whatsNewData = [
   {
+    date: "October 11, 2026 (Weekly Update)",
+    updated: "Weekly OpenEvidence Insights sweep (Sun Oct 11, 5:00 PM ET) - Venice Augment Search (8 OE queries + 15 broader topic queries) + arXiv API (50 results) + PubMed eutils (30 broad + 10 OE-specific). All 22 new arXiv papers already in research.json from daily checks. 6 new PubMed papers added to research.json. 4 new benchmark entries added to benchmarks.json. Timeline, partnerships, metrics, competitors, and global landscape CSVs updated. Full paper read of Nature Medicine benchmark study (s41591-026-04431-5) for key findings.",
+    items: [
+      {
+        cat: "Funding - $15B Valuation",
+        title: "OpenEvidence raises $250M at $15B valuation; total funding exceeds $1B (Sep 30, 2026)",
+        desc: "Forbes confirmed OpenEvidence raised $250M led by a16z and Byers Capital, reaching a $15B valuation. This is up from $12B in January 2026. Total funding over the past year now exceeds $1B from investors including Thrive Capital, DST, GV, Kleiner Perkins, Sequoia Capital, and Nvidia. Sacra estimates $300M ARR as of July 2026."
+      },
+      {
+        cat: "Partnership - Anthropic LMICs",
+        title: "OpenEvidence and Anthropic partner for clinical AI in ~100 low- and middle-income countries (Sep 23, 2026)",
+        desc: "Announced during UN General Assembly week. OpenEvidence will use Anthropic's base models fine-tuned for local disease mix, diagnostic inventory, and care pathways. Rollout covers ~100 LMICs including Uganda, Angola, Sudan, Haiti, and Mongolia. US clinicians logged 42M consultations in August 2026."
+      },
+      {
+        cat: "Partnership - Penn Medicine",
+        title: "OpenEvidence and Penn Medicine announce global health partnership (Sep 15, 2026)",
+        desc: "Partnership brings AI-powered clinical decision support to Penn Medicine's 10,000+ clinicians across its 7-hospital system. Includes Botswana-UPenn Partnership for extending resources to lower-resource settings. VP/CHIO Srinath Adusumalli: gives clinicians ability to instantly surface best available medical evidence in context of patient in front of them."
+      },
+      {
+        cat: "Partnership - AdventHealth",
+        title: "AdventHealth partners with OpenEvidence for evidence-based care (Oct 1, 2026)",
+        desc: "AdventHealth working with OpenEvidence to help care teams find current medical evidence more efficiently, reducing time spent searching for information and creating more time for meaningful conversations with patients and families."
+      },
+      {
+        cat: "Research - OpenEvidence Evaluation",
+        title: "New PubMed: OpenEvidence vs ChatGPT for neuroimaging appropriateness (PMID 42859098, Oct 10)",
+        desc: "Study in Academic Radiology evaluating OpenEvidence and ChatGPT in selecting neuroimaging based on ACR appropriateness criteria. Direct head-to-head comparison of the two tools for clinical imaging decision support."
+      },
+      {
+        cat: "Research - Multi-Tool Comparison",
+        title: "New PubMed: OpenEvidence vs Heidi Evidence vs Consensus vs PubMed.ai comparison (PMID 42844685, Oct 8)",
+        desc: "Study in Ophthalmic Plastic and Reconstructive Surgery analyzing performance of four medical literature AI tools - OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai - in the context of lacrimal drainage disorders. 4-tool clinical AI benchmark."
+      },
+      {
+        cat: "Research - RAG Benchmark",
+        title: "New PubMed: 8 RAG LLMs compared on clinical questions (PMID 42845635, Oct 10)",
+        desc: "Comparative study in medRxiv evaluating eight retrieval-augmented generation LLMs' responses to clinical questions. Head-to-head benchmark of 8 RAG-based clinical AI systems."
+      },
+      {
+        cat: "Research - AI Safety",
+        title: "New PubMed: LLMs inaccurate and inconsistent for precision dosing in kidney impairment (PMID 42817723, Oct)",
+        desc: "Case series in Pharmacotherapy documenting inaccuracy and inconsistency of LLMs in providing precision dosing recommendations for patients with kidney impairment. Patient safety concern - highlights need for caution in clinical use of general-purpose LLMs for medication dosing."
+      },
+      {
+        cat: "Research - Editorial",
+        title: "Krumholz editorial: AI changing medical authority and information asymmetry (PMID 42813715, Sep 29)",
+        desc: "Editorial in JACC by Harlan Krumholz on how AI tools are reshaping the nature of medical authority and expertise, moving beyond traditional information asymmetry between physicians and patients."
+      },
+      {
+        cat: "Industry - Competitors",
+        title: "Abridge wins #1 Best in KLAS 2026; partners with Eli Lilly and Nvidia (Aug 2026)",
+        desc: "Abridge named Best in KLAS 2026 for Ambient AI, second year in a row. $5.3B valuation with $100M+ ARR. Extended clinical intelligence beyond documentation. Partners with Eli Lilly and Nvidia for platform expansion. Abridge's $316M Series E extension in April 2026."
+      },
+      {
+        cat: "Industry - ChatGPT for Clinicians",
+        title: "72% of physicians using AI in clinical practice per 2026 AMA survey (April 2026)",
+        desc: "OpenAI launched ChatGPT for Clinicians on April 22, 2026 - free for verified US clinicians (MD/DO, NP, PA, PharmD). 2026 AMA survey shows 72% of physicians report using AI in clinical practice, up from 48% the previous year. Direct competitor to OpenEvidence."
+      }
+    ]
+  },
+  {
     date: "October 11, 2026",
     updated: "Daily check (Sun Oct 11, 9:00 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline (latest: AdventHealth Oct 1). Grok X/Twitter search failed (model overloaded, 2 attempts) - noted as gap. 1 arXiv paper new (2610.05247 - templar radiology templates) but DISCARDED per QC filter (radiology reporting, not clinical AI decision support). 3 new PubMed papers added to research.json. 1 new benchmark entry added to benchmarks.json.",
     items: [

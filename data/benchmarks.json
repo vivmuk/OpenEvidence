@@ -3586,7 +3586,8 @@
     "tools_evaluated": [
       "OpenEvidence",
       "ChatGPT-3.5",
-      "ChatGPT-5.0"
+      "ChatGPT-5.0",
+      "ChatGPT"
     ],
     "scale": "78 prompts, 11 ACR priority clinical areas, neuroradiology",
     "key_findings": [
@@ -3604,6 +3605,98 @@
       "appropriateness criteria",
       "comparative evaluation"
     ],
-    "new": true
+    "new": true,
+    "type": "benchmark",
+    "abstract": "Evaluates OpenEvidence and ChatGPT for neuroimaging appropriateness criteria selection.",
+    "status": "new"
+  },
+  {
+    "id": "42845635",
+    "source": "PubMed",
+    "type": "benchmark",
+    "title": "Evaluating Eight Retrieval-Augmented Generation (RAG) Large Language Models' Responses to Clinical Questions: A Comparative Study",
+    "authors": [
+      "(see PubMed)"
+    ],
+    "abstract": "Comparative study evaluating eight RAG-based LLMs on clinical questions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42845635/",
+    "published": "2026-08-12",
+    "journal": "medRxiv",
+    "tags": [
+      "RAG",
+      "LLM",
+      "clinical questions",
+      "comparative",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "Head-to-head comparison of 8 RAG-based clinical LLMs.",
+    "tools_evaluated": [
+      "8 RAG LLMs"
+    ],
+    "scale": "8-model benchmark",
+    "status": "new"
+  },
+  {
+    "id": "42844685",
+    "source": "PubMed",
+    "type": "benchmark",
+    "title": "Medical Literature-Specific AI: Analyzing performance of OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai in Lacrimal Drainage Disorders",
+    "authors": [
+      "(see PubMed)"
+    ],
+    "abstract": "Multi-tool comparison of medical AI tools for lacrimal drainage disorders.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42844685/",
+    "published": "2026-10-08",
+    "journal": "Ophthalmic Plastic and Reconstructive Surgery",
+    "tags": [
+      "OpenEvidence",
+      "Heidi Evidence",
+      "Consensus",
+      "PubMed.ai",
+      "comparison"
+    ],
+    "relevance": "high",
+    "key_findings": "4-tool comparison of medical literature AI tools in a specific clinical domain.",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "Heidi Evidence",
+      "Consensus",
+      "PubMed.ai"
+    ],
+    "scale": "4-tool benchmark",
+    "status": "new"
+  },
+  {
+    "id": "42817723",
+    "source": "PubMed",
+    "type": "safety_evaluation",
+    "title": "User Beware: Inaccuracy and Inconsistency of LLMs in Providing Precision Dosing Recommendations for Patients With Kidney Impairment",
+    "authors": [
+      "Hambrick HR",
+      "Dubinsky S",
+      "Quickfall D",
+      "Reinert S",
+      "Tang Girdwood S",
+      "Stitt G"
+    ],
+    "abstract": "Case series evaluating LLM inaccuracy and inconsistency in precision dosing for kidney impairment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42817723/",
+    "published": "2026-10-01",
+    "journal": "Pharmacotherapy",
+    "tags": [
+      "LLM",
+      "precision dosing",
+      "kidney impairment",
+      "safety",
+      "harm evaluation"
+    ],
+    "relevance": "high",
+    "key_findings": "LLMs show significant inaccuracy and inconsistency in precision dosing for kidney impairment — patient safety concern.",
+    "tools_evaluated": [
+      "LLMs (multiple)"
+    ],
+    "scale": "case series",
+    "status": "new"
   }
 ]
