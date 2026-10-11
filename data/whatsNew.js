@@ -5,6 +5,28 @@
 
 var whatsNewData = [
   {
+    date: "October 11, 2026",
+    updated: "Daily check (Sun Oct 11, 9:00 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline (latest: AdventHealth Oct 1). Grok X/Twitter search failed (model overloaded, 2 attempts) - noted as gap. 1 arXiv paper new (2610.05247 - templar radiology templates) but DISCARDED per QC filter (radiology reporting, not clinical AI decision support). 3 new PubMed papers added to research.json. 1 new benchmark entry added to benchmarks.json.",
+    items: [
+      {
+        cat: "Research - OpenEvidence Evaluation",
+        title: "OpenEvidence outperforms ChatGPT on ACR neuroradiology appropriateness criteria (Oct 10, 2026)",
+        desc: "Kumarapuram et al. (Rutgers-Robert Wood Johnson) evaluated OpenEvidence, ChatGPT-3.5, and ChatGPT-5.0 on 78 prompts across 11 ACR priority clinical areas in neuroradiology. OpenEvidence performed best overall: 86.3% open-ended and 79.5% select-all-that-apply accuracy. ChatGPT-5 scored 80.6% and 71.2% respectively; ChatGPT-3.5 scored 69.2% and 44.4%. No performance difference based on case acuity. PMID 42859098."
+      },
+      {
+        cat: "Research - Hybrid CDSS",
+        title: "Hybrid CDSS with LLM achieves 72% recommendation accuracy in German nursing homes (Oct 10, 2026)",
+        desc: "Pilz et al. (Fraunhofer Institute) prototyped a three-component CDSS combining knowledge models, rule-based expert system, and LLM for extracting indicators from free-text nursing documentation. Evaluated in 2 German nursing homes: 72% of recommendations rated correct by nursing professionals; LLM achieved 76% agreement on information extraction. PMID 42859266."
+      },
+      {
+        cat: "Research - RAG Deprescribing",
+        title: "RxReduce: LLM+RAG deprescribing agent achieves F1 0.84 for PPI optimization (Oct 9, 2026)",
+        desc: "Michaels et al. (UCSF) developed RxReduce, an LLM-powered framework using RAG to evaluate patient data for medication deprescribing. Focusing on proton pump inhibitors, the optimized system achieved F1 0.84 vs 0.70 baseline. Clinical notes preprocessed into summaries before RAG retrieval. Framework adaptable to various medication classes. PMID 42857748."
+      }
+    ]
+  },
+
+  {
     date: "October 10, 2026",
     updated: "Daily check (Sat Oct 10, 9:09 AM ET) - Venice Augment Search (2 queries) + openevidence.com/announcements scrape + arXiv API (30 entries) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline (latest: AdventHealth Oct 1). Grok X/Twitter search timed out - noted as gap. All 30 arXiv results already in research.json. 5 new PubMed papers added to research.json. 3 new benchmark entries added to benchmarks.json.",
     items: [
