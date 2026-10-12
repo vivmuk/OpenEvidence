@@ -10562,5 +10562,121 @@
     ],
     "scale": "retrospective study",
     "status": "new"
+  },
+  {
+    "id": "pmid:42860262",
+    "source": "pubmed",
+    "pmid": "42860262",
+    "type": "benchmark_evaluation",
+    "title": "Evaluating OpenEvidence Across Pediatric Subspecialties: A Guideline-Anchored Expert Review",
+    "authors": "Hunter RB, Hess LM, Wells D, Dinh DM, Abou Hatab H, Guzman-Karlsson MC, Khatua S, Niles D, Nguyen B, Qasim S, Sammer MB, Singh I, Mehta S, Tsai A, Venkatramani R, Benjamin J",
+    "abstract": "Guideline-anchored clinical questions spanning high, moderate, and low evidence certainty across 6 pediatric subspecialties were submitted to OpenEvidence. Expert reviewer pairs independently scored responses using the validated QAMAI instrument (6-30 range) and a modified AHRQ harm assessment (0-7 range). Median QAMAI score was 27/30 (very good quality). Potential harm was low (median 0/7, range 0-3), though 6 of 17 responses carried nonzero harm potential. OpenEvidence cited the primary guideline in 15 of 17 questions, yet only 17.6% showed strong citation overlap (>=75% shared references) with guidelines. Citations reliably supported claims (88.2% high substantiation), and 70.8% of reviewer assessments rated the evidence base as comparable to corresponding guidelines. 35.3% of responses cited studies lacking pediatric specificity. Responses were clinically consistent across repeated queries (77.9% had no meaningful or only minor variation); no contradictory recommendations were observed.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42860262/",
+    "pdf_url": null,
+    "doi": "10.1542/hpeds.2026-009588",
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "journal": "Hospital Pediatrics",
+    "tags": [
+      "OpenEvidence",
+      "pediatric",
+      "benchmark",
+      "QAMAI",
+      "guideline-anchored",
+      "citation analysis",
+      "clinical AI evaluation"
+    ],
+    "relevance": "First multi-subspecialty pediatric evaluation of OpenEvidence using validated QAMAI instrument. Shows strong quality scores but identifies pediatric-specific evidence gap — 35.3% of citations lacked pediatric specificity, highlighting the challenge of applying AI trained on adult-predominant literature to pediatric populations.",
+    "key_findings": [
+      "Median QAMAI score 27/30 (very good quality) across 6 pediatric subspecialties",
+      "Low potential harm (median 0/7) but 6/17 responses had nonzero harm potential",
+      "OpenEvidence cited primary guideline in 15/17 questions",
+      "Only 17.6% had strong citation overlap (>=75%) with corresponding guidelines",
+      "88.2% citation substantiation rate; 70.8% rated evidence base comparable to guidelines",
+      "35.3% of responses cited studies lacking pediatric specificity",
+      "77.9% clinical consistency across repeated queries; no contradictory recommendations"
+    ],
+    "tools_evaluated": [
+      "OpenEvidence"
+    ],
+    "scale": "17 guideline-anchored questions across 6 pediatric subspecialties, 3 institutions (Texas Children's, CHOP, Boston Children's)",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42860351",
+    "source": "pubmed",
+    "pmid": "42860351",
+    "type": "llm_benchmark",
+    "title": "Readability, CPT Billing Accuracy and Diagnostic Coding Performance of ChatGPT Models in Hand Surgery",
+    "authors": "Daulat SR, Parmar RP, Brady TT, Kolodisner J, Song JW, Roth C",
+    "abstract": "ChatGPT-4, ChatGPT-4o, and ChatGPT-o1 were tested on 5 common hand conditions (distal radius fractures, trigger finger, carpal tunnel syndrome, cubital tunnel syndrome, ganglion cysts) across 3 tasks: patient education (15 FAQs), CPT code prediction from operative notes, and ICD-10 code prediction from clinical vignettes. ChatGPT-o1 generated significantly more complex responses than ChatGPT-4 and ChatGPT-4o. All models achieved near-perfect accuracy in detecting CPT codes. At the three-character ICD category level, ChatGPT-o1 outperformed ChatGPT-4o. At the four-character level, ChatGPT-o1 outperformed both others. For exact ICD-10 code prediction, ChatGPT-4o and ChatGPT-o1 both outperformed ChatGPT-4. All educational content was above recommended reading level.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42860351/",
+    "pdf_url": null,
+    "doi": "10.1142/S242483552650058X",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "journal": "Journal of Hand Surgery Asian Pacific Volume",
+    "tags": [
+      "ChatGPT",
+      "LLM benchmark",
+      "hand surgery",
+      "CPT coding",
+      "ICD-10",
+      "patient education",
+      "clinical AI"
+    ],
+    "relevance": "Evaluates ChatGPT models (4, 4o, o1) on clinical tasks including billing code accuracy and patient education readability in hand surgery — contributes to evidence base on LLM performance variation across model versions and clinical task types.",
+    "key_findings": [
+      "ChatGPT-o1 generated more complex responses than ChatGPT-4 and ChatGPT-4o (p<0.001)",
+      "Near-perfect CPT code detection accuracy across all models",
+      "ChatGPT-o1 outperformed ChatGPT-4o on 3-character ICD coding (p=0.001)",
+      "ChatGPT-o1 outperformed both others on 4-character ICD subcategory coding (p<0.001)",
+      "All models produced educational content above recommended reading level",
+      "Diagnostic accuracy improved with addition of physical exam and imaging information"
+    ],
+    "tools_evaluated": [
+      "ChatGPT-4",
+      "ChatGPT-4o",
+      "ChatGPT-o1"
+    ],
+    "scale": "78 prompts across 5 hand conditions, 11 priority clinical areas",
+    "status": "published"
+  },
+  {
+    "id": "pmid:42858459",
+    "source": "pubmed",
+    "pmid": "42858459",
+    "type": "clinical_decision_support_evaluation",
+    "title": "Conformity Between Values and EU Legal Requirements Regarding an AI Clinical Decision Support System (AI-CDSS) for Improved Cardiovascular Risk Management (DECIDE)",
+    "authors": "de Graaf TJ, Krom A, Colombo S, van de Pavert ML, Harbers M, van Staalduinen JH, Vajda I, Portegies TC, Chavannes NH, Villalobos-Quesada M",
+    "abstract": "Examines whether the EU AI Act captures relevant stakeholder values for a high-risk AI Clinical Decision Support System (DECIDE) for cardiovascular disease risk management in primary care. Stakeholder values were translated into Trustworthy AI requirements and contrasted with the AI Act. The AI Act mainly supports human agency and oversight, transparency, and diversity/nondiscrimination/fairness, but only partially due to its product safety nature. Three groups of untranslatable values were identified, and three additional complementary requirements proposed. Contractual strategies could provide a more legally robust ground for GPs to align AI-CDSS with stakeholder values.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42858459/",
+    "pdf_url": null,
+    "doi": "10.1017/jme.2026.10289",
+    "published": "2026-10-10",
+    "updated": "2026-10-10",
+    "journal": "Journal of Law, Medicine & Ethics",
+    "tags": [
+      "AI-CDSS",
+      "EU AI Act",
+      "clinical decision support",
+      "cardiovascular risk",
+      "regulatory",
+      "ethics",
+      "DECIDE"
+    ],
+    "relevance": "First study to systematically compare stakeholder values for a specific AI-CDSS (DECIDE) against EU AI Act requirements — identifies regulatory gaps in the AI Act for clinical decision support and proposes contractual strategies for practitioners.",
+    "key_findings": [
+      "EU AI Act only partially captures stakeholder values for AI-CDSS in primary care",
+      "Three groups of untranslatable values not covered by the AI Act identified",
+      "AI Act limited by its product safety nature — supports human agency/oversight, transparency, fairness only partially",
+      "Three additional complementary requirements proposed to address gaps",
+      "Contractual strategies recommended for GPs to align AI-CDSS with stakeholder values and duty of care"
+    ],
+    "tools_evaluated": [
+      "DECIDE (AI-CDSS for cardiovascular risk management)"
+    ],
+    "scale": "Secondary analysis of empirical data from ethics/design methodologies; primary care cardiovascular risk management",
+    "status": "published"
   }
 ]

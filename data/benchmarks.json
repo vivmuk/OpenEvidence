@@ -3698,5 +3698,31 @@
     ],
     "scale": "case series",
     "status": "new"
+  },
+  {
+    "id": "pmid:42860262",
+    "source": "pubmed",
+    "type": "benchmark_evaluation",
+    "title": "Evaluating OpenEvidence Across Pediatric Subspecialties: A Guideline-Anchored Expert Review",
+    "authors": "Hunter RB, Hess LM, Wells D, Dinh DM, Abou Hatab H, Guzman-Karlsson MC, Khatua S, Niles D, Nguyen B, Qasim S, Sammer MB, Singh I, Mehta S, Tsai A, Venkatramani R, Benjamin J",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42860262/",
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "journal": "Hospital Pediatrics",
+    "tools_evaluated": "OpenEvidence",
+    "scale": "17 guideline-anchored questions across 6 pediatric subspecialties, 3 institutions (Texas Children's, CHOP, Boston Children's)",
+    "key_findings": [
+      "Median QAMAI score 27/30 (very good quality)",
+      "Low potential harm (median 0/7); 6/17 responses had nonzero harm potential",
+      "OpenEvidence cited primary guideline in 15/17 questions",
+      "Only 17.6% strong citation overlap with guidelines",
+      "88.2% citation substantiation rate",
+      "35.3% of citations lacked pediatric specificity",
+      "77.9% clinical consistency across repeated queries"
+    ],
+    "relevance": "First multi-subspecialty pediatric evaluation of OpenEvidence using validated QAMAI instrument. Identifies pediatric-specific evidence gap in AI tools trained on adult-predominant literature.",
+    "status": "published",
+    "new": true,
+    "pmid": "42860262"
   }
 ]
