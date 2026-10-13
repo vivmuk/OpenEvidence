@@ -1259,3 +1259,12 @@ tbody a:hover { text-decoration: underline; }
 .coverage-row .rnum { font-size: 11px; color: var(--oe-text-muted); text-align: right; font-variant-numeric: tabular-nums; }
 .coverage-legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 11px; color: var(--oe-text-muted); margin-top: 12px; }
 .coverage-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+
+/* A platform appearing for the first time is context, not an availability
+   move. Nine new platforms would otherwise read as 81 "changes". */
+.global-matrix .newplat {
+  font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--oe-orange); border: 1px solid var(--oe-orange);
+  border-radius: 3px; padding: 1px 4px; margin-left: 6px; vertical-align: 1px;
+}
+.global-matrix tr.matrix-new td { background: rgba(228,100,61,0.035); }

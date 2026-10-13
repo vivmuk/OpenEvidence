@@ -280,10 +280,16 @@ function initMatrix() {
       rows.sort(function(a,b){ return a.platform.localeCompare(b.platform); });
     }
 
-    // Movements since the previous weekly snapshot, keyed platform|region.
+    // Movements since the previous weekly snapshot.
+    //   changeMap -> existing platform whose availability moved (the real signal)
+    //   newSet    -> platforms appearing for the first time (context, not a move)
     var changeMap = {};
+    var newSet = {};
     var changes = (typeof matrixChangesData !== 'undefined' && matrixChangesData.changes) || [];
-    changes.forEach(function(c){ changeMap[c.platform + '|' + c.region] = c; });
+    changes.forEach(function (c) {
+      if (c.kind === 'changed') changeMap[c.platform + '|' + c.region] = c;
+      else newSet[c.platform] = true;
+    });
 
     var head = '<thead><tr><th>Platform</th>' + REGIONS.map(function(r){
       return '<th title="'+REGION_LABEL[r]+'">'+REGION_LABEL[r]+'</th>'; }).join('') + '</tr></thead>';
@@ -301,7 +307,11 @@ function initMatrix() {
         return '<td class="'+cls+'" title="'+REGION_LABEL[k]+': '+v+'">'+glyph+'</td>';
       }).join('');
       var moved = REGIONS.some(function(k){ return changeMap[r.platform + '|' + k]; });
-      return '<tr' + (moved ? ' class="matrix-changed"' : '') + '><td><strong>'+r.platform+'</strong></td>'+cells+'</tr>';
+      var isNew = !!newSet[r.platform];
+      var rowCls = (moved ? 'matrix-changed ' : '') + (isNew ? 'matrix-new' : '');
+      var badge = isNew ? ' <span class="newplat">new</span>' : '';
+      return '<tr' + (rowCls.trim() ? ' class="' + rowCls.trim() + '"' : '') +
+             '><td><strong>'+r.platform+'</strong>'+badge+'</td>'+cells+'</tr>';
     }).join('') + '</tbody>';
 
     table.innerHTML = head + body;
@@ -315,9 +325,15 @@ function initMatrix() {
           : ' \u00b7 ' + verb + ' in ' + REGION_LABEL[state.region];
       }
       var moved = '';
-      if (typeof matrixChangesData !== 'undefined' && matrixChangesData.changeCount) {
-        moved = ' \u00b7 ' + matrixChangesData.changeCount + ' moved since ' +
-                (matrixChangesData.baselineWeek || 'last snapshot');
+      if (typeof matrixChangesData !== 'undefined') {
+        var sc = matrixChangesData.statusChangeCount || 0;
+        var np = matrixChangesData.newPlatformCount || 0;
+        var bits = [];
+        if (sc) bits.push(sc + ' availability move' + (sc === 1 ? '' : 's'));
+        if (np) bits.push(np + ' new platform' + (np === 1 ? '' : 's'));
+        if (bits.length) {
+          moved = ' \u00b7 ' + bits.join(' \u00b7 ') + ' since ' + (matrixChangesData.baselineWeek || 'last snapshot');
+        }
       }
       c.textContent = rows.length + ' of ' + globalMatrixData.length + ' platforms' + scope + moved;
     }

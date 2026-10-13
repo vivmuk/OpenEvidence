@@ -304,11 +304,20 @@ function buildMatrixChanges(matrix) {
   hist.snapshots = hist.snapshots.slice(-16);
   fs.writeFileSync(histPath, JSON.stringify(hist, null, 1));
 
+  const statusChanges = changes.filter(c => c.kind === 'changed');
+  const newPlatforms = [...new Set(changes.filter(c => c.kind === 'added').map(c => c.platform))];
+
   return {
     generated: new Date().toISOString().slice(0, 10),
     thisWeek,
     baselineWeek: baseline ? baseline.week : null,
     baselineDate: baseline ? baseline.date : null,
+    // Two different signals. A platform appearing for the first time is not the
+    // same event as an existing platform moving, and counting them together
+    // made one week read as "81 changes" when nothing had actually shifted.
+    statusChangeCount: statusChanges.length,
+    newPlatformCount: newPlatforms.length,
+    newPlatforms,
     changeCount: changes.length,
     changes,
   };

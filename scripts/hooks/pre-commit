@@ -1,28 +1,56 @@
 #!/usr/bin/env bash
-# OpenEvidence data-integrity gate.
+# OpenEvidence pre-commit gate.
 #
 # Installed as .git/hooks/pre-commit (see scripts/install_hooks.sh).
 #
-# Runs on EVERY commit to this repo -- including the ones made by the daily and
-# weekly research jobs. It:
-#   1. auto-heals the research/benchmark data (merge duplicates, backfill ids,
-#      normalise dates) via scripts/dedupe_data.py
-#   2. validates the result via scripts/validate_data.py
-#   3. blocks the commit if the data is still broken
+# Runs on EVERY commit to this repo, including the ones made by the daily and
+# weekly research jobs. Four jobs:
 #
-# Rationale: the update jobs deduplicate by matching PMID / arXiv id. PubMed
-# records were being written without a pmid field, making them invisible to that
-# check and allowing silent re-adds. Enforcing at commit time means every writer
-# is covered, not just the ones whose prompts we remembered to update.
+#   0. Refresh the derived front-end data (signals, search index, scoreboard,
+#      matrix diff) whenever its source data changes.
+#   1. Auto-heal the research/benchmark data (merge duplicates, backfill ids,
+#      normalise dates).
+#   2. Auto-heal copy tells (em-dashes are banned by the design doctrine).
+#   3. Validate, and block the commit if the data is still broken.
+#
+# Why job 0 exists: the derived files are generated, and for a week they went
+# stale while the daily and weekly jobs kept committing fresh source data. The
+# site silently showed week-old signals. Enforcing at commit time covers every
+# writer, not just the ones whose prompts we remembered to update.
 
 set -uo pipefail
 
 ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
 cd "$ROOT" || exit 0
 
-# Nothing to do if the tooling isn't present (e.g. shallow clone, docs-only change).
 [ -f scripts/validate_data.py ] || exit 0
 
+# --------------------------------------------------------------------------
+# 0. Derived front-end data
+# --------------------------------------------------------------------------
+SRC_DATA="data/timeline.js data/competitors.js data/partners.js data/globalMatrix.js data/research.json data/benchmarks.json"
+DERIVED="data/signals.js data/search-index.js data/scoreboard.js data/matrix-changes.js data/matrix-history.json"
+
+if [ -f scripts/build_frontend_data.js ] && command -v node >/dev/null 2>&1; then
+  SRC_CHANGED=0
+  for f in $SRC_DATA; do
+    if git diff --cached --name-only | grep -qx "$f" || git status --porcelain -- "$f" | grep -q .; then
+      SRC_CHANGED=1
+      break
+    fi
+  done
+
+  if [ "$SRC_CHANGED" -eq 1 ]; then
+    node scripts/build_frontend_data.js >/dev/null 2>&1 || true
+    for f in $DERIVED; do
+      [ -e "$f" ] && git add "$f" 2>/dev/null || true
+    done
+  fi
+fi
+
+# --------------------------------------------------------------------------
+# 1 & 3. Research data: heal, then validate
+# --------------------------------------------------------------------------
 DATA_CHANGED=0
 if git diff --cached --name-only | grep -qE '^data/(research|benchmarks)\.json$'; then
   DATA_CHANGED=1
@@ -35,35 +63,35 @@ if [ "$DATA_CHANGED" -eq 0 ]; then
   fi
 fi
 
-[ "$DATA_CHANGED" -eq 1 ] || exit 0
+if [ "$DATA_CHANGED" -eq 1 ]; then
+  # Auto-heal (best effort -- never block on the healer itself failing).
+  if [ -f scripts/dedupe_data.py ]; then
+    python3 scripts/dedupe_data.py --apply >/dev/null 2>&1 || true
+  fi
 
-# 1. Auto-heal data (best effort -- never block on the healer itself failing).
-if [ -f scripts/dedupe_data.py ]; then
-  python3 scripts/dedupe_data.py --apply >/dev/null 2>&1 || true
-fi
+  # Auto-heal copy tells: the research jobs write all the site prose, so
+  # banned punctuation accumulates on its own.
+  if [ -f scripts/fix_copy_tells.py ]; then
+    python3 scripts/fix_copy_tells.py --apply >/dev/null 2>&1 || true
+  fi
 
-# 1b. Auto-heal copy tells (em-dashes are banned by the design doctrine).
-# The research jobs write all the site prose, so these accumulate on their own.
-if [ -f scripts/fix_copy_tells.py ]; then
-  python3 scripts/fix_copy_tells.py --apply >/dev/null 2>&1 || true
-fi
+  # Re-stage anything the healers rewrote.
+  git add data/research.json data/benchmarks.json 2>/dev/null || true
+  git add '*.html' 'data/*.js' 2>/dev/null || true
 
-# 2. Re-stage anything the healers rewrote.
-git add data/research.json data/benchmarks.json 2>/dev/null || true
-git add '*.html' 'data/*.js' 2>/dev/null || true
-
-# 3. Validate. Block on real errors.
-if ! python3 scripts/validate_data.py --quiet >/tmp/oe-validate.out 2>&1; then
-  echo "" >&2
-  echo "┌───────────────────────────────────────────────────────���──────┐" >&2
-  echo "│  COMMIT BLOCKED — OpenEvidence data failed validation        │" >&2
-  echo "└──────────────────────────────────────────────────────────────┘" >&2
-  cat /tmp/oe-validate.out >&2
-  echo "" >&2
-  echo "Fix the data, then commit again." >&2
-  echo "  python3 scripts/dedupe_data.py --apply   # auto-repair" >&2
-  echo "  python3 scripts/validate_data.py         # inspect" >&2
-  exit 1
+  # Validate. Block on real errors.
+  if ! python3 scripts/validate_data.py --quiet >/tmp/oe-validate.out 2>&1; then
+    echo "" >&2
+    echo "┌──────────────────────────────────────────────────────────────┐" >&2
+    echo "│  COMMIT BLOCKED - OpenEvidence data failed validation        │" >&2
+    echo "└──────────────────────────────────────────────────────────────┘" >&2
+    cat /tmp/oe-validate.out >&2
+    echo "" >&2
+    echo "Fix the data, then commit again." >&2
+    echo "  python3 scripts/dedupe_data.py --apply   # auto-repair" >&2
+    echo "  python3 scripts/validate_data.py         # inspect" >&2
+    exit 1
+  fi
 fi
 
 exit 0
