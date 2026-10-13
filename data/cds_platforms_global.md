@@ -837,3 +837,27 @@
 
 - **FDA** - AI/ML device authorizations passed 1,600 (Sep 2026, up from 1,524 in Mar 2026; radiology ~76%). January 6, 2026 CDS Software final guidance (re-issued Jan 29; town hall Mar 11) keeps clinician-support, guideline-based CDS outside device regulation and grants enforcement discretion for single clinically-appropriate recommendations. FDA denies a partial 510(k) exemption for radiology CAD/triage AI (Sep 17), sharpening the imaging-vs-non-imaging split.
 - **WHO / IMDRF** - IMDRF Good Machine Learning Practice (10 principles) and ITU regulatory considerations continue to anchor international guidance; ARISE 2026 underscores that fewer than 5% of cleared AI/ML devices have peer-reviewed evaluation.
+
+---
+
+## Update - October 13, 2026 (Global CDS weekly sweep)
+
+### New / newly-tracked platforms
+
+- **Suki AI - Ask** (US) - Suki adds an "Ask" feature to the Suki for Clinicians app that answers complex clinical questions using Wolters Kluwer's UpToDate Expert AI API, grounded in UpToDate's peer-reviewed content (announced Oct 8, 2026). Extends an ambient-scribe platform into cited point-of-care evidence retrieval. Availability: US (Dragon Copilot / Suki enterprise footprint). Source: Fierce Healthcare
+- **Cadence** (US) - AI-enabled Clinical Clarity Engine that aggregates and structures patient medical records to support clinical decision-making; raised $100M (Jun 25, 2026) and announced Duke Health and Texas Health Resources collaborations. Availability: US health systems. Source: MobiHealthNews
+
+### Regulatory
+
+- **Epic Deterioration Index** - FDA cleared Epic's first AI/ML device (Sep 18, 2026; product code QNL, 21 CFR 870.2210), with AgileMD's eCARTv5 (K233253) as predicate. A static gradient-boosted model converts 195 chart inputs into a 0-100 deterioration score, Epic-EHR only. The dominant US EHR vendor entering the regulated device tier; both the 2022 and 2026 FDA CDS guidances treat deterioration alerts as device functions. Source: innolitics
+
+### Regional developments
+
+- **European Union** - The European Cardiovascular Health Data and AI Network (CHAIN) is building federated cardiovascular-data infrastructure to improve model representativeness for clinical AI validation.
+- **South Korea** - The AX-Sprint programme evaluates AI tools across stroke, Parkinson's disease, cancer detection and cardiovascular risk prediction in participating hospitals, generating real-world evidence intended to support broader adoption and reimbursement.
+- **United Kingdom** - InTouchNow raised GBP 2.3m seed for an AI voice agent across NHS general practice (150+ practices); Aide Health launched an AI COPD programme across six North West London primary care networks.
+
+### Funding
+
+- **Heidi Health** - $340M package ($100M equity led by Blackbird + $240M non-dilutive from General Catalyst) at a $900M valuation (Sep 22, 2026). Heidi Evidence has answered 10M+ queries since March 2026; ~2.8M patient interactions/week from 190 countries.
+- **Context** - Digital health raised $7.4B in H1 2026 after two lean years; ~$1.85B more across nine disclosed rounds in the following 30 days.
