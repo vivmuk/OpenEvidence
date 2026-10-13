@@ -5,6 +5,23 @@
 
 var whatsNewData = [
   {
+    date: "October 12, 2026",
+    updated: "Daily check (Mon Oct 12, 9:41 AM ET) + announcement sweep (Tue Oct 13). Northwestern Medicine collaboration added to the timeline (announced Oct 12; clinicians live in Epic from Oct 8). 3 new PubMed papers added to research.json, including the pediatric subspecialties review logged as a new benchmark entry.",
+    items: [
+      {
+        cat: "Partnership - Northwestern Medicine",
+        title: "Northwestern Medicine and OpenEvidence launch collaboration to integrate clinical evidence into the EHR (Oct 12, 2026)",
+        desc: "Chicago's premier integrated academic health system will embed OpenEvidence directly within the electronic health record. From October 8, Northwestern Medicine clinicians can launch OpenEvidence from Epic, signed in automatically with their existing hospital credentials. The enterprise-wide deployment is the first phase of a broader collaboration focused on using AI safely and effectively at the bedside. James Adams, MD (Chief Medical Officer, Northwestern Medicine) said making OpenEvidence available in the EHR gives clinicians a single, trusted source for evidence-based answers at the point of care. Vivien Ho (SVP Strategic Partnerships, OpenEvidence) said the decision to extend access to the entire care team reflects where modern hospitals are headed. Extends the health-system EHR-embedding streak after AdventHealth (Oct 1) and UTMB (Sep 22)."
+      },
+      {
+        cat: "Research - OE Evaluation",
+        title: "OpenEvidence evaluated across pediatric subspecialties in a guideline-anchored expert review (Oct 12, 2026)",
+        desc: "Guideline-anchored expert review of OpenEvidence across pediatric subspecialties (PMID 42860262), logged as a new benchmark entry. The same sweep added work on readability and CPT billing accuracy of ChatGPT models in hand surgery, and a conformity analysis of an AI clinical decision support system against EU legal requirements (DECIDE)."
+      }
+    ]
+  },
+
+  {
     date: "October 11, 2026 (Weekly Update)",
     updated: "Weekly OpenEvidence Insights sweep (Sun Oct 11, 5:00 PM ET) - Venice Augment Search (8 OE queries + 15 broader topic queries) + arXiv API (50 results) + PubMed eutils (30 broad + 10 OE-specific). All 22 new arXiv papers already in research.json from daily checks. 6 new PubMed papers added to research.json. 4 new benchmark entries added to benchmarks.json. Timeline, partnerships, metrics, competitors, and global landscape CSVs updated. Full paper read of Nature Medicine benchmark study (s41591-026-04431-5) for key findings.",
     items: [
