@@ -5,6 +5,43 @@
 
 var whatsNewData = [
   {
+    date: "October 15, 2026",
+    updated: "Daily check (Thu Oct 15, 9:14 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 results) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). Grok X/Twitter search timed out (2 attempts) - noted as gap. 3 new arXiv papers added to research.json (HEM-Med multi-center medication safety, MedDEx guideline execution with rules, Lingdan-V2 TCM prescription LLM). 12 new PubMed papers added to research.json. 3 new benchmark entries added to benchmarks.json (skill-guided agentic RAG for myeloma 80.1% concordance, LLM citation identity 85% incoherent, multi-LLM hallucination in rhinology).",
+    items: [
+      {
+        cat: "Research - Agentic RAG Benchmark",
+        title: "Skill-guided agentic reasoning matches expert-level concordance in myeloma record synthesis (Oct 14, 2026)",
+        desc: "Moll et al. (TUM Munich) benchmark agentic reasoning with clinical skill library vs single-pass RAG, iterative RAG, and full-context on 811 myeloma patients (44,962 documents). Skill-guided agent: 80.1% concordance vs 75.7% iterative RAG. Error rate 12.2% comparable to expert disagreement 13.6%, but higher proportion of system errors clinically significant (57.8% vs 18.8%). PMID 42875467."
+      },
+      {
+        cat: "Research - LLM Citation Safety",
+        title: "85% of LLM-generated DOI-PMID citation pairs are incoherent (Oct 14, 2026)",
+        desc: "Ozkan benchmarks 5 LLM snapshots on internal medicine prompts: 69/130 citation-expected responses had DOI resolving to different PMID than model supplied. Only 17/116 resolvable DOI-PMID pairs were coherent. Critical safety concern for clinical AI tools that cite evidence. PMID 42874665."
+      },
+      {
+        cat: "Research - LLM Guideline Execution",
+        title: "MedDEx: structured rules outperform multi-step LLM reasoning for clinical guideline adherence (Oct 11, 2026)",
+        desc: "Lu et al. propose MedDEx framework integrating structured patient states with deterministic rule execution. Improves decision accuracy while reducing inference costs. Additional LLM reasoning does not necessarily translate into better guideline adherence. arXiv 2610.15912."
+      },
+      {
+        cat: "Research - AI Triage Review",
+        title: "Scoping review of AI triage in primary care: 17 studies, mostly internal validation (Oct 12, 2026)",
+        desc: "Munir et al. review 17 studies across 12 countries. AI as clinician aid improved diagnostic accuracy (fundus 82.8%→91.1%, dermoscopy 72.9%→94.2%) but standalone models sometimes fell below clinicians. No prospective RCTs. PMID 42874138."
+      },
+      {
+        cat: "Research - Shadow AI Governance",
+        title: "Physicians adopting generative AI faster than health systems can evaluate (Oct 14, 2026)",
+        desc: "Rader & Brownstein (Boston Children's/Harvard) commentary in JMIR on Shadow AI: physicians adopting generative AI tools faster than institutional governance can evaluate. Calls for health systems to pair institutional speed with transparent stakeholder-engaged governance. PMID 42873540."
+      },
+      {
+        cat: "Research - Multi-LLM Hallucination",
+        title: "ChatGPT-5, Claude Sonnet 4.5, Gemini 2.5 evaluated for rhinology reference accuracy (Oct 14, 2026)",
+        desc: "Margulis et al. prospective study evaluating 4 LLM versions on accuracy, completeness, and reference quality for common rhinologic disorders. International rhinology society members assessed ChatGPT-3.5 summaries. PMID 42873484."
+      }
+    ]
+  },
+
+  {
     date: "October 13, 2026 (Weekly Update)",
     updated: "Weekly Global Clinical AI Landscape sweep (Tue Oct 13, 5:00 PM ET) - Venice Augment Search across CDS platform, regulatory and competitor queries, plus reads of the returned pages. New platform, regulatory, funding and regional entries added to the Global Landscape timeline, regulatory watch, competitor set and platform directory. Note: Venice search returned HTTP 429 rate-limit errors on the regional and competitor query batches and the built-in web_search provider is disabled on this lane, so this sweep covers the queries that completed; the region-specific and LinkedIn/X batches could not be re-run.",
     items: [

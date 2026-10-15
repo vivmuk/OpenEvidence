@@ -10720,5 +10720,526 @@
   ],
   "scale": "Secondary analysis of empirical data from ethics/design methodologies; primary care cardiovascular risk management",
   "status": "published"
+ },
+ {
+  "id": "arxiv:2610.20191",
+  "source": "arxiv",
+  "arxiv_id": "2610.20191",
+  "type": "clinical_decision_support_evaluation",
+  "title": "HEM-Med: A Hierarchical Agentic Memory Framework for Safe Multi-Center Medication Recommendation",
+  "authors": "Xiao M, Li J, Wang S, Zhen Y, Li Y, Lu W",
+  "abstract": "Proposes HEM-Med, a hierarchical agentic memory framework for multi-center medication recommendation that disentangles transferable cross-hospital clinical experience from hospital-specific prescribing patterns and integrates safety-aware medication set generation with drug-drug interaction risk and local formulary feasibility constraints. Experiments on real-world multi-center eICU dataset show HEM-Med outperforms transfer learning, LLM-based, and MR baselines in recommendation accuracy and safety.",
+  "url": "https://arxiv.org/abs/2610.20191v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.20191v1",
+  "doi": null,
+  "published": "2026-10-14",
+  "updated": "2026-10-14",
+  "journal": "arXiv (BIBM 2026)",
+  "tags": [
+   "medication recommendation",
+   "multi-center",
+   "safety",
+   "drug-drug interaction",
+   "clinical decision support",
+   "agentic memory"
+  ],
+  "relevance": "Directly evaluates clinical decision support for medication recommendation with explicit safety constraints (DDI risks, formulary feasibility) across multi-center settings — relevant to clinical AI safety and CDSS deployment.",
+  "key_findings": [
+   "Disentangles cross-hospital experience from hospital-specific prescribing patterns",
+   "Safety-aware set generation integrates DDI risks and local formulary feasibility",
+   "Outperforms transfer learning, LLM-based, and MR baselines on eICU dataset"
+  ],
+  "tools_evaluated": [
+   "HEM-Med"
+  ],
+  "scale": "Multi-center eICU dataset",
+  "status": "new"
+ },
+ {
+  "id": "arxiv:2610.15912",
+  "source": "arxiv",
+  "arxiv_id": "2610.15912",
+  "type": "clinical_decision_support_evaluation",
+  "title": "More Reasoning Is Not Always Better: Executing Clinical Guidelines with LLMs and Rules",
+  "authors": "Lu X, Guo G, Cheng L, Liu K",
+  "abstract": "Proposes MedDEx (Medical Decision Execution) framework that integrates structured patient states with deterministic rule execution for guideline-based treatment planning. MedDEx separates clinical record interpretation from guideline execution, using LLMs to extract patient information while assigning guideline-defined decision logic to a rule executor. Experiments across multiple clinical guideline benchmarks show MedDEx improves decision accuracy while reducing inference costs, suggesting additional LLM reasoning does not necessarily translate into better guideline adherence.",
+  "url": "https://arxiv.org/abs/2610.15912v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.15912v1",
+  "doi": null,
+  "published": "2026-10-11",
+  "updated": "2026-10-11",
+  "journal": "arXiv",
+  "tags": [
+   "clinical guidelines",
+   "LLM",
+   "rule execution",
+   "decision support",
+   "guideline adherence",
+   "MedDEx"
+  ],
+  "relevance": "Directly evaluates LLM-based clinical decision support for guideline execution — demonstrates that structured rule execution outperforms pure LLM reasoning for clinical guideline adherence, with implications for CDS tool design.",
+  "key_findings": [
+   "MedDEx improves decision accuracy while reducing inference costs vs multi-step LLM reasoning",
+   "Structured patient representations and deterministic rule execution are critical",
+   "Additional LLM reasoning does not necessarily improve guideline adherence"
+  ],
+  "tools_evaluated": [
+   "MedDEx",
+   "LLMs (multi-step reasoning baselines)"
+  ],
+  "scale": "Multiple clinical guideline benchmarks",
+  "status": "new"
+ },
+ {
+  "id": "arxiv:2610.14705",
+  "source": "arxiv",
+  "arxiv_id": "2610.14705",
+  "type": "clinical_decision_support_evaluation",
+  "title": "Lingdan-V2: Large language models for clinically grounded reasoning in traditional Chinese medicine",
+  "authors": "Hua R, Wei Y, Jin Z, Sun Z, Chang K, Xia J, Shu Z, Li X, Li D, Jia D, Dong F, Zhang R, Yu J, Xu H, Yu H, Li J, Liu B, Wang W, Zhou X",
+  "abstract": "Develops a TCM language model family (4B, 8B, 14B parameters) with staged clinical alignment: continued pretraining on TCM and clinical records, complementary reasoning supervision, and prescription-centered RL. The 14B RL-aligned model achieves prescription generation F1 of 37.0 on public benchmark (vs 32.3 for DeepSeek-R1 671B) and herb-level F1 of 52.8 on clinical dataset. Demonstrates scalable pathway from domain grounding to clinically oriented prescription decision support.",
+  "url": "https://arxiv.org/abs/2610.14705v1",
+  "pdf_url": "https://arxiv.org/pdf/2610.14705v1",
+  "doi": null,
+  "published": "2026-10-10",
+  "updated": "2026-10-10",
+  "journal": "arXiv",
+  "tags": [
+   "TCM",
+   "prescription recommendation",
+   "clinical reasoning",
+   "reinforcement learning",
+   "domain adaptation",
+   "clinical decision support"
+  ],
+  "relevance": "Clinical AI decision support for prescription recommendation in TCM — demonstrates RL-based domain adaptation for clinical LLMs with structured prescription-level feedback, directly relevant to clinical AI CDSS.",
+  "key_findings": [
+   "14B RL-aligned model achieves F1 37.0 vs DeepSeek-R1 671B at 32.3 on TCM benchmark",
+   "Prescription-centered RL with prescription-level feedback outperforms SFT+RL",
+   "RL post-training consistently improves prescription recommendation across all scales"
+  ],
+  "tools_evaluated": [
+   "Lingdan-V2 (4B/8B/14B)",
+   "DeepSeek-R1"
+  ],
+  "scale": "25,620 expert-verified items across 13 TCM tasks; 4,348 clinical prescription cases",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42875467",
+  "source": "pubmed",
+  "pmid": "42875467",
+  "type": "clinical_decision_support_evaluation",
+  "title": "Skill-guided agentic reasoning enables longitudinal synthesis of myeloma records at expert-level concordance",
+  "authors": "Moll J, Lübberstedt J, Nuernbergk C, Stroh J, Mertens L, Purcarea A, Zirn C, Benchaaben Z, Drexel F, Häntze H, Narayanan A, Puttkammer F, Zhukov A, Lammert J, Ziegelmayer S, Graf M, Högner M, Makowski M, Bassermann F, Adams LC, Pan J, Rueckert D, Braitsch K, Bressem KK",
+  "abstract": "Evaluates an agentic reasoning system guided by an indexed clinical skill library against single-pass RAG, iterative RAG, and full-context input on 811 multiple myeloma patients (44,962 documents, 1,334,677 lab values) over 469 expert-adjudicated patient-question pairs. The skill-guided agent reached 80.1% concordance (vs 75.7% iterative RAG, 75.8% full-context), with advantage widening on complex tasks (+11.2pp) and longest records. Aggregate error rate (12.2%) comparable to expert disagreement (13.6%), but higher proportion of system errors were clinically significant (57.8% vs 18.8%).",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42875467/",
+  "pdf_url": null,
+  "doi": "10.1038/s41698-026-01733-2",
+  "published": "2026-10-14",
+  "updated": "2026-10-14",
+  "journal": "NPJ Precision Oncology",
+  "tags": [
+   "agentic reasoning",
+   "RAG",
+   "multiple myeloma",
+   "clinical decision support",
+   "longitudinal records",
+   "benchmark"
+  ],
+  "relevance": "Directly benchmarks LLM-based agentic RAG systems against standard RAG for clinical decision support in oncology — demonstrates expert-level concordance but identifies clinically significant error rate gap as safety concern.",
+  "key_findings": [
+   "Skill-guided agent: 80.1% concordance vs 75.7% iterative RAG vs 75.8% full-context",
+   "Advantage widens on complex tasks (+11.2pp) and longest records (+10.3pp top decile)",
+   "System error rate 12.2% comparable to expert disagreement 13.6%",
+   "Higher proportion of system errors clinically significant (57.8% vs 18.8%)",
+   "Skill library alone matches agent in aggregate but agent wins on longest records"
+  ],
+  "tools_evaluated": [
+   "Skill-guided agent",
+   "Single-pass RAG",
+   "Iterative RAG",
+   "Full-context input"
+  ],
+  "scale": "811 patients, 44,962 documents, 469 expert-adjudicated question pairs, 25-year span",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42874665",
+  "source": "pubmed",
+  "pmid": "42874665",
+  "type": "llm_benchmark",
+  "title": "Do Large Language Models Link to Incorrect Citations? A PubMed and DOI Benchmark",
+  "authors": "Ozkan G",
+  "abstract": "Tests 5 LLM snapshots on 30 internal medicine prompts producing 150 responses and 300 citation units. Found 69/130 citation-expected responses contained a DOI resolving to a different PMID than supplied by the model. Among 116 units whose reported DOI resolved in PubMed, 99 resolved to a different PMID. Evaluation and clinical evidence workflows should confirm PMID, DOI, title, and journal identify the same source before treating model-supplied citations as evidence.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42874665/",
+  "pdf_url": null,
+  "doi": "10.1055/a-2972-4974",
+  "published": "2026-10-14",
+  "updated": "2026-10-14",
+  "journal": "Applied Clinical Informatics",
+  "tags": [
+   "LLM",
+   "citation accuracy",
+   "hallucination",
+   "benchmark",
+   "PubMed",
+   "DOI",
+   "clinical evidence"
+  ],
+  "relevance": "Directly benchmarks LLM citation accuracy — 85% of resolvable DOI-PMID pairs were incoherent. Critical safety concern for clinical AI tools that cite evidence.",
+  "key_findings": [
+   "69/130 citation-expected responses had DOI resolving to different PMID than model supplied",
+   "99/116 units with resolvable DOI: DOI resolved to different PMID than reported",
+   "All 5 tested model snapshots exhibited citation identity failures",
+   "Only 17/116 DOI-PMID pairs were coherent"
+  ],
+  "tools_evaluated": [
+   "5 LLM snapshots (unnamed)"
+  ],
+  "scale": "30 prompts × 5 models = 150 responses, 300 citation units",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42874138",
+  "source": "pubmed",
+  "pmid": "42874138",
+  "type": "clinical_decision_support_evaluation",
+  "title": "Artificial Intelligence for Triage in Primary Care: A Scoping Review of Clinical Applicability",
+  "authors": "Munir L, Cai A, Leslie O, Cai A, Perrotta D, Andrews J, Leslie A, Stretton B, Kovoor JG",
+  "abstract": "Scoping review of 17 studies of AI systems for triage in primary care across 12 countries. Most were clinician-facing decision support (14/17), none autonomous. AI improved performance as clinician aid (fundus accuracy 82.8%→91.1%; dermoscopy management sensitivity 72.9%→94.2%) but standalone models sometimes fell below clinicians. Accuracy ranged 41.2%-98.28%, AUROC 0.65-0.90. Validation mostly internal (11/17), none prospective randomized.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42874138/",
+  "pdf_url": null,
+  "doi": "10.1016/j.ijmedinf.2026.106769",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "journal": "International Journal of Medical Informatics",
+  "tags": [
+   "AI triage",
+   "primary care",
+   "scoping review",
+   "clinical decision support",
+   "clinician-facing"
+  ],
+  "relevance": "Systematic review of AI clinical decision support for triage in primary care — directly evaluates CDS applicability, performance, and evidence maturity.",
+  "key_findings": [
+   "17 studies across 12 countries, 14/17 clinician-facing CDS",
+   "AI as clinician aid improved diagnostic accuracy (fundus 82.8%→91.1%)",
+   "Standalone models sometimes fell below clinician performance",
+   "Accuracy 41.2%-98.28%, AUROC 0.65-0.90 across heterogeneous outcomes",
+   "Validation mostly internal (11/17), no prospective RCTs"
+  ],
+  "tools_evaluated": [
+   "Various AI triage systems (17 studies)"
+  ],
+  "scale": "17 studies, 12 countries, 2013-2026",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42873540",
+  "source": "pubmed",
+  "pmid": "42873540",
+  "type": "clinical_ai_safety",
+  "title": "Shadow AI and the Limits of Institutional Agility",
+  "authors": "Rader B, Brownstein JS",
+  "abstract": "Commentary arguing that physicians are adopting generative AI tools faster than health systems can evaluate them. Governing Shadow AI requires health systems to pair institutional speed with transparent, stakeholder-engaged governance.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42873540/",
+  "pdf_url": null,
+  "doi": "10.2196/112827",
+  "published": "2026-10-14",
+  "updated": "2026-10-14",
+  "journal": "Journal of Medical Internet Research",
+  "tags": [
+   "shadow AI",
+   "governance",
+   "clinical AI",
+   "health systems",
+   "physician adoption"
+  ],
+  "relevance": "Directly addresses clinical AI safety and governance — physicians adopting AI tools faster than institutional oversight, relevant to clinical AI deployment safety.",
+  "key_findings": [
+   "Physicians adopting generative AI faster than health systems can evaluate",
+   "Governing Shadow AI requires institutional speed with transparent governance",
+   "Health systems need stakeholder-engaged governance frameworks"
+  ],
+  "tools_evaluated": [
+   "Generative AI tools (general)"
+  ],
+  "scale": "Commentary",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42873484",
+  "source": "pubmed",
+  "pmid": "42873484",
+  "type": "llm_benchmark",
+  "title": "Accuracy, completeness and hallucinations in large language model generated statements and references for common rhinologic disorders",
+  "authors": "Margulis I, Slim MAM, Sommer EC, AAlammar Y, Kassam AB, Khalife S, Macias-Valle L, Sommer DD",
+  "abstract": "Prospective comparative study evaluating accuracy and completeness of ChatGPT-3.5-generated 100-word summaries of four common rhinologic disorders (epistaxis, allergic rhinitis, odontogenic sinusitis, chronic rhinosinusitis) assessed by international rhinology society members. Also evaluated reference accuracy for ChatGPT-5 (thinking/non-thinking), Claude Sonnet 4.5, and Gemini 2.5.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42873484/",
+  "pdf_url": null,
+  "doi": "10.4193/Rhin26.460",
+  "published": "2026-10-14",
+  "updated": "2026-10-14",
+  "journal": "Rhinology",
+  "tags": [
+   "LLM",
+   "hallucination",
+   "accuracy",
+   "rhinology",
+   "ChatGPT",
+   "Claude",
+   "Gemini",
+   "benchmark"
+  ],
+  "relevance": "Benchmarks multiple LLMs (ChatGPT-3.5/5, Claude Sonnet 4.5, Gemini 2.5) on medical content accuracy and reference quality — directly relevant to LLM benchmark on medical knowledge.",
+  "key_findings": [
+   "Evaluated 4 LLM versions on accuracy, completeness, and reference quality",
+   "ChatGPT-3.5 summaries assessed by international rhinology society members",
+   "ChatGPT-5 thinking/non-thinking, Claude Sonnet 4.5, Gemini 2.5 tested for reference accuracy"
+  ],
+  "tools_evaluated": [
+   "ChatGPT-3.5",
+   "ChatGPT-5 (thinking)",
+   "ChatGPT-5 (non-thinking)",
+   "Claude Sonnet 4.5",
+   "Gemini 2.5"
+  ],
+  "scale": "4 rhinologic disorders, 100-word summaries, international specialist evaluation",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42873437",
+  "source": "pubmed",
+  "pmid": "42873437",
+  "type": "clinical_ai_safety",
+  "title": "Evaluating Case Selection for Human Oversight in Clinical AI",
+  "authors": "Cha YJ",
+  "abstract": "Commentary on case selection for human oversight in clinical AI, discussing frameworks for determining which clinical cases require human review when AI systems are deployed.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42873437/",
+  "pdf_url": null,
+  "doi": "10.1007/s10916-026-02475-1",
+  "published": "2026-10-14",
+  "updated": "2026-10-14",
+  "journal": "Journal of Medical Systems",
+  "tags": [
+   "human oversight",
+   "clinical AI",
+   "case selection",
+   "safety",
+   "governance"
+  ],
+  "relevance": "Directly addresses clinical AI safety oversight — framework for determining which cases require human review in AI-assisted clinical workflows.",
+  "key_findings": [
+   "Proposes framework for case selection in clinical AI oversight",
+   "Addresses which clinical cases require human review when AI is deployed"
+  ],
+  "tools_evaluated": [
+   "Clinical AI systems (general)"
+  ],
+  "scale": "Commentary/letter",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42871172",
+  "source": "pubmed",
+  "pmid": "42871172",
+  "type": "llm_benchmark",
+  "title": "Evaluating artificial intelligence-generated clinical guidance for patellar dislocation: accuracy, readability and qualitative appraisal of DeepSeek-R1 responses",
+  "authors": "Liu S, Sun X, Ma Y, Yang Z, Zhang H, Mao H, Xu B",
+  "abstract": "Compares DeepSeek-R1 v2.3.1 and ChatGPT-4o on clinical questions about patellar dislocation (etiopathogenesis, mechanisms, clinical manifestations, diagnosis, treatment, complications, rehabilitation). DeepSeek-R1 had lower readability (higher reading level) than ChatGPT-4o. DISCERN scores similar ('Fair' quality) for both. Both should be regarded as adjunctive information, not standalone clinical guidance.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42871172/",
+  "pdf_url": null,
+  "doi": "10.3389/fdgth.2026.1719101",
+  "published": "2026-09-29",
+  "updated": "2026-09-29",
+  "journal": "Frontiers in Digital Health",
+  "tags": [
+   "DeepSeek-R1",
+   "ChatGPT-4o",
+   "patellar dislocation",
+   "readability",
+   "DISCERN",
+   "LLM benchmark"
+  ],
+  "relevance": "Benchmarks DeepSeek-R1 vs ChatGPT-4o on clinical content quality — LLM benchmark on medical knowledge with specialist evaluation.",
+  "key_findings": [
+   "ChatGPT-4o had better readability across all indices vs DeepSeek-R1",
+   "Both exceeded NIH-recommended 6th-grade reading level",
+   "DISCERN scores similar: DeepSeek-R1 49.17 vs ChatGPT-4o 50.33 ('Fair')",
+   "DeepSeek-R1 strengths in clinical explanation/reasoning, limitations in citation reliability"
+  ],
+  "tools_evaluated": [
+   "DeepSeek-R1 v2.3.1",
+   "ChatGPT-4o"
+  ],
+  "scale": "Clinical questions across 7 domains of patellar dislocation",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42876358",
+  "source": "pubmed",
+  "pmid": "42876358",
+  "type": "clinical_decision_support_evaluation",
+  "title": "Clinical Decision Support Models to Optimize Controlled Ovarian Hyperstimulation: A Scoping Review",
+  "authors": "Lu RZY, Michael TJF, Smith V, Vollenhoven BJ, Stocker SL",
+  "abstract": "Scoping review of 5 studies (n=16,441) evaluating CDS tools for gonadotropin dosing and ovulation trigger timing during IVF. One study reported precision-dosing CDS associated with increased MII oocyte yield (1.5 oocytes, p<0.001) and reduced gonadotropin use (195 IU, p<0.001). K-nearest neighbor and linear regression approaches predominated. No clinically evaluated pharmacokinetic/pharmacodynamic models identified.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42876358/",
+  "pdf_url": null,
+  "doi": "10.1111/cts.70742",
+  "published": "2026-10-01",
+  "updated": "2026-10-14",
+  "journal": "Clinical and Translational Science",
+  "tags": [
+   "clinical decision support",
+   "IVF",
+   "precision dosing",
+   "scoping review",
+   "CDS evaluation"
+  ],
+  "relevance": "Systematic evaluation of clinical decision support tools for medication dosing in IVF — directly evaluates CDS systems' clinical impact.",
+  "key_findings": [
+   "5 studies (n=16,441) of CDS tools for IVF dosing",
+   "Precision-dosing CDS increased MII oocyte yield by 1.5 (p<0.001) and reduced gonadotropin use by 195 IU",
+   "KNN (n=3) and linear regression (n=3) approaches predominated",
+   "No clinically evaluated PK/PD models identified",
+   "Evidence base limited by heterogeneity and surrogate outcomes"
+  ],
+  "tools_evaluated": [
+   "Various CDS tools (statistical, ML, AI approaches)"
+  ],
+  "scale": "5 studies, 16,441 patients",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42871721",
+  "source": "pubmed",
+  "pmid": "42871721",
+  "type": "clinical_decision_support_evaluation",
+  "title": "When Fever Hides Fire: A Systematic Review of Clinical and Digital Approaches to Early Recognition of Pediatric Sepsis",
+  "authors": "Abdulrahman MEK, Abdalmagid OYO, Almardy AMA, Mohamed Elhassan OOO, Abu Haltem I, Ahmed A, Babekr NBA",
+  "abstract": "Systematic review of 13 studies evaluating clinical and digital strategies for early recognition of pediatric sepsis, including structured screening tools, electronic alerts, prediction models, ML approaches, and clinical decision support. No single approach was consistently superior. Automated screening most useful when integrated with structured clinical assessment.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42871721/",
+  "pdf_url": null,
+  "doi": "10.7759/cureus.116168",
+  "published": "2026-09-13",
+  "updated": "2026-10-14",
+  "journal": "Cureus",
+  "tags": [
+   "pediatric sepsis",
+   "clinical decision support",
+   "screening",
+   "systematic review",
+   "early recognition"
+  ],
+  "relevance": "Systematic review of clinical decision support tools for pediatric sepsis recognition — directly evaluates CDS tool performance for early diagnosis.",
+  "key_findings": [
+   "13 studies of clinical and digital sepsis recognition approaches",
+   "No single approach consistently superior for early recognition",
+   "Automated screening most useful integrated with structured clinical assessment",
+   "Implementation studies showed process improvements more than outcome improvements"
+  ],
+  "tools_evaluated": [
+   "Various CDS and screening tools (13 studies)"
+  ],
+  "scale": "13 studies",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42871446",
+  "source": "pubmed",
+  "pmid": "42871446",
+  "type": "clinical_decision_support_evaluation",
+  "title": "An assisted telemedicine model with digital diagnostics and artificial intelligence-supported clinical decision in hard-to-reach rural communities: a community-based mixed-methods study from Rajasthan, India",
+  "authors": "Chowhan RS, Huda RK, Kalra S, Agarwal H, Bhardwaj P",
+  "abstract": "Community-based mixed-methods study in 10 villages in Rajasthan, India evaluating an assisted telemedicine model integrating frontline health workers, portable diagnostics, and AI-supported CDS. All symptomatic individuals in intervention group (n=4401) received teleconsultations vs 38.5% controls accessing formal healthcare (p<0.001). 98.6% managed without referral.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42871446/",
+  "pdf_url": null,
+  "doi": "10.1016/j.pmedr.2026.103645",
+  "published": "2026-10-01",
+  "updated": "2026-10-14",
+  "journal": "Preventive Medicine Reports",
+  "tags": [
+   "telemedicine",
+   "AI clinical decision support",
+   "rural health",
+   "India",
+   "real-world evaluation"
+  ],
+  "relevance": "Real-world evaluation of AI-supported clinical decision support in telemedicine — demonstrates CDS feasibility in resource-limited settings.",
+  "key_findings": [
+   "100% of intervention group received teleconsultations vs 38.5% controls (p<0.001)",
+   "98.6% managed without referral",
+   "Portable ECG detected abnormalities in 21.6% of cardiac presentations",
+   "Frontline workers emerged as trusted facilitators"
+  ],
+  "tools_evaluated": [
+   "AI-supported CDS system (telemedicine)"
+  ],
+  "scale": "10 villages, 8374 consultation records, 4401 intervention patients",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42870599",
+  "source": "pubmed",
+  "pmid": "42870599",
+  "type": "clinical_decision_support_evaluation",
+  "title": "Dual-track Parallel and Integrated Innovation: Recent Advancements of Clinical Decision Support Systems in Cardiovascular Diseases from the Perspective of Integrative Chinese and Western Medicine",
+  "authors": "Jia ZH, Zhang L, Tong L, Zhang",
+  "abstract": "Review of recent advancements in clinical decision support systems for cardiovascular diseases from the perspective of integrative Chinese and Western medicine.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42870599/",
+  "pdf_url": null,
+  "doi": "10.3967/bes2026.094",
+  "published": "2026-09-20",
+  "updated": "2026-09-20",
+  "journal": "Biomedical and Environmental Sciences",
+  "tags": [
+   "clinical decision support",
+   "cardiovascular diseases",
+   "integrative medicine",
+   "CDSS review"
+  ],
+  "relevance": "Review of CDSS for cardiovascular diseases — evaluates clinical decision support systems in integrative medicine context.",
+  "key_findings": [
+   "Reviews CDSS advancements in cardiovascular disease management",
+   "Dual-track approach integrating Chinese and Western medicine perspectives"
+  ],
+  "tools_evaluated": [
+   "Various CDSS"
+  ],
+  "scale": "Review",
+  "status": "new"
+ },
+ {
+  "id": "pmid:42870063",
+  "source": "pubmed",
+  "pmid": "42870063",
+  "type": "clinical_decision_support_evaluation",
+  "title": "Artificial intelligence in central nervous system autoimmune diseases: from clinical decision support to mechanistic discovery and translation",
+  "authors": "Various",
+  "abstract": "Review of AI applications in CNS autoimmune diseases, covering clinical decision support, mechanistic discovery, and translational applications.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42870063/",
+  "pdf_url": null,
+  "doi": null,
+  "published": "2026-10-13",
+  "updated": "2026-10-13",
+  "journal": "EMBO Molecular Medicine",
+  "tags": [
+   "AI",
+   "CNS autoimmune",
+   "clinical decision support",
+   "translational",
+   "review"
+  ],
+  "relevance": "Reviews AI-based clinical decision support in neurology — directly relevant to clinical AI CDS applications.",
+  "key_findings": [
+   "AI applications span clinical decision support to mechanistic discovery",
+   "Covers CNS autoimmune disease diagnosis and management"
+  ],
+  "tools_evaluated": [
+   "Various AI systems"
+  ],
+  "scale": "Review",
+  "status": "new"
  }
 ]
