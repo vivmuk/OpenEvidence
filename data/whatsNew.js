@@ -5,6 +5,48 @@
 
 var whatsNewData = [
   {
+    date: "October 16, 2026",
+    updated: "Daily check (Fri Oct 16, 9:00 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 results) + PubMed eutils (30 results) + Grok X/Twitter search. No new OE announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). Grok X/Twitter search completed (encrypted reasoning response). 3 arXiv papers already in research.json from prior sweeps. 14 new PubMed papers added to research.json. 6 new benchmark entries added to benchmarks.json.",
+    items: [
+      {
+        cat: "Research - Multimodal LLM Prognosis",
+        title: "Gemini 3.1 Pro for cervical cancer prognosis from MRI+clinical data (Oct 14, 2026)",
+        desc: "Gu et al. retrospective study of 82 cervical cancer patients. Multimodal LLM input improved prognostic AUC from 0.704 (clinical baseline) to 0.790 (full multimodal). AI MRI reports scored 68.8% on rubric with overcalling of parametrial invasion. Non-fine-tuned MLLM shows potential but requires expert review. PMID 42882831."
+      },
+      {
+        cat: "Research - Automation Bias",
+        title: "LLM risk estimates cause automation bias in breast imaging - junior residents most vulnerable (Oct 7, 2026)",
+        desc: "Dusunceli Atman et al. simulation study: 20 radiology residents, 15 breast imaging cases. Discordant AI outputs reduced management accuracy (p=0.008). Early-stage residents accuracy dropped from 77.3% to 45.3% with discordant AI. Advanced training protective (OR 0.09). PMID 42882396."
+      },
+      {
+        cat: "Research - LLM Hallucination Benchmark",
+        title: "Five LLMs audited for orthodontic decision support - 89.8% hallucination but only 13% clinically consequential (Sep 30, 2026)",
+        desc: "Allaf & Ozcan: 500 responses across 5 LLMs on 100-item orthodontic benchmark. Prevalence and clinically consequential error rank models differently. Item-level clustering far stronger for consequential output (ICC 0.83 vs 0.07). PMID 42882334."
+      },
+      {
+        cat: "Research - RAG Clinical AI",
+        title: "TurkishMedLLM: source-grounded Turkish medical LLM with RAG for clinical decision support (Sep 27, 2026)",
+        desc: "Jamil et al. built TurkishMedLLM from 232,926 Turkish medical documents with QLoRA fine-tuning of Qwen3-8B. RAGAS faithfulness 0.91, response relevancy 0.88. Clinical safety caution score 0.93. Integrated into AIDCare mHealth diabetes platform. PMID 42882297."
+      },
+      {
+        cat: "Research - LLM vs MDT",
+        title: "GPT-5.5 achieves 90.8% concordance with breast cancer MDT decisions (Sep 28, 2026)",
+        desc: "Dindelegan et al. 86 invasive breast carcinoma cases evaluated by GPT-5.5 vs real MDT. 100% concordance for endocrine/radiotherapy/targeted therapy. Lower for individualized surgical decisions (80-83%). LLMs should complement, not replace, MDT expertise. PMID 42881995."
+      },
+      {
+        cat: "Research - LLM vs Surgeon",
+        title: "GPT-5.2 vs surgeon for IOL power selection in cataract surgery (Sep 25, 2026)",
+        desc: "Uyeda et al. 293 eyes. GPT-5.2 MAE 0.45 D vs surgeon 0.35 D (p=0.002). Fewer eyes within ±0.25 D (44.7% vs 51.9%). Toric residual astigmatism higher for GPT-5.2 (0.78 vs 0.58 D). Support tool potential but not replacement. PMID 42881925."
+      },
+      {
+        cat: "Research - AI Safety in Emergency Medicine",
+        title: "LLMs as clinical decision support in emergency medicine: promise, pitfalls, uncritical adoption (Oct 15, 2026)",
+        desc: "Ahn editorial in Clin Exp Emerg Med warns against uncritical adoption of LLMs in time-pressured emergency settings. Calls for evidence-based implementation. PMID 42881557. Companion review on LLM fairness in the ED (PMID 42881554) organizes risks into data-level, output-level, and human-interaction layers."
+      }
+    ]
+  },
+
+  {
     date: "October 15, 2026",
     updated: "Daily check (Thu Oct 15, 9:14 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 results) + PubMed eutils (30 results). No new OE announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). Grok X/Twitter search timed out (2 attempts) - noted as gap. 3 new arXiv papers added to research.json (HEM-Med multi-center medication safety, MedDEx guideline execution with rules, Lingdan-V2 TCM prescription LLM). 12 new PubMed papers added to research.json. 3 new benchmark entries added to benchmarks.json (skill-guided agentic RAG for myeloma 80.1% concordance, LLM citation identity 85% incoherent, multi-LLM hallucination in rhinology).",
     items: [

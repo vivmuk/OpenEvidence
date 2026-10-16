@@ -3805,5 +3805,113 @@
   "relevance": "Multi-LLM benchmark on medical content accuracy and reference hallucination in rhinology.",
   "status": "published",
   "new": true
+ },
+ {
+  "id": "pmid:42882334",
+  "pmid": "42882334",
+  "title": "Five LLM Hallucination Audit in Orthodontic Decision Support",
+  "authors": "Allaf F, Ozcan M",
+  "journal": "Diagnostics (Basel)",
+  "date": "2026-09-30",
+  "type": "llm_hallucination_benchmark",
+  "models_evaluated": [
+   "ChatGPT",
+   "Claude",
+   "Gemini",
+   "DeepSeek",
+   "Copilot"
+  ],
+  "n_items": 100,
+  "key_finding": "89.8% hallucination rate but only 13.0% clinically consequential. Prevalence and clinical risk rank models differently.",
+  "doi": "10.3390/diagnostics16193180",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42882334/"
+ },
+ {
+  "id": "pmid:42881769",
+  "pmid": "42881769",
+  "title": "Generative AI Chatbot Benchmark in Preventive Medicine",
+  "authors": "Alshahrani NZ et al.",
+  "journal": "Healthcare (Basel)",
+  "date": "2026-10-06",
+  "type": "llm_knowledge_benchmark",
+  "models_evaluated": [
+   "ChatGPT",
+   "DeepSeek",
+   "Perplexity AI",
+   "Claude AI",
+   "Gemini Advanced"
+  ],
+  "n_items": 15,
+  "key_finding": "Claude AI highest accuracy (5.67) and completeness (2.87); Gemini Advanced lowest. Significant overall difference (p<0.001).",
+  "doi": "10.3390/healthcare14193330",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42881769/"
+ },
+ {
+  "id": "pmid:42881995",
+  "pmid": "42881995",
+  "title": "GPT-5.5 vs MDT in Breast Cancer Management",
+  "authors": "Dindelegan GC et al.",
+  "journal": "J Clin Med",
+  "date": "2026-09-28",
+  "type": "llm_vs_clinician_concordance",
+  "models_evaluated": [
+   "GPT-5.5"
+  ],
+  "n_items": 86,
+  "key_finding": "90.8% overall concordance with MDT decisions. 100% for endocrine/radiotherapy/targeted therapy. Lower for individualized surgical decisions (80-83%).",
+  "doi": "10.3390/jcm15197533",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42881995/"
+ },
+ {
+  "id": "pmid:42881925",
+  "pmid": "42881925",
+  "title": "GPT-5.2 vs Surgeon for IOL Power Selection in Cataract Surgery",
+  "authors": "Uyeda RM et al.",
+  "journal": "J Clin Med",
+  "date": "2026-09-25",
+  "type": "llm_vs_clinician_comparison",
+  "models_evaluated": [
+   "GPT-5.2"
+  ],
+  "n_items": 293,
+  "key_finding": "GPT-5.2 MAE 0.45 D vs surgeon 0.35 D (p=0.002). Fewer eyes within ±0.25 D (44.7% vs 51.9%). Support tool potential but not replacement.",
+  "doi": "10.3390/jcm15197463",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42881925/"
+ },
+ {
+  "id": "pmid:42881858",
+  "pmid": "42881858",
+  "title": "Four LLM Interfaces in Third Molar Surgery Complication Scenarios",
+  "authors": "Karaca İR et al.",
+  "journal": "J Clin Med",
+  "date": "2026-09-23",
+  "type": "llm_clinical_benchmark",
+  "models_evaluated": [
+   "ChatGPT 5.4 Thinking",
+   "DeepSeek-V3.2",
+   "Gemini 3.1 Pro",
+   "Microsoft Copilot"
+  ],
+  "n_items": 30,
+  "key_finding": "Gemini highest GQS (4.53), ChatGPT highest clinical content (4.80). Copilot lowest with 1 harmful recommendation and 2 safety-critical omissions.",
+  "doi": "10.3390/jcm15197397",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42881858/"
+ },
+ {
+  "id": "pmid:42882396",
+  "pmid": "42882396",
+  "title": "LLM-Generated Risk Estimates and Automation Bias in Breast Imaging",
+  "authors": "Dusunceli Atman E et al.",
+  "journal": "Diagnostics (Basel)",
+  "date": "2026-10-07",
+  "type": "automation_bias_study",
+  "models_evaluated": [
+   "ChatGPT-4 Turbo"
+  ],
+  "n_items": 15,
+  "n_evaluators": 20,
+  "key_finding": "Discordant AI outputs reduced management accuracy (p=0.008). Early-stage residents most vulnerable (77.3%→45.3%). Advanced training protective (OR 0.09).",
+  "doi": "10.3390/diagnostics16193241",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42882396/"
  }
 ]
