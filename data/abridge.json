@@ -132,6 +132,13 @@
       "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote"
     },
     {
+      "name": "Care Signals",
+      "status": "live",
+      "date": "Aug 2, 2026",
+      "desc": "Co-developed with Kaiser Permanente over 15 months. Before the visit, Care Signals surfaces a patient's most relevant chronic conditions and care gaps as cue cards. During the visit, it tracks whether each condition is discussed and prompts the clinician if an assessment and plan are absent. After the visit, it produces ICD-10 codes and industry-standard documentation. Moves HCC capture and CDI into the exam room rather than retrospectively.",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/"
+    },
+    {
       "name": "Epic Integration / Abridge Inside",
       "status": "live",
       "date": "2019-2026",
@@ -201,7 +208,7 @@
       "type": "Health system · platform launch partner",
       "date": "Jun 11, 2026",
       "url": "https://hlth.com/insights/news/abridge-launches-ai-powered-clinician-intelligence-platform-in-northwestern-medicine-deployment",
-      "new": true
+      "new": false
     },
     {
       "name": "University of Texas System (UT REAL Health AI)",
@@ -211,11 +218,18 @@
       "new": true
     },
     {
+      "name": "WashU Medicine / BJC Health",
+      "type": "Health system · 4,000 clinicians expanded",
+      "date": "Sep 2, 2026",
+      "url": "https://www.abridge.com/press-release/bjchealth-washumedicine-expand-abridge",
+      "new": false
+    },
+    {
       "name": "U.S. Department of Veterans Affairs",
       "type": "Federal · $775.72M multi-award enterprise contract",
       "date": "Sep 22, 2026",
       "url": "https://www.abridge.com/press-release/va-enterprise-contract",
-      "new": true
+      "new": false
     },
     {
       "name": "Seattle Children's",
@@ -243,28 +257,28 @@
       "type": "Foundation model · NVentures investor",
       "date": "Jun 11, 2026",
       "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
-      "new": true
+      "new": false
     },
     {
       "name": "Eli Lilly",
       "type": "Strategic investor · life sciences / trial screening",
       "date": "Jun 11, 2026",
       "url": "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/",
-      "new": true
+      "new": false
     },
     {
       "name": "Artisight",
       "type": "Smart-hospital computer vision integration",
       "date": "Jun 11, 2026",
       "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
-      "new": true
+      "new": false
     },
     {
       "name": "Hellocare",
       "type": "Virtual care integration",
       "date": "Jun 11, 2026",
       "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
-      "new": true
+      "new": false
     },
     {
       "name": "Availity",
@@ -281,18 +295,25 @@
       "new": false
     },
     {
+      "name": "American Heart Association",
+      "type": "Clinical guidance content · cardiovascular insights",
+      "date": "Jun 11, 2026",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": false
+    },
+    {
       "name": "NEJM Group",
       "type": "Content · New England Journal of Medicine",
       "date": "Apr 15, 2026",
       "url": "https://www.abridge.com/press-release/abridge-integrates-nejm-jama",
-      "new": true
+      "new": false
     },
     {
       "name": "JAMA Network / AMA",
       "type": "Content · JAMA + 11 specialty journals + Network Open",
       "date": "Apr 15, 2026",
       "url": "https://www.abridge.com/press-release/abridge-integrates-nejm-jama",
-      "new": true
+      "new": false
     },
     {
       "name": "American Diabetes Association",
@@ -355,6 +376,13 @@
       "type": "Investor",
       "date": "2025",
       "url": "https://sacra.com/c/abridge/",
+      "new": false
+    },
+    {
+      "name": "Kaiser Permanente Ventures",
+      "type": "Investor",
+      "date": "2026",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/",
       "new": false
     }
   ],
@@ -443,13 +471,22 @@
       "new": true
     },
     {
+      "date": "2026-09-02",
+      "cat": "Partnership",
+      "title": "WashU Medicine and BJC Health Expand Abridge to 4,000 Clinicians",
+      "desc": "The Center for Health AI at WashU Medicine and BJC Health expanded Abridge across BJC's East Region after a rigorous pilot evaluation. Documentation time fell 8% initially, rising to 15% by day 150; after-hours documentation dropped 6% initially, reaching 20% reduction by day 150. Outpatient specialties including family medicine, internal medicine, OB/GYN, pediatrics, and orthopedic surgery saw particularly strong adoption.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/bjchealth-washumedicine-expand-abridge",
+      "new": false
+    },
+    {
       "date": "2026-09-22",
       "cat": "Partnership",
       "title": "Abridge Wins Seat on $775.7M VA Ambient AI Enterprise Contract",
       "desc": "The U.S. Department of Veterans Affairs selected Abridge, through a distribution partner, for a five-year multi-award enterprise contract with a collective ceiling of $775.72 million. The vehicle lets VA medical centers and regions bring ambient AI to clinicians serving 9M+ veterans, across both VistA/CPRS and the Federal EHR. Knowtex also holds a seat and will compete for task orders.",
       "src": "Abridge / Nextgov",
       "url": "https://www.abridge.com/press-release/va-enterprise-contract",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-09-14",
@@ -458,7 +495,7 @@
       "desc": "Abridge launched a pre-bill review capability for clinical documentation integrity (CDI), coding, and revenue cycle teams. It audits inpatient claims and DRGs against the bedside clinical conversation before the claim drops, surfacing discrepancies between coded diagnoses and documented evidence. First product built specifically for the mid-revenue cycle.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press-release/pre-bill-review-for-cdi-and-coding-teams",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-09-01",
@@ -467,7 +504,7 @@
       "desc": "Fast Company recognized Abridge for changing how healthcare works for providers, patients, and payers. The honor adds to a wall that already includes Best in KLAS for Ambient AI in 2025 and 2026, TIME Best Inventions, and CNBC Disruptor 50.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-08-17",
@@ -476,7 +513,16 @@
       "desc": "Abridge now lets partner health systems extend its clinical intelligence agent to every clinician, regardless of how that clinician documents visits today. Access can run through the EHR workflow clinicians already use or through a new mobile and web experience, each connected to the patient chart. More than 300 enterprise health systems representing over 250 million patients adopted the decision support since its April launch.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners",
-      "new": true
+      "new": false
+    },
+    {
+      "date": "2026-08-02",
+      "cat": "Product",
+      "title": "Abridge and Kaiser Permanente Debut Care Signals",
+      "desc": "Care Signals is a new capability co-designed with Kaiser Permanente over 15 months. Before a visit, it flags a patient's most relevant chronic conditions and care gaps. During the visit, it tracks whether each condition is discussed and cues the clinician if an assessment and plan are missing. After the visit, it generates ICD-10 codes and documentation that match. The tool moves CDI and HCC capture into the visit itself rather than weeks later.",
+      "src": "Becker's Hospital Review",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/",
+      "new": false
     },
     {
       "date": "2026-06-11",
@@ -485,7 +531,7 @@
       "desc": "At a New York keynote, Abridge introduced a platform that extends from documentation into billing, clinical decision support, payer adjudication, and pharmaceutical trial screening. The company announced a collaboration with NVIDIA on the first foundation model purpose-built for clinical conversations, a strategic investment from Eli Lilly, partnerships with Artisight and Hellocare, and content deals with ADA, AAFP, Neurology, and JCO. Northwestern Medicine was named as an enterprise rollout.",
       "src": "Abridge / Fortune",
       "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-04-15",
@@ -494,7 +540,7 @@
       "desc": "Multi-year content partnerships bring NEJM and the JAMA Network (JAMA plus 11 specialty journals and JAMA Network Open) into Abridge's clinical decision support. The tool already surfaces context-aware insights from Wolters Kluwer's UpToDate. The same journal partners anchor OpenEvidence's evidence library, marking direct convergence between the two platforms.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press-release/abridge-integrates-nejm-jama",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-04-02",
@@ -511,6 +557,15 @@
       "desc": "Abridge closed a reported $316M extension to its Series E at the same $5.3B valuation set in June 2025. Reported total capital raised now ranges from roughly $830M to $1.07B depending on how the extension and earlier rounds are counted. The flat price, ten months after the prior mark, signals scale-up execution rather than a fresh valuation step-up.",
       "src": "Sacra",
       "url": "https://sacra.com/c/abridge/"
+    },
+    {
+      "date": "2026-02-11",
+      "cat": "Milestone",
+      "title": "Forbes Names Shiv Rao to Inaugural 250 Greatest Living Innovators List",
+      "desc": "Forbes named Abridge Founder and CEO Shiv Rao, MD, to its inaugural list of America's 250 Greatest Living Innovators. The list was compiled with input from Forbes beat reporters, a panel of judges including Jim Breyer and Kara Swisher, and AI-assisted ranking. The recognition places Rao alongside figures like Elon Musk, Jennifer Doudna, and Sam Altman.",
+      "src": "Forbes",
+      "url": "https://www.forbes.com/sites/alexknapp/2026/02/11/forbes-250-americas-greatest-innovators/",
+      "new": false
     },
     {
       "date": "2026-02-04",
@@ -589,6 +644,18 @@
     {
       "name": "Abridge - UT System enterprise-wide agreement (Oct 8, 2026)",
       "url": "https://www.abridge.com/press-release/ut-health-enterprise-wide"
+    },
+    {
+      "name": "Abridge - WashU Medicine / BJC Health expansion (Sep 2, 2026)",
+      "url": "https://www.abridge.com/press-release/bjchealth-washumedicine-expand-abridge"
+    },
+    {
+      "name": "Becker's - Abridge and Kaiser Permanente debut Care Signals (Aug 2, 2026)",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/"
+    },
+    {
+      "name": "Forbes - 250 America's Greatest Living Innovators (Feb 11, 2026)",
+      "url": "https://www.forbes.com/sites/alexknapp/2026/02/11/forbes-250-americas-greatest-innovators/"
     },
     {
       "name": "Abridge - VA enterprise contract (Sep 22, 2026)",
