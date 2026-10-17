@@ -5,6 +5,52 @@
 
 var whatsNewData = [
   {
+    date: "October 17, 2026",
+    updated: "Weekly OpenEvidence Insights update (Sun Oct 17, 5:13 PM ET) - Venice Augment Search (8 queries) + openevidence.com/announcements scrape + arXiv API (50 results) + PubMed eutils (30 narrow + 30 expanded). Added 2 new arXiv papers and 11 new PubMed papers to research.json. Added 5 new benchmark studies to benchmarks.json. Added 9 new PubMed entries to publications.js. Added Doximity settlement (Oct 16) to timeline.js. Timeline.csv updated with 23 new entries. Partnerships.csv updated with 4 new entries. Competitors.csv updated with 7 new entries. Key findings: Behind the Knife partnership (Oct 14), Johns Hopkins Medicine collaboration (Oct 13), Northwestern Medicine EHR integration (Oct 12), Doximity settles OpenEvidence lawsuit (Oct 16), OpenEvidence Model Family launched (Sep 3), MedSafe-Dx benchmark launched (Sep 9), ARISE State of Clinical AI Report 2026, NOHARM benchmark updated (Jul 13), Nature Medicine benchmark study (Jun 2026), UpDoc FDA clearance for first patient-facing LLM SaMD (Jun 25).",
+    items: [
+      {
+        cat: "Legal",
+        title: "Doximity settles OpenEvidence AI prompt-hack lawsuit (Oct 16, 2026)",
+        desc: "Doximity Inc. settled OpenEvidence's lawsuit accusing it of impersonating doctors to hack the medical AI platform and extract trade secrets via prompt injection. Settlement filed Thursday Oct 16 in federal court, concluding the 16-month legal battle (Case 1:25-cv-11802, filed June 2025). Bloomberg Law coverage."
+      },
+      {
+        cat: "Partnership - Surgical Education",
+        title: "Behind the Knife and OpenEvidence announce collaboration (Oct 14, 2026)",
+        desc: "World's most listened-to surgery podcast partners with OpenEvidence. BTK surgical education library integrated into OpenEvidence platform. OpenEvidence embedded in BTK's ABSITE review, oral board prep, and surgical curricula. Patrick Georgoff MD: 'OpenEvidence has established itself as the undisputed gold standard in medical language models.'"
+      },
+      {
+        cat: "Partnership - Medical Education",
+        title: "Johns Hopkins Medicine and OpenEvidence announce landmark collaboration (Oct 13, 2026)",
+        desc: "Collaboration to design the future of medical education in the AI era. JHM (established the US medical education model 100+ years ago) partners with OpenEvidence to strengthen foundational principles while creating adaptive AI systems. Sanjay Desai (Vice Dean for Education) and Sara Murray (CMIO/AI Officer) leading. First major medical education partnership."
+      },
+      {
+        cat: "Partnership - EHR Integration",
+        title: "Northwestern Medicine and OpenEvidence launch EHR integration (Oct 12, 2026)",
+        desc: "Northwestern Medicine embeds OpenEvidence directly within Epic EHR. Clinicians can launch OpenEvidence from Epic with automatic hospital sign-in. First phase of broader bedside-AI safety collaboration. Extends EHR-embedding streak: AdventHealth (Oct 1), UTMB (Sep 22), MSK (Sep 16)."
+      },
+      {
+        cat: "Research - Clinical AI Platform Use",
+        title: "JAMA publishes study on clinician use of AI-enabled clinical information platform (Oct 15, 2026)",
+        desc: "Patel et al. JAMA study examines clinician use patterns of AI-enabled clinical information platforms in practice. PMID 42879271. Added to research.json and publications.js."
+      },
+      {
+        cat: "Benchmark - Clinical AI Safety",
+        title: "MedSafe-Dx benchmark launched; NOHARM updated; ARISE State of Clinical AI Report 2026 (Sep 2026)",
+        desc: "Cortico launches MedSafe-Dx: 11 frontier models tested, GPT-5.2 safest (97.6%) but over-escalates 71% of routine cases. NOHARM updated (Jul 13): specialized clinical AI tools had lowest severe harm rates - AMBOSS LiSA 2.9%, Doximity Ask 4.8%, OpenEvidence 5.1%, Glass Health 5.4%. ARISE (Stanford-Harvard) reports fewer than 5% of 1200+ FDA-cleared AI/ML devices have peer-reviewed evaluation. Nature Medicine benchmark (Jun 2026): GPT-5.2, Gemini 3.1 Pro, Claude Opus 4.6 outperform FDA-cleared clinical AI on real-world physician queries."
+      },
+      {
+        cat: "Competitor - FDA Clearance",
+        title: "UpDoc receives FDA clearance for first patient-facing LLM Software as Medical Device (Jun 25, 2026)",
+        desc: "UpDoc Inc. receives FDA clearance for first SaMD using patient-facing LLMs. Clinical AI platform for real-time patient care delivery and chronic disease management with clinician oversight. Opens regulatory pathway for clinical AI developers."
+      },
+      {
+        cat: "Product - OpenEvidence Model Family",
+        title: "OpenEvidence Model Family launched: Osler, Sackett, Snow, and Darwin (Sep 3, 2026)",
+        desc: "New family of medical AI models named for founders of modern medicine. Osler (~5s) fastest model for patient encounter pace. Sackett (~30s) deeper search with interactive context. Snow (~5m) full literature investigations. Darwin in research preview - first AI to score perfect 100% on MedQA. Highest scoring medical AI model family on every mainstream benchmark as of 2026."
+      }
+    ]
+  },
+  {
     date: "October 16, 2026",
     updated: "Daily check (Fri Oct 16, 9:00 AM ET) - Venice Augment Search (5 queries) + openevidence.com/announcements scrape + arXiv API (30 results) + PubMed eutils (30 results) + Grok X/Twitter search. No new OE announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). Grok X/Twitter search completed (encrypted reasoning response). 3 arXiv papers already in research.json from prior sweeps. 14 new PubMed papers added to research.json. 6 new benchmark entries added to benchmarks.json.",
     items: [
