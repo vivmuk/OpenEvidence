@@ -198,6 +198,7 @@ section .section-sub { font-size: 14px; color: var(--oe-text-muted); margin-bott
 .cat-Acquisition { background: rgba(200,150,50,0.15); color: #D4A94E; }
 .cat-Milestone { background: rgba(50,150,120,0.15); color: #5DAE8E; }
 .cat-Company { background: rgba(100,100,100,0.15); color: var(--oe-text-dim); }
+.cat-Competitor { background: rgba(180,70,70,0.15); color: #BF7A6B; }
 .cat-Research { background: rgba(80,130,100,0.15); color: #7BAE8B; }
 .cat-Trend { background: rgba(100,160,80,0.15); color: #8AC47A; }
 .cat-Tech { background: rgba(60,100,140,0.15); color: #6B8FAD; }

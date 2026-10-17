@@ -11,6 +11,7 @@
 - /data/metrics.json — adoption metrics over time
 - /data/global_landscape.json — global CDS events
 - /data/research.json — consolidated research studies (PubMed + arXiv + Semantic Scholar)
+- /data/abridge.json — Abridge company tracker: news timeline, funding, products, partners, research, sources
 
 ## Data Endpoints (CSV, original format)
 - /data/timeline.csv
@@ -22,6 +23,7 @@
 
 ## Website
 - Main dashboard: / (index.html)
+- Abridge tracker: /abridge (dedicated competitor/news page)
 - All data updated by automated cron jobs (daily announcement check + weekly research sweep)
 
 ## Agent Context File

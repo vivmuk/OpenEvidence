@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abridge Tracker - OpenEvidence Insights</title>
+<meta name="description" content="Dedicated tracker for Abridge: news, funding, products, health-system deployments, evidence, and competition with OpenEvidence.">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/shared.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  .ab-tabs{display:flex;gap:8px;overflow-x:auto;padding:6px 0 18px;margin-bottom:8px;border-bottom:1px solid var(--oe-dark-border);position:sticky;top:0;background:var(--oe-dark);z-index:20}
+  .ab-tab{flex:0 0 auto;background:transparent;border:1px solid var(--oe-dark-border);color:var(--oe-text-dim);padding:8px 16px;border-radius:999px;font-family:var(--oe-font-sans);font-size:13px;cursor:pointer;transition:.15s}
+  .ab-tab:hover{border-color:var(--oe-orange);color:var(--oe-text)}
+  .ab-tab.active{background:var(--oe-orange);border-color:var(--oe-orange);color:#fff}
+  .ab-panel{display:none}
+  .ab-panel.active{display:block;animation:fadeIn .25s ease}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  .ab-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:16px;margin:20px 0}
+  .ab-card{background:var(--oe-dark-card);border:1px solid var(--oe-dark-border);border-radius:var(--oe-radius-lg);padding:22px}
+  .ab-card h4{font-size:16px;font-weight:700;margin-bottom:8px}
+  .ab-card p{font-size:13px;color:var(--oe-text-dim);line-height:1.65}
+  .ab-card .ab-meta{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--oe-orange);font-weight:600;margin-bottom:6px}
+  .ab-card .ab-link{display:inline-block;margin-top:10px;font-size:12px;color:var(--oe-orange);text-decoration:none}
+  .ab-card .ab-link:hover{text-decoration:underline}
+  .ab-product{border-left:3px solid var(--oe-orange)}
+  .ab-status{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:2px 8px;border-radius:4px;margin-left:8px}
+  .ab-status.live{background:rgba(100,180,100,.15);color:#6BAF7D}
+  .ab-status.announced{background:rgba(100,130,200,.15);color:#8AAFCC}
+  .ab-note{background:var(--oe-dark-soft);border-left:3px solid var(--oe-orange);border-radius:var(--oe-radius);padding:16px 18px;margin:20px 0;font-size:13px;color:var(--oe-text-dim);line-height:1.65}
+  .ab-note strong{color:var(--oe-text)}
+  .ab-chart{background:var(--oe-dark-card);border:1px solid var(--oe-dark-border);border-radius:var(--oe-radius-lg);padding:20px}
+  .ab-chart h4{font-size:15px;margin-bottom:4px}
+  .ab-chart .ab-chart-sub{font-size:12px;color:var(--oe-text-muted);margin-bottom:14px}
+  .ab-chart-wrap{position:relative;height:280px}
+  .ab-kv{width:100%;border-collapse:collapse}
+  .ab-kv td{padding:8px 0;border-bottom:1px solid var(--oe-dark-border);font-size:13px;vertical-align:top}
+  .ab-kv td:first-child{color:var(--oe-text-muted);width:42%}
+  .ab-kv td:last-child{color:var(--oe-text);font-weight:500}
+  .ab-kv tr:last-child td{border-bottom:none}
+  .ab-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .ab-chip{font-size:12px;background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:999px;padding:5px 12px;color:var(--oe-text-dim)}
+  .ab-chip.hot{border-color:var(--oe-orange);color:var(--oe-orange)}
+  .ab-section-title{font-family:var(--oe-font);font-size:26px;font-weight:400;margin:36px 0 6px}
+  .ab-section-sub{font-size:13px;color:var(--oe-text-muted);margin-bottom:18px}
+  .ab-pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+  .ab-timeline .timeline-item .src-link{font-size:12px;color:var(--oe-text-muted)}
+  .ab-timeline .timeline-item .src-link a{color:var(--oe-orange);text-decoration:none}
+  .ab-timeline .timeline-item .src-link a:hover{text-decoration:underline}
+  .ab-research{border-top:2px solid var(--oe-dark-border);padding-top:14px}
+  .ab-research .ab-finding{font-size:13px;color:var(--oe-text);margin:8px 0}
+  .ab-research .ab-caveat{font-size:12px;color:var(--oe-text-muted);font-style:italic}
+  @media(max-width:768px){.ab-tabs{top:0}.ab-chart-wrap{height:240px}}
+</style>
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/publishers">🗞️ Publishers</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/abridge" class="active">🌉 Abridge</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" aria-pressed="false" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Oct 17, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
+
+  <section id="abridge">
+    <div class="container">
+      <h1 class="page-title">Abridge <span class="accent">Tracker</span></h1>
+      <p class="section-sub">Dedicated monitoring of Abridge - the enterprise ambient-AI leader that is converging directly on OpenEvidence's clinical evidence and decision-support territory. News, funding, products, deployments, evidence, and head-to-head competition.</p>
+
+      <div class="stats-grid" style="margin:28px 0 12px;">
+        <div class="stat-card"><div class="value">$5.3B</div><div class="label">Valuation</div><div class="sub">Series E + Apr 2026 extension</div></div>
+        <div class="stat-card"><div class="value">300+</div><div class="label">Health Systems</div><div class="sub">Enterprise deployments</div></div>
+        <div class="stat-card"><div class="value">100M</div><div class="label">Conversations / Year</div><div class="sub">2026 company projection</div></div>
+        <div class="stat-card"><div class="value">250M</div><div class="label">Patients Represented</div><div class="sub">Partner health systems</div></div>
+        <div class="stat-card"><div class="value">$117M</div><div class="label">Contracted ARR</div><div class="sub">Q1 2025 · $200M+ reported 2025</div></div>
+        <div class="stat-card"><div class="value">28+</div><div class="label">Languages</div><div class="sub">50+ specialties</div></div>
+        <div class="stat-card"><div class="value">$775.7M</div><div class="label">VA Contract Ceiling</div><div class="sub">5-year multi-award vehicle</div></div>
+        <div class="stat-card"><div class="value">#1</div><div class="label">Best in KLAS</div><div class="sub">Ambient AI · 2025 & 2026</div></div>
+      </div>
+
+      <div class="ab-tabs" id="abTabs" role="tablist">
+        <button class="ab-tab active" data-tab="overview" onclick="showTab('overview')">Overview</button>
+        <button class="ab-tab" data-tab="news" onclick="showTab('news')">News & Timeline</button>
+        <button class="ab-tab" data-tab="funding" onclick="showTab('funding')">Funding</button>
+        <button class="ab-tab" data-tab="products" onclick="showTab('products')">Products</button>
+        <button class="ab-tab" data-tab="partners" onclick="showTab('partners')">Partners & Customers</button>
+        <button class="ab-tab" data-tab="evidence" onclick="showTab('evidence')">Evidence</button>
+        <button class="ab-tab" data-tab="competition" onclick="showTab('competition')">Competition</button>
+        <button class="ab-tab" data-tab="sources" onclick="showTab('sources')">Sources</button>
+      </div>
+
+      <!-- OVERVIEW -->
+      <div class="ab-panel active" id="panel-overview">
+        <div class="dx-hero" style="margin-top:24px;">
+          <div class="dx-overview">
+            <div class="dx-tagline">Enterprise Ambient AI → Clinician Intelligence Platform</div>
+            <h3>What is Abridge?</h3>
+            <p>Abridge turns the patient-clinician conversation into structured documentation, then reuses that same conversation as context for coding, clinical decision support, payer workflows, and clinical-trial screening. Founded in Pittsburgh in 2018 by cardiologist Shiv Rao, it is the largest pure-play ambient AI company in U.S. healthcare.</p>
+            <p>The strategic shift came in 2026: Abridge stopped describing itself as a scribe and started describing itself as an AI-native clinician intelligence platform. That puts it on OpenEvidence's turf - evidence-grounded answers at the point of care - but with a distribution advantage no evidence startup can match: it already sits inside 300+ health systems and the Epic workflow.</p>
+            <div class="dx-stats">
+              <div class="dx-stat"><span class="v">2018</span><span class="l">Founded · Pittsburgh</span></div>
+              <div class="dx-stat"><span class="v">SF</span><span class="l">HQ · San Francisco</span></div>
+              <div class="dx-stat"><span class="v">639</span><span class="l">Employees (Sep 2026)</span></div>
+              <div class="dx-stat"><span class="v">$5.3B</span><span class="l">Last valuation</span></div>
+            </div>
+          </div>
+          <div class="dx-architecture">
+            <h3>Platform Architecture</h3>
+            <p style="font-size:13px;color:var(--oe-text-dim);margin-bottom:16px;">Six layers, each built on the same clinical conversation data model.</p>
+            <div class="dx-pillars">
+              <div class="dx-pillar"><h4>🎙️ Conversation Capture</h4><p>Ambient listening in 28+ languages across 50+ specialties, with Epic Haiku capture and real-time note drafting.</p></div>
+              <div class="dx-pillar"><h4>🧠 Contextual Reasoning Engine</h4><p>Combines the live conversation with longitudinal chart context so answers are specific to the patient in the room.</p></div>
+              <div class="dx-pillar"><h4>🔗 Linked Evidence</h4><p>Maps generated documentation and answers back to source text and licensed literature for auditability.</p></div>
+              <div class="dx-pillar"><h4>📚 Licensed Evidence</h4><p>UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, and JCO content inside the documentation workflow.</p></div>
+              <div class="dx-pillar"><h4>💳 Revenue Cycle</h4><p>Coding, CDI, pre-bill DRG review, and Availity-connected prior authorization built on the same encounter record.</p></div>
+              <div class="dx-pillar"><h4>🧪 Life Sciences</h4><p>Eli Lilly-backed trial eligibility and screening surfaced from the clinical conversation at the point of care.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="ab-section-title">Strategic Read</h3>
+        <p class="ab-section-sub">Why a documentation company is now a direct competitive signal for OpenEvidence.</p>
+        <div class="ab-grid">
+          <div class="ab-card"><div class="ab-meta">Convergence</div><h4>Same evidence, different front door</h4><p>Abridge now licenses the same NEJM and JAMA content that anchors OpenEvidence, adds UpToDate, and surfaces cited answers inside the note. The evidence moat is becoming a commodity input; workflow position is the differentiator.</p></div>
+          <div class="ab-card"><div class="ab-meta">Distribution</div><h4>300+ systems already installed</h4><p>Abridge does not need to win a new budget line to reach clinicians. Decision support is an upsell inside an existing enterprise contract. OpenEvidence's counter is breadth of evidence, benchmark performance, and free verified-clinician access.</p></div>
+          <div class="ab-card"><div class="ab-meta">Economics</div><h4>Enterprise SaaS vs. free + pharma</h4><p>Abridge charges health systems per clinician (reported $2,500-$7,200+/year). OpenEvidence is free to verified clinicians and monetizes through pharma advertising. The models create different incentives around evidence neutrality and reach.</p></div>
+          <div class="ab-card"><div class="ab-meta">Moat risk</div><h4>Epic is both partner and predator</h4><p>Abridge's deepest advantage - Epic-native capture and drafting - is also its largest risk as Epic ships native AI charting. Abridge's response is to move upstream into evidence, payment, and research where Epic is less positioned.</p></div>
+          <div class="ab-card"><div class="ab-meta">Evidence gap</div><h4>Operational proof, thin clinical proof</h4><p>Abridge has strong KLAS and time-savings evidence, but no public clinical-accuracy benchmark comparable to NOHARM or MedSafe-Dx. Its hallucination methodology is vendor-authored. Independent head-to-head clinical evaluation is the missing layer.</p></div>
+          <div class="ab-card"><div class="ab-meta">What to watch</div><h4>Four catalysts through 2027</h4><p>(1) Launch of the NVIDIA clinical-conversation foundation model; (2) VA task-order volume; (3) Epic native AI charting pricing; (4) whether Abridge publishes independent CDS accuracy results or acquires an evidence/benchmark asset.</p></div>
+        </div>
+
+        <h3 class="ab-section-title">Company Snapshot</h3>
+        <div class="ab-grid">
+          <div class="ab-card">
+            <table class="ab-kv">
+              <tr><td>Founded</td><td>2018 · Pittsburgh Health Data Alliance</td></tr>
+              <tr><td>Founders</td><td>Shiv Rao, MD; Sandeep Konam; Florian Metze</td></tr>
+              <tr><td>CEO</td><td>Shivdev (Shiv) Rao, MD</td></tr>
+              <tr><td>Headquarters</td><td>San Francisco, California</td></tr>
+              <tr><td>Category</td><td>Ambient AI · clinician intelligence · revenue cycle</td></tr>
+              <tr><td>Business model</td><td>Enterprise SaaS per clinician</td></tr>
+              <tr><td>Employees</td><td>~639 (Sep 2026)</td></tr>
+              <tr><td>Recognition</td><td>Best in KLAS 2025 & 2026; Fast Company Most Innovative 2026; TIME Best Inventions 2024 & 2025</td></tr>
+            </table>
+          </div>
+          <div class="ab-card">
+            <h4>Key Investors</h4>
+            <div class="ab-chips">
+              <span class="ab-chip hot">Andreessen Horowitz</span>
+              <span class="ab-chip">Khosla Ventures</span>
+              <span class="ab-chip">Lightspeed</span>
+              <span class="ab-chip">Elad Gil</span>
+              <span class="ab-chip">CVS Health Ventures</span>
+              <span class="ab-chip">NVIDIA NVentures</span>
+              <span class="ab-chip hot">Eli Lilly</span>
+              <span class="ab-chip">Bessemer</span>
+              <span class="ab-chip">Spark Capital</span>
+              <span class="ab-chip">Union Square Ventures</span>
+              <span class="ab-chip">Pillar VC</span>
+            </div>
+            <h4 style="margin-top:22px;">Latest Headlines</h4>
+            <div id="abLatest" style="margin-top:8px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEWS -->
+      <div class="ab-panel" id="panel-news">
+        <h3 class="ab-section-title">Abridge News & Milestones</h3>
+        <p class="ab-section-sub">Chronological tracker of product launches, enterprise deals, funding, research, and competitive events. Newest first.</p>
+        <div class="filters" id="abNewsFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Product">Product</button>
+          <button class="filter-btn" data-filter="Partnership">Partnership</button>
+          <button class="filter-btn" data-filter="Funding">Funding</button>
+          <button class="filter-btn" data-filter="Research">Research</button>
+          <button class="filter-btn" data-filter="Milestone">Milestone</button>
+          <button class="filter-btn" data-filter="Competitor">Competition</button>
+          <button class="filter-btn" data-filter="Company">Company</button>
+        </div>
+        <div class="timeline ab-timeline" id="abNewsList"></div>
+      </div>
+
+      <!-- FUNDING -->
+      <div class="ab-panel" id="panel-funding">
+        <h3 class="ab-section-title">Funding & Valuation</h3>
+        <p class="ab-section-sub">From $850M in Feb 2024 to $5.3B in Jun 2025, then a flat-price extension in Apr 2026.</p>
+        <div class="charts-grid" style="margin:20px 0;">
+          <div class="ab-chart">
+            <h4>Valuation Trajectory ($B)</h4>
+            <div class="ab-chart-sub">6.2x from Series C to Series E, then flat</div>
+            <div class="ab-chart-wrap"><canvas id="abChartValuation"></canvas></div>
+          </div>
+          <div class="ab-chart">
+            <h4>Cumulative Funding ($M)</h4>
+            <div class="ab-chart-sub">Known priced rounds; excludes early seed/Series A/B</div>
+            <div class="ab-chart-wrap"><canvas id="abChartFunding"></canvas></div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="dx-comparison">
+            <thead><tr><th>Round</th><th>Date</th><th>Amount</th><th>Valuation</th><th>Lead / Notable</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Series C</strong></td><td>Feb 2024</td><td>$150M</td><td>$850M</td><td>Lightspeed</td></tr>
+              <tr><td><strong>Series D</strong></td><td>Feb 2025</td><td>$250M</td><td>$2.75B</td><td>Elad Gil; CVS Health Ventures</td></tr>
+              <tr><td><strong>Series E</strong></td><td>Jun 2025</td><td>$300M</td><td>$5.3B</td><td>a16z; Khosla Ventures</td></tr>
+              <tr><td><strong>Series E extension</strong></td><td>Apr 2026</td><td>$316M</td><td>$5.3B</td><td>Reported; price unchanged</td></tr>
+              <tr><td><strong>Strategic</strong></td><td>Jun 2026</td><td>Undisclosed</td><td>—</td><td>Eli Lilly; NVIDIA NVentures already an investor</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="ab-note"><strong>Reported total raised:</strong> roughly $830M to $1.07B depending on how the Series E extension and earlier rounds are counted. Abridge's own materials have cited ~$830M as of May 2026, while other trackers compute ~$1.0B+. Treat any single "total raised" figure as source-dependent.</div>
+        <h3 class="ab-section-title">What the Capital Is For</h3>
+        <div class="ab-grid">
+          <div class="ab-card"><h4>🧠 Foundation model</h4><p>Co-developing a clinical-conversation foundation model with NVIDIA, trained on de-identified encounters rather than adapting a general LLM.</p></div>
+          <div class="ab-card"><h4>💳 Downstream workflows</h4><p>Moving from documentation into coding, CDI, DRG review, prior authorization, and payer adjudication - higher revenue per encounter.</p></div>
+          <div class="ab-card"><h4>🧪 Life sciences</h4><p>Eli Lilly's strategic investment supports trial eligibility and screening from the clinical conversation, opening a pharma revenue line.</p></div>
+        </div>
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="ab-panel" id="panel-products">
+        <h3 class="ab-section-title">Product Surface</h3>
+        <p class="ab-section-sub">What Abridge sells today, what it has announced, and where it overlaps with OpenEvidence.</p>
+        <div class="ab-grid" id="abProducts"></div>
+        <div class="ab-note"><strong>Overlap with OpenEvidence:</strong> Context-Aware Clinical Decision Support and the Clinician Intelligence Agent are direct substitutes at the point of care. Abridge differentiates on chart + conversation context and enterprise distribution; OpenEvidence differentiates on evidence breadth, benchmark transparency, and free verified-clinician access.</div>
+      </div>
+
+      <!-- PARTNERS -->
+      <div class="ab-panel" id="panel-partners">
+        <h3 class="ab-section-title">Partners, Customers & Investors</h3>
+        <p class="ab-section-sub">Enterprise health systems, content and technology partners, and capital partners.</p>
+        <div class="ab-pill-row" id="abPartnerFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Health system">Health systems</button>
+          <button class="filter-btn" data-filter="Content">Content</button>
+          <button class="filter-btn" data-filter="Technology">Technology</button>
+          <button class="filter-btn" data-filter="Investor">Investors</button>
+          <button class="filter-btn" data-filter="Government">Government</button>
+        </div>
+        <div class="ab-grid" id="abPartners"></div>
+      </div>
+
+      <!-- EVIDENCE -->
+      <div class="ab-panel" id="panel-evidence">
+        <h3 class="ab-section-title">Evidence & Evaluation</h3>
+        <p class="ab-section-sub">Independent studies, KLAS evaluations, and vendor methodology. Read the caveats - this is where Abridge is thinnest relative to its valuation.</p>
+        <div class="ab-note"><strong>Bottom line:</strong> Abridge has strong evidence for time savings, burnout reduction, and customer satisfaction. It does not have a public, independently run clinical-accuracy benchmark comparable to NOHARM, MedSafe-Dx, or the SCT. For a platform now surfacing clinical answers, that is the key evidence gap to watch.</div>
+        <div class="ab-grid" id="abResearch"></div>
+      </div>
+
+      <!-- COMPETITION -->
+      <div class="ab-panel" id="panel-competition">
+        <h3 class="ab-section-title">Competitive Landscape</h3>
+        <p class="ab-section-sub">Abridge sits at the intersection of ambient documentation and clinical decision support. It competes with different companies on each axis.</p>
+        <div class="table-wrap">
+          <table class="dx-comparison">
+            <thead><tr><th>Dimension</th><th class="col-oe">OpenEvidence</th><th class="col-dx">Abridge</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Core wedge</strong></td><td class="col-oe">Evidence retrieval and clinical decision support</td><td class="col-dx">Ambient documentation → clinician intelligence</td></tr>
+              <tr><td><strong>Primary buyer</strong></td><td class="col-oe">Individual verified clinicians; health systems</td><td class="col-dx">Enterprise health systems and CDI/revenue cycle</td></tr>
+              <tr><td><strong>Pricing</strong></td><td class="col-oe">Free to verified clinicians; pharma advertising</td><td class="col-dx">Enterprise SaaS per clinician</td></tr>
+              <tr><td><strong>Evidence library</strong></td><td class="col-oe">30+ journals/societies; NEJM, JAMA, NCCN, Cochrane</td><td class="col-dx">UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO</td></tr>
+              <tr><td><strong>Citations</strong></td><td class="col-oe">Deterministic, source-linked</td><td class="col-dx">Linked Evidence to source text and licensed content</td></tr>
+              <tr><td><strong>Distribution</strong></td><td class="col-oe">Direct + EHR partnerships; 900K+ registered</td><td class="col-dx">300+ health systems; Epic-native; VA contract</td></tr>
+              <tr><td><strong>Clinical benchmarks</strong></td><td class="col-oe">Public results: MedQA, MedXpertQA, HealthBench, NOHARM</td><td class="col-dx">KLAS + operational studies; no public accuracy benchmark</td></tr>
+              <tr><td><strong>Global reach</strong></td><td class="col-oe">US + ~100 low/middle-income countries via Anthropic</td><td class="col-dx">US-first; 28+ languages inside US systems</td></tr>
+              <tr><td><strong>Key risk</strong></td><td class="col-oe">Commoditization of evidence access; enterprise CDS bundling</td><td class="col-dx">Epic native AI; evidence quality proof; enterprise concentration</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 class="ab-section-title">Other Competitors</h3>
+        <div class="ab-grid">
+          <div class="ab-card"><div class="ab-meta">Closest ambient rival</div><h4>Ambience Healthcare</h4><p>Full-cycle documentation, CDI, and coding with strong specialty depth. Raised a $243M Series C at a $1.25B valuation. Competes with Abridge for the same enterprise budget; less evidence-layer ambition.</p></div>
+          <div class="ab-card"><div class="ab-meta">Incumbent</div><h4>Microsoft Dragon Copilot (Nuance DAX)</h4><p>Largest installed base in enterprise IDNs and deep Microsoft distribution. Slower product velocity and less startup-style clinician love, but unmatched compliance and procurement reach.</p></div>
+          <div class="ab-card"><div class="ab-meta">Mid-market</div><h4>Suki AI</h4><p>Voice-command productivity layer for individual clinicians and mid-market groups. Launched Suki Ask with UpToDate content in Oct 2026 - the same scribe-to-CDS convergence, at smaller scale.</p></div>
+          <div class="ab-card"><div class="ab-meta">Platform threat</div><h4>Epic native AI charting</h4><p>Epic's own AI charting leverages the full longitudinal record and eliminates a third-party integration layer. If priced aggressively, it compresses the entire standalone scribe category.</p></div>
+          <div class="ab-card"><div class="ab-meta">Evidence incumbent</div><h4>UpToDate / Wolters Kluwer</h4><p>Supplies content to Abridge, OpenEvidence competitors, and Suki simultaneously. Its willingness to license broadly is what makes evidence a commodity input rather than a durable moat.</p></div>
+          <div class="ab-card"><div class="ab-meta">Adjacent</div><h4>Heidi Health / Nabla / DeepScribe</h4><p>Smaller ambient players differentiated by geography, specialty, or price. Heidi's $340M package and Heidi Evidence show the same convergence pressure outside the U.S. enterprise tier.</p></div>
+        </div>
+      </div>
+
+      <!-- SOURCES -->
+      <div class="ab-panel" id="panel-sources">
+        <h3 class="ab-section-title">Source Index</h3>
+        <p class="ab-section-sub">Every source used on this page. Company claims are labeled as such; independent evaluations are flagged in the Evidence tab.</p>
+        <div class="source-list" id="abSources"></div>
+      </div>
+
+      <p style="margin:36px 0 8px;font-size:12px;color:var(--oe-text-muted);">Independent tracker. Not affiliated with Abridge. Figures are company-reported unless otherwise noted. Last updated October 17, 2026.</p>
+    </div>
+  </section>
+</div>
+
+<script src="/shared.js"></script>
+<script src="/data/whatsNew.js"></script>
+<script src="/data/abridgeTimeline.js"></script>
+<script src="/data/abridgeProducts.js"></script>
+<script src="/data/abridgePartners.js"></script>
+<script src="/data/abridgeResearch.js"></script>
+<script src="/data/abridgeSources.js"></script>
+<script>
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function showTab(name){
+  document.querySelectorAll('.ab-panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.ab-tab').forEach(function(t){t.classList.toggle('active',t.getAttribute('data-tab')===name);});
+  var panel=document.getElementById('panel-'+name);
+  if(panel) panel.classList.add('active');
+  if(history.replaceState) history.replaceState(null,'','#'+name);
+  if(name==='funding' && typeof buildPageCharts==='function') buildPageCharts();
+}
+
+function renderAbNews(filter){
+  var el=document.getElementById('abNewsList');
+  if(!el||typeof abridgeTimelineData==='undefined') return;
+  var list=filter==='all'?abridgeTimelineData:abridgeTimelineData.filter(function(d){return d.cat===filter;});
+  var sorted=list.slice().sort(function(a,b){return new Date(b.date)-new Date(a.date);});
+  el.innerHTML=sorted.map(function(d,i){
+    return '<div class="timeline-item" style="animation-delay:'+(i*0.02)+'s">'
+      +'<div class="date">'+esc(d.date)+(d.new?' <span class="new-badge">NEW</span>':'')+'</div>'
+      +'<div><span class="category-tag cat-'+esc(d.cat)+'">'+esc(d.cat)+'</span></div>'
+      +'<div class="title">'+esc(d.title)+'</div>'
+      +'<div class="desc">'+esc(d.desc)+'</div>'
+      +'<div class="src-link"><a href="'+esc(d.url)+'" target="_blank" rel="noopener">'+esc(d.src)+' →</a></div>'
+      +'</div>';
+  }).join('');
+}
+
+function partnerGroup(p){
+  var t=(p.type||'').toLowerCase();
+  if(t.indexOf('health system')>=0||t.indexOf('pediatric')>=0||t.indexOf('reported customers')>=0) return 'Health system';
+  if(t.indexOf('investor')>=0) return 'Investor';
+  if(t.indexOf('federal')>=0||t.indexOf('government')>=0) return 'Government';
+  if(t.indexOf('content')>=0||t.indexOf('clinical guidance')>=0) return 'Content';
+  return 'Technology';
+}
+
+function renderPartners(filter){
+  var el=document.getElementById('abPartners');
+  if(!el||typeof abridgePartnersData==='undefined') return;
+  var list=filter==='all'?abridgePartnersData:abridgePartnersData.filter(function(p){return partnerGroup(p)===filter;});
+  el.innerHTML=list.map(function(p){
+    return '<div class="ab-card">'
+      +'<div class="ab-meta">'+esc(partnerGroup(p))+'</div>'
+      +'<h4>'+esc(p.name)+(p.new?' <span class="new-badge">NEW</span>':'')+'</h4>'
+      +'<p>'+esc(p.type)+'</p>'
+      +'<div style="font-size:12px;color:var(--oe-text-muted);margin-top:8px;">'+esc(p.date)+'</div>'
+      +'<a class="ab-link" href="'+esc(p.url)+'" target="_blank" rel="noopener">Source →</a>'
+      +'</div>';
+  }).join('');
+}
+
+window.addEventListener('load',function(){
+  try{
+    renderAbNews('all');
+    var latest=document.getElementById('abLatest');
+    if(latest){
+      latest.innerHTML=abridgeTimelineData.slice(0,4).map(function(d){
+        return '<div style="padding:10px 0;border-bottom:1px solid var(--oe-dark-border);">'
+          +'<div style="font-size:11px;color:var(--oe-orange);font-weight:600;">'+esc(d.date)+'</div>'
+          +'<a href="#news" onclick="showTab(\'news\')" style="font-size:13px;color:var(--oe-text);text-decoration:none;">'+esc(d.title)+'</a>'
+          +'</div>';
+      }).join('');
+    }
+    document.getElementById('abProducts').innerHTML=abridgeProductsData.map(function(p){
+      return '<div class="ab-card ab-product">'
+        +'<div class="ab-meta">'+esc(p.date)+'</div>'
+        +'<h4>'+esc(p.name)+'<span class="ab-status '+esc(p.status)+'">'+esc(p.status)+'</span></h4>'
+        +'<p>'+esc(p.desc)+'</p>'
+        +'<a class="ab-link" href="'+esc(p.url)+'" target="_blank" rel="noopener">Source →</a>'
+        +'</div>';
+    }).join('');
+    document.getElementById('abResearch').innerHTML=abridgeResearchData.map(function(r){
+      return '<div class="ab-card ab-research">'
+        +'<div class="ab-meta">'+esc(r.type)+' · '+esc(r.date)+'</div>'
+        +'<h4>'+esc(r.title)+'</h4>'
+        +'<p class="ab-finding">'+esc(r.finding)+'</p>'
+        +'<p class="ab-caveat">Caveat: '+esc(r.caveat)+'</p>'
+        +'<a class="ab-link" href="'+esc(r.url)+'" target="_blank" rel="noopener">Read source →</a>'
+        +'</div>';
+    }).join('');
+    document.getElementById('abSources').innerHTML=abridgeSourcesData.map(function(s){
+      return '<div class="source-item"><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a><div class="name">'+esc(s.url)+'</div></div>';
+    }).join('');
+    renderPartners('all');
+    var hash=(location.hash||'').replace('#','');
+    if(hash && document.getElementById('panel-'+hash)) showTab(hash);
+  }catch(e){console.error('[ABRIDGE] render failed:',e.message);}
+});
+
+document.querySelectorAll('#abNewsFilters .filter-btn').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('#abNewsFilters .filter-btn').forEach(function(x){x.classList.remove('active');});
+    b.classList.add('active');
+    renderAbNews(b.getAttribute('data-filter'));
+  });
+});
+document.querySelectorAll('#abPartnerFilters .filter-btn').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('#abPartnerFilters .filter-btn').forEach(function(x){x.classList.remove('active');});
+    b.classList.add('active');
+    renderPartners(b.getAttribute('data-filter'));
+  });
+});
+
+function buildPageCharts(){
+  if(typeof charts!=='undefined'){charts.forEach(function(c){try{c.destroy();}catch(e){}});charts=[];}
+  try{
+    charts.push(makeChart('abChartValuation',['Feb 2024','Feb 2025','Jun 2025','Apr 2026'],[0.85,2.75,5.3,5.3],'Valuation ($B)'));
+  }catch(e){console.error('[ABRIDGE] valuation chart failed:',e.message);}
+  try{
+    charts.push(makeChart('abChartFunding',['Series C\nFeb 2024','Series D\nFeb 2025','Series E\nJun 2025','Extension\nApr 2026'],[150,400,700,1016],'Cumulative Funding ($M)'));
+  }catch(e){console.error('[ABRIDGE] funding chart failed:',e.message);}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,679 @@
+{
+  "company": {
+    "name": "Abridge",
+    "founded": 2018,
+    "founders": [
+      "Shiv Rao, MD",
+      "Sandeep Konam",
+      "Florian Metze"
+    ],
+    "headquarters": "San Francisco, CA (founded Pittsburgh, PA)",
+    "ceo": "Shivdev Rao, MD",
+    "category": "Ambient AI documentation and clinician intelligence",
+    "business_model": "Enterprise SaaS per clinician",
+    "employees": "~639 (Sep 2026)",
+    "valuation": "$5.3B (Jun 2025; Apr 2026 extension at same price)",
+    "total_funding_reported": "~$830M-$1.07B (source-dependent)",
+    "recognition": [
+      "Best in KLAS Ambient AI 2025",
+      "Best in KLAS Ambient AI 2026",
+      "Fast Company Most Innovative Companies 2026"
+    ]
+  },
+  "stats": {
+    "health_systems": "300+",
+    "conversations_per_year": "100M+",
+    "patients_represented": "250M+",
+    "contracted_arr_q1_2025": "$117M",
+    "reported_contracted_arr_2025": "$200M+",
+    "languages": "28+",
+    "specialties": "50+",
+    "va_contract_ceiling": "$775.72M over 5 years"
+  },
+  "funding": [
+    {
+      "round": "Series C",
+      "date": "2024-02",
+      "amount_musd": 150,
+      "valuation_musd": 850,
+      "lead": "Lightspeed"
+    },
+    {
+      "round": "Series D",
+      "date": "2025-02",
+      "amount_musd": 250,
+      "valuation_musd": 2750,
+      "lead": "Elad Gil"
+    },
+    {
+      "round": "Series E",
+      "date": "2025-06",
+      "amount_musd": 300,
+      "valuation_musd": 5300,
+      "lead": "Andreessen Horowitz"
+    },
+    {
+      "round": "Series E extension",
+      "date": "2026-04",
+      "amount_musd": 316,
+      "valuation_musd": 5300,
+      "lead": "Reported; price unchanged"
+    },
+    {
+      "round": "Strategic",
+      "date": "2026-06",
+      "amount_musd": null,
+      "valuation_musd": null,
+      "lead": "Eli Lilly"
+    }
+  ],
+  "products": [
+    {
+      "name": "Ambient Documentation",
+      "status": "live",
+      "date": "Core product",
+      "desc": "Listens to the patient-clinician conversation and drafts structured, specialty-aware notes into the EHR in real time. Supports 28+ languages and 50+ specialties, with Epic Haiku capture and Hyperdrive drafting. Linked Evidence maps generated statements back to source text for auditability.",
+      "url": "https://www.abridge.com/platform/clinicians"
+    },
+    {
+      "name": "Context-Aware Clinical Decision Support",
+      "status": "live",
+      "date": "Launched Apr 2026",
+      "desc": "Answers clinical questions inside the documentation workflow using the patient conversation plus chart context. Responses are grounded in licensed evidence from UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, and JCO, with citations back to source. Runs on Abridge's Contextual Reasoning Engine; patient data is not used for training.",
+      "url": "https://www.abridge.com/cds"
+    },
+    {
+      "name": "Clinician Intelligence Agent",
+      "status": "live",
+      "date": "Enterprise-wide Aug 17, 2026",
+      "desc": "Extends context-aware decision support to every clinician at a partner health system, regardless of how they document. Delivered through the existing EHR workflow or a new mobile and web app, connected to the patient chart as a single organizational deployment rather than clinician-by-clinician seat expansion.",
+      "url": "https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners"
+    },
+    {
+      "name": "Pre-Bill Review",
+      "status": "live",
+      "date": "Sep 14, 2026",
+      "desc": "First mid-revenue-cycle product. Reconciles coded diagnoses and DRGs against the documented clinical conversation before claim submission, giving CDI, coding, and revenue cycle teams an evidence trail for inpatient claims. Targets documentation-integrity denials and rework.",
+      "url": "https://www.abridge.com/press-release/pre-bill-review-for-cdi-and-coding-teams"
+    },
+    {
+      "name": "Revenue Cycle & Prior Authorization",
+      "status": "live",
+      "date": "2026",
+      "desc": "Coding, CDI, and payer connectivity built on the same conversation data model. The Availity collaboration connects Abridge documentation to AI-assisted prior authorization and payer adjudication. Eli Lilly and health-system partners are the anchor design customers for downstream payment workflows.",
+      "url": "https://www.abridge.com/press-release/abridge-becomes-epics-first-pal-bringing-generative-ai-to-more-providers-and-patients"
+    },
+    {
+      "name": "Life Sciences / Trial Screening",
+      "status": "announced",
+      "date": "Jun 11, 2026",
+      "desc": "Uses the clinical conversation to surface potential clinical-trial eligibility and screening pathways at the point of care. Eli Lilly made a strategic investment and is the marquee partner; Abridge frames the module as connecting care delivery to research access without a separate screening app.",
+      "url": "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/"
+    },
+    {
+      "name": "Ambient AI for Nursing",
+      "status": "live",
+      "date": "KLAS First Look Apr 2026",
+      "desc": "Captures conversational care and converts it into EHR flowsheets for nursing documentation. KLAS awarded a 94.3 early performance score, citing reduced nursing workflow burden and more complete charting. Expands Abridge beyond physician notes into team-based documentation.",
+      "url": "https://klasresearch.com/report/abridge-ambient-ai-for-nursing-2026-reducing-nursing-workflow-burden-through-ambient-ai-documentation/3998"
+    },
+    {
+      "name": "Abridge Inside for Inpatient",
+      "status": "live",
+      "date": "2025-2026",
+      "desc": "Inpatient deployment model with UPMC committed to scale Abridge to 12,000+ clinicians across 40+ hospitals. Extends the ambulatory-first product into hospital medicine, where note complexity and DRG linkage are higher.",
+      "url": "https://sacra.com/c/abridge/"
+    },
+    {
+      "name": "Clinical-Conversation Foundation Model (with NVIDIA)",
+      "status": "announced",
+      "date": "Jun 11, 2026",
+      "desc": "Abridge and NVIDIA are co-developing a foundation model trained on de-identified clinical conversations using the NVIDIA Nemotron family, rather than adapting a general-purpose LLM. The model is expected to launch later in 2026 and run exclusively inside Abridge's platform for documentation and decision support.",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote"
+    },
+    {
+      "name": "Epic Integration / Abridge Inside",
+      "status": "live",
+      "date": "2019-2026",
+      "desc": "Abridge was the first Pal in Epic's Partners and Pals program. Capture runs in Epic Haiku, drafting in Hyperdrive, with co-development through Epic Workshop. The depth of this integration is both Abridge's strongest distribution moat and its largest strategic risk as Epic builds native AI charting.",
+      "url": "https://www.abridge.com/press-release/abridge-becomes-epics-first-pal-bringing-generative-ai-to-more-providers-and-patients"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Kaiser Permanente",
+      "type": "Health system · enterprise ambient AI",
+      "date": "2024-2026",
+      "url": "https://www.abridge.com/",
+      "new": false
+    },
+    {
+      "name": "Mayo Clinic",
+      "type": "Health system · enterprise deployment",
+      "date": "2024-2026",
+      "url": "https://www.abridge.com/",
+      "new": false
+    },
+    {
+      "name": "Johns Hopkins Medicine",
+      "type": "Health system · enterprise deployment",
+      "date": "2024-2026",
+      "url": "https://www.abridge.com/",
+      "new": false
+    },
+    {
+      "name": "Duke Health",
+      "type": "Health system · enterprise deployment",
+      "date": "2025-2026",
+      "url": "https://www.abridge.com/",
+      "new": false
+    },
+    {
+      "name": "Emory Healthcare",
+      "type": "Health system · enterprise deployment",
+      "date": "2025-2026",
+      "url": "https://www.abridge.com/",
+      "new": false
+    },
+    {
+      "name": "Yale New Haven Health",
+      "type": "Health system · enterprise deployment",
+      "date": "2025-2026",
+      "url": "https://www.abridge.com/",
+      "new": false
+    },
+    {
+      "name": "Sutter Health",
+      "type": "Health system · enterprise deployment",
+      "date": "2025-2026",
+      "url": "https://www.abridge.com/",
+      "new": false
+    },
+    {
+      "name": "UPMC",
+      "type": "Health system · Abridge Inside for Inpatient",
+      "date": "2025-2026",
+      "url": "https://sacra.com/c/abridge/",
+      "new": false
+    },
+    {
+      "name": "Northwestern Medicine",
+      "type": "Health system · platform launch partner",
+      "date": "Jun 11, 2026",
+      "url": "https://hlth.com/insights/news/abridge-launches-ai-powered-clinician-intelligence-platform-in-northwestern-medicine-deployment",
+      "new": true
+    },
+    {
+      "name": "University of Texas System (UT REAL Health AI)",
+      "type": "8 health institutions · enterprise-wide framework",
+      "date": "Oct 8, 2026",
+      "url": "https://www.abridge.com/press-release/ut-health-enterprise-wide",
+      "new": true
+    },
+    {
+      "name": "U.S. Department of Veterans Affairs",
+      "type": "Federal · $775.72M multi-award enterprise contract",
+      "date": "Sep 22, 2026",
+      "url": "https://www.abridge.com/press-release/va-enterprise-contract",
+      "new": true
+    },
+    {
+      "name": "Seattle Children's",
+      "type": "Pediatric health system · enterprise",
+      "date": "Sep 2025",
+      "url": "https://www.mobihealthnews.com/",
+      "new": false
+    },
+    {
+      "name": "HCA Healthcare / Tenet Healthcare",
+      "type": "Reported customers (2026)",
+      "date": "2026",
+      "url": "https://multiples.vc/private-comps/abridge",
+      "new": false
+    },
+    {
+      "name": "Epic Systems",
+      "type": "EHR · Partners and Pals, Workshop co-development",
+      "date": "2019-2026",
+      "url": "https://www.abridge.com/press-release/abridge-becomes-epics-first-pal-bringing-generative-ai-to-more-providers-and-patients",
+      "new": false
+    },
+    {
+      "name": "NVIDIA",
+      "type": "Foundation model · NVentures investor",
+      "date": "Jun 11, 2026",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": true
+    },
+    {
+      "name": "Eli Lilly",
+      "type": "Strategic investor · life sciences / trial screening",
+      "date": "Jun 11, 2026",
+      "url": "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/",
+      "new": true
+    },
+    {
+      "name": "Artisight",
+      "type": "Smart-hospital computer vision integration",
+      "date": "Jun 11, 2026",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": true
+    },
+    {
+      "name": "Hellocare",
+      "type": "Virtual care integration",
+      "date": "Jun 11, 2026",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": true
+    },
+    {
+      "name": "Availity",
+      "type": "Payer connectivity · prior authorization",
+      "date": "Jan 2026",
+      "url": "https://www.abridge.com/press",
+      "new": false
+    },
+    {
+      "name": "Wolters Kluwer UpToDate",
+      "type": "Clinical decision support content",
+      "date": "Apr 2026",
+      "url": "https://www.abridge.com/press-release/abridge-integrates-nejm-jama",
+      "new": false
+    },
+    {
+      "name": "NEJM Group",
+      "type": "Content · New England Journal of Medicine",
+      "date": "Apr 15, 2026",
+      "url": "https://www.abridge.com/press-release/abridge-integrates-nejm-jama",
+      "new": true
+    },
+    {
+      "name": "JAMA Network / AMA",
+      "type": "Content · JAMA + 11 specialty journals + Network Open",
+      "date": "Apr 15, 2026",
+      "url": "https://www.abridge.com/press-release/abridge-integrates-nejm-jama",
+      "new": true
+    },
+    {
+      "name": "American Diabetes Association",
+      "type": "Clinical guidance content",
+      "date": "Jun 11, 2026",
+      "url": "https://www.healthcaredive.com/news/abridge-nvidia-eli-lilly-investment-ai-platform-expansion/822783/",
+      "new": false
+    },
+    {
+      "name": "American Academy of Family Physicians",
+      "type": "Clinical guidance content",
+      "date": "Jun 11, 2026",
+      "url": "https://www.healthcaredive.com/news/abridge-nvidia-eli-lilly-investment-ai-platform-expansion/822783/",
+      "new": false
+    },
+    {
+      "name": "Neurology (AAN journal)",
+      "type": "Clinical guidance content",
+      "date": "Jun 11, 2026",
+      "url": "https://www.healthcaredive.com/news/abridge-nvidia-eli-lilly-investment-ai-platform-expansion/822783/",
+      "new": false
+    },
+    {
+      "name": "Journal of Clinical Oncology",
+      "type": "Clinical guidance content",
+      "date": "Jun 11, 2026",
+      "url": "https://www.healthcaredive.com/news/abridge-nvidia-eli-lilly-investment-ai-platform-expansion/822783/",
+      "new": false
+    },
+    {
+      "name": "Andreessen Horowitz (a16z)",
+      "type": "Lead investor · Series E",
+      "date": "Jun 2025",
+      "url": "https://www.abridge.com/blog/series-e",
+      "new": false
+    },
+    {
+      "name": "Khosla Ventures",
+      "type": "Investor · Series E",
+      "date": "Jun 2025",
+      "url": "https://www.abridge.com/blog/series-e",
+      "new": false
+    },
+    {
+      "name": "Lightspeed Venture Partners",
+      "type": "Investor · Series C/D",
+      "date": "2024-2025",
+      "url": "https://sacra.com/c/abridge/",
+      "new": false
+    },
+    {
+      "name": "Elad Gil",
+      "type": "Lead investor · Series D",
+      "date": "Feb 2025",
+      "url": "https://fortune.com/2025/02/17/abridge-ai-founder-ceo-shiv-rao-practicing-doctor-profile-250-million-funding/",
+      "new": false
+    },
+    {
+      "name": "CVS Health Ventures",
+      "type": "Investor",
+      "date": "2025",
+      "url": "https://sacra.com/c/abridge/",
+      "new": false
+    }
+  ],
+  "research": [
+    {
+      "title": "KLAS Ambient AI 2026: A High-Performing Market Shifts",
+      "type": "Market evaluation",
+      "date": "2026",
+      "finding": "Abridge, Ambience, and Suki lead on innovation as broader capabilities become table stakes. KLAS reports that Abridge leads in buying decisions as EHR-native competitors enter the category.",
+      "caveat": "KLAS scores reflect customer feedback and are not a clinical-outcome trial.",
+      "url": "https://klasresearch.com/report/ambient-ai-2026-a-high-performing-market-shifts-as-ehr-native-tools-adjust-long-term-strategies/3982"
+    },
+    {
+      "title": "KLAS First Look: Abridge Ambient AI for Nursing",
+      "type": "Early performance evaluation",
+      "date": "Apr 2026",
+      "finding": "Overall early performance score of 94.3/100. Reviewers cite reduced nursing workflow burden and more complete flowsheet documentation from conversational care capture.",
+      "caveat": "First Look reports are early, small-sample evaluations, not peer-reviewed trials.",
+      "url": "https://klasresearch.com/report/abridge-ambient-ai-for-nursing-2026-reducing-nursing-workflow-burden-through-ambient-ai-documentation/3998"
+    },
+    {
+      "title": "JAMA: Ambient Scribes and EHR Time Across Five Academic Medical Centers",
+      "type": "Peer-reviewed observational study",
+      "date": "2026",
+      "finding": "AI-powered ambient scribes modestly reduced total EHR time by 13.4 minutes and documentation time by 16.0 minutes per encounter across five academic medical centers.",
+      "caveat": "Multi-vendor study (Ambience, Nuance DAX, others); not Abridge-specific. Effect size is modest relative to total documentation burden.",
+      "url": "https://www.aha.org/aha-center-health-innovation-market-scan/2026-04-14-6-health-systems-enhancing-care-delivery-ambient-ai-scribes"
+    },
+    {
+      "title": "JAMA Network Open: Ambient AI Scribes and Physician Burnout",
+      "type": "Peer-reviewed quality improvement study",
+      "date": "2026",
+      "finding": "Among 263 physicians across six U.S. health systems, ambient AI scribe use was associated with a dramatic reduction in burnout after one month. Benefits clustered around cognitive burden and after-hours documentation.",
+      "caveat": "Quality-improvement design without randomization; self-reported burnout outcomes.",
+      "url": "https://medicine.yale.edu/news-article/ai-scribes-reduce-physician-burnout-return-focus-to-the-patient/"
+    },
+    {
+      "title": "NEJM AI: Pragmatic Randomized Trial of Ambient AI and Clinician Well-Being",
+      "type": "Randomized controlled trial",
+      "date": "2026",
+      "finding": "A pragmatic RCT at a large academic health system tested ambient AI documentation against usual care for health-practitioner well-being. The Abridge team provided technical support and manuscript review.",
+      "caveat": "Single-system trial; well-being endpoints rather than note accuracy or patient outcomes.",
+      "url": "https://ai.nejm.org/doi/abs/10.1056/AIoa2500945"
+    },
+    {
+      "title": "JAMIA: Clinician Interviews on an Ambient AI Documentation Platform",
+      "type": "Peer-reviewed qualitative study",
+      "date": "2025-2026",
+      "finding": "Clinicians reported decreased cognitive burden and singled out Abridge's handling of non-English visits and the History of Present Illness / Patient Instructions sections as differentiated strengths.",
+      "caveat": "Qualitative interview sample; vendor-specific experience may not generalize.",
+      "url": "https://www.ovid.com/journals/jamia/fulltext/10.1093/jamia/ocag021~interviews-with-clinicians-about-an-ambient-artificial"
+    },
+    {
+      "title": "Comparative Study of Three Ambient Listening Systems",
+      "type": "Peer-reviewed comparative study",
+      "date": "Oct 2026",
+      "finding": "A three-system comparison of ambient listening tools examined documentation quality, edit burden, and clinician experience. Added to the OpenEvidence research index during the Oct 17 weekly sweep.",
+      "caveat": "Small comparative sample; product versions change quickly.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42887000/"
+    },
+    {
+      "title": "Abridge: Evaluating AI-Generated Documentation and Hallucinations",
+      "type": "Vendor methodology whitepaper",
+      "date": "2026",
+      "finding": "Describes Abridge's evaluation process for generated documentation, quantitative performance measures for key systems, and clinician-in-the-loop studies focused on hallucination detection and linked evidence.",
+      "caveat": "Vendor-authored. Methodology is disclosed but results are not independently replicated.",
+      "url": "https://www.abridge.com/"
+    },
+    {
+      "title": "Business Insider: Inside the Abridge-Epic Relationship",
+      "type": "Investigative reporting",
+      "date": "Sep 2025",
+      "finding": "Epic, once an Abridge partner and shareholder, is now building native AI charting that competes directly with third-party scribes. Abridge told hospital customers its integrations would remain intact.",
+      "caveat": "Reporting based on unnamed insiders; strategic risk, not a product evaluation.",
+      "url": "https://www.businessinsider.com/inside-messiest-relationship-in-healthcare-ai-abridge-epic-2025-9"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-10-08",
+      "cat": "Partnership",
+      "title": "University of Texas System Goes Enterprise-Wide with Abridge",
+      "desc": "Abridge announced an enterprise-wide agreement with UT REAL Health AI covering the eight University of Texas health institutions. The framework lets each institution adopt Abridge on its own timeline while preserving local decision-making. It builds on a year-long pilot that expanded significantly across UT clinicians and follows the VA enterprise win two weeks earlier.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/ut-health-enterprise-wide",
+      "new": true
+    },
+    {
+      "date": "2026-09-22",
+      "cat": "Partnership",
+      "title": "Abridge Wins Seat on $775.7M VA Ambient AI Enterprise Contract",
+      "desc": "The U.S. Department of Veterans Affairs selected Abridge, through a distribution partner, for a five-year multi-award enterprise contract with a collective ceiling of $775.72 million. The vehicle lets VA medical centers and regions bring ambient AI to clinicians serving 9M+ veterans, across both VistA/CPRS and the Federal EHR. Knowtex also holds a seat and will compete for task orders.",
+      "src": "Abridge / Nextgov",
+      "url": "https://www.abridge.com/press-release/va-enterprise-contract",
+      "new": true
+    },
+    {
+      "date": "2026-09-14",
+      "cat": "Product",
+      "title": "Abridge Enters the Mid-Revenue Cycle with Pre-Bill Review",
+      "desc": "Abridge launched a pre-bill review capability for clinical documentation integrity (CDI), coding, and revenue cycle teams. It audits inpatient claims and DRGs against the bedside clinical conversation before the claim drops, surfacing discrepancies between coded diagnoses and documented evidence. First product built specifically for the mid-revenue cycle.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/pre-bill-review-for-cdi-and-coding-teams",
+      "new": true
+    },
+    {
+      "date": "2026-09-01",
+      "cat": "Milestone",
+      "title": "Abridge Named a Fast Company Most Innovative Company of 2026",
+      "desc": "Fast Company recognized Abridge for changing how healthcare works for providers, patients, and payers. The honor adds to a wall that already includes Best in KLAS for Ambient AI in 2025 and 2026, TIME Best Inventions, and CNBC Disruptor 50.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press",
+      "new": true
+    },
+    {
+      "date": "2026-08-17",
+      "cat": "Product",
+      "title": "Context-Aware Clinical Intelligence Opened to Every Clinician at Partner Systems",
+      "desc": "Abridge now lets partner health systems extend its clinical intelligence agent to every clinician, regardless of how that clinician documents visits today. Access can run through the EHR workflow clinicians already use or through a new mobile and web experience, each connected to the patient chart. More than 300 enterprise health systems representing over 250 million patients adopted the decision support since its April launch.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners",
+      "new": true
+    },
+    {
+      "date": "2026-06-11",
+      "cat": "Product",
+      "title": "Abridge Unveils AI-Native Clinician Intelligence Platform",
+      "desc": "At a New York keynote, Abridge introduced a platform that extends from documentation into billing, clinical decision support, payer adjudication, and pharmaceutical trial screening. The company announced a collaboration with NVIDIA on the first foundation model purpose-built for clinical conversations, a strategic investment from Eli Lilly, partnerships with Artisight and Hellocare, and content deals with ADA, AAFP, Neurology, and JCO. Northwestern Medicine was named as an enterprise rollout.",
+      "src": "Abridge / Fortune",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": true
+    },
+    {
+      "date": "2026-04-15",
+      "cat": "Partnership",
+      "title": "Abridge Adds NEJM Group and JAMA Network Evidence to Clinical Decision Support",
+      "desc": "Multi-year content partnerships bring NEJM and the JAMA Network (JAMA plus 11 specialty journals and JAMA Network Open) into Abridge's clinical decision support. The tool already surfaces context-aware insights from Wolters Kluwer's UpToDate. The same journal partners anchor OpenEvidence's evidence library, marking direct convergence between the two platforms.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/abridge-integrates-nejm-jama",
+      "new": true
+    },
+    {
+      "date": "2026-04-02",
+      "cat": "Research",
+      "title": "KLAS First Look Scores Abridge Ambient AI for Nursing at 94.3",
+      "desc": "KLAS Research's First Look report on Abridge Ambient AI for Nursing awarded an overall early performance score of 94.3 out of 100. The product converts conversational care into EHR flowsheets, targeting nursing documentation burden and incomplete charting. It extends Abridge from physician documentation into nursing workflows.",
+      "src": "KLAS / HIT Consultant",
+      "url": "https://hitconsultant.net/2026/04/02/klas-report-abridge-ambient-ai-nursing-flowsheets-ehr/"
+    },
+    {
+      "date": "2026-04-01",
+      "cat": "Funding",
+      "title": "Abridge Raises $316M Series E Extension at $5.3B",
+      "desc": "Abridge closed a reported $316M extension to its Series E at the same $5.3B valuation set in June 2025. Reported total capital raised now ranges from roughly $830M to $1.07B depending on how the extension and earlier rounds are counted. The flat price, ten months after the prior mark, signals scale-up execution rather than a fresh valuation step-up.",
+      "src": "Sacra",
+      "url": "https://sacra.com/c/abridge/"
+    },
+    {
+      "date": "2026-02-04",
+      "cat": "Milestone",
+      "title": "Abridge Wins #1 Best in KLAS 2026 for Ambient AI, Second Year Running",
+      "desc": "Abridge earned the No. 1 Best in KLAS 2026 ranking for Ambient AI in the Revenue Cycle Management category for the second consecutive year. The ranking is based on independent customer interviews with large enterprise health systems, not vendor-submitted data. KLAS's 2026 Ambient AI report also placed Abridge among the innovation leaders and said it leads buying decisions.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/best-in-klas-2026-press"
+    },
+    {
+      "date": "2026-01-11",
+      "cat": "Partnership",
+      "title": "Abridge and Availity Partner on AI-Powered Prior Authorization",
+      "desc": "Abridge partnered with Availity to connect clinical documentation to payer workflows and AI-assisted prior authorization. The collaboration pushes Abridge downstream from the note into payment adjudication, one of the most friction-heavy steps between visit and reimbursement.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press"
+    },
+    {
+      "date": "2025-09-30",
+      "cat": "Partnership",
+      "title": "Seattle Children's Deploys Abridge Enterprise-Wide",
+      "desc": "Seattle Children's implemented Abridge's AI platform across the pediatric health system. The deployment added a major pediatric academic center to an enterprise roster already anchored by Kaiser Permanente, Mayo Clinic, Johns Hopkins, Duke, Emory, Yale New Haven, Sutter, and UPMC.",
+      "src": "MobiHealthNews",
+      "url": "https://www.mobihealthnews.com/"
+    },
+    {
+      "date": "2025-09-15",
+      "cat": "Competitor",
+      "title": "Epic's Own AI Strategy Turns Its Closest Partner Into Its Biggest Threat",
+      "desc": "Business Insider reported growing tension between Abridge and Epic, which was both an early partner and a former shareholder. Epic's native AI charting ambitions raised questions about how long third-party scribes can rely on deep Epic integration as a moat. Abridge told hospital customers its software would remain integrated with Epic.",
+      "src": "Business Insider",
+      "url": "https://www.businessinsider.com/inside-messiest-relationship-in-healthcare-ai-abridge-epic-2025-9"
+    },
+    {
+      "date": "2025-06-23",
+      "cat": "Funding",
+      "title": "Series E: $300M at $5.3B Led by a16z",
+      "desc": "Andreessen Horowitz led a $300M Series E with Khosla Ventures, nearly doubling Abridge's valuation from $2.75B four months earlier. The company said it was live at more than 150 enterprise health systems and had reached $117M in contracted annual recurring revenue in Q1 2025. Capital was earmarked for new products and revenue-cycle AI.",
+      "src": "Abridge / TechCrunch",
+      "url": "https://www.abridge.com/blog/series-e"
+    },
+    {
+      "date": "2025-02-18",
+      "cat": "Funding",
+      "title": "Series D: $250M at $2.75B",
+      "desc": "Abridge raised $250M led by Elad Gil at a $2.75B valuation, with participation from Lightspeed, CVS Health Ventures, and others. The round funded expansion from ambulatory documentation into inpatient and specialty workflows. Fortune profiled CEO Shiv Rao alongside the raise.",
+      "src": "Fortune",
+      "url": "https://fortune.com/2025/02/17/abridge-ai-founder-ceo-shiv-rao-practicing-doctor-profile-250-million-funding/"
+    },
+    {
+      "date": "2024-02-20",
+      "cat": "Funding",
+      "title": "Series C: $150M at $850M Valuation",
+      "desc": "Abridge raised $150M in a Series C that valued the company at $850M. The round marked the inflection from pilot programs to enterprise deployments across major health systems and set the base for a 6.2x valuation increase over the following two years.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press"
+    },
+    {
+      "date": "2018-11-01",
+      "cat": "Company",
+      "title": "Abridge Founded in Pittsburgh",
+      "desc": "Cardiologist Shiv Rao co-founded Abridge with Sandeep Konam and Florian Metze, spinning out of the Pittsburgh Health Data Alliance (UPMC, Carnegie Mellon, University of Pittsburgh). The original thesis: turn the patient-clinician conversation into structured, clinically useful documentation.",
+      "src": "Fortune",
+      "url": "https://fortune.com/2025/02/17/abridge-ai-founder-ceo-shiv-rao-practicing-doctor-profile-250-million-funding/"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Abridge - Official site",
+      "url": "https://www.abridge.com/"
+    },
+    {
+      "name": "Abridge - Press releases",
+      "url": "https://www.abridge.com/press"
+    },
+    {
+      "name": "Abridge - UT System enterprise-wide agreement (Oct 8, 2026)",
+      "url": "https://www.abridge.com/press-release/ut-health-enterprise-wide"
+    },
+    {
+      "name": "Abridge - VA enterprise contract (Sep 22, 2026)",
+      "url": "https://www.abridge.com/press-release/va-enterprise-contract"
+    },
+    {
+      "name": "Abridge - Pre-bill review for CDI and coding (Sep 14, 2026)",
+      "url": "https://www.abridge.com/press-release/pre-bill-review-for-cdi-and-coding-teams"
+    },
+    {
+      "name": "Abridge - Context-aware intelligence extended to all partners (Aug 17, 2026)",
+      "url": "https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners"
+    },
+    {
+      "name": "Abridge - Clinician intelligence platform keynote (Jun 11, 2026)",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote"
+    },
+    {
+      "name": "Abridge - NEJM and JAMA content partnerships (Apr 15, 2026)",
+      "url": "https://www.abridge.com/press-release/abridge-integrates-nejm-jama"
+    },
+    {
+      "name": "Abridge - Best in KLAS 2026",
+      "url": "https://www.abridge.com/press-release/best-in-klas-2026-press"
+    },
+    {
+      "name": "Abridge - Series E announcement (Jun 2025)",
+      "url": "https://www.abridge.com/blog/series-e"
+    },
+    {
+      "name": "Fortune - Abridge, NVIDIA, and Eli Lilly (Jun 11, 2026)",
+      "url": "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/"
+    },
+    {
+      "name": "TechCrunch - $300M Series E at $5.3B",
+      "url": "https://techcrunch.com/2025/06/24/in-just-4-months-ai-medical-scribe-abridge-doubles-valuation-to-5-3b/"
+    },
+    {
+      "name": "Fierce Healthcare - Series E coverage",
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/ambient-ai-startup-abridge-scores-300m-series-e-backed-a16z-and-khosla"
+    },
+    {
+      "name": "Sacra - Abridge revenue, valuation and funding",
+      "url": "https://sacra.com/c/abridge/"
+    },
+    {
+      "name": "ValueAdd VC - Abridge valuation 2026",
+      "url": "https://valueaddvc.com/blog/abridge-valuation-2026-5-3b-100m-arr-and-how-the-ai-scribe-beat-nuance-and-ambience"
+    },
+    {
+      "name": "Nextgov - VA selects Abridge under enterprise contract",
+      "url": "https://www.nextgov.com/artificial-intelligence/2026/09/va-selects-abridge-ambient-scribe-under-new-enterprise-contract/416140/"
+    },
+    {
+      "name": "Becker's - UT System expands Abridge access",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/university-of-texas-system-expands-abridge-ai-access-systemwide/"
+    },
+    {
+      "name": "Fierce Healthcare - Abridge expands clinical decision support",
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-expands-ai-decision-support-more-clinicians-bid-become-healthcares"
+    },
+    {
+      "name": "Healthcare Dive - Abridge, NVIDIA, Eli Lilly",
+      "url": "https://www.healthcaredive.com/news/abridge-nvidia-eli-lilly-investment-ai-platform-expansion/822783/"
+    },
+    {
+      "name": "KLAS - Ambient AI 2026 report",
+      "url": "https://klasresearch.com/report/ambient-ai-2026-a-high-performing-market-shifts-as-ehr-native-tools-adjust-long-term-strategies/3982"
+    },
+    {
+      "name": "KLAS - Abridge Ambient AI for Nursing First Look",
+      "url": "https://klasresearch.com/report/abridge-ambient-ai-for-nursing-2026-reducing-nursing-workflow-burden-through-ambient-ai-documentation/3998"
+    },
+    {
+      "name": "Business Insider - Abridge and Epic",
+      "url": "https://www.businessinsider.com/inside-messiest-relationship-in-healthcare-ai-abridge-epic-2025-9"
+    },
+    {
+      "name": "AHA - Ambient AI scribe evidence scan",
+      "url": "https://www.aha.org/aha-center-health-innovation-market-scan/2026-04-14-6-health-systems-enhancing-care-delivery-ambient-ai-scribes"
+    },
+    {
+      "name": "NEJM AI - Pragmatic RCT of ambient AI",
+      "url": "https://ai.nejm.org/doi/abs/10.1056/AIoa2500945"
+    }
+  ],
+  "updated": "2026-10-17"
+}
