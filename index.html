@@ -64,30 +64,30 @@
   <!-- STATS GRID -->
   <div class="container">
     <div class="stats-grid">
-      <div class="stat-card">
-        <div class="value">$12B</div>
+      <div class="stat-card" data-stat="valuation">
+        <div class="value">$15B</div>
         <div class="label">Valuation</div>
-        <div class="sub">Jan 2026 · Series D · <a href="https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html" target="_blank">CNBC</a></div>
+        <div class="sub">Sep 2026 · <a href="https://www.forbes.com/sites/saibala/2026/09/30/openevidence-confirms-it-has-raised-an-additional-250-million-at-a-15-billion-valuation/" target="_blank">Forbes</a></div>
       </div>
-      <div class="stat-card">
-        <div class="value">50%+</div>
+      <div class="stat-card" data-stat="physician_adoption">
+        <div class="value">65%</div>
         <div class="label">US Physicians</div>
-        <div class="sub">Daily active · <a href="https://www.nytimes.com" target="_blank">NYT</a></div>
+        <div class="sub">~650K clinicians · <a href="https://www.ajmc.com/view/oneoncology-partners-with-openevidence-to-give-physicians-access-within-clinical-workflows" target="_blank">AJMC</a></div>
       </div>
-      <div class="stat-card">
-        <div class="value">30M</div>
+      <div class="stat-card" data-stat="consultations">
+        <div class="value">42M</div>
         <div class="label">Monthly Consultations</div>
-        <div class="sub">May 2026 · <a href="https://www.nytimes.com" target="_blank">NYT</a></div>
+        <div class="sub">Aug 2026 · <a href="https://x.com/NeoAIForecast/status/2102712078985482436" target="_blank">x.com</a></div>
       </div>
-      <div class="stat-card">
-        <div class="value">$150M</div>
+      <div class="stat-card" data-stat="revenue">
+        <div class="value">$300M</div>
         <div class="label">Annualized Revenue</div>
-        <div class="sub">Nov 2025 · 90% margins · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></div>
+        <div class="sub">Sep 2026 · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></div>
       </div>
-      <div class="stat-card">
-        <div class="value">$700M</div>
+      <div class="stat-card" data-stat="total_funding">
+        <div class="value">$1B</div>
         <div class="label">Total Funding</div>
-        <div class="sub">4 rounds · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></div>
+        <div class="sub">Cumulative · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></div>
       </div>
       <div class="stat-card">
         <div class="value">10K+</div>
@@ -95,8 +95,8 @@
         <div class="sub">Nationwide · <a href="https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html" target="_blank">PRNewswire</a></div>
       </div>
       <div class="stat-card">
-        <div class="value">25+</div>
-        <div class="label">Content Partners</div>
+        <div class="value" data-count="partners">57</div>
+        <div class="label">Partners Tracked</div>
         <div class="sub"><a href="https://www.openevidence.com" target="_blank">OpenEvidence.com</a></div>
       </div>
       <div class="stat-card">
@@ -115,27 +115,27 @@
       <div class="charts-grid">
         <div class="chart-container">
           <h3>Monthly Consultations Over Time</h3>
-          <p class="chart-sub">From 358K/month (Jul 2024) to 30M/month (May 2026) - 75x growth · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a> · <a href="https://www.nytimes.com" target="_blank">NYT</a></p>
+          <p class="chart-sub"><span data-series-sub="consultations">From 358K/month (Jul 2024) to 42M/month (Aug 2026)</span> · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></p>
           <div class="chart-wrapper"><canvas id="chartConsultations"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Registered Physicians Over Time</h3>
-          <p class="chart-sub">From 358K to 760K+ - reaching 80%+ of all US physicians · <a href="https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html" target="_blank">PRNewswire</a></p>
+          <p class="chart-sub"><span data-series-sub="physicians">From 358K to 1.12M registered physicians</span> · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></p>
           <div class="chart-wrapper"><canvas id="chartPhysicians"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Valuation Growth ($B)</h3>
-          <p class="chart-sub">$1B → $3.5B → $6B → $12B in 12 months · <a href="https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html" target="_blank">CNBC</a></p>
+          <p class="chart-sub"><span data-series-sub="valuation_b">$1B → $15B</span> · <a href="https://www.forbes.com/sites/saibala/2026/09/30/openevidence-confirms-it-has-raised-an-additional-250-million-at-a-15-billion-valuation/" target="_blank">Forbes</a></p>
           <div class="chart-wrapper"><canvas id="chartValuation"></canvas></div>
         </div>
         <div class="chart-container">
           <h3>Annualized Revenue ($M)</h3>
-          <p class="chart-sub">$7.9M → $50M → $150M - 1,803% YoY growth · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></p>
+          <p class="chart-sub"><span data-series-sub="revenue_m">$7.9M → $300M annualized</span> · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></p>
           <div class="chart-wrapper"><canvas id="chartRevenue"></canvas></div>
         </div>
         <div class="chart-container" style="grid-column: 1 / -1;">
           <h3>Total Funding Raised ($M)</h3>
-          <p class="chart-sub">Cumulative funding across 4 rounds: Series A ($75M) → B ($210M) → C ($200M) → D ($250M) · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></p>
+          <p class="chart-sub"><span data-series-sub="funding_m">Cumulative funding across 4 rounds</span> · <a href="https://sacra.com/c/openevidence/" target="_blank">Sacra</a></p>
           <div class="chart-wrapper"><canvas id="chartFunding"></canvas></div>
         </div>
       </div>
@@ -144,6 +144,7 @@
 </div>
 
 <script src="/data/signals.js"></script>
+<script src="/data/metrics.js"></script>
 <script src="/shared.js"></script>
 <script src="/data/whatsNew.js"></script>
 <script>
@@ -169,35 +170,43 @@ function renderWhatsNew() {
 function buildPageCharts() {
   charts.forEach(c => { try { c.destroy(); } catch(e){} });
   charts = [];
+  // Series come from data/metrics.js, which scripts/sync_site.js regenerates
+  // from metrics.csv. The inline arrays are fallbacks for a missing build.
+  var S = (typeof siteMetrics !== 'undefined' && siteMetrics.series) ? siteMetrics.series : {};
+  function series(name, fallbackLabels, fallbackValues) {
+    var s = S[name];
+    if (s && s.values && s.values.length) return { labels: s.labels, values: s.values };
+    return { labels: fallbackLabels, values: fallbackValues };
+  }
+  var cons = series('consultations',
+    ['Jul 2024','Jan 2025','Jul 2025','Oct 2025','Dec 2025','Jan 2026','May 2026'],
+    [358000, 3000000, 8500000, 16500000, 18000000, 20000000, 42000000]);
   try {
-    charts.push(makeChart('chartConsultations',
-      ['Jul 2024','Jan 2025','Jul 2025','Oct 2025','Dec 2025','Jan 2026','May 2026'],
-      [358000, 3000000, 8500000, 16500000, 18000000, 20000000, 30000000],
-      'Monthly Consultations'));
+    charts.push(makeChart('chartConsultations', cons.labels, cons.values, 'Monthly Consultations'));
   } catch(e) { console.error("[OE-CHART] chartConsultations failed:", e.message); }
+  var phys = series('physicians',
+    ['Jul 2024','Jul 2025','Oct 2025','Dec 2025','Jan 2026','May 2026'],
+    [358000, 430000, 600000, 760000, 760000, 1120000]);
   try {
-    charts.push(makeChart('chartPhysicians',
-      ['Jul 2024','Jul 2025','Oct 2025','Dec 2025','Jan 2026','May 2026'],
-      [358000, 430000, 600000, 760000, 760000, 900000],
-      'Registered Physicians'));
+    charts.push(makeChart('chartPhysicians', phys.labels, phys.values, 'Registered Physicians'));
   } catch(e) { console.error("[OE-CHART] chartPhysicians failed:", e.message); }
+  var val = series('valuation_b',
+    ['Feb 2025','Jul 2025','Oct 2025','Jan 2026'],
+    [1, 3.5, 6, 15]);
   try {
-    charts.push(makeChart('chartValuation',
-      ['Feb 2025','Jul 2025','Oct 2025','Jan 2026'],
-      [1, 3.5, 6, 12],
-      'Valuation ($B)'));
+    charts.push(makeChart('chartValuation', val.labels, val.values, 'Valuation ($B)'));
   } catch(e) { console.error("[OE-CHART] chartValuation failed:", e.message); }
+  var rev = series('revenue_m',
+    ['Dec 2024','Jun 2025','Oct 2025','Nov 2025','Jan 2026'],
+    [7.9, 50, 100, 150, 300]);
   try {
-    charts.push(makeChart('chartRevenue',
-      ['Dec 2024','Jun 2025','Oct 2025','Nov 2025','Jan 2026'],
-      [7.9, 50, 100, 150, 150],
-      'Annualized Revenue ($M)'));
+    charts.push(makeChart('chartRevenue', rev.labels, rev.values, 'Annualized Revenue ($M)'));
   } catch(e) { console.error("[OE-CHART] chartRevenue failed:", e.message); }
+  var fund = series('funding_m',
+    ['Series A\nFeb 2025','Series B\nJul 2025','Series C\nOct 2025','Series D\nJan 2026'],
+    [75, 285, 485, 1000]);
   try {
-    charts.push(makeChart('chartFunding',
-      ['Series A\nFeb 2025','Series B\nJul 2025','Series C\nOct 2025','Series D\nJan 2026'],
-      [75, 285, 485, 735],
-      'Cumulative Funding ($M)'));
+    charts.push(makeChart('chartFunding', fund.labels, fund.values, 'Cumulative Funding ($M)'));
   } catch(e) { console.error("[OE-CHART] chartFunding failed:", e.message); }
 }
 window.addEventListener('load', function() {

@@ -1,10 +1,12 @@
 {
   "name": "openevidence-insights",
   "version": "1.0.0",
-  "description": "Comprehensive dashboard tracking OpenEvidence — the fastest-growing medical AI platform in history.",
+  "description": "Comprehensive dashboard tracking OpenEvidence \u2014 the fastest-growing medical AI platform in history.",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "sync": "node scripts/sync_site.js",
+    "sync:check": "node scripts/sync_site.js --check"
   },
   "dependencies": {
     "express": "^4.21.0"

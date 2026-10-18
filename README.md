@@ -52,6 +52,35 @@ A second cron job runs every Tuesday at 5 PM ET to update the Global Clinical AI
 3. Update emerging trends and global availability matrix
 4. Push updates to GitHub
 
+## Data pipeline
+
+The search agents write data; the pages render it. Nothing numeric should be
+hardcoded in HTML.
+
+| Layer | File | Written by |
+|---|---|---|
+| Metric observations | `data/metrics.csv` | daily/weekly agents |
+| Events | `data/timeline.js`, `data/timeline.csv` | agents |
+| Research / benchmarks | `data/research.json`, `data/benchmarks.json` | agents |
+| Derived metrics | `data/metrics.js` | `npm run sync` (generated) |
+| Derived feeds | `data/signals.js`, `search-index.js`, `scoreboard.js` | `npm run build:data` (generated) |
+
+After changing any source data, run:
+
+```bash
+npm run sync          # regenerate data/metrics.js
+npm run sync:check    # exit 1 if data/metrics.js is stale (CI gate)
+```
+
+The pre-commit hook runs both generators on every commit, so an agent that only
+appends a CSV row still leaves the stat cards, chart captions, and prose counts
+current. Components read `siteMetrics` at runtime:
+
+- stat cards: `data-stat="valuation"` (value + date/source sub-line)
+- prose counts: `data-count="publications"`
+- chart captions: `data-series-sub="consultations"`
+- charts: `siteMetrics.series.*` with inline fallbacks
+
 ## Brand Colors
 
 - Primary: `#E4643D` (Flame Pea — OpenEvidence orange)

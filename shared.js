@@ -151,6 +151,62 @@ function renderFreshness() {
 
 document.addEventListener('DOMContentLoaded', renderFreshness);
 
+// === SITE STATS (derived from data/metrics.js) ==========================
+// The stat cards, chart captions, and prose counts used to be hardcoded, so
+// they drifted every time a search agent wrote new data. They now render from
+// siteMetrics, which scripts/sync_site.js regenerates from metrics.csv.
+function fmtShort(n) {
+  if (n >= 1e9) return Number((n / 1e9).toFixed(2)) + 'B';
+  if (n >= 1e6) return Number((n / 1e6).toFixed(2)) + 'M';
+  if (n >= 1e3) return Number((n / 1e3).toFixed(1)) + 'K';
+  return String(n);
+}
+
+function seriesSummary(key, s) {
+  var first = s.values[0];
+  var last = s.values[s.values.length - 1];
+  var fl = s.labels[0];
+  var ll = s.labels[s.labels.length - 1];
+  if (key === 'consultations') return 'From ' + fmtShort(first) + '/month (' + fl + ') to ' + fmtShort(last) + '/month (' + ll + ')';
+  if (key === 'physicians') return 'From ' + fmtShort(first) + ' (' + fl + ') to ' + fmtShort(last) + ' (' + ll + ')';
+  if (key === 'valuation_b') return '$' + first + 'B → $' + last + 'B (' + fl + ' → ' + ll + ')';
+  if (key === 'revenue_m') return '$' + first + 'M → $' + last + 'M annualized (' + fl + ' → ' + ll + ')';
+  if (key === 'funding_m') return 'Cumulative $' + first + 'M → $' + last + 'M (' + fl + ' → ' + ll + ')';
+  return fl + ' → ' + ll;
+}
+
+function renderSiteStats() {
+  if (typeof siteMetrics === 'undefined' || !siteMetrics) return;
+
+  document.querySelectorAll('[data-stat]').forEach(function (card) {
+    var m = siteMetrics.latest && siteMetrics.latest[card.getAttribute('data-stat')];
+    if (!m) return;
+    var v = card.querySelector('.value');
+    if (v && m.display) v.textContent = m.display;
+    var sub = card.querySelector('.sub');
+    if (sub && m.month) {
+      var html = m.month;
+      if (m.source && m.sourceHost) {
+        html += ' · <a href="' + m.source + '" target="_blank" rel="noopener">' + m.sourceHost + '</a>';
+      }
+      sub.innerHTML = html;
+    }
+  });
+
+  document.querySelectorAll('[data-count]').forEach(function (el) {
+    var n = siteMetrics.counts && siteMetrics.counts[el.getAttribute('data-count')];
+    if (typeof n === 'number') el.textContent = n;
+  });
+
+  document.querySelectorAll('[data-series-sub]').forEach(function (el) {
+    var key = el.getAttribute('data-series-sub');
+    var s = siteMetrics.series && siteMetrics.series[key];
+    if (s && s.values && s.values.length) el.textContent = seriesSummary(key, s);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', renderSiteStats);
+
 // === SIGNAL FEED (materiality-ranked) =====================================
 function signalTier(score) {
   if (score >= 85) return 1;
