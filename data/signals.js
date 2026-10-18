@@ -536,6 +536,20 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-10-16",
+  "cat": "Legal",
+  "title": "Doximity Settles Remaining OpenEvidence AI Prompt-Hack Dispute",
+  "desc": "Doximity Inc. settled OpenEvidence's lawsuit accusing it of impersonating doctors to hack the medical AI platform and extract trade secrets via prompt injection. Settlement filed Thursday Oct 16 in federal court. Case 1:25-cv-11802, originally filed June 2025. Bloomberg Law reports the settlement re",
+  "src": "Bloomberg Law",
+  "url": "https://x.com/BLaw/status/2110883464845090915",
+  "score": 73,
+  "confidence": "reported",
+  "competitors": [
+   "Doximity"
+  ],
+  "comparative": false
+ },
+ {
   "date": "2026-06-22",
   "cat": "Product",
   "title": "OpenEvidence 2.0 - Clinical Workflows Calculators Primary Evidence",
@@ -596,6 +610,18 @@ var signalsData = [
   "src": "FixHealth.ai",
   "url": "https://www.fixhealth.ai/p/openevidence-goes-hippocratic-ai",
   "score": 57,
+  "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-10-14",
+  "cat": "Milestone",
+  "title": "OpenEvidence Ranked #6 on LinkedIn Top Startups List (U.S.)",
+  "desc": "OpenEvidence ranked #6 on LinkedIn Top Startups list for the United States. The list is based on LinkedIn hiring data showing where professionals want to work. OpenEvidence highlighted its physician + engineer team focused on evidence-based medicine and linked to open roles. Companion recognition to",
+  "src": "X/Twitter",
+  "url": "https://x.com/OpenEvidence/status/2110475526947373202",
+  "score": 55,
   "confidence": "reported",
   "competitors": [],
   "comparative": false
@@ -733,32 +759,6 @@ var signalsData = [
   "score": 47,
   "confidence": "reported",
   "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-08-26",
-  "cat": "Media",
-  "title": "Zeke Emanuel on MS NOW: Two-thirds of doctors regularly consult OpenEvidence",
-  "desc": "Dr. Ezekiel Emanuel (former Obama health policy advisor, VP University of Pennsylvania) mentions OpenEvidence on MS NOW (MSNBC): Two-thirds of doctors regularly consult something called OpenEvidence. @OpenEvidence highlights the quote on X. The same day, physician @gruntdoc posts a thread using Open",
-  "src": "X/Twitter",
-  "url": "https://x.com/OpenEvidence/status/2092666752798982470",
-  "score": 47,
-  "confidence": "reported",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-07-20",
-  "cat": "Research",
-  "title": "Stanford-Harvard NOHARM Study: OpenEvidence Most-Used AI in Physician Free-Choice Arm",
-  "desc": "OpenEvidence announced a central finding of the independent Stanford-Harvard NOHARM study: when 101 board-certified U.S. physicians were free to consult any clinical decision support AI tool, they chose OpenEvidence in 22.3% of responses - more than ChatGPT, Claude, Gemini, and every other external ",
-  "src": "PRNewswire",
-  "url": "https://www.prnewswire.com/news-releases/physicians-choose-openevidence-over-every-other-ai-chatbot-combined-in-independent-stanford-harvard-study-of-clinical-ai-302829633.html",
-  "score": 47,
-  "confidence": "confirmed",
-  "competitors": [
-   "Doximity"
-  ],
   "comparative": false
  }
 ];
