@@ -2,10 +2,10 @@
 // Head-to-head standing derived from evaluation studies.
 var scoreboardData = {
  "generated": "2026-10-18",
- "total": 38,
+ "total": 42,
  "tally": {
   "oe": 5,
-  "mixed": 28,
+  "mixed": 32,
   "competitor": 5
  },
  "rows": [
@@ -38,6 +38,30 @@ var scoreboardData = {
    "confidence": "reported",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42844685/",
    "finding": "Multi-tool comparison of OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai for a specific clinical domain."
+  },
+  {
+   "title": "LLM-Generated Electronic Consultations: Blinded Comparison of OpenEvidence vs Gastroenterologist eConsultations",
+   "journal": "Mayo Clinic Proceedings Digital Health",
+   "published": "2026-09-18",
+   "tools": [
+    "OpenEvidence"
+   ],
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42893001/",
+   "finding": "Blinded comparison of OpenEvidence-generated vs gastroenterologist-written electronic consultations. Evaluates clinical quality, accuracy, and safety."
+  },
+  {
+   "title": "Large Language Model-Generated Electronic Consultations: A Blinded Comparative Study of OpenEvidence and Gastroenterologist Electronic Consultations.",
+   "journal": "Mayo Clinic Proceedings Digital Health",
+   "published": "2026-09-18",
+   "tools": [
+    "OpenEvidence"
+   ],
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42893001/",
+   "finding": "Blinded comparison of OpenEvidence-generated vs gastroenterologist-written electronic consultations at Mayo Clinic. Directly evaluates OpenEvidence in a clinical workflow context."
   },
   {
    "title": "A Comparison of the Agreement of Four AI Models on Surgical Recommendations of MIRCTs Using the ASES Neer Circle Delphi Recommendations as a Baseline",
@@ -437,6 +461,30 @@ var scoreboardData = {
    "finding": "OpenEvidence had highest proportion of identical top diagnoses (35.0%) vs ChatGPT-5 Thinking 26.7% vs Prof. Valmed 23.3% (not statistically significant)"
   },
   {
+   "title": "OpenEvidence clinical question-answering platform: systematic review of early evaluations",
+   "journal": "npj Digital Medicine",
+   "published": "2026",
+   "tools": [
+    "OpenEvidence"
+   ],
+   "position": "mixed",
+   "confidence": "confirmed",
+   "url": "https://www.nature.com/articles/s41746-026-03077-4",
+   "finding": "First systematic review of OpenEvidence. 11 studies included. OpenEvidence generated clinically relevant, evidence-supported responses with lower fabricated citation rates than general-purpose LLMs."
+  },
+  {
+   "title": "OpenEvidence clinical question-answering platform: systematic review of early evaluations.",
+   "journal": "npj Digital Medicine",
+   "published": "2026",
+   "tools": [
+    "OpenEvidence"
+   ],
+   "position": "mixed",
+   "confidence": "confirmed",
+   "url": "https://www.nature.com/articles/s41746-026-03077-4",
+   "finding": "Eleven studies included. OpenEvidence generated clinically relevant, evidence-supported responses with lower fabricated citation rates than general-purpose LLMs. First systematic review of OpenEvidence evaluations."
+  },
+  {
    "title": "OpenEvidence Accuracy and Repeatability on MedXpertQA Subspecialty Scenarios",
    "journal": "medRxiv preprint",
    "published": "2025-12-04",
@@ -478,36 +526,6 @@ var scoreboardData = {
    "confidence": "reported",
    "url": "https://arxiv.org/abs/2512.01241",
    "finding": "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases - more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)"
-  },
-  {
-   "title": "Generalist Large Language Models Outperform Clinical Tools on Medical Benchmarks",
-   "journal": "Nature Medicine",
-   "published": "2025-12-01",
-   "tools": [
-    "OpenEvidence",
-    "UpToDate Expert AI",
-    "GPT-5",
-    "Gemini 3 Pro",
-    "Claude Sonnet 4.5",
-    "GPT-5.2",
-    "Gemini 3.1 Pro",
-    "Claude Opus 4.6",
-    "Google Search AI Overview"
-   ],
-   "position": "competitor",
-   "confidence": "reported",
-   "url": "https://arxiv.org/abs/2512.01191",
-   "finding": "GPT-5 achieved highest scores across all stages"
-  },
-  {
-   "title": "Comparing AI chat tools and PubMed for medical literature searches",
-   "journal": "J Med Libr Assoc",
-   "published": "",
-   "tools": "ChatGPT, Claude, Copilot, Gemini, OpenEvidence, Perplexity, PubMed",
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42889857/",
-   "finding": "OpenEvidence had zero hallucinated citations"
   }
  ]
 };

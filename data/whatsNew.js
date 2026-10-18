@@ -6,6 +6,42 @@
 var whatsNewData = [
   {
     date: "October 18, 2026",
+    updated: "Weekly OpenEvidence Insights update (Sun Oct 18, 5:00 PM ET) - Venice Augment Search (23 queries: 8 OE announcements + 8 clinical AI safety/benchmarks + 7 competitor/industry) + PubMed eutils (20 narrow + 30 expanded). Added 2 new papers to research.json (Mayo Clinic eConsultations PMID 42893001, Artsi et al. npj Digit Med systematic review). Added 2 new benchmark studies to benchmarks.json. Timeline.csv updated with 6 new entries: Mayo Clinic eConsultations paper, OpenEvidence systematic review, Abridge VA enterprise contract, Abridge UT System agreement, Doximity 2026 State of AI Report, FDA GenAI discussion paper. Key findings: OpenEvidence systematic review (11 studies, lower fabricated citations than general LLMs); Mayo Clinic blinded eConsultations evaluation; Doximity 2026 State of AI (94% physicians using/interested, 72% in practice); FDA GenAI discussion paper (comments due Oct 19); Abridge VA enterprise contract + UT System agreement; ChatGPT for Clinicians Epic integration (Sep 1); UpDoc first FDA-cleared patient-facing LLM SaMD (Jun 25).",
+    items: [
+      {
+        cat: "Research - OpenEvidence Evaluation",
+        title: "Mayo Clinic publishes blinded comparison of OpenEvidence vs gastroenterologist eConsultations (PMID 42893001)",
+        desc: "Stephenson et al. (Mayo Clin Proc Digit Health, Sep 18) publish blinded comparative study of OpenEvidence-generated vs gastroenterologist-written electronic consultations. First blinded evaluation of OpenEvidence in eConsultation workflow. Added to research.json and benchmarks.json."
+      },
+      {
+        cat: "Research - Systematic Review",
+        title: "First systematic review of OpenEvidence published in npj Digital Medicine",
+        desc: "Artsi et al. systematically reviewed 11 studies evaluating OpenEvidence for clinical question answering and decision support. OpenEvidence generated clinically relevant, evidence-supported responses with lower rates of fabricated citations than general-purpose LLMs. First systematic review of OpenEvidence evaluations."
+      },
+      {
+        cat: "Competitor - Abridge",
+        title: "Abridge wins VA enterprise contract (Sep 22) and UT System enterprise agreement (Oct 7, 2026)",
+        desc: "Abridge selected for VA ambient AI enterprise contract through distribution partner. Operational on both VA EHR systems. Also announces enterprise-wide agreement with University of Texas system. Abridge now at $5.3B valuation, $100M+ ARR, deployed across 300+ health systems including all 40 Kaiser Permanente hospitals."
+      },
+      {
+        cat: "Industry - State of AI",
+        title: "Doximity 2026 State of AI in Medicine Report: 94% of physicians using or interested in AI",
+        desc: "Doximity report surveys 3,151 US physicians. 72% using AI in clinical practice (up from 48% prior year). 71% concerned about accuracy and reliability. AI could cut weekly pajama time by 48%. 65% estimate AI could reallocate 1-5 hours/week to direct patient care."
+      },
+      {
+        cat: "Regulatory - FDA",
+        title: "FDA issues discussion paper on GenAI-enabled medical device regulation (Oct 14, 2026)",
+        desc: "FDA issues discussion paper seeking feedback on risk assessment, premarket evaluation, and postmarket monitoring for GenAI-enabled medical devices. Comments due Oct 19, 2026 (docket FDA-2026-N-7874). Paper covers competency assessment, foundation models, and agentic AI systems."
+      },
+      {
+        cat: "Competitor - ChatGPT",
+        title: "ChatGPT for Clinicians now integrates with Epic EHR (Sep 1, 2026)",
+        desc: "OpenAI's ChatGPT Health adds Epic EHR integration. Clinicians can access appointment notes, lab results, medications, and specialist documentation. Direct competitor to OpenEvidence Epic integration at Sutter Health, Mount Sinai, Northwestern Medicine."
+      }
+    ]
+  },
+  {
+    date: "October 18, 2026",
     updated: "Daily OpenEvidence check (Sun Oct 18, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). Added 7 new PubMed papers to research.json. Added 5 new benchmark entries to benchmarks.json. Added LinkedIn Top Startups #6 (Oct 14) to timeline.js. No new OpenEvidence announcements found. Key new papers: OpenEvidence zero hallucinations in JMLA comparison (PMID 42889857), RAG reshapes radiology QA across 34 LLMs (PMID 42891292), LLM-based CDS for postpolypectomy surveillance 96% accuracy (PMID 42886590), decision integrity framework for clinical AI (PMID 42886569). Previous: Weekly OpenEvidence Insights update (Sun Oct 17, 5:13 PM ET) - Venice Augment Search (8 queries) + openevidence.com/announcements scrape + arXiv API (50 results) + PubMed eutils (30 narrow + 30 expanded). Added 2 new arXiv papers and 11 new PubMed papers to research.json. Added 5 new benchmark studies to benchmarks.json. Added 9 new PubMed entries to publications.js. Added Doximity settlement (Oct 16) to timeline.js. Timeline.csv updated with 23 new entries. Partnerships.csv updated with 4 new entries. Competitors.csv updated with 7 new entries. Key findings: Behind the Knife partnership (Oct 14), Johns Hopkins Medicine collaboration (Oct 13), Northwestern Medicine EHR integration (Oct 12), Doximity settles OpenEvidence lawsuit (Oct 16), OpenEvidence Model Family launched (Sep 3), MedSafe-Dx benchmark launched (Sep 9), ARISE State of Clinical AI Report 2026, NOHARM benchmark updated (Jul 13), Nature Medicine benchmark study (Jun 2026), UpDoc FDA clearance for first patient-facing LLM SaMD (Jun 25).",
     items: [
       {
