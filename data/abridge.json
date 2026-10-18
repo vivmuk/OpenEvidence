@@ -76,17 +76,24 @@
       "url": "https://www.abridge.com/platform/clinicians"
     },
     {
+      "name": "Abridge Assistant",
+      "status": "live",
+      "date": "Oct 13, 2026",
+      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities.",
+      "url": "https://www.abridge.com/platform/assistant"
+    },
+    {
       "name": "Context-Aware Clinical Decision Support",
       "status": "live",
       "date": "Launched Apr 2026",
-      "desc": "Answers clinical questions inside the documentation workflow using the patient conversation plus chart context. Responses are grounded in licensed evidence from UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, and JCO, with citations back to source. Runs on Abridge's Contextual Reasoning Engine; patient data is not used for training.",
+      "desc": "Answers clinical questions inside the documentation workflow using the patient conversation plus chart context. Responses are grounded in licensed evidence from UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, and JCO, with citations back to source. Runs on Abridge's Contextual Reasoning Engine; patient data is not used for training. Unified under Abridge Assistant as of October 2026.",
       "url": "https://www.abridge.com/cds"
     },
     {
       "name": "Clinician Intelligence Agent",
-      "status": "live",
+      "status": "superseded",
       "date": "Enterprise-wide Aug 17, 2026",
-      "desc": "Extends context-aware decision support to every clinician at a partner health system, regardless of how they document. Delivered through the existing EHR workflow or a new mobile and web app, connected to the patient chart as a single organizational deployment rather than clinician-by-clinician seat expansion.",
+      "desc": "Extended context-aware decision support to every clinician at a partner health system, regardless of how they document. Delivered through the existing EHR workflow or a new mobile and web app. Unified under Abridge Assistant as of October 2026.",
       "url": "https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners"
     },
     {
@@ -211,11 +218,18 @@
       "new": false
     },
     {
+      "name": "Corewell Health",
+      "type": "Health system · Abridge Assistant enterprise deployment",
+      "date": "Oct 7, 2026",
+      "url": "https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant",
+      "new": true
+    },
+    {
       "name": "University of Texas System (UT REAL Health AI)",
       "type": "8 health institutions · enterprise-wide framework",
       "date": "Oct 8, 2026",
       "url": "https://www.abridge.com/press-release/ut-health-enterprise-wide",
-      "new": true
+      "new": false
     },
     {
       "name": "WashU Medicine / BJC Health",
@@ -461,6 +475,24 @@
     }
   ],
   "timeline": [
+    {
+      "date": "2026-10-13",
+      "cat": "Product",
+      "title": "Abridge Launches Abridge Assistant, the AI Assistant for Healthcare",
+      "desc": "Abridge introduced Abridge Assistant, a conversational AI assistant that lets clinicians ask questions and delegate tasks in natural language. Assistant pulls context from the patient chart, the clinical conversation, and trusted evidence sources (UpToDate, NEJM, JAMA, ADA, AAFP, Neurology, JCO), with every response citing its sources and opening calculators pre-filled with chart values. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. The launch unifies the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities under a single brand.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare",
+      "new": true
+    },
+    {
+      "date": "2026-10-07",
+      "cat": "Partnership",
+      "title": "Corewell Health Deploys Abridge Assistant in Primary Care",
+      "desc": "Corewell Health, Michigan's largest health system (21 hospitals, 300+ outpatient locations), is using Abridge Assistant in clinical practice. Dr. Kristin Jacob, an internal medicine-pediatrics clinician and Medical Director of Physician and APP Well-Being, described using Assistant for pre-charting, in-visit decision support, and patient messages — cutting Sunday chart prep from roughly two hours to minutes and enabling in-the-moment patient education. The case study is the first public confirmation that Corewell Health is an Abridge enterprise customer.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant",
+      "new": true
+    },
     {
       "date": "2026-10-08",
       "cat": "Partnership",
@@ -740,7 +772,19 @@
     {
       "name": "NEJM AI - Pragmatic RCT of ambient AI",
       "url": "https://ai.nejm.org/doi/abs/10.1056/AIoa2500945"
+    },
+    {
+      "name": "Abridge - Abridge Assistant launch (Oct 13, 2026)",
+      "url": "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare"
+    },
+    {
+      "name": "Abridge - Corewell Health / Dr. Kristin Jacob case study (Oct 7, 2026)",
+      "url": "https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant"
+    },
+    {
+      "name": "Abridge - Abridge Assistant platform page",
+      "url": "https://www.abridge.com/platform/assistant"
     }
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }

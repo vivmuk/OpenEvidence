@@ -25,5 +25,8 @@ var abridgeSourcesData = [
   {name:"KLAS - Abridge Ambient AI for Nursing First Look",url:"https://klasresearch.com/report/abridge-ambient-ai-for-nursing-2026-reducing-nursing-workflow-burden-through-ambient-ai-documentation/3998"},
   {name:"Business Insider - Abridge and Epic",url:"https://www.businessinsider.com/inside-messiest-relationship-in-healthcare-ai-abridge-epic-2025-9"},
   {name:"AHA - Ambient AI scribe evidence scan",url:"https://www.aha.org/aha-center-health-innovation-market-scan/2026-04-14-6-health-systems-enhancing-care-delivery-ambient-ai-scribes"},
-  {name:"NEJM AI - Pragmatic RCT of ambient AI",url:"https://ai.nejm.org/doi/abs/10.1056/AIoa2500945"}
+  {name:"NEJM AI - Pragmatic RCT of ambient AI",url:"https://ai.nejm.org/doi/abs/10.1056/AIoa2500945"},
+  {name:"Abridge - Abridge Assistant launch (Oct 13, 2026)",url:"https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare"},
+  {name:"Abridge - Corewell Health / Dr. Kristin Jacob case study (Oct 7, 2026)",url:"https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant"},
+  {name:"Abridge - Abridge Assistant platform page",url:"https://www.abridge.com/platform/assistant"}
 ];
