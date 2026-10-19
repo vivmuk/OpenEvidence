@@ -1,6 +1,11 @@
 var abridgeSourcesData = [
   {name:"Abridge - Official site",url:"https://www.abridge.com/"},
   {name:"Abridge - Press releases",url:"https://www.abridge.com/press"},
+  {name:"Abridge - September 2026 Release: Inpatient Cues, New Specialty Support (Sep 29, 2026)",url:"https://www.abridge.com/blog/now-in-practice-september-2026"},
+  {name:"Abridge - August 2026 Release: CME Credits, Summaries (Aug 28, 2026)",url:"https://www.abridge.com/blog/now-in-practice-august-2026"},
+  {name:"Abridge - HonorHealth enterprise rollout case study (Apr 20, 2026)",url:"https://www.abridge.com/blog/honorhealth-ai-enterprise-rollout"},
+  {name:"Abridge - Reid Health enterprise announcement (Aug 2024)",url:"https://www.abridge.com/press-release/reid-health-announcement"},
+  {name:"Becker's - 10 AI vendors gaining traction with health systems (2026)",url:"https://www.beckershospitalreview.com/healthcare-information-technology/ai/10-ai-vendors-gaining-traction-with-health-systems/"},
   {name:"Abridge - UT System enterprise-wide agreement (Oct 8, 2026)",url:"https://www.abridge.com/press-release/ut-health-enterprise-wide"},
   {name:"Abridge - WashU Medicine / BJC Health expansion (Sep 2, 2026)",url:"https://www.abridge.com/press-release/bjchealth-washumedicine-expand-abridge"},
   {name:"Becker's - Abridge and Kaiser Permanente debut Care Signals (Aug 2, 2026)",url:"https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/"},

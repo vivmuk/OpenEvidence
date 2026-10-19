@@ -79,7 +79,7 @@
       "name": "Abridge Assistant",
       "status": "live",
       "date": "Oct 13, 2026",
-      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities.",
+      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls.",
       "url": "https://www.abridge.com/platform/assistant"
     },
     {
@@ -154,6 +154,76 @@
     }
   ],
   "partners": [
+    {
+      "name": "HonorHealth",
+      "type": "Health system · enterprise rollout, no pilot",
+      "date": "Apr 20, 2026",
+      "url": "https://www.abridge.com/blog/honorhealth-ai-enterprise-rollout",
+      "new": false
+    },
+    {
+      "name": "WVU Medicine",
+      "type": "Health system · 2,800 clinicians, 25 hospitals",
+      "date": "Mar 2026",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/10-ai-vendors-gaining-traction-with-health-systems/",
+      "new": false
+    },
+    {
+      "name": "Reid Health",
+      "type": "Health system · rural Indiana/Ohio enterprise",
+      "date": "Aug 2024",
+      "url": "https://www.abridge.com/press-release/reid-health-announcement",
+      "new": false
+    },
+    {
+      "name": "OCHIN",
+      "type": "Health system · rural/community health network",
+      "date": "Jun 11, 2026",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": false
+    },
+    {
+      "name": "Akron Children's Hospital",
+      "type": "Pediatric health system · multilingual",
+      "date": "Aug 28, 2026",
+      "url": "https://www.abridge.com/blog/now-in-practice-august-2026",
+      "new": false
+    },
+    {
+      "name": "CHRISTUS Health",
+      "type": "Health system · unlimited enterprise agreement",
+      "date": "2026",
+      "url": "https://www.abridge.com/customers",
+      "new": false
+    },
+    {
+      "name": "Geisinger",
+      "type": "Health system · 1,000+ clinicians in 10 months",
+      "date": "2026",
+      "url": "https://www.abridge.com/customers",
+      "new": false
+    },
+    {
+      "name": "Cambridge Health Alliance",
+      "type": "Health system · multilingual patient population",
+      "date": "2026",
+      "url": "https://www.abridge.com/customers",
+      "new": false
+    },
+    {
+      "name": "Rady Children's",
+      "type": "Pediatric health system · Cerner integration",
+      "date": "2026",
+      "url": "https://www.abridge.com/customers",
+      "new": false
+    },
+    {
+      "name": "AHIMA",
+      "type": "Content · coding quality and auditability partnership",
+      "date": "Jun 11, 2026",
+      "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": false
+    },
     {
       "name": "Kaiser Permanente",
       "type": "Health system · enterprise ambient AI",
@@ -476,6 +546,15 @@
   ],
   "timeline": [
     {
+      "date": "2026-09-29",
+      "cat": "Product",
+      "title": "Abridge September 2026 Release: Inpatient Cues, New Specialty Support, Admin Controls",
+      "desc": "Abridge's September 'Now in Practice' release adds inpatient cues that capture observations from the bedside while the story is still fresh, inline diagnosis organization and refinement (so combination codes surface before the chart closes), expanded specialty support, and two new admin controls giving project and CDI teams direct control over access management and output verification. The release closes the gap between care delivered and care documented at the point of care.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/now-in-practice-september-2026",
+      "new": false
+    },
+    {
       "date": "2026-10-13",
       "cat": "Product",
       "title": "Abridge Launches Abridge Assistant, the AI Assistant for Healthcare",
@@ -488,7 +567,7 @@
       "date": "2026-10-07",
       "cat": "Partnership",
       "title": "Corewell Health Deploys Abridge Assistant in Primary Care",
-      "desc": "Corewell Health, Michigan's largest health system (21 hospitals, 300+ outpatient locations), is using Abridge Assistant in clinical practice. Dr. Kristin Jacob, an internal medicine-pediatrics clinician and Medical Director of Physician and APP Well-Being, described using Assistant for pre-charting, in-visit decision support, and patient messages — cutting Sunday chart prep from roughly two hours to minutes and enabling in-the-moment patient education. The case study is the first public confirmation that Corewell Health is an Abridge enterprise customer.",
+      "desc": "Corewell Health, Michigan's largest health system (21 hospitals, 300+ outpatient locations), is using Abridge Assistant in clinical practice. Dr. Kristin Jacob, an internal medicine-pediatrics clinician and Medical Director of Physician and APP Well-Being, described using Assistant for pre-charting, in-visit decision support, and patient messages - cutting Sunday chart prep from roughly two hours to minutes and enabling in-the-moment patient education. The case study is the first public confirmation that Corewell Health is an Abridge enterprise customer.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant",
       "new": true
@@ -530,6 +609,15 @@
       "new": false
     },
     {
+      "date": "2026-08-28",
+      "cat": "Product",
+      "title": "Abridge August 2026 Release: CME Credits, Pre-Visit Summaries, Voiceprints",
+      "desc": "Abridge's August 'Now in Practice' release introduced eight capabilities built on context Abridge already has. Clinicians can now claim AMA PRA Category 1 credit for eligible Abridge AI questions, use medical calculators pre-filled from chart context, speak to Abridge AI instead of typing, enroll a Voiceprint for personalized speech recognition, and access pre-visit, pre-admission, and pre-round summaries. Inline Level of Service places CPT code evidence directly below Assessment & Plan.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/now-in-practice-august-2026",
+      "new": false
+    },
+    {
       "date": "2026-09-01",
       "cat": "Milestone",
       "title": "Abridge Named a Fast Company Most Innovative Company of 2026",
@@ -563,6 +651,15 @@
       "desc": "At a New York keynote, Abridge introduced a platform that extends from documentation into billing, clinical decision support, payer adjudication, and pharmaceutical trial screening. The company announced a collaboration with NVIDIA on the first foundation model purpose-built for clinical conversations, a strategic investment from Eli Lilly, partnerships with Artisight and Hellocare, and content deals with ADA, AAFP, Neurology, and JCO. Northwestern Medicine was named as an enterprise rollout.",
       "src": "Abridge / Fortune",
       "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": false
+    },
+    {
+      "date": "2026-04-20",
+      "cat": "Partnership",
+      "title": "HonorHealth Skips Pilot, Goes Enterprise-Wide with Abridge",
+      "desc": "HonorHealth, a Scottsdale, AZ health system serving 5M+ patients annually across 9 acute-care hospitals and 200+ care locations, selected Abridge after a three-and-a-half-year search and skipped the pilot phase entirely. The enterprise-wide rollout began January 2026 with 500 clinicians across ambulatory and inpatient settings using a wave-based deployment strategy. CMIO Dr. Matthew Anderson said clinicians who initially rejected ambient AI were asking for it within weeks.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/honorhealth-ai-enterprise-rollout",
       "new": false
     },
     {
@@ -672,6 +769,26 @@
     {
       "name": "Abridge - Press releases",
       "url": "https://www.abridge.com/press"
+    },
+    {
+      "name": "Abridge - September 2026 Release: Inpatient Cues, New Specialty Support (Sep 29, 2026)",
+      "url": "https://www.abridge.com/blog/now-in-practice-september-2026"
+    },
+    {
+      "name": "Abridge - August 2026 Release: CME Credits, Summaries (Aug 28, 2026)",
+      "url": "https://www.abridge.com/blog/now-in-practice-august-2026"
+    },
+    {
+      "name": "Abridge - HonorHealth enterprise rollout case study (Apr 20, 2026)",
+      "url": "https://www.abridge.com/blog/honorhealth-ai-enterprise-rollout"
+    },
+    {
+      "name": "Abridge - Reid Health enterprise announcement (Aug 2024)",
+      "url": "https://www.abridge.com/press-release/reid-health-announcement"
+    },
+    {
+      "name": "Becker's - 10 AI vendors gaining traction with health systems (2026)",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/10-ai-vendors-gaining-traction-with-health-systems/"
     },
     {
       "name": "Abridge - UT System enterprise-wide agreement (Oct 8, 2026)",
@@ -786,5 +903,5 @@
       "url": "https://www.abridge.com/platform/assistant"
     }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
 }

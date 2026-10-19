@@ -1,5 +1,15 @@
 // Abridge partners, customers, and investors.
 var abridgePartnersData = [
+  {name:"HonorHealth",type:"Health system · enterprise rollout, no pilot",date:"Apr 20, 2026",url:"https://www.abridge.com/blog/honorhealth-ai-enterprise-rollout",new:false},
+  {name:"WVU Medicine",type:"Health system · 2,800 clinicians, 25 hospitals",date:"Mar 2026",url:"https://www.beckershospitalreview.com/healthcare-information-technology/ai/10-ai-vendors-gaining-traction-with-health-systems/",new:false},
+  {name:"Reid Health",type:"Health system · rural Indiana/Ohio enterprise",date:"Aug 2024",url:"https://www.abridge.com/press-release/reid-health-announcement",new:false},
+  {name:"OCHIN",type:"Health system · rural/community health network",date:"Jun 11, 2026",url:"https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",new:false},
+  {name:"Akron Children's Hospital",type:"Pediatric health system · multilingual",date:"Aug 28, 2026",url:"https://www.abridge.com/blog/now-in-practice-august-2026",new:false},
+  {name:"CHRISTUS Health",type:"Health system · unlimited enterprise agreement",date:"2026",url:"https://www.abridge.com/customers",new:false},
+  {name:"Geisinger",type:"Health system · 1,000+ clinicians in 10 months",date:"2026",url:"https://www.abridge.com/customers",new:false},
+  {name:"Cambridge Health Alliance",type:"Health system · multilingual patient population",date:"2026",url:"https://www.abridge.com/customers",new:false},
+  {name:"Rady Children's",type:"Pediatric health system · Cerner integration",date:"2026",url:"https://www.abridge.com/customers",new:false},
+  {name:"AHIMA",type:"Content · coding quality and auditability partnership",date:"Jun 11, 2026",url:"https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",new:false},
   {name:"Kaiser Permanente",type:"Health system · enterprise ambient AI",date:"2024-2026",url:"https://www.abridge.com/",new:false},
   {name:"Mayo Clinic",type:"Health system · enterprise deployment",date:"2024-2026",url:"https://www.abridge.com/",new:false},
   {name:"Johns Hopkins Medicine",type:"Health system · enterprise deployment",date:"2024-2026",url:"https://www.abridge.com/",new:false},
