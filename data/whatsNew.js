@@ -5,6 +5,42 @@
 
 var whatsNewData = [
   {
+    date: "October 19, 2026",
+    updated: "Daily OpenEvidence check (Mon Oct 19, 9:00 AM ET) - Venice Augment scrape + 5 web searches + arXiv API (30 results) + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). Grok X/Twitter search timed out - noted as gap. 3 new arXiv papers + 8 new PubMed papers added to research.json. 4 new benchmark entries added to benchmarks.json. Key findings: GPT-5.5 over-credits same-trial evidence in medical LLM verification despite correct lineage recognition (arXiv 2610.23721); training-free defense lowers prompt injection attack success on MedQA to 4-7% (arXiv 2610.22594); clinical AI scribe shift detection via monitoring-by-betting (arXiv 2610.17399); LLM PECARN rule calculation from ED notes 95.4% accuracy (PMID 42893265); 4 LLMs benchmarked on expert ophthalmology questions - Claude/Grok rated higher but had worse safety tails (PMID 42894879); LLaMA 3.2 + RAG outperforms other LLMs in dental implantology (PMID 42894220).",
+    items: [
+      {
+        cat: "Research - LLM Verification Gap",
+        title: "GPT-5.5 over-credits same-trial evidence despite correct lineage recognition (Oct 16, 2026)",
+        desc: "Krishna et al. identify a behavioral gap between lineage recognition and evidence aggregation in medical LLM verification. GPT-5.5 correctly identifies shared trial lineage in 10/10 calls but over-credits same-trial reports in 5/5 aggregation calls. A study-grouping instruction reduces over-credit from 4/5 to 0/5. Implications for clinical AI tools that aggregate evidence from multiple publications. arXiv 2610.23721."
+      },
+      {
+        cat: "Research - Clinical AI Security",
+        title: "Training-free defense protects medical multi-agent systems against prompt injection (Oct 15, 2026)",
+        desc: "Sakib et al. show a single injected passage succeeds in up to 61% of medical multi-agent cases. Proposed defense verifies clinical judgments against patient findings alone, lowering MedQA attack success to 4-7% while maintaining accuracy. Outperforms all baselines on every benchmark. arXiv 2610.22594."
+      },
+      {
+        cat: "Research - Clinical AI Monitoring",
+        title: "Monitoring-by-Betting detects distribution shifts in clinical AI scribe data (Oct 12, 2026)",
+        desc: "Zhou et al. introduce asymptotic e-detectors for sequential changepoint detection in unstructured data streams. Adaptive monitors detect shifts faster than fixed monitors across three real-world datasets including clinical AI scribe deployment. LLM-concept monitors provide fastest and most interpretable detection. arXiv 2610.17399."
+      },
+      {
+        cat: "Research - LLM Clinical Prediction Rule",
+        title: "LLM calculates PECARN injury rule from unstructured ED notes with 95.4% accuracy (Oct 8, 2026)",
+        desc: "Devisetti et al. (UCSF) show OpenAI o1 calculates PECARN intra-abdominal injury risk scores from unstructured ED notes with 95.4% accuracy, 94.4% sensitivity, 98.2% specificity, F1 0.97. Weighted Cohen's kappa 0.96. LLMs may enable automated calculation of clinical prediction rules from documentation. PMID 42893265."
+      },
+      {
+        cat: "Benchmark - LLM Ophthalmology",
+        title: "4 consumer-facing LLMs benchmarked on expert ophthalmology questions (Sep 4, 2026)",
+        desc: "Yang et al. evaluator-masked study of ChatGPT, Gemini, Claude, and Grok on 45 expert anterior segment ophthalmology questions. 9900 ratings (11 evaluators x 5 metrics). Claude and Grok rated more favorably on quality (P<0.001) but had higher severe safety rating tails (35.6% and 33.3% vs 6.7% and 11.1%). PMID 42894879."
+      },
+      {
+        cat: "Research - RAG in Dentistry",
+        title: "LLaMA 3.2 + RAG outperforms other LLMs in evidence-based dental implantology (Jul 23, 2026)",
+        desc: "Alevizakos et al. blinded controlled evaluation of 4 LLMs on 16 dental implantology questions. LLaMA 3.2 + RAG significantly outperformed all others (p<0.001) with median scores: Specificity 9.0, Accuracy 9.5, Clinical Utility 10.0. Real-time access to structured guidelines significantly enhanced response quality. PMID 42894220."
+      }
+    ]
+  },
+  {
     date: "October 18, 2026",
     updated: "Weekly OpenEvidence Insights update (Sun Oct 18, 5:00 PM ET) - Venice Augment Search (23 queries: 8 OE announcements + 8 clinical AI safety/benchmarks + 7 competitor/industry) + PubMed eutils (20 narrow + 30 expanded). Added 2 new papers to research.json (Mayo Clinic eConsultations PMID 42893001, Artsi et al. npj Digit Med systematic review). Added 2 new benchmark studies to benchmarks.json. Timeline.csv updated with 6 new entries: Mayo Clinic eConsultations paper, OpenEvidence systematic review, Abridge VA enterprise contract, Abridge UT System agreement, Doximity 2026 State of AI Report, FDA GenAI discussion paper. Key findings: OpenEvidence systematic review (11 studies, lower fabricated citations than general LLMs); Mayo Clinic blinded eConsultations evaluation; Doximity 2026 State of AI (94% physicians using/interested, 72% in practice); FDA GenAI discussion paper (comments due Oct 19); Abridge VA enterprise contract + UT System agreement; ChatGPT for Clinicians Epic integration (Sep 1); UpDoc first FDA-cleared patient-facing LLM SaMD (Jun 25).",
     items: [

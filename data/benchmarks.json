@@ -4208,5 +4208,138 @@
       "hallucination"
     ],
     "status": "published"
+  },
+  {
+    "id": "pmid:42894879",
+    "source": "Ophthalmol Sci",
+    "pmid": "42894879",
+    "title": "Evaluator-Masked Assessment of 4 Consumer-Facing Large Language Models on Expert Anterior Segment Ophthalmology Questions",
+    "authors": [
+      "Yang S",
+      "Han H",
+      "Lee HS"
+    ],
+    "journal": "Ophthalmol Sci",
+    "published": "2026-09",
+    "doi": "10.1016/j.xops.2026.101398",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42894879/",
+    "type": "Comparative benchmark",
+    "tools_evaluated": [
+      "ChatGPT",
+      "Gemini",
+      "Claude",
+      "Grok"
+    ],
+    "scale": "45 expert questions x 4 LLMs x 5 metrics x 11 evaluators (9900 ratings)",
+    "key_findings": "Claude and Grok rated more favorably than ChatGPT and Gemini on quality metrics (Friedman P<0.001). No significant difference in mean safety scores, but Claude (35.6%) and Grok (33.3%) had more severe safety rating tails vs ChatGPT (6.7%) and Gemini (11.1%).",
+    "tags": [
+      "LLM benchmark",
+      "ophthalmology",
+      "ChatGPT",
+      "Gemini",
+      "Claude",
+      "Grok",
+      "safety",
+      "expert evaluation"
+    ],
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42894220",
+    "source": "BMC Oral Health",
+    "pmid": "42894220",
+    "title": "Evaluating different large language model performances in evidence-based dental implantology",
+    "authors": [
+      "Alevizakos V",
+      "et al."
+    ],
+    "journal": "BMC Oral Health",
+    "published": "2026-07-23",
+    "doi": "10.1186/s12903-026-09368-2",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42894220/",
+    "type": "Blinded controlled benchmark",
+    "tools_evaluated": [
+      "LLaMA 3.2 + RAG",
+      "3 other LLMs (general-purpose, fine-tuned)"
+    ],
+    "scale": "16 clinical questions x 4 LLMs x 3 specialist evaluators",
+    "key_findings": "LLaMA 3.2 + RAG significantly outperformed all other models (p<0.001) with median scores: Specificity 9.0, Accuracy 9.5, Clinical Utility 10.0. RAG access to structured guidelines significantly enhanced response quality. Inter-rater reliability was slight (kappa 0.078-0.180).",
+    "tags": [
+      "LLM benchmark",
+      "dental implantology",
+      "RAG",
+      "LLaMA",
+      "evidence-based",
+      "expert evaluation"
+    ],
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42894149",
+    "source": "BMC Oral Health",
+    "pmid": "42894149",
+    "title": "Concordance between large language models and orthodontists in photo-based orthodontic assessment",
+    "authors": [
+      "Abay F"
+    ],
+    "journal": "BMC Oral Health",
+    "published": "2026-07-23",
+    "doi": "10.1186/s12903-026-09380-6",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42894149/",
+    "type": "Comparative concordance study",
+    "tools_evaluated": [
+      "ChatGPT-4o",
+      "Grok 4.1"
+    ],
+    "scale": "104 patients x 2 LLMs x 3 expert orthodontist evaluators x 5 clinical questions",
+    "key_findings": "Mean ratings generally >=3 (moderate clinical acceptability). ChatGPT-4o rated significantly higher for treatment approach in Dental Class I patients. LLMs may provide clinically acceptable outputs as supportive tools under professional supervision, but variability persists in complex decision-making tasks.",
+    "tags": [
+      "LLM benchmark",
+      "orthodontics",
+      "ChatGPT-4o",
+      "Grok",
+      "AI vs clinician",
+      "concordance"
+    ],
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "pmid:42893265",
+    "source": "J Am Coll Emerg Physicians Open",
+    "pmid": "42893265",
+    "title": "Automated Calculation of the PECARN Intra-Abdominal Injury Rule from Unstructured ED Notes Using a Large Language Model",
+    "authors": [
+      "Devisetti L",
+      "Chen B",
+      "Addo N",
+      "Narang K",
+      "Alvarez C",
+      "Kornak J",
+      "Singh C",
+      "Kornblith AE"
+    ],
+    "journal": "J Am Coll Emerg Physicians Open",
+    "published": "2026-10-08",
+    "doi": "10.1016/j.acepjo.2026.100525",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42893265/",
+    "type": "Validation benchmark",
+    "tools_evaluated": [
+      "OpenAI o1"
+    ],
+    "scale": "196 children with complete ED notes, 2 urban pediatric EDs",
+    "key_findings": "LLM calculated binary PECARN risk scores with 95.4% accuracy, 94.4% sensitivity, 98.2% specificity, F1 0.97. Weighted Cohen's kappa 0.96. Predictor variable extraction >94% accuracy across all variables. LLMs comparable to clinicians for automated clinical prediction rule calculation.",
+    "tags": [
+      "LLM",
+      "PECARN",
+      "clinical prediction rule",
+      "emergency department",
+      "validation",
+      "OpenAI o1"
+    ],
+    "status": "published",
+    "new": true
   }
 ]
