@@ -204,6 +204,7 @@ function build() {
   }));
 
   const series = buildSeries(rows);
+  const dates = rows.map(r => r.date).filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d)).sort();
 
   // Latest observation per canonical metric. Prefer the newest date; on a tie,
   // prefer the numeric over a suffixed approximation ("1B+").
@@ -266,7 +267,9 @@ function build() {
   };
 
   return {
-    generated: new Date().toISOString().slice(0, 10),
+    // Deterministic, data-derived stamp. A wall-clock timestamp here would make
+    // --check fail at every UTC midnight even when nothing changed.
+    dataThrough: dates.length ? dates[dates.length - 1] : '',
     latest,
     series: chart,
     counts,
