@@ -627,6 +627,22 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-10-20",
+  "cat": "Competitor",
+  "title": "Doximity and Wolters Kluwer bring UpToDate into Doximity Ask",
+  "desc": "Doximity (NYSE: DOCS) and Wolters Kluwer Health announce a partnership making UpToDate clinical content - 13,000+ topics and best practice guides from 7,600 physician authors, editors and peer reviewers - directly accessible inside Doximity Ask, its AI clinical decision support tool. Clinicians at h",
+  "src": "Wolters Kluwer / MobiHealthNews",
+  "url": "https://www.wolterskluwer.com/en/news/doximity-wolters-kluwer-uptodate-doximity-ask",
+  "score": 53,
+  "confidence": "reported",
+  "competitors": [
+   "Doximity",
+   "UpToDate",
+   "Abridge"
+  ],
+  "comparative": false
+ },
+ {
   "date": "2026-08-27",
   "cat": "Milestone",
   "title": "Daniel Nadler Named to TIME100 AI 2026",
@@ -747,18 +763,6 @@ var signalsData = [
   "competitors": [
    "Doximity"
   ],
-  "comparative": false
- },
- {
-  "date": "2026-09-22",
-  "cat": "Competitor",
-  "title": "Heidi Health Raises $340M Package - Largest Clinical Documentation Round of 2026",
-  "desc": "Melbourne-based Heidi Health (ambient scribe + Heidi Evidence CDS) announces a $340M package: $100M equity plus $240M non-dilutive financing (General Catalyst-led facility), with Blackbird, Phoenix Court, Point72 Private Investments and Headline participating - total raised at least ~$436.6M. Larges",
-  "src": "Tech Startups",
-  "url": "https://techstartups.com/2026/09/22/venture-capital-startup-funding-roundup-september-22-2026-general-catalyst-goldman-sachs-greylock-m13-y-combinator-more/",
-  "score": 47,
-  "confidence": "reported",
-  "competitors": [],
   "comparative": false
  }
 ];

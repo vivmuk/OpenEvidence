@@ -173,11 +173,11 @@ var siteMetrics = {
   },
   "counts": {
     "partners": 57,
-    "competitors": 38,
+    "competitors": 39,
     "research": 391,
     "benchmarks": 178,
     "publications": 137,
-    "timeline": 155,
+    "timeline": 156,
     "sources": 67
   }
 };
