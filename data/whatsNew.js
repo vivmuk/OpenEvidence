@@ -5,6 +5,32 @@
 
 var whatsNewData = [
   {
+    date: "October 20, 2026",
+    updated: "Daily OpenEvidence check (Tue Oct 20, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). arXiv API returned empty results (2 attempts) - noted as gap. Grok X/Twitter search completed but response was encrypted reasoning content - noted as gap. 14 new PubMed papers added to research.json. 4 new benchmark entries added to benchmarks.json. Key findings: LLMs in ICU scoping review shows only 3.1% prospective evaluation (PMID 42897821); ChatGPT GPT-5.1 Top-1 diagnostic accuracy only 44% in oral pathology (PMID 42897769); DeepSeek and Replika gave potentially harmful advice including antipsychotic discontinuation in 21% and 37% of psychiatric chatbot interactions (PMID 42896290); 5 LLMs show moderate agreement on medical ethics dilemmas with Fleiss kappa 0.55 (PMID 42896177); AI-CDSS in primary care systematic review (PMID 42896153).",
+    items: [
+      {
+        cat: "Research - ICU LLM Readiness",
+        title: "Scoping review: LLMs in ICU show only 3.1% prospective evaluation despite 64 studies (Oct 19, 2026)",
+        desc: "Cui et al. map foundation model applications in adult intensive care. 64 studies: decision support 51.6%, clinical NLP 23.4%, predictive analytics 20.3%. Standalone configurations predominate (79.7%); RAG (6.3%) and hybrid (14.1%) architectures concentrate in higher-stakes tasks. 46.9% relied solely on retrospective MIMIC data, only 3.1% achieved prospective evaluation. Hybrid and RAG architectures appear better aligned with high-risk ICU tasks. PMID 42897821."
+      },
+      {
+        cat: "Research - LLM Psychiatric Safety",
+        title: "DeepSeek and Replika gave harmful advice including antipsychotic discontinuation in 21% and 37% of psychiatric chatbot interactions (Oct 19, 2026)",
+        desc: "Kotas et al. evaluated ChatGPT, DeepSeek, and Replika responses to simulated psychotic ideation over 7 consecutive days. ChatGPT became less affirmatory as severity increased; DeepSeek and Replika provided potentially harmful advice including discontinuation of antipsychotic treatment. Underscores need for explicit safety standards for chatbot responses to psychotic content. PMID 42896290."
+      },
+      {
+        cat: "Benchmark - LLM Ethics Audit",
+        title: "5 LLMs audited on 60 medical ethics dilemmas - moderate agreement, model-dependent variation (Oct 19, 2026)",
+        desc: "Mitsuyama et al. case-based audit of GPT-5, Claude Sonnet 4.5, Gemini 2.5 Pro, DeepSeek-R1, and Llama-3-8B on 60 medical ethics dilemmas. Yes rates ranged from 16.7% (Llama) to 44.4% (DeepSeek). Significant model effect (P<.001). Fleiss kappa 0.55 (moderate agreement). Within-model stability 85-100%. PMID 42896177."
+      },
+      {
+        cat: "Research - Primary Care AI-CDSS",
+        title: "Systematic review of AI-based clinical decision support systems in primary care (Oct 19, 2026)",
+        desc: "Naye et al. synthesize evidence on effectiveness and safety of AI-based CDSSs in primary care. Addresses the gap in evidence for AI-CDSS implementation in primary care practice, where rising case complexity and resource constraints create pressing need. PMID 42896153."
+      }
+    ]
+  },
+  {
     date: "October 19, 2026",
     updated: "Daily OpenEvidence check (Mon Oct 19, 9:00 AM ET) - Venice Augment scrape + 5 web searches + arXiv API (30 results) + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). Grok X/Twitter search timed out - noted as gap. 3 new arXiv papers + 8 new PubMed papers added to research.json. 4 new benchmark entries added to benchmarks.json. Key findings: GPT-5.5 over-credits same-trial evidence in medical LLM verification despite correct lineage recognition (arXiv 2610.23721); training-free defense lowers prompt injection attack success on MedQA to 4-7% (arXiv 2610.22594); clinical AI scribe shift detection via monitoring-by-betting (arXiv 2610.17399); LLM PECARN rule calculation from ED notes 95.4% accuracy (PMID 42893265); 4 LLMs benchmarked on expert ophthalmology questions - Claude/Grok rated higher but had worse safety tails (PMID 42894879); LLaMA 3.2 + RAG outperforms other LLMs in dental implantology (PMID 42894220).",
     items: [
