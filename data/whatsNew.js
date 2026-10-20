@@ -6,6 +6,37 @@
 var whatsNewData = [
   {
     date: "October 20, 2026",
+    updated: "Global CDS tracker weekly sweep (Tue Oct 20, 5:00 PM ET) - Venice web searches across global CDS platforms, regional markets (US/EU/UK/China/India/Japan/SEA/LatAm/MEA), regulators (FDA/EMA/NMPA/MHRA/WHO) and competitor/LinkedIn/X queries. Key findings: MHRA takes its AI device regulation plan to AdvaMed 2026 and is recruiting a Washington DC FDA liaison under the June 2026 FDA-MHRA Pioneer Programme, with AI Airlock Phase 3 applications open (first innovators Nov 2026); Hippocratic AI adds seven senior executives as it reports 300M+ patient voice interactions across 300+ live clinical use cases on Polaris; Hospital General de Mexico opens a health-tech AI research center on the back of January 2026 General Health Law reform and COFEPRIS trial-approval cuts from 120 to 30 days; India opens its first government-run AI clinic at GIMS Greater Noida with POCT Group targeting 1,300+ Uttar Pradesh government facilities; Duke Medical Center Library ends its DynaMed subscription as UpToDate Expert AI adds CME credits. 5 new global timeline entries, 1 new regulatory entry, 1 new emerging trend, India region card updated. No new CDS platform launches found this week.",
+    items: [
+      {
+        cat: "Regulatory - UK/MHRA",
+        title: "MHRA takes AI device regulation plans to AdvaMed and creates an FDA liaison role (Oct 20, 2026)",
+        desc: "MHRA deputy director for AI and software Jessica Paulsen presents the UK approach to AI-enabled medical devices at AdvaMed 2026 around three themes: lifecycle-wide flexible regulation, regulatory sandboxes, and closer cooperation between regulators. MHRA is recruiting a Washington DC-based senior officer as its dedicated FDA liaison under the Pioneer Programme unveiled in June 2026, under which the FDA and MHRA create reciprocal liaison roles. Follows the Oct 6 acceptance of all 44 doctors-led AI Commission recommendations and AI Airlock Phase 3 opening, with first innovators selected in November 2026 and draft guidance on adaptive-AI change control due December 2026."
+      },
+      {
+        cat: "Competitor - Hippocratic AI",
+        title: "Hippocratic AI adds seven senior executives as agentic voice AI scales (Oct 19, 2026)",
+        desc: "Seven senior appointments across operations, legal, government solutions, pharma, global partnerships, marketing and finance. The company reports 300M+ patient voice interactions across 300+ live clinical use cases on its Polaris constellation model with zero safety issues in production, following the Aug 13 launch of Agentic Orchestrators (30+ orchestrators across payer, provider, pharma and medtech). Total funding $444M from a16z, General Catalyst, Kleiner Perkins, NVentures, CapitalG and health systems. Agents do not diagnose or prescribe."
+      },
+      {
+        cat: "Regional - Latin America",
+        title: "Hospital General de Mexico opens health-tech AI research center (Jul 30, 2026)",
+        desc: "Hospital General de Mexico Dr. Eduardo Liceaga (1,200 beds, 48 specialties) inaugurates the Center for Research in Technological Applications for Health, unifying clinical research, data science, engineering and AI in one institutional platform - from isolated pilots to permanent digital infrastructure. Enabled by Mexico January 2026 General Health Law reform (mandated digital health systems, codified big-data use for AI) and COFEPRIS reforms that cut trial approval from 120 to 30 days."
+      },
+      {
+        cat: "Regional - India",
+        title: "India opens its first government-run AI clinic at GIMS Greater Noida (Jan 2026)",
+        desc: "India first government hospital-based AI clinic combines AI algorithms with genetic screening across blood tests, X-ray, ultrasound, CT, MRI and labs to support diagnosis and treatment, with AI-assisted robotic surgery support planned. The POCT Group then announces AI-driven clinical workflows across 1,300+ government health facilities in Uttar Pradesh by April 2026, automating lab results and delivering reports via SMS/WhatsApp with a 60% turnaround-time target."
+      },
+      {
+        cat: "Market - Point-of-care reference",
+        title: "Duke Medical Center Library ends DynaMed subscription as UpToDate Expert AI adds CME (Jun 30, 2026)",
+        desc: "Duke ends DynaMed access on June 30, 2026, consolidating on UpToDate across web, Epic and mobile. Wolters Kluwer began awarding CME credits through UpToDate Expert AI on March 18, 2026 and surfaces UpToDate guidance inside the Abridge ambient documentation workflow. EBSCO Dyna AI (launched 2024; Dyna AI Mode Feb 2026) remains unavailable in the EU. A concrete datapoint in incumbent point-of-care reference consolidation as generative AI layers land."
+      }
+    ]
+  },
+  {
+    date: "October 20, 2026",
     updated: "Daily OpenEvidence check (Tue Oct 20, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). arXiv API returned empty results (2 attempts) - noted as gap. Grok X/Twitter search completed but response was encrypted reasoning content - noted as gap. 14 new PubMed papers added to research.json. 4 new benchmark entries added to benchmarks.json. Key findings: LLMs in ICU scoping review shows only 3.1% prospective evaluation (PMID 42897821); ChatGPT GPT-5.1 Top-1 diagnostic accuracy only 44% in oral pathology (PMID 42897769); DeepSeek and Replika gave potentially harmful advice including antipsychotic discontinuation in 21% and 37% of psychiatric chatbot interactions (PMID 42896290); 5 LLMs show moderate agreement on medical ethics dilemmas with Fleiss kappa 0.55 (PMID 42896177); AI-CDSS in primary care systematic review (PMID 42896153).",
     items: [
       {

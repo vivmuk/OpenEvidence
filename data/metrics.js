@@ -176,8 +176,8 @@ var siteMetrics = {
     "competitors": 38,
     "research": 391,
     "benchmarks": 178,
-    "publications": 126,
-    "timeline": 154,
+    "publications": 137,
+    "timeline": 155,
     "sources": 67
   }
 };
