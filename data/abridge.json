@@ -546,6 +546,15 @@
   ],
   "timeline": [
     {
+      "date": "2026-10-13",
+      "cat": "Competitor",
+      "title": "Suki Raises $90M Series E to Build AI Agents for Referrals and Prior Auths",
+      "desc": "Suki, Abridge's closest ambient AI competitor, closed a $90M Series E led by Healthier Capital, bringing total raised to $250M+. The funding will push Suki beyond clinical notes into AI agents that autonomously draft referrals, submit prior authorizations, place orders, and schedule follow-ups — directly competing with Abridge's Availity prior-auth partnership and revenue cycle expansion. Suki reports 450+ organizations, 30+ technology partners, and 190% YoY encounter growth.",
+      "src": "Healthcare Dive / TechTimes",
+      "url": "https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/",
+      "new": true
+    },
+    {
       "date": "2026-09-29",
       "cat": "Product",
       "title": "Abridge September 2026 Release: Inpatient Cues, New Specialty Support, Admin Controls",
@@ -901,7 +910,11 @@
     {
       "name": "Abridge - Abridge Assistant platform page",
       "url": "https://www.abridge.com/platform/assistant"
+    },
+    {
+      "name": "Healthcare Dive - Suki raises $90M Series E for AI agents (Oct 13, 2026)",
+      "url": "https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/"
     }
   ],
-  "updated": "2026-10-19"
+  "updated": "2026-10-20"
 }

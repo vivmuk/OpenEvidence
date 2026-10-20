@@ -33,5 +33,6 @@ var abridgeSourcesData = [
   {name:"NEJM AI - Pragmatic RCT of ambient AI",url:"https://ai.nejm.org/doi/abs/10.1056/AIoa2500945"},
   {name:"Abridge - Abridge Assistant launch (Oct 13, 2026)",url:"https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare"},
   {name:"Abridge - Corewell Health / Dr. Kristin Jacob case study (Oct 7, 2026)",url:"https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant"},
-  {name:"Abridge - Abridge Assistant platform page",url:"https://www.abridge.com/platform/assistant"}
+  {name:"Abridge - Abridge Assistant platform page",url:"https://www.abridge.com/platform/assistant"},
+  {name:"Healthcare Dive - Suki raises $90M Series E for AI agents (Oct 13, 2026)",url:"https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/"}
 ];
