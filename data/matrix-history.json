@@ -1599,6 +1599,28 @@
      "sea": "no",
      "latam": "no",
      "mea": "no"
+    },
+    "Healthleap": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "ClinicalKey Nursing AI": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "yes",
+     "jp": "yes",
+     "sea": "yes",
+     "latam": "yes",
+     "mea": "yes"
     }
    }
   }

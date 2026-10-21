@@ -51,4 +51,6 @@ var globalMatrixData = [
   {platform:"RhythmX Pulse (GW RhythmX)",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Medwise AI",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Smart Doctor (AIIMS/NHA)",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"Healthleap",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+  {platform:"ClinicalKey Nursing AI",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"yes",sea:"yes",latam:"yes",mea:"yes"}
 ];;
