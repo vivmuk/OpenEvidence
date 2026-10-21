@@ -12506,5 +12506,78 @@
     "doi": null,
     "journal": "J Eval Clin Pract",
     "published_date": "2026-10-01"
+  },
+  {
+    "id": "pmid:42901770",
+    "source": "pubmed",
+    "pmid": "42901770",
+    "type": "research",
+    "title": "Generative AI in clinical practice: how should rheumatologists evaluate and monitor emerging tools?",
+    "authors": "Kouranloo K, Yazdany J",
+    "abstract": "Narrative review proposing a framework for rheumatologists to evaluate generative AI tools based on two dimensions: contextual complexity and influence on patient care. Greater contextual complexity makes errors harder to detect, while greater influence on care increases consequences of undetected errors. Examines evidence for workflow benefits and clinical effectiveness, considers safety, equity, privacy, governance, and implementation. Existing evidence on benefits, accuracy and reliability remains mixed. Ambient AI scribes reduce documentation burden, but evidence of improved patient outcomes from clinical decision support is limited. Tools influencing diagnosis or treatment require prospective evaluation of clinical benefit and safety. Safeguards should address hallucinations, automation bias, and propagating documentation errors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42901770/",
+    "pdf_url": null,
+    "doi": "10.1002/acr.80195",
+    "journal": "Arthritis Care Res",
+    "published_date": "2026-10-20",
+    "tags": [
+      "clinical AI",
+      "generative AI",
+      "clinical decision support",
+      "evaluation framework",
+      "rheumatology",
+      "safety",
+      "governance"
+    ],
+    "relevance": "high"
+  },
+  {
+    "id": "pmid:42900908",
+    "source": "pubmed",
+    "pmid": "42900908",
+    "type": "research",
+    "title": "Artificial Intelligence-Driven Cost Savings from Emergency Department Chest Pain Patient Evaluation: A Monte Carlo Simulation",
+    "authors": "Baugh CW, Luo A, Zeuthen C, Samadian KD, De Armas RE, Senter-Zapata M, Zellweger MJ, Brunner-LaRocca HP",
+    "abstract": "Monte Carlo simulation (1,000 trials) estimating national impact of using an AI-driven clinical decision-support tool to reduce avoidable downstream cardiac testing among eligible U.S. ED patients with chest pain. Universal adoption estimated to save mean $675M ($340M SD) by avoiding 688,000 (147,000) downstream cardiac diagnostic tests, resulting in annual decreases of 537,000 (115,000) hospitalizations, 8.30M (1.96M) bed hours, 490 (150) new cancer diagnoses, and 250 (80) cancer deaths. AI-driven CDS tool improves detection of obstructive CAD and focuses diagnostic testing on those most likely to benefit.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42900908/",
+    "pdf_url": null,
+    "doi": "10.5811/westjem.56973",
+    "journal": "West J Emerg Med",
+    "published_date": "2026-07-28",
+    "tags": [
+      "clinical decision support",
+      "AI-driven CDS",
+      "emergency medicine",
+      "chest pain",
+      "cost savings",
+      "Monte Carlo simulation",
+      "cardiac testing"
+    ],
+    "relevance": "high"
+  },
+  {
+    "id": "pmid:42898328",
+    "source": "pubmed",
+    "pmid": "42898328",
+    "type": "research",
+    "title": "An agentic AI- and n8n automation-powered maternal care framework with predictive pregnancy monitoring and continuous learning",
+    "authors": "Thippa S, Ainarappan N, Suganya R",
+    "abstract": "Agentic AI Maternal Triage Framework combining patient-reported outcomes with quantitative telemetry for real-time, context-aware risk stratification. Triage workloads processed via n8n orchestration using light gradient boosting machine models for cardiovascular/metabolic risk detection. RAG-powered Google Gemini LLM produces structured triaged outputs delivered to conversational agent (low-risk) or physician (high-risk) with escalation model. Expert validation captured via stateless webhooks for continuous learning. Predictive models achieved >99.8% classification metrics in simulation (synthetic data, no clinical validity established). Technical proof of concept for integrating predictive modeling, RAG-grounded generative reasoning, context-aware routing, and human-in-the-loop feedback.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42898328/",
+    "pdf_url": null,
+    "doi": "10.3389/fdgth.2026.1840650",
+    "journal": "Front Digit Health",
+    "published_date": "2026-10-05",
+    "tags": [
+      "agentic AI",
+      "RAG",
+      "clinical decision support",
+      "maternal care",
+      "predictive monitoring",
+      "triage",
+      "LLM",
+      "Gemini"
+    ],
+    "relevance": "medium"
   }
 ]
