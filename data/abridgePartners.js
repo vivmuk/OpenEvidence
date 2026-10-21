@@ -26,6 +26,9 @@ var abridgePartnersData = [
   {name:"Seattle Children's",type:"Pediatric health system · enterprise",date:"Sep 2025",url:"https://www.mobihealthnews.com/",new:false},
   {name:"HCA Healthcare / Tenet Healthcare",type:"Reported customers (2026)",date:"2026",url:"https://multiples.vc/private-comps/abridge",new:false},
 
+  {name:"OhioHealth",type:"Health system · 16 hospitals, Abridge rollout",date:"May 12, 2026",url:"https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/",new:false},
+  {name:"UI Health",type:"Health system · Abridge enterprise deployment",date:"May 12, 2026",url:"https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/",new:false},
+
   {name:"Epic Systems",type:"EHR · Partners and Pals, Workshop co-development",date:"2019-2026",url:"https://www.abridge.com/press-release/abridge-becomes-epics-first-pal-bringing-generative-ai-to-more-providers-and-patients",new:false},
   {name:"NVIDIA",type:"Foundation model · NVentures investor",date:"Jun 11, 2026",url:"https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",new:false},
   {name:"Eli Lilly",type:"Strategic investor · life sciences / trial screening",date:"Jun 11, 2026",url:"https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/",new:false},

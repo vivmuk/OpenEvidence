@@ -330,6 +330,20 @@
       "new": false
     },
     {
+      "name": "OhioHealth",
+      "type": "Health system · 16 hospitals, Abridge rollout",
+      "date": "May 12, 2026",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/",
+      "new": false
+    },
+    {
+      "name": "UI Health",
+      "type": "Health system · Abridge enterprise deployment",
+      "date": "May 12, 2026",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/",
+      "new": false
+    },
+    {
       "name": "Epic Systems",
       "type": "EHR · Partners and Pals, Workshop co-development",
       "date": "2019-2026",
@@ -549,7 +563,7 @@
       "date": "2026-10-13",
       "cat": "Competitor",
       "title": "Suki Raises $90M Series E to Build AI Agents for Referrals and Prior Auths",
-      "desc": "Suki, Abridge's closest ambient AI competitor, closed a $90M Series E led by Healthier Capital, bringing total raised to $250M+. The funding will push Suki beyond clinical notes into AI agents that autonomously draft referrals, submit prior authorizations, place orders, and schedule follow-ups — directly competing with Abridge's Availity prior-auth partnership and revenue cycle expansion. Suki reports 450+ organizations, 30+ technology partners, and 190% YoY encounter growth.",
+      "desc": "Suki, Abridge's closest ambient AI competitor, closed a $90M Series E led by Healthier Capital, bringing total raised to $250M+. The funding will push Suki beyond clinical notes into AI agents that autonomously draft referrals, submit prior authorizations, place orders, and schedule follow-ups - directly competing with Abridge's Availity prior-auth partnership and revenue cycle expansion. Suki reports 450+ organizations, 30+ technology partners, and 190% YoY encounter growth.",
       "src": "Healthcare Dive / TechTimes",
       "url": "https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/",
       "new": true
@@ -660,6 +674,24 @@
       "desc": "At a New York keynote, Abridge introduced a platform that extends from documentation into billing, clinical decision support, payer adjudication, and pharmaceutical trial screening. The company announced a collaboration with NVIDIA on the first foundation model purpose-built for clinical conversations, a strategic investment from Eli Lilly, partnerships with Artisight and Hellocare, and content deals with ADA, AAFP, Neurology, and JCO. Northwestern Medicine was named as an enterprise rollout.",
       "src": "Abridge / Fortune",
       "url": "https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",
+      "new": false
+    },
+    {
+      "date": "2026-05-22",
+      "cat": "Company",
+      "title": "Abridge Names San Oo Chief Technology Officer",
+      "desc": "Abridge appointed San Oo as CTO. Oo was most recently SVP of Engineering at Notion and previously co-founded two companies acquired by LinkedIn and Slack. CEO Shiv Rao cited Oo's track record of platform-level rethinks that alter the texture of work. Oo joins at an inflection point as Abridge scales from documentation into a real-time system of intelligence across 270+ health systems.",
+      "src": "Becker's Hospital Review / BusinessWire",
+      "url": "https://www.businesswire.com/news/home/20260521475981/en/Abridge-Names-San-Oo-CTO",
+      "new": false
+    },
+    {
+      "date": "2026-05-12",
+      "cat": "Milestone",
+      "title": "Abridge Summit at Becker's: Health Systems Operationalize Real-Time Intelligence",
+      "desc": "A field report from the Abridge summit at Becker's 16th Annual Meeting reveals OhioHealth (16-hospital system) and UI Health as Abridge enterprise customers. Reid Health's CDIO described Abridge as the 'wiring' of the health system, reporting a 6% lift in patient-experience scores, 4% increase in wRVUs, improved HCC capture, fewer CDI queries, and a drop in outpatient denials. Northwestern Medicine and Sutter Health leaders discussed conversation-driven clinical decision support and the shift from documentation tool to system of intelligence.",
+      "src": "Becker's Hospital Review",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/",
       "new": false
     },
     {
@@ -914,7 +946,15 @@
     {
       "name": "Healthcare Dive - Suki raises $90M Series E for AI agents (Oct 13, 2026)",
       "url": "https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/"
+    },
+    {
+      "name": "Becker's - Abridge summit field report: real-time intelligence (May 12, 2026)",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/"
+    },
+    {
+      "name": "BusinessWire - Abridge Names San Oo CTO (May 21, 2026)",
+      "url": "https://www.businesswire.com/news/home/20260521475981/en/Abridge-Names-San-Oo-CTO"
     }
   ],
-  "updated": "2026-10-20"
+  "updated": "2026-10-21"
 }

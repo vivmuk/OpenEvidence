@@ -34,5 +34,7 @@ var abridgeSourcesData = [
   {name:"Abridge - Abridge Assistant launch (Oct 13, 2026)",url:"https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare"},
   {name:"Abridge - Corewell Health / Dr. Kristin Jacob case study (Oct 7, 2026)",url:"https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant"},
   {name:"Abridge - Abridge Assistant platform page",url:"https://www.abridge.com/platform/assistant"},
-  {name:"Healthcare Dive - Suki raises $90M Series E for AI agents (Oct 13, 2026)",url:"https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/"}
+  {name:"Healthcare Dive - Suki raises $90M Series E for AI agents (Oct 13, 2026)",url:"https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/"},
+  {name:"Becker's - Abridge summit field report: real-time intelligence (May 12, 2026)",url:"https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/"},
+  {name:"BusinessWire - Abridge Names San Oo CTO (May 21, 2026)",url:"https://www.businesswire.com/news/home/20260521475981/en/Abridge-Names-San-Oo-CTO"},
 ];
