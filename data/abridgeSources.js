@@ -1,4 +1,6 @@
 var abridgeSourcesData = [
+  {name:"Abridge - Maine Health / Dr. Jessica Faraci case study (Oct 18, 2026)",url:"https://www.abridge.com/blog/mainehealth-jessica-faraci-abridge-assistant"},
+  {name:"Abridge - Pre-visit summaries design deep-dive (Oct 16, 2026)",url:"https://www.abridge.com/blog/the-future-of-ai-pre-charting-is-more-than-a-chart-summary"},
   {name:"Abridge - Official site",url:"https://www.abridge.com/"},
   {name:"Abridge - Press releases",url:"https://www.abridge.com/press"},
   {name:"Abridge - September 2026 Release: Inpatient Cues, New Specialty Support (Sep 29, 2026)",url:"https://www.abridge.com/blog/now-in-practice-september-2026"},

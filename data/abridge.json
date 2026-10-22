@@ -79,7 +79,7 @@
       "name": "Abridge Assistant",
       "status": "live",
       "date": "Oct 13, 2026",
-      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls.",
+      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries.",
       "url": "https://www.abridge.com/platform/assistant"
     },
     {
@@ -292,6 +292,13 @@
       "type": "Health system · Abridge Assistant enterprise deployment",
       "date": "Oct 7, 2026",
       "url": "https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant",
+      "new": false
+    },
+    {
+      "name": "Maine Health",
+      "type": "Health system · Abridge Assistant family medicine",
+      "date": "Oct 18, 2026",
+      "url": "https://www.abridge.com/blog/mainehealth-jessica-faraci-abridge-assistant",
       "new": true
     },
     {
@@ -560,6 +567,24 @@
   ],
   "timeline": [
     {
+      "date": "2026-10-18",
+      "cat": "Partnership",
+      "title": "Maine Health Case Study: Abridge Assistant in Family Medicine Practice",
+      "desc": "Abridge published a case study with Dr. Jessica Faraci, a family medicine physician at Maine Health, describing how she uses Abridge Assistant for in-visit decision support, generating patient summaries, writing medical letters, and creating patient handouts. Faraci reports Assistant saves roughly 30 minutes per day on top of documentation time savings, with about half of its auto-generated clinical questions matching what she was already thinking. The case study is the first public confirmation that Maine Health is an Abridge enterprise partner.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/mainehealth-jessica-faraci-abridge-assistant",
+      "new": true
+    },
+    {
+      "date": "2026-10-16",
+      "cat": "Product",
+      "title": "Abridge Details Pre-Visit Summaries: Specialty-Aware, Setting-Specific, Coming Personalization",
+      "desc": "Abridge published an in-depth blog post on how pre-visit summaries are built and evaluated across outpatient, inpatient, and emergency settings. The summaries filter the EHR problem list by specialty, surface relevant changes since the last visit, and are now available across 300+ health systems. An upcoming release will let clinicians personalize summaries through Abridge Assistant in real time. Clinicians at Akron Children's Hospital and Children's Hospital of Philadelphia (CHOP) are cited as using the feature.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/the-future-of-ai-pre-charting-is-more-than-a-chart-summary",
+      "new": true
+    },
+    {
       "date": "2026-10-13",
       "cat": "Competitor",
       "title": "Suki Raises $90M Series E to Build AI Agents for Referrals and Prior Auths",
@@ -593,7 +618,7 @@
       "desc": "Corewell Health, Michigan's largest health system (21 hospitals, 300+ outpatient locations), is using Abridge Assistant in clinical practice. Dr. Kristin Jacob, an internal medicine-pediatrics clinician and Medical Director of Physician and APP Well-Being, described using Assistant for pre-charting, in-visit decision support, and patient messages - cutting Sunday chart prep from roughly two hours to minutes and enabling in-the-moment patient education. The case study is the first public confirmation that Corewell Health is an Abridge enterprise customer.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-08",
@@ -804,6 +829,14 @@
   ],
   "sources": [
     {
+      "name": "Abridge - Maine Health / Dr. Jessica Faraci case study (Oct 18, 2026)",
+      "url": "https://www.abridge.com/blog/mainehealth-jessica-faraci-abridge-assistant"
+    },
+    {
+      "name": "Abridge - Pre-visit summaries design deep-dive (Oct 16, 2026)",
+      "url": "https://www.abridge.com/blog/the-future-of-ai-pre-charting-is-more-than-a-chart-summary"
+    },
+    {
       "name": "Abridge - Official site",
       "url": "https://www.abridge.com/"
     },
@@ -956,5 +989,5 @@
       "url": "https://www.businesswire.com/news/home/20260521475981/en/Abridge-Names-San-Oo-CTO"
     }
   ],
-  "updated": "2026-10-21"
+  "updated": "2026-10-22"
 }
