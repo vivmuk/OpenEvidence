@@ -5,6 +5,23 @@
 
 var whatsNewData = [
   {
+    date: "October 22, 2026",
+    updated: "Daily OpenEvidence check (Thu Oct 22, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). arXiv API returned empty responses after 3 attempts - noted as gap. Grok X/Twitter search process completed but no output captured - noted as gap. 2 new PubMed papers added to research.json: AI-Powered CURA Application for at-risk pregnancies RCT protocol (PMID 42901589) and SmartHF adaptive web app for HFrEF medication optimization RCT (PMID 42898174).",
+    items: [
+      {
+        cat: "Research - AI Pregnancy Risk Stratification",
+        title: "AI-Powered CURA Application for identifying at-risk pregnancies: RCT protocol (Oct 20, 2026)",
+        desc: "Li et al. (BMJ Open) protocol for RCT comparing AI-assisted antenatal risk stratification vs standard care. 1700 participants, 1:1 randomisation, blinded to allocation. AI uses maternal sociodemographic, clinical and obstetrical data at first trimester and 31-33 weeks. Primary composite outcome of adverse maternal and fetal/neonatal outcomes. AI functions as clinical decision support. Trial registration: NCT06974188. PMID 42901589."
+      },
+      {
+        cat: "Research - AI Heart Failure CDS",
+        title: "SmartHF: adaptive patient-centered web app for HFrEF medication optimization RCT (Oct 6, 2026)",
+        desc: "Dorsch et al. (Am Heart J Plus) 12-week multicenter RCT of SmartHF web app providing tailored HFrEF GDMT recommendations from EHR data. 225 participants, mean age 61.9, 52% Black/African American. Primary endpoint: GDMT medication optimization score change at Week 12. Enrollment concluded Aug 2025, results expected Winter 2026. NCT05858320. PMID 42898174."
+      }
+    ]
+  },
+
+  {
     date: "October 20, 2026",
     updated: "Global CDS tracker weekly sweep (Tue Oct 20, 5:00 PM ET) - Venice web searches across global CDS platforms, regional markets (US/EU/UK/China/India/Japan/SEA/LatAm/MEA), regulators (FDA/EMA/NMPA/MHRA/WHO) and competitor/LinkedIn/X queries. Key findings: Doximity and Wolters Kluwer announce that UpToDate content will be embedded directly inside Doximity Ask (Oct 20); MHRA takes its AI device regulation plan to AdvaMed 2026 and is recruiting a Washington DC FDA liaison under the June 2026 FDA-MHRA Pioneer Programme, with AI Airlock Phase 3 applications open (first innovators Nov 2026); Hippocratic AI adds seven senior executives as it reports 300M+ patient voice interactions across 300+ live clinical use cases on Polaris; Hospital General de Mexico opens a health-tech AI research center on the back of January 2026 General Health Law reform and COFEPRIS trial-approval cuts from 120 to 30 days; India opens its first government-run AI clinic at GIMS Greater Noida with POCT Group targeting 1,300+ Uttar Pradesh government facilities; Duke Medical Center Library ends its DynaMed subscription as UpToDate Expert AI adds CME credits. 6 new global timeline entries, 1 new regulatory entry, 1 new emerging trend, India region card updated. No new CDS platform launches found this week.",
     items: [
