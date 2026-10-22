@@ -344,6 +344,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-08-05",
+  "cat": "Partnership",
+  "title": "Springer Nature and OpenEvidence Announce Content Licensing Agreement",
+  "desc": "Springer Nature and OpenEvidence announce a subscription agreement bringing peer-reviewed content from Springer Nature into OpenEvidence, where physicians can retrieve and cite it during patient care. The agreement took effect August 4 and forms part of Springer Nature's community-led ARC3 framework",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/springer-nature-and-openevidence-announce-agreement-to-maximise-exposure-of-trusted-findings-on-openevidence-platform",
+  "score": 81,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-07-23",
   "cat": "Partnership",
   "title": "LA County Department of Public Health Partnership",
@@ -748,20 +760,6 @@ var signalsData = [
   "confidence": "reported",
   "competitors": [
    "Google"
-  ],
-  "comparative": false
- },
- {
-  "date": "2025-07-29",
-  "cat": "Acquisition",
-  "title": "Doximity acquires Pathway Medical ($63M)",
-  "desc": "Doximity acquires the competitor OpenEvidence had sued for prompt injection attacks.",
-  "src": "Wikipedia",
-  "url": "https://en.wikipedia.org/wiki/Doximity",
-  "score": 49,
-  "confidence": "reported",
-  "competitors": [
-   "Doximity"
   ],
   "comparative": false
  }
