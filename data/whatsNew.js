@@ -5,6 +5,42 @@
 
 var whatsNewData = [
   {
+    date: "October 23, 2026",
+    updated: "Daily OpenEvidence check (Fri Oct 23, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). arXiv API returned no output - noted as gap. Grok X/Twitter search timed out after 60s - noted as gap. 14 new PubMed papers added to research.json. 8 new benchmark entries added to benchmarks.json. Key findings: ChatGPT-5.0 94% accuracy for MRI safety conditions vs Gemini 79% and Claude 78% (PMID 42908212); Gemini-2.5-Pro F1 0.76 vs GPT-5 for lung cancer MDT decisions on 150 cases (PMID 42907951); AI delirium prediction sensitivity 87.3% vs 4AT 28.0% in 2002 patients (PMID 42906075); all AI chatbot TPN plans had safety issues, none suitable for independent use (PMID 42903103); CDS+LLM combination improved RPL guideline compliance from 44% to 92% for ChatGPT-5.5 (PMID 42905619); CDSS for imatinib TDM achieved 55% target attainment vs 37% for expert but with more detrimental outcomes (PMID 42906079).",
+    items: [
+      {
+        cat: "Benchmark - LLM MRI Safety",
+        title: "ChatGPT-5.0 outperforms Gemini and Claude for MRI safety conditions retrieval (Oct 21, 2026)",
+        desc: "Kerpel et al. evaluated ChatGPT-5.0, Gemini 2.5 Pro, and Claude Sonnet 4.5 on 50 device configurations (1200 parameter-level outputs). ChatGPT scored highest (accuracy 0.94, mean 4.76), Gemini 0.79, Claude 0.78. Clinical pilot with ChatGPT-5.6 achieved 0.98 accuracy. All made errors requiring verification against manufacturer documentation. PMID 42908212."
+      },
+      {
+        cat: "Benchmark - LLM MDT Decision Support",
+        title: "Gemini-2.5-Pro vs GPT-5 for lung cancer MDT decisions on 150 real-world cases (Oct 21, 2026)",
+        desc: "Zhou et al. head-to-head evaluation. Gemini-2.5-Pro achieved F1 0.7603, accuracy 0.8647 at best information level. GPT-5 achieved recall 0.9132 with JSON but lower precision. LLMs show promise as MDT adjuncts with clinician oversight. PMID 42907951."
+      },
+      {
+        cat: "Research - AI Clinical Prediction",
+        title: "AI delirium risk prediction outperforms 4AT score in 2002-patient prospective study (Oct 21, 2026)",
+        desc: "Franceschini et al. AI predicted 87.3% of delirium cases vs 28.0% for 4AT score. AI specificity 73.9% vs 96.3%. AUC 0.884. AI enables proactive risk management and targeted intervention vs reactive screening in trauma ward patients. PMID 42906075."
+      },
+      {
+        cat: "Benchmark - AI Chatbot TPN Safety",
+        title: "All AI chatbot TPN plans had safety issues in critical care benchmark (Oct 21, 2026)",
+        desc: "Alomair benchmarked ChatGPT, Gemini, Copilot, and Perplexity on TPN planning for 10 critical care cases. ChatGPT best (57.7% accuracy, 10/10 plans). All 30 plans had safety issues; 63.3% rejected. Common errors: electrolytes (90%), micronutrients (70%). None suitable for independent clinical use. PMID 42903103."
+      },
+      {
+        cat: "Benchmark - LLM + CDS Synergy",
+        title: "CDS materials boost LLM guideline compliance for recurrent pregnancy loss from 44% to 92% (Oct 21, 2026)",
+        desc: "Zhe et al. evaluated ChatGPT-5.5, Claude-4.8, DeepSeek-R1 on 25 RPL scenarios. Baseline compliance 44%/28%/20%. With structured CDS: 92%/84%/80%. All models significantly improved. Combining LLMs with CDS creates reliable auxiliary tool. PMID 42905619."
+      },
+      {
+        cat: "Research - CDSS Pharmacology",
+        title: "CDSS for imatinib TDM achieves higher target attainment but more detrimental outcomes than expert (Oct 21, 2026)",
+        desc: "Pétermann et al. in silico study of 60 virtual patients. CDSS sensitivity 53% vs expert 45%, target attainment 55% vs 37% (P=.046). But 5 detrimental outcomes vs 1 for expert. Validates CDSS architecture as prerequisite for prospective trials. PMID 42906079."
+      }
+    ]
+  },
+  {
     date: "October 22, 2026",
     updated: "Daily OpenEvidence check (Thu Oct 22, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). arXiv API returned empty responses after 3 attempts - noted as gap. Grok X/Twitter search process completed but no output captured - noted as gap. 2 new PubMed papers added to research.json: AI-Powered CURA Application for at-risk pregnancies RCT protocol (PMID 42901589) and SmartHF adaptive web app for HFrEF medication optimization RCT (PMID 42898174).",
     items: [
