@@ -73,8 +73,7 @@
       "title": "States Accelerate Health AI Legislation in 2026: Insurer, Provider and Chatbot Rules",
       "desc": "Holland & Knight's review of 2026 state legislation found states leading Congress on health AI governance: Alabama, Indiana, Utah, Washington, Maryland and Georgia enacted laws requiring human oversight of AI in insurer prior-authorisation decisions; Maine and Arizona restricted autonomous clinical decision-making in behavioural health; Idaho, Nebraska, Oregon and Tennessee passed AI companion and chatbot safety acts requiring disclosure, crisis-response protocols and prohibiting chatbots from representing themselves as licensed mental health professionals. Utah piloted a regulatory sandbox for AI-enabled prescription renewal.",
       "src": "Holland & Knight",
-      "url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare",
-      "new": true
+      "url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare"
     },
     {
       "date": "2026-04-15",
@@ -82,8 +81,7 @@
       "title": "IAPP: Five Health AI Agents Launched in Three Months — Privacy Gaps Documented",
       "desc": "A comparative analysis by Théodore Christakis (University of Grenoble Alpes) found five companies launched health-specific AI products between January and March 2026: OpenAI ChatGPT Health (7 Jan), Anthropic Claude for Healthcare (11 Jan), Amazon Health AI (22 Jan), Microsoft Copilot Health (12 Mar) and Perplexity Health (19 Mar). All follow a similar model—EHR integration via intermediaries, wearable connections, no-training commitments, US-only availability. None meets the full 'sealed mode' privacy standard; none is HIPAA-covered; all exclude European users. OpenAI reports 230 million people ask ChatGPT health questions weekly.",
       "src": "IAPP",
-      "url": "https://iapp.org/news/a/the-health-ai-agent-rush-five-products-in-three-months-and-the-privacy-questions-that-got-left-behind",
-      "new": true
+      "url": "https://iapp.org/news/a/the-health-ai-agent-rush-five-products-in-three-months-and-the-privacy-questions-that-got-left-behind"
     },
     {
       "date": "2026-03-19",
@@ -91,8 +89,7 @@
       "title": "Perplexity Launches Perplexity Health with EHR, Wearables and Health Advisory Board",
       "desc": "Perplexity unveiled Perplexity Health on 19 March 2026, rolling out to US Pro and Max subscribers through April. The platform connects 1.7M+ providers via b.well, integrates Apple Health, Fitbit, Ultrahuman, Withings and Clue via Terra API, and offers AI agents for nutrition, sleep and visit prep built on Perplexity Computer. A Health Advisory Board including Dr Eric Topol was announced. Perplexity commits to no training on health data and citations on every response.",
       "src": "Perplexity",
-      "url": "https://perplexityaimagazine.com/ai-news/perplexity-health-launch/",
-      "new": true
+      "url": "https://perplexityaimagazine.com/ai-news/perplexity-health-launch/"
     },
     {
       "date": "2026-09-15",
@@ -117,6 +114,14 @@
       "desc": "OpenAI rolled out Health in ChatGPT to Free, Go, Plus and Pro users in the United States, letting eligible users securely connect medical records and Apple Health data so the assistant can interpret information in context, track changes and hold more personalised conversations. Coverage highlighted that once health data leaves a provider, HIPAA no longer protects it—making the consumer data-governance question central. The same period saw OpenAI connect ChatGPT to Epic records for clinicians.",
       "src": "OpenAI / Paubox",
       "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"
+    },
+    {
+      "date": "2026-07-15",
+      "cat": "Research",
+      "title": "HealthClaw: Open-Source Agent for Longitudinal Personal Health Management",
+      "desc": "arXiv preprint introducing HealthClaw, an open-source agent architecture that separates shared safety rules and medical knowledge from private longitudinal memory (profile facts, reusable procedures, episodic traces). After each interaction, an induction step decides what to retain, revise, or discard. Across 900 longitudinal support probes, answer accuracy rose from 0.2% with current-query prompting to 45.7% with HealthClaw, while context exposure was 71.7% lower than full-history prompting. In 100 privacy probes, HealthClaw produced fewer unsafe disclosures than both baselines. Code is publicly available on GitHub.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2607.13940"
     },
     {
       "date": "2026-07-10",
@@ -671,6 +676,15 @@
       "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
     },
     {
+      "title": "HealthClaw: A Self-Evolving Agent for Longitudinal Personal Health Management",
+      "type": "arXiv preprint · open-source agent architecture",
+      "date": "Jul 15, 2026",
+      "venue": "arXiv (cs.AI)",
+      "finding": "Introduces HealthClaw, an open-source agent architecture that separates shared safety rules and medical knowledge (L0–L1) from private longitudinal memory (L2 profile, L3 procedures, L4 episodic traces). After each interaction, an induction step decides what to update, revise, keep as episodic, or exclude. Across 900 longitudinal support probes on a synthetic year-long benchmark, answer accuracy increased from 0.2% with current-query prompting to 45.7% with HealthClaw, while prompt-side context exposure was 71.7% lower than full-history prompting. In 100 privacy probes, HealthClaw produced higher privacy-aware answer quality and fewer unsafe disclosures than both baselines. Nine 200-case biomedical tasks showed a mean absolute gain of 27.0 percentage points, with seven gains significant after FDR correction. Code publicly available on GitHub.",
+      "caveat": "Preprint, not peer-reviewed. All headline metrics come from automated rubric evaluators (Qwen-3.7-based) with no human-rated validation; if the evaluator is systematically lenient, accuracy and privacy gaps may be overstated. The benchmark is synthetic; clinical effectiveness requires prospective evaluation.",
+      "url": "https://arxiv.org/abs/2607.13940"
+    },
+    {
       "title": "SensorFM and the Shift from Metrics to Agents",
       "type": "Industry analysis",
       "date": "Jul 10, 2026",
@@ -817,6 +831,10 @@
     {
       "name": "Alloop — Trio modular wearable launch",
       "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"
+    },
+    {
+      "name": "arXiv — HealthClaw: A Self-Evolving Agent for Longitudinal Personal Health Management (Jul 15, 2026)",
+      "url": "https://arxiv.org/abs/2607.13940"
     },
     {
       "name": "Anthropic — Claude for Healthcare",
