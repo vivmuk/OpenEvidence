@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Health Agents - OpenEvidence Insights</title>
+<meta name="description" content="Tracker for consumer-facing personal health agents: the Nature anatomy paper, platform launches from OpenAI, Microsoft, Apple and Google, wearable coaching, triage evidence, and the convergence with physician-facing clinical AI.">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/shared.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  .pha-tabs{display:flex;gap:8px;overflow-x:auto;padding:6px 0 18px;margin-bottom:8px;border-bottom:1px solid var(--oe-dark-border);position:sticky;top:0;background:var(--oe-dark);z-index:20}
+  .pha-tab{flex:0 0 auto;background:transparent;border:1px solid var(--oe-dark-border);color:var(--oe-text-dim);padding:8px 16px;border-radius:999px;font-family:var(--oe-font-sans);font-size:13px;cursor:pointer;transition:.15s}
+  .pha-tab:hover{border-color:var(--oe-orange);color:var(--oe-text)}
+  .pha-tab.active{background:var(--oe-orange);border-color:var(--oe-orange);color:#fff}
+  .pha-panel{display:none}
+  .pha-panel.active{display:block}
+  .pha-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:16px;margin:20px 0}
+  .pha-card{background:var(--oe-dark-card);border:1px solid var(--oe-dark-border);border-radius:var(--oe-radius-lg);padding:22px}
+  .pha-card h4{font-size:16px;font-weight:700;margin-bottom:6px}
+  .pha-card p{font-size:13px;color:var(--oe-text-dim);line-height:1.65}
+  .pha-card .pha-meta{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--oe-orange);font-weight:600;margin-bottom:6px}
+  .pha-card .pha-link{display:inline-block;margin-top:10px;font-size:12px;color:var(--oe-orange);text-decoration:none}
+  .pha-card .pha-link:hover{text-decoration:underline}
+  .pha-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+  .pha-stat{background:var(--oe-dark-soft);border-radius:var(--oe-radius);padding:10px}
+  .pha-stat .v{font-family:var(--oe-font);font-size:18px;color:var(--oe-orange);display:block}
+  .pha-stat .l{font-size:11px;color:var(--oe-text-muted)}
+  .pha-note{background:var(--oe-dark-soft);border-left:3px solid var(--oe-orange);border-radius:var(--oe-radius);padding:16px 18px;margin:20px 0;font-size:13px;color:var(--oe-text-dim);line-height:1.65}
+  .pha-note strong{color:var(--oe-text)}
+  .pha-section-title{font-family:var(--oe-font);font-size:26px;font-weight:400;margin:36px 0 6px}
+  .pha-section-sub{font-size:13px;color:var(--oe-text-muted);margin-bottom:18px}
+  .pha-research .pha-finding{font-size:13px;color:var(--oe-text);margin:8px 0}
+  .pha-research .pha-caveat{font-size:12px;color:var(--oe-text-muted);font-style:italic}
+  .pha-chart{background:var(--oe-dark-card);border:1px solid var(--oe-dark-border);border-radius:var(--oe-radius-lg);padding:20px;margin:20px 0}
+  .pha-chart-wrap{position:relative;height:280px}
+  .pha-chip{display:inline-block;font-size:11px;background:var(--oe-dark-soft);border:1px solid var(--oe-dark-border);border-radius:999px;padding:4px 10px;margin:2px 4px 2px 0;color:var(--oe-text-dim)}
+</style>
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="/">📊 Overview</a>
+    <a href="/timeline">📅 Timeline</a>
+    <a href="/funding">💰 Funding</a>
+    <a href="/products">🚀 Products</a>
+    <a href="/features">🧩 Features</a>
+    <a href="/competitors">⚔️ Competitors</a>
+    <a href="/partnerships">🤝 Partnerships</a>
+    <a href="/publishers">🗞️ Publishers</a>
+    <a href="/tech">⚙️ Tech Stack</a>
+    <a href="/pharma">💊 Pharma</a>
+    <a href="/benchmarks">🔬 Benchmarks</a>
+    <a href="/sct">🧪 SCT Benchmark</a>
+    <a href="/publications">📄 Publications</a>
+    <a href="/doximity">🩺 Doximity Ask</a>
+    <a href="/abridge">🌉 Abridge</a>
+    <a href="/personal-health-agents" class="active">🫀 Personal Health Agents</a>
+    <a href="/global">🌍 Global Landscape</a>
+    <a href="/future">🔮 Future</a>
+    <a href="/sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" aria-pressed="false" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Oct 24, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
+
+  <section id="pha">
+    <div class="container">
+      <h1 class="page-title">Personal <span class="accent">Health Agents</span></h1>
+      <p class="section-sub">Consumer-facing health AI, tracked alongside the physician-facing clinical AI landscape. Personal health agents reason over a person's own wearables, labs and medical records—the layer that will decide what patients ask clinicians, and where medical evidence reaches people without a physician in the loop.</p>
+
+      <div class="stats-grid" style="margin:28px 0 12px;">
+        <div class="stat-card"><div class="value">Oct 21</div><div class="label">Nature Paper</div><div class="sub">Anatomy of a personal health agent</div></div>
+        <div class="stat-card"><div class="value">7,000+</div><div class="label">Annotations</div><div class="sub">11 benchmark tasks</div></div>
+        <div class="stat-card"><div class="value">~1,350h</div><div class="label">Expert Evaluation</div><div class="sub">Clinicians + end users</div></div>
+        <div class="stat-card"><div class="value">~17%</div><div class="label">Summary Safety Gaps</div><div class="sub">Independent coverage of the Nature system</div></div>
+        <div class="stat-card"><div class="value">88-96%</div><div class="label">Triage Concordance</div><div class="sub">Mount Sinai deployment</div></div>
+        <div class="stat-card"><div class="value">1 in 5</div><div class="label">Copilot Chats Health-Related</div><div class="sub">500K+ conversation analysis</div></div>
+        <div class="stat-card"><div class="value">1,600+</div><div class="label">FDA AI Devices</div><div class="sub">Authorised as of Sep 2026</div></div>
+        <div class="stat-card"><div class="value">3</div><div class="label">Sub-Agents</div><div class="sub">Data science · domain expert · coach</div></div>
+      </div>
+
+      <div class="pha-tabs" id="phaTabs">
+        <button class="pha-tab active" data-tab="overview" onclick="showTab('overview')">Overview</button>
+        <button class="pha-tab" data-tab="landscape" onclick="showTab('landscape')">Landscape</button>
+        <button class="pha-tab" data-tab="news" onclick="showTab('news')">News &amp; Timeline</button>
+        <button class="pha-tab" data-tab="evidence" onclick="showTab('evidence')">Evidence</button>
+        <button class="pha-tab" data-tab="convergence" onclick="showTab('convergence')">Convergence</button>
+        <button class="pha-tab" data-tab="regulation" onclick="showTab('regulation')">Regulation &amp; Privacy</button>
+        <button class="pha-tab" data-tab="sources" onclick="showTab('sources')">Sources</button>
+      </div>
+
+      <!-- OVERVIEW -->
+      <div class="pha-panel active" id="panel-overview">
+        <div class="dx-hero" style="margin-top:24px;">
+          <div class="dx-overview">
+            <div class="dx-tagline">The Consumer Layer of Clinical AI</div>
+            <h3>What is a personal health agent?</h3>
+            <p>A personal health agent is a consumer-facing AI system that reasons over a person's own multimodal data—wearable streams, laboratory results, medical records, symptoms and context—to answer health questions, interpret personal data, give wellness guidance and assess symptoms.</p>
+            <p>The reference design is now published. Google Research's <em>The anatomy of a personal health agent</em> (Nature, 21 October 2026) identifies four user journeys and builds three specialist sub-agents around them, then evaluates the system across 11 benchmark tasks with more than 7,000 annotations and roughly 1,350 hours of expert and end-user effort—and still reports safety gaps in a meaningful share of generated summaries.</p>
+            <p>That combination matters: this is no longer a consumer novelty. It is a published architecture with a known failure mode, being shipped at scale by OpenAI, Microsoft, Apple and Google.</p>
+          </div>
+          <div class="dx-architecture">
+            <h3>Reference Architecture</h3>
+            <p style="font-size:13px;color:var(--oe-text-dim);margin-bottom:16px;">Four journeys, three specialist sub-agents, one orchestrator.</p>
+            <div class="dx-pillars">
+              <div class="dx-pillar"><h4>📊 Data Science Agent</h4><p>Analyses longitudinal wearable and medical data, incorporating population-level statistics to contextualise numerical findings.</p></div>
+              <div class="dx-pillar"><h4>🩺 Health Domain Expert Agent</h4><p>Integrates personal and contextual data with health knowledge to generate personalised insight.</p></div>
+              <div class="dx-pillar"><h4>🏃 Health Coach Agent</h4><p>Synthesises insight, supports multi-turn interaction and goal setting, applies psychological strategies and tracks progress.</p></div>
+              <div class="dx-pillar"><h4>🧭 Orchestrator</h4><p>Routes each question to the right sub-agent or several, and holds the conversation together.</p></div>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="pha-chip">General health knowledge</span>
+              <span class="pha-chip">Personal data interpretation</span>
+              <span class="pha-chip">Wellness advice</span>
+              <span class="pha-chip">Symptom assessment</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="pha-section-title">Why This Belongs Next to the Physician Tracker</h3>
+        <p class="pha-section-sub">The patient side and the clinician side are converging on the same evidence layer.</p>
+        <div class="pha-grid">
+          <div class="pha-card"><div class="pha-meta">Demand is already here</div><h4>Patients ask assistants first</h4><p>Microsoft's analysis of more than 500,000 de-identified Copilot conversations found nearly one in five involved symptom assessment or condition discussion—before any health-specific product existed.</p></div>
+          <div class="pha-card"><div class="pha-meta">Same vendors, both sides</div><h4>One company, two doors</h4><p>OpenAI connected ChatGPT to consumer medical records and Apple Health, and separately connected ChatGPT to Epic records for clinicians. The evidence layer feeding both is now a competitive battleground.</p></div>
+          <div class="pha-card"><div class="pha-meta">Different rulebook</div><h4>HIPAA ends at the export</h4><p>Once health data leaves a provider it usually leaves HIPAA with it. Consumer agents operate under the FTC Health Breach Notification Rule and a fast-moving patchwork of state consent law instead.</p></div>
+          <div class="pha-card"><div class="pha-meta">Measurable quality signal</div><h4>Triage concordance is public</h4><p>Health-system triage agents have published 88-96% concordance with physician triage, while symptom checkers sit around 82-88% on vignettes and tend to overtriage. This is now a benchmarkable category.</p></div>
+          <div class="pha-card"><div class="pha-meta">Where physician AI gains</div><h4>A routed, sourced question</h4><p>Every personal agent handoff is a potential pre-visit briefing—if it arrives with sources, scope and a record of what the patient was told. Otherwise it is another unstructured message into a clinical inbox.</p></div>
+          <div class="pha-card"><div class="pha-meta">Watch item</div><h4>Who owns the evidence layer</h4><p>If personal agents license the same journals and guidelines that anchor physician tools, evidence access becomes a commodity input to both sides—and the differentiator moves to workflow and trust.</p></div>
+        </div>
+
+        <div class="pha-chart">
+          <h4 style="font-size:15px;margin-bottom:4px;">Published Performance Signals</h4>
+          <div style="font-size:12px;color:var(--oe-text-muted);margin-bottom:14px;">Care-level concordance and accuracy as reported in the sources below. Different populations, endpoints and study designs—read as orientation, not a leaderboard.</div>
+          <div class="pha-chart-wrap"><canvas id="phaChartAccuracy"></canvas></div>
+        </div>
+
+        <div class="pha-note"><strong>Tracker scope:</strong> consumer-facing agents (platform assistants, device-maker coaches, triage tools, ambient home sensing), the evidence base that evaluates them, and the regulatory boundary between wellness guidance and medical claims. Physician-facing tools stay on their own pages: <a href="/competitors" style="color:var(--oe-orange);">Competitors</a>, <a href="/abridge" style="color:var(--oe-orange);">Abridge</a>, <a href="/doximity" style="color:var(--oe-orange);">Doximity Ask</a>.</div>
+      </div>
+
+      <!-- LANDSCAPE -->
+      <div class="pha-panel" id="panel-landscape">
+        <h3 class="pha-section-title">Landscape</h3>
+        <p class="pha-section-sub">Platform assistants, device makers, health-system deployments and the ambient-sensing wave.</p>
+        <div class="pha-grid" id="phaPlayers"></div>
+      </div>
+
+      <!-- NEWS -->
+      <div class="pha-panel" id="panel-news">
+        <h3 class="pha-section-title">News &amp; Timeline</h3>
+        <p class="pha-section-sub">Launches, research, regulatory shifts and device-maker moves. Newest first.</p>
+        <div class="filters" id="phaFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Product">Product</button>
+          <button class="filter-btn" data-filter="Research">Research</button>
+          <button class="filter-btn" data-filter="Regulatory">Regulatory</button>
+          <button class="filter-btn" data-filter="Trend">Trend</button>
+          <button class="filter-btn" data-filter="Competitor">Competition</button>
+          <button class="filter-btn" data-filter="Metric">Metrics</button>
+        </div>
+        <div class="timeline" id="phaNewsList"></div>
+      </div>
+
+      <!-- EVIDENCE -->
+      <div class="pha-panel" id="panel-evidence">
+        <h3 class="pha-section-title">Evidence &amp; Evaluation</h3>
+        <p class="pha-section-sub">Peer-reviewed studies, deployment reports and regulatory analysis, each with the caveat that limits it.</p>
+        <div class="pha-grid" id="phaResearch"></div>
+      </div>
+
+      <!-- CONVERGENCE -->
+      <div class="pha-panel" id="panel-convergence">
+        <h3 class="pha-section-title">Convergence With Physician-Facing AI</h3>
+        <p class="pha-section-sub">Where personal agents and clinical agents meet—and what each side is better at.</p>
+        <div class="table-wrap">
+          <table class="dx-comparison">
+            <thead><tr><th>Dimension</th><th class="col-oe">Physician-facing agents</th><th class="col-dx">Personal health agents</th></tr></thead>
+            <tbody>
+              <tr><td><strong>User</strong></td><td class="col-oe">Clinician, verified by credential</td><td class="col-dx">Anyone, with a consumer account</td></tr>
+              <tr><td><strong>Data</strong></td><td class="col-oe">Literature, guidelines, labels, sometimes the chart</td><td class="col-dx">Wearables, labs, records, symptoms, context</td></tr>
+              <tr><td><strong>Evidence grounding</strong></td><td class="col-oe">Licensed journals and societies; citations expected</td><td class="col-dx">Mixed; frequently unstated or generic</td></tr>
+              <tr><td><strong>Failure mode</strong></td><td class="col-oe">Wrong or unsupported clinical answer</td><td class="col-dx">False reassurance, missed escalation, unsafe summary</td></tr>
+              <tr><td><strong>Regulation</strong></td><td class="col-oe">CDS guidance; device rules for imaging and IVDs</td><td class="col-dx">General wellness lane; FTC health-breach rule, state consent law</td></tr>
+              <tr><td><strong>Business model</strong></td><td class="col-oe">Enterprise, advertising, free-to-clinician</td><td class="col-dx">Consumer subscription, hardware, platform bundling</td></tr>
+              <tr><td><strong>Evaluation standard</strong></td><td class="col-oe">Benchmarks, published audits, safety studies</td><td class="col-dx">Emerging: 11-task suites, 7,000+ annotations, triage concordance</td></tr>
+              <tr><td><strong>Handoff</strong></td><td class="col-oe">Answers a clinician's question</td><td class="col-dx">Generates the question the clinician will be asked</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pha-grid">
+          <div class="pha-card"><div class="pha-meta">Implication 1</div><h4>The question arrives before the visit</h4><p>Personal agents shift question formation upstream. If they cite weak evidence, the clinician inherits a patient expectation that is hard to unwind in a ten-minute appointment.</p></div>
+          <div class="pha-card"><div class="pha-meta">Implication 2</div><h4>Handoffs need structure</h4><p>Structured, sourced summaries—including what the agent told the patient—are the only version of this that does not add inbox burden. That is a product opportunity, not a policy fix.</p></div>
+          <div class="pha-card"><div class="pha-meta">Implication 3</div><h4>Evidence licensing is the chokepoint</h4><p>Whoever supplies guidelines and journals to consumer agents shapes what patients hear. Publishers are already licensing into both sides.</p></div>
+          <div class="pha-card"><div class="pha-meta">Implication 4</div><h4>Same benchmark, two scorecards</h4><p>Personal agents will be judged on escalation safety and summary accuracy; clinical agents on evidence fidelity. Expect pressure to converge on one evaluation regime.</p></div>
+        </div>
+      </div>
+
+      <!-- REGULATION -->
+      <div class="pha-panel" id="panel-regulation">
+        <h3 class="pha-section-title">Regulation &amp; Privacy</h3>
+        <p class="pha-section-sub">The wellness/medical boundary, the post-HIPAA gap, and what changed in 2026.</p>
+        <div class="pha-grid">
+          <div class="pha-card"><div class="pha-meta">FDA · January 2026</div><h4>Oversight relaxed, boundary sharpened</h4><p>The FDA eased regulation of AI-enabled devices and wearables and revised general wellness and CDS guidance, while keeping software involving medical image or in vitro diagnostic signal processing in the device category. The agency signalled substantial cuts to digital health guidance and a new AI framework.</p></div>
+          <div class="pha-card"><div class="pha-meta">Device tier</div><h4>1,600+ authorised, 76% radiology</h4><p>More than 1,600 AI-enabled devices were authorised as of September 2026, almost entirely Class II 510(k). Consumer agents sit almost entirely outside this tier—until their output becomes a diagnostic or treatment claim.</p></div>
+          <div class="pha-card"><div class="pha-meta">Privacy · post-HIPAA</div><h4>HIPAA ends where the app begins</h4><p>Data exported by a patient to a consumer assistant is generally no longer protected by HIPAA. The FTC Health Breach Notification Rule applies to non-covered entities, and state law increasingly sets a higher bar than the federal floor.</p></div>
+          <div class="pha-card"><div class="pha-meta">State consent</div><h4>Detailed written consent in CA and WA</h4><p>California and Washington now require detailed written consent for AI tools processing health data, and Colorado's SB 21-169 creates obligations for developers and deployers of high-risk AI in insurance. Purpose-specific, revocable consent is becoming the baseline.</p></div>
+          <div class="pha-card"><div class="pha-meta">Claims risk</div><h4>Wellness language, medical behaviour</h4><p>The compliance question is product behaviour, not marketing label: a feature that recommends a care level, interprets a lab or rules out a cause is doing medical work regardless of how it is described.</p></div>
+          <div class="pha-card"><div class="pha-meta">Governance</div><h4>Standards are catching up</h4><p>ISO/IEC 42001 and the NIST AI RMF give consumer health agents a governance structure that connects to existing quality and privacy processes—useful when a partner or regulator asks how the system is controlled.</p></div>
+        </div>
+        <div class="pha-note"><strong>Practical read:</strong> the regulatory lane for consumer agents is currently permissive and the liability lane is not. Safety escalation, consent design and audit logging are the controls that keep a personal agent on the wellness side of the line—and the three things to check first when evaluating any vendor in this space.</div>
+      </div>
+
+      <!-- SOURCES -->
+      <div class="pha-panel" id="panel-sources">
+        <h3 class="pha-section-title">Source Index</h3>
+        <p class="pha-section-sub">Every source used on this page.</p>
+        <div class="source-list" id="phaSources"></div>
+      </div>
+
+      <p style="margin:36px 0 8px;font-size:12px;color:var(--oe-text-muted);">Independent tracker. Not affiliated with any vendor named above. Company claims are labelled as such. Last updated October 24, 2026.</p>
+    </div>
+  </section>
+</div>
+
+<script src="/shared.js"></script>
+<script src="/data/whatsNew.js"></script>
+<script src="/data/phaTimeline.js"></script>
+<script src="/data/phaPlayers.js"></script>
+<script src="/data/phaResearch.js"></script>
+<script src="/data/phaSources.js"></script>
+<script>
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function showTab(name){
+  document.querySelectorAll('.pha-panel').forEach(function(p){p.classList.remove('active');});
+  document.querySelectorAll('.pha-tab').forEach(function(t){t.classList.toggle('active',t.getAttribute('data-tab')===name);});
+  var panel=document.getElementById('panel-'+name);
+  if(panel) panel.classList.add('active');
+  if(history.replaceState) history.replaceState(null,'','#'+name);
+  if(name==='overview' && typeof buildPageCharts==='function') buildPageCharts();
+}
+
+function renderPhaNews(filter){
+  var el=document.getElementById('phaNewsList');
+  if(!el||typeof phaTimelineData==='undefined') return;
+  var list=filter==='all'?phaTimelineData:phaTimelineData.filter(function(d){return d.cat===filter;});
+  var sorted=list.slice().sort(function(a,b){return new Date(b.date)-new Date(a.date);});
+  el.innerHTML=sorted.map(function(d,i){
+    return '<div class="timeline-item" style="animation-delay:'+(i*0.02)+'s">'
+      +'<div class="date">'+esc(d.date)+(d.new?' <span class="new-badge">NEW</span>':'')+'</div>'
+      +'<div><span class="category-tag cat-'+esc(d.cat)+'">'+esc(d.cat)+'</span></div>'
+      +'<div class="title">'+esc(d.title)+'</div>'
+      +'<div class="desc">'+esc(d.desc)+'</div>'
+      +'<div class="src-link"><a href="'+esc(d.url)+'" target="_blank" rel="noopener">'+esc(d.src)+' →</a></div>'
+      +'</div>';
+  }).join('');
+}
+
+window.addEventListener('load',function(){
+  try{
+    document.getElementById('phaPlayers').innerHTML=phaPlayersData.map(function(p){
+      return '<div class="pha-card">'
+        +'<div class="pha-meta">'+esc(p.badge)+'</div>'
+        +'<h4>'+esc(p.name)+'</h4>'
+        +'<p style="font-size:12px;color:var(--oe-text-muted);margin-bottom:8px;">'+esc(p.type)+'</p>'
+        +'<div class="pha-stats">'+p.stats.map(function(s){return '<div class="pha-stat"><span class="v">'+esc(s.v)+'</span><span class="l">'+esc(s.l)+'</span></div>';}).join('')+'</div>'
+        +'<p>'+esc(p.desc)+'</p>'
+        +'<a class="pha-link" href="'+esc(p.url)+'" target="_blank" rel="noopener">Source →</a>'
+        +'</div>';
+    }).join('');
+    document.getElementById('phaResearch').innerHTML=phaResearchData.map(function(r){
+      return '<div class="pha-card pha-research">'
+        +'<div class="pha-meta">'+esc(r.type)+' · '+esc(r.date)+' · '+esc(r.venue)+'</div>'
+        +'<h4>'+esc(r.title)+'</h4>'
+        +'<p class="pha-finding">'+esc(r.finding)+'</p>'
+        +'<p class="pha-caveat">Caveat: '+esc(r.caveat)+'</p>'
+        +'<a class="pha-link" href="'+esc(r.url)+'" target="_blank" rel="noopener">Read source →</a>'
+        +'</div>';
+    }).join('');
+    document.getElementById('phaSources').innerHTML=phaSourcesData.map(function(s){
+      return '<div class="source-item"><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a><div class="name">'+esc(s.url)+'</div></div>';
+    }).join('');
+    renderPhaNews('all');
+    var hash=(location.hash||'').replace('#','');
+    if(hash && document.getElementById('panel-'+hash)) showTab(hash);
+  }catch(e){console.error('[PHA] render failed:',e.message);}
+});
+
+document.querySelectorAll('#phaFilters .filter-btn').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('#phaFilters .filter-btn').forEach(function(x){x.classList.remove('active');});
+    b.classList.add('active');
+    renderPhaNews(b.getAttribute('data-filter'));
+  });
+});
+
+function buildPageCharts(){
+  if(typeof charts!=='undefined'){charts.forEach(function(c){try{c.destroy();}catch(e){}});charts=[];}
+  try{
+    charts.push(makeChart('phaChartAccuracy',
+      ['Mount Sinai triage\nconcordance','Symptom checkers\ntop accuracy','Symptom checker\nlower bound'],
+      [96,88,82],
+      'Reported accuracy / concordance (%)','bar'));
+  }catch(e){console.error('[PHA] chart failed:',e.message);}
+}
+</script>
+</body>
+</html>

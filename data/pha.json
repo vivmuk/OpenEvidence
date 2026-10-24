@@ -1,0 +1,669 @@
+{
+  "updated": "2026-10-24",
+  "anchor_paper": {
+    "title": "The anatomy of a personal health agent",
+    "venue": "Nature",
+    "date": "2026-10-21",
+    "url": "https://www.nature.com/articles/s41586-026-11161-8",
+    "architecture": {
+      "sub_agents": [
+        "data science agent",
+        "health domain expert agent",
+        "health coach agent"
+      ],
+      "journeys": [
+        "general health knowledge",
+        "personal data interpretation",
+        "wellness advice",
+        "symptom assessment"
+      ],
+      "evaluation": "11 benchmark tasks, 7,000+ annotations, ~1,350 hours of expert and end-user effort"
+    },
+    "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
+  },
+  "timeline": [
+    {
+      "date": "2026-10-21",
+      "cat": "Research",
+      "title": "Nature Publishes 'The Anatomy of a Personal Health Agent'",
+      "desc": "Google Research published the most comprehensive evaluation of a consumer health agent to date. The open-source multi-agent framework serves four user journeys—general health knowledge, personal data interpretation, wellness advice and symptom assessment—through three specialist sub-agents: a data science agent that analyses longitudinal wearable and medical data against population statistics, a health domain expert agent that combines personal context with health knowledge, and a health coach agent that handles multi-turn interaction, goal setting and progress tracking. Evaluated across 11 benchmark tasks with more than 7,000 annotations and about 1,350 hours of work from health experts and end users. Independent coverage reported safety gaps in a meaningful share of generated summaries.",
+      "src": "Nature",
+      "url": "https://www.nature.com/articles/s41586-026-11161-8",
+      "new": true
+    },
+    {
+      "date": "2026-10-21",
+      "cat": "Research",
+      "title": "Google Research Blog: Anatomy of a Personal Health Agent",
+      "desc": "Google Research published a companion explainer describing the personal health agent architecture and its grounding in the WEAR-ME metabolic health study (n=1,165) for real-world validity. Positions the work as a basis for further research on personal health agents for daily health and well-being.",
+      "src": "Google Research",
+      "url": "https://research.google/blog/the-anatomy-of-a-personal-health-agent/",
+      "new": true
+    },
+    {
+      "date": "2026-10-21",
+      "cat": "Research",
+      "title": "Nature Editorial: Using AI to Offer Personalised Health Advice",
+      "desc": "Nature ran a companion editorial placing the personal health agent paper in context, citing Pew survey data on health information and trust, and prior work on AI health advice. Signals that mainstream scientific publishing now treats consumer health agents as a serious research area rather than a product category.",
+      "src": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03065-4",
+      "new": true
+    },
+    {
+      "date": "2026-10-21",
+      "cat": "Research",
+      "title": "Google Health Agent Tops Gemini but Shows Safety Gaps",
+      "desc": "Independent analysis of the Nature paper reported that the Personal Health Agent outperformed its base Gemini models on personal health tasks but still showed safety gaps in roughly 17% of summaries. The system runs on Gemini 2.0 models with an orchestrator coordinating the three specialist agents.",
+      "src": "Becker's Hospital Review",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/googles-health-ai-agent-tops-gemini-but-carries-safety-gaps-7-things-to-know/",
+      "new": true
+    },
+    {
+      "date": "2026-09-15",
+      "cat": "Product",
+      "title": "Apple Extends Apple Intelligence into the Health App",
+      "desc": "Apple announced health and fitness capabilities powered by Apple Intelligence with iOS 27 and iPadOS 27. The Health app is positioned as the central, secure location for a user's health and fitness information, with on-device processing and expanded interpretation of long-term metrics rather than simple daily logging. Apple had previously scaled back its fuller AI health coach effort, and Bloomberg reported the paid Health+ service was still planned for 2026.",
+      "src": "Apple Newsroom",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/",
+      "new": true
+    },
+    {
+      "date": "2026-08-20",
+      "cat": "Research",
+      "title": "AI Symptom Checkers and Patient Care-Seeking Behaviour",
+      "desc": "Coverage of health-system deployments found that AI-powered symptom checkers do direct worried patients to care. From roughly 22,000 digital triage sessions at Mount Sinai, about 80% of users who started a session completed the conversation.",
+      "src": "Association of Health Care Journalists",
+      "url": "https://healthjournalism.org/blog/2026/08/ai-powered-symptom-checkers/",
+      "new": true
+    },
+    {
+      "date": "2026-07-23",
+      "cat": "Product",
+      "title": "OpenAI Launches 'Health in ChatGPT' with Records and Apple Health",
+      "desc": "OpenAI rolled out Health in ChatGPT to Free, Go, Plus and Pro users in the United States, letting eligible users securely connect medical records and Apple Health data so the assistant can interpret information in context, track changes and hold more personalised conversations. Coverage highlighted that once health data leaves a provider, HIPAA no longer protects it—making the consumer data-governance question central. The same period saw OpenAI connect ChatGPT to Epic records for clinicians.",
+      "src": "OpenAI / Paubox",
+      "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected",
+      "new": true
+    },
+    {
+      "date": "2026-07-10",
+      "cat": "Research",
+      "title": "Google's SensorFM Points Wearables Toward AI Health Agents",
+      "desc": "Forbes reported on Google's SensorFM, trained on approximately a trillion minutes of wearable data, and framed the shift from raw metrics to AI health agents—a trend already reshaping WHOOP and Oura, which were both adding two-way coaching dialogue on top of one-way insight feeds.",
+      "src": "Forbes",
+      "url": "https://www.forbes.com/sites/josipamajic/2026/07/10/googles-sensorfm-reveals-where-ai-takes-wearable-health/",
+      "new": true
+    },
+    {
+      "date": "2026-06-28",
+      "cat": "Trend",
+      "title": "The Rise of Ambient Home Health Monitoring",
+      "desc": "Forbes documented the shift toward non-contact sensing—mmWave radar, WiFi sensing, acoustic AI, smart glasses—as a way to monitor vitals and activity at home without adding another wearable. Privacy-first, local-first processing emerged as the design pattern, with vendors arguing that sensing must blend into form factors people already use.",
+      "src": "Forbes",
+      "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/",
+      "new": true
+    },
+    {
+      "date": "2026-05-29",
+      "cat": "Product",
+      "title": "Microsoft Copilot Health Enters Preview",
+      "desc": "Microsoft opened Copilot Health in preview after its March launch. The product aggregates personal health records, wearable data from Apple Health and Fitbit, and laboratory results inside a separate, secure space in Copilot, aiming to produce what the company calls a coherent story of a user's health.",
+      "src": "Microsoft",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/2026/05/29/copilot-health-now-in-preview/",
+      "new": true
+    },
+    {
+      "date": "2026-03-12",
+      "cat": "Product",
+      "title": "Microsoft Launches Copilot Health",
+      "desc": "Microsoft launched Copilot Health, a dedicated and isolated space within Copilot that brings together wearable data, electronic health records and lab results to deliver personalised health insights. An analysis of more than 500,000 de-identified Copilot conversations from January 2026 found nearly one in five involved personal symptom assessment or condition discussion—evidence of how much consumer demand already flows through general assistants.",
+      "src": "Microsoft / Fortune",
+      "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/",
+      "new": true
+    },
+    {
+      "date": "2026-02-15",
+      "cat": "Product",
+      "title": "Oura Launches a Dedicated Reproductive Health AI Model",
+      "desc": "Oura released an AI model focused on women's health spanning menstrual cycles through menopause, alongside Oura Advisor, which turned a one-way insight feed into a two-way coaching dialogue. Analysts framed it as evidence that device makers are competing on interpretation and coaching rather than raw metrics.",
+      "src": "Sahha",
+      "url": "https://sahha.ai/blog/ai-health-coaching-platforms/",
+      "new": true
+    },
+    {
+      "date": "2026-01-06",
+      "cat": "Regulatory",
+      "title": "FDA Eases Oversight of Wearables and AI-Enabled Devices",
+      "desc": "The FDA announced sweeping changes to digital health oversight, easing regulation of AI-enabled devices and wearables and revising general wellness and clinical decision support guidance. Software involving medical image or in vitro diagnostic signal processing remains in the device category, and the agency signalled it would cut the number of digital health guidance documents substantially while drafting a new AI framework. For consumer health agents, this widens the wellness lane—and sharpens the question of when advice becomes a medical claim.",
+      "src": "STAT News",
+      "url": "https://www.statnews.com/2026/01/06/fda-pulls-back-oversight-ai-enabled-devices-wearables/",
+      "new": true
+    },
+    {
+      "date": "2026-01-15",
+      "cat": "Research",
+      "title": "Transforming Wearable Data into Personal Health Insights Using LLM Agents",
+      "desc": "Nature Communications published an LLM agent framework for making sense of wearable streams, arguing that complex numerical and temporal reasoning is beyond conventional language models and requires an agentic approach that iterates over tools and data.",
+      "src": "Nature Communications",
+      "url": "https://www.nature.com/articles/s41467-025-67922-y"
+    },
+    {
+      "date": "2026-04-10",
+      "cat": "Research",
+      "title": "Mount Sinai's AI Triage: 88-96% Concordance with Physician Triage",
+      "desc": "Mount Sinai published results for its 'Check Symptoms & Get Care' digital triage deployment, reporting blinded clinician comparison and continuous post-deployment review showing 88% to 96% concordance with physician triage, plus a tiered roadmap for organisations of different sizes. A companion peer-reviewed analysis examined triage concordance by patient authentication status.",
+      "src": "NEJM Catalyst",
+      "url": "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0394"
+    },
+    {
+      "date": "2026-03-20",
+      "cat": "Research",
+      "title": "Symptom Checker Triage Accuracy: Decade of Evidence Reviewed",
+      "desc": "A review of a decade of symptom-checker research found top-performing AI symptom checkers reaching roughly 82-88% accuracy in triaging patients to the correct care level, with a consistent tendency across ChatGPT versions to overtriage rather than undertriage—a safer failure direction, but one that consumes clinical capacity.",
+      "src": "Future Wellness Tech",
+      "url": "https://futurewellnesstech.com/ai-symptom-checkers-triage-accuracy-2026/"
+    },
+    {
+      "date": "2026-02-10",
+      "cat": "Research",
+      "title": "AI Symptom Checker Outperforms Junior Clinicians at Emergency Triage",
+      "desc": "A multicentre study across three Swedish hospitals validated an AI triage system in nearly 3,000 real-world emergency department cases. The model outperformed junior clinicians at identifying patients requiring emergency care across multiple clinical scenarios, while the authors emphasised that vitals-based scoring complements rather than replaces clinical assessment.",
+      "src": "2 Minute Medicine",
+      "url": "https://www.2minutemedicine.com/ai-symptom-checker-could-help-emergency-doctors-prioritize-patients/"
+    },
+    {
+      "date": "2026-02-01",
+      "cat": "Regulatory",
+      "title": "States Raise the Privacy Ceiling for Consumer Health AI",
+      "desc": "Analysis of the 2026 privacy landscape found California and Washington requiring detailed written consent for AI tools processing health data, with Colorado's SB 21-169 creating obligations for developers and deployers of high-risk AI in insurance. HIPAA still sets the floor for covered entities; consumer health agents operating outside it face the FTC Health Breach Notification Rule and a patchwork of stricter state law.",
+      "src": "blueBriX",
+      "url": "https://bluebrix.health/articles/ai-reset-a-new-era-for-healthcare-policy"
+    },
+    {
+      "date": "2026-01-20",
+      "cat": "Research",
+      "title": "AI Coaching Trial and the Interpretation Gap",
+      "desc": "Reviewing the AI health coaching market, analysts noted that Google, Oura and WHOOP had all launched coaches powered by wearable data and LLMs, and cited a randomised clinical trial of AI coaching while pointing to the same core problem quantified by SensorFM: users do not know what to do with hundreds of daily data points—they want a decision, not a dashboard.",
+      "src": "Sahha",
+      "url": "https://sahha.ai/blog/ai-health-coaching-platforms/"
+    },
+    {
+      "date": "2025-11-10",
+      "cat": "Product",
+      "title": "Apple's AI Health Service Reported for 2026 (Project Mulberry)",
+      "desc": "Bloomberg reported that Apple still planned an AI-powered Health+ service for 2026, following internal work on an AI health coach widely reported under the codename Project Mulberry. The effort was later described as scaled back, with nutrition tracking and a reduced AI health agent arriving first.",
+      "src": "MacRumors",
+      "url": "https://www.macrumors.com/2025/11/10/ai-apple-health-service-still-coming/"
+    },
+    {
+      "date": "2026-06-15",
+      "cat": "Competitor",
+      "title": "Wearable Makers Push Toward Clinical Claims",
+      "desc": "Coverage of wearable makers noted WHOOP, Oura, Apple and a new wave of challengers layering blood pressure monitoring, metabolic insights and AI-generated guidance on top of hardware—narrowing the gap between a wellness feature and a clinical claim, with regulators watching and at least one vendor publicly disputing an interpretation of its own feature.",
+      "src": "Athletech News",
+      "url": "https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"
+    },
+    {
+      "date": "2026-09-01",
+      "cat": "Metric",
+      "title": "FDA Has Authorised 1,600+ AI-Enabled Medical Devices",
+      "desc": "The FDA reported more than 1,600 AI-enabled medical devices authorised for US marketing as of September 2026, up from 1,524 in March 2026—almost entirely Class II 510(k) clearances, with radiology still about three-quarters of the list. The count sits alongside the January 2026 relaxation of general wellness and CDS oversight, defining two very different lanes for consumer versus clinical AI.",
+      "src": "FDA",
+      "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices"
+    }
+  ],
+  "players": [
+    {
+      "name": "OpenAI — Health in ChatGPT",
+      "type": "Frontier platform · records + Apple Health",
+      "badge": "SCALE LEADER",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Jul 23, 2026"
+        },
+        {
+          "l": "Tiers",
+          "v": "Free/Go/Plus/Pro"
+        },
+        {
+          "l": "Data",
+          "v": "Records + Apple Health"
+        },
+        {
+          "l": "HIPAA",
+          "v": "Not covered after export"
+        }
+      ],
+      "desc": "Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician–patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
+      "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"
+    },
+    {
+      "name": "Microsoft — Copilot Health",
+      "type": "Frontier platform · dedicated health space",
+      "badge": "FAST FOLLOWER",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Mar 12, 2026"
+        },
+        {
+          "l": "Preview",
+          "v": "May 2026"
+        },
+        {
+          "l": "Sources",
+          "v": "EHR + wearables + labs"
+        },
+        {
+          "l": "Demand",
+          "v": "~1 in 5 Copilot chats health-related"
+        }
+      ],
+      "desc": "A separate, secure space inside Copilot that aggregates records, wearable data (Apple Health, Fitbit) and laboratory results into what Microsoft calls a coherent story of a user's health. Microsoft's own analysis of 500,000+ de-identified Copilot conversations found nearly one in five involved symptom assessment or condition discussion—evidence that consumer demand already flows through general assistants.",
+      "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
+    },
+    {
+      "name": "Apple — Health app + Apple Intelligence",
+      "type": "Device platform · on-device processing",
+      "badge": "DISTRIBUTION MOAT",
+      "stats": [
+        {
+          "l": "Announced",
+          "v": "Sep 2026"
+        },
+        {
+          "l": "OS",
+          "v": "iOS 27 / iPadOS 27"
+        },
+        {
+          "l": "Processing",
+          "v": "On-device"
+        },
+        {
+          "l": "Status",
+          "v": "Health+ planned 2026"
+        }
+      ],
+      "desc": "Apple extended Apple Intelligence into the Health app, positioning the iPhone as the secure central store for health and fitness data with on-device processing and interpretation of long-term metrics. The fuller AI health coach (Project Mulberry) was scaled back, with nutrition tracking and a reduced health agent arriving first. Apple's advantage is the install base and the sensor data already on the device.",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"
+    },
+    {
+      "name": "Google — Personal Health Agent (research)",
+      "type": "Research → product pipeline",
+      "badge": "STATE OF THE ART",
+      "stats": [
+        {
+          "l": "Published",
+          "v": "Nature, Oct 21, 2026"
+        },
+        {
+          "l": "Architecture",
+          "v": "3 sub-agents"
+        },
+        {
+          "l": "Evaluation",
+          "v": "11 tasks · 7,000+ annotations"
+        },
+        {
+          "l": "Safety gaps",
+          "v": "~17% of summaries"
+        }
+      ],
+      "desc": "Google Research's personal health agent is the most comprehensively evaluated consumer health agent published to date: a data science agent, a health domain expert agent and a health coach agent over four user journeys, open-sourced as a multi-agent framework. Independent coverage found it beat its Gemini base models on personal health tasks while still showing safety gaps in a meaningful share of summaries.",
+      "url": "https://www.nature.com/articles/s41586-026-11161-8"
+    },
+    {
+      "name": "Oura",
+      "type": "Wearable maker · coaching layer",
+      "badge": "COACHING LEADER",
+      "stats": [
+        {
+          "l": "AI coach",
+          "v": "Oura Advisor"
+        },
+        {
+          "l": "New model",
+          "v": "Reproductive health, Feb 2026"
+        },
+        {
+          "l": "Shift",
+          "v": "Metrics → dialogue"
+        }
+      ],
+      "desc": "Oura turned its insight feed into a two-way coaching dialogue with Oura Advisor and launched a dedicated reproductive health model spanning menstrual cycles through menopause. Represents the device-maker path to personal agents: own the sensor, own the interpretation.",
+      "url": "https://sahha.ai/blog/ai-health-coaching-platforms/"
+    },
+    {
+      "name": "WHOOP",
+      "type": "Wearable maker · embedded AI guidance",
+      "badge": "ADJACENT",
+      "stats": [
+        {
+          "l": "Approach",
+          "v": "AI guidance on every screen"
+        },
+        {
+          "l": "Model",
+          "v": "Subscription + hardware"
+        }
+      ],
+      "desc": "WHOOP integrated AI guidance across its app rather than shipping a separate coach, and has publicly disputed regulatory interpretations of its own features—illustrating how close wearable guidance sits to a clinical claim.",
+      "url": "https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"
+    },
+    {
+      "name": "Mount Sinai — Check Symptoms & Get Care",
+      "type": "Health system deployment",
+      "badge": "PROOF POINT",
+      "stats": [
+        {
+          "l": "Concordance",
+          "v": "88-96% with physician triage"
+        },
+        {
+          "l": "Sessions",
+          "v": "~22,000"
+        },
+        {
+          "l": "Completion",
+          "v": "~80%"
+        },
+        {
+          "l": "Published",
+          "v": "NEJM Catalyst 2026"
+        }
+      ],
+      "desc": "Mount Sinai's digital triage tool is the clearest health-system proof point for consumer-facing symptom assessment: blinded clinician comparison plus continuous post-deployment review showed 88-96% concordance with physician triage, with a tiered roadmap other organisations can copy.",
+      "url": "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0394"
+    },
+    {
+      "name": "Symptom checkers (K Health, Ada, and others)",
+      "type": "Consumer triage platforms",
+      "badge": "CROWDED",
+      "stats": [
+        {
+          "l": "Top accuracy",
+          "v": "82-88% correct care level"
+        },
+        {
+          "l": "Failure mode",
+          "v": "Tendency to overtriage"
+        },
+        {
+          "l": "Evidence",
+          "v": "Decade of vignette studies"
+        }
+      ],
+      "desc": "A decade of symptom-checker research shows top platforms reaching roughly 82-88% accuracy at assigning the correct level of care, with a consistent tendency to overtriage rather than undertriage. Independent validation in Swedish emergency departments found an AI triage system outperforming junior clinicians at identifying emergency cases.",
+      "url": "https://futurewellnesstech.com/ai-symptom-checkers-triage-accuracy-2026/"
+    },
+    {
+      "name": "Ambient home sensing (radar, WiFi, acoustic)",
+      "type": "Non-contact monitoring",
+      "badge": "EMERGING",
+      "stats": [
+        {
+          "l": "Modalities",
+          "v": "mmWave, WiFi, acoustic, glasses"
+        },
+        {
+          "l": "Design",
+          "v": "Local-first processing"
+        },
+        {
+          "l": "Use",
+          "v": "Ageing in place, chronic care"
+        }
+      ],
+      "desc": "A wave of non-contact sensing—mmWave radar, WiFi sensing, acoustic AI and smart glasses—monitors vitals and activity at home without requiring a wearable. Privacy-first local processing is the emerging design pattern, and consent across everyone in a sensed space is the unsolved governance problem.",
+      "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
+    },
+    {
+      "name": "Function Health and lab-first subscriptions",
+      "type": "Consumer diagnostics + AI interpretation",
+      "badge": "ADJACENT",
+      "stats": [
+        {
+          "l": "Model",
+          "v": "Subscription lab panels"
+        },
+        {
+          "l": "Value",
+          "v": "Longitudinal biomarker trends"
+        },
+        {
+          "l": "Risk",
+          "v": "Interpretation without a clinician"
+        }
+      ],
+      "desc": "Lab-first consumer services generate dense longitudinal biomarker data, which makes them natural personal-agent customers and a direct source of the 'what does my bloodwork mean' question that general assistants now answer informally.",
+      "url": "https://www.producthunt.com/products/copilot-health"
+    },
+    {
+      "name": "Samsung / Garmin / Withings",
+      "type": "Device incumbents",
+      "badge": "ADJACENT",
+      "stats": [
+        {
+          "l": "Position",
+          "v": "Sensor-first, AI second"
+        },
+        {
+          "l": "Risk",
+          "v": "Interpretation gap"
+        }
+      ],
+      "desc": "Hardware incumbents with large installed bases are adding AI interpretation and coaching, but trail the platform players on model capability and the wearable-native startups on coaching depth.",
+      "url": "https://www.aimagicx.com/blog/ai-health-wearables-smart-rings-monitors-guide-2026"
+    },
+    {
+      "name": "Meta AI glasses and form-factor sensing",
+      "type": "Ambient capture",
+      "badge": "WILDCARD",
+      "stats": [
+        {
+          "l": "Bet",
+          "v": "Infuse sensing into existing form factors"
+        },
+        {
+          "l": "Barrier",
+          "v": "Social acceptability + consent"
+        }
+      ],
+      "desc": "The argument for glasses is that people already wear them, so sensing can be added without asking for a new device. It also concentrates the consent problem: continuous capture in public and shared spaces.",
+      "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
+    }
+  ],
+  "research": [
+    {
+      "title": "The Anatomy of a Personal Health Agent",
+      "type": "Peer-reviewed · multi-agent architecture and evaluation",
+      "date": "Oct 21, 2026",
+      "venue": "Nature",
+      "finding": "A comprehensive personal health agent reasoning over multimodal consumer device and medical record data, built as three specialist sub-agents: a data science agent analysing longitudinal wearable and medical data with population-level context, a health domain expert agent integrating personal and contextual data with health knowledge, and a health coach agent synthesising insights, supporting multi-turn interaction and goal setting, applying psychological strategies and tracking progress. Four user journeys guided the design: general health knowledge, personal data interpretation, wellness advice and symptom assessment. Evaluated across 11 benchmark tasks using automated and human evaluation, with more than 7,000 annotations and about 1,350 hours of effort from health experts and end users. Released as an open-source multi-agent framework. Validated for real-world applicability against the WEAR-ME metabolic health study (n=1,165).",
+      "caveat": "Independent reporting noted safety gaps in a meaningful share of generated summaries, and the authors present the work as a basis for further research rather than a deployable clinical tool.",
+      "url": "https://www.nature.com/articles/s41586-026-11161-8"
+    },
+    {
+      "title": "Transforming Wearable Data into Personal Health Insights Using LLM Agents",
+      "type": "Peer-reviewed · agentic framework",
+      "date": "2026",
+      "venue": "Nature Communications",
+      "finding": "Argues that making sense of wearable streams requires complex numerical reasoning beyond conventional language models and introduces an LLM agent that iterates over tools and longitudinal data to produce wearable-derived health insights.",
+      "caveat": "Consumer sensor data quality and device heterogeneity remain open problems; insights are not clinical conclusions.",
+      "url": "https://www.nature.com/articles/s41467-025-67922-y"
+    },
+    {
+      "title": "Using AI to Offer Personalised Health Advice",
+      "type": "Editorial",
+      "date": "Oct 21, 2026",
+      "venue": "Nature",
+      "finding": "Companion editorial placing the personal health agent paper in the wider context of public trust in AI health information, citing Pew survey research and prior studies on AI-delivered health advice.",
+      "caveat": "Editorial commentary, not primary evidence.",
+      "url": "https://www.nature.com/articles/d41586-026-03065-4"
+    },
+    {
+      "title": "Check Symptoms & Get Care: Mount Sinai's AI Triage Solution",
+      "type": "Health-system deployment report",
+      "date": "2026",
+      "venue": "NEJM Catalyst",
+      "finding": "Digital triage deployment handling roughly 22,000 patient sessions, with about 80% of users who started completed the conversation. Blinded clinician comparison and continuous post-deployment review showed 88% to 96% concordance with physician triage, with a tiered adoption roadmap for organisations of different sizes.",
+      "caveat": "Single health-system deployment; concordance is not the same as outcome improvement, and the authors describe a staged roadmap rather than a finished evaluation.",
+      "url": "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0394"
+    },
+    {
+      "title": "Symptom Checker Triage Accuracy: What a Decade of Research Shows",
+      "type": "Evidence review",
+      "date": "2026",
+      "finding": "Top-performing AI symptom checkers reached roughly 82-88% accuracy at assigning the correct level of care across 500 clinical vignettes in one multi-platform evaluation. A broader 2026 analysis of 22 ChatGPT versions found a consistent tendency across models to overtriage rather than undertriage.",
+      "caveat": "Vignette studies overstate real-world performance; overtriage consumes clinical capacity even though it is the safer error direction.",
+      "url": "https://futurewellnesstech.com/ai-symptom-checkers-triage-accuracy-2026/"
+    },
+    {
+      "title": "AI Triage Validation Across Three Swedish Emergency Departments",
+      "type": "Multicentre validation",
+      "date": "2026",
+      "finding": "An AI triage system validated on nearly 3,000 real-world emergency department cases outperformed junior clinicians at identifying patients requiring emergency care across multiple clinical scenarios.",
+      "caveat": "Vitals-based scoring complements rather than replaces clinical assessment; emergency populations differ from consumer symptom-checker users.",
+      "url": "https://www.2minutemedicine.com/ai-symptom-checker-could-help-emergency-doctors-prioritize-patients/"
+    },
+    {
+      "title": "FDA Relaxes Clinical Decision Support and General Wellness Guidance",
+      "type": "Regulatory analysis",
+      "date": "Jan 6, 2026",
+      "finding": "The FDA announced sweeping changes to digital health oversight, easing regulation of AI-enabled devices and wearables and revising general wellness and CDS guidance, while keeping software involving medical image or in vitro diagnostic signal processing in the device category. The agency signalled substantial cuts to existing digital health guidance and a new AI framework.",
+      "caveat": "The relaxation widens the wellness lane for consumer agents while making the wellness-versus-medical-claim boundary the decisive compliance question.",
+      "url": "https://www.statnews.com/2026/01/06/fda-pulls-back-oversight-ai-enabled-devices-wearables/"
+    },
+    {
+      "title": "2026 Privacy Reset: State Law, Consent and the Post-HIPAA Gap",
+      "type": "Regulatory analysis",
+      "date": "2026",
+      "finding": "California and Washington now require detailed written consent for AI tools processing health data, and Colorado's SB 21-169 imposes obligations on developers and deployers of high-risk AI in insurance. HIPAA sets the floor for covered entities; consumer health agents outside that scope face the FTC Health Breach Notification Rule plus a patchwork of stricter state law.",
+      "caveat": "State requirements are moving faster than federal guidance; compliance depends on the residency of users and the flow of data.",
+      "url": "https://bluebrix.health/articles/ai-reset-a-new-era-for-healthcare-policy"
+    },
+    {
+      "title": "Copilot Conversation Analysis: Health Demand in General Assistants",
+      "type": "Vendor analysis of 500,000+ conversations",
+      "date": "Mar 2026",
+      "finding": "Microsoft's analysis of more than 500,000 de-identified Copilot conversations from January 2026 found nearly one in five involved personal symptom assessment or condition discussion, evidencing how much health demand already flows through general-purpose assistants.",
+      "caveat": "Vendor-reported, de-identified sample; classification method and generalisability are not independently verified.",
+      "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
+    },
+    {
+      "title": "SensorFM and the Shift from Metrics to Agents",
+      "type": "Industry analysis",
+      "date": "Jul 10, 2026",
+      "finding": "Google's SensorFM, trained on roughly a trillion minutes of wearable data, supports the shift from raw metrics toward AI health agents. The analysis frames the core user problem quantitatively: people do not know what to do with hundreds of daily data points, they want actionable interpretation, which is why Oura and WHOOP moved to two-way coaching.",
+      "caveat": "Industry analysis and vendor data; no independent outcome study of coaching effectiveness is cited.",
+      "url": "https://www.forbes.com/sites/josipamajic/2026/07/10/googles-sensorfm-reveals-where-ai-takes-wearable-health/"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Nature — The anatomy of a personal health agent (Oct 21, 2026)",
+      "url": "https://www.nature.com/articles/s41586-026-11161-8"
+    },
+    {
+      "name": "Google Research — Anatomy of a personal health agent",
+      "url": "https://research.google/blog/the-anatomy-of-a-personal-health-agent/"
+    },
+    {
+      "name": "Nature — Using AI to offer personalised health advice (editorial)",
+      "url": "https://www.nature.com/articles/d41586-026-03065-4"
+    },
+    {
+      "name": "Becker's — Google's health AI agent tops Gemini but carries safety gaps",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/googles-health-ai-agent-tops-gemini-but-carries-safety-gaps-7-things-to-know/"
+    },
+    {
+      "name": "Nature Communications — Wearable data to personal health insights using LLM agents",
+      "url": "https://www.nature.com/articles/s41467-025-67922-y"
+    },
+    {
+      "name": "Paubox — ChatGPT Health launches nationwide, records not HIPAA protected",
+      "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"
+    },
+    {
+      "name": "PYMNTS — OpenAI brings Epic health records to ChatGPT for Clinicians",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-brings-epic-health-records-to-chatgpt-for-clinicians/"
+    },
+    {
+      "name": "Microsoft — Introducing Copilot Health",
+      "url": "https://microsoft.ai/news/introducing-copilot-health/"
+    },
+    {
+      "name": "Fortune — Microsoft launches Copilot Health",
+      "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
+    },
+    {
+      "name": "Microsoft — Copilot Health now in preview",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/2026/05/29/copilot-health-now-in-preview/"
+    },
+    {
+      "name": "Apple Newsroom — Apple advances health and fitness with Apple Intelligence",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"
+    },
+    {
+      "name": "MacRumors — AI-powered Apple Health+ still coming in 2026",
+      "url": "https://www.macrumors.com/2025/11/10/ai-apple-health-service-still-coming/"
+    },
+    {
+      "name": "Livity — Apple shelved its AI health coach",
+      "url": "https://livity-app.com/en/blog/apple-health-ai-coach-shelved"
+    },
+    {
+      "name": "Forbes — Google's SensorFM reveals where AI takes wearable health",
+      "url": "https://www.forbes.com/sites/josipamajic/2026/07/10/googles-sensorfm-reveals-where-ai-takes-wearable-health/"
+    },
+    {
+      "name": "Forbes — The rise of ambient home health monitoring",
+      "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
+    },
+    {
+      "name": "Sahha — AI health coaching platforms",
+      "url": "https://sahha.ai/blog/ai-health-coaching-platforms/"
+    },
+    {
+      "name": "NEJM Catalyst — Check Symptoms & Get Care: Mount Sinai's AI triage solution",
+      "url": "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0394"
+    },
+    {
+      "name": "Association of Health Care Journalists — AI-powered symptom checkers",
+      "url": "https://healthjournalism.org/blog/2026/08/ai-powered-symptom-checkers/"
+    },
+    {
+      "name": "Future Wellness Tech — Symptom checker triage accuracy review",
+      "url": "https://futurewellnesstech.com/ai-symptom-checkers-triage-accuracy-2026/"
+    },
+    {
+      "name": "2 Minute Medicine — AI symptom checker vs junior clinicians in ED triage",
+      "url": "https://www.2minutemedicine.com/ai-symptom-checker-could-help-emergency-doctors-prioritize-patients/"
+    },
+    {
+      "name": "STAT News — FDA pulls back oversight of AI-enabled devices and wearables",
+      "url": "https://www.statnews.com/2026/01/06/fda-pulls-back-oversight-ai-enabled-devices-wearables/"
+    },
+    {
+      "name": "Nixon Law Group — FDA relaxes CDS and general wellness guidance",
+      "url": "https://www.nixonlawgroup.com/resources/fda-relaxes-clinical-decision-support-and-general-wellness-guidance-what-it-means-for-generative-ai-and-consumer-wearables"
+    },
+    {
+      "name": "blueBriX — The 2026 AI reset: healthcare policy",
+      "url": "https://bluebrix.health/articles/ai-reset-a-new-era-for-healthcare-policy"
+    },
+    {
+      "name": "FDA — Artificial Intelligence-Enabled Medical Devices",
+      "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices"
+    },
+    {
+      "name": "Athletech News — Wearable makers push toward healthcare",
+      "url": "https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"
+    },
+    {
+      "name": "AI MagicX — AI health wearables guide 2026",
+      "url": "https://www.aimagicx.com/blog/ai-health-wearables-smart-rings-monitors-guide-2026"
+    }
+  ]
+}
