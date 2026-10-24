@@ -24,5 +24,11 @@ var phaSourcesData = [
   {name:"blueBriX — The 2026 AI reset: healthcare policy", url:"https://bluebrix.health/articles/ai-reset-a-new-era-for-healthcare-policy"},
   {name:"FDA — Artificial Intelligence-Enabled Medical Devices", url:"https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices"},
   {name:"Athletech News — Wearable makers push toward healthcare", url:"https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"},
-  {name:"AI MagicX — AI health wearables guide 2026", url:"https://www.aimagicx.com/blog/ai-health-wearables-smart-rings-monitors-guide-2026"}
+  {name:"AI MagicX — AI health wearables guide 2026", url:"https://www.aimagicx.com/blog/ai-health-wearables-smart-rings-monitors-guide-2026"},
+  {name:"IAPP — The health AI agent rush: five products in three months", url:"https://iapp.org/news/a/the-health-ai-agent-rush-five-products-in-three-months-and-the-privacy-questions-that-got-left-behind"},
+  {name:"Holland & Knight — States continue efforts to regulate AI in healthcare (2026)", url:"https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare"},
+  {name:"Perplexity — Perplexity Health launch", url:"https://perplexityaimagazine.com/ai-news/perplexity-health-launch/"},
+  {name:"Alloop — Trio modular wearable launch", url:"https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"},
+  {name:"Anthropic — Claude for Healthcare", url:"https://www.anthropic.com/news/healthcare-life-sciences"},
+  {name:"Amazon — Health AI for One Medical members", url:"https://www.aboutamazon.com/news/retail/amazon-health-ai-agent-one-medical"}
 ];

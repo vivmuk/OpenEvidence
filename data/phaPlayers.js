@@ -58,5 +58,25 @@ var phaPlayersData = [
   {name:"Meta AI glasses and form-factor sensing", type:"Ambient capture", badge:"WILDCARD",
    stats:[{l:"Bet",v:"Infuse sensing into existing form factors"},{l:"Barrier",v:"Social acceptability + consent"}],
    desc:"The argument for glasses is that people already wear them, so sensing can be added without asking for a new device. It also concentrates the consent problem: continuous capture in public and shared spaces.",
-   url:"https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"}
+   url:"https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"},
+
+  {name:"Perplexity — Perplexity Health", type:"Frontier platform · EHR + wearables + agents", badge:"CITATION-FIRST",
+   stats:[{l:"Launched",v:"Mar 19, 2026"},{l:"Rollout",v:"Apr 2026, US Pro/Max"},{l:"Providers",v:"1.7M+ via b.well"},{l:"Wearables",v:"Apple Health, Fitbit, Withings, Clue"}],
+   desc:"Perplexity Health connects EHR via b.well (1.7M+ providers), wearable data via Terra API, and offers AI agents for nutrition, sleep and visit prep built on Perplexity Computer. A Health Advisory Board including Dr Eric Topol was announced at launch. Perplexity commits to no training on health data and citations on every response. The fifth major health AI product launched in the first three months of 2026, according to IAPP analysis.",
+   url:"https://perplexityaimagazine.com/ai-news/perplexity-health-launch/"},
+
+  {name:"Anthropic — Claude for Healthcare", type:"Frontier platform · clinical and health data", badge:"EARLY",
+   stats:[{l:"Launched",v:"Jan 11, 2026"},{l:"Model",v:"Claude"},{l:"Scope",v:"Healthcare and life sciences"}],
+   desc:"Anthropic launched Claude for Healthcare on 11 January 2026, one of five major health AI products to launch in the first three months of 2026. Product details are less documented than OpenAI's or Microsoft's offerings; IAPP analysis notes the same convergence pattern—EHR integration, wearable connections, no-training commitment, US-only availability.",
+   url:"https://www.anthropic.com/news/healthcare-life-sciences"},
+
+  {name:"Amazon — Health AI (One Medical)", type:"Frontier platform · subscription health", badge:"ECOSYSTEM PLAY",
+   stats:[{l:"Launched",v:"Jan 22, 2026"},{l:"Channel",v:"One Medical members"},{l:"Expansion",v:"Mar 2026"}],
+   desc:"Amazon Health AI became available to One Medical members on 22 January 2026 and was expanded in March. IAPP analysis notes the strategic logic: Amazon channels users toward One Medical consultations and Amazon Pharmacy prescriptions. The product follows the same convergence pattern as the other four: EHR + wearables, no training, US-only, outside HIPAA.",
+   url:"https://www.aboutamazon.com/news/retail/amazon-health-ai-agent-one-medical"},
+
+  {name:"Alloop — Trio + AI Health Agent", type:"Wearable maker · AI-native platform", badge:"NEW ENTRANT",
+   stats:[{l:"Launched",v:"Oct 23, 2026"},{l:"Hardware",v:"Modular ring/wristband"},{l:"Integrations",v:"Apple Health, Google Health"},{l:"Funding",v:"Kickstarter"}],
+   desc:"Alloop's Trio is a modular 3-in-1 wearable with one interchangeable sensing core that snaps between a smart ring and a wristband. Its Personal AI Health Agent interprets physiological data alongside user-journalled meals, activities and symptoms via voice, text and images. An open platform integrates Apple Health, Google Health and Health Connect. Bio Age score spans six domains. A new entrant combining hardware, open data integration and conversational AI.",
+   url:"https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"}
 ];

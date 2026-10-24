@@ -23,6 +23,15 @@
   },
   "timeline": [
     {
+      "date": "2026-10-23",
+      "cat": "Product",
+      "title": "Alloop Launches Trio: Modular 3-in-1 Wearable Built Around a Personal AI Health Agent",
+      "desc": "Alloop unveiled a modular health wearable with one interchangeable sensing core (the Cube) that snaps between a smart ring and a wristband, plus a Halo module for voice interaction with its AI Health Agent. The open platform integrates Apple Health, Google Health and Health Connect, and the agent interprets physiological data alongside user-journalled meals, activities and symptoms. A Bio Age score spans six domains: sleep, activity, nutrition, cardiovascular, metabolic and musculoskeletal. Launching on Kickstarter.",
+      "src": "OpenPR / Alloop",
+      "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable",
+      "new": true
+    },
+    {
       "date": "2026-10-21",
       "cat": "Research",
       "title": "Nature Publishes 'The Anatomy of a Personal Health Agent'",
@@ -59,13 +68,39 @@
       "new": true
     },
     {
+      "date": "2026-05-26",
+      "cat": "Regulatory",
+      "title": "States Accelerate Health AI Legislation in 2026: Insurer, Provider and Chatbot Rules",
+      "desc": "Holland & Knight's review of 2026 state legislation found states leading Congress on health AI governance: Alabama, Indiana, Utah, Washington, Maryland and Georgia enacted laws requiring human oversight of AI in insurer prior-authorisation decisions; Maine and Arizona restricted autonomous clinical decision-making in behavioural health; Idaho, Nebraska, Oregon and Tennessee passed AI companion and chatbot safety acts requiring disclosure, crisis-response protocols and prohibiting chatbots from representing themselves as licensed mental health professionals. Utah piloted a regulatory sandbox for AI-enabled prescription renewal.",
+      "src": "Holland & Knight",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare",
+      "new": true
+    },
+    {
+      "date": "2026-04-15",
+      "cat": "Trend",
+      "title": "IAPP: Five Health AI Agents Launched in Three Months — Privacy Gaps Documented",
+      "desc": "A comparative analysis by Théodore Christakis (University of Grenoble Alpes) found five companies launched health-specific AI products between January and March 2026: OpenAI ChatGPT Health (7 Jan), Anthropic Claude for Healthcare (11 Jan), Amazon Health AI (22 Jan), Microsoft Copilot Health (12 Mar) and Perplexity Health (19 Mar). All follow a similar model—EHR integration via intermediaries, wearable connections, no-training commitments, US-only availability. None meets the full 'sealed mode' privacy standard; none is HIPAA-covered; all exclude European users. OpenAI reports 230 million people ask ChatGPT health questions weekly.",
+      "src": "IAPP",
+      "url": "https://iapp.org/news/a/the-health-ai-agent-rush-five-products-in-three-months-and-the-privacy-questions-that-got-left-behind",
+      "new": true
+    },
+    {
+      "date": "2026-03-19",
+      "cat": "Product",
+      "title": "Perplexity Launches Perplexity Health with EHR, Wearables and Health Advisory Board",
+      "desc": "Perplexity unveiled Perplexity Health on 19 March 2026, rolling out to US Pro and Max subscribers through April. The platform connects 1.7M+ providers via b.well, integrates Apple Health, Fitbit, Ultrahuman, Withings and Clue via Terra API, and offers AI agents for nutrition, sleep and visit prep built on Perplexity Computer. A Health Advisory Board including Dr Eric Topol was announced. Perplexity commits to no training on health data and citations on every response.",
+      "src": "Perplexity",
+      "url": "https://perplexityaimagazine.com/ai-news/perplexity-health-launch/",
+      "new": true
+    },
+    {
       "date": "2026-09-15",
       "cat": "Product",
       "title": "Apple Extends Apple Intelligence into the Health App",
       "desc": "Apple announced health and fitness capabilities powered by Apple Intelligence with iOS 27 and iPadOS 27. The Health app is positioned as the central, secure location for a user's health and fitness information, with on-device processing and expanded interpretation of long-term metrics rather than simple daily logging. Apple had previously scaled back its fuller AI health coach effort, and Bloomberg reported the paid Health+ service was still planned for 2026.",
       "src": "Apple Newsroom",
-      "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/",
-      "new": true
+      "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"
     },
     {
       "date": "2026-08-20",
@@ -73,8 +108,7 @@
       "title": "AI Symptom Checkers and Patient Care-Seeking Behaviour",
       "desc": "Coverage of health-system deployments found that AI-powered symptom checkers do direct worried patients to care. From roughly 22,000 digital triage sessions at Mount Sinai, about 80% of users who started a session completed the conversation.",
       "src": "Association of Health Care Journalists",
-      "url": "https://healthjournalism.org/blog/2026/08/ai-powered-symptom-checkers/",
-      "new": true
+      "url": "https://healthjournalism.org/blog/2026/08/ai-powered-symptom-checkers/"
     },
     {
       "date": "2026-07-23",
@@ -82,8 +116,7 @@
       "title": "OpenAI Launches 'Health in ChatGPT' with Records and Apple Health",
       "desc": "OpenAI rolled out Health in ChatGPT to Free, Go, Plus and Pro users in the United States, letting eligible users securely connect medical records and Apple Health data so the assistant can interpret information in context, track changes and hold more personalised conversations. Coverage highlighted that once health data leaves a provider, HIPAA no longer protects it—making the consumer data-governance question central. The same period saw OpenAI connect ChatGPT to Epic records for clinicians.",
       "src": "OpenAI / Paubox",
-      "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected",
-      "new": true
+      "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"
     },
     {
       "date": "2026-07-10",
@@ -91,8 +124,7 @@
       "title": "Google's SensorFM Points Wearables Toward AI Health Agents",
       "desc": "Forbes reported on Google's SensorFM, trained on approximately a trillion minutes of wearable data, and framed the shift from raw metrics to AI health agents—a trend already reshaping WHOOP and Oura, which were both adding two-way coaching dialogue on top of one-way insight feeds.",
       "src": "Forbes",
-      "url": "https://www.forbes.com/sites/josipamajic/2026/07/10/googles-sensorfm-reveals-where-ai-takes-wearable-health/",
-      "new": true
+      "url": "https://www.forbes.com/sites/josipamajic/2026/07/10/googles-sensorfm-reveals-where-ai-takes-wearable-health/"
     },
     {
       "date": "2026-06-28",
@@ -100,8 +132,7 @@
       "title": "The Rise of Ambient Home Health Monitoring",
       "desc": "Forbes documented the shift toward non-contact sensing—mmWave radar, WiFi sensing, acoustic AI, smart glasses—as a way to monitor vitals and activity at home without adding another wearable. Privacy-first, local-first processing emerged as the design pattern, with vendors arguing that sensing must blend into form factors people already use.",
       "src": "Forbes",
-      "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/",
-      "new": true
+      "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
     },
     {
       "date": "2026-05-29",
@@ -109,8 +140,7 @@
       "title": "Microsoft Copilot Health Enters Preview",
       "desc": "Microsoft opened Copilot Health in preview after its March launch. The product aggregates personal health records, wearable data from Apple Health and Fitbit, and laboratory results inside a separate, secure space in Copilot, aiming to produce what the company calls a coherent story of a user's health.",
       "src": "Microsoft",
-      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/2026/05/29/copilot-health-now-in-preview/",
-      "new": true
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/2026/05/29/copilot-health-now-in-preview/"
     },
     {
       "date": "2026-03-12",
@@ -118,8 +148,7 @@
       "title": "Microsoft Launches Copilot Health",
       "desc": "Microsoft launched Copilot Health, a dedicated and isolated space within Copilot that brings together wearable data, electronic health records and lab results to deliver personalised health insights. An analysis of more than 500,000 de-identified Copilot conversations from January 2026 found nearly one in five involved personal symptom assessment or condition discussion—evidence of how much consumer demand already flows through general assistants.",
       "src": "Microsoft / Fortune",
-      "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/",
-      "new": true
+      "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
     },
     {
       "date": "2026-02-15",
@@ -127,8 +156,7 @@
       "title": "Oura Launches a Dedicated Reproductive Health AI Model",
       "desc": "Oura released an AI model focused on women's health spanning menstrual cycles through menopause, alongside Oura Advisor, which turned a one-way insight feed into a two-way coaching dialogue. Analysts framed it as evidence that device makers are competing on interpretation and coaching rather than raw metrics.",
       "src": "Sahha",
-      "url": "https://sahha.ai/blog/ai-health-coaching-platforms/",
-      "new": true
+      "url": "https://sahha.ai/blog/ai-health-coaching-platforms/"
     },
     {
       "date": "2026-01-06",
@@ -136,8 +164,7 @@
       "title": "FDA Eases Oversight of Wearables and AI-Enabled Devices",
       "desc": "The FDA announced sweeping changes to digital health oversight, easing regulation of AI-enabled devices and wearables and revising general wellness and clinical decision support guidance. Software involving medical image or in vitro diagnostic signal processing remains in the device category, and the agency signalled it would cut the number of digital health guidance documents substantially while drafting a new AI framework. For consumer health agents, this widens the wellness lane—and sharpens the question of when advice becomes a medical claim.",
       "src": "STAT News",
-      "url": "https://www.statnews.com/2026/01/06/fda-pulls-back-oversight-ai-enabled-devices-wearables/",
-      "new": true
+      "url": "https://www.statnews.com/2026/01/06/fda-pulls-back-oversight-ai-enabled-devices-wearables/"
     },
     {
       "date": "2026-01-15",
@@ -472,6 +499,98 @@
       ],
       "desc": "The argument for glasses is that people already wear them, so sensing can be added without asking for a new device. It also concentrates the consent problem: continuous capture in public and shared spaces.",
       "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
+    },
+    {
+      "name": "Perplexity — Perplexity Health",
+      "type": "Frontier platform · EHR + wearables + agents",
+      "badge": "CITATION-FIRST",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Mar 19, 2026"
+        },
+        {
+          "l": "Rollout",
+          "v": "Apr 2026, US Pro/Max"
+        },
+        {
+          "l": "Providers",
+          "v": "1.7M+ via b.well"
+        },
+        {
+          "l": "Wearables",
+          "v": "Apple Health, Fitbit, Withings, Clue"
+        }
+      ],
+      "desc": "Perplexity Health connects EHR via b.well (1.7M+ providers), wearable data via Terra API, and offers AI agents for nutrition, sleep and visit prep built on Perplexity Computer. A Health Advisory Board including Dr Eric Topol was announced at launch. Perplexity commits to no training on health data and citations on every response. The fifth major health AI product launched in the first three months of 2026, according to IAPP analysis.",
+      "url": "https://perplexityaimagazine.com/ai-news/perplexity-health-launch/"
+    },
+    {
+      "name": "Anthropic — Claude for Healthcare",
+      "type": "Frontier platform · clinical and health data",
+      "badge": "EARLY",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Jan 11, 2026"
+        },
+        {
+          "l": "Model",
+          "v": "Claude"
+        },
+        {
+          "l": "Scope",
+          "v": "Healthcare and life sciences"
+        }
+      ],
+      "desc": "Anthropic launched Claude for Healthcare on 11 January 2026, one of five major health AI products to launch in the first three months of 2026. Product details are less documented than OpenAI's or Microsoft's offerings; IAPP analysis notes the same convergence pattern—EHR integration, wearable connections, no-training commitment, US-only availability.",
+      "url": "https://www.anthropic.com/news/healthcare-life-sciences"
+    },
+    {
+      "name": "Amazon — Health AI (One Medical)",
+      "type": "Frontier platform · subscription health",
+      "badge": "ECOSYSTEM PLAY",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Jan 22, 2026"
+        },
+        {
+          "l": "Channel",
+          "v": "One Medical members"
+        },
+        {
+          "l": "Expansion",
+          "v": "Mar 2026"
+        }
+      ],
+      "desc": "Amazon Health AI became available to One Medical members on 22 January 2026 and was expanded in March. IAPP analysis notes the strategic logic: Amazon channels users toward One Medical consultations and Amazon Pharmacy prescriptions. The product follows the same convergence pattern as the other four: EHR + wearables, no training, US-only, outside HIPAA.",
+      "url": "https://www.aboutamazon.com/news/retail/amazon-health-ai-agent-one-medical"
+    },
+    {
+      "name": "Alloop — Trio + AI Health Agent",
+      "type": "Wearable maker · AI-native platform",
+      "badge": "NEW ENTRANT",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Oct 23, 2026"
+        },
+        {
+          "l": "Hardware",
+          "v": "Modular ring/wristband"
+        },
+        {
+          "l": "Integrations",
+          "v": "Apple Health, Google Health"
+        },
+        {
+          "l": "Funding",
+          "v": "Kickstarter"
+        }
+      ],
+      "desc": "Alloop's Trio is a modular 3-in-1 wearable with one interchangeable sensing core that snaps between a smart ring and a wristband. Its Personal AI Health Agent interprets physiological data alongside user-journalled meals, activities and symptoms via voice, text and images. An open platform integrates Apple Health, Google Health and Health Connect. Bio Age score spans six domains. A new entrant combining hardware, open data integration and conversational AI.",
+      "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"
     }
   ],
   "research": [
@@ -558,6 +677,24 @@
       "finding": "Google's SensorFM, trained on roughly a trillion minutes of wearable data, supports the shift from raw metrics toward AI health agents. The analysis frames the core user problem quantitatively: people do not know what to do with hundreds of daily data points, they want actionable interpretation, which is why Oura and WHOOP moved to two-way coaching.",
       "caveat": "Industry analysis and vendor data; no independent outcome study of coaching effectiveness is cited.",
       "url": "https://www.forbes.com/sites/josipamajic/2026/07/10/googles-sensorfm-reveals-where-ai-takes-wearable-health/"
+    },
+    {
+      "title": "The Health AI Agent Rush: Five Products in Three Months",
+      "type": "Comparative privacy analysis",
+      "date": "Apr 15, 2026",
+      "venue": "IAPP",
+      "finding": "A comparative analysis of five health AI products (OpenAI ChatGPT Health, Anthropic Claude for Healthcare, Amazon Health AI, Microsoft Copilot Health, Perplexity Health) across 16 dimensions found all five launched between January and March 2026 with a remarkably similar model: EHR integration via intermediaries (b.well, HealthEx), wearable connections, no-training commitments, US-only availability, and separate storage from ordinary chat. None meets the full 'sealed mode' privacy standard (cryptographic hardening, human access constraints, independent verification). None is HIPAA-covered. All exclude European users, bundling privacy protections with data integration features in a way that denies Europeans both. OpenAI reports 230 million people ask ChatGPT health questions weekly.",
+      "caveat": "The analysis is authored by a single researcher proposing a governance framework ('sealed mode'); product architectures are assessed from public materials, not independent audits, and may have changed since publication.",
+      "url": "https://iapp.org/news/a/the-health-ai-agent-rush-five-products-in-three-months-and-the-privacy-questions-that-got-left-behind"
+    },
+    {
+      "title": "States Continue Efforts to Regulate AI in Healthcare: 2026 Legislation Review",
+      "type": "Regulatory analysis",
+      "date": "May 26, 2026",
+      "venue": "Holland & Knight",
+      "finding": "A review of 2026 state legislation found states leading Congress on health AI governance. Six states (AL, IN, UT, WA, MD, GA) enacted laws requiring human oversight of AI in insurer prior-authorisation decisions. Maine and Arizona restricted autonomous clinical decision-making in behavioural health and required informed consent for AI-powered tools. Four states (ID, NE, OR, TN) passed AI companion and chatbot safety acts requiring AI disclosure, crisis-response protocols for suicidal ideation, and prohibiting chatbots from representing themselves as licensed mental health professionals. Utah piloted a regulatory sandbox for AI-enabled prescription renewal under its AI Policy Act.",
+      "caveat": "Legal analysis by a law firm; summarises enacted legislation and effective dates but does not assess enforcement capacity or practical impact on consumer health AI products.",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare"
     }
   ],
   "sources": [
@@ -664,6 +801,30 @@
     {
       "name": "AI MagicX — AI health wearables guide 2026",
       "url": "https://www.aimagicx.com/blog/ai-health-wearables-smart-rings-monitors-guide-2026"
+    },
+    {
+      "name": "IAPP — The health AI agent rush: five products in three months",
+      "url": "https://iapp.org/news/a/the-health-ai-agent-rush-five-products-in-three-months-and-the-privacy-questions-that-got-left-behind"
+    },
+    {
+      "name": "Holland & Knight — States continue efforts to regulate AI in healthcare (2026)",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare"
+    },
+    {
+      "name": "Perplexity — Perplexity Health launch",
+      "url": "https://perplexityaimagazine.com/ai-news/perplexity-health-launch/"
+    },
+    {
+      "name": "Alloop — Trio modular wearable launch",
+      "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"
+    },
+    {
+      "name": "Anthropic — Claude for Healthcare",
+      "url": "https://www.anthropic.com/news/healthcare-life-sciences"
+    },
+    {
+      "name": "Amazon — Health AI for One Medical members",
+      "url": "https://www.aboutamazon.com/news/retail/amazon-health-ai-agent-one-medical"
     }
   ]
 }
