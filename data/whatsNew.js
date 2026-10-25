@@ -5,6 +5,42 @@
 
 var whatsNewData = [
   {
+    date: "October 25, 2026",
+    updated: "Daily OpenEvidence check (Sun Oct 25, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). arXiv API returned no output (2 attempts) - noted as gap. Grok X/Twitter search completed successfully - confirmed no new announcements; MSK/OncoKB X post (Oct 22) is social media promotion of Sep 16 partnership. 15 new PubMed papers added to research.json. 10 new benchmark entries added to benchmarks.json. Key findings: multimodal agentic AI for lung cancer screening CT patient questions achieves 93.1% tool-calling and 92.6% self-regulation accuracy (PMID 42926850); MedR-Bench analysis shows case composition drives diagnostic LLM evaluation bias (PMID 42923802); GPT-4o primary care chatbot multilingual evaluation shows language-dependent performance gaps (PMID 42921364); numeric vs embedding clinical risk pipelines show complementary false positives across 22,591 ICU patients (PMID 42921350); EHR-based CDS increased HIV co-testing from 2.6% to 18.3% in EDs (PMID 42921735); RAG with GPT-4o for prosthodontics provides verifiable grounding without accuracy trade-off (PMID 42923637); LLM OSCE note scoring shows high consistency but lower absolute scores than faculty (PMID 42921748).",
+    items: [
+      {
+        cat: "Benchmark - Agentic AI Clinical",
+        title: "Multimodal agentic AI system for lung cancer screening CT patient questions achieves 93.1% tool-calling accuracy (Oct 5, 2026)",
+        desc: "Sakiyama et al. (medRxiv) developed a planner-executor style multimodal agentic system to answer patient questions about lung cancer screening CT. 116 CT reports, 699 simulated questions. Tool-calling accuracy 93.1%, self-regulation accuracy 92.6%. 4-physician reader study: 78.9% perfect clinical accuracy (Gwet AC2=0.92), 73.2% perfect understandability. Demonstrates safe agentic AI for patient communication. PMID 42926850."
+      },
+      {
+        cat: "Benchmark - Diagnostic LLM",
+        title: "MedR-Bench analysis: case composition drives diagnostic LLM evaluation bias (Oct 21, 2026)",
+        desc: "Li et al. (Cureus) secondary analysis of MedR-Bench diagnostic LLM conversations. 7 model labels, 957 case reports, 6,690 runs. Unavailable-information marker associated with +6.37pp fifth-response contact but largely explained by case composition (within-report difference near null). Case mix and protocol states should remain visible when evaluating diagnostic trajectories. PMID 42923802."
+      },
+      {
+        cat: "Benchmark - LLM Multilingual",
+        title: "GPT-4o primary care chatbot shows language-dependent performance gaps across 4 languages (Oct 23, 2026)",
+        desc: "Chen et al. (JAMIA Open) evaluated GPT-4o-based pre-visit chatbot across English, Mandarin, Spanish, Hindi. 31 bilingual participants, 5 cases. English advantage on usability (+0.15), conversation quality (+0.62), summary quality (+0.25, all P<.001). Gaps driven by Spanish and Hindi; Mandarin showed neither. Trust, workload consistent. Addressable language-specific weaknesses. PMID 42921364."
+      },
+      {
+        cat: "Research - Clinical AI Pipeline",
+        title: "Numeric vs embedding clinical risk prediction pipelines show complementary false positives in 22,591 ICU patients (Oct 23, 2026)",
+        desc: "Ge et al. (JAMIA Open) compared XGBoost numeric (458 features) vs LLM embedding pipelines across 6 ICU tasks in 22,591 MIMIC-III patients. Numeric better for 5/6 tasks (mortality AUROC 0.9010 vs 0.8351). Embedding better for readmission (0.6618 vs 0.5900). False positives largely non-overlapping, suggesting complementary value. PMID 42921350."
+      },
+      {
+        cat: "Research - CDS HIV Testing",
+        title: "EHR-based CDS increased HIV co-testing from 2.6% to 18.3% in emergency departments (Oct 24, 2026)",
+        desc: "Bye et al. (HIV Med) evaluated two CDS interventions across freestanding EDs. 11,087 encounters. Comprehensive STI Order Set raised co-testing from 2.6% to 13.1%. Comprehensive STI Pathway raised it further to 18.3%. CDS effective for increasing HIV co-testing in EDs, with greater impact at metro sites. PMID 42921735."
+      },
+      {
+        cat: "Benchmark - RAG Clinical",
+        title: "RAG with GPT-4o for prosthodontics: no accuracy trade-off but provides verifiable grounding (Oct 1, 2026)",
+        desc: "Launardo et al. (J Dent Sci) compared base GPT-4o vs RAG-GPT-4o on 15 high-complexity maxillofacial prosthodontics questions. 5-prosthodontist expert panel. No significant differences across 5 parameters (all P>0.05). RAG provides verifiable factual grounding essential for clinical safety and clinician trust. PMID 42923637."
+      }
+    ]
+  },
+  {
     date: "October 23, 2026",
     updated: "Daily OpenEvidence check (Fri Oct 23, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). arXiv API returned no output - noted as gap. Grok X/Twitter search timed out after 60s - noted as gap. 14 new PubMed papers added to research.json. 8 new benchmark entries added to benchmarks.json. Key findings: ChatGPT-5.0 94% accuracy for MRI safety conditions vs Gemini 79% and Claude 78% (PMID 42908212); Gemini-2.5-Pro F1 0.76 vs GPT-5 for lung cancer MDT decisions on 150 cases (PMID 42907951); AI delirium prediction sensitivity 87.3% vs 4AT 28.0% in 2002 patients (PMID 42906075); all AI chatbot TPN plans had safety issues, none suitable for independent use (PMID 42903103); CDS+LLM combination improved RPL guideline compliance from 44% to 92% for ChatGPT-5.5 (PMID 42905619); CDSS for imatinib TDM achieved 55% target attainment vs 37% for expert but with more detrimental outcomes (PMID 42906079).",
     items: [
