@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -35,7 +35,7 @@
       "date": "2026-10-21",
       "cat": "Research",
       "title": "Nature Publishes 'The Anatomy of a Personal Health Agent'",
-      "desc": "Google Research published the most comprehensive evaluation of a consumer health agent to date. The open-source multi-agent framework serves four user journeys—general health knowledge, personal data interpretation, wellness advice and symptom assessment—through three specialist sub-agents: a data science agent that analyses longitudinal wearable and medical data against population statistics, a health domain expert agent that combines personal context with health knowledge, and a health coach agent that handles multi-turn interaction, goal setting and progress tracking. Evaluated across 11 benchmark tasks with more than 7,000 annotations and about 1,350 hours of work from health experts and end users. Independent coverage reported safety gaps in a meaningful share of generated summaries.",
+      "desc": "Google Research published the most comprehensive evaluation of a consumer health agent to date. The open-source multi-agent framework serves four user journeys - general health knowledge, personal data interpretation, wellness advice and symptom assessment - through three specialist sub-agents: a data science agent that analyses longitudinal wearable and medical data against population statistics, a health domain expert agent that combines personal context with health knowledge, and a health coach agent that handles multi-turn interaction, goal setting and progress tracking. Evaluated across 11 benchmark tasks with more than 7,000 annotations and about 1,350 hours of work from health experts and end users. Independent coverage reported safety gaps in a meaningful share of generated summaries.",
       "src": "Nature",
       "url": "https://www.nature.com/articles/s41586-026-11161-8",
       "new": true
@@ -68,6 +68,30 @@
       "new": true
     },
     {
+      "date": "2026-10-12",
+      "cat": "Product",
+      "title": "Google Launches Fitbit Edge with AI Health Guardian",
+      "desc": "Google announced the Fitbit Edge, a $179.99 fitness tracker with 7-day battery, GPS, automatic workout recognition and a new Health Guardian suite that passively tracks blood pressure trends and insulin resistance trends from sensor data - no cuff, no blood sample. Health Guardian rolls out to Fitbit Air and Fitbit Edge for Google Health Premium subscribers ($9.99/mo or $99.99/yr), with monthly reports and Health Coach guidance on lifestyle adjustments. Pre-orders opened immediately; retail availability starts Oct 27. Vendor claim: general wellness, not intended to diagnose or treat.",
+      "src": "Google",
+      "url": "https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/"
+    },
+    {
+      "date": "2026-10-12",
+      "cat": "Product",
+      "title": "Google Health App Adds Lab Results, CGM Data and Meal Logs",
+      "desc": "Google opened the Google Health app to Function Health lab results, Abbott Lingo continuous glucose monitor readings and MyFitnessPal meal logs, with Flo cycle data to follow in early 2027. The same update deepened Apple Health integration and improved Coach memory. The Fitbit app became the Google Health app in May 2026, consolidating Google's consumer health stack: wearable hardware, health data aggregation and AI coaching in one platform.",
+      "src": "Google",
+      "url": "https://blog.google/products-and-platforms/products/google-health/fitbit-google-health-updates/"
+    },
+    {
+      "date": "2026-08-11",
+      "cat": "Product",
+      "title": "Abbott and Google Partner on AI-Powered Metabolic Insights",
+      "desc": "Abbott and Google announced a partnership pairing the Lingo consumer CGM with Google Health's AI to deliver personalised metabolic insights through the Google Health app. Lingo users can view glucose trends alongside other health metrics, with Google's Health Coach translating patterns into nutrition, activity and sleep recommendations. The companies also plan one of the largest real-world metabolic health studies, integrating CGM, wearable, lab and survey data to examine connections between daily behaviour and metabolic health, including early identification of prediabetes.",
+      "src": "Fierce Biotech / Abbott",
+      "url": "https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app"
+    },
+    {
       "date": "2026-05-26",
       "cat": "Regulatory",
       "title": "States Accelerate Health AI Legislation in 2026: Insurer, Provider and Chatbot Rules",
@@ -78,8 +102,8 @@
     {
       "date": "2026-04-15",
       "cat": "Trend",
-      "title": "IAPP: Five Health AI Agents Launched in Three Months — Privacy Gaps Documented",
-      "desc": "A comparative analysis by Théodore Christakis (University of Grenoble Alpes) found five companies launched health-specific AI products between January and March 2026: OpenAI ChatGPT Health (7 Jan), Anthropic Claude for Healthcare (11 Jan), Amazon Health AI (22 Jan), Microsoft Copilot Health (12 Mar) and Perplexity Health (19 Mar). All follow a similar model—EHR integration via intermediaries, wearable connections, no-training commitments, US-only availability. None meets the full 'sealed mode' privacy standard; none is HIPAA-covered; all exclude European users. OpenAI reports 230 million people ask ChatGPT health questions weekly.",
+      "title": "IAPP: Five Health AI Agents Launched in Three Months - Privacy Gaps Documented",
+      "desc": "A comparative analysis by Théodore Christakis (University of Grenoble Alpes) found five companies launched health-specific AI products between January and March 2026: OpenAI ChatGPT Health (7 Jan), Anthropic Claude for Healthcare (11 Jan), Amazon Health AI (22 Jan), Microsoft Copilot Health (12 Mar) and Perplexity Health (19 Mar). All follow a similar model - EHR integration via intermediaries, wearable connections, no-training commitments, US-only availability. None meets the full 'sealed mode' privacy standard; none is HIPAA-covered; all exclude European users. OpenAI reports 230 million people ask ChatGPT health questions weekly.",
       "src": "IAPP",
       "url": "https://iapp.org/news/a/the-health-ai-agent-rush-five-products-in-three-months-and-the-privacy-questions-that-got-left-behind"
     },
@@ -111,7 +135,7 @@
       "date": "2026-07-23",
       "cat": "Product",
       "title": "OpenAI Launches 'Health in ChatGPT' with Records and Apple Health",
-      "desc": "OpenAI rolled out Health in ChatGPT to Free, Go, Plus and Pro users in the United States, letting eligible users securely connect medical records and Apple Health data so the assistant can interpret information in context, track changes and hold more personalised conversations. Coverage highlighted that once health data leaves a provider, HIPAA no longer protects it—making the consumer data-governance question central. The same period saw OpenAI connect ChatGPT to Epic records for clinicians.",
+      "desc": "OpenAI rolled out Health in ChatGPT to Free, Go, Plus and Pro users in the United States, letting eligible users securely connect medical records and Apple Health data so the assistant can interpret information in context, track changes and hold more personalised conversations. Coverage highlighted that once health data leaves a provider, HIPAA no longer protects it - making the consumer data-governance question central. The same period saw OpenAI connect ChatGPT to Epic records for clinicians.",
       "src": "OpenAI / Paubox",
       "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"
     },
@@ -127,7 +151,7 @@
       "date": "2026-07-10",
       "cat": "Research",
       "title": "Google's SensorFM Points Wearables Toward AI Health Agents",
-      "desc": "Forbes reported on Google's SensorFM, trained on approximately a trillion minutes of wearable data, and framed the shift from raw metrics to AI health agents—a trend already reshaping WHOOP and Oura, which were both adding two-way coaching dialogue on top of one-way insight feeds.",
+      "desc": "Forbes reported on Google's SensorFM, trained on approximately a trillion minutes of wearable data, and framed the shift from raw metrics to AI health agents - a trend already reshaping WHOOP and Oura, which were both adding two-way coaching dialogue on top of one-way insight feeds.",
       "src": "Forbes",
       "url": "https://www.forbes.com/sites/josipamajic/2026/07/10/googles-sensorfm-reveals-where-ai-takes-wearable-health/"
     },
@@ -135,7 +159,7 @@
       "date": "2026-06-28",
       "cat": "Trend",
       "title": "The Rise of Ambient Home Health Monitoring",
-      "desc": "Forbes documented the shift toward non-contact sensing—mmWave radar, WiFi sensing, acoustic AI, smart glasses—as a way to monitor vitals and activity at home without adding another wearable. Privacy-first, local-first processing emerged as the design pattern, with vendors arguing that sensing must blend into form factors people already use.",
+      "desc": "Forbes documented the shift toward non-contact sensing - mmWave radar, WiFi sensing, acoustic AI, smart glasses - as a way to monitor vitals and activity at home without adding another wearable. Privacy-first, local-first processing emerged as the design pattern, with vendors arguing that sensing must blend into form factors people already use.",
       "src": "Forbes",
       "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
     },
@@ -151,7 +175,7 @@
       "date": "2026-03-12",
       "cat": "Product",
       "title": "Microsoft Launches Copilot Health",
-      "desc": "Microsoft launched Copilot Health, a dedicated and isolated space within Copilot that brings together wearable data, electronic health records and lab results to deliver personalised health insights. An analysis of more than 500,000 de-identified Copilot conversations from January 2026 found nearly one in five involved personal symptom assessment or condition discussion—evidence of how much consumer demand already flows through general assistants.",
+      "desc": "Microsoft launched Copilot Health, a dedicated and isolated space within Copilot that brings together wearable data, electronic health records and lab results to deliver personalised health insights. An analysis of more than 500,000 de-identified Copilot conversations from January 2026 found nearly one in five involved personal symptom assessment or condition discussion - evidence of how much consumer demand already flows through general assistants.",
       "src": "Microsoft / Fortune",
       "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
     },
@@ -167,7 +191,7 @@
       "date": "2026-01-06",
       "cat": "Regulatory",
       "title": "FDA Eases Oversight of Wearables and AI-Enabled Devices",
-      "desc": "The FDA announced sweeping changes to digital health oversight, easing regulation of AI-enabled devices and wearables and revising general wellness and clinical decision support guidance. Software involving medical image or in vitro diagnostic signal processing remains in the device category, and the agency signalled it would cut the number of digital health guidance documents substantially while drafting a new AI framework. For consumer health agents, this widens the wellness lane—and sharpens the question of when advice becomes a medical claim.",
+      "desc": "The FDA announced sweeping changes to digital health oversight, easing regulation of AI-enabled devices and wearables and revising general wellness and clinical decision support guidance. Software involving medical image or in vitro diagnostic signal processing remains in the device category, and the agency signalled it would cut the number of digital health guidance documents substantially while drafting a new AI framework. For consumer health agents, this widens the wellness lane - and sharpens the question of when advice becomes a medical claim.",
       "src": "STAT News",
       "url": "https://www.statnews.com/2026/01/06/fda-pulls-back-oversight-ai-enabled-devices-wearables/"
     },
@@ -191,7 +215,7 @@
       "date": "2026-03-20",
       "cat": "Research",
       "title": "Symptom Checker Triage Accuracy: Decade of Evidence Reviewed",
-      "desc": "A review of a decade of symptom-checker research found top-performing AI symptom checkers reaching roughly 82-88% accuracy in triaging patients to the correct care level, with a consistent tendency across ChatGPT versions to overtriage rather than undertriage—a safer failure direction, but one that consumes clinical capacity.",
+      "desc": "A review of a decade of symptom-checker research found top-performing AI symptom checkers reaching roughly 82-88% accuracy in triaging patients to the correct care level, with a consistent tendency across ChatGPT versions to overtriage rather than undertriage - a safer failure direction, but one that consumes clinical capacity.",
       "src": "Future Wellness Tech",
       "url": "https://futurewellnesstech.com/ai-symptom-checkers-triage-accuracy-2026/"
     },
@@ -215,7 +239,7 @@
       "date": "2026-01-20",
       "cat": "Research",
       "title": "AI Coaching Trial and the Interpretation Gap",
-      "desc": "Reviewing the AI health coaching market, analysts noted that Google, Oura and WHOOP had all launched coaches powered by wearable data and LLMs, and cited a randomised clinical trial of AI coaching while pointing to the same core problem quantified by SensorFM: users do not know what to do with hundreds of daily data points—they want a decision, not a dashboard.",
+      "desc": "Reviewing the AI health coaching market, analysts noted that Google, Oura and WHOOP had all launched coaches powered by wearable data and LLMs, and cited a randomised clinical trial of AI coaching while pointing to the same core problem quantified by SensorFM: users do not know what to do with hundreds of daily data points - they want a decision, not a dashboard.",
       "src": "Sahha",
       "url": "https://sahha.ai/blog/ai-health-coaching-platforms/"
     },
@@ -231,7 +255,7 @@
       "date": "2026-06-15",
       "cat": "Competitor",
       "title": "Wearable Makers Push Toward Clinical Claims",
-      "desc": "Coverage of wearable makers noted WHOOP, Oura, Apple and a new wave of challengers layering blood pressure monitoring, metabolic insights and AI-generated guidance on top of hardware—narrowing the gap between a wellness feature and a clinical claim, with regulators watching and at least one vendor publicly disputing an interpretation of its own feature.",
+      "desc": "Coverage of wearable makers noted WHOOP, Oura, Apple and a new wave of challengers layering blood pressure monitoring, metabolic insights and AI-generated guidance on top of hardware - narrowing the gap between a wellness feature and a clinical claim, with regulators watching and at least one vendor publicly disputing an interpretation of its own feature.",
       "src": "Athletech News",
       "url": "https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"
     },
@@ -239,14 +263,14 @@
       "date": "2026-09-01",
       "cat": "Metric",
       "title": "FDA Has Authorised 1,600+ AI-Enabled Medical Devices",
-      "desc": "The FDA reported more than 1,600 AI-enabled medical devices authorised for US marketing as of September 2026, up from 1,524 in March 2026—almost entirely Class II 510(k) clearances, with radiology still about three-quarters of the list. The count sits alongside the January 2026 relaxation of general wellness and CDS oversight, defining two very different lanes for consumer versus clinical AI.",
+      "desc": "The FDA reported more than 1,600 AI-enabled medical devices authorised for US marketing as of September 2026, up from 1,524 in March 2026 - almost entirely Class II 510(k) clearances, with radiology still about three-quarters of the list. The count sits alongside the January 2026 relaxation of general wellness and CDS oversight, defining two very different lanes for consumer versus clinical AI.",
       "src": "FDA",
       "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices"
     }
   ],
   "players": [
     {
-      "name": "OpenAI — Health in ChatGPT",
+      "name": "OpenAI - Health in ChatGPT",
       "type": "Frontier platform · records + Apple Health",
       "badge": "SCALE LEADER",
       "stats": [
@@ -267,11 +291,11 @@
           "v": "Not covered after export"
         }
       ],
-      "desc": "Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician–patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
+      "desc": "Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
       "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"
     },
     {
-      "name": "Microsoft — Copilot Health",
+      "name": "Microsoft - Copilot Health",
       "type": "Frontier platform · dedicated health space",
       "badge": "FAST FOLLOWER",
       "stats": [
@@ -292,11 +316,11 @@
           "v": "~1 in 5 Copilot chats health-related"
         }
       ],
-      "desc": "A separate, secure space inside Copilot that aggregates records, wearable data (Apple Health, Fitbit) and laboratory results into what Microsoft calls a coherent story of a user's health. Microsoft's own analysis of 500,000+ de-identified Copilot conversations found nearly one in five involved symptom assessment or condition discussion—evidence that consumer demand already flows through general assistants.",
+      "desc": "A separate, secure space inside Copilot that aggregates records, wearable data (Apple Health, Fitbit) and laboratory results into what Microsoft calls a coherent story of a user's health. Microsoft's own analysis of 500,000+ de-identified Copilot conversations found nearly one in five involved symptom assessment or condition discussion - evidence that consumer demand already flows through general assistants.",
       "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
     },
     {
-      "name": "Apple — Health app + Apple Intelligence",
+      "name": "Apple - Health app + Apple Intelligence",
       "type": "Device platform · on-device processing",
       "badge": "DISTRIBUTION MOAT",
       "stats": [
@@ -321,7 +345,32 @@
       "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"
     },
     {
-      "name": "Google — Personal Health Agent (research)",
+      "name": "Google - Health App + Fitbit Edge + Health Coach",
+      "type": "Device platform · AI coaching + data aggregation",
+      "badge": "VERTICAL STACK",
+      "stats": [
+        {
+          "l": "Fitbit Edge",
+          "v": "$179.99, ships Oct 27"
+        },
+        {
+          "l": "Battery",
+          "v": "7 days"
+        },
+        {
+          "l": "Health Guardian",
+          "v": "BP + insulin resistance trends"
+        },
+        {
+          "l": "Premium",
+          "v": "$9.99/mo or $99.99/yr"
+        }
+      ],
+      "desc": "Google consolidated its consumer health stack in October 2026: the Fitbit app became the Google Health app in May, the Fitbit Edge tracker launched Oct 12 with a Health Guardian suite that passively tracks blood pressure and insulin resistance trends, and the Google Health app opened to Function Health lab results, Abbott Lingo CGM data and MyFitnessPal meal logs. The Abbott partnership pairs Lingo glucose data with Google's AI Health Coach for personalised metabolic insights and plans a large-scale real-world metabolic health study. Vendor claim: Health Guardian features are for general wellness, not diagnosis.",
+      "url": "https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/"
+    },
+    {
+      "name": "Google - Personal Health Agent (research)",
       "type": "Research → product pipeline",
       "badge": "STATE OF THE ART",
       "stats": [
@@ -342,7 +391,7 @@
           "v": "~17% of summaries"
         }
       ],
-      "desc": "Google Research's personal health agent is the most comprehensively evaluated consumer health agent published to date: a data science agent, a health domain expert agent and a health coach agent over four user journeys, open-sourced as a multi-agent framework. Independent coverage found it beat its Gemini base models on personal health tasks while still showing safety gaps in a meaningful share of summaries.",
+      "desc": "Google Research's personal health agent is the most comprehensively evaluated consumer health agent published to date: a data science agent, a health domain expert agent and a health coach agent over four user journeys, open-sourced as a multi-agent framework. Independent coverage found it beat its Gemini base models on personal health tasks while still showing safety gaps in a meaningful share of summaries. The research underpins the shipping Google Health Coach in the Fitbit/Pixel Watch product line.",
       "url": "https://www.nature.com/articles/s41586-026-11161-8"
     },
     {
@@ -380,11 +429,11 @@
           "v": "Subscription + hardware"
         }
       ],
-      "desc": "WHOOP integrated AI guidance across its app rather than shipping a separate coach, and has publicly disputed regulatory interpretations of its own features—illustrating how close wearable guidance sits to a clinical claim.",
+      "desc": "WHOOP integrated AI guidance across its app rather than shipping a separate coach, and has publicly disputed regulatory interpretations of its own features - illustrating how close wearable guidance sits to a clinical claim.",
       "url": "https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"
     },
     {
-      "name": "Mount Sinai — Check Symptoms & Get Care",
+      "name": "Mount Sinai - Check Symptoms & Get Care",
       "type": "Health system deployment",
       "badge": "PROOF POINT",
       "stats": [
@@ -447,7 +496,7 @@
           "v": "Ageing in place, chronic care"
         }
       ],
-      "desc": "A wave of non-contact sensing—mmWave radar, WiFi sensing, acoustic AI and smart glasses—monitors vitals and activity at home without requiring a wearable. Privacy-first local processing is the emerging design pattern, and consent across everyone in a sensed space is the unsolved governance problem.",
+      "desc": "A wave of non-contact sensing - mmWave radar, WiFi sensing, acoustic AI and smart glasses - monitors vitals and activity at home without requiring a wearable. Privacy-first local processing is the emerging design pattern, and consent across everyone in a sensed space is the unsolved governance problem.",
       "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
     },
     {
@@ -506,7 +555,7 @@
       "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
     },
     {
-      "name": "Perplexity — Perplexity Health",
+      "name": "Perplexity - Perplexity Health",
       "type": "Frontier platform · EHR + wearables + agents",
       "badge": "CITATION-FIRST",
       "stats": [
@@ -531,7 +580,7 @@
       "url": "https://perplexityaimagazine.com/ai-news/perplexity-health-launch/"
     },
     {
-      "name": "Anthropic — Claude for Healthcare",
+      "name": "Anthropic - Claude for Healthcare",
       "type": "Frontier platform · clinical and health data",
       "badge": "EARLY",
       "stats": [
@@ -548,11 +597,11 @@
           "v": "Healthcare and life sciences"
         }
       ],
-      "desc": "Anthropic launched Claude for Healthcare on 11 January 2026, one of five major health AI products to launch in the first three months of 2026. Product details are less documented than OpenAI's or Microsoft's offerings; IAPP analysis notes the same convergence pattern—EHR integration, wearable connections, no-training commitment, US-only availability.",
+      "desc": "Anthropic launched Claude for Healthcare on 11 January 2026, one of five major health AI products to launch in the first three months of 2026. Product details are less documented than OpenAI's or Microsoft's offerings; IAPP analysis notes the same convergence pattern - EHR integration, wearable connections, no-training commitment, US-only availability.",
       "url": "https://www.anthropic.com/news/healthcare-life-sciences"
     },
     {
-      "name": "Amazon — Health AI (One Medical)",
+      "name": "Amazon - Health AI (One Medical)",
       "type": "Frontier platform · subscription health",
       "badge": "ECOSYSTEM PLAY",
       "stats": [
@@ -573,7 +622,7 @@
       "url": "https://www.aboutamazon.com/news/retail/amazon-health-ai-agent-one-medical"
     },
     {
-      "name": "Alloop — Trio + AI Health Agent",
+      "name": "Alloop - Trio + AI Health Agent",
       "type": "Wearable maker · AI-native platform",
       "badge": "NEW ENTRANT",
       "stats": [
@@ -680,7 +729,7 @@
       "type": "arXiv preprint · open-source agent architecture",
       "date": "Jul 15, 2026",
       "venue": "arXiv (cs.AI)",
-      "finding": "Introduces HealthClaw, an open-source agent architecture that separates shared safety rules and medical knowledge (L0–L1) from private longitudinal memory (L2 profile, L3 procedures, L4 episodic traces). After each interaction, an induction step decides what to update, revise, keep as episodic, or exclude. Across 900 longitudinal support probes on a synthetic year-long benchmark, answer accuracy increased from 0.2% with current-query prompting to 45.7% with HealthClaw, while prompt-side context exposure was 71.7% lower than full-history prompting. In 100 privacy probes, HealthClaw produced higher privacy-aware answer quality and fewer unsafe disclosures than both baselines. Nine 200-case biomedical tasks showed a mean absolute gain of 27.0 percentage points, with seven gains significant after FDR correction. Code publicly available on GitHub.",
+      "finding": "Introduces HealthClaw, an open-source agent architecture that separates shared safety rules and medical knowledge (L0 - L1) from private longitudinal memory (L2 profile, L3 procedures, L4 episodic traces). After each interaction, an induction step decides what to update, revise, keep as episodic, or exclude. Across 900 longitudinal support probes on a synthetic year-long benchmark, answer accuracy increased from 0.2% with current-query prompting to 45.7% with HealthClaw, while prompt-side context exposure was 71.7% lower than full-history prompting. In 100 privacy probes, HealthClaw produced higher privacy-aware answer quality and fewer unsafe disclosures than both baselines. Nine 200-case biomedical tasks showed a mean absolute gain of 27.0 percentage points, with seven gains significant after FDR correction. Code publicly available on GitHub.",
       "caveat": "Preprint, not peer-reviewed. All headline metrics come from automated rubric evaluators (Qwen-3.7-based) with no human-rated validation; if the evaluator is systematically lenient, accuracy and privacy gaps may be overstated. The benchmark is synthetic; clinical effectiveness requires prospective evaluation.",
       "url": "https://arxiv.org/abs/2607.13940"
     },
@@ -709,140 +758,174 @@
       "finding": "A review of 2026 state legislation found states leading Congress on health AI governance. Six states (AL, IN, UT, WA, MD, GA) enacted laws requiring human oversight of AI in insurer prior-authorisation decisions. Maine and Arizona restricted autonomous clinical decision-making in behavioural health and required informed consent for AI-powered tools. Four states (ID, NE, OR, TN) passed AI companion and chatbot safety acts requiring AI disclosure, crisis-response protocols for suicidal ideation, and prohibiting chatbots from representing themselves as licensed mental health professionals. Utah piloted a regulatory sandbox for AI-enabled prescription renewal under its AI Policy Act.",
       "caveat": "Legal analysis by a law firm; summarises enacted legislation and effective dates but does not assess enforcement capacity or practical impact on consumer health AI products.",
       "url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare"
+    },
+    {
+      "title": "Predicting Insulin Resistance from Wearable Data (Metwally et al.)",
+      "type": "Peer-reviewed · wearable-derived cardiometabolic model",
+      "date": "Mar 2026",
+      "venue": "Nature",
+      "finding": "A Google study of 1,165 US adults in the WEAR-ME cohort found that wearable-derived features (sleep, activity, heart rate) combined with demographics predicted insulin resistance (HOMA-IR > 2.9) with an AUROC of 0.70 (sensitivity 60%, specificity 80%). The work underpins the insulin resistance trends feature in Google's Health Guardian suite on Fitbit Edge and Fitbit Air.",
+      "caveat": "AUROC of 0.70 is modest; the model provides trend data only, not on-demand insulin or blood glucose levels. Google has not published accuracy figures for the shipping consumer feature, which is labelled general wellness.",
+      "url": "https://doi.org/10.1038/s41586-026-10179-2"
+    },
+    {
+      "title": "Abbott-Google Partnership: Lingo CGM + Google Health AI for Metabolic Insights",
+      "type": "Vendor partnership announcement",
+      "date": "Aug 11, 2026",
+      "venue": "Abbott / Google joint statement",
+      "finding": "Abbott and Google announced a partnership pairing the Lingo consumer CGM with Google Health's AI to deliver personalised metabolic insights through the Google Health app. Lingo users can view glucose trends alongside other health metrics, with Google's Health Coach translating patterns into nutrition, activity and sleep recommendations. The companies also plan one of the largest real-world metabolic health studies, integrating CGM, wearable, lab and survey data to examine connections between daily behaviour and metabolic health.",
+      "caveat": "Vendor announcement; the planned metabolic health study has no published protocol or results. The partnership is a commercial arrangement; effectiveness of AI-generated metabolic insights from CGM data has not been independently evaluated.",
+      "url": "https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app"
     }
   ],
   "sources": [
     {
-      "name": "Nature — The anatomy of a personal health agent (Oct 21, 2026)",
+      "name": "Nature - The anatomy of a personal health agent (Oct 21, 2026)",
       "url": "https://www.nature.com/articles/s41586-026-11161-8"
     },
     {
-      "name": "Google Research — Anatomy of a personal health agent",
+      "name": "Google Research - Anatomy of a personal health agent",
       "url": "https://research.google/blog/the-anatomy-of-a-personal-health-agent/"
     },
     {
-      "name": "Nature — Using AI to offer personalised health advice (editorial)",
+      "name": "Nature - Using AI to offer personalised health advice (editorial)",
       "url": "https://www.nature.com/articles/d41586-026-03065-4"
     },
     {
-      "name": "Becker's — Google's health AI agent tops Gemini but carries safety gaps",
+      "name": "Becker's - Google's health AI agent tops Gemini but carries safety gaps",
       "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/googles-health-ai-agent-tops-gemini-but-carries-safety-gaps-7-things-to-know/"
     },
     {
-      "name": "Nature Communications — Wearable data to personal health insights using LLM agents",
+      "name": "Nature Communications - Wearable data to personal health insights using LLM agents",
       "url": "https://www.nature.com/articles/s41467-025-67922-y"
     },
     {
-      "name": "Paubox — ChatGPT Health launches nationwide, records not HIPAA protected",
+      "name": "Paubox - ChatGPT Health launches nationwide, records not HIPAA protected",
       "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"
     },
     {
-      "name": "PYMNTS — OpenAI brings Epic health records to ChatGPT for Clinicians",
+      "name": "PYMNTS - OpenAI brings Epic health records to ChatGPT for Clinicians",
       "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-brings-epic-health-records-to-chatgpt-for-clinicians/"
     },
     {
-      "name": "Microsoft — Introducing Copilot Health",
+      "name": "Microsoft - Introducing Copilot Health",
       "url": "https://microsoft.ai/news/introducing-copilot-health/"
     },
     {
-      "name": "Fortune — Microsoft launches Copilot Health",
+      "name": "Fortune - Microsoft launches Copilot Health",
       "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
     },
     {
-      "name": "Microsoft — Copilot Health now in preview",
+      "name": "Microsoft - Copilot Health now in preview",
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/2026/05/29/copilot-health-now-in-preview/"
     },
     {
-      "name": "Apple Newsroom — Apple advances health and fitness with Apple Intelligence",
+      "name": "Apple Newsroom - Apple advances health and fitness with Apple Intelligence",
       "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"
     },
     {
-      "name": "MacRumors — AI-powered Apple Health+ still coming in 2026",
+      "name": "MacRumors - AI-powered Apple Health+ still coming in 2026",
       "url": "https://www.macrumors.com/2025/11/10/ai-apple-health-service-still-coming/"
     },
     {
-      "name": "Livity — Apple shelved its AI health coach",
+      "name": "Livity - Apple shelved its AI health coach",
       "url": "https://livity-app.com/en/blog/apple-health-ai-coach-shelved"
     },
     {
-      "name": "Forbes — Google's SensorFM reveals where AI takes wearable health",
+      "name": "Forbes - Google's SensorFM reveals where AI takes wearable health",
       "url": "https://www.forbes.com/sites/josipamajic/2026/07/10/googles-sensorfm-reveals-where-ai-takes-wearable-health/"
     },
     {
-      "name": "Forbes — The rise of ambient home health monitoring",
+      "name": "Forbes - The rise of ambient home health monitoring",
       "url": "https://www.forbes.com/sites/saibala/2026/06/28/a-doctor-at-home-the-rise-of-ambient-home-health-monitoring/"
     },
     {
-      "name": "Sahha — AI health coaching platforms",
+      "name": "Sahha - AI health coaching platforms",
       "url": "https://sahha.ai/blog/ai-health-coaching-platforms/"
     },
     {
-      "name": "NEJM Catalyst — Check Symptoms & Get Care: Mount Sinai's AI triage solution",
+      "name": "NEJM Catalyst - Check Symptoms & Get Care: Mount Sinai's AI triage solution",
       "url": "https://catalyst.nejm.org/doi/full/10.1056/CAT.25.0394"
     },
     {
-      "name": "Association of Health Care Journalists — AI-powered symptom checkers",
+      "name": "Association of Health Care Journalists - AI-powered symptom checkers",
       "url": "https://healthjournalism.org/blog/2026/08/ai-powered-symptom-checkers/"
     },
     {
-      "name": "Future Wellness Tech — Symptom checker triage accuracy review",
+      "name": "Future Wellness Tech - Symptom checker triage accuracy review",
       "url": "https://futurewellnesstech.com/ai-symptom-checkers-triage-accuracy-2026/"
     },
     {
-      "name": "2 Minute Medicine — AI symptom checker vs junior clinicians in ED triage",
+      "name": "2 Minute Medicine - AI symptom checker vs junior clinicians in ED triage",
       "url": "https://www.2minutemedicine.com/ai-symptom-checker-could-help-emergency-doctors-prioritize-patients/"
     },
     {
-      "name": "STAT News — FDA pulls back oversight of AI-enabled devices and wearables",
+      "name": "STAT News - FDA pulls back oversight of AI-enabled devices and wearables",
       "url": "https://www.statnews.com/2026/01/06/fda-pulls-back-oversight-ai-enabled-devices-wearables/"
     },
     {
-      "name": "Nixon Law Group — FDA relaxes CDS and general wellness guidance",
+      "name": "Nixon Law Group - FDA relaxes CDS and general wellness guidance",
       "url": "https://www.nixonlawgroup.com/resources/fda-relaxes-clinical-decision-support-and-general-wellness-guidance-what-it-means-for-generative-ai-and-consumer-wearables"
     },
     {
-      "name": "blueBriX — The 2026 AI reset: healthcare policy",
+      "name": "blueBriX - The 2026 AI reset: healthcare policy",
       "url": "https://bluebrix.health/articles/ai-reset-a-new-era-for-healthcare-policy"
     },
     {
-      "name": "FDA — Artificial Intelligence-Enabled Medical Devices",
+      "name": "FDA - Artificial Intelligence-Enabled Medical Devices",
       "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices"
     },
     {
-      "name": "Athletech News — Wearable makers push toward healthcare",
+      "name": "Athletech News - Wearable makers push toward healthcare",
       "url": "https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"
     },
     {
-      "name": "AI MagicX — AI health wearables guide 2026",
+      "name": "AI MagicX - AI health wearables guide 2026",
       "url": "https://www.aimagicx.com/blog/ai-health-wearables-smart-rings-monitors-guide-2026"
     },
     {
-      "name": "IAPP — The health AI agent rush: five products in three months",
+      "name": "IAPP - The health AI agent rush: five products in three months",
       "url": "https://iapp.org/news/a/the-health-ai-agent-rush-five-products-in-three-months-and-the-privacy-questions-that-got-left-behind"
     },
     {
-      "name": "Holland & Knight — States continue efforts to regulate AI in healthcare (2026)",
+      "name": "Holland & Knight - States continue efforts to regulate AI in healthcare (2026)",
       "url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare"
     },
     {
-      "name": "Perplexity — Perplexity Health launch",
+      "name": "Perplexity - Perplexity Health launch",
       "url": "https://perplexityaimagazine.com/ai-news/perplexity-health-launch/"
     },
     {
-      "name": "Alloop — Trio modular wearable launch",
+      "name": "Alloop - Trio modular wearable launch",
       "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"
     },
     {
-      "name": "arXiv — HealthClaw: A Self-Evolving Agent for Longitudinal Personal Health Management (Jul 15, 2026)",
+      "name": "arXiv - HealthClaw: A Self-Evolving Agent for Longitudinal Personal Health Management (Jul 15, 2026)",
       "url": "https://arxiv.org/abs/2607.13940"
     },
     {
-      "name": "Anthropic — Claude for Healthcare",
+      "name": "Anthropic - Claude for Healthcare",
       "url": "https://www.anthropic.com/news/healthcare-life-sciences"
     },
     {
-      "name": "Amazon — Health AI for One Medical members",
+      "name": "Amazon - Health AI for One Medical members",
       "url": "https://www.aboutamazon.com/news/retail/amazon-health-ai-agent-one-medical"
+    },
+    {
+      "name": "Google - Fitbit Edge launch (Oct 12, 2026)",
+      "url": "https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/"
+    },
+    {
+      "name": "Google - How we're making Google Health and Fitbit Air smarter (Oct 12, 2026)",
+      "url": "https://blog.google/products-and-platforms/products/google-health/fitbit-google-health-updates/"
+    },
+    {
+      "name": "Fierce Biotech - Abbott teams with Google Health on AI-powered health insights",
+      "url": "https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app"
+    },
+    {
+      "name": "Nature - Metwally et al. insulin resistance prediction from wearable data (Mar 2026)",
+      "url": "https://doi.org/10.1038/s41586-026-10179-2"
     }
   ]
 }

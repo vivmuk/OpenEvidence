@@ -31,5 +31,9 @@ var phaSourcesData = [
   {name:"Alloop - Trio modular wearable launch", url:"https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"},
   {name:"arXiv - HealthClaw: A Self-Evolving Agent for Longitudinal Personal Health Management (Jul 15, 2026)", url:"https://arxiv.org/abs/2607.13940"},
   {name:"Anthropic - Claude for Healthcare", url:"https://www.anthropic.com/news/healthcare-life-sciences"},
-  {name:"Amazon - Health AI for One Medical members", url:"https://www.aboutamazon.com/news/retail/amazon-health-ai-agent-one-medical"}
+  {name:"Amazon - Health AI for One Medical members", url:"https://www.aboutamazon.com/news/retail/amazon-health-ai-agent-one-medical"},
+  {name:"Google - Fitbit Edge launch (Oct 12, 2026)", url:"https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/"},
+  {name:"Google - How we're making Google Health and Fitbit Air smarter (Oct 12, 2026)", url:"https://blog.google/products-and-platforms/products/google-health/fitbit-google-health-updates/"},
+  {name:"Fierce Biotech - Abbott teams with Google Health on AI-powered health insights", url:"https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app"},
+  {name:"Nature - Metwally et al. insulin resistance prediction from wearable data (Mar 2026)", url:"https://doi.org/10.1038/s41586-026-10179-2"}
 ];

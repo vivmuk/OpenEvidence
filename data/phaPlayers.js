@@ -15,9 +15,14 @@ var phaPlayersData = [
    desc:"Apple extended Apple Intelligence into the Health app, positioning the iPhone as the secure central store for health and fitness data with on-device processing and interpretation of long-term metrics. The fuller AI health coach (Project Mulberry) was scaled back, with nutrition tracking and a reduced health agent arriving first. Apple's advantage is the install base and the sensor data already on the device.",
    url:"https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"},
 
+  {name:"Google - Health App + Fitbit Edge + Health Coach", type:"Device platform · AI coaching + data aggregation", badge:"VERTICAL STACK",
+   stats:[{l:"Fitbit Edge",v:"$179.99, ships Oct 27"},{l:"Battery",v:"7 days"},{l:"Health Guardian",v:"BP + insulin resistance trends"},{l:"Premium",v:"$9.99/mo or $99.99/yr"}],
+   desc:"Google consolidated its consumer health stack in October 2026: the Fitbit app became the Google Health app in May, the Fitbit Edge tracker launched Oct 12 with a Health Guardian suite that passively tracks blood pressure and insulin resistance trends, and the Google Health app opened to Function Health lab results, Abbott Lingo CGM data and MyFitnessPal meal logs. The Abbott partnership pairs Lingo glucose data with Google's AI Health Coach for personalised metabolic insights and plans a large-scale real-world metabolic health study. Vendor claim: Health Guardian features are for general wellness, not diagnosis.",
+   url:"https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/"},
+
   {name:"Google - Personal Health Agent (research)", type:"Research → product pipeline", badge:"STATE OF THE ART",
    stats:[{l:"Published",v:"Nature, Oct 21, 2026"},{l:"Architecture",v:"3 sub-agents"},{l:"Evaluation",v:"11 tasks · 7,000+ annotations"},{l:"Safety gaps",v:"~17% of summaries"}],
-   desc:"Google Research's personal health agent is the most comprehensively evaluated consumer health agent published to date: a data science agent, a health domain expert agent and a health coach agent over four user journeys, open-sourced as a multi-agent framework. Independent coverage found it beat its Gemini base models on personal health tasks while still showing safety gaps in a meaningful share of summaries.",
+   desc:"Google Research's personal health agent is the most comprehensively evaluated consumer health agent published to date: a data science agent, a health domain expert agent and a health coach agent over four user journeys, open-sourced as a multi-agent framework. Independent coverage found it beat its Gemini base models on personal health tasks while still showing safety gaps in a meaningful share of summaries. The research underpins the shipping Google Health Coach in the Fitbit/Pixel Watch product line.",
    url:"https://www.nature.com/articles/s41586-026-11161-8"},
 
   {name:"Oura", type:"Wearable maker · coaching layer", badge:"COACHING LEADER",
