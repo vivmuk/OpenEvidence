@@ -6,6 +6,38 @@
 var whatsNewData = [
   {
     date: "October 25, 2026",
+    updated: "Weekly OpenEvidence Insights update (Sun Oct 25, 5:00 PM ET) - Venice Augment search (8 OE queries + 15 broader queries) + arXiv API (50 results) + PubMed eutils (20 OE + 30 expanded). No new OpenEvidence announcements this week (latest: Behind the Knife Oct 14, Johns Hopkins Oct 13, Northwestern Oct 12). 4 new papers added to research.json: (1) PMID 42844685 - OpenEvidence vs Heidi Evidence vs Consensus vs PubMed.ai comparative in lacrimal drainage (OE 90.9% correct, highest); (2) PMID 42817723 - LLM precision dosing inaccuracy for kidney impairment (OE uniquely cited sources, others confabulated); (3) PMID 42889761 - Resident survey shows 59% use OpenEvidence, 90% use UpToDate; (4) arXiv 2610.20632 - MeddeX RAG system for medical report analysis. 2 new benchmark entries added. Timeline updated: Doximity-Wolters Kluwer UpToDate integration in Doximity Ask (Oct 20). arXiv had no new OE-relevant papers this week. Veeva partnership (Oct 2025) already tracked.",
+    items: [
+      {
+        cat: "Research - Comparative Evaluation",
+        title: "OpenEvidence scores highest (90.9% correct) in 4-tool lacrimal drainage AI comparison (Oct 8, 2026)",
+        desc: "Ali & Korn (Ophthalmic Plast Reconstr Surg) compared OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai on 22 validated lacrimal drainage questions. OpenEvidence: 90.9% correct, 0% incorrect, no hallucinations. Heidi: 63.6% correct, 4.6% incorrect (2 hallucinations). Consensus: 54.5% correct. PubMed.ai: 31.8% correct, 22.7% incorrect, 9% no response. PMID 42844685."
+      },
+      {
+        cat: "Research - LLM Safety",
+        title: "LLM dosing recommendations highly variable for kidney impairment patients; OpenEvidence uniquely cited sources (Oct 10, 2026)",
+        desc: "Hambrick et al. (Pharmacotherapy) evaluated 6 LLMs (OpenEvidence, ChatGPT, Claude, Gemini, Copilot, Perplexity) on precision dosing for AKI/CKRT patients. Mean concordance 63% (range 28-94%). Inter-iteration variance up to 1000% in dosing. OpenEvidence uniquely cited relevant sources; others confabulated. PMID 42817723."
+      },
+      {
+        cat: "Research - Adoption Survey",
+        title: "Resident survey: 59% use OpenEvidence in clinical settings, UpToDate still dominant at 90% (Oct 1, 2026)",
+        desc: "Aronoff & Mueller (J Med Libr Assoc) surveyed 39 residents at University at Buffalo. UpToDate: 90% frequent use, OpenEvidence: 59%, MDCalc: 43.6%. Highlights continued UpToDate dominance but significant OpenEvidence adoption among trainees. PMID 42889761."
+      },
+      {
+        cat: "Competitor - Partnership",
+        title: "Doximity and Wolters Kluwer partner to embed UpToDate content in Doximity Ask (Oct 20, 2026)",
+        desc: "Doximity integrates UpToDate clinical content (13000+ topics) directly into its AI clinical decision support tool Ask. Clinicians at health systems using both see UpToDate answers alongside Ask answers. Doximity cites 85%+ of US physicians, 165+ health systems, 12000+ PeerCheck experts. Shares rose ~7%. Second incumbent-publisher deal after Suki Ask (Oct 8). Direct escalation against OpenEvidence in the answer layer."
+      },
+      {
+        cat: "Research - RAG System",
+        title: "MeddeX: RAG-augmented LLaMA-3 system for evidence-backed medical report analysis (Sep 30, 2026)",
+        desc: "Pandhare et al. (IJSREM) presented MeddeX, combining QLoRA fine-tuned LLaMA-3 (8B) with RAG and Gemini Vision for medical report analysis. Improvements over base model: ROUGE-1 +9.2%, BLEU +71.4%, BERTScore +0.8%. Novel garbage-text detection for corrupted documents. arXiv:2610.20632."
+      }
+    ]
+  },
+
+  {
+    date: "October 25, 2026",
     updated: "Daily OpenEvidence check (Sun Oct 25, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). arXiv API returned no output (2 attempts) - noted as gap. Grok X/Twitter search completed successfully - confirmed no new announcements; MSK/OncoKB X post (Oct 22) is social media promotion of Sep 16 partnership. 15 new PubMed papers added to research.json. 10 new benchmark entries added to benchmarks.json. Key findings: multimodal agentic AI for lung cancer screening CT patient questions achieves 93.1% tool-calling and 92.6% self-regulation accuracy (PMID 42926850); MedR-Bench analysis shows case composition drives diagnostic LLM evaluation bias (PMID 42923802); GPT-4o primary care chatbot multilingual evaluation shows language-dependent performance gaps (PMID 42921364); numeric vs embedding clinical risk pipelines show complementary false positives across 22,591 ICU patients (PMID 42921350); EHR-based CDS increased HIV co-testing from 2.6% to 18.3% in EDs (PMID 42921735); RAG with GPT-4o for prosthodontics provides verifiable grounding without accuracy trade-off (PMID 42923637); LLM OSCE note scoring shows high consistency but lower absolute scores than faculty (PMID 42921748).",
     items: [
       {

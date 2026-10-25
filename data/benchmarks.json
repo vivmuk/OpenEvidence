@@ -4776,5 +4776,89 @@
     "key_findings": "Qualitative study exploring ethical alignment of AI-DSS for CAD rule-out with clinical environment. Examines prospective end-user perspectives on integrating AI decision support into clinical workflows.",
     "category": "ai_dss_ethics",
     "pmid": "42920982"
+  },
+  {
+    "id": "pmid:42844685",
+    "source": "pubmed",
+    "pmid": "42844685",
+    "type": "comparative_evaluation",
+    "title": "Medical Literature-Specific AI: OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai in Lacrimal Drainage Disorders",
+    "authors": [
+      "Ali MJ",
+      "Korn BS"
+    ],
+    "journal": "Ophthalmic Plast Reconstr Surg",
+    "published": "2026-10-08",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "Heidi Evidence",
+      "Consensus",
+      "PubMed.ai"
+    ],
+    "domain": "ophthalmology/lacrimal drainage",
+    "scale": "22 validated questions across 4 AI tools",
+    "key_findings": "OpenEvidence: 90.9% correct, 0% incorrect. Heidi: 63.6% correct, 4.6% incorrect (2 hallucinations). Consensus: 54.5% correct, 4.6% incorrect. PubMed.ai: 31.8% correct, 22.7% incorrect, 9% no response. OpenEvidence had no factually incorrect responses.",
+    "metrics": {
+      "accuracy": "OpenEvidence 90.9%, Heidi 63.6%, Consensus 54.5%, PubMed.ai 31.8%"
+    },
+    "relevance": "high",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42844685/",
+    "tags": [
+      "OpenEvidence",
+      "Heidi Evidence",
+      "Consensus",
+      "PubMed.ai",
+      "comparative",
+      "lacrimal drainage"
+    ],
+    "status": "published"
+  },
+  {
+    "id": "pmid:42817723",
+    "source": "pubmed",
+    "pmid": "42817723",
+    "type": "safety_evaluation",
+    "title": "Inaccuracy and Inconsistency of LLMs in Providing Precision Dosing Recommendations for Patients With Kidney Impairment",
+    "authors": [
+      "Hambrick HR",
+      "Dubinsky S",
+      "Quickfall D",
+      "Reinert S",
+      "Tang Girdwood S",
+      "Stitt G"
+    ],
+    "journal": "Pharmacotherapy",
+    "published": "2026-10-10",
+    "tools_evaluated": [
+      "OpenEvidence",
+      "ChatGPT",
+      "Claude",
+      "Google Gemini",
+      "Microsoft Copilot",
+      "Perplexity"
+    ],
+    "domain": "clinical pharmacology/dosing",
+    "scale": "6 LLMs, 3 standardized vignettes, 6 investigators, cefepime and meropenem dosing",
+    "key_findings": "Mean concordance with literature: 63% (range 28-94%). Inter-iteration variance up to 1000% in daily maintenance doses. OpenEvidence uniquely cited relevant sources universally; other LLMs confabulated citations. All recommended TDM but only Claude consistently acknowledged uncertainty.",
+    "metrics": {
+      "concordance": "63% mean (28-94% range)",
+      "inter_iteration_variance": "0-1000% in dosing"
+    },
+    "relevance": "high",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42817723/",
+    "tags": [
+      "LLM safety",
+      "precision dosing",
+      "kidney impairment",
+      "AKI",
+      "CKRT",
+      "OpenEvidence",
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "Copilot",
+      "Perplexity"
+    ],
+    "status": "published"
   }
 ]

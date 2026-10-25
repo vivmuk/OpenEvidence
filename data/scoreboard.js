@@ -2,10 +2,10 @@
 // Head-to-head standing derived from evaluation studies.
 var scoreboardData = {
  "generated": "2026-10-25",
- "total": 42,
+ "total": 43,
  "tally": {
   "oe": 5,
-  "mixed": 32,
+  "mixed": 33,
   "competitor": 5
  },
  "rows": [
@@ -38,6 +38,21 @@ var scoreboardData = {
    "confidence": "reported",
    "url": "https://pubmed.ncbi.nlm.nih.gov/42844685/",
    "finding": "Multi-tool comparison of OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai for a specific clinical domain."
+  },
+  {
+   "title": "Medical Literature-Specific Artificial Intelligence: Analyzing the performance of OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai in the context of Lacrimal Drainage Disorders",
+   "journal": "Ophthalmic Plast Reconstr Surg",
+   "published": "2026-10-08",
+   "tools": [
+    "OpenEvidence",
+    "Heidi Evidence",
+    "Consensus",
+    "PubMed.ai"
+   ],
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42844685/",
+   "finding": "OpenEvidence scored highest (90.9% correct) vs Heidi (63.6%), Consensus (54.5%), PubMed.ai (31.8%). OpenEvidence had no factually incorrect responses. Heidi and Consensus each hallucinated once. PubMed.ai gave no response for 9% of queries."
   },
   {
    "title": "LLM-Generated Electronic Consultations: Blinded Comparison of OpenEvidence vs Gastroenterologist eConsultations",
@@ -509,19 +524,6 @@ var scoreboardData = {
    "journal": "arXiv preprint (v4)",
    "published": "2025-12-01",
    "tools": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://arxiv.org/abs/2512.01241",
-   "finding": "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases - more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)"
-  },
-  {
-   "title": "NOHARM (Numerous Options Harm Assessment for Risk in Medicine): A medical safety benchmark and randomized study of physician and AI teaming on clinical consultations",
-   "journal": "arXiv preprint (cs.CY, cs.AI)",
-   "published": "2025-12-01",
-   "tools": [
-    "20 LLMs",
-    "4 RAG clinical AI tools (including OpenEvidence)"
-   ],
    "position": "mixed",
    "confidence": "reported",
    "url": "https://arxiv.org/abs/2512.01241",
