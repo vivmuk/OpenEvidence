@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -84,6 +84,24 @@
       "url": "https://blog.google/products-and-platforms/products/google-health/fitbit-google-health-updates/"
     },
     {
+      "date": "2026-10-12",
+      "cat": "Product",
+      "title": "Google Health Partners with Flo Health for Women's Health Coaching",
+      "desc": "Google announced a partnership with Flo Health (80M+ monthly users) to integrate cycle data with the Google Health app and Health Coach. Flo users will sync cycle data with Google Health metrics like resting heart rate and sleep stages, with Google Health Premium delivering tailored coaching across cycle, sleep and recovery. The companies plan joint research into underserved topics including perimenopause, pregnancy and postpartum recovery. Vendor claim: general wellness, not diagnosis.",
+      "src": "Google / PYMNTS",
+      "url": "https://blog.google/products-and-platforms/products/google-health/commitment-womens-health-flo-health-partnership/",
+      "new": true
+    },
+    {
+      "date": "2026-10-08",
+      "cat": "Research",
+      "title": "Sex-Based Diagnostic Bias Found in AI Symptom Checkers",
+      "desc": "A peer-reviewed audit of three AI symptom checkers (Ada Health, Isabel Healthcare, Docus AI) across four clinical vignettes found sex-based divergence in differential diagnosis rank, probability estimates and advisory text. Isabel Healthcare ranked Heart Attack first for the male profile but third for the female profile on ACS with chest pressure. Docus AI described immediate medical attention as crucial for the male profile but merely important for the female profile on identical symptoms. The direction of divergence was not uniform, but findings support equity auditing of both numerical outputs and generated explanatory text.",
+      "src": "Frontiers in Digital Health",
+      "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1950777/full",
+      "new": true
+    },
+    {
       "date": "2026-08-11",
       "cat": "Product",
       "title": "Abbott and Google Partner on AI-Powered Metabolic Insights",
@@ -100,6 +118,14 @@
       "url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare"
     },
     {
+      "date": "2026-04-30",
+      "cat": "Regulatory",
+      "title": "Consumer Health Data Privacy Patchwork Growing as Federal Enforcement Pulls Back",
+      "desc": "Healthcare Dive reported that the federal government has stepped back from HIPAA enforcement just as state legislatures accelerated privacy efforts, making compliance more fragmented. Connecticut, Maryland, Nevada and Washington enacted consumer health data privacy laws requiring consent before disclosing health data. Experts said patients are voluntarily entering sensitive health information into consumer AI tools like ChatGPT without understanding the risks, and no comprehensive federal solution is on the horizon.",
+      "src": "Healthcare Dive",
+      "url": "https://www.healthcaredive.com/news/consumer-health-data-privacy-regulatory-patchwork-state-laws/818852/"
+    },
+    {
       "date": "2026-04-15",
       "cat": "Trend",
       "title": "IAPP: Five Health AI Agents Launched in Three Months - Privacy Gaps Documented",
@@ -114,6 +140,14 @@
       "desc": "Perplexity unveiled Perplexity Health on 19 March 2026, rolling out to US Pro and Max subscribers through April. The platform connects 1.7M+ providers via b.well, integrates Apple Health, Fitbit, Ultrahuman, Withings and Clue via Terra API, and offers AI agents for nutrition, sleep and visit prep built on Perplexity Computer. A Health Advisory Board including Dr Eric Topol was announced. Perplexity commits to no training on health data and citations on every response.",
       "src": "Perplexity",
       "url": "https://perplexityaimagazine.com/ai-news/perplexity-health-launch/"
+    },
+    {
+      "date": "2026-09-24",
+      "cat": "Product",
+      "title": "Google Health Guardian Features Go Live for Pixel Watch Users",
+      "desc": "Google announced that Health Guardian features - blood pressure trends, insulin resistance trends and sleep breathing quality - are rolling out in the Google Health app for Pixel Watch 3, 4 and 5 users, with first trend reports arriving in early October. Breathing Emergency Detection for Pixel Watch 4 and 5 launched in select European countries. Fitbit Air users get insulin resistance and blood pressure trends with Google Health Premium later in the year. Vendor claim: general wellness, not diagnosis.",
+      "src": "Google",
+      "url": "https://blog.google/products-and-platforms/products/google-health/health-guardian-features-live/"
     },
     {
       "date": "2026-09-15",
@@ -359,14 +393,18 @@
         },
         {
           "l": "Health Guardian",
-          "v": "BP + insulin resistance trends"
+          "v": "Live Sep 24 for Pixel Watch"
+        },
+        {
+          "l": "Flo Health",
+          "v": "80M+ users, cycle data"
         },
         {
           "l": "Premium",
           "v": "$9.99/mo or $99.99/yr"
         }
       ],
-      "desc": "Google consolidated its consumer health stack in October 2026: the Fitbit app became the Google Health app in May, the Fitbit Edge tracker launched Oct 12 with a Health Guardian suite that passively tracks blood pressure and insulin resistance trends, and the Google Health app opened to Function Health lab results, Abbott Lingo CGM data and MyFitnessPal meal logs. The Abbott partnership pairs Lingo glucose data with Google's AI Health Coach for personalised metabolic insights and plans a large-scale real-world metabolic health study. Vendor claim: Health Guardian features are for general wellness, not diagnosis.",
+      "desc": "Google consolidated its consumer health stack across 2026: the Fitbit app became the Google Health app in May, Health Guardian features (blood pressure trends, insulin resistance trends, sleep breathing quality) went live for Pixel Watch users on Sep 24, the Fitbit Edge tracker launched Oct 12, and the Google Health app opened to Function Health lab results, Abbott Lingo CGM data and MyFitnessPal meal logs. A Flo Health partnership announced Oct 12 integrates cycle data from Flo's 80M+ monthly users with Google Health Coach for tailored women's health guidance. The Abbott partnership pairs Lingo glucose data with Google's AI Health Coach for personalised metabolic insights and plans a large-scale real-world metabolic health study. Vendor claim: Health Guardian features are for general wellness, not diagnosis.",
       "url": "https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/"
     },
     {
@@ -769,6 +807,24 @@
       "url": "https://doi.org/10.1038/s41586-026-10179-2"
     },
     {
+      "title": "Sex-Based Diagnostic Bias in AI Symptom Checkers",
+      "type": "Peer-reviewed · equity audit",
+      "date": "Oct 8, 2026",
+      "venue": "Frontiers in Digital Health",
+      "finding": "A structured audit of three AI symptom checkers (Ada Health, Isabel Healthcare, Docus AI) across four clinical vignettes (ACS with chest pressure, ACS without chest pressure, pulmonary embolism, panic attack) found sex-based divergence in outputs from all three platforms, appearing as differences in differential diagnosis rank, probability estimates and advisory text. Isabel Healthcare ranked Heart Attack first for the male profile but third for the female profile on ACS with chest pressure. Docus AI assigned lower ACS probability to the female profile while its text described the presentation as common in women, and described immediate medical attention as crucial for the male profile but merely important for the female. The direction of divergence was not uniformly unfavorable to females.",
+      "caveat": "Exploratory audit with four vignettes and three platforms; not a systematic evaluation of clinical safety. The authors call for equity auditing before and after deployment, with attention to both numerical outputs and generated explanatory text.",
+      "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1950777/full"
+    },
+    {
+      "title": "Consumer Health Data Privacy Patchwork Growing as Federal Enforcement Pulls Back",
+      "type": "Regulatory analysis",
+      "date": "Apr 30, 2026",
+      "venue": "Healthcare Dive",
+      "finding": "The federal government has stepped back from enforcing HIPAA just as state legislatures accelerated privacy efforts, making compliance more fragmented. Connecticut, Maryland, Nevada and Washington enacted consumer health data privacy laws requiring consent before disclosing health data. Experts said patients voluntarily enter sensitive health information into consumer AI tools like ChatGPT without understanding the risks. CMS launched a Health Tech Ecosystem initiative as a voluntary, post-regulatory approach. No comprehensive federal solution is on the horizon.",
+      "caveat": "Industry analysis quoting experts; not a systematic legal review. State laws are evolving rapidly and the article reflects a point-in-time snapshot.",
+      "url": "https://www.healthcaredive.com/news/consumer-health-data-privacy-regulatory-patchwork-state-laws/818852/"
+    },
+    {
       "title": "Abbott-Google Partnership: Lingo CGM + Google Health AI for Metabolic Insights",
       "type": "Vendor partnership announcement",
       "date": "Aug 11, 2026",
@@ -926,6 +982,22 @@
     {
       "name": "Nature - Metwally et al. insulin resistance prediction from wearable data (Mar 2026)",
       "url": "https://doi.org/10.1038/s41586-026-10179-2"
+    },
+    {
+      "name": "Frontiers in Digital Health - Sex-based diagnostic bias in AI symptom checkers (Oct 8, 2026)",
+      "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1950777/full"
+    },
+    {
+      "name": "Google - Health Guardian features go live in Google Health (Sep 24, 2026)",
+      "url": "https://blog.google/products-and-platforms/products/google-health/health-guardian-features-live/"
+    },
+    {
+      "name": "Google - Flo Health partnership for women's health (Oct 12, 2026)",
+      "url": "https://blog.google/products-and-platforms/products/google-health/commitment-womens-health-flo-health-partnership/"
+    },
+    {
+      "name": "Healthcare Dive - Consumer health data privacy patchwork (Apr 30, 2026)",
+      "url": "https://www.healthcaredive.com/news/consumer-health-data-privacy-regulatory-patchwork-state-laws/818852/"
     }
   ]
 }

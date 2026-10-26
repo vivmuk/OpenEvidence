@@ -35,5 +35,9 @@ var phaSourcesData = [
   {name:"Google - Fitbit Edge launch (Oct 12, 2026)", url:"https://blog.google/products-and-platforms/devices/fitbit/google-fitbit-edge/"},
   {name:"Google - How we're making Google Health and Fitbit Air smarter (Oct 12, 2026)", url:"https://blog.google/products-and-platforms/products/google-health/fitbit-google-health-updates/"},
   {name:"Fierce Biotech - Abbott teams with Google Health on AI-powered health insights", url:"https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app"},
-  {name:"Nature - Metwally et al. insulin resistance prediction from wearable data (Mar 2026)", url:"https://doi.org/10.1038/s41586-026-10179-2"}
+  {name:"Nature - Metwally et al. insulin resistance prediction from wearable data (Mar 2026)", url:"https://doi.org/10.1038/s41586-026-10179-2"},
+  {name:"Frontiers in Digital Health - Sex-based diagnostic bias in AI symptom checkers (Oct 8, 2026)", url:"https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1950777/full"},
+  {name:"Google - Health Guardian features go live in Google Health (Sep 24, 2026)", url:"https://blog.google/products-and-platforms/products/google-health/health-guardian-features-live/"},
+  {name:"Google - Flo Health partnership for women's health (Oct 12, 2026)", url:"https://blog.google/products-and-platforms/products/google-health/commitment-womens-health-flo-health-partnership/"},
+  {name:"Healthcare Dive - Consumer health data privacy patchwork (Apr 30, 2026)", url:"https://www.healthcaredive.com/news/consumer-health-data-privacy-regulatory-patchwork-state-laws/818852/"}
 ];
