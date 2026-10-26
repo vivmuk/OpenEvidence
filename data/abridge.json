@@ -162,6 +162,13 @@
       "new": false
     },
     {
+      "name": "Deaconess Health",
+      "type": "Health system · unlimited enterprise license, clinician-driven expansion",
+      "date": "Aug 4, 2026",
+      "url": "https://www.abridge.com/blog/deaconess-abridge-expansion",
+      "new": true
+    },
+    {
       "name": "WVU Medicine",
       "type": "Health system · 2,800 clinicians, 25 hospitals",
       "date": "Mar 2026",
@@ -595,6 +602,15 @@
     },
     {
       "date": "2026-09-29",
+      "cat": "Partnership",
+      "title": "Deaconess Health: Abridge Assistant in Psychiatric Practice (Olivia Taylor Case Study)",
+      "desc": "Abridge published a case study with Olivia Taylor, a psychiatric mental health nurse practitioner at Deaconess Health with a decade of experience across inpatient and outpatient care. Taylor describes using Abridge Assistant for context-aware decision support during visits, including verifying medication taper strategies, monitoring schedules, and drug interactions — without leaving the conversation. She reports it has given her back significant mental bandwidth and sharpened her critical thinking by surfacing angles she hadn't considered. The case study confirms Deaconess Health as an Abridge enterprise partner with unlimited clinician licenses.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/deaconess-olivia-taylor-abridge-assistant",
+      "new": true
+    },
+    {
+      "date": "2026-09-29",
       "cat": "Product",
       "title": "Abridge September 2026 Release: Inpatient Cues, New Specialty Support, Admin Controls",
       "desc": "Abridge's September 'Now in Practice' release adds inpatient cues that capture observations from the bedside while the story is still fresh, inline diagnosis organization and refinement (so combination codes surface before the chart closes), expanded specialty support, and two new admin controls giving project and CDI teams direct control over access management and output verification. The release closes the gap between care delivered and care documented at the point of care.",
@@ -627,7 +643,7 @@
       "desc": "Abridge announced an enterprise-wide agreement with UT REAL Health AI covering the eight University of Texas health institutions. The framework lets each institution adopt Abridge on its own timeline while preserving local decision-making. It builds on a year-long pilot that expanded significantly across UT clinicians and follows the VA enterprise win two weeks earlier.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press-release/ut-health-enterprise-wide",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-09-02",
@@ -646,6 +662,15 @@
       "src": "Abridge / Nextgov",
       "url": "https://www.abridge.com/press-release/va-enterprise-contract",
       "new": false
+    },
+    {
+      "date": "2026-09-16",
+      "cat": "Partnership",
+      "title": "WVU Medicine: Abridge Assistant in Emergency Medicine (Dr. Brian Dilcher Case Study)",
+      "desc": "Abridge published a case study with Dr. Brian Dilcher, an emergency medicine physician and associate CMIO for emergency medicine at WVU Medicine's Ruby Memorial Hospital, a Level I trauma center. Dilcher describes using Abridge's context-aware clinical intelligence to spot-check decisions against evidence in the fast-paced ED environment, surface patterns from prior visits that would otherwise be missed in the noise, and verify medication and treatment approaches in natural language without leaving the workflow. He cites repeatability, consistency, and source transparency as the reasons he endorsed it to colleagues and residents.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/cds-in-practice-dilcher",
+      "new": true
     },
     {
       "date": "2026-09-14",
@@ -681,6 +706,15 @@
       "desc": "Abridge now lets partner health systems extend its clinical intelligence agent to every clinician, regardless of how that clinician documents visits today. Access can run through the EHR workflow clinicians already use or through a new mobile and web experience, each connected to the patient chart. More than 300 enterprise health systems representing over 250 million patients adopted the decision support since its April launch.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press-release/context-aware-clinical-intelligence-extended-to-all-partners",
+      "new": false
+    },
+    {
+      "date": "2026-08-04",
+      "cat": "Partnership",
+      "title": "Deaconess Health Expands Abridge to Unlimited Enterprise License After Clinician Demand",
+      "desc": "Deaconess Health System, an Indiana-based system, expanded Abridge from a 200-license pilot to an unlimited enterprise-wide agreement after clinician demand outpaced every license tier set by leadership. Adoption spread by word-of-mouth across specialties, with locum clinicians citing Abridge as a reason to choose Deaconess over other opportunities. The system moved to an unlimited model and is now piloting Abridge for nursing and extending access to non-Deaconess-employed clinicians. First public confirmation that Deaconess Health is an Abridge enterprise partner.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/deaconess-abridge-expansion",
       "new": false
     },
     {
@@ -831,6 +865,18 @@
     {
       "name": "Abridge - Maine Health / Dr. Jessica Faraci case study (Oct 18, 2026)",
       "url": "https://www.abridge.com/blog/mainehealth-jessica-faraci-abridge-assistant"
+    },
+    {
+      "name": "Abridge - Deaconess Health / Olivia Taylor Abridge Assistant case study (Sep 29, 2026)",
+      "url": "https://www.abridge.com/blog/deaconess-olivia-taylor-abridge-assistant"
+    },
+    {
+      "name": "Abridge - WVU Medicine / Dr. Brian Dilcher CDS case study (Sep 16, 2026)",
+      "url": "https://www.abridge.com/blog/cds-in-practice-dilcher"
+    },
+    {
+      "name": "Abridge - Deaconess Health enterprise expansion (Aug 4, 2026)",
+      "url": "https://www.abridge.com/blog/deaconess-abridge-expansion"
     },
     {
       "name": "Abridge - Pre-visit summaries design deep-dive (Oct 16, 2026)",
@@ -989,5 +1035,5 @@
       "url": "https://www.businesswire.com/news/home/20260521475981/en/Abridge-Names-San-Oo-CTO"
     }
   ],
-  "updated": "2026-10-22"
+  "updated": "2026-10-26"
 }

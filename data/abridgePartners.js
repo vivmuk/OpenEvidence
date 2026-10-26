@@ -1,6 +1,7 @@
 // Abridge partners, customers, and investors.
 var abridgePartnersData = [
   {name:"HonorHealth",type:"Health system · enterprise rollout, no pilot",date:"Apr 20, 2026",url:"https://www.abridge.com/blog/honorhealth-ai-enterprise-rollout",new:false},
+  {name:"Deaconess Health",type:"Health system · unlimited enterprise license, clinician-driven expansion",date:"Aug 4, 2026",url:"https://www.abridge.com/blog/deaconess-abridge-expansion",new:true},
   {name:"WVU Medicine",type:"Health system · 2,800 clinicians, 25 hospitals",date:"Mar 2026",url:"https://www.beckershospitalreview.com/healthcare-information-technology/ai/10-ai-vendors-gaining-traction-with-health-systems/",new:false},
   {name:"Reid Health",type:"Health system · rural Indiana/Ohio enterprise",date:"Aug 2024",url:"https://www.abridge.com/press-release/reid-health-announcement",new:false},
   {name:"OCHIN",type:"Health system · rural/community health network",date:"Jun 11, 2026",url:"https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",new:false},
