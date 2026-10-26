@@ -1,9 +1,9 @@
 // Personal health agent landscape: platforms, device makers, health systems, challengers.
 var phaPlayersData = [
   {name:"OpenAI - Health in ChatGPT", type:"Frontier platform · records + Apple Health", badge:"SCALE LEADER",
-   stats:[{l:"Launched",v:"Jul 23, 2026"},{l:"Tiers",v:"Free/Go/Plus/Pro"},{l:"Data",v:"Records + Apple Health"},{l:"HIPAA",v:"Not covered after export"}],
-   desc:"Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
-   url:"https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"},
+   stats:[{l:"Launched",v:"Jul 23, 2026"},{l:"Tiers",v:"Free/Go/Plus/Pro"},{l:"Data",v:"Records + Apple Health"},{l:"HIPAA",v:"Not covered after export"},{l:"Weekly health Qs",v:"300M+"}],
+   desc:"Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. OpenAI reports more than 300 million people turn to ChatGPT with health-related questions weekly. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
+   url:"https://openai.com/index/health-in-chatgpt/"},
 
   {name:"Microsoft - Copilot Health", type:"Frontier platform · dedicated health space", badge:"FAST FOLLOWER",
    stats:[{l:"Launched",v:"Mar 12, 2026"},{l:"Preview",v:"May 2026"},{l:"Sources",v:"EHR + wearables + labs"},{l:"Demand",v:"~1 in 5 Copilot chats health-related"}],
@@ -26,9 +26,9 @@ var phaPlayersData = [
    url:"https://www.nature.com/articles/s41586-026-11161-8"},
 
   {name:"Oura", type:"Wearable maker · coaching layer", badge:"COACHING LEADER",
-   stats:[{l:"AI coach",v:"Oura Advisor"},{l:"New model",v:"Reproductive health, Feb 2026"},{l:"Shift",v:"Metrics → dialogue"}],
-   desc:"Oura turned its insight feed into a two-way coaching dialogue with Oura Advisor and launched a dedicated reproductive health model spanning menstrual cycles through menopause. Represents the device-maker path to personal agents: own the sensor, own the interpretation.",
-   url:"https://sahha.ai/blog/ai-health-coaching-platforms/"},
+   stats:[{l:"AI coach",v:"Oura Advisor (all members)"},{l:"New model",v:"Reproductive health, Feb 2026"},{l:"Acquisitions",v:"Veri, Sparta Science"},{l:"Valuation",v:"$5.2B ($200M raise)"},{l:"CGM",v:"Dexcom integrated"}],
+   desc:"Oura turned its insight feed into a two-way coaching dialogue with Oura Advisor and launched a dedicated reproductive health model spanning menstrual cycles through menopause. Acquired Veri (metabolic health) and Sparta Science (movement health) to expand data and coaching capabilities, integrated Dexcom CGMs for nutrition and metabolic insights, and raised $200M at a $5.2B valuation. Represents the device-maker path to personal agents: own the sensor, own the interpretation.",
+   url:"https://insider.fitt.co/oura-launches-ai-health-coach/"},
 
   {name:"WHOOP", type:"Wearable maker · embedded AI guidance", badge:"ADJACENT",
    stats:[{l:"Approach",v:"AI guidance on every screen"},{l:"Model",v:"Subscription + hardware"}],

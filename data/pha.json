@@ -262,6 +262,15 @@
       "url": "https://www.2minutemedicine.com/ai-symptom-checker-could-help-emergency-doctors-prioritize-patients/"
     },
     {
+      "date": "2026-02-09",
+      "cat": "Research",
+      "title": "Oxford Study: LLMs Excel on Tests But Fail Real Users Seeking Medical Advice",
+      "desc": "The largest randomised user study of LLMs for consumer medical advice, led by the Oxford Internet Institute and Nuffield Department of Primary Care Health Sciences in partnership with MLCommons, tested GPT-4o, Llama 3 and Command R+ with 1,298 UK participants across 10 medical scenarios. LLMs alone identified conditions in 94.9% of cases and chose the right disposition in 56.3%. But participants using the same LLMs identified conditions in fewer than 34.5% of cases and chose the right action in fewer than 44.2% - no better than a control group using ordinary search. The gap traced to conversational breakdown: users omitted details the model needed, and responses mixed good and poor advice. The authors recommend systematic human user testing before public deployment in healthcare.",
+      "src": "Nature Medicine / Oxford",
+      "url": "https://www.nature.com/articles/s41591-025-04074-y",
+      "new": true
+    },
+    {
       "date": "2026-02-01",
       "cat": "Regulatory",
       "title": "States Raise the Privacy Ceiling for Consumer Health AI",
@@ -323,10 +332,14 @@
         {
           "l": "HIPAA",
           "v": "Not covered after export"
+        },
+        {
+          "l": "Weekly health Qs",
+          "v": "300M+"
         }
       ],
-      "desc": "Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
-      "url": "https://www.paubox.com/blog/chatgpt-health-launches-nationwide-but-medical-records-not-hipaa-protected"
+      "desc": "Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. OpenAI reports more than 300 million people turn to ChatGPT with health-related questions weekly. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
+      "url": "https://openai.com/index/health-in-chatgpt/"
     },
     {
       "name": "Microsoft - Copilot Health",
@@ -439,19 +452,27 @@
       "stats": [
         {
           "l": "AI coach",
-          "v": "Oura Advisor"
+          "v": "Oura Advisor (all members)"
         },
         {
           "l": "New model",
           "v": "Reproductive health, Feb 2026"
         },
         {
-          "l": "Shift",
-          "v": "Metrics → dialogue"
+          "l": "Acquisitions",
+          "v": "Veri, Sparta Science"
+        },
+        {
+          "l": "Valuation",
+          "v": "$5.2B ($200M raise)"
+        },
+        {
+          "l": "CGM",
+          "v": "Dexcom integrated"
         }
       ],
-      "desc": "Oura turned its insight feed into a two-way coaching dialogue with Oura Advisor and launched a dedicated reproductive health model spanning menstrual cycles through menopause. Represents the device-maker path to personal agents: own the sensor, own the interpretation.",
-      "url": "https://sahha.ai/blog/ai-health-coaching-platforms/"
+      "desc": "Oura turned its insight feed into a two-way coaching dialogue with Oura Advisor and launched a dedicated reproductive health model spanning menstrual cycles through menopause. Acquired Veri (metabolic health) and Sparta Science (movement health) to expand data and coaching capabilities, integrated Dexcom CGMs for nutrition and metabolic insights, and raised $200M at a $5.2B valuation. Represents the device-maker path to personal agents: own the sensor, own the interpretation.",
+      "url": "https://insider.fitt.co/oura-launches-ai-health-coach/"
     },
     {
       "name": "WHOOP",
@@ -731,6 +752,15 @@
       "url": "https://futurewellnesstech.com/ai-symptom-checkers-triage-accuracy-2026/"
     },
     {
+      "title": "Reliability of LLMs as Medical Assistants for the General Public: A Randomized Preregistered Study",
+      "type": "Peer-reviewed · randomized controlled trial",
+      "date": "Feb 9, 2026",
+      "venue": "Nature Medicine",
+      "finding": "The largest randomised user study of LLMs for consumer medical advice tested GPT-4o, Llama 3 and Command R+ with 1,298 UK participants across 10 medical scenarios. LLMs alone correctly identified conditions in 94.9% of cases and chose the right disposition in 56.3% on average. But participants using the same LLMs identified conditions in fewer than 34.5% of cases and chose the right action in fewer than 44.2% - no better than a control group using ordinary search or their own judgement. The gap traced to two-way communication breakdown: users omitted information the model needed, and responses combined good and poor recommendations. The authors conclude that standard benchmarks for medical knowledge and simulated patient interactions do not predict failures with human users, and recommend systematic human user testing before public deployment in healthcare.",
+      "caveat": "Ten scenarios is a narrow scope; the study uses simulated medical scenarios rather than real symptoms, and three LLMs may not generalise to all consumer health agents. The 56.3% disposition accuracy for LLMs alone is close to the 55-60% triage accuracy of older symptom checkers, suggesting the gap is in the user interaction, not the medical knowledge.",
+      "url": "https://www.nature.com/articles/s41591-025-04074-y"
+    },
+    {
       "title": "AI Triage Validation Across Three Swedish Emergency Departments",
       "type": "Multicentre validation",
       "date": "2026",
@@ -998,6 +1028,22 @@
     {
       "name": "Healthcare Dive - Consumer health data privacy patchwork (Apr 30, 2026)",
       "url": "https://www.healthcaredive.com/news/consumer-health-data-privacy-regulatory-patchwork-state-laws/818852/"
+    },
+    {
+      "name": "Nature Medicine - Reliability of LLMs as medical assistants for the general public (Feb 9, 2026)",
+      "url": "https://www.nature.com/articles/s41591-025-04074-y"
+    },
+    {
+      "name": "Oxford University - New study warns of risks in AI chatbots giving medical advice (Feb 10, 2026)",
+      "url": "https://www.ox.ac.uk/news/2026-02-10-new-study-warns-risks-ai-chatbots-giving-medical-advice"
+    },
+    {
+      "name": "OpenAI - Launching Health in ChatGPT (Jul 23, 2026)",
+      "url": "https://openai.com/index/health-in-chatgpt/"
+    },
+    {
+      "name": "Fitt Insider - Oura Launches AI Health Coach",
+      "url": "https://insider.fitt.co/oura-launches-ai-health-coach/"
     }
   ]
 }

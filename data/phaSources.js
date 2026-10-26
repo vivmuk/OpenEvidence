@@ -39,5 +39,9 @@ var phaSourcesData = [
   {name:"Frontiers in Digital Health - Sex-based diagnostic bias in AI symptom checkers (Oct 8, 2026)", url:"https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1950777/full"},
   {name:"Google - Health Guardian features go live in Google Health (Sep 24, 2026)", url:"https://blog.google/products-and-platforms/products/google-health/health-guardian-features-live/"},
   {name:"Google - Flo Health partnership for women's health (Oct 12, 2026)", url:"https://blog.google/products-and-platforms/products/google-health/commitment-womens-health-flo-health-partnership/"},
-  {name:"Healthcare Dive - Consumer health data privacy patchwork (Apr 30, 2026)", url:"https://www.healthcaredive.com/news/consumer-health-data-privacy-regulatory-patchwork-state-laws/818852/"}
+  {name:"Healthcare Dive - Consumer health data privacy patchwork (Apr 30, 2026)", url:"https://www.healthcaredive.com/news/consumer-health-data-privacy-regulatory-patchwork-state-laws/818852/"},
+  {name:"Nature Medicine - Reliability of LLMs as medical assistants for the general public (Feb 9, 2026)", url:"https://www.nature.com/articles/s41591-025-04074-y"},
+  {name:"Oxford University - New study warns of risks in AI chatbots giving medical advice (Feb 10, 2026)", url:"https://www.ox.ac.uk/news/2026-02-10-new-study-warns-risks-ai-chatbots-giving-medical-advice"},
+  {name:"OpenAI - Launching Health in ChatGPT (Jul 23, 2026)", url:"https://openai.com/index/health-in-chatgpt/"},
+  {name:"Fitt Insider - Oura Launches AI Health Coach", url:"https://insider.fitt.co/oura-launches-ai-health-coach/"}
 ];
