@@ -4860,5 +4860,60 @@
       "Perplexity"
     ],
     "status": "published"
+  },
+  {
+    "id": "arxiv:2610.32258",
+    "source": "arxiv",
+    "arxiv_id": "2610.32258",
+    "title": "MedCase-Bench: Temporally Held-Out Evaluation Suite for Clinical Case Report Generation",
+    "authors": [
+      "Hongkang Chu",
+      "Yifan Shen",
+      "Tianjiao Yu",
+      "Zhuoqing Zhong",
+      "Jianguo Cao",
+      "Meihuan Huang",
+      "Xu Cao"
+    ],
+    "journal": "arXiv",
+    "published": "2026-10-23",
+    "benchmark_name": "MedCase-Bench",
+    "domain": "clinical case report generation",
+    "scale": "MedCase-150K corpus, temporally held-out evaluation suite",
+    "models_evaluated": [
+      "MedCaseAgent (Qwen3.5-9B post-trained)",
+      "general-purpose LLMs",
+      "specialized medical LLMs"
+    ],
+    "key_findings": "MedCaseAgent outperforms existing general-purpose and specialized medical LLMs and agents under both LLM-judged and rule-based evaluation. Blinded expert reviews confirm clinical relevance and evidence grounding.",
+    "type": "benchmark",
+    "url": "https://arxiv.org/abs/2610.32258",
+    "added_date": "2026-10-26"
+  },
+  {
+    "id": "pmid:42927848",
+    "source": "pubmed",
+    "pmid": "42927848",
+    "title": "Enhanced DUR CDS System Evaluation in Community Pharmacy (9000+ locations)",
+    "authors": [
+      "Lipp G",
+      "Szabatura AH",
+      "Praysman H",
+      "Patel S",
+      "Wickner P",
+      "Davis T"
+    ],
+    "journal": "J Am Pharm Assoc (2003)",
+    "published": "2026-10-25",
+    "benchmark_name": "Enhanced DUR CDS Pre-Post Evaluation",
+    "domain": "community pharmacy / drug utilization review",
+    "scale": "9000+ pharmacies, nationwide, 1-month pre-post",
+    "models_evaluated": [
+      "Enhanced DUR CDS system (before vs after)"
+    ],
+    "key_findings": "Alert burden decreased 82.2% (142.0 to 25.3 alerts/100 Rxs). Pharmacist interventions increased 93.9% (5.2 to 10.0/100 Rxs). Improving alert relevance and actionability reduces cognitive burden while improving care.",
+    "type": "cdss_evaluation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42927848/",
+    "added_date": "2026-10-26"
   }
 ]

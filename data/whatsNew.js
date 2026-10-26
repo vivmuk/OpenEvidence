@@ -5,6 +5,28 @@
 
 var whatsNewData = [
   {
+    date: "October 26, 2026",
+    updated: "Daily OpenEvidence check (Mon Oct 26, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + arXiv API (30 results) + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). Grok X/Twitter search completed - confirmed MSK/OncoKB X posts (Oct 22) are social media promotion of Sep 16 partnership; FT coverage of $15B valuation (Oct 21); JAMA study on usage patterns (mid-Oct). 3 new papers added to research.json. 2 new benchmark entries added to benchmarks.json.",
+    items: [
+      {
+        cat: "Research - Agentic Clinical AI",
+        title: "MedCaseAgent: agentic reasoning synthesizes clinical case reports from unstructured notes (Oct 23, 2026)",
+        desc: "Chu et al. present MedCaseAgent, an end-to-end agentic reasoning paradigm for generating publication-quality clinical case reports from unstructured clinical notes. Releases MedCase-150K corpus and MedCase-Bench evaluation suite. Open-source model post-trained from Qwen3.5-9B outperforms general-purpose and specialized medical LLMs. Blinded expert reviews confirm clinical relevance. arXiv 2610.32258."
+      },
+      {
+        cat: "Research - CDS Evaluation",
+        title: "Enhanced pharmacy CDS reduces alert burden 82% while increasing interventions 94% across 9000+ pharmacies (Oct 25, 2026)",
+        desc: "Lipp et al. (CVS Health) redesigned drug utilization review CDS across 9000+ community pharmacies. Alert burden dropped from 142.0 to 25.3 alerts/100 prescriptions (-82.2%). Pharmacist interventions increased from 5.2 to 10.0/100 prescriptions (+93.9%). Demonstrates that improving alert relevance and actionability reduces cognitive burden while improving patient care. PMID 42927848."
+      },
+      {
+        cat: "Research - LLM Clinical NLP",
+        title: "GLLaucoMed: 5 frontier LLMs evaluated for medication extraction from glaucoma clinical notes in HIPAA-compliant environment (Oct 23, 2026)",
+        desc: "Solages et al. (Bascom Palmer Eye Institute) developed secure LLM-powered agentic workflow for automated medication extraction from free-text glaucoma clinical notes. 1250 subjects, 5 LLMs (Claude Opus 4.6, DeepSeek-V3.2, GPT 5.2, Grok 4.1, Qwen3.6-35B-A3B) via Microsoft Azure AI Foundry. HIPAA-compliant deployment. PMID 42927148."
+      }
+    ]
+  },
+
+  {
     date: "October 25, 2026",
     updated: "Weekly OpenEvidence Insights update (Sun Oct 25, 5:00 PM ET) - Venice Augment search (8 OE queries + 15 broader queries) + arXiv API (50 results) + PubMed eutils (20 OE + 30 expanded). No new OpenEvidence announcements this week (latest: Behind the Knife Oct 14, Johns Hopkins Oct 13, Northwestern Oct 12). 4 new papers added to research.json: (1) PMID 42844685 - OpenEvidence vs Heidi Evidence vs Consensus vs PubMed.ai comparative in lacrimal drainage (OE 90.9% correct, highest); (2) PMID 42817723 - LLM precision dosing inaccuracy for kidney impairment (OE uniquely cited sources, others confabulated); (3) PMID 42889761 - Resident survey shows 59% use OpenEvidence, 90% use UpToDate; (4) arXiv 2610.20632 - MeddeX RAG system for medical report analysis. 2 new benchmark entries added. Timeline updated: Doximity-Wolters Kluwer UpToDate integration in Doximity Ask (Oct 20). arXiv had no new OE-relevant papers this week. Veeva partnership (Oct 2025) already tracked.",
     items: [
