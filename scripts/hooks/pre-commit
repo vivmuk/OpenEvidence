@@ -4,19 +4,25 @@
 # Installed as .git/hooks/pre-commit (see scripts/install_hooks.sh).
 #
 # Runs on EVERY commit to this repo, including the ones made by the daily and
-# weekly research jobs. Four jobs:
+# weekly research jobs. Four jobs, in this order:
 #
-#   0. Refresh the derived front-end data (signals, search index, scoreboard,
-#      matrix diff) whenever its source data changes.
 #   1. Auto-heal the research/benchmark data (merge duplicates, backfill ids,
-#      normalise dates).
-#   2. Auto-heal copy tells (em-dashes are banned by the design doctrine).
+#      normalise dates) and the site prose (em-dashes are banned by the design
+#      doctrine).
+#   2. Refresh the derived front-end data (signals, search index, scoreboard,
+#      matrix diff, and the metrics/stat layer) from the healed sources.
 #   3. Validate, and block the commit if the data is still broken.
 #
-# Why job 0 exists: the derived files are generated, and for a week they went
-# stale while the daily and weekly jobs kept committing fresh source data. The
-# site silently showed week-old signals. Enforcing at commit time covers every
-# writer, not just the ones whose prompts we remembered to update.
+# Order matters. The healers change research.json and benchmarks.json (dedupe
+# merges records, so counts shrink), and every derived file is a projection of
+# those sources. Generating before healing shipped counts that were two records
+# ahead of the data; healing first and generating second keeps the derived
+# layer a function of the committed data.
+#
+# Why this exists at all: the derived files are generated, and for a week they
+# went stale while the daily and weekly jobs kept committing fresh source data.
+# The site silently showed week-old signals. Enforcing at commit time covers
+# every writer, not just the ones whose prompts we remembered to update.
 
 set -uo pipefail
 
@@ -26,44 +32,7 @@ cd "$ROOT" || exit 0
 [ -f scripts/validate_data.py ] || exit 0
 
 # --------------------------------------------------------------------------
-# 0. Derived front-end data
-# --------------------------------------------------------------------------
-SRC_DATA="data/timeline.js data/competitors.js data/partners.js data/globalMatrix.js data/research.json data/benchmarks.json"
-DERIVED="data/signals.js data/search-index.js data/scoreboard.js data/matrix-changes.js data/matrix-history.json"
-
-if [ -f scripts/build_frontend_data.js ] && command -v node >/dev/null 2>&1; then
-  SRC_CHANGED=0
-  for f in $SRC_DATA; do
-    if git diff --cached --name-only | grep -qx "$f" || git status --porcelain -- "$f" | grep -q .; then
-      SRC_CHANGED=1
-      break
-    fi
-  done
-
-  if [ "$SRC_CHANGED" -eq 1 ]; then
-    node scripts/build_frontend_data.js >/dev/null 2>&1 || true
-    for f in $DERIVED; do
-      [ -e "$f" ] && git add "$f" 2>/dev/null || true
-    done
-  fi
-fi
-
-# --------------------------------------------------------------------------
-# 0b. Metrics / stat-card layer
-# --------------------------------------------------------------------------
-# The stat cards and chart captions render from data/metrics.js, generated from
-# data/metrics.csv. Regenerate on every commit so a search agent that only
-# appends a CSV row still leaves the site's numbers current.
-if [ -f scripts/sync_site.js ] && command -v node >/dev/null 2>&1; then
-  if node scripts/sync_site.js >/dev/null 2>&1; then
-    [ -e data/metrics.js ] && git add data/metrics.js 2>/dev/null || true
-  else
-    echo "WARNING: scripts/sync_site.js failed; data/metrics.js may be stale" >&2
-  fi
-fi
-
-# --------------------------------------------------------------------------
-# 1 & 3. Research data: heal, then validate
+# 1. Heal the source data first
 # --------------------------------------------------------------------------
 DATA_CHANGED=0
 if git diff --cached --name-only | grep -qE '^data/(research|benchmarks)\.json$'; then
@@ -92,8 +61,47 @@ if [ "$DATA_CHANGED" -eq 1 ]; then
   # Re-stage anything the healers rewrote.
   git add data/research.json data/benchmarks.json 2>/dev/null || true
   git add '*.html' 'data/*.js' 2>/dev/null || true
+  git add data/*.csv data/*.json 2>/dev/null || true
+fi
 
-  # Validate. Block on real errors.
+# --------------------------------------------------------------------------
+# 2. Regenerate the derived front-end data from the healed sources
+# --------------------------------------------------------------------------
+SRC_DATA="data/timeline.js data/competitors.js data/partners.js data/globalMatrix.js data/research.json data/benchmarks.json"
+DERIVED="data/signals.js data/search-index.js data/scoreboard.js data/matrix-changes.js data/matrix-history.json"
+
+if [ -f scripts/build_frontend_data.js ] && command -v node >/dev/null 2>&1; then
+  SRC_CHANGED=0
+  for f in $SRC_DATA; do
+    if git diff --cached --name-only | grep -qx "$f" || git status --porcelain -- "$f" | grep -q .; then
+      SRC_CHANGED=1
+      break
+    fi
+  done
+
+  if [ "$SRC_CHANGED" -eq 1 ]; then
+    node scripts/build_frontend_data.js >/dev/null 2>&1 || true
+    for f in $DERIVED; do
+      [ -e "$f" ] && git add "$f" 2>/dev/null || true
+    done
+  fi
+fi
+
+# The stat cards and chart captions render from data/metrics.js, generated from
+# data/metrics.csv. Regenerate on every commit so a search agent that only
+# appends a CSV row still leaves the site's numbers current.
+if [ -f scripts/sync_site.js ] && command -v node >/dev/null 2>&1; then
+  if node scripts/sync_site.js >/dev/null 2>&1; then
+    [ -e data/metrics.js ] && git add data/metrics.js 2>/dev/null || true
+  else
+    echo "WARNING: scripts/sync_site.js failed; data/metrics.js may be stale" >&2
+  fi
+fi
+
+# --------------------------------------------------------------------------
+# 3. Validate. Block on real errors.
+# --------------------------------------------------------------------------
+if [ "$DATA_CHANGED" -eq 1 ]; then
   if ! python3 scripts/validate_data.py --quiet >/tmp/oe-validate.out 2>&1; then
     echo "" >&2
     echo "┌──────────────────────────────────────────────────────────────┐" >&2
