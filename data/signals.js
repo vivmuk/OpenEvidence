@@ -248,6 +248,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-10-22",
+  "cat": "Partnership",
+  "title": "Memorial Sloan Kettering Cancer Center and OpenEvidence Partner to Advance Precision Oncology",
+  "desc": "Memorial Sloan Kettering Cancer Center (MSK) and OpenEvidence announce a partnership to advance precision oncology, combining MSK's cancer expertise with OpenEvidence's AI-powered clinical decision support at the point of care.",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/memorial-sloan-kettering-cancer-center-and-openevidence-partner-to-advance-precision-oncology",
+  "score": 81,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-10-14",
   "cat": "Partnership",
   "title": "Behind the Knife and OpenEvidence Announce Collaboration to Bring Innovative Surgical Education to the Point of Care",
@@ -746,20 +758,6 @@ var signalsData = [
   "confidence": "reported",
   "competitors": [
    "Doximity"
-  ],
-  "comparative": false
- },
- {
-  "date": "2026-07-15",
-  "cat": "Media",
-  "title": "LinkedIn - GV announces investment in OpenEvidence",
-  "desc": "GV (Google Ventures) posts on LinkedIn announcing investment. Sangeen Zeb: Physicians are drowning in information but starving for timely insights.",
-  "src": "LinkedIn",
-  "url": "https://www.linkedin.com/in/evandez/",
-  "score": 49,
-  "confidence": "reported",
-  "competitors": [
-   "Google"
   ],
   "comparative": false
  }
