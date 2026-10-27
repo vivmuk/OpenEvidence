@@ -5,6 +5,42 @@
 
 var whatsNewData = [
   {
+    date: "October 27, 2026",
+    updated: "Daily OpenEvidence check (Tue Oct 27, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: MSK Precision Oncology Oct 22). arXiv API returned empty responses after 3 attempts - noted as gap. Grok X/Twitter search returned empty response - noted as gap. 17 new PubMed papers added to research.json. 5 new benchmark entries added to benchmarks.json. Key findings: 24 AI systems recommend 3.2x more costly care than physicians ($314 vs $97/visit, PMID 42932470); automation bias persists despite AI literacy training - 14pp diagnostic accuracy drop with erroneous LLM suggestions (PMID 42932681); LLM clinical reasoning benchmark via script concordance testing shows o3 highest at 67.8% but below attending physicians (PMID 42932606); VeriFact achieves 93.2% clinician agreement for automated fact verification in LLM-generated clinical documents (PMID 42932523); 4-level safety classification proposed for medical AI (S1-S4, PMID 42932717); RAG-enhanced GPT-4 outperforms physicians for ICD-10 coding accuracy (PMID 42932607); AI raters in LLM clinical benchmarking not interchangeable - ICC 0.153 (PMID 42932837).",
+    items: [
+      {
+        cat: "Benchmark - LLM Cost",
+        title: "24 AI systems recommend 3.2x more costly care than treating physicians (Oct 27, 2026)",
+        desc: "Aran et al. (NEJM AI) evaluated 24 AI systems on 200 deidentified outpatient and ED notes. AI-suggested care cost mean US$314/visit vs US$97 for physicians (P<0.001). 20 general-purpose systems ranged $209-599. Four specialized medical systems no less costly (2.7x-3.5x). Cost-aware prompt reduced to 2.5x; parsimonious to 1.4x. AI recommended testing at 66% of visits where physicians ordered none. PMID 42932470."
+      },
+      {
+        cat: "Benchmark - Automation Bias RCT",
+        title: "Automation bias persists despite AI literacy training - 14pp diagnostic accuracy drop with erroneous LLM suggestions (May 2026)",
+        desc: "Qazi et al. (NEJM AI) single-blind RCT with 44 physicians who completed 20-hour AI literacy training. ChatGPT-4o with error-free vs error-containing suggestions. Treatment group scored 73.3% vs 84.9% control (14.0pp reduction, P<0.0001). Top-choice accuracy 76.1% vs 90.5% (18.3pp). Physicians demonstrate substantial automation bias even with voluntary consultation and prior training. PMID 42932681."
+      },
+      {
+        cat: "Benchmark - Clinical Reasoning",
+        title: "Script concordance test benchmark: LLMs match students but not senior physicians (Oct 2025)",
+        desc: "McCoy et al. (NEJM AI) built 750-question script concordance testing (SCT) benchmark from 10 international datasets. 10 LLMs compared with 1070 students, 193 residents, 300 attendings. o3 highest (67.8%), GPT-4o (63.9%), DeepSeek R1 (55.5%), Gemini 2.5 Pro (52.1%). LLMs matched/exceeded students but did not reach senior residents or attendings. Systematic overconfidence in reasoning-tuned models. Publicly available benchmark. PMID 42932606."
+      },
+      {
+        cat: "Research - LLM Safety Verification",
+        title: "VeriFact achieves 93.2% clinician agreement for automated fact verification in LLM-generated clinical documents (Jan 2026)",
+        desc: "Chung et al. (Stanford, NEJM AI) developed VeriFact system combining RAG from EHR with LLM-as-a-Judge. VeriFact-BHC benchmark: 100 patients, 13,070 statements from discharge summaries. 93.2% agreement with clinicians vs 88.5% highest clinician-clinician agreement. Scaling LLM judge size and reasoning capability synergistically improve verification. PMID 42932523."
+      },
+      {
+        cat: "Research - Medical AI Safety",
+        title: "Four-level safety classification proposed for medical AI (S1-S4, Sep 2026)",
+        desc: "Sheng et al. (NEJM AI) propose clinical safety classification: S1 narrow testable uses, S2 clinician-reviewed decision support, S3 uses requiring postdeployment surveillance, S4 high-risk autonomous actions. DeepDR-LLM case study illustrates how same AI function shifts classification. Multiwindow surveillance beyond 12 months proposed. PMID 42932717."
+      },
+      {
+        cat: "Benchmark - RAG Medical Coding",
+        title: "RAG-enhanced GPT-4 outperforms physicians for ICD-10 coding accuracy (Oct 2025)",
+        desc: "Klang et al. (Mount Sinai, NEJM AI) evaluated 9 LLMs on 500 ED visits. RAG system used >1M visits. RAG-enhanced GPT-4 favored for accuracy 447 vs 277 for provider-assigned codes (P<0.001); specificity 509 vs 181 (P<0.001). Smaller open-access models also improved significantly with RAG. PMID 42932607."
+      }
+    ]
+  },,
+  {
     date: "October 26, 2026",
     updated: "Daily OpenEvidence check (Mon Oct 26, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + arXiv API (30 results) + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: Behind the Knife Oct 14). Grok X/Twitter search completed - confirmed MSK/OncoKB X posts (Oct 22) are social media promotion of Sep 16 partnership; FT coverage of $15B valuation (Oct 21); JAMA study on usage patterns (mid-Oct). 3 new papers added to research.json. 2 new benchmark entries added to benchmarks.json.",
     items: [

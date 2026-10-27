@@ -13425,5 +13425,522 @@
     ],
     "relevance": "medium",
     "added_date": "2026-10-26"
+  },
+  {
+    "id": "pmid:42935182",
+    "pmid": "42935182",
+    "title": "Artificial intelligence early-warning systems for sepsis: From risk scores to bedside action",
+    "authors": [
+      "Yu Z",
+      "Song C"
+    ],
+    "journal": "Technol Health Care",
+    "pub_date": "2026-10-27",
+    "doi": "10.1177/09287329261502097",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42935182/",
+    "source": "PubMed",
+    "category": "Clinical Decision Support",
+    "abstract": "Review of AI-enabled early-warning systems (AI-EWS) for sepsis. Synthesizes advances in development, validation, and real-world deployment. AI-EWS may identify sepsis risk earlier than traditional scoring systems; however, retrospective discrimination alone does not ensure clinical benefit. Effective deployment depends on prospective calibration, site-specific threshold setting, precision-recall trade-offs, manageable alert budgets, and integration with nurse-centered workflows. Major implementation risks include alert fatigue, data drift, and limited transportability.",
+    "keywords": [
+      "sepsis",
+      "early-warning systems",
+      "clinical decision support",
+      "AI deployment",
+      "alert fatigue"
+    ]
+  },
+  {
+    "id": "pmid:42934632",
+    "pmid": "42934632",
+    "title": "Interpretable prediction model for severe community-acquired pneumonia in adults: machine learning development and validation using routine laboratory parameters",
+    "authors": [
+      "Zha H",
+      "Shi Q",
+      "Liu C",
+      "Liang M",
+      "Li Y",
+      "Deng Z",
+      "Zhang X"
+    ],
+    "journal": "BMC Med Inform Decis Mak",
+    "pub_date": "2026-07-29",
+    "doi": "10.1186/s12911-026-03737-1",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42934632/",
+    "source": "PubMed",
+    "category": "Clinical Decision Support",
+    "abstract": "Developed LightGBM model for predicting severe community-acquired pneumonia (SCAP) using routine lab parameters. Training cohort 310 SCAP + 741 non-SCAP; temporal validation 72 SCAP + 337 non-SCAP. AUC 0.893 (training), 0.879 (validation). Top predictors: albumin, age, D-dimer, LDH, CRP, oxygen saturation, neutrophil count, BUN. Model proposed as clinical decision-support tool for early intervention.",
+    "keywords": [
+      "pneumonia",
+      "machine learning",
+      "clinical decision support",
+      "LightGBM",
+      "prediction model"
+    ]
+  },
+  {
+    "id": "pmid:42934448",
+    "pmid": "42934448",
+    "title": "Flexible Large Language Models for Multi-variable Extraction in Sarcoma Pathology Notes: A Pilot Study",
+    "authors": [
+      "Ulrich MN",
+      "Yang L",
+      "Khosravi A",
+      "Crossman D",
+      "Khela M",
+      "Namireddy SR",
+      "Girod-Hoffman MM",
+      "Saniei S",
+      "Wyles CC",
+      "Houdek MT"
+    ],
+    "journal": "Ann Surg Oncol",
+    "pub_date": "2026-10-26",
+    "doi": "10.1245/s10434-026-20775-1",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42934448/",
+    "source": "PubMed",
+    "category": "LLM Clinical Workflow",
+    "abstract": "LLM-based extraction workflow for 6 variables from 1106 surgical pathology reports of musculoskeletal sarcoma. Fine-tuned Llama3-70B and Gemma4-31B achieved accuracy >=0.85 on all data points, specificity >=0.84. Gemma had higher sensitivity for positive margins (0.92 vs 0.78). Both LLMs processed each note in <1 second. Supports LLM-based workflows as scalable alternatives to manual data abstraction for sarcoma clinical registries.",
+    "keywords": [
+      "LLM",
+      "pathology",
+      "sarcoma",
+      "clinical data extraction",
+      "registry",
+      "Llama3",
+      "Gemma"
+    ]
+  },
+  {
+    "id": "pmid:42932885",
+    "pmid": "42932885",
+    "title": "The Illusion of Oversight in Clinical Artificial Intelligence: Human Out of the Loop?",
+    "authors": [
+      "Zhou CY",
+      "Willauer A",
+      "Topol EJ",
+      "Rajpurkar P"
+    ],
+    "journal": "Ann Intern Med",
+    "pub_date": "2026-10-27",
+    "doi": "10.7326/ANNALS-26-02753",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932885/",
+    "source": "PubMed",
+    "category": "Clinical AI Safety",
+    "abstract": "Perspective on the illusion of human oversight in clinical AI. By Zhou, Willauer, Topol, and Rajpurkar (Harvard). Examines how human-in-the-loop oversight may fail when clinicians cannot effectively evaluate AI outputs, creating a false sense of safety. Discusses the gap between nominal human oversight and meaningful clinical review of AI recommendations.",
+    "keywords": [
+      "clinical AI",
+      "human oversight",
+      "safety",
+      "automation",
+      "human-in-the-loop"
+    ]
+  },
+  {
+    "id": "pmid:42932837",
+    "pmid": "42932837",
+    "title": "Systematic Scoring Differences in Large Language Model-Based Clinical Benchmarking Reveal Evaluator-Dependent Divergence: Controlled Evaluation Study",
+    "authors": [
+      "Dinc R",
+      "Ardic N"
+    ],
+    "journal": "JMIR AI",
+    "pub_date": "2026-10-26",
+    "doi": "10.2196/103962",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932837/",
+    "source": "PubMed",
+    "category": "LLM Benchmarking",
+    "abstract": "Study examining whether LLM-based clinical benchmarking is evaluator-neutral. 40 clinical vignettes across 5 endovascular fields, 6 criteria (C1-C6). Four LLMs evaluated as clinical decision support systems: GPT-4o, Claude Sonnet 4.6, Gemini 1.5 Pro, Llama 3.3 70B. Two LLMs served as independent raters (Claude and GPT-4o). Combined ICC(2,1) was 0.153, indicating poor interrater reliability. Scoring behavior analysis identified 2 intrinsically consistent but mutually inconsistent criterion-interpretation models. AI raters are not interchangeable scoring tools.",
+    "keywords": [
+      "LLM benchmarking",
+      "evaluator bias",
+      "clinical decision support",
+      "interrater reliability",
+      "ICC",
+      "GPT-4o",
+      "Claude",
+      "Gemini",
+      "Llama"
+    ]
+  },
+  {
+    "id": "pmid:42932717",
+    "pmid": "42932717",
+    "title": "A Classification of Safety Risks in Medical AI",
+    "authors": [
+      "Sheng B",
+      "Song J",
+      "Shah NH",
+      "Wu J",
+      "Car J",
+      "Wong TY"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-09-01",
+    "doi": "10.1056/AIp2600358",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932717/",
+    "source": "PubMed",
+    "category": "Clinical AI Safety",
+    "abstract": "Proposes four-level clinical safety classification for medical AI. S1: narrow testable uses; S2: decision support clinicians can review before acting; S3: uses where harms may appear only after follow-up requiring surveillance; S4: high-risk autonomous actions prohibited or under exceptional safeguards. Uses DeepDR-LLM prospective study to illustrate how same AI function may shift classification. Proposes multiwindow postdeployment surveillance including near-term signals, scheduled follow-up, and long-horizon monitoring beyond 12 months.",
+    "keywords": [
+      "medical AI",
+      "safety classification",
+      "postdeployment surveillance",
+      "DeepDR-LLM",
+      "clinical safety",
+      "regulation"
+    ]
+  },
+  {
+    "id": "pmid:42932708",
+    "pmid": "42932708",
+    "title": "Physician Edits to AI-Drafted Patient Messages and Their Impact on Clinical Workload",
+    "authors": [
+      "Poursoltan L",
+      "Cao J",
+      "Chen W",
+      "Kim E",
+      "Nakai TK",
+      "Boussina A",
+      "Chua A",
+      "Pan J",
+      "Millen M",
+      "Tai-Seale M",
+      "Longhurst CA",
+      "Zhu K",
+      "Singh K"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-09-01",
+    "doi": "10.1056/AIoa2501034",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932708/",
+    "source": "PubMed",
+    "category": "Physician-AI Teaming",
+    "abstract": "Quality improvement study at UC San Diego Health (April 2024-August 2025). Analyzed 14,350 AI-assisted responses across 1131 physicians. 15-category edit taxonomy developed. Most frequent edits: scheduling appointments, lifestyle advice. All 15 edit categories associated with longer response times. Largest marginal increases: interpreting radiology results (+70.1%), clarifying/ruling out diagnosis (+63.9%), interpreting lab results (+60.8%). Provides empirical evidence of physicians as humans-in-the-loop in generative AI.",
+    "keywords": [
+      "AI-drafted messages",
+      "physician workload",
+      "EHR",
+      "human-in-the-loop",
+      "generative AI",
+      "UC San Diego"
+    ]
+  },
+  {
+    "id": "pmid:42932701",
+    "pmid": "42932701",
+    "title": "From Technical Performance to Clinical Readiness: A Phase-Based Framework for Evidence Standards in Clinical Artificial Intelligence",
+    "authors": [
+      "Nenadic I",
+      "Loring Z",
+      "Noseworthy PA",
+      "Ahmad FS",
+      "Vasconcelos L",
+      "Fudim M",
+      "Murthy VL"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-10-01",
+    "doi": "10.1056/AIp2600684",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932701/",
+    "source": "PubMed",
+    "category": "Clinical AI Framework",
+    "abstract": "Proposes phase-based framework for evidentiary maturity in clinical AI, using cardiovascular AI as representative use case. Framework spans: model development/representation learning, internal validation, external validation, prospective evaluation of decision impact/implementation readiness, postdeployment monitoring. Each phase linked to core question, expected evidence, and type of claim supported. Aims to help distinguish technical feasibility from clinical readiness.",
+    "keywords": [
+      "clinical AI",
+      "evidence standards",
+      "framework",
+      "cardiovascular AI",
+      "validation",
+      "postdeployment monitoring"
+    ]
+  },
+  {
+    "id": "pmid:42932682",
+    "pmid": "42932682",
+    "title": "Trust, Scrutiny, or Collaboration? A Performance-Based Framework for Human-AI Interaction in Medicine",
+    "authors": [
+      "Zwaan L",
+      "Rodman A",
+      "Shimizu T"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-05-01",
+    "doi": "10.1056/AIe2600354",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932682/",
+    "source": "PubMed",
+    "category": "Physician-AI Teaming",
+    "abstract": "Framework for human-AI collaboration in clinical decision-making. Responds to Qazi et al. RCT on automation bias. Argues appropriate response to AI errors is not uniform skepticism but depends on two dimensions: relative accuracy of humans vs AI, and degree of error complementarity. Proposes four interaction zones: human-dominant, AI-dominant, hybrid review, disagreement resolution. Each requires distinct clinical workflow strategy. Trust calibration, not blanket skepticism, is the goal.",
+    "keywords": [
+      "human-AI interaction",
+      "trust calibration",
+      "clinical decision-making",
+      "automation bias",
+      "framework",
+      "complementary errors"
+    ]
+  },
+  {
+    "id": "pmid:42932681",
+    "pmid": "42932681",
+    "title": "Automation Bias in Large Language Model-Assisted Diagnostic Reasoning among Physicians Trained in AI Literacy - A Randomized Clinical Trial",
+    "authors": [
+      "Qazi IA",
+      "Ali A",
+      "Khawaja AU",
+      "Akhtar MJ",
+      "Sheikh AZ",
+      "Alizai MH"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-05-01",
+    "doi": "10.1056/AIoa2501001",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932681/",
+    "source": "PubMed",
+    "category": "LLM Benchmarking",
+    "abstract": "Single-blind RCT (June-August 2025) with 44 physicians in Pakistan who completed 20-hour AI literacy training. Control group received error-free ChatGPT-4o diagnostic suggestions; treatment group received suggestions with deliberately introduced errors for 3 of 6 cases. Treatment group had 14.0-percentage-point reduction in diagnostic accuracy (73.3% vs 84.9%, P<0.0001). Top-choice accuracy 76.1% vs 90.5% (18.3pp difference). Physicians demonstrate substantial automation bias even with AI literacy training and voluntary consultation.",
+    "keywords": [
+      "automation bias",
+      "LLM",
+      "diagnostic reasoning",
+      "RCT",
+      "ChatGPT-4o",
+      "physician-AI teaming",
+      "AI literacy"
+    ]
+  },
+  {
+    "id": "pmid:42932676",
+    "pmid": "42932676",
+    "title": "The Medical AI Assistant as Publication, Not Device - Why Peer-Reviewed, Open-Source AI Belongs in the Standard of Care",
+    "authors": [
+      "Gropper A"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-07-01",
+    "doi": "10.1056/AIp2600289",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932676/",
+    "source": "PubMed",
+    "category": "Clinical AI Safety",
+    "abstract": "Defines Medical AI Assistant (MAIA) as open-weight generative reasoning model connected to vector database of patient health records, operated through open-source chat interface by physician. Argues that when a physician publishes MAIA architecture, retrieval methodology, and validation results in peer-reviewed journal, the published MAIA enters medical literature as any clinical methodology would. Physicians adopting this methodology practice medicine, not operate a medical device. Implications for regulatory treatment of open-source medical AI.",
+    "keywords": [
+      "medical AI assistant",
+      "MAIA",
+      "open-source",
+      "regulation",
+      "standard of care",
+      "peer review"
+    ]
+  },
+  {
+    "id": "pmid:42932619",
+    "pmid": "42932619",
+    "title": "Medicine as an Information Industry in the Age of Language Models",
+    "authors": [
+      "Drazen JM",
+      "Haug CJ"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-06-01",
+    "doi": "10.1056/AIe2600526",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932619/",
+    "source": "PubMed",
+    "category": "LLM Clinical Decision Support",
+    "abstract": "Perspective by NEJM editors Drazen and Haug on medicine as an information enterprise in the LLM era. LLMs mark qualitative shift from retrieval to synthesis, enabling contextually tailored clinical question responses. Transformation offers efficiency gains but introduces epistemic risks: LLMs generate fluent outputs based on statistical patterns rather than understanding, with limitations in reasoning, calibration, and transparency. Redefines roles of clinicians and medical journals as curators of validated knowledge and upstream inputs to AI systems.",
+    "keywords": [
+      "LLM",
+      "clinical decision support",
+      "epistemology",
+      "medical journals",
+      "knowledge curation",
+      "transparency"
+    ]
+  },
+  {
+    "id": "pmid:42932607",
+    "pmid": "42932607",
+    "title": "Assessing Retrieval-Augmented Large Language Models for Medical Coding",
+    "authors": [
+      "Klang E",
+      "Tessler I",
+      "Apakama DU",
+      "Abbott E",
+      "Glicksberg BS",
+      "Arnold M",
+      "Moses A",
+      "Sakhuja A",
+      "Soroush A",
+      "Charney AW",
+      "Reich DL",
+      "McGreevy J",
+      "Gavin N",
+      "Carr B",
+      "Freeman R",
+      "Nadkarni GN"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2025-10-01",
+    "doi": "10.1056/AIcs2401161",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932607/",
+    "source": "PubMed",
+    "category": "RAG Clinical AI Evaluation",
+    "abstract": "RAG-enhanced LLMs for ICD-10 medical coding. 500 random ED visits from Mount Sinai. Nine LLMs (commercial + open-source) evaluated. RAG system used >1M ED visits. RAG-enhanced GPT-4 favored for accuracy in 447 instances vs 277 for provider-assigned codes (P<0.001); for specificity, 509 vs 181 (P<0.001). Smaller open-access models also improved with RAG. Integrating RAG with LLM coding reduces errors and improves clinical documentation.",
+    "keywords": [
+      "RAG",
+      "LLM",
+      "medical coding",
+      "ICD-10",
+      "GPT-4",
+      "clinical documentation",
+      "Mount Sinai"
+    ]
+  },
+  {
+    "id": "pmid:42932606",
+    "pmid": "42932606",
+    "title": "Assessment of Large Language Models in Clinical Reasoning: A Novel Benchmarking Study",
+    "authors": [
+      "McCoy LG",
+      "Swamy R",
+      "Sagar N",
+      "Wang M",
+      "Bacchi S",
+      "Fong JMN",
+      "Tan NCK",
+      "Tan K",
+      "Buckley TA",
+      "Brodeur P",
+      "Celi LA",
+      "Manrai AK",
+      "Humbert A",
+      "Rodman A"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2025-10-01",
+    "doi": "10.1056/AIdbp2500120",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932606/",
+    "source": "PubMed",
+    "category": "LLM Benchmarking",
+    "abstract": "Script concordance testing (SCT) benchmark of 750 questions from 10 international datasets, spanning multiple specialties. Ten LLMs compared with 1070 medical students, 193 residents, 300 attending physicians. o3 highest (67.8%), GPT-4o (63.9%), o1-preview (58.2%), DeepSeek R1 (55.5%), Gemini 2.5 Pro (52.1%). LLMs matched/exceeded students but did not reach senior residents or attendings. Systematic overconfidence found, reasoning-tuned models overuse extreme ratings. Publicly available benchmark.",
+    "keywords": [
+      "script concordance test",
+      "SCT",
+      "LLM",
+      "clinical reasoning",
+      "benchmark",
+      "o3",
+      "GPT-4o",
+      "DeepSeek",
+      "Gemini",
+      "medical students",
+      "residents"
+    ]
+  },
+  {
+    "id": "pmid:42932523",
+    "pmid": "42932523",
+    "title": "Verifying Facts in Patient Care Documents Generated by Large Language Models Using Electronic Health Records",
+    "authors": [
+      "Chung P",
+      "Swaminathan A",
+      "Goodell AJ",
+      "Kim Y",
+      "Momsen Reincke S",
+      "Han L",
+      "Deverett B",
+      "Sadeghi MA",
+      "Ariss AB",
+      "Ghanem M",
+      "Seong D",
+      "Lee AA",
+      "Coombes CE",
+      "Bradshaw B",
+      "Sufian MA",
+      "Hong HJ",
+      "Nguyen TP",
+      "Rasouli MR",
+      "Kamra K",
+      "Burbridge MA",
+      "McAvoy JC",
+      "Saffary R",
+      "Ma SP",
+      "Dash D",
+      "Xie J",
+      "Wang EY",
+      "Schmiesing CA",
+      "Shah N",
+      "Aghaeepour N"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-01-01",
+    "doi": "10.1056/AIdbp2500418",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932523/",
+    "source": "PubMed",
+    "category": "LLM Clinical Safety",
+    "abstract": "VeriFact system for automated fact verification in LLM-generated clinical documents using EHR. VeriFact-BHC benchmark: 100 patients, 13,070 statements from discharge summary brief hospital courses, annotated by 3+ clinicians. VeriFact combines RAG from EHR with LLM-as-a-Judge. Achieved 93.2% agreement with clinicians; highest clinician interrater agreement was 88.5%. Scaling LLM-as-a-Judge and adding reasoning improve AI judgment synergistically.",
+    "keywords": [
+      "LLM",
+      "fact verification",
+      "EHR",
+      "clinical documents",
+      "hallucination",
+      "RAG",
+      "LLM-as-a-Judge",
+      "VeriFact",
+      "patient safety"
+    ]
+  },
+  {
+    "id": "pmid:42932502",
+    "pmid": "42932502",
+    "title": "Which Human-in-the-Loop? Why Context, Culture, and Health Systems Matter",
+    "authors": [
+      "Haug CJ",
+      "Harrison EM"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-03-01",
+    "doi": "10.1056/AIe2600084",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932502/",
+    "source": "PubMed",
+    "category": "Physician-AI Teaming",
+    "abstract": "Argues human-in-the-loop in medical AI comprises three distinct domains: clinical loop (point of care), governance loop (approval/deployment), and learning loop (monitoring/model updates). Oversight failures in any domain undermine safety. Drawing on international experience, shows human-in-the-loop practices are shaped by health system structures, reimbursement models, regulatory frameworks, and cultural priorities. AI systems developed in US may embed assumptions that don't translate. Effective oversight requires treating human-in-the-loop as design specification adapted to local contexts.",
+    "keywords": [
+      "human-in-the-loop",
+      "governance",
+      "clinical AI",
+      "health systems",
+      "regulation",
+      "oversight",
+      "cultural context"
+    ]
+  },
+  {
+    "id": "pmid:42932470",
+    "pmid": "42932470",
+    "title": "Comparative Cost of Care Recommended by Large Language Models versus Treating Physicians",
+    "authors": [
+      "Aran D",
+      "Goldhaber-Fiebert JD",
+      "Many I",
+      "Nguyen A",
+      "Yang D",
+      "Shelly S"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-11-01",
+    "doi": "10.1056/AIoa2600537",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932470/",
+    "source": "PubMed",
+    "category": "LLM Benchmarking",
+    "abstract": "24 AI systems evaluated on 200 deidentified outpatient and ED notes from MTSamples. Each AI wrote its own plan; physician's documented plan was comparator. Orders priced at 2026 Medicare rates. AI-suggested care cost mean US$314/visit vs US$97 for physicians (3.2x, P<0.001). 20 general-purpose systems ranged US$209-599. Four specialized medical systems no less costly (2.7x-3.5x). Cost-aware prompt reduced to 2.5x; parsimonious prompt to 1.4x. AI recommended testing at 66% of visits where physicians ordered none.",
+    "keywords": [
+      "LLM",
+      "cost of care",
+      "clinical decision support",
+      "benchmark",
+      "Medicare",
+      "AI vs physician",
+      "resource utilization"
+    ]
   }
 ]

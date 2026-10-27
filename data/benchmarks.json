@@ -4915,5 +4915,136 @@
     "type": "cdss_evaluation",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42927848/",
     "added_date": "2026-10-26"
+  },
+  {
+    "id": "pmid:42932837",
+    "pmid": "42932837",
+    "title": "LLM Clinical Benchmarking Evaluator-Dependent Divergence (JMIR AI)",
+    "authors": [
+      "Dinc R",
+      "Ardic N"
+    ],
+    "journal": "JMIR AI",
+    "pub_date": "2026-10-26",
+    "doi": "10.2196/103962",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932837/",
+    "source": "PubMed",
+    "category": "LLM Benchmarking",
+    "description": "40 clinical vignettes x 6 criteria across 5 endovascular fields. 4 LLMs evaluated (GPT-4o, Claude Sonnet 4.6, Gemini 1.5 Pro, Llama 3.3 70B). 2 LLM raters (Claude, GPT-4o). ICC(2,1)=0.153. AI raters use model-specific criterion interpretation patterns producing systematically different outcomes.",
+    "metrics": {
+      "icc": 0.153,
+      "vignettes": 40,
+      "fields": 5,
+      "models_evaluated": 4,
+      "raters": 2
+    }
+  },
+  {
+    "id": "pmid:42932681",
+    "pmid": "42932681",
+    "title": "Automation Bias in LLM-Assisted Diagnostic Reasoning RCT (NEJM AI)",
+    "authors": [
+      "Qazi IA",
+      "Ali A",
+      "Khawaja AU",
+      "Akhtar MJ",
+      "Sheikh AZ",
+      "Alizai MH"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-05-01",
+    "doi": "10.1056/AIoa2501001",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932681/",
+    "source": "PubMed",
+    "category": "LLM Evaluation RCT",
+    "description": "Single-blind RCT, 44 physicians, 264 diagnostic cases. ChatGPT-4o with error-free vs error-containing suggestions. Treatment group 14.0pp lower diagnostic accuracy (73.3% vs 84.9%). Top-choice accuracy 18.3pp difference (76.1% vs 90.5%). Automation bias persists despite AI literacy training.",
+    "metrics": {
+      "physicians": 44,
+      "cases": 264,
+      "accuracy_delta_pp": 14.0,
+      "top_choice_delta_pp": 18.3,
+      "p_value": "<0.0001"
+    }
+  },
+  {
+    "id": "pmid:42932606",
+    "pmid": "42932606",
+    "title": "Script Concordance Test LLM Clinical Reasoning Benchmark (NEJM AI)",
+    "authors": [
+      "McCoy LG",
+      "Rodman A",
+      "Celi LA",
+      "Manrai AK"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2025-10-01",
+    "doi": "10.1056/AIdbp2500120",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932606/",
+    "source": "PubMed",
+    "category": "LLM Clinical Reasoning Benchmark",
+    "description": "750 SCT questions from 10 international datasets. 10 LLMs vs 1070 medical students, 193 residents, 300 attendings. o3 highest (67.8%), GPT-4o (63.9%), o1-preview (58.2%), DeepSeek R1 (55.5%), Gemini 2.5 Pro (52.1%). LLMs matched students but not senior residents/attendings. Systematic overconfidence in reasoning-tuned models.",
+    "metrics": {
+      "questions": 750,
+      "datasets": 10,
+      "llms": 10,
+      "students": 1070,
+      "residents": 193,
+      "attendings": 300,
+      "top_score": 67.8,
+      "top_model": "o3"
+    }
+  },
+  {
+    "id": "pmid:42932470",
+    "pmid": "42932470",
+    "title": "Comparative Cost of Care: 24 LLMs vs Physicians (NEJM AI)",
+    "authors": [
+      "Aran D",
+      "Goldhaber-Fiebert JD",
+      "Many I",
+      "Nguyen A",
+      "Yang D",
+      "Shelly S"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2026-11-01",
+    "doi": "10.1056/AIoa2600537",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932470/",
+    "source": "PubMed",
+    "category": "LLM Cost Comparison Benchmark",
+    "description": "24 AI systems on 200 deidentified clinical notes. AI care cost 3.2x physicians ($314 vs $97/visit, P<0.001). 20 general-purpose systems ranged $209-599. 4 specialized medical systems 2.7x-3.5x. Cost-aware prompt reduced to 2.5x; parsimonious to 1.4x. AI recommended testing at 66% of visits where physicians ordered none.",
+    "metrics": {
+      "ai_systems": 24,
+      "notes": 200,
+      "ai_cost_per_visit": 314,
+      "physician_cost": 97,
+      "ratio": 3.2,
+      "p_value": "<0.001"
+    }
+  },
+  {
+    "id": "pmid:42932607",
+    "pmid": "42932607",
+    "title": "RAG-Enhanced LLMs for Medical Coding Evaluation (NEJM AI)",
+    "authors": [
+      "Klang E",
+      "Nadkarni GN",
+      "Glicksberg BS"
+    ],
+    "journal": "NEJM AI",
+    "pub_date": "2025-10-01",
+    "doi": "10.1056/AIcs2401161",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42932607/",
+    "source": "PubMed",
+    "category": "RAG LLM Coding Evaluation",
+    "description": "9 LLMs evaluated for ICD-10 coding on 500 ED visits. RAG system using >1M ED visits. RAG-enhanced GPT-4 favored for accuracy 447 vs 277 (P<0.001); specificity 509 vs 181 (P<0.001). Smaller open-access models also improved significantly with RAG.",
+    "metrics": {
+      "llms": 9,
+      "ed_visits": 500,
+      "rag_database": ">1M visits",
+      "accuracy_favored": 447,
+      "provider_favored": 277,
+      "p_value": "<0.001"
+    }
   }
 ]
