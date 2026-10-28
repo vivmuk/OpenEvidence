@@ -5046,5 +5046,125 @@
       "provider_favored": 277,
       "p_value": "<0.001"
     }
+  },
+  {
+    "id": "arxiv:2610.35847",
+    "arxiv_id": "2610.35847",
+    "title": "NPC-RubricBench: Phase-Aware Benchmark for Longitudinal Cancer Care",
+    "authors": [
+      "Wei-Wei Zhang",
+      "et al."
+    ],
+    "journal": "arXiv",
+    "pub_date": "2026-10-26",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.35847v1",
+    "source": "arXiv",
+    "category": "Clinical AI Longitudinal Benchmark",
+    "description": "30 LLMs evaluated on 941 patient-phase units across 6 cancer care phases, 17,688 atomic criteria. Diagnostic performance does not carry over to downstream care. Decision errors dominated staging at 48.2%, decision omissions dominated work-up and follow-up at 33.4% and 30.4%.",
+    "metrics": {
+      "num_llms": 30,
+      "num_patients": 405,
+      "num_phases": 941,
+      "num_criteria": 17688,
+      "staging_error_rate": "48.2%",
+      "workup_omission_rate": "33.4%",
+      "followup_omission_rate": "30.4%"
+    }
+  },
+  {
+    "id": "arxiv:2610.36006",
+    "arxiv_id": "2610.36006",
+    "title": "MedJev: Zero-Shot System-One Medical Decision Making Benchmark",
+    "authors": [
+      "Simon A. Lee",
+      "et al."
+    ],
+    "journal": "arXiv",
+    "pub_date": "2026-10-26",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.36006v1",
+    "source": "arXiv",
+    "category": "Medical LLM Benchmark",
+    "description": "MedJev evaluated across 10 medical benchmarks. MedQA 72.5%, USMLE 75.4%, NEJM 80.1%. Patient-level AUROC 0.926 for in-hospital mortality. ECE 0.028-0.063, recalibration to 0.007 with 50-200 labeled examples.",
+    "metrics": {
+      "MedQA": "72.5%",
+      "USMLE": "75.4%",
+      "NEJM": "80.1%",
+      "mortality_AUROC": "0.926",
+      "ECE_range": "0.028-0.063",
+      "recalibrated_ECE": "0.007"
+    }
+  },
+  {
+    "id": "pmid:42946678",
+    "pmid": "42946678",
+    "title": "LLM Thyroid Nodule Biopsy Decision Benchmark (J Clin Endocrinol Metab)",
+    "authors": [
+      "Barage A",
+      "et al."
+    ],
+    "journal": "J Clin Endocrinol Metab",
+    "pub_date": "2026-10-28",
+    "doi": "10.1210/clinem/dgag433",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42946678/",
+    "source": "PubMed",
+    "category": "LLM Clinical Decision Benchmark",
+    "description": "7 LLMs (GPT-5, Claude 3.5/4.0/4.5, Llama 3.2-90B, Deepseek R1, OpenEvidence) and 94 clinicians on 100 thyroid nodule vignettes. LLM biopsy rates 46%-74%. LLM-clinician agreement moderate (alpha 0.372-0.453). Llama recommended biopsy in 8/8 cases where clinicians unanimously recommended against.",
+    "metrics": {
+      "num_llms": 7,
+      "num_clinicians": 94,
+      "num_vignettes": 100,
+      "biopsy_rate_range": "46%-74%",
+      "agreement_alpha_range": "0.372-0.453"
+    }
+  },
+  {
+    "id": "pmid:42941459",
+    "pmid": "42941459",
+    "title": "Five LLMs on Hip Arthroplasty Guideline Concordance (EKIT-Hip Benchmark)",
+    "authors": [
+      "Alalman O",
+      "et al."
+    ],
+    "journal": "J Clin Med",
+    "pub_date": "2026-10-14",
+    "doi": "10.3390/jcm15207944",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42941459/",
+    "source": "PubMed",
+    "category": "LLM Guideline Benchmark",
+    "description": "5 LLMs (GPT-4, GPT-4o, GPT-4o mini, Gemini Advanced, Consensus Premium) on 26 questions from German S3 guideline. GPT-4o highest accuracy 3.69/4, comprehensiveness 4.31/5. GPT-4o and GPT-4 good/excellent in 96.2% vs 57.7% for Consensus Premium. OR 51.8 for GPT-4o vs Consensus.",
+    "metrics": {
+      "num_llms": 5,
+      "num_questions": 26,
+      "GPT-4o_accuracy": "3.69/4",
+      "GPT-4o_comprehensiveness": "4.31/5",
+      "good_excellent_rate": "96.2%"
+    }
+  },
+  {
+    "id": "pmid:42945123",
+    "pmid": "42945123",
+    "title": "Five AI Chatbots Dental Emergency Management Multilingual Benchmark",
+    "authors": [
+      "Bashah A",
+      "et al."
+    ],
+    "journal": "JMIR Med Inform",
+    "pub_date": "2026-10-27",
+    "doi": "10.2196/96731",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42945123/",
+    "source": "PubMed",
+    "category": "AI Chatbot Multilingual Benchmark",
+    "description": "5 AI chatbots (ChatGPT-5.2, Gemini 3.1, DeepSeek-R1, Grok 4.20, Kimi K2.5) on 130 dental emergency questions, 3 languages, 27,300 responses. 92.96% correct overall. Gemini 3.1 highest (94.8%), ChatGPT-5.2 (93.5%), Kimi K2.5 (92.9%). MCQs highest accuracy (94.3%), WH questions lowest (91.5%).",
+    "metrics": {
+      "num_chatbots": 5,
+      "num_questions": 130,
+      "num_responses": 27300,
+      "overall_accuracy": "92.96%",
+      "Gemini_3.1": "94.8%",
+      "ChatGPT_5.2": "93.5%",
+      "Kimi_K2.5": "92.9%"
+    }
   }
 ]

@@ -13942,5 +13942,583 @@
       "AI vs physician",
       "resource utilization"
     ]
+  },
+  {
+    "id": "arxiv:2610.35847",
+    "arxiv_id": "2610.35847",
+    "title": "Patient-specific rubric-based evaluation of large language models across longitudinal cancer care",
+    "authors": [
+      "Wei-Wei Zhang",
+      "Pengkai Wang",
+      "Yan Li",
+      "Zhijie Sang",
+      "Guan-Qun Zhou",
+      "Jun-Yan Li",
+      "Shu-Han Zhou",
+      "Pei-Wen Liu",
+      "Ting-Xi Tang",
+      "Min Tang",
+      "Zhitian Hou",
+      "Jianmin Wu",
+      "Jian Guan",
+      "i Lin",
+      "Hongxia Yang",
+      "Ying Sun"
+    ],
+    "journal": "arXiv",
+    "pub_date": "2026-10-26",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.35847v1",
+    "source": "arXiv",
+    "category": "Clinical AI Benchmark",
+    "abstract": "NPC-RubricBench, a phase-aware benchmark for evaluating multistage clinical reasoning across the cancer care continuum, using nasopharyngeal carcinoma as a defined disease context. Curated from longitudinal records of 405 patients across two cancer centers, the benchmark comprises 941 patient-phase units across six sequential care phases and 17,688 patient-specific atomic criteria spanning five evaluation dimensions. Evaluating 30 general-purpose and medical LLMs revealed that strong diagnostic performance does not carry over to downstream care. Decision errors dominated anatomical staging at 48.2%, whereas decision omissions dominated initial work-up and post-treatment follow-up at 33.4% and 30.4%. Medically adapted models showed higher omission rates than general-purpose models.",
+    "keywords": [
+      "LLM benchmark",
+      "cancer care",
+      "longitudinal",
+      "clinical reasoning",
+      "NPC-RubricBench"
+    ]
+  },
+  {
+    "id": "arxiv:2610.36006",
+    "arxiv_id": "2610.36006",
+    "title": "MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine",
+    "authors": [
+      "Simon A. Lee",
+      "Jiahang Sha",
+      "Moonseong Jeong",
+      "Yunbei Pan",
+      "Jeffrey N. Chiang"
+    ],
+    "journal": "arXiv",
+    "pub_date": "2026-10-26",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.36006v1",
+    "source": "arXiv",
+    "category": "Medical LLM Benchmark",
+    "abstract": "System One decision models such as Jev answer structured questions in a single forward pass without generating text, offering fast and computationally efficient clinical decision support. MedJev achieves accuracies of 72.5% on MedQA, 75.4% on USMLE, and 80.1% on NEJM, approaching published GPT-4 performance with well-calibrated confidence estimates (ECE 0.028-0.063). On patient-level tasks, MedJev achieves AUROC 0.926 for in-hospital mortality, exceeding XGBoost (0.902). A lightweight two-parameter recalibration method adapts predictions to local patient populations using 50-200 labeled examples, reducing ECE to 0.007.",
+    "keywords": [
+      "MedQA",
+      "USMLE",
+      "System One",
+      "clinical decision support",
+      "medical AI benchmark"
+    ]
+  },
+  {
+    "id": "arxiv:2610.35558",
+    "arxiv_id": "2610.35558",
+    "title": "EXCISE: Locating and Excising Distracting Sentences in Medical Question Answering",
+    "authors": [
+      "Yerim Hong",
+      "Sohyun Son",
+      "Heeseung Chung",
+      "Mujeen Sung"
+    ],
+    "journal": "arXiv",
+    "pub_date": "2026-10-26",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.35558v1",
+    "source": "arXiv",
+    "category": "Clinical AI Robustness",
+    "abstract": "Language models are increasingly considered for clinical decision support, where their answers should be grounded in clinical evidence and remain robust to irrelevant information. EXCISE is an inference-time method that blocks the sentence most influencing the answer, but only if the model's hidden states mark it as inconsistent with the case. On MedQA-TD, EXCISE gains 16.7-22.8 accuracy points at a 1.5-2.1-point cost on the same questions without distractors, outperforming prompting, rewriting, and steering baselines for all three models.",
+    "keywords": [
+      "MedQA",
+      "clinical decision support",
+      "distractor robustness",
+      "medical QA"
+    ]
+  },
+  {
+    "id": "arxiv:2610.34871",
+    "arxiv_id": "2610.34871",
+    "title": "DocTalk: Enhancing Medical Knowledge Retrieval via Fine-tuned Large Language Models with Chain-of-Thought Reasoning for Robust Clinical Decision Support",
+    "authors": [
+      "Asad Gohar",
+      "Md Ariful Islam Mozumder",
+      "Moon-il Joo",
+      "Hee-Cheol Kim"
+    ],
+    "journal": "arXiv",
+    "pub_date": "2026-10-26",
+    "doi": "",
+    "url": "https://arxiv.org/abs/2610.34871v1",
+    "source": "arXiv",
+    "category": "Clinical Decision Support",
+    "abstract": "DocTalk, a doctor-assistive question-answering system designed to generate concise, chart-grounded responses from de-identified discharge summaries. 500 clinically relevant QA pairs through sentence-level decomposition, chain-of-thought-guided question formulation, and expert review. Six open-source LLMs evaluated before and after parameter-efficient instruction tuning using LoRA. The best-performing tuned model, Llama-3-Med42-8B, achieved ROUGE-L=0.40, BERTScore-F1=0.76, and UMLS-F1=0.49. On PubMedQA, accuracy improved from 0.931 to 0.977 for Llama-3.1-8B-Instruct.",
+    "keywords": [
+      "clinical decision support",
+      "RAG",
+      "LoRA",
+      "medical QA",
+      "discharge summaries"
+    ]
+  },
+  {
+    "id": "pmid:42947839",
+    "pmid": "42947839",
+    "title": "Reclaiming human clinical reasoning in generative AI-enabled healthcare: a perspective on cognitive agency, skill evolution, and accountability",
+    "authors": [
+      "Xu J",
+      "Zhang M",
+      "Zheng B",
+      "Deng W",
+      "Shi R"
+    ],
+    "journal": "Front Public Health",
+    "pub_date": "2026-10-13",
+    "doi": "10.3389/fpubh.2026.1979099",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42947839/",
+    "source": "PubMed",
+    "category": "Clinical AI Reasoning",
+    "abstract": "Introduces Narrative Cognitive Substitution (NCS), a testable construct describing the shift from active hypothesis generation to passive retrospective validation when GenAI outputs pre-organize diagnostic reasoning. Proposes a Skill Evolution Framework characterizing effects of GenAI on physician competence across five trajectories: Augmentation, Restructuring, Deskilling, Never-skilling, and Mis-skilling. Analyzes the Accountability Gap in AI-enabled clinical decision-making and proposes a human-centered governance framework with risk-adaptive cognitive friction, Reasoning Cleanrooms, and algorithmovigilance.",
+    "keywords": [
+      "clinical reasoning",
+      "GenAI",
+      "cognitive agency",
+      "deskilling",
+      "accountability",
+      "CDSS"
+    ]
+  },
+  {
+    "id": "pmid:42946723",
+    "pmid": "42946723",
+    "title": "A multi-agent large language model framework for structured clinical interviewing and psychiatric screening: a proof-of-concept",
+    "authors": [
+      "Kamaleddin MA",
+      "Mirjalili M",
+      "Barzegar R",
+      "Trung Le N",
+      "Visram A",
+      "Gholami Nezhad F",
+      "Rueda A",
+      "Teferra BG",
+      "Monson C",
+      "Glatard T",
+      "Krishnan S",
+      "Sharma D",
+      "Mulsant B",
+      "Bhat V"
+    ],
+    "journal": "Transl Psychiatry",
+    "pub_date": "2026-07-31",
+    "doi": "10.1038/s41398-026-04335-5",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42946723/",
+    "source": "PubMed",
+    "category": "LLM Clinical Tool",
+    "abstract": "Multi-agent LLM framework with four agents (Questioner, Evaluator, Navigator, Diagnoser) for protocolized structured psychiatric interviewing. 1350 interviews across 15 neuropsychiatric screening modules. Module-level decisions showed 87.8% concordance with rule-based expected outcomes, sensitivity 88.9%, specificity 86.7%. Multi-agent framework F2=88.5% vs single-pass LLM 49.5%. Red flag classifier achieved 93.9% accuracy, 94.2% sensitivity, 93.6% specificity on 2000-sentence benchmark.",
+    "keywords": [
+      "multi-agent LLM",
+      "psychiatric screening",
+      "clinical interviewing",
+      "safety",
+      "AI clinical tool"
+    ]
+  },
+  {
+    "id": "pmid:42946678",
+    "pmid": "42946678",
+    "title": "Would Artificial Intelligence Make 'Good' Decisions About Thyroid Nodule Biopsies?",
+    "authors": [
+      "Barage A",
+      "Austria M",
+      "Vertosick E",
+      "Boucai L",
+      "Farooki A",
+      "Fish S",
+      "Newman SK",
+      "Patrizio A",
+      "Presswala L",
+      "Ryan T",
+      "Sabra M",
+      "Zeuren R",
+      "Vickers A",
+      "Kuperman G",
+      "Ancker JS",
+      "Kim SYH",
+      "Tuttle RM",
+      "Flory JH"
+    ],
+    "journal": "J Clin Endocrinol Metab",
+    "pub_date": "2026-10-28",
+    "doi": "10.1210/clinem/dgag433",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42946678/",
+    "source": "PubMed",
+    "category": "LLM Clinical Decision Benchmark",
+    "abstract": "100 clinical vignettes of thyroid nodules presented to 94 clinicians and multiple LLMs (GPT-5, Claude Sonnet 3.5/4.0/4.5, Llama 3.2-90B, Deepseek R1, and OpenEvidence). LLM biopsy rates ranged from 46% (Claude 3.5) to 74% (Llama 3.2-90B). LLM-clinician agreement was moderate (alpha=0.372-0.453). Llama 3.2-90B recommended biopsy in 8 of 8 cases where clinicians unanimously recommended against it. Evaluating LLMs for CDS under equipoise requires processes analogous to clinical guideline committees.",
+    "keywords": [
+      "LLM benchmark",
+      "thyroid nodule",
+      "biopsy decisions",
+      "clinical equipoise",
+      "OpenEvidence",
+      "CDS"
+    ]
+  },
+  {
+    "id": "pmid:42945747",
+    "pmid": "42945747",
+    "title": "Explainable artificial intelligence in clinical decision support systems: a systematic review of techniques, clinical applications, evaluation, and future directions",
+    "authors": [
+      "Zandkarimi E",
+      "Ghorbanzadeh K"
+    ],
+    "journal": "Int J Med Inform",
+    "pub_date": "2026-10-26",
+    "doi": "10.1016/j.ijmedinf.2026.106785",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42945747/",
+    "source": "PubMed",
+    "category": "XAI in CDSS Review",
+    "abstract": "PRISMA 2020 systematic review of 68 studies on XAI-enabled CDSSs. Publications increased substantially in 2025-2026 (47/68). Critical care and cardiology most represented (13 each). Internal validation in 75%, external validation in only 25%. 92.6% remained at research-prototype stage, only 2.9% reported real-world deployment. SHAP and gradient-boosting methods predominate. External validation, real-world deployment, and meaningful human-centered assessment remain limited.",
+    "keywords": [
+      "XAI",
+      "explainable AI",
+      "CDSS",
+      "systematic review",
+      "clinical decision support",
+      "SHAP"
+    ]
+  },
+  {
+    "id": "pmid:42945530",
+    "pmid": "42945530",
+    "title": "Estimating Functional Independence Measure Scores From Japanese Rehabilitation Notes Using a Large Language Model: Retrospective Study",
+    "authors": [
+      "Nishiyama T",
+      "Mine Y",
+      "Itoh N",
+      "Ikenoue T",
+      "Nagasaka K",
+      "Matsuo N",
+      "Tatsuki O",
+      "Aramaki E"
+    ],
+    "journal": "JMIR Med Inform",
+    "pub_date": "2026-10-27",
+    "doi": "10.2196/100624",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42945530/",
+    "source": "PubMed",
+    "category": "LLM Clinical Assessment",
+    "abstract": "LLM estimation of item-level FIM scores from Japanese free-text rehabilitation notes. 2,952,702 note-item pairs from 164,039 notes. 33.2% estimation rate. Among estimable pairs with same-day reference, 77.7% within 1 point. OT notes had lower MAE than PT notes. LLM outperformed modal-score baseline but had higher MAE than LOCF (0.825 vs 0.648). Supports LLM-based estimation to complement periodic FIM assessments.",
+    "keywords": [
+      "LLM",
+      "FIM",
+      "rehabilitation",
+      "clinical notes",
+      "functional assessment"
+    ]
+  },
+  {
+    "id": "pmid:42945123",
+    "pmid": "42945123",
+    "title": "Evaluating Internet-Based AI Chatbots as Unregulated Digital Health Resources in Dental Emergency Management: Comparative Multilingual Study",
+    "authors": [
+      "Bashah A",
+      "Huixin Q",
+      "Zaawari H",
+      "Al-Waqeerah A",
+      "Ghaleb E",
+      "Salem A",
+      "Wahan N",
+      "Chen G"
+    ],
+    "journal": "JMIR Med Inform",
+    "pub_date": "2026-10-27",
+    "doi": "10.2196/96731",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42945123/",
+    "source": "PubMed",
+    "category": "AI Chatbot Benchmark",
+    "abstract": "5 AI chatbots (ChatGPT-5.2, Gemini 3.1, DeepSeek-R1, Grok 4.20, Kimi K2.5) evaluated on 130 dental emergency questions across 3 languages. 27,300 responses. 92.96% correct overall. Gemini 3.1 highest accuracy (94.8%), followed by ChatGPT-5.2 (93.5%). Question type and language significantly affected performance. AI chatbots may serve as educational tools but caution needed for real-time decision support during dental emergencies.",
+    "keywords": [
+      "AI chatbot",
+      "dental emergency",
+      "multilingual",
+      "ChatGPT",
+      "Gemini",
+      "DeepSeek",
+      "Grok",
+      "benchmark"
+    ]
+  },
+  {
+    "id": "pmid:42944792",
+    "pmid": "42944792",
+    "title": "Domain Adaptation of a Large Language Model for Radiology Impression Generation - Multi-Reader Evaluation",
+    "authors": [
+      "Sorin V",
+      "Reynolds MC",
+      "Hara AK",
+      "Gupta AC",
+      "Collins JD",
+      "Jensen ZD",
+      "Vassilieva N",
+      "Wolfe J",
+      "Rezaei S",
+      "Callstrom MR",
+      "Korfiatis P"
+    ],
+    "journal": "J Med Syst",
+    "pub_date": "2026-10-27",
+    "doi": "10.1007/s10916-026-02484-0",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42944792/",
+    "source": "PubMed",
+    "category": "LLM Radiology",
+    "abstract": "Domain adaptation vs fine-tuning of LLMs for radiology impression generation. 3,123,836 CT/MR reports. Domain adaptation improved performance in low-data regimes but diminishing returns with large-scale fine-tuning. Large-scale fine-tuned open-source models surpassed commercial Gemini-1.5-Flash in expert-rated quality. Standard NLP metrics poorly correlated with human evaluation (rho<0.32). 4 radiologists, ICC 0.22-0.49.",
+    "keywords": [
+      "LLM",
+      "radiology",
+      "domain adaptation",
+      "fine-tuning",
+      "impression generation"
+    ]
+  },
+  {
+    "id": "pmid:42942404",
+    "pmid": "42942404",
+    "title": "Patient-Perceived and Record-Based Concordance of AI-Generated Perioperative Information After Total Hip Arthroplasty: A Cross-Sectional Study with Multidisciplinary Review",
+    "authors": [
+      "Yenigun MY",
+      "Bicer O",
+      "Aydn C",
+      "Gunes S",
+      "Kutlu AT",
+      "Adanr O"
+    ],
+    "journal": "Medicina (Kaunas)",
+    "pub_date": "2026-09-27",
+    "doi": "10.3390/medicina62101873",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42942404/",
+    "source": "PubMed",
+    "category": "AI Clinical Information Evaluation",
+    "abstract": "101 adults post-THA rated ChatGPT 5.1 Thinking responses to 12 preoperative questions. Mean patient-perceived concordance 8.44/10. Timing statements matched records in 85.1% for all 3 criteria. Concordinance lower after complicated recovery (7.57 vs 8.57, p=0.0026). Multidisciplinary appropriateness 8.50/10. Supports clinician-reviewed AI information as adjunct while underscoring generalized timelines are conditional ranges.",
+    "keywords": [
+      "ChatGPT",
+      "total hip arthroplasty",
+      "AI-generated information",
+      "patient concordance",
+      "perioperative"
+    ]
+  },
+  {
+    "id": "pmid:42941500",
+    "pmid": "42941500",
+    "title": "Clinical Reasoning, Pathophysiology, and Artificial Intelligence in Critical Care: A Conceptual Framework for Integrating Decision-Making",
+    "authors": [
+      "Rea-Neto A",
+      "Fonseca Vieira JC"
+    ],
+    "journal": "J Clin Med",
+    "pub_date": "2026-10-15",
+    "doi": "10.3390/jcm15207987",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42941500/",
+    "source": "PubMed",
+    "category": "Clinical AI Framework",
+    "abstract": "Conceptual framework integrating clinical reasoning, pathophysiology, and AI in critical care. Traces evolution of clinical reasoning from anatomoclinical to hypothetico-deductive, probabilistic, cognitive, and sociotechnical models. Analyzes risks of AI including automation bias, opacity, and limited metacognition. Proposes principles for safe AI use that strengthens clinical reasoning and reinforces calibrated, accountable bedside judgment rather than replacing physicians.",
+    "keywords": [
+      "clinical reasoning",
+      "critical care",
+      "AI framework",
+      "automation bias",
+      "pathophysiology"
+    ]
+  },
+  {
+    "id": "pmid:42941459",
+    "pmid": "42941459",
+    "title": "Guideline-Concordant Answer Quality of Five Large Language Models on Indication Criteria for Total Hip Arthroplasty in Hip Osteoarthritis: A Single-Run Benchmark Against the 2021 German S3 Guideline (EKIT-Hip)",
+    "authors": [
+      "Alalman O",
+      "Scheyerer MJ",
+      "Syed W",
+      "Ghandour M",
+      "Hermasch M",
+      "Beyersdorf C",
+      "Mahmoud MA",
+      "Neuerburg C",
+      "Kabir K",
+      "Mert U"
+    ],
+    "journal": "J Clin Med",
+    "pub_date": "2026-10-14",
+    "doi": "10.3390/jcm15207944",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42941459/",
+    "source": "PubMed",
+    "category": "LLM Guideline Benchmark",
+    "abstract": "5 LLMs (GPT-4, GPT-4o, GPT-4o mini, Gemini Advanced, Consensus Premium) benchmarked on 26 questions from 2021 German S3 guideline for THA indication in hip OA. GPT-4o highest accuracy (3.69/4) and comprehensiveness (4.31/5). GPT-4o and GPT-4 rated good/excellent in 96.2% vs 57.7% for Consensus Premium. OR for higher accuracy vs Consensus Premium: 51.8 for GPT-4o. Poor responses observed for Consensus Premium (2/26) and Gemini (1/26). Does not support unsupervised clinical use.",
+    "keywords": [
+      "LLM benchmark",
+      "guideline concordance",
+      "hip arthroplasty",
+      "GPT-4",
+      "Gemini",
+      "clinical guidelines"
+    ]
+  },
+  {
+    "id": "pmid:42941318",
+    "pmid": "42941318",
+    "title": "Calibrated Reliance on Large Language Models for Personalized Surgical Care: A Critical Narrative Review of Confidence, Clinical Reasoning and Decision Support",
+    "authors": [
+      "Barone M",
+      "Selvaggi F",
+      "Pasquale V",
+      "Nusrath S",
+      "Vashist Y",
+      "Marano L"
+    ],
+    "journal": "J Clin Med",
+    "pub_date": "2026-10-10",
+    "doi": "10.3390/jcm15207802",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42941318/",
+    "source": "PubMed",
+    "category": "LLM Surgical Decision Support",
+    "abstract": "Critical narrative review connecting surgical self-assessment with clinician-LLM interaction, clinical summarization, uncertainty estimation, and perioperative implementation. LLM assistance does not uniformly improve physician reasoning. Distinguishes clinician self-appraisal, LLM uncertainty, prognostic calibration, appropriate reliance, and patient-specific decision quality. Proposes workflow for examining discrepancies between clinician judgment and LLM output, with evaluation agenda centered on harmful decision changes, verification burden, and patient-relevant outcomes.",
+    "keywords": [
+      "LLM",
+      "surgical care",
+      "calibrated reliance",
+      "uncertainty",
+      "decision support",
+      "clinical reasoning"
+    ]
+  },
+  {
+    "id": "pmid:42940599",
+    "pmid": "42940599",
+    "title": "Stakeholder-Reported Requirements for Future Artificial Intelligence Decision Support in Periodontal Care: A Cross-Sectional Survey of Dentists, Physicians and Patients in Kazakhstan",
+    "authors": [
+      "Ayash Y",
+      "Ismailova A",
+      "Aidarkhanova A",
+      "Mussina A",
+      "Abdikadyr Z",
+      "Chayakova A"
+    ],
+    "journal": "Healthcare (Basel)",
+    "pub_date": "2026-10-21",
+    "doi": "10.3390/healthcare14203554",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42940599/",
+    "source": "PubMed",
+    "category": "AI CDS Requirements",
+    "abstract": "Cross-sectional survey of 33 dentists, 91 physicians, and 455 patients in Kazakhstan on requirements for AI decision support in periodontal care. Dentists prioritized history-taking (81.8%) and early gingivitis diagnosis (69.7%). No autonomous option selected. Lack of legal framework and liability insurance was top barrier (60.6%). Physicians cited insufficient AI competence (53.8%). 49.0% of patients self-reported periodontal signs.",
+    "keywords": [
+      "AI decision support",
+      "periodontal care",
+      "stakeholder survey",
+      "requirements",
+      "dentistry"
+    ]
+  },
+  {
+    "id": "pmid:42940577",
+    "pmid": "42940577",
+    "title": "Effectiveness of Artificial Intelligence Systems in Healthcare: A Systematic Review of Clinical and Organizational Outcomes",
+    "authors": [
+      "Ceccarelli A",
+      "Montagnani T",
+      "Marin TD",
+      "Cassetta V",
+      "Senni M",
+      "Montalti M",
+      "Sintoni F",
+      "Gori D"
+    ],
+    "journal": "Healthcare (Basel)",
+    "pub_date": "2026-10-20",
+    "doi": "10.3390/healthcare14203532",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42940577/",
+    "source": "PubMed",
+    "category": "AI Healthcare Systematic Review",
+    "abstract": "PRISMA 2020 systematic review of 54 RCTs evaluating AI-based interventions in real-world healthcare settings. 74.1% reported positive direction of effect. Perceptive AI (n=17): consistent benefits in diagnostic accuracy. Predictive/decision support AI (n=15): heterogeneous results dependent on workflow integration. Conversational/adaptive AI (n=22): most consistent positive signal for chronic disease self-management, behavioral change, and therapeutic adherence. Effectiveness varies by functional category, implementation context, and outcome domain.",
+    "keywords": [
+      "AI healthcare",
+      "systematic review",
+      "RCT",
+      "clinical outcomes",
+      "decision support",
+      "conversational AI"
+    ]
+  },
+  {
+    "id": "pmid:42940443",
+    "pmid": "42940443",
+    "title": "HepDecide: A Standards-Oriented, Explainable Clinical Decision Support Prototype for the Chronic Liver-Disease Spectrum-Design, Guideline-Grounded Reporting, and a Leakage-Controlled Retrospective Evaluation",
+    "authors": [
+      "Tokatli N"
+    ],
+    "journal": "Healthcare (Basel)",
+    "pub_date": "2026-10-12",
+    "doi": "10.3390/healthcare14203397",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42940443/",
+    "source": "PubMed",
+    "category": "CDS Prototype",
+    "abstract": "HepDecide combines stage-specific tabular classifiers, SHAP explainability, and RAG anchored to EASL/AASLD guidelines. Outputs as HL7 FHIR R4 resources. ROC-AUC 0.67 for steatohepatitis, 0.81 for cirrhosis, 0.76 for one-year HCC survival. Did not outperform FIB-4 for cirrhosis (0.92). Standards-oriented, explainable, guideline-grounded design with reproducible evaluation pipeline. Clinician-supervised triage prototype, not clinically ready.",
+    "keywords": [
+      "HepDecide",
+      "clinical decision support",
+      "liver disease",
+      "RAG",
+      "SHAP",
+      "FHIR",
+      "explainable AI"
+    ]
+  },
+  {
+    "id": "pmid:42940427",
+    "pmid": "42940427",
+    "title": "Artificial Intelligence in Intensive Care: From Clinical Applications to Ethical and Medico-Legal Challenges",
+    "authors": [
+      "de Lazzaro F",
+      "Barletta G",
+      "Magnanimi E",
+      "Cirillo B",
+      "Frati P",
+      "Marinelli E",
+      "Pugliese F",
+      "De Paola L",
+      "Giordano G"
+    ],
+    "journal": "Healthcare (Basel)",
+    "pub_date": "2026-10-10",
+    "doi": "10.3390/healthcare14203382",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42940427/",
+    "source": "PubMed",
+    "category": "AI in ICU Review",
+    "abstract": "Review of AI applications in intensive care from clinical applications to ethical and medico-legal challenges. Covers AI for diagnosis, prognosis, treatment optimization, and monitoring in ICU settings. Addresses automation bias, opacity, accountability, and the need for human oversight in AI-enabled critical care decision-making.",
+    "keywords": [
+      "AI",
+      "intensive care",
+      "ICU",
+      "ethical challenges",
+      "medico-legal",
+      "clinical applications"
+    ]
+  },
+  {
+    "id": "pmid:42938953",
+    "pmid": "42938953",
+    "title": "A Bias-Aware Analytic Framework for Real-World Data with AI-Audited Workflows: Application to Opioid Ordering in Pediatric Anesthesia",
+    "authors": [
+      "Morphew T",
+      "Pease H",
+      "Fortier MA"
+    ],
+    "journal": "Anesth Analg",
+    "pub_date": "2026-09-23",
+    "doi": "",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42938953/",
+    "source": "PubMed",
+    "category": "AI Clinical Workflow Auditing",
+    "abstract": "Bias-aware analytic framework for real-world data with AI-audited workflows, applied to opioid ordering in pediatric anesthesia. Demonstrates methodology for auditing AI-influenced clinical decisions for demographic and socioeconomic bias in opioid prescribing patterns.",
+    "keywords": [
+      "AI auditing",
+      "bias",
+      "opioid",
+      "pediatric anesthesia",
+      "real-world data",
+      "clinical workflow"
+    ]
   }
 ]

@@ -5,6 +5,43 @@
 
 var whatsNewData = [
   {
+    date: "October 28, 2026",
+    updated: "Daily OpenEvidence check (Wed Oct 28, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search (timed out) + arXiv API (30 results) + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: MSK Precision Oncology Oct 22). Grok X/Twitter search timed out (exit code 28) - noted as gap. 20 new papers added to research.json (6 arXiv + 14 PubMed). 5 new benchmark entries added to benchmarks.json. Key findings: NPC-RubricBench shows 30 LLMs' diagnostic performance does not carry over to downstream cancer care (arXiv 2610.35847); MedJev System One decision model achieves 72.5% MedQA, 75.4% USMLE (arXiv 2610.36006); 7 LLMs incl. OpenEvidence evaluated on thyroid nodule biopsy decisions - LLM-clinician agreement only moderate, Llama recommended biopsy in 8/8 cases clinicians unanimously against (PMID 42946678); XAI in CDSS systematic review shows 92.6% still at prototype stage, only 2.9% deployed (PMID 42945747); 5 AI chatbots evaluated on dental emergencies across 3 languages - 92.96% correct overall (PMID 42945123); AI healthcare effectiveness review of 54 RCTs shows 74.1% positive, conversational AI most consistent (PMID 42940577).",
+    items: [
+      {
+        cat: "Benchmark - Longitudinal Cancer Care",
+        title: "NPC-RubricBench: 30 LLMs' diagnostic performance does not carry over to downstream cancer care (Oct 26, 2026)",
+        desc: "Zhang et al. introduce NPC-RubricBench, a phase-aware benchmark for evaluating multistage clinical reasoning across the cancer care continuum. 405 patients, 941 patient-phase units, 17,688 atomic criteria. Decision errors dominated anatomical staging at 48.2%; decision omissions dominated initial work-up and follow-up at 33.4% and 30.4%. Medically adapted models showed higher omission rates than general-purpose models. arXiv 2610.35847."
+      },
+      {
+        cat: "Benchmark - Medical LLM",
+        title: "MedJev: System One decision model achieves 72.5% MedQA, 75.4% USMLE, 80.1% NEJM (Oct 26, 2026)",
+        desc: "Lee et al. evaluate MedJev, an open System One model running locally on a laptop, across 10 medical benchmarks. AUROC 0.926 for in-hospital mortality, exceeding XGBoost (0.902). Well-calibrated confidence (ECE 0.028-0.063). Two-parameter recalibration reduces ECE to 0.007 with 50-200 labeled examples. arXiv 2610.36006."
+      },
+      {
+        cat: "Benchmark - LLM Clinical Decisions",
+        title: "7 LLMs including OpenEvidence evaluated on thyroid nodule biopsy decisions under clinical equipoise (Oct 28, 2026)",
+        desc: "Barage et al. (Memorial Sloan Kettering) present 100 thyroid nodule vignettes to 94 clinicians and 7 LLMs (GPT-5, Claude 3.5/4.0/4.5, Llama 3.2-90B, Deepseek R1, OpenEvidence). LLM biopsy rates ranged 46%-74%. LLM-clinician agreement moderate (alpha 0.372-0.453). Llama recommended biopsy in 8/8 cases where clinicians unanimously recommended against. Evaluating LLMs for CDS under equipoise requires processes analogous to guideline committees. PMID 42946678."
+      },
+      {
+        cat: "Research - XAI in CDSS",
+        title: "Systematic review: 92.6% of XAI-enabled clinical decision support systems remain at prototype stage (Oct 26, 2026)",
+        desc: "Zandkarimi & Ghorbanzadeh PRISMA 2020 systematic review of 68 studies. Publications surged in 2025-2026 (47/68). Critical care and cardiology most represented. External validation in only 25%. Real-world deployment in only 2.9%. SHAP and gradient-boosting methods predominate. Standardized evaluation of explanation quality and human-centered assessment remain limited. PMID 42945747."
+      },
+      {
+        cat: "Research - AI Healthcare Effectiveness",
+        title: "PRISMA review of 54 RCTs: 74.1% of AI healthcare interventions show positive direction of effect (Oct 20, 2026)",
+        desc: "Ceccarelli et al. classify AI interventions into perceptive (n=17, consistent diagnostic accuracy benefits), predictive/decision support (n=15, heterogeneous, workflow-dependent), and conversational/adaptive (n=22, most consistent positive signal for chronic disease self-management and behavioral change). Effectiveness varies by functional category and implementation context. PMID 42940577."
+      },
+      {
+        cat: "Benchmark - AI Chatbot Dental",
+        title: "5 AI chatbots evaluated on dental emergency management across 3 languages - 92.96% correct (Oct 27, 2026)",
+        desc: "Bashah et al. compare ChatGPT-5.2, Gemini 3.1, DeepSeek-R1, Grok 4.20, and Kimi K2.5 on 130 dental emergency questions. 27,300 responses. Gemini 3.1 highest accuracy (94.8%), ChatGPT-5.2 (93.5%). Question type and language significantly affected performance. AI chatbots may serve as educational tools but caution needed for real-time decision support. PMID 42945123."
+      }
+    ]
+  },
+
+  {
     date: "October 27, 2026",
     updated: "Site update (Tue Oct 27, 11:50 PM ET) - Added the October 14 usage snapshot to the overview (weekly and monthly active clinicians, plus 24h / 7d / 30d query volume) and the October 2026 pharma platform panel takeaways to the Pharma page. Source: OpenEvidence pharma platform panel slide. Counts reproduced as published; the slide's percentage-of-base labels did not reconcile with the counts and were left out.",
     items: [
