@@ -6,6 +6,22 @@
 var whatsNewData = [
   {
     date: "October 27, 2026",
+    updated: "Site update (Tue Oct 27, 11:50 PM ET) - Added the October 14 usage snapshot to the overview (weekly and monthly active clinicians, plus 24h / 7d / 30d query volume) and the October 2026 pharma platform panel takeaways to the Pharma page. Source: OpenEvidence pharma platform panel slide. Counts reproduced as published; the slide's percentage-of-base labels did not reconcile with the counts and were left out.",
+    items: [
+      {
+        cat: "Platform - Usage",
+        title: "Usage snapshot: 690K weekly active clinicians, 866K monthly, 46.5M queries in 30 days (Oct 14, 2026)",
+        desc: "OpenEvidence's October 2026 pharma platform panel reports 690K weekly active clinicians and 866K monthly active clinicians, with query volume of 1.9M in the last 24 hours, 12.0M in the last 7 days and 46.5M in the last 30 days, as of October 14, 2026. This is the platform's first published weekly/monthly active clinician breakdown. The percentages printed beside the two clinician figures (58% and 73%) do not reconcile with the counts on a visible denominator, so they are omitted pending confirmation."
+      },
+      {
+        cat: "Pharma - Panel Takeaways",
+        title: "Panel takeaways: NP and PA script share, IQVIA lift study, point-of-care query value (Oct 2026)",
+        desc: "Three advertiser-facing points from the October 2026 pharma platform panel. NPs and PAs write about 38% of retail scripts and are growing far faster than physicians, yet most brands still do not explicitly target them. An IQVIA test-and-control study on OpenEvidence found the highest incremental script lift among Decile 0 and prior non-writers. Reaching clinicians at the point of care beats static NPI banners, and net-new starts are the metric to watch rather than reach."
+      }
+    ]
+  },
+  {
+    date: "October 27, 2026",
     updated: "Daily OpenEvidence check (Tue Oct 27, 9:00 AM ET) - Venice Augment scrape + 5 web searches + Grok X/Twitter search + PubMed eutils (30 results). No new OpenEvidence announcements; all scraped dates already in timeline (latest: MSK Precision Oncology Oct 22). arXiv API returned empty responses after 3 attempts - noted as gap. Grok X/Twitter search returned empty response - noted as gap. 17 new PubMed papers added to research.json. 5 new benchmark entries added to benchmarks.json. Key findings: 24 AI systems recommend 3.2x more costly care than physicians ($314 vs $97/visit, PMID 42932470); automation bias persists despite AI literacy training - 14pp diagnostic accuracy drop with erroneous LLM suggestions (PMID 42932681); LLM clinical reasoning benchmark via script concordance testing shows o3 highest at 67.8% but below attending physicians (PMID 42932606); VeriFact achieves 93.2% clinician agreement for automated fact verification in LLM-generated clinical documents (PMID 42932523); 4-level safety classification proposed for medical AI (S1-S4, PMID 42932717); RAG-enhanced GPT-4 outperforms physicians for ICD-10 coding accuracy (PMID 42932607); AI raters in LLM clinical benchmarking not interchangeable - ICC 0.153 (PMID 42932837).",
     items: [
       {

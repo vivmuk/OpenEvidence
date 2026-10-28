@@ -116,6 +116,11 @@ const METRIC_KEYS = [
   [/^registered physicians$/i, 'physicians'],
   [/^physician adoption$/i, 'physician_adoption'],
   [/^single[- ]day record$/i, 'single_day'],
+  [/^weekly active clinicians$/i, 'clinicians_weekly'],
+  [/^monthly active clinicians$/i, 'clinicians_monthly'],
+  [/^queries last 24h$/i, 'queries_24h'],
+  [/^queries last 7 days$/i, 'queries_7d'],
+  [/^queries last 30 days$/i, 'queries_30d'],
 ];
 
 function canonicalMetric(name) {
@@ -180,6 +185,11 @@ const DISPLAY = {
   physicians: fmtCount,
   physician_adoption: n => trim(n) + '%',
   single_day: fmtCount,
+  clinicians_weekly: fmtCount,
+  clinicians_monthly: fmtCount,
+  queries_24h: fmtCount,
+  queries_7d: fmtCount,
+  queries_30d: fmtCount,
 };
 
 // ------------------------------------------------------------------- build

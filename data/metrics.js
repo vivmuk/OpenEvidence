@@ -2,7 +2,7 @@
 // Source of truth: data/metrics.csv and the entity files next to it.
 // Regenerated on every commit by .git/hooks/pre-commit.
 var siteMetrics = {
-  "dataThrough": "2026-09-30",
+  "dataThrough": "2026-10-14",
   "latest": {
     "consultations": {
       "value": 42000000,
@@ -59,6 +59,46 @@ var siteMetrics = {
       "month": "Sep 2026",
       "source": "https://www.ajmc.com/view/oneoncology-partners-with-openevidence-to-give-physicians-access-within-clinical-workflows",
       "sourceHost": "ajmc.com"
+    },
+    "clinicians_weekly": {
+      "value": 690000,
+      "display": "690K",
+      "date": "2026-10-14",
+      "month": "Oct 2026",
+      "source": "",
+      "sourceHost": ""
+    },
+    "clinicians_monthly": {
+      "value": 866000,
+      "display": "866K",
+      "date": "2026-10-14",
+      "month": "Oct 2026",
+      "source": "",
+      "sourceHost": ""
+    },
+    "queries_24h": {
+      "value": 1900000,
+      "display": "1.9M",
+      "date": "2026-10-14",
+      "month": "Oct 2026",
+      "source": "",
+      "sourceHost": ""
+    },
+    "queries_7d": {
+      "value": 12000000,
+      "display": "12M",
+      "date": "2026-10-14",
+      "month": "Oct 2026",
+      "source": "",
+      "sourceHost": ""
+    },
+    "queries_30d": {
+      "value": 46500000,
+      "display": "46.5M",
+      "date": "2026-10-14",
+      "month": "Oct 2026",
+      "source": "",
+      "sourceHost": ""
     }
   },
   "series": {
