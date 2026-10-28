@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-28",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,15 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-10-26",
+      "cat": "Product",
+      "title": "Microsoft Copilot Health Temporarily Unavailable After Unified Copilot Update",
+      "desc": "Microsoft's October 26 unified Copilot app update removed Copilot Health from all platforms. The Health section displays 'Coming soon' on web, Windows, Edge, and iOS. Microsoft confirmed the disruption is temporary during the unified Copilot transition, with wearable connections expected to return later than core health features. Users who had connected Garmin data via Apple Health report losing access. Requires Microsoft 365 Personal, Family, or Premium subscription.",
+      "src": "Microsoft Q&A / Reddit",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/6051800/copilot-health",
+      "new": true
+    },
     {
       "date": "2026-10-23",
       "cat": "Product",
@@ -89,8 +98,7 @@
       "title": "Google Health Partners with Flo Health for Women's Health Coaching",
       "desc": "Google announced a partnership with Flo Health (80M+ monthly users) to integrate cycle data with the Google Health app and Health Coach. Flo users will sync cycle data with Google Health metrics like resting heart rate and sleep stages, with Google Health Premium delivering tailored coaching across cycle, sleep and recovery. The companies plan joint research into underserved topics including perimenopause, pregnancy and postpartum recovery. Vendor claim: general wellness, not diagnosis.",
       "src": "Google / PYMNTS",
-      "url": "https://blog.google/products-and-platforms/products/google-health/commitment-womens-health-flo-health-partnership/",
-      "new": true
+      "url": "https://blog.google/products-and-platforms/products/google-health/commitment-womens-health-flo-health-partnership/"
     },
     {
       "date": "2026-10-08",
@@ -98,8 +106,7 @@
       "title": "Sex-Based Diagnostic Bias Found in AI Symptom Checkers",
       "desc": "A peer-reviewed audit of three AI symptom checkers (Ada Health, Isabel Healthcare, Docus AI) across four clinical vignettes found sex-based divergence in differential diagnosis rank, probability estimates and advisory text. Isabel Healthcare ranked Heart Attack first for the male profile but third for the female profile on ACS with chest pressure. Docus AI described immediate medical attention as crucial for the male profile but merely important for the female profile on identical symptoms. The direction of divergence was not uniform, but findings support equity auditing of both numerical outputs and generated explanatory text.",
       "src": "Frontiers in Digital Health",
-      "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1950777/full",
-      "new": true
+      "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1950777/full"
     },
     {
       "date": "2026-08-11",
@@ -164,6 +171,14 @@
       "desc": "Coverage of health-system deployments found that AI-powered symptom checkers do direct worried patients to care. From roughly 22,000 digital triage sessions at Mount Sinai, about 80% of users who started a session completed the conversation.",
       "src": "Association of Health Care Journalists",
       "url": "https://healthjournalism.org/blog/2026/08/ai-powered-symptom-checkers/"
+    },
+    {
+      "date": "2026-08-19",
+      "cat": "Research",
+      "title": "Verily's Personal Health Assistant Misses Undertriage Targets in Predeployment Validation",
+      "desc": "Verily Health analytically validated its LLM-based Personal Health Assistant (PHA) using 772 synthetic cases reviewed by 5 independent physicians against published telephone-triage protocols. PHA met the overtriage criterion (11.0%, criterion <30%) but missed both undertriage criteria: urgent undertriage 6.9% (criterion <5%) and nonurgent undertriage 18.4% (criterion <15%). Undertriage was identified as the principal performance gap requiring product refinement. PHA was based on GPT-5.4-mini. Published in JMIR Formative Research.",
+      "src": "JMIR Formative Research",
+      "url": "https://doi.org/10.2196/103419"
     },
     {
       "date": "2026-07-23",
@@ -262,13 +277,20 @@
       "url": "https://www.2minutemedicine.com/ai-symptom-checker-could-help-emergency-doctors-prioritize-patients/"
     },
     {
+      "date": "2026-02-24",
+      "cat": "Research",
+      "title": "ChatGPT Health Undertriages 52% of Emergency Cases in Structured Stress Test",
+      "desc": "Mount Sinai researchers tested ChatGPT Health's triage with 60 clinician-authored vignettes across 21 clinical domains under 16 factorial conditions (960 total responses). The system undertriaged 52% of gold-standard emergencies, directing diabetic ketoacidosis and impending respiratory failure to 24-48h evaluation instead of the ED. Crisis-intervention messages for suicidal ideation activated unpredictably. When family or friends minimized symptoms, triage shifted significantly toward less urgent care (OR 11.7, 95% CI 3.7-36.6). No significant race or sex effects, though CIs did not exclude meaningful differences. Published in Nature Medicine.",
+      "src": "Nature Medicine",
+      "url": "https://www.nature.com/articles/s41591-026-04297-7"
+    },
+    {
       "date": "2026-02-09",
       "cat": "Research",
       "title": "Oxford Study: LLMs Excel on Tests But Fail Real Users Seeking Medical Advice",
       "desc": "The largest randomised user study of LLMs for consumer medical advice, led by the Oxford Internet Institute and Nuffield Department of Primary Care Health Sciences in partnership with MLCommons, tested GPT-4o, Llama 3 and Command R+ with 1,298 UK participants across 10 medical scenarios. LLMs alone identified conditions in 94.9% of cases and chose the right disposition in 56.3%. But participants using the same LLMs identified conditions in fewer than 34.5% of cases and chose the right action in fewer than 44.2% - no better than a control group using ordinary search. The gap traced to conversational breakdown: users omitted details the model needed, and responses mixed good and poor advice. The authors recommend systematic human user testing before public deployment in healthcare.",
       "src": "Nature Medicine / Oxford",
-      "url": "https://www.nature.com/articles/s41591-025-04074-y",
-      "new": true
+      "url": "https://www.nature.com/articles/s41591-025-04074-y"
     },
     {
       "date": "2026-02-01",
@@ -359,12 +381,20 @@
           "v": "EHR + wearables + labs"
         },
         {
+          "l": "Records",
+          "v": "50,000+ orgs via HealthEx"
+        },
+        {
           "l": "Demand",
           "v": "~1 in 5 Copilot chats health-related"
+        },
+        {
+          "l": "Status",
+          "v": "Temporarily unavailable (Oct 26 update)"
         }
       ],
-      "desc": "A separate, secure space inside Copilot that aggregates records, wearable data (Apple Health, Fitbit) and laboratory results into what Microsoft calls a coherent story of a user's health. Microsoft's own analysis of 500,000+ de-identified Copilot conversations found nearly one in five involved symptom assessment or condition discussion - evidence that consumer demand already flows through general assistants.",
-      "url": "https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"
+      "desc": "A separate, secure space inside Copilot that aggregates health records from 50,000+ US hospitals and provider organisations via HealthEx, wearable data (Apple Health, Fitbit, Garmin via Apple Health), and comprehensive lab results from Function. Responses include citations with source links and expert-written answer cards from Harvard Health. Users can search for clinicians by specialty, location, languages spoken and insurance coverage via real-time US provider directories. Microsoft's own analysis of 500,000+ de-identified Copilot conversations found nearly one in five involved symptom assessment or condition discussion. On October 26, 2026, the unified Copilot app update temporarily removed Copilot Health from all platforms; Microsoft confirmed the disruption is temporary during the transition, with wearable connections expected to return later than core health features.",
+      "url": "https://microsoft.ai/news/introducing-copilot-health/"
     },
     {
       "name": "Apple - Health app + Apple Intelligence",
@@ -708,6 +738,24 @@
   ],
   "research": [
     {
+      "title": "ChatGPT Health Performance in a Structured Test of Triage Recommendations",
+      "type": "Peer-reviewed · analytical validation",
+      "date": "Feb 24, 2026 (online); May 2026 (print)",
+      "venue": "Nature Medicine",
+      "finding": "Mount Sinai researchers conducted a structured stress test of ChatGPT Health's triage using 60 clinician-authored vignettes across 21 clinical domains under 16 factorial conditions, yielding 960 total responses. Performance followed an inverted U-shaped pattern, with the most dangerous failures concentrated at clinical extremes: 35% of nonurgent presentations and 48% of emergency conditions. Among gold-standard emergencies, the system undertriaged 52% of cases, directing patients with diabetic ketoacidosis or impending respiratory failure to 24-48h evaluation rather than the ED, while correctly triaging classical emergencies such as stroke and anaphylaxis. When family or friends minimized symptoms (anchoring bias), triage recommendations shifted significantly (OR 11.7, 95% CI 3.7-36.6), with most shifts toward less urgent care. Crisis-intervention messages for suicidal ideation activated unpredictably, occurring more frequently when patients described no specific method than when they did. Patient race, sex and barriers to care did not show significant effects, though confidence intervals did not exclude clinically meaningful differences.",
+      "caveat": "The study used synthetic vignettes and simulated conversations, not real patient interactions. The 16 factorial conditions enriched urgency categories, which may not reflect real-world distributions. The authors themselves call for prospective validation before consumer-scale deployment. The study tested a specific ChatGPT Health configuration that may have been updated since.",
+      "url": "https://www.nature.com/articles/s41591-026-04297-7"
+    },
+    {
+      "title": "Patient-Facing AI System for Symptom Guidance Using Simulated Encounters and Physician Review: Analytical Validation Study",
+      "type": "Peer-reviewed · predeployment analytical validation",
+      "date": "Aug 19, 2026",
+      "venue": "JMIR Formative Research",
+      "finding": "Verily Health analytically validated its LLM-based Personal Health Assistant (PHA) for symptom guidance using 772 synthetic cases generated from published telephone-triage protocols and LLM-assisted persona-based generation. Five independent physicians reviewed each case without access to PHA outputs to establish ground-truth level-of-care recommendations. PHA met the prespecified overtriage criterion (11.0%, criterion <30%) but did not meet the urgent undertriage criterion (6.9%, criterion <5%) or the nonurgent undertriage criterion (18.4%, criterion <15%). Undertriage was identified as the principal performance gap requiring further product refinement. Secondary analyses found PHA-generated possible conditions, self-care recommendations, and lab-testing recommendations were generally clinically appropriate. PHA was based on the OpenAI GPT-5.4-mini LLM (2026-03-17 release).",
+      "caveat": "The study used synthetic cases, simulated conversations, and enriched urgency categories under controlled conditions; results may not reflect real-world performance. The authors explicitly state that prospective evaluation with actual users is needed before broader clinical use. The study was conducted by Verily employees (conflicts of interest) and the PHA configuration was locked before evaluation, so results may not reflect the current product.",
+      "url": "https://doi.org/10.2196/103419"
+    },
+    {
       "title": "The Anatomy of a Personal Health Agent",
       "type": "Peer-reviewed · multi-agent architecture and evaluation",
       "date": "Oct 21, 2026",
@@ -865,6 +913,34 @@
     }
   ],
   "sources": [
+    {
+      "name": "Nature Medicine - ChatGPT Health performance in a structured test of triage recommendations (Feb 2026)",
+      "url": "https://www.nature.com/articles/s41591-026-04297-7"
+    },
+    {
+      "name": "News-Medical.net - ChatGPT Health fails critical emergency and suicide safety tests (Feb 24, 2026)",
+      "url": "https://www.news-medical.net/news/20260224/ChatGPT-Health-fails-critical-emergency-and-suicide-safety-tests.aspx"
+    },
+    {
+      "name": "JMIR Formative Research - Verily PHA analytical validation study (Aug 19, 2026)",
+      "url": "https://doi.org/10.2196/103419"
+    },
+    {
+      "name": "Microsoft Q&A - Copilot Health temporarily unavailable after Oct 26 update",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/6051800/copilot-health"
+    },
+    {
+      "name": "Microsoft AI - Introducing Copilot Health",
+      "url": "https://microsoft.ai/news/introducing-copilot-health/"
+    },
+    {
+      "name": "Fierce Healthcare - OpenAI makes Health in ChatGPT widely available (Jul 23, 2026)",
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/openai-makes-health-chatgpt-widely-available-moving-deeper-consumer-health"
+    },
+    {
+      "name": "OpenAI - Introducing ChatGPT Health (Jan 7, 2026)",
+      "url": "https://openai.com/index/introducing-chatgpt-health/"
+    },
     {
       "name": "Nature - The anatomy of a personal health agent (Oct 21, 2026)",
       "url": "https://www.nature.com/articles/s41586-026-11161-8"

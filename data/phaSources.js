@@ -1,4 +1,11 @@
 var phaSourcesData = [
+  {name:"Nature Medicine - ChatGPT Health performance in a structured test of triage recommendations (Feb 2026)", url:"https://www.nature.com/articles/s41591-026-04297-7"},
+  {name:"News-Medical.net - ChatGPT Health fails critical emergency and suicide safety tests (Feb 24, 2026)", url:"https://www.news-medical.net/news/20260224/ChatGPT-Health-fails-critical-emergency-and-suicide-safety-tests.aspx"},
+  {name:"JMIR Formative Research - Verily PHA analytical validation study (Aug 19, 2026)", url:"https://doi.org/10.2196/103419"},
+  {name:"Microsoft Q&A - Copilot Health temporarily unavailable after Oct 26 update", url:"https://learn.microsoft.com/en-us/answers/questions/6051800/copilot-health"},
+  {name:"Microsoft AI - Introducing Copilot Health", url:"https://microsoft.ai/news/introducing-copilot-health/"},
+  {name:"Fierce Healthcare - OpenAI makes Health in ChatGPT widely available (Jul 23, 2026)", url:"https://www.fiercehealthcare.com/ai-and-machine-learning/openai-makes-health-chatgpt-widely-available-moving-deeper-consumer-health"},
+  {name:"OpenAI - Introducing ChatGPT Health (Jan 7, 2026)", url:"https://openai.com/index/introducing-chatgpt-health/"},
   {name:"Nature - The anatomy of a personal health agent (Oct 21, 2026)", url:"https://www.nature.com/articles/s41586-026-11161-8"},
   {name:"Google Research - Anatomy of a personal health agent", url:"https://research.google/blog/the-anatomy-of-a-personal-health-agent/"},
   {name:"Nature - Using AI to offer personalised health advice (editorial)", url:"https://www.nature.com/articles/d41586-026-03065-4"},

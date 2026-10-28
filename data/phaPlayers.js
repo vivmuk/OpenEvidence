@@ -6,9 +6,9 @@ var phaPlayersData = [
    url:"https://openai.com/index/health-in-chatgpt/"},
 
   {name:"Microsoft - Copilot Health", type:"Frontier platform · dedicated health space", badge:"FAST FOLLOWER",
-   stats:[{l:"Launched",v:"Mar 12, 2026"},{l:"Preview",v:"May 2026"},{l:"Sources",v:"EHR + wearables + labs"},{l:"Demand",v:"~1 in 5 Copilot chats health-related"}],
-   desc:"A separate, secure space inside Copilot that aggregates records, wearable data (Apple Health, Fitbit) and laboratory results into what Microsoft calls a coherent story of a user's health. Microsoft's own analysis of 500,000+ de-identified Copilot conversations found nearly one in five involved symptom assessment or condition discussion - evidence that consumer demand already flows through general assistants.",
-   url:"https://fortune.com/2026/03/12/microsoft-copilot-health-ai-medical-personal-health-data/"},
+   stats:[{l:"Launched",v:"Mar 12, 2026"},{l:"Preview",v:"May 2026"},{l:"Sources",v:"EHR + wearables + labs"},{l:"Records",v:"50,000+ orgs via HealthEx"},{l:"Demand",v:"~1 in 5 Copilot chats health-related"},{l:"Status",v:"Temporarily unavailable (Oct 26 update)"}],
+   desc:"A separate, secure space inside Copilot that aggregates health records from 50,000+ US hospitals and provider organisations via HealthEx, wearable data (Apple Health, Fitbit, Garmin via Apple Health), and comprehensive lab results from Function. Responses include citations with source links and expert-written answer cards from Harvard Health. Users can search for clinicians by specialty, location, languages spoken and insurance coverage via real-time US provider directories. Microsoft's own analysis of 500,000+ de-identified Copilot conversations found nearly one in five involved symptom assessment or condition discussion. On October 26, 2026, the unified Copilot app update temporarily removed Copilot Health from all platforms; Microsoft confirmed the disruption is temporary during the transition, with wearable connections expected to return later than core health features.",
+   url:"https://microsoft.ai/news/introducing-copilot-health/"},
 
   {name:"Apple - Health app + Apple Intelligence", type:"Device platform · on-device processing", badge:"DISTRIBUTION MOAT",
    stats:[{l:"Announced",v:"Sep 2026"},{l:"OS",v:"iOS 27 / iPadOS 27"},{l:"Processing",v:"On-device"},{l:"Status",v:"Health+ planned 2026"}],
