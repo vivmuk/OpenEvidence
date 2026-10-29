@@ -14520,5 +14520,248 @@
       "real-world data",
       "clinical workflow"
     ]
+  },
+  {
+    "id": "pmid:42952574",
+    "pmid": "42952574",
+    "title": "Integrating knowledge graphs and retrieval-augmented generation to identify clinical pharmacology gaps in infectious disease trial protocols",
+    "authors": [
+      "Waikar S",
+      "Ramanathan M"
+    ],
+    "journal": "Front Pharmacol",
+    "pub_date": "2026-10-14",
+    "doi": "10.3389/fphar.2026.1955011",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42952574/",
+    "source": "PubMed",
+    "category": "RAG-based Clinical AI Tool",
+    "abstract": "Evaluated RAG protocol review integrated with knowledge graphs (KGs) for identifying clinical pharmacology gaps in 42 infectious disease trial protocols. KG contained 223 nodes and 376 edges. Gap analysis showed hepatic impairment exclusions in TB more frequent than PK studies. Multi-guidance evaluation showed high faithfulness, lower answer relevancy, and guidance-dependent differences in clinical pharmacology metrics.",
+    "keywords": [
+      "RAG",
+      "knowledge graphs",
+      "clinical pharmacology",
+      "infectious disease",
+      "trial protocols",
+      "FDA guidance"
+    ]
+  },
+  {
+    "id": "pmid:42951658",
+    "pmid": "42951658",
+    "title": "Generative AI in medicine: current clinical applications and prospects for next-generation technologies",
+    "authors": [
+      "Otsuka A"
+    ],
+    "journal": "Rinsho Ketsueki",
+    "pub_date": "2026-01-01",
+    "doi": "10.11406/rinketsu.67.1392",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42951658/",
+    "source": "PubMed",
+    "category": "Clinical AI Review",
+    "abstract": "Review of generative AI in clinical practice covering documentation, patient education, differential diagnosis, and image-based decision support with focus on dermatology. Discusses LLMs achieving ~87% on USMLE (90%+ with medical prompting), named tools (ChatGPT Health, MedGemma, Dragon Copilot, Cancer Copilot), multimodal models, autonomous agents, on-device AI. Addresses regulatory/ethical challenges including cross-border data transfer, hallucination, accountability.",
+    "keywords": [
+      "generative AI",
+      "USMLE",
+      "ChatGPT",
+      "MedGemma",
+      "Dragon Copilot",
+      "clinical applications",
+      "dermatology"
+    ]
+  },
+  {
+    "id": "pmid:42951296",
+    "pmid": "42951296",
+    "title": "Efficacy of a large language model-driven application for emotion management in breast cancer patients (EMBRACE): protocol for a multicentre randomised controlled trial",
+    "authors": [
+      "Luo M",
+      "Duan C",
+      "Li W",
+      "Yang Y",
+      "Xie H",
+      "Lin H",
+      "Liao C",
+      "Li L",
+      "Zhao H",
+      "Li C",
+      "Tan X",
+      "Wei X",
+      "Bian X",
+      "Liu H",
+      "Zeng Y",
+      "Yang H",
+      "Wang Y",
+      "Lin D",
+      "Liu X",
+      "Gan X",
+      "Sun Y",
+      "Ren Q",
+      "He Y",
+      "Sun J",
+      "Wu Y"
+    ],
+    "journal": "BMJ Open",
+    "pub_date": "2026-10-28",
+    "doi": "10.1136/bmjopen-2026-126107",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42951296/",
+    "source": "PubMed",
+    "category": "LLM Clinical Intervention RCT",
+    "abstract": "RCT protocol for EMBRACE, an LLM-driven application for emotion management in breast cancer patients across multiple centers. Multicentre randomised controlled trial design evaluating AI-assisted emotional support for breast cancer patients.",
+    "keywords": [
+      "LLM",
+      "breast cancer",
+      "emotion management",
+      "RCT",
+      "EMBRACE",
+      "mental health",
+      "clinical AI"
+    ]
+  },
+  {
+    "id": "pmid:42950951",
+    "pmid": "42950951",
+    "title": "Performance of Generative Artificial Intelligence Models in Answering Common Patient Questions About Nasal Polyps",
+    "authors": [
+      "Ruran HB",
+      "Bhoyar S",
+      "Alsulami S",
+      "Gray A",
+      "Phipatanakul W",
+      "Lee SE",
+      "Sedaghat AR",
+      "Nguyen TH"
+    ],
+    "journal": "J Allergy Clin Immunol Pract",
+    "pub_date": "2026-10-28",
+    "doi": "10.1016/j.jaip.2026.10.018",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42950951/",
+    "source": "PubMed",
+    "category": "AI Medical Accuracy Comparison",
+    "abstract": "Evaluated multiple generative AI platforms on accuracy, currency, relevance, understandability, and clinical safety when answering common nasal polyp patient questions. Found differences across platforms in all dimensions. Clinicians should recognize tradeoffs when counseling patients using AI-generated health information.",
+    "keywords": [
+      "generative AI",
+      "nasal polyps",
+      "patient questions",
+      "accuracy",
+      "clinical safety",
+      "AI comparison"
+    ]
+  },
+  {
+    "id": "pmid:42950761",
+    "pmid": "42950761",
+    "title": "Large language models for gait classification and treatment recommendation in cerebral palsy",
+    "authors": [
+      "Celik M",
+      "Ertan-Birsel S",
+      "Demirci E",
+      "Dogan O",
+      "Inan M"
+    ],
+    "journal": "Gait Posture",
+    "pub_date": "2026-10-26",
+    "doi": "10.1016/j.gaitpost.2026.110677",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42950761/",
+    "source": "PubMed",
+    "category": "LLM Clinical Decision Support Evaluation",
+    "abstract": "Evaluated ChatGPT, Gemini, and Claude on classification of cerebral palsy gait patterns and treatment recommendations using kinematic graphs and 3D skeletal videos. Claude highest graph-based accuracy (73.3%, kappa=0.67); ChatGPT and Gemini 46.7%. Video-based accuracy dropped to 20-26.7%. Treatment recommendation agreement generally low. LLMs should be supportive not independent decision-making tools.",
+    "keywords": [
+      "LLM",
+      "cerebral palsy",
+      "gait classification",
+      "treatment recommendation",
+      "ChatGPT",
+      "Gemini",
+      "Claude",
+      "clinical decision support"
+    ]
+  },
+  {
+    "id": "pmid:42950241",
+    "pmid": "42950241",
+    "title": "Automation of Living Clinical Practice Guideline Development: Scoping Review",
+    "authors": [
+      "Altammami A",
+      "Ares-Rufo O",
+      "Alzahrani A",
+      "Alkhotani A",
+      "Mital D",
+      "Florez-Arango JF"
+    ],
+    "journal": "JMIR AI",
+    "pub_date": "2026-10-28",
+    "doi": "10.2196/103273",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42950241/",
+    "source": "PubMed",
+    "category": "Clinical AI CDS Systematic Review",
+    "abstract": "Scoping review of 47 studies on automated clinical practice guideline (CPG) development spanning 2001-2025. Covered 4 pillars: retrieval (query expansion 80% recall), extraction (rule-based NLP F-measure 81.96%), encoding (GLIF3 to FHIR-based), evaluation (LLM appraisers scored 12.5-60pp higher than humans). Surge in LLM work 2024-2025. No study demonstrated end-to-end living guideline pipeline. Evidence on clinical safety and cost-effectiveness largely absent.",
+    "keywords": [
+      "clinical practice guidelines",
+      "automation",
+      "LLM",
+      "living guidelines",
+      "FHIR",
+      "systematic review",
+      "clinical decision support"
+    ]
+  },
+  {
+    "id": "pmid:42949252",
+    "pmid": "42949252",
+    "title": "Version-Specific Performance of ChatGPT in Audiogram Interpretation: Comparison of ChatGPT-4.0 and ChatGPT-5.1",
+    "authors": [
+      "Tahir E",
+      "Karacayli C",
+      "Dunder E",
+      "Altuntas EE"
+    ],
+    "journal": "Otolaryngol Head Neck Surg",
+    "pub_date": "2026-10-28",
+    "doi": "10.1002/ohn.70500",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42949252/",
+    "source": "PubMed",
+    "category": "LLM Clinical Diagnostic Benchmark",
+    "abstract": "Compared ChatGPT-4.0 vs ChatGPT-5.1 on 100 audiograms (20 with masking errors) using standardized 7-step diagnostic prompt. ChatGPT-5.1 scored significantly higher on 6/7 questions (P<.001), effect sizes 0.53-0.94. Largest improvement in degree-of-hearing-loss classification. Both versions struggled with clinically flawed input data. Inter-rater kappa 0.74-0.78. Underscores need for version-specific benchmarking and expert oversight.",
+    "keywords": [
+      "ChatGPT",
+      "audiogram",
+      "diagnostic performance",
+      "version comparison",
+      "LLM benchmark",
+      "clinical decision support"
+    ]
+  },
+  {
+    "id": "pmid:42948771",
+    "pmid": "42948771",
+    "title": "HerbWise: A domain-specific large language model for traditional herbal medicine",
+    "authors": [
+      "Xiao W",
+      "Cheng Q",
+      "Mao Y",
+      "Zhang P",
+      "Song C",
+      "Zhang S",
+      "Li Q",
+      "Wang B",
+      "Chen W"
+    ],
+    "journal": "Chin Herb Med",
+    "pub_date": "2026-02-10",
+    "doi": "10.1016/j.chmed.2026.02.010",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42948771/",
+    "source": "PubMed",
+    "category": "Domain-Specific Clinical LLM",
+    "abstract": "HerbWise: LLM built on ChatGLM3-6B for traditional herbal medicine (THM). Integrates 748,041 curated entries covering herbal origins, medicinal parts, clinical applications, genomics, chemistry. Multi-stage training: pre-training, SFT, RLHF. Includes RAG framework for compound interpretation, ADMET prediction, and knowledge QA. Outperforms general-purpose and domain-specific models across THM tasks. Web interface available.",
+    "keywords": [
+      "LLM",
+      "traditional herbal medicine",
+      "HerbWise",
+      "ChatGLM3",
+      "RAG",
+      "ADMET",
+      "domain-specific",
+      "clinical AI"
+    ]
   }
 ]

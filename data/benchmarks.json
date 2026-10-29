@@ -5166,5 +5166,106 @@
       "ChatGPT_5.2": "93.5%",
       "Kimi_K2.5": "92.9%"
     }
+  },
+  {
+    "id": "pmid:42950951",
+    "pmid": "42950951",
+    "title": "GenAI Models Nasal Polyps Patient Questions Benchmark",
+    "authors": [
+      "Ruran HB",
+      "et al."
+    ],
+    "journal": "J Allergy Clin Immunol Pract",
+    "pub_date": "2026-10-28",
+    "doi": "10.1016/j.jaip.2026.10.018",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42950951/",
+    "source": "PubMed",
+    "category": "AI Medical Accuracy Benchmark",
+    "description": "Multiple generative AI platforms evaluated on accuracy, currency, relevance, understandability, and clinical safety answering common nasal polyp patient questions. Platforms differed significantly in all dimensions.",
+    "metrics": {
+      "platforms": "multiple GenAI",
+      "task": "patient questions about nasal polyps",
+      "dimensions": [
+        "accuracy",
+        "currency",
+        "relevance",
+        "understandability",
+        "clinical safety"
+      ]
+    }
+  },
+  {
+    "id": "pmid:42950761",
+    "pmid": "42950761",
+    "title": "LLM Gait Classification Cerebral Palsy Benchmark (ChatGPT vs Gemini vs Claude)",
+    "authors": [
+      "Celik M",
+      "et al."
+    ],
+    "journal": "Gait Posture",
+    "pub_date": "2026-10-26",
+    "doi": "10.1016/j.gaitpost.2026.110677",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42950761/",
+    "source": "PubMed",
+    "category": "LLM Clinical Classification Benchmark",
+    "description": "ChatGPT, Gemini, Claude on 15 cerebral palsy gait cases (5 Rodda patterns). Claude graph-based 73.3% accuracy (kappa=0.67), ChatGPT/Gemini 46.7%. Video-based 20-26.7%. Treatment recommendation agreement low across all.",
+    "metrics": {
+      "num_llms": 3,
+      "num_cases": 15,
+      "Claude_graph_accuracy": "73.3%",
+      "ChatGPT_graph_accuracy": "46.7%",
+      "Gemini_graph_accuracy": "46.7%",
+      "video_accuracy": "20-26.7%"
+    }
+  },
+  {
+    "id": "pmid:42949252",
+    "pmid": "42949252",
+    "title": "ChatGPT Audiogram Interpretation Version Benchmark (4.0 vs 5.1)",
+    "authors": [
+      "Tahir E",
+      "et al."
+    ],
+    "journal": "Otolaryngol Head Neck Surg",
+    "pub_date": "2026-10-28",
+    "doi": "10.1002/ohn.70500",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42949252/",
+    "source": "PubMed",
+    "category": "LLM Version Comparison Diagnostic Benchmark",
+    "description": "ChatGPT-4.0 vs ChatGPT-5.1 on 100 audiograms (20 with masking errors). ChatGPT-5.1 significantly higher on 6/7 questions (P<.001). Effect sizes 0.53-0.94. Both struggled with flawed input data. Inter-rater kappa 0.74-0.78.",
+    "metrics": {
+      "num_audiograms": 100,
+      "masking_errors": 20,
+      "questions": 7,
+      "ChatGPT-5.1_significant_improvement": "6/7 questions",
+      "effect_sizes": "0.53-0.94",
+      "inter_rater_kappa": "0.74-0.78"
+    }
+  },
+  {
+    "id": "pmid:42948771",
+    "pmid": "42948771",
+    "title": "HerbWise Domain-Specific LLM Traditional Herbal Medicine Benchmark",
+    "authors": [
+      "Xiao W",
+      "et al."
+    ],
+    "journal": "Chin Herb Med",
+    "pub_date": "2026-02-10",
+    "doi": "10.1016/j.chmed.2026.02.010",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42948771/",
+    "source": "PubMed",
+    "category": "Domain-Specific Clinical LLM Benchmark",
+    "description": "HerbWise (ChatGLM3-6B) trained on 748,041 entries for traditional herbal medicine. Outperforms general-purpose and domain-specific models across THM tasks including knowledge QA, compound property prediction, and ADMET prediction. Uses RAG framework.",
+    "metrics": {
+      "training_entries": 748041,
+      "base_model": "ChatGLM3-6B",
+      "tasks": [
+        "knowledge QA",
+        "compound prediction",
+        "ADMET"
+      ],
+      "framework": "RAG + SFT + RLHF"
+    }
   }
 ]
