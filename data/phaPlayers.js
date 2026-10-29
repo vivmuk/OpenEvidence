@@ -83,5 +83,15 @@ var phaPlayersData = [
   {name:"Alloop - Trio + AI Health Agent", type:"Wearable maker · AI-native platform", badge:"NEW ENTRANT",
    stats:[{l:"Launched",v:"Oct 23, 2026"},{l:"Hardware",v:"Modular ring/wristband"},{l:"Integrations",v:"Apple Health, Google Health"},{l:"Funding",v:"Kickstarter"}],
    desc:"Alloop's Trio is a modular 3-in-1 wearable with one interchangeable sensing core that snaps between a smart ring and a wristband. Its Personal AI Health Agent interprets physiological data alongside user-journalled meals, activities and symptoms via voice, text and images. An open platform integrates Apple Health, Google Health and Health Connect. Bio Age score spans six domains. A new entrant combining hardware, open data integration and conversational AI.",
-   url:"https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"}
+   url:"https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"},
+
+  {name:"Ro - Robin AI Health Agent", type:"Telehealth platform · AI agent for subscribers", badge:"VERTICAL INTEGRATION",
+   stats:[{l:"Launched",v:"Oct 29, 2026"},{l:"Data",v:"Doctor notes, prescriptions, Apple Health"},{l:"Model",v:"Proprietary"},{l:"Scope",v:"Ro subscribers, US"}],
+   desc:"Ro's AI agent Robin uses information already stored in the Ro app - doctor notes, patient feedback, prescriptions and Apple Health data - to personalise recommendations for medication changes, dosing tweaks and habit improvements. Robin can draft a note to a doctor suggesting a medication change. CEO Zach Reitano's stated long-term goal is for Ro to become a 'quarterback' for the entire American healthcare system, expanding in-house care concentrically. Brown University's Dr Ateev Mehrotra flagged the need for evidence before millions adopt it and noted financial-incentive concerns unique to commercial telehealth. Represents the telehealth-path to consumer health AI: own the patient relationship, own the agent.",
+   url:"https://www.businessinsider.com/exclusive-ro-launches-ai-agent-for-healthcare-2026-10"},
+
+  {name:"Meta - Muse Personal AI Agent", type:"Platform · general-purpose agent with health connections", badge:"TRUST DEFICIT",
+   stats:[{l:"Launched",v:"Sep 8, 2026"},{l:"Pricing",v:"Free / Power $20/mo / Maximum $100/mo"},{l:"Channels",v:"Web, iOS, Android, WhatsApp, glasses"},{l:"Health",v:"Connects health & fitness apps"},{l:"Model",v:"Muse Spark"}],
+   desc:"Meta's Muse is a general-purpose personal AI agent that connects to users' apps and services including health and fitness, email, calendars, payments and smart home. Runs in a dedicated Muse Secure VM with a separate Sentinel safety agent, and Meta claims it does not share conversations with its ads systems. Launch came two weeks after Meta's $18B multistate settlement over social media harms to children, making trust the central question. Free tier with paid plans at $20 and $100 per month. Represents the platform-play for consumer AI with health data access: Meta's billions of users, WhatsApp distribution and AI glasses give it reach, but its trust deficit is the moat it must cross.",
+   url:"https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"}
 ];

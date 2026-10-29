@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,24 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-10-29",
+      "cat": "Product",
+      "title": "Ro Launches 'Robin' AI Health Agent for Telehealth Subscribers",
+      "desc": "Telehealth company Ro launched an AI health agent named Robin that uses doctor notes, patient feedback, prescriptions and Apple Health data already stored in the Ro app to personalise recommendations for medication changes, dosing tweaks and habit improvements. Robin can draft a note to a doctor suggesting a medication change. CEO Zach Reitano positioned Ro as a 'quarterback' for the entire American healthcare system, expanding in-house care concentrically. Brown University's Dr Ateev Mehrotra flagged the need for evidence before millions of Americans adopt it and noted financial-incentive concerns unique to commercial telehealth. Vendor claim: AI-powered personalised health recommendations, not a substitute for medical care.",
+      "src": "Business Insider",
+      "url": "https://www.businessinsider.com/exclusive-ro-launches-ai-agent-for-healthcare-2026-10",
+      "new": true
+    },
+    {
+      "date": "2026-10-28",
+      "cat": "Regulatory",
+      "title": "24 States Now Have Comprehensive Consumer Privacy Laws as Sensitive-Data Sales Bans Spread",
+      "desc": "Four new states (Alabama, Louisiana, Oklahoma, Vermont) enacted comprehensive consumer privacy laws in 2026, bringing the total to 24. The defining trend is a shift beyond consent to outright bans on selling sensitive data: New Jersey prohibits selling sensitive data regardless of consumer consent, Connecticut and Virginia ban sales of precise geolocation, and Delaware expanded its sensitive-data definition to include neural data and inferences revealing health conditions. Colorado's revised AI law will regulate automated technology in consequential decisions starting Jan 1, 2027. Data broker registration expanded to Connecticut and New Jersey. Massachusetts is considering a private right of action.",
+      "src": "MultiState",
+      "url": "https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws",
+      "new": true
+    },
     {
       "date": "2026-10-26",
       "cat": "Product",
@@ -109,6 +127,14 @@
       "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1950777/full"
     },
     {
+      "date": "2026-10-08",
+      "cat": "Research",
+      "title": "Nottingham Trent University: Privacy-Preserving Ambient Home Monitoring via Radar-Thermal Sensing",
+      "desc": "NTU researchers published a system in Sensors that combines mmWave radar, low-resolution thermal sensors and smart plugs to track daily routines and detect health emergencies without cameras or wearables. AI learns individual behaviour patterns to flag anomalies such as falls, prolonged inactivity or altered sleep. Tested in mock domestic environments with six room layouts. The privacy-by-design approach uses pixelated thermal sensors that identify posture without facial features, and smart-plug appliance patterns to infer daily activities. The authors position it as an ambient assisted living environment for ageing in place.",
+      "src": "News-Medical.net / Sensors",
+      "url": "https://www.news-medical.net/news/20261008/AI-powered-home-monitoring-tracks-older-adultse28099-health-while-protecting-privacy.aspx"
+    },
+    {
       "date": "2026-08-11",
       "cat": "Product",
       "title": "Abbott and Google Partner on AI-Powered Metabolic Insights",
@@ -163,6 +189,14 @@
       "desc": "Apple announced health and fitness capabilities powered by Apple Intelligence with iOS 27 and iPadOS 27. The Health app is positioned as the central, secure location for a user's health and fitness information, with on-device processing and expanded interpretation of long-term metrics rather than simple daily logging. Apple had previously scaled back its fuller AI health coach effort, and Bloomberg reported the paid Health+ service was still planned for 2026.",
       "src": "Apple Newsroom",
       "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"
+    },
+    {
+      "date": "2026-09-08",
+      "cat": "Product",
+      "title": "Meta Launches Muse Personal AI Agent with Health and Fitness App Connections",
+      "desc": "Meta introduced Muse, a general-purpose personal AI agent that connects to users' apps and services including health and fitness, email, calendars and payments. Powered by Meta's Muse Spark model, it runs in a dedicated Muse Secure VM with a separate Sentinel safety agent. Available via web, iOS, Android and WhatsApp, with Meta AI glasses support coming. Free tier with Power ($20/mo) and Maximum ($100/mo) plans. Meta claims Muse does not share conversations with its ads systems. Launch came two weeks after Meta's $18B settlement over social media harms, raising trust questions for a company now seeking access to health data. Vendor claim: secure personal AI agent, not health-specific.",
+      "src": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
     },
     {
       "date": "2026-08-20",
@@ -734,6 +768,60 @@
       ],
       "desc": "Alloop's Trio is a modular 3-in-1 wearable with one interchangeable sensing core that snaps between a smart ring and a wristband. Its Personal AI Health Agent interprets physiological data alongside user-journalled meals, activities and symptoms via voice, text and images. An open platform integrates Apple Health, Google Health and Health Connect. Bio Age score spans six domains. A new entrant combining hardware, open data integration and conversational AI.",
       "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"
+    },
+    {
+      "name": "Ro - Robin AI Health Agent",
+      "type": "Telehealth platform · AI agent for subscribers",
+      "badge": "VERTICAL INTEGRATION",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Oct 29, 2026"
+        },
+        {
+          "l": "Data",
+          "v": "Doctor notes, prescriptions, Apple Health"
+        },
+        {
+          "l": "Model",
+          "v": "Proprietary"
+        },
+        {
+          "l": "Scope",
+          "v": "Ro subscribers, US"
+        }
+      ],
+      "desc": "Ro's AI agent Robin uses information already stored in the Ro app - doctor notes, patient feedback, prescriptions and Apple Health data - to personalise recommendations for medication changes, dosing tweaks and habit improvements. Robin can draft a note to a doctor suggesting a medication change. CEO Zach Reitano's stated long-term goal is for Ro to become a 'quarterback' for the entire American healthcare system, expanding in-house care concentrically. Brown University's Dr Ateev Mehrotra flagged the need for evidence before millions adopt it and noted financial-incentive concerns unique to commercial telehealth. Represents the telehealth-path to consumer health AI: own the patient relationship, own the agent.",
+      "url": "https://www.businessinsider.com/exclusive-ro-launches-ai-agent-for-healthcare-2026-10"
+    },
+    {
+      "name": "Meta - Muse Personal AI Agent",
+      "type": "Platform · general-purpose agent with health connections",
+      "badge": "TRUST DEFICIT",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Sep 8, 2026"
+        },
+        {
+          "l": "Pricing",
+          "v": "Free / Power $20/mo / Maximum $100/mo"
+        },
+        {
+          "l": "Channels",
+          "v": "Web, iOS, Android, WhatsApp, glasses"
+        },
+        {
+          "l": "Health",
+          "v": "Connects health & fitness apps"
+        },
+        {
+          "l": "Model",
+          "v": "Muse Spark"
+        }
+      ],
+      "desc": "Meta's Muse is a general-purpose personal AI agent that connects to users' apps and services including health and fitness, email, calendars, payments and smart home. Runs in a dedicated Muse Secure VM with a separate Sentinel safety agent, and Meta claims it does not share conversations with its ads systems. Launch came two weeks after Meta's $18B multistate settlement over social media harms to children, making trust the central question. Free tier with paid plans at $20 and $100 per month. Represents the platform-play for consumer AI with health data access: Meta's billions of users, WhatsApp distribution and AI glasses give it reach, but its trust deficit is the moat it must cross.",
+      "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
     }
   ],
   "research": [
@@ -910,6 +998,15 @@
       "finding": "Abbott and Google announced a partnership pairing the Lingo consumer CGM with Google Health's AI to deliver personalised metabolic insights through the Google Health app. Lingo users can view glucose trends alongside other health metrics, with Google's Health Coach translating patterns into nutrition, activity and sleep recommendations. The companies also plan one of the largest real-world metabolic health studies, integrating CGM, wearable, lab and survey data to examine connections between daily behaviour and metabolic health.",
       "caveat": "Vendor announcement; the planned metabolic health study has no published protocol or results. The partnership is a commercial arrangement; effectiveness of AI-generated metabolic insights from CGM data has not been independently evaluated.",
       "url": "https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app"
+    },
+    {
+      "title": "Privacy-Preserving Ambient Sensing for Activities of Daily Living: Multimodal Radar-Thermal Human Activity Recognition and Smart Plug Appliance Recognition",
+      "type": "Peer-reviewed · ambient sensing system",
+      "date": "Oct 8, 2026",
+      "venue": "Sensors",
+      "finding": "NTU researchers developed a low-cost monitoring system combining mmWave radar, low-resolution thermal sensors and smart plugs to track daily routines and detect health emergencies in the home without cameras or wearables. AI learns individual behaviour patterns over time to identify anomalies such as falls, heart attacks, strokes or gradual deterioration in mobility. Tested in mock domestic environments with six room layouts, with multimodal sensor fusion outperforming any single sensor type. The privacy-by-design approach uses pixelated thermal sensors that identify posture without facial features, and smart-plug appliance patterns to infer daily activities like making tea or preparing food.",
+      "caveat": "Laboratory mock-environment testing, not real-world deployment with actual older adults. The system's ability to distinguish genuine emergencies from normal routine variations in uncontrolled settings is unproven. Small evaluation scope with six room layouts.",
+      "url": "https://www.mdpi.com/1424-8220/26/16/5066"
     }
   ],
   "sources": [
@@ -1120,6 +1217,26 @@
     {
       "name": "Fitt Insider - Oura Launches AI Health Coach",
       "url": "https://insider.fitt.co/oura-launches-ai-health-coach/"
+    },
+    {
+      "name": "Business Insider - Ro launches AI agent Robin for healthcare (Oct 29, 2026)",
+      "url": "https://www.businessinsider.com/exclusive-ro-launches-ai-agent-for-healthcare-2026-10"
+    },
+    {
+      "name": "MultiState - 24 states now have comprehensive consumer privacy laws (Oct 28, 2026)",
+      "url": "https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws"
+    },
+    {
+      "name": "News-Medical.net - AI-powered home monitoring tracks older adults' health (Oct 8, 2026)",
+      "url": "https://www.news-medical.net/news/20261008/AI-powered-home-monitoring-tracks-older-adultse28099-health-while-protecting-privacy.aspx"
+    },
+    {
+      "name": "Sensors - Privacy-Preserving Ambient Sensing for ADL (Oct 8, 2026)",
+      "url": "https://www.mdpi.com/1424-8220/26/16/5066"
+    },
+    {
+      "name": "TechCrunch - Meta debuts its Muse AI agent (Sep 8, 2026)",
+      "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
     }
   ]
 }

@@ -50,5 +50,10 @@ var phaSourcesData = [
   {name:"Nature Medicine - Reliability of LLMs as medical assistants for the general public (Feb 9, 2026)", url:"https://www.nature.com/articles/s41591-025-04074-y"},
   {name:"Oxford University - New study warns of risks in AI chatbots giving medical advice (Feb 10, 2026)", url:"https://www.ox.ac.uk/news/2026-02-10-new-study-warns-risks-ai-chatbots-giving-medical-advice"},
   {name:"OpenAI - Launching Health in ChatGPT (Jul 23, 2026)", url:"https://openai.com/index/health-in-chatgpt/"},
-  {name:"Fitt Insider - Oura Launches AI Health Coach", url:"https://insider.fitt.co/oura-launches-ai-health-coach/"}
+  {name:"Fitt Insider - Oura Launches AI Health Coach", url:"https://insider.fitt.co/oura-launches-ai-health-coach/"},
+  {name:"Business Insider - Ro launches AI agent Robin for healthcare (Oct 29, 2026)", url:"https://www.businessinsider.com/exclusive-ro-launches-ai-agent-for-healthcare-2026-10"},
+  {name:"MultiState - 24 states now have comprehensive consumer privacy laws (Oct 28, 2026)", url:"https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws"},
+  {name:"News-Medical.net - AI-powered home monitoring tracks older adults' health (Oct 8, 2026)", url:"https://www.news-medical.net/news/20261008/AI-powered-home-monitoring-tracks-older-adultse28099-health-while-protecting-privacy.aspx"},
+  {name:"Sensors - Privacy-Preserving Ambient Sensing for ADL (Oct 8, 2026)", url:"https://www.mdpi.com/1424-8220/26/16/5066"},
+  {name:"TechCrunch - Meta debuts its Muse AI agent (Sep 8, 2026)", url:"https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"}
 ];
