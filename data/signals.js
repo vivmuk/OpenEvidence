@@ -248,6 +248,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-10-28",
+  "cat": "Partnership",
+  "title": "ASAM and OpenEvidence Partner to Expand Access to Evidence-Based Addiction Medicine Guidance",
+  "desc": "The American Society of Addiction Medicine (ASAM) and OpenEvidence announce a collaboration to make ASAM's clinical guidelines, guidance, and implementation resources accessible through OpenEvidence, bringing evidence-based addiction medicine treatment guidance to the point of care for the millions ",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/asam-and-openevidence-partner-to-expand-access-to-evidence-based-addiction-medicine-guidance",
+  "score": 81,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-10-22",
   "cat": "Partnership",
   "title": "Memorial Sloan Kettering Cancer Center and OpenEvidence Partner to Advance Precision Oncology",
@@ -745,20 +757,6 @@ var signalsData = [
   "score": 51,
   "confidence": "reported",
   "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-05-13",
-  "cat": "Partnership",
-  "title": "Doximity + Aledade Partnership (Competitor)",
-  "desc": "Doximity integrates Clinical AI Suite into Aledade Assist for value-based care.",
-  "src": "Doximity",
-  "url": "https://press.doximity.com/",
-  "score": 51,
-  "confidence": "reported",
-  "competitors": [
-   "Doximity"
-  ],
   "comparative": false
  }
 ];
