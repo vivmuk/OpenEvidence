@@ -607,13 +607,13 @@
       "desc": "Suki, Abridge's closest ambient AI competitor, closed a $90M Series E led by Healthier Capital, bringing total raised to $250M+. The funding will push Suki beyond clinical notes into AI agents that autonomously draft referrals, submit prior authorizations, place orders, and schedule follow-ups - directly competing with Abridge's Availity prior-auth partnership and revenue cycle expansion. Suki reports 450+ organizations, 30+ technology partners, and 190% YoY encounter growth.",
       "src": "Healthcare Dive / TechTimes",
       "url": "https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-09-29",
       "cat": "Partnership",
       "title": "Deaconess Health: Abridge Assistant in Psychiatric Practice (Olivia Taylor Case Study)",
-      "desc": "Abridge published a case study with Olivia Taylor, a psychiatric mental health nurse practitioner at Deaconess Health with a decade of experience across inpatient and outpatient care. Taylor describes using Abridge Assistant for context-aware decision support during visits, including verifying medication taper strategies, monitoring schedules, and drug interactions — without leaving the conversation. She reports it has given her back significant mental bandwidth and sharpened her critical thinking by surfacing angles she hadn't considered. The case study confirms Deaconess Health as an Abridge enterprise partner with unlimited clinician licenses.",
+      "desc": "Abridge published a case study with Olivia Taylor, a psychiatric mental health nurse practitioner at Deaconess Health with a decade of experience across inpatient and outpatient care. Taylor describes using Abridge Assistant for context-aware decision support during visits, including verifying medication taper strategies, monitoring schedules, and drug interactions - without leaving the conversation. She reports it has given her back significant mental bandwidth and sharpened her critical thinking by surfacing angles she hadn't considered. The case study confirms Deaconess Health as an Abridge enterprise partner with unlimited clinician licenses.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/deaconess-olivia-taylor-abridge-assistant",
       "new": false
@@ -634,7 +634,7 @@
       "desc": "Abridge introduced Abridge Assistant, a conversational AI assistant that lets clinicians ask questions and delegate tasks in natural language. Assistant pulls context from the patient chart, the clinical conversation, and trusted evidence sources (UpToDate, NEJM, JAMA, ADA, AAFP, Neurology, JCO), with every response citing its sources and opening calculators pre-filled with chart values. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. The launch unifies the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities under a single brand.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/abridge-assistant-is-the-ai-assistant-for-healthcare",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-07",
@@ -1048,5 +1048,5 @@
       "url": "https://www.businesswire.com/news/home/20260521475981/en/Abridge-Names-San-Oo-CTO"
     }
   ],
-  "updated": "2026-10-27"
+  "updated": "2026-10-29"
 }
