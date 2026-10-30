@@ -22,13 +22,25 @@ Related but separate: physician-facing clinical AI (OpenEvidence, Abridge, Doxim
 VENICE_KEY=$(sed -n 's/^[[:space:]]*api_key:[[:space:]]*//p' ~/.hermes/config.yaml | head -1)
 ```
 
-Search:
+Search with the Venice search helper. It runs on **Exa** via Venice (zero data
+retention, no Exa account needed, Venice bills $0.01/call) and returns
+**publication dates** — Brave leaves `date` empty, and this tracker dedupes and
+ages entries by date, so the date is the field that matters most.
 
 ```bash
-curl -s -H "Authorization: Bearer $VENICE_KEY" -X POST -H "Content-Type: application/json" \
-  -d '{"query":"<QUERY>","limit":8}' \
-  https://api.venice.ai/api/v1/augment/search
+python3 /home/vivgates/.openclaw/workspace-kriya/scripts/venice_search.py \
+  --provider exa \
+  --limit 8 \
+  --max-chars 700 \
+  --query "<QUERY>" \
+  --query "<QUERY>"
 ```
+
+It prints a JSON array of `{title, url, date, snippet}` to stdout and dedupes by
+URL, so run every query in one call with repeated `--query` flags. `snippet` is
+the page text truncated to `--max-chars`, which keeps the context budget flat.
+Use `date` as the publication date; when it is empty, take the date from the
+snippet text or from the source page.
 
 Scrape when `web_fetch` fails:
 
