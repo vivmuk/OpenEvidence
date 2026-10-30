@@ -53,4 +53,19 @@ var globalMatrixData = [
   {platform:"Smart Doctor (AIIMS/NHA)",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Healthleap",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"ClinicalKey Nursing AI",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"yes",sea:"yes",latam:"yes",mea:"yes"}
+{platform:"Matic",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Whadata",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"JardogsHealth",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Avo (AvoMD)",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Elna Health",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"DR. INFO",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Lapsi Health (Keikku)",us:"no",eu:"yes",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"InTouchNow",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Certuma",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"yes",mea:"no"},
+{platform:"M42 Ossi",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"yes"},
+{platform:"DeepRare",us:"no",eu:"no",uk:"no",cn:"yes",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"OPTiM AI Hospital",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"yes",sea:"no",latam:"no",mea:"no"},
+{platform:"FOAM Cortex",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"medThinks",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Newtons AI",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"}
 ];;
