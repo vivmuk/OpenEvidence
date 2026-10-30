@@ -248,6 +248,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-10-29",
+  "cat": "Partnership",
+  "title": "OpenEvidence and NYU Langone Health Partner to Bring Patient-Aware Intelligence to 12 Million Visits in New York City",
+  "desc": "NYU Langone Health and OpenEvidence announce a collaboration to bring OpenEvidence directly into NYU Langone's Epic electronic health record (EHR), with Patient Aware Clinical Intelligence. Clinicians can ask complex clinical questions in natural language and receive answers grounded in peer-reviewe",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/openevidence-and-nyu-langone-health-partner-to-bring-patient-aware-intelligence-to-12-million-visits-in-new-york-city",
+  "score": 81,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-10-28",
   "cat": "Partnership",
   "title": "ASAM and OpenEvidence Partner to Expand Access to Evidence-Based Addiction Medicine Guidance",
@@ -745,18 +757,6 @@ var signalsData = [
   "competitors": [
    "Abridge"
   ],
-  "comparative": false
- },
- {
-  "date": "2026-05-19",
-  "cat": "Milestone",
-  "title": "CNBC Disruptor 50 - OpenEvidence Ranked #32",
-  "desc": "OpenEvidence ranked #32 on CNBC 2026 Disruptor 50 list. Cited for $700M funding, $12B valuation, 40%+ of US physicians, and narrow but powerful medical AI strategy.",
-  "src": "CNBC",
-  "url": "https://www.cnbc.com/2026/05/19/openevidence-cnbc-disruptor-50-ranking.html",
-  "score": 51,
-  "confidence": "reported",
-  "competitors": [],
   "comparative": false
  }
 ];
