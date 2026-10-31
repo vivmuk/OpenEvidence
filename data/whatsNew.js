@@ -4,6 +4,7 @@
 // The index page renders these dynamically - no need to edit index.html.
 
 var whatsNewData = [
+  { date: "2026-10-31", category: "Research", title: "Daily arXiv+PubMed Sweep: 5 New Clinical AI Papers", desc: "New papers: Disparity Laundering - multi-agent clinical AI bias (arXiv 2610.38215), OmniTFT ICU CDSS forecasting (PMID 42964124), LLM+RAG brachytherapy planning (PMID 42963884), LLM evaluation statistics methodology (PMID 42962902), LLM thyroid surgery quality (PMID 42961553). 7 new benchmarks added." },
   { date: "2026-10-29", category: "Research", title: "Daily PubMed Sweep: 8 New Clinical AI Papers", desc: "New papers added: KG+RAG for clinical pharmacology (PMID 42952574), GenAI in medicine review (PMID 42951658), EMBRACE LLM RCT protocol (PMID 42951296), GenAI nasal polyps benchmark (PMID 42950951), LLM cerebral palsy gait classification (PMID 42950761), Living CPG automation review (PMID 42950241), ChatGPT audiogram version comparison (PMID 42949252), HerbWise THM LLM (PMID 42948771). 4 new benchmarks added." },
   {
     date: "October 28, 2026",
