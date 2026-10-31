@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-31",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -50,6 +50,15 @@
       "new": true
     },
     {
+      "date": "2026-10-26",
+      "cat": "Product",
+      "title": "RingConn Partner Officially Launches AI Wellness Companion",
+      "desc": "RingConn launched Partner, an AI wellness companion built into its smart ring platform, following a beta testing phase. Partner connects wearable sensor data with conversational AI to deliver personalised health guidance, supports custom naming, and integrates additional health data sources beyond the ring's own metrics. Free to use with optional value-added services. Vendor claim: AI-powered wellness companion, not a medical device.",
+      "src": "RingConn",
+      "url": "https://ringconn.com/blogs/news/ringconn-partner-now-officially-launching",
+      "new": true
+    },
+    {
       "date": "2026-10-23",
       "cat": "Product",
       "title": "Alloop Launches Trio: Modular 3-in-1 Wearable Built Around a Personal AI Health Agent",
@@ -95,6 +104,22 @@
       "new": true
     },
     {
+      "date": "2026-10-14",
+      "cat": "Research",
+      "title": "BeST Benchmark: Self-Triage Systems vs OpenAI Models Across Multiple Generations",
+      "desc": "The Central Research Institute of Ambulatory Health Care in Germany (Zi) published BeST (Benchmark Self-Triage), comparing emergency recognition and overall agreement with clinical judgement across self-triage systems and multiple generations of OpenAI models against preliminary expert consensus. The study addresses how triage outcomes differ across GPT model generations, providing quality assurance data for digital self-triage as adoption widens. Preprint, not yet peer-reviewed.",
+      "src": "medRxiv (BeST Study Group)",
+      "url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/14/2026.10.12.26365287.full.pdf"
+    },
+    {
+      "date": "2026-10-13",
+      "cat": "Product",
+      "title": "Apple Pulls AI-Powered Health App from iOS 27.2 Beta — Second Delay for Apple Intelligence Health",
+      "desc": "Apple removed its redesigned Health app from iOS 27.2 beta 4, marking the second postponement of the Apple Intelligence-powered health insights overhaul. The app was originally previewed in September with features including an Insights tab, personalised guidance, readiness score, and Health Age calculation. Bloomberg had reported Apple scaled back the fuller AI health coach (Project Mulberry) in February. The current Health app was restored to iOS 27.2 in the latest beta, with the AI-powered version now expected later.",
+      "src": "Stuff / 9to5Mac",
+      "url": "https://www.stuff.tv/news/apple-health-app-pulled-from-ios-27-2-beta-heres-the-new-timeline-for-the-ai-powered-health-insights/"
+    },
+    {
       "date": "2026-10-12",
       "cat": "Product",
       "title": "Google Launches Fitbit Edge with AI Health Guardian",
@@ -135,12 +160,84 @@
       "url": "https://www.news-medical.net/news/20261008/AI-powered-home-monitoring-tracks-older-adultse28099-health-while-protecting-privacy.aspx"
     },
     {
+      "date": "2026-10-05",
+      "cat": "Research",
+      "title": "Nature Health: Respiratory Assessment Chatbot Validated in Nationwide Messaging System",
+      "desc": "A randomised preregistered study published in Nature Health evaluated a respiratory assessment chatbot embedded in a nationwide messaging system for layperson diagnosis and triage. The study tested diagnostic and triage accuracy across respiratory symptoms in a real-world messaging deployment, providing evidence for chatbot-assisted respiratory self-assessment at population scale.",
+      "src": "Nature Health",
+      "url": "https://www.nature.com/articles/s44360-026-00189-9"
+    },
+    {
+      "date": "2026-10-01",
+      "cat": "Research",
+      "title": "Multi-Agent LLM Framework for Personalised Health Checkup Interpretation and Guidance",
+      "desc": "arXiv preprint presenting a multi-agent LLM system that identifies multiple intents in health checkup questions, maps each to a task-specific agent, executes them in parallel, and synthesises results. The authors compared single-agent and multi-agent configurations, finding the multi-agent approach improved answer quality for complex health checkup interpretation requiring reasoning across longitudinal records, medical knowledge, lifestyle guidance and healthcare navigation.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2610.01451"
+    },
+    {
+      "date": "2026-09-30",
+      "cat": "Research",
+      "title": "JMIR: Smart Home Technology-Enhanced Health Care — Scoping Review of Sensors, Applications and Integration",
+      "desc": "A scoping review published in JMIR Medical Informatics synthesised literature on technology-enhanced health care (TEH) integration within smart homes, examining global deployment patterns, technological maturity, biomedical sensor integration, machine learning applications, and health outcomes. The review covers the Internet of Medical Things, wearable biosensors and AI-driven analytics for proactive care delivery, particularly for older adults and individuals with chronic conditions living independently.",
+      "src": "JMIR Medical Informatics",
+      "url": "https://medinform.jmir.org/2026/1/e89189/"
+    },
+    {
+      "date": "2026-09-25",
+      "cat": "Research",
+      "title": "PIA: Personal Intelligence Agent Turns Health Conversations into Records and Records into Understanding",
+      "desc": "arXiv preprint introducing PIA, a personal intelligence agent that transforms health conversations into structured records and uses those records for longitudinal understanding. Unlike general-purpose agent memory that summarises conversations into text snippets, PIA extracts structured health data (doses, trends, timelines) and retrieves by structured query rather than text similarity. The authors argue a health agent cannot run on summaries alone: a dose becomes a sentence, temporal references resolve at model discretion, and glucose trends cannot be answered by text similarity.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2609.31255"
+    },
+    {
+      "date": "2026-09-22",
+      "cat": "Research",
+      "title": "Nature Digital Medicine: Patient Journey Evaluation for Consumer AI Health Assistants",
+      "desc": "A Perspective published in Nature Digital Medicine defines a journey-level evaluation and governance framework for record-linked patient education by consumer AI health assistants. The authors introduce the personal health workspace (PHW), a user-controlled setting for evaluating an assistant as a stateful system across a patient journey rather than isolated Q&A turns. The framework includes a clinical journey map and an auditable interaction loop for testing longitudinal reliability before deployment and monitoring afterward.",
+      "src": "Nature Digital Medicine",
+      "url": "https://doi.org/10.1038/s41746-026-03251-8"
+    },
+    {
+      "date": "2026-09-14",
+      "cat": "Research",
+      "title": "SAFE-CARE Bench: Safety Benchmark for Multi-Turn Healthcare AI Agent Conversations",
+      "desc": "SAFE-CARE Bench is a benchmark specification and evaluation protocol testing what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0–A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
+      "src": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22739092"
+    },
+    {
+      "date": "2026-09-02",
+      "cat": "Research",
+      "title": "Are Frontier LLMs Safer Than Government-Backed Symptom Checkers for Clinical Self-Triage?",
+      "desc": "A standardised vignette evaluation published on medRxiv compared Australia's Healthdirect symptom checker (2.4 million uses in FY2024-25) against six LLM configurations across triage accuracy and safety. The study is the first to evaluate a government-backed symptom checker against frontier large language models, and explores whether premium LLM subscriptions improve triage safety. Preprint, not yet peer-reviewed.",
+      "src": "medRxiv",
+      "url": "https://doi.org/10.64898/2026.09.01.26361908"
+    },
+    {
+      "date": "2026-09-02",
+      "cat": "Research",
+      "title": "AI Triage Concordance Varies by User Authentication Status in US Health System",
+      "desc": "A prospective cohort analysis published in npj Health Systems examined 6,772 care seekers using an AI triage tool at a US health system. The study found that users' pre-stated care intent aligned with AI recommendations differently depending on authentication status, and that alignment shaped downstream engagement. The findings address how user identity and stated intent affect the reliability of AI triage tools deployed at the digital front door of health systems.",
+      "src": "npj Health Systems",
+      "url": "https://www.nature.com/articles/s44401-026-00140-w"
+    },
+    {
       "date": "2026-08-11",
       "cat": "Product",
       "title": "Abbott and Google Partner on AI-Powered Metabolic Insights",
       "desc": "Abbott and Google announced a partnership pairing the Lingo consumer CGM with Google Health's AI to deliver personalised metabolic insights through the Google Health app. Lingo users can view glucose trends alongside other health metrics, with Google's Health Coach translating patterns into nutrition, activity and sleep recommendations. The companies also plan one of the largest real-world metabolic health studies, integrating CGM, wearable, lab and survey data to examine connections between daily behaviour and metabolic health, including early identification of prediabetes.",
       "src": "Fierce Biotech / Abbott",
       "url": "https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app"
+    },
+    {
+      "date": "2026-07-22",
+      "cat": "Product",
+      "title": "Samsung Rolls Out Beta of AI-Powered Health Assistant in Samsung Health App",
+      "desc": "Samsung launched a beta version of its AI-powered personal health assistant embedded in the Samsung Health app, available to eligible US users. The assistant answers health questions and provides personalised guidance and recommendations based on Samsung Health data. Planned future capabilities include coaching to help users achieve health goals. Samsung's entry adds a major Android device maker to the consumer health AI agent landscape alongside Google, Apple and the wearable specialists.",
+      "src": "Fierce Healthcare",
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"
     },
     {
       "date": "2026-05-26",
@@ -644,7 +741,28 @@
       "url": "https://www.producthunt.com/products/copilot-health"
     },
     {
-      "name": "Samsung / Garmin / Withings",
+      "name": "Samsung - Samsung Health Assistant",
+      "type": "Device incumbent · AI health agent",
+      "badge": "BETA",
+      "stats": [
+        {
+          "l": "Beta launched",
+          "v": "Jul 22, 2026"
+        },
+        {
+          "l": "Platform",
+          "v": "Samsung Health app, US"
+        },
+        {
+          "l": "Capabilities",
+          "v": "Q&A, personalised guidance, coaching (planned)"
+        }
+      ],
+      "desc": "Samsung launched a beta of its AI-powered personal health assistant embedded in the Samsung Health app, available to eligible US users. The assistant answers health questions and provides personalised guidance based on Samsung Health data, with planned future capabilities including goal-oriented coaching. Samsung's entry adds the largest Android device maker by volume to the consumer health AI agent landscape.",
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"
+    },
+    {
+      "name": "Garmin / Withings",
       "type": "Device incumbents",
       "badge": "ADJACENT",
       "stats": [
@@ -659,6 +777,27 @@
       ],
       "desc": "Hardware incumbents with large installed bases are adding AI interpretation and coaching, but trail the platform players on model capability and the wearable-native startups on coaching depth.",
       "url": "https://www.aimagicx.com/blog/ai-health-wearables-smart-rings-monitors-guide-2026"
+    },
+    {
+      "name": "RingConn - Partner AI Wellness Companion",
+      "type": "Wearable maker · smart ring AI",
+      "badge": "NEW ENTRANT",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Oct 26, 2026"
+        },
+        {
+          "l": "Model",
+          "v": "Free + value-added services"
+        },
+        {
+          "l": "Platform",
+          "v": "RingConn app"
+        }
+      ],
+      "desc": "RingConn launched Partner, an AI wellness companion built into its smart ring platform. Partner connects wearable sensor data with conversational AI to deliver personalised health guidance, supports custom naming, and integrates additional health data sources. Free to use with optional value-added services. Vendor claim: AI-powered wellness companion, not a medical device.",
+      "url": "https://ringconn.com/blogs/news/ringconn-partner-now-officially-launching"
     },
     {
       "name": "Meta AI glasses and form-factor sensing",
@@ -1007,6 +1146,87 @@
       "finding": "NTU researchers developed a low-cost monitoring system combining mmWave radar, low-resolution thermal sensors and smart plugs to track daily routines and detect health emergencies in the home without cameras or wearables. AI learns individual behaviour patterns over time to identify anomalies such as falls, heart attacks, strokes or gradual deterioration in mobility. Tested in mock domestic environments with six room layouts, with multimodal sensor fusion outperforming any single sensor type. The privacy-by-design approach uses pixelated thermal sensors that identify posture without facial features, and smart-plug appliance patterns to infer daily activities like making tea or preparing food.",
       "caveat": "Laboratory mock-environment testing, not real-world deployment with actual older adults. The system's ability to distinguish genuine emergencies from normal routine variations in uncontrolled settings is unproven. Small evaluation scope with six room layouts.",
       "url": "https://www.mdpi.com/1424-8220/26/16/5066"
+    },
+    {
+      "title": "BeST: Benchmark Self-Triage Systems and Multiple Generations of OpenAI Models Against Preliminary Expert Consensus",
+      "type": "Preprint · benchmark evaluation",
+      "date": "Oct 14, 2026",
+      "venue": "medRxiv (BeST Study Group, Central Research Institute of Ambulatory Health Care in Germany)",
+      "finding": "The BeST study compared emergency recognition and overall agreement with clinical judgement across self-triage systems and multiple generations of OpenAI models against preliminary expert consensus. The evaluation addresses how triage outcomes differ across GPT model generations, providing quality assurance data for digital self-triage as adoption widens. Results show generational variation in triage safety and accuracy.",
+      "caveat": "Preprint, not yet peer-reviewed. The expert consensus used as ground truth is preliminary. Vignette-based evaluation may not reflect real-world triage performance with actual patients.",
+      "url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/14/2026.10.12.26365287.full.pdf"
+    },
+    {
+      "title": "Accuracy of a Respiratory Assessment Chatbot in a Nationwide Messaging System for Layperson Diagnosis and Triage",
+      "type": "Peer-reviewed · randomised preregistered study",
+      "date": "Oct 5, 2026",
+      "venue": "Nature Health",
+      "finding": "A randomised preregistered study evaluated a respiratory assessment chatbot embedded in a nationwide messaging system for layperson diagnosis and triage. The study tested diagnostic and triage accuracy across respiratory symptoms in a real-world messaging deployment at population scale, providing evidence for chatbot-assisted respiratory self-assessment.",
+      "caveat": "Single-condition focus (respiratory). Real-world messaging deployment may differ from clinical assessment settings. Generalisability to other condition categories is not established.",
+      "url": "https://www.nature.com/articles/s44360-026-00189-9"
+    },
+    {
+      "title": "A Multi-Agent LLM Framework for Personalised Health Checkup Interpretation and Guidance",
+      "type": "arXiv preprint · multi-agent system",
+      "date": "Oct 1, 2026",
+      "venue": "arXiv (cs.AI)",
+      "finding": "Presents a multi-agent LLM system that identifies multiple intents in health checkup questions, maps each to a task-specific agent, executes them in parallel, and synthesises outputs. Comparison of single-agent and multi-agent configurations found the multi-agent approach improved answer quality for complex health checkup interpretation requiring reasoning across longitudinal records, medical knowledge, lifestyle guidance and healthcare navigation.",
+      "caveat": "Preprint, not peer-reviewed. Evaluation methodology and benchmark details not fully described in the abstract. Real-world health checkup data quality and heterogeneity may affect performance.",
+      "url": "https://arxiv.org/abs/2610.01451"
+    },
+    {
+      "title": "Technology-Enhanced Health Care in Smart Homes: Scoping Review of Sensor Technologies, Clinical Applications, Integration Challenges, and Future Directions",
+      "type": "Peer-reviewed · scoping review",
+      "date": "Sep 30, 2026",
+      "venue": "JMIR Medical Informatics",
+      "finding": "A scoping review synthesising literature on technology-enhanced health care (TEH) integration within smart homes. Examines global deployment patterns, technological maturity, biomedical sensor integration, machine learning applications, and health outcomes. Covers the Internet of Medical Things, wearable biosensors and AI-driven analytics for proactive care delivery, particularly for older adults and individuals with chronic conditions living independently.",
+      "caveat": "Scoping review, not systematic review or meta-analysis. Heterogeneous study designs and technologies make direct comparison difficult. Most included studies are early-stage deployments or pilots.",
+      "url": "https://medinform.jmir.org/2026/1/e89189/"
+    },
+    {
+      "title": "PIA: A Personal Intelligence Agent Turning Health Conversations into Records and Records into Understanding",
+      "type": "arXiv preprint · agent architecture",
+      "date": "Sep 25, 2026",
+      "venue": "arXiv (cs.AI)",
+      "finding": "Introduces PIA, a personal intelligence agent that transforms health conversations into structured records and uses them for longitudinal understanding. Unlike general-purpose agent memory that summarises conversations into text snippets, PIA extracts structured health data (doses, trends, timelines) and retrieves by structured query rather than text similarity. The authors argue a health agent cannot run on summaries alone: a dose becomes a sentence, temporal references resolve at model discretion, and glucose trends cannot be answered by text similarity.",
+      "caveat": "Preprint, not peer-reviewed. Evaluation details and performance metrics are not fully described in the abstract. Real-world deployment with actual patient health conversations is not demonstrated.",
+      "url": "https://arxiv.org/abs/2609.31255"
+    },
+    {
+      "title": "Patient Journey Evaluation for Consumer AI Health Assistants",
+      "type": "Perspective · evaluation framework",
+      "date": "Sep 22, 2026",
+      "venue": "Nature Digital Medicine",
+      "finding": "Defines a journey-level evaluation and governance framework for record-linked patient education by consumer AI health assistants. Introduces the personal health workspace (PHW), a user-controlled setting for evaluating an assistant as a stateful system across a patient journey rather than isolated Q&A turns. Includes a clinical journey map and an auditable interaction loop for testing longitudinal reliability before deployment and monitoring afterward.",
+      "caveat": "Perspective article proposing a framework, not an empirical study. The PHW concept has not been validated in a real-world deployment. Feasibility and scalability of the proposed evaluation loop are not demonstrated.",
+      "url": "https://doi.org/10.1038/s41746-026-03251-8"
+    },
+    {
+      "title": "SAFE-CARE Bench: A Benchmark Specification and Evaluation Protocol for Safety, Guardrails, and User Experience in Multi-Turn Healthcare AI Agent Conversations",
+      "type": "Benchmark specification",
+      "date": "Sep 14, 2026",
+      "venue": "Zenodo",
+      "finding": "SAFE-CARE Bench tests what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0–A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
+      "caveat": "Benchmark specification, not an empirical study with reported results. Simulated conversations may not capture the full range of real-world user behaviour. The framework has not been independently validated against clinical outcomes.",
+      "url": "https://doi.org/10.5281/zenodo.22739092"
+    },
+    {
+      "title": "Are Frontier Large Language Models Safer Than Government-Backed Symptom Checkers for Clinical Self-Triage? A Standardised Vignette Evaluation",
+      "type": "Preprint · comparative evaluation",
+      "date": "Sep 2, 2026",
+      "venue": "medRxiv",
+      "finding": "Compared Australia's Healthdirect symptom checker (2.4 million uses in FY2024-25) against six LLM configurations across triage accuracy and safety using standardised vignettes. The first evaluation of a government-backed symptom checker against frontier large language models, and the first to explore whether premium LLM subscriptions improve triage safety.",
+      "caveat": "Preprint, not peer-reviewed. Vignette-based evaluation may not reflect real-world triage performance. Single government-backed symptom checker; generalisability to other national systems is not established.",
+      "url": "https://doi.org/10.64898/2026.09.01.26361908"
+    },
+    {
+      "title": "Authentication Status and AI Triage Concordance Among Care Seekers in a US Health System",
+      "type": "Peer-reviewed · prospective cohort",
+      "date": "Sep 2, 2026",
+      "venue": "npj Health Systems",
+      "finding": "A prospective cohort analysis of 6,772 care seekers using an AI triage tool at a US health system found that users' pre-stated care intent aligned with AI recommendations differently depending on authentication status, and that alignment shaped downstream engagement. The study addresses how user identity and stated intent affect the reliability of AI triage tools deployed at the digital front door of health systems.",
+      "caveat": "Single health-system study. Concordance between pre-stated intent and AI recommendation is not the same as triage correctness. The study does not report clinical outcomes downstream of triage.",
+      "url": "https://www.nature.com/articles/s44401-026-00140-w"
     }
   ],
   "sources": [
@@ -1237,6 +1457,54 @@
     {
       "name": "TechCrunch - Meta debuts its Muse AI agent (Sep 8, 2026)",
       "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+    },
+    {
+      "name": "RingConn - Partner AI wellness companion launch (Oct 26, 2026)",
+      "url": "https://ringconn.com/blogs/news/ringconn-partner-now-officially-launching"
+    },
+    {
+      "name": "medRxiv - BeST Benchmark Self-Triage study (Oct 14, 2026)",
+      "url": "https://www.medrxiv.org/content/medrxiv/early/2026/10/14/2026.10.12.26365287.full.pdf"
+    },
+    {
+      "name": "Stuff / 9to5Mac - Apple Health app pulled from iOS 27.2 beta (Oct 13, 2026)",
+      "url": "https://www.stuff.tv/news/apple-health-app-pulled-from-ios-27-2-beta-heres-the-new-timeline-for-the-ai-powered-health-insights/"
+    },
+    {
+      "name": "Nature Health - Respiratory assessment chatbot nationwide study (Oct 5, 2026)",
+      "url": "https://www.nature.com/articles/s44360-026-00189-9"
+    },
+    {
+      "name": "arXiv - Multi-Agent LLM Framework for Health Checkup (Oct 1, 2026)",
+      "url": "https://arxiv.org/abs/2610.01451"
+    },
+    {
+      "name": "JMIR Medical Informatics - Smart home TEH scoping review (Sep 30, 2026)",
+      "url": "https://medinform.jmir.org/2026/1/e89189/"
+    },
+    {
+      "name": "arXiv - PIA: Personal Intelligence Agent (Sep 25, 2026)",
+      "url": "https://arxiv.org/abs/2609.31255"
+    },
+    {
+      "name": "Nature Digital Medicine - Patient journey evaluation for consumer AI health assistants (Sep 22, 2026)",
+      "url": "https://doi.org/10.1038/s41746-026-03251-8"
+    },
+    {
+      "name": "Zenodo - SAFE-CARE Bench (Sep 14, 2026)",
+      "url": "https://doi.org/10.5281/zenodo.22739092"
+    },
+    {
+      "name": "medRxiv - Frontier LLMs vs government symptom checkers (Sep 2, 2026)",
+      "url": "https://doi.org/10.64898/2026.09.01.26361908"
+    },
+    {
+      "name": "npj Health Systems - Authentication status and AI triage concordance (Sep 2, 2026)",
+      "url": "https://www.nature.com/articles/s44401-026-00140-w"
+    },
+    {
+      "name": "Fierce Healthcare - Samsung launches beta AI health assistant (Jul 22, 2026)",
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"
     }
   ]
 }

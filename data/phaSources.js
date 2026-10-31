@@ -55,5 +55,17 @@ var phaSourcesData = [
   {name:"MultiState - 24 states now have comprehensive consumer privacy laws (Oct 28, 2026)", url:"https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws"},
   {name:"News-Medical.net - AI-powered home monitoring tracks older adults' health (Oct 8, 2026)", url:"https://www.news-medical.net/news/20261008/AI-powered-home-monitoring-tracks-older-adultse28099-health-while-protecting-privacy.aspx"},
   {name:"Sensors - Privacy-Preserving Ambient Sensing for ADL (Oct 8, 2026)", url:"https://www.mdpi.com/1424-8220/26/16/5066"},
-  {name:"TechCrunch - Meta debuts its Muse AI agent (Sep 8, 2026)", url:"https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"}
+  {name:"TechCrunch - Meta debuts its Muse AI agent (Sep 8, 2026)", url:"https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"},
+  {name:"RingConn - Partner AI wellness companion launch (Oct 26, 2026)", url:"https://ringconn.com/blogs/news/ringconn-partner-now-officially-launching"},
+  {name:"medRxiv - BeST Benchmark Self-Triage study (Oct 14, 2026)", url:"https://www.medrxiv.org/content/medrxiv/early/2026/10/14/2026.10.12.26365287.full.pdf"},
+  {name:"Stuff / 9to5Mac - Apple Health app pulled from iOS 27.2 beta (Oct 13, 2026)", url:"https://www.stuff.tv/news/apple-health-app-pulled-from-ios-27-2-beta-heres-the-new-timeline-for-the-ai-powered-health-insights/"},
+  {name:"Nature Health - Respiratory assessment chatbot nationwide study (Oct 5, 2026)", url:"https://www.nature.com/articles/s44360-026-00189-9"},
+  {name:"arXiv - Multi-Agent LLM Framework for Health Checkup (Oct 1, 2026)", url:"https://arxiv.org/abs/2610.01451"},
+  {name:"JMIR Medical Informatics - Smart home TEH scoping review (Sep 30, 2026)", url:"https://medinform.jmir.org/2026/1/e89189/"},
+  {name:"arXiv - PIA: Personal Intelligence Agent (Sep 25, 2026)", url:"https://arxiv.org/abs/2609.31255"},
+  {name:"Nature Digital Medicine - Patient journey evaluation for consumer AI health assistants (Sep 22, 2026)", url:"https://doi.org/10.1038/s41746-026-03251-8"},
+  {name:"Zenodo - SAFE-CARE Bench (Sep 14, 2026)", url:"https://doi.org/10.5281/zenodo.22739092"},
+  {name:"medRxiv - Frontier LLMs vs government symptom checkers (Sep 2, 2026)", url:"https://doi.org/10.64898/2026.09.01.26361908"},
+  {name:"npj Health Systems - Authentication status and AI triage concordance (Sep 2, 2026)", url:"https://www.nature.com/articles/s44401-026-00140-w"},
+  {name:"Fierce Healthcare - Samsung launches beta AI health assistant (Jul 22, 2026)", url:"https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"}
 ];

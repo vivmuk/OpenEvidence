@@ -84,5 +84,50 @@ var phaResearchData = [
   {title:"Privacy-Preserving Ambient Sensing for Activities of Daily Living: Multimodal Radar-Thermal Human Activity Recognition and Smart Plug Appliance Recognition", type:"Peer-reviewed · ambient sensing system", date:"Oct 8, 2026", venue:"Sensors",
    finding:"NTU researchers developed a low-cost monitoring system combining mmWave radar, low-resolution thermal sensors and smart plugs to track daily routines and detect health emergencies in the home without cameras or wearables. AI learns individual behaviour patterns over time to identify anomalies such as falls, heart attacks, strokes or gradual deterioration in mobility. Tested in mock domestic environments with six room layouts, with multimodal sensor fusion outperforming any single sensor type. The privacy-by-design approach uses pixelated thermal sensors that identify posture without facial features, and smart-plug appliance patterns to infer daily activities like making tea or preparing food.",
    caveat:"Laboratory mock-environment testing, not real-world deployment with actual older adults. The system's ability to distinguish genuine emergencies from normal routine variations in uncontrolled settings is unproven. Small evaluation scope with six room layouts.",
-   url:"https://www.mdpi.com/1424-8220/26/16/5066"}
+   url:"https://www.mdpi.com/1424-8220/26/16/5066"},
+
+  {title:"BeST: Benchmark Self-Triage Systems and Multiple Generations of OpenAI Models Against Preliminary Expert Consensus", type:"Preprint · benchmark evaluation", date:"Oct 14, 2026", venue:"medRxiv (BeST Study Group, Central Research Institute of Ambulatory Health Care in Germany)",
+   finding:"The BeST study compared emergency recognition and overall agreement with clinical judgement across self-triage systems and multiple generations of OpenAI models against preliminary expert consensus. The evaluation addresses how triage outcomes differ across GPT model generations, providing quality assurance data for digital self-triage as adoption widens. Results show generational variation in triage safety and accuracy.",
+   caveat:"Preprint, not yet peer-reviewed. The expert consensus used as ground truth is preliminary. Vignette-based evaluation may not reflect real-world triage performance with actual patients.",
+   url:"https://www.medrxiv.org/content/medrxiv/early/2026/10/14/2026.10.12.26365287.full.pdf"},
+
+  {title:"Accuracy of a Respiratory Assessment Chatbot in a Nationwide Messaging System for Layperson Diagnosis and Triage", type:"Peer-reviewed · randomised preregistered study", date:"Oct 5, 2026", venue:"Nature Health",
+   finding:"A randomised preregistered study evaluated a respiratory assessment chatbot embedded in a nationwide messaging system for layperson diagnosis and triage. The study tested diagnostic and triage accuracy across respiratory symptoms in a real-world messaging deployment at population scale, providing evidence for chatbot-assisted respiratory self-assessment.",
+   caveat:"Single-condition focus (respiratory). Real-world messaging deployment may differ from clinical assessment settings. Generalisability to other condition categories is not established.",
+   url:"https://www.nature.com/articles/s44360-026-00189-9"},
+
+  {title:"A Multi-Agent LLM Framework for Personalised Health Checkup Interpretation and Guidance", type:"arXiv preprint · multi-agent system", date:"Oct 1, 2026", venue:"arXiv (cs.AI)",
+   finding:"Presents a multi-agent LLM system that identifies multiple intents in health checkup questions, maps each to a task-specific agent, executes them in parallel, and synthesises outputs. Comparison of single-agent and multi-agent configurations found the multi-agent approach improved answer quality for complex health checkup interpretation requiring reasoning across longitudinal records, medical knowledge, lifestyle guidance and healthcare navigation.",
+   caveat:"Preprint, not peer-reviewed. Evaluation methodology and benchmark details not fully described in the abstract. Real-world health checkup data quality and heterogeneity may affect performance.",
+   url:"https://arxiv.org/abs/2610.01451"},
+
+  {title:"Technology-Enhanced Health Care in Smart Homes: Scoping Review of Sensor Technologies, Clinical Applications, Integration Challenges, and Future Directions", type:"Peer-reviewed · scoping review", date:"Sep 30, 2026", venue:"JMIR Medical Informatics",
+   finding:"A scoping review synthesising literature on technology-enhanced health care (TEH) integration within smart homes. Examines global deployment patterns, technological maturity, biomedical sensor integration, machine learning applications, and health outcomes. Covers the Internet of Medical Things, wearable biosensors and AI-driven analytics for proactive care delivery, particularly for older adults and individuals with chronic conditions living independently.",
+   caveat:"Scoping review, not systematic review or meta-analysis. Heterogeneous study designs and technologies make direct comparison difficult. Most included studies are early-stage deployments or pilots.",
+   url:"https://medinform.jmir.org/2026/1/e89189/"},
+
+  {title:"PIA: A Personal Intelligence Agent Turning Health Conversations into Records and Records into Understanding", type:"arXiv preprint · agent architecture", date:"Sep 25, 2026", venue:"arXiv (cs.AI)",
+   finding:"Introduces PIA, a personal intelligence agent that transforms health conversations into structured records and uses them for longitudinal understanding. Unlike general-purpose agent memory that summarises conversations into text snippets, PIA extracts structured health data (doses, trends, timelines) and retrieves by structured query rather than text similarity. The authors argue a health agent cannot run on summaries alone: a dose becomes a sentence, temporal references resolve at model discretion, and glucose trends cannot be answered by text similarity.",
+   caveat:"Preprint, not peer-reviewed. Evaluation details and performance metrics are not fully described in the abstract. Real-world deployment with actual patient health conversations is not demonstrated.",
+   url:"https://arxiv.org/abs/2609.31255"},
+
+  {title:"Patient Journey Evaluation for Consumer AI Health Assistants", type:"Perspective · evaluation framework", date:"Sep 22, 2026", venue:"Nature Digital Medicine",
+   finding:"Defines a journey-level evaluation and governance framework for record-linked patient education by consumer AI health assistants. Introduces the personal health workspace (PHW), a user-controlled setting for evaluating an assistant as a stateful system across a patient journey rather than isolated Q&A turns. Includes a clinical journey map and an auditable interaction loop for testing longitudinal reliability before deployment and monitoring afterward.",
+   caveat:"Perspective article proposing a framework, not an empirical study. The PHW concept has not been validated in a real-world deployment. Feasibility and scalability of the proposed evaluation loop are not demonstrated.",
+   url:"https://doi.org/10.1038/s41746-026-03251-8"},
+
+  {title:"SAFE-CARE Bench: A Benchmark Specification and Evaluation Protocol for Safety, Guardrails, and User Experience in Multi-Turn Healthcare AI Agent Conversations", type:"Benchmark specification", date:"Sep 14, 2026", venue:"Zenodo",
+   finding:"SAFE-CARE Bench tests what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0–A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
+   caveat:"Benchmark specification, not an empirical study with reported results. Simulated conversations may not capture the full range of real-world user behaviour. The framework has not been independently validated against clinical outcomes.",
+   url:"https://doi.org/10.5281/zenodo.22739092"},
+
+  {title:"Are Frontier Large Language Models Safer Than Government-Backed Symptom Checkers for Clinical Self-Triage? A Standardised Vignette Evaluation", type:"Preprint · comparative evaluation", date:"Sep 2, 2026", venue:"medRxiv",
+   finding:"Compared Australia's Healthdirect symptom checker (2.4 million uses in FY2024-25) against six LLM configurations across triage accuracy and safety using standardised vignettes. The first evaluation of a government-backed symptom checker against frontier large language models, and the first to explore whether premium LLM subscriptions improve triage safety.",
+   caveat:"Preprint, not peer-reviewed. Vignette-based evaluation may not reflect real-world triage performance. Single government-backed symptom checker; generalisability to other national systems is not established.",
+   url:"https://doi.org/10.64898/2026.09.01.26361908"},
+
+  {title:"Authentication Status and AI Triage Concordance Among Care Seekers in a US Health System", type:"Peer-reviewed · prospective cohort", date:"Sep 2, 2026", venue:"npj Health Systems",
+   finding:"A prospective cohort analysis of 6,772 care seekers using an AI triage tool at a US health system found that users' pre-stated care intent aligned with AI recommendations differently depending on authentication status, and that alignment shaped downstream engagement. The study addresses how user identity and stated intent affect the reliability of AI triage tools deployed at the digital front door of health systems.",
+   caveat:"Single health-system study. Concordance between pre-stated intent and AI recommendation is not the same as triage correctness. The study does not report clinical outcomes downstream of triage.",
+   url:"https://www.nature.com/articles/s44401-026-00140-w"}
 ];

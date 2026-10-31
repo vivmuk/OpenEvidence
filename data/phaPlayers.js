@@ -55,10 +55,20 @@ var phaPlayersData = [
    desc:"Lab-first consumer services generate dense longitudinal biomarker data, which makes them natural personal-agent customers and a direct source of the 'what does my bloodwork mean' question that general assistants now answer informally.",
    url:"https://www.producthunt.com/products/copilot-health"},
 
-  {name:"Samsung / Garmin / Withings", type:"Device incumbents", badge:"ADJACENT",
+  {name:"Samsung - Samsung Health Assistant", type:"Device incumbent · AI health agent", badge:"BETA",
+   stats:[{l:"Beta launched",v:"Jul 22, 2026"},{l:"Platform",v:"Samsung Health app, US"},{l:"Capabilities",v:"Q&A, personalised guidance, coaching (planned)"}],
+   desc:"Samsung launched a beta of its AI-powered personal health assistant embedded in the Samsung Health app, available to eligible US users. The assistant answers health questions and provides personalised guidance based on Samsung Health data, with planned future capabilities including goal-oriented coaching. Samsung's entry adds the largest Android device maker by volume to the consumer health AI agent landscape.",
+   url:"https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"},
+
+  {name:"Garmin / Withings", type:"Device incumbents", badge:"ADJACENT",
    stats:[{l:"Position",v:"Sensor-first, AI second"},{l:"Risk",v:"Interpretation gap"}],
    desc:"Hardware incumbents with large installed bases are adding AI interpretation and coaching, but trail the platform players on model capability and the wearable-native startups on coaching depth.",
    url:"https://www.aimagicx.com/blog/ai-health-wearables-smart-rings-monitors-guide-2026"},
+
+  {name:"RingConn - Partner AI Wellness Companion", type:"Wearable maker · smart ring AI", badge:"NEW ENTRANT",
+   stats:[{l:"Launched",v:"Oct 26, 2026"},{l:"Model",v:"Free + value-added services"},{l:"Platform",v:"RingConn app"}],
+   desc:"RingConn launched Partner, an AI wellness companion built into its smart ring platform. Partner connects wearable sensor data with conversational AI to deliver personalised health guidance, supports custom naming, and integrates additional health data sources. Free to use with optional value-added services. Vendor claim: AI-powered wellness companion, not a medical device.",
+   url:"https://ringconn.com/blogs/news/ringconn-partner-now-officially-launching"},
 
   {name:"Meta AI glasses and form-factor sensing", type:"Ambient capture", badge:"WILDCARD",
    stats:[{l:"Bet",v:"Infuse sensing into existing form factors"},{l:"Barrier",v:"Social acceptability + consent"}],
