@@ -214,7 +214,7 @@ var siteMetrics = {
   "counts": {
     "partners": 57,
     "competitors": 39,
-    "research": 513,
+    "research": 515,
     "benchmarks": 224,
     "publications": 137,
     "timeline": 170,

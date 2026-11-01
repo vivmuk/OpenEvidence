@@ -117,7 +117,7 @@ var phaResearchData = [
    url:"https://doi.org/10.1038/s41746-026-03251-8"},
 
   {title:"SAFE-CARE Bench: A Benchmark Specification and Evaluation Protocol for Safety, Guardrails, and User Experience in Multi-Turn Healthcare AI Agent Conversations", type:"Benchmark specification", date:"Sep 14, 2026", venue:"Zenodo",
-   finding:"SAFE-CARE Bench tests what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0–A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
+   finding:"SAFE-CARE Bench tests what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0 - A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
    caveat:"Benchmark specification, not an empirical study with reported results. Simulated conversations may not capture the full range of real-world user behaviour. The framework has not been independently validated against clinical outcomes.",
    url:"https://doi.org/10.5281/zenodo.22739092"},
 
