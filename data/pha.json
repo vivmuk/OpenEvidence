@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -38,6 +38,15 @@
       "desc": "Four new states (Alabama, Louisiana, Oklahoma, Vermont) enacted comprehensive consumer privacy laws in 2026, bringing the total to 24. The defining trend is a shift beyond consent to outright bans on selling sensitive data: New Jersey prohibits selling sensitive data regardless of consumer consent, Connecticut and Virginia ban sales of precise geolocation, and Delaware expanded its sensitive-data definition to include neural data and inferences revealing health conditions. Colorado's revised AI law will regulate automated technology in consequential decisions starting Jan 1, 2027. Data broker registration expanded to Connecticut and New Jersey. Massachusetts is considering a private right of action.",
       "src": "MultiState",
       "url": "https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws",
+      "new": true
+    },
+    {
+      "date": "2026-10-26",
+      "cat": "Research",
+      "title": "Separating Safety from Preference in Clinical LLM Evaluation: mRehab Advisory Agent",
+      "desc": "A human-centered evaluation of the mRehab Advisory Agent with two cohorts: six domain experts rating clinical safety and correctness, and three end users rating helpfulness, affect, and clarity. Experts ranked the agent first most often (53.3%, p<0.001), yet it led on affect and clarity, not helpfulness, and drew mixed safety verdicts — demonstrating that a fluent, well-liked answer can still be clinically unsafe, and that preference-only evaluation hides this by collapsing many judgments into one winner. Published at the 4th International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems.",
+      "src": "ACM",
+      "url": "http://dl.acm.org/doi/10.1145/3842436.3843811",
       "new": true
     },
     {
@@ -114,7 +123,7 @@
     {
       "date": "2026-10-13",
       "cat": "Product",
-      "title": "Apple Pulls AI-Powered Health App from iOS 27.2 Beta — Second Delay for Apple Intelligence Health",
+      "title": "Apple Pulls AI-Powered Health App from iOS 27.2 Beta - Second Delay for Apple Intelligence Health",
       "desc": "Apple removed its redesigned Health app from iOS 27.2 beta 4, marking the second postponement of the Apple Intelligence-powered health insights overhaul. The app was originally previewed in September with features including an Insights tab, personalised guidance, readiness score, and Health Age calculation. Bloomberg had reported Apple scaled back the fuller AI health coach (Project Mulberry) in February. The current Health app was restored to iOS 27.2 in the latest beta, with the AI-powered version now expected later.",
       "src": "Stuff / 9to5Mac",
       "url": "https://www.stuff.tv/news/apple-health-app-pulled-from-ios-27-2-beta-heres-the-new-timeline-for-the-ai-powered-health-insights/"
@@ -178,7 +187,7 @@
     {
       "date": "2026-09-30",
       "cat": "Research",
-      "title": "JMIR: Smart Home Technology-Enhanced Health Care — Scoping Review of Sensors, Applications and Integration",
+      "title": "JMIR: Smart Home Technology-Enhanced Health Care - Scoping Review of Sensors, Applications and Integration",
       "desc": "A scoping review published in JMIR Medical Informatics synthesised literature on technology-enhanced health care (TEH) integration within smart homes, examining global deployment patterns, technological maturity, biomedical sensor integration, machine learning applications, and health outcomes. The review covers the Internet of Medical Things, wearable biosensors and AI-driven analytics for proactive care delivery, particularly for older adults and individuals with chronic conditions living independently.",
       "src": "JMIR Medical Informatics",
       "url": "https://medinform.jmir.org/2026/1/e89189/"
@@ -203,7 +212,7 @@
       "date": "2026-09-14",
       "cat": "Research",
       "title": "SAFE-CARE Bench: Safety Benchmark for Multi-Turn Healthcare AI Agent Conversations",
-      "desc": "SAFE-CARE Bench is a benchmark specification and evaluation protocol testing what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0–A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
+      "desc": "SAFE-CARE Bench is a benchmark specification and evaluation protocol testing what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0 - A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
       "src": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.22739092"
     },
@@ -462,6 +471,62 @@
       "desc": "The FDA reported more than 1,600 AI-enabled medical devices authorised for US marketing as of September 2026, up from 1,524 in March 2026 - almost entirely Class II 510(k) clearances, with radiology still about three-quarters of the list. The count sits alongside the January 2026 relaxation of general wellness and CDS oversight, defining two very different lanes for consumer versus clinical AI.",
       "src": "FDA",
       "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices"
+    },
+    {
+      "date": "2026-08-27",
+      "cat": "Research",
+      "title": "SuperSenseDoctor: Multimodal Contactless Agent for Health Tracking via WiFi, Radar and Thermal Sensing",
+      "desc": "arXiv preprint presenting a contactless agent architecture for long-term home health monitoring. The system transforms WiFi, mmWave radar, and surface temperature into a persistent human health state, using fixed decision rules for daily monitoring and event-driven reasoning for anomalies. Achieves 1.994 bpm MAE for heart rate, 0.197 bpm MAE for respiratory rate, and 96.5% fall-recognition accuracy. Evaluated across 2,686 one-second states with a 96.7% checklist pass rate. Demonstrates feasibility of a stateful sensing-to-action loop for ambient home health monitoring.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2609.16257"
+    },
+    {
+      "date": "2026-08-18",
+      "cat": "Regulatory",
+      "title": "FDA Publishes Discussion Paper on Regulation of Generative AI-Enabled Medical Devices",
+      "desc": "The FDA's Digital Health Center of Excellence published a discussion paper on considerations for regulating GenAI-enabled medical devices, covering risk assessment, premarket evaluation, postmarket monitoring, and other regulatory topics. The paper seeks stakeholder feedback on the unique risks posed by GenAI compared to traditional AI-enabled devices. Feedback deadline was October 19, 2026. The paper is for discussion purposes only and does not represent draft or final guidance.",
+      "src": "FDA",
+      "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request"
+    },
+    {
+      "date": "2026-08-11",
+      "cat": "Research",
+      "title": "ECHO: Locally-Deployable Agentic Health Assistant with Temporal Memory and Safety Guardrails",
+      "desc": "arXiv preprint from Istanbul Technical University presenting ECHO (Enhanced Care & Health Observer), a locally-deployable conversational health assistant for chronic care management. Built on a ReAct loop with LangGraph, 17 clinical tools, and a temporal knowledge graph for cross-session memory. A two-stage hybrid safety layer combines rule-based crisis detection with a graph neural network achieving 88.8% accuracy and 90.6% unsafe recall. Runs entirely on consumer hardware with no external data transmission, supporting GDPR compliance. Achieves 94.9% tool-execution pass rate across 59 scenarios.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06110"
+    },
+    {
+      "date": "2026-06-16",
+      "cat": "Research",
+      "title": "RubricsTree: Scalable Evaluation Framework for Personal Health Agents",
+      "desc": "Google Research introduced RubricsTree, a scalable evaluation framework with over 100 atomic, clinically-verifiable Boolean rubrics evolved from 4,000 real user queries through an iterative human-in-the-loop curation protocol. A context-aware adaptive router activates only relevant rubric subsets per query. When used for performance optimization, RubricsTree yields up to ~66% relative gains on HealthBench for Gemini, GPT, and Qwen model families. Addresses the evaluation bottleneck where physician annotation is reliable but costly, while LLM-as-a-judge evaluators are scalable but clinically misaligned.",
+      "src": "arXiv / Google Research",
+      "url": "https://arxiv.org/abs/2606.18203"
+    },
+    {
+      "date": "2026-05-10",
+      "cat": "Research",
+      "title": "SymptomAI: Google's Conversational AI Agent for Everyday Symptom Assessment Deployed in Fitbit",
+      "desc": "Google Research deployed SymptomAI, a conversational AI agent for end-to-end patient interviewing and differential diagnosis, via the Fitbit app in a study randomising 13,917 participants across five AI agent configurations. SymptomAI's differential diagnoses were significantly more accurate than independent clinicians given the same dialogue (OR=2.56, p<0.001) in a blinded randomised comparison. Agentic strategies conducting a dedicated symptom interview substantially outperformed user-guided conversations (p<0.001). The study used SymptomAI diagnoses as labels to analyse over 500,000 days of wearable metrics across nearly 400 conditions, finding strong associations between acute infections and physiological shifts (e.g., OR>7 for influenza). Limited by self-reported ground truth.",
+      "src": "arXiv / Google Research",
+      "url": "https://arxiv.org/abs/2605.04012"
+    },
+    {
+      "date": "2026-04-30",
+      "cat": "Research",
+      "title": "Safety Evaluation of a Generative AI Agent for Anxiety and Depression Symptoms",
+      "desc": "A preprint evaluating the safety of a clinician-designed generative AI care agent for anxiety and depression using a scalable dual-methods paradigm: high-throughput in silico simulation paired with continuous real-world monitoring. The digital program delivered structured cognitive behavioural skills training through the AI agent. The evaluation paradigm addresses the challenge that conventional one-off evaluation approaches cannot fully address the probabilistic nature and rapid model iteration of generative AI in mental health.",
+      "src": "OSF Preprints",
+      "url": "https://doi.org/10.31234/osf.io/8kvm6_v2"
+    },
+    {
+      "date": "2026-04-21",
+      "cat": "Research",
+      "title": "Safety, Hallucination, and Failure Modes in Agentic Health AI: A State-of-the-Art Review",
+      "desc": "A systematic literature review of safety issues in agentic AI systems deployed in clinical environments. Unlike conventional single-turn AI tools, agentic systems autonomously plan multistep tasks, invoke external tools, retain memory, and pursue clinical goals with minimal human intervention, introducing a qualitatively distinct safety profile. The review covers hallucination, tool misuse, memory corruption, and escalation failures across radiology, clinical decision support, intensive care monitoring, drug discovery, and patient-facing care.",
+      "src": "Preprints.org",
+      "url": "https://doi.org/10.20944/preprints202604.1409.v1"
     }
   ],
   "players": [
@@ -1206,7 +1271,7 @@
       "type": "Benchmark specification",
       "date": "Sep 14, 2026",
       "venue": "Zenodo",
-      "finding": "SAFE-CARE Bench tests what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0–A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
+      "finding": "SAFE-CARE Bench tests what a healthcare AI agent does across a conversation, where risk builds turn by turn and a missed escalation is the failure that matters most. A controlled A0 - A4 ablation runs five agent variants over identical simulated conversations, with model, temperature and seed held constant. Each tier declares capability flags explicitly so any two tiers diff mechanically and every score change is attributable to a named capability bundle: grounding, safety guardrails, personalisation or agency.",
       "caveat": "Benchmark specification, not an empirical study with reported results. Simulated conversations may not capture the full range of real-world user behaviour. The framework has not been independently validated against clinical outcomes.",
       "url": "https://doi.org/10.5281/zenodo.22739092"
     },
@@ -1227,6 +1292,78 @@
       "finding": "A prospective cohort analysis of 6,772 care seekers using an AI triage tool at a US health system found that users' pre-stated care intent aligned with AI recommendations differently depending on authentication status, and that alignment shaped downstream engagement. The study addresses how user identity and stated intent affect the reliability of AI triage tools deployed at the digital front door of health systems.",
       "caveat": "Single health-system study. Concordance between pre-stated intent and AI recommendation is not the same as triage correctness. The study does not report clinical outcomes downstream of triage.",
       "url": "https://www.nature.com/articles/s44401-026-00140-w"
+    },
+    {
+      "title": "SymptomAI: Toward a Conversational AI Agent for Everyday Symptom Assessment",
+      "type": "arXiv preprint · large-scale real-world deployment",
+      "date": "May 10, 2026",
+      "venue": "arXiv (cs.AI) — Google Research",
+      "finding": "Google Research deployed SymptomAI, a set of conversational AI agents for end-to-end patient interviewing and differential diagnosis, via the Fitbit app in a study randomising N=13,917 participants across five AI agent configurations. A subset of 1,228 participants reported a clinician-provided diagnosis, and 517 were further evaluated by a panel of clinicians during over 250 hours of annotation. SymptomAI's differential diagnoses were significantly more accurate than independent clinicians given the same dialogue (OR=2.56, p<0.001) in a blinded randomised comparison. Agentic strategies conducting a dedicated symptom interview that elicits additional information before providing a diagnosis substantially outperformed user-guided conversations (p<0.001). An auxiliary analysis on 1,509 conversations from a general US population panel validated generalisability beyond wearable users. SymptomAI diagnoses were used as labels to analyse over 500,000 days of wearable metrics across nearly 400 conditions, identifying strong associations between acute infections and physiological shifts (e.g., OR>7 for influenza).",
+      "caveat": "Preprint, not peer-reviewed. Ground truth is self-reported clinician diagnoses for a subset, not uniformly verified. The study is by Google Research employees (potential conflict of interest). The OR=2.56 comparison against clinicians is based on the same dialogue text, not independent patient encounters, so it measures diagnostic accuracy from transcript rather than clinical performance.",
+      "url": "https://arxiv.org/abs/2605.04012"
+    },
+    {
+      "title": "RubricsTree: Scalable and Evolving Open-Ended Evaluation of Personal Health Agents across Health Memory and Medical Skills",
+      "type": "arXiv preprint · evaluation framework",
+      "date": "Jun 16, 2026",
+      "venue": "arXiv (cs.CL) — Google Research",
+      "finding": "Introduces RubricsTree, a scalable evaluation framework with an expert-aligned hierarchical taxonomy of over 100 atomic, clinically-verifiable Boolean rubrics, evolved from 4,000 real user queries through an iterative human-in-the-loop curation protocol led by an experienced physician. A context-aware adaptive router activates only the relevant auto-weighted rubric subset per query. When used as structured instructions, text feedback, or training rewards for performance optimisation, RubricsTree yields up to ~66% relative gains on HealthBench for Gemini, GPT, and Qwen model families. The framework addresses the bottleneck where physician annotation is reliable but costly, while LLM-as-a-judge evaluators are scalable but subjective and sometimes clinically misaligned.",
+      "caveat": "Preprint, not peer-reviewed. The framework is developed by Google Research employees (potential conflict of interest). HealthBench gains are self-reported and may not generalise to other benchmarks or clinical settings. The rubrics are derived from 4,000 user queries, which may not cover the full spectrum of personal health agent interactions.",
+      "url": "https://arxiv.org/abs/2606.18203"
+    },
+    {
+      "title": "ECHO: A Locally-Deployable Agentic Health Assistant with Temporal Memory, Safety Guardrails, and Speech Assessment",
+      "type": "arXiv preprint · agent architecture",
+      "date": "Aug 11, 2026",
+      "venue": "arXiv (cs.AI) — Istanbul Technical University",
+      "finding": "Presents ECHO (Enhanced Care & Health Observer), a locally-deployable conversational health assistant for long-term chronic care management. The core module is an agentic chatbot built on a ReAct loop with LangGraph, equipped with 17 clinical tools and a temporal knowledge graph for persistent cross-session memory, achieving 94.9% tool-execution pass rate across 59 scenarios with GPT-5 Mini. A two-stage hybrid safety layer combines rule-based crisis detection (sub-1ms) with a signed graph neural network achieving 88.8% accuracy and 90.6% unsafe recall on a 2,537-query Turkish health dataset, outperforming zero-shot LLM baselines including Llama 3.3 70B. A multimodal speech module estimates emotion, depression, and pain (macro F1=0.652). The full system runs on consumer hardware with no external data transmission, supporting GDPR/KVKK compliance.",
+      "caveat": "Preprint, not peer-reviewed. The safety evaluation is on a Turkish-language dataset, which may limit generalisability to other languages and clinical contexts. The 59-scenario benchmark is small. The speech assessment F1 of 0.652 is modest and may not be reliable enough for clinical use.",
+      "url": "https://arxiv.org/abs/2608.06110"
+    },
+    {
+      "title": "SuperSenseDoctor: A Multimodal and Contactless Agent for Health Tracking",
+      "type": "arXiv preprint · ambient sensing agent",
+      "date": "Aug 27, 2026",
+      "venue": "arXiv (cs.HC)",
+      "finding": "Presents a multimodal contactless agent architecture for long-term home health tracking, transforming WiFi, mmWave radar, and surface temperature into a persistent human health state. The system uses fixed decision rules for daily monitoring and event-driven reasoning for anomalies, integrating sensing, temporal state, reasoning, and action into an auditable loop. The calibrated pipeline achieves 1.994 bpm MAE for heart rate, 0.197 bpm MAE for respiratory rate, 96.5% fall-recognition accuracy, and 96.7% criterion-level checklist pass rate across 2,686 one-second states.",
+      "caveat": "Preprint, not peer-reviewed. Laboratory evaluation only, not tested in real-world home environments with actual older adults. The system's ability to distinguish genuine emergencies from routine variations in uncontrolled settings is unproven. Small evaluation scope.",
+      "url": "https://arxiv.org/abs/2609.16257"
+    },
+    {
+      "title": "Separating Safety from Preference in Clinical LLM Evaluation",
+      "type": "Peer-reviewed · human-centered evaluation",
+      "date": "Oct 26, 2026",
+      "venue": "ACM 4th International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems",
+      "finding": "A human-centered evaluation of the mRehab Advisory Agent with two cohorts: six domain experts rating clinical safety and correctness, and three end users rating helpfulness, affect, and clarity, alongside blinded best-to-worst rankings. In a 200-question pilot (435 ranked triples), raters ranked the agent first most often (53.3%, p<0.001), yet it led on affect and clarity, not helpfulness, and drew mixed safety verdicts. The study demonstrates that a fluent, well-liked answer can still be clinically unsafe, and that preference-only evaluation hides this by collapsing many judgments into one winner. Provenance-rich ranking records enable post-hoc analysis of disagreements.",
+      "caveat": "Small pilot study with 200 questions, six experts and three end users. The mRehab Advisory Agent is a specific system; generalisability to other consumer health agents is not established. The workshop paper format limits detail on methodology.",
+      "url": "http://dl.acm.org/doi/10.1145/3842436.3843811"
+    },
+    {
+      "title": "Safety Evaluation of a Generative AI Agent for Anxiety and Depression Symptoms",
+      "type": "Preprint · safety evaluation",
+      "date": "Apr 30, 2026",
+      "venue": "OSF Preprints",
+      "finding": "Evaluates the safety of a clinician-designed generative AI care agent for anxiety and depression symptoms using a scalable dual-methods paradigm: high-throughput in silico simulation paired with continuous real-world monitoring. The digital program delivered structured cognitive behavioural skills training through the AI agent. The evaluation addresses the challenge that conventional one-off evaluation approaches cannot fully address the probabilistic nature and rapid model iteration of generative AI in mental health, where model updates can change safety behaviour. An exploratory aim assessed preliminary within-person symptom reduction.",
+      "caveat": "Preprint, not peer-reviewed. The specific AI agent and its clinical configuration are not fully described in the abstract. In silico simulation may not capture all real-world safety risks. Symptom reduction findings are exploratory.",
+      "url": "https://doi.org/10.31234/osf.io/8kvm6_v2"
+    },
+    {
+      "title": "Safety, Hallucination, and Failure Modes in Agentic Health AI: A State-of-the-Art Review",
+      "type": "Preprint · systematic literature review",
+      "date": "Apr 21, 2026",
+      "venue": "Preprints.org",
+      "finding": "A systematic literature review of safety issues in agentic AI systems deployed in clinical environments. Unlike conventional single-turn AI tools, agentic systems autonomously plan multistep tasks, invoke external tools, retain memory across interactions, and pursue clinical goals with minimal human intervention, introducing a qualitatively distinct safety profile. The review covers hallucination, tool misuse, memory corruption, and escalation failures across radiology, clinical decision support, intensive care monitoring, drug discovery, and patient-facing care. The authors identify gaps in existing safety frameworks when applied to multi-turn, tool-using, memory-enabled health AI agents.",
+      "caveat": "Preprint, not peer-reviewed. As a review, it synthesises existing literature but does not present new empirical findings. The agentic AI safety field is nascent and the review may not capture all emerging failure modes.",
+      "url": "https://doi.org/10.20944/preprints202604.1409.v1"
+    },
+    {
+      "title": "FDA Discussion Paper: Considerations for the Regulation of Generative AI-Enabled Medical Devices",
+      "type": "Regulatory discussion paper",
+      "date": "Aug 18, 2026",
+      "venue": "FDA Digital Health Center of Excellence",
+      "finding": "The FDA's Digital Health Center of Excellence published a discussion paper on considerations for regulating GenAI-enabled medical devices, covering risk assessment, premarket evaluation, postmarket monitoring, and other regulatory topics. The paper seeks stakeholder feedback on the unique risks posed by GenAI compared to traditional AI-enabled devices, including unpredictability of outputs, continuous learning, and broader use contexts. Feedback was accepted through October 19, 2026 via docket FDA-2026-N-7874. The paper is explicitly for discussion purposes only and does not represent draft or final guidance.",
+      "caveat": "Discussion paper, not guidance. Does not represent FDA's proposed or final regulatory expectations. The paper does not address whether the approaches discussed are within FDA's existing legal authorities or whether new authorities would be necessary.",
+      "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request"
     }
   ],
   "sources": [
@@ -1505,6 +1642,38 @@
     {
       "name": "Fierce Healthcare - Samsung launches beta AI health assistant (Jul 22, 2026)",
       "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"
+    },
+    {
+      "name": "arXiv - SymptomAI: Conversational AI Agent for Symptom Assessment (May 10, 2026)",
+      "url": "https://arxiv.org/abs/2605.04012"
+    },
+    {
+      "name": "arXiv - RubricsTree: Scalable Evaluation of Personal Health Agents (Jun 16, 2026)",
+      "url": "https://arxiv.org/abs/2606.18203"
+    },
+    {
+      "name": "arXiv - ECHO: Locally-Deployable Agentic Health Assistant (Aug 11, 2026)",
+      "url": "https://arxiv.org/abs/2608.06110"
+    },
+    {
+      "name": "arXiv - SuperSenseDoctor: Contactless Agent for Health Tracking (Aug 27, 2026)",
+      "url": "https://arxiv.org/abs/2609.16257"
+    },
+    {
+      "name": "ACM - Separating Safety from Preference in Clinical LLM Evaluation (Oct 26, 2026)",
+      "url": "http://dl.acm.org/doi/10.1145/3842436.3843811"
+    },
+    {
+      "name": "OSF Preprints - Safety Evaluation of GenAI Agent for Anxiety and Depression (Apr 30, 2026)",
+      "url": "https://doi.org/10.31234/osf.io/8kvm6_v2"
+    },
+    {
+      "name": "Preprints.org - Safety, Hallucination, and Failure Modes in Agentic Health AI (Apr 21, 2026)",
+      "url": "https://doi.org/10.20944/preprints202604.1409.v1"
+    },
+    {
+      "name": "FDA - Discussion Paper on Regulation of GenAI-Enabled Medical Devices (Aug 18, 2026)",
+      "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request"
     }
   ]
 }

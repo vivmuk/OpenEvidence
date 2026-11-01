@@ -67,5 +67,13 @@ var phaSourcesData = [
   {name:"Zenodo - SAFE-CARE Bench (Sep 14, 2026)", url:"https://doi.org/10.5281/zenodo.22739092"},
   {name:"medRxiv - Frontier LLMs vs government symptom checkers (Sep 2, 2026)", url:"https://doi.org/10.64898/2026.09.01.26361908"},
   {name:"npj Health Systems - Authentication status and AI triage concordance (Sep 2, 2026)", url:"https://www.nature.com/articles/s44401-026-00140-w"},
-  {name:"Fierce Healthcare - Samsung launches beta AI health assistant (Jul 22, 2026)", url:"https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"}
+  {name:"Fierce Healthcare - Samsung launches beta AI health assistant (Jul 22, 2026)", url:"https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"},
+  {name:"arXiv - SymptomAI: Conversational AI Agent for Symptom Assessment (May 10, 2026)", url:"https://arxiv.org/abs/2605.04012"},
+  {name:"arXiv - RubricsTree: Scalable Evaluation of Personal Health Agents (Jun 16, 2026)", url:"https://arxiv.org/abs/2606.18203"},
+  {name:"arXiv - ECHO: Locally-Deployable Agentic Health Assistant (Aug 11, 2026)", url:"https://arxiv.org/abs/2608.06110"},
+  {name:"arXiv - SuperSenseDoctor: Contactless Agent for Health Tracking (Aug 27, 2026)", url:"https://arxiv.org/abs/2609.16257"},
+  {name:"ACM - Separating Safety from Preference in Clinical LLM Evaluation (Oct 26, 2026)", url:"http://dl.acm.org/doi/10.1145/3842436.3843811"},
+  {name:"OSF Preprints - Safety Evaluation of GenAI Agent for Anxiety and Depression (Apr 30, 2026)", url:"https://doi.org/10.31234/osf.io/8kvm6_v2"},
+  {name:"Preprints.org - Safety, Hallucination, and Failure Modes in Agentic Health AI (Apr 21, 2026)", url:"https://doi.org/10.20944/preprints202604.1409.v1"},
+  {name:"FDA - Discussion Paper on Regulation of GenAI-Enabled Medical Devices (Aug 18, 2026)", url:"https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request"}
 ];
