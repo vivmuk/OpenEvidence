@@ -663,6 +663,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-10-21",
+  "cat": "Media",
+  "title": "Financial Times features OpenEvidence as $15bn 'viral' AI start-up",
+  "desc": "FT publishes a major feature on OpenEvidence, reporting nearly two-thirds of US doctors use the platform. Key new data: 42 million prompts processed in the prior month; OpenEvidence is described as the first 'viral consumer internet product in healthcare.' The article explores the debate over AI's g",
+  "src": "Financial Times",
+  "url": "https://www.ft.com/content/0ed17b79-47dd-4ad8-8dca-44eb35617edc",
+  "score": 55,
+  "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-10-14",
   "cat": "Milestone",
   "title": "OpenEvidence Ranked #6 on LinkedIn Top Startups List (U.S.)",
@@ -687,6 +699,20 @@ var signalsData = [
    "Doximity",
    "UpToDate",
    "Abridge"
+  ],
+  "comparative": false
+ },
+ {
+  "date": "2026-10-03",
+  "cat": "Talent",
+  "title": "Claude Science creator Alec Tarashansky joins OpenEvidence",
+  "desc": "Alec Tarashansky, the Anthropic engineer who led development of Claude Science (Anthropic's research workbench for scientists), announces he has joined OpenEvidence to work on AI for medicine. His move connects research-workflow expertise from Anthropic with OpenEvidence's fast-growing clinical evid",
+  "src": "RuntimeWire",
+  "url": "https://runtimewire.com/article/alec-tarashansky-openevidence-claude-science",
+  "score": 53,
+  "confidence": "reported",
+  "competitors": [
+   "Anthropic"
   ],
   "comparative": false
  },
@@ -730,32 +756,6 @@ var signalsData = [
   "confidence": "reported",
   "competitors": [
    "Doximity"
-  ],
-  "comparative": false
- },
- {
-  "date": "2026-07-09",
-  "cat": "Media",
-  "title": "STAT - OpenEvidence Backs Study That Finds It Beats LLMs",
-  "desc": "STAT News covers the Real-POCQi study (arXiv:2606.28960) backed by OpenEvidence that contradicts the June Nature Medicine paper. 149 physicians in specialty-matched comparisons found OpenEvidence outperformed Claude Opus 4.8, Gemini 3.1 Pro, and GPT-5.5 on real-world clinical questions.",
-  "src": "STAT",
-  "url": "https://www.statnews.com/2026/07/09/openevidence-backs-study-that-finds-it-beats-llms-health-tech/",
-  "score": 53,
-  "confidence": "reported",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-06-11",
-  "cat": "Product",
-  "title": "Abridge Keynote - Patient-Centered Clinician Intelligence Platform (Competitor)",
-  "desc": "Abridge unveils first AI-native clinician intelligence platform at NYC Keynote. Nvidia foundation model partnership. Eli Lilly investment. Northwestern Medicine rollout. Expands beyond AI scribe into evidence, payer, and pharma connectivity.",
-  "src": "BusinessWire",
-  "url": "https://www.businesswire.com/news/home/20260611779141/en/Abridge-Unveils-Patient-Centered-Clinician-Intelligence-Platform-Connecting-Care-Delivery-Payment-and-Evidence-Based-Treatment",
-  "score": 51,
-  "confidence": "confirmed",
-  "competitors": [
-   "Abridge"
   ],
   "comparative": false
  }

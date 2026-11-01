@@ -58,3 +58,8 @@ Date,Metric,Value,Unit,Source_URL
 2026-10-14,Queries Last 24h,1900000,queries,OpenEvidence pharma platform panel (Oct 2026)
 2026-10-14,Queries Last 7 Days,12000000,queries,OpenEvidence pharma platform panel (Oct 2026)
 2026-10-14,Queries Last 30 Days,46500000,queries,OpenEvidence pharma platform panel (Oct 2026)
+2026-10-21,Monthly Prompts,42000000,prompts,FT feature (Oct 21 2026) - 42 million prompts in prior month
+2026-10-21,US Physician Adoption,65,percent,FT feature (Oct 21 2026) - nearly two-thirds of US doctors
+2026-10-21,Projected 2026 Ad Revenue Low,400000000,USD,Ars Technica (Oct 21 2026) - on track for $400-500M ad revenue
+2026-10-21,Projected 2026 Ad Revenue High,500000000,USD,Ars Technica (Oct 21 2026) - on track for $400-500M ad revenue
+2026-10-21,Total Funding,1000000000,USD,Ars Technica (Oct 21 2026) - nearly $1B raised in 18 months

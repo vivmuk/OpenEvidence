@@ -2,7 +2,7 @@
 // Source of truth: data/metrics.csv and the entity files next to it.
 // Regenerated on every commit by .git/hooks/pre-commit.
 var siteMetrics = {
-  "dataThrough": "2026-10-14",
+  "dataThrough": "2026-10-21",
   "latest": {
     "consultations": {
       "value": 42000000,
@@ -47,10 +47,10 @@ var siteMetrics = {
     "total_funding": {
       "value": 1000000000,
       "display": "$1B",
-      "date": "2026-09-30",
-      "month": "Sep 2026",
-      "source": "https://www.businessinsider.com/chatgpt-for-medicine-openevidence-fielding-valuation-2026-9",
-      "sourceHost": "businessinsider.com"
+      "date": "2026-10-21",
+      "month": "Oct 2026",
+      "source": "",
+      "sourceHost": ""
     },
     "physician_adoption": {
       "value": 65,
@@ -200,13 +200,15 @@ var siteMetrics = {
         "Oct 2025",
         "Jan 2026",
         "Sep 2026",
-        "Sep 2026"
+        "Sep 2026",
+        "Oct 2026"
       ],
       "values": [
         285,
         485,
         700,
         1020,
+        1000,
         1000
       ]
     }
@@ -217,7 +219,7 @@ var siteMetrics = {
     "research": 515,
     "benchmarks": 224,
     "publications": 137,
-    "timeline": 170,
+    "timeline": 173,
     "sources": 67
   }
 };
