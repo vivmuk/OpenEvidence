@@ -75,5 +75,11 @@ var phaSourcesData = [
   {name:"ACM - Separating Safety from Preference in Clinical LLM Evaluation (Oct 26, 2026)", url:"http://dl.acm.org/doi/10.1145/3842436.3843811"},
   {name:"OSF Preprints - Safety Evaluation of GenAI Agent for Anxiety and Depression (Apr 30, 2026)", url:"https://doi.org/10.31234/osf.io/8kvm6_v2"},
   {name:"Preprints.org - Safety, Hallucination, and Failure Modes in Agentic Health AI (Apr 21, 2026)", url:"https://doi.org/10.20944/preprints202604.1409.v1"},
-  {name:"FDA - Discussion Paper on Regulation of GenAI-Enabled Medical Devices (Aug 18, 2026)", url:"https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request"}
+  {name:"FDA - Discussion Paper on Regulation of GenAI-Enabled Medical Devices (Aug 18, 2026)", url:"https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request"},
+  {name:"Apple TestFlight - HealthPulse: AI Health Coach beta (Oct 31, 2026)", url:"https://testflight.apple.com/join/W6DWpe9D"},
+  {name:"Agent Playbox - UniqueHuman launches Niq health agent (Oct 20, 2026)", url:"https://agentplaybox.com/news/uniquehuman-launches-niq-health-agent/"},
+  {name:"BMJ Health & Care Informatics - Patient safety and health equity of AI-enabled triage tools (Oct 1, 2026)", url:"https://doi.org/10.1136/bmjhci-2026-102427"},
+  {name:"A-LIST Blog - Building Guardian Pocket: local health agent (Oct 1, 2026)", url:"https://a-list.com/blog/building-guardian-pocket"},
+  {name:"Everlab - Concierge AI health assistant launch (Sep 2, 2026)", url:"https://www.everlab.com.au/press/everlab-launches-concierge-an-ai-health-assistant-grounded-in-members-own-health-data"},
+  {name:"JMIR Human Factors - SCARF Symptom Checker Accuracy Reporting Framework (Jan 16, 2026)", url:"https://humanfactors.jmir.org/2026/1/e76168"}
 ];
