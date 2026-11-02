@@ -1,0 +1,24 @@
+{
+  "name": "openevidence",
+  "start": [
+    "node",
+    "server.js"
+  ],
+  "cwd": ".",
+  "readyPath": "/",
+  "timeoutSeconds": 60,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "/",
+      "width": 1440,
+      "height": 1000,
+      "name": "desktop"
+    }
+  ]
+}

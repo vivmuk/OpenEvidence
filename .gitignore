@@ -10,3 +10,6 @@ split-site.js
 scripts/__pycache__/
 data/*.prehardening
 data/*.bak
+
+# verifier output
+.verify/artifacts/
