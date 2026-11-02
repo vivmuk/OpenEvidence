@@ -2908,7 +2908,19 @@
     ],
     "scale": "10 open-source LLMs, pediatric ESI counterfactual vignettes",
     "status": "preprint_v1",
-    "new": false
+    "new": false,
+    "arxiv_id": "2610.01963",
+    "pub_date": "2026-10-01",
+    "doi": "",
+    "category": "Clinical AI Fairness Benchmark",
+    "description": "10 open-source LLMs audited for counterfactual bias on pediatric ESI triage. Fine-tuned Qwen2.5-7B showed lowest sensitivity (5.27% any-shift) vs 16.02% for base model. Larger or medical-domain models showed more significant shifts. Counterfactual auditing framework for fairness risk comparison before deployment.",
+    "metrics": {
+      "models_tested": 10,
+      "fine_tuned_qwen_5b_any_shift": "5.27%",
+      "base_qwen_any_shift": "16.02%",
+      "task": "pediatric ESI triage"
+    },
+    "dataset": "Pediatric Emergency Severity Index (ESI) clinical vignettes with counterfactual demographic variants"
   },
   {
     "id": "arxiv:2609.38543",
@@ -3208,7 +3220,19 @@
       "open-source",
       "reinforcement learning",
       "domain adaptation"
-    ]
+    ],
+    "arxiv_id": "2610.05966",
+    "pub_date": "2026-10-05",
+    "doi": "",
+    "category": "Medical LLM Benchmark",
+    "description": "OnePO RL-only domain adaptation for medical LLMs. HuatuoGPT-3 27B achieves 70.1 on HealthBench (Total) and 71.4 on HealthBench Professional, surpassing GPT-6 Astra. OnePO achieves 67.2 on HealthBench with 20K training samples, outperforming SFT+RL by 2.7 points.",
+    "metrics": {
+      "healthbench_total_27b": "70.1",
+      "healthbench_professional_27b": "71.4",
+      "healthbench_total_onepo": "67.2",
+      "training_samples": "20K"
+    },
+    "dataset": "HealthBench, HealthBench Professional"
   },
   {
     "id": "pmid:42832766",
@@ -5403,5 +5427,47 @@
       "cases": 120
     },
     "dataset": "120 MIMIC-IV emergency cases, counterfactual demographic swaps"
+  },
+  {
+    "id": "pmid:42968123",
+    "pmid": 42968123,
+    "title": "Pediatric Sedation Chatbot Evaluation",
+    "authors": "Dinç D, Ozbilgen A",
+    "journal": "BMC Med Inform Decis Mak",
+    "pub_date": "2026-08-05",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42968123/",
+    "doi": "10.1186/s12911-026-03748-y",
+    "source": "PubMed",
+    "category": "LLM Clinical Knowledge Benchmark",
+    "description": "3 LLMs (ChatGPT 4.0 Mini, Gemini 1.5 Pro, Claude 3 Sonnet) vs 72 human experts (anesthesiologists, pediatric dentists, oral surgeons) on 26-item pediatric sedation questionnaire. Claude 3 Sonnet 92.8%, Gemini 1.5 Pro 91.7%, anesthesiologists 87.0%. AI outperformed humans in data retrieval but anesthesiologists superior in Patient Evaluation and Preparation (91.7%).",
+    "metrics": {
+      "claude_3_sonnet_accuracy": "92.8%",
+      "gemini_1_5_pro_accuracy": "91.7%",
+      "anesthesiologist_accuracy": "87.0%",
+      "questions": 26,
+      "human_participants": 72
+    },
+    "dataset": "26-item true/false questionnaire based on ASA, AAP, ADA, AAPD guidelines"
+  },
+  {
+    "id": "pmid:42966792",
+    "pmid": 42966792,
+    "title": "Videolaryngology LLM Assessment",
+    "authors": "Maniaci A, Lentini M, Lechien JR",
+    "journal": "Eur Arch Otorhinolaryngol",
+    "pub_date": "2026-10-31",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42966792/",
+    "doi": "10.1007/s00405-026-10755-2",
+    "source": "PubMed",
+    "category": "LLM Clinical Assessment Benchmark",
+    "description": "ChatGPT-4o vs Gemini-1.5-Pro on 40 laryngology cases with and without clinical context. ChatGPT-4o 47.5% vs Gemini 17.5% with video alone (p=0.001). Gemini improved to 45% with added clinical info. ICC 0.920-0.978. Distinct capabilities between LLMs for laryngological assessment.",
+    "metrics": {
+      "chatgpt_4o_video_alone": "47.5%",
+      "gemini_1_5_pro_video_alone": "17.5%",
+      "gemini_1_5_pro_with_context": "45%",
+      "cases": 40,
+      "icc_range": "0.920-0.978"
+    },
+    "dataset": "40 laryngology cases, videolaryngostroboscopy with and without clinical context"
   }
 ]
