@@ -8,6 +8,11 @@ Data: `data/phaTimeline.js`, `data/phaPlayers.js`, `data/phaResearch.js`, `data/
 Agent mirror: `data/pha.json`
 Related but separate: physician-facing clinical AI (OpenEvidence, Abridge, Doximity) stays on its own pages.
 
+**Two hard-won rules for this job, read them before you start:**
+
+1. **Use `edit` or `exec`, never `apply_patch`,** for files in this repo. `apply_patch` is sandboxed to the agent's own workspace and always fails here with `Path escapes sandbox root`. Retrying it burns the job's entire time budget.
+2. **You have 600 seconds for the whole run.** Search once, in one call. Then edit, regenerate, validate, commit and push without re-reading files you already have.
+
 ## Guardrails
 
 - Every new item needs a real date, a URL and a source name. No speculation, no invented metrics.
@@ -16,11 +21,9 @@ Related but separate: physician-facing clinical AI (OpenEvidence, Abridge, Doxim
 - If nothing new: no commit, and report exactly `No new personal health agent updates today.`
 - Do not run benchmarks.
 
-## 1. Pull the Venice key
+## 1. Search and scrape
 
-```bash
-VENICE_KEY=$(sed -n 's/^[[:space:]]*api_key:[[:space:]]*//p' ~/.hermes/config.yaml | head -1)
-```
+Both helpers read the Venice key from `~/.hermes/config.yaml` **in-process**, so the credential never appears on a command line, in `ps`, or in shell history. There is nothing to extract and nothing to export.
 
 Search with the Venice search helper. It runs on **Exa** via Venice (zero data
 retention, no Exa account needed, Venice bills $0.01/call) and returns
@@ -45,9 +48,10 @@ snippet text or from the source page.
 Scrape when `web_fetch` fails:
 
 ```bash
-curl -s -H "Authorization: Bearer $VENICE_KEY" -X POST -H "Content-Type: application/json" \
-  -d '{"url":"<URL>"}' https://api.venice.ai/api/v1/augment/scrape
+python3 /home/vivgates/.openclaw/workspace-kriya/scripts/venice_scrape.py "<URL>"
 ```
+
+It prints clean Markdown to stdout.
 
 ## 2. Searches every run
 
@@ -71,6 +75,10 @@ Primary pages worth fetching: `https://www.abridge.com` is irrelevant here; use 
 Match existing entries by URL, title and date. Update a player card rather than adding a duplicate when an existing product ships a new capability.
 
 ## 4. Update the data
+
+**Edit with `edit` or `exec` — never `apply_patch`.** `apply_patch` is sandboxed to the agent's own workspace (`~/.openclaw/workspace-kriya`) and therefore always fails on `/home/vivgates/OpenEvidence/...` with `Path escapes sandbox root`. It cannot be made to work on this repo. Three failed `apply_patch` calls cost this job roughly 200 seconds of its 600-second budget on both 2026-11-02 and 2026-11-03, and pushed each run past its deadline. Use `edit` for a single exact-string replacement, or `exec` with a python script when several edits are needed — both work on this path.
+
+**Stay inside the 600-second budget.** The whole run — 12 searches, dedupe, edits, `pha.json` regeneration, validation, commit and push — has to finish inside the job's `timeoutSeconds: 600`. Run all searches in one helper call, don't re-read large data files you have already read, and don't retry a failing tool: switch to the working tool instead.
 
 - `data/phaTimeline.js` — prepend newest first: `{date,cat,title,desc,src,url,new:true}` with `cat` one of Product, Research, Regulatory, Trend, Competitor, Metric. Remove `new:true` from entries older than 14 days.
 - `data/phaPlayers.js` — add or refresh a player: `{name,type,badge,stats:[{l,v}],desc,url}`.

@@ -7,6 +7,11 @@ Page: `abridge.html`
 Data: `data/abridgeTimeline.js`, `data/abridgeProducts.js`, `data/abridgePartners.js`, `data/abridgeResearch.js`, `data/abridgeSources.js`
 Agent mirror: `data/abridge.json`
 
+**Two hard-won rules for this job, read them before you start:**
+
+1. **Use `edit` or `exec`, never `apply_patch`,** for files in this repo. `apply_patch` is sandboxed to the agent's own workspace and always fails here with `Path escapes sandbox root`. Retrying it burns the job's entire time budget.
+2. **Stay inside the job's 600-second budget.** Search once, in one call. Then edit, regenerate, validate, commit and push without re-reading files you already have.
+
 ## Guardrails
 
 - Every new item needs a real date, a URL, and a source name. No speculation.
@@ -14,13 +19,9 @@ Agent mirror: `data/abridge.json`
 - Do not run benchmarks. Do not invent metrics.
 - If nothing new: make no commit and report one line.
 
-## 1. Pull the Venice key
+## 1. Search and scrape
 
-```bash
-VENICE_KEY=$(sed -n 's/^[[:space:]]*api_key:[[:space:]]*//p' ~/.hermes/config.yaml | head -1)
-```
-
-If that returns an empty value, inspect the provider block in `~/.hermes/config.yaml` and use the Venice key from it.
+Both helpers read the Venice key from `~/.hermes/config.yaml` **in-process**, so the credential never appears on a command line, in `ps`, or in shell history. There is nothing to extract and nothing to export.
 
 Search with the Venice search helper. It runs on **Exa** via Venice (zero data
 retention, no Exa account needed, Venice bills $0.01/call) and returns
@@ -42,12 +43,13 @@ the page text truncated to `--max-chars`, which keeps the context budget flat.
 Use `date` as the publication date; when it is empty, take the date from the
 snippet text or from the source page.
 
-Scrape when `web_fetch` fails:
+Scrape when `web_fetch` fails. Use the scrape helper — it reads the Venice key in-process, so the credential never appears on a command line:
 
 ```bash
-curl -s -H "Authorization: Bearer ***" -X POST -H "Content-Type: application/json" \
-  -d '{"url":"<URL>"}' https://api.venice.ai/api/v1/augment/scrape
+python3 /home/vivgates/.openclaw/workspace-kriya/scripts/venice_scrape.py "<URL>"
 ```
+
+It prints clean Markdown to stdout.
 
 ## 2. Sources to check every run
 
