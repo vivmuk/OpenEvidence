@@ -155,6 +155,27 @@
   ],
   "partners": [
     {
+      "name": "UCHealth",
+      "type": "Health system · 2,300+ providers, Colorado enterprise",
+      "date": "Feb 24, 2026",
+      "url": "https://www.abridge.com/press-release/uchealth-scales-abridge",
+      "new": false
+    },
+    {
+      "name": "University Hospitals",
+      "type": "Health system · Cleveland, enterprise partner after head-to-head eval",
+      "date": "Mar 17, 2026",
+      "url": "https://www.linkedin.com/posts/abridgehq_university-hospitals-blog-activity-7439709868338544640-l3nU",
+      "new": false
+    },
+    {
+      "name": "University of Utah Health",
+      "type": "Health system · enterprise agreement (school of medicine + health system)",
+      "date": "2026",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/what-does-it-take-to-be-a-lasting-ai-partner-to-health-systems/",
+      "new": false
+    },
+    {
       "name": "HonorHealth",
       "type": "Health system · enterprise rollout, no pilot",
       "date": "Apr 20, 2026",
@@ -198,10 +219,10 @@
     },
     {
       "name": "CHRISTUS Health",
-      "type": "Health system · unlimited enterprise agreement",
-      "date": "2026",
-      "url": "https://www.abridge.com/customers",
-      "new": false
+      "type": "Health system · 60+ hospitals, unlimited enterprise agreement, inpatient + nursing pilot",
+      "date": "Jul 20, 2026",
+      "url": "https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge",
+      "new": true
     },
     {
       "name": "Geisinger",
@@ -306,7 +327,7 @@
       "type": "Health system · Abridge Assistant family medicine",
       "date": "Oct 18, 2026",
       "url": "https://www.abridge.com/blog/mainehealth-jessica-faraci-abridge-assistant",
-      "new": true
+      "new": false
     },
     {
       "name": "University of Texas System (UT REAL Health AI)",
@@ -574,6 +595,51 @@
   ],
   "timeline": [
     {
+      "date": "2026-10-30",
+      "cat": "Company",
+      "title": "Lawsuit Filed Against AHN and Highmark Over Abridge AI Recording",
+      "desc": "A Pittsburgh-area woman filed a class-action lawsuit in Allegheny County Common Pleas Court against Allegheny Health Network and Highmark, alleging improper disclosure and use of Abridge's AI recording tool during patient visits. The suit claims patients were not properly informed that their conversations would be recorded, transmitted to Abridge servers, and potentially used for commercial AI training. It cites Pennsylvania wiretap law, HIPAA, breach of confidentiality, and invasion of privacy. AHN has deployed Abridge across approximately 400 providers in 40+ specialties since 2024. Similar lawsuits have been filed in California.",
+      "src": "TribLive",
+      "url": "https://triblive.com/news/health-now/lawsuit-ai-recording-tool-used-by-ahn-highmark-violates-patient-rights/",
+      "new": true
+    },
+    {
+      "date": "2026-10-26",
+      "cat": "Product",
+      "title": "Abridge Launches Assistant Prompt Library with 300+ Curated Prompts",
+      "desc": "Abridge introduced the Assistant Prompt Library, a growing collection of 300+ curated prompts organized by specialty and use case - chart prep, chart query, clinical decision support, note editing, and generating new artifacts. The library offers a window into how clinicians are putting Abridge Assistant into practice and is browseable on the Abridge website. Abridge called Assistant the fastest-growing product in its history.",
+      "src": "Abridge / LinkedIn",
+      "url": "https://www.linkedin.com/posts/abridgehq_featured-prompts-activity-7520503123082280960-4euN",
+      "new": true
+    },
+    {
+      "date": "2026-10-22",
+      "cat": "Funding",
+      "title": "Abridge Carries $6.69B Private Valuation as Independent Trials Measure 22-Minute Daily Savings",
+      "desc": "The Inference reports Abridge's latest private valuation mark at $6.69 billion, up from the $5.3B set in June 2025. The article cites independent trial evidence - a 24-week RCT across 66 practitioners finding 0.36 hours/day note-time reduction, a UCLA head-to-head in NEJM AI, and a VHA evaluation where human note-takers outscored 11 AI scribes - as the first countable productivity metric (22 minutes/day) that caps per-encounter pricing and shifts margin to clinical content and mid-revenue-cycle workflow.",
+      "src": "The Inference",
+      "url": "https://theinference.org/article/abridge-carries-a-6-69-billion-mark-on-trials-showing-its-scribe-saves-22-minutes-a-day",
+      "new": true
+    },
+    {
+      "date": "2026-10-21",
+      "cat": "Product",
+      "title": "Becker's: Abridge Pushes CDI Closer to Care with Concurrent Queries and Pre-Bill Review",
+      "desc": "Becker's Hospital Review published a field report on how Abridge is moving clinical documentation integrity from a retrospective function into the encounter itself. Concurrent CDI surfaces documentation gaps while clinicians write notes during hospital stays; pre-bill review compares coded diagnoses and DRGs against the documented conversation before the claim drops. The article frames this as Abridge pushing clinical context into adjacent business processes rather than adding more alerts.",
+      "src": "Becker's Hospital Review",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/moving-cdi-closer-to-care-how-clinicians-are-answering-queries-in-minutes-not-days/",
+      "new": true
+    },
+    {
+      "date": "2026-10-16",
+      "cat": "Product",
+      "title": "Abridge Launches Inpatient Suite for Care Teams and Revenue Cycle",
+      "desc": "Abridge VP Product Janie Lee announced the launch of an Inpatient Suite designed for the complexity of inpatient care - spanning days, shifts, and handoffs with many clinicians contributing to one patient record. The suite helps clinicians walk into admissions and rounds fully oriented, creates notes that follow the patient's stay, and supports CDI and billing along the way. Documentation gaps are addressed at the point of care rather than retrospectively.",
+      "src": "Abridge / LinkedIn",
+      "url": "https://www.linkedin.com/posts/janiejlee_the-team-is-shipping-today-abridge-is-launching-activity-7516880560821116928-FGrl",
+      "new": false
+    },
+    {
       "date": "2026-10-27",
       "cat": "Product",
       "title": "Abridge October 2026 Release: Visit Topics, In-Visit Orders, Chart-Informed Inpatient Notes, Outpatient CDI, Evaluation Dashboard",
@@ -589,7 +655,7 @@
       "desc": "Abridge published a case study with Dr. Jessica Faraci, a family medicine physician at Maine Health, describing how she uses Abridge Assistant for in-visit decision support, generating patient summaries, writing medical letters, and creating patient handouts. Faraci reports Assistant saves roughly 30 minutes per day on top of documentation time savings, with about half of its auto-generated clinical questions matching what she was already thinking. The case study is the first public confirmation that Maine Health is an Abridge enterprise partner.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/mainehealth-jessica-faraci-abridge-assistant",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-16",
@@ -745,6 +811,15 @@
       "new": false
     },
     {
+      "date": "2026-05-19",
+      "cat": "Milestone",
+      "title": "Abridge Named to CNBC Disruptor 50 List for Second Year",
+      "desc": "CNBC named Abridge to its 2026 Disruptor 50 list at No. 30, up from No. 47 in 2025. The recognition cites $550M raised across Series D and E rounds, expansion into clinical decision support and peer-reviewed research, and a $5.3B valuation. Abridge was one of few healthcare AI companies on the list.",
+      "src": "CNBC",
+      "url": "https://www.cnbc.com/2026/05/19/abridge-cnbc-disruptor-50-ranking.html",
+      "new": false
+    },
+    {
       "date": "2026-05-22",
       "cat": "Company",
       "title": "Abridge Names San Oo Chief Technology Officer",
@@ -761,6 +836,15 @@
       "src": "Becker's Hospital Review",
       "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/",
       "new": false
+    },
+    {
+      "date": "2026-07-20",
+      "cat": "Partnership",
+      "title": "CHRISTUS Health Expands to Unlimited Enterprise Agreement, Adds Inpatient and Nursing",
+      "desc": "CHRISTUS Health, a 60+ hospital system across the U.S. and Mexico, expanded its Abridge partnership from ambulatory care to an unlimited enterprise agreement while introducing AI into inpatient care and launching a pilot for nursing documentation. Dr. Tim Barker, System Medical Director and CMIO of Ambulatory Care, cited continuous innovation and trust built over several years of ambulatory success as the driver for expansion.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge",
+      "new": true
     },
     {
       "date": "2026-04-20",
@@ -797,6 +881,15 @@
       "url": "https://sacra.com/c/abridge/"
     },
     {
+      "date": "2026-03-17",
+      "cat": "Partnership",
+      "title": "University Hospitals Selects Abridge as Strategic Enterprise Partner After Head-to-Head Evaluation",
+      "desc": "University Hospitals, a Cleveland-based academic health system, selected Abridge as its long-term enterprise AI partner after a rigorous head-to-head vendor evaluation including crossover clinicians, formal scorecards, and executive reviews. Every crossover user preferred Abridge, citing note quality and workflow fit. The selection adds another major academic medical center to Abridge's enterprise roster.",
+      "src": "Abridge / LinkedIn",
+      "url": "https://www.linkedin.com/posts/abridgehq_university-hospitals-blog-activity-7439709868338544640-l3nU",
+      "new": false
+    },
+    {
       "date": "2026-02-11",
       "cat": "Milestone",
       "title": "Forbes Names Shiv Rao to Inaugural 250 Greatest Living Innovators List",
@@ -806,12 +899,30 @@
       "new": false
     },
     {
+      "date": "2026-02-24",
+      "cat": "Partnership",
+      "title": "UCHealth Rapidly Expands Abridge AI Across 2,300+ Providers",
+      "desc": "UCHealth, a Colorado-based nonprofit health system, partnered with Abridge to bring enterprise-grade AI across the state. The decision follows a successful nine-month pilot with 250 UCHealth providers in 2025 that demonstrated significant improvements in patient experience and provider workflows. Over one-third of about 6,000 UCHealth doctors now have access to Abridge.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/uchealth-scales-abridge",
+      "new": false
+    },
+    {
       "date": "2026-02-04",
       "cat": "Milestone",
       "title": "Abridge Wins #1 Best in KLAS 2026 for Ambient AI, Second Year Running",
       "desc": "Abridge earned the No. 1 Best in KLAS 2026 ranking for Ambient AI in the Revenue Cycle Management category for the second consecutive year. The ranking is based on independent customer interviews with large enterprise health systems, not vendor-submitted data. KLAS's 2026 Ambient AI report also placed Abridge among the innovation leaders and said it leads buying decisions.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press-release/best-in-klas-2026-press"
+    },
+    {
+      "date": "2026-02-05",
+      "cat": "Competitor",
+      "title": "Epic Launches Built-In AI Charting Tool, Intensifying Competition with Ambient Scribe Vendors",
+      "desc": "Epic rolled out a native AI charting tool that listens during appointments, drafts clinical documentation, and prepares orders based on what it hears. With 42% of the acute care EHR market, Epic's entry puts it in direct competition with third-party ambient AI scribes like Abridge, which relies on deep Epic integration as a distribution moat. The move raises questions about how long standalone scribes can maintain privileged access to Epic workflows.",
+      "src": "MedCity News",
+      "url": "https://medcitynews.com/2026/02/ambient-scribe-ai-startups-epic/",
+      "new": false
     },
     {
       "date": "2026-01-11",
@@ -1046,7 +1157,31 @@
     {
       "name": "BusinessWire - Abridge Names San Oo CTO (May 21, 2026)",
       "url": "https://www.businesswire.com/news/home/20260521475981/en/Abridge-Names-San-Oo-CTO"
+    },
+    {
+      "name": "Abridge - UCHealth enterprise expansion (Feb 24, 2026)",
+      "url": "https://www.abridge.com/press-release/uchealth-scales-abridge"
+    },
+    {
+      "name": "Abridge / LinkedIn - University Hospitals enterprise partner (Mar 17, 2026)",
+      "url": "https://www.linkedin.com/posts/abridgehq_university-hospitals-blog-activity-7439709868338544640-l3nU"
+    },
+    {
+      "name": "MedCity News - Epic launches AI charting tool (Feb 5, 2026)",
+      "url": "https://medcitynews.com/2026/02/ambient-scribe-ai-startups-epic/"
+    },
+    {
+      "name": "CNBC - Abridge Disruptor 50 2026 (May 19, 2026)",
+      "url": "https://www.cnbc.com/2026/05/19/abridge-cnbc-disruptor-50-ranking.html"
+    },
+    {
+      "name": "Becker's - What it takes to be a lasting AI partner (Aug 14, 2026)",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/what-does-it-take-to-be-a-lasting-ai-partner-to-health-systems/"
+    },
+    {
+      "name": "Abridge - CHRISTUS Health unlimited enterprise expansion (Jul 20, 2026)",
+      "url": "https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge"
     }
   ],
-  "updated": "2026-10-29"
+  "updated": "2026-11-03"
 }

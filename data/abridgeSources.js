@@ -43,4 +43,10 @@ var abridgeSourcesData = [
   {name:"Healthcare Dive - Suki raises $90M Series E for AI agents (Oct 13, 2026)",url:"https://www.healthcaredive.com/news/suki-raises-90m-in-series-e-round-to-create-ai-agents/832862/"},
   {name:"Becker's - Abridge summit field report: real-time intelligence (May 12, 2026)",url:"https://www.beckershospitalreview.com/healthcare-information-technology/innovation/abridge-has-become-the-wiring-of-healthcare-how-health-systems-are-operationalizing-real-time-intelligence/"},
   {name:"BusinessWire - Abridge Names San Oo CTO (May 21, 2026)",url:"https://www.businesswire.com/news/home/20260521475981/en/Abridge-Names-San-Oo-CTO"},
+  {name:"Abridge - UCHealth enterprise expansion (Feb 24, 2026)",url:"https://www.abridge.com/press-release/uchealth-scales-abridge"},
+  {name:"Abridge / LinkedIn - University Hospitals enterprise partner (Mar 17, 2026)",url:"https://www.linkedin.com/posts/abridgehq_university-hospitals-blog-activity-7439709868338544640-l3nU"},
+  {name:"MedCity News - Epic launches AI charting tool (Feb 5, 2026)",url:"https://medcitynews.com/2026/02/ambient-scribe-ai-startups-epic/"},
+  {name:"CNBC - Abridge Disruptor 50 2026 (May 19, 2026)",url:"https://www.cnbc.com/2026/05/19/abridge-cnbc-disruptor-50-ranking.html"},
+  {name:"Becker's - What it takes to be a lasting AI partner (Aug 14, 2026)",url:"https://www.beckershospitalreview.com/healthcare-information-technology/what-does-it-take-to-be-a-lasting-ai-partner-to-health-systems/"},
+  {name:"Abridge - CHRISTUS Health unlimited enterprise expansion (Jul 20, 2026)",url:"https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge"},
 ];
