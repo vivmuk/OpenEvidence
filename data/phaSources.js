@@ -81,5 +81,12 @@ var phaSourcesData = [
   {name:"BMJ Health & Care Informatics - Patient safety and health equity of AI-enabled triage tools (Oct 1, 2026)", url:"https://doi.org/10.1136/bmjhci-2026-102427"},
   {name:"A-LIST Blog - Building Guardian Pocket: local health agent (Oct 1, 2026)", url:"https://a-list.com/blog/building-guardian-pocket"},
   {name:"Everlab - Concierge AI health assistant launch (Sep 2, 2026)", url:"https://www.everlab.com.au/press/everlab-launches-concierge-an-ai-health-assistant-grounded-in-members-own-health-data"},
-  {name:"JMIR Human Factors - SCARF Symptom Checker Accuracy Reporting Framework (Jan 16, 2026)", url:"https://humanfactors.jmir.org/2026/1/e76168"}
+  {name:"JMIR Human Factors - SCARF Symptom Checker Accuracy Reporting Framework (Jan 16, 2026)", url:"https://humanfactors.jmir.org/2026/1/e76168"},
+  {name:"Joined Bio - Nova AI assistant for research participants' own health records (Sep 30, 2026)", url:"https://joined.bio/news/joined-bio-introduces-nova-ai-assistant/"},
+  {name:"PR Newswire - Dimer Health launches AiME post-discharge AI health agent (Sep 10, 2026)", url:"https://www.prnewswire.com/news-releases/dimer-health-brings-the-hospital-call-button-home-with-aime-302872914.html"},
+  {name:"SmartBodyTouch - AI health coach wearable platforms compared (Aug 21, 2026)", url:"https://smartbodytouch.com/ai-health-coach-wearables-compared/"},
+  {name:"Hunton Andrews Kurth - California AB 1979 extends CMIA to consumer health chatbots (Oct 29, 2026)", url:"https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-law-extends-cmia-protections-to-health-care-chatbots-and-enacts-new-guardrails-on-ai-use-in-clinical-care"},
+  {name:"Gizbot - Apple has been building an AI health coach since 2025 (Oct 27, 2026)", url:"https://www.gizbot.com/news/apple-has-been-building-an-ai-health-coach-since-2025-129449.html"},
+  {name:"Nature Health - AI symptom checker in South Africa's MomConnect maternal platform (Jun 16, 2026)", url:"https://www.nature.com/articles/s44360-026-00125-x"},
+  {name:"Hey Biblo - Biblo personal AI fitness agent for iMessage (Oct 21, 2026)", url:"https://www.heybiblo.com/blog/introducing-biblo"}
 ];

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -23,12 +23,45 @@
   },
   "timeline": [
     {
+      "date": "2026-09-30",
+      "cat": "Product",
+      "title": "Joined Bio Introduces Nova, an AI Assistant for Research Participants' Own Health Records",
+      "desc": "Joined Bio launched Nova, an AI assistant that lets research participants ask questions about their Complete Health Record in plain language. Participants can ask anything from 'Give me a summary of my health' to 'How is my heart rate trending?' to 'When was my last tetanus vaccine?' and get answers drawn from their own records. Joined Bio also introduced document uploads to build out the Complete Health Record. Represents the extension of personal health AI into the research-participant context, where understanding one's own health data drives engagement and data quality. Vendor claim: helps participants understand health information, not a substitute for healthcare providers.",
+      "src": "Joined Bio",
+      "url": "https://joined.bio/news/joined-bio-introduces-nova-ai-assistant/"
+    },
+    {
+      "date": "2026-09-10",
+      "cat": "Product",
+      "title": "Dimer Health Launches AiME, a Personalised AI Health Agent for Post-Discharge Care",
+      "desc": "Dimer Health launched AiME, a personalised AI-powered health agent that patients access from home after discharge. AiME pairs AI-driven guidance with a 24/7 clinical team, acting as a care navigator that helps patients decide whether what they feel is normal or an emergency. The product addresses the gap between hospital monitoring and home recovery, where patients lose the 'call button' they had in the hospital. Vendor claim: personalised AI-driven guidance with clinical backup, not a replacement for emergency care.",
+      "src": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/dimer-health-brings-the-hospital-call-button-home-with-aime-302872914.html"
+    },
+    {
+      "date": "2026-08-21",
+      "cat": "Trend",
+      "title": "AI Health Coaches Compared: Four Wearable Platforms, Four Price Points",
+      "desc": "A market comparison found four wearable platforms selling AI health coaches in 2026: Google Health Coach at $9.99/month, WHOOP Coach included in memberships from $199/year, Oura Advisor included at $5.99/month, and Garmin Active Intelligence at $6.99/month. Apple still has no AI coach. The analysis frames the competitive shift: in 2024 the pitch was more sensors, in 2026 it is a chatbot that reads them for you. Every major wearable platform now sells an AI coach that ingests sleep, strain and heart data and tells users what to do about it.",
+      "src": "SmartBodyTouch",
+      "url": "https://smartbodytouch.com/ai-health-coach-wearables-compared/"
+    },
+    {
       "date": "2026-10-31",
       "cat": "Product",
       "title": "HealthPulse: AI Health Coach Enters TestFlight Beta with Apple Health Integration",
       "desc": "A third-party app called HealthPulse entered TestFlight beta, offering daily Sleep, Recovery and Exertion scores, trends, sleep and workout insights by exploring Apple Health data. The beta includes optional meal logging, lab report summaries, cycle insights, and Velo AI briefings and questions. Demonstrates the emerging third-party Apple Health AI coach ecosystem enabled by Apple's Health data APIs. Vendor claim: wellness insights, not a medical device.",
       "src": "Apple TestFlight",
       "url": "https://testflight.apple.com/join/W6DWpe9D",
+      "new": true
+    },
+    {
+      "date": "2026-10-29",
+      "cat": "Regulatory",
+      "title": "California Extends CMIA Privacy Protections to Consumer Health Care Chatbots",
+      "desc": "California enacted AB 1979, extending the Confidentiality of Medical Information Act (CMIA) to businesses offering consumer-facing health care chatbots. Starting January 1, 2027, companies providing chatbots for managing health information or for diagnosis, treatment or management of a medical condition will be deemed health care providers under CMIA, required to maintain the same confidentiality standards as providers. The law also limits how health care providers may use AI in clinical care. Represents the first state law to explicitly bring consumer health AI chatbots under medical privacy protections equivalent to those covering providers.",
+      "src": "Hunton Andrews Kurth",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-law-extends-cmia-protections-to-health-care-chatbots-and-enacts-new-guardrails-on-ai-use-in-clinical-care",
       "new": true
     },
     {
@@ -46,8 +79,7 @@
       "title": "BMJ Health & Care Informatics: Systematic Review of Patient Safety and Health Equity in AI Triage Tools",
       "desc": "A systematic review published in BMJ Health & Care Informatics synthesised real-world patient safety evidence for AI-enabled triage tools in primary care and mapped whether safety has been examined across sociodemographic groups. The review searched PubMed, Embase, Web of Science and Scopus (January 2015-November 2025) with citation searching, covering prospective studies evaluating AI triage tools in real-world primary care settings. Addresses the gap between vignette-based validation and real-world safety evidence, and whether equity across sociodemographic groups has been assessed.",
       "src": "BMJ Health & Care Informatics",
-      "url": "https://doi.org/10.1136/bmjhci-2026-102427",
-      "new": true
+      "url": "https://doi.org/10.1136/bmjhci-2026-102427"
     },
     {
       "date": "2026-10-01",
@@ -55,8 +87,7 @@
       "title": "Guardian Pocket: A-LIST Ships a Local-First Health Agent Where You Own the Data",
       "desc": "A-LIST launched Guardian Pocket, billed as the world's first local health agent where the user owns the data end to end. Data never leaves the phone, the agent is as capable as expensive frontier agents at its tasks, and it runs fast by fusing model and harness into one integrated system. The release is part of A-LIST's broader shift to a free, no-account, privacy-first model. Represents the local-first, privacy-maximalist design pattern in consumer health AI. Vendor claim: 100% private, on-device health agent.",
       "src": "A-LIST Blog",
-      "url": "https://a-list.com/blog/building-guardian-pocket",
-      "new": true
+      "url": "https://a-list.com/blog/building-guardian-pocket"
     },
     {
       "date": "2026-09-02",
@@ -64,8 +95,7 @@
       "title": "Everlab Launches Concierge, an AI Health Assistant Grounded in Members' Own Health Data (Australia)",
       "desc": "Australian preventative health company Everlab launched Concierge, an in-app AI health assistant grounded in each member's own health record, with access to Everlab clinicians when needed. The assistant uses the member's diagnostic data, health history and existing care plan as context, addressing the limitation that general-purpose AI lacks individual health context. The launch signals international expansion of the personal health agent concept beyond the US. Vendor claim: AI health assistant grounded in personal health data, not a replacement for clinical care.",
       "src": "Everlab",
-      "url": "https://www.everlab.com.au/press/everlab-launches-concierge-an-ai-health-assistant-grounded-in-members-own-health-data",
-      "new": true
+      "url": "https://www.everlab.com.au/press/everlab-launches-concierge-an-ai-health-assistant-grounded-in-members-own-health-data"
     },
     {
       "date": "2026-10-29",
@@ -74,6 +104,15 @@
       "desc": "Telehealth company Ro launched an AI health agent named Robin that uses doctor notes, patient feedback, prescriptions and Apple Health data already stored in the Ro app to personalise recommendations for medication changes, dosing tweaks and habit improvements. Robin can draft a note to a doctor suggesting a medication change. CEO Zach Reitano positioned Ro as a 'quarterback' for the entire American healthcare system, expanding in-house care concentrically. Brown University's Dr Ateev Mehrotra flagged the need for evidence before millions of Americans adopt it and noted financial-incentive concerns unique to commercial telehealth. Vendor claim: AI-powered personalised health recommendations, not a substitute for medical care.",
       "src": "Business Insider",
       "url": "https://www.businessinsider.com/exclusive-ro-launches-ai-agent-for-healthcare-2026-10",
+      "new": true
+    },
+    {
+      "date": "2026-10-27",
+      "cat": "Product",
+      "title": "Apple iOS 27.2 Final Ships Without AI-Powered Health App",
+      "desc": "iOS 27.2 has rolled out to iPhones without the redesigned AI-powered Health app, which was tested in betas for weeks then quietly removed in the fourth beta on October 13. The final update ships with the current Health app restored. The AI-powered version, featuring health summaries, an Insights tab, Health Age score and fitness checks, is now expected later. This marks the second postponement of Apple's Apple Intelligence-powered health insights overhaul, following Bloomberg's report that the fuller AI health coach (Project Mulberry) was scaled back in February.",
+      "src": "Gizbot / MacRumors",
+      "url": "https://www.gizbot.com/news/apple-has-been-building-an-ai-health-coach-since-2025-129449.html",
       "new": true
     },
     {
@@ -119,6 +158,15 @@
       "desc": "Alloop unveiled a modular health wearable with one interchangeable sensing core (the Cube) that snaps between a smart ring and a wristband, plus a Halo module for voice interaction with its AI Health Agent. The open platform integrates Apple Health, Google Health and Health Connect, and the agent interprets physiological data alongside user-journalled meals, activities and symptoms. A Bio Age score spans six domains: sleep, activity, nutrition, cardiovascular, metabolic and musculoskeletal. Launching on Kickstarter.",
       "src": "OpenPR / Alloop",
       "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable",
+      "new": true
+    },
+    {
+      "date": "2026-10-21",
+      "cat": "Product",
+      "title": "Biblo Launches Personal AI Fitness Agent for iMessage",
+      "desc": "Biblo introduced a personal AI fitness agent that users can text via iMessage. Users send a photo of food or describe what they ate, and Biblo estimates calories and macros. The basic service is free on iPhone with no separate download required. Represents the lightweight, messaging-native design pattern for consumer health AI, lowering friction by meeting users in existing chat interfaces rather than requiring a dedicated app. Vendor claim: fitness and nutrition tracking, not a medical device.",
+      "src": "Biblo",
+      "url": "https://www.heybiblo.com/blog/introducing-biblo",
       "new": true
     },
     {
@@ -292,6 +340,14 @@
       "desc": "Samsung launched a beta version of its AI-powered personal health assistant embedded in the Samsung Health app, available to eligible US users. The assistant answers health questions and provides personalised guidance and recommendations based on Samsung Health data. Planned future capabilities include coaching to help users achieve health goals. Samsung's entry adds a major Android device maker to the consumer health AI agent landscape alongside Google, Apple and the wearable specialists.",
       "src": "Fierce Healthcare",
       "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"
+    },
+    {
+      "date": "2026-06-16",
+      "cat": "Research",
+      "title": "Nature Health: AI Symptom Checker Integrated into MomConnect Maternal Healthcare Platform",
+      "desc": "A prospective observational mixed-methods study published in Nature Health evaluated an AI-based symptom checker integrated into South Africa's MomConnect maternal healthcare platform. The study examined the symptom checker's integration, usage patterns and performance within a national digital health messaging system for maternal health, providing real-world evidence for AI symptom assessment in a public health context at national scale.",
+      "src": "Nature Health",
+      "url": "https://www.nature.com/articles/s44360-026-00125-x"
     },
     {
       "date": "2026-05-26",
@@ -1100,6 +1156,77 @@
       ],
       "desc": "Meta's Muse is a general-purpose personal AI agent that connects to users' apps and services including health and fitness, email, calendars, payments and smart home. Runs in a dedicated Muse Secure VM with a separate Sentinel safety agent, and Meta claims it does not share conversations with its ads systems. Launch came two weeks after Meta's $18B multistate settlement over social media harms to children, making trust the central question. Free tier with paid plans at $20 and $100 per month. Represents the platform-play for consumer AI with health data access: Meta's billions of users, WhatsApp distribution and AI glasses give it reach, but its trust deficit is the moat it must cross.",
       "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
+    },
+    {
+      "name": "Joined Bio - Nova",
+      "type": "Research participant platform · AI over own health records",
+      "badge": "NEW ENTRANT",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Sep 30, 2026"
+        },
+        {
+          "l": "Data",
+          "v": "Participant-owned health records"
+        },
+        {
+          "l": "Scope",
+          "v": "Research participants"
+        }
+      ],
+      "desc": "Joined Bio launched Nova, an AI assistant that lets research participants ask questions about their Complete Health Record in plain language - from 'give me a summary of my health' to 'when was my last tetanus vaccine?' - and get answers drawn from their own records. The company also added document uploads so participants can build out the Complete Health Record themselves. It represents the extension of personal health AI into the research-participant context, where understanding one's own health data drives engagement and data quality. Vendor claim: helps participants understand health information, not a substitute for healthcare providers.",
+      "url": "https://joined.bio/news/joined-bio-introduces-nova-ai-assistant/"
+    },
+    {
+      "name": "Dimer Health - AiME",
+      "type": "Post-discharge care · AI agent with clinical team backup",
+      "badge": "NEW ENTRANT",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Sep 10, 2026"
+        },
+        {
+          "l": "Scope",
+          "v": "Post-discharge patients"
+        },
+        {
+          "l": "Channel",
+          "v": "Phone + AI guidance"
+        },
+        {
+          "l": "Model",
+          "v": "Proprietary"
+        }
+      ],
+      "desc": "Dimer Health launched AiME, a personalised AI-powered health agent that patients access from home after discharge. AiME pairs AI-driven guidance with a 24/7 clinical team, acting as a care navigator that helps patients decide whether what they feel is normal or an emergency. It addresses the gap between hospital monitoring and home recovery, where patients lose the 'call button' they had on the ward. Vendor claim: personalised AI-driven guidance with clinical backup, not a replacement for emergency care.",
+      "url": "https://www.prnewswire.com/news-releases/dimer-health-brings-the-hospital-call-button-home-with-aime-302872914.html"
+    },
+    {
+      "name": "Biblo",
+      "type": "Messaging-native · personal AI fitness agent",
+      "badge": "EARLY",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Oct 21, 2026"
+        },
+        {
+          "l": "Channel",
+          "v": "iMessage"
+        },
+        {
+          "l": "Pricing",
+          "v": "Free on iPhone"
+        },
+        {
+          "l": "Approach",
+          "v": "Photo-based calorie and macro estimates"
+        }
+      ],
+      "desc": "Biblo introduced a personal AI fitness agent that users text through iMessage. Users send a photo of food or describe what they ate and Biblo estimates calories and macros. The basic service is free on iPhone with no separate download required. It represents the lightweight, messaging-native design pattern for consumer health AI, lowering friction by meeting users in existing chat interfaces rather than requiring a dedicated app. Vendor claim: fitness and nutrition tracking, not a medical device.",
+      "url": "https://www.heybiblo.com/blog/introducing-biblo"
     }
   ],
   "research": [
@@ -1456,6 +1583,33 @@
       "finding": "The FDA's Digital Health Center of Excellence published a discussion paper on considerations for regulating GenAI-enabled medical devices, covering risk assessment, premarket evaluation, postmarket monitoring, and other regulatory topics. The paper seeks stakeholder feedback on the unique risks posed by GenAI compared to traditional AI-enabled devices, including unpredictability of outputs, continuous learning, and broader use contexts. Feedback was accepted through October 19, 2026 via docket FDA-2026-N-7874. The paper is explicitly for discussion purposes only and does not represent draft or final guidance.",
       "caveat": "Discussion paper, not guidance. Does not represent FDA's proposed or final regulatory expectations. The paper does not address whether the approaches discussed are within FDA's existing legal authorities or whether new authorities would be necessary.",
       "url": "https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request"
+    },
+    {
+      "title": "AI Symptom Checker Integrated Into MomConnect Maternal Healthcare Platform",
+      "type": "Peer-reviewed · prospective observational study",
+      "date": "Jun 16, 2026",
+      "venue": "Nature Health",
+      "finding": "A prospective observational mixed-methods study evaluated an AI-based symptom checker integrated into South Africa's MomConnect maternal healthcare platform, examining the symptom checker's integration, usage patterns and performance within a national digital health messaging system for maternal health. It provides real-world evidence for AI symptom assessment in a public health context at national scale.",
+      "caveat": "Observational mixed-methods evaluation of integration, usage and performance - not a randomised accuracy validation, and it does not establish that the symptom checker outperforms clinical triage or a non-AI pathway. Single national programme, so generalisation to other health systems or populations is untested.",
+      "url": "https://www.nature.com/articles/s44360-026-00125-x"
+    },
+    {
+      "title": "California Extends CMIA Privacy Protections to Consumer Health Care Chatbots",
+      "type": "Regulatory analysis",
+      "date": "Oct 29, 2026",
+      "venue": "Hunton Andrews Kurth",
+      "finding": "California enacted AB 1979, extending the Confidentiality of Medical Information Act (CMIA) to businesses offering consumer-facing health care chatbots. From January 1, 2027, companies providing chatbots for managing health information, or for diagnosis, treatment or management of a medical condition, will be deemed health care providers under CMIA and must maintain the same confidentiality standards as providers. The law also limits how health care providers may use AI in clinical care. It is the first state law to explicitly bring consumer health AI chatbots under medical privacy protections equivalent to those covering providers.",
+      "caveat": "Law-firm analysis of enacted legislation, not the statutory text itself. Implementation and enforcement from January 1, 2027 remain unobserved, and the analysis does not address how a chatbot is distinguished from an ordinary consumer wellness app in practice.",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-law-extends-cmia-protections-to-health-care-chatbots-and-enacts-new-guardrails-on-ai-use-in-clinical-care"
+    },
+    {
+      "title": "AI Health Coaches Compared: Four Wearable Platforms, Four Price Points",
+      "type": "Industry analysis",
+      "date": "Aug 21, 2026",
+      "venue": "SmartBodyTouch",
+      "finding": "A market comparison of four wearable platforms selling AI health coaches in 2026: Google Health Coach at $9.99/month, WHOOP Coach included in memberships from $199/year, Oura Advisor included at $5.99/month, and Garmin Active Intelligence at $6.99/month, with Apple still shipping no AI coach. It frames the competitive shift in the category: in 2024 the pitch was more sensors, in 2026 it is a chatbot that reads them for you, with every major wearable platform now selling an AI coach that ingests sleep, strain and heart data and tells users what to do about it.",
+      "caveat": "Vendor-published market comparison of list prices - not a clinical evaluation, and no product quality is assessed. Prices are as published by the vendor and may not reflect current or promotional pricing, and inclusion in a membership bundle is not directly comparable to a standalone subscription.",
+      "url": "https://smartbodytouch.com/ai-health-coach-wearables-compared/"
     }
   ],
   "sources": [
@@ -1790,6 +1944,34 @@
     {
       "name": "JMIR Human Factors - SCARF Symptom Checker Accuracy Reporting Framework (Jan 16, 2026)",
       "url": "https://humanfactors.jmir.org/2026/1/e76168"
+    },
+    {
+      "name": "Joined Bio - Nova AI assistant for research participants' own health records (Sep 30, 2026)",
+      "url": "https://joined.bio/news/joined-bio-introduces-nova-ai-assistant/"
+    },
+    {
+      "name": "PR Newswire - Dimer Health launches AiME post-discharge AI health agent (Sep 10, 2026)",
+      "url": "https://www.prnewswire.com/news-releases/dimer-health-brings-the-hospital-call-button-home-with-aime-302872914.html"
+    },
+    {
+      "name": "SmartBodyTouch - AI health coach wearable platforms compared (Aug 21, 2026)",
+      "url": "https://smartbodytouch.com/ai-health-coach-wearables-compared/"
+    },
+    {
+      "name": "Hunton Andrews Kurth - California AB 1979 extends CMIA to consumer health chatbots (Oct 29, 2026)",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-law-extends-cmia-protections-to-health-care-chatbots-and-enacts-new-guardrails-on-ai-use-in-clinical-care"
+    },
+    {
+      "name": "Gizbot - Apple has been building an AI health coach since 2025 (Oct 27, 2026)",
+      "url": "https://www.gizbot.com/news/apple-has-been-building-an-ai-health-coach-since-2025-129449.html"
+    },
+    {
+      "name": "Nature Health - AI symptom checker in South Africa's MomConnect maternal platform (Jun 16, 2026)",
+      "url": "https://www.nature.com/articles/s44360-026-00125-x"
+    },
+    {
+      "name": "Hey Biblo - Biblo personal AI fitness agent for iMessage (Oct 21, 2026)",
+      "url": "https://www.heybiblo.com/blog/introducing-biblo"
     }
   ]
 }
