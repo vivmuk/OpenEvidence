@@ -40,6 +40,15 @@ Or connect the GitHub repo at railway.app → New Project → Deploy from GitHub
 
 Both serve the same static `index.html` — Railway uses `server.js` (Express) to serve it.
 
+> **Use relative paths in every page.** Railway serves the site from the domain
+> root (`oe.up.railway.app/`), but a GitHub Pages *project* site is served from
+> a subdirectory (`vivmuk.github.io/OpenEvidence/`). A root-relative path such
+> as `/shared.css` or `/data/timeline.js` resolves on one deployment and 404s on
+> the other — which left the Pages fallback rendering with no CSS, no JS and
+> every nav link dead. Write `shared.css`, `data/timeline.js` and sibling page
+> links (`timeline`, not `/timeline`) instead; the home link is `./`. The
+> pre-commit hook rejects root-relative paths in `*.html` to keep it that way.
+
 A cron job runs every Sunday at 5 PM ET to:
 1. Search for new OpenEvidence news from the past week
 2. Update CSVs with new events
