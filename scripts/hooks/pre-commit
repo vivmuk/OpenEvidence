@@ -117,7 +117,38 @@ if [ "$DATA_CHANGED" -eq 1 ]; then
 fi
 
 # --------------------------------------------------------------------------
-# 4. Parse-check the data files. Block on real errors.
+# 5. Reject root-relative asset paths. Block on real errors.
+# --------------------------------------------------------------------------
+# The site has TWO deployments: Railway (primary) serves it from the domain
+# root, GitHub Pages (fallback) serves it from the /OpenEvidence/ subpath.
+# A root-relative path (/shared.css, /data/x.js, /timeline) resolves on one
+# and 404s on the other -- which left the Pages fallback completely unstyled
+# with dead nav links for weeks. Only relative paths work on both.
+ROOTREL=""
+for f in *.html; do
+  [ -e "$f" ] || continue
+  # Match src="/..." and href="/..." but not src="//cdn..." (protocol-relative)
+  if grep -qE '(src|href)="/[^/]' "$f"; then
+    ROOTREL="$ROOTREL $f"
+  fi
+done
+if [ -n "$ROOTREL" ]; then
+  echo "" >&2
+  echo "┌──────────────────────────────────────────────────────────────┐" >&2
+  echo "│  COMMIT BLOCKED - root-relative path in a page                │" >&2
+  echo "└──────────────────────────────────────────────────────────────┘" >&2
+  for f in $ROOTREL; do
+    echo "  $f:" >&2
+    grep -nE '(src|href)="/[^/]' "$f" | head -5 >&2
+  done
+  echo "" >&2
+  echo "Use a relative path so the site works both at a domain root" >&2
+  echo "(Railway) and under a subpath (GitHub Pages -> /OpenEvidence/)." >&2
+  exit 1
+fi
+
+# --------------------------------------------------------------------------
+# 6. Parse-check the data files. Block on real errors.
 # --------------------------------------------------------------------------
 # validate_data.py only covers research.json and benchmarks.json. A tracker
 # data file with a syntax error (e.g. a missing trailing comma) passes that
