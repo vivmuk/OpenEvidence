@@ -88,5 +88,15 @@ var phaSourcesData = [
   {name:"Hunton Andrews Kurth - California AB 1979 extends CMIA to consumer health chatbots (Oct 29, 2026)", url:"https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-law-extends-cmia-protections-to-health-care-chatbots-and-enacts-new-guardrails-on-ai-use-in-clinical-care"},
   {name:"Gizbot - Apple has been building an AI health coach since 2025 (Oct 27, 2026)", url:"https://www.gizbot.com/news/apple-has-been-building-an-ai-health-coach-since-2025-129449.html"},
   {name:"Nature Health - AI symptom checker in South Africa's MomConnect maternal platform (Jun 16, 2026)", url:"https://www.nature.com/articles/s44360-026-00125-x"},
-  {name:"Hey Biblo - Biblo personal AI fitness agent for iMessage (Oct 21, 2026)", url:"https://www.heybiblo.com/blog/introducing-biblo"}
+  {name:"Hey Biblo - Biblo personal AI fitness agent for iMessage (Oct 21, 2026)", url:"https://www.heybiblo.com/blog/introducing-biblo"},
+  {name:"CNW / Felix Health - Ask Felix AI assistant launch (Nov 4, 2026)", url:"https://www.newswire.ca/news-releases/most-health-ai-ends-with-talk-to-your-doctor-felix-s-new-ai-assistant-brings-yours-in--855533177.html"},
+  {name:"Google Research Blog - End-to-end evaluation framework for health AI (Nov 4, 2026)", url:"https://blog.google/innovation-and-ai/technology/health/evaluating-health-ai-at-scale/"},
+  {name:"Apple - Redesigned Health app expands language support (Nov 3, 2026)", url:"https://www.apple.com/newsroom/2026/11/redesigned-health-app-expands-language-support/"},
+  {name:"MacRumors - iOS 27.3 beta brings back redesigned Health app (Nov 3, 2026)", url:"https://www.macrumors.com/2026/11/03/ios-27-3-health-app/"},
+  {name:"arXiv - DiabAgent: Toward Agentic Physiological Control (Nov 2, 2026)", url:"https://arxiv.org/abs/2611.03601"},
+  {name:"Citeline - When AI Becomes a Medical Device: FDA Boundaries (Oct 26, 2026)", url:"https://insights.citeline.com/medtech-insight/perspectives/when-ai-becomes-a-medical-device-fda-boundaries-for-patient-facing-health-tools-QICAHCWLUJADBGL6C47I6LJ5ZQ/"},
+  {name:"Welldoc - AI-Powered Care Loop launch (Sep 30, 2026)", url:"https://www.welldoc.com/news/welldoc-launches-ai-powered-care-loop-connecting-daily-health-to-care-teams-keeping-patients-and-clinicians-in-control"},
+  {name:"Journal of Public Health and Community Medicine - AI vs human triage meta-analysis (2026)", url:"https://doi.org/10.5455/jphcm.20260312053038"},
+  {name:"SSRN - Clinical Safety Evaluation Using Decomposed LLM-as-Judges (Aug 6, 2026)", url:"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7230054"},
+  {name:"npj Digital Medicine - Expert perspectives on regulating LLMs in healthcare (May 19, 2026)", url:"https://www.nature.com/articles/s41746-026-02787-z"}
 ];

@@ -11,8 +11,8 @@ var phaPlayersData = [
    url:"https://microsoft.ai/news/introducing-copilot-health/"},
 
   {name:"Apple - Health app + Apple Intelligence", type:"Device platform · on-device processing", badge:"DISTRIBUTION MOAT",
-   stats:[{l:"Announced",v:"Sep 2026"},{l:"OS",v:"iOS 27 / iPadOS 27"},{l:"Processing",v:"On-device"},{l:"Status",v:"Health+ planned 2026"}],
-   desc:"Apple extended Apple Intelligence into the Health app, positioning the iPhone as the secure central store for health and fitness data with on-device processing and interpretation of long-term metrics. The fuller AI health coach (Project Mulberry) was scaled back, with nutrition tracking and a reduced health agent arriving first. Apple's advantage is the install base and the sensor data already on the device.",
+   stats:[{l:"Announced",v:"Sep 2026"},{l:"OS",v:"iOS 27 / iPadOS 27"},{l:"Processing",v:"On-device"},{l:"Status",v:"iOS 27.3 beta \u00b7 Health+ planned 2026"}],
+   desc:"Apple extended Apple Intelligence into the Health app, positioning the iPhone as the secure central store for health and fitness data with on-device processing and interpretation of long-term metrics. The fuller AI health coach (Project Mulberry) was scaled back, with nutrition tracking and a reduced health agent arriving first. The redesigned Health app with Apple Intelligence returns in iOS 27.3 beta (Nov 3), featuring Insights and Longevity tabs, Health Age, and expanded language support. Available to users as a free update by end of 2026. Apple's advantage is the install base and the sensor data already on the device.",
    url:"https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"},
 
   {name:"Google - Health App + Fitbit Edge + Health Coach", type:"Device platform · AI coaching + data aggregation", badge:"VERTICAL STACK",
