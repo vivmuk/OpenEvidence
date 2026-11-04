@@ -494,7 +494,7 @@ function initPalette() {
     if (indexState === 'loading') { document.addEventListener('oe-index-ready', cb, { once: true }); return; }
     indexState = 'loading';
     var s = document.createElement('script');
-    s.src = '/data/search-index.js';
+    s.src = 'data/search-index.js';
     s.onload = function () {
       indexState = (typeof searchIndexData !== 'undefined' && searchIndexData.length) ? 'ready' : 'failed';
       document.dispatchEvent(new Event('oe-index-ready'));

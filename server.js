@@ -5,6 +5,20 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// The pages use RELATIVE asset and nav paths (shared.css, data/*.js,
+// timeline, ...) so the same build works whether it is mounted at a domain
+// root (Railway) or under a project subpath (GitHub Pages -> /OpenEvidence/).
+// A relative path resolves against the directory of the current URL, so a
+// trailing slash would make "timeline" resolve to "/timeline/timeline".
+// Redirect the trailing-slash form to the canonical one so the two mounts
+// behave identically.
+app.use((req, res, next) => {
+  if (req.path.length > 1 && req.path.endsWith('/')) {
+    return res.redirect(301, req.path.replace(/\/+$/, '') + (req.url.slice(req.path.length) || ''));
+  }
+  next();
+});
+
 // Serve static files from root directory
 app.use(express.static(__dirname, {
   index: 'index.html',

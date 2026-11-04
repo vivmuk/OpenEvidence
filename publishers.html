@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Publishers - OpenEvidence Insights</title>
 <meta name="description" content="Every publisher, society, and content partner onboarded to OpenEvidence - where the data comes from.">
-<link rel="stylesheet" href="/fonts/fonts.css">
-<link rel="stylesheet" href="/shared.css">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="shared.css">
 <style>
 .pub-hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr)); gap: 12px; margin: 20px 0 28px; }
 .pub-stat { background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border); border-radius: var(--oe-radius-lg); padding: 16px 18px; }
@@ -56,25 +56,25 @@ html.dark .pub-date { background: rgba(228,100,61,.12); color: var(--oe-orange-l
 <div class="sidebar" id="sidebar">
   <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
   <div class="nav-links">
-    <a href="/">📊 Overview</a>
-    <a href="/timeline">📅 Timeline</a>
-    <a href="/funding">💰 Funding</a>
-    <a href="/products">🚀 Products</a>
-    <a href="/features">🧩 Features</a>
-    <a href="/competitors">⚔️ Competitors</a>
-    <a href="/partnerships">🤝 Partnerships</a>
-    <a href="/publishers" class="active">🗞️ Publishers</a>
-    <a href="/tech">⚙️ Tech Stack</a>
-    <a href="/pharma">💊 Pharma</a>
-    <a href="/benchmarks">🔬 Benchmarks</a>
-    <a href="/sct">🧪 SCT Benchmark</a>
-    <a href="/publications">📄 Publications</a>
-    <a href="/doximity">🩺 Doximity Ask</a>
-    <a href="/abridge">🌉 Abridge</a>
-    <a href="/personal-health-agents">🫀 Personal Health Agents</a>
-    <a href="/global">🌍 Global Landscape</a>
-    <a href="/future">🔮 Future</a>
-    <a href="/sources">📚 Sources</a>
+    <a href="./">📊 Overview</a>
+    <a href="timeline">📅 Timeline</a>
+    <a href="funding">💰 Funding</a>
+    <a href="products">🚀 Products</a>
+    <a href="features">🧩 Features</a>
+    <a href="competitors">⚔️ Competitors</a>
+    <a href="partnerships">🤝 Partnerships</a>
+    <a href="publishers" class="active">🗞️ Publishers</a>
+    <a href="tech">⚙️ Tech Stack</a>
+    <a href="pharma">💊 Pharma</a>
+    <a href="benchmarks">🔬 Benchmarks</a>
+    <a href="sct">🧪 SCT Benchmark</a>
+    <a href="publications">📄 Publications</a>
+    <a href="doximity">🩺 Doximity Ask</a>
+    <a href="abridge">🌉 Abridge</a>
+    <a href="personal-health-agents">🫀 Personal Health Agents</a>
+    <a href="global">🌍 Global Landscape</a>
+    <a href="future">🔮 Future</a>
+    <a href="sources">📚 Sources</a>
   </div>
   <div class="sidebar-footer">
     <button class="theme-toggle" aria-pressed="false" onclick="toggleTheme()">☀ Light Mode</button>
@@ -103,9 +103,9 @@ html.dark .pub-date { background: rgba(228,100,61,.12); color: var(--oe-orange-l
   </div>
 </section>
 </div>
-<script src="/data/metrics.js"></script>
-<script src="/shared.js"></script>
-<script src="/data/whatsNew.js"></script>
+<script src="data/metrics.js"></script>
+<script src="shared.js"></script>
+<script src="data/whatsNew.js"></script>
 <script src="data/publishers.js"></script>
 <script>
 (function () {
@@ -141,7 +141,7 @@ html.dark .pub-date { background: rgba(228,100,61,.12); color: var(--oe-orange-l
   function card(p) {
     var logoHtml;
     if (p.logo) {
-      logoHtml = '<div class="pub-logo"><img loading="lazy" src="/' + p.logo + '" alt="' + p.name + ' logo" onerror="this.parentNode.classList.add(\'mono\');this.outerHTML=\'' + (p.mono || p.name.slice(0,3).toUpperCase()) + '\'"></div>';
+      logoHtml = '<div class="pub-logo"><img loading="lazy" src="' + p.logo + '" alt="' + p.name + ' logo" onerror="this.parentNode.classList.add(\'mono\');this.outerHTML=\'' + (p.mono || p.name.slice(0,3).toUpperCase()) + '\'"></div>';
     } else {
       logoHtml = '<div class="pub-logo mono" style="background:' + (p.monoColor || '#E4643D') + '">' + (p.mono || p.name.slice(0,3).toUpperCase()) + '</div>';
     }
