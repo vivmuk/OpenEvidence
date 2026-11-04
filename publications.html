@@ -61,7 +61,7 @@ window.addEventListener('load', function() {
       <div class="feature-card">
         <div class="icon">📄</div>
         <div class="content">
-          <h4>${p.title} ${p.new ? '<span class="new-badge">NEW</span>' : ''}</h4>
+          <h4>${p.title} ${oeNewBadge(p)}</h4>
           <p><strong>${p.journal}</strong> · ${p.authors} · ${p.date}</p>
           <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">${p.pmid ? 'PubMed ' + p.pmid : 'Source'} →</a></div>
         </div>

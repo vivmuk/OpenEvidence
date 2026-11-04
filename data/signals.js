@@ -8,7 +8,7 @@ var signalsData = [
   "desc": "Beckers Hospital Review covers the study. On MedQA Gemini scored 97.4% vs OpenEvidence 89.6%. UpToDate AI refused 19% of queries. OpenEvidence racked up 52 flagged low-scoring responses - most of any model.",
   "src": "Beckers",
   "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/chatgpt-gemini-claude-beat-clinical-ai-tools-study/",
-  "score": 99,
+  "score": 95,
   "confidence": "reported",
   "competitors": [
    "UpToDate"
@@ -22,7 +22,7 @@ var signalsData = [
   "desc": "A study published in Nature Medicine found GPT-5.2, Gemini 3.1 Pro, and Claude Opus 4.6 outperformed OpenEvidence and UpToDate Expert AI on MedQA, HealthBench, and real clinical queries. OpenEvidence disputed the findings on X/Twitter.",
   "src": "Nature Medicine",
   "url": "https://www.nature.com/articles/s41591-026-04431-5",
-  "score": 93,
+  "score": 89,
   "confidence": "confirmed",
   "competitors": [
    "UpToDate"
@@ -36,48 +36,8 @@ var signalsData = [
   "desc": "Nature Medicine publishes study showing GPT-5.2, Gemini 3.1 Pro, and Claude Opus 4.6 outperform OpenEvidence and UpToDate Expert AI across MedQA, HealthBench, and real clinical queries. OpenEvidence scores lowest on clarity. 52 flagged low-scoring responses.",
   "src": "Nature Medicine",
   "url": "https://www.nature.com/articles/s41591-026-04431-5",
-  "score": 93,
-  "confidence": "confirmed",
-  "competitors": [
-   "UpToDate"
-  ],
-  "comparative": true
- },
- {
-  "date": "2026-06-23",
-  "cat": "Partnership",
-  "title": "Pathway Labs EchoNext FDA + OpenEvidence Partnership (TODAY)",
-  "desc": "Worlds first FDA-cleared multicondition AI for cardiology. EchoNext reads ECGs to detect structural heart disease. Partnership puts it on OpenEvidence for 500K+ physicians. Nature Medicine publishes world-first heart transplant due to AI detection.",
-  "src": "BusinessWire",
-  "url": "https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence",
-  "score": 91,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-09-29",
-  "cat": "Funding",
-  "title": "Healthcare AI Funding Reaches $4.24B Across 88 Rounds (Q2 2025 - Q2 2026)",
-  "desc": "New market analysis tallies 88 publicly announced healthcare AI funding rounds from Q2 2025 through Q2 2026 - roughly $4.24B total. Clinical AI tools raised $1.47B (~35% of the total) as investors backed products used directly in medical decisions and patient care. Q2 2026 was the most active quarte",
-  "src": "New Market Pitch",
-  "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-funding-deals",
   "score": 89,
-  "confidence": "reported",
-  "competitors": [
-   "Abridge"
-  ],
-  "comparative": false
- },
- {
-  "date": "2026-08-18",
-  "cat": "Milestone",
-  "title": "First Registered Clinical Trial of OpenEvidence Safety (NCT07199231)",
-  "desc": "Cambridge Health Alliance (CHA) - a Harvard/Tufts-affiliated academic safety-net health system in Boston - registered the first clinical trial evaluating OpenEvidence safety and comparative efficacy vs ChatGPT, Claude, and Gemini in real-world clinical practice (NCT07199231, ClinicalTrials.gov; last",
-  "src": "ClinicalTrials.gov",
-  "url": "https://clinicaltrials.gov/study/NCT07199231",
-  "score": 89,
-  "confidence": "reported",
+  "confidence": "confirmed",
   "competitors": [
    "UpToDate"
   ],
@@ -98,13 +58,53 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-06-23",
+  "cat": "Partnership",
+  "title": "Pathway Labs EchoNext FDA + OpenEvidence Partnership (TODAY)",
+  "desc": "Worlds first FDA-cleared multicondition AI for cardiology. EchoNext reads ECGs to detect structural heart disease. Partnership puts it on OpenEvidence for 500K+ physicians. Nature Medicine publishes world-first heart transplant due to AI detection.",
+  "src": "BusinessWire",
+  "url": "https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence",
+  "score": 87,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-09-29",
+  "cat": "Funding",
+  "title": "Healthcare AI Funding Reaches $4.24B Across 88 Rounds (Q2 2025 - Q2 2026)",
+  "desc": "New market analysis tallies 88 publicly announced healthcare AI funding rounds from Q2 2025 through Q2 2026 - roughly $4.24B total. Clinical AI tools raised $1.47B (~35% of the total) as investors backed products used directly in medical decisions and patient care. Q2 2026 was the most active quarte",
+  "src": "New Market Pitch",
+  "url": "https://newmarketpitch.com/blogs/news/healthcare-ai-funding-deals",
+  "score": 85,
+  "confidence": "reported",
+  "competitors": [
+   "Abridge"
+  ],
+  "comparative": false
+ },
+ {
+  "date": "2026-08-18",
+  "cat": "Milestone",
+  "title": "First Registered Clinical Trial of OpenEvidence Safety (NCT07199231)",
+  "desc": "Cambridge Health Alliance (CHA) - a Harvard/Tufts-affiliated academic safety-net health system in Boston - registered the first clinical trial evaluating OpenEvidence safety and comparative efficacy vs ChatGPT, Claude, and Gemini in real-world clinical practice (NCT07199231, ClinicalTrials.gov; last",
+  "src": "ClinicalTrials.gov",
+  "url": "https://clinicaltrials.gov/study/NCT07199231",
+  "score": 85,
+  "confidence": "reported",
+  "competitors": [
+   "UpToDate"
+  ],
+  "comparative": true
+ },
+ {
   "date": "2026-10-12",
   "cat": "Partnership",
   "title": "Northwestern Medicine and OpenEvidence Launch Collaboration to Integrate Clinical Evidence into the EHR",
   "desc": "Northwestern Medicine - Chicago's premier integrated academic health system - and OpenEvidence announce a collaboration to embed OpenEvidence directly within the electronic health record. Beginning October 8, Northwestern Medicine clinicians can launch OpenEvidence directly from Epic, signed in auto",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/openevidence-and-northwestern-medicine-launch-collaboration-to-integrate-clinical-evidence-into-the-ehr",
-  "score": 87,
+  "score": 83,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
@@ -116,7 +116,7 @@ var signalsData = [
   "desc": "New benchmarks: (1) Nature Medicine head-to-head - OpenEvidence vs UpToDate Expert AI vs GPT-5.2/Gemini 3.1 Pro/Claude Opus 4.6 (1800 annotations, 12 clinicians, RCQ benchmark). (2) Urodynamic Trace ELEGANCE - 5 LLMs × 119 traces, Gemini 3 highest. (3) Rheumatology Guideline-Grounded Chatbots - 6291",
   "src": "Nature Medicine / PubMed",
   "url": "https://www.nature.com/articles/s41591-026-04431-5",
-  "score": 87,
+  "score": 83,
   "confidence": "confirmed",
   "competitors": [
    "UpToDate"
@@ -130,7 +130,7 @@ var signalsData = [
   "desc": "AdventHealth - a not-for-profit network with 110,000+ team members and 2,000+ care sites nationwide - deploys OpenEvidence to physicians, nurses, pharmacists, care managers, therapists and other clinical roles, integrated into existing EHR workflows. Rollout begins Oct 1, 2026, giving clinicians evi",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/adventhealth-and-openevidence-together-support-more-time-for-patient-care",
-  "score": 87,
+  "score": 83,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
@@ -142,7 +142,7 @@ var signalsData = [
   "desc": "Anthropic and OpenEvidence announce a collaboration to bring AI-powered clinical decision support to physicians in low- and middle-income countries. The initiative is a specialized version of OpenEvidence available for free to healthcare providers in about 100 countries, including Uganda, Angola, Su",
   "src": "Reuters",
   "url": "https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/",
-  "score": 87,
+  "score": 83,
   "confidence": "confirmed",
   "competitors": [
    "Anthropic"
@@ -156,7 +156,7 @@ var signalsData = [
   "desc": "The University of Texas Medical Branch (UTMB Health) and OpenEvidence announce a collaboration to integrate OpenEvidence directly into clinical workflows across UTMB's health system. UTMB is the first academic health center in Texas and one of the largest in the nation, with a 134-year history and m",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/university-of-texas-medical-branch-utmb-collaborates-with-openevidence-to-integrate-ai-platform-directly-into-clinical-workflows",
-  "score": 87,
+  "score": 83,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
@@ -168,7 +168,7 @@ var signalsData = [
   "desc": "OpenEvidence and Penn Medicine announce a global partnership to bring AI-powered clinical decision support to Penn Medicine’s more than 10,000 clinicians across its seven-hospital health system in Pennsylvania and New Jersey. Partnership also extends to low- and middle-income countries through the B",
   "src": "BusinessWire",
   "url": "https://www.businesswire.com/news/home/20260915029132/en/OpenEvidence-and-Penn-Medicine-Partner-to-Advance-Medical-Intelligence-for-Global-Health",
-  "score": 87,
+  "score": 83,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
@@ -180,7 +180,7 @@ var signalsData = [
   "desc": "Boston Children's Hospital (top-ranked pediatric hospital, Harvard Medical School affiliate) and OpenEvidence announce multi-year collaboration to examine how clinicians' real-world use of AI tools at the point of care relates to practice patterns and delivery of care. Provider-level aggregated data",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/boston-childrens-hospital-and-openevidence-collaborate-to-advance-ai-powered-analysis-of-clinical-practice-patterns",
-  "score": 87,
+  "score": 83,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
@@ -192,7 +192,7 @@ var signalsData = [
   "desc": "AAP and OpenEvidence announce collaboration to improve pediatric care. Integrates AAP policies, recommendations, and pediatric research into OpenEvidence. Content from Pediatrics, Hospital Pediatrics, Pediatrics in Review, Red Book, Pediatric Dermatology, and Bright Futures. AAP CEO Mark Del Monte a",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/american-academy-of-pediatrics-and-openevidence-announce-collaboration-to-improve-pediatric-care",
-  "score": 87,
+  "score": 83,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
@@ -204,7 +204,7 @@ var signalsData = [
   "desc": "Mount Sinai Health System (7 hospitals, NYC) announces enterprise-wide deployment of OpenEvidence. First deployment to extend access to ALL care team members: physicians, nurses, pharmacists, and therapists. Integrated into Epic EHR. 4th major health system deployment after Sutter Health, Cedars-Sin",
   "src": "Healthcare IT News",
   "url": "https://www.healthcareitnews.com/news/mount-sinai-integrate-openevidence-ai-enterprise-wide",
-  "score": 87,
+  "score": 83,
   "confidence": "reported",
   "competitors": [],
   "comparative": false
@@ -216,20 +216,8 @@ var signalsData = [
   "desc": "OpenEvidence deploys across all NewYork-Presbyterian hospitals and care sites throughout Greater New York region. Enterprise-scale collaboration with Columbia University Vagelos College of Physicians and Surgeons and Weill Cornell Medicine. Serves millions of patients across NYC's five boroughs and ",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/openevidence-and-newyork-presbyterian-columbia-university-and-weill-cornell-medicine-expand-clinical-ai-tools-across-new-york-city-and-westchester",
-  "score": 87,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-09-24",
-  "cat": "Funding",
-  "title": "OpenEvidence Raises $250M at $15B Valuation, Pivots Into Drug Development",
-  "desc": "Business Insider reports OpenEvidence quietly closed a $250M late-stage round at a $15B valuation - its second doubling in nine months ($6B Oct 2025 to $12B Jan 2026 to $15B Sep 2026). Led by a16z and Byers Capital. The raise was disclosed in a single sentence appended to the MSK partnership announc",
-  "src": "Business Insider / Dealroom",
-  "url": "https://dealroom.co/news/155918-openevidence-raises-250m-at-15b-pivots-into-drug-development/",
   "score": 83,
-  "confidence": "reported",
+  "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
@@ -284,158 +272,14 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-10-14",
-  "cat": "Partnership",
-  "title": "Behind the Knife and OpenEvidence Announce Collaboration to Bring Innovative Surgical Education to the Point of Care",
-  "desc": "Behind the Knife - the world's most listened-to surgery podcast and a leading nationwide source of surgical education - and OpenEvidence announce a collaboration creating a dual-platform learning and clinical decision support ecosystem. Behind the Knife's resources, including the multimedia Trauma S",
-  "src": "BusinessWire",
-  "url": "https://natlawreview.com/press-releases/behind-knife-and-openevidence-announce-collaboration-bring-innovative",
-  "score": 81,
+  "date": "2026-09-24",
+  "cat": "Funding",
+  "title": "OpenEvidence Raises $250M at $15B Valuation, Pivots Into Drug Development",
+  "desc": "Business Insider reports OpenEvidence quietly closed a $250M late-stage round at a $15B valuation - its second doubling in nine months ($6B Oct 2025 to $12B Jan 2026 to $15B Sep 2026). Led by a16z and Byers Capital. The raise was disclosed in a single sentence appended to the MSK partnership announc",
+  "src": "Business Insider / Dealroom",
+  "url": "https://dealroom.co/news/155918-openevidence-raises-250m-at-15b-pivots-into-drug-development/",
+  "score": 79,
   "confidence": "reported",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-10-13",
-  "cat": "Partnership",
-  "title": "OpenEvidence and Johns Hopkins Medicine Announce Landmark Collaboration to Design the Future of Medicine and Medical Education in the Age of AI",
-  "desc": "Strategic collaboration spanning two foundational pillars: preparing the next generation of clinicians for AI-era practice, and ensuring every patient receives care grounded in the latest evidence-based clinical guidelines. Johns Hopkins established the current model of US medical education more tha",
-  "src": "BusinessWire",
-  "url": "https://www.businesswire.com/news/home/20261013258773/en/OpenEvidence-and-Johns-Hopkins-Medicine-Announce-Landmark-Collaboration-to-Design-the-Future-of-Medicine-and-Medical-Education-in-the-Age-of-AI",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-09-29",
-  "cat": "Partnership",
-  "title": "Sage and OpenEvidence Partner to Bring Peer-Reviewed Research to Clinicians at the Point of Care",
-  "desc": "Strategic content agreement brings peer-reviewed research from 300+ Sage journals into OpenEvidence, with direct citations back to the original articles. Spans life and biomedical sciences, health sciences, medicine, and nursing - including society journals from the American Orthopaedic Society for ",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/sage-and-openevidence-partner-to-bring-peer-reviewed-research-to-clinicians-at-the-point-of-care",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-09-16",
-  "cat": "Partnership",
-  "title": "MSK and OpenEvidence Partner to Advance Precision Oncology at the Point of Care",
-  "desc": "Memorial Sloan Kettering Cancer Center (MSK) and OpenEvidence announce a partnership to advance precision oncology. Integration includes OpenEvidence within MSK Epic EHR workflow and integration of OncoKB - MSK FDA-recognized precision oncology knowledge base - directly into OpenEvidence for nationw",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/memorial-sloan-kettering-cancer-center-msk-and-openevidence-partner-to-advance-precision-oncology-at-the-point-of-care",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-09-11",
-  "cat": "Partnership",
-  "title": "MINC#NIMC Partnership - Canadian Physician Verification",
-  "desc": "OpenEvidence and the Medical Identification Number for Canada Corporation (MINC#NIMC) partner to streamline physician verification for Canada and support continued free access for verified Canadian clinicians. MINC is the trusted physician identification system used by 95%+ of Canadian physicians. P",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-and-mincnimc-partner-to-ensure-free-access-for-canadian-physicians-to-leading-medical-ai-platform",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-08-27",
-  "cat": "Partnership",
-  "title": "AMSSM and OpenEvidence Announce Partnership to Bring AI-Powered Sports Medicine Resources to Clinicians and Patients",
-  "desc": "The American Medical Society for Sports Medicine (AMSSM) and OpenEvidence announce a partnership to co-develop AI-powered educational resources on sports medicine for both patients and clinicians. This exclusive collaboration brings AMSSM's sports medicine physicians to OpenEvidence and will build o",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/american-medical-society-for-sports-medicine-and-openevidence-announce-partnership-to-bring-ai-powered-sports-medicine-resources-to-clinicians-and-patients",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-08-06",
-  "cat": "Partnership",
-  "title": "OneOncology and OpenEvidence Partner to Improve Cancer Care Nationwide",
-  "desc": "OpenEvidence announces partnership with OneOncology - one of the largest US community oncology networks - to bring AI-enabled, evidence-grounded clinical decision support to community oncology practices treating cancer patients nationwide.",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/oneoncology-and-openevidence-partner-to-improve-cancer-care-nationwide",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-08-05",
-  "cat": "Partnership",
-  "title": "Springer Nature and OpenEvidence Announce Content Agreement",
-  "desc": "Springer Nature and OpenEvidence announce a subscription agreement (effective August 4) bringing peer-reviewed content from Springer Nature's journals, books, and society publications into OpenEvidence for retrieval and citation at the point of care. Part of Springer Nature's community-led ARC3 fram",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/springer-nature-and-openevidence-announce-agreement-to-maximise-exposure-of-trusted-findings-on-openevidence-platform",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-08-05",
-  "cat": "Partnership",
-  "title": "Springer Nature and OpenEvidence Announce Content Licensing Agreement",
-  "desc": "Springer Nature and OpenEvidence announce a subscription agreement bringing peer-reviewed content from Springer Nature into OpenEvidence, where physicians can retrieve and cite it during patient care. The agreement took effect August 4 and forms part of Springer Nature's community-led ARC3 framework",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/springer-nature-and-openevidence-announce-agreement-to-maximise-exposure-of-trusted-findings-on-openevidence-platform",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-07-23",
-  "cat": "Partnership",
-  "title": "LA County Department of Public Health Partnership",
-  "desc": "Los Angeles County Department of Public Health and OpenEvidence partner to connect physicians with local public health guidance. First public health department partnership - brings LA County's public health guidance, alerts, and resources directly into OpenEvidence platform for clinicians in Los Ang",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/los-angeles-county-department-of-public-health-and-openevidence-partner-to-connect-physicians-with-local-public-health-guidance",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-07-15",
-  "cat": "Partnership",
-  "title": "AAP and OpenEvidence Announce Collaboration to Improve Pediatric Care",
-  "desc": "American Academy of Pediatrics (67,000 members) partners with OpenEvidence. Clinicians can access AAP policies, recommendations, and pediatric research through OpenEvidence with citations to original sources. First major pediatrics-specific content partnership.",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/american-academy-of-pediatrics-and-openevidence-announce-collaboration-to-improve-pediatric-care",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-07-08",
-  "cat": "Partnership",
-  "title": "Anticoagulation Forum Partnership",
-  "desc": "OpenEvidence and the Anticoagulation Forum (AC Forum) partner to expand access to AI-enabled guidance in antithrombotic care. AC Forum's curated evidence-based resources, practical tools, and clinical guidance will be available within OpenEvidence. Collaboration also focuses on identifying clinical ",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-anticoagulation-forum-partner-to-expand-access-to-ai-enabled-guidance-in-antithrombotic-care",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-06-25",
-  "cat": "Partnership",
-  "title": "JOMI Partnership - Peer-Reviewed Surgical Videos",
-  "desc": "OpenEvidence and Journal of Medical Insight (JOMI) partner to bring 357 peer-reviewed surgical videos onto the platform. First video evidence collaboration - AI highlights relevant video segments for clinical questions. Extends platform beyond written literature into multimodal surgical knowledge.",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-and-journal-of-medical-insight-jomi-partner-to-bring-peer-reviewed-surgical-videos-to-clinicians",
-  "score": 81,
-  "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
@@ -464,60 +308,156 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-09-03",
-  "cat": "Product",
-  "title": "OpenEvidence Model Family Launched - Osler, Sackett, Snow, and Darwin",
-  "desc": "OpenEvidence releases a new family of medical AI models named for founders of modern medicine. Osler (~5s answer) is the fastest model, built for the pace of the patient encounter, and becomes the new default. Sackett (~30s) is a deeper search model that interactively asks clinicians for context and",
-  "src": "OpenEvidence",
-  "url": "https://www.businesswire.com/news/home/20260903878517/en/Introducing-the-OpenEvidence-Model-Family",
+  "date": "2026-10-14",
+  "cat": "Partnership",
+  "title": "Behind the Knife and OpenEvidence Announce Collaboration to Bring Innovative Surgical Education to the Point of Care",
+  "desc": "Behind the Knife - the world's most listened-to surgery podcast and a leading nationwide source of surgical education - and OpenEvidence announce a collaboration creating a dual-platform learning and clinical decision support ecosystem. Behind the Knife's resources, including the multimedia Trauma S",
+  "src": "BusinessWire",
+  "url": "https://natlawreview.com/press-releases/behind-knife-and-openevidence-announce-collaboration-bring-innovative",
+  "score": 77,
+  "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-10-13",
+  "cat": "Partnership",
+  "title": "OpenEvidence and Johns Hopkins Medicine Announce Landmark Collaboration to Design the Future of Medicine and Medical Education in the Age of AI",
+  "desc": "Strategic collaboration spanning two foundational pillars: preparing the next generation of clinicians for AI-era practice, and ensuring every patient receives care grounded in the latest evidence-based clinical guidelines. Johns Hopkins established the current model of US medical education more tha",
+  "src": "BusinessWire",
+  "url": "https://www.businesswire.com/news/home/20261013258773/en/OpenEvidence-and-Johns-Hopkins-Medicine-Announce-Landmark-Collaboration-to-Design-the-Future-of-Medicine-and-Medical-Education-in-the-Age-of-AI",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
  {
-  "date": "2026-08-19",
-  "cat": "Product",
-  "title": "Patient Take-Homes Launched",
-  "desc": "OpenEvidence launches Patient Take-Homes - a fully optional way for physicians to share specific, curated clinical evidence with patients by converting OpenEvidence answers into patient handouts. Sharing is entirely at the physician's discretion: appropriate, high-quality, evidence-based medical inf",
+  "date": "2026-09-29",
+  "cat": "Partnership",
+  "title": "Sage and OpenEvidence Partner to Bring Peer-Reviewed Research to Clinicians at the Point of Care",
+  "desc": "Strategic content agreement brings peer-reviewed research from 300+ Sage journals into OpenEvidence, with direct citations back to the original articles. Spans life and biomedical sciences, health sciences, medicine, and nursing - including society journals from the American Orthopaedic Society for ",
   "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-launches-patient-take-homes",
+  "url": "https://www.openevidence.com/announcements/sage-and-openevidence-partner-to-bring-peer-reviewed-research-to-clinicians-at-the-point-of-care",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
  {
-  "date": "2026-08-10",
-  "cat": "Product",
-  "title": "OpenEvidence Games Launched - MedMini and Synapses",
-  "desc": "OpenEvidence launches OpenEvidence Games - a new suite of puzzles built for clinicians, live now in Discover on web and in the OpenEvidence app. The lineup starts with two games: MedMini and Synapses, bringing gamified medical knowledge reinforcement to hundreds of thousands of verified clinicians o",
+  "date": "2026-09-16",
+  "cat": "Partnership",
+  "title": "MSK and OpenEvidence Partner to Advance Precision Oncology at the Point of Care",
+  "desc": "Memorial Sloan Kettering Cancer Center (MSK) and OpenEvidence announce a partnership to advance precision oncology. Integration includes OpenEvidence within MSK Epic EHR workflow and integration of OncoKB - MSK FDA-recognized precision oncology knowledge base - directly into OpenEvidence for nationw",
   "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements",
+  "url": "https://www.openevidence.com/announcements/memorial-sloan-kettering-cancer-center-msk-and-openevidence-partner-to-advance-precision-oncology-at-the-point-of-care",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
  {
-  "date": "2026-07-28",
-  "cat": "Product",
-  "title": "OpenEvidence Launches Education Platform - CE & MOC Credits",
-  "desc": "OpenEvidence launches new education platform offering accredited interprofessional continuing education (CE) and Maintenance of Certification (MOC) credits for NPI-verified physicians nurse practitioners and physician associates. Powered by same underlying models as OpenEvidence adapted for personal",
+  "date": "2026-09-11",
+  "cat": "Partnership",
+  "title": "MINC#NIMC Partnership - Canadian Physician Verification",
+  "desc": "OpenEvidence and the Medical Identification Number for Canada Corporation (MINC#NIMC) partner to streamline physician verification for Canada and support continued free access for verified Canadian clinicians. MINC is the trusted physician identification system used by 95%+ of Canadian physicians. P",
   "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-launches-new-education-platform-offering-continuing-education-ce-and-maintenance-of-certification-moc-credit",
+  "url": "https://www.openevidence.com/announcements/openevidence-and-mincnimc-partner-to-ensure-free-access-for-canadian-physicians-to-leading-medical-ai-platform",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
  {
-  "date": "2026-07-10",
-  "cat": "Product",
-  "title": "EvidenceGrade Launched - Real-Time Evidence Quality Grading",
-  "desc": "OpenEvidence launches EvidenceGrade, a new feature that grades and visualizes the quality of published evidence cited in every AI answer in real time. Builds on the GRADE framework (used by Cochrane, WHO). Surfaces, quantifies, grades, and visualizes evidence strength - solving the problem of AI sys",
+  "date": "2026-08-27",
+  "cat": "Partnership",
+  "title": "AMSSM and OpenEvidence Announce Partnership to Bring AI-Powered Sports Medicine Resources to Clinicians and Patients",
+  "desc": "The American Medical Society for Sports Medicine (AMSSM) and OpenEvidence announce a partnership to co-develop AI-powered educational resources on sports medicine for both patients and clinicians. This exclusive collaboration brings AMSSM's sports medicine physicians to OpenEvidence and will build o",
   "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer",
+  "url": "https://www.openevidence.com/announcements/american-medical-society-for-sports-medicine-and-openevidence-announce-partnership-to-bring-ai-powered-sports-medicine-resources-to-clinicians-and-patients",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-08-06",
+  "cat": "Partnership",
+  "title": "OneOncology and OpenEvidence Partner to Improve Cancer Care Nationwide",
+  "desc": "OpenEvidence announces partnership with OneOncology - one of the largest US community oncology networks - to bring AI-enabled, evidence-grounded clinical decision support to community oncology practices treating cancer patients nationwide.",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/oneoncology-and-openevidence-partner-to-improve-cancer-care-nationwide",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-08-05",
+  "cat": "Partnership",
+  "title": "Springer Nature and OpenEvidence Announce Content Agreement",
+  "desc": "Springer Nature and OpenEvidence announce a subscription agreement (effective August 4) bringing peer-reviewed content from Springer Nature's journals, books, and society publications into OpenEvidence for retrieval and citation at the point of care. Part of Springer Nature's community-led ARC3 fram",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/springer-nature-and-openevidence-announce-agreement-to-maximise-exposure-of-trusted-findings-on-openevidence-platform",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-08-05",
+  "cat": "Partnership",
+  "title": "Springer Nature and OpenEvidence Announce Content Licensing Agreement",
+  "desc": "Springer Nature and OpenEvidence announce a subscription agreement bringing peer-reviewed content from Springer Nature into OpenEvidence, where physicians can retrieve and cite it during patient care. The agreement took effect August 4 and forms part of Springer Nature's community-led ARC3 framework",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/springer-nature-and-openevidence-announce-agreement-to-maximise-exposure-of-trusted-findings-on-openevidence-platform",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-07-23",
+  "cat": "Partnership",
+  "title": "LA County Department of Public Health Partnership",
+  "desc": "Los Angeles County Department of Public Health and OpenEvidence partner to connect physicians with local public health guidance. First public health department partnership - brings LA County's public health guidance, alerts, and resources directly into OpenEvidence platform for clinicians in Los Ang",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/los-angeles-county-department-of-public-health-and-openevidence-partner-to-connect-physicians-with-local-public-health-guidance",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-07-15",
+  "cat": "Partnership",
+  "title": "AAP and OpenEvidence Announce Collaboration to Improve Pediatric Care",
+  "desc": "American Academy of Pediatrics (67,000 members) partners with OpenEvidence. Clinicians can access AAP policies, recommendations, and pediatric research through OpenEvidence with citations to original sources. First major pediatrics-specific content partnership.",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/american-academy-of-pediatrics-and-openevidence-announce-collaboration-to-improve-pediatric-care",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-07-08",
+  "cat": "Partnership",
+  "title": "Anticoagulation Forum Partnership",
+  "desc": "OpenEvidence and the Anticoagulation Forum (AC Forum) partner to expand access to AI-enabled guidance in antithrombotic care. AC Forum's curated evidence-based resources, practical tools, and clinical guidance will be available within OpenEvidence. Collaboration also focuses on identifying clinical ",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/openevidence-anticoagulation-forum-partner-to-expand-access-to-ai-enabled-guidance-in-antithrombotic-care",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-06-25",
+  "cat": "Partnership",
+  "title": "JOMI Partnership - Peer-Reviewed Surgical Videos",
+  "desc": "OpenEvidence and Journal of Medical Insight (JOMI) partner to bring 357 peer-reviewed surgical videos onto the platform. First video evidence collaboration - AI highlights relevant video segments for clinical questions. Extends platform beyond written literature into multimodal surgical knowledge.",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/openevidence-and-journal-of-medical-insight-jomi-partner-to-bring-peer-reviewed-surgical-videos-to-clinicians",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
@@ -584,17 +524,63 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-10-16",
-  "cat": "Legal",
-  "title": "Doximity Settles Remaining OpenEvidence AI Prompt-Hack Dispute",
-  "desc": "Doximity Inc. settled OpenEvidence's lawsuit accusing it of impersonating doctors to hack the medical AI platform and extract trade secrets via prompt injection. Settlement filed Thursday Oct 16 in federal court. Case 1:25-cv-11802, originally filed June 2025. Bloomberg Law reports the settlement re",
-  "src": "Bloomberg Law",
-  "url": "https://x.com/BLaw/status/2110883464845090915",
+  "date": "2026-09-03",
+  "cat": "Product",
+  "title": "OpenEvidence Model Family Launched - Osler, Sackett, Snow, and Darwin",
+  "desc": "OpenEvidence releases a new family of medical AI models named for founders of modern medicine. Osler (~5s answer) is the fastest model, built for the pace of the patient encounter, and becomes the new default. Sackett (~30s) is a deeper search model that interactively asks clinicians for context and",
+  "src": "OpenEvidence",
+  "url": "https://www.businesswire.com/news/home/20260903878517/en/Introducing-the-OpenEvidence-Model-Family",
   "score": 73,
-  "confidence": "reported",
-  "competitors": [
-   "Doximity"
-  ],
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-08-19",
+  "cat": "Product",
+  "title": "Patient Take-Homes Launched",
+  "desc": "OpenEvidence launches Patient Take-Homes - a fully optional way for physicians to share specific, curated clinical evidence with patients by converting OpenEvidence answers into patient handouts. Sharing is entirely at the physician's discretion: appropriate, high-quality, evidence-based medical inf",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/openevidence-launches-patient-take-homes",
+  "score": 73,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-08-10",
+  "cat": "Product",
+  "title": "OpenEvidence Games Launched - MedMini and Synapses",
+  "desc": "OpenEvidence launches OpenEvidence Games - a new suite of puzzles built for clinicians, live now in Discover on web and in the OpenEvidence app. The lineup starts with two games: MedMini and Synapses, bringing gamified medical knowledge reinforcement to hundreds of thousands of verified clinicians o",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements",
+  "score": 73,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-07-28",
+  "cat": "Product",
+  "title": "OpenEvidence Launches Education Platform - CE & MOC Credits",
+  "desc": "OpenEvidence launches new education platform offering accredited interprofessional continuing education (CE) and Maintenance of Certification (MOC) credits for NPI-verified physicians nurse practitioners and physician associates. Powered by same underlying models as OpenEvidence adapted for personal",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/openevidence-launches-new-education-platform-offering-continuing-education-ce-and-maintenance-of-certification-moc-credit",
+  "score": 73,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-07-10",
+  "cat": "Product",
+  "title": "EvidenceGrade Launched - Real-Time Evidence Quality Grading",
+  "desc": "OpenEvidence launches EvidenceGrade, a new feature that grades and visualizes the quality of published evidence cited in every AI answer in real time. Builds on the GRADE framework (used by Cochrane, WHO). Surfaces, quantifies, grades, and visualizes evidence strength - solving the problem of AI sys",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/openevidence-launches-evidencegrade-empowering-physicians-to-see-the-strength-of-cited-evidence-beneath-each-ai-answer",
+  "score": 73,
+  "confidence": "confirmed",
+  "competitors": [],
   "comparative": false
  },
  {
@@ -607,6 +593,20 @@ var signalsData = [
   "score": 73,
   "confidence": "confirmed",
   "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-10-16",
+  "cat": "Legal",
+  "title": "Doximity Settles Remaining OpenEvidence AI Prompt-Hack Dispute",
+  "desc": "Doximity Inc. settled OpenEvidence's lawsuit accusing it of impersonating doctors to hack the medical AI platform and extract trade secrets via prompt injection. Settlement filed Thursday Oct 16 in federal court. Case 1:25-cv-11802, originally filed June 2025. Bloomberg Law reports the settlement re",
+  "src": "Bloomberg Law",
+  "url": "https://x.com/BLaw/status/2110883464845090915",
+  "score": 69,
+  "confidence": "reported",
+  "competitors": [
+   "Doximity"
+  ],
   "comparative": false
  },
  {
@@ -628,7 +628,7 @@ var signalsData = [
   "desc": "Sweden's Tandem Health announces a $100M Series B led by the Scaleup Europe Fund (managed by EQT), with Kinnevik, Northzone, Amino Collective and Visionaries participating, bringing total funding to approximately $160M. The raise funds a wider European clinical AI strategy beyond ambient documentati",
   "src": "iatroX",
   "url": "https://www.iatrox.com/blog/tandem-health-100-million-series-b-funding-2026",
-  "score": 61,
+  "score": 57,
   "confidence": "reported",
   "competitors": [
    "UpToDate",
@@ -643,11 +643,23 @@ var signalsData = [
   "desc": "Abridge earns No. 1 Best in KLAS 2026 ranking for Ambient AI in Revenue Cycle category for the second year in a row. Based on independent customer feedback from largest enterprise healthcare systems. Abridge at $5.3B valuation, 300+ health systems, 200+ specialties, 28 languages, Epic-native integra",
   "src": "Abridge",
   "url": "https://www.abridge.com/best-in-klas-2026",
-  "score": 61,
+  "score": 57,
   "confidence": "reported",
   "competitors": [
    "Abridge"
   ],
+  "comparative": false
+ },
+ {
+  "date": "2026-07-09",
+  "cat": "Media",
+  "title": "STAT - OpenEvidence Backs Study That Finds It Beats LLMs",
+  "desc": "STAT News covers the Real-POCQi study (arXiv:2606.28960) backed by OpenEvidence that contradicts the June Nature Medicine paper. 149 physicians in specialty-matched comparisons found OpenEvidence outperformed Claude Opus 4.8, Gemini 3.1 Pro, and GPT-5.5 on real-world clinical questions.",
+  "src": "STAT",
+  "url": "https://www.statnews.com/2026/07/09/openevidence-backs-study-that-finds-it-beats-llms-health-tech/",
+  "score": 53,
+  "confidence": "reported",
+  "competitors": [],
   "comparative": false
  },
  {
@@ -657,7 +669,7 @@ var signalsData = [
   "desc": "OpenEvidence posts LinkedIn response alleging undisclosed conflicts of interest and irredeemable methodological flaws in the Nature Medicine benchmarking study. Nature Medicine declines to address retraction demand. FixHealth.ai and ASCO AI in Oncology analyze the controversy.",
   "src": "FixHealth.ai",
   "url": "https://www.fixhealth.ai/p/openevidence-goes-hippocratic-ai",
-  "score": 57,
+  "score": 53,
   "confidence": "reported",
   "competitors": [],
   "comparative": false
@@ -669,7 +681,7 @@ var signalsData = [
   "desc": "FT publishes a major feature on OpenEvidence, reporting nearly two-thirds of US doctors use the platform. Key new data: 42 million prompts processed in the prior month; OpenEvidence is described as the first 'viral consumer internet product in healthcare.' The article explores the debate over AI's g",
   "src": "Financial Times",
   "url": "https://www.ft.com/content/0ed17b79-47dd-4ad8-8dca-44eb35617edc",
-  "score": 55,
+  "score": 51,
   "confidence": "reported",
   "competitors": [],
   "comparative": false
@@ -681,9 +693,35 @@ var signalsData = [
   "desc": "OpenEvidence ranked #6 on LinkedIn Top Startups list for the United States. The list is based on LinkedIn hiring data showing where professionals want to work. OpenEvidence highlighted its physician + engineer team focused on evidence-based medicine and linked to open roles. Companion recognition to",
   "src": "X/Twitter",
   "url": "https://x.com/OpenEvidence/status/2110475526947373202",
-  "score": 55,
+  "score": 51,
   "confidence": "reported",
   "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-05-19",
+  "cat": "Milestone",
+  "title": "CNBC Disruptor 50 - OpenEvidence Ranked #32",
+  "desc": "OpenEvidence ranked #32 on CNBC 2026 Disruptor 50 list. Cited for $700M funding, $12B valuation, 40%+ of US physicians, and narrow but powerful medical AI strategy.",
+  "src": "CNBC",
+  "url": "https://www.cnbc.com/2026/05/19/openevidence-cnbc-disruptor-50-ranking.html",
+  "score": 51,
+  "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-05-13",
+  "cat": "Partnership",
+  "title": "Doximity + Aledade Partnership (Competitor)",
+  "desc": "Doximity integrates Clinical AI Suite into Aledade Assist for value-based care.",
+  "src": "Doximity",
+  "url": "https://press.doximity.com/",
+  "score": 51,
+  "confidence": "reported",
+  "competitors": [
+   "Doximity"
+  ],
   "comparative": false
  },
  {
@@ -693,7 +731,7 @@ var signalsData = [
   "desc": "Doximity (NYSE: DOCS) and Wolters Kluwer Health announce a partnership making UpToDate clinical content - 13,000+ topics and best practice guides from 7,600 physician authors, editors and peer reviewers - directly accessible inside Doximity Ask, its AI clinical decision support tool. Clinicians at h",
   "src": "Wolters Kluwer / MobiHealthNews",
   "url": "https://www.wolterskluwer.com/en/news/doximity-wolters-kluwer-uptodate-doximity-ask",
-  "score": 53,
+  "score": 49,
   "confidence": "reported",
   "competitors": [
    "Doximity",
@@ -709,53 +747,10 @@ var signalsData = [
   "desc": "Alec Tarashansky, the Anthropic engineer who led development of Claude Science (Anthropic's research workbench for scientists), announces he has joined OpenEvidence to work on AI for medicine. His move connects research-workflow expertise from Anthropic with OpenEvidence's fast-growing clinical evid",
   "src": "RuntimeWire",
   "url": "https://runtimewire.com/article/alec-tarashansky-openevidence-claude-science",
-  "score": 53,
+  "score": 49,
   "confidence": "reported",
   "competitors": [
    "Anthropic"
-  ],
-  "comparative": false
- },
- {
-  "date": "2026-08-27",
-  "cat": "Milestone",
-  "title": "Daniel Nadler Named to TIME100 AI 2026",
-  "desc": "OpenEvidence founder and CEO Daniel Nadler named to TIME's TIME100 AI 2026 list of the world's most influential people in artificial intelligence. Nadler quoted in TIME: 'Over 300 million Americans will be treated by a doctor using OpenEvidence to help make a treatment decision.' Companion recogniti",
-  "src": "X/Twitter",
-  "url": "https://x.com/OpenEvidence/status/2093008579192299885",
-  "score": 53,
-  "confidence": "reported",
-  "competitors": [
-   "Google"
-  ],
-  "comparative": false
- },
- {
-  "date": "2026-08-20",
-  "cat": "Competitor",
-  "title": "IQVIA AI-Enabled CDS Tool Wins 2026 AI Breakthrough Award",
-  "desc": "IQVIA's AI-enabled clinical decision support tool wins the 2026 AI Breakthrough Award for Predictive Modeling Solution of the Year. Signals enterprise life-sciences and real-world-data players entering the clinical decision support layer alongside incumbent physician-facing platforms (OpenEvidence, ",
-  "src": "BusinessWire",
-  "url": "https://www.businesswire.com/news/home/20260820431292/en/IQVIAs-AI-Enabled-Clinical-Decision-Support-Tool-Wins-2026-AI-Breakthrough-Award-for-Predictive-Modeling-Solution-of-the-Year",
-  "score": 53,
-  "confidence": "confirmed",
-  "competitors": [
-   "Doximity",
-   "UpToDate"
-  ],
-  "comparative": false
- },
- {
-  "date": "2026-07-16",
-  "cat": "Competitor",
-  "title": "Doximity Tops NOHARM Safety Benchmark - Outperforms OpenEvidence and Frontier Models",
-  "desc": "Doximity Clinical AI platform (Ask) achieves top results in independent NOHARM benchmark conducted by ARISE (Stanford-Harvard research network). Outperforms OpenEvidence, frontier LLMs (GPT, Claude, Gemini), and other clinical AI tools in clinical safety evaluation. PeerCheck program with 11,000+ ci",
-  "src": "Health Tech Insiders",
-  "url": "https://healthtechinsiders.com/doximity-clinical-ai-platform-tops-safety-benchmark/",
-  "score": 53,
-  "confidence": "reported",
-  "competitors": [
-   "Doximity"
   ],
   "comparative": false
  }

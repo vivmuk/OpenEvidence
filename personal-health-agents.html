@@ -253,7 +253,7 @@ function renderPhaNews(filter){
   var sorted=list.slice().sort(function(a,b){return new Date(b.date)-new Date(a.date);});
   el.innerHTML=sorted.map(function(d,i){
     return '<div class="timeline-item" style="animation-delay:'+(i*0.02)+'s">'
-      +'<div class="date">'+esc(d.date)+(d.new?' <span class="new-badge">NEW</span>':'')+'</div>'
+      +'<div class="date">'+esc(d.date)+oeNewBadge(d)+'</div>'
       +'<div><span class="category-tag cat-'+esc(d.cat)+'">'+esc(d.cat)+'</span></div>'
       +'<div class="title">'+esc(d.title)+'</div>'
       +'<div class="desc">'+esc(d.desc)+'</div>'

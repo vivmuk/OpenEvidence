@@ -23,6 +23,50 @@ const vm = require('vm');
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
 
+// ------------------------------------------------------------- new-entry age
+// The `new:true` flag is set when an entry is added and is never aged out by
+// the data writers, so a July entry still carried it months later. Age the
+// flag against the entry's own date so only genuinely recent entries count as
+// new -- here and in the browser badge (see oeIsNew in shared.js).
+const NEW_WINDOW_DAYS = 14;
+
+const NEW_DATE_FIELDS = ['date', 'published', 'updated', 'announced', 'since', 'launched', 'year'];
+
+/** Parse the date formats the data files use. Returns null if unparseable. */
+function parseEntryDate(entry) {
+  if (!entry) return null;
+  for (const field of NEW_DATE_FIELDS) {
+    const raw = entry[field];
+    if (raw === undefined || raw === null || raw === '') continue;
+
+    if (typeof raw === 'number' || /^\d{4}$/.test(String(raw))) {
+      const y = parseInt(raw, 10);
+      if (y >= 1990 && y <= 2100) return new Date(Date.UTC(y, 0, 1));
+      continue;
+    }
+
+    const s = String(raw).trim();
+    let m = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    if (m) return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+
+    const t = Date.parse(s);
+    if (!Number.isNaN(t)) return new Date(t);
+
+    m = s.match(/^(\d{4})-(\d{1,2})$/);
+    if (m) return new Date(Date.UTC(+m[1], +m[2] - 1, 1));
+  }
+  return null;
+}
+
+/** True when the entry is flagged new AND its date is inside the window. */
+function isNewEntry(entry) {
+  if (!entry || !entry.new) return false;
+  const d = parseEntryDate(entry);
+  if (!d) return true; // no parseable date: fall back to the flag
+  const ageDays = (Date.now() - d.getTime()) / 86400000;
+  return ageDays <= NEW_WINDOW_DAYS && ageDays >= -1;
+}
+
 // ---------------------------------------------------------------- loaders
 
 /** Read a `var NAME = [...]` JS data file into a real array. */
@@ -111,7 +155,7 @@ function scoreEvent(e) {
   if (/\b(health system|hospital|deploys?|rollout|integrates?)\b/i.test(text)) score += 6;
   if (/\b(nature medicine|jama|nejm|annals)\b/i.test(text)) score += 10;
   if (e.url) score += 3;
-  if (e.new) score += 4;
+  if (isNewEntry(e)) score += 4;
 
   // Routine sweeps should never lead the feed.
   if (/^(weekly|daily)\b/i.test(e.title || '')) score -= 24;

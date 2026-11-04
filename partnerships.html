@@ -69,7 +69,7 @@ window.addEventListener('load', function() {
     document.getElementById('partnerGrid').innerHTML = partnersData.map(p => `
       <a href="${p.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
       <div class="partner-item">
-        <div class="name">${p.name} ${p.new ? '<span class="new-badge">NEW</span>' : ''}</div>
+        <div class="name">${p.name} ${oeNewBadge(p)}</div>
         <div class="type">${p.type}</div>
         <div class="type" style="color:var(--oe-orange);margin-top:2px;">${p.date} →</div>
       </div>

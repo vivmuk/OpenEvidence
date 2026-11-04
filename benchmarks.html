@@ -63,7 +63,7 @@ window.addEventListener('load', function() {
       <div class="feature-card" style="border-left:3px solid var(--oe-orange);">
         <div class="icon">${typeLabels[b.type] ? typeLabels[b.type].split(' ')[0] : '🔬'}</div>
         <div class="content">
-          <h4>${b.title} ${b.new ? '<span class="new-badge">NEW</span>' : ''}</h4>
+          <h4>${b.title} ${oeNewBadge(b)}</h4>
           <p><strong>${b.journal}</strong> · ${b.authors} · ${b.date}${b.updated && b.updated !== b.published ? ' (updated ' + b.updated + ')' : ''}</p>
           <p style="margin-top:6px;font-size:13px;"><span style="background:${typeColors[b.type] || 'rgba(120,120,120,0.15)'};padding:2px 8px;border-radius:4px;font-size:11px;">${typeLabels[b.type] || 'Benchmark'}</span> · <strong>Tools:</strong> ${b.tools} · <strong>Scale:</strong> ${b.scale}</p>
           <ul style="margin-top:8px;padding-left:20px;font-size:13px;line-height:1.6;">${b.findings.map(f => `<li>${f}</li>`).join('')}</ul>

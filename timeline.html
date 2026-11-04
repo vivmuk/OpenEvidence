@@ -71,7 +71,7 @@ function renderTimeline(filter) {
   const sorted = [...filtered].sort((a,b) => new Date(b.date) - new Date(a.date));
   el.innerHTML = sorted.map((d, i) => `
     <div class="timeline-item" style="animation-delay: ${i * 0.03}s">
-      <div class="date">${d.date} ${d.new ? '<span class="new-badge">NEW</span>' : ''}</div>
+      <div class="date">${d.date} ${oeNewBadge(d)}</div>
       <div><span class="category-tag cat-${d.cat}">${d.cat}</span></div>
       <div class="title">${d.title}</div>
       <div class="desc">${d.desc}</div>

@@ -126,6 +126,69 @@ function parseWhatsNewDate(s) {
   return isNaN(t) ? null : new Date(t);
 }
 
+// === NEW BADGE (age-aware) ==============================================
+// The `new:true` flag in the data files is set when an entry is added and
+// was never aged out, so a July entry kept showing a NEW badge months
+// later. The tracker runbooks say to strip the flag after 14 days, but
+// that step only runs when a tracker happens to touch that file.
+//
+// Derive the badge from the entry's own date at render time instead.
+// This makes the badge correct for every entry, in every file, forever,
+// without depending on a cleanup pass. The flag still has to be set --
+// `new:true` means "this is a newly tracked item" -- but it only counts
+// as NEW while the entry's date is inside the window.
+//
+// The window is 14 days, matching the runbooks' stated rule.
+var OE_NEW_WINDOW_DAYS = 14;
+
+// Date fields an entry might carry, most specific first.
+var OE_NEW_DATE_FIELDS = ['date', 'published', 'updated', 'announced', 'since', 'launched', 'year'];
+
+// Parse the date formats the data files actually use:
+//   "2026-10-13"  "Oct 13, 2026"  "Oct 2026"  "2026"
+function oeParseEntryDate(entry) {
+  if (!entry) return null;
+  for (var i = 0; i < OE_NEW_DATE_FIELDS.length; i++) {
+    var raw = entry[OE_NEW_DATE_FIELDS[i]];
+    if (raw === undefined || raw === null || raw === '') continue;
+
+    // Numeric year, e.g. date:"2026" -> Jan 1 of that year.
+    if (typeof raw === 'number' || /^\d{4}$/.test(String(raw))) {
+      var y = parseInt(raw, 10);
+      if (y >= 1990 && y <= 2100) return new Date(y, 0, 1);
+      continue;
+    }
+
+    var s = String(raw).trim();
+    // ISO-ish: 2026-10-13 (possibly with a time part)
+    var m = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    if (m) return new Date(+m[1], +m[2] - 1, +m[3]);
+
+    // "Oct 13, 2026" / "October 13 2026" / "Oct 2026"
+    var t = Date.parse(s);
+    if (!isNaN(t)) return new Date(t);
+
+    // "2026-10" style that Date.parse may reject on some engines
+    m = s.match(/^(\d{4})-(\d{1,2})$/);
+    if (m) return new Date(+m[1], +m[2] - 1, 1);
+  }
+  return null;
+}
+
+// True when the entry is flagged new AND still inside the age window.
+function oeIsNew(entry) {
+  if (!entry || !entry.new) return false;
+  var d = oeParseEntryDate(entry);
+  if (!d) return true; // no parseable date: fall back to the flag itself
+  var ageDays = (Date.now() - d.getTime()) / 86400000;
+  return ageDays <= OE_NEW_WINDOW_DAYS && ageDays >= -1;
+}
+
+// Renders the badge markup for an entry, or '' when it is not new.
+function oeNewBadge(entry) {
+  return oeIsNew(entry) ? '<span class="new-badge">NEW</span>' : '';
+}
+
 function renderFreshness() {
   if (typeof whatsNewData === 'undefined' || !whatsNewData.length) return;
   var newest = whatsNewData[0];

@@ -342,7 +342,7 @@ function renderAbNews(filter){
   var sorted=list.slice().sort(function(a,b){return new Date(b.date)-new Date(a.date);});
   el.innerHTML=sorted.map(function(d,i){
     return '<div class="timeline-item" style="animation-delay:'+(i*0.02)+'s">'
-      +'<div class="date">'+esc(d.date)+(d.new?' <span class="new-badge">NEW</span>':'')+'</div>'
+      +'<div class="date">'+esc(d.date)+oeNewBadge(d)+'</div>'
       +'<div><span class="category-tag cat-'+esc(d.cat)+'">'+esc(d.cat)+'</span></div>'
       +'<div class="title">'+esc(d.title)+'</div>'
       +'<div class="desc">'+esc(d.desc)+'</div>'
@@ -367,7 +367,7 @@ function renderPartners(filter){
   el.innerHTML=list.map(function(p){
     return '<div class="ab-card">'
       +'<div class="ab-meta">'+esc(partnerGroup(p))+'</div>'
-      +'<h4>'+esc(p.name)+(p.new?' <span class="new-badge">NEW</span>':'')+'</h4>'
+      +'<h4>'+esc(p.name)+oeNewBadge(p)+'</h4>'
       +'<p>'+esc(p.type)+'</p>'
       +'<div style="font-size:12px;color:var(--oe-text-muted);margin-top:8px;">'+esc(p.date)+'</div>'
       +'<a class="ab-link" href="'+esc(p.url)+'" target="_blank" rel="noopener">Source →</a>'
