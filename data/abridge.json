@@ -222,6 +222,20 @@
       "type": "Health system · 60+ hospitals, unlimited enterprise agreement, inpatient + nursing pilot",
       "date": "Jul 20, 2026",
       "url": "https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge",
+      "new": false
+    },
+    {
+      "name": "OpenAI",
+      "type": "Technology · Physician Builder Challenge co-sponsor at HLTH 2026",
+      "date": "Oct 9, 2026",
+      "url": "https://www.abridge.com/hlth2026",
+      "new": true
+    },
+    {
+      "name": "Physician Side Gigs",
+      "type": "Technology · Physician Builder Challenge co-sponsor at HLTH 2026",
+      "date": "Oct 9, 2026",
+      "url": "https://www.abridge.com/hlth2026",
       "new": true
     },
     {
@@ -664,7 +678,7 @@
       "desc": "Abridge published an in-depth blog post on how pre-visit summaries are built and evaluated across outpatient, inpatient, and emergency settings. The summaries filter the EHR problem list by specialty, surface relevant changes since the last visit, and are now available across 300+ health systems. An upcoming release will let clinicians personalize summaries through Abridge Assistant in real time. Clinicians at Akron Children's Hospital and Children's Hospital of Philadelphia (CHOP) are cited as using the feature.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/the-future-of-ai-pre-charting-is-more-than-a-chart-summary",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-13",
@@ -710,6 +724,15 @@
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant",
       "new": false
+    },
+    {
+      "date": "2026-10-09",
+      "cat": "Partnership",
+      "title": "Abridge Launches Physician Builder Challenge with OpenAI at HLTH 2026",
+      "desc": "Abridge announced the Physician Builder Challenge in partnership with Physician Side Gigs and OpenAI, inviting physicians attending HLTH 2026 to pitch solutions to practical healthcare challenges. Three selected ideas will be developed into working prototypes with Abridge's team and showcased at the Physicians at HLTH reception on November 16. Submissions closed October 20. The initiative marks Abridge's first public collaboration with OpenAI and positions the platform as a co-development environment for clinician-driven innovation.",
+      "src": "Abridge / LinkedIn",
+      "url": "https://www.abridge.com/hlth2026",
+      "new": true
     },
     {
       "date": "2026-10-08",
@@ -844,7 +867,7 @@
       "desc": "CHRISTUS Health, a 60+ hospital system across the U.S. and Mexico, expanded its Abridge partnership from ambulatory care to an unlimited enterprise agreement while introducing AI into inpatient care and launching a pilot for nursing documentation. Dr. Tim Barker, System Medical Director and CMIO of Ambulatory Care, cited continuous innovation and trust built over several years of ambulatory success as the driver for expansion.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-04-20",
@@ -1181,7 +1204,11 @@
     {
       "name": "Abridge - CHRISTUS Health unlimited enterprise expansion (Jul 20, 2026)",
       "url": "https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge"
+    },
+    {
+      "name": "Abridge - Physician Builder Challenge with OpenAI at HLTH 2026 (Oct 9, 2026)",
+      "url": "https://www.abridge.com/hlth2026"
     }
   ],
-  "updated": "2026-11-03"
+  "updated": "2026-11-04"
 }

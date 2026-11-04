@@ -49,4 +49,5 @@ var abridgeSourcesData = [
   {name:"CNBC - Abridge Disruptor 50 2026 (May 19, 2026)",url:"https://www.cnbc.com/2026/05/19/abridge-cnbc-disruptor-50-ranking.html"},
   {name:"Becker's - What it takes to be a lasting AI partner (Aug 14, 2026)",url:"https://www.beckershospitalreview.com/healthcare-information-technology/what-does-it-take-to-be-a-lasting-ai-partner-to-health-systems/"},
   {name:"Abridge - CHRISTUS Health unlimited enterprise expansion (Jul 20, 2026)",url:"https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge"},
+  {name:"Abridge - Physician Builder Challenge with OpenAI at HLTH 2026 (Oct 9, 2026)",url:"https://www.abridge.com/hlth2026"},
 ];
