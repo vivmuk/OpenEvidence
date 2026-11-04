@@ -116,4 +116,34 @@ if [ "$DATA_CHANGED" -eq 1 ]; then
   fi
 fi
 
+# --------------------------------------------------------------------------
+# 4. Parse-check the data files. Block on real errors.
+# --------------------------------------------------------------------------
+# validate_data.py only covers research.json and benchmarks.json. A tracker
+# data file with a syntax error (e.g. a missing trailing comma) passes that
+# check, because nothing ever parses it as JavaScript -- and a file that
+# fails to parse never defines its data variable, so the page renders an
+# EMPTY section with no error anywhere. That shipped twice on global.html
+# (globalTimeline.js, emergingTrends.js and globalMatrix.js, Oct 30 2026).
+# node --check is the only thing that catches it.
+JS_BAD=""
+for f in data/*.js; do
+  [ -e "$f" ] || continue
+  if ! node --check "$f" >/tmp/oe-jscheck.out 2>&1; then
+    JS_BAD="$JS_BAD $f"
+  fi
+done
+if [ -n "$JS_BAD" ]; then
+  echo "" >&2
+  echo "┌──────────────────────────────────────────────────────────────┐" >&2
+  echo "│  COMMIT BLOCKED - OpenEvidence data file has a syntax error   │" >&2
+  echo "└──────────────────────────────────────────────────────────────────────┘" >&2
+  for f in $JS_BAD; do echo "  $f" >&2; done
+  echo "" >&2
+  cat /tmp/oe-jscheck.out >&2
+  echo "The file must be valid JavaScript. A file that does not parse never" >&2
+  echo "defines its data variable, so the page renders an empty section." >&2
+  exit 1
+fi
+
 exit 0
