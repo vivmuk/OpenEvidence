@@ -67,5 +67,15 @@ var globalMatrixData = [
 {platform:"OPTiM AI Hospital",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"yes",sea:"no",latam:"no",mea:"no"},
 {platform:"FOAM Cortex",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 {platform:"medThinks",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"},
-{platform:"Newtons AI",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"}
+{platform:"Newtons AI",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"},
+
+{platform:"DxPro (DxCheck)",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Hela",us:"no",eu:"yes",uk:"yes",cn:"no",in:"yes",jp:"no",sea:"yes",latam:"no",mea:"no"},
+{platform:"ZenMD",us:"yes",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"OpenInsight",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Nigel (AGA)",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Platform24 AI Triage",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"LaennecAI Zorgm Pro",us:"no",eu:"yes",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"GC MediAI Uisarang AI",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Nemedic useBlue.ai",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 ];;
