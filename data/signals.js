@@ -98,6 +98,20 @@ var signalsData = [
   "comparative": true
  },
  {
+  "date": "2026-11-04",
+  "cat": "Product",
+  "title": "OpenEvidence Launches Learn, a Free Personalized Medical Education Platform",
+  "desc": "OpenEvidence launched Learn, a free, personalized medical education platform for trainees and clinicians across their entire careers, extending its AI technology from point-of-care support into education. Developed with medical institutions, certifiers, and educators; access requires a free OpenEvid",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/announcing-learn",
+  "score": 83,
+  "confidence": "confirmed",
+  "competitors": [
+   "Google"
+  ],
+  "comparative": false
+ },
+ {
   "date": "2026-10-12",
   "cat": "Partnership",
   "title": "Northwestern Medicine and OpenEvidence Launch Collaboration to Integrate Clinical Evidence into the EHR",
@@ -260,18 +274,6 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-10-22",
-  "cat": "Partnership",
-  "title": "Memorial Sloan Kettering Cancer Center and OpenEvidence Partner to Advance Precision Oncology",
-  "desc": "Memorial Sloan Kettering Cancer Center (MSK) and OpenEvidence announce a partnership to advance precision oncology, combining MSK's cancer expertise with OpenEvidence's AI-powered clinical decision support at the point of care.",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/memorial-sloan-kettering-cancer-center-and-openevidence-partner-to-advance-precision-oncology",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
   "date": "2026-09-24",
   "cat": "Funding",
   "title": "OpenEvidence Raises $250M at $15B Valuation, Pivots Into Drug Development",
@@ -304,6 +306,18 @@ var signalsData = [
   "url": "https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html",
   "score": 79,
   "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-10-22",
+  "cat": "Partnership",
+  "title": "Memorial Sloan Kettering Cancer Center and OpenEvidence Partner to Advance Precision Oncology",
+  "desc": "Memorial Sloan Kettering Cancer Center (MSK) and OpenEvidence announce a partnership to advance precision oncology, combining MSK's cancer expertise with OpenEvidence's AI-powered clinical decision support at the point of care.",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/memorial-sloan-kettering-cancer-center-and-openevidence-partner-to-advance-precision-oncology",
+  "score": 77,
+  "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
@@ -737,20 +751,6 @@ var signalsData = [
    "Doximity",
    "UpToDate",
    "Abridge"
-  ],
-  "comparative": false
- },
- {
-  "date": "2026-10-03",
-  "cat": "Talent",
-  "title": "Claude Science creator Alec Tarashansky joins OpenEvidence",
-  "desc": "Alec Tarashansky, the Anthropic engineer who led development of Claude Science (Anthropic's research workbench for scientists), announces he has joined OpenEvidence to work on AI for medicine. His move connects research-workflow expertise from Anthropic with OpenEvidence's fast-growing clinical evid",
-  "src": "RuntimeWire",
-  "url": "https://runtimewire.com/article/alec-tarashansky-openevidence-claude-science",
-  "score": 49,
-  "confidence": "reported",
-  "competitors": [
-   "Anthropic"
   ],
   "comparative": false
  }
