@@ -98,20 +98,6 @@ var signalsData = [
   "comparative": true
  },
  {
-  "date": "2026-11-04",
-  "cat": "Product",
-  "title": "OpenEvidence Launches Learn, a Free Personalized Medical Education Platform",
-  "desc": "OpenEvidence launched Learn, a free, personalized medical education platform for trainees and clinicians across their entire careers, extending its AI technology from point-of-care support into education. Developed with medical institutions, certifiers, and educators; access requires a free OpenEvid",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/announcing-learn",
-  "score": 83,
-  "confidence": "confirmed",
-  "competitors": [
-   "Google"
-  ],
-  "comparative": false
- },
- {
   "date": "2026-10-12",
   "cat": "Partnership",
   "title": "Northwestern Medicine and OpenEvidence Launch Collaboration to Integrate Clinical Evidence into the EHR",
@@ -306,6 +292,18 @@ var signalsData = [
   "url": "https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html",
   "score": 79,
   "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "Product",
+  "title": "OpenEvidence Launches Learn, a Free Personalized Medical Education Platform",
+  "desc": "OpenEvidence launches Learn, a free personalized medical education platform extending its AI from point-of-care support into how doctors learn medicine. Four tools available today: Test Prep (50,000+ board-style questions for USMLE, COMLEX, and specialty/subspecialty boards), Preceptor (Socratic cas",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/announcing-learn",
+  "score": 77,
+  "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
