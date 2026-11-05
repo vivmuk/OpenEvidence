@@ -98,5 +98,9 @@ var phaSourcesData = [
   {name:"Welldoc - AI-Powered Care Loop launch (Sep 30, 2026)", url:"https://www.welldoc.com/news/welldoc-launches-ai-powered-care-loop-connecting-daily-health-to-care-teams-keeping-patients-and-clinicians-in-control"},
   {name:"Journal of Public Health and Community Medicine - AI vs human triage meta-analysis (2026)", url:"https://doi.org/10.5455/jphcm.20260312053038"},
   {name:"SSRN - Clinical Safety Evaluation Using Decomposed LLM-as-Judges (Aug 6, 2026)", url:"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7230054"},
-  {name:"npj Digital Medicine - Expert perspectives on regulating LLMs in healthcare (May 19, 2026)", url:"https://www.nature.com/articles/s41746-026-02787-z"}
+  {name:"npj Digital Medicine - Expert perspectives on regulating LLMs in healthcare (May 19, 2026)", url:"https://www.nature.com/articles/s41746-026-02787-z"},
+  {name:"VCU College of Engineering - HomePal ambient sensor system for loneliness detection (Nov 2, 2026)", url:"https://blogs.vcu.edu/engineering/2026/11/02/vcu-developed-home-sensor-system-could-spot-loneliness-in-older-adults/"},
+  {name:"Bass, Berry & Sims - Vermont VDPOSA joins national privacy wave (Jun 29, 2026)", url:"https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"},
+  {name:"Verily - Verily Me consumer health app launch (Mar 12, 2026)", url:"https://verily.com/newsroom/verily-me-adds-new-features-offering-a-safe-and-private-space-to-check-symptoms-and-make-sense-of-health"},
+  {name:"arXiv - SAGE: Sensor-Augmented Grounding Engine for Sleep Care Agent (Mar 15, 2026)", url:"https://arxiv.org/abs/2604.16342"}
 ];

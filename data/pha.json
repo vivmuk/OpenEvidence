@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -56,6 +56,15 @@
       "desc": "arXiv preprint from Tsinghua University presenting DiabAgent, an agentic system for physiological control in diabetes management. The work extends medical LLMs from answering questions to taking actions that influence physiology, representing a shift from advisory AI to agentic intervention in personal health. Preprint, not peer-reviewed.",
       "src": "arXiv",
       "url": "https://arxiv.org/abs/2611.03601",
+      "new": true
+    },
+    {
+      "date": "2026-11-02",
+      "cat": "Research",
+      "title": "VCU and Emory Develop HomePal Ambient Sensor System to Detect Loneliness in Older Adults",
+      "desc": "Researchers at Virginia Commonwealth University and Emory University developed HomePal, a passive home sensing system that monitors movement, screen time, sleep, phone usage and vocal patterns to detect behavioral signatures of loneliness in older adults. The system uses commercially available sensors and reports results to a caregiving team. Extends ambient home health monitoring from physical safety to mental health and social wellbeing.",
+      "src": "VCU College of Engineering",
+      "url": "https://blogs.vcu.edu/engineering/2026/11/02/vcu-developed-home-sensor-system-could-spot-loneliness-in-older-adults/",
       "new": true
     },
     {
@@ -123,8 +132,7 @@
       "title": "UniqueHuman Launches Niq, a Proactive AI Health Agent for Migraine",
       "desc": "UniqueHuman introduced Niq, a proactive health agent from a startup founded by former Apple Watch team member Praneeta Pujari. Niq starts with migraine: it learns the user's baseline from wearables, health records and self-reported logs, warns about flare-ups, and assists with follow-up care. The iPhone app is free to use. Represents a shift from general-purpose health agents to condition-specific proactive agents for chronic conditions. Vendor claim: proactive health management, not a medical device.",
       "src": "Agent Playbox",
-      "url": "https://agentplaybox.com/news/uniquehuman-launches-niq-health-agent/",
-      "new": true
+      "url": "https://agentplaybox.com/news/uniquehuman-launches-niq-health-agent/"
     },
     {
       "date": "2026-10-01",
@@ -228,8 +236,7 @@
       "title": "Nature Publishes 'The Anatomy of a Personal Health Agent'",
       "desc": "Google Research published the most comprehensive evaluation of a consumer health agent to date. The open-source multi-agent framework serves four user journeys - general health knowledge, personal data interpretation, wellness advice and symptom assessment - through three specialist sub-agents: a data science agent that analyses longitudinal wearable and medical data against population statistics, a health domain expert agent that combines personal context with health knowledge, and a health coach agent that handles multi-turn interaction, goal setting and progress tracking. Evaluated across 11 benchmark tasks with more than 7,000 annotations and about 1,350 hours of work from health experts and end users. Independent coverage reported safety gaps in a meaningful share of generated summaries.",
       "src": "Nature",
-      "url": "https://www.nature.com/articles/s41586-026-11161-8",
-      "new": true
+      "url": "https://www.nature.com/articles/s41586-026-11161-8"
     },
     {
       "date": "2026-10-21",
@@ -237,8 +244,7 @@
       "title": "Google Research Blog: Anatomy of a Personal Health Agent",
       "desc": "Google Research published a companion explainer describing the personal health agent architecture and its grounding in the WEAR-ME metabolic health study (n=1,165) for real-world validity. Positions the work as a basis for further research on personal health agents for daily health and well-being.",
       "src": "Google Research",
-      "url": "https://research.google/blog/the-anatomy-of-a-personal-health-agent/",
-      "new": true
+      "url": "https://research.google/blog/the-anatomy-of-a-personal-health-agent/"
     },
     {
       "date": "2026-10-21",
@@ -246,8 +252,7 @@
       "title": "Nature Editorial: Using AI to Offer Personalised Health Advice",
       "desc": "Nature ran a companion editorial placing the personal health agent paper in context, citing Pew survey data on health information and trust, and prior work on AI health advice. Signals that mainstream scientific publishing now treats consumer health agents as a serious research area rather than a product category.",
       "src": "Nature",
-      "url": "https://www.nature.com/articles/d41586-026-03065-4",
-      "new": true
+      "url": "https://www.nature.com/articles/d41586-026-03065-4"
     },
     {
       "date": "2026-10-21",
@@ -255,8 +260,7 @@
       "title": "Google Health Agent Tops Gemini but Shows Safety Gaps",
       "desc": "Independent analysis of the Nature paper reported that the Personal Health Agent outperformed its base Gemini models on personal health tasks but still showed safety gaps in roughly 17% of summaries. The system runs on Gemini 2.0 models with an orchestrator coordinating the three specialist agents.",
       "src": "Becker's Hospital Review",
-      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/googles-health-ai-agent-tops-gemini-but-carries-safety-gaps-7-things-to-know/",
-      "new": true
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/googles-health-ai-agent-tops-gemini-but-carries-safety-gaps-7-things-to-know/"
     },
     {
       "date": "2026-10-14",
@@ -395,6 +399,14 @@
       "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"
     },
     {
+      "date": "2026-06-29",
+      "cat": "Regulatory",
+      "title": "Vermont Enacts VDPOSA with Standalone Consumer Health Data Provisions and AI Transparency Requirements",
+      "desc": "Vermont's Data Privacy and Online Surveillance Act (VDPOSA) takes effect January 1, 2028, with standalone consumer health data provisions that apply regardless of general applicability thresholds. The law prohibits geofencing within 1,850 feet of healthcare facilities, requires consent before selling consumer health data, and includes AI transparency requirements for controllers. Extends the trend of states creating health-specific privacy obligations outside HIPAA.",
+      "src": "Bass, Berry & Sims",
+      "url": "https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"
+    },
+    {
       "date": "2026-06-16",
       "cat": "Research",
       "title": "Nature Health: AI Symptom Checker Integrated into MomConnect Maternal Healthcare Platform",
@@ -515,6 +527,14 @@
       "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/2026/05/29/copilot-health-now-in-preview/"
     },
     {
+      "date": "2026-03-15",
+      "cat": "Research",
+      "title": "SAGE: Sensor-Augmented Grounding Engine for LLM-Powered Sleep Care Agent",
+      "desc": "arXiv preprint presenting SAGE, a sensor-augmented grounding engine that bridges the Data-Action Gap in sleep care by grounding LLM agents in personal wearable data. SAGE addresses the limitation that static dashboards lack context, rule-based agents rely on rigid scripts, and LLM agents without grounding lack trust. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2604.16342"
+    },
+    {
       "date": "2026-03-12",
       "cat": "Product",
       "title": "Microsoft Launches Copilot Health",
@@ -529,6 +549,14 @@
       "desc": "Oura released an AI model focused on women's health spanning menstrual cycles through menopause, alongside Oura Advisor, which turned a one-way insight feed into a two-way coaching dialogue. Analysts framed it as evidence that device makers are competing on interpretation and coaching rather than raw metrics.",
       "src": "Sahha",
       "url": "https://sahha.ai/blog/ai-health-coaching-platforms/"
+    },
+    {
+      "date": "2026-03-12",
+      "cat": "Product",
+      "title": "Verily Launches Verily Me Consumer Health App with AI Symptom Navigation",
+      "desc": "Verily, Alphabet's precision health company, announced general availability of its Verily Me consumer app at SXSW 2026, with AI-guided symptom navigation, personalized health recommendations from licensed clinicians, and deeper nutrition insights. Vendor claim: consumer wellness tool, not a medical device.",
+      "src": "Verily",
+      "url": "https://verily.com/newsroom/verily-me-adds-new-features-offering-a-safe-and-private-space-to-check-symptoms-and-make-sense-of-health"
     },
     {
       "date": "2026-01-06",
@@ -1717,6 +1745,33 @@
       "finding": "An interview series with Dr Shantanu Nundy, advisor in the office of the FDA Commissioner, exploring the challenge of regulating LLM-enabled medical AI, particularly where it extends beyond the usual boundaries of medical devices and challenges traditional regulatory frameworks.",
       "caveat": "Interview-based perspective article, not systematic analysis. Views expressed include those of an FDA advisor but do not represent official FDA policy.",
       "url": "https://www.nature.com/articles/s41746-026-02787-z"
+    },
+    {
+      "title": "HomePal: Passive Home Sensing System for Detecting Loneliness in Older Adults",
+      "type": "University research - ambient sensing",
+      "date": "Nov 2, 2026",
+      "venue": "VCU College of Engineering / Emory University",
+      "finding": "Researchers at Virginia Commonwealth University and Emory University developed HomePal, a passive home sensing system combining commercially available sensors to monitor movement, screen time, sleep, phone usage and vocal patterns. The system detects behavioral signatures associated with loneliness in older adults and reports results to a caregiving team, extending ambient home health monitoring from physical safety to mental health and social wellbeing.",
+      "caveat": "The system is a research prototype; no clinical validation data has been published yet. Loneliness detection is based on behavioral correlates, not direct clinical assessment.",
+      "url": "https://blogs.vcu.edu/engineering/2026/11/02/vcu-developed-home-sensor-system-could-spot-loneliness-in-older-adults/"
+    },
+    {
+      "title": "SAGE: Sensor-Augmented Grounding Engine for LLM-Powered Sleep Care Agent",
+      "type": "Preprint - agent architecture",
+      "date": "Mar 15, 2026",
+      "venue": "arXiv",
+      "finding": "Presents SAGE, a sensor-augmented grounding engine that bridges the Data-Action Gap in sleep care by grounding LLM agents in personal wearable data. SAGE addresses three failure modes: static dashboards lacking context, rule-based agents relying on rigid scripts, and LLM agents without personal data grounding causing trust issues.",
+      "caveat": "Preprint, not peer-reviewed. The system has not been validated in a clinical trial or with a large user study.",
+      "url": "https://arxiv.org/abs/2604.16342"
+    },
+    {
+      "title": "Vermont VDPOSA: Consumer Health Data Provisions and AI Transparency Requirements",
+      "type": "Regulatory analysis",
+      "date": "Jun 29, 2026",
+      "venue": "Bass, Berry & Sims",
+      "finding": "Vermont's Data Privacy and Online Surveillance Act (VDPOSA) takes effect January 1, 2028, with standalone consumer health data provisions applying regardless of general applicability thresholds. The law prohibits geofencing within 1,850 feet of healthcare facilities, requires consent before selling consumer health data, and includes AI transparency requirements.",
+      "caveat": "The law does not take effect until 2028 and its enforcement mechanisms and interaction with existing state privacy laws remain to be tested.",
+      "url": "https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"
     }
   ],
   "sources": [
@@ -2119,6 +2174,22 @@
     {
       "name": "npj Digital Medicine - Expert perspectives on regulating LLMs in healthcare (May 19, 2026)",
       "url": "https://www.nature.com/articles/s41746-026-02787-z"
+    },
+    {
+      "name": "VCU College of Engineering - HomePal ambient sensor system for loneliness detection (Nov 2, 2026)",
+      "url": "https://blogs.vcu.edu/engineering/2026/11/02/vcu-developed-home-sensor-system-could-spot-loneliness-in-older-adults/"
+    },
+    {
+      "name": "Bass, Berry & Sims - Vermont VDPOSA joins national privacy wave (Jun 29, 2026)",
+      "url": "https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"
+    },
+    {
+      "name": "Verily - Verily Me consumer health app launch (Mar 12, 2026)",
+      "url": "https://verily.com/newsroom/verily-me-adds-new-features-offering-a-safe-and-private-space-to-check-symptoms-and-make-sense-of-health"
+    },
+    {
+      "name": "arXiv - SAGE: Sensor-Augmented Grounding Engine for Sleep Care Agent (Mar 15, 2026)",
+      "url": "https://arxiv.org/abs/2604.16342"
     }
   ]
 }

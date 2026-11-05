@@ -215,5 +215,17 @@ var phaResearchData = [
   {title:"Expert Perspectives on US Regulatory Approaches to Large Language Models in Healthcare", type:"Peer-reviewed \u00b7 interview series", date:"May 19, 2026", venue:"npj Digital Medicine",
    finding:"An interview series with Dr Shantanu Nundy, advisor in the office of the FDA Commissioner, exploring the challenge of regulating LLM-enabled medical AI, particularly where it extends beyond the usual boundaries of medical devices and challenges traditional regulatory frameworks.",
    caveat:"Interview-based perspective article, not systematic analysis. Views expressed include those of an FDA advisor but do not represent official FDA policy.",
-   url:"https://www.nature.com/articles/s41746-026-02787-z"}
+   url:"https://www.nature.com/articles/s41746-026-02787-z"},
+  {title:"HomePal: Passive Home Sensing System for Detecting Loneliness in Older Adults", type:"University research - ambient sensing", date:"Nov 2, 2026", venue:"VCU College of Engineering / Emory University",
+   finding:"Researchers at Virginia Commonwealth University and Emory University developed HomePal, a passive home sensing system combining commercially available sensors to monitor movement, screen time, sleep, phone usage and vocal patterns. The system detects behavioral signatures associated with loneliness in older adults and reports results to a caregiving team, extending ambient home health monitoring from physical safety to mental health and social wellbeing.",
+   caveat:"The system is a research prototype; no clinical validation data has been published yet. Loneliness detection is based on behavioral correlates, not direct clinical assessment.",
+   url:"https://blogs.vcu.edu/engineering/2026/11/02/vcu-developed-home-sensor-system-could-spot-loneliness-in-older-adults/"},
+  {title:"SAGE: Sensor-Augmented Grounding Engine for LLM-Powered Sleep Care Agent", type:"Preprint - agent architecture", date:"Mar 15, 2026", venue:"arXiv",
+   finding:"Presents SAGE, a sensor-augmented grounding engine that bridges the Data-Action Gap in sleep care by grounding LLM agents in personal wearable data. SAGE addresses three failure modes: static dashboards lacking context, rule-based agents relying on rigid scripts, and LLM agents without personal data grounding causing trust issues.",
+   caveat:"Preprint, not peer-reviewed. The system has not been validated in a clinical trial or with a large user study.",
+   url:"https://arxiv.org/abs/2604.16342"},
+  {title:"Vermont VDPOSA: Consumer Health Data Provisions and AI Transparency Requirements", type:"Regulatory analysis", date:"Jun 29, 2026", venue:"Bass, Berry & Sims",
+   finding:"Vermont's Data Privacy and Online Surveillance Act (VDPOSA) takes effect January 1, 2028, with standalone consumer health data provisions applying regardless of general applicability thresholds. The law prohibits geofencing within 1,850 feet of healthcare facilities, requires consent before selling consumer health data, and includes AI transparency requirements.",
+   caveat:"The law does not take effect until 2028 and its enforcement mechanisms and interaction with existing state privacy laws remain to be tested.",
+   url:"https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"}
 ];
