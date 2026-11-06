@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,15 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-05",
+      "cat": "Product",
+      "title": "Octo Health Launches Beta Combining 100+ Biomarker Testing with Unified Health Data Timeline",
+      "desc": "Octo Health launched a beta platform that brings medical records, lab results, medications and health data into one health timeline. Combines annual testing of 100+ biomarkers with unified health data so members can identify patterns and track health trends over time. Gives consumers greater ownership of their data and helps them understand what it means. Vendor claim: proactive personalized healthcare, not a medical device.",
+      "src": "GlobeNewswire / Octo Health",
+      "url": "https://www.globenewswire.com/news-release/2026/11/05/3396534/0/en/octo-health-launches-beta-to-make-proactive-personalized-healthcare-more-accessible.html",
+      "new": true
+    },
     {
       "date": "2026-11-04",
       "cat": "Product",
@@ -107,6 +116,14 @@
       "desc": "A market comparison found four wearable platforms selling AI health coaches in 2026: Google Health Coach at $9.99/month, WHOOP Coach included in memberships from $199/year, Oura Advisor included at $5.99/month, and Garmin Active Intelligence at $6.99/month. Apple still has no AI coach. The analysis frames the competitive shift: in 2024 the pitch was more sensors, in 2026 it is a chatbot that reads them for you. Every major wearable platform now sells an AI coach that ingests sleep, strain and heart data and tells users what to do about it.",
       "src": "SmartBodyTouch",
       "url": "https://smartbodytouch.com/ai-health-coach-wearables-compared/"
+    },
+    {
+      "date": "2026-08-15",
+      "cat": "Product",
+      "title": "WHOOP Adds On-Demand Clinician Video Visits and 'My Memory' AI Context to Coaching",
+      "desc": "WHOOP announced on-demand video consultations with licensed clinicians alongside new AI coaching features including 'My Memory,' a personal-context hub that lets the AI coach remember a user's real-life context, and proactive check-ins that adjust training or sleep recommendations based on life events. The move pits WHOOP directly against Oura's AI health assistant and represents wearable makers shifting from biometric tracking to integrated health services combining AI coaching with human clinical care.",
+      "src": "AI Data News",
+      "url": "https://www.aidatanews.com/whoop-will-now-let-its-ai-coach-remember-your-life-story-and-put-a-real-doctor-on-video-call/"
     },
     {
       "date": "2026-10-31",
@@ -397,6 +414,14 @@
       "desc": "Samsung launched a beta version of its AI-powered personal health assistant embedded in the Samsung Health app, available to eligible US users. The assistant answers health questions and provides personalised guidance and recommendations based on Samsung Health data. Planned future capabilities include coaching to help users achieve health goals. Samsung's entry adds a major Android device maker to the consumer health AI agent landscape alongside Google, Apple and the wearable specialists.",
       "src": "Fierce Healthcare",
       "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/samsung-launches-beta-version-ai-powered-health-assistant-across-us"
+    },
+    {
+      "date": "2026-06-18",
+      "cat": "Product",
+      "title": "MedPal AI Launches Juno, an Agentic AI Health Companion Powered by Anthropic Claude",
+      "desc": "MedPal AI launched Juno, its next-generation agentic AI health companion, moving from responsive AI to agentic AI powered by Anthropic's latest Claude models and DigitalOcean. Juno works on the patient's behalf rather than just answering when asked, representing the shift from conversational to agentic AI in consumer health. Vendor claim: agentic AI health companion, not a medical device.",
+      "src": "FT.com / MedPal AI",
+      "url": "https://markets.ft.com/data/announce/full?dockey=1323-17645095-2ELGELJ3D2E3H6KL9DB13CAEB5"
     },
     {
       "date": "2026-06-29",
@@ -884,20 +909,28 @@
     },
     {
       "name": "WHOOP",
-      "type": "Wearable maker · embedded AI guidance",
+      "type": "Wearable maker · embedded AI guidance + clinician visits",
       "badge": "ADJACENT",
       "stats": [
         {
-          "l": "Approach",
-          "v": "AI guidance on every screen"
+          "l": "AI coach",
+          "v": "WHOOP Coach (GPT-4)"
+        },
+        {
+          "l": "New",
+          "v": "My Memory + clinician video visits"
         },
         {
           "l": "Model",
           "v": "Subscription + hardware"
+        },
+        {
+          "l": "Clinician access",
+          "v": "On-demand video visits, licensed"
         }
       ],
-      "desc": "WHOOP integrated AI guidance across its app rather than shipping a separate coach, and has publicly disputed regulatory interpretations of its own features - illustrating how close wearable guidance sits to a clinical claim.",
-      "url": "https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"
+      "desc": "WHOOP integrated AI guidance across its app via WHOOP Coach (powered by GPT-4), and in August 2026 added on-demand video consultations with licensed clinicians alongside 'My Memory,' a personal-context hub that lets the AI coach remember a user's real-life context, and proactive check-ins that adjust recommendations based on life events. The move pits WHOOP directly against Oura's AI health assistant and represents wearable makers shifting from biometric tracking to integrated health services combining AI coaching with human clinical care. WHOOP has publicly disputed regulatory interpretations of its own features.",
+      "url": "https://www.aidatanews.com/whoop-will-now-let-its-ai-coach-remember-your-life-story-and-put-a-real-doctor-on-video-call/"
     },
     {
       "name": "Mount Sinai - Check Symptoms & Get Care",
@@ -2190,6 +2223,18 @@
     {
       "name": "arXiv - SAGE: Sensor-Augmented Grounding Engine for Sleep Care Agent (Mar 15, 2026)",
       "url": "https://arxiv.org/abs/2604.16342"
+    },
+    {
+      "name": "GlobeNewswire / Octo Health - Beta launch (Nov 5, 2026)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/05/3396534/0/en/octo-health-launches-beta-to-make-proactive-personalized-healthcare-more-accessible.html"
+    },
+    {
+      "name": "AI Data News - WHOOP adds clinician video visits and My Memory AI (Aug 15, 2026)",
+      "url": "https://www.aidatanews.com/whoop-will-now-let-its-ai-coach-remember-your-life-story-and-put-a-real-doctor-on-video-call/"
+    },
+    {
+      "name": "FT.com / MedPal AI - Juno agentic AI health companion launch (Jun 18, 2026)",
+      "url": "https://markets.ft.com/data/announce/full?dockey=1323-17645095-2ELGELJ3D2E3H6KL9DB13CAEB5"
     }
   ]
 }

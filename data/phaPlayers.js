@@ -30,10 +30,10 @@ var phaPlayersData = [
    desc:"Oura turned its insight feed into a two-way coaching dialogue with Oura Advisor and launched a dedicated reproductive health model spanning menstrual cycles through menopause. Acquired Veri (metabolic health) and Sparta Science (movement health) to expand data and coaching capabilities, integrated Dexcom CGMs for nutrition and metabolic insights, and raised $200M at a $5.2B valuation. Represents the device-maker path to personal agents: own the sensor, own the interpretation.",
    url:"https://insider.fitt.co/oura-launches-ai-health-coach/"},
 
-  {name:"WHOOP", type:"Wearable maker · embedded AI guidance", badge:"ADJACENT",
-   stats:[{l:"Approach",v:"AI guidance on every screen"},{l:"Model",v:"Subscription + hardware"}],
-   desc:"WHOOP integrated AI guidance across its app rather than shipping a separate coach, and has publicly disputed regulatory interpretations of its own features - illustrating how close wearable guidance sits to a clinical claim.",
-   url:"https://athletechnews.com/wearable-makers-eye-healthcare-new-innovations-apple-watch-oura-whoop-garmin/"},
+  {name:"WHOOP", type:"Wearable maker · embedded AI guidance + clinician visits", badge:"ADJACENT",
+   stats:[{l:"AI coach",v:"WHOOP Coach (GPT-4)"},{l:"New",v:"My Memory + clinician video visits"},{l:"Model",v:"Subscription + hardware"},{l:"Clinician access",v:"On-demand video visits, licensed"}],
+   desc:"WHOOP integrated AI guidance across its app via WHOOP Coach (powered by GPT-4), and in August 2026 added on-demand video consultations with licensed clinicians alongside 'My Memory,' a personal-context hub that lets the AI coach remember a user's real-life context, and proactive check-ins that adjust recommendations based on life events. The move pits WHOOP directly against Oura's AI health assistant and represents wearable makers shifting from biometric tracking to integrated health services combining AI coaching with human clinical care. WHOOP has publicly disputed regulatory interpretations of its own features.",
+   url:"https://www.aidatanews.com/whoop-will-now-let-its-ai-coach-remember-your-life-story-and-put-a-real-doctor-on-video-call/"},
 
   {name:"Mount Sinai - Check Symptoms & Get Care", type:"Health system deployment", badge:"PROOF POINT",
    stats:[{l:"Concordance",v:"88-96% with physician triage"},{l:"Sessions",v:"~22,000"},{l:"Completion",v:"~80%"},{l:"Published",v:"NEJM Catalyst 2026"}],

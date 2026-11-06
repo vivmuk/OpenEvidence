@@ -102,5 +102,8 @@ var phaSourcesData = [
   {name:"VCU College of Engineering - HomePal ambient sensor system for loneliness detection (Nov 2, 2026)", url:"https://blogs.vcu.edu/engineering/2026/11/02/vcu-developed-home-sensor-system-could-spot-loneliness-in-older-adults/"},
   {name:"Bass, Berry & Sims - Vermont VDPOSA joins national privacy wave (Jun 29, 2026)", url:"https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"},
   {name:"Verily - Verily Me consumer health app launch (Mar 12, 2026)", url:"https://verily.com/newsroom/verily-me-adds-new-features-offering-a-safe-and-private-space-to-check-symptoms-and-make-sense-of-health"},
-  {name:"arXiv - SAGE: Sensor-Augmented Grounding Engine for Sleep Care Agent (Mar 15, 2026)", url:"https://arxiv.org/abs/2604.16342"}
+  {name:"arXiv - SAGE: Sensor-Augmented Grounding Engine for Sleep Care Agent (Mar 15, 2026)", url:"https://arxiv.org/abs/2604.16342"},
+  {name:"GlobeNewswire / Octo Health - Beta launch (Nov 5, 2026)", url:"https://www.globenewswire.com/news-release/2026/11/05/3396534/0/en/octo-health-launches-beta-to-make-proactive-personalized-healthcare-more-accessible.html"},
+  {name:"AI Data News - WHOOP adds clinician video visits and My Memory AI (Aug 15, 2026)", url:"https://www.aidatanews.com/whoop-will-now-let-its-ai-coach-remember-your-life-story-and-put-a-real-doctor-on-video-call/"},
+  {name:"FT.com / MedPal AI - Juno agentic AI health companion launch (Jun 18, 2026)", url:"https://markets.ft.com/data/announce/full?dockey=1323-17645095-2ELGELJ3D2E3H6KL9DB13CAEB5"}
 ];
