@@ -50,4 +50,6 @@ var abridgeSourcesData = [
   {name:"Becker's - What it takes to be a lasting AI partner (Aug 14, 2026)",url:"https://www.beckershospitalreview.com/healthcare-information-technology/what-does-it-take-to-be-a-lasting-ai-partner-to-health-systems/"},
   {name:"Abridge - CHRISTUS Health unlimited enterprise expansion (Jul 20, 2026)",url:"https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge"},
   {name:"Abridge - Physician Builder Challenge with OpenAI at HLTH 2026 (Oct 9, 2026)",url:"https://www.abridge.com/hlth2026"},
+  {name:"Abridge - Sutter Health partnership timeline (Aug 27, 2026)",url:"https://www.abridge.com/blog/sutter-health-partnership-timeline"},
+  {name:"MobiHealthNews - Inova Health selects Abridge (Feb 26, 2025)",url:"https://www.mobihealthnews.com/news/abridge-will-deliver-ai-powered-clinical-conversations-inova-health"},
 ];

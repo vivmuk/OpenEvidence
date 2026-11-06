@@ -310,9 +310,9 @@
     },
     {
       "name": "Sutter Health",
-      "type": "Health system · enterprise deployment",
-      "date": "2025-2026",
-      "url": "https://www.abridge.com/",
+      "type": "Health system · 3.6M patients, 64K clinicians, enterprise deployment",
+      "date": "2024-2026",
+      "url": "https://www.abridge.com/blog/sutter-health-partnership-timeline",
       "new": false
     },
     {
@@ -362,6 +362,13 @@
       "type": "Federal · $775.72M multi-award enterprise contract",
       "date": "Sep 22, 2026",
       "url": "https://www.abridge.com/press-release/va-enterprise-contract",
+      "new": false
+    },
+    {
+      "name": "Inova Health",
+      "type": "Health system · Northern Virginia, system-wide AI platform",
+      "date": "Feb 26, 2025",
+      "url": "https://www.mobihealthnews.com/news/abridge-will-deliver-ai-powered-clinical-conversations-inova-health",
       "new": false
     },
     {
@@ -633,7 +640,7 @@
       "desc": "The Inference reports Abridge's latest private valuation mark at $6.69 billion, up from the $5.3B set in June 2025. The article cites independent trial evidence - a 24-week RCT across 66 practitioners finding 0.36 hours/day note-time reduction, a UCLA head-to-head in NEJM AI, and a VHA evaluation where human note-takers outscored 11 AI scribes - as the first countable productivity metric (22 minutes/day) that caps per-encounter pricing and shifts margin to clinical content and mid-revenue-cycle workflow.",
       "src": "The Inference",
       "url": "https://theinference.org/article/abridge-carries-a-6-69-billion-mark-on-trials-showing-its-scribe-saves-22-minutes-a-day",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-21",
@@ -642,7 +649,7 @@
       "desc": "Becker's Hospital Review published a field report on how Abridge is moving clinical documentation integrity from a retrospective function into the encounter itself. Concurrent CDI surfaces documentation gaps while clinicians write notes during hospital stays; pre-bill review compares coded diagnoses and DRGs against the documented conversation before the claim drops. The article frames this as Abridge pushing clinical context into adjacent business processes rather than adding more alerts.",
       "src": "Becker's Hospital Review",
       "url": "https://www.beckershospitalreview.com/healthcare-information-technology/moving-cdi-closer-to-care-how-clinicians-are-answering-queries-in-minutes-not-days/",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-16",
@@ -732,7 +739,7 @@
       "desc": "Abridge announced the Physician Builder Challenge in partnership with Physician Side Gigs and OpenAI, inviting physicians attending HLTH 2026 to pitch solutions to practical healthcare challenges. Three selected ideas will be developed into working prototypes with Abridge's team and showcased at the Physicians at HLTH reception on November 16. Submissions closed October 20. The initiative marks Abridge's first public collaboration with OpenAI and positions the platform as a co-development environment for clinician-driven innovation.",
       "src": "Abridge / LinkedIn",
       "url": "https://www.abridge.com/hlth2026",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-08",
@@ -795,6 +802,15 @@
       "desc": "Fast Company recognized Abridge for changing how healthcare works for providers, patients, and payers. The honor adds to a wall that already includes Best in KLAS for Ambient AI in 2025 and 2026, TIME Best Inventions, and CNBC Disruptor 50.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press",
+      "new": false
+    },
+    {
+      "date": "2026-08-27",
+      "cat": "Partnership",
+      "title": "Sutter Health + Abridge: Building and Scaling Clinical AI Together",
+      "desc": "Abridge published a detailed partnership timeline with Sutter Health, which first piloted Abridge in 2024. Sutter Health serves 3.6 million patients with approximately 64,000 clinicians, staff, and affiliated physicians, and has scaled one of the widest and deepest enterprise AI deployments in U.S. healthcare. The blog post traces the evolution from pilot to system-wide adoption across ambulatory and inpatient settings.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/sutter-health-partnership-timeline",
       "new": false
     },
     {
@@ -954,6 +970,15 @@
       "desc": "Abridge partnered with Availity to connect clinical documentation to payer workflows and AI-assisted prior authorization. The collaboration pushes Abridge downstream from the note into payment adjudication, one of the most friction-heavy steps between visit and reimbursement.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press"
+    },
+    {
+      "date": "2025-02-26",
+      "cat": "Partnership",
+      "title": "Inova Health Selects Abridge as System-Wide Generative AI Platform",
+      "desc": "Inova Health, a Northern Virginia health system, chose Abridge as its system-wide generative AI platform for clinical conversations. The Abridge AI platform converts patient-clinician conversations into clinical notes for Inova's healthcare providers, aiming to improve documentation quality and clinician experience.",
+      "src": "MobiHealthNews",
+      "url": "https://www.mobihealthnews.com/news/abridge-will-deliver-ai-powered-clinical-conversations-inova-health",
+      "new": false
     },
     {
       "date": "2025-09-30",
@@ -1208,7 +1233,15 @@
     {
       "name": "Abridge - Physician Builder Challenge with OpenAI at HLTH 2026 (Oct 9, 2026)",
       "url": "https://www.abridge.com/hlth2026"
+    },
+    {
+      "name": "Abridge - Sutter Health partnership timeline (Aug 27, 2026)",
+      "url": "https://www.abridge.com/blog/sutter-health-partnership-timeline"
+    },
+    {
+      "name": "MobiHealthNews - Inova Health selects Abridge (Feb 26, 2025)",
+      "url": "https://www.mobihealthnews.com/news/abridge-will-deliver-ai-powered-clinical-conversations-inova-health"
     }
   ],
-  "updated": "2026-11-04"
+  "updated": "2026-11-06"
 }

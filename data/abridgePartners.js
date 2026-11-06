@@ -22,7 +22,7 @@ var abridgePartnersData = [
   {name:"Duke Health",type:"Health system · enterprise deployment",date:"2025-2026",url:"https://www.abridge.com/",new:false},
   {name:"Emory Healthcare",type:"Health system · enterprise deployment",date:"2025-2026",url:"https://www.abridge.com/",new:false},
   {name:"Yale New Haven Health",type:"Health system · enterprise deployment",date:"2025-2026",url:"https://www.abridge.com/",new:false},
-  {name:"Sutter Health",type:"Health system · enterprise deployment",date:"2025-2026",url:"https://www.abridge.com/",new:false},
+  {name:"Sutter Health",type:"Health system · 3.6M patients, 64K clinicians, enterprise deployment",date:"2024-2026",url:"https://www.abridge.com/blog/sutter-health-partnership-timeline",new:false},
   {name:"UPMC",type:"Health system · Abridge Inside for Inpatient",date:"2025-2026",url:"https://sacra.com/c/abridge/",new:false},
   {name:"Northwestern Medicine",type:"Health system · platform launch partner",date:"Jun 11, 2026",url:"https://hlth.com/insights/news/abridge-launches-ai-powered-clinician-intelligence-platform-in-northwestern-medicine-deployment",new:false},
   {name:"Corewell Health",type:"Health system · Abridge Assistant enterprise deployment",date:"Oct 7, 2026",url:"https://www.abridge.com/blog/corewell-kristin-jacob-abridge-assistant",new:false},
@@ -30,6 +30,7 @@ var abridgePartnersData = [
   {name:"University of Texas System (UT REAL Health AI)",type:"8 health institutions · enterprise-wide framework",date:"Oct 8, 2026",url:"https://www.abridge.com/press-release/ut-health-enterprise-wide",new:false},
   {name:"WashU Medicine / BJC Health",type:"Health system · 4,000 clinicians expanded",date:"Sep 2, 2026",url:"https://www.abridge.com/press-release/bjchealth-washumedicine-expand-abridge",new:false},
   {name:"U.S. Department of Veterans Affairs",type:"Federal · $775.72M multi-award enterprise contract",date:"Sep 22, 2026",url:"https://www.abridge.com/press-release/va-enterprise-contract",new:false},
+  {name:"Inova Health",type:"Health system · Northern Virginia, system-wide AI platform",date:"Feb 26, 2025",url:"https://www.mobihealthnews.com/news/abridge-will-deliver-ai-powered-clinical-conversations-inova-health",new:false},
   {name:"Seattle Children's",type:"Pediatric health system · enterprise",date:"Sep 2025",url:"https://www.mobihealthnews.com/",new:false},
   {name:"HCA Healthcare / Tenet Healthcare",type:"Reported customers (2026)",date:"2026",url:"https://multiples.vc/private-comps/abridge",new:false},
 
