@@ -5669,5 +5669,126 @@
       "primary_outcome": "engagement (2+ PHQ-9/GAD-7)"
     },
     "dataset": "Multi-site primary care practices"
+  },
+  {
+    "id": "pmid:42989260",
+    "pmid": "42989260",
+    "title": "LLM Diagnostic Reasoning in Pathology - Expert Evaluation",
+    "authors": "Waqas A et al.",
+    "journal": "Diagn Pathol",
+    "pub_date": "2026-07-29",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42989260/",
+    "doi": "10.1186/s13000-026-01809-4",
+    "source": "PubMed",
+    "category": "LLM Clinical Reasoning Benchmark",
+    "description": "Expert evaluation of diagnostic reasoning quality in 4 LLMs (OpenAI o1, o3-mini, Gemini 2.0 Flash Thinking, DeepSeek-R1) using 15 board-level pathology questions. 11 expert pathologists scored on 5 language quality + 7 reasoning strategy metrics. Gemini outperformed in reasoning quality, depth, coherence. All comparable on factual accuracy. Only Gemini and DeepSeek showed expert-like reasoning patterns.",
+    "metrics": {
+      "models_evaluated": [
+        "OpenAI o1",
+        "OpenAI o3-mini",
+        "Gemini 2.0 Flash Thinking",
+        "DeepSeek-R1"
+      ],
+      "questions": 15,
+      "evaluators": 11,
+      "best_overall": "Gemini 2.0 Flash Thinking",
+      "significance": "p<0.001 for Gemini inter-observer agreement"
+    },
+    "dataset": "15 constructed-response pathology questions (board-examination level)"
+  },
+  {
+    "id": "pmid:42987267",
+    "pmid": "42987267",
+    "title": "ASA-PS Classification Hybrid ML-LLM Ensemble Validation",
+    "authors": "Pabalan C et al.",
+    "journal": "J Med Internet Res",
+    "pub_date": "2026-11-05",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42987267/",
+    "doi": "10.2196/90724",
+    "source": "PubMed",
+    "category": "Clinical AI Classification Benchmark",
+    "description": "Hybrid ML-LLM ensemble (XGBoost + GPT-4o) for ASA-PS classification. 3000 surgical encounters. Expert ceiling macro-F1=0.59. Parallel ensemble: macro-F1=0.530, exact match 0.630, \u00b11-class accuracy 0.980. LLM-only: macro-F1=0.493. ML-only: macro-F1=0.333.",
+    "metrics": {
+      "ensemble_macro_f1": 0.53,
+      "ensemble_exact_match": 0.63,
+      "ensemble_pm1_accuracy": 0.98,
+      "llm_only_macro_f1": 0.493,
+      "ml_only_macro_f1": 0.333,
+      "expert_ceiling_macro_f1": 0.59,
+      "n_cases": 3000
+    },
+    "dataset": "3000 adult surgical encounters (UAMS, Aug 2024-May 2025)"
+  },
+  {
+    "id": "pmid:42985448",
+    "pmid": "42985448",
+    "title": "AI vs Physician Decision-Making in Acute Heart Failure",
+    "authors": "Zakynthinos GE et al.",
+    "journal": "Eur Heart J Digit Health",
+    "pub_date": "2026-10-24",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42985448/",
+    "doi": "10.1093/ehjdh/ztag169",
+    "source": "PubMed",
+    "category": "AI vs Physician Comparison",
+    "description": "Comparative evaluation of ChatGPT, ChatGPT Plus, DeepSeek, and ESC guideline-based RAG model vs physicians for acute heart failure management. ChatGPT Plus best (86.5% accuracy). RAG 77.5%, ChatGPT 77.0%, DeepSeek 69.0%. Cochran's Q=8.477, p=0.037.",
+    "metrics": {
+      "chatgpt_plus_accuracy": "86.5%",
+      "chatgpt_plus_sensitivity": "87.0%",
+      "chatgpt_plus_specificity": "86.0%",
+      "rag_accuracy": "77.5%",
+      "chatgpt_accuracy": "77.0%",
+      "deepseek_accuracy": "69.0%",
+      "cochran_q": 8.477,
+      "p_value": 0.037
+    },
+    "dataset": "Consecutive AHF patients (Sotiria Hospital, Jul-Nov 2025)"
+  },
+  {
+    "id": "pmid:42984981",
+    "pmid": "42984981",
+    "title": "TongueBench: LMM Performance in TCM Tongue Diagnosis",
+    "authors": "Meng Y et al.",
+    "journal": "Front Artif Intell",
+    "pub_date": "2026-10-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42984981/",
+    "doi": "10.3389/frai.2026.1943004",
+    "source": "PubMed",
+    "category": "Medical AI Benchmark",
+    "description": "TongueBench: prompt-controlled, ontology-constrained evaluation of 9 LMMs on 2,694 tongue images with 22 expert labels. Three prompting strategies (DP, KGP, KGRP). KGRP improved Micro-F1 from 47.57% to 48.51%, Macro-F1 from 32.41% to 33.60%. Supervised models outperformed on matched split.",
+    "metrics": {
+      "n_models": 9,
+      "n_images": 2694,
+      "n_labels": 22,
+      "kgrp_micro_f1": "48.51%",
+      "kgrp_macro_f1": "33.60%",
+      "dp_micro_f1": "47.57%",
+      "dp_macro_f1": "32.41%",
+      "kgrp_hamming_loss": "25.54%"
+    },
+    "dataset": "2,694 tongue images with 22 expert-adjudicated labels"
+  },
+  {
+    "id": "pmid:42984806",
+    "pmid": "42984806",
+    "title": "ChatGPT vs DeepSeek vs Doubao for Pediatric IgA Vasculitis Patient Education",
+    "authors": "Fei X et al.",
+    "journal": "Front Med (Lausanne)",
+    "pub_date": "2026-10-21",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42984806/",
+    "doi": "10.3389/fmed.2026.1974214",
+    "source": "PubMed",
+    "category": "LLM Patient Education Evaluation",
+    "description": "32 standardized questions to ChatGPT, DeepSeek, Doubao for pediatric IgA vasculitis (96 responses). Omissions: 0/32 ChatGPT, 5/32 DeepSeek, 11/32 Doubao. Outdated advice in 2.08%. Significant differences in GQS, mDISCERN, QAMAI, PEMAT scores (all p<0.01).",
+    "metrics": {
+      "n_questions": 32,
+      "n_responses": 96,
+      "omission_rate": "16.67%",
+      "chatgpt_omissions": 0,
+      "deepseek_omissions": 5,
+      "doubao_omissions": 11,
+      "outdated_advice_rate": "2.08%",
+      "hallucinations": 0
+    },
+    "dataset": "32 standardized English questions on pediatric IgA vasculitis"
   }
 ]
