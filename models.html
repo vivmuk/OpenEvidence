@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Stack - OpenEvidence Insights</title>
+<meta name="description" content="Which underlying models power each clinical AI tool - OpenEvidence, ChatGPT for Clinicians, Doximity Ask, UpToDate Expert AI, Abridge, Dragon Copilot and more - with dated, clickable sources.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="sidebarOverlay" role="presentation" aria-hidden="true" onclick="toggleSidebar()"></div>
+<div class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-dot"></span> OpenEvidence Insights</div>
+  <div class="nav-links">
+    <a href="./">📊 Overview</a>
+    <a href="timeline">📅 Timeline</a>
+    <a href="funding">💰 Funding</a>
+    <a href="products">🚀 Products</a>
+    <a href="features">🧩 Features</a>
+    <a href="competitors">⚔️ Competitors</a>
+    <a href="partnerships">🤝 Partnerships</a>
+    <a href="publishers">🗞️ Publishers</a>
+    <a href="tech">⚙️ Tech Stack</a>
+    <a href="models" class="active">🧬 Model Stack</a>
+    <a href="pharma">💊 Pharma</a>
+    <a href="benchmarks">🔬 Benchmarks</a>
+    <a href="sct">🧪 SCT Benchmark</a>
+    <a href="publications">📄 Publications</a>
+    <a href="doximity">🩺 Doximity Ask</a>
+    <a href="abridge">🌉 Abridge</a>
+    <a href="personal-health-agents">🫀 Personal Health Agents</a>
+    <a href="global">🌍 Global Landscape</a>
+    <a href="future">🔮 Future</a>
+    <a href="sources">📚 Sources</a>
+  </div>
+  <div class="sidebar-footer">
+    <button class="theme-toggle" aria-pressed="false" onclick="toggleTheme()">☀ Light Mode</button>
+    <div class="updated-info">Updated: Nov 7, 2026</div>
+  </div>
+</div>
+<div class="main-content">
+  <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleSidebar()">☰</button>
+  <section id="models">
+    <div class="container">
+      <h1 class="page-title">Model <span class="accent">Stack</span></h1>
+      <p class="section-sub">Which underlying model actually powers each clinical AI tool — and how confident we are, with a dated clickable source for every claim.</p>
+
+      <div class="takeaway-grid">
+        <div class="takeaway-card">
+          <h3>Why this is hard to state</h3>
+          <p>Vendors rarely publish which model is under the hood. They publish which <em>capability</em> they have. A model named in a blog post 8 months ago may have been replaced twice since. So every claim here carries the date it was true, the source it came from, and how it was verified — and where a tool simply does not disclose its model, that is what it says.</p>
+        </div>
+        <div class="takeaway-card">
+          <h3>Conflict rule</h3>
+          <p>Where sources disagree, the <strong>most recent dated statement wins</strong> — typically a vendor release note or model card, since vendors update their own claims first. The losing claim is kept and shown, not deleted, with the resolution explained. Where nothing is dated, the oldest verifiable statement wins over a newer undated one.</p>
+        </div>
+        <div class="takeaway-card">
+          <h3>Confidence vocabulary</h3>
+          <p><span class="confidence confirmed">Disclosed</span> the vendor states the model. <span class="confidence reported">Reported</span> a credible third party states it. <span class="confidence inferred">Inferred</span> deduced from other evidence — the reasoning is shown. <span class="confidence inferred">Undisclosed</span> no public statement; an honest answer, not a gap.</p>
+        </div>
+      </div>
+
+      <h2>Models by tool</h2>
+      <div class="model-grid" id="modelGrid"></div>
+
+      <div class="confidence-legend">
+        <span class="confidence confirmed">Disclosed</span>
+        <span class="confidence reported">Reported</span>
+        <span class="confidence inferred">Inferred</span>
+        <span class="confidence inferred">Undisclosed</span>
+      </div>
+
+      <div class="takeaway-grid" style="margin-top:40px">
+        <div class="takeaway-card">
+          <h3>What this shows</h3>
+          <p>Clinician-facing AI has converged on a small number of frontier model families — GPT, Claude, Gemini — used either directly or fine-tuned into a vertical clinical model. The interesting differences are not the base model but what sits on top: the retrieval corpus, whether answers are grounded with citations, whether the clinician can pick the model, and how quickly the vendor ships a new one.</p>
+        </div>
+        <div class="takeaway-card">
+          <h3>The disclosure gap</h3>
+          <p>Ambient documentation vendors and consumer health apps disclose far less than foundation-model labs and EHR vendors. That asymmetry is itself the finding: for several tools below, the model is genuinely not public, and no amount of inference from benchmark results can substitute for a vendor statement.</p>
+        </div>
+        <div class="takeaway-card">
+          <h3>Caveats</h3>
+          <p>Model names in this section are what the cited source said on the cited date — not a guarantee of what ships today, and enterprise contracts can pin a version for months. Verify against the primary source before relying on any claim. Benchmarks measure a configuration, not a product.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="data/metrics.js"></script>
+<script src="shared.js"></script>
+<script src="data/whatsNew.js"></script>
+<script src="data/modelStack.js"></script>
+<script>
+(function () {
+  var CONF = {
+    disclosed:  { label: 'Disclosed',  cls: 'confirmed' },
+    reported:   { label: 'Reported',   cls: 'reported'  },
+    inferred:   { label: 'Inferred',   cls: 'inferred'  },
+    undisclosed:{ label: 'Undisclosed',cls: 'inferred'  }
+  };
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
+  function escAttr(s) {
+    return esc(s).replace(/`/g, '&#96;');
+  }
+
+  function renderCard(m) {
+    var conf = CONF[m.confidence] || CONF.inferred;
+    var html = '';
+
+    html += '<div class="m-head">';
+    html += '<div><h3>' + esc(m.tool) + '</h3></div>';
+    html += '<span class="confidence ' + conf.cls + '">' + esc(conf.label) + '</span>';
+    html += '</div>';
+    html += '<div class="m-vendor">' + esc(m.vendor) +
+            (m.category ? ' · ' + esc(m.category) : '') + '</div>';
+
+    html += '<div class="m-model">';
+    if (m.model) {
+      html += esc(m.model);
+      if (m.userSelectable) html += '<span class="m-picker">User-selectable</span>';
+    } else {
+      html += '<span class="m-undisclosed">Not disclosed</span>';
+    }
+    html += '</div>';
+    if (m.asOf) html += '<div class="m-asof">As of ' + esc(m.asOf) + '</div>';
+
+    if (m.conflict) {
+      html += '<div class="m-conflict"><b>Conflict resolved:</b> ' + esc(m.conflict) + '</div>';
+    }
+
+    if (m.notes) html += '<div class="m-notes">' + esc(m.notes) + '</div>';
+
+    if (m.stack && m.stack.length) {
+      html += '<div class="m-stack">';
+      m.stack.forEach(function (r) {
+        html += '<div class="row"><span class="k">' + esc(r.l) + '</span><span class="v">' + esc(r.v) + '</span></div>';
+      });
+      html += '</div>';
+    }
+
+    if (m.citations && m.citations.length) {
+      html += '<div class="m-cites"><div class="cite-h">Sources</div><ol>';
+      m.citations.forEach(function (c) {
+        html += '<li><a href="' + escAttr(c.url) + '" target="_blank" rel="noopener">' + esc(c.title) + '</a>';
+        if (c.date) html += ' <span class="c-date">' + esc(c.date) + '</span>';
+        if (c.kind) html += '<span class="c-kind">' + esc(c.kind) + '</span>';
+        if (c.quote) html += '<div class="m-quote">' + esc(c.quote) + '</div>';
+        html += '</li>';
+      });
+      html += '</ol></div>';
+    }
+
+    if (m.alternatives && m.alternatives.length) {
+      html += '<div class="m-alt">Also seen: ';
+      html += m.alternatives.map(function (a) {
+        var s = esc(a.model);
+        if (a.url) s = '<a href="' + escAttr(a.url) + '" target="_blank" rel="noopener">' + s + '</a>';
+        if (a.note) s += ' (' + esc(a.note) + ')';
+        if (a.date) s += ' ' + esc(a.date);
+        return s;
+      }).join(' · ');
+      html += '</div>';
+    }
+
+    return '<div class="model-card">' + html + '</div>';
+  }
+
+  function render() {
+    var data = typeof modelStackData !== 'undefined' ? modelStackData : [];
+    var el = document.getElementById('modelGrid');
+    if (!el) return;
+    if (!data.length) {
+      el.innerHTML = '<p class="section-sub">No entries yet.</p>';
+      return;
+    }
+    el.innerHTML = data.map(renderCard).join('');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+})();
+</script>
+</body>
+</html>

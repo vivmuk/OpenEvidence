@@ -13,6 +13,7 @@
 - /data/research.json — consolidated research studies (PubMed + arXiv + Semantic Scholar)
 - /data/abridge.json — Abridge company tracker: news timeline, funding, products, partners, research, sources
 - /data/pha.json — personal health agents tracker: landscape, news timeline, evidence, sources
+- /data/models.json — model stack: which underlying model powers each clinical AI tool, with dated source citations
 
 ## Data Endpoints (CSV, original format)
 - /data/timeline.csv
@@ -26,6 +27,7 @@
 - Main dashboard: / (index.html)
 - Abridge tracker: /abridge (dedicated competitor/news page)
 - Personal health agents tracker: /personal-health-agents (consumer-facing health AI)
+- Model stack: /models (which model powers each clinical AI tool, with clickable dated sources)
 - All data updated by automated cron jobs (daily announcement check + weekly research sweep)
 
 ## Agent Context File

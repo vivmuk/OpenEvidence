@@ -1276,3 +1276,57 @@ tbody a:hover { text-decoration: underline; }
   border-radius: 3px; padding: 1px 4px; margin-left: 6px; vertical-align: 1px;
 }
 .global-matrix tr.matrix-new td { background: rgba(228,100,61,0.035); }
+
+/* --- MODEL STACK PAGE -----------------------------------------------------
+   Which model actually powers each clinical AI tool. The hard part is
+   provenance: a claim is only as good as the dated source behind it, so
+   every row carries its citations inline rather than in a footnote. */
+.model-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr));
+  gap: 18px; margin: 24px 0 40px;
+}
+.model-card {
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: var(--oe-radius-lg); padding: 22px; transition: border-color 0.2s;
+}
+.model-card:hover { border-color: var(--oe-orange); }
+.model-card .m-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 4px; }
+.model-card h3 { font-size: 17px; font-weight: 700; margin: 0; }
+.model-card .m-vendor { font-size: 12px; color: var(--oe-text-muted); margin-bottom: 14px; }
+.model-card .m-model {
+  font-size: 15px; font-weight: 600; color: var(--oe-orange); margin-bottom: 4px;
+}
+.model-card .m-model .m-undisclosed { color: var(--oe-text-muted); font-style: italic; font-weight: 500; }
+.model-card .m-asof { font-size: 11px; color: var(--oe-text-muted); margin-bottom: 12px; }
+.model-card .m-notes { font-size: 13px; color: var(--oe-text-dim); line-height: 1.6; margin-bottom: 14px; }
+.model-card .m-stack { display: grid; gap: 6px; margin-bottom: 14px; }
+.model-card .m-stack .row { display: grid; grid-template-columns: 108px 1fr; gap: 10px; font-size: 12px; }
+.model-card .m-stack .row .k { color: var(--oe-text-muted); }
+.model-card .m-stack .row .v { color: var(--oe-text-dim); }
+.model-card .m-cites { border-top: 1px solid var(--oe-dark-border); padding-top: 12px; }
+.model-card .m-cites .cite-h { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--oe-text-muted); margin-bottom: 8px; }
+.model-card .m-cites ol { margin: 0; padding-left: 18px; }
+.model-card .m-cites li { font-size: 12px; line-height: 1.5; margin-bottom: 6px; }
+.model-card .m-cites a { color: var(--oe-orange); text-decoration: none; }
+.model-card .m-cites a:hover { text-decoration: underline; }
+.model-card .m-cites .c-date { color: var(--oe-text-muted); font-variant-numeric: tabular-nums; }
+.model-card .m-cites .c-kind {
+  font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; margin-left: 5px;
+  border: 1px solid var(--oe-dark-border); border-radius: 3px; padding: 1px 4px; color: var(--oe-text-muted);
+}
+.model-card .m-quote {
+  font-size: 11px; color: var(--oe-text-muted); line-height: 1.5; margin-top: 4px;
+  border-left: 2px solid var(--oe-dark-border); padding-left: 8px; font-style: italic;
+}
+.model-card .m-conflict {
+  font-size: 12px; color: var(--oe-text-dim); background: var(--oe-dark-soft);
+  border-radius: var(--oe-radius); padding: 9px 11px; margin-bottom: 12px;
+}
+.model-card .m-conflict b { color: var(--oe-text-dim); font-weight: 600; }
+.model-card .m-alt { font-size: 12px; color: var(--oe-text-muted); margin-top: 10px; }
+.model-card .m-alt a { color: var(--oe-text-muted); }
+.model-card .m-picker {
+  display: inline-block; font-size: 10px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.05em; border: 1px solid var(--oe-orange); color: var(--oe-orange);
+  border-radius: 3px; padding: 1px 5px; margin-left: 6px; vertical-align: 1px;
+}
