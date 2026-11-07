@@ -14,13 +14,13 @@
       "tool": "OpenEvidence",
       "vendor": "OpenEvidence",
       "category": "Clinical decision support / medical search",
-      "model": "Osler · Sackett · Snow   (+ Darwin in research preview)",
+      "model": "OpenEvidence Model Family — Osler (fast, default, ~5s), Sackett (deeper search, ~30s), Snow (successor to Deep Consult, ~5 min), Darwin (frontier reasoning model, research preview, application-only)",
       "modelFamily": "OpenEvidence Model Family (Osler / Sackett / Snow / Darwin) — proprietary, base architecture never disclosed",
       "confidence": "disclosed",
       "asOf": "2026-11-03",
       "userSelectable": true,
       "notes": "OpenEvidence released a named model family on 2026-09-03: Osler (fast, default, ~5s), Sackett (deeper search, ~30s), Snow (successor to Deep Consult, ~5 min), plus Darwin (frontier reasoning model, research preview and API by application only). All three production models are user-selectable via a model selector in the interface and free for verified clinicians. The stack is custom domain-specialized LLMs trained on licensed peer-reviewed literature (NEJM, JAMA specialty journals, NCCN, Springer Nature) and deliberately not on the open internet, trained and served on Baseten (Baseten Training + Baseten Embeddings Inference; end-to-end latency 700ms to 160ms; 'billions of custom, fine-tuned LLM calls per week'), with a corpus-anchored retrieval layer that selects the most relevant papers and grades evidence strength (EvidenceGrade, GRADE-inspired). Frontend is Next.js on Vercel; backend is Python/ML. No base model, parameter count, or architecture is disclosed for any of the four models; CEO Daniel Nadler describes an 'ensemble architecture' of roughly half a dozen smaller specialized models (retrieval, ranking, synthesis) rather than one large model. Separately, Reuters reported on 2026-09-22 that Anthropic's technology provides back-end support for the free, locally adapted OpenEvidence rollout across ~100 low- and middle-income countries — the only public sign that any part of OpenEvidence runs on Claude.",
-      "conflict": "Baseten says OpenEvidence trains 'custom open-source models' but never names a base model, so 'fine-tuned open-weight base' is inference, not disclosure. The Sep 3 announcement is product naming, not a technical spec. The Anthropic link is back-end technology for the free LMIC rollout only — no evidence the US product's answers are Claude-generated. A third-party systems-design essay speculates on H100 sizing and LoRA adapters; plausible, but unverified, so not treated as fact.",
+      "conflict": "Baseten's training case study says OpenEvidence trains 'custom open-source models' but never names a base model, so 'fine-tuned open-weight base model' is inference, not disclosure. The 2026-09-03 model-family announcement is product naming, not a technical spec — it does not say whether Osler/Sackett/Snow/Darwin are single models or ensembles, nor whether Darwin uses Claude. The Anthropic partnership is a back-end technology relationship for the global/LMIC edition only; there is no evidence the US product's answers are Claude-generated. The pre-September-2026 default model was never named. A third-party systems-design essay speculates on H100 fleet sizing, LoRA/PEFT adapters and cross-encoder rerankers — plausible but unverified by the vendor, so not treated as fact.",
       "stack": [
         {
           "l": "Models",
@@ -165,7 +165,7 @@
       "tool": "ChatGPT for Clinicians",
       "vendor": "OpenAI",
       "category": "General-purpose LLM with clinical layer",
-      "model": "GPT-6   (Sol at Instant–Extra High; Pro = Astra)",
+      "model": "GPT-6  (Sol at Instant–Extra High; Pro powered by Astra)",
       "modelFamily": "GPT-6 (GPT-6 Sol at Instant-Extra High; GPT-6 Pro powered by GPT-6 Astra at Pro effort)",
       "confidence": "disclosed",
       "asOf": "2026-11-07",
@@ -380,6 +380,67 @@
       ]
     },
     {
+      "tool": "Pathway Medical",
+      "vendor": "Doximity",
+      "category": "AI clinical reference (absorbed into Doximity Ask)",
+      "model": "Doximity Ask V7 — Pathway's corpus and AI model are now part of Ask",
+      "modelFamily": "Doximity post-trained reasoning model (Pathway's model integrated into it)",
+      "confidence": "disclosed",
+      "asOf": "2025-09-17",
+      "userSelectable": null,
+      "notes": "Pathway Medical was a Montreal clinical-reference AI that Doximity acquired for $63M (announced Aug 7, 2025; closed July 29). It is no longer a standalone product: Doximity's own announcement of the integration states that 'their medical corpus and AI model are fully integrated into Doximity Ask, live across web and mobile' — so the current answer to 'what model powers Pathway' is the Doximity Ask stack, not a separate one. Pathway's contribution was its structured, cross-linked medical dataset spanning guidelines, drugs and landmark trials, with an evidence-strength scorer; Doximity's CEO Jeff Tangney described it as 'much more than an LLM'. Pathway's model had set a USMLE record of 96% at acquisition, which Vera Health later surpassed at 97.5%.",
+      "conflict": "The acquisition coverage of 2025 describes Pathway as having its own model; that model now runs inside Doximity Ask rather than as a separate service. Tracked here as a discontinued standalone entry rather than a current one.",
+      "stack": [
+        {
+          "l": "Status",
+          "v": "Acquired by Doximity Aug 2025 ($63M); no standalone product"
+        },
+        {
+          "l": "Now runs in",
+          "v": "Doximity Ask (web + mobile)"
+        },
+        {
+          "l": "Contribution",
+          "v": "Structured, cross-linked guideline/drug/trial dataset + evidence scoring"
+        },
+        {
+          "l": "Peak benchmark",
+          "v": "96% USMLE at acquisition (later surpassed by Vera at 97.5%)"
+        }
+      ],
+      "citations": [
+        {
+          "title": "Doximity Ask: Faster and Peer Reviewed | Doximity",
+          "url": "https://blog.doximity.com/articles/Doximity-Ask-Faster-and-Peer-Reviewed",
+          "date": "2025-09-17",
+          "kind": "vendor",
+          "quote": "Just seven weeks ago, we acquired Pathway, a leader in AI clinical reference. Today, their medical corpus and AI model are fully integrated into Doximity Ask, live across web and mobile."
+        },
+        {
+          "title": "Doximity Acquires Pathway, a Leader in AI Clinical Reference",
+          "url": "https://investors.doximity.com/news/news-details/2025/Doximity-Acquires-Pathway-a-Leader-in-AI-Clinical-Reference/",
+          "date": "2025-08-07",
+          "kind": "vendor",
+          "quote": "$63M acquisition brings physician AI team and datasets to Doximity's AI suite"
+        },
+        {
+          "title": "Doximity acquires AI-powered clinical decision support tool | TechTarget",
+          "url": "https://www.techtarget.com/virtualhealthcare/news/366629094/Doximity-acquires-AI-powered-clinical-decision-support-tool",
+          "date": "2025-08-12",
+          "kind": "press",
+          "quote": "Doximity has acquired Pathway Medical, an AI-based clinical reference tool, for $63 million"
+        }
+      ],
+      "alternatives": [
+        {
+          "model": "Doximity Ask V7",
+          "note": "the current product that carries Pathway's model",
+          "url": "https://blog.doximity.com/articles/Doximity-Ask-Faster-and-Peer-Reviewed",
+          "date": "2025-09-17"
+        }
+      ]
+    },
+    {
       "tool": "UpToDate Expert AI",
       "vendor": "Wolters Kluwer",
       "category": "Clinical decision support / point-of-care reference",
@@ -479,16 +540,107 @@
       ]
     },
     {
+      "tool": "Vera Health",
+      "vendor": "Vera Health",
+      "category": "Clinical decision support / evidence-graded search",
+      "model": null,
+      "modelFamily": "Vera's own medical reasoning models (not named publicly)",
+      "confidence": "undisclosed",
+      "asOf": "2025-10-14",
+      "userSelectable": null,
+      "notes": "Vera Health does not publish the model behind its reasoning; its retrieval layer is the documented part of the stack. ZeroEntropy's own engineering case study describes Vera integrating the full ZeroEntropy retrieval API — hybrid search plus a precision reranker that filters and orders results so only the top evidence-based snippets reach the LLM — across more than 60 million peer-reviewed papers and clinical guidelines, and credits 'ZeroEntropy's retrieval intelligence' combined with 'Vera's medical reasoning models and AI Agents'. The same case study reports Vera setting a USMLE record of 97.5%, ahead of Pathway's 94%, Claude 3 Sonnet at 71% on NEJM Q&A, and GPT-4o at 37% on MedXpertQA. Vera's own site benchmarks itself against GPT-6, Gemini 3 and Claude Opus 5 on the Real-POCQi point-of-care question set. Note the retrieval dependency has since changed hands: ZeroEntropy was acquired by Notion in July 2026 and published a migration guide for applications moving off its API, so the retrieval layer Vera documents may no longer be the one in production. Vera raised a $28.5M Series A (Oct 2026) and reports 800,000+ clinicians across 190 countries.",
+      "conflict": "ZeroEntropy's case study is the clearest public description of the stack, but it dates from October 2025 and predates ZeroEntropy's acquisition by Notion in July 2026 and the accompanying API-migration guide. Vera's own site does not name the model or the retrieval vendor, so the current production configuration cannot be confirmed from a vendor source.",
+      "stack": [
+        {
+          "l": "Model",
+          "v": "Not disclosed — 'Vera's medical reasoning models'"
+        },
+        {
+          "l": "Retrieval",
+          "v": "ZeroEntropy Retrieval API — hybrid search + reranker (as of Oct 2025)"
+        },
+        {
+          "l": "Corpus",
+          "v": "60M+ peer-reviewed papers, guidelines, consensus statements, drug labels"
+        },
+        {
+          "l": "Evidence grading",
+          "v": "Own strength grading; red = thin evidence, shown to the clinician"
+        },
+        {
+          "l": "Benchmark",
+          "v": "USMLE 97.5% record; compared vs GPT-6 / Gemini 3 / Claude Opus 5"
+        }
+      ],
+      "citations": [
+        {
+          "title": "How Vera Health Achieved State-of-the-Art Clinical Accuracy Using ZeroEntropy",
+          "url": "https://zeroentropy.dev/articles/how-vera-health-achieved-state-of-the-art-clinical-accuracy-using-zeroentropy/",
+          "date": "2025-10-14",
+          "kind": "press",
+          "quote": "Behind this performance is ZeroEntropy's Retrieval API, powering real-time search and retrieval across more than 60 million peer-reviewed papers and clinical guidelines."
+        },
+        {
+          "title": "ZeroEntropy case study — precision reranking",
+          "url": "https://zeroentropy.dev/articles/how-vera-health-achieved-state-of-the-art-clinical-accuracy-using-zeroentropy/",
+          "date": "2025-10-14",
+          "kind": "press",
+          "quote": "ZeroEntropy's reranker filters and orders results for clinical relevance, ensuring that only the top evidence-based snippets reach the LLM"
+        },
+        {
+          "title": "ZeroEntropy case study — Vera's own models",
+          "url": "https://zeroentropy.dev/articles/how-vera-health-achieved-state-of-the-art-clinical-accuracy-using-zeroentropy/",
+          "date": "2025-10-14",
+          "kind": "press",
+          "quote": "By combining ZeroEntropy's retrieval intelligence with Vera's medical reasoning models and AI Agents"
+        },
+        {
+          "title": "Vera Health raises $32 million | Vera Health",
+          "url": "https://www.verahealth.ai/blog/vera-health-raises-32-million",
+          "date": "2026-10-27",
+          "kind": "vendor",
+          "quote": "Vera Health finds the evidence first, then writes the answer, searching more than 60 million peer-reviewed publications, clinical guidelines, consensus statements and drug labels."
+        },
+        {
+          "title": "Vera Health — company site (model comparison)",
+          "url": "https://www.verahealth.ai/",
+          "date": "undated (accessed 2026-11-07)",
+          "kind": "vendor",
+          "quote": "How does Vera compare with frontier AI labs on the questions doctors really ask? We put 100 real point-of-care questions from the Real-POCQi study"
+        }
+      ],
+      "alternatives": [
+        {
+          "model": "Pathway (96% USMLE)",
+          "note": "the previous SOTA Vera overtook; now inside Doximity Ask",
+          "url": "https://zeroentropy.dev/articles/how-vera-health-achieved-state-of-the-art-clinical-accuracy-using-zeroentropy/",
+          "date": "2025-10-14"
+        },
+        {
+          "model": "Claude 3 Sonnet (71% NEJM Q&A)",
+          "note": "comparison baseline",
+          "url": "https://zeroentropy.dev/articles/how-vera-health-achieved-state-of-the-art-clinical-accuracy-using-zeroentropy/",
+          "date": "2025-10-14"
+        },
+        {
+          "model": "GPT-4o (37% MedXpertQA)",
+          "note": "comparison baseline",
+          "url": "https://zeroentropy.dev/articles/how-vera-health-achieved-state-of-the-art-clinical-accuracy-using-zeroentropy/",
+          "date": "2025-10-14"
+        }
+      ]
+    },
+    {
       "tool": "Abridge",
       "vendor": "Abridge",
       "category": "Ambient documentation + clinical decision support",
-      "model": "Multi-model: OpenAI GPT-5.x + in-house models",
+      "model": "Multi-model stack — OpenAI GPT-5.5 (note generation + CDS), OpenAI GPT-5.4 (nursing flowsheets), in-house fine-tuned open-source models, in-house LLM-based clinical ASR, plus a co-developed NVIDIA Nemotron-based clinical foundation model (announced Jun 2026, not yet released)",
       "modelFamily": "Mixed: OpenAI GPT-5.x frontier + Abridge in-house + NVIDIA Nemotron-derived",
       "confidence": "disclosed",
       "asOf": "2026-10-25",
       "userSelectable": false,
       "notes": "Abridge explicitly runs a multi-model stack and refuses to name one model: frontier models for high-value reasoning plus purpose-built in-house models for ASR, per-section note generation and ICD-10 coding. Their most recent tech-blog post (Oct 2026) describes an LLM-based clinical ASR model (audio encoder + projector + LLM backbone, SFT then GSPO reinforcement learning) that beats Whisper-large-v3, Qwen3-ASR-1.7B, GPT-4o, GPT-Realtime-2, Gemini 3.1 Pro and Gemini 3.5 Flash on WER and medical-term miss rate; the base LLM is not named. On Jun 11 2026 Abridge and NVIDIA announced a first-of-its-kind foundation model for clinical conversations built on the NVIDIA Nemotron open model family, trained on Blackwell with pre-/mid-/post-training on de-identified data, exclusive to Abridge's platform and expected later in 2026. Model selection is explicitly not exposed to the customer — 'selecting and orchestrating the right model for each task is our responsibility' — and model changes are communicated through a partner release-update process. Clinical decision support is grounded with a curated evidence library (UpToDate, NEJM, JAMA, Wolters Kluwer, ADA, AAFP, Neurology, JCO) with citations, integrated with Epic, Oracle Health and athenahealth.",
-      "conflict": "Abridge uses different models per task: the nursing blog (May 2026) names GPT-5.4, the CDS/note-generation blog (Apr 2026) names GPT-5.5, and CEO Shiv Rao said in April 2026 that ~70-80% of what Abridge does is driven by in-house models with ~30% involving a frontier model. Resolved to GPT-5.5 as the most recently named frontier model.",
+      "conflict": "Sources disagree on which frontier model is live because Abridge uses different models per task: the nursing flowsheet blog (May 2026) names GPT-5.4, the CDS/note-generation blog (Apr 2026) names GPT-5.5, and CEO Shiv Rao said in an April 2026 interview that roughly 70-80% of what Abridge does is driven by in-house models with ~30% involving a frontier model. Resolved to GPT-5.5 as the most recently named frontier model, with GPT-5.4 still named for nursing and the Nemotron model pending.",
       "stack": [
         {
           "l": "Note generation",
@@ -584,13 +736,13 @@
       "tool": "Ambience Healthcare",
       "vendor": "Ambience Healthcare",
       "category": "Ambient documentation + CDI + coding",
-      "model": "OpenAI GPT-5 + proprietary models",
+      "model": "OpenAI GPT-5 (reasoning) combined with Ambience's own proprietary AI reasoning models; ASR is in-house fine-tuned streaming speech models plus a chart-grounded reconciliation LLM",
       "modelFamily": "OpenAI GPT-5 + proprietary Ambience models",
       "confidence": "disclosed",
       "asOf": "2026-09-22",
       "userSelectable": false,
       "notes": "Ambience says its platform is 'powered by proprietary AI reasoning models', and for point-of-care CDI and Chart Chat it names OpenAI explicitly — built on 'OpenAI GPT-5's advanced reasoning capabilities with Ambience's proprietary models', with the coding model trained using OpenAI's Reinforcement Fine-Tuning (the ICD-10 model that beat board-certified physicians by a 27% relative margin). Ambience has deliberately moved up the stack from models to infrastructure: Ambience Chorus (announced Aug 2026) is the shared AI infrastructure and agent harness — a System of Context maintaining a source-linked understanding of the patient across the longitudinal chart, plus a System of Action. On the audio side (Sep 2026) Ambience runs two in-house fine-tuned streaming ASR models in parallel (a large one for narrative structure, a small one specialised for medical terminology) arbitrated by a reconciliation LLM grounded in the patient's chart, inside a rolling-window ensemble. No user-selectable model — 'Ambience Standard' prices on outcomes rather than tokens or seats. Cloud/SaaS via the Microsoft Azure Marketplace since Apr 2025, with Epic, Oracle Health/Cerner and athenahealth integrations; no vendor statement of on-premises deployment. Chart Chat is grounded in BMJ Best Practice with citations.",
-      "conflict": "Granularity differs by source: general company material says only 'proprietary AI reasoning models', while the CDI (Oct 2025) and Chart Chat (Aug 2025) posts name OpenAI GPT-5 and OpenAI Reinforcement Fine-Tuning. The specific GPT-5.x version in production is never stated, so the claim is not upgraded beyond 'GPT-5'.",
+      "conflict": null,
       "stack": [
         {
           "l": "CDI reasoning",
@@ -680,7 +832,7 @@
       "asOf": "2026-09-25",
       "userSelectable": false,
       "notes": "Nabla has deliberately stopped naming frontier models: its Sep 2026 explainer states it combines proprietary and commercial models, each selected for the performance it brings to a specific step of clinical documentation, and that Nabla trains its own smaller specialised models for precise documentation tasks in French and English rather than one big model. The help centre confirms notes are generated 'using a combination of in-house natural language algorithms and Large Language Model (LLMs)'. The only model lineage Nabla has named publicly is the speech layer: 'our model is based on Whisper', fine-tuned on 7,000 hours of manually annotated medical encounter audio, with added hallucination suppression and medical-term accuracy. Integrity is enforced by an atomic-fact verification pass — every note is split into atomic facts checked back against the transcript and patient context before the note is written. A trust-centre AI Model Card (CHAI version 3, Apr 2026) is available only on request, so the underlying models are not public. Nabla hosts on Google Cloud (US for US clients, Belgium/EU otherwise) with speech-to-text via Microsoft Azure, and holds an exclusive partnership with AMI (Yann LeCun's world-model company) for future agentic, FDA-certifiable systems. No user-selectable model; clinicians choose note templates, custom instructions and a personal medical dictionary instead.",
-      "conflict": "Historical sources name OpenAI models — GPT-3 at Copilot launch (Mar 2023), GPT-4 by late 2023 — and press in Jan 2024 described a migration to open-source models. These are stale: Nabla's own most recent statement (Sep 2026) names no model at all, so the current stack is undisclosed rather than GPT-4 or open-source.",
+      "conflict": "Historical sources name OpenAI models — GPT-3 at Copilot launch (Mar 2023), GPT-4 by late 2023 — and press in Jan 2024 described a migration to open-source models. These are stale; Nabla's own most recent public statement (Sep 2026) names no model at all, so the current stack is best characterised as undisclosed rather than GPT-4 or open-source.",
       "stack": [
         {
           "l": "Note generation",
@@ -770,13 +922,13 @@
       "tool": "Heidi Health",
       "vendor": "Heidi Health",
       "category": "Ambient documentation + evidence assistant",
-      "model": "In-house ASR + multi-cloud LLM stack",
+      "model": "Mixed stack — ASR: in-house NVIDIA Parakeet V2 0.6B TDT fine-tuned via NVIDIA NeMo (own weights); note generation: multi-provider LLM stack not named by the vendor (Amazon Bedrock, Google Cloud, self-hosted open-weight models on Amazon EKS); Heidi Evidence: in part built on Anthropic Claude",
       "modelFamily": "NVIDIA Parakeet V2 (ASR) + multi-cloud LLM stack (Claude named for Evidence only)",
       "confidence": "disclosed",
       "asOf": "2026-10-20",
       "userSelectable": false,
       "notes": "Heidi's most recent and most specific model disclosure (Oct 2026) is about speech: it moved off closed vendor ASR to its own stack, fine-tuning the open NVIDIA Parakeet V2 0.6B TDT model on 1,500 hours of curated clinical audio with NVIDIA NeMo and 8x H100s, reaching 9.4% WER and a 93.5% medical-terms F1 (vs 13% WER for its legacy vendor solution), cutting latency from ~3.0s to ~0.7s and OpEx 64%, with 'full model ownership' enabling deployment in any region or private cloud. It is also testing NVIDIA Nemotron 3 Speech-to-Speech for voice agents. For the language side Heidi has not published which LLM writes notes; what is public is the routing architecture — a 'Bedrock for speed, EKS for control' hybrid (Amazon Bedrock for immediate regional compliance, self-hosted open-weight models on Amazon EKS for control), plus an earlier Google Cloud partnership providing 'clinically tuned models and speech-to-text' via Vertex AI Model Garden. The one named LLM is Claude, and only for Heidi Evidence (launched Feb 2026), 'in part built on Claude, Anthropic's AI models', grounding answers in HealthPathways, EMGuidance, MIMS, Vidal, NICE and BMJ Group content with citations. Heidi II (Sep 2026) added agents, memory and journal-grounded answers; clinician approval gates every write-back. No user-selectable model.",
-      "conflict": "Third-party trackers name Gemini/GPT-family models for Heidi's note generation, but Heidi itself only ever names Claude for Heidi Evidence — so the Scribe LLM attribution is reported, not disclosed. The Oct 2026 Nemotron/Parakeet ASR stack supersedes the earlier Google Cloud speech stack.",
+      "conflict": "Third-party trackers name Gemini/GPT-family models for Heidi's note generation and Anthropic Claude for Evidence, but Heidi itself only ever names Claude for Evidence, so the Scribe LLM attribution is reported rather than disclosed. The Oct 2026 Nemotron/Parakeet ASR stack supersedes the earlier Google Cloud-based speech stack.",
       "stack": [
         {
           "l": "Speech recognition",
@@ -987,7 +1139,7 @@
       "asOf": "2026-10",
       "userSelectable": false,
       "notes": "Copilot Health is a real, distinct product: Microsoft launched it on 2026-03-12 as 'a separate, secure space within Copilot' for Microsoft 365 Personal/Family/Premium subscribers in the US, connecting EHRs (HealthEx, 50,000+ US hospitals), labs (Function) and 50+ wearables, with a Health Profile and grounded answers sourced from credible health organizations selected using National Academy of Medicine principles, plus Harvard Health content. Microsoft never names the foundation model serving Copilot Health: its launch post only says it 'makes use of increasingly sophisticated AI' and points to the MAI-DxO medical diagnostic orchestrator research, and the support FAQ states only that data 'is not used to train AI models'. Microsoft Copilot as a product is explicitly a routed multi-model surface (GPT-6 Sol, GPT-6.1 Sol, Claude Opus 5.5, Claude Sonnet 5.5 as of late September 2026), and a clinician review of consumer AI health tools concluded Copilot Health runs on the 'same underlying models' as general-purpose assistants with a health-specific wrapper, but no source names the specific model behind the Health surface. Note: as of the support page's October 2026 update, Copilot Health is temporarily unavailable during the transition to the unified Copilot experience.",
-      "conflict": "Microsoft's broader Copilot stack is public (GPT-6 Sol / GPT-6.1 Sol, Claude Opus 5.5 / Sonnet 5.5), which invites the assumption that Copilot Health runs on one of these. No vendor source makes that link, so the model is recorded as undisclosed rather than inferred.",
+      "conflict": "Microsoft's broader Copilot stack is public (GPT-6 Sol / GPT-6.1 Sol from OpenAI, Claude Opus 5.5 / Sonnet 5.5 from Anthropic, with consumer 'Smart' mode on GPT-5), which invites the assumption that Copilot Health runs on one of these. No vendor source makes that link, so the model is recorded as undisclosed rather than inferred.",
       "stack": [
         {
           "l": "Model",
@@ -1079,13 +1231,13 @@
       "tool": "Apple Intelligence in Health",
       "vendor": "Apple",
       "category": "Consumer health (Health app, Watch)",
-      "model": "Apple Foundation Models 3 (AFM 3)",
+      "model": "Apple Foundation Models (AFM) 3 family — on-device AFM 3 Core and AFM 3 Core Advanced; server-side AFM 3 Cloud / AFM 3 Cloud Pro in Private Cloud Compute (plus ADM 3 Cloud for images)",
       "modelFamily": "Apple Foundation Models, 3rd generation (built in collaboration with Google)",
       "confidence": "disclosed",
       "asOf": "2026-11-03",
       "userSelectable": false,
       "notes": "Apple's Health app is explicitly 'built with Apple Intelligence at its core'; Apple has not published a per-feature mapping from AFM 3 models to individual Health features, so the model stack is disclosed at family level. The current generation (June 2026) is AFM 3: two on-device models (AFM 3 Core, a ~3B-parameter dense model, and AFM 3 Core Advanced, a 20B-parameter sparse model activating 1–4B parameters) and three server models on Private Cloud Compute (AFM 3 Cloud workhorse, AFM 3 Cloud Pro for agentic tool use and complex reasoning, and ADM 3 Cloud for images). AFM 3 Cloud Pro runs on NVIDIA GPUs in Google Cloud while keeping Apple's privacy guarantees. Separate from the AFM text models, Apple's at-home movement evaluations (flexibility, strength, balance, VO2 max) run entirely on device using vision-based AI models, and newer Watch sensing uses purpose-built ML models. Server-side AFM 3 Cloud usage is subject to daily limits, and Apple says paid expansion of server-model access is planned.",
-      "conflict": "No vendor page states which AFM 3 model (Core, Core Advanced, Cloud, Cloud Pro) backs each Health app feature; the family-level mapping is an inference from Apple's 'built with Apple Intelligence at its core' plus AFM 3 being current. The 2025 generation is superseded.",
+      "conflict": "No vendor page states which AFM 3 model (Core, Core Advanced, Cloud, or Cloud Pro) backs each Health app feature; the family-level mapping is an inference from Apple's statement that Health is 'built with Apple Intelligence at its core' plus AFM 3 being the current generation (2026-06-08). The 2025 generation (AFM On-Device 2025, AFM Server 2025) is now superseded.",
       "stack": [
         {
           "l": "Generation",
@@ -1178,13 +1330,13 @@
       "tool": "Google Health / Health Coach",
       "vendor": "Google",
       "category": "Consumer health assistant",
-      "model": "Gemini",
+      "model": "Gemini (version not disclosed for the Health Coach); Google AI Mode in Search uses the latest Gemini models; Personal Health Agent research prototype built on Gemini 2.0 models",
       "modelFamily": "Gemini",
       "confidence": "disclosed",
       "asOf": "2026-10-13",
       "userSelectable": false,
-      "notes": "Google says repeatedly and only that the coach is 'built with Gemini' / 'grounded in Gemini models' — it never names a Gemini version for the consumer Health product, so the family is disclosed but the specific model is not. Google's Gemini app release notes (2026-10-13) introduce 'Gemini 4 Argon' as the current frontier model, with Gemini 3.x Pro/Flash still in the lineup, but there is no statement tying a version to Health Coach. The Health Coach is a Gemini-powered multi-agent system in Google's research lineage (data-science, domain-expert and health-coach agents plus an orchestrator), grounded via Google Health research, the SHARP safety/quality evaluation framework, and a Consumer Health Advisory Panel. The research prototype Personal Health Agent was published in Nature (Oct 2026); Google describes it as three specialised agents built on a base model (e.g. Gemini) with a two-stage data-science module. Google also ships open-weight health models separately (MedGemma 1.5, MedASR) and Health Connect, which is a pure on-device data store with no AI model. No user-facing model picker exists in Google Health.",
-      "conflict": "Google names different Gemini versions for different health surfaces — 'latest Gemini models' for AI Mode, an unspecified version for the Health Coach, and an unnamed base model for the Personal Health Agent research prototype — and never says which serves the shipping app. Recorded as family-level 'Gemini' with the version undisclosed rather than picking one.",
+      "notes": "Google says repeatedly and only that the coach is 'built with Gemini' / 'grounded in Gemini models' — it never names a Gemini version for the consumer Health product, so the family is disclosed but the specific model is not. Google's Gemini app release notes (2026-10-13) introduce 'Gemini 4 Argon' as the current frontier model, with Gemini 3.x Pro/Flash still in the lineup, but there is no statement tying a version to Health Coach. The Health Coach is a Gemini-powered multi-agent system in Google's research lineage (data-science, domain-expert and health-coach agents plus an orchestrator), grounded via Google Health research, the SHARP safety/quality evaluation framework, and a Consumer Health Advisory Panel. The research prototype Personal Health Agent was published in Nature (Oct 2026) and is described as built on Gemini 2.0 models. Google also ships open-weight health models separately (MedGemma 1.5, MedASR) and Health Connect, which is a pure on-device data store with no AI model. No user-facing model picker exists in Google Health.",
+      "conflict": "Google's public material names different Gemini versions for different health surfaces (Gemini 2.0 for the Personal Health Agent research prototype, 'latest Gemini models' for AI Mode, unspecified for Health Coach), and Google does not state which one serves the shipping Google Health app. Recorded as family-level 'Gemini' with version undisclosed rather than picking one.",
       "stack": [
         {
           "l": "Model",
@@ -1248,7 +1400,7 @@
           "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/googles-health-ai-agent-tops-gemini-but-carries-safety-gaps-7-things-to-know/",
           "date": "2026-10-23",
           "kind": "press",
-          "quote": "Google's health AI agent tops Gemini but carries safety gaps: 7 things to know"
+          "quote": "The system, called Personal Health Agent, uses three specialized agents built on Google's Gemini 2.0 models."
         },
         {
           "title": "Gemini Apps' release updates & improvements",
@@ -1267,9 +1419,9 @@
       ],
       "alternatives": [
         {
-          "model": "Gemini models (base model not named)",
-          "note": "base models behind Google's Personal Health Agent research prototype — Google says 'a base model (e.g., Gemini)'",
-          "url": "https://research.google/blog/the-anatomy-of-a-personal-health-agent/",
+          "model": "Gemini 2.0 models",
+          "note": "base models behind Google's Personal Health Agent research prototype (Nature, Oct 2026)",
+          "url": "https://www.beckershospitalreview.com/healthcare-information-technology/innovation/googles-health-ai-agent-tops-gemini-but-carries-safety-gaps-7-things-to-know/",
           "date": "2026-10-23"
         },
         {
@@ -1284,13 +1436,13 @@
       "tool": "MedGemma",
       "vendor": "Google",
       "category": "Open-weight medical foundation models (developer line)",
-      "model": "MedGemma 1.5 4B",
+      "model": "MedGemma 1.5 4B (multimodal, instruction-tuned)",
       "modelFamily": "MedGemma (Gemma 3 backbone + SigLIP medical vision encoder); family also includes MedGemma 1 4B multimodal, 27B text-only, 27B multimodal",
       "confidence": "disclosed",
       "asOf": "2026-09-23",
       "userSelectable": false,
       "notes": "The latest MedGemma is MedGemma 1.5 4B, released 2026-01-13 as the only 1.5 variant (4B multimodal instruction-tuned, google/medgemma-1.5-4b-it). It is built on Gemma 3 (decoder-only transformer) with a SigLIP image encoder pre-trained on de-identified medical images, and adds CT/MRI volume interpretation, whole-slide histopathology, longitudinal chest X-ray comparison, bounding-box anatomical localization, lab-report extraction and text-EHR understanding over MedGemma 1 4B. Weights are open (Hugging Face + Vertex AI Model Garden) under the Health AI Developer Foundations licence, run on a single GPU via transformers/vLLM or a custom serving container, and are explicitly positioned as 'starting points for developers to evaluate and adapt' — so MedGemma is a developer foundation, not a shipped Google clinical product. Google's own health AI runs on Gemini (Personal Health LLM is 'a version of the Gemini model fine-tuned for health'; AMIE is a research system), while MedGemma/TxGemma are the open-weight developer line. Model choice is the developer's: pick 4B vs 27B, multimodal vs text-only, pre-trained vs instruction-tuned, then fine-tune; Google requires validation for any use case.",
-      "conflict": "Documentation lags the release: the HAI-DEF page lists MedGemma 1.5 as 4B multimodal only, while the Hugging Face collection and GitHub README still describe only the MedGemma 1 lineup — the 27B variants were never refreshed to 1.5. There is no MedGemma 2, and the wider Gemma family has moved on (Gemma 4) without a medical refresh, so MedGemma remains a Gemma 3 derivative.",
+      "conflict": "Documentation lags the release: the HAI-DEF MedGemma landing page lists MedGemma 1.5 as 4B multimodal only, while the Hugging Face collection and GitHub README still describe only the MedGemma 1 lineup — the 27B variants were never refreshed to 1.5. There is no MedGemma 2, and the wider Gemma family has moved on (Gemma 4) without a medical refresh, so MedGemma remains a Gemma 3 derivative.",
       "stack": [
         {
           "l": "Latest release",
@@ -1406,13 +1558,13 @@
       "tool": "Claude for Healthcare",
       "vendor": "Anthropic",
       "category": "General-purpose LLM with healthcare layer",
-      "model": "Claude Opus 5.5 (Claude 5.5 family)",
+      "model": "Claude Opus 5.5 (Claude 5.5 family); Claude Fable 5.1 additionally available to HIPAA-ready BAA customers",
       "modelFamily": "Claude 5.5 (Opus 5.5, Sonnet 5.5, Haiku 5.5) and Mythos-class Claude Fable 5.1 / Claude Mythos 5.1",
       "confidence": "disclosed",
       "asOf": "2026-09-22",
       "userSelectable": true,
       "notes": "Claude for Healthcare (announced 2026-01-11) is not a separately trained medical model — Anthropic says the feature set 'build[s] on top of major recent improvements we've made to Claude's general intelligence' and named Claude Opus 4.5 as the model backing it at launch; today's live lineup is Claude Opus 5.5 (2026-09-22), Sonnet 5.5 and Haiku 5.5, with Claude Fable 5.1 (2026-08-31) as a 'Covered Model' reachable by HIPAA-ready Enterprise and API customers, and Mythos/Opus/Sonnet under the Life Sciences Verification Program for biology-heavy work (2026-09-17). The clinical capability comes from connectors (CMS Coverage Database, ICD-10, NPI Registry, PubMed; HealthEx, Function, Apple Health, Android Health Connect for patients; Medidata, ClinicalTrials.gov, ToolUniverse, bioRxiv/medRxiv, Open Targets, ChEMBL, Owkin, Benchling, 10x Genomics, BioRender, Synapse, Wiley) plus Agent Skills (FHIR development, sample prior-authorization review, clinical-trial protocol drafting) and the anthropics/healthcare plugin with hosted MCP servers (clinical-note-extract, fhir, fraud-detection, icd10-cm, procedure-coding, prior-auth) — i.e. RAG/grounded retrieval over payer and literature databases with citations. Model choice is user-selectable through the Claude model picker and API model IDs; patient health data is explicitly not used for training, but Covered Models (Fable 5/5.1) require 30-day retention so zero-data-retention orgs cannot use them. The most recent healthcare-specific step is athenahealth's athenaPatient MCP (2026-11-02) letting patients query their own records through Claude.",
-      "conflict": "Anthropic's launch post (Jan 2026) says Claude Opus 4.5 powered the offering, while current model docs say to start with Claude Opus 5.5 — but no Anthropic page pins the healthcare SKU to a model ID, so 'Claude Opus 5.5' reflects the current default lineup. Press at launch described 'models trained specifically for healthcare'; Anthropic's own wording is that it extends general intelligence, so any dedicated medical fine-tune is undisclosed.",
+      "conflict": "Anthropic's launch post (2026-01-11) states Claude Opus 4.5 powered the offering; Anthropic's current model docs say to start with Claude Opus 5.5 for most workloads, so the healthcare product almost certainly moved forward, but no Anthropic page pins the healthcare SKU to a specific model ID — 'Claude Opus 5.5' reflects the current default lineup, not a stated healthcare-specific model. Press at launch described 'models trained specifically for healthcare and life sciences tasks', but Anthropic's own wording is that it extends general-intelligence improvements, so any dedicated medical fine-tune is undisclosed.",
       "stack": [
         {
           "l": "Current default",
@@ -1555,7 +1707,7 @@
       "asOf": "2026-06-23",
       "userSelectable": false,
       "notes": "Epic does not name the LLM behind Art, AI Charting, Emmie, Penny or Agent Factory. Its own public AI page still describes a HIPAA-compliant pipeline that 'incorporates state-of-the-art language models, like GPT-4', and its product timeline records 'Epic supports GPT-4' in 2025. By February 2026 an Epic spokesperson said Epic 'continue[s] to work with Microsoft on AI Charting and use[s] a variety of different models through the Microsoft Azure platform', and Epic's VP of R&D Corey Miller said Epic 'generally uses different models for different specialties and tasks, and accesses those through Microsoft's Azure platform' — so Epic routes across frontier models rather than committing to one, and AI Charting is a separate product from Microsoft's DAX/Dragon. Health systems do get some model selection in Agent Factory: builders pick the model inside the agent portion of a flow, with per-million-token costs passed through. One concrete datapoint from a health-system build-a-thon (WVU Medicine, June 2026): the build environment ran on a single model, OpenAI's ChatGPT 5.1, with others expected to follow. Epic's own foundation model line is Cosmos Curiosity (formerly CoMET), a family of generative medical models trained on 300M+ de-identified Cosmos records that predict future medical events — a medical-event model, not a general-purpose LLM. Epic's AI Charting uses Microsoft Dragon for transcription (on Haiku/Canto devices) but generates notes with its own models.",
-      "conflict": "Epic's public AI marketing page still cites GPT-4, which is likely stale against a 2026 multi-model Azure stack (GPT-5.1 in an Agent Factory build environment as of June 2026). No Epic source names the model behind any specific shipped feature, so the current model per feature is recorded as undisclosed.",
+      "conflict": "Epic's public AI marketing page still cites GPT-4, which is likely stale relative to a 2026 multi-model Azure stack (GPT-5.1 in the Agent Factory build environment as of June 2026; GPT-6.x available on Azure by late 2026). No Epic source names the model behind any specific shipped feature, so the current model per feature is recorded as undisclosed.",
       "stack": [
         {
           "l": "Models",
@@ -1655,6 +1807,182 @@
           "date": "2026-02-05"
         }
       ]
+    },
+    {
+      "tool": "Glass Health",
+      "vendor": "Glass Health",
+      "category": "Differential diagnosis + ambient scribe",
+      "model": null,
+      "modelFamily": "Proprietary — grounded in a physician-authored clinical guideline database rather than general model memory",
+      "confidence": "undisclosed",
+      "asOf": "2026-07-26",
+      "userSelectable": null,
+      "notes": "Glass Health's model is not named publicly, but the company is active: its ambient scribe plus real-time clinical decision support product ships from glass.health, with Glass 5.0 launched December 2025 and an evolving differential, suggested history questions and next steps surfaced live during the encounter. What is public is the architecture choice: rather than rely on a general-purpose model's memory, Glass wired its system to a database of clinical guidelines written and maintained by roughly 20 to 30 academic physicians working part time, in the manner of a medical journal. Its investor describes the company as using LLMs to generate differential diagnoses, clinical plans and documentation from patient data, but no model is named. The independent read is mixed: on four NEJM clinicopathologic conference cases Glass AI got 1 of 4, ChatGPT-4 got 0 of 4, and a rule-based diagnostic generator got 4 of 4, while the company's own scorecard claims far stronger numbers on a newer model and an undisclosed method.",
+      "conflict": "Two things are in tension here. Glass Health's own scorecard reports much stronger results than the independent comparison, on what it describes as a newer model and an undisclosed method, so the performance claims cannot be checked against a known configuration. Separately, the old glasshealth.ai domain now resolves to Glass Medical AI, an unrelated University of Amsterdam oncology spin-out - a name collision that made Glass Health look defunct when it is not.",
+      "stack": [
+        {
+          "l": "Model",
+          "v": "Not disclosed — confirmed to use LLMs"
+        },
+        {
+          "l": "Approach",
+          "v": "Guideline database over general-model memory"
+        },
+        {
+          "l": "Content",
+          "v": "Clinical guidelines written by ~20-30 academic physicians"
+        },
+        {
+          "l": "Product",
+          "v": "Ambient scribe + live CDS + ranked differential diagnosis"
+        },
+        {
+          "l": "Current",
+          "v": "Glass 5.0 (Dec 2025); site is glass.health"
+        },
+        {
+          "l": "Regulatory",
+          "v": "No FDA clearance; founders say it does not need one"
+        }
+      ],
+      "citations": [
+        {
+          "title": "Glass Health Documentation — Ambient Scribing & Clinical Decision Support",
+          "url": "https://glass.health/documentation",
+          "date": "undated (accessed 2026-11-07)",
+          "kind": "vendor",
+          "quote": "Glass is an AI ambient scribing and clinical decision support platform that enhances diagnostic accuracy, streamlines clinical workflows, and provides evidence-based medical guidance."
+        },
+        {
+          "title": "Glass Health — Orange Collective portfolio",
+          "url": "https://www.orangecollective.vc/portfolio/glass-health",
+          "date": "undated (accessed 2026-11-07)",
+          "kind": "press",
+          "quote": "they use LLMs to generate differential diagnoses, clinical plans, and documentation from patient data."
+        },
+        {
+          "title": "Glass Health: AI differential diagnosis, weighed — architecture",
+          "url": "https://healthcarediscovery.ai/companies/glass-health/",
+          "date": "2026-07-26",
+          "kind": "press",
+          "quote": "Rather than trust a general model's memory, Glass wired it to a database of clinical guidelines written and maintained by academic physicians, about 20 to 30 of them, working part time the way they would for a medical journal."
+        },
+        {
+          "title": "Glass Health: AI differential diagnosis, weighed — benchmark caveat",
+          "url": "https://healthcarediscovery.ai/companies/glass-health/",
+          "date": "2026-07-26",
+          "kind": "press",
+          "quote": "The company's own scorecard reports far stronger numbers, on a newer model and an undisclosed method."
+        },
+        {
+          "title": "Glass Health: AI differential diagnosis, weighed — NEJM case comparison",
+          "url": "https://healthcarediscovery.ai/companies/glass-health/",
+          "date": "2026-07-26",
+          "kind": "press",
+          "quote": "On four NEJM clinicopathologic conference cases, GLASS AI got 1 of 4, ChatGPT-4 got 0 of 4, a rule based diagnostic generator got 4 of 4."
+        },
+        {
+          "title": "Glass Health Review 2026: AI Scribe + Diagnosis Support",
+          "url": "https://medaidirectory.com/blog/glass-health-review-2026",
+          "date": "2026-09-23",
+          "kind": "press",
+          "quote": "Glass Health Review 2026: AI Scribe + Diagnosis Support"
+        },
+        {
+          "title": "Glass 5.0 is a real triumph — Dereck Paul, MD",
+          "url": "https://www.linkedin.com/posts/dereckwpaul_glass-50-is-a-real-triumph-i-couldnt-be-activity-7407118429574549504-PbAC",
+          "date": "2025-12-17",
+          "kind": "vendor",
+          "quote": "Glass will prechart, scribe, and document for you, all while providing state-of-the-art decision support."
+        }
+      ],
+      "alternatives": [
+        {
+          "model": "ChatGPT-4",
+          "note": "comparison point on four NEJM clinicopathologic cases (0 of 4)",
+          "url": "https://healthcarediscovery.ai/companies/glass-health/",
+          "date": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "tool": "UpDoc",
+      "vendor": "UpDoc",
+      "category": "FDA-cleared patient-facing clinical AI",
+      "model": null,
+      "modelFamily": "Patient-facing large language models — vendor does not name them",
+      "confidence": "undisclosed",
+      "asOf": "2026-06-25",
+      "userSelectable": null,
+      "notes": "UpDoc announced FDA 510(k) clearance (K253281) on June 25, 2026, describing it as the first FDA-cleared clinical AI platform built on patient-facing large language models — the LLM acts as a data-collection interface for a clinician-directed care plan covering insulin dosing instructions, safety protocols and non-emergency hypo/hyperglycemia handling, rather than making the clinical decision. The 510(k) summary names no foundation model. Independent analysis of the FDA submission notes the large language model 'does not appear to drive clinical decision-making but instead functions as an interface for collecting patient data', and that UpDoc's CEO has declined to disclose further detail on how the model operates within the platform, citing competitive reasons. UpDoc raised $18M in seed financing and is advised by former FDA commissioner Robert Califf.",
+      "conflict": "UpDoc's own announcement calls the platform 'agentic AI' that 'acts where only physicians could', while a closer read of the 510(k) documents concludes the LLM is a data-collection interface rather than a decision maker. The clearance is the authoritative artefact; the marketing framing and the regulatory record do not match, and no model is named in either.",
+      "stack": [
+        {
+          "l": "Model",
+          "v": "Not disclosed — 'patient-facing large language models'"
+        },
+        {
+          "l": "FDA",
+          "v": "510(k) K253281, cleared Jun 25, 2026"
+        },
+        {
+          "l": "LLM role",
+          "v": "Patient data-collection interface, not decision maker"
+        },
+        {
+          "l": "Indication",
+          "v": "Type 2 diabetes care between visits"
+        },
+        {
+          "l": "Funding",
+          "v": "$18M seed"
+        }
+      ],
+      "citations": [
+        {
+          "title": "UpDoc Debuts First FDA-Cleared Clinical AI Platform",
+          "url": "https://www.prnewswire.com/news-releases/updoc-debuts-first-fda-cleared-clinical-ai-platform-built-for-real-time-patient-care-delivery-and-intelligent-care-coordination-302810065.html",
+          "date": "2026-06-25",
+          "kind": "vendor",
+          "quote": "UpDoc Debuts First FDA-Cleared Clinical AI Platform Built for Real-Time Patient Care Delivery and Intelligent Care Coordination"
+        },
+        {
+          "title": "510(k) Substantial Equivalence Determination Decision Summary — K253281 (UpDoc, Inc.)",
+          "url": "https://www.accessdata.fda.gov/cdrh_docs/reviews/K253281.pdf",
+          "date": "undated (FDA decision summary)",
+          "kind": "vendor",
+          "quote": "This includes insulin dosing instructions (type, starting and maximum doses, adjustment algorithm, and blood glucose targets) and safety protocols to address non-emergency hypoglycemia, hyperglycemia, and related symptoms."
+        },
+        {
+          "title": "FDA-Cleared Clinical AI Platform Raises Questions About the Nature of the Decision Maker | ASCO AI",
+          "url": "https://ascoai.org/articles/2026/07/fda-cleared-clinical-ai-platform-raises-questions-about-the-nature-of-the-decision-maker/",
+          "date": "2026-07-09",
+          "kind": "press",
+          "quote": "Based on the FDA submission, the large language model does not appear to drive clinical decision-making but instead functions as an interface for collecting patient data."
+        },
+        {
+          "title": "FDA-Cleared Clinical AI Platform Raises Questions — vendor declined to say more",
+          "url": "https://ascoai.org/articles/2026/07/fda-cleared-clinical-ai-platform-raises-questions-about-the-nature-of-the-decision-maker/",
+          "date": "2026-07-09",
+          "kind": "press",
+          "quote": "Health tech reporters have noted that the CEO has declined to disclose additional details about how the large language model operates within the platform, citing competitive reasons."
+        },
+        {
+          "title": "What's UpDoc? The SaMD developer says it's the first FDA-cleared clinical AI platform",
+          "url": "https://www.medicaldesignandoutsourcing.com/updoc-samd-agentic-ai-type-2-diabetes/",
+          "date": "2026-06-26",
+          "kind": "press",
+          "quote": "UpDoc's prescription-only SaMD has FDA clearance for type 2 diabetes patients."
+        },
+        {
+          "title": "UpDoc | A New Era of Clinical AI",
+          "url": "https://updoc.ai/",
+          "date": "undated (accessed 2026-11-07)",
+          "kind": "vendor",
+          "quote": "For the first time, agentic AI that acts where only physicians could"
+        }
+      ],
+      "alternatives": []
     }
   ]
 }
