@@ -38,6 +38,25 @@ page.** Keep every citation.
 - Update `asOf` on every entry you touch, and set `updated` in the JSON mirror.
 - Do not run benchmarks. Do not invent metrics.
 
+## Scope note: this job also refreshes the free-tier block
+
+The `/models` page is the clinician-facing side. The **consumer** side — what a
+patient actually gets on a free account — lives on the Personal Health Agents
+page in a separate tab, "Free Tier", backed by `data/phaFreeTier.js` (mirrored
+into `data/pha.json` as `freeTierDefaults`).
+
+**Refresh that block in the same pass.** It goes stale faster than the clinician
+side, because every lab ships a new default and the free tier is usually the
+last surface to be updated. The four surfaces are ChatGPT, Claude, Gemini, and
+Google Search / AI Mode. For each, the question is always the same: **which
+model runs for a logged-out or free user**, not which model the vendor is
+marketing.
+
+Free-tier defaults are where vendor pages contradict each other most often, so
+the conflict rule matters more here than anywhere else on the site. A pricing
+page is usually the freshest source; a help-centre article often lags the
+rollout by weeks.
+
 ## 1. Decide what actually needs re-checking
 
 Do not re-research all 19 tools every month. Most entries are stable for
@@ -142,6 +161,39 @@ relevant group; do not reshuffle.
 
 The file starts with a comment block explaining the confidence vocabulary and
 the conflict rule — keep it, and update its date line.
+
+### Refreshing the free-tier block
+
+Same file conventions as `data/modelStack.js`:
+
+```js
+{
+  platform, vendor, freeDefault, paidDefault, healthAccess, freeTierLimits,
+  healthNote, confidence, asOf, notes, conflict, citations, alternatives
+}
+```
+
+`freeDefault` is the model a free user gets. `paidDefault` is the contrast —
+the gap between the two is the point of the section, so state both.
+
+Then regenerate `data/pha.json`, keeping its existing blocks and adding
+`freeTierDefaults`:
+
+```bash
+node - <<'JS'
+const fs = require('fs'), vm = require('vm');
+const ctx = {}; vm.createContext(ctx);
+vm.runInContext(fs.readFileSync('data/phaFreeTier.js', 'utf8'), ctx, {filename:'phaFreeTier.js'});
+const old = JSON.parse(fs.readFileSync('data/pha.json', 'utf8'));
+fs.writeFileSync('data/pha.json', JSON.stringify(Object.assign({}, old, {
+  updated: '<TODAY YYYY-MM-DD>',
+  freeTierDefaults: ctx.phaFreeTierData
+}), null, 2));
+JS
+```
+
+And update the Personal Health Agents page's "Last updated" line if it carries
+a date.
 
 ## 4. Regenerate the mirror and validate
 

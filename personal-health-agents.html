@@ -90,6 +90,7 @@
       <div class="pha-tabs" id="phaTabs">
         <button class="pha-tab active" data-tab="overview" onclick="showTab('overview')">Overview</button>
         <button class="pha-tab" data-tab="landscape" onclick="showTab('landscape')">Landscape</button>
+        <button class="pha-tab" data-tab="freetier" onclick="showTab('freetier')">Free Tier</button>
         <button class="pha-tab" data-tab="news" onclick="showTab('news')">News &amp; Timeline</button>
         <button class="pha-tab" data-tab="evidence" onclick="showTab('evidence')">Evidence</button>
         <button class="pha-tab" data-tab="convergence" onclick="showTab('convergence')">Convergence</button>
@@ -150,6 +151,15 @@
         <h3 class="pha-section-title">Landscape</h3>
         <p class="pha-section-sub">Platform assistants, device makers, health-system deployments and the ambient-sensing wave.</p>
         <div class="pha-grid" id="phaPlayers"></div>
+      </div>
+
+      <!-- FREE TIER -->
+      <div class="pha-panel" id="panel-freetier">
+        <h3 class="pha-section-title">Free-Tier Defaults</h3>
+        <p class="pha-section-sub">The model a patient actually gets. Not the vendor's flagship — the default on a free account, which is what an ordinary person asks a health question on. Sources and dates on every claim.</p>
+        <div class="pha-note"><strong>Why this matters:</strong> the headline model on a vendor's pricing page is what their <em>paid</em> users get. A patient on a free tier gets something else, usually smaller, and the gap is widest exactly where it hurts — health questions, where the hardest cases are the ones that need the bigger model.</div>
+        <div class="pha-grid" id="phaFreeTier"></div>
+        <div class="pha-note" style="margin-top:20px;"><strong>Reading the table:</strong> where sources disagree, the most recent dated vendor statement wins and the losing claim is kept and shown. Where a vendor publishes nothing, the entry says so rather than guessing — an honest "not stated" is more useful than an inferred model name.</div>
       </div>
 
       <!-- NEWS -->
@@ -232,6 +242,7 @@
 <script src="shared.js"></script>
 <script src="data/whatsNew.js"></script>
 <script src="data/phaTimeline.js"></script>
+<script src="data/phaFreeTier.js"></script>
 <script src="data/phaPlayers.js"></script>
 <script src="data/phaResearch.js"></script>
 <script src="data/phaSources.js"></script>
@@ -263,6 +274,54 @@ function renderPhaNews(filter){
   }).join('');
 }
 
+function renderPhaFreeTier(){
+  var el=document.getElementById('phaFreeTier');
+  if(!el||typeof phaFreeTierData==='undefined') return;
+  el.innerHTML=phaFreeTierData.map(function(p){
+    var h='';
+    h+='<div class="pha-card">';
+    h+='<div class="pha-meta">'+esc(p.vendor)+'</div>';
+    h+='<h3 style="font-size:17px;font-weight:700;margin:4px 0 12px;">'+esc(p.platform)+'</h3>';
+    h+='<div class="pha-stats">';
+    h+='<div class="pha-stat" style="grid-column:1/-1;"><span class="l">Free tier default</span><span class="v">'+esc(p.freeDefault)+'</span></div>';
+    h+='<div class="pha-stat"><span class="l">Paid tier</span><span class="v" style="font-size:13px;line-height:1.4;">'+esc(p.paidDefault)+'</span></div>';
+    h+='<div class="pha-stat"><span class="l">As of</span><span class="v" style="font-size:13px;">'+esc(p.asOf)+'</span></div>';
+    h+='</div>';
+    h+='<p class="pha-finding"><strong>What a patient gets:</strong> '+esc(p.healthAccess)+'</p>';
+    h+='<p class="pha-caveat"><strong>Free-tier limits:</strong> '+esc(p.freeTierLimits)+'</p>';
+    h+='<p class="pha-caveat"><strong>Health-specific note:</strong> '+esc(p.healthNote)+'</p>';
+    h+='<p style="font-size:13px;color:var(--oe-text-dim);line-height:1.6;">'+esc(p.notes)+'</p>';
+    if(p.conflict){
+      h+='<div class="pha-note" style="margin-top:12px;"><strong>Conflict resolved:</strong> '+esc(p.conflict)+'</div>';
+    }
+    if(p.citations&&p.citations.length){
+      h+='<div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--oe-dark-border);">';
+      h+='<div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--oe-text-muted);margin-bottom:8px;">Sources</div><ol style="margin:0;padding-left:18px;">';
+      p.citations.forEach(function(c){
+        h+='<li style="font-size:12px;line-height:1.5;margin-bottom:6px;">';
+        h+='<a href="'+esc(c.url)+'" target="_blank" rel="noopener" style="color:var(--oe-orange);text-decoration:none;">'+esc(c.title)+'</a>';
+        h+=' <span style="color:var(--oe-text-muted);font-variant-numeric:tabular-nums;">'+esc(c.date)+'</span>';
+        h+='<span style="font-size:9px;text-transform:uppercase;letter-spacing:.05em;margin-left:5px;border:1px solid var(--oe-dark-border);border-radius:3px;padding:1px 4px;color:var(--oe-text-muted);">'+esc(c.kind)+'</span>';
+        if(c.quote){ h+='<div style="font-size:11px;color:var(--oe-text-muted);line-height:1.5;margin-top:4px;border-left:2px solid var(--oe-dark-border);padding-left:8px;font-style:italic;">'+esc(c.quote)+'</div>'; }
+        h+='</li>';
+      });
+      h+='</ol></div>';
+    }
+    if(p.alternatives&&p.alternatives.length){
+      h+='<div style="margin-top:10px;font-size:12px;color:var(--oe-text-muted);">Also seen: ';
+      h+=p.alternatives.map(function(a){
+        var s=esc(a.model);
+        if(a.url) s='<a href="'+esc(a.url)+'" target="_blank" rel="noopener" style="color:var(--oe-text-muted);">'+s+'</a>';
+        if(a.note) s+=' ('+esc(a.note)+')';
+        return s;
+      }).join(' · ');
+      h+='</div>';
+    }
+    h+='</div>';
+    return h;
+  }).join('');
+}
+
 window.addEventListener('load',function(){
   try{
     document.getElementById('phaPlayers').innerHTML=phaPlayersData.map(function(p){
@@ -287,6 +346,7 @@ window.addEventListener('load',function(){
     document.getElementById('phaSources').innerHTML=phaSourcesData.map(function(s){
       return '<div class="source-item"><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.name)+'</a><div class="name">'+esc(s.url)+'</div></div>';
     }).join('');
+        renderPhaFreeTier();
     renderPhaNews('all');
     var hash=(location.hash||'').replace('#','');
     if(hash && document.getElementById('panel-'+hash)) showTab(hash);
