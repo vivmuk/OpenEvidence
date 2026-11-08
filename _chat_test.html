@@ -1,0 +1,19 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="shared.css"></head><body>
+<div id="out"></div>
+<script src="chat.js" defer></script>
+<script>
+window.__err = [];
+window.addEventListener('error', e => window.__err.push('error: ' + e.message));
+window.addEventListener('unhandledrejection', e => window.__err.push('rejection: ' + (e.reason && e.reason.message || e.reason)));
+setTimeout(function(){
+  const qs = ['what is OpenEvidence valuation','FDA AI medical device classification','which model does Abridge use','how does Doximity Ask work'];
+  let i = 0;
+  const next = function(){
+    if (i >= qs.length) { window.__done = true; return; }
+    try { window.oeChat.ask(qs[i]); } catch(e){ window.__err.push('threw: '+e.message); }
+    i++; setTimeout(next, 1200);
+  };
+  next();
+}, 1200);
+</script></body></html>

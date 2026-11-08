@@ -1330,3 +1330,101 @@ tbody a:hover { text-decoration: underline; }
   letter-spacing: 0.05em; border: 1px solid var(--oe-orange); color: var(--oe-orange);
   border-radius: 3px; padding: 1px 5px; margin-left: 6px; vertical-align: 1px;
 }
+
+/* --- SEMANTIC CHAT -------------------------------------------------------
+   A site-wide assistant over everything the tracker has collected. The
+   launcher sits above the fold on every page; the panel is a slide-up
+   drawer so it never fights the page layout for space. */
+.oe-chat { position: fixed; right: 18px; bottom: 18px; z-index: 9000; }
+
+.oe-chat-launcher {
+  width: 50px; height: 50px; border-radius: 50%; border: 1px solid var(--oe-orange);
+  background: var(--oe-dark-card); color: var(--oe-orange); font-size: 21px;
+  cursor: pointer; box-shadow: 0 6px 22px rgba(0,0,0,.18);
+  transition: transform .18s ease, opacity .18s ease, box-shadow .18s ease;
+}
+.oe-chat-launcher:hover { transform: translateY(-2px) scale(1.04); box-shadow: 0 10px 28px rgba(0,0,0,.24); }
+.oe-chat-launcher.hidden { opacity: 0; pointer-events: none; transform: scale(.7); }
+
+.oe-chat-panel {
+  position: absolute; right: 0; bottom: 60px; width: min(430px, calc(100vw - 28px));
+  height: min(620px, calc(100vh - 120px)); display: flex; flex-direction: column;
+  background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: 16px; box-shadow: 0 22px 60px rgba(0,0,0,.30);
+  overflow: hidden; opacity: 0; transform: translateY(14px) scale(.98); pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.oe-chat-panel.open { opacity: 1; transform: none; pointer-events: auto; }
+
+.oe-chat-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 13px 15px; border-bottom: 1px solid var(--oe-dark-border);
+  background: var(--oe-dark-soft);
+}
+.oe-chat-head-t { font-size: 13px; font-weight: 700; letter-spacing: .01em; display: flex; align-items: center; gap: 8px; }
+.oe-chat-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--oe-orange); box-shadow: 0 0 0 3px rgba(228,100,61,.16); }
+.oe-chat-close { background: none; border: 0; color: var(--oe-text-muted); font-size: 15px; cursor: pointer; padding: 2px 4px; }
+.oe-chat-close:hover { color: var(--oe-text); }
+
+.oe-chat-log { flex: 1; overflow-y: auto; padding: 16px 15px; display: flex; flex-direction: column; gap: 14px; scrollbar-width: thin; }
+.oe-chat-msg { display: flex; flex-direction: column; }
+.oe-chat-user { align-items: flex-end; }
+.oe-chat-bubble {
+  background: var(--oe-orange); color: #fff; padding: 9px 13px; border-radius: 14px 14px 3px 14px;
+  max-width: 88%; font-size: 13.5px; line-height: 1.5;
+}
+.oe-chat-bot { align-items: flex-start; }
+
+.oe-chat-answer { background: var(--oe-dark-soft); border: 1px solid var(--oe-dark-border); border-radius: 3px 14px 14px 14px; padding: 13px 14px; max-width: 96%; }
+.oe-chat-lead { margin: 0; font-size: 13.5px; line-height: 1.62; color: var(--oe-text); }
+.oe-chat-lead-src { margin-top: 9px; }
+.oe-chat-support { margin: 11px 0 0; padding-left: 17px; }
+.oe-chat-support li { font-size: 12.5px; line-height: 1.55; color: var(--oe-text-dim); margin-bottom: 7px; }
+.oe-chat-support li:last-child { margin-bottom: 0; }
+
+.oe-chat-sources { margin-top: 12px; padding-top: 11px; border-top: 1px solid var(--oe-dark-border); }
+.oe-chat-sources-h { font-size: 9.5px; text-transform: uppercase; letter-spacing: .07em; color: var(--oe-text-muted); margin-bottom: 7px; }
+.oe-chat-source {
+  display: flex; align-items: center; gap: 7px; flex-wrap: wrap; text-decoration: none;
+  padding: 6px 9px; margin-bottom: 5px; border: 1px solid var(--oe-dark-border);
+  border-radius: 8px; background: var(--oe-dark-card); transition: border-color .15s ease;
+}
+.oe-chat-source:hover { border-color: var(--oe-orange); }
+.oe-chat-chip { font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; background: rgba(228,100,61,.14); color: var(--oe-orange); border-radius: 3px; padding: 2px 5px; white-space: nowrap; }
+.oe-chat-chip-title { font-size: 11.5px; color: var(--oe-text-dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 230px; }
+.oe-chat-chip-date { font-size: 10px; color: var(--oe-text-muted); font-variant-numeric: tabular-nums; margin-left: auto; white-space: nowrap; }
+
+.oe-chat-typing { display: flex; gap: 4px; padding: 14px 15px; }
+.oe-chat-typing i { width: 6px; height: 6px; border-radius: 50%; background: var(--oe-text-muted); animation: oe-chat-bounce 1.1s infinite; }
+.oe-chat-typing i:nth-child(2) { animation-delay: .16s; }
+.oe-chat-typing i:nth-child(3) { animation-delay: .32s; }
+@keyframes oe-chat-bounce { 0%,60%,100% { transform: translateY(0); opacity: .45; } 30% { transform: translateY(-5px); opacity: 1; } }
+
+.oe-chat-suggest { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 15px 11px; }
+.oe-chat-suggestion {
+  font-size: 11.5px; padding: 5px 10px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--oe-dark-border); background: var(--oe-dark-soft); color: var(--oe-text-dim);
+  font-family: var(--oe-font-sans); transition: border-color .15s ease, color .15s ease;
+}
+.oe-chat-suggestion:hover { border-color: var(--oe-orange); color: var(--oe-orange); }
+
+.oe-chat-form { display: flex; gap: 8px; padding: 0 15px 13px; }
+.oe-chat-input {
+  flex: 1; min-width: 0; background: var(--oe-dark-card); border: 1px solid var(--oe-dark-border);
+  border-radius: 10px; padding: 10px 12px; color: var(--oe-text); font-size: 13px;
+  font-family: var(--oe-font-sans);
+}
+.oe-chat-input:focus { outline: none; border-color: var(--oe-orange); }
+.oe-chat-input::placeholder { color: var(--oe-text-muted); }
+.oe-chat-send {
+  width: 38px; flex: 0 0 38px; border-radius: 10px; border: 1px solid var(--oe-orange);
+  background: var(--oe-orange); color: #fff; font-size: 16px; cursor: pointer;
+}
+.oe-chat-send:disabled { opacity: .45; cursor: default; }
+.oe-chat-hint { font-size: 10.5px; color: var(--oe-text-muted); padding: 0 15px 11px; min-height: 14px; }
+
+@media (max-width: 640px) {
+  .oe-chat { right: 12px; bottom: 12px; }
+  .oe-chat-panel { width: calc(100vw - 24px); height: min(560px, calc(100vh - 100px)); }
+  .oe-chat-chip-title { max-width: 150px; }
+}

@@ -236,6 +236,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-11-06",
+  "cat": "Partnership",
+  "title": "American College of Rheumatology and OpenEvidence Collaborate to Expand Access to Trusted Patient Education Resources",
+  "desc": "The American College of Rheumatology (ACR) and OpenEvidence announce a collaboration at ACR Convergence 2026 to bring ACR's English- and Spanish-language disease and treatment fact sheets to clinicians within OpenEvidence, supporting point-of-care education for people with rheumatic conditions. ACR ",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources",
+  "score": 81,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-10-29",
   "cat": "Partnership",
   "title": "OpenEvidence and NYU Langone Health Partner to Bring Patient-Aware Intelligence to 12 Million Visits in New York City",
@@ -733,22 +745,6 @@ var signalsData = [
   "confidence": "reported",
   "competitors": [
    "Doximity"
-  ],
-  "comparative": false
- },
- {
-  "date": "2026-10-20",
-  "cat": "Competitor",
-  "title": "Doximity and Wolters Kluwer bring UpToDate into Doximity Ask",
-  "desc": "Doximity (NYSE: DOCS) and Wolters Kluwer Health announce a partnership making UpToDate clinical content - 13,000+ topics and best practice guides from 7,600 physician authors, editors and peer reviewers - directly accessible inside Doximity Ask, its AI clinical decision support tool. Clinicians at h",
-  "src": "Wolters Kluwer / MobiHealthNews",
-  "url": "https://www.wolterskluwer.com/en/news/doximity-wolters-kluwer-uptodate-doximity-ask",
-  "score": 49,
-  "confidence": "reported",
-  "competitors": [
-   "Doximity",
-   "UpToDate",
-   "Abridge"
   ],
   "comparative": false
  }
