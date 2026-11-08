@@ -227,5 +227,15 @@ var phaResearchData = [
   {title:"Vermont VDPOSA: Consumer Health Data Provisions and AI Transparency Requirements", type:"Regulatory analysis", date:"Jun 29, 2026", venue:"Bass, Berry & Sims",
    finding:"Vermont's Data Privacy and Online Surveillance Act (VDPOSA) takes effect January 1, 2028, with standalone consumer health data provisions applying regardless of general applicability thresholds. The law prohibits geofencing within 1,850 feet of healthcare facilities, requires consent before selling consumer health data, and includes AI transparency requirements.",
    caveat:"The law does not take effect until 2028 and its enforcement mechanisms and interaction with existing state privacy laws remain to be tested.",
-   url:"https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"}
+   url:"https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"},
+
+  {title:"LifeLong Digital Twin: A Unified Modeling Paradigm and Agent Harness for Event-Driven Lifelong Health State Trajectories", type:"arXiv preprint · agent architecture", date:"Oct 4, 2026", venue:"arXiv (cs.AI)",
+   finding:"Presents LifeLong Digital Twin, a unified modeling paradigm and agent harness for event-driven lifelong health state trajectories. The framework models health as a continuous state trajectory driven by discrete events (clinical encounters, self-reported symptoms, wearable data), enabling an agent to reason about a person's health history and future trajectories holistically rather than as isolated snapshots.",
+   caveat:"Preprint, not peer-reviewed. The framework is conceptual and has not been validated in a clinical deployment. The digital twin paradigm raises questions about model fidelity and the risks of acting on predicted trajectories that may not match individual physiology.",
+   url:"https://arxiv.org/abs/2610.05566"},
+  {title:"Evaluation of Symptom Checker Formats to Support Health Literacy and Trust in AI: Online Randomised Controlled Trial", type:"Preprint · randomised controlled trial", date:"Mar 11, 2026", venue:"medRxiv",
+   finding:"An online randomised controlled trial evaluating the impact of different symptom checker formats on symptom management knowledge, trust in AI symptom checkers, and accuracy of triage recommendations. The study addresses how the design and presentation of symptom checker outputs affects user comprehension and trust, which is critical for safe deployment of consumer-facing AI triage tools.",
+   caveat:"Preprint, not peer-reviewed. Online RCT with simulated scenarios may not reflect real-world symptom checker use. The specific formats tested may not generalise to all symptom checker platforms.",
+   url:"https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"},
+
 ];

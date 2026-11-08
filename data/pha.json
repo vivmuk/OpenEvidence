@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,24 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-02",
+      "cat": "Trend",
+      "title": "Sensor Tower: AI Health Insights Reshape Wearable Market as Apps Drive Engagement",
+      "desc": "Market intelligence firm Sensor Tower reported that as smart rings and screenless fitness bands move away from displays, competition is shifting toward companion apps that turn sensor data into health insights. WHOOP and Oura are placing greater emphasis on personalised AI-driven health insights, using apps to move beyond displaying individual readings to identifying patterns and recommending actions. The report frames the competitive shift: hardware differentiation is narrowing, and the app-layer AI coach is becoming the product. Vendor claim: market analysis, not product evaluation.",
+      "src": "Business Standard / Sensor Tower",
+      "url": "https://www.business-standard.com/technology/tech-news/ai-health-insights-reshape-wearable-market-as-apps-drive-engagement-report-126110200859_1.html",
+      "new": true
+    },
+    {
+      "date": "2026-09-18",
+      "cat": "Product",
+      "title": "BodyBuddy Launches Agentic Health Record Built from Daily Conversations",
+      "desc": "BodyBuddy introduced the 'agentic health record,' an AI-maintained health log built from daily text conversations that captures what happens between appointments — knee pain on stairs, digestive issues after lunch, sleep disruption before deadlines, adherence to physio exercises. The record is written from user texts, not EHR data, and covers the gaps that clinical records never see. Represents the conversational-first design pattern for personal health agents: the agent builds the record through ongoing dialogue rather than importing from existing data sources. Vendor claim: agentic health record, not a medical device.",
+      "src": "BodyBuddy",
+      "url": "https://bodybuddy.app/blog/agentic-health-record",
+      "new": true
+    },
     {
       "date": "2026-11-05",
       "cat": "Product",
@@ -235,8 +253,7 @@
       "title": "Alloop Launches Trio: Modular 3-in-1 Wearable Built Around a Personal AI Health Agent",
       "desc": "Alloop unveiled a modular health wearable with one interchangeable sensing core (the Cube) that snaps between a smart ring and a wristband, plus a Halo module for voice interaction with its AI Health Agent. The open platform integrates Apple Health, Google Health and Health Connect, and the agent interprets physiological data alongside user-journalled meals, activities and symptoms. A Bio Age score spans six domains: sleep, activity, nutrition, cardiovascular, metabolic and musculoskeletal. Launching on Kickstarter.",
       "src": "OpenPR / Alloop",
-      "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable",
-      "new": true
+      "url": "https://www.openpr.com/news/4671109/alloop-officially-launches-trio-a-modular-3-in-1-wearable"
     },
     {
       "date": "2026-10-21",
@@ -244,8 +261,7 @@
       "title": "Biblo Launches Personal AI Fitness Agent for iMessage",
       "desc": "Biblo introduced a personal AI fitness agent that users can text via iMessage. Users send a photo of food or describe what they ate, and Biblo estimates calories and macros. The basic service is free on iPhone with no separate download required. Represents the lightweight, messaging-native design pattern for consumer health AI, lowering friction by meeting users in existing chat interfaces rather than requiring a dedicated app. Vendor claim: fitness and nutrition tracking, not a medical device.",
       "src": "Biblo",
-      "url": "https://www.heybiblo.com/blog/introducing-biblo",
-      "new": true
+      "url": "https://www.heybiblo.com/blog/introducing-biblo"
     },
     {
       "date": "2026-10-21",
@@ -1268,7 +1284,7 @@
           "v": "Muse Spark"
         }
       ],
-      "desc": "Meta's Muse is a general-purpose personal AI agent that connects to users' apps and services including health and fitness, email, calendars, payments and smart home. Runs in a dedicated Muse Secure VM with a separate Sentinel safety agent, and Meta claims it does not share conversations with its ads systems. Launch came two weeks after Meta's $18B multistate settlement over social media harms to children, making trust the central question. Free tier with paid plans at $20 and $100 per month. Represents the platform-play for consumer AI with health data access: Meta's billions of users, WhatsApp distribution and AI glasses give it reach, but its trust deficit is the moat it must cross.",
+      "desc": "Meta's Muse is a general-purpose personal AI agent that connects to users' apps and services including health and fitness, email, calendars, payments and smart home. Runs in a dedicated Muse Secure VM with a separate Sentinel safety agent, and Meta claims it does not share conversations with its ads systems. Launch came two weeks after Meta's $18B multistate settlement over social media harms to children, making trust the central question. Free tier with paid plans at $20 and $100 per month. HealthEx launched a connector on launch day letting consumers bring their personal health history to Muse, giving Muse an EHR ingestion path via the same platform Microsoft's Copilot Health uses. Represents the platform-play for consumer AI with health data access: Meta's billions of users, WhatsApp distribution and AI glasses give it reach, but its trust deficit is the moat it must cross.",
       "url": "https://techcrunch.com/2026/09/08/meta-debuts-its-muse-ai-agent-will-consumers-trust-it/"
     },
     {
@@ -1341,6 +1357,31 @@
       ],
       "desc": "Biblo introduced a personal AI fitness agent that users text through iMessage. Users send a photo of food or describe what they ate and Biblo estimates calories and macros. The basic service is free on iPhone with no separate download required. It represents the lightweight, messaging-native design pattern for consumer health AI, lowering friction by meeting users in existing chat interfaces rather than requiring a dedicated app. Vendor claim: fitness and nutrition tracking, not a medical device.",
       "url": "https://www.heybiblo.com/blog/introducing-biblo"
+    },
+    {
+      "name": "BodyBuddy",
+      "type": "Conversational · agentic health record",
+      "badge": "NEW ENTRANT",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Sep 18, 2026"
+        },
+        {
+          "l": "Channel",
+          "v": "Text-based (daily conversations)"
+        },
+        {
+          "l": "Model",
+          "v": "Proprietary"
+        },
+        {
+          "l": "Approach",
+          "v": "AI-maintained health log from daily texts"
+        }
+      ],
+      "desc": "BodyBuddy's agentic health record is built from daily text conversations, capturing health events between appointments that the healthcare system never sees — knee pain, digestive issues, sleep disruption, exercise adherence. The record is written from user texts, not imported from EHR data. Represents the conversational-first design pattern for personal health agents: the agent builds the record through ongoing dialogue rather than importing from existing data sources. Vendor claim: agentic health record, not a medical device.",
+      "url": "https://bodybuddy.app/blog/agentic-health-record"
     }
   ],
   "research": [
@@ -1805,6 +1846,24 @@
       "finding": "Vermont's Data Privacy and Online Surveillance Act (VDPOSA) takes effect January 1, 2028, with standalone consumer health data provisions applying regardless of general applicability thresholds. The law prohibits geofencing within 1,850 feet of healthcare facilities, requires consent before selling consumer health data, and includes AI transparency requirements.",
       "caveat": "The law does not take effect until 2028 and its enforcement mechanisms and interaction with existing state privacy laws remain to be tested.",
       "url": "https://bassberry.com/news/vermonts-consumer-data-privacy-law-joins-the-national-wave/"
+    },
+    {
+      "title": "LifeLong Digital Twin: A Unified Modeling Paradigm and Agent Harness for Event-Driven Lifelong Health State Trajectories",
+      "type": "arXiv preprint · agent architecture",
+      "date": "Oct 4, 2026",
+      "venue": "arXiv (cs.AI)",
+      "finding": "Presents LifeLong Digital Twin, a unified modeling paradigm and agent harness for event-driven lifelong health state trajectories. The framework models health as a continuous state trajectory driven by discrete events (clinical encounters, self-reported symptoms, wearable data), enabling an agent to reason about a person's health history and future trajectories holistically rather than as isolated snapshots.",
+      "caveat": "Preprint, not peer-reviewed. The framework is conceptual and has not been validated in a clinical deployment. The digital twin paradigm raises questions about model fidelity and the risks of acting on predicted trajectories that may not match individual physiology.",
+      "url": "https://arxiv.org/abs/2610.05566"
+    },
+    {
+      "title": "Evaluation of Symptom Checker Formats to Support Health Literacy and Trust in AI: Online Randomised Controlled Trial",
+      "type": "Preprint · randomised controlled trial",
+      "date": "Mar 11, 2026",
+      "venue": "medRxiv",
+      "finding": "An online randomised controlled trial evaluating the impact of different symptom checker formats on symptom management knowledge, trust in AI symptom checkers, and accuracy of triage recommendations. The study addresses how the design and presentation of symptom checker outputs affects user comprehension and trust, which is critical for safe deployment of consumer-facing AI triage tools.",
+      "caveat": "Preprint, not peer-reviewed. Online RCT with simulated scenarios may not reflect real-world symptom checker use. The specific formats tested may not generalise to all symptom checker platforms.",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"
     }
   ],
   "sources": [
@@ -2235,6 +2294,26 @@
     {
       "name": "FT.com / MedPal AI - Juno agentic AI health companion launch (Jun 18, 2026)",
       "url": "https://markets.ft.com/data/announce/full?dockey=1323-17645095-2ELGELJ3D2E3H6KL9DB13CAEB5"
+    },
+    {
+      "name": "Business Standard / Sensor Tower - AI health insights reshape wearable market (Nov 2, 2026)",
+      "url": "https://www.business-standard.com/technology/tech-news/ai-health-insights-reshape-wearable-market-as-apps-drive-engagement-report-126110200859_1.html"
+    },
+    {
+      "name": "BodyBuddy - Agentic health record launch (Sep 18, 2026)",
+      "url": "https://bodybuddy.app/blog/agentic-health-record"
+    },
+    {
+      "name": "HealthEx / GlobeNewswire - HealthEx connector for Meta Muse (Sep 8, 2026)",
+      "url": "https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/09/08/1916250/healthex-empowers-consumers-to-bring-their-personal-health-history-to-muse-metas-new-personal-ai-agent/"
+    },
+    {
+      "name": "arXiv - LifeLong Digital Twin: agent harness for lifelong health state trajectories (Oct 4, 2026)",
+      "url": "https://arxiv.org/abs/2610.05566"
+    },
+    {
+      "name": "medRxiv - Evaluation of symptom checker formats for health literacy and trust (Mar 11, 2026)",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"
     }
   ],
   "freeTierDefaults": [

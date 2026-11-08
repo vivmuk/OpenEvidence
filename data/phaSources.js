@@ -105,5 +105,10 @@ var phaSourcesData = [
   {name:"arXiv - SAGE: Sensor-Augmented Grounding Engine for Sleep Care Agent (Mar 15, 2026)", url:"https://arxiv.org/abs/2604.16342"},
   {name:"GlobeNewswire / Octo Health - Beta launch (Nov 5, 2026)", url:"https://www.globenewswire.com/news-release/2026/11/05/3396534/0/en/octo-health-launches-beta-to-make-proactive-personalized-healthcare-more-accessible.html"},
   {name:"AI Data News - WHOOP adds clinician video visits and My Memory AI (Aug 15, 2026)", url:"https://www.aidatanews.com/whoop-will-now-let-its-ai-coach-remember-your-life-story-and-put-a-real-doctor-on-video-call/"},
-  {name:"FT.com / MedPal AI - Juno agentic AI health companion launch (Jun 18, 2026)", url:"https://markets.ft.com/data/announce/full?dockey=1323-17645095-2ELGELJ3D2E3H6KL9DB13CAEB5"}
+  {name:"FT.com / MedPal AI - Juno agentic AI health companion launch (Jun 18, 2026)", url:"https://markets.ft.com/data/announce/full?dockey=1323-17645095-2ELGELJ3D2E3H6KL9DB13CAEB5"},
+  {name:"Business Standard / Sensor Tower - AI health insights reshape wearable market (Nov 2, 2026)", url:"https://www.business-standard.com/technology/tech-news/ai-health-insights-reshape-wearable-market-as-apps-drive-engagement-report-126110200859_1.html"},
+  {name:"BodyBuddy - Agentic health record launch (Sep 18, 2026)", url:"https://bodybuddy.app/blog/agentic-health-record"},
+  {name:"HealthEx / GlobeNewswire - HealthEx connector for Meta Muse (Sep 8, 2026)", url:"https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/09/08/1916250/healthex-empowers-consumers-to-bring-their-personal-health-history-to-muse-metas-new-personal-ai-agent/"},
+  {name:"arXiv - LifeLong Digital Twin: agent harness for lifelong health state trajectories (Oct 4, 2026)", url:"https://arxiv.org/abs/2610.05566"},
+  {name:"medRxiv - Evaluation of symptom checker formats for health literacy and trust (Mar 11, 2026)", url:"https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"},
 ];
