@@ -2,10 +2,10 @@
 // Head-to-head standing derived from evaluation studies.
 var scoreboardData = {
  "generated": "2026-11-08",
- "total": 42,
+ "total": 46,
  "tally": {
   "oe": 5,
-  "mixed": 32,
+  "mixed": 36,
   "competitor": 5
  },
  "rows": [

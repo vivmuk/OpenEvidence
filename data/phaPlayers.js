@@ -123,6 +123,6 @@ var phaPlayersData = [
    url:"https://www.heybiblo.com/blog/introducing-biblo"},
 {name:"BodyBuddy", type:"Conversational \· agentic health record", badge:"NEW ENTRANT",
    stats:[{l:"Launched",v:"Sep 18, 2026"},{l:"Channel",v:"Text-based (daily conversations)"},{l:"Model",v:"Proprietary"},{l:"Approach",v:"AI-maintained health log from daily texts"}],
-   desc:"BodyBuddy's agentic health record is built from daily text conversations, capturing health events between appointments that the healthcare system never sees — knee pain, digestive issues, sleep disruption, exercise adherence. The record is written from user texts, not imported from EHR data. Represents the conversational-first design pattern for personal health agents: the agent builds the record through ongoing dialogue rather than importing from existing data sources. Vendor claim: agentic health record, not a medical device.",
+   desc:"BodyBuddy's agentic health record is built from daily text conversations, capturing health events between appointments that the healthcare system never sees - knee pain, digestive issues, sleep disruption, exercise adherence. The record is written from user texts, not imported from EHR data. Represents the conversational-first design pattern for personal health agents: the agent builds the record through ongoing dialogue rather than importing from existing data sources. Vendor claim: agentic health record, not a medical device.",
    url:"https://bodybuddy.app/blog/agentic-health-record"}
 ];
