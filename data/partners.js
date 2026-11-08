@@ -1,4 +1,5 @@
-var partnersData = [
+var partnersData = [  {name:"ACR",type:"Rheumatology Patient Education",date:"Nov 2026",url:"https://www.openevidence.com/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources"},
+
   {name:"Anthropic",type:"Global Health AI Technology Partner",date:"Sep 22, 2026",url:"https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/",new:true},
   {name:"UTMB Health (University of Texas Medical Branch)",type:"Health System - Epic EHR Integration",date:"Sep 22, 2026",url:"https://www.openevidence.com/announcements/university-of-texas-medical-branch-utmb-collaborates-with-openevidence-to-integrate-ai-platform-directly-into-clinical-workflows",new:true},
   {name:"Memorial Sloan Kettering (MSK)",type:"Precision Oncology + OncoKB Integration",date:"Sep 16, 2026",url:"https://www.openevidence.com/announcements/memorial-sloan-kettering-cancer-center-msk-and-openevidence-partner-to-advance-precision-oncology-at-the-point-of-care",new:true},

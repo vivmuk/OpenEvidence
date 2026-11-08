@@ -5790,5 +5790,159 @@
       "hallucinations": 0
     },
     "dataset": "32 standardized English questions on pediatric IgA vasculitis"
+  },
+  {
+    "pmid": "42998164",
+    "title": "Open-weight LLMs for MRI Protocol Selection",
+    "source": "Eur Radiol",
+    "date": "2026-11-07",
+    "type": "LLM accuracy comparison",
+    "models": [
+      "GPT-OSS-120B",
+      "Qwen-3-235B",
+      "MedGemma-27B",
+      "Gemma-3-27B"
+    ],
+    "metric": "Protocol accuracy / Jaccard index",
+    "result": "GPT-OSS accuracy 0.94, Jaccard 0.96; Qwen3 accuracy 0.94, Jaccard 0.96; MedGemma accuracy 0.79; Gemma3 accuracy 0.58. Unacceptable selections 5.8%-68.3%.",
+    "n": 1201,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42998164/",
+    "id": "bench:pmid:42998164"
+  },
+  {
+    "pmid": "42997193",
+    "title": "AI Chatbot Regenerative ED Therapy Counseling",
+    "source": "Transl Androl Urol",
+    "date": "2026-10-30",
+    "type": "LLM guideline concordance",
+    "models": [
+      "ChatGPT-4o",
+      "Gemini 2.5",
+      "Claude 3.7",
+      "Copilot"
+    ],
+    "metric": "Guideline concordance / consistency kappa",
+    "result": "Only 36% guideline-concordant efficacy framing. 18.8% recommended against routine use. Within-platform consistency kappa 0.54-0.67.",
+    "n": 144,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42997193/",
+    "id": "bench:pmid:42997193"
+  },
+  {
+    "pmid": "42996234",
+    "title": "Five LLMs Chinese-Language Visual Field Defect Patient Queries",
+    "source": "Front Physiol",
+    "date": "2026-10-23",
+    "type": "LLM patient education comparison",
+    "models": [
+      "ChatGPT 5.6 Sol",
+      "DeepSeek V4 Flash",
+      "Gemini 3.7 Flash",
+      "Qwen 3.8 Max",
+      "Kimi K3"
+    ],
+    "metric": "Accuracy / coherence / accessibility (1-5 Likert)",
+    "result": "ChatGPT highest accuracy (4.67/5). Models differed in accuracy, coherence, accessibility (P<0.001). No significant safety differences. Inter-rater Kendall W 0.820-0.844.",
+    "n": 150,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42996234/",
+    "id": "bench:pmid:42996234"
+  },
+  {
+    "pmid": "42995767",
+    "title": "CEDAR Agentic LLM Pediatric Diabetes Prediction",
+    "source": "ArXiv",
+    "date": "2026-10-29",
+    "type": "Agentic LLM vs ML clinical prediction",
+    "models": [
+      "CEDAR LLM agent"
+    ],
+    "metric": "AUC",
+    "result": "T2D: AUC 0.815 vs ML 0.656-0.700. T1D: AUC 0.756 vs ML 0.603-0.631. 4/70,246 cited values incorrect. Endocrinologist agreement ~90%.",
+    "n": 6507,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42995767/",
+    "id": "bench:pmid:42995767"
+  },
+  {
+    "pmid": "42995166",
+    "title": "LLM-as-Judge Stability Across Clinical Tasks",
+    "source": "J Am Med Inform Assoc",
+    "date": "2026-11-06",
+    "type": "LLM evaluator benchmark",
+    "models": [
+      "Claude",
+      "GPT",
+      "DeepSeek",
+      "3 open-source 7-27B"
+    ],
+    "metric": "Quadratic-weighted Cohen's kappa",
+    "result": "No model ranked top 3 on all 3 tasks. ESI level 1 under-triaged in 89.1%. Best triage kappa 0.60 (Claude Opus). Local models on Pareto frontier for text tasks.",
+    "n": 856,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42995166/",
+    "id": "bench:pmid:42995166"
+  },
+  {
+    "pmid": "42993937",
+    "title": "LLM Vascular Surgery Safety Evaluation",
+    "source": "JMIR Perioper Med",
+    "date": "2026-11-06",
+    "type": "LLM clinical safety evaluation",
+    "models": [
+      "GPT-5",
+      "Gemini 2.5",
+      "Claude Sonnet 4.5"
+    ],
+    "metric": "Composite score / unsafe plan rate",
+    "result": "Scores: ChatGPT 86.5%, Gemini 83.5%, Claude 88.0%. Unsafe: 11.9%/23.8%/7.1%. ALI predicted unsafe output (OR 20.9).",
+    "n": 42,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42993937/",
+    "id": "bench:pmid:42993937"
+  },
+  {
+    "pmid": "42994600",
+    "title": "Agentic RAG Travel Vaccination Guidance System",
+    "source": "Travel Med Infect Dis",
+    "date": "2026-11-06",
+    "type": "RAG chatbot evaluation",
+    "models": [
+      "Multi-agent chatbot (RAG)"
+    ],
+    "metric": "Recall / precision / F1 / retrieval time",
+    "result": "Chatbot 4.9/5 accuracy. Dashboard recall 97.40%, precision 100%, F1 98.56%. Retrieval time reduced 75.7% (61.3s saved, p<0.001).",
+    "n": 20,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42994600/",
+    "id": "bench:pmid:42994600"
+  },
+  {
+    "pmid": "42993957",
+    "title": "Multilingual RAG Cervical Cancer Conversational System",
+    "source": "JMIR Cancer",
+    "date": "2026-11-06",
+    "type": "RAG chatbot multilingual evaluation",
+    "models": [
+      "GPT-4o mini (RAG)"
+    ],
+    "metric": "Precision@3 / hallucination rate / factual errors",
+    "result": "RAG precision@3 0.88, 71.4% hallucination reduction vs non-RAG. Factual errors 8% RAG vs 28% non-RAG (kappa 0.84). Latency 312ms.",
+    "n": 50,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42993957/",
+    "id": "bench:pmid:42993957"
+  },
+  {
+    "pmid": "42990698",
+    "title": "Agentic LLM Glaucoma Procedural Data Extraction",
+    "source": "medRxiv",
+    "date": "2026-10-30",
+    "type": "Agentic LLM clinical data extraction",
+    "models": [
+      "Claude Opus 4.6",
+      "DeepSeek-V4 Pro",
+      "GPT-5.5",
+      "Grok 4.1",
+      "Qwen3.6-35B-A3B"
+    ],
+    "metric": "Accuracy / exact-match / Jaccard Index",
+    "result": "Prior procedures accuracy 0.965-0.996. Claude best: exact-match 0.890, JI 0.956. Only 25.1% captured by CPT codes.",
+    "n": 1984,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42990698/",
+    "id": "bench:pmid:42990698"
   }
 ]

@@ -2,15 +2,15 @@
 //
 // This is the consumer side, not the clinician side: the model that runs when
 // an ordinary person opens the app and asks a health question on a free
-// account. It is deliberately NOT the flagship model — a patient on a free
+// account. It is deliberately NOT the flagship model - a patient on a free
 // tier gets something different, and usually weaker, than the vendor's
 // headline capability.
 //
 // `confidence` describes the free-tier default claim:
-//   disclosed     — the vendor states it
-//   reported      — a credible third party states it
-//   inferred      — deduced, with the reasoning shown
-//   undisclosed   — no public statement
+//   disclosed - the vendor states it
+//   reported - a credible third party states it
+//   inferred - deduced, with the reasoning shown
+//   undisclosed - no public statement
 //
 // Updated as of 2026-11-07. Regenerate the JSON mirror from this file.
 var phaFreeTierData = [
@@ -28,28 +28,28 @@ var phaFreeTierData = [
   "conflict": "OpenAI's own pages disagree on the version label for the free default. The help centre says 'GPT-5.6 Luna is becoming the default model for Free and Go users' (updated ~Oct 30) and the Free Tier FAQ says free users have access to GPT-5.6 Luna (updated ~Nov 6), while the live pricing page lists GPT-6 Luna as available on Free and GPT-5.6 Luna as not available on Free. Resolved to GPT-6 Luna: the pricing page is live and current, the October 7 release note says 'Free and Go use GPT-6 Luna', and the October 29 model update is scoped to Free and Go users - which is only possible if free users were already on GPT-6. The help-centre copy looks like prose that has not been refreshed since the GPT-6 rollout. Both candidate labels are Luna-tier models, so the practical difference is the generation number, not the tier.",
   "citations": [
    {
-    "title": "Plans and Pricing | ChatGPT — free plan is 'Unlimited text chats with GPT-6'; model matrix shows Free = GPT-6 Luna Yes, GPT-5.6 Luna No",
+    "title": "Plans and Pricing | ChatGPT - free plan is 'Unlimited text chats with GPT-6'; model matrix shows Free = GPT-6 Luna Yes, GPT-5.6 Luna No",
     "url": "https://chatgpt.com/pricing/",
     "date": "2026-11-07",
     "kind": "vendor",
     "quote": "Unlimited text chats with GPT-6"
    },
    {
-    "title": "ChatGPT release notes — GPT-6 and Intelligent UI in ChatGPT",
+    "title": "ChatGPT release notes - GPT-6 and Intelligent UI in ChatGPT",
     "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
     "date": "2026-10-07",
     "kind": "vendor",
     "quote": "Plus, Pro, Business, and Enterprise use GPT-6 Sol; Free and Go use GPT-6 Luna."
    },
    {
-    "title": "GPT-6 Sol and GPT-6 Luna: October 2026 update — OpenAI Deployment Safety Hub",
+    "title": "GPT-6 Sol and GPT-6 Luna: October 2026 update - OpenAI Deployment Safety Hub",
     "url": "https://deploymentsafety.openai.com/gpt-6-october/exploitbench",
     "date": "2026-10-07",
     "kind": "vendor",
     "quote": "We're launching GPT-6 to everyone in ChatGPT, across free and paid plans globally. These models will replace GPT-5.6 Sol and GPT-5.6 Luna in ChatGPT."
    },
    {
-    "title": "Model Release Notes — GPT-6 in ChatGPT update (applies to Free and Go users)",
+    "title": "Model Release Notes - GPT-6 in ChatGPT update (applies to Free and Go users)",
     "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
     "date": "2026-10-29",
     "kind": "vendor",
@@ -63,7 +63,7 @@ var phaFreeTierData = [
     "quote": "GPT-5.5 Instant brought frontier health intelligence to all free users. GPT-5.6 Sol builds on that progress with even stronger performance on more complex questions."
    },
    {
-    "title": "Health in ChatGPT | OpenAI Help Center — plan availability",
+    "title": "Health in ChatGPT | OpenAI Help Center - plan availability",
     "url": "https://help.openai.com/en/articles/20001036-health-in-chatgpt",
     "date": "2026-10-27",
     "kind": "vendor",
@@ -91,23 +91,23 @@ var phaFreeTierData = [
   "vendor": "Anthropic",
   "freeDefault": "Claude Sonnet 5.5 (Haiku 5.5 also available on Free)",
   "paidDefault": "Claude Opus 5.5 (paid plans); Claude Fable 5.1 on Max / Ultra, and by usage credits on Pro",
-  "healthAccess": "None for free users. Anthropic's health features — Apple Health on iOS, Android Health Connect, and the HealthEx and Function medical-record connectors — are in beta, US-only, and gated to Pro, Max and Ultra plans. A free user asking a health question simply gets an ordinary Sonnet 5.5 chat with no personal data grounding.",
+  "healthAccess": "None for free users. Anthropic's health features - Apple Health on iOS, Android Health Connect, and the HealthEx and Function medical-record connectors - are in beta, US-only, and gated to Pro, Max and Ultra plans. A free user asking a health question simply gets an ordinary Sonnet 5.5 chat with no personal data grounding.",
   "freeTierLimits": "Standard session limits (resetting every five hours plus a weekly cap); Anthropic publishes no numeric message count for the free tier.",
-  "healthNote": "Two model-level caveats matter for health questions. Anthropic ships biology safeguards on Sonnet 5.5 that may be flagged in error for some microbiology and virology questions, and on Opus tiers higher-risk biology and cybersecurity requests visibly fall back to an older model (Opus 4.8) — so on paid plans the model answering a sensitive biology question may not be the one selected. Anthropic states it is not a medical device and directs users to clinicians.",
+  "healthNote": "Two model-level caveats matter for health questions. Anthropic ships biology safeguards on Sonnet 5.5 that may be flagged in error for some microbiology and virology questions, and on Opus tiers higher-risk biology and cybersecurity requests visibly fall back to an older model (Opus 4.8) - so on paid plans the model answering a sensitive biology question may not be the one selected. Anthropic states it is not a medical device and directs users to clinicians.",
   "confidence": "disclosed",
   "asOf": "2026-11-07",
   "notes": "A patient asking a health question on a free Claude account is talking to Sonnet 5.5 at Medium effort, with Haiku 5.5 available for lighter queries. That is a materially stronger free default than OpenAI's or Google's.",
-  "conflict": "Anthropic does not publish a literal sentence naming the version-level default for free accounts on the Sonnet 5.5 launch — unlike the Sonnet 5 announcement, which said Sonnet 5 'is the default model for Free and Pro plans'. The pricing page names only the families (Sonnet, Haiku) without version numbers. The version-level default was therefore resolved from the Sonnet 5.5 product page, the pricing table, Anthropic's prior explicit Free-and-Pro default statement for Sonnet 5, the Academy guide calling Sonnet the versatile default, and first-party app inspections by two independent testers (Oct 9 and Nov 6, 2026) showing Sonnet 5.5 at Medium effort on a free account.",
+  "conflict": "Anthropic does not publish a literal sentence naming the version-level default for free accounts on the Sonnet 5.5 launch - unlike the Sonnet 5 announcement, which said Sonnet 5 'is the default model for Free and Pro plans'. The pricing page names only the families (Sonnet, Haiku) without version numbers. The version-level default was therefore resolved from the Sonnet 5.5 product page, the pricing table, Anthropic's prior explicit Free-and-Pro default statement for Sonnet 5, the Academy guide calling Sonnet the versatile default, and first-party app inspections by two independent testers (Oct 9 and Nov 6, 2026) showing Sonnet 5.5 at Medium effort on a free account.",
   "citations": [
    {
-    "title": "Plans & pricing | Claude by Anthropic — plan table shows Free gets Sonnet and Haiku, not Opus or Fable",
+    "title": "Plans & pricing | Claude by Anthropic - plan table shows Free gets Sonnet and Haiku, not Opus or Fable",
     "url": "https://claude.com/pricing",
     "date": "2026-11-07",
     "kind": "vendor",
     "quote": "| #### Sonnet | Yes | Yes | Yes | Yes |"
    },
    {
-    "title": "Claude Sonnet | Anthropic — Sonnet 5.5 product page",
+    "title": "Claude Sonnet | Anthropic - Sonnet 5.5 product page",
     "url": "https://www.anthropic.com/claude/sonnet",
     "date": "2026-09-28",
     "kind": "vendor",
@@ -121,28 +121,28 @@ var phaFreeTierData = [
     "quote": "Free includes Haiku and Sonnet; Pro, Max, and Ultra add Opus, Fable, and more headroom."
    },
    {
-    "title": "Introducing Claude Sonnet 5 | Anthropic — the prior explicit free-tier default statement",
+    "title": "Introducing Claude Sonnet 5 | Anthropic - the prior explicit free-tier default statement",
     "url": "https://www.anthropic.com/news/claude-sonnet-5",
     "date": "2026-06-30",
     "kind": "vendor",
     "quote": "From today, Claude Sonnet 5 is available across all plans: it is the default model for Free and Pro plans, and is available to Max, Team, and Enterprise users."
    },
    {
-    "title": "Use Claude with iOS apps | Claude Help Center — health features are paid-only",
+    "title": "Use Claude with iOS apps | Claude Help Center - health features are paid-only",
     "url": "https://support.claude.com/en/articles/11869619-use-claude-with-ios-apps",
     "date": "2026-11-07",
     "kind": "vendor",
     "quote": "Health features are currently in beta, require a Pro, Max, or Ultra plan, and are available in the US only."
    },
    {
-    "title": "Claude Sonnet 5.5 — free-tier observation",
+    "title": "Claude Sonnet 5.5 - free-tier observation",
     "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
     "date": "2026-09-28",
     "kind": "press",
     "quote": "The most interesting thing about Sonnet 5.5 is that it's now the model used for the free tier on claude.ai."
    },
    {
-    "title": "Is Claude Free? Free Plan Limits — free-account app inspection",
+    "title": "Is Claude Free? Free Plan Limits - free-account app inspection",
     "url": "https://hub.dailytech.id/is-claude-free/",
     "date": "2026-10-09",
     "kind": "press",
@@ -167,11 +167,11 @@ var phaFreeTierData = [
  {
   "platform": "Gemini",
   "vendor": "Google",
-  "freeDefault": "Auto — no manual model choice. Gemini Flash-Lite handles most prompts, with Flash or Pro used when deeper reasoning is needed",
+  "freeDefault": "Auto - no manual model choice. Gemini Flash-Lite handles most prompts, with Flash or Pro used when deeper reasoning is needed",
   "paidDefault": "Gemini 4 Argon on Google AI Pro / Ultra, with Flash, Pro and Argon selectable on AI Pro/Ultra and Flash on AI Plus",
-  "healthAccess": "No health-specific routing and no free-tier health limits are published. A free user asking a health question gets whatever the Auto router picks for that prompt — usually Flash-Lite — with no health data grounding. Google's consumer health surfaces are separate products, not free-tier AI-plan features: the Personal Health Coach (sleep, CGM via Health Connect, medical-record linking) is a Google AI plan public preview tied to Fitbit.",
+  "healthAccess": "No health-specific routing and no free-tier health limits are published. A free user asking a health question gets whatever the Auto router picks for that prompt - usually Flash-Lite - with no health data grounding. Google's consumer health surfaces are separate products, not free-tier AI-plan features: the Personal Health Coach (sleep, CGM via Health Connect, medical-record linking) is a Google AI plan public preview tied to Fitbit.",
   "freeTierLimits": "Thinking levels Low / Medium / High, with Low the default. Raising the thinking level burns the usage allowance faster, so a free user who turns effort up exhausts the 5-hour and weekly caps sooner.",
-  "healthNote": "Because free users cannot pick a model, the honest answer is that a free patient does not know which model answered their health question — Google does not disclose per-prompt routing probabilities, and the heavier reasoning models (Argon, Pro) are subscriber-only.",
+  "healthNote": "Because free users cannot pick a model, the honest answer is that a free patient does not know which model answered their health question - Google does not disclose per-prompt routing probabilities, and the heavier reasoning models (Argon, Pro) are subscriber-only.",
   "confidence": "disclosed",
   "asOf": "2026-11-07",
   "notes": "A patient asking a health question on a free Gemini account is talking to Flash-Lite via Auto, with Pro-model reasoning reserved for subscribers.",
@@ -185,14 +185,14 @@ var phaFreeTierData = [
     "quote": "Auto will be the default setting for users without a Google AI plan. Gemini will use auto model selection to send each prompt to the Gemini model that suits it best. Most prompts will go to Flash-Lite, our fastest model. Prompts that need deeper reasoning may go to Flash or Pro."
    },
    {
-    "title": "About Gemini models | Gemini Apps Help — model availability and the Auto footnote",
+    "title": "About Gemini models | Gemini Apps Help - model availability and the Auto footnote",
     "url": "https://support.google.com/gemini/answer/18648722?hl=en",
     "date": "2026-11-07",
     "kind": "vendor",
     "quote": "If auto model selection is turned on, Gemini will choose the appropriate model for each prompt. Most prompts will use Flash-Lite for quick answers. Prompts that require more reasoning may use Flash or Pro. If auto model selection is turned off, all responses will use Flash-Lite."
    },
    {
-    "title": "Understanding \"Auto\" in the Gemini Model Picker — Google official answer",
+    "title": "Understanding \"Auto\" in the Gemini Model Picker - Google official answer",
     "url": "https://support.google.com/gemini/thread/472706487/understanding-auto-in-the-gemini-model-picker?hl=en-AU",
     "date": "2026-10-13",
     "kind": "vendor",
@@ -228,11 +228,11 @@ var phaFreeTierData = [
   "paidDefault": "Gemini 4 Argon, selectable in the AI Mode model menu on Google AI Pro / Ultra (with daily limits), plus Gemini 3.8 Flash and 3.7 Flash options for subscribers",
   "healthAccess": "No health-specific model and no health-specific free-tier limits are published. Google's published position is that health results in Search come from advanced AI and health-focused advancements on Gemini models that make AI Overviews more clinically factual, and that people with the most complex health questions should move into AI Mode. There is no dedicated health model and no paid/free contrast beyond Argon's availability.",
   "freeTierLimits": "Argon carries daily usage limits for subscribers. Google publishes no limits tied to health queries.",
-  "healthNote": "For a free consumer, the hardest health questions land on Gemini 3.5 Flash in AI Mode — while an AI Pro/Ultra subscriber can escalate to Argon. Google separately published an end-to-end framework for evaluating AI on health scenarios (accuracy, safety, usefulness) with clinician review on Nov 4, 2026, and partners with national medical institutions for locally calibrated health sourcing.",
+  "healthNote": "For a free consumer, the hardest health questions land on Gemini 3.5 Flash in AI Mode - while an AI Pro/Ultra subscriber can escalate to Argon. Google separately published an end-to-end framework for evaluating AI on health scenarios (accuracy, safety, usefulness) with clinician review on Nov 4, 2026, and partners with national medical institutions for locally calibrated health sourcing.",
   "confidence": "disclosed",
   "asOf": "2026-11-07",
   "notes": "AI Mode is the more consequential surface for a patient: Google set Gemini 3.5 Flash as the default in AI Mode for everyone globally at I/O 2026, and merged AI Overviews into that flow. Since July 2026 Gemini 3.5 Flash-Lite has also been rolling out in Google Search for high-volume, latency-sensitive queries.",
-  "conflict": "The AI Overviews default is the soft point. Google's last explicit, vendor-stated default for AI Overviews is Gemini 3 (Jan 27, 2026), while at I/O 2026 Google merged AI Overviews into AI Mode and moved the combined flow onto Gemini 3.5 Flash. Google has not published a fresh AI-Overviews-specific default statement, and it states plainly that AI Overviews and AI Mode may use different models. So this entry reports the last explicit vendor default (Gemini 3) alongside the merged-flow reality (Gemini 3.5 Flash) rather than asserting one. Google also never labels which model wrote a given answer — routing is server-side and per query — so any single-answer model claim is unsupported.",
+  "conflict": "The AI Overviews default is the soft point. Google's last explicit, vendor-stated default for AI Overviews is Gemini 3 (Jan 27, 2026), while at I/O 2026 Google merged AI Overviews into AI Mode and moved the combined flow onto Gemini 3.5 Flash. Google has not published a fresh AI-Overviews-specific default statement, and it states plainly that AI Overviews and AI Mode may use different models. So this entry reports the last explicit vendor default (Gemini 3) alongside the merged-flow reality (Gemini 3.5 Flash) rather than asserting one. Google also never labels which model wrote a given answer - routing is server-side and per query - so any single-answer model claim is unsupported.",
   "citations": [
    {
     "title": "Google Search's I/O 2026 updates: AI agents and more | blog.google",
@@ -270,7 +270,7 @@ var phaFreeTierData = [
     "quote": "You can use 4 Argon in AI Mode by selecting it from the menu in the \"Ask anything\" bar. The \"Auto\" or \"Fast\" model in AI Mode will continue to be helpful for fast, all-around assistance on most questions."
    },
    {
-    "title": "Google for Health — Improving Access to Health Information",
+    "title": "Google for Health - Improving Access to Health Information",
     "url": "https://health.google/products/",
     "date": "2026-11-07",
     "kind": "vendor",
