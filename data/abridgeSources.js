@@ -52,4 +52,5 @@ var abridgeSourcesData = [
   {name:"Abridge - Physician Builder Challenge with OpenAI at HLTH 2026 (Oct 9, 2026)",url:"https://www.abridge.com/hlth2026"},
   {name:"Abridge - Sutter Health partnership timeline (Aug 27, 2026)",url:"https://www.abridge.com/blog/sutter-health-partnership-timeline"},
   {name:"MobiHealthNews - Inova Health selects Abridge (Feb 26, 2025)",url:"https://www.mobihealthnews.com/news/abridge-will-deliver-ai-powered-clinical-conversations-inova-health"},
+  {name:"Modern Healthcare - Abridge lays off employees in realignment (Nov 6, 2026)",url:"https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/"},
 ];

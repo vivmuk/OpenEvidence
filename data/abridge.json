@@ -229,14 +229,14 @@
       "type": "Technology · Physician Builder Challenge co-sponsor at HLTH 2026",
       "date": "Oct 9, 2026",
       "url": "https://www.abridge.com/hlth2026",
-      "new": true
+      "new": false
     },
     {
       "name": "Physician Side Gigs",
       "type": "Technology · Physician Builder Challenge co-sponsor at HLTH 2026",
       "date": "Oct 9, 2026",
       "url": "https://www.abridge.com/hlth2026",
-      "new": true
+      "new": false
     },
     {
       "name": "Geisinger",
@@ -615,6 +615,15 @@
     }
   ],
   "timeline": [
+    {
+      "date": "2026-11-06",
+      "cat": "Company",
+      "title": "Abridge Lays Off Employees in Company Realignment",
+      "desc": "Modern Healthcare reports Abridge has laid off an unspecified number of employees as part of a company realignment. Abridge said the move will allow it to hire in priority areas and invest in new opportunities. No headcount, department, or percentage was disclosed. The layoff signals a shift in the ambient AI market from land-grab growth toward margin discipline as EHR-native competitors and model platforms pressure pricing.",
+      "src": "Modern Healthcare",
+      "url": "https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/",
+      "new": true
+    },
     {
       "date": "2026-10-30",
       "cat": "Company",
@@ -1241,7 +1250,11 @@
     {
       "name": "MobiHealthNews - Inova Health selects Abridge (Feb 26, 2025)",
       "url": "https://www.mobihealthnews.com/news/abridge-will-deliver-ai-powered-clinical-conversations-inova-health"
+    },
+    {
+      "name": "Modern Healthcare - Abridge lays off employees in realignment (Nov 6, 2026)",
+      "url": "https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/"
     }
   ],
-  "updated": "2026-11-06"
+  "updated": "2026-11-08"
 }
