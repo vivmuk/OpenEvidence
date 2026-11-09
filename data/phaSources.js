@@ -111,4 +111,5 @@ var phaSourcesData = [
   {name:"HealthEx / GlobeNewswire - HealthEx connector for Meta Muse (Sep 8, 2026)", url:"https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/09/08/1916250/healthex-empowers-consumers-to-bring-their-personal-health-history-to-muse-metas-new-personal-ai-agent/"},
   {name:"arXiv - LifeLong Digital Twin: agent harness for lifelong health state trajectories (Oct 4, 2026)", url:"https://arxiv.org/abs/2610.05566"},
   {name:"medRxiv - Evaluation of symptom checker formats for health literacy and trust (Mar 11, 2026)", url:"https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"},
+  {name:"Lifelong - Alo family AI health assistant launch (Oct 2, 2026)", url:"https://trylifelong.com/blog/introducing-alo"},
 ];

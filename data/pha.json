@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -23,6 +23,15 @@
   },
   "timeline": [
     {
+      "date": "2026-10-02",
+      "cat": "Product",
+      "title": "Lifelong Launches Alo, a Family AI Health Assistant for iPhone",
+      "desc": "Lifelong introduced Alo, an AI health assistant built into Lifelong, the family health app for iPhone. Alo knows each person in the family, answers from their own records and their own numbers, and proactively flags changes instead of waiting to be asked. Users can talk to Alo in the app or from Messages. Represents the family-centric design pattern for personal health agents, extending the agent concept beyond individual health to household-level health management. Vendor claim: family health assistant, not a medical device.",
+      "src": "Lifelong",
+      "url": "https://trylifelong.com/blog/introducing-alo",
+      "new": true
+    },
+    {
       "date": "2026-11-02",
       "cat": "Trend",
       "title": "Sensor Tower: AI Health Insights Reshape Wearable Market as Apps Drive Engagement",
@@ -35,10 +44,9 @@
       "date": "2026-09-18",
       "cat": "Product",
       "title": "BodyBuddy Launches Agentic Health Record Built from Daily Conversations",
-      "desc": "BodyBuddy introduced the 'agentic health record,' an AI-maintained health log built from daily text conversations that captures what happens between appointments — knee pain on stairs, digestive issues after lunch, sleep disruption before deadlines, adherence to physio exercises. The record is written from user texts, not EHR data, and covers the gaps that clinical records never see. Represents the conversational-first design pattern for personal health agents: the agent builds the record through ongoing dialogue rather than importing from existing data sources. Vendor claim: agentic health record, not a medical device.",
+      "desc": "BodyBuddy introduced the 'agentic health record,' an AI-maintained health log built from daily text conversations that captures what happens between appointments - knee pain on stairs, digestive issues after lunch, sleep disruption before deadlines, adherence to physio exercises. The record is written from user texts, not EHR data, and covers the gaps that clinical records never see. Represents the conversational-first design pattern for personal health agents: the agent builds the record through ongoing dialogue rather than importing from existing data sources. Vendor claim: agentic health record, not a medical device.",
       "src": "BodyBuddy",
-      "url": "https://bodybuddy.app/blog/agentic-health-record",
-      "new": true
+      "url": "https://bodybuddy.app/blog/agentic-health-record"
     },
     {
       "date": "2026-11-05",
@@ -1380,8 +1388,33 @@
           "v": "AI-maintained health log from daily texts"
         }
       ],
-      "desc": "BodyBuddy's agentic health record is built from daily text conversations, capturing health events between appointments that the healthcare system never sees — knee pain, digestive issues, sleep disruption, exercise adherence. The record is written from user texts, not imported from EHR data. Represents the conversational-first design pattern for personal health agents: the agent builds the record through ongoing dialogue rather than importing from existing data sources. Vendor claim: agentic health record, not a medical device.",
+      "desc": "BodyBuddy's agentic health record is built from daily text conversations, capturing health events between appointments that the healthcare system never sees - knee pain, digestive issues, sleep disruption, exercise adherence. The record is written from user texts, not imported from EHR data. Represents the conversational-first design pattern for personal health agents: the agent builds the record through ongoing dialogue rather than importing from existing data sources. Vendor claim: agentic health record, not a medical device.",
       "url": "https://bodybuddy.app/blog/agentic-health-record"
+    },
+    {
+      "name": "Lifelong - Alo",
+      "type": "Family · AI health assistant",
+      "badge": "NEW ENTRANT",
+      "stats": [
+        {
+          "l": "Launched",
+          "v": "Oct 2, 2026"
+        },
+        {
+          "l": "Channel",
+          "v": "iPhone app + Messages"
+        },
+        {
+          "l": "Scope",
+          "v": "Family health"
+        },
+        {
+          "l": "Model",
+          "v": "Proprietary"
+        }
+      ],
+      "desc": "Lifelong's Alo is a family AI health assistant built into Lifelong, the family health app for iPhone. Alo knows each person in the family, answers from their own records and their own numbers, and proactively flags changes instead of waiting to be asked. Users can talk to Alo in the app or from Messages. Represents the family-centric design pattern for personal health agents, extending the agent concept from individual health to household-level health management. Vendor claim: family health assistant, not a medical device.",
+      "url": "https://trylifelong.com/blog/introducing-alo"
     }
   ],
   "research": [
@@ -2314,6 +2347,10 @@
     {
       "name": "medRxiv - Evaluation of symptom checker formats for health literacy and trust (Mar 11, 2026)",
       "url": "https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"
+    },
+    {
+      "name": "Lifelong - Alo family AI health assistant launch (Oct 2, 2026)",
+      "url": "https://trylifelong.com/blog/introducing-alo"
     }
   ],
   "freeTierDefaults": [
