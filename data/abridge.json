@@ -616,6 +616,33 @@
   ],
   "timeline": [
     {
+      "date": "2026-11-09",
+      "cat": "Company",
+      "title": "Yale Students Raise Privacy and Accuracy Concerns About Abridge at Yale Health",
+      "desc": "Yale Daily News reports that Yale Health incorporated Abridge in 2024 to draft notes from patient-provider conversations. Two years in, students express varying levels of comfort with the technology, citing concerns about privacy and accuracy of AI-generated documentation. The article highlights patient-side acceptance as a continuing adoption risk for ambient AI, even as clinician adoption accelerates. Yale Health is a campus health clinic distinct from Yale New Haven Health System, which is a separate Abridge enterprise customer.",
+      "src": "Yale Daily News",
+      "url": "https://yaledailynews.com/articles/two-years-after-yale-health-adopted-ai-helpers-yalies-are-on-the-fence",
+      "new": true
+    },
+    {
+      "date": "2026-11-09",
+      "cat": "Company",
+      "title": "Refolk Analysis: Abridge Layoffs Targeted Speech and LLM-Evaluation Engineers",
+      "desc": "A technical hiring analysis by Refolk finds that Abridge's November layoffs affected speech recognition and LLM-evaluation engineers, based on job-board diffs and office geography. The report notes the headcount cut may never trigger a WARN notice due to its size, and identifies 19 engineering requisitions that were removed. The analysis suggests Abridge is trimming specialized AI talent as the market shifts from model-building to product integration.",
+      "src": "Refolk",
+      "url": "https://www.refolk.ai/blog/abridge-layoffs-november-2026-speech-ml-engineers",
+      "new": true
+    },
+    {
+      "date": "2026-11-06",
+      "cat": "Product",
+      "title": "Abridge VP Dr. Nadim Ilbawi on Becker's Podcast: Context-Aware Clinical Decision Support",
+      "desc": "Dr. Nadim Ilbawi, VP of Clinical Success & Strategy at Abridge, appeared on Becker's Healthcare Podcast to discuss how AI-powered clinical decision support brings patient chart information and trusted medical evidence together. The conversation covers how Abridge Assistant helps clinicians prepare for visits, make informed decisions during encounters, and reduce cognitive burden by grounding responses in the patient conversation and licensed evidence sources.",
+      "src": "Becker's Healthcare Podcast",
+      "url": "https://podfollow.com/beckers-healthcare-podcast/episode/c4a69900a3d33a968f6ae78fc615b9bab5029d1e/view",
+      "new": true
+    },
+    {
       "date": "2026-11-06",
       "cat": "Company",
       "title": "Abridge Lays Off Employees in Company Realignment",
@@ -1254,7 +1281,19 @@
     {
       "name": "Modern Healthcare - Abridge lays off employees in realignment (Nov 6, 2026)",
       "url": "https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/"
+    },
+    {
+      "name": "Yale Daily News - Yale students on Abridge privacy concerns (Nov 9, 2026)",
+      "url": "https://yaledailynews.com/articles/two-years-after-yale-health-adopted-ai-helpers-yalies-are-on-the-fence"
+    },
+    {
+      "name": "Refolk - Abridge layoffs engineering analysis (Nov 9, 2026)",
+      "url": "https://www.refolk.ai/blog/abridge-layoffs-november-2026-speech-ml-engineers"
+    },
+    {
+      "name": "Becker's Healthcare Podcast - Dr. Nadim Ilbawi on CDS (Nov 6, 2026)",
+      "url": "https://podfollow.com/beckers-healthcare-podcast/episode/c4a69900a3d33a968f6ae78fc615b9bab5029d1e/view"
     }
   ],
-  "updated": "2026-11-08"
+  "updated": "2026-11-09"
 }
