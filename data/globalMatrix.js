@@ -1,4 +1,8 @@
 var globalMatrixData = [
+{platform:"Arkstone Next",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"ClinicOS (Symplicured)",us:"no",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"yes",latam:"no",mea:"no"},
+{platform:"Ubie (medical AI platform)",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"yes",sea:"no",latam:"no",mea:"no"},
+{platform:"Dimension NXG OJAS (services)",us:"yes",eu:"no",uk:"no",cn:"no",in:"yes",jp:"no",sea:"no",latam:"no",mea:"yes"},
   {platform:"Tandem Health",us:"no",eu:"yes",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"UpHill",us:"no",eu:"yes",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
   {platform:"Heidi Evidence",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"yes",latam:"no",mea:"no"},

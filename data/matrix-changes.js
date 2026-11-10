@@ -6,13 +6,269 @@ var matrixChangesData = {
  "baselineWeek": "2026-W45",
  "baselineDate": "2026-11-08",
  "statusChangeCount": 0,
- "newPlatformCount": 2,
+ "newPlatformCount": 6,
  "newPlatforms": [
+  "Arkstone Next",
+  "ClinicOS (Symplicured)",
+  "Ubie (medical AI platform)",
+  "Dimension NXG OJAS (services)",
   "Google Gemini for Healthcare",
   "Baidu Health Youyi Assistant"
  ],
- "changeCount": 18,
+ "changeCount": 54,
  "changes": [
+  {
+   "platform": "Arkstone Next",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Arkstone Next",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Arkstone Next",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Arkstone Next",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Arkstone Next",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Arkstone Next",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Arkstone Next",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Arkstone Next",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Arkstone Next",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "in",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "sea",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "ClinicOS (Symplicured)",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "jp",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ubie (medical AI platform)",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "in",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Dimension NXG OJAS (services)",
+   "region": "mea",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
   {
    "platform": "Google Gemini for Healthcare",
    "region": "us",

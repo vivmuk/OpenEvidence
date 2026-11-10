@@ -861,3 +861,31 @@
 
 - **Heidi Health** - $340M package ($100M equity led by Blackbird + $240M non-dilutive from General Catalyst) at a $900M valuation (Sep 22, 2026). Heidi Evidence has answered 10M+ queries since March 2026; ~2.8M patient interactions/week from 190 countries.
 - **Context** - Digital health raised $7.4B in H1 2026 after two lean years; ~$1.85B more across nine disclosed rounds in the following 30 days.
+
+---
+
+## Update - November 10, 2026 (Global CDS weekly sweep)
+
+### New / newly-tracked platforms
+
+- **OptoGuide** (Australia) - Clinical decision support tool for Australian optometrists and optometry students, launched by Brisbane optometrists Dr Ankit Mathur and Dr Garima Tyagi. First shown at the Optometry Clinical Conference (Aug 2026), now subscription-based. Extends evidence-based CDS beyond the physician market into a non-physician clinical workforce. Source: mivision
+- **Arkstone Next** (US) - Expert-in-the-loop infectious disease AI from Arkstone (Raleigh, NC) that helps clinics, urgent care and nursing homes choose the right antibiotic where no infectious disease specialist is available (Nov 4, 2026). Antimicrobial-stewardship CDS for ambulatory and post-acute settings. Source: Arkstone
+- **ClinicOS (Symplicured)** (India / Southeast Asia) - AI front desk for clinics expands from India to eight Asian markets: Singapore, Malaysia, Indonesia, the Philippines, Brunei, Thailand and Vietnam (Oct 30, 2026). Administrative/workflow AI rather than clinical reasoning. Source: Symplicured
+- **Ubie medical AI information platform** (Japan) - Joint demonstration by Igaku-Shoin, NTT, NTT Docomo Business and Ubie delivering trusted medical information to clinicians, validated at NTT East Japan Kanto Hospital (Nov 5, 2026). Source: Nikkei
+
+### Product and market developments
+
+- **Doximity** (US) - Clinical AI suite purchased by more than 190 health systems, up from 165 (Nov 9, 2026). Doximity also rolled out DoseCheck, a rules-based verification layer inside Doximity Ask, after company research found general-purpose AI models produced incorrect medication doses in at least 2.3% of answers. Source: Fierce Healthcare / Doximity
+- **Dimension NXG - OJAS** (India) - Mumbai deep-tech company behind AjnaLens launches OJAS Forward Deployed Engineering, a division that embeds engineers to help hospitals in India, the US and the Gulf implement clinical AI (Nov 9, 2026). Source: Digital Health News
+- **Baby Memorial Hospital Group** (India) - Signs an MoU with UK-based DeepInfinity.AI to roll out AI across nine hospitals, spanning clinical documentation and radiology (Nov 3, 2026). Source: Healthcare Asia
+- **Thailand / Global Medical AI Summit 2026** - Bangkok summit drew more than 400 executives from 263 organisations, showcasing Thailand's ambition to become a regional medical AI hub (Oct 30, 2026). Source: Bangkok Post
+- **United Kingdom - BRAINIAC Hub** - A GBP 20 million research hub led by the University of Exeter will build AI and data systems underpinning ten new NHS brain health clinics, targeting a halving of time to a dementia diagnosis (Nov 6, 2026). Source: University of Exeter
+- **Middle East and Africa** - October 2026 saw institution-building rather than new healthcare-specific rules: Lebanon moved a bill to create a Ministry of Technology and AI, Qatar set up a National Center for AI, and Abu Dhabi linked EHRs to clinical trials. Source: Avto Process
+
+### Regulatory
+
+- **WHO EMRO** - At the 73rd session of the WHO Regional Committee for the Eastern Mediterranean (Cairo, Oct 15, 2026) a high-level technical dialogue on AI for Health set regional priorities and considerations, positioning responsible AI governance as a public health priority. Source: WHO EMRO
+
+### Trend
+
+- **AI output verification layers** - Doximity's DoseCheck adds a deterministic, rules-based check on top of a generative clinical assistant, after finding general-purpose models mis-stated drug doses in at least 2.3% of answers. A new pattern: verification and guardrail layers shipped as product features around clinical LLMs rather than as separate safety research. Source: Doximity

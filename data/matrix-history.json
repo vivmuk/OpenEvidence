@@ -2486,6 +2486,50 @@
    "week": "2026-W46",
    "date": "2026-11-10",
    "state": {
+    "Arkstone Next": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "ClinicOS (Symplicured)": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "yes",
+     "jp": "no",
+     "sea": "yes",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Ubie (medical AI platform)": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "yes",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Dimension NXG OJAS (services)": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "yes",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "yes"
+    },
     "Tandem Health": {
      "us": "no",
      "eu": "yes",
