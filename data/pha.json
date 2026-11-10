@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -23,13 +23,37 @@
   },
   "timeline": [
     {
+      "date": "2026-11-06",
+      "cat": "Product",
+      "title": "Insilico Medicine Open-Sources Longevity Grok, a Personal Longevity Superintelligence",
+      "desc": "Insilico Medicine open-sourced Longevity Grok (PLSI), a 24/7 personal longevity AI that turns quantified-self data into predictive health states and aging research, in collaboration with David Sinclair of Harvard Medical School. Represents a new category of personal health agents focused on longevity and aging trajectories rather than acute care or general wellness. Open-source release aims to accelerate research adoption. Vendor claim: personal longevity superintelligence, not a medical device.",
+      "src": "Insilico Medicine / PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/insilico-open-sources-247-personal-longevity-superintelligence-to-turn-quantified-self-data-into-predictive-health-states-and-aging-research-302931941.html",
+      "new": true
+    },
+    {
+      "date": "2026-10-26",
+      "cat": "Research",
+      "title": "VitalAgent: Tool-Augmented Agent for Reactive and Proactive Physiological Monitoring Over Wearable Data",
+      "desc": "arXiv preprint from University of Melbourne, Dartmouth, University of Auckland and Eindhoven University presenting VitalAgent, a tool-augmented agent architecture for both reactive and proactive physiological monitoring over wearable health data. The framework addresses the gap between passive dashboards and active health agents by combining tool use, temporal reasoning and proactive alerting. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2605.29483"
+    },
+    {
+      "date": "2026-04-13",
+      "cat": "Research",
+      "title": "A Framework for Longitudinal Health AI Agents",
+      "desc": "arXiv preprint presenting a framework for designing AI agents that support longitudinal health tasks such as symptom management, behavior change and patient support. The framework draws on established conventions for follow-up, coherent reasoning and sustained alignment with individuals' goals to address the gap between current implementations and longitudinal care needs. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://doi.org/10.48550/arxiv.2604.12019"
+    },
+    {
       "date": "2026-10-02",
       "cat": "Product",
       "title": "Lifelong Launches Alo, a Family AI Health Assistant for iPhone",
       "desc": "Lifelong introduced Alo, an AI health assistant built into Lifelong, the family health app for iPhone. Alo knows each person in the family, answers from their own records and their own numbers, and proactively flags changes instead of waiting to be asked. Users can talk to Alo in the app or from Messages. Represents the family-centric design pattern for personal health agents, extending the agent concept beyond individual health to household-level health management. Vendor claim: family health assistant, not a medical device.",
       "src": "Lifelong",
-      "url": "https://trylifelong.com/blog/introducing-alo",
-      "new": true
+      "url": "https://trylifelong.com/blog/introducing-alo"
     },
     {
       "date": "2026-11-02",
@@ -108,8 +132,7 @@
       "title": "When AI Becomes a Medical Device: FDA Boundaries for Patient-Facing Health Tools",
       "desc": "Legal analysis published in Citeline examines how the FDA evaluates AI health software based on intended use and functionality, explaining how to design AI features that preserve clinicians' independent judgment and support exclusion from device regulation. The analysis addresses the regulatory boundary question that every consumer health AI vendor faces: when does a wellness feature become a medical claim that triggers FDA oversight?",
       "src": "Citeline",
-      "url": "https://insights.citeline.com/medtech-insight/perspectives/when-ai-becomes-a-medical-device-fda-boundaries-for-patient-facing-health-tools-QICAHCWLUJADBGL6C47I6LJ5ZQ/",
-      "new": true
+      "url": "https://insights.citeline.com/medtech-insight/perspectives/when-ai-becomes-a-medical-device-fda-boundaries-for-patient-facing-health-tools-QICAHCWLUJADBGL6C47I6LJ5ZQ/"
     },
     {
       "date": "2026-09-30",
@@ -234,8 +257,7 @@
       "title": "Separating Safety from Preference in Clinical LLM Evaluation: mRehab Advisory Agent",
       "desc": "A human-centered evaluation of the mRehab Advisory Agent with two cohorts: six domain experts rating clinical safety and correctness, and three end users rating helpfulness, affect, and clarity. Experts ranked the agent first most often (53.3%, p<0.001), yet it led on affect and clarity, not helpfulness, and drew mixed safety verdicts - demonstrating that a fluent, well-liked answer can still be clinically unsafe, and that preference-only evaluation hides this by collapsing many judgments into one winner. Published at the 4th International Workshop on Human-Centered Sensing, Modeling, and Intelligent Systems.",
       "src": "ACM",
-      "url": "http://dl.acm.org/doi/10.1145/3842436.3843811",
-      "new": true
+      "url": "http://dl.acm.org/doi/10.1145/3842436.3843811"
     },
     {
       "date": "2026-10-26",
@@ -243,8 +265,7 @@
       "title": "Microsoft Copilot Health Temporarily Unavailable After Unified Copilot Update",
       "desc": "Microsoft's October 26 unified Copilot app update removed Copilot Health from all platforms. The Health section displays 'Coming soon' on web, Windows, Edge, and iOS. Microsoft confirmed the disruption is temporary during the unified Copilot transition, with wearable connections expected to return later than core health features. Users who had connected Garmin data via Apple Health report losing access. Requires Microsoft 365 Personal, Family, or Premium subscription.",
       "src": "Microsoft Q&A / Reddit",
-      "url": "https://learn.microsoft.com/en-us/answers/questions/6051800/copilot-health",
-      "new": true
+      "url": "https://learn.microsoft.com/en-us/answers/questions/6051800/copilot-health"
     },
     {
       "date": "2026-10-26",
@@ -252,8 +273,7 @@
       "title": "RingConn Partner Officially Launches AI Wellness Companion",
       "desc": "RingConn launched Partner, an AI wellness companion built into its smart ring platform, following a beta testing phase. Partner connects wearable sensor data with conversational AI to deliver personalised health guidance, supports custom naming, and integrates additional health data sources beyond the ring's own metrics. Free to use with optional value-added services. Vendor claim: AI-powered wellness companion, not a medical device.",
       "src": "RingConn",
-      "url": "https://ringconn.com/blogs/news/ringconn-partner-now-officially-launching",
-      "new": true
+      "url": "https://ringconn.com/blogs/news/ringconn-partner-now-officially-launching"
     },
     {
       "date": "2026-10-23",
@@ -1897,6 +1917,24 @@
       "finding": "An online randomised controlled trial evaluating the impact of different symptom checker formats on symptom management knowledge, trust in AI symptom checkers, and accuracy of triage recommendations. The study addresses how the design and presentation of symptom checker outputs affects user comprehension and trust, which is critical for safe deployment of consumer-facing AI triage tools.",
       "caveat": "Preprint, not peer-reviewed. Online RCT with simulated scenarios may not reflect real-world symptom checker use. The specific formats tested may not generalise to all symptom checker platforms.",
       "url": "https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"
+    },
+    {
+      "title": "VitalAgent: A Tool-Augmented Agent for Reactive and Proactive Physiological Monitoring over Wearable Health Data",
+      "type": "arXiv preprint · agent architecture",
+      "date": "Oct 26, 2026",
+      "venue": "arXiv (cs.AI) - University of Melbourne, Dartmouth, University of Auckland, Eindhoven University",
+      "finding": "Presents VitalAgent, a tool-augmented agent architecture for both reactive (user-initiated) and proactive (system-initiated) physiological monitoring over wearable health data. The framework combines tool use, temporal reasoning and proactive alerting to address the gap between passive data dashboards and active health agents.",
+      "caveat": "Preprint, not peer-reviewed. Evaluation details and performance metrics are not fully described in the abstract. Real-world deployment with actual patients is not demonstrated.",
+      "url": "https://arxiv.org/abs/2605.29483"
+    },
+    {
+      "title": "A Framework for Longitudinal Health AI Agents",
+      "type": "arXiv preprint · design framework",
+      "date": "Apr 13, 2026",
+      "venue": "arXiv (cs.AI)",
+      "finding": "Presents a framework for designing AI agents that support longitudinal health tasks such as symptom management, behavior change and patient support. The framework draws on established conventions for follow-up, coherent reasoning and sustained alignment with individuals' goals to address the gap between current implementations and longitudinal care needs. The authors argue that most current implementations fall short of facilitating user intent and fostering accountability.",
+      "caveat": "Preprint, not peer-reviewed. The framework is conceptual and has not been validated in a clinical deployment. Feasibility and scalability of the proposed design are not demonstrated.",
+      "url": "https://doi.org/10.48550/arxiv.2604.12019"
     }
   ],
   "sources": [
@@ -2351,6 +2389,18 @@
     {
       "name": "Lifelong - Alo family AI health assistant launch (Oct 2, 2026)",
       "url": "https://trylifelong.com/blog/introducing-alo"
+    },
+    {
+      "name": "PR Newswire - Insilico Medicine open-sources Longevity Grok (Nov 6, 2026)",
+      "url": "https://www.prnewswire.com/news-releases/insilico-open-sources-247-personal-longevity-superintelligence-to-turn-quantified-self-data-into-predictive-health-states-and-aging-research-302931941.html"
+    },
+    {
+      "name": "arXiv - VitalAgent: Tool-Augmented Agent for Wearable Physiological Monitoring (Oct 26, 2026)",
+      "url": "https://arxiv.org/abs/2605.29483"
+    },
+    {
+      "name": "arXiv - A Framework for Longitudinal Health AI Agents (Apr 13, 2026)",
+      "url": "https://doi.org/10.48550/arxiv.2604.12019"
     }
   ],
   "freeTierDefaults": [

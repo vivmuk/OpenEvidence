@@ -111,5 +111,8 @@ var phaSourcesData = [
   {name:"HealthEx / GlobeNewswire - HealthEx connector for Meta Muse (Sep 8, 2026)", url:"https://portal.sina.com.hk/finance/finance-globenewswire/globenewswire/2026/09/08/1916250/healthex-empowers-consumers-to-bring-their-personal-health-history-to-muse-metas-new-personal-ai-agent/"},
   {name:"arXiv - LifeLong Digital Twin: agent harness for lifelong health state trajectories (Oct 4, 2026)", url:"https://arxiv.org/abs/2610.05566"},
   {name:"medRxiv - Evaluation of symptom checker formats for health literacy and trust (Mar 11, 2026)", url:"https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"},
-  {name:"Lifelong - Alo family AI health assistant launch (Oct 2, 2026)", url:"https://trylifelong.com/blog/introducing-alo"},
+  {name:"Lifelong - Alo family AI health assistant launch (Oct 2, 2026)", url:"https://trylifelong.com/blog/introducing-alo"},  {name:"PR Newswire - Insilico Medicine open-sources Longevity Grok (Nov 6, 2026)", url:"https://www.prnewswire.com/news-releases/insilico-open-sources-247-personal-longevity-superintelligence-to-turn-quantified-self-data-into-predictive-health-states-and-aging-research-302931941.html"},
+  {name:"arXiv - VitalAgent: Tool-Augmented Agent for Wearable Physiological Monitoring (Oct 26, 2026)", url:"https://arxiv.org/abs/2605.29483"},
+  {name:"arXiv - A Framework for Longitudinal Health AI Agents (Apr 13, 2026)", url:"https://doi.org/10.48550/arxiv.2604.12019"},
+
 ];

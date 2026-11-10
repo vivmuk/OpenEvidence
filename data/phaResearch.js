@@ -237,5 +237,13 @@ var phaResearchData = [
    finding:"An online randomised controlled trial evaluating the impact of different symptom checker formats on symptom management knowledge, trust in AI symptom checkers, and accuracy of triage recommendations. The study addresses how the design and presentation of symptom checker outputs affects user comprehension and trust, which is critical for safe deployment of consumer-facing AI triage tools.",
    caveat:"Preprint, not peer-reviewed. Online RCT with simulated scenarios may not reflect real-world symptom checker use. The specific formats tested may not generalise to all symptom checker platforms.",
    url:"https://www.medrxiv.org/content/10.64898/2026.03.11.26347036v2"},
+  {title:"VitalAgent: A Tool-Augmented Agent for Reactive and Proactive Physiological Monitoring over Wearable Health Data", type:"arXiv preprint · agent architecture", date:"Oct 26, 2026", venue:"arXiv (cs.AI) - University of Melbourne, Dartmouth, University of Auckland, Eindhoven University",
+   finding:"Presents VitalAgent, a tool-augmented agent architecture for both reactive (user-initiated) and proactive (system-initiated) physiological monitoring over wearable health data. The framework combines tool use, temporal reasoning and proactive alerting to address the gap between passive data dashboards and active health agents.",
+   caveat:"Preprint, not peer-reviewed. Evaluation details and performance metrics are not fully described in the abstract. Real-world deployment with actual patients is not demonstrated.",
+   url:"https://arxiv.org/abs/2605.29483"},
+  {title:"A Framework for Longitudinal Health AI Agents", type:"arXiv preprint · design framework", date:"Apr 13, 2026", venue:"arXiv (cs.AI)",
+   finding:"Presents a framework for designing AI agents that support longitudinal health tasks such as symptom management, behavior change and patient support. The framework draws on established conventions for follow-up, coherent reasoning and sustained alignment with individuals' goals to address the gap between current implementations and longitudinal care needs. The authors argue that most current implementations fall short of facilitating user intent and fostering accountability.",
+   caveat:"Preprint, not peer-reviewed. The framework is conceptual and has not been validated in a clinical deployment. Feasibility and scalability of the proposed design are not demonstrated.",
+   url:"https://doi.org/10.48550/arxiv.2604.12019"},
 
 ];
