@@ -2,6 +2,18 @@
 // Materiality-ranked events. score 1-100; confidence: confirmed|reported|inferred.
 var signalsData = [
  {
+  "date": "2026-11-09",
+  "cat": "Partnership",
+  "title": "ACP and OpenEvidence Collaborate to Enhance Physician Access to Trusted Clinical Guidance",
+  "desc": "OpenEvidence and the American College of Physicians (ACP) announce a collaboration to bring ACP's evidence-based clinical guidance and published content from its peer-reviewed journal Annals of Internal Medicine into OpenEvidence's clinical decision support platform at the point of care. Under the l",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/acp-and-openevidence-collaborate-to-enhance-physician-access-to-trusted-clinical-guidance",
+  "score": 97,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-06-16",
   "cat": "Media",
   "title": "Beckers covers Nature Medicine benchmarking study",
@@ -732,20 +744,6 @@ var signalsData = [
   "score": 51,
   "confidence": "reported",
   "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-05-13",
-  "cat": "Partnership",
-  "title": "Doximity + Aledade Partnership (Competitor)",
-  "desc": "Doximity integrates Clinical AI Suite into Aledade Assist for value-based care.",
-  "src": "Doximity",
-  "url": "https://press.doximity.com/",
-  "score": 51,
-  "confidence": "reported",
-  "competitors": [
-   "Doximity"
-  ],
   "comparative": false
  }
 ];
