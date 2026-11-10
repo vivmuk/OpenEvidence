@@ -3179,6 +3179,28 @@
      "latam": "no",
      "mea": "yes"
     },
+    "Google Gemini for Healthcare": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Baidu Health Youyi Assistant": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "yes",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
     "DeepRare": {
      "us": "no",
      "eu": "no",

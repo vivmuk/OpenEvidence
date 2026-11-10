@@ -63,6 +63,8 @@ var globalMatrixData = [
 {platform:"InTouchNow",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 {platform:"Certuma",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"yes",mea:"no"},
 {platform:"M42 Ossi",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"yes"},
+{platform:"Google Gemini for Healthcare",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Baidu Health Youyi Assistant",us:"no",eu:"no",uk:"no",cn:"yes",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 {platform:"DeepRare",us:"no",eu:"no",uk:"no",cn:"yes",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 {platform:"OPTiM AI Hospital",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"yes",sea:"no",latam:"no",mea:"no"},
 {platform:"FOAM Cortex",us:"yes",eu:"partial",uk:"partial",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},

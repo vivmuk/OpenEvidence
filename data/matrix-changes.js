@@ -6,8 +6,138 @@ var matrixChangesData = {
  "baselineWeek": "2026-W45",
  "baselineDate": "2026-11-08",
  "statusChangeCount": 0,
- "newPlatformCount": 0,
- "newPlatforms": [],
- "changeCount": 0,
- "changes": []
+ "newPlatformCount": 2,
+ "newPlatforms": [
+  "Google Gemini for Healthcare",
+  "Baidu Health Youyi Assistant"
+ ],
+ "changeCount": 18,
+ "changes": [
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Google Gemini for Healthcare",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "cn",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Baidu Health Youyi Assistant",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  }
+ ]
 };
