@@ -6046,5 +6046,103 @@
     "relevance": "Multimodal LLM benchmark in orthopaedic surgery. GPT-4o vs GPT-5 with expert human raters for revision arthroplasty decisions.",
     "status": "published",
     "new": true
+  },
+  {
+    "id": "bench:pmid:43003711",
+    "pmid": "43003711",
+    "title": "Comparative performance of experienced general surgeons and large language models in inguinal hernia management: A domain-based benchmarking study.",
+    "authors": "Bilgi\u00e7 E, Karacan E, Y\u0131lmaz EM",
+    "journal": "J Formos Med Assoc",
+    "published_date": "2026-11-09",
+    "models_evaluated": [
+      "ChatGPT-5.3",
+      "Gemini-3.1",
+      "DeepSeek-v3.2",
+      "Claude Sonnet 4.6"
+    ],
+    "task": "LLM benchmark comparing 4 frontier models against 43 board-certified surgeons across surgical complexity domains. Clinical decision support evaluation in surgery.",
+    "dataset": "25 questions, 43 surgeons, 4 LLMs, 3 domains",
+    "key_findings": "25 questions, 43 surgeons vs 4 LLMs. Gemini-3.1 highest (4.45/5), beating humans (3.85/5) and ChatGPT-5.3 (3.36/5). LLMs outperformed humans in complex and emergency scenarios but not basic guideline-based management.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43003711/",
+    "relevance": "LLM benchmark comparing 4 frontier models against 43 board-certified surgeons across surgical complexity domains. Clinical decision support evaluation in surgery.",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "bench:pmid:43002664",
+    "pmid": "43002664",
+    "title": "PancreaGuide for Computed Tomography Report Interpretation and Perioperative Consultation in Pancreatic Cancer: Development and Retrospective Evaluation of a Knowledge-Augmented Large Language Model Agent.",
+    "authors": "Kuang T, Wang R, Zhang S, Sun Y, Zhou J, Wu Z, Peng B",
+    "journal": "J Med Internet Res",
+    "published_date": "2026-11-09",
+    "models_evaluated": [
+      "ChatGPT",
+      "DeepSeek",
+      "Gemini"
+    ],
+    "task": "Knowledge-augmented LLM agent with RAG for clinical decision support in pancreatic cancer \u2014 CT interpretation and perioperative consultation. Directly relevant to clinical AI CDS tools.",
+    "dataset": "444 patients, 3 LLMs, 5 evaluation dimensions",
+    "key_findings": "444 patients, 3 LLMs. PancreaGuide improved all models. Gemini+ accuracy 87.4%, sensitivity 95.9%. Consultation: Gemini+ 3.88/5 overall. RAG + knowledge base improved completeness and robustness.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43002664/",
+    "relevance": "Knowledge-augmented LLM agent with RAG for clinical decision support in pancreatic cancer \u2014 CT interpretation and perioperative consultation. Directly relevant to clinical AI CDS tools.",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "bench:pmid:43001198",
+    "pmid": "43001198",
+    "title": "An explainable artificial intelligence system for prognostic assessment and decision support in diabetic foot ulcer care: a multicentre derivation and validation study with prospective randomised evaluation.",
+    "authors": "Zhang JY, Zhuang Y, Cao Q, Song C, Feng Y, Zhuang G, Ji Z, Li X, Li Q, Jin P, Zhang A, Zhang C",
+    "journal": "EClinicalMedicine",
+    "published_date": "2026-10-31",
+    "models_evaluated": [
+      "ST-XGBoost",
+      "ST-MLP"
+    ],
+    "task": "Explainable AI clinical decision support system for diabetic foot ulcer prognostic assessment with prospective randomized evaluation \u2014 direct clinical AI CDS evaluation with RCT evidence.",
+    "dataset": "763 + 100 + 202 patients across 3 hospitals, prospective RCT",
+    "key_findings": "763 patients dev, 100 external validation, 202 prospective RCT. Ensemble AUC 0.901. AI-assisted recommendations scored 7.77 vs 6.47 usual care (p<0.0001). Better follow-up engagement in AI group.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43001198/",
+    "relevance": "Explainable AI clinical decision support system for diabetic foot ulcer prognostic assessment with prospective randomized evaluation \u2014 direct clinical AI CDS evaluation with RCT evidence.",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "bench:pmid:43000558",
+    "pmid": "43000558",
+    "title": "Image-based diagnostic accuracy of artificial intelligence models in acute otitis media and otitis media with effusion: a comparison of ChatGPT and Gemini.",
+    "authors": "Alpay M, Aslier NGY",
+    "journal": "Eur Arch Otorhinolaryngol",
+    "published_date": "2026-11-08",
+    "models_evaluated": [
+      "GPT-5.2",
+      "Gemini 3.0 Flash"
+    ],
+    "task": "Multimodal LLM benchmark comparing GPT-5.2 and Gemini 3.0 Flash on image-based diagnosis of otologic conditions \u2014 clinical AI CDS evaluation.",
+    "dataset": "515 TM images, 2 LLMs, 3 diagnostic categories",
+    "key_findings": "515 images. Gemini 3.0 Flash \u03ba=0.697 vs GPT-5.2 \u03ba=0.662. Gemini significantly higher accuracy for pathologic TM (p=0.006). GPT-5.2 better sensitivity, Gemini better specificity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43000558/",
+    "relevance": "Multimodal LLM benchmark comparing GPT-5.2 and Gemini 3.0 Flash on image-based diagnosis of otologic conditions \u2014 clinical AI CDS evaluation.",
+    "status": "published",
+    "new": true
+  },
+  {
+    "id": "bench:pmid:43000382",
+    "pmid": "43000382",
+    "title": "Artificial intelligence in clinical decision-making: a comparison of ChatGPT 5.0 and Gemini 3.0 in otologic cases.",
+    "authors": "Tuna B, T\u00fczemen G, Mutlu H",
+    "journal": "BMC Med Inform Decis Mak",
+    "published_date": "2026-08-11",
+    "models_evaluated": [
+      "ChatGPT 5.0",
+      "Gemini 3.0"
+    ],
+    "task": "LLM benchmark comparing ChatGPT 5.0 and Gemini 3.0 on real-world otologic cases for clinical decision-making \u2014 direct clinical AI CDS evaluation.",
+    "dataset": "50 retrospective cases, 2 LLMs, 4 AIPI domains",
+    "key_findings": "50 cases. Gemini 3.0 significantly outperformed ChatGPT 5.0 (p<0.05) in diagnostic accuracy, investigation/therapy planning, overall AIPI. First real-world otologic LLM evaluation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43000382/",
+    "relevance": "LLM benchmark comparing ChatGPT 5.0 and Gemini 3.0 on real-world otologic cases for clinical decision-making \u2014 direct clinical AI CDS evaluation.",
+    "status": "published",
+    "new": true
   }
 ]

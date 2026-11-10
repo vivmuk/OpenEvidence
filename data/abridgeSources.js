@@ -1,4 +1,5 @@
 var abridgeSourcesData = [
+  {name:"Pittsburgh Business Times - Abridge layoffs (Nov 9, 2026)",url:"https://www.bizjournals.com/pittsburgh/news/2026/11/09/abridge-cuts-undisclosed-amount-of-staff.html"},
   {name:"Abridge - October 2026 Release: Visit Topics, Evaluation Dashboard (Oct 27, 2026)",url:"https://www.abridge.com/blog/now-in-practice-october-2026"},
   {name:"Abridge - Maine Health / Dr. Jessica Faraci case study (Oct 18, 2026)",url:"https://www.abridge.com/blog/mainehealth-jessica-faraci-abridge-assistant"},
   {name:"Abridge - Deaconess Health / Olivia Taylor Abridge Assistant case study (Sep 29, 2026)",url:"https://www.abridge.com/blog/deaconess-olivia-taylor-abridge-assistant"},

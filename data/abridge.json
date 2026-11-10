@@ -617,6 +617,24 @@
   "timeline": [
     {
       "date": "2026-11-09",
+      "cat": "Competitor",
+      "title": "Refolk: Abridge and Heidi Health Both Cut Staff in the Same Week",
+      "desc": "Refolk reports that Heidi Health, an Australian ambient AI scribe competitor, also cut staff in the same week as Abridge's layoffs. The analysis notes health systems employ approximately 4.8 analysts per vendor implementation seat, and frames the dual cuts as a signal that the ambient AI vendor market is consolidating as EHR-native tools compress pricing. The article provides transition guidance for displaced implementation and engineering staff moving from vendors to health systems.",
+      "src": "Refolk",
+      "url": "https://www.refolk.ai/candidates/blog/abridge-heidi-layoffs-move-from-healthcare-vendor-to-health-system",
+      "new": true
+    },
+    {
+      "date": "2026-11-09",
+      "cat": "Company",
+      "title": "Pittsburgh Business Times: Abridge Layoffs Hit Founding City, Local Impact Undisclosed",
+      "desc": "Pittsburgh Business Times reports that Abridge, founded in Pittsburgh, laid off an undisclosed number of employees. The article notes the startup raised hundreds of millions in venture capital but has largely scaled elsewhere, and impacts to its Pittsburgh footprint were not disclosed. The local coverage adds geographic context to the company-wide realignment first reported by Modern Healthcare.",
+      "src": "Pittsburgh Business Times",
+      "url": "https://www.bizjournals.com/pittsburgh/news/2026/11/09/abridge-cuts-undisclosed-amount-of-staff.html",
+      "new": true
+    },
+    {
+      "date": "2026-11-09",
       "cat": "Company",
       "title": "Yale Students Raise Privacy and Accuracy Concerns About Abridge at Yale Health",
       "desc": "Yale Daily News reports that Yale Health incorporated Abridge in 2024 to draft notes from patient-provider conversations. Two years in, students express varying levels of comfort with the technology, citing concerns about privacy and accuracy of AI-generated documentation. The article highlights patient-side acceptance as a continuing adoption risk for ambient AI, even as clinician adoption accelerates. Yale Health is a campus health clinic distinct from Yale New Haven Health System, which is a separate Abridge enterprise customer.",
@@ -667,7 +685,7 @@
       "desc": "Abridge introduced the Assistant Prompt Library, a growing collection of 300+ curated prompts organized by specialty and use case - chart prep, chart query, clinical decision support, note editing, and generating new artifacts. The library offers a window into how clinicians are putting Abridge Assistant into practice and is browseable on the Abridge website. Abridge called Assistant the fastest-growing product in its history.",
       "src": "Abridge / LinkedIn",
       "url": "https://www.linkedin.com/posts/abridgehq_featured-prompts-activity-7520503123082280960-4euN",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-22",
@@ -1067,6 +1085,10 @@
   ],
   "sources": [
     {
+      "name": "Pittsburgh Business Times - Abridge layoffs (Nov 9, 2026)",
+      "url": "https://www.bizjournals.com/pittsburgh/news/2026/11/09/abridge-cuts-undisclosed-amount-of-staff.html"
+    },
+    {
       "name": "Abridge - October 2026 Release: Visit Topics, Evaluation Dashboard (Oct 27, 2026)",
       "url": "https://www.abridge.com/blog/now-in-practice-october-2026"
     },
@@ -1295,5 +1317,5 @@
       "url": "https://podfollow.com/beckers-healthcare-podcast/episode/c4a69900a3d33a968f6ae78fc615b9bab5029d1e/view"
     }
   ],
-  "updated": "2026-11-09"
+  "updated": "2026-11-10"
 }
