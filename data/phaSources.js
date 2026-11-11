@@ -115,4 +115,8 @@ var phaSourcesData = [
   {name:"arXiv - VitalAgent: Tool-Augmented Agent for Wearable Physiological Monitoring (Oct 26, 2026)", url:"https://arxiv.org/abs/2605.29483"},
   {name:"arXiv - A Framework for Longitudinal Health AI Agents (Apr 13, 2026)", url:"https://doi.org/10.48550/arxiv.2604.12019"},
 
+  {name:"Lucis - Meet Lumi AI health coach (Nov 10, 2026)", url:"https://www.lucis.life/blog/meet-lumi"},
+  {name:"Technobezz / Oura - Personalized wellness plans via Oura Advisor (Nov 10, 2026)", url:"https://www.technobezz.com/news/from-insights-to-action-build-a-personalized-plan-with-oura-advisor"},
+  {name:"Business Wire / Get Blue - Adaptive health platform launch (Nov 9, 2026)", url:"https://www.businesswire.com/news/home/20261102715379/en/Get-Blue-Launches-Adaptive-Health-Platform-That-Adjusts-to-Your-Bodys-Signals-in-Real-Time"},
+
 ];

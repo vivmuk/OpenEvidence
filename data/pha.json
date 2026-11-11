@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,33 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-10",
+      "cat": "Product",
+      "title": "Lucis Launches Lumi, an AI Health Coach Built Around Blood Testing and Daily Guidance",
+      "desc": "Lucis introduced Lumi, an AI health coach at the heart of its health membership. Lumi starts from the user's blood test and provides daily guidance, acting as a health partner rather than a chatbot. The coach is built with Lucis's medical team and has clear boundaries on where it stops. Represents the blood-test-anchored design pattern for personal health agents: the agent grounds its ongoing coaching in objective biomarker data rather than self-reported inputs alone. Vendor claim: health coach, not a medical device.",
+      "src": "Lucis",
+      "url": "https://www.lucis.life/blog/meet-lumi",
+      "new": true
+    },
+    {
+      "date": "2026-11-10",
+      "cat": "Product",
+      "title": "Oura Advisor Adds Personalized Wellness Plans for Ring Gen3 and Newer",
+      "desc": "Oura rolled out personalized wellness plans through Oura Advisor for Ring Gen3 and newer on iOS and Android. Plans draw on sleep patterns, recovery and activity trends alongside user-reported daily routines. Advisor seeks confirmation before building a plan, marking a shift from passive insights to goal-anchored, multi-step coaching. Requires app version 7.30.0 or later and English language setting. Vendor claim: personalized wellness guidance, not a medical device.",
+      "src": "Technobezz / Oura",
+      "url": "https://www.technobezz.com/news/from-insights-to-action-build-a-personalized-plan-with-oura-advisor",
+      "new": true
+    },
+    {
+      "date": "2026-11-09",
+      "cat": "Product",
+      "title": "Get Blue Launches Adaptive Health Platform with Real-Time Biomarker Analytics and Coaching",
+      "desc": "Get Blue launched an adaptive health platform powered by Lifestyle Intelligence that bridges real-time biomarker analytics with personalized coaching from performance experts. Created by physicians, the platform adjusts to the body's signals in real time and targets high performers with actionable insights for long-term health gains. Represents the physician-created, performance-focused design pattern for personal health agents. Vendor claim: adaptive health platform, not a medical device.",
+      "src": "Business Wire / Get Blue",
+      "url": "https://www.businesswire.com/news/home/20261102715379/en/Get-Blue-Launches-Adaptive-Health-Platform-That-Adjusts-to-Your-Bodys-Signals-in-Real-Time",
+      "new": true
+    },
     {
       "date": "2026-11-06",
       "cat": "Product",
@@ -239,8 +266,7 @@
       "title": "Apple iOS 27.2 Final Ships Without AI-Powered Health App",
       "desc": "iOS 27.2 has rolled out to iPhones without the redesigned AI-powered Health app, which was tested in betas for weeks then quietly removed in the fourth beta on October 13. The final update ships with the current Health app restored. The AI-powered version, featuring health summaries, an Insights tab, Health Age score and fitness checks, is now expected later. This marks the second postponement of Apple's Apple Intelligence-powered health insights overhaul, following Bloomberg's report that the fuller AI health coach (Project Mulberry) was scaled back in February.",
       "src": "Gizbot / MacRumors",
-      "url": "https://www.gizbot.com/news/apple-has-been-building-an-ai-health-coach-since-2025-129449.html",
-      "new": true
+      "url": "https://www.gizbot.com/news/apple-has-been-building-an-ai-health-coach-since-2025-129449.html"
     },
     {
       "date": "2026-10-28",
@@ -2401,6 +2427,18 @@
     {
       "name": "arXiv - A Framework for Longitudinal Health AI Agents (Apr 13, 2026)",
       "url": "https://doi.org/10.48550/arxiv.2604.12019"
+    },
+    {
+      "name": "Lucis - Meet Lumi AI health coach (Nov 10, 2026)",
+      "url": "https://www.lucis.life/blog/meet-lumi"
+    },
+    {
+      "name": "Technobezz / Oura - Personalized wellness plans via Oura Advisor (Nov 10, 2026)",
+      "url": "https://www.technobezz.com/news/from-insights-to-action-build-a-personalized-plan-with-oura-advisor"
+    },
+    {
+      "name": "Business Wire / Get Blue - Adaptive health platform launch (Nov 9, 2026)",
+      "url": "https://www.businesswire.com/news/home/20261102715379/en/Get-Blue-Launches-Adaptive-Health-Platform-That-Adjusts-to-Your-Bodys-Signals-in-Real-Time"
     }
   ],
   "freeTierDefaults": [
