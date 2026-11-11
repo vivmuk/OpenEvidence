@@ -616,6 +616,15 @@
   ],
   "timeline": [
     {
+      "date": "2026-11-10",
+      "cat": "Competitor",
+      "title": "Machine.net: Abridge and Heidi Health Cut Staff Within Days as Hospital Sales Lag",
+      "desc": "Machine.net reports that Abridge (valued at $5.3B) and Heidi Health (Australian rival valued at A$1.26B) both cut staff within days of each other, signaling a consolidation phase in the ambient AI scribe market. The analysis ties the dual layoffs to Epic native AI charting tool compressing the standalone scribe market, with hospital procurement cycles slowing as EHR-bundled alternatives reduce willingness to pay for third-party tools. The piece frames this as the most crowded corner of healthcare AI entering a shakeout.",
+      "src": "Machine.net",
+      "url": "https://machine.net/news/abridge-heidi-ai-medical-scribe-layoffs-epic-ai-charting-squeeze/",
+      "new": true
+    },
+    {
       "date": "2026-11-09",
       "cat": "Competitor",
       "title": "Refolk: Abridge and Heidi Health Both Cut Staff in the Same Week",
@@ -721,7 +730,7 @@
       "desc": "Abridge's October 'Now in Practice' release adds Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic as they are discussed), patient visit summary editing via Abridge Assistant, chart-informed inpatient H&P and progress notes that cite chart sources inline, outpatient CDI queries and cues through the Query Engine, inpatient diagnosis write-back to the chart at note signature, and an Evaluation Dashboard giving governance teams transparency into how Abridge's clinical AI is measured. The release moves more CDI and order-capture work into the encounter itself.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/now-in-practice-october-2026",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-18",
@@ -1315,7 +1324,11 @@
     {
       "name": "Becker's Healthcare Podcast - Dr. Nadim Ilbawi on CDS (Nov 6, 2026)",
       "url": "https://podfollow.com/beckers-healthcare-podcast/episode/c4a69900a3d33a968f6ae78fc615b9bab5029d1e/view"
+    },
+    {
+      "name": "Machine.net - Abridge and Heidi Health cut staff, Epic AI squeeze (Nov 10, 2026)",
+      "url": "https://machine.net/news/abridge-heidi-ai-medical-scribe-layoffs-epic-ai-charting-squeeze/"
     }
   ],
-  "updated": "2026-11-10"
+  "updated": "2026-11-11"
 }
