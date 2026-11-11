@@ -6,16 +6,30 @@ var matrixChangesData = {
  "baselineWeek": "2026-W45",
  "baselineDate": "2026-11-08",
  "statusChangeCount": 0,
- "newPlatformCount": 6,
+ "newPlatformCount": 20,
  "newPlatforms": [
   "Arkstone Next",
   "ClinicOS (Symplicured)",
   "Ubie (medical AI platform)",
   "Dimension NXG OJAS (services)",
   "Google Gemini for Healthcare",
-  "Baidu Health Youyi Assistant"
+  "Baidu Health Youyi Assistant",
+  "EkaCare",
+  "MDCalc CrossCover",
+  "House",
+  "TatvaPractice Doctor Agent",
+  "Medroid (AskMedroid)",
+  "MedAlly",
+  "XpertDox",
+  "Almanac Health",
+  "Concurrence (AMIGO)",
+  "Zoom Clinical Notes",
+  "Berta",
+  "TwentySix Triage",
+  "Oracle Health Clinical AI Agent",
+  "Mayo Clinic Platform CDS"
  ],
- "changeCount": 54,
+ "changeCount": 180,
  "changes": [
   {
    "platform": "Arkstone Next",
@@ -390,6 +404,888 @@ var matrixChangesData = {
   },
   {
    "platform": "Baidu Health Youyi Assistant",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "in",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EkaCare",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MDCalc CrossCover",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "in",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "House",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "in",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TatvaPractice Doctor Agent",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medroid (AskMedroid)",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "MedAlly",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "XpertDox",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Almanac Health",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "eu",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "uk",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "in",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "sea",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "latam",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Concurrence (AMIGO)",
+   "region": "mea",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "eu",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "uk",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "in",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "jp",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "sea",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "latam",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Zoom Clinical Notes",
+   "region": "mea",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "eu",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "uk",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "in",
+   "from": null,
+   "to": "partial",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Berta",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "uk",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "TwentySix Triage",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "uk",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Oracle Health Clinical AI Agent",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mayo Clinic Platform CDS",
    "region": "mea",
    "from": null,
    "to": "no",

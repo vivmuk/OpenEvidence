@@ -3398,6 +3398,160 @@
      "sea": "no",
      "latam": "no",
      "mea": "no"
+    },
+    "EkaCare": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "yes",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "MDCalc CrossCover": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "House": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "yes",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "TatvaPractice Doctor Agent": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "yes",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Medroid (AskMedroid)": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "MedAlly": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "XpertDox": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Almanac Health": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Concurrence (AMIGO)": {
+     "us": "yes",
+     "eu": "partial",
+     "uk": "partial",
+     "cn": "no",
+     "in": "partial",
+     "jp": "no",
+     "sea": "partial",
+     "latam": "partial",
+     "mea": "partial"
+    },
+    "Zoom Clinical Notes": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "partial",
+     "jp": "partial",
+     "sea": "partial",
+     "latam": "partial",
+     "mea": "partial"
+    },
+    "Berta": {
+     "us": "yes",
+     "eu": "partial",
+     "uk": "partial",
+     "cn": "no",
+     "in": "partial",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "TwentySix Triage": {
+     "us": "no",
+     "eu": "no",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Oracle Health Clinical AI Agent": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Mayo Clinic Platform CDS": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
     }
    }
   }
