@@ -272,18 +272,6 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-10-28",
-  "cat": "Partnership",
-  "title": "ASAM and OpenEvidence Partner to Expand Access to Evidence-Based Addiction Medicine Guidance",
-  "desc": "The American Society of Addiction Medicine (ASAM) and OpenEvidence announce a collaboration to make ASAM's clinical guidelines, guidance, and implementation resources accessible through OpenEvidence, bringing evidence-based addiction medicine treatment guidance to the point of care for the millions ",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/asam-and-openevidence-partner-to-expand-access-to-evidence-based-addiction-medicine-guidance",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
   "date": "2026-09-24",
   "cat": "Funding",
   "title": "OpenEvidence Raises $250M at $15B Valuation, Pivots Into Drug Development",
@@ -326,6 +314,18 @@ var signalsData = [
   "desc": "OpenEvidence launches Learn, a free personalized medical education platform extending its AI from point-of-care support into how doctors learn medicine. Four tools available today: Test Prep (50,000+ board-style questions for USMLE, COMLEX, and specialty/subspecialty boards), Preceptor (Socratic cas",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/announcing-learn",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-10-28",
+  "cat": "Partnership",
+  "title": "ASAM and OpenEvidence Partner to Expand Access to Evidence-Based Addiction Medicine Guidance",
+  "desc": "The American Society of Addiction Medicine (ASAM) and OpenEvidence announce a collaboration to make ASAM's clinical guidelines, guidance, and implementation resources accessible through OpenEvidence, bringing evidence-based addiction medicine treatment guidance to the point of care for the millions ",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/asam-and-openevidence-partner-to-expand-access-to-evidence-based-addiction-medicine-guidance",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
