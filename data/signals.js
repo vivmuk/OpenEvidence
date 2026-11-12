@@ -260,18 +260,6 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-10-29",
-  "cat": "Partnership",
-  "title": "OpenEvidence and NYU Langone Health Partner to Bring Patient-Aware Intelligence to 12 Million Visits in New York City",
-  "desc": "NYU Langone Health and OpenEvidence announce a collaboration to bring OpenEvidence directly into NYU Langone's Epic electronic health record (EHR), with Patient Aware Clinical Intelligence. Clinicians can ask complex clinical questions in natural language and receive answers grounded in peer-reviewe",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-and-nyu-langone-health-partner-to-bring-patient-aware-intelligence-to-12-million-visits-in-new-york-city",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
   "date": "2026-09-24",
   "cat": "Funding",
   "title": "OpenEvidence Raises $250M at $15B Valuation, Pivots Into Drug Development",
@@ -308,12 +296,36 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-11-11",
+  "cat": "Product",
+  "title": "OpenEvidence Launches Access Intelligence, Free Affordability and Access Tools for Clinicians",
+  "desc": "OpenEvidence launched Access Intelligence, a suite of tools built directly into the platform that helps clinicians ensure their patients can access and afford the care they need. Components available now, free for all clinicians: (1) Support program information in the flow of care — availability and",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/introducing-openevidence-access-intelligence-bringing-affordability-and-access-to-the-point-of-care",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-11-04",
   "cat": "Product",
   "title": "OpenEvidence Launches Learn, a Free Personalized Medical Education Platform",
   "desc": "OpenEvidence launches Learn, a free personalized medical education platform extending its AI from point-of-care support into how doctors learn medicine. Four tools available today: Test Prep (50,000+ board-style questions for USMLE, COMLEX, and specialty/subspecialty boards), Preceptor (Socratic cas",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/announcing-learn",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-10-29",
+  "cat": "Partnership",
+  "title": "OpenEvidence and NYU Langone Health Partner to Bring Patient-Aware Intelligence to 12 Million Visits in New York City",
+  "desc": "NYU Langone Health and OpenEvidence announce a collaboration to bring OpenEvidence directly into NYU Langone's Epic electronic health record (EHR), with Patient Aware Clinical Intelligence. Clinicians can ask complex clinical questions in natural language and receive answers grounded in peer-reviewe",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/openevidence-and-nyu-langone-health-partner-to-bring-patient-aware-intelligence-to-12-million-visits-in-new-york-city",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
@@ -729,18 +741,6 @@ var signalsData = [
   "desc": "OpenEvidence ranked #6 on LinkedIn Top Startups list for the United States. The list is based on LinkedIn hiring data showing where professionals want to work. OpenEvidence highlighted its physician + engineer team focused on evidence-based medicine and linked to open roles. Companion recognition to",
   "src": "X/Twitter",
   "url": "https://x.com/OpenEvidence/status/2110475526947373202",
-  "score": 51,
-  "confidence": "reported",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-05-19",
-  "cat": "Milestone",
-  "title": "CNBC Disruptor 50 - OpenEvidence Ranked #32",
-  "desc": "OpenEvidence ranked #32 on CNBC 2026 Disruptor 50 list. Cited for $700M funding, $12B valuation, 40%+ of US physicians, and narrow but powerful medical AI strategy.",
-  "src": "CNBC",
-  "url": "https://www.cnbc.com/2026/05/19/openevidence-cnbc-disruptor-50-ranking.html",
   "score": 51,
   "confidence": "reported",
   "competitors": [],
