@@ -58,4 +58,6 @@ var abridgeSourcesData = [
   {name:"Refolk - Abridge layoffs engineering analysis (Nov 9, 2026)",url:"https://www.refolk.ai/blog/abridge-layoffs-november-2026-speech-ml-engineers"},
   {name:"Becker's Healthcare Podcast - Dr. Nadim Ilbawi on CDS (Nov 6, 2026)",url:"https://podfollow.com/beckers-healthcare-podcast/episode/c4a69900a3d33a968f6ae78fc615b9bab5029d1e/view"},
   {name:"Machine.net - Abridge and Heidi Health cut staff, Epic AI squeeze (Nov 10, 2026)",url:"https://machine.net/news/abridge-heidi-ai-medical-scribe-layoffs-epic-ai-charting-squeeze/"},
+  {name:"Abridge - Local Pathways press release (Nov 12, 2026)",url:"https://www.abridge.com/press-release/local-pathways-abridge-assistant"},
+  {name:"Abridge / LinkedIn - Visit Dx enhancements (Nov 9, 2026)",url:"https://www.linkedin.com/posts/abridgehq_new-abridge-visit-dx-enhancements-give-clinicians-activity-7525593317217255425-gVyy"},
 ];

@@ -79,7 +79,7 @@
       "name": "Abridge Assistant",
       "status": "live",
       "date": "Oct 13, 2026",
-      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. October 2026 release added Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic's Heard in Visit Recording module as discussed), patient visit summary editing via Assistant (reading level, plain language, tone, length), chart-informed inpatient H&P and progress notes citing chart sources inline, outpatient CDI queries and cues via the Query Engine, inpatient diagnosis write-back at note signature, and an Evaluation Dashboard for governance teams. Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries.",
+      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. October 2026 release added Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic's Heard in Visit Recording module as discussed), patient visit summary editing via Assistant (reading level, plain language, tone, length), chart-informed inpatient H&P and progress notes citing chart sources inline, outpatient CDI queries and cues via the Query Engine, inpatient diagnosis write-back at note signature, and an Evaluation Dashboard for governance teams. November 2026 added Visit Dx enhancements (diagnosis organization under problem headers, search-and-replace, specificity modifiers) and Local Pathways (institution-specific care guidance surfaced alongside published evidence, with links to source documents). Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries. UC Irvine Health and Dayton Children's Hospital cited as Local Pathways design partners.",
       "url": "https://www.abridge.com/platform/assistant"
     },
     {
@@ -538,6 +538,20 @@
       "date": "2026",
       "url": "https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/",
       "new": false
+    },
+    {
+      "name": "UC Irvine Health",
+      "type": "Health system · Abridge Assistant, Local Pathways design partner",
+      "date": "Nov 2026",
+      "url": "https://www.abridge.com/press-release/local-pathways-abridge-assistant",
+      "new": false
+    },
+    {
+      "name": "Dayton Children's Hospital",
+      "type": "Pediatric health system · Local Pathways design partner",
+      "date": "Nov 2026",
+      "url": "https://www.abridge.com/press-release/local-pathways-abridge-assistant",
+      "new": false
     }
   ],
   "research": [
@@ -615,6 +629,33 @@
     }
   ],
   "timeline": [
+    {
+      "date": "2026-11-12",
+      "cat": "Product",
+      "title": "Abridge Assistant Adds Local Pathways: Health System Care Guidance at the Point of Care",
+      "desc": "Abridge announced support for local pathways within the Abridge Assistant, surfacing a health system's own preferred care plans alongside published medical literature. When an applicable institutional pathway is found, the Assistant shows the relevant content with a link to the original source for clinician review. Dr. Shiv Rao framed the goal as turning standards of care into more consistent care at the moment of decision. Dr. Deepti Pandita (UC Irvine Health) and Dr. Abiodun Omoloja (Dayton Children's) endorsed the workflow-integrated approach. The capability runs on existing Abridge enterprise infrastructure that has already passed each institution's security review.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/local-pathways-abridge-assistant",
+      "new": true
+    },
+    {
+      "date": "2026-11-09",
+      "cat": "Product",
+      "title": "Abridge Visit Dx Enhancements: Organize, Search, and Refine Diagnoses in the Note",
+      "desc": "Abridge released Visit Dx enhancements giving clinicians more control over diagnoses in the generated note. New capabilities include organizing diagnoses under problem headers so the assessment reads the way clinicians think, searching and replacing diagnoses without leaving the note, and refining diagnoses with specificity modifiers like laterality and acuity. The update continues Abridge's push to make the AI-generated note editable and clinically precise at the point of care rather than requiring post-visit cleanup.",
+      "src": "Abridge / LinkedIn",
+      "url": "https://www.linkedin.com/posts/abridgehq_new-abridge-visit-dx-enhancements-give-clinicians-activity-7525593317217255425-gVyy",
+      "new": true
+    },
+    {
+      "date": "2026-10-07",
+      "cat": "Research",
+      "title": "KLAS Ambient AI 2026: High-Performing Market Shifts as EHR-Native Tools Compress Standalone Scribes",
+      "desc": "KLAS Research's October 2026 Ambient AI market report finds the category remains one of healthcare IT's highest-performing markets, but average satisfaction scores have slipped as EHR-native tools raise expectations and compress pricing. The report identifies three market shifts: native EHR ambient tools gaining share, health systems renegotiating contracts, and standalone vendors differentiating on adjacent capabilities like CDI and decision support. Abridge remains the top-ranked vendor at 94.7.",
+      "src": "KLAS Research",
+      "url": "https://klasresearch.com/report/ambient-ai-2026-a-high-performing-market-shifts-as-ehr-native-tools-adjust-long-term-strategies/3982",
+      "new": false
+    },
     {
       "date": "2026-11-10",
       "cat": "Competitor",
@@ -1328,7 +1369,15 @@
     {
       "name": "Machine.net - Abridge and Heidi Health cut staff, Epic AI squeeze (Nov 10, 2026)",
       "url": "https://machine.net/news/abridge-heidi-ai-medical-scribe-layoffs-epic-ai-charting-squeeze/"
+    },
+    {
+      "name": "Abridge - Local Pathways press release (Nov 12, 2026)",
+      "url": "https://www.abridge.com/press-release/local-pathways-abridge-assistant"
+    },
+    {
+      "name": "Abridge / LinkedIn - Visit Dx enhancements (Nov 9, 2026)",
+      "url": "https://www.linkedin.com/posts/abridgehq_new-abridge-visit-dx-enhancements-give-clinicians-activity-7525593317217255425-gVyy"
     }
   ],
-  "updated": "2026-11-11"
+  "updated": "2026-11-12"
 }

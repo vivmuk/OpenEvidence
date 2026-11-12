@@ -57,5 +57,7 @@ var abridgePartnersData = [
   {name:"Lightspeed Venture Partners",type:"Investor · Series C/D",date:"2024-2025",url:"https://sacra.com/c/abridge/",new:false},
   {name:"Elad Gil",type:"Lead investor · Series D",date:"Feb 2025",url:"https://fortune.com/2025/02/17/abridge-ai-founder-ceo-shiv-rao-practicing-doctor-profile-250-million-funding/",new:false},
   {name:"CVS Health Ventures",type:"Investor",date:"2025",url:"https://sacra.com/c/abridge/",new:false},
-  {name:"Kaiser Permanente Ventures",type:"Investor",date:"2026",url:"https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/",new:false}
+  {name:"Kaiser Permanente Ventures",type:"Investor",date:"2026",url:"https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/",new:false},
+  {name:"UC Irvine Health",type:"Health system · Abridge Assistant, Local Pathways design partner",date:"Nov 2026",url:"https://www.abridge.com/press-release/local-pathways-abridge-assistant",new:false},
+  {name:"Dayton Children's Hospital",type:"Pediatric health system · Local Pathways design partner",date:"Nov 2026",url:"https://www.abridge.com/press-release/local-pathways-abridge-assistant",new:false}
 ];
