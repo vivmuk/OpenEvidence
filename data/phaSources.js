@@ -118,5 +118,10 @@ var phaSourcesData = [
   {name:"Lucis - Meet Lumi AI health coach (Nov 10, 2026)", url:"https://www.lucis.life/blog/meet-lumi"},
   {name:"Technobezz / Oura - Personalized wellness plans via Oura Advisor (Nov 10, 2026)", url:"https://www.technobezz.com/news/from-insights-to-action-build-a-personalized-plan-with-oura-advisor"},
   {name:"Business Wire / Get Blue - Adaptive health platform launch (Nov 9, 2026)", url:"https://www.businesswire.com/news/home/20261102715379/en/Get-Blue-Launches-Adaptive-Health-Platform-That-Adjusts-to-Your-Bodys-Signals-in-Real-Time"},
+  {name:"San Jose Inside / Alloop - Silicon Valley push for personal AI health agents (Nov 10, 2026)", url:"https://www.sanjoseinside.com/innovation/inside-alloops-push-to-build-a-business-around-personal-ai-health-agents/"},
+  {name:"OpenAI Help Center - ChatGPT release notes: personalized health summaries (Sep 28, 2026)", url:"https://help.openai.com/en/articles/6825453-chatgpt-release-notes"},
+  {name:"arXiv - EmoMed: Emotionally-Aware Agent for Multimodal Medical Support (Sep 7, 2026)", url:"https://arxiv.org/abs/2609.07194"},
+  {name:"ScienceDirect - AI for Triage in Primary Care: Scoping Review (Oct 12, 2026)", url:"https://www.sciencedirect.com/science/article/pii/S1386505626005095"},
+  {name:"BMJ EMJ - Concordance between AI self-triage and physical triage (Jun 22, 2026)", url:"https://emj.bmj.com/content/emermed/early/2026/06/22/emermed-2024-214212.full.pdf"},
 
 ];

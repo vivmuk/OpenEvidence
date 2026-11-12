@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,40 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-10",
+      "cat": "Trend",
+      "title": "Alloop Showcases Personal AI Health Agent Platform at Plug and Play Silicon Valley",
+      "desc": "Alloop presented its modular Trio wearable and AI Health Agent ecosystem at Plug and Play in Sunnyvale, marking another step toward U.S. consumer availability. The startup, which launched Trio on Kickstarter in October, is expanding from product launch to commercial deployment through startup-investor-corporate partnership platforms. Represents the emerging startup ecosystem around personal AI health agents, where hardware, open data integration and conversational AI converge. Vendor claim: AI health agent platform, not a medical device.",
+      "src": "San Jose Inside / Alloop",
+      "url": "https://www.sanjoseinside.com/innovation/inside-alloops-push-to-build-a-business-around-personal-ai-health-agents/",
+      "new": true
+    },
+    {
+      "date": "2026-09-28",
+      "cat": "Product",
+      "title": "OpenAI Adds Personalized Health Data Summaries to Health in ChatGPT",
+      "desc": "OpenAI's September 28 release notes introduced personalized explanations and insights for charts, metrics, and records in the Health tab. Users can select a chart, metric, or record to get AI-generated explanations based on their connected health information. The update also changed permissions for new Health connections to default to each user's global plugins setting, with low-risk actions allowed by default. Extends Health in ChatGPT from passive data aggregation to active interpretation of individual health metrics. Vendor claim: health data interpretation, not a medical device.",
+      "src": "OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "new": true
+    },
+    {
+      "date": "2026-10-12",
+      "cat": "Research",
+      "title": "AI for Triage in Primary Care: Scoping Review Maps 17 Systems, None Fully Autonomous",
+      "desc": "A scoping review published in ScienceDirect mapped 17 AI triage systems in primary care, finding most supported clinicians on diagnostic and referral tasks but none operated fully autonomously without a clinician. Clinician performance improved when systems assisted imaging and ECG interpretation. The review covers the clinical applicability landscape of AI triage, addressing the gap between vendor claims of autonomy and the reality of clinician-assist deployment models.",
+      "src": "ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1386505626005095"
+    },
+    {
+      "date": "2026-09-07",
+      "cat": "Research",
+      "title": "EmoMed: An Emotionally-Aware Agent for Multimodal Medical Support with Real-Time Information Retrieval",
+      "desc": "arXiv preprint from ISP RAS and NUST MISIS presenting EmoMed, an emotionally-aware agent for multimodal medical support with real-time information retrieval. The system integrates emotional awareness with medical knowledge retrieval, extending health agent design from purely clinical reasoning to affect-aware interaction. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2609.07194"
+    },
     {
       "date": "2026-11-10",
       "cat": "Product",
@@ -274,8 +308,7 @@
       "title": "24 States Now Have Comprehensive Consumer Privacy Laws as Sensitive-Data Sales Bans Spread",
       "desc": "Four new states (Alabama, Louisiana, Oklahoma, Vermont) enacted comprehensive consumer privacy laws in 2026, bringing the total to 24. The defining trend is a shift beyond consent to outright bans on selling sensitive data: New Jersey prohibits selling sensitive data regardless of consumer consent, Connecticut and Virginia ban sales of precise geolocation, and Delaware expanded its sensitive-data definition to include neural data and inferences revealing health conditions. Colorado's revised AI law will regulate automated technology in consequential decisions starting Jan 1, 2027. Data broker registration expanded to Connecticut and New Jersey. Massachusetts is considering a private right of action.",
       "src": "MultiState",
-      "url": "https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws",
-      "new": true
+      "url": "https://www.multistate.us/insider/2026/10/28/twenty-four-states-now-have-comprehensive-consumer-privacy-laws"
     },
     {
       "date": "2026-10-26",
@@ -831,6 +864,10 @@
         {
           "l": "Weekly health Qs",
           "v": "300M+"
+        },
+        {
+          "l": "Sep 28 update",
+          "v": "Personalized summaries"
         }
       ],
       "desc": "Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. OpenAI reports more than 300 million people turn to ChatGPT with health-related questions weekly. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
@@ -1961,6 +1998,33 @@
       "finding": "Presents a framework for designing AI agents that support longitudinal health tasks such as symptom management, behavior change and patient support. The framework draws on established conventions for follow-up, coherent reasoning and sustained alignment with individuals' goals to address the gap between current implementations and longitudinal care needs. The authors argue that most current implementations fall short of facilitating user intent and fostering accountability.",
       "caveat": "Preprint, not peer-reviewed. The framework is conceptual and has not been validated in a clinical deployment. Feasibility and scalability of the proposed design are not demonstrated.",
       "url": "https://doi.org/10.48550/arxiv.2604.12019"
+    },
+    {
+      "title": "EmoMed: An Emotionally-Aware Agent for Multimodal Medical Support with Real-Time Information Retrieval",
+      "type": "arXiv preprint · agent architecture",
+      "date": "Sep 7, 2026",
+      "venue": "arXiv (cs.AI) - ISP RAS, NUST MISIS",
+      "finding": "Presents EmoMed, an emotionally-aware agent for multimodal medical support with real-time information retrieval. The system integrates emotional awareness with medical knowledge retrieval, extending health agent design from purely clinical reasoning to affect-aware interaction. The architecture combines multimodal input processing, emotion recognition, and real-time medical information retrieval to provide contextually appropriate medical support.",
+      "caveat": "Preprint, not peer-reviewed. The system is a research prototype and has not been validated in clinical trials. Emotional awareness in medical AI raises novel safety and ethical questions distinct from clinical accuracy alone.",
+      "url": "https://arxiv.org/abs/2609.07194"
+    },
+    {
+      "title": "Artificial Intelligence for Triage in Primary Care: A Scoping Review of Clinical Applicability",
+      "type": "Peer-reviewed · scoping review",
+      "date": "Oct 12, 2026",
+      "venue": "ScienceDirect",
+      "finding": "A scoping review mapping 17 AI triage systems in primary care found most systems supported clinicians on diagnostic and referral tasks, but no system operated fully automatically without a clinician. Clinician performance improved when systems assisted imaging and ECG interpretation. The review covers the clinical applicability landscape of AI triage and addresses the gap between vendor claims of autonomy and the reality of clinician-assist deployment models.",
+      "caveat": "Scoping review, not systematic review or meta-analysis. Heterogeneous systems and study designs make direct comparison difficult. The review may not capture all recently deployed systems.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1386505626005095"
+    },
+    {
+      "title": "Concordance Between an AI Self-Triage Programme and Physical Triage in the Emergency Department",
+      "type": "Peer-reviewed · concordance study",
+      "date": "Jun 22, 2026",
+      "venue": "Emergency Medicine Journal (BMJ EMJ)",
+      "finding": "A study from Amsterdam UMC and OLVG Hospital evaluated concordance between an AI self-triage programme and physical triage in the emergency department. The study compares AI-assisted triage recommendations with in-person triage outcomes, providing real-world concordance data for AI triage tools deployed outside controlled vignette settings.",
+      "caveat": "Single-centre study from the Netherlands. Concordance with physical triage is not the same as triage correctness or improved outcomes. Generalisability to other healthcare systems and triage protocols is not established.",
+      "url": "https://emj.bmj.com/content/emermed/early/2026/06/22/emermed-2024-214212.full.pdf"
     }
   ],
   "sources": [
@@ -2439,6 +2503,26 @@
     {
       "name": "Business Wire / Get Blue - Adaptive health platform launch (Nov 9, 2026)",
       "url": "https://www.businesswire.com/news/home/20261102715379/en/Get-Blue-Launches-Adaptive-Health-Platform-That-Adjusts-to-Your-Bodys-Signals-in-Real-Time"
+    },
+    {
+      "name": "San Jose Inside / Alloop - Silicon Valley push for personal AI health agents (Nov 10, 2026)",
+      "url": "https://www.sanjoseinside.com/innovation/inside-alloops-push-to-build-a-business-around-personal-ai-health-agents/"
+    },
+    {
+      "name": "OpenAI Help Center - ChatGPT release notes: personalized health summaries (Sep 28, 2026)",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    },
+    {
+      "name": "arXiv - EmoMed: Emotionally-Aware Agent for Multimodal Medical Support (Sep 7, 2026)",
+      "url": "https://arxiv.org/abs/2609.07194"
+    },
+    {
+      "name": "ScienceDirect - AI for Triage in Primary Care: Scoping Review (Oct 12, 2026)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1386505626005095"
+    },
+    {
+      "name": "BMJ EMJ - Concordance between AI self-triage and physical triage (Jun 22, 2026)",
+      "url": "https://emj.bmj.com/content/emermed/early/2026/06/22/emermed-2024-214212.full.pdf"
     }
   ],
   "freeTierDefaults": [

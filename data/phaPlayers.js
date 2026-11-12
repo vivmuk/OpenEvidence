@@ -1,7 +1,7 @@
 // Personal health agent landscape: platforms, device makers, health systems, challengers.
 var phaPlayersData = [
   {name:"OpenAI - Health in ChatGPT", type:"Frontier platform · records + Apple Health", badge:"SCALE LEADER",
-   stats:[{l:"Launched",v:"Jul 23, 2026"},{l:"Tiers",v:"Free/Go/Plus/Pro"},{l:"Data",v:"Records + Apple Health"},{l:"HIPAA",v:"Not covered after export"},{l:"Weekly health Qs",v:"300M+"}],
+   stats:[{l:"Launched",v:"Jul 23, 2026"},{l:"Tiers",v:"Free/Go/Plus/Pro"},{l:"Data",v:"Records + Apple Health"},{l:"HIPAA",v:"Not covered after export"},{l:"Weekly health Qs",v:"300M+"},{l:"Sep 28 update",v:"Personalized summaries"}],
    desc:"Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. OpenAI reports more than 300 million people turn to ChatGPT with health-related questions weekly. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
    url:"https://openai.com/index/health-in-chatgpt/"},
 
