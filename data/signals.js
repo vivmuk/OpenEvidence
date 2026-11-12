@@ -299,7 +299,7 @@ var signalsData = [
   "date": "2026-11-11",
   "cat": "Product",
   "title": "OpenEvidence Launches Access Intelligence, Free Affordability and Access Tools for Clinicians",
-  "desc": "OpenEvidence launched Access Intelligence, a suite of tools built directly into the platform that helps clinicians ensure their patients can access and afford the care they need. Components available now, free for all clinicians: (1) Support program information in the flow of care — availability and",
+  "desc": "OpenEvidence launched Access Intelligence, a suite of tools built directly into the platform that helps clinicians ensure their patients can access and afford the care they need. Components available now, free for all clinicians: (1) Support program information in the flow of care - availability and",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/introducing-openevidence-access-intelligence-bringing-affordability-and-access-to-the-point-of-care",
   "score": 77,
