@@ -552,6 +552,13 @@
       "date": "Nov 2026",
       "url": "https://www.abridge.com/press-release/local-pathways-abridge-assistant",
       "new": false
+    },
+    {
+      "name": "NACHC (National Association of Community Health Centers)",
+      "type": "Health system · 108,000 clinicians, 52M patients, Assistant at no cost",
+      "date": "Nov 13, 2026",
+      "url": "https://www.abridge.com/press-release/abridge-national-association-community-health-centers",
+      "new": true
     }
   ],
   "research": [
@@ -629,6 +636,15 @@
     }
   ],
   "timeline": [
+    {
+      "date": "2026-11-13",
+      "cat": "Partnership",
+      "title": "Abridge and NACHC Make Abridge Assistant Available to 108,000 Community Health Center Clinicians",
+      "desc": "Abridge and the National Association of Community Health Centers (NACHC) announced the Abridge Assistant will be available at no cost to 108,000 clinicians at all NACHC member community health centers, serving approximately 52 million patients — nearly one in seven Americans and one in three rural residents. Clinicians can use the Assistant for clinical decision support with cited evidence regardless of whether they use Abridge's documentation product. CEO Shiv Rao framed it as expanding access and equity through AI. NACHC's Sean Roddy cited the partnership's potential to put practical AI tools within reach of more community health center clinicians.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/press-release/abridge-national-association-community-health-centers",
+      "new": true
+    },
     {
       "date": "2026-11-12",
       "cat": "Product",
@@ -1377,7 +1393,11 @@
     {
       "name": "Abridge / LinkedIn - Visit Dx enhancements (Nov 9, 2026)",
       "url": "https://www.linkedin.com/posts/abridgehq_new-abridge-visit-dx-enhancements-give-clinicians-activity-7525593317217255425-gVyy"
+    },
+    {
+      "name": "Abridge - NACHC partnership press release (Nov 13, 2026)",
+      "url": "https://www.abridge.com/press-release/abridge-national-association-community-health-centers"
     }
   ],
-  "updated": "2026-11-12"
+  "updated": "2026-11-13"
 }

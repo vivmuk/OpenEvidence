@@ -59,5 +59,6 @@ var abridgePartnersData = [
   {name:"CVS Health Ventures",type:"Investor",date:"2025",url:"https://sacra.com/c/abridge/",new:false},
   {name:"Kaiser Permanente Ventures",type:"Investor",date:"2026",url:"https://www.beckershospitalreview.com/healthcare-information-technology/abridge-and-kaiser-permanente-debut-care-signals/",new:false},
   {name:"UC Irvine Health",type:"Health system · Abridge Assistant, Local Pathways design partner",date:"Nov 2026",url:"https://www.abridge.com/press-release/local-pathways-abridge-assistant",new:false},
-  {name:"Dayton Children's Hospital",type:"Pediatric health system · Local Pathways design partner",date:"Nov 2026",url:"https://www.abridge.com/press-release/local-pathways-abridge-assistant",new:false}
+  {name:"Dayton Children's Hospital",type:"Pediatric health system · Local Pathways design partner",date:"Nov 2026",url:"https://www.abridge.com/press-release/local-pathways-abridge-assistant",new:false},
+  {name:"NACHC (National Association of Community Health Centers)",type:"Health system · 108,000 clinicians, 52M patients, Assistant at no cost",date:"Nov 13, 2026",url:"https://www.abridge.com/press-release/abridge-national-association-community-health-centers",new:true}
 ];

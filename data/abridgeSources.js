@@ -60,4 +60,5 @@ var abridgeSourcesData = [
   {name:"Machine.net - Abridge and Heidi Health cut staff, Epic AI squeeze (Nov 10, 2026)",url:"https://machine.net/news/abridge-heidi-ai-medical-scribe-layoffs-epic-ai-charting-squeeze/"},
   {name:"Abridge - Local Pathways press release (Nov 12, 2026)",url:"https://www.abridge.com/press-release/local-pathways-abridge-assistant"},
   {name:"Abridge / LinkedIn - Visit Dx enhancements (Nov 9, 2026)",url:"https://www.linkedin.com/posts/abridgehq_new-abridge-visit-dx-enhancements-give-clinicians-activity-7525593317217255425-gVyy"},
+  {name:"Abridge - NACHC partnership press release (Nov 13, 2026)",url:"https://www.abridge.com/press-release/abridge-national-association-community-health-centers"},
 ];
