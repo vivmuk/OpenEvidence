@@ -6442,5 +6442,106 @@
     ],
     "task": "3 clinical domains: cervical neoplasia, oral lesion, preterm birth. PIML generally improves over standard ML with clinical interpretability.",
     "scale": "3 clinical cohorts"
+  },
+  {
+    "arxiv_id": "2611.17128",
+    "title": "PECA: Parameter-Efficient Conciseness Adaptation",
+    "source": "arXiv",
+    "date": "2026-11-12",
+    "models": [
+      "1.7B SLM (Qwen-based)"
+    ],
+    "dataset": "medical-o1-reasoning-SFT",
+    "key_findings": "72.8% response length reduction, accuracy 40.8%->44.0% with PECA on medical MCQs",
+    "metrics": {
+      "length_reduction": "72.8%",
+      "accuracy_before": "40.8%",
+      "accuracy_after": "44.0%"
+    },
+    "id": "arxiv:2611.17128"
+  },
+  {
+    "arxiv_id": "2611.14935",
+    "title": "Counterfactual Audit of Racial and Sex Bias in Pain Management LLMs",
+    "source": "arXiv",
+    "date": "2026-11-11",
+    "models": [
+      "GPT-4.1 mini",
+      "gpt-oss",
+      "Claude Haiku 4.5",
+      "Gemini 2.5 Flash",
+      "Llama",
+      "DeepSeek",
+      "Qwen"
+    ],
+    "dataset": "Q-Pain (50 cases) + 6 acute-pain vignettes",
+    "key_findings": "No racial/sex bias survived correction across 1,386 comparisons. All pain-severity differences within 1 point on 0-10 scale. Opioid decisions bounded less precisely.",
+    "metrics": {
+      "comparisons": "1386",
+      "survived_correction": "0",
+      "max_difference_scale": "1/10"
+    },
+    "id": "arxiv:2611.14935"
+  },
+  {
+    "pmid": "43021254",
+    "title": "LLM Dental Trauma IADT Guideline Adherence Benchmark",
+    "source": "PubMed",
+    "date": "2026-08-18",
+    "models": [
+      "ChatGPT-5.1",
+      "Gemini 2.5 Pro",
+      "Claude 4.5",
+      "Grok 4.1"
+    ],
+    "dataset": "36 dental trauma scenarios, IADT 2024 guidelines",
+    "key_findings": "ChatGPT-5.1 highest IADT Compliance (39.67/40), Grok 4.1 significantly lower (35.22). Grok lower in Emergency Management/Patient Safety (p<0.001).",
+    "metrics": {
+      "chatgpt_score": "39.67/40",
+      "gemini_score": "39.00/40",
+      "claude_score": "38.69/40",
+      "grok_score": "35.22/40"
+    },
+    "id": "pmid:43021254"
+  },
+  {
+    "pmid": "43020973",
+    "title": "Guardrail-Based Radiology Protocolling LLM Benchmark",
+    "source": "PubMed",
+    "date": "2026-11-12",
+    "models": [
+      "Gemini 3.1 Pro",
+      "Claude Sonnet 4.6",
+      "GPT-5.2",
+      "GPT-5.2 high",
+      "DeepSeek V3.2",
+      "DeepSeek V3.2 reasoner"
+    ],
+    "dataset": "537 CT/MRI requests (428 validation)",
+    "key_findings": "Gemini 3.1 Pro 100% sensitivity for safety-critical, 96.3% end-to-end appropriate. Human benchmark 83.6%. Guardrail-first workflow reliable for review identification.",
+    "metrics": {
+      "gemini_sensitivity": "100%",
+      "gemini_e2e": "96.3%",
+      "human_e2e": "83.6%"
+    },
+    "id": "pmid:43020973"
+  },
+  {
+    "pmid": "43019548",
+    "title": "DeepSeek-V4-Flash Knee Osteoarthritis Prediction Evaluation",
+    "source": "PubMed",
+    "date": "2026-11-12",
+    "models": [
+      "DeepSeek-V4-Flash"
+    ],
+    "dataset": "128 KOA patients (111 completed 6-month follow-up)",
+    "key_findings": "94.6% baseline diagnostic agreement with physician. 6-month predictions worse than physician and not superior to persistence model. Interrun exact agreement poor (6.3-31.5%).",
+    "metrics": {
+      "baseline_agreement": "94.6%",
+      "6mo_mae": "5.92-6.58",
+      "physician_mae": "3.86",
+      "interrun_exact": "6.3-31.5%"
+    },
+    "id": "pmid:43019548"
   }
 ]

@@ -18017,5 +18017,293 @@
       "PIML"
     ],
     "relevance": "Clinical AI diagnosis benchmark - prior-informed ML framework validated across 3 clinical domains vs standard ML"
+  },
+  {
+    "arxiv_id": "2611.17128",
+    "title": "Parameter-Efficient Conciseness Adaptation: Differentiable Length Control for Concise Clinical Reasoning in Smaller Language Models",
+    "authors": [
+      "Tanzeel Abbas",
+      "Ahmad Kamran Malik",
+      "Nafees Qamar",
+      "Sana Liaqat"
+    ],
+    "date": "2026-11-12",
+    "source": "arXiv",
+    "category": "cs.CL, cs.AI",
+    "abstract": "Smaller language models (SLMs) make it feasible to deploy clinical natural language processing where large proprietary models are too costly. PECA adds a differentiable conciseness term to QLoRA fine-tuning, raising end-of-sequence probability once generation exceeds a token budget. On a 1.7B model fine-tuned on medical-o1-reasoning-SFT, PECA reduces mean response length by 72.8% while improving multiple-choice diagnostic accuracy from 40.8% to 44.0%.",
+    "keywords": [
+      "clinical decision support",
+      "SLM",
+      "parameter-efficient fine-tuning",
+      "conciseness",
+      "medical QA"
+    ],
+    "type": "method",
+    "id": "arxiv:2611.17128"
+  },
+  {
+    "arxiv_id": "2611.15530",
+    "title": "MAGIC: Modality-Aware Gini Inspection for Clinical Hallucination Detection in LMMs",
+    "authors": [
+      "Sachin Acharya",
+      "Niyoj Oli",
+      "Shishir Adhikari",
+      "Aminu Lawal",
+      "Yash Raj Shrestha",
+      "Prashnna K Gyawali",
+      "Binod Bhattarai"
+    ],
+    "date": "2026-11-11",
+    "source": "arXiv",
+    "category": "cs.CV, cs.AI",
+    "abstract": "Formulates hallucination detection in medical large multimodal models (LMMs) as disproportionate distribution of attention weights across modalities. Quantifies modality-specific attention concentration using Gini coefficient. Trains logistic regression classifier evaluated on two medical LMMs across three imaging modalities, achieving competitive or superior performance against contemporary hallucination detection baselines.",
+    "keywords": [
+      "clinical AI safety",
+      "hallucination detection",
+      "multimodal",
+      "LMM",
+      "attention"
+    ],
+    "type": "method",
+    "id": "arxiv:2611.15530"
+  },
+  {
+    "arxiv_id": "2611.14935",
+    "title": "Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen",
+    "authors": [
+      "Richard J. Young",
+      "Alice M. Matthews"
+    ],
+    "date": "2026-11-11",
+    "source": "arXiv",
+    "category": "cs.CL, cs.AI, cs.CY",
+    "abstract": "Counterfactual audit of 17 LLMs (including GPT-4.1 mini, gpt-oss, Claude Haiku 4.5, Gemini 2.5 Flash, Llama, DeepSeek, Qwen) for racial and sex bias in pain management. Study 1: 4 open-weight LLMs on 6 acute-pain vignettes. Study 2: 24 configurations of 17 models on Q-Pain cases. No difference survived correction in either study. Every pain-severity difference equivalent to zero within one point on 0-10 scale. Fairness audits should use several names per group, pair comparisons on seed, report noise floor.",
+    "keywords": [
+      "clinical AI safety",
+      "bias",
+      "fairness audit",
+      "pain management",
+      "counterfactual"
+    ],
+    "type": "benchmark",
+    "id": "arxiv:2611.14935"
+  },
+  {
+    "pmid": "43021254",
+    "title": "Performance of large language models in the management of all types of dental trauma: a comprehensive evaluation of IADT guideline adherence, communicative quality, and readability",
+    "authors": [
+      "Ba\u015fkan B",
+      "Bulut N",
+      "Ba\u015fkan HK"
+    ],
+    "date": "2026-08-18",
+    "source": "PubMed",
+    "journal": "BMC Oral Health",
+    "doi": "10.1186/s12903-026-09635-2",
+    "abstract": "Evaluated 4 LLMs (ChatGPT-5.1, Gemini 2.5 Pro, Claude 4.5, Grok 4.1) on 36 dental trauma scenarios covering all IADT 2024 guideline domains. ChatGPT-5.1 highest IADT Compliance Score (39.67/40), followed by Gemini (39.00), Claude (38.69), Grok (35.22). Grok significantly lower in Emergency Management and Patient Safety (p<0.001). Used DeTra-GAI 20-item rubric, DISCERN, EQIP, GQS, and readability indices.",
+    "keywords": [
+      "LLM benchmark",
+      "dental trauma",
+      "guideline adherence",
+      "IADT",
+      "clinical decision support"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43021254"
+  },
+  {
+    "pmid": "43020973",
+    "title": "Guardrail-Based Radiology Protocolling with Large Language Models: Balancing Automation and Oversight",
+    "authors": [
+      "Marka AW",
+      "Reinhold C",
+      "Nassim D",
+      "Pfeiffer D",
+      "Pelage JP",
+      "Namdar K",
+      "Deniffel D"
+    ],
+    "date": "2026-11-12",
+    "source": "PubMed",
+    "journal": "J Imaging Inform Med",
+    "doi": "10.1007/s10278-026-02496-9",
+    "abstract": "Guardrail-first LLM workflow for radiology protocolling. 537 CT/MRI requests split into development (n=109) and validation (n=428). 6 LLM pipelines evaluated (Gemini 3.1 Pro, Claude Sonnet 4.6, GPT-5.2, GPT-5.2 high, DeepSeek V3.2, DeepSeek V3.2 reasoner). Gemini 3.1 Pro achieved 100% sensitivity for safety-critical requests, 96.3% end-to-end appropriate assignment. Human benchmark 83.6% exact/equivalent. Guardrail-first approach combined automation with reliable identification of review-requiring requests.",
+    "keywords": [
+      "LLM benchmark",
+      "radiology protocolling",
+      "guardrails",
+      "clinical decision support",
+      "safety"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43020973"
+  },
+  {
+    "pmid": "43019548",
+    "title": "Performance of a Large Language Model for Predicting Clinical and Radiographic Outcomes in Knee Osteoarthritis: Single-Center Prospective Observational Study",
+    "authors": [
+      "Li Z",
+      "Zhang Y",
+      "Li M"
+    ],
+    "date": "2026-11-12",
+    "source": "PubMed",
+    "journal": "JMIR Med Inform",
+    "doi": "10.2196/107092",
+    "abstract": "Evaluated DeepSeek-V4-Flash for assessing baseline KOA status and predicting 6-month outcomes in 128 patients (111 completed follow-up). High baseline diagnostic agreement with physician (94.6%) but 6-month predictions worse than physician and not superior to persistence model. Interrun ICCs high (0.982, 0.965) but exact agreement poor (31.5%, 6.3%). LLM may support structured assessment but prognostic applications remain limited.",
+    "keywords": [
+      "LLM evaluation",
+      "knee osteoarthritis",
+      "clinical prediction",
+      "DeepSeek",
+      "longitudinal outcomes"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43019548"
+  },
+  {
+    "pmid": "43019536",
+    "title": "System Architecture and Operational Principles for a Configurable Clinical Decision Support System for Model-Informed Precision Dosing: Development, Verification, and Validation Study",
+    "authors": [
+      "Rigamonti R",
+      "P\u00e9termann YJ",
+      "Herzig M",
+      "Cathignol AE",
+      "Da Rocha Carvalho B",
+      "Mpagama SG",
+      "Said B",
+      "Sariko ML",
+      "Csajka C",
+      "Guidi M",
+      "Thoma Y"
+    ],
+    "date": "2026-11-12",
+    "source": "PubMed",
+    "journal": "JMIR Med Inform",
+    "doi": "10.2196/95203",
+    "abstract": "Tucuxi-CDSS: open-source configurable CDSS for model-informed precision dosing (MIPD). XML-based drug files, data validation workflow, decision logic. Verification through unit testing, system tests, fuzzing. Validation against human TDM expert across 60 virtual patients: CDSS matched expert in error detection, higher sensitivity (53% vs 45%), lower specificity (83% vs 100%), higher target attainment (55% vs 37%, P=.046), but 4 detrimental interventions vs 0 for expert. Implementation study for rifampicin dosing in Tanzania underway.",
+    "keywords": [
+      "CDSS",
+      "precision dosing",
+      "MIPD",
+      "open-source",
+      "therapeutic drug monitoring"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43019536"
+  },
+  {
+    "pmid": "43019347",
+    "title": "Prompt design in large language model health coaching chatbots: A scoping review",
+    "authors": [
+      "Incze T",
+      "Khademioore S",
+      "Bengizi A",
+      "Mbuagbaw L",
+      "Alvarez E",
+      "Anderson LN"
+    ],
+    "date": "2026-11-12",
+    "source": "PubMed",
+    "journal": "PLOS Digit Health",
+    "doi": "10.1371/journal.pdig.0001827",
+    "abstract": "Scoping review (PRISMA-ScR) of prompt design in LLM-based health coaching chatbots. 12 studies across mental health, medication use, physical activity, nutrition. Study designs primarily simulation-based. Structural modifications (specificity, constraints) most common, improved response quality. Prompting techniques improved task performance but sometimes reduced focus. Role-based prompting influenced tone, guideline alignment. Outcomes focused on response quality, few assessed safety or clinical outcomes.",
+    "keywords": [
+      "LLM chatbot",
+      "prompt design",
+      "health coaching",
+      "scoping review"
+    ],
+    "type": "review",
+    "id": "pmid:43019347"
+  },
+  {
+    "pmid": "43019328",
+    "title": "Shifting patterns in clinical pharmacy interventions associated with the integration of a clinical decision support system: A retrospective pre-post study in Brazil",
+    "authors": [
+      "Santos TLC",
+      "Baruel Okumura PC",
+      "Morinaga CV",
+      "Curiati PK",
+      "Lario FC"
+    ],
+    "date": "2026-11-12",
+    "source": "PubMed",
+    "journal": "PLoS One",
+    "doi": "10.1371/journal.pone.0362555",
+    "abstract": "Retrospective pre-post study of Medi-Span CDSS integration with CPOE at tertiary care hospital. Clinical pharmacy interventions increased (13.4% vs 11.2%, p<0.01; adjusted OR=1.34). Shift toward therapeutic duplication interventions (68.2% vs 54.5%). Unplanned ICU admissions decreased (5.4% to 4.1%, p<0.01; OR=0.84, NNT=118).",
+    "keywords": [
+      "CDSS",
+      "clinical pharmacy",
+      "CPOE",
+      "medication safety",
+      "implementation"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43019328"
+  },
+  {
+    "pmid": "43016964",
+    "title": "Artificial intelligence for Traditional Chinese Medicine classic formula development: a technology readiness assessment using metabolic syndrome as a case study",
+    "authors": [
+      "Huang Z",
+      "Jiang Z",
+      "Hu S",
+      "Ye N",
+      "Liu X",
+      "Zhan X",
+      "Wu Z",
+      "Chen H",
+      "Zhao Z",
+      "Li X",
+      "Zang Z",
+      "Xiao C",
+      "Qu X",
+      "Huang L",
+      "Peng H",
+      "Zhou X",
+      "Yang M",
+      "Xu H"
+    ],
+    "date": "2026-10-28",
+    "source": "PubMed",
+    "journal": "Front Pharmacol",
+    "doi": "10.3389/fphar.2026.1970742",
+    "abstract": "Technology readiness assessment of AI for TCM formula development. Knowledge graphs (TRL 3-6), LLMs (TRL 1-5), high-throughput validation (TRL 3-5). Three TCM-specific hallucination types identified. KG entity recognition most mature but reasoning hindered by missing negative data, dose-time dimensions. Precision phytomedicine requires foundations before algorithms: institutionalize negative data, build TCM-Hallu benchmarks, establish functional-endpoint evaluation.",
+    "keywords": [
+      "AI",
+      "TCM",
+      "knowledge graphs",
+      "LLM",
+      "technology readiness",
+      "hallucination"
+    ],
+    "type": "review",
+    "id": "pmid:43016964"
+  },
+  {
+    "pmid": "43016917",
+    "title": "Oversight asymmetry in AI-assisted clinical documentation: a comparative-abductive study using neonatal discharge as a test context",
+    "authors": [
+      "Atiku SO",
+      "Olakotan O",
+      "Agbaje K",
+      "Owolanke K",
+      "Pillay T"
+    ],
+    "date": "2026-10-28",
+    "source": "PubMed",
+    "journal": "Front Digit Health",
+    "doi": "10.3389/fdgth.2026.1986499",
+    "abstract": "Qualitative study of 64 Reddit threads (2,848 comments, 1,723 accounts) developing 'oversight asymmetry' as governance diagnosis for AI-assisted clinical documentation. Oversight becomes vulnerable when verification responsibility and demand exceed epistemic access, protected time, or consequential authority. Neonatal discharge used as test context. Proposes measuring residual verification work, preserving provenance, protecting review time, and providing escalation authority.",
+    "keywords": [
+      "AI clinical documentation",
+      "oversight",
+      "governance",
+      "neonatal",
+      "qualitative"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43016917"
   }
 ]
