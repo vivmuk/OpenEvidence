@@ -124,4 +124,7 @@ var phaSourcesData = [
   {name:"ScienceDirect - AI for Triage in Primary Care: Scoping Review (Oct 12, 2026)", url:"https://www.sciencedirect.com/science/article/pii/S1386505626005095"},
   {name:"BMJ EMJ - Concordance between AI self-triage and physical triage (Jun 22, 2026)", url:"https://emj.bmj.com/content/emermed/early/2026/06/22/emermed-2024-214212.full.pdf"},
 
+  {name:"Enhanced Group - Enhanced OS launch combining diagnostics, records and wearables (Nov 12, 2026)", url:"https://investors.enhanced.com/enhanced-group-brings-athlete-tested-personalized-protocol-making-to-consumers-with-launch-of-enhanced-os-expanding-its-offering-beyond-individual-products/"},
+  {name:"Gadgets 360 - iOS 27.3 beta leak: Siri Health app access (Nov 11, 2026)", url:"https://www.gadgets360.com/mobiles/news/apple-ios-27-3-beta-siri-ai-features-apple-health-leak-12312495"},
+
 ];
