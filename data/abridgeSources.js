@@ -61,4 +61,7 @@ var abridgeSourcesData = [
   {name:"Abridge - Local Pathways press release (Nov 12, 2026)",url:"https://www.abridge.com/press-release/local-pathways-abridge-assistant"},
   {name:"Abridge / LinkedIn - Visit Dx enhancements (Nov 9, 2026)",url:"https://www.linkedin.com/posts/abridgehq_new-abridge-visit-dx-enhancements-give-clinicians-activity-7525593317217255425-gVyy"},
   {name:"Abridge - NACHC partnership press release (Nov 13, 2026)",url:"https://www.abridge.com/press-release/abridge-national-association-community-health-centers"},
+  {name:"Techflier - Shiv Rao on Lightspeed Podcast: AI scribe as wedge (Nov 13, 2026)",url:"https://techflier.com/2026/11/13/abridges-founder-on-why-the-ai-scribe-was-only-a-wedge/"},
+  {name:"LexBlog - Patient consent for AI recording legal analysis (Nov 12, 2026)",url:"https://www.lexblog.com/2026/11/12/ai-in-the-exam-room-patient-consent-is-more-than-a-notice/"},
+  {name:"AI Briefing - Abridge layoffs market analysis (Nov 10, 2026)",url:"https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/"}
 ];

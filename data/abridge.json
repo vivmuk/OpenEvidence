@@ -638,9 +638,36 @@
   "timeline": [
     {
       "date": "2026-11-13",
+      "cat": "Company",
+      "title": "Shiv Rao on Lightspeed Podcast: The AI Scribe Was Only a Wedge",
+      "desc": "Abridge CEO Shiv Rao told the Lightspeed podcast that ambient note-taking was never the endgame — it was the entry point into an AI-native health system. Rao said the Abridge Assistant now reads charts before visits, files prior authorizations on its own, and flags patients who may qualify for clinical trials. He was blunt about clinicians being the bottleneck on shipping speed, signaling that Abridge's roadmap is shifting from documentation toward autonomous clinical workflow agents.",
+      "src": "Techflier / Lightspeed Podcast",
+      "url": "https://techflier.com/2026/11/13/abridges-founder-on-why-the-ai-scribe-was-only-a-wedge/",
+      "new": true
+    },
+    {
+      "date": "2026-11-12",
+      "cat": "Company",
+      "title": "Legal Analysis: Patient Consent for AI Recording Is More Than a Notice",
+      "desc": "A legal analysis on LexBlog examines the class-action lawsuit against Allegheny Health Network over Abridge AI recordings, arguing that patient disclosure must explain what is recorded, who receives it, and how it may be used — not simply that an AI tool is involved. The piece frames the case as a practical compliance lesson for health systems adopting ambient AI: consent forms and verbal notices must cover data flows to third parties like Abridge, not just the fact of recording.",
+      "src": "LexBlog",
+      "url": "https://www.lexblog.com/2026/11/12/ai-in-the-exam-room-patient-consent-is-more-than-a-notice/",
+      "new": true
+    },
+    {
+      "date": "2026-11-10",
+      "cat": "Company",
+      "title": "AI Briefing: Abridge Layoffs Signal Market Commoditization — What Health Systems Should Ask",
+      "desc": "AI Briefing analyzes Abridge's November layoffs as evidence that the best-funded ambient documentation company is flattening its organization as the category commoditizes. The report advises health systems mid-contract to get roadmap and support commitments in writing, and treat the shakeout as a procurement risk. Two former employees with under one year tenure posted on LinkedIn about the cuts, which Abridge called an organization-wide realignment.",
+      "src": "AI Briefing",
+      "url": "https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/",
+      "new": true
+    },
+    {
+      "date": "2026-11-13",
       "cat": "Partnership",
       "title": "Abridge and NACHC Make Abridge Assistant Available to 108,000 Community Health Center Clinicians",
-      "desc": "Abridge and the National Association of Community Health Centers (NACHC) announced the Abridge Assistant will be available at no cost to 108,000 clinicians at all NACHC member community health centers, serving approximately 52 million patients — nearly one in seven Americans and one in three rural residents. Clinicians can use the Assistant for clinical decision support with cited evidence regardless of whether they use Abridge's documentation product. CEO Shiv Rao framed it as expanding access and equity through AI. NACHC's Sean Roddy cited the partnership's potential to put practical AI tools within reach of more community health center clinicians.",
+      "desc": "Abridge and the National Association of Community Health Centers (NACHC) announced the Abridge Assistant will be available at no cost to 108,000 clinicians at all NACHC member community health centers, serving approximately 52 million patients - nearly one in seven Americans and one in three rural residents. Clinicians can use the Assistant for clinical decision support with cited evidence regardless of whether they use Abridge's documentation product. CEO Shiv Rao framed it as expanding access and equity through AI. NACHC's Sean Roddy cited the partnership's potential to put practical AI tools within reach of more community health center clinicians.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press-release/abridge-national-association-community-health-centers",
       "new": true
@@ -742,7 +769,7 @@
       "desc": "A Pittsburgh-area woman filed a class-action lawsuit in Allegheny County Common Pleas Court against Allegheny Health Network and Highmark, alleging improper disclosure and use of Abridge's AI recording tool during patient visits. The suit claims patients were not properly informed that their conversations would be recorded, transmitted to Abridge servers, and potentially used for commercial AI training. It cites Pennsylvania wiretap law, HIPAA, breach of confidentiality, and invasion of privacy. AHN has deployed Abridge across approximately 400 providers in 40+ specialties since 2024. Similar lawsuits have been filed in California.",
       "src": "TribLive",
       "url": "https://triblive.com/news/health-now/lawsuit-ai-recording-tool-used-by-ahn-highmark-violates-patient-rights/",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-10-26",
@@ -1397,7 +1424,19 @@
     {
       "name": "Abridge - NACHC partnership press release (Nov 13, 2026)",
       "url": "https://www.abridge.com/press-release/abridge-national-association-community-health-centers"
+    },
+    {
+      "name": "Techflier - Shiv Rao on Lightspeed Podcast: AI scribe as wedge (Nov 13, 2026)",
+      "url": "https://techflier.com/2026/11/13/abridges-founder-on-why-the-ai-scribe-was-only-a-wedge/"
+    },
+    {
+      "name": "LexBlog - Patient consent for AI recording legal analysis (Nov 12, 2026)",
+      "url": "https://www.lexblog.com/2026/11/12/ai-in-the-exam-room-patient-consent-is-more-than-a-notice/"
+    },
+    {
+      "name": "AI Briefing - Abridge layoffs market analysis (Nov 10, 2026)",
+      "url": "https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/"
     }
   ],
-  "updated": "2026-11-13"
+  "updated": "2026-11-14"
 }
