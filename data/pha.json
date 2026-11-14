@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -524,6 +524,14 @@
       "desc": "Abbott and Google announced a partnership pairing the Lingo consumer CGM with Google Health's AI to deliver personalised metabolic insights through the Google Health app. Lingo users can view glucose trends alongside other health metrics, with Google's Health Coach translating patterns into nutrition, activity and sleep recommendations. The companies also plan one of the largest real-world metabolic health studies, integrating CGM, wearable, lab and survey data to examine connections between daily behaviour and metabolic health, including early identification of prediabetes.",
       "src": "Fierce Biotech / Abbott",
       "url": "https://www.fiercebiotech.com/medtech/abbott-teams-google-health-ai-powered-health-trends-app"
+    },
+    {
+      "date": "2026-08-05",
+      "cat": "Product",
+      "title": "Genie Health Launches Personal Health Intelligence Platform for Consumers and Providers (Singapore)",
+      "desc": "Singapore startup Genie Health launched a personal health intelligence platform for both consumers and healthcare providers. The platform aggregates medical reports, health screenings, wearable device data, medications and advice from multiple providers into a unified view, addressing the fragmentation that makes managing health increasingly complex as people live longer and chronic conditions multiply. Represents the international expansion of the personal health agent concept beyond the US and Europe, with a dual consumer-provider design. Vendor claim: personal health intelligence platform, not a medical device.",
+      "src": "Life News Agency / Genie Health",
+      "url": "https://lifenewsagency.com/singapore-startup-genie-health-launches-personal-health-intelligence-platform-for-consumers-and-healthcare-providers/"
     },
     {
       "date": "2026-07-22",
@@ -2550,6 +2558,10 @@
     {
       "name": "Gadgets 360 - iOS 27.3 beta leak: Siri Health app access (Nov 11, 2026)",
       "url": "https://www.gadgets360.com/mobiles/news/apple-ios-27-3-beta-siri-ai-features-apple-health-leak-12312495"
+    },
+    {
+      "name": "Life News Agency / Genie Health - Personal Health Intelligence Platform launch (Aug 5, 2026)",
+      "url": "https://lifenewsagency.com/singapore-startup-genie-health-launches-personal-health-intelligence-platform-for-consumers-and-healthcare-providers/"
     }
   ],
   "freeTierDefaults": [
