@@ -18305,5 +18305,586 @@
     ],
     "type": "evaluation",
     "id": "pmid:43016917"
+  },
+  {
+    "pmid": "43031833",
+    "title": "Differential Accuracy and Concordance of ChatGPT and DeepSeek for Image-Based Questions in Undergraduate Medical Education",
+    "authors": [
+      "Requena LS",
+      "Rizzi JS",
+      "Ribeiro ZMT",
+      "Hamamoto Filho PT",
+      "Ferretti R"
+    ],
+    "date": "2026-08-04",
+    "source": "PubMed",
+    "journal": "Med Sci Educ",
+    "doi": "10.1007/s40670-026-02839-9",
+    "abstract": "Compared ChatGPT (GPT) and DeepSeek (DS) on Progress Test questions (2013-2024) across text-only, image-only, and full-question formats. GPT 72.9% accuracy vs DS 65.1%, kappa=0.591. Full-question accuracy did not exceed text-only, indicating visual content provided no incremental benefit. LLMs function as proficient text-based clinical reasoners but not effective multimodal diagnostic systems in this educational context.",
+    "keywords": [
+      "LLM",
+      "multimodal",
+      "medical education",
+      "benchmark",
+      "ChatGPT",
+      "DeepSeek"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43031833"
+  },
+  {
+    "pmid": "43030841",
+    "title": "Exploratory Evaluation of the Statistical Fidelity of Large Language Model-Generated Synthetic Rehabilitation Data for Patients with Hip Fracture",
+    "authors": [
+      "Momosaki R",
+      "Ushida K",
+      "Yamamoto Y",
+      "Shimizu A"
+    ],
+    "date": "2026-11-07",
+    "source": "PubMed",
+    "journal": "J Clin Med",
+    "doi": "10.3390/jcm15218700",
+    "abstract": "Evaluated 3 LLM-generated synthetic datasets (GPT, Claude, Gemini) for hip fracture patients against 12,130 real records. GPT SMD 0.164, Claude 0.027, Gemini 0.001. None consistently preserved unsupplied multivariable structures or achieved comparable task-specific performance (R2 0.167, -0.080, 0.146 vs 0.262 real). LLM synthetic data cannot replace real patient-level data.",
+    "keywords": [
+      "LLM",
+      "synthetic data",
+      "rehabilitation",
+      "hip fracture",
+      "fidelity"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43030841"
+  },
+  {
+    "pmid": "43030828",
+    "title": "Implementing Artificial Intelligence in Daily Clinical Practice, from Voice Dictation to Operating Room Organization: A Targeted Narrative Review with Hysteroscopy as a Clinical Exemplar",
+    "authors": [
+      "Haimovich S",
+      "Fazel A"
+    ],
+    "date": "2026-11-07",
+    "source": "PubMed",
+    "journal": "J Clin Med",
+    "doi": "10.3390/jcm15218688",
+    "abstract": "Narrative review of AI from voice dictation and ambient documentation to OR organization, using hysteroscopy as exemplar. RCTs show modest product-dependent benefits of clinician-reviewed ambient documentation; inaccuracies persist. In hysteroscopy, models discriminate well in narrowly defined tasks but most studies retrospective/image-level/internally validated. Safe implementation requires defined clinical need, baseline measurement, subgroup-aware local validation, accountable review.",
+    "keywords": [
+      "AI",
+      "clinical practice",
+      "voice dictation",
+      "ambient documentation",
+      "operating room",
+      "hysteroscopy",
+      "implementation"
+    ],
+    "type": "review",
+    "id": "pmid:43030828"
+  },
+  {
+    "pmid": "43030301",
+    "title": "Large Language Model Dietary Recommendations for Multimorbidity with Conflicting Guidelines in Turkish and English",
+    "authors": [
+      "G\u00f6z B",
+      "Dikilita\u015f Y",
+      "G\u00f6z F",
+      "Sayar A"
+    ],
+    "date": "2026-11-05",
+    "source": "PubMed",
+    "journal": "Nutrients",
+    "doi": "10.3390/nu18213674",
+    "abstract": "9 LLMs including 2 Turkish-adapted models evaluated on 76 synthetic patient vignettes with conflicting dietary guidelines (T2DM, CKD, hypertension, obesity, gout, celiac). Proprietary models covered 81-92% of checklist, resolved 57-89% of conflicts. GPT and Claude fewest safety flags (5-8%). Turkish responses covered 2pp less. No significant language difference for proprietary models. Expert review can focus on conflict resolution.",
+    "keywords": [
+      "LLM",
+      "dietary recommendations",
+      "multimorbidity",
+      "conflicting guidelines",
+      "Turkish",
+      "English",
+      "benchmark"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43030301"
+  },
+  {
+    "pmid": "43030277",
+    "title": "An Artificial Intelligence-Assisted Umbrella Review of Eating Disorder Meta-Analyses (2020-2025): Mapping Treatment Efficacy, Comorbidity, and Persistent Gaps in Sample Diversity",
+    "authors": [
+      "Lloyd EC",
+      "Calderon PDS",
+      "Morales C",
+      "Lee E",
+      "Maharajh S",
+      "Moorman B",
+      "Le Grange D",
+      "Hagan K",
+      "Gorrell S"
+    ],
+    "date": "2026-11-03",
+    "source": "PubMed",
+    "journal": "Nutrients",
+    "doi": "10.3390/nu18213650",
+    "abstract": "AI-assisted umbrella review of 220 eating disorder meta-analyses (2020-2025). LLM conducted risk of bias assessment and data extraction with 97%, 93%, 96% accuracy. BERTopic identified 16 themes. ED prevalence 1.69%. Most meta-analyses had critical AMSTAR 2 flaws. Disproportionately Western females. Demonstrates AI potential to accelerate systematic review workflows.",
+    "keywords": [
+      "AI",
+      "umbrella review",
+      "eating disorders",
+      "LLM",
+      "BERTopic",
+      "systematic review"
+    ],
+    "type": "review",
+    "id": "pmid:43030277"
+  },
+  {
+    "pmid": "43029823",
+    "title": "Multi-Modal FHIR Sensor Fusion for Real-Time Clinical Decision Support: An Architecture for the Hospital Bedside and Its Extension Toward Remote Patient Monitoring",
+    "authors": [
+      "Boulanger P"
+    ],
+    "date": "2026-11-06",
+    "source": "PubMed",
+    "journal": "Sensors",
+    "doi": "10.3390/s26217026",
+    "abstract": "MedROAD V3: real-time FHIR R4 streaming platform for clinical sensor fusion. XGBoost+LSTM+Transformer ensemble with SHAP attribution, 86-element feature vector every 5 min. 5049 MIMIC-IV patients: AUROC 0.816, ECE 0.001, median inference 3.1ms. FHIR Observation ingests wearable streams. Documentation columns reach AUROC 0.767, so discrimination partly reflects care process. Closed loop conditional on EHR vendor support.",
+    "keywords": [
+      "FHIR",
+      "sensor fusion",
+      "clinical decision support",
+      "real-time",
+      "XGBoost",
+      "LSTM",
+      "Transformer",
+      "wearable"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43029823"
+  },
+  {
+    "pmid": "43029473",
+    "title": "A Symbolic Inference System for AI Decision Support in Multimodal Assessment of Pediatric Cerebral Visual Impairment",
+    "authors": [
+      "Miladinovi\u0107 A",
+      "Biscontin A",
+      "Aj\u010devi\u0107 M",
+      "Accardo A",
+      "Pensiero S",
+      "Michieletto P"
+    ],
+    "date": "2026-10-22",
+    "source": "PubMed",
+    "journal": "Sensors",
+    "doi": "10.3390/s26216673",
+    "abstract": "Symbolic AI decision-support model for pediatric CVI assessment. 62 children, neuro-ophthalmological assessment + MRI. Anterior-pathway predicate as eligibility gate, expert-defined support weights. 87.1% had CVI-compatible functional proof path. k=1 scores 0.700-0.800, k=3 max 0.985. Equal-weight ablation preserved derivability (0.9844). Foundation for neurosymbolic integration of clinical and instrumental data.",
+    "keywords": [
+      "symbolic AI",
+      "decision support",
+      "pediatric",
+      "cerebral visual impairment",
+      "neurosymbolic"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43029473"
+  },
+  {
+    "pmid": "43028831",
+    "title": "Dampening and Amplifying Clinical Uncertainty: Middle Actors and Rule-Based Decision Support in Pediatric Oncology",
+    "authors": [
+      "Yogev T",
+      "Parag Y",
+      "Singer M",
+      "Ashkenazi M"
+    ],
+    "date": "2026-11-08",
+    "source": "PubMed",
+    "journal": "Healthcare",
+    "doi": "10.3390/healthcare14213811",
+    "abstract": "VUCA-Middle-Out lens applied to AMIT rule-based early-alert platform in pediatric hemato-oncology day care. 61 safety events intercepted in 62 working days - none from knowledge gaps, all from information availability/integrity/timing failures. Nurses reallocate attention under volatility, aggregate information, restructure flows, codify rules. Middle actors can both dampen and amplify VUCA. Five boundary conditions for transferring Middle-Out into clinical care.",
+    "keywords": [
+      "VUCA",
+      "decision support",
+      "pediatric oncology",
+      "rule-based",
+      "middle actors",
+      "implementation"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43028831"
+  },
+  {
+    "pmid": "43028810",
+    "title": "Simulation-Based Development, Stress Testing, and External Physiological Benchmarking of a DKA Early-Warning Framework Intended for Future Nurse-Facing Evaluation",
+    "authors": [
+      "Alharbi M"
+    ],
+    "date": "2026-11-06",
+    "source": "PubMed",
+    "journal": "Healthcare",
+    "doi": "10.3390/healthcare14213790",
+    "abstract": "DKA early-warning framework: 20K synthetic 15h episodes at 5min intervals. BHB+trend rule 98.9% sensitivity, 1.060 false alerts/day; XGBoost 89.5% sensitivity, 0.456/day. Phenotype-identical vitals: dual/multimodal AUPRC 0.6044/0.6036. Generator shortcut found (classical-DKA glucose 152.9 vs non-DKA 304.5 mg/dL). IOBP2 benchmark shows glucose distribution mismatch. Conditional XGBoost discrimination depends on simulator construction.",
+    "keywords": [
+      "DKA",
+      "early warning",
+      "simulation",
+      "XGBoost",
+      "clinical AI",
+      "nurse-facing"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43028810"
+  },
+  {
+    "pmid": "43028756",
+    "title": "Governing Clinical AI Deployment: A Mathematical Framework for Transparency-Dependent Autonomy",
+    "authors": [
+      "Yu Y",
+      "Collaco BG",
+      "Prabha S",
+      "Haider SA",
+      "Malena CR",
+      "Parte Y",
+      "Wood NG",
+      "Leibovich BC",
+      "Forte AJ"
+    ],
+    "date": "2026-11-03",
+    "source": "PubMed",
+    "journal": "Healthcare",
+    "doi": "10.3390/healthcare14213736",
+    "abstract": "Trust score T=0.60C+0.24E+0.16S combining confidence, explanation quality, guideline alignment for clinical AI autonomy. Evaluated on 5000 MIMIC-IV, 5000 eICU, MIMIC-III. AUC 0.77-0.81 (prolonged stay), 0.83-0.88 (mortality). Rule matched confidence-only deferral (99.4-100% agreement). Computational E not correlated with physician utility (r=-0.15). Transparency better for system-level error budgets than per-case thresholds.",
+    "keywords": [
+      "clinical AI",
+      "governance",
+      "autonomy",
+      "transparency",
+      "trust score",
+      "MIMIC",
+      "deployment"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43028756"
+  },
+  {
+    "pmid": "43028724",
+    "title": "CURE-AI: Contextualizing Uncertainty in Clinical Decision Making: A Conceptual Framework for Uncertainty-Aware AI Designs",
+    "authors": [
+      "Zikos D",
+      "Chandrasekaran A",
+      "Sha K"
+    ],
+    "date": "2026-11-01",
+    "source": "PubMed",
+    "journal": "Healthcare",
+    "doi": "10.3390/healthcare14213703",
+    "abstract": "CURE-AI framework formalizes AI uncertainty as interaction between computational variance and clinical ambiguity. Five hierarchical levels: Clinical Uncertainty, Computational Uncertainty, Contextual Linkage, Clinical Response, Human Outcome. Maps computational variance to 5 actionable system behaviors: inquire for missing data, accept biological variability, scale decisions by risk, suppress for protocols, recommend longitudinal reevaluation.",
+    "keywords": [
+      "uncertainty",
+      "clinical AI",
+      "framework",
+      "decision support",
+      "CURE-AI"
+    ],
+    "type": "framework",
+    "id": "pmid:43028724"
+  },
+  {
+    "pmid": "43028542",
+    "title": "Real-Time Machine Learning Model to Predict Cardiac Arrest Within 12 Hours in Critically Ill Patients (DeepiCARS): A Confirmatory Trial and External Validation",
+    "authors": [
+      "Gim U",
+      "Lim L",
+      "Cho KJ",
+      "Cho WH",
+      "Lee HC"
+    ],
+    "date": "2026-11-06",
+    "source": "PubMed",
+    "journal": "Diagnostics",
+    "doi": "10.3390/diagnostics16213671",
+    "abstract": "DeepiCARS (iCARS) recurrent-network + gradient-boosting ensemble for ICU cardiac arrest prediction within 12h. Confirmatory trial: AUROC 0.9428 (extended input), 0.9103 (core). External validation on 30,487 ICU admissions: AUROC 0.9587 (extended), 0.9458 (core). For CPR arrests: AUROC 0.8697 vs NEWS2 0.7157. Detected 37pp more arrest-preceding points than NEWS2 at no greater alarm burden. Median lead time 11.42h.",
+    "keywords": [
+      "cardiac arrest",
+      "ICU",
+      "deep learning",
+      "early warning",
+      "external validation",
+      "DeepiCARS"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43028542"
+  },
+  {
+    "pmid": "43028539",
+    "title": "The Potential of Large Language Models in Gynecologic Oncology Telephone Triage",
+    "authors": [
+      "Psilopatis I",
+      "Emons J",
+      "Pavone M",
+      "Zwimpfer TA"
+    ],
+    "date": "2026-11-06",
+    "source": "PubMed",
+    "journal": "Diagnostics",
+    "doi": "10.3390/diagnostics16213668",
+    "abstract": "20 fictitious gynecologic oncology triage vignettes, 3 board-certified consultants assigned UKONS RAG categories. OpenEvidence, ChatGPT, Google Gemini all achieved 100% concordance for Red cases, no high-acuity downgrade. Discrepancies at lower-acuity boundaries. All LLMs over-triaged intermediate-risk complaints. Supports supervised adjunctive role, not autonomous deployment. Includes OpenEvidence as evaluated model.",
+    "keywords": [
+      "LLM",
+      "gynecologic oncology",
+      "telephone triage",
+      "UKONS",
+      "OpenEvidence",
+      "ChatGPT",
+      "Gemini",
+      "benchmark"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43028539"
+  },
+  {
+    "pmid": "43028480",
+    "title": "Evaluation of ChatGPT-Generated Simplifications of Shoulder MRI Reports: Assessments by Orthopedic Surgeons and Non-Healthcare Volunteers",
+    "authors": [
+      "Erdem TE",
+      "Kirilmaz A",
+      "Dogan F",
+      "Tahak F",
+      "Kucuksen MF",
+      "Y\u0131ld\u0131z M",
+      "Yilmaz S",
+      "Yapar D",
+      "Yapar A"
+    ],
+    "date": "2026-11-01",
+    "source": "PubMed",
+    "journal": "Diagnostics",
+    "doi": "10.3390/diagnostics16213609",
+    "abstract": "100 shoulder MRI reports simplified with ChatGPT (GPT-5). 3 orthopedic surgeons rated accuracy, completeness, understandability, misleading potential. Median scores 5.0 all domains, Gwet AC2 0.93-0.98. 100 non-healthcare volunteers: agreement 47-80%. Health literacy correlated with understanding (r=0.329-0.429). Simplified reports favorably rated but should supplement, not replace, original report.",
+    "keywords": [
+      "ChatGPT",
+      "GPT-5",
+      "MRI reports",
+      "simplification",
+      "patient communication",
+      "evaluation"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43028480"
+  },
+  {
+    "pmid": "43028443",
+    "title": "Generative AI, Health Misinformation, and Medical Deepfakes: Implications for Diagnostic Safety and Clinical Practice-A Narrative Review",
+    "authors": [
+      "Baydili \u0130",
+      "Tasci B",
+      "Dogan S",
+      "Tuncer T"
+    ],
+    "date": "2026-10-29",
+    "source": "PubMed",
+    "journal": "Diagnostics",
+    "doi": "10.3390/diagnostics16213572",
+    "abstract": "Narrative review of generative AI creating persuasive health misinformation: text, synthetic images, cloned voices, deepfake videos, fictitious professional identities. High average accuracy may coexist with clinically important omissions, missed referrals, hallucinated findings, poor calibration. Source authority, message framing, professional identity cues influence trust. Detection, evidence-based verification, provenance, literacy, governance as safeguards.",
+    "keywords": [
+      "generative AI",
+      "misinformation",
+      "deepfakes",
+      "diagnostic safety",
+      "clinical practice",
+      "governance"
+    ],
+    "type": "review",
+    "id": "pmid:43028443"
+  },
+  {
+    "pmid": "43028395",
+    "title": "Artificial Intelligence in Chronic Lymphocytic Leukemia: From Prognostic Biomarkers to Individualized Treatment Selection",
+    "authors": [
+      "Ghimp\u0103u B",
+      "Timar S",
+      "Oros DN",
+      "Ioni\u021b\u0103 A",
+      "Calamar-Popovici D",
+      "Cioac\u0103 R",
+      "Ioni\u021b\u0103 I"
+    ],
+    "date": "2026-10-27",
+    "source": "PubMed",
+    "journal": "Diagnostics",
+    "doi": "10.3390/diagnostics16213523",
+    "abstract": "State-of-the-art review of AI in CLL. 55 original CLL-relevant AI/ML reports from 245 PubMed records. Existing tools address diagnosis, prognosis, treatment need, MRD but rarely comparative treatment selection. Proposes CLL-specific clinical decision-support architecture: eligible treatment sets, explicit contrasts, regimen-specific outcomes, calibration, uncertainty checks, post hoc patient-preference filtering. Conceptual, not externally validated.",
+    "keywords": [
+      "AI",
+      "chronic lymphocytic leukemia",
+      "CLL",
+      "treatment selection",
+      "decision support",
+      "review"
+    ],
+    "type": "review",
+    "id": "pmid:43028395"
+  },
+  {
+    "pmid": "43028364",
+    "title": "Reducing Benign Breast Biopsies in Women Aged 35 Years or Younger Using a Clinician-AI-Age Triage Strategy",
+    "authors": [
+      "Sharma N",
+      "Baldwin J",
+      "Hendry S"
+    ],
+    "date": "2026-10-25",
+    "source": "PubMed",
+    "journal": "Diagnostics",
+    "doi": "10.3390/diagnostics16213491",
+    "abstract": "240 patients (254 lesions) NHS breast unit. Clinician-AI-Age triage: women <=35, clinician U2/U3 + KOIOS AI BI-RADS 2 = biopsy avoidance. 87/151 lesions classified for avoidance (57.6%), all benign (100% NPV). All 5 malignancies remained in biopsy pathway. Clinician specificity 99.1% vs AI 75.7%; AI sensitivity 96.9% vs clinician 81.3%. ~\u00a385,000 cost offsets. Single-centre, needs multicentre validation.",
+    "keywords": [
+      "breast biopsy",
+      "AI triage",
+      "KOIOS",
+      "BI-RADS",
+      "clinical decision support",
+      "NHS"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43028364"
+  },
+  {
+    "pmid": "43028350",
+    "title": "Calibration- and Workload-Aware Machine Learning for PTSD-Focused Triage in Children Referred Following Sexual Abuse",
+    "authors": [
+      "G\u00fcl S",
+      "\u00c7etinel G",
+      "\u00d6zt\u00fcrk EE",
+      "Oksal H",
+      "Sar\u0131gedik E"
+    ],
+    "date": "2026-10-24",
+    "source": "PubMed",
+    "journal": "Diagnostics",
+    "doi": "10.3390/diagnostics16213477",
+    "abstract": "311 forensic referral records, PTSD vs no diagnosis (n=218) and PTSD vs other (n=199). Histogram gradient boosting ROC-AUC 0.619, LightGBM 0.644. Sensitivity 0.857 but specificity 0.217-0.368. Calibration reduced Brier to 0.2537 but slightly worse than prevalence-only. High workload: most records flagged for assessment. Modest discrimination, external validation needed.",
+    "keywords": [
+      "PTSD",
+      "triage",
+      "machine learning",
+      "calibration",
+      "pediatric",
+      "sexual abuse"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43028350"
+  },
+  {
+    "pmid": "43026737",
+    "title": "Clinical Artificial Intelligence in Non-Small Cell Lung Cancer: From Early Detection and Computational Pathology to Precision Oncology",
+    "authors": [
+      "Bertolaccini L",
+      "Chiari M",
+      "Degiovanni S",
+      "Mazzella A",
+      "Lo Iacono G",
+      "Guarize J",
+      "Casiraghi M",
+      "Spaggiari L"
+    ],
+    "date": "2026-10-22",
+    "source": "PubMed",
+    "journal": "Cancers",
+    "doi": "10.3390/cancers18213415",
+    "abstract": "Narrative review of AI across NSCLC pathway through Aug 2026. Imaging models for nodule detection, malignancy estimation, risk prediction. Computational pathology: tissue classification, morphological quantification, molecular prediction. Foundation models require pretraining provenance attention. Immunotherapy response prediction doesn't establish differential benefit. Limitations: retrospective, incomplete calibration, uncertain transportability. Prospective evaluation required.",
+    "keywords": [
+      "AI",
+      "NSCLC",
+      "lung cancer",
+      "computational pathology",
+      "precision oncology",
+      "review"
+    ],
+    "type": "review",
+    "id": "pmid:43026737"
+  },
+  {
+    "pmid": "43026589",
+    "title": "AI safety evaluation in an underrepresented population: real-world performance of clinical decision support and frontier language models on Medicaid patient messaging triage",
+    "authors": [
+      "Basu S",
+      "Patel SY",
+      "Sheth P",
+      "Arevalo B",
+      "Schifberg J",
+      "Morgan J",
+      "Batniji R"
+    ],
+    "date": "2026-08-18",
+    "source": "PubMed",
+    "journal": "BMC Med Inform Decis Mak",
+    "doi": "10.1186/s12911-026-03763-z",
+    "abstract": "2000 Medicaid patient messages across 3 states. 3 physicians blinded adjudication, 8.2% hazard prevalence. Decision support (Conservative Q-Learning), supervised baselines, frontier LLMs (Claude Opus 4.7, GPT-5.5, Gemini 3.1 Pro) with/without RAG. No configuration met autonomous benchmark (sensitivity+specificity >=0.80). Two met sensitivity-floor (0.855 and 0.939 with clinician review). Real-world messages lower reading level, more colloquialisms than scripted scenarios.",
+    "keywords": [
+      "AI safety",
+      "Medicaid",
+      "patient triage",
+      "LLM",
+      "Claude",
+      "GPT-5.5",
+      "Gemini",
+      "RAG",
+      "clinical decision support",
+      "benchmark"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43026589"
+  },
+  {
+    "pmid": "43026113",
+    "title": "Explainable Agentic AI for Clinical Decision Support in Laryngeal Voice Disorder Diagnosis and Risk Mitigation",
+    "authors": [
+      "Mazhar T",
+      "Naz NS",
+      "Saleem M",
+      "Ahmed F",
+      "Khan MA",
+      "Hamam H"
+    ],
+    "date": "2026-11-13",
+    "source": "PubMed",
+    "journal": "J Voice",
+    "doi": "10.1016/j.jvoice.2026.10.049",
+    "abstract": "Agentic AI framework for voice disorder screening: Laryngocele, Vox senilis, Normal. Acoustic features + SMOTE + Random Forest. LIME and SHAP explainability, DiCE counterfactual reasoning. AVDD-Agent integrates prediction, explainability, rule-based reasoning for risk assessment and follow-up guidance. ANOVA F=60.24, p<0.001. Demonstrates feasibility of explainable agentic AI-based voice screening.",
+    "keywords": [
+      "agentic AI",
+      "voice disorders",
+      "explainable AI",
+      "SHAP",
+      "LIME",
+      "clinical decision support",
+      "counterfactual"
+    ],
+    "type": "evaluation",
+    "id": "pmid:43026113"
+  },
+  {
+    "pmid": "43026039",
+    "title": "Large language models in radiology workflows: OpenEvidence dotflows as an accessible, evidence-centered resource",
+    "authors": [
+      "Martini D",
+      "Agag N",
+      "Omar M",
+      "Bera K"
+    ],
+    "date": "2026-10-31",
+    "source": "PubMed",
+    "journal": "Curr Probl Diagn Radiol",
+    "doi": "10.1067/j.cpradiol.2026.10.013",
+    "abstract": "Review of OpenEvidence (OE) dotflows for radiology workflows. Dotflows are customizable instruction templates for clinical tasks. Distinctive value in literature/guideline retrieval tasks: ACR Appropriateness Criteria protocoling, case-based clinical teaching. Distinguishes from text-restructuring tasks (structured reports, impression drafting). Describes drafting dotflow instructions with general-purpose LLM, institutional steps for PHI under BAA. All AI content requires radiologist validation.",
+    "keywords": [
+      "OpenEvidence",
+      "dotflows",
+      "radiology",
+      "LLM",
+      "clinical workflow",
+      "ACR Appropriateness Criteria"
+    ],
+    "type": "review",
+    "id": "pmid:43026039"
   }
 ]

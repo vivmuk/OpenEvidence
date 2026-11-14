@@ -6543,5 +6543,157 @@
       "interrun_exact": "6.3-31.5%"
     },
     "id": "pmid:43019548"
+  },
+  {
+    "pmid": "43031833",
+    "title": "ChatGPT vs DeepSeek Image-Based Medical Education Accuracy Benchmark",
+    "source": "PubMed",
+    "date": "2026-08-04",
+    "models": [
+      "ChatGPT",
+      "DeepSeek"
+    ],
+    "dataset": "Progress Test questions 2013-2024, text-only, image-only, full-question",
+    "key_findings": "ChatGPT 72.9% vs DeepSeek 65.1% overall, kappa=0.591. Visual content provided no incremental benefit. Text-driven rather than visuospatially integrated reasoning.",
+    "metrics": {
+      "gpt_accuracy": "72.9%",
+      "ds_accuracy": "65.1%",
+      "kappa": "0.591"
+    },
+    "id": "pmid:43031833"
+  },
+  {
+    "pmid": "43030301",
+    "title": "Nine LLMs Dietary Recommendations for Multimorbidity with Conflicting Guidelines (Turkish/English)",
+    "source": "PubMed",
+    "date": "2026-11-05",
+    "models": [
+      "GPT",
+      "Claude",
+      "Gemini",
+      "open-weight models",
+      "Turkish-adapted models"
+    ],
+    "dataset": "76 synthetic patient vignettes, 6 conditions, Turkish and English",
+    "key_findings": "Proprietary models covered 81-92% of checklist, resolved 57-89% conflicts. GPT/Claude fewest safety flags 5-8%. No significant language difference for proprietary models.",
+    "metrics": {
+      "coverage_range": "81-92%",
+      "conflict_resolution": "57-89%",
+      "safety_flags": "5-8%"
+    },
+    "id": "pmid:43030301"
+  },
+  {
+    "pmid": "43028539",
+    "title": "LLMs Gynecologic Oncology Telephone Triage Benchmark (OpenEvidence, ChatGPT, Gemini)",
+    "source": "PubMed",
+    "date": "2026-11-06",
+    "models": [
+      "OpenEvidence",
+      "ChatGPT",
+      "Google Gemini"
+    ],
+    "dataset": "20 fictitious gynecologic oncology triage vignettes, UKONS RAG categories",
+    "key_findings": "All 3 LLMs 100% concordance for Red cases. Over-triaged intermediate-risk. Supervised adjunctive role supported, not autonomous deployment.",
+    "metrics": {
+      "red_concordance": "100%",
+      "overall": "discrepancies at lower-acuity boundaries"
+    },
+    "id": "pmid:43028539"
+  },
+  {
+    "pmid": "43028480",
+    "title": "ChatGPT (GPT-5) Shoulder MRI Report Simplification Evaluation",
+    "source": "PubMed",
+    "date": "2026-11-01",
+    "models": [
+      "ChatGPT (GPT-5)"
+    ],
+    "dataset": "100 shoulder MRI reports, 3 orthopedic surgeons, 100 non-healthcare volunteers",
+    "key_findings": "Median expert scores 5.0 all domains. Gwet AC2 0.93-0.98. Volunteer agreement 47-80%. Health literacy correlated with understanding (r=0.329-0.429).",
+    "metrics": {
+      "median_score": "5.0",
+      "gwet_ac2": "0.93-0.98",
+      "volunteer_agreement": "47-80%"
+    },
+    "id": "pmid:43028480"
+  },
+  {
+    "pmid": "43028542",
+    "title": "DeepiCARS Cardiac Arrest Prediction External Validation",
+    "source": "PubMed",
+    "date": "2026-11-06",
+    "models": [
+      "DeepiCARS (iCARS)"
+    ],
+    "dataset": "Confirmatory: 214 adults (107 arrest). External: 30,487 ICU admissions (2,782 arrest)",
+    "key_findings": "AUROC 0.9428 confirmatory, 0.9587 external. CPR arrests AUROC 0.8697 vs NEWS2 0.7157. 37pp more arrest points detected at no greater alarm burden. Median lead time 11.42h.",
+    "metrics": {
+      "auc_confirmatory": "0.9428",
+      "auc_external": "0.9587",
+      "cpr_auc": "0.8697",
+      "news2_auc": "0.7157",
+      "lead_time": "11.42h"
+    },
+    "id": "pmid:43028542"
+  },
+  {
+    "pmid": "43026589",
+    "title": "Medicaid Patient Messaging Triage AI Safety Benchmark (Frontier LLMs + CDSS)",
+    "source": "PubMed",
+    "date": "2026-08-18",
+    "models": [
+      "Claude Opus 4.7",
+      "GPT-5.5",
+      "Gemini 3.1 Pro",
+      "Conservative Q-Learning CDSS",
+      "XGBoost+sentence-BERT"
+    ],
+    "dataset": "2000 Medicaid patient messages across 3 states, 8.2% hazard prevalence",
+    "key_findings": "No configuration met autonomous benchmark (sensitivity+specificity >=0.80). Best balanced single tool 0.594/0.592. Disagreement-stratified clinician review: sensitivity 0.939, 5 missed hazards/1000. Real-world messages lower reading level than scripted.",
+    "metrics": {
+      "best_balanced_sensitivity": "0.594",
+      "best_balanced_specificity": "0.592",
+      "clinician_review_sensitivity": "0.939",
+      "hazard_prevalence": "8.2%"
+    },
+    "id": "pmid:43026589"
+  },
+  {
+    "pmid": "43028364",
+    "title": "Clinician-AI-Age Triage for Breast Biopsy Avoidance (KOIOS DS Breast AI)",
+    "source": "PubMed",
+    "date": "2026-10-25",
+    "models": [
+      "KOIOS DS Breast AI"
+    ],
+    "dataset": "240 patients (254 lesions), women <=35, NHS breast unit",
+    "key_findings": "87/151 lesions classified for biopsy avoidance (57.6%), all benign (100% NPV). All 5 malignancies in biopsy pathway. Clinician specificity 99.1% vs AI 75.7%; AI sensitivity 96.9% vs clinician 81.3%. ~\u00a385K cost offsets.",
+    "metrics": {
+      "avoidance_rate": "57.6%",
+      "npv": "100%",
+      "ai_sensitivity": "96.9%",
+      "clinician_specificity": "99.1%"
+    },
+    "id": "pmid:43028364"
+  },
+  {
+    "pmid": "43028810",
+    "title": "DKA Early-Warning Framework Simulation Stress Test",
+    "source": "PubMed",
+    "date": "2026-11-06",
+    "models": [
+      "XGBoost",
+      "BHB+trend rule"
+    ],
+    "dataset": "20,000 synthetic 15h episodes, 449 reference-DKA test episodes, IOBP2 benchmark",
+    "key_findings": "BHB+trend 98.9% sensitivity, 1.060 false alerts/day. XGBoost 89.5%, 0.456/day. Generator shortcut: classical-DKA glucose 152.9 vs non-DKA 304.5. XGBoost discrimination depends on simulator construction.",
+    "metrics": {
+      "rule_sensitivity": "98.9%",
+      "rule_false_alerts": "1.060/day",
+      "xgboost_sensitivity": "89.5%",
+      "xgboost_false_alerts": "0.456/day"
+    },
+    "id": "pmid:43028810"
   }
 ]
