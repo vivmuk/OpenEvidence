@@ -18886,5 +18886,251 @@
     ],
     "type": "review",
     "id": "pmid:43026039"
+  },
+  {
+    "pmid": "43034186",
+    "title": "Personas shift clinical action thresholds in large language models",
+    "authors": [
+      "Klang E",
+      "Gorenshtein A",
+      "Omar M",
+      "Barash Y",
+      "Nadkarni GN"
+    ],
+    "date": "2026-11-14",
+    "source": "PubMed",
+    "journal": "npj Health Syst",
+    "doi": "10.1038/s44401-026-00121-z",
+    "abstract": "Tested whether decision-style system prompts shift clinical action thresholds when clinical facts are held constant. Nine physician personas (3 ethical orientations x 3 cognitive styles). Twenty open-weight LLMs evaluated on 2500 simulated ED vignettes and 2500 MIMIC-IV-Note discharge summaries. 5M total decisions. Persona prompts shifted affirmative rates from 36.9% to 46.4%, a 9.5pp swing under fixed clinical evidence. Effects largest in autonomy and treatment decisions. Susceptibility varied by model (4.9-16.1 points). Prompting is a policy-setting layer, not just a communication layer.",
+    "keywords": [
+      "LLM",
+      "clinical decision-making",
+      "personas",
+      "system prompts",
+      "action thresholds",
+      "deployment"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43034186"
+  },
+  {
+    "pmid": "43033525",
+    "title": "Self-report label bias in machine learning screening for undiagnosed diabetes: development, validation and offline on-device deployment of an interpretable HbA1c-anchored tool",
+    "authors": [
+      "Chowdhury SH",
+      "Diptho RA",
+      "Ghosh P"
+    ],
+    "date": "2026-11-10",
+    "source": "PubMed",
+    "journal": "Int J Med Inform",
+    "doi": "10.1016/j.ijmedinf.2026.106811",
+    "abstract": "ML models for undiagnosed diabetes trained on self-reported diagnosis labels partly encode access to care. 13-item EBM found 85% of HbA1c-defined undiagnosed cases vs 65% for age-limited rule at USPSTF referral rate. Access/socioeconomic items carried 23.8% attribution under self-reported label vs 17.7% under HbA1c label. Correction raised BRFSS model AUROC from 0.775 to 0.816. Offline on-device deployment validated.",
+    "keywords": [
+      "machine learning",
+      "diabetes screening",
+      "label bias",
+      "HbA1c",
+      "interpretable",
+      "deployment"
+    ],
+    "type": "research",
+    "id": "pmid:43033525"
+  },
+  {
+    "pmid": "43032854",
+    "title": "Early Warning Systems for Acute Kidney Injury Prediction Before Clinical Onset: A Systematic Review of 24-48 Hour Risk Stratification Models",
+    "authors": [
+      "Alata Bakhit MO",
+      "Abdelrahman Elsheikh EE",
+      "Elsayed S",
+      "Elzein Elnagar FE",
+      "Gadalla Fdlalmolla HA",
+      "Omer Farah MA",
+      "Alawad Mohammed MA",
+      "M Osman HM",
+      "Eltreifi Obeid SO"
+    ],
+    "date": "2026-10-14",
+    "source": "PubMed",
+    "journal": "Cureus",
+    "doi": "10.7759/cureus.117931",
+    "abstract": "PRISMA 2020 systematic review of 13 studies predicting AKI 24-48h before diagnostic criteria. ~623K admissions. Gradient-boosted trees and deep sequence models most common. Internal AUROC 0.72-0.99, external 0.58-0.87. Only 2 studies assessed calibration, 1 prospective validation, none evaluated alert impact on outcomes. Performance falls on external validation. Prospective impact-focused evaluation needed before deployment.",
+    "keywords": [
+      "AKI",
+      "early warning",
+      "prediction model",
+      "systematic review",
+      "AUROC",
+      "external validation"
+    ],
+    "type": "review",
+    "id": "pmid:43032854"
+  },
+  {
+    "pmid": "43032430",
+    "title": "Artificial intelligence for precision nephrology: current evidence to clinical translation and future prospects",
+    "authors": [
+      "Madami MI",
+      "Amaoge CS",
+      "Wulandari A",
+      "Zhou X"
+    ],
+    "date": "2026-10-30",
+    "source": "PubMed",
+    "journal": "Front Nephrol",
+    "doi": "10.3389/fneph.2026.1950125",
+    "abstract": "Narrative review of AI applications in nephrology across AKI, CKD, nephropathology, transplantation, haemodialysis, peritoneal dialysis, LLMs, reinforcement learning, federated learning. Many models show promising discrimination but external validation limited, prospective evaluation scarce. Challenges: calibration, generalizability, interpretability, algorithmic fairness, data governance, workflow integration. Technical performance should not be equated with clinical effectiveness or deployment readiness.",
+    "keywords": [
+      "AI",
+      "nephrology",
+      "precision medicine",
+      "clinical decision support",
+      "review",
+      "translation"
+    ],
+    "type": "review",
+    "id": "pmid:43032430"
+  },
+  {
+    "pmid": "43032389",
+    "title": "Association between deployment of a web-based electronic clinical decision support tool and antibiotic prescribing knowledge and confidence in an academic dental center",
+    "authors": [
+      "Durkin MJ",
+      "Hanna D",
+      "Rowan S",
+      "Habrock-Bach T",
+      "Bewley A",
+      "Foraker R",
+      "Suda K"
+    ],
+    "date": "2026-09-01",
+    "source": "PubMed",
+    "journal": "Antimicrob Steward Healthc Epidemiol",
+    "doi": "10.1017/ash.2026.10825",
+    "abstract": "Pre/post survey evaluation of web-based CDSS for antibiotic prescribing at academic dental center. 213 pre-tool, 116 post-tool participants. Slightly less likely to prescribe after tool access (median 2.55 vs 2.67, P=.07). Prescribing confidence unchanged (3.37 vs 3.24, P=.21). Self-reported users (n=37) showed trend toward more confidence (P=.07). Low overall uptake; additional interventions needed.",
+    "keywords": [
+      "CDSS",
+      "antibiotic prescribing",
+      "dental",
+      "stewardship",
+      "usability",
+      "evaluation"
+    ],
+    "type": "research",
+    "id": "pmid:43032389"
+  },
+  {
+    "pmid": "43032285",
+    "title": "Benchmarking large language model performance in generating and assessing radiology objective structured clinical examination",
+    "authors": [
+      "Ankush A",
+      "Burman S",
+      "Smith S",
+      "Gupta V",
+      "Barath S",
+      "Puranik M",
+      "Ponnatapura J"
+    ],
+    "date": "2026-09-12",
+    "source": "PubMed",
+    "journal": "Radiol Adv",
+    "doi": "10.1093/radadv/umag039",
+    "abstract": "Compared 4 LLMs (GPT-4o, Llama 3-70b, Claude 3.5 Sonnet, Gemini 1.5 Flash) on 200 radiology OSCE-style sessions from 50 Radiopaedia cases. 3 expert radiologists evaluated. GPT-4o highest (Borda 18.5), followed by Llama (14.5), Claude (12.0), Gemini (5.0). GPT-4o significantly higher odds for clarity (OR 4.52) and assessment accuracy (OR 3.78) vs Gemini. None consistently achieved expert-level quality.",
+    "keywords": [
+      "LLM",
+      "benchmark",
+      "radiology",
+      "OSCE",
+      "medical education",
+      "GPT-4o",
+      "evaluation"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43032285"
+  },
+  {
+    "pmid": "43032066",
+    "title": "Integrating quantitative biometrics and automated risk stratification for ophthalmic surgical triage",
+    "authors": [
+      "Craft J",
+      "Fleischman D"
+    ],
+    "date": "2026-10-30",
+    "source": "PubMed",
+    "journal": "Front Med",
+    "doi": "10.3389/fmed.2026.1975712",
+    "abstract": "Mini-review of automated EHR-based risk stratification and quantitative ocular biometrics for perioperative decision support in ophthalmology. Cancellation models achieve AUC 0.75-0.92 (development), 0.70-0.74 (validation). Proposes EHR-integrated framework with endpoint-specific models for surgical readiness, technical complexity, and adverse outcomes. Each output linked to defined response (navigation, anesthesia review, case assignment, etc.).",
+    "keywords": [
+      "risk stratification",
+      "ophthalmology",
+      "surgical triage",
+      "EHR",
+      "biometrics",
+      "decision support"
+    ],
+    "type": "review",
+    "id": "pmid:43032066"
+  },
+  {
+    "pmid": "43031966",
+    "title": "Usability testing of a user-centered clinical decision support tool about asymptomatic bacteriuria and urinary tract infections in older adults",
+    "authors": [
+      "Chernet Y",
+      "Politi MC",
+      "Haar VV",
+      "Hsueh K",
+      "Goldstein EC",
+      "Sayood S",
+      "Durkin MJ"
+    ],
+    "date": "2026-08-28",
+    "source": "PubMed",
+    "journal": "Antimicrob Steward Healthc Epidemiol",
+    "doi": "10.1017/ash.2026.10826",
+    "abstract": "Mixed-methods usability evaluation of web-based CDSS for differentiating asymptomatic bacteriuria from UTIs. 7 clinicians, mean SUS 85.4 (excellent). Qualitative themes: positive speed/guidance, content gaps (missing symptoms, unclear thresholds), navigational suggestions. EHR integration highlighted as necessary for sustained use. RCT planned.",
+    "keywords": [
+      "CDSS",
+      "usability",
+      "bacteriuria",
+      "UTI",
+      "antibiotic stewardship",
+      "SUS"
+    ],
+    "type": "research",
+    "id": "pmid:43031966"
+  },
+  {
+    "pmid": "43031939",
+    "title": "Utilizing AI for decision support in severe asthma biological treatment",
+    "authors": [
+      "Mahboub B",
+      "Alawnah S",
+      "Dhou S",
+      "Kuna P",
+      "Bergeron C",
+      "Al-Lehebi R",
+      "Alnahadi N",
+      "Alhousani N",
+      "Sagahyroon A",
+      "Alzabi A",
+      "Salameh L"
+    ],
+    "date": "2026-10-30",
+    "source": "PubMed",
+    "journal": "Front Digit Health",
+    "doi": "10.3389/fdgth.2026.1939100",
+    "abstract": "AI-driven DSS for severe asthma biologic selection. Retrospective multinational cohort 801 patients (UAE, Saudi Arabia, Poland, Canada). Random Forest models. Key predictors: ACT score, eosinophil count, type 2 comorbidities. Optimized RF improved specificity 33.3%->66.7%, accuracy 78.6%->82.1%. Counterfactual simulation identified non-responders and alternative biologics (62% improvement probability switching anti-IgE to anti-IL-5R).",
+    "keywords": [
+      "AI",
+      "decision support",
+      "severe asthma",
+      "biologic therapy",
+      "Random Forest",
+      "counterfactual",
+      "precision medicine"
+    ],
+    "type": "benchmark",
+    "id": "pmid:43031939"
   }
 ]

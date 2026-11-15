@@ -6695,5 +6695,80 @@
       "xgboost_false_alerts": "0.456/day"
     },
     "id": "pmid:43028810"
+  },
+  {
+    "pmid": "43034186",
+    "title": "Personas Shift Clinical Action Thresholds in LLMs",
+    "source": "PubMed",
+    "date": "2026-11-14",
+    "models": [
+      "20 open-weight LLMs"
+    ],
+    "dataset": "2500 simulated ED vignettes, 2500 MIMIC-IV-Note discharge summaries, 5M decisions",
+    "key_findings": "Persona prompts shifted affirmative rates from 36.9% to 46.4% (9.5pp swing) under fixed clinical evidence. Effects largest in autonomy and treatment. Susceptibility varied 4.9-16.1pp by model. No consistent protection from medical fine-tuning or model size. Prompting is a policy-setting layer.",
+    "metrics": {
+      "baseline_yes_rate": "42.8%",
+      "persona_shift_range": "36.9%-46.4%",
+      "directional_agreement": "85.7%",
+      "effect_size_correlation": "r=0.82"
+    },
+    "id": "pmid:43034186"
+  },
+  {
+    "pmid": "43032285",
+    "title": "LLM Benchmark for Radiology OSCE Question Generation",
+    "source": "PubMed",
+    "date": "2026-09-12",
+    "models": [
+      "GPT-4o",
+      "Llama 3-70b",
+      "Claude 3.5 Sonnet",
+      "Gemini 1.5 Flash"
+    ],
+    "dataset": "50 Radiopaedia cases, 200 OSCE sessions, 3 expert radiologists",
+    "key_findings": "GPT-4o highest Borda score (18.5). Top Two Box Accuracy: GPT-4o significantly higher vs Gemini for clarity (OR 4.52) and assessment accuracy (OR 3.78). Perfect 5 Accuracy: GPT-4o 52.7% composite question accuracy. None consistently achieved expert-level quality.",
+    "metrics": {
+      "borda_gpt4o": "18.5",
+      "borda_llama": "14.5",
+      "borda_claude": "12.0",
+      "borda_gemini": "5.0",
+      "top_box_accuracy": "70.7%-100%"
+    },
+    "id": "pmid:43032285"
+  },
+  {
+    "pmid": "43031939",
+    "title": "AI DSS for Severe Asthma Biologic Selection",
+    "source": "PubMed",
+    "date": "2026-10-30",
+    "models": [
+      "Random Forest"
+    ],
+    "dataset": "801 patients (UAE, Saudi Arabia, Poland, Canada)",
+    "key_findings": "Optimized RF improved specificity 33.3%->66.7% and accuracy 78.6%->82.1%. Key predictors: ACT score, eosinophil count, type 2 comorbidities. Counterfactual simulation: 62% improvement probability switching anti-IgE to anti-IL-5R in selected non-responders.",
+    "metrics": {
+      "specificity_improvement": "33.3%->66.7%",
+      "accuracy": "78.6%->82.1%"
+    },
+    "id": "pmid:43031939"
+  },
+  {
+    "pmid": "43033525",
+    "title": "ML Diabetes Screening with Self-Report Label Bias Correction",
+    "source": "PubMed",
+    "date": "2026-11-10",
+    "models": [
+      "Explainable Boosting Machine (EBM)",
+      "3 guideline rules"
+    ],
+    "dataset": "NHANES 2013-2014 (5,328 adults), BRFSS 2015 (253,680 adults), external cohort (388 adults)",
+    "key_findings": "13-item EBM found 85% of HbA1c-defined undiagnosed diabetes vs 65% for age-limited rule at USPSTF referral rate. Self-report labels encode access to care (23.8% attribution vs 17.7% under HbA1c label). Label correction raised AUROC 0.775->0.816. Offline on-device deployment validated.",
+    "metrics": {
+      "ebm_sensitivity": "85%",
+      "rule_sensitivity": "65%",
+      "corrected_auroc": "0.816",
+      "external_auroc": "0.788"
+    },
+    "id": "pmid:43033525"
   }
 ]
