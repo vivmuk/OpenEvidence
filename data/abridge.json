@@ -638,26 +638,53 @@
   "timeline": [
     {
       "date": "2026-11-13",
+      "cat": "Partnership",
+      "title": "Abridge and NACHC Bring Abridge Assistant to 108,000 Community Health Center Clinicians",
+      "desc": "Abridge and the National Association of Community Health Centers announced the Abridge Assistant will be available at no cost to 108,000 clinicians at all NACHC member community health centers, covering 52 million patients. The partnership marks Abridge's first move into the community health center segment and significantly expands its footprint beyond large enterprise health systems.",
+      "src": "BusinessWire / Abridge",
+      "url": "https://www.businesswire.com/news/home/20261113670286/en/Abridge-and-NACHC-Making-the-Abridge-Assistant-Available-to-108000-Community-Health-Center-Clinicians",
+      "new": true
+    },
+    {
+      "date": "2026-11-13",
       "cat": "Company",
       "title": "Shiv Rao on Lightspeed Podcast: The AI Scribe Was Only a Wedge",
-      "desc": "Abridge CEO Shiv Rao told the Lightspeed podcast that ambient note-taking was never the endgame — it was the entry point into an AI-native health system. Rao said the Abridge Assistant now reads charts before visits, files prior authorizations on its own, and flags patients who may qualify for clinical trials. He was blunt about clinicians being the bottleneck on shipping speed, signaling that Abridge's roadmap is shifting from documentation toward autonomous clinical workflow agents.",
+      "desc": "Abridge CEO Shiv Rao told the Lightspeed podcast that ambient note-taking was never the endgame - it was the entry point into an AI-native health system. Rao said the Abridge Assistant now reads charts before visits, files prior authorizations on its own, and flags patients who may qualify for clinical trials. He was blunt about clinicians being the bottleneck on shipping speed, signaling that Abridge's roadmap is shifting from documentation toward autonomous clinical workflow agents.",
       "src": "Techflier / Lightspeed Podcast",
       "url": "https://techflier.com/2026/11/13/abridges-founder-on-why-the-ai-scribe-was-only-a-wedge/",
       "new": true
     },
     {
       "date": "2026-11-12",
+      "cat": "Product",
+      "title": "Abridge Assistant Adds Local Pathways: Institution-Specific Care Guidance at the Point of Care",
+      "desc": "Abridge announced support for Local Pathways, a new capability within the Abridge Assistant that surfaces a health system's own care plans and clinical guidance alongside published medical literature. The feature cites the original pathway document and operates within existing security frameworks. UC Irvine Health and Dayton Children's Hospital are cited as design partners. The move positions Abridge's knowledge layer as a governance asset for health systems.",
+      "src": "Abridge / The Health Tech Signal",
+      "url": "https://www.abridge.com/press-release/local-pathways-abridge-assistant",
+      "new": true
+    },
+    {
+      "date": "2026-11-12",
       "cat": "Company",
       "title": "Legal Analysis: Patient Consent for AI Recording Is More Than a Notice",
-      "desc": "A legal analysis on LexBlog examines the class-action lawsuit against Allegheny Health Network over Abridge AI recordings, arguing that patient disclosure must explain what is recorded, who receives it, and how it may be used — not simply that an AI tool is involved. The piece frames the case as a practical compliance lesson for health systems adopting ambient AI: consent forms and verbal notices must cover data flows to third parties like Abridge, not just the fact of recording.",
+      "desc": "A legal analysis on LexBlog examines the class-action lawsuit against Allegheny Health Network over Abridge AI recordings, arguing that patient disclosure must explain what is recorded, who receives it, and how it may be used - not simply that an AI tool is involved. The piece frames the case as a practical compliance lesson for health systems adopting ambient AI: consent forms and verbal notices must cover data flows to third parties like Abridge, not just the fact of recording.",
       "src": "LexBlog",
       "url": "https://www.lexblog.com/2026/11/12/ai-in-the-exam-room-patient-consent-is-more-than-a-notice/",
       "new": true
     },
     {
+      "date": "2026-11-09",
+      "cat": "Product",
+      "title": "Abridge Visit Dx Enhancements Give Clinicians More Control Over Diagnoses in the Note",
+      "desc": "Abridge released Visit Dx enhancements that let clinicians organize diagnoses under problem headers so the assessment reads the way clinicians think, search and replace diagnoses without leaving the note, and refine diagnoses with specificity modifiers like laterality and acuity. The update reduces back-and-forth between the note and the problem list and moves diagnosis refinement into the documentation workflow itself.",
+      "src": "Abridge / LinkedIn",
+      "url": "https://www.linkedin.com/posts/abridgehq_new-abridge-visit-dx-enhancements-give-clinicians-activity-7525593317217255425-gVyy",
+      "new": true
+    },
+    {
       "date": "2026-11-10",
       "cat": "Company",
-      "title": "AI Briefing: Abridge Layoffs Signal Market Commoditization — What Health Systems Should Ask",
+      "title": "AI Briefing: Abridge Layoffs Signal Market Commoditization - What Health Systems Should Ask",
       "desc": "AI Briefing analyzes Abridge's November layoffs as evidence that the best-funded ambient documentation company is flattening its organization as the category commoditizes. The report advises health systems mid-contract to get roadmap and support commitments in writing, and treat the shakeout as a procurement risk. Two former employees with under one year tenure posted on LinkedIn about the cuts, which Abridge called an organization-wide realignment.",
       "src": "AI Briefing",
       "url": "https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/",
@@ -1438,5 +1465,5 @@
       "url": "https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/"
     }
   ],
-  "updated": "2026-11-14"
+  "updated": "2026-11-15"
 }
