@@ -33,7 +33,7 @@
     "tools_evaluated": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
     "scale": "1,100 tasks, 10 specialties, 12,747 annotations, 101 physicians",
     "key_findings": [
-      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases \u2014 more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
+      "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)",
       "24.6% severe harm potential from AI recommendations",
       "Omission errors >80% of severe errors",
       "Clinical AI tools outperformed generalist LLMs",
@@ -115,7 +115,7 @@
     "tools_evaluated": "6 LLMs (domain-specific and general-purpose)",
     "scale": "2,069 Q&A, 26 departments, 32 physicians, 30 criteria",
     "key_findings": [
-      "Average LLM performance 57.2% \u2014 moderate",
+      "Average LLM performance 57.2% — moderate",
       "Safety 54.7%, effectiveness 62.3%",
       "13.3% performance drop in high-risk scenarios",
       "Medical LLMs outperformed general models by 15.3% overall, 19.8% in safety"
@@ -128,7 +128,7 @@
     "id": "arxiv:2508.04325",
     "source": "arxiv",
     "type": "methodology",
-    "title": "MedCheck: Beyond the Leaderboard \u2014 Rethinking Medical Benchmarks for LLMs",
+    "title": "MedCheck: Beyond the Leaderboard — Rethinking Medical Benchmarks for LLMs",
     "authors": "Wenxuan Wang et al.",
     "url": "https://arxiv.org/abs/2508.04325",
     "published": "2025-08-06",
@@ -576,7 +576,7 @@
       "Selective adaptation preserved physiological representation and improved vasopressor/septic shock discrimination",
       "Framework correctly identified 26 septic shock cases the retrained baseline missed",
       "PubMed-grounded Temporal RAG preserved retrieval consistency with pre-adaptation source",
-      "Drift localized entirely to treatment stream \u2014 supports governable clinical AI deployment"
+      "Drift localized entirely to treatment stream — supports governable clinical AI deployment"
     ],
     "relevance": "high",
     "status": "preprint_v1",
@@ -612,7 +612,7 @@
     "id": "arxiv:2606.23992",
     "source": "arxiv",
     "type": "rag_clinical_evaluation",
-    "title": "RASC+ Retrieval-Constrained LLM Adjudication \u2014 Clinical Value Sets CDSS",
+    "title": "RASC+ Retrieval-Constrained LLM Adjudication — Clinical Value Sets CDSS",
     "authors": "Sumit Mukherjee",
     "url": "https://arxiv.org/abs/2606.23992",
     "published": "2026-06-22",
@@ -658,7 +658,7 @@
       "Inverse relationship: higher expert quality = lower readability (OpenEvidence at postgraduate level)"
     ],
     "open_evidence_rank": 1,
-    "open_evidence_score": "4.45\u00b10.72",
+    "open_evidence_score": "4.45±0.72",
     "status": "published",
     "pmid": "42473942"
   },
@@ -866,8 +866,8 @@
     "id": "pmid:42181555",
     "type": "tool_comparison",
     "title": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch: Are They Objectively up to Medical Standards? A Real-Life Assessment of LLM Chatbots in Health Care",
-    "authors": "Casta\u00f1o-Villegas N, Villa MC, Barrientos KM, Llano I, Vel\u00e1squez L, Zea J",
-    "abstract": "Independent comparative study of four LLM chatbots \u2014 OpenEvidence, ChatGPT, Medisearch, and Arkangel AI \u2014 on four clinical vignettes (orthopedics, pediatrics, gynecology, psychiatry) with four questions each (diagnosis, clinical management, research, general knowledge); evaluated by external clinicians on 8-criterion Likert scale. Response times also captured.",
+    "authors": "Castaño-Villegas N, Villa MC, Barrientos KM, Llano I, Velásquez L, Zea J",
+    "abstract": "Independent comparative study of four LLM chatbots — OpenEvidence, ChatGPT, Medisearch, and Arkangel AI — on four clinical vignettes (orthopedics, pediatrics, gynecology, psychiatry) with four questions each (diagnosis, clinical management, research, general knowledge); evaluated by external clinicians on 8-criterion Likert scale. Response times also captured.",
     "published": "2026-06-01",
     "updated": "2026-06-01",
     "journal": "Mayo Clin Proc Digit Health",
@@ -883,12 +883,12 @@
       "vignettes"
     ],
     "tools_evaluated": "Arkangel AI, OpenEvidence, ChatGPT, Medisearch",
-    "scale": "4 clinical vignettes \u00d7 4 questions = 16 queries per chatbot \u00d7 4 chatbots",
+    "scale": "4 clinical vignettes × 4 questions = 16 queries per chatbot × 4 chatbots",
     "key_findings": [
       "Eight-criterion Likert evaluation (correctness, consensus, bias, standards-of-care adherence, timeliness, patient safety, citation authenticity, contextual appropriateness)",
       "Real-world style clinical vignettes spanning four specialties",
       "Response times captured",
-      "Independent (commercial Latin-American) clinical AI vendor initiative \u2014 adds geographic diversity beyond US-centric NOHARM/Real-POCQi"
+      "Independent (commercial Latin-American) clinical AI vendor initiative — adds geographic diversity beyond US-centric NOHARM/Real-POCQi"
     ],
     "status": "published",
     "new": false,
@@ -919,7 +919,7 @@
     "key_findings": [
       "Five-LLM head-to-head on spine-surgery citation accuracy",
       "OpenEvidence included in spine comparison",
-      "Clinician-level vs patient-level prompt comparison \u2014 first such decomposition for spine topics",
+      "Clinician-level vs patient-level prompt comparison — first such decomposition for spine topics",
       "Quantifies fabricated citations across all five systems"
     ],
     "status": "published",
@@ -952,7 +952,7 @@
       "OpenEvidence highest CLEAR score (17.82/25)",
       "ChatGPT second at 15.72/25",
       "All AI chatbots statistically lower than faculty responses",
-      "Few \"very good\" responses from any chatbot \u2014 pharmacist expertise remains essential"
+      "Few \"very good\" responses from any chatbot — pharmacist expertise remains essential"
     ],
     "status": "published",
     "new": false,
@@ -962,7 +962,7 @@
     "id": "pmid:42500998",
     "type": "accuracy_evaluation",
     "title": "Diagnostic Ambiguity in Appendicitis: Comparing Failure Modes of Large Language Models and Surgeons",
-    "authors": "\u00c7al\u0131\u015fkan YK, Ba\u015fak F, Erdem O, Kuda\u015f \u0130",
+    "authors": "Çalışkan YK, Başak F, Erdem O, Kudaş İ",
     "abstract": "Six frontier AI systems vs two board-certified general surgeons evaluated 150 standardized ED vignettes (90 appendicitis, 60 mimics enriched for difficult scenarios). GPT-5 95.3% accuracy; GPT-4o 82.0%; specialist consensus 92.7%. Distinct failure modes identified including search-induced hallucinations in web-augmented systems.",
     "published": "2026-07-25",
     "updated": "2026-07-25",
@@ -1025,8 +1025,8 @@
     "id": "arxiv:2606.03305",
     "type": "methodology",
     "title": "The Reliability Gap in Benchmark Auditing: Distribution Shift and Scale as Failure Modes of Contamination Detection",
-    "authors": "Wojciech Zarzecki, Jan Dubi\u0144ski, Sebastian Cygert",
-    "abstract": "Identifies two understudied failure modes in benchmark contamination detection \u2014 distribution shift and scale constraints \u2014 that affect validity of LLM clinical AI benchmark scoring (NOHARM, HealthBench, MedQA, USMLE, MedCheck).",
+    "authors": "Wojciech Zarzecki, Jan Dubiński, Sebastian Cygert",
+    "abstract": "Identifies two understudied failure modes in benchmark contamination detection — distribution shift and scale constraints — that affect validity of LLM clinical AI benchmark scoring (NOHARM, HealthBench, MedQA, USMLE, MedCheck).",
     "published": "2026-06-02",
     "updated": "2026-07-01",
     "journal": "arXiv preprint",
@@ -1098,7 +1098,7 @@
       "Three formal failure modes: Conservative Escalation Bias, Systematic Downgrade Bias, Middle-Tier Instability",
       "All three frontier models exhibit at least one formal failure mode",
       "77 percentage point under-triage gap hidden by traditional sensitivity metrics in Llama 3.1 8B",
-      "Single-ranking benchmarks inadequate for LMIC clinical AI selection \u2014 optimal model varies by deployment scenario"
+      "Single-ranking benchmarks inadequate for LMIC clinical AI selection — optimal model varies by deployment scenario"
     ],
     "open_evidence_rank": null,
     "open_evidence_score": null,
@@ -1142,7 +1142,7 @@
     ],
     "summary": "MedUPSQA dataset of 21,874 mid-stream clinical decision points from 5,535 real case reports. Evaluates LLMs on next appropriate action (test, imaging, specialist, differential) rather than just final diagnosis. RL alignment with GRPO improves next-step accuracy significantly.",
     "scale": "21,874 decision points, 5,535 case reports, 3 model backbones",
-    "key_metric": "Next-step accuracy improvement: Qwen3.6-27B 55.2\u219266.7, Qwen3.5-9B 47.2\u219257.8, HuatuoGPT-3-8B 37.8\u219244.4",
+    "key_metric": "Next-step accuracy improvement: Qwen3.6-27B 55.2→66.7, Qwen3.5-9B 47.2→57.8, HuatuoGPT-3-8B 37.8→44.4",
     "new": false
   },
   {
@@ -1168,7 +1168,7 @@
   {
     "id": "arxiv:2608.03744",
     "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
-    "authors": "Sebasti\u00e1n Andr\u00e9s Cajas Ord\u00f3\u00f1ez et al.",
+    "authors": "Sebastián Andrés Cajas Ordóñez et al.",
     "url": "https://arxiv.org/abs/2608.03744",
     "published": "2026-08-04",
     "journal": "arXiv preprint (cs.AI)",
@@ -1176,8 +1176,8 @@
     "description": "Evaluates whether clinical multi-agent LLM committees can be gamed by social shortcuts. Tests 7 cohorts across 6 public datasets (MedQA-USMLE, MedMCQA, MIMIC-CXR, ChestX-ray14, CheXpert, SUPPORT2). 38% shortcut adoption rate when two peers assert wrong answer.",
     "key_findings": [
       "38% shortcut adoption when two peers assert same wrong answer",
-      "Gate oversight: 100% FPR \u2014 cannot distinguish adoption from honest agreement",
-      "Referee oversight: 77-88% precision, 13-21% FPR \u2014 transfers across modalities",
+      "Gate oversight: 100% FPR — cannot distinguish adoption from honest agreement",
+      "Referee oversight: 77-88% precision, 13-21% FPR — transfers across modalities",
       "Near-silent gaming: only 1/10 text and 1/134 imaging drifters name the moved-toward rubric",
       "Social plausibility, not visual salience, drives contagion"
     ],
@@ -1238,15 +1238,15 @@
     "tools_evaluated": [
       "12 instruction-tuned LLMs from multiple model families"
     ],
-    "scale": "100 ED dizziness vignettes \u00d7 34 sociodemographic variants \u00d7 12 models \u00d7 10 repetitions = 2,040,000 responses",
+    "scale": "100 ED dizziness vignettes × 34 sociodemographic variants × 12 models × 10 repetitions = 2,040,000 responses",
     "key_findings": [
       "Largest descriptor-driven deviations in clinical decisions across 5 decision domains",
-      "2,040,000 LLM responses analyzed (12 models \u00d7 100 cases \u00d7 34 descriptors \u00d7 10 reps)",
+      "2,040,000 LLM responses analyzed (12 models × 100 cases × 34 descriptors × 10 reps)",
       "Sociodemographic descriptors materially shift LLM recommendations despite identical clinical content",
-      "TiTrATE / GRACE-3 / B\u00e1r\u00e1ny Society frameworks used to construct ED dizziness vignettes",
+      "TiTrATE / GRACE-3 / Bárány Society frameworks used to construct ED dizziness vignettes",
       "Quantifies magnitude of bias with 95% confidence intervals vs neutral control"
     ],
-    "relevance": "Quantifies sociodemographic bias in LLM clinical decisions at population scale (2M+ responses) \u2014 directly relevant for OE-style tool fairness & safety posture",
+    "relevance": "Quantifies sociodemographic bias in LLM clinical decisions at population scale (2M+ responses) — directly relevant for OE-style tool fairness & safety posture",
     "tags": [
       "bias evaluation",
       "sociodemographic bias",
@@ -1256,7 +1256,7 @@
       "vignette study",
       "LLM fairness",
       "GRACE-3",
-      "B\u00e1r\u00e1ny"
+      "Bárány"
     ],
     "new": false,
     "pmid": "42569795"
@@ -1274,15 +1274,15 @@
     "tools_evaluated": [
       "9 commercial language models from 3 providers"
     ],
-    "scale": "9 models \u00d7 SIRI-2 instrument \u00d7 60 reps each = 27,000 responses vs expert consensus baseline",
+    "scale": "9 models × SIRI-2 instrument × 60 reps each = 27,000 responses vs expert consensus baseline",
     "key_findings": [
-      "27,000 individually scored responses; 9 LMs \u00d7 3 prompt variants \u00d7 2 temperatures \u00d7 10 reps",
+      "27,000 individually scored responses; 9 LMs × 3 prompt variants × 2 temperatures × 10 reps",
       "Total scores 19.5-84.0 across models (expert panel baseline 32.5)",
-      "Prompt design alone shifted individual model scores by as much as the gap between models \u2014 critical confounding factor",
+      "Prompt design alone shifted individual model scores by as much as the gap between models — critical confounding factor",
       "SIRI-2 (validated suicide intervention response inventory) used as clinician gold standard",
       "Configuration decisions, measurement limitations, scoring context all materially affect interpretation"
     ],
-    "relevance": "Clinician-facing benchmark primer showing how prompt-design variance can rival inter-model variance \u2014 critical context for evaluating OE-style LLM tools in high-stakes domains",
+    "relevance": "Clinician-facing benchmark primer showing how prompt-design variance can rival inter-model variance — critical context for evaluating OE-style LLM tools in high-stakes domains",
     "tags": [
       "benchmark",
       "SIRI-2",
@@ -1317,7 +1317,7 @@
       "Mayring content analysis via FUTURE-AI framework reveals reasoning failures",
       "Shared logic gaps across model families argue against ensembling as a fix"
     ],
-    "relevance": "Audits CoT reasoning failures in medical-domain stance classification; surfaces shared failure modes across model families \u2014 relevant to OE-style explanation/evidence-tracing UX",
+    "relevance": "Audits CoT reasoning failures in medical-domain stance classification; surfaces shared failure modes across model families — relevant to OE-style explanation/evidence-tracing UX",
     "tags": [
       "mixed-methods",
       "audit",
@@ -1411,7 +1411,7 @@
       "VITA led on points-weighted score and won most questions under neutral judge",
       "Corpus specificity improves grounding but communication scores lower"
     ],
-    "relevance": "Purpose-built clinical RAG vs frontier LLMs on HealthBench \u2014 demonstrates corpus specificity as design variable for clinical AI tools; multi-model benchmark comparison",
+    "relevance": "Purpose-built clinical RAG vs frontier LLMs on HealthBench — demonstrates corpus specificity as design variable for clinical AI tools; multi-model benchmark comparison",
     "tags": [
       "RAG",
       "HealthBench",
@@ -1428,8 +1428,8 @@
     "id": "pmid:42602970",
     "source": "pubmed",
     "type": "systematic_review_meta_analysis",
-    "title": "AI in cardiovascular care \u2014 systematic review and meta-analysis of 31 RCTs (n=1.69M patients)",
-    "authors": "Ong AQC, Ang CS, Bojic I, Johnson CL, Aggour H, Ng FS, Car J, Leeson P, Gon\u00e7alves J, Lai NM",
+    "title": "AI in cardiovascular care — systematic review and meta-analysis of 31 RCTs (n=1.69M patients)",
+    "authors": "Ong AQC, Ang CS, Bojic I, Johnson CL, Aggour H, Ng FS, Car J, Leeson P, Gonçalves J, Lai NM",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42602970/",
     "published": "2026-08-06",
     "updated": "2026-08-06",
@@ -1439,7 +1439,7 @@
     "key_findings": [
       "Image-based AI-CDSS reduces MACE (RR 0.74, 95% CI 0.58-0.96)",
       "AI mobile health reduces systolic BP by 3.18 mmHg",
-      "AI-ECG shows no significant HF detection improvement (I\u00b2=90%)",
+      "AI-ECG shows no significant HF detection improvement (I²=90%)",
       "71% trials positive on intermediate endpoints only",
       "Certainty low-to-very-low (GRADE)"
     ],
@@ -1454,7 +1454,7 @@
     "type": "benchmark",
     "title": "CARE: Confidence-Aware Reasoning for Reliable Medical VQA",
     "authors": "Yuetian Du, Yucheng Wang, Zhenyuan Chen, Luyuan Chen, Rongyu Zhang, Jinjian Zhang, Wei Zhou, Zhijie Xu, Ming Kong, Zhan Zhou, Jie Liu, Qiang Zhu",
-    "abstract": "Reinforcement Fine-Tuning (RFT) has enabled medical Multimodal LLMs (MLLMs) to produce Chain-of-Thought reasoning for visual question answering, yet they suffer from confidence miscalibration \u2014 a systematic gap between expressed certainty and actual diagnostic accuracy that undermines clinical trust. CARE is a Confidence-Aware REasoning framework that jointly optimizes accuracy and calibration via dual-stage pipeline (Medical-CoT SFT + GRPO with Confidence-Aware Reward). Across three Medical VQA benchmarks, CARE achieves highest diagnostic accuracy with lowest Expected Calibration Error and Hallucination Rate. (Accepted at MICCAI 2026)",
+    "abstract": "Reinforcement Fine-Tuning (RFT) has enabled medical Multimodal LLMs (MLLMs) to produce Chain-of-Thought reasoning for visual question answering, yet they suffer from confidence miscalibration — a systematic gap between expressed certainty and actual diagnostic accuracy that undermines clinical trust. CARE is a Confidence-Aware REasoning framework that jointly optimizes accuracy and calibration via dual-stage pipeline (Medical-CoT SFT + GRPO with Confidence-Aware Reward). Across three Medical VQA benchmarks, CARE achieves highest diagnostic accuracy with lowest Expected Calibration Error and Hallucination Rate. (Accepted at MICCAI 2026)",
     "url": "https://arxiv.org/abs/2608.10964",
     "pdf_url": "https://arxiv.org/pdf/2608.10964",
     "doi": "10.48550/arXiv.2608.10964",
@@ -1470,7 +1470,7 @@
       "hallucination",
       "reliability"
     ],
-    "relevance": "Methodology for confidence-aware clinical VQA reasoning \u2014 directly relevant to clinical AI safety/calibration and OE-style physician-AI teaming at point of care",
+    "relevance": "Methodology for confidence-aware clinical VQA reasoning — directly relevant to clinical AI safety/calibration and OE-style physician-AI teaming at point of care",
     "key_findings": [
       "Identifies confidence miscalibration as a systematic gap in medical MLLMs",
       "Dual-stage pipeline: cold-start Medical-CoT SFT + GRPO with Confidence-Aware Reward tying confidence to correctness",
@@ -1493,7 +1493,7 @@
     "url": "https://arxiv.org/abs/2608.15424",
     "published": "2026-08-15",
     "updated": "2026-08-15",
-    "journal": "arXiv preprint (cs.MA, cs.AI) \u2014 Pacific Symposium on Biocomputing 2027 submission",
+    "journal": "arXiv preprint (cs.MA, cs.AI) — Pacific Symposium on Biocomputing 2027 submission",
     "tools_evaluated": "Clinical multi-agent systems (generic framework, demonstrated on hepatology MAS)",
     "scale": "Hepatology clinical decision-support MAS",
     "key_findings": [
@@ -1503,7 +1503,7 @@
       "Appropriately increases abstention when safe recommendations cannot be supported",
       "Translates high-level ethics principles into deployable, auditable runtime safeguards"
     ],
-    "relevance": "Clinical AI safety governance framework \u2014 practical implementation of ethics oversight for multi-agent clinical decision support."
+    "relevance": "Clinical AI safety governance framework — practical implementation of ethics oversight for multi-agent clinical decision support."
   },
   {
     "id": "arxiv:2608.15254",
@@ -1524,7 +1524,7 @@
       "Phrasing scales effect from 14% to 56%",
       "General mechanism: any reasoning nudge can cause unrequested patient detail fabrication"
     ],
-    "relevance": "Large-scale safety evaluation revealing novel failure mode in medical LLMs \u2014 demographic hallucination from prompting that can alter clinical recommendations."
+    "relevance": "Large-scale safety evaluation revealing novel failure mode in medical LLMs — demographic hallucination from prompting that can alter clinical recommendations."
   },
   {
     "id": "pmid:42629964",
@@ -1639,13 +1639,13 @@
       "clinical AI safety",
       "benchmark"
     ],
-    "relevance": "Audits faithfulness of medical chain-of-thought reasoning in clinical LLMs \u2014 directly evaluates clinical AI safety and reasoning integrity",
+    "relevance": "Audits faithfulness of medical chain-of-thought reasoning in clinical LLMs — directly evaluates clinical AI safety and reasoning integrity",
     "key_findings": [
       "Chain-Decoupling Rate (CDR) 72.9% on clinically meaningful destructive edits",
       "Chain corruption leaves accuracy unchanged",
       "Removing CoT prompting does not reduce accuracy",
       "98.5% of perturbed questions leave gold answer defensible per clinician re-annotation",
-      "72.9% Chain-Decoupling Rate \u2014 chain does not register clinically meaningful edits and answer does not flip",
+      "72.9% Chain-Decoupling Rate — chain does not register clinically meaningful edits and answer does not flip",
       "Chain corruption leaves accuracy unchanged, removing CoT prompting does not reduce accuracy",
       "Pattern holds across medical and reasoning fine-tuning and scale",
       "Two board-certified clinicians confirm 98.5% of gold answers remain defensible after perturbation"
@@ -1669,7 +1669,7 @@
     "pdf_url": "https://arxiv.org/pdf/2608.22802",
     "published": "2026-08-24",
     "updated": "2026-08-24",
-    "journal": "arXiv preprint (cs.CL, cs.AI) \u2014 Accepted at IDAP'26",
+    "journal": "arXiv preprint (cs.CL, cs.AI) — Accepted at IDAP'26",
     "tags": [
       "bias",
       "SDoH",
@@ -1679,12 +1679,12 @@
       "counterfactual",
       "Qwen2.5"
     ],
-    "relevance": "Evaluates narrative anchoring bias in medical LLMs for clinical decision support \u2014 directly addresses trustworthiness and equity in clinical AI",
+    "relevance": "Evaluates narrative anchoring bias in medical LLMs for clinical decision support — directly addresses trustworthiness and equity in clinical AI",
     "key_findings": [
       "Best model (Qwen2.5 7B) still has 31.67% narrative sensitivity error",
       "Qwen2.5 7B achieves 56.33% accuracy and 40.33% correct consistency",
       "Models change responses when same case is written in different patient voice despite fixed answer key",
-      "31.67% narrative sensitivity error \u2014 models change answers when same case written in different patient voice",
+      "31.67% narrative sensitivity error — models change answers when same case written in different patient voice",
       "Qwen2.5 7B: 56.33% accuracy, 40.33% correct consistency",
       "Paired McNemar tests show significant accuracy gains for 7B over 3B in all prompt settings",
       "Trustworthy clinical decision support requires evaluating stability across medically equivalent patient narratives"
@@ -1719,7 +1719,7 @@
       "patient education",
       "escitalopram"
     ],
-    "relevance": "Directly compares OpenEvidence against ChatGPT and domain-specific LLM (MIND) in psychiatry patient questions \u2014 multi-tool clinical AI evaluation",
+    "relevance": "Directly compares OpenEvidence against ChatGPT and domain-specific LLM (MIND) in psychiatry patient questions — multi-tool clinical AI evaluation",
     "key_findings": [
       "MIND rated highest by rubric across all domains (p<0.001)",
       "By psychiatrist ratings: ChatGPT more accurate (negligible effect), MIND more complete (small effect), equal safety",
@@ -1761,7 +1761,7 @@
       "Expert ICU reasoning supervision generalizes beyond critical care",
       "19 clinicians contributed to dataset through clinician-in-the-loop framework"
     ],
-    "relevance": "RAG-based clinical AI evaluation \u2014 demonstrates that expert reasoning supervision in critical care improves broader clinical reasoning. Directly relevant to OpenEvidence's RAG architecture and clinical decision support approach."
+    "relevance": "RAG-based clinical AI evaluation — demonstrates that expert reasoning supervision in critical care improves broader clinical reasoning. Directly relevant to OpenEvidence's RAG architecture and clinical decision support approach."
   },
   {
     "id": "arxiv:2608.26592",
@@ -1783,11 +1783,11 @@
       "MEGA-CDP",
       "clinical decision support"
     ],
-    "relevance": "Benchmark specifically evaluating clinical decision pathway adherence in medical LLMs \u2014 directly assesses guideline-concordant clinical decision support",
+    "relevance": "Benchmark specifically evaluating clinical decision pathway adherence in medical LLMs — directly assesses guideline-concordant clinical decision support",
     "key_findings": [
       "42,353 clinical cases with explicit reference CDPs from 2,274 guidelines",
       "Supports both single-turn and multi-turn interactive settings",
-      "16 representative LLMs evaluated \u2014 reliable clinical decision support remains challenging",
+      "16 representative LLMs evaluated — reliable clinical decision support remains challenging",
       "CDP-oriented evaluation framework measures pathway consistency beyond final-answer accuracy"
     ],
     "tools_evaluated": [
@@ -1820,7 +1820,7 @@
       "DeepSeek"
     ],
     "key_findings": "OE highest concordance with expert Delphi consensus (65-69%). ChatGPT-4o second. DeepSeek lowest. All below expert-level.",
-    "scale": "61 scenarios \u00d7 4 platforms \u00d7 4 tests = 976 recommendations",
+    "scale": "61 scenarios × 4 platforms × 4 tests = 976 recommendations",
     "domain": "orthopaedic surgery",
     "status": "published"
   },
@@ -1843,7 +1843,7 @@
       "OpenEvidence"
     ],
     "key_findings": "Faculty rated OE advice 4.2-4.7/5. Adoption OR 8.43. Source labeling (human vs AI) had no effect.",
-    "scale": "44 faculty \u00d7 4 vignettes",
+    "scale": "44 faculty × 4 vignettes",
     "domain": "internal medicine",
     "status": "published"
   },
@@ -1867,7 +1867,7 @@
       "OpenEvidence"
     ],
     "key_findings": "Zero fabricated references across 4979 citations. 3 attribution errors. Most references recent and high-impact.",
-    "scale": "150 prompts \u00d7 4979 citations \u00d7 5 specialties",
+    "scale": "150 prompts × 4979 citations × 5 specialties",
     "domain": "multi-specialty",
     "status": "published"
   },
@@ -1916,7 +1916,7 @@
       "ChatGPT Health (benchmark comparison)"
     ],
     "key_findings": "OE conservative triage safety profile. Contrasts with ChatGPT Health 51.6% under-triage rate. Same benchmark.",
-    "scale": "60 vignettes \u00d7 30 scenarios",
+    "scale": "60 vignettes × 30 scenarios",
     "domain": "triage",
     "status": "published"
   },
@@ -2005,7 +2005,7 @@
       "frontier LLMs",
       "tool comparison"
     ],
-    "relevance": "Direct comparison of clinical AI system (Doctorina) against physicians and frontier LLMs in primary care diagnostics \u2014 multi-system evaluation",
+    "relevance": "Direct comparison of clinical AI system (Doctorina) against physicians and frontier LLMs in primary care diagnostics — multi-system evaluation",
     "key_findings": [
       "Doctorina 82.0% Top-1 concordance vs 57.0% physicians (25.0 pp difference)",
       "97.3% vs 85.0% primary-or-reference-differential concordance",
@@ -2037,7 +2037,7 @@
       "Rugo H",
       "Forsythe A",
       "Flora D",
-      "Gl\u00fcck S",
+      "Glück S",
       "Grieve S",
       "Campden R",
       "Liu RJ",
@@ -2086,7 +2086,7 @@
       "Nieves-Lopez B",
       "Fabregas A",
       "Del Rio Montesinos GF",
-      "Rosario-Gonz\u00e1lez JA",
+      "Rosario-González JA",
       "Santos-Agrait JL",
       "Haupt ET",
       "Aziz KT"
@@ -2122,7 +2122,7 @@
     "source": "pubmed",
     "type": "benchmark",
     "title": "Comparative quality, accuracy, and readability of large language model responses to patient questions about robotic-assisted total knee arthroplasty",
-    "authors": "Kolac UC, Sili MV, Karademir OM, Ayik G, Akkaya M, \u00c7akmak G",
+    "authors": "Kolac UC, Sili MV, Karademir OM, Ayik G, Akkaya M, Çakmak G",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42727207/",
     "published": "2026-09-11",
     "updated": "2026-09-14",
@@ -2145,7 +2145,7 @@
     "source": "pubmed",
     "type": "evaluation",
     "title": "Comparative analysis of AI enhancements to rules-based clinical triage chatbot: Convergent mixed-methods study",
-    "authors": "Stanki\u0107 A, Vujo\u0161evi\u0107 D, Radosavljevi\u0107 N, Jeremi\u0107 A",
+    "authors": "Stankić A, Vujošević D, Radosavljević N, Jeremić A",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42727093/",
     "published": "2026-09-11",
     "updated": "2026-09-14",
@@ -2155,7 +2155,7 @@
     "key_findings": [
       "Rules-based triage chatbot (71.8%) outperformed Dialogflow (30.8%) and Gemini (41.0%) in accuracy",
       "Users preferred ChatGPT/Gemini despite equal or worse accuracy than rules-based",
-      "Conversational fluency masks poorer clinical accuracy \u2014 safety concern for deployment",
+      "Conversational fluency masks poorer clinical accuracy — safety concern for deployment",
       "Safe clinical deployment of LLM chatbots requires governance addressing accuracy and interpretability"
     ],
     "relevance": "high",
@@ -2235,7 +2235,7 @@
     "journal": "arXiv (cs.AI)",
     "benchmark_type": "clinical_ai_production",
     "metric": "Effort Reduction (ER)",
-    "description": "Unified clinical AI benchmark using Effort Reduction \u2014 proportion of AI-generated clinical work product accepted by clinicians under expert review. Covers documentation, coding, orders, chart summarization, patient summaries, and clinical decision support.",
+    "description": "Unified clinical AI benchmark using Effort Reduction — proportion of AI-generated clinical work product accepted by clinicians under expert review. Covers documentation, coding, orders, chart summarization, patient summaries, and clinical decision support.",
     "key_results": [
       "97.99% aggregate ER across 1M+ encounters, 13 specialties",
       "Per-specialty ER: 96.8-98.9%",
@@ -2249,9 +2249,21 @@
       "clinical AI benchmark",
       "effort reduction",
       "deployment",
-      "production"
+      "production",
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "safety"
     ],
-    "relevance": "New benchmark paradigm for clinical AI \u2014 measures real-world clinician acceptance rather than reference-based similarity"
+    "relevance": "New benchmark paradigm for clinical AI — measures real-world clinician acceptance rather than reference-based similarity",
+    "type": "benchmark",
+    "abstract": "Clinical AI systems are evaluated with instruments built for research settings (reference-based similarity metrics and expert rubric panels) that measure resemblance to an artifact rather than reduction of a burden. We introduce KnowBench, pioneered by Knowtex, whose unifying metric is Effort Reduction (ER): the proportion of system-generated clinical work product accepted by the responsible clinician under expert and safety review. ER is defined once and instantiated per task across the administrative workload clinical AI automates: visit notes, diagnosis and billing codes, orders, EHR chart summarization, patient after-visit summaries, and clinical decision support. In every instantiation the construction is identical: the clinician's review-and-attestation event is the ground truth, every accepted unit is work the system completed, and every correction is residual effort returned to the clinician. The primary contribution of this paper is the benchmark itself: the metric, its degenerate cases, and a reporting protocol under which ER claims are auditable and cross-system comparable. Alongside it we report an initial headline measurement from the documentation instantiation: over one million signed encounters across a production window exceeding six months and thirteen medical specialties, Knowtex's proprietary fine-tuned clinical foundation models operating inside a closed feedback architecture achieve an aggregate ER of 97.99%, with per-specialty aggregates spanning 96.8-98.9%. This release reports the protocol's checklist partially, and states which companion statistics are withheld; the benchmark is offered so that this figure, and every figure reported after it, can be held to the same standard.",
+    "pdf_url": "http://arxiv.org/pdf/2609.15794v1",
+    "updated": "2026-09-14",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "status": "new"
   },
   {
     "id": "pmid:42753254",
@@ -2350,14 +2362,31 @@
     "added_date": "2026-09-19"
   },
   {
-    "id": "arxiv:2609.24480",
-    "arxiv_id": "2609.24480",
+    "id": "arxiv:2609.24480v1",
+    "source": "arXiv",
+    "type": "benchmark",
     "title": "Fathom-Vaidya: Advancing Medical Reasoning with Rubric-Based Rewards",
+    "authors": "Kalash Shah, Kunal Singh, Snehan J, Shreyas Singh",
+    "abstract": "Deploying Large Language Models (LLMs) in healthcare requires robust performance across two complementary dimensions - diagnostic reasoning: the convergent, evidence-driven task of inferring a patient's condition from clinical data to produce a diagnosis, and clinical healthcare reasoning: the broader, navigational judgment required to communicate, plan, and adapt across multi-turn clinical interactions where a single correct answer may not exist. Recent benchmarks such as HealthBench and MedXpertQA reveal persistent weaknesses in both areas, exposing failures in complex diagnostic scenarios and limitations in contextual, patient-centered dialogue. We introduce a sequential training framework that targets these facets using synthetic data and rubric-based reinforcement learning. First, we improve diagnostic reasoning using MedBullets-derived questions with rule- and rubric-guided Reinforcement Learning (RL). We then shift to clinical reasoning by generating 5.3k synthetic multi-turn scenarios, each paired with multi-dimensional rubrics to comprehensively assess the response. This approach yields over 10% improvement on MedXpertQA, and our 30B model achieves 50.1% accuracy on HealthBench-Hard, surpassing proprietary baselines including GPT-5 (thinking). Our results show that targeted synthetic datasets and rubric-based training can systematically improve both diagnostic and interactive clinical reasoning in medical LLMs.",
+    "url": "http://arxiv.org/abs/2609.24480v1",
+    "pdf_url": "http://arxiv.org/pdf/2609.24480v1",
+    "published": "2026-09-21",
+    "updated": "2026-09-21",
     "journal": "arXiv preprint",
-    "pub_date": "2026-09-21",
-    "url": "https://arxiv.org/abs/2609.24480",
-    "benchmark_type": "Medical Reasoning Benchmark",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
     "key_findings": "Sequential training with rubric-based RL yields 10%+ improvement on MedXpertQA. 30B model achieves 50.1% on HealthBench-Hard, surpassing GPT-5 (thinking). Uses 5.3k synthetic multi-turn clinical scenarios.",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new",
+    "arxiv_id": "2609.24480",
+    "pub_date": "2026-09-21",
+    "benchmark_type": "Medical Reasoning Benchmark",
     "added_date": "2026-09-22"
   },
   {
@@ -2393,7 +2422,7 @@
     "pub_date": "2026-09-22",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42768966/",
     "benchmark_type": "AI-Augmented Decision Evaluation",
-    "key_findings": "3 experiments with clinicians on drug-dosing decisions. AI quality more important than explanations. Clinical roles moderate effects \u2014 midlevel providers/nurses more susceptible to low-quality AI. Explanations increased trust but not decision quality.",
+    "key_findings": "3 experiments with clinicians on drug-dosing decisions. AI quality more important than explanations. Clinical roles moderate effects — midlevel providers/nurses more susceptible to low-quality AI. Explanations increased trust but not decision quality.",
     "added_date": "2026-09-22"
   },
   {
@@ -2519,7 +2548,7 @@
       "Latine patients 9.6x more likely to receive MDD (OR 9.57, 95% CI 8.00-11.45)",
       "Asian patients 2.9x more likely to receive AN (OR 2.88, 95% CI 2.44-3.42)",
       "Female patients less likely diagnosed with AN (OR 0.43, 95% CI 0.37-0.49)",
-      "Moderate intermodel agreement (Fleiss \u03ba=0.410) for ambiguous cases"
+      "Moderate intermodel agreement (Fleiss κ=0.410) for ambiguous cases"
     ],
     "relevance": "medium-high",
     "status": "published",
@@ -2569,9 +2598,11 @@
       "synthetic data",
       "clinical AI",
       "physician-validated",
-      "ground truth"
+      "ground truth",
+      "arXiv",
+      "LLM"
     ],
-    "relevance": "Novel open benchmark for clinical AI performance on longitudinal EHR tasks \u2014 directly evaluates clinical decision support capabilities with verifiable ground truth",
+    "relevance": "Novel open benchmark for clinical AI performance on longitudinal EHR tasks — directly evaluates clinical decision support capabilities with verifiable ground truth",
     "key_findings": [
       "Physicians distinguished synthetic records from real charts at near-chance rates (53%)",
       "Best model achieves 0.73 severity-weighted F1 on longitudinal problem list reconstruction",
@@ -2601,7 +2632,7 @@
     "scale": "707,598 encounters, 669 diagnoses, 1000 orders",
     "key_findings": [
       "Micro c-statistic 0.995, macro c-statistic 0.896",
-      "Randomized blinded clinician validation \u2014 diagnostic recommendations equivalent to practice",
+      "Randomized blinded clinician validation — diagnostic recommendations equivalent to practice",
       "Imitation learning without expert-adjudicated labels",
       "Order prediction lower (micro c-statistic 0.812)"
     ],
@@ -2635,7 +2666,7 @@
     "id": "pmid:42782985",
     "source": "pubmed",
     "title": "Multi-Model Endodontic Decision Support Benchmark (5 LLMs, Guideline-Based)",
-    "authors": "\u0130lgenli I, Avc\u0131 E, K\u00f6se T",
+    "authors": "İlgenli I, Avcı E, Köse T",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42782985/",
     "published": "2026-09-16",
     "journal": "Dent J (Basel)",
@@ -2657,8 +2688,8 @@
     "source": "pubmed",
     "pmid": "42796287",
     "title": "Phase-Based Dynamic Prediction of Delayed Cerebral Ischemia After Aneurysmal Subarachnoid Hemorrhage: Comparison of a Large Language Model with Intensive Care Specialists",
-    "authors": "Ay M, T\u00fcfek \u00d6ztan D, Asri \u015e, Karaveli A, \u00d6zt\u00fcrk N, Alparslan A\u015e, Avc\u0131 Ay S",
-    "abstract": "LLM (GPT-5.5 Thinking) compared to two blinded ICU specialists for predicting DCI after aSAH across 216 patients at three data accumulation phases. LLM met non-inferiority criterion (AUC 0.703-0.747 vs specialists 0.712-0.764). LLM had lowest false-reassurance rate (3.3-11.7%) but unreliable confidence scores (~25% of high-confidence predictions wrong). Outputs highly reproducible (Fleiss \u03ba 0.887). Supports clinician-supervised rather than autonomous use.",
+    "authors": "Ay M, Tüfek Öztan D, Asri Ş, Karaveli A, Öztürk N, Alparslan AŞ, Avcı Ay S",
+    "abstract": "LLM (GPT-5.5 Thinking) compared to two blinded ICU specialists for predicting DCI after aSAH across 216 patients at three data accumulation phases. LLM met non-inferiority criterion (AUC 0.703-0.747 vs specialists 0.712-0.764). LLM had lowest false-reassurance rate (3.3-11.7%) but unreliable confidence scores (~25% of high-confidence predictions wrong). Outputs highly reproducible (Fleiss κ 0.887). Supports clinician-supervised rather than autonomous use.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42796287/",
     "doi": "10.3390/medicina62091680",
     "published": "2026-09-02",
@@ -2671,8 +2702,8 @@
     "key_findings": [
       "GPT-5.5 Thinking non-inferior to ICU specialists for DCI prediction (AUC 0.703-0.747 vs 0.712-0.764)",
       "LLM had lowest false-reassurance rate (3.3-11.7%) due to cautious threshold",
-      "~25% of high-confidence LLM predictions were wrong \u2014 confidence unreliable",
-      "Outputs highly reproducible (Fleiss \u03ba 0.887, ICC 0.968)",
+      "~25% of high-confidence LLM predictions were wrong — confidence unreliable",
+      "Outputs highly reproducible (Fleiss κ 0.887, ICC 0.968)",
       "Supports clinician-supervised rather than autonomous use"
     ],
     "tags": [
@@ -2691,7 +2722,7 @@
     "source": "pubmed",
     "pmid": "42794292",
     "title": "Comparative Expert Evaluation of Multimodal Large Language Models for Pediatric Rash Diagnosis: Clinical Utility, Safety, Information Quality, and Readability",
-    "authors": "Lahut D, Erdede \u00d6, Sezer Yamanel RG",
+    "authors": "Lahut D, Erdede Ö, Sezer Yamanel RG",
     "abstract": "Three multimodal LLMs (ChatGPT, Gemini, Grok) evaluated on 15 pediatric rash vignettes with photographs by 3 blinded pediatricians using CUS and modified DISCERN scales. 82.2% of CUS ratings were 4-5. No significant CUS difference across platforms (p=0.157). At least one platform missed reference diagnosis in 9/15 vignettes; all three missed porphyria. Clinical verification remains necessary.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42794292/",
     "doi": "10.3390/children13091272",
@@ -2705,11 +2736,11 @@
     "scale": "15 vignettes, 45 responses, 3 pediatrician raters",
     "type": "multimodal_llm_benchmark",
     "key_findings": [
-      "82.2% of CUS ratings were 4-5 (clinically acceptable); 83% of DISCERN scores \u226520/25",
+      "82.2% of CUS ratings were 4-5 (clinically acceptable); 83% of DISCERN scores ≥20/25",
       "No significant CUS difference across ChatGPT, Gemini, Grok (p=0.157)",
       "At least one platform missed reference diagnosis in 9/15 vignettes; all missed porphyria",
       "Gemini had longest responses; Grok most linguistically complex",
-      "Single-query assessment \u2014 not stable accuracy estimates"
+      "Single-query assessment — not stable accuracy estimates"
     ],
     "tags": [
       "multimodal LLM",
@@ -2809,7 +2840,16 @@
     ],
     "relevance": "high",
     "status": "preprint",
-    "new": true
+    "new": true,
+    "abstract": "Multidisciplinary tumor boards integrate multimodal clinical observations and longitudinal patient histories through specialist discussions, yet benchmarks rarely capture these real-world trajectories. We introduce OpenTumorBoard, a benchmark with 611 patient cases and 19,157 discussion turns across ten specialist roles, transcribed from 12,534 minutes of publicly available tumor board recordings on YouTube. The benchmark evaluates two settings: SPECIALIST TURN, in which an LLM responds to a clinically significant question posed during a real discussion, and BOARD SIMULATION, in which it generates an entire back-and-forth discussion and reaches a consensus on therapy recommendations, surgical plans, next actions and clinical trial matching. Evaluation of 14 general-purpose frontier and medical LLMs reveals substantial limitations: the best models score 3.43 out of 5 in clinical equivalence to specialist answers and 2.78 out of 5 in alignment with recorded board conclusions. Supervised finetuning and reinforcement learning improve performance on a held-out test set, suggesting that real-world discussion trajectories can support model adaptation. Three M.D. experts review a subset of the benchmark, finding high information coverage and factuality of patient cases and strong fidelity of extracted consensus conclusions. We will release OpenTumorBoard and its automated curation pipeline to support the development and evaluation of LLMs for multidisciplinary, personalized cancer decision-making.",
+    "pdf_url": "http://arxiv.org/pdf/2609.32810v2",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ]
   },
   {
     "id": "pmid:42805769",
@@ -2854,7 +2894,7 @@
       "Physician confidence increased by mean 1.69 (p<0.0001)",
       "Median time to recommendation: 389.2s to 47.2s (87.9% reduction, p<0.0001)",
       "Gwet's AC1 inter-rater reliability = 0.707",
-      "Exploratory ceiling-affected evaluation \u2014 Stage II study recommended"
+      "Exploratory ceiling-affected evaluation — Stage II study recommended"
     ],
     "metrics": {
       "clinical_accuracy": "82.7%",
@@ -2888,9 +2928,13 @@
       "ESI",
       "counterfactual",
       "clinical decision support",
-      "clinical AI safety"
+      "clinical AI safety",
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
     ],
-    "relevance": "Counterfactual bias audit of open-source LLMs for clinical triage \u2014 directly evaluates fairness risks in clinical decision support deployment",
+    "relevance": "Counterfactual bias audit of open-source LLMs for clinical triage — directly evaluates fairness risks in clinical decision support deployment",
     "key_findings": [
       "Counterfactual sensitivity varied substantially and did not consistently decrease with larger model size or medical-domain pretraining",
       "Fine-tuned Qwen2.5-7B showed lowest overall sensitivity: 5.27% any-shift rate vs 16.02% for base model",
@@ -2933,16 +2977,19 @@
     "pdf_url": "https://arxiv.org/pdf/2609.38543",
     "published": "2026-09-29",
     "updated": "2026-09-29",
-    "journal": "arXiv preprint (cs.CL) \u2014 Accepted at NeurIPS 2026 Evaluations & Datasets Track",
+    "journal": "arXiv preprint (cs.CL) — Accepted at NeurIPS 2026 Evaluations & Datasets Track",
     "tags": [
       "benchmark",
       "knowledge integration",
       "medical LLM",
       "NeurIPS 2026",
       "clinical evidence updates",
-      "safety"
+      "safety",
+      "arXiv",
+      "clinical AI",
+      "LLM"
     ],
-    "relevance": "Medical LLM benchmark evaluating knowledge integration under realistic clinical evidence updates \u2014 directly assesses whether models can use updated knowledge safely",
+    "relevance": "Medical LLM benchmark evaluating knowledge integration under realistic clinical evidence updates — directly assesses whether models can use updated knowledge safely",
     "key_findings": [
       "Consistent gap between recall and usable knowledge across all methods",
       "Strong gains on original update task and lexical variation, but relational generalization limited",
@@ -2977,7 +3024,7 @@
       "lead time",
       "clinical AI safety"
     ],
-    "relevance": "Evaluation framework for longitudinal clinical AI pre-recognition claims \u2014 directly addresses validity of clinical AI performance measurement",
+    "relevance": "Evaluation framework for longitudinal clinical AI pre-recognition claims — directly addresses validity of clinical AI performance measurement",
     "key_findings": [
       "Event-based evaluations can inflate apparent performance and lead time by treating recognition-mediated signals as shortcuts",
       "Defines interval-censored pre-recognition transition as independent reference standard",
@@ -3001,21 +3048,26 @@
     "pdf_url": "https://arxiv.org/pdf/2609.13874",
     "published": "2026-09-12",
     "updated": "2026-09-12",
-    "journal": "arXiv preprint (cs.CL) \u2014 Accepted at MLHC 2026",
+    "journal": "arXiv preprint (cs.CL) — Accepted at MLHC 2026",
     "tags": [
       "clinical AI safety",
       "multimodal",
       "record integrity",
       "ECG",
       "pre-fusion screening",
-      "MLHC 2026"
+      "MLHC 2026",
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "safety"
     ],
-    "relevance": "Multimodal clinical AI safety \u2014 addresses cross-patient record linkage failures that standard predictive models cannot detect",
+    "relevance": "Multimodal clinical AI safety — addresses cross-patient record linkage failures that standard predictive models cannot detect",
     "key_findings": [
       "97.6% TPR@5% FPR for full text-view swaps (AUROC 0.996)",
       "90.3% TPR for partial swaps (AUROC 0.974)",
       "97.7% TPR for label-matched hard negatives (AUROC 0.996) with only 573K parameters",
-      "Main failure mode: longitudinal ambiguity \u2014 87% Type-II false positives for same-patient cross-visit pairs"
+      "Main failure mode: longitudinal ambiguity — 87% Type-II false positives for same-patient cross-visit pairs"
     ],
     "tools_evaluated": [
       "SHIFT-M3 (573K params)",
@@ -3049,7 +3101,7 @@
       "tool comparison",
       "clinical decision support"
     ],
-    "relevance": "Multi-LLM clinical comparison against specialist for periodontal risk assessment \u2014 directly benchmarks clinical AI tools",
+    "relevance": "Multi-LLM clinical comparison against specialist for periodontal risk assessment — directly benchmarks clinical AI tools",
     "key_findings": [
       "GPT o1 Pro 86.7% and Claude Sonnet 4 85.6% acceptable ratings vs periodontist 87.8%",
       "Gemini 2.5 Pro significantly lower at 59.4% (P<.002)",
@@ -3071,7 +3123,7 @@
     "source": "pubmed",
     "type": "llm_benchmark",
     "title": "Guideline-augmented prompting improves LLM outputs for orthopaedic anaesthesia questions",
-    "authors": "Sz\u00e9ll A, Yu Y, Oeding JF, et al.",
+    "authors": "Széll A, Yu Y, Oeding JF, et al.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42829621/",
     "published": "2026-10-03",
     "updated": "2026-10-04",
@@ -3132,7 +3184,20 @@
       "Steering along concept centers yields downstream clinical improvements",
       "Blinded clinician validation: concept center activation predicts clinician preferences"
     ],
-    "relevance": "Clinical AI evaluation methodology \u2014 first mechanistic interpretability framework applied to clinical decision support LLMs"
+    "relevance": "Clinical AI evaluation methodology — first mechanistic interpretability framework applied to clinical decision support LLMs",
+    "abstract": "Large language models are increasingly used in clinical settings. However, research into the reliability and performance of these models has focused almost entirely on the language substrate, scoring what the model says. Mechanistic interpretability has found that the latent space carries a higher fidelity of representation than the text: internal representations not only encode substantially more than the output verbalizes, but the stated reasoning also systematically omits features that causally drive the answer. An evaluation of model behavior in terms of mechanistic interpretability has not been explored in clinical decision support. In this work, we extend behavioral evaluation into the latent space and ask whether clinical concepts exist as locatable, causally used representations inside open-weight LLMs. We find dedicated clinical concept centers in the latent space of all eleven open models we test. These concept centers are interpretable, firing only on their aligned clinical narratives, and meaningfully and causally drive model behavior in both constrained and open-ended settings. They are not just analytical representations, but circuits that can be utilized in clinical practice, and we explore their use from the perspective of both evaluation and performance. From the evaluation standpoint, models stay internally coherent and keep using the relevant concept centers even under adversarial role-based priming, while aligned priming improves downstream clinical performance. From a performance perspective, we simulate realistic deployment settings and find that steering models along these centers leads to meaningful downstream improvements. Finally, we conduct a blinded clinician validation and find the activation and usage of these concept centers predicts clinicians preferences.",
+    "pdf_url": "http://arxiv.org/pdf/2610.02829v2",
+    "updated": "2026-10-05",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
   },
   {
     "id": "pmid:42831263",
@@ -3155,7 +3220,7 @@
       "Grok 4.1"
     ],
     "benchmark_type": "multi-model clinical AI comparison",
-    "scale": "119 urodynamic traces \u00d7 5 LLMs, 3 expert urologists, ELEGANCE framework",
+    "scale": "119 urodynamic traces × 5 LLMs, 3 expert urologists, ELEGANCE framework",
     "key_findings": "Gemini 3 highest mean ELEGANCE score (25.77), followed by Perplexity, DeepSeek, ChatGPT-5.2. Grok significantly lower. No hallucinations. ICC=0.898. LLMs useful as assistive tools but not for autonomous decision-making.",
     "relevance": "high",
     "tags": [
@@ -3308,7 +3373,7 @@
       "PDSQI-9 (8 dimensions)"
     ],
     "key_findings": "Corti on par with or outperforms leading commercial scribes. Configurable API enables quality dimension fine-tuning. First multilingual clinical note generation benchmark.",
-    "relevance": "Clinical AI benchmark for ambient documentation \u2014 compares specialized clinical AI platform vs general-purpose AI scribes."
+    "relevance": "Clinical AI benchmark for ambient documentation — compares specialized clinical AI platform vs general-purpose AI scribes."
   },
   {
     "id": "pmid:42837409",
@@ -3332,15 +3397,15 @@
       "accuracy",
       "Spearman correlation"
     ],
-    "key_findings": "EntQA outperforms conventional metrics (weak/negative correlations) with group-level \u03c1=0.9286 vs accuracy. Reference-free, scalable clinical fidelity assessment.",
-    "relevance": "New evaluation metric for clinical QA LLMs \u2014 addresses clinical reliability gap in accuracy-only benchmarks.",
+    "key_findings": "EntQA outperforms conventional metrics (weak/negative correlations) with group-level ρ=0.9286 vs accuracy. Reference-free, scalable clinical fidelity assessment.",
+    "relevance": "New evaluation metric for clinical QA LLMs — addresses clinical reliability gap in accuracy-only benchmarks.",
     "pmid": "42837409"
   },
   {
     "id": "pmid:42835343",
     "source": "pubmed",
     "title": "ChatGPT-5 vs UpToDate Drug Interaction Checker for ICU Drug-Drug Interactions",
-    "authors": "Ceylan \u0130 et al.",
+    "authors": "Ceylan İ et al.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42835343/",
     "published": "2026-09-21",
     "journal": "Frontiers in Pharmacology",
@@ -3358,9 +3423,9 @@
       "PPV",
       "NPV",
       "Accuracy",
-      "Cohen's \u03ba"
+      "Cohen's κ"
     ],
-    "key_findings": "ChatGPT-5: sensitivity 69.8%, specificity 52.4%, accuracy 65.5%, \u03ba=0.19 (poor agreement). ChatGPT identified more pDDIs (median 6 vs 0). LLMs complementary, not standalone for ICU pharmacovigilance.",
+    "key_findings": "ChatGPT-5: sensitivity 69.8%, specificity 52.4%, accuracy 65.5%, κ=0.19 (poor agreement). ChatGPT identified more pDDIs (median 6 vs 0). LLMs complementary, not standalone for ICU pharmacovigilance.",
     "relevance": "Head-to-head LLM vs named clinical decision support tool (UpToDate) in safety-critical ICU setting.",
     "pmid": "42835343"
   },
@@ -3411,7 +3476,7 @@
       "Counterfactual augmentation"
     ],
     "key_findings": "All LLMs performed worse on MedNLI-Pain than MedNLI. Clinical reasoning accuracy does not entail patient alignment capability. Training on MedNLI did not improve MedNLI-Pain performance.",
-    "relevance": "New benchmark for LLM clinical alignment with patients \u2014 addresses gap in clinical AI safety evaluation.",
+    "relevance": "New benchmark for LLM clinical alignment with patients — addresses gap in clinical AI safety evaluation.",
     "pmid": "42840750"
   },
   {
@@ -3534,7 +3599,7 @@
     "key_findings": [
       "50% of incorrect AI recommendations accepted; 16.47% of correct ones rejected",
       "Trust differentiated correct from incorrect (beta=-0.772) but acceptance/rejection not aligned with correctness",
-      "Lower trust in incorrect advice does not imply users will reject it \u2014 calibration gap",
+      "Lower trust in incorrect advice does not imply users will reject it — calibration gap",
       "Baseline intention to use AI positively associated with trust; diagnostic difficulty negatively associated"
     ],
     "relevance": "medium-high",
@@ -3728,7 +3793,7 @@
       "harm evaluation"
     ],
     "relevance": "high",
-    "key_findings": "LLMs show significant inaccuracy and inconsistency in precision dosing for kidney impairment \u2014 patient safety concern.",
+    "key_findings": "LLMs show significant inaccuracy and inconsistency in precision dosing for kidney impairment — patient safety concern.",
     "tools_evaluated": [
       "LLMs (multiple)"
     ],
@@ -3803,14 +3868,14 @@
     "tools_evaluated": [
       "5 LLM snapshots"
     ],
-    "scale": "30 prompts \u00d7 5 models = 150 responses, 300 citation units",
+    "scale": "30 prompts × 5 models = 150 responses, 300 citation units",
     "key_findings": [
       "69/130 citation-expected responses had DOI resolving to different PMID",
       "99/116 resolvable DOI-PMID pairs were incoherent (85.3%)",
       "All 5 model snapshots exhibited citation identity failures",
       "Only 17/116 DOI-PMID pairs were coherent"
     ],
-    "relevance": "First systematic benchmark of LLM citation identity coherence \u2014 85% of resolvable citations were incoherent. Critical safety concern for clinical AI tools.",
+    "relevance": "First systematic benchmark of LLM citation identity coherence — 85% of resolvable citations were incoherent. Critical safety concern for clinical AI tools.",
     "status": "published",
     "new": true
   },
@@ -3910,7 +3975,7 @@
       "GPT-5.2"
     ],
     "n_items": 293,
-    "key_finding": "GPT-5.2 MAE 0.45 D vs surgeon 0.35 D (p=0.002). Fewer eyes within \u00b10.25 D (44.7% vs 51.9%). Support tool potential but not replacement.",
+    "key_finding": "GPT-5.2 MAE 0.45 D vs surgeon 0.35 D (p=0.002). Fewer eyes within ±0.25 D (44.7% vs 51.9%). Support tool potential but not replacement.",
     "doi": "10.3390/jcm15197463",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42881925/"
   },
@@ -3918,7 +3983,7 @@
     "id": "pmid:42881858",
     "pmid": "42881858",
     "title": "Four LLM Interfaces in Third Molar Surgery Complication Scenarios",
-    "authors": "Karaca \u0130R et al.",
+    "authors": "Karaca İR et al.",
     "journal": "J Clin Med",
     "date": "2026-09-23",
     "type": "llm_clinical_benchmark",
@@ -3946,7 +4011,7 @@
     ],
     "n_items": 15,
     "n_evaluators": 20,
-    "key_finding": "Discordant AI outputs reduced management accuracy (p=0.008). Early-stage residents most vulnerable (77.3%\u219245.3%). Advanced training protective (OR 0.09).",
+    "key_finding": "Discordant AI outputs reduced management accuracy (p=0.008). Early-stage residents most vulnerable (77.3%→45.3%). Advanced training protective (OR 0.09).",
     "doi": "10.3390/diagnostics16193241",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42882396/"
   },
@@ -4125,7 +4190,7 @@
     "pmid": "42889075",
     "type": "llm_benchmark",
     "title": "LLMs for postoperative lumbar fusion questions: 3-model blinded comparison",
-    "authors": "Kara AK, I\u015f\u0131k O",
+    "authors": "Kara AK, Işık O",
     "journal": "Front Surg",
     "published_date": "2026-10-01",
     "doi": "10.3389/fsurg.2026.1932133",
@@ -4502,7 +4567,7 @@
     "id": "pmid:42906079",
     "pmid": "42906079",
     "title": "CDSS vs Human Expert for Imatinib Therapeutic Drug Monitoring",
-    "authors": "P\u00e9termann YJ et al.",
+    "authors": "Pétermann YJ et al.",
     "journal": "JMIR Med Inform",
     "published_date": "2026-10-21",
     "models_evaluated": [
@@ -4616,18 +4681,28 @@
     "new": true
   },
   {
-    "id": "arxiv:2610.28826",
-    "source": "arxiv",
-    "type": "benchmark_evaluation",
+    "id": "arxiv:2610.28826v1",
+    "source": "arXiv",
+    "type": "benchmark",
     "title": "Decision language models as affordable and rapid alternatives to LLM judges of clinical generative AI",
-    "authors": "Rotem Gershon, Seffi Cohen, Dean Ariel, et al.",
-    "url": "https://arxiv.org/abs/2610.28826v1",
+    "authors": "Rotem Gershon, Seffi Cohen, Dean Ariel, Havatzelet Bilavsky-Yarden, Amiel Sberro, Shai Yitzhaki, Osnat Tausky, Naama Golan, Maayan Rabinovitch, Ariel Avraham Hasidim, Itay Arianu, Maya Dagan, Ran Balicer, Noa Dagan",
+    "abstract": "Automated judges of clinical artificial intelligence (AI) outputs are necessary, but large language model (LLM) judges are costly and slow at scale. We compared Jev, a decision language model that returns structured judgments, with frontier and open-weight LLM judges in four use cases. On 118 pediatric answers, Jev's agreement with physicians' ordinal quality ratings (Gwet's AC2 0.50; expected score 0.53) matched or exceeded that of seven of 12 LLM judges, including frontier models, Claude Opus 5.5 (0.49) and GPT-6 (0.38). On physician-graded binary HealthBench criteria, Jev matched or exceeded four of six LLM judges. On MedHELM's open-ended tasks, Jev's agreement with a three-LLM jury approached or exceeded the jurors' internal agreement. On HealthBench Professional, Jev matched the benchmark's reference judge, GPT-5.4, on 91% of criteria (other judges, 91-93%). Frontier judges cost 73-294 times more than Jev and took 7-57 times longer. Jev may enable efficient clinical AI evaluation at scale.",
+    "url": "http://arxiv.org/abs/2610.28826v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.28826v1",
     "published": "2026-10-20",
     "updated": "2026-10-20",
-    "journal": "arXiv preprint (cs.AI)",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "Jev Gwet AC2 0.50 matched or exceeded 7/12 LLM judges. On HealthBench Professional, matched GPT-5.4 on 91% of criteria. Frontier judges cost 73-294x more, 7-57x slower.",
     "tools_evaluated": "Jev decision LM vs 12 LLM judges (Claude Opus 5.5, GPT-6, GPT-5.4)",
     "scale": "118 pediatric answers, HealthBench binary criteria, MedHELM open-ended tasks, HealthBench Professional",
-    "key_findings": "Jev Gwet AC2 0.50 matched or exceeded 7/12 LLM judges. On HealthBench Professional, matched GPT-5.4 on 91% of criteria. Frontier judges cost 73-294x more, 7-57x slower.",
+    "status": "new",
     "category": "clinical_ai_evaluation"
   },
   {
@@ -4746,7 +4821,7 @@
     "source": "pubmed",
     "type": "benchmark",
     "title": "LLM vs faculty rater scoring of medical student OSCE documentation",
-    "authors": "Nash CJ, Pau CY, Chahin N, Gruppen LD, Kogan JR, Th\u00e9 TS",
+    "authors": "Nash CJ, Pau CY, Chahin N, Gruppen LD, Kogan JR, Thé TS",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42921748/",
     "published": "2026-10-24",
     "updated": "2026-10-25",
@@ -5452,7 +5527,7 @@
     "id": "pmid:42968123",
     "pmid": 42968123,
     "title": "Pediatric Sedation Chatbot Evaluation",
-    "authors": "Din\u00e7 D, Ozbilgen A",
+    "authors": "Dinç D, Ozbilgen A",
     "journal": "BMC Med Inform Decis Mak",
     "pub_date": "2026-08-05",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42968123/",
@@ -5540,7 +5615,7 @@
     "id": "pmid:42980497",
     "pmid": "42980497",
     "title": "LLM Prostate Cancer Guideline Delphi",
-    "authors": "Borque-Fernando \u00c1 et al.",
+    "authors": "Borque-Fernando Á et al.",
     "journal": "J Comp Eff Res",
     "pub_date": "2026-11-04",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42980497/",
@@ -5653,14 +5728,14 @@
     "id": "pmid:42976531",
     "pmid": "42976531",
     "title": "Pediatric Seizure Recurrence Web CDSS",
-    "authors": "Y\u00fccel G et al.",
+    "authors": "Yücel G et al.",
     "journal": "Seizure",
     "pub_date": "2026-11-01",
     "url": "https://pubmed.ncbi.nlm.nih.gov/42976531/",
     "doi": "10.1016/j.seizure.2026.11.001",
     "source": "PubMed",
     "category": "CDSS Risk Prediction Benchmark",
-    "description": "Web-based CDSS for predicting seizure recurrence after ASM withdrawal in children. 318 patients, C-index 0.808. Predictors: status epilepticus (HR 2.718), febrile seizures (HR 2.300), active epilepsy duration (HR 1.022/month). Seizure freedom \u226525 months reduced risk ~77%.",
+    "description": "Web-based CDSS for predicting seizure recurrence after ASM withdrawal in children. 318 patients, C-index 0.808. Predictors: status epilepticus (HR 2.718), febrile seizures (HR 2.300), active epilepsy duration (HR 1.022/month). Seizure freedom ≥25 months reduced risk ~77%.",
     "metrics": {
       "patients": 318,
       "recurrence_rate": "25.8%",
@@ -5727,7 +5802,7 @@
     "doi": "10.2196/90724",
     "source": "PubMed",
     "category": "Clinical AI Classification Benchmark",
-    "description": "Hybrid ML-LLM ensemble (XGBoost + GPT-4o) for ASA-PS classification. 3000 surgical encounters. Expert ceiling macro-F1=0.59. Parallel ensemble: macro-F1=0.530, exact match 0.630, \u00b11-class accuracy 0.980. LLM-only: macro-F1=0.493. ML-only: macro-F1=0.333.",
+    "description": "Hybrid ML-LLM ensemble (XGBoost + GPT-4o) for ASA-PS classification. 3000 surgical encounters. Expert ceiling macro-F1=0.59. Parallel ensemble: macro-F1=0.530, exact match 0.630, ±1-class accuracy 0.980. LLM-only: macro-F1=0.493. ML-only: macro-F1=0.333.",
     "metrics": {
       "ensemble_macro_f1": 0.53,
       "ensemble_exact_match": 0.63,
@@ -6051,7 +6126,7 @@
     "id": "bench:pmid:43003711",
     "pmid": "43003711",
     "title": "Comparative performance of experienced general surgeons and large language models in inguinal hernia management: A domain-based benchmarking study.",
-    "authors": "Bilgi\u00e7 E, Karacan E, Y\u0131lmaz EM",
+    "authors": "Bilgiç E, Karacan E, Yılmaz EM",
     "journal": "J Formos Med Assoc",
     "published_date": "2026-11-09",
     "models_evaluated": [
@@ -6080,11 +6155,11 @@
       "DeepSeek",
       "Gemini"
     ],
-    "task": "Knowledge-augmented LLM agent with RAG for clinical decision support in pancreatic cancer \u2014 CT interpretation and perioperative consultation. Directly relevant to clinical AI CDS tools.",
+    "task": "Knowledge-augmented LLM agent with RAG for clinical decision support in pancreatic cancer — CT interpretation and perioperative consultation. Directly relevant to clinical AI CDS tools.",
     "dataset": "444 patients, 3 LLMs, 5 evaluation dimensions",
     "key_findings": "444 patients, 3 LLMs. PancreaGuide improved all models. Gemini+ accuracy 87.4%, sensitivity 95.9%. Consultation: Gemini+ 3.88/5 overall. RAG + knowledge base improved completeness and robustness.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/43002664/",
-    "relevance": "Knowledge-augmented LLM agent with RAG for clinical decision support in pancreatic cancer \u2014 CT interpretation and perioperative consultation. Directly relevant to clinical AI CDS tools.",
+    "relevance": "Knowledge-augmented LLM agent with RAG for clinical decision support in pancreatic cancer — CT interpretation and perioperative consultation. Directly relevant to clinical AI CDS tools.",
     "status": "published",
     "new": true
   },
@@ -6099,11 +6174,11 @@
       "ST-XGBoost",
       "ST-MLP"
     ],
-    "task": "Explainable AI clinical decision support system for diabetic foot ulcer prognostic assessment with prospective randomized evaluation \u2014 direct clinical AI CDS evaluation with RCT evidence.",
+    "task": "Explainable AI clinical decision support system for diabetic foot ulcer prognostic assessment with prospective randomized evaluation — direct clinical AI CDS evaluation with RCT evidence.",
     "dataset": "763 + 100 + 202 patients across 3 hospitals, prospective RCT",
     "key_findings": "763 patients dev, 100 external validation, 202 prospective RCT. Ensemble AUC 0.901. AI-assisted recommendations scored 7.77 vs 6.47 usual care (p<0.0001). Better follow-up engagement in AI group.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/43001198/",
-    "relevance": "Explainable AI clinical decision support system for diabetic foot ulcer prognostic assessment with prospective randomized evaluation \u2014 direct clinical AI CDS evaluation with RCT evidence.",
+    "relevance": "Explainable AI clinical decision support system for diabetic foot ulcer prognostic assessment with prospective randomized evaluation — direct clinical AI CDS evaluation with RCT evidence.",
     "status": "published",
     "new": true
   },
@@ -6118,11 +6193,11 @@
       "GPT-5.2",
       "Gemini 3.0 Flash"
     ],
-    "task": "Multimodal LLM benchmark comparing GPT-5.2 and Gemini 3.0 Flash on image-based diagnosis of otologic conditions \u2014 clinical AI CDS evaluation.",
+    "task": "Multimodal LLM benchmark comparing GPT-5.2 and Gemini 3.0 Flash on image-based diagnosis of otologic conditions — clinical AI CDS evaluation.",
     "dataset": "515 TM images, 2 LLMs, 3 diagnostic categories",
-    "key_findings": "515 images. Gemini 3.0 Flash \u03ba=0.697 vs GPT-5.2 \u03ba=0.662. Gemini significantly higher accuracy for pathologic TM (p=0.006). GPT-5.2 better sensitivity, Gemini better specificity.",
+    "key_findings": "515 images. Gemini 3.0 Flash κ=0.697 vs GPT-5.2 κ=0.662. Gemini significantly higher accuracy for pathologic TM (p=0.006). GPT-5.2 better sensitivity, Gemini better specificity.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/43000558/",
-    "relevance": "Multimodal LLM benchmark comparing GPT-5.2 and Gemini 3.0 Flash on image-based diagnosis of otologic conditions \u2014 clinical AI CDS evaluation.",
+    "relevance": "Multimodal LLM benchmark comparing GPT-5.2 and Gemini 3.0 Flash on image-based diagnosis of otologic conditions — clinical AI CDS evaluation.",
     "status": "published",
     "new": true
   },
@@ -6130,33 +6205,51 @@
     "id": "bench:pmid:43000382",
     "pmid": "43000382",
     "title": "Artificial intelligence in clinical decision-making: a comparison of ChatGPT 5.0 and Gemini 3.0 in otologic cases.",
-    "authors": "Tuna B, T\u00fczemen G, Mutlu H",
+    "authors": "Tuna B, Tüzemen G, Mutlu H",
     "journal": "BMC Med Inform Decis Mak",
     "published_date": "2026-08-11",
     "models_evaluated": [
       "ChatGPT 5.0",
       "Gemini 3.0"
     ],
-    "task": "LLM benchmark comparing ChatGPT 5.0 and Gemini 3.0 on real-world otologic cases for clinical decision-making \u2014 direct clinical AI CDS evaluation.",
+    "task": "LLM benchmark comparing ChatGPT 5.0 and Gemini 3.0 on real-world otologic cases for clinical decision-making — direct clinical AI CDS evaluation.",
     "dataset": "50 retrospective cases, 2 LLMs, 4 AIPI domains",
     "key_findings": "50 cases. Gemini 3.0 significantly outperformed ChatGPT 5.0 (p<0.05) in diagnostic accuracy, investigation/therapy planning, overall AIPI. First real-world otologic LLM evaluation.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/43000382/",
-    "relevance": "LLM benchmark comparing ChatGPT 5.0 and Gemini 3.0 on real-world otologic cases for clinical decision-making \u2014 direct clinical AI CDS evaluation.",
+    "relevance": "LLM benchmark comparing ChatGPT 5.0 and Gemini 3.0 on real-world otologic cases for clinical decision-making — direct clinical AI CDS evaluation.",
     "status": "published",
     "new": true
   },
   {
-    "id": "bench:arxiv:2611.13233",
-    "arxiv_id": "2611.13233",
+    "id": "arxiv:2611.13233v1",
+    "source": "arXiv",
+    "type": "benchmark",
     "title": "Decisions by Discrimination: Differential Evidence for Medical Reasoning",
     "authors": "Yunpeng Xiao, Yuzhang Xie, Junhao Huang, Carl Yang, Xiao Hu, Kai Shu",
-    "journal": "AACL 2026 (main)",
+    "abstract": "Large language models (LLMs) are increasingly studied for clinical decision support, and medical question answering provides a testbed for evaluating this capability. In particular, medical multiple-choice questions (MCQs) reflect a core challenge in clinical decision-making: plausible options often share overlapping evidence, while only a few decisive factors distinguish the correct option from incorrect ones. However, existing retrieval-based and reasoning-oriented methods mainly focus on supplying broadly relevant knowledge or eliciting reasoning paths, rather than identifying the compact differential evidence that separates confusing alternatives. In this work, we present a retrieval-grounded differential evidence framework for medical MCQs. Our method extracts option-specific pieces of differential evidence and organizes them into concise evidence prompts for answer selection. This design better aligns external knowledge with differential reasoning while reducing irrelevant context. Experiments show consistent accuracy gains across multiple datasets and target LLMs. Ablation studies further show that our framework outperforms both directly using retrieved evidence chunks and closed-source LLM-generated general hints, and that its improvements are not solely explained by answer-proximal guidance, but are consistent with differential evidence serving as a compact aid for reasoning over competing alternatives. Our findings also offer insights for medical reasoning and other decision-making settings with multiple possible choices.",
+    "url": "http://arxiv.org/abs/2611.13233v1",
+    "pdf_url": "http://arxiv.org/pdf/2611.13233v1",
+    "published": "2026-11-09",
+    "updated": "2026-11-09",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "Multiple medical MCQ datasets",
+    "status": "new",
+    "arxiv_id": "2611.13233",
     "published_date": "2026-11-09",
     "models_evaluated": [
       "Multiple LLMs"
     ],
-    "task": "RAG-based differential evidence framework for medical MCQs - retrieval-grounded option-specific evidence extraction for clinical reasoning benchmark.",
-    "scale": "Multiple medical MCQ datasets"
+    "task": "RAG-based differential evidence framework for medical MCQs - retrieval-grounded option-specific evidence extraction for clinical reasoning benchmark."
   },
   {
     "id": "bench:pmid:43009243",
@@ -6290,7 +6383,7 @@
     "id": "bench:pmid:43016123",
     "pmid": "43016123",
     "title": "GPT-5 Thinking Readability/Accuracy for Breast Imaging Patient Education",
-    "authors": "D\u00fc\u015f\u00fcnceli Atman E, et al.",
+    "authors": "Düşünceli Atman E, et al.",
     "journal": "Diagn Interv Radiol",
     "published_date": "2026-11-12",
     "models_evaluated": [
@@ -6303,13 +6396,13 @@
     "id": "bench:pmid:43015946",
     "pmid": "43015946",
     "title": "ChatGPT Flow Cytometry Interpretation for Acute Leukemia",
-    "authors": "G\u00f6\u00e7er M, et al.",
+    "authors": "Göçer M, et al.",
     "journal": "Cytometry B Clin Cytom",
     "published_date": "2026-11-11",
     "models_evaluated": [
       "ChatGPT (GPT-5.5)"
     ],
-    "task": "560 patients, flow cytometry PDF interpretation. 78.8% accuracy, \u03ba=0.712, blast estimation r=0.818 with 3.92pp overestimation.",
+    "task": "560 patients, flow cytometry PDF interpretation. 78.8% accuracy, κ=0.712, blast estimation r=0.818 with 3.92pp overestimation.",
     "scale": "560 patients"
   },
   {
@@ -6389,7 +6482,7 @@
     "id": "bench:pmid:43012843",
     "pmid": "43012843",
     "title": "ChatGPT-5.0 vs Gemini Flash 2.5 vs Refractive Surgeons",
-    "authors": "\u0130rita\u015f \u0130, Erda\u011f M",
+    "authors": "İritaş İ, Erdağ M",
     "journal": "Medicine (Baltimore)",
     "published_date": "2026-10-30",
     "models_evaluated": [
@@ -6668,7 +6761,7 @@
       "KOIOS DS Breast AI"
     ],
     "dataset": "240 patients (254 lesions), women <=35, NHS breast unit",
-    "key_findings": "87/151 lesions classified for biopsy avoidance (57.6%), all benign (100% NPV). All 5 malignancies in biopsy pathway. Clinician specificity 99.1% vs AI 75.7%; AI sensitivity 96.9% vs clinician 81.3%. ~\u00a385K cost offsets.",
+    "key_findings": "87/151 lesions classified for biopsy avoidance (57.6%), all benign (100% NPV). All 5 malignancies in biopsy pathway. Clinician specificity 99.1% vs AI 75.7%; AI sensitivity 96.9% vs clinician 81.3%. ~£85K cost offsets.",
     "metrics": {
       "avoidance_rate": "57.6%",
       "npv": "100%",
@@ -6770,5 +6863,711 @@
       "external_auroc": "0.788"
     },
     "id": "pmid:43033525"
+  },
+  {
+    "id": "arxiv:2611.14935v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen",
+    "authors": "Richard J. Young, Alice M. Matthews",
+    "abstract": "Racial and ethnic minority patients receive less pain treatment than non-Hispanic White patients, and large language models (LLMs) used as medical AI could reproduce that bias. Prior audits tested a few proprietary models, stated race explicitly and rarely measured the models' own response instability. In exploratory, non-preregistered analyses, Study 1 had four open-weight LLMs assess six acute-pain vignettes in every combination of four races and two sexes, with identity stated or cued only by a name (two names per group), comparing each identity with a White male reference on the same case and sampling seed. In Study 2, 24 configurations of 17 models, including OpenAI's GPT-4.1 mini and gpt-oss, Anthropic's Claude Haiku 4.5, Google's Gemini 2.5 Flash, Meta's Llama, DeepSeek and Qwen, with reasoning on and off and at two precisions, answered the same vignettes and the 50 clinician-written Q-Pain cases. In this single-prompt, JSON-constrained task, no difference survived correction in Study 1, none of 1,386 comparisons survived the false discovery rate in Study 2, and every pain-severity difference was equivalent to zero within one point on a 0-10 scale (within a quarter point for 237 of 238 Q-Pain comparisons). Opioid decisions were bounded less precisely (Study 1 could not exclude differences of about 20 percentage points), so they show no detected difference, not proof of none. The few differences surviving correction within a model favoured Black patients. Models differed far more from one another and across their own settings than between patients (the reference patient received the high opioid dose in 6% to 93% of responses), although serving software, provider and prompt format also differed. Fairness audits of clinical AI should use several names per group, pair comparisons on the seed, report the noise floor and test each deployed configuration.",
+    "url": "http://arxiv.org/abs/2611.14935v1",
+    "pdf_url": "http://arxiv.org/pdf/2611.14935v1",
+    "published": "2026-11-11",
+    "updated": "2026-11-11",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.38215v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Disparity Laundering: Consensus Without Fairness in Clinical Multi-Agent Systems",
+    "authors": "Xiaoyang Wang, Tianrui Wang, Christopher C. Yang",
+    "abstract": "Clinical large language models are increasingly fielded as multi-agent teams, on the assumption that deliberation averages out individual error. It does not average out bias. Across a full factorial of five model families and four aggregation topologies on 120 real MIMIC-IV emergency cases under counterfactual demographic swaps, no configuration neutralizes the disparity: all 20 cells commit the direction of their agents' independent answers, giving Black patients more acute triage. Every model has a topology that amplifies its baseline gap, but which one varies by model, so no design is reliably safe or reliably amplifying: the disparity is relocated, never removed. Late-stage fixes fail: fairness instructions and demographic masking leave the gap untouched, and per-agent self-debiasing widens it, because the bias is already encoded in the agents' ordinary clinical numbers. We call this disparity laundering; the audits now applied to clinical AI, per model, per output, per version, can certify the parts but never the committed decision. Interventions close the gap exactly when they make counterfactual versions visible inside the system and pool them, through deliberation, into the committed decision. A diverse-perspective ensemble does both while keeping the team, with no retraining or architectural change: the disparity falls by 67 to 94% where all five perspectives pool at every round, and the one topology that never pools them is the one it cannot reliably repair. Medical multi-agent systems do not filter demographic bias; they launder it into plausible decisions no single-version audit can catch, and the only defense is to make the bias visible.",
+    "url": "http://arxiv.org/abs/2610.38215v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.38215v1",
+    "published": "2026-10-28",
+    "updated": "2026-10-28",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.35847v2",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Patient-specific rubric-based evaluation of large language models across longitudinal cancer care",
+    "authors": "Wei-Wei Zhang, Pengkai Wang, Yan Li, Zhijie Sang, Guan-Qun Zhou, Jun-Yan Li, Shu-Han Zhou, Pei-Wen Liu, Ting-Xi Tang, Min Tang, Zhitian Hou, Jianmin Wu, Jian Guan, Li Lin, Hongxia Yang, Ying Sun",
+    "abstract": "Large language models (LLMs) show growing promise in specialty medicine, yet existing evaluations largely focus on isolated clinical encounters rather than assessing the distinct clinical responsibilities along longitudinal care pathways. We introduce NPC-RubricBench, a phase-aware benchmark for evaluating multistage clinical reasoning across the cancer care continuum, using nasopharyngeal carcinoma as a defined disease context. Curated from real-world records of 405 patients at two cancer centers, it comprises 941 evaluation units across six sequential care stages, from work-up through follow-up, and 17,688 patient-specific criteria across five dimensions. Each assessment is restricted to clinical evidence available at the corresponding decision point. Across 30 general-purpose and medical LLMs, we find strong diagnostic scores did not ensure reliable downstream care. Decision Quality ranged from 56.8 to 94.7 in diagnosis on a 0-100 scale, but dropped to 8.9-56.0 in staging and spanned 32.4-94.2 in treatment. Crucially, failure modes differed across phases: explicit decision errors predominated in anatomical staging (48.2%), whereas decision omissions were more frequent during initial work-up (33.4%) and post-treatment follow-up (30.4%). Varying query granularity revealed a trade-off between decision quality and other clinical requirements. Broad open-ended requests reduced decision quality across all 30 models, whereas more detailed, checklist-like prompts improved decision quality but were accompanied by lower evidence faithfulness and safety adherence. These findings highlight the need to assess clinical reliability against the distinct clinical requirements of each phase along the longitudinal care pathway. Finally, NPC-RubricBench informs the design of stage-aware clinical guardrails and offers a reusable blueprint for evaluating LLMs across other cancers and chronic diseases.",
+    "url": "http://arxiv.org/abs/2610.35847v2",
+    "pdf_url": "http://arxiv.org/pdf/2610.35847v2",
+    "published": "2026-10-26",
+    "updated": "2026-11-12",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "safety"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.36006v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine",
+    "authors": "Simon A. Lee, Jiahang Sha, Moonseong Jeong, Yunbei Pan, Jeffrey N. Chiang",
+    "abstract": "System One decision models such as Jev answer structured questions in a single forward pass without generating text, offering fast and computationally efficient clinical decision support. We evaluate MedJev, an open System One model that runs locally on a laptop, across ten medical benchmarks spanning medical knowledge, diagnosis, and patient level prediction using MIMIC IV and MIMIC IV ED. We compare MedJev against zero shot LLM baselines, published GPT results, and supervised models. MedJev achieves accuracies of 72.5 percent on MedQA, 75.4 percent on USMLE, and 80.1 percent on NEJM, approaching published GPT 4 performance while maintaining well calibrated confidence estimates (ECE 0.028 to 0.063). On patient level tasks, MedJev achieves an AUROC of 0.926 for In Hospital Mortality, exceeding XGBoost (0.902), but underperforms supervised models on operational outcomes such as ED Triage Admission (0.745 vs. 0.809). Patient level predictions also exhibit substantial miscalibration (In Hospital Mortality ECE 0.286). We introduce a lightweight, two parameter recalibration method that adapts predictions to local patient populations using 50 to 200 labeled examples, reducing ECE to 0.007. Our findings establish open System One models as a promising zero shot baseline for medical AI, combining competitive predictive performance with low computational cost and efficient local calibration. We release our code and evaluation harness to support future research.",
+    "url": "http://arxiv.org/abs/2610.36006v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.36006v1",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.35558v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "EXCISE: Locating and Excising Distracting Sentences in Medical Question Answering",
+    "authors": "Yerim Hong, Sohyun Son, Heeseung Chung, Mujeen Sung",
+    "abstract": "Language models are increasingly considered for clinical decision support, where their answers should be grounded in clinical evidence and remain robust to irrelevant information. Prior work shows that a single irrelevant sentence can lower the accuracy of medical models, but not where inside the model its effect can be removed, or how to do so without knowing which sentence it is. We find that blocking attention to a known distractor restores the answer, whereas head masking can suppress correct answers. We also show that the model's hidden states mark the distractor as the sentence that least fits the case even when the model follows it. To remove a distractor's effect without knowing which sentence it is, we propose EXCISE, an inference-time method that blocks the sentence most influencing the answer, but only if the model's hidden states mark it as inconsistent with the case. On MedQA-TD (MedQA with Targeted Distractors), a benchmark we construct in which each distractor targets a specific wrong option, EXCISE gains 16.7-22.8 accuracy points at a 1.5-2.1-point cost on the same questions without distractors, outperforming prompting, rewriting, and steering baselines for all three models. Its gains extend to MedDistractQA and BiasMedQA, as well as chain-of-thought generation.",
+    "url": "http://arxiv.org/abs/2610.35558v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.35558v1",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.34871v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "DocTalk: Enhancing Medical Knowledge Retrieval via Fine-tuned Large Language Models with Chain-of-Thought Reasoning for Robust Clinical Decision Support",
+    "authors": "Asad Gohar, Md Ariful Islam Mozumder, Moon-Il Joo, Hee-Cheol Kim",
+    "abstract": "Objective: The rapid advancement of large language models (LLMs) in healthcare has opened new possibilities for AI-assisted clinical decision-making; however, safe and effective deployment remains challenging because of hallucination and domain misalignment. This study introduces DocTalk, a doctor-assistive question-answering (QA) system designed to generate concise, chart-grounded responses from de-identified discharge summaries. Methods: We developed a high-fidelity data generation pipeline that produces 500 clinically relevant QA pairs through sentence-level decomposition, chain-of-thought-guided question formulation, and expert review. Six open-source LLMs, including three general-purpose and three biomedical models, were evaluated before and after parameter-efficient instruction tuning using Low-Rank Adaptation (LoRA). The framework integrates prompt engineering, in-context learning, and medically aligned evaluation to support factual and interpretable responses. Results: On DocTalk-QA, instruction tuning produced consistent improvements across lexical, semantic, and clinical fidelity metrics. The best-performing tuned model, Llama-3-Med42-8B, achieved ROUGE-L = 0.40, BERTScore-F1 = 0.76, and UMLS-F1 = 0.49. To examine external generalization beyond the DocTalk-QA dataset, the two best-performing models, Llama-3.1-8B-Instruct and Llama-3-Med42-8B, were evaluated on PubMedQA before and after instruction tuning. Accuracy improved from 0.931 to 0.977 for Llama-3.1-8B-Instruct and from 0.935 to 0.943 for Llama-3-Med42-8B. Conclusion: DocTalk was deployed as a secure web-based platform for interactive EHR querying. These findings suggest that clinically grounded instruction tuning can improve medical QA performance and support practical clinical decision support.",
+    "url": "http://arxiv.org/abs/2610.34871v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.34871v1",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.33788v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Unlocking the Specialization Capability of PPG Foundation Models for Wearable Signals through Structured Pruning and Adaptive Fine-Tuning",
+    "authors": "Huaming Du, Zhixian Xie, Gaoyang Zhen, Gang Kou, Guisong Liu, Yanchao Tan, Wendan Tao, Yuhao Xu, Carl Yang",
+    "abstract": "Photoplethysmography (PPG) plays a central role in wearable health monitoring and clinical decision support. However, existing approaches to universal PPG representation learning are predominantly trained on high-quality large-scale datasets obtained from oximeters in hospital settings and often struggle to adapt to sparse and low-quality real-world datasets, thereby limiting their generalization to clinically relevant tasks on prevalent PPG data such as collected from wearable devices. Surprisingly, even after full fine-tuning, PPG foundation models cannot consistently outperform general-purpose time-series models. Therefore, a key question is how to effectively adapt PPG foundation models to target prediction tasks. Through empirical studies on various PPG foundation models, we find that pretrained models often exhibit inherent sparsity and computational redundancy, suggesting that PPG foundation models have learned to activate task-relevant network substructures for different prediction tasks. To preserve this valuable prior knowledge, we propose a structured pruning-and-fine-tuning framework, SPAFT, which regularizes the adaptive fine-tuning process by constraining it to a more relevant and compact parameter space based on parameter importance and structural redundancy. Extensive experiments across four PPG foundation models, five benchmark datasets, and ten downstream tasks demonstrate that SPAFT achieves win rates of 82.8% and 87.5% on regression and classification tasks, respectively. This prune-then-finetune paradigm often enables PPG foundation models to achieve state-of-the-art performance, laying a promising foundation for the real-world clinical deployment of PPG foundation models and the development of personalized PPG foundation models.",
+    "url": "http://arxiv.org/abs/2610.33788v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.33788v1",
+    "published": "2026-10-24",
+    "updated": "2026-10-24",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.32258v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "MedCaseAgent: From Multimodal Clinical Evidence to Rare Disease Case Reports",
+    "authors": "Hongkang Chu, Yifan Shen, Tianjiao Yu, Zhuoqing Zhong, Jianguo Cao, Meihuan Huang, Xu Cao",
+    "abstract": "Although Large Language Models (LLMs) have demonstrated potential in clinical documentation, generating the rigorous, evidence-based reasoning required for unprecedented, atypical, and rare disease case reports remains a significant challenge. We present MedCaseAgent, an end-to-end agentic reasoning paradigm that bridges this gap by synthesizing publication-quality reports from unstructured clinical notes. MedCaseAgent leverages a hierarchical structure, integrating patient-level data mining with iterative, tool-integrated reasoning. By dynamically querying medical literature and knowledge bases, the agent maintains high clinical fidelity and assesses case novelty. The framework is inherently modular, supporting various backbone LLMs in a plug-and-play fashion. To facilitate this research, we release MedCase-150K, a large-scale multimodal clinical case-report corpus, and MedCase-Bench, a robust temporally held-out evaluation suite. We also introduce an open-source model post-trained from Qwen3.5-9B and optimized specifically for this task. Under both LLM-judged and rule-based evaluation, MedCaseAgent outperforms existing general-purpose and specialized medical LLMs and agents. Blinded expert reviews and ablations further support the system's clinical relevance and evidence grounding.",
+    "url": "http://arxiv.org/abs/2610.32258v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.32258v1",
+    "published": "2026-10-23",
+    "updated": "2026-10-23",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.31467v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "From Structured Records to Patient Narratives: Preserving Clinical Alignment in LLM-Generated Health Summaries",
+    "authors": "Bayram Ayadi, Florian Geissler, Johanna Schmidhuber",
+    "abstract": "As wearable and digital health systems increasingly generate longitudinal physiological records, communicating these observations in patient-accessible language remains a significant challenge. Large Language Models (LLMs) offer a promising mechanism for translating structured clinical information into readable narratives, but this process may introduce semantic drift, where clinically precise meaning is distorted during simplification. We investigate evidence-grounded health summarization for menstrual health monitoring using a constrained generation framework that combines structured evidence conditioning with Retrieval-Augmented Generation (RAG) using a prompt-based constrained generation framework. We evaluate semantic alignment using Natural Language Inference (NLI), atomic factuality metrics, and readability measures. Across three LLMs and 4,500 generated summaries, explicit grounding constraints consistently improve clinical alignment, particularly by improving uncertainty preservation and, once faithfulness is evaluated against retrieved evidence, generally preserving or improving faithfulness, while effects on omission remain model-dependent. We also find that improved clinical alignment comes at the cost of increased reading difficulty and medical terminology. These findings highlight the need to jointly evaluate faithfulness, uncertainty preservation, and readability when developing patient-facing medical LLM systems.",
+    "url": "http://arxiv.org/abs/2610.31467v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.31467v1",
+    "published": "2026-10-22",
+    "updated": "2026-10-22",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.30947v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "RetiJev: Fast and Source-Grounded Ophthalmic Decision Models",
+    "authors": "Bo Liu, Lianyu Wang, Meng Wang, Ching-Yu Cheng, Huazhu Fu",
+    "abstract": "Ophthalmic clinical decision support requires fast, accurate, and privacy-preserving inference, yet autoregressive large language models (LLMs) incur substantial latency and computational overhead for decisions among predefined actions. We therefore investigate a decision-oriented alternative to generative reasoning. Specifically, we first introduce RetiJev-Data, a source-grounded ophthalmology corpus comprising 78,158 clinical-decision and diagnosis questions derived from articles in PubMed Central and a MeSH vocabulary covering 531 eye diseases, and 50,074 guideline-grading questions spanning 11 grading systems, along with a 24,662-question evaluation benchmark. Based on this, we develop RetiJev, a family of 0.8B-9B decision models that directly score candidate answers without autoregressive decoding. Across all model sizes, RetiJev outperforms both a 27B LLM and the commercial Jev 1.13 decision model on guideline grading by 10.4-23.0 points. RetiJev-9B further achieves the highest accuracy on clinical decisions, improving over both baselines by 5.4-6.5 points while matching them on diagnosis. It answers a case in 158 ms on one GPU, 3.5x faster than LLM generation and 470x faster than reasoning. Models are released at https://github.com/Awenbocc/RetiJev.",
+    "url": "http://arxiv.org/abs/2610.30947v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.30947v1",
+    "published": "2026-10-22",
+    "updated": "2026-10-22",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.23721v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Recognizing Study Lineage Is Not Enough: Over-Crediting Same-Trial Evidence in LLM-Based Medical Verification",
+    "authors": "Mukand Krishna, Anoushka Harit, Chenghao Xiao, Zhongtian Sun",
+    "abstract": "Publication count is not study count. A model can identify shared trial lineage correctly in a direct task yet over-credit a second publication from the same trial when aggregating evidence. We evaluate this behavior in medical LLM verification using 14 source-audited clinical families and five model conditions. The families span provenance, clinical applicability, result direction, and composition; the provenance families provide the direct lineage tests. Recognition and aggregation are separate stateless calls, and repeated calls assess within-input stability. Across all three original provenance families, GPT-5.5 identifies the independent update in 10/10 recognition calls per family but over-credits the same-trial report in 5/5 separate aggregation calls per family. Selected Qwen3-4B and Ministral-3-8B conditions show the same cross-task contrast. A study-grouping instruction reduces GPT-5.5 over-credit from 4/5 to 0/5 in each later pure-provenance family. Other model conditions show mixed behavior, and rejected outputs limit several comparisons. The results identify a behavioral gap between elicited lineage recognition and evidence aggregation. The code and data artifacts are available at https://anonymous.4open.science/r/study-lineage-review-artifact.",
+    "url": "http://arxiv.org/abs/2610.23721v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.23721v1",
+    "published": "2026-10-16",
+    "updated": "2026-10-16",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.22594v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "The Model Knows Better: Defending Medical Multi-Agent Systems Against Prompt Injection",
+    "authors": "Fardin Ahsan Sakib, Ziwei Zhu, Ozlem Uzuner",
+    "abstract": "Medical multi-agent systems, in which LLM agents discuss a case, are increasingly studied for clinical decision support. Prompt injection, text that an attacker adds to a model's input, can manipulate LLMs into wrong decisions. How it affects these systems, and how to protect them, remains unclear. Across two systems, two model families and three benchmarks, a single injected passage succeeds in up to 61% of cases, and collaboration does not consistently protect against it. Existing defenses help only partly: they miss injections that look like ordinary clinical text. Yet when asked to check the injected text against the patient's findings, a model that followed the injection usually rejects it. We therefore propose a training-free defense that verifies the clinical judgments behind the system's decision. Following clinical practice, it separates the patient's findings from clinical judgments, such as diagnoses, recommendations and instructions, and checks each judgment against the findings alone, so the decision rests only on supported judgments. Our defense outperforms all baselines on every benchmark, lowering attack success on MedQA to 4-7% while maintaining accuracy on cases without an attack, and remains effective with a medical model and against defense-aware and adaptive attacks.",
+    "url": "http://arxiv.org/abs/2610.22594v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.22594v1",
+    "published": "2026-10-15",
+    "updated": "2026-10-15",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.20191v2",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "HEM-Med: A Hierarchical Agentic Memory Framework for Safe Multi-Center Medication Recommendation",
+    "authors": "Min Xiao, Jin Li, Shoujin Wang, Yeguang Zhen, Yishuo Li, Wenpeng Lu",
+    "abstract": "Medication recommendation (MR) is critical for clinical decision support. While existing MR methods are mostly designed for single-center learning, where only one independent hospital is involved, multi-center MR with hospitals of different scales has become increasingly demanding in practice. In multi center settings, abundant data from large medical centers can improve recommendation performance for low-resource centers. Despite a few preliminary attempts on this task, two critical gaps remain. Gap 1: Existing multi-center methods fail to disentangle transferable cross-hospital clinical experience from hospital-specific prescribing patterns, limiting clinical feasibility and physician acceptance. Gap 2: They commonly overlook multi label safety constraints of MR, including drug-drug interaction risks and local formulary feasibility, which are essential for safe real-world deployment. To address these gaps, we propose HEM-Med, a novel hierarchical agentic memory framework for multi-center MR. To address Gap 1, we design a disentangled hierarchical memory module that builds patient-level medication context attribution records and disentangles them into cross hospital experience memory and hospital-specific residual memory. To address Gap 2, we introduce a safety-aware medication set generation module, which integrates dual-level experience retrieval with safety-aware set decoding to produce clinically relevant, safer, and locally adaptive medication recommendations. Experiments on a real-world multi-center eICU dataset show that HEM-Med outperforms representative transfer learning, LLM-based, and MR baselines in terms of both recommendation accuracy and safety.",
+    "url": "http://arxiv.org/abs/2610.20191v2",
+    "pdf_url": "http://arxiv.org/pdf/2610.20191v2",
+    "published": "2026-10-14",
+    "updated": "2026-10-16",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "safety",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.18494v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Task-evoked eye movements as candidate digital biomarkers of depression severity in adolescents and young adults",
+    "authors": "Youxiang Sun, Yujie Nie, Zhuoru Wu, Mengyuan Yu, Wenkong Wang, Xiang Li, Yumei Wang, Xin Ma, Lizhou Fan",
+    "abstract": "Objective digital measures of depression severity could complement conventional symptom assessments and facilitate more timely clinical evaluation. Here, we investigated whether task-evoked eye movements provide interpretable behavioral markers of depression severity in adolescents and young adults. In this single-center, cross-sectional study, 155 participants aged 14--20 years completed emotional-spatial free-viewing and memory-guided recall tasks and were stratified by 17-item Hamilton Depression Rating Scale scores. We examined 19 prespecified eye-movement features across six task-informed domains using covariate-adjusted ordinal-trend models. Greater depression severity was associated with lower gaze-allocation entropy (standardized $β=-0.599$), fewer inter-area switches ($β=-0.526$), longer first target-entry latency ($β=0.572$), and lower target dwell proportion ($β=-0.678$; all false-discovery-rate-adjusted $q<0.001$). Emotion-specific attentional-bias measures were not associated with severity, whereas associations involving fixation dispersion weakened after adjustment for anxiety symptoms. In a complementary machine-learning analysis incorporating 44 candidate eye-movement features and demographic covariates, a three-stage cascade classifier achieved the highest four-class stratification performance (accuracy, 0.665; macro-F1, 0.670; area under the receiver operating characteristic curve, 0.869), outperforming single-stage and two-stage approaches. Together, these findings identify altered visual exploration and memory-guided gaze control as candidate digital biomarkers of depression severity, rather than generalized negative attentional bias. These results support further prospective evaluation of task-evoked eye tracking as a complementary approach for timely severity assessment and clinical decision support.",
+    "url": "http://arxiv.org/abs/2610.18494v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.18494v1",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.15912v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "More Reasoning Is Not Always Better: Executing Clinical Guidelines with LLMs and Rules",
+    "authors": "Xiaoqian Lu, Guangfu Guo, Long Cheng, Kunpeng Liu",
+    "abstract": "Large language models (LLMs) have shown considerable promise in clinical decision support. However, existing approaches often rely on multi-step reasoning or multi-agent collaboration to execute clinical guidelines, introducing substantial computational overhead without reliably preventing decision errors. To address these limitations, we propose a framework for Medical Decision Execution (MedDEx) that integrates structured patient states with deterministic rule execution to support guideline-based treatment planning. MedDEx separates clinical record interpretation from guideline execution, leveraging LLMs to extract patient information and generate treatment plans while assigning guideline-defined decision logic to a rule executor. Experiments across multiple clinical guideline benchmarks demonstrate that MedDEx improves decision accuracy while reducing inference costs. Further analyses highlight the critical roles of structured patient representations and deterministic rule execution, suggesting that additional LLM reasoning does not necessarily translate into better guideline adherence.",
+    "url": "http://arxiv.org/abs/2610.15912v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.15912v1",
+    "published": "2026-10-11",
+    "updated": "2026-10-11",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.14705v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Lingdan-V2: Large language models for clinically grounded reasoning in traditional Chinese medicine",
+    "authors": "Rui Hua, Yu Wei, Ziri Jin, Zhuo Sun, Kai Chang, Jianan Xia, Zixin Shu, Xiaodong Li, Dongmei Jia, Fei Dong, Runshun Zhang, Jian Yu, Hao Xu, Haibin Yu, Jiansheng Li, Baoyan Liu, Wenjia Wang, Xuezhong Zhou",
+    "abstract": "Large language models have advanced medical reasoning, but clinically grounded reasoning in traditional Chinese medicine (TCM) remains challenging because prescription decisions require integrating domain knowledge, syndrome differentiation, treatment principles, herbal prescription composition, and dosage determination. We develop a TCM language model family comprising models with 4 billion, 8 billion, and 14 billion parameters. The artificial intelligence contribution is a staged clinical alignment framework integrating large scale continued pretraining on TCM and clinical records, complementary reasoning supervision, and prescription-centered reinforcement learning (RL). We further formulate herbal prescription generation as a structured RL problem with prescription-level feedback, enabling direct optimization of clinical decision outputs beyond knowledge reproduction and generic instruction following. The engineering application is TCM clinical decision support, particularly herbal prescription recommendation. We evaluate the models on a public benchmark containing 25,620 expert-verified items across 13 TCM knowledge and clinical reasoning tasks and on a private retrospective dataset of 4,348 spleen and stomach disease prescription cases. The 14 billion parameter reinforcement aligned model achieves a prescription generation F1 of 37.0 on the public benchmark, compared with 32.3 for DeepSeek-R1 with 671 billion total parameters, and a herb-level F1 of 52.8 on the clinical dataset with improved dosage agreement. Reinforcement post-training consistently improves prescription recommendation across all scales, while physician-source analysis shows that expert heterogeneity affects reward stability. These findings demonstrate a scalable pathway from domain grounding and reasoning supervision to clinically oriented prescription decision support.",
+    "url": "http://arxiv.org/abs/2610.14705v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.14705v1",
+    "published": "2026-10-10",
+    "updated": "2026-10-10",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.11069v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Clinician use of language models diverges from how the models are evaluated",
+    "authors": "Krithik Vishwanath, Haitong Lin, Anton Alyakin, Jin Vivian Lee, D. Brock Hewitt, Jie J. Yao, William Robert Small, Hammad A. Khan, Cordelia Orillac, Aakaash Varma, Brandon Ye, Daniel Alexander Alber, Gustavo Stolovitzky, Batia Wiesenfeld, Oded Nov, Wei Wu, Kang Zhang, Yindalon Aphinyanaphongs, Tim Requarth, Eric Karl Oermann, The International Digital Twin Consortium in Healthcare,  Medicine",
+    "abstract": "Large language model (LLM) assistants are being deployed to clinicians across health systems, and judgments about their readiness rest largely on benchmark scores, most of them derived from examination questions or curated cases. A benchmark predicts performance in deployment only to the extent that its items resemble real use, yet whether benchmarks reflect the work these systems receive has rarely been measured. Here we analyze 127,833 queries sent by 6,342 physicians, advanced practice providers and nurses in 35 specialties to an institutional assistant during an eight-month roll-out. We characterize each query with RCQ-Map, a clinician-validated framework grounded in taxonomies of clinical questions and of LLM evaluation, which records its task, intent, answerability, missing information and potential harm. Documentation and administration (36.2%) and knowledge retrieval (28.9%) made up nearly two-thirds of use, and diagnosis 3.7%; more than a third of queries could not be answered well as posed. Applying RCQ-Map to 58 public benchmarks drawn from major evaluation suites and frontier model reports, which we assemble into the Clinical AI Benchmark Atlas, showed that the median benchmark contained no documentation requests and shared 31% of the task mix of real use, less than an even spread across task categories would. Benchmarks in suites designed to resemble clinical practice were individually no closer to real use than those used in frontier model reports. Benchmark scores therefore say little about how clinical AI performs on most of the work it is actually given, and evaluation should be matched to real clinical use.",
+    "url": "http://arxiv.org/abs/2610.11069v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.11069v1",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.09026v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "BEACON-SP: Ontology-Grounded GraphRAG Framework for Clinical Suicide Risk Assessment",
+    "authors": "Kemal Davaslioglu, Nathan Conger, Sastry Kompella, Yalin E. Sagduyu, Nathaniel D. Bastian",
+    "abstract": "We present BEACON-SP, an ontology-grounded Graph Retrieval-Augmented Generation (GraphRAG) framework for clinician-facing decision support in behavioral health settings such as suicide prevention, where effective assessment requires integrating heterogeneous clinical, behavioral, social, and temporal evidence. BEACON-SP combines patient knowledge graphs with ontology-guided retrieval to support multi-hop reasoning across diagnoses, medications, risk and protective factors, life events, and temporal relationships. The framework is enabled by a comprehensive suicide prevention ontology that integrates the Three-Step Theory, the Integrated Motivational-Volitional Model, and the Suicide Social Determinants of Health Ontology into a unified representation of patient risk factors. We construct ontology-grounded patient knowledge graphs and evaluate BEACON-SP for clinician-facing question answering. Compared with a vector-based retrieval-augmented generation (RAG) baseline on a 1,500-query benchmark spanning 15 clinical categories and 100 patients, BEACON-SP improves completeness, clinical relevance, and evidence grounding under a corrected comparative evaluation protocol, with a small gain on factual accuracy. In paired criterion-level comparisons, GraphRAG is preferred in 76.4% of cases. These results demonstrate the potential of ontology-guided GraphRAG to provide structured, contextualized patient evidence for clinical decision support.",
+    "url": "http://arxiv.org/abs/2610.09026v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.09026v1",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.08161v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Symphony for Text Generation: Benchmarking Clinical Note Generation",
+    "authors": "Daniel Varab, Victor Petrén Bach Hansen, Asbjørn W. Helge, Kevin Pelgrims, Mathias Baltzersen, Adrian Young-San Roessler, Vanessa Klungtvedt, Maximilian Brand, Lasse Krogsbøll, Henrik Cullen, Lars Maaløe",
+    "abstract": "Ambient documentation systems are rapidly gaining adoption, yet their impact on clinical note quality remains poorly characterized. We introduce MedConv, a multilingual dataset of 300 clinical encounters in English, Danish, and German, and use it alongside the Ambient Clinical Intelligence benchmark (ACI-BENCH) to compare Corti, a clinical AI platform, with two leading, accessible ambient scribe software applications built on general-purpose AI. We present a controlled clinical evaluation framework that combines entailment metrics with LLM-judged pairwise comparisons across eight dimensions adopted from PDSQI-9. Results show that Corti's API-based text-generation infrastructure is on par with or outperforms leading commercial scribes. We further show that Corti's configurable API provides the flexibility necessary to fine-tune quality dimensions for specific documentation use cases. We present the evaluation methodology and release a dataset to support future reproducible comparison of ambient documentation systems.",
+    "url": "http://arxiv.org/abs/2610.08161v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.08161v1",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.08093v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "SAGE: Semantic Anchor-Guided Evolution for Grounded Medical QA Data Synthesis",
+    "authors": "Chuan Li, Chengyu Wang, Cen Chen, Ye Lyu, Mingyuan Fan, Ming Gao",
+    "abstract": "Developing reliable models for clinical tasks, such as Medical Question Answering (QA), is severely constrained by the limited availability of high-quality, expert-annotated training data. This challenge is exacerbated by stringent privacy requirements and the impracticality of utilizing large open-source corpora or proprietary cloud APIs within resource-limited clinical settings. To address these obstacles, we introduce SAGE (\\textit{Semantic Anchor-Guided Evolution}), a novel data synthesis framework that enables small, locally deployed models to generate high-quality medical training data. SAGE leverages lightweight, publicly available taxonomies such as MeSH as semantic anchors, imposing a structured prior to effectively guide and ground the data generation process. At its core, SAGE iteratively interleaves atomic (individual concept-based) and associative (relation-based) synthesis, bootstrapping training data from minimal seeds. This approach eliminates the need for large collections of medical documents or reliance on external APIs, providing a practical solution for on-premises data creation. Extensive experiments across multiple medical question-answering benchmarks demonstrate that models fine-tuned with SAGE-synthesized data consistently outperform those trained using self-derived or conventional document-based paradigms, highlighting tangible improvements in data efficiency and resource utilization for medical LLM development. Code is available at https://github.com/DIaacKr/SAGE.",
+    "url": "http://arxiv.org/abs/2610.08093v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.08093v1",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.04777v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "ARISE: Adaptive Agentic Reasoning with Image-grounded Self-Evaluation for Interpretable IBD Assessment",
+    "authors": "Pronoma Banerjee, Anuva Shah, Jason Wu, Md. Masudur Rahman, Sanjay Mohanty, Satya Kurada, Juan P. Wachs",
+    "abstract": "Inflammatory bowel disease (IBD) requires frequent imaging-based assessment, yet interpretation of modalities such as wireless capsule endoscopy (WCE) and intestinal ultrasound remains heavily dependent on specialist expertise. Vision-Language Models (VLMs) demonstrate significant potential in multimodal medical image analysis, but their clinical adoption is hindered by their insufficient domain-specific reasoning, susceptibility to hallucination, scarcity of high quality training data in fine-grained diagnostics and limited interpretability. We introduce ARISE (Adaptive Agentic Reasoning with Image-grounded Self-Evaluation), an autonomous planning framework that models few-shot medical image understanding as a sequential agentic workflow. ARISE structures agent execution into a transparent 5-stage workflow: hypothesis generation, image-grounded evidence summarization, evidence-conditioned refinement, symbolic verification, and final diagnosis. We apply ARISE to IBD assessment across two independent patient cohorts: wireless capsule endoscopy (WCE) images for Crohn's disease and B-mode ultrasound data for ulcerative colitis. ARISE consistently improves diagnostic performance over baseline VLMs while exposing where reasoning succeeds or fails, providing a more interpretable basis for clinical decision support and realistic deployment.",
+    "url": "http://arxiv.org/abs/2610.04777v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.04777v1",
+    "published": "2026-10-03",
+    "updated": "2026-10-03",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2610.20632v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "MeddeX: A Retrieval-Augmented LLaMA-3 System with Gemini Vision for Evidence-Backed Medical Report Analysis",
+    "authors": "Rajdeep Pandhare, Rohit Kundaikar, Yakub Kojar, Shreyansh Tiwari",
+    "abstract": "Modern healthcare generates increasingly complex medical reports that challenge clinical professionals in terms of time and interpretive burden. Manual review processes are slow, error-prone, and difficult to scale. This paper presents MeddeX, a Medical Report Analyzer that combines a QLoRA fine-tuned LLaMA-3 (8B) model with Retrieval-Augmented Gen eration (RAG) and a multimodal Gemini Vision layer to deliver accurate, concise, and evidence-backed summaries of medical documents. The system handles text-native PDFs, scanned image based PDFs, and direct radiological images through an intelligent hybrid extraction pipeline that includes a novel garbage-text detection mechanism for corrupted and UTF-16-encoded doc uments. Beyond single-report Q&A, MeddeX introduces report scoped retrieval for precise contextual grounding, an automated longitudinal report comparison engine, and a self-healing backfill pipeline that lazily processes legacy documents on demand. A FastAPI backend, Supabase vector store, and Next.js fron tend complete the end-to-end architecture. Evaluation against the base LLaMA3-Med42-8B model demonstrates consistent improvements across ROUGE-1 (+9.2%), ROUGE-2 (+10.0%), ROUGE-L (+11.8%), BLEU (+71.4%), and BERTScore (+0.8%), validating the benefit of domain-specific fine-tuning. MeddeX represents a practical and robust step toward AI-assisted clinical decision support.",
+    "url": "http://arxiv.org/abs/2610.20632v1",
+    "pdf_url": "http://arxiv.org/pdf/2610.20632v1",
+    "published": "2026-09-30",
+    "updated": "2026-09-30",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2609.31763v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "SMARtCARE: Privacy-Preserving Agentic AI Systems for Bounded-Autonomy Clinical Decision Support",
+    "authors": "Srini Ramaswamy, Deveeshree Nayak",
+    "abstract": "Long-context clinical AI systems can miss relevant patient history when prior admissions fall outside the active reasoning context. In ICU monitoring, this can cause early vital-sign drift to appear nonspecific even when it resembles a prior deterioration pattern. SMARtCARE addresses this gap through a four-state clinical decision-support architecture: Stable, Meta-cognitive, Assisted, and Regulated (Revoked). Rather than automatically retrieving prior records, SMARtCARE uses a lossy six-channel fingerprint of the patient's prior trajectory. When current drift matches that fingerprint and the prior record is absent from context, the system raises a Meta-cognitive escalation for clinician review; full retrieval occurs only through clinician action in the Assisted state. A patient-identity guard is designed to enforce correct attribution across data loading, logging, and audit layers. Evaluation combines a synthetic Monte Carlo study that validates the state-transition logic and estimator stability, not clinical performance, with real-data runs on both the MIMIC-III and MIMIC-IV Clinical Database Demos. On MIMIC-III, one prior-pattern recurrence was identified among 14 two-admission patients; on MIMIC-IV, the same pipeline produced no fingerprint matches among 9 two-admission patients, which illustrates a key limitation of a fixed canonical pattern library. Across both runs all logged decisions were fully traceable and correctly attributed. The results support SMARtCARE as a traceable, privacy-aware mechanism for surfacing middle-context risk; they are not a clinical efficacy claim.",
+    "url": "http://arxiv.org/abs/2609.31763v1",
+    "pdf_url": "http://arxiv.org/pdf/2609.31763v1",
+    "published": "2026-09-24",
+    "updated": "2026-09-24",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "RAG"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2609.25852v2",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "When Clinical Judgment Becomes a Predictive Shortcut: Two Questions Clinical AI Must Answer Before Deployment",
+    "authors": "Jing Yang, Long R. Jiao, Zongjiu Zhang, Xiujun Cai",
+    "abstract": "Clinical AI can predict outcomes using information generated by existing clinical judgment. Such performance alone cannot establish usefulness before recognition or across care processes. We propose evidence requirements matched to intended use and information conditions, with additional state-reference and proxy-relative timing tests for stronger recognition claims. This framework helps hospitals assess whether the conditions supporting performance hold when assistance is most needed. These questions remain outside current evaluation practice leakage checks, overall predictive performance, and external validation do not address them; the framework makes them explicit and specifies the direct evidence required to answer them.",
+    "url": "http://arxiv.org/abs/2609.25852v2",
+    "pdf_url": "http://arxiv.org/pdf/2609.25852v2",
+    "published": "2026-09-22",
+    "updated": "2026-10-23",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2609.22790v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "From Research Frontier to Laboratory Bench: Design of a Four-Tier Experimental Teaching System for Multimodal Medical Image Intelligent Diagnosis",
+    "authors": "Dongjing Shan, Yamei Luo, Jin Li, Yong Luo",
+    "abstract": "Undergraduate programmes in intelligent medical engineering are expanding, yet laboratory curricula lag behind the multimodal, long-tailed, and distributionally shifting realities of clinical AI. This design paper presents an advanced experimental teaching system that translates an ongoing multimodal deep learning research project on endometrial carcinoma into a structured undergraduate lab sequence. We identify three educational gaps (modality, authenticity, and deployment) and derive four pedagogical principles from constructive alignment, experiential learning, the research teaching nexus, and the CDIO framework. The curriculum comprises four progressive tiers plus an engineering layer, with 32 laboratory units over 64 contact hours, delivered via a custom virtual clinical workstation using de-identified multi-institutional data. Each tier maps to a specific technical bottleneck, prerequisite coursework, and criterion-referenced deliverables. Data governance, safety, and assessment protocols are specified. Learning outcome data will be collected across two implementation cycles.",
+    "url": "http://arxiv.org/abs/2609.22790v1",
+    "pdf_url": "http://arxiv.org/pdf/2609.22790v1",
+    "published": "2026-09-19",
+    "updated": "2026-09-19",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark",
+      "safety"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2609.22463v2",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "Toward Personalized Sleep Guidance from Wearable Data Using Language Models",
+    "authors": "Yusheng Tan, Running Zhao, Sofia Angel, Ninghui Hao, Ash Arian, Nikita N. Dulin, Jay Lin, Ou Zhu, Faiza Shaik, Xinxing Yang, Bonnie W. Leung, Katie Roster, Arlene Ruiz de Luzuriaga, Kenneth Lee, Alejandra Lastra, Habibul Ahsan, Guihong Wan",
+    "abstract": "Sleep monitoring using wearable data has shown promise for personal health, yet large language model (LLM)-based summarization and question answering remain insufficient for personalized sleep guidance. Training specialized models, however, often requires costly expert annotation. Moreover, privacy and accessibility concerns motivate lightweight, local deployment for end users. We present a two-stage framework to address these challenges. Specifically, in Stage~1, a multi-agent LLM pipeline reasons structured sleep guidance from unannotated wearable records, enabling scalable dataset construction. Stage~2 distills guidance reasoning trajectories into small language models (SLMs) through supervised fine-tuning and integrates a training-free Best-of-$N$ selection strategy to enhance inference. Experimental results demonstrate our method outperforms commercial general and medical LLMs and open-source models. Human evaluation further supports the quality of the generated guidance and the feasibility of personalized sleep guidance with SLMs.",
+    "url": "http://arxiv.org/abs/2609.22463v2",
+    "pdf_url": "http://arxiv.org/pdf/2609.22463v2",
+    "published": "2026-09-18",
+    "updated": "2026-09-28",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "arxiv:2609.14018v1",
+    "source": "arXiv",
+    "type": "benchmark",
+    "title": "VeriDx: Earning the Right to Diagnose with Disease-Centric Verification",
+    "authors": "Zhong Cao, Shuying Chen",
+    "abstract": "A correct diagnosis can still be reached for the wrong reasons. In clinical reasoning, every disease hypothesis creates obligations: key evidence must be checked, alternatives must be ruled out, contradictions must be resolved, useful tests must be considered, and closure must be justified. Current evaluations of medical LLMs mostly focus on final answers, local steps, or isolated facts, and therefore miss these hypothesis-induced commitments. We introduce \\textbf{VeriDx}, a disease-centric verification framework that links free-form diagnostic reasoning to structured disease profiles. VeriDx tracks whether each hypothesis is satisfied, unresolved, or violated its clinical obligations, exposing failures such as missing critical tests, unresolved differentials, ignored contradictions, unsupported claims, and premature closure. We instantiate VeriDx for complex respiratory diagnosis using guideline-derived disease profiles and expert-annotated longitudinal cases. Our results show that many diagnostic errors are not isolated mistakes, but broken commitments made earlier in the reasoning process.",
+    "url": "http://arxiv.org/abs/2609.14018v1",
+    "pdf_url": "http://arxiv.org/pdf/2609.14018v1",
+    "published": "2026-09-12",
+    "updated": "2026-09-12",
+    "journal": "arXiv preprint",
+    "tags": [
+      "arXiv",
+      "clinical AI",
+      "LLM",
+      "benchmark"
+    ],
+    "relevance": "high",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new"
+  },
+  {
+    "id": "pmid:43023049",
+    "source": "PubMed",
+    "type": "research",
+    "title": "Benchmarking general and medical LLM performance in Parkinson's disease management.",
+    "authors": "Shechter Y, Klevor R, Kouchache T, Bouhadoun S, Postuma R",
+    "abstract": "Large language models (LLMs) are increasingly being used as clinical support tools, yet their performance in Parkinson's disease (PD) management remains insufficiently characterized. We evaluated a general-purpose LLM (Gemini 1.5 Pro) and a medically specialized LLM (OpenEvidence) using 45 synthetic PD vignettes requiring generative assessment and management recommendations. Responses were independently rated by two movement disorders fellows using predefined 5-point Likert scales, with adjudication by a senior specialist when required. Both models demonstrated generally good performance in clinical assessment, whereas management recommendations were less reliable. A modest numerical advantage was observed for the medically specialized model across assessment, plan, and composite outcomes, although no statistically significant differences were identified. Qualitative analysis showed that clinically relevant errors occurred in both models, predominantly reflecting treatment strategy errors. These findings suggest that, in the specific model versions evaluated, LLMs may support clinical reasoning in PD, but require cautious interpretation, particularly for treatment recommendations.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43023049/",
+    "published": "2026",
+    "journal": "Clinical parkinsonism & related disorders",
+    "tags": [
+      "LLM",
+      "benchmark",
+      "medical AI"
+    ],
+    "relevance": "medium",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new",
+    "pmid": "43023049"
+  },
+  {
+    "id": "pmid:43022851",
+    "source": "PubMed",
+    "type": "research",
+    "title": "Comparative Analysis of Six Large Language Models' Generative Ability for Scientific Technical Writing in Ophthalmologic Subspecialties.",
+    "authors": "Jones B, Olsen J, Miller S, Herrera E, Okelberry D, Sitto M, Brandenburg T, Hoopes P, Moshirfar M",
+    "abstract": "Purpose As the adoption of large language models (LLMs) accelerates in healthcare, the evaluation of their accuracy must accelerate in tandem. This study compares six LLMs' ability to generate accurate, thorough, and high-quality scientific technical writing in seven areas compared to a human-written control. Methods Four prompts were created in ophthalmic subspecialties and presented to ChatGPT (4.0), Gemini (2.5 Pro), DeepSeek (DeepSeek-Prover-V2-671B), Grok (3.0), Microsoft Copilot, and OpenEvidence (2.0). Each model's performance was analyzed based on seven factors: medical accuracy, thoroughness and comprehensiveness, organization, literature support, speech efficiency, citation classification, and readability. Data analysis was conducted in Excel, graphed, and compared to a control. Results The control texts outperformed each of the artificial intelligence (AI) models in medical accuracy, thoroughness and comprehensiveness, and organization. OpenEvidence uniquely matched the control in literature support, with 24 (100%) complete and accurate citations. Grok was the most speech-efficient; Gemini was the most verbose. The readability for each LLM was, on average, lower quality than required for scientific technical writing. Conclusion This study shows that each AI model does not compare to a human expert's ability to generate scientific technical writing in a subspecialty of ophthalmology. Only OpenEvidence demonstrated citation accuracy meeting review article standards; however, this platform did not meet standards in other areas. The study concludes that current unpaid AI platforms cannot replace human expertise in creating high-level scientific literature in ophthalmology.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43022851/",
+    "published": "2026",
+    "journal": "Cureus",
+    "tags": [
+      "LLM",
+      "benchmark",
+      "medical AI"
+    ],
+    "relevance": "medium",
+    "key_findings": "",
+    "tools_evaluated": "",
+    "scale": "",
+    "status": "new",
+    "pmid": "43022851"
   }
 ]

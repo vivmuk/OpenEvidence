@@ -4,46 +4,6 @@
 var siteMetrics = {
   "dataThrough": "2026-10-21",
   "latest": {
-    "consultations": {
-      "value": 42000000,
-      "display": "42M",
-      "date": "2026-09-30",
-      "month": "Sep 2026",
-      "source": "https://x.com/NeoAIForecast/status/2102712078985482436",
-      "sourceHost": "x.com"
-    },
-    "single_day": {
-      "value": 1000000,
-      "display": "1M",
-      "date": "2026-03-10",
-      "month": "Mar 2026",
-      "source": "https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html",
-      "sourceHost": "prnewswire.com"
-    },
-    "physicians": {
-      "value": 1120000,
-      "display": "1.12M",
-      "date": "2026-09-01",
-      "month": "Sep 2026",
-      "source": "https://sacra.com/c/openevidence/",
-      "sourceHost": "sacra.com"
-    },
-    "revenue": {
-      "value": 300000000,
-      "display": "$300M",
-      "date": "2026-09-30",
-      "month": "Sep 2026",
-      "source": "https://sacra.com/c/openevidence/",
-      "sourceHost": "sacra.com"
-    },
-    "valuation": {
-      "value": 15000000000,
-      "display": "$15B",
-      "date": "2026-09-30",
-      "month": "Sep 2026",
-      "source": "https://www.forbes.com/sites/saibala/2026/09/30/openevidence-confirms-it-has-raised-an-additional-250-million-at-a-15-billion-valuation/",
-      "sourceHost": "forbes.com"
-    },
     "total_funding": {
       "value": 1000000000,
       "display": "$1B",
@@ -51,14 +11,6 @@ var siteMetrics = {
       "month": "Oct 2026",
       "source": "",
       "sourceHost": ""
-    },
-    "physician_adoption": {
-      "value": 65,
-      "display": "65%",
-      "date": "2026-09-30",
-      "month": "Sep 2026",
-      "source": "https://www.ajmc.com/view/oneoncology-partners-with-openevidence-to-give-physicians-access-within-clinical-workflows",
-      "sourceHost": "ajmc.com"
     },
     "clinicians_weekly": {
       "value": 690000,
@@ -99,6 +51,54 @@ var siteMetrics = {
       "month": "Oct 2026",
       "source": "",
       "sourceHost": ""
+    },
+    "valuation": {
+      "value": 15000000000,
+      "display": "$15B",
+      "date": "2026-09-30",
+      "month": "Sep 2026",
+      "source": "https://www.forbes.com/sites/saibala/2026/09/30/openevidence-confirms-it-has-raised-an-additional-250-million-at-a-15-billion-valuation/",
+      "sourceHost": "forbes.com"
+    },
+    "revenue": {
+      "value": 300000000,
+      "display": "$300M",
+      "date": "2026-09-30",
+      "month": "Sep 2026",
+      "source": "https://sacra.com/c/openevidence/",
+      "sourceHost": "sacra.com"
+    },
+    "consultations": {
+      "value": 42000000,
+      "display": "42M",
+      "date": "2026-09-30",
+      "month": "Sep 2026",
+      "source": "https://x.com/NeoAIForecast/status/2102712078985482436",
+      "sourceHost": "x.com"
+    },
+    "physician_adoption": {
+      "value": 65,
+      "display": "65%",
+      "date": "2026-09-30",
+      "month": "Sep 2026",
+      "source": "https://www.ajmc.com/view/oneoncology-partners-with-openevidence-to-give-physicians-access-within-clinical-workflows",
+      "sourceHost": "ajmc.com"
+    },
+    "physicians": {
+      "value": 1120000,
+      "display": "1.12M",
+      "date": "2026-09-01",
+      "month": "Sep 2026",
+      "source": "https://sacra.com/c/openevidence/",
+      "sourceHost": "sacra.com"
+    },
+    "single_day": {
+      "value": 1000000,
+      "display": "1M",
+      "date": "2026-03-10",
+      "month": "Mar 2026",
+      "source": "https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html",
+      "sourceHost": "prnewswire.com"
     }
   },
   "series": {
@@ -161,6 +161,7 @@ var siteMetrics = {
         "Oct 2025",
         "Jan 2026",
         "Sep 2026",
+        "Sep 2026",
         "Sep 2026"
       ],
       "values": [
@@ -168,6 +169,7 @@ var siteMetrics = {
         3.5,
         6,
         12,
+        15,
         15,
         15
       ]
@@ -181,6 +183,7 @@ var siteMetrics = {
         "May 2026",
         "Jul 2026",
         "Jul 2026",
+        "Jul 2026",
         "Sep 2026"
       ],
       "values": [
@@ -189,6 +192,7 @@ var siteMetrics = {
         150,
         100,
         150,
+        300,
         300,
         300,
         300
@@ -214,12 +218,12 @@ var siteMetrics = {
     }
   },
   "counts": {
-    "partners": 57,
-    "competitors": 39,
-    "research": 679,
-    "benchmarks": 296,
-    "publications": 141,
-    "timeline": 189,
+    "partners": 60,
+    "competitors": 42,
+    "research": 687,
+    "benchmarks": 325,
+    "publications": 143,
+    "timeline": 204,
     "sources": 67
   }
 };

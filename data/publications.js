@@ -143,4 +143,6 @@ var publicationsData = [
   {date:"Oct 08, 2026",title:"Medical Literature-Specific Artificial Intelligence: Analyzing the performance of OpenEvidence, Heidi Evidence, Consensus, and PubMed.ai in the context of Lacrimal Drainage Disorders.",journal:"Ophthalmic Plast Reconstr Surg",authors:"",pmid:"42844685",url:"https://pubmed.ncbi.nlm.nih.gov/42844685/",doi:"",findings:"Analysis of medical literature-specific AI (OpenEvidence, Heidi Evidence, Consensus, PubMed.ai) in lacrimal drainage disorders. Returned by PubMed OpenEvidence search.",new:true},
   {date:"Oct 06, 2026",title:"AI in Medical Writing: Why JACC Does Not Require Disclosure.",journal:"J Am Coll Cardiol",authors:"",pmid:"42841557",url:"https://pubmed.ncbi.nlm.nih.gov/42841557/",doi:"",findings:"JACC article on AI in medical writing and disclosure requirements. Returned by PubMed OpenEvidence search.",new:true},
 
+{"t":"Paper","l":"Benchmarking general and medical LLM performance in Parkinson's disease management","s":"PubMed · Clinical Parkinsonism & Related Disorders","h":"https://pubmed.ncbi.nlm.nih.gov/43023049/","x":1},
+{"t":"Paper","l":"Comparative Analysis of Six Large Language Models' Generative Ability for Scientific Technical Writing in Ophthalmologic Subspecialties","s":"PubMed · Cureus","h":"https://pubmed.ncbi.nlm.nih.gov/43022851/","x":1},
 ];

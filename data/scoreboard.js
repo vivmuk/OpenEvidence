@@ -2,10 +2,10 @@
 // Head-to-head standing derived from evaluation studies.
 var scoreboardData = {
  "generated": "2026-11-15",
- "total": 47,
+ "total": 49,
  "tally": {
   "oe": 5,
-  "mixed": 37,
+  "mixed": 39,
   "competitor": 5
  },
  "rows": [
@@ -473,6 +473,16 @@ var scoreboardData = {
    "finding": "First systematic review of OpenEvidence. 11 studies included. OpenEvidence generated clinically relevant, evidence-supported responses with lower fabricated citation rates than general-purpose LLMs."
   },
   {
+   "title": "Comparative Analysis of Six Large Language Models' Generative Ability for Scientific Technical Writing in Ophthalmologic Subspecialties.",
+   "journal": "Cureus",
+   "published": "2026",
+   "tools": "",
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43022851/",
+   "finding": "Purpose As the adoption of large language models (LLMs) accelerates in healthcare, the evaluation of their accuracy must accelerate in tandem. This study compares six LLMs' ability to generate accurate, thorough, and high-quality scientific technical writing i"
+  },
+  {
    "title": "OpenEvidence clinical question-answering platform: systematic review of early evaluations.",
    "journal": "npj Digital Medicine",
    "published": "2026",
@@ -483,6 +493,16 @@ var scoreboardData = {
    "confidence": "confirmed",
    "url": "https://www.nature.com/articles/s41746-026-03077-4",
    "finding": "Eleven studies included. OpenEvidence generated clinically relevant, evidence-supported responses with lower fabricated citation rates than general-purpose LLMs. First systematic review of OpenEvidence evaluations."
+  },
+  {
+   "title": "Comparative Analysis of Six Large Language Models' Generative Ability for Scientific Technical Writing in Ophthalmologic Subspecialties.",
+   "journal": "Cureus",
+   "published": "2026",
+   "tools": "",
+   "position": "mixed",
+   "confidence": "reported",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/43022851/",
+   "finding": "Purpose As the adoption of large language models (LLMs) accelerates in healthcare, the evaluation of their accuracy must accelerate in tandem. This study compares six LLMs' ability to generate accurate, thorough, and high-quality scientific technical writing i"
   },
   {
    "title": "OpenEvidence Accuracy and Repeatability on MedXpertQA Subspecialty Scenarios",
@@ -503,29 +523,6 @@ var scoreboardData = {
    "confidence": "reported",
    "url": "https://www.medrxiv.org/content/10.1101/2025.11.29.25341091v1",
    "finding": "Deep Consult max accuracy: 41% on MedXpertQA subspecialty scenarios"
-  },
-  {
-   "title": "NOHARM: Medical Safety Benchmark and Randomized Study of Physician-AI Teaming",
-   "journal": "arXiv preprint (v4)",
-   "published": "2025-12-01",
-   "tools": "20 LLMs + 4 RAG clinical AI tools (incl. OpenEvidence)",
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://arxiv.org/abs/2512.01241",
-   "finding": "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)"
-  },
-  {
-   "title": "NOHARM (Numerous Options Harm Assessment for Risk in Medicine): A medical safety benchmark and randomized study of physician and AI teaming on clinical consultations",
-   "journal": "arXiv preprint (cs.CY, cs.AI)",
-   "published": "2025-12-01",
-   "tools": [
-    "20 LLMs",
-    "4 RAG clinical AI tools (including OpenEvidence)"
-   ],
-   "position": "mixed",
-   "confidence": "reported",
-   "url": "https://arxiv.org/abs/2512.01241",
-   "finding": "Stanford-Harvard ARISE free-choice arm revealed preference: physicians chose OpenEvidence in 22.3% of cases — more than ChatGPT, Claude, Gemini, and all other external AI combined (19.8%)"
   }
  ]
 };

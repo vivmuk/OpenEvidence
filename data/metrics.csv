@@ -1,65 +1,73 @@
 Date,Metric,Value,Unit,Source_URL
-2024-07-01,Monthly Consultations,358000,consultations/month,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
-2025-01-01,Monthly Consultations,3000000,consultations/month,https://sacra.com/c/openevidence/
-2025-07-01,Monthly Consultations,8500000,consultations/month,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
-2025-12-01,Monthly Consultations,18000000,consultations/month,https://sacra.com/c/openevidence/
-2026-01-21,Monthly Consultations,20000000,consultations/month,https://sacra.com/c/openevidence/
-2026-03-10,Single-Day Record,1000000,consultations/day,https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html
-2026-04-01,Monthly Consultations,27000000,consultations/month,https://sacra.com/c/openevidence/
-2024-07-01,Registered Physicians,358000,physicians,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
-2025-07-01,Registered Physicians,430000,physicians,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
-2025-12-01,Registered Physicians,760000,physicians,https://en.wikipedia.org/wiki/OpenEvidence
-2026-01-21,Registered Physicians,760000,physicians,https://sacra.com/c/openevidence/
-2024-12-01,Annualized Revenue,7900000,USD,https://sacra.com/c/openevidence/
-2025-06-01,Annualized Revenue,50000000,USD,https://sacra.com/c/openevidence/
-2025-11-01,Annualized Revenue,150000000,USD,https://sacra.com/c/openevidence/
-2025-02-19,Valuation,1000000000,USD,https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html
-2025-07-15,Valuation,3500000000,USD,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
-2025-10-20,Valuation,6000000000,USD,https://www.forbes.com/sites/amyfeldman/2025/10/20/openevidences-daniel-nadler-13-billion-richer-in-just-three-months-after-the-ai-startup-hits-6-billion-valuation/
-2026-01-21,Valuation,12000000000,USD,https://sacra.com/c/openevidence/
-2025-07-01,Total Funding,285000000,USD,https://sacra.com/c/openevidence/
-2025-10-20,Total Funding,485000000,USD,https://sacra.com/c/openevidence/
-2026-01-21,Total Funding,700000000,USD,https://sacra.com/c/openevidence/
+2026-10-21,Monthly Prompts,42000000,prompts,FT feature (Oct 21 2026) - 42 million prompts in prior month
+2026-10-21,US Physician Adoption,65,percent,FT feature (Oct 21 2026) - nearly two-thirds of US doctors
+2026-10-21,Projected 2026 Ad Revenue Low,400000000,USD,Ars Technica (Oct 21 2026) - on track for $400-500M ad revenue
+2026-10-21,Projected 2026 Ad Revenue High,500000000,USD,Ars Technica (Oct 21 2026) - on track for $400-500M ad revenue
+2026-10-21,Total Funding,1000000000,USD,Ars Technica (Oct 21 2026) - nearly $1B raised in 18 months
+2026-10-19,Clinical Queries,271M,271 million AI-enabled clinical queries from ~1M US clinicians,LinkedIn / Study,https://www.linkedin.com/posts/bertalanmesko_openevidence-as-a-physician-facing-llm-activity-7517859641268236289-Rl_b
+2026-10-19,Clinician Users,~1M,Nearly a million US clinicians using OpenEvidence,LinkedIn / Study,https://www.linkedin.com/posts/bertalanmesko_openevidence-as-a-physician-facing-llm-activity-7517859641268236289-Rl_b
+2026-10-14,Weekly Active Clinicians,690000,clinicians,OpenEvidence pharma platform panel (Oct 2026)
+2026-10-14,Monthly Active Clinicians,866000,clinicians,OpenEvidence pharma platform panel (Oct 2026)
+2026-10-14,Queries Last 24h,1900000,queries,OpenEvidence pharma platform panel (Oct 2026)
+2026-10-14,Queries Last 7 Days,12000000,queries,OpenEvidence pharma platform panel (Oct 2026)
+2026-10-14,Queries Last 30 Days,46500000,queries,OpenEvidence pharma platform panel (Oct 2026)
+2026-09-30,Valuation,15B,USD,Forbes confirmed; a16z and Byers Capital led,https://www.forbes.com/sites/saibala/2026/09/30/openevidence-confirms-it-has-raised-an-additional-250-million-at-a-15-billion-valuation/
+2026-09-30,Total Funding,1B+,USD,Cumulative over past year from Thrive DST GV Kleiner Perkins Sequoia Nvidia a16z,https://www.businessinsider.com/chatgpt-for-medicine-openevidence-fielding-valuation-2026-9
+2026-09-30,ARR,300M,USD,Sacra estimate July 2026; up from 150M end of 2025,https://sacra.com/c/openevidence/
+2026-09-30,Consultations Monthly,42M,count,US clinicians logged 42M consultations in August 2026,https://x.com/NeoAIForecast/status/2102712078985482436
+2026-09-30,Physician Adoption,65%,percent,Nearly two-thirds of US physicians (~650K) use the platform,https://www.ajmc.com/view/oneoncology-partners-with-openevidence-to-give-physicians-access-within-clinical-workflows
+2026-09-25,Valuation,15000000000,USD,https://refreshmiami.com/news/openevidence-hits-15b-valuation-as-its-ambitions-move-far-beyond-medical-search/
+2026-09-25,Total Funding,1020000000,USD,https://sacra.com/c/openevidence/
+2026-09-16,Monthly Consultations,41000000,consultations/month,https://www.forbes.com/sites/innovationrx/2026/09/16/a-premier-cancer-hospital-makes-its-data-available-to-doctors-nationwide-through-openevidence/
+2026-09-12,Valuation,$15B,Post-money valuation after Series E,CB Insights,https://www.cbinsights.com/company/openevidence/financials
+2026-09-12,Funding Total,$1.017B,Total raised across 12 rounds,CB Insights,https://www.cbinsights.com/company/openevidence/financials
+2026-09-12,Funding Round,$250M,Series E led by a16z and Byers Capital,Beckers Hospital Review,https://www.beckershospitalreview.com/healthcare-information-technology/ai/openevidence-raises-250m-at-15b-valuation/
+2026-09-01,Registered Physicians,1120000,physicians,https://sacra.com/c/openevidence/
+2026-08-01,Monthly Consultations,42000000,consultations/month,https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/
+2026-07-23,Annualized Revenue,$300M,"Sacra estimate July 2026, up from $150M end of 2025",Sacra,https://sacra.com/c/openevidence/
+2026-07-23,Growth Rate,1803.3%,Year-over-year revenue growth 2024-2025,Sacra,https://sacra.com/c/openevidence/
+2026-07-23,Gross Margin,90%,Reported gross margins,Sacra / The Information,https://sacra.com/c/openevidence/
+2026-07-17,Annualized Revenue,300000000,USD,https://www.beckershospitalreview.com/healthcare-information-technology/ai/openevidence-weighs-200m-funding-round-at-20b-valuation-report/
+2026-07-17,Reported Valuation (Considered),20000000000,USD,https://www.beckershospitalreview.com/healthcare-information-technology/ai/openevidence-weighs-200m-funding-round-at-20b-valuation-report/
+2026-07-13,Health System Deployments,4,health systems,https://www.healthcareitnews.com/news/mount-sinai-integrate-openevidence-ai-enterprise-wide
+2026-07-01,Annualized Revenue,300000000,USD,https://sacra.com/c/openevidence/
+2026-07-01,Monthly Consultations,35000000,consultations/month,https://sacra.com/c/openevidence/
+2026-06-25,Verified U.S. Clinicians,860000,physicians,https://www.openevidence.com
+2026-06-23,Registered Physicians,860000,physicians,https://www.openevidence.com
+2026-06-23,Physicians with EchoNext access,500000,physicians,https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence
 2026-06-12,Benchmark,89.6,MedQA accuracy percent,Nature Medicine study,Nature Medicine
 2026-06-12,Benchmark,3.24,Real Clinical Queries mean score,Nature Medicine study,Nature Medicine
 2026-06-12,Benchmark,52,Low-scoring responses flagged,Nature Medicine study error taxonomy,Nature Medicine
-2026-01-21,Annualized Revenue,100000000,USD,https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html
-2026-05-13,Registered Physicians,650000,physicians,https://www.nbcnews.com
-2026-05-13,Monthly Consultations,27000000,consultations/month,https://www.nbcnews.com
-2026-06-23,Registered Physicians,860000,physicians,https://www.openevidence.com
-2026-06-25,Verified U.S. Clinicians,860000,physicians,https://www.openevidence.com
-2026-06-23,Physicians with EchoNext access,500000,physicians,https://www.businesswire.com/news/home/20260623150207/en/Pathway-Labs-Announces-Worlds-First-FDA-Clearance-for-Multicondition-AI-in-Cardiology-and-Partnership-with-OpenEvidence
 2026-05-21,Clinicians with Voice Mode access,860000,clinicians,https://www.openevidence.com
 2026-05-21,Total AI-powered clinical consultations,200000000,cumulative consultations,https://www.openevidence.com
 2026-05-21,Monthly Consultations,20000000,consultations/month,https://sacra.com/c/openevidence/
 2026-05-21,Registered Clinicians,860000,clinicians,https://www.pymnts.com/healthcare/2026/openevidence-brings-hands-free-medical-ai-to-860000-clinicians/
 2026-05-21,Annualized Revenue,150000000,USD,https://sacra.com/c/openevidence/
 2026-05-21,Gross Margin,90,percent,https://sacra.com/c/openevidence/
-2026-07-13,Health System Deployments,4,health systems,https://www.healthcareitnews.com/news/mount-sinai-integrate-openevidence-ai-enterprise-wide
-2026-07-17,Annualized Revenue,300000000,USD,https://www.beckershospitalreview.com/healthcare-information-technology/ai/openevidence-weighs-200m-funding-round-at-20b-valuation-report/
-2026-07-17,Reported Valuation (Considered),20000000000,USD,https://www.beckershospitalreview.com/healthcare-information-technology/ai/openevidence-weighs-200m-funding-round-at-20b-valuation-report/
 2026-05-21,Registered Clinicians (NYT/NBC),650000,physicians,https://www.nbcbayarea.com/news/business/tech/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion/3849028/
-2026-04-01,Monthly Consultations,27000000,consultations/month,https://www.nbcbayarea.com/news/business/tech/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion/3849028/
 2026-05-21,Registered Physicians,860000,physicians,https://www.pymnts.com/healthcare/2026/openevidence-brings-hands-free-medical-ai-to-860000-clinicians/
-2026-07-01,Annualized Revenue,300000000,USD,https://sacra.com/c/openevidence/
-2026-07-01,Monthly Consultations,35000000,consultations/month,https://sacra.com/c/openevidence/
-2026-09-01,Registered Physicians,1120000,physicians,https://sacra.com/c/openevidence/
-2026-08-01,Monthly Consultations,42000000,consultations/month,https://www.reuters.com/legal/litigation/anthropic-openevidence-partner-bring-medical-ai-worldwide-2026-09-22/
-2026-09-16,Monthly Consultations,41000000,consultations/month,https://www.forbes.com/sites/innovationrx/2026/09/16/a-premier-cancer-hospital-makes-its-data-available-to-doctors-nationwide-through-openevidence/
-2026-09-25,Valuation,15000000000,USD,https://refreshmiami.com/news/openevidence-hits-15b-valuation-as-its-ambitions-move-far-beyond-medical-search/
-2026-09-25,Total Funding,1020000000,USD,https://sacra.com/c/openevidence/
-2026-09-30,Valuation,15B,USD,Forbes confirmed; a16z and Byers Capital led,https://www.forbes.com/sites/saibala/2026/09/30/openevidence-confirms-it-has-raised-an-additional-250-million-at-a-15-billion-valuation/
-2026-09-30,Total Funding,1B+,USD,Cumulative over past year from Thrive DST GV Kleiner Perkins Sequoia Nvidia a16z,https://www.businessinsider.com/chatgpt-for-medicine-openevidence-fielding-valuation-2026-9
-2026-09-30,ARR,300M,USD,Sacra estimate July 2026; up from 150M end of 2025,https://sacra.com/c/openevidence/
-2026-09-30,Consultations Monthly,42M,count,US clinicians logged 42M consultations in August 2026,https://x.com/NeoAIForecast/status/2102712078985482436
-2026-09-30,Physician Adoption,65%,percent,Nearly two-thirds of US physicians (~650K) use the platform,https://www.ajmc.com/view/oneoncology-partners-with-openevidence-to-give-physicians-access-within-clinical-workflows
-2026-10-14,Weekly Active Clinicians,690000,clinicians,OpenEvidence pharma platform panel (Oct 2026)
-2026-10-14,Monthly Active Clinicians,866000,clinicians,OpenEvidence pharma platform panel (Oct 2026)
-2026-10-14,Queries Last 24h,1900000,queries,OpenEvidence pharma platform panel (Oct 2026)
-2026-10-14,Queries Last 7 Days,12000000,queries,OpenEvidence pharma platform panel (Oct 2026)
-2026-10-14,Queries Last 30 Days,46500000,queries,OpenEvidence pharma platform panel (Oct 2026)
-2026-10-21,Monthly Prompts,42000000,prompts,FT feature (Oct 21 2026) - 42 million prompts in prior month
-2026-10-21,US Physician Adoption,65,percent,FT feature (Oct 21 2026) - nearly two-thirds of US doctors
-2026-10-21,Projected 2026 Ad Revenue Low,400000000,USD,Ars Technica (Oct 21 2026) - on track for $400-500M ad revenue
-2026-10-21,Projected 2026 Ad Revenue High,500000000,USD,Ars Technica (Oct 21 2026) - on track for $400-500M ad revenue
-2026-10-21,Total Funding,1000000000,USD,Ars Technica (Oct 21 2026) - nearly $1B raised in 18 months
+2026-05-13,Registered Physicians,650000,physicians,https://www.nbcnews.com
+2026-05-13,Monthly Consultations,27000000,consultations/month,https://www.nbcnews.com
+2026-04-01,Monthly Consultations,27000000,consultations/month,https://sacra.com/c/openevidence/
+2026-04-01,Monthly Consultations,27000000,consultations/month,https://www.nbcbayarea.com/news/business/tech/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion/3849028/
+2026-03-10,Single-Day Record,1000000,consultations/day,https://www.prnewswire.com/news-releases/openevidence-launches-coding-intelligence-to-help-physicians-capture-every-dollar-theyve-earned-302726278.html
+2026-01-21,Monthly Consultations,20000000,consultations/month,https://sacra.com/c/openevidence/
+2026-01-21,Registered Physicians,760000,physicians,https://sacra.com/c/openevidence/
+2026-01-21,Valuation,12000000000,USD,https://sacra.com/c/openevidence/
+2026-01-21,Total Funding,700000000,USD,https://sacra.com/c/openevidence/
+2026-01-21,Annualized Revenue,100000000,USD,https://www.cnbc.com/2026/01/21/openevidence-chatgpt-for-doctors-doubles-valuation-to-12-billion.html
+2025-12-01,Monthly Consultations,18000000,consultations/month,https://sacra.com/c/openevidence/
+2025-12-01,Registered Physicians,760000,physicians,https://en.wikipedia.org/wiki/OpenEvidence
+2025-11-01,Annualized Revenue,150000000,USD,https://sacra.com/c/openevidence/
+2025-10-20,Valuation,6000000000,USD,https://www.forbes.com/sites/amyfeldman/2025/10/20/openevidences-daniel-nadler-13-billion-richer-in-just-three-months-after-the-ai-startup-hits-6-billion-valuation/
+2025-10-20,Total Funding,485000000,USD,https://sacra.com/c/openevidence/
+2025-07-15,Valuation,3500000000,USD,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
+2025-07-01,Monthly Consultations,8500000,consultations/month,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
+2025-07-01,Registered Physicians,430000,physicians,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
+2025-07-01,Total Funding,285000000,USD,https://sacra.com/c/openevidence/
+2025-06-01,Annualized Revenue,50000000,USD,https://sacra.com/c/openevidence/
+2025-02-19,Valuation,1000000000,USD,https://www.cnbc.com/2025/02/19/ai-startup-openevidence-secures-sequoia-funding-1-billion-valuation.html
+2025-01-01,Monthly Consultations,3000000,consultations/month,https://sacra.com/c/openevidence/
+2024-12-01,Annualized Revenue,7900000,USD,https://sacra.com/c/openevidence/
+2024-07-01,Monthly Consultations,358000,consultations/month,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
+2024-07-01,Registered Physicians,358000,physicians,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
