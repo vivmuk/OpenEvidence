@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-16",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,15 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-16",
+      "cat": "Product",
+      "title": "Lumeris Launches Tom Health, an AI-Powered Primary Care Team Member for Provider Organizations",
+      "desc": "Lumeris launched Tom Health, a new company focused on addressing the primary care crisis in the United States. Tom, the company's AI-powered primary care team member, enables provider organizations to deliver more continuous, coordinated care to their patients. The launch addresses demand for primary care that is four times greater than the available supply of primary care physicians, with demand growing by 20% annually. Represents the provider-organization model for consumer health AI: the agent operates within existing care relationships rather than as a standalone consumer product. Vendor claim: AI-powered primary care support, not a replacement for medical care.",
+      "src": "PR Newswire / Lumeris",
+      "url": "https://www.prnewswire.com/news-releases/tom-health-takes-on-the-us-primary-care-crisis-with-always-on-always-accessible-care-302939837.html",
+      "new": true
+    },
     {
       "date": "2026-11-12",
       "cat": "Product",
@@ -258,8 +267,7 @@
       "title": "HealthPulse: AI Health Coach Enters TestFlight Beta with Apple Health Integration",
       "desc": "A third-party app called HealthPulse entered TestFlight beta, offering daily Sleep, Recovery and Exertion scores, trends, sleep and workout insights by exploring Apple Health data. The beta includes optional meal logging, lab report summaries, cycle insights, and Velo AI briefings and questions. Demonstrates the emerging third-party Apple Health AI coach ecosystem enabled by Apple's Health data APIs. Vendor claim: wellness insights, not a medical device.",
       "src": "Apple TestFlight",
-      "url": "https://testflight.apple.com/join/W6DWpe9D",
-      "new": true
+      "url": "https://testflight.apple.com/join/W6DWpe9D"
     },
     {
       "date": "2026-10-29",
@@ -2562,6 +2570,10 @@
     {
       "name": "Life News Agency / Genie Health - Personal Health Intelligence Platform launch (Aug 5, 2026)",
       "url": "https://lifenewsagency.com/singapore-startup-genie-health-launches-personal-health-intelligence-platform-for-consumers-and-healthcare-providers/"
+    },
+    {
+      "name": "PR Newswire / Lumeris - Tom Health AI primary care launch (Nov 16, 2026)",
+      "url": "https://www.prnewswire.com/news-releases/tom-health-takes-on-the-us-primary-care-crisis-with-always-on-always-accessible-care-302939837.html"
     }
   ],
   "freeTierDefaults": [

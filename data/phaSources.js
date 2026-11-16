@@ -127,5 +127,5 @@ var phaSourcesData = [
   {name:"Enhanced Group - Enhanced OS launch combining diagnostics, records and wearables (Nov 12, 2026)", url:"https://investors.enhanced.com/enhanced-group-brings-athlete-tested-personalized-protocol-making-to-consumers-with-launch-of-enhanced-os-expanding-its-offering-beyond-individual-products/"},
   {name:"Gadgets 360 - iOS 27.3 beta leak: Siri Health app access (Nov 11, 2026)", url:"https://www.gadgets360.com/mobiles/news/apple-ios-27-3-beta-siri-ai-features-apple-health-leak-12312495"},
   {name:"Life News Agency / Genie Health - Personal Health Intelligence Platform launch (Aug 5, 2026)", url:"https://lifenewsagency.com/singapore-startup-genie-health-launches-personal-health-intelligence-platform-for-consumers-and-healthcare-providers/"},
-
+  {name:"PR Newswire / Lumeris - Tom Health AI primary care launch (Nov 16, 2026)", url:"https://www.prnewswire.com/news-releases/tom-health-takes-on-the-us-primary-care-crisis-with-always-on-always-accessible-care-302939837.html"},
 ];
