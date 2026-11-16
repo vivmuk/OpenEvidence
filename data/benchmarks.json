@@ -7569,5 +7569,41 @@
     "scale": "",
     "status": "new",
     "pmid": "43022851"
+  },
+  {
+    "id": "pmid:43036754",
+    "source": "PubMed",
+    "type": "benchmark",
+    "title": "Promise or Precaution: OpenEvidence Performance in Clinical Decision Making in the Global Context",
+    "authors": "Benjamin J, Masters K, Kunga B, Liang JF, Agrawal A, Margolis A, Kumar S, AlZaabi A, MacNeill H, Rajan SJ, Valanci S",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43036754/",
+    "published": "2026-10-16",
+    "updated": "2026-10-16",
+    "journal": "Cureus",
+    "tools_evaluated": "OpenEvidence",
+    "scale": "11 clinicians, 6 countries, 80 evaluations, 10 clinical conditions",
+    "key_findings": "88% accurate, 89% efficient/succinct, 73% comprehensive, 75% argument/evidence, 65% creativity. US-based searches aligned with guidelines (p=0.02) and had more local references (p<0.0001). Lacked Global South references. Geographic query origin did not change results.",
+    "relevance": "Direct evaluation of OpenEvidence in global clinical decision making context",
+    "status": "published",
+    "new": true,
+    "pmid": "43036754"
+  },
+  {
+    "id": "pmid:43035777",
+    "source": "PubMed",
+    "type": "framework",
+    "title": "MDEF-AI: Multi-Level Dynamic Evaluation Framework for AI-CDSS",
+    "authors": "Karraz G, Shahin A",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43035777/",
+    "published": "2026-08-19",
+    "updated": "2026-08-19",
+    "journal": "BMC Med Inform Decis Mak",
+    "tools_evaluated": "AI-CDSS (general framework)",
+    "scale": "52 peer-reviewed publications, 8 thematic domains",
+    "key_findings": "Three-level evaluation: contextual moderators, core dynamic chain (6 interaction mechanisms, 5 safety dimensions), 3 feedback loops. Introduces AI Omission Trust concept. Identifies 6 structural gaps in AI-CDSS evaluation literature.",
+    "relevance": "Evaluation framework for AI-based clinical decision support systems",
+    "status": "published",
+    "new": true,
+    "pmid": "43035777"
   }
 ]
