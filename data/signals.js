@@ -28,6 +28,18 @@ var signalsData = [
   "comparative": true
  },
  {
+  "date": "2026-11-16",
+  "cat": "Partnership",
+  "title": "Apple and OpenEvidence launch health AI study app",
+  "desc": "Apple partners with OpenEvidence to launch a U.S. study app letting users ask health questions answered from clinical literature (NEJM, JAMA, Nature), seeking up to 200,000 participants over 12+ months. Requires iPhone 15+, iOS 26, Apple Intelligence; HealthKit data optional; answers rated and feedb",
+  "src": "AI123",
+  "url": "https://ai123.com/newshub/18263",
+  "score": 91,
+  "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-06-23",
   "cat": "Media",
   "title": "Nature Medicine Study: General-Purpose LLMs Outperform Specialized Clinical AI",
@@ -724,18 +736,6 @@ var signalsData = [
   "desc": "OpenEvidence launches OpenEvidence Games - a new suite of puzzles built for clinicians, live now in Discover on web and in the OpenEvidence app. The lineup starts with two games: MedMini and Synapses, bringing gamified medical knowledge reinforcement to hundreds of thousands of verified clinicians o",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements",
-  "score": 73,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-07-28",
-  "cat": "Product",
-  "title": "OpenEvidence Launches Education Platform - CE & MOC Credits",
-  "desc": "OpenEvidence launches new education platform offering accredited interprofessional continuing education (CE) and Maintenance of Certification (MOC) credits for NPI-verified physicians nurse practitioners and physician associates. Powered by same underlying models as OpenEvidence adapted for personal",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-launches-new-education-platform-offering-continuing-education-ce-and-maintenance-of-certification-moc-credit",
   "score": 73,
   "confidence": "confirmed",
   "competitors": [],
