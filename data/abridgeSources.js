@@ -63,5 +63,7 @@ var abridgeSourcesData = [
   {name:"Abridge - NACHC partnership press release (Nov 13, 2026)",url:"https://www.abridge.com/press-release/abridge-national-association-community-health-centers"},
   {name:"Techflier - Shiv Rao on Lightspeed Podcast: AI scribe as wedge (Nov 13, 2026)",url:"https://techflier.com/2026/11/13/abridges-founder-on-why-the-ai-scribe-was-only-a-wedge/"},
   {name:"LexBlog - Patient consent for AI recording legal analysis (Nov 12, 2026)",url:"https://www.lexblog.com/2026/11/12/ai-in-the-exam-room-patient-consent-is-more-than-a-notice/"},
-  {name:"AI Briefing - Abridge layoffs market analysis (Nov 10, 2026)",url:"https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/"}
+  {name:"AI Briefing - Abridge layoffs market analysis (Nov 10, 2026)",url:"https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/"},
+  {name:"Abridge - Wiley/Cochrane partnership press release (Nov 16, 2026)",url:"https://www.abridge.com/press-release/abridge-wiley-cochrane-partnership"},
+  {name:"BusinessWire - Wiley and Abridge Cochrane partnership (Nov 16, 2026)",url:"https://www.businesswire.com/news/home/20261116095169/en/Wiley-and-Abridge-Partner-to-Bring-the-Evidence-that-Informs-Clinical-Guidelines-Worldwide-into-the-Abridge-Assistant"}
 ];
