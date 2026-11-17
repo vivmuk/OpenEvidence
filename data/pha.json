@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,33 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-16",
+      "cat": "Product",
+      "title": "Siri AI Confirmed to Access Health App Data in iOS 27.3 Beta 2",
+      "desc": "iOS 27.3 beta 2, released November 16, enables Siri AI to access and answer questions about Health app data including sleep, workouts and other health metrics. Users can ask questions like 'How did I sleep last night?' and Siri AI will pull from the Health app to answer. This confirms the capability first leaked in beta 1 on November 11, marking the first time Siri AI can directly reason over a user's health data. Extends Apple Intelligence from the Health app to conversational health queries via Siri. Vendor claim: beta feature, not yet publicly released.",
+      "src": "9to5Mac",
+      "url": "https://9to5mac.com/2026/11/16/siri-ai-health-app-questions-ios-27/",
+      "new": true
+    },
+    {
+      "date": "2026-11-16",
+      "cat": "Product",
+      "title": "Pear Health Labs Launches Pear Health Companion, an Agentic AI Platform for Health Plans",
+      "desc": "Pear Health Labs launched Pear Health Companion, an agentic AI platform providing hyper-personalized, adaptive fitness and wellness coaching for health plan members. The patent-pending technology combines proprietary Training science with AI to help members preserve strength and stay on track amid rising GLP-1 treatment use, while showing data-backed client ROI. Represents the health-plan-channel agentic AI model for consumer health, where the agent serves the payer rather than the direct consumer. Vendor claim: adaptive coaching platform, not a medical device.",
+      "src": "GlobeNewswire / Pear Health Labs",
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3403730/0/en/pear-health-labs-launches-pear-health-companion-an-agentic-ai-platform-for-health-plans-and-providers.html",
+      "new": true
+    },
+    {
+      "date": "2026-11-15",
+      "cat": "Product",
+      "title": "Apple Launches Health AI Usage Study App in Collaboration with OpenEvidence",
+      "desc": "Apple announced the Apple Health AI Usage Study, a virtual research study and associated app designed to evaluate trust, comprehension, and real-world health AI engagement. The study app answers health questions using trusted medical research and is conducted in collaboration with OpenEvidence. Aims to inform the responsible design of health AI experiences by examining what drives user trust, response quality, comprehension, and everyday health actions. Represents Apple's first direct-to-consumer health AI study app, testing whether grounding AI responses in trusted medical research can build user trust before broader deployment. Vendor claim: research study, not a medical device.",
+      "src": "Apple / ABC News",
+      "url": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/",
+      "new": true
+    },
     {
       "date": "2026-11-16",
       "cat": "Product",
@@ -148,8 +175,7 @@
       "title": "Sensor Tower: AI Health Insights Reshape Wearable Market as Apps Drive Engagement",
       "desc": "Market intelligence firm Sensor Tower reported that as smart rings and screenless fitness bands move away from displays, competition is shifting toward companion apps that turn sensor data into health insights. WHOOP and Oura are placing greater emphasis on personalised AI-driven health insights, using apps to move beyond displaying individual readings to identifying patterns and recommending actions. The report frames the competitive shift: hardware differentiation is narrowing, and the app-layer AI coach is becoming the product. Vendor claim: market analysis, not product evaluation.",
       "src": "Business Standard / Sensor Tower",
-      "url": "https://www.business-standard.com/technology/tech-news/ai-health-insights-reshape-wearable-market-as-apps-drive-engagement-report-126110200859_1.html",
-      "new": true
+      "url": "https://www.business-standard.com/technology/tech-news/ai-health-insights-reshape-wearable-market-as-apps-drive-engagement-report-126110200859_1.html"
     },
     {
       "date": "2026-09-18",
@@ -201,8 +227,7 @@
       "title": "DiabAgent: Tsinghua Researchers Propose Agentic Physiological Control for Diabetes",
       "desc": "arXiv preprint from Tsinghua University presenting DiabAgent, an agentic system for physiological control in diabetes management. The work extends medical LLMs from answering questions to taking actions that influence physiology, representing a shift from advisory AI to agentic intervention in personal health. Preprint, not peer-reviewed.",
       "src": "arXiv",
-      "url": "https://arxiv.org/abs/2611.03601",
-      "new": true
+      "url": "https://arxiv.org/abs/2611.03601"
     },
     {
       "date": "2026-11-02",
@@ -210,8 +235,7 @@
       "title": "VCU and Emory Develop HomePal Ambient Sensor System to Detect Loneliness in Older Adults",
       "desc": "Researchers at Virginia Commonwealth University and Emory University developed HomePal, a passive home sensing system that monitors movement, screen time, sleep, phone usage and vocal patterns to detect behavioral signatures of loneliness in older adults. The system uses commercially available sensors and reports results to a caregiving team. Extends ambient home health monitoring from physical safety to mental health and social wellbeing.",
       "src": "VCU College of Engineering",
-      "url": "https://blogs.vcu.edu/engineering/2026/11/02/vcu-developed-home-sensor-system-could-spot-loneliness-in-older-adults/",
-      "new": true
+      "url": "https://blogs.vcu.edu/engineering/2026/11/02/vcu-developed-home-sensor-system-could-spot-loneliness-in-older-adults/"
     },
     {
       "date": "2026-10-26",
@@ -960,10 +984,14 @@
         },
         {
           "l": "Siri Health",
-          "v": "Leaked in iOS 27.3 beta"
+          "v": "Confirmed in iOS 27.3 beta 2"
+        },
+        {
+          "l": "AI Study",
+          "v": "Launched Nov 15, 2026"
         }
       ],
-      "desc": "Apple extended Apple Intelligence into the Health app, positioning the iPhone as the secure central store for health and fitness data with on-device processing and interpretation of long-term metrics. The fuller AI health coach (Project Mulberry) was scaled back, with nutrition tracking and a reduced health agent arriving first. The redesigned Health app with Apple Intelligence returns in iOS 27.3 beta (Nov 3), featuring Insights and Longevity tabs, Health Age, and expanded language support. A leak from the iOS 27.3 beta on Nov 11 reveals disabled feature flags for Siri to access and search Health app data (sleep, workouts, medications), which would extend Apple Intelligence from the Health app to conversational health queries via Siri. Available to users as a free update by end of 2026. Apple's advantage is the install base and the sensor data already on the device.",
+      "desc": "Apple extended Apple Intelligence into the Health app, positioning the iPhone as the secure central store for health and fitness data with on-device processing and interpretation of long-term metrics. The fuller AI health coach (Project Mulberry) was scaled back, with nutrition tracking and a reduced health agent arriving first. The redesigned Health app with Apple Intelligence returns in iOS 27.3 beta (Nov 3), featuring Insights and Longevity tabs, Health Age, and expanded language support. Siri AI was confirmed to access and answer questions about Health app data in iOS 27.3 beta 2 on Nov 16, following a leak from beta 1 on Nov 11. Apple also launched the Apple Health AI Usage Study on Nov 15, a research study app answering health questions from trusted medical research, conducted in collaboration with OpenEvidence. Available to users as a free update by end of 2026. Apple's advantage is the install base and the sensor data already on the device.",
       "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/"
     },
     {
@@ -2574,6 +2602,18 @@
     {
       "name": "PR Newswire / Lumeris - Tom Health AI primary care launch (Nov 16, 2026)",
       "url": "https://www.prnewswire.com/news-releases/tom-health-takes-on-the-us-primary-care-crisis-with-always-on-always-accessible-care-302939837.html"
+    },
+    {
+      "name": "9to5Mac - Siri AI confirmed to access Health app data in iOS 27.3 beta 2 (Nov 16, 2026)",
+      "url": "https://9to5mac.com/2026/11/16/siri-ai-health-app-questions-ios-27/"
+    },
+    {
+      "name": "GlobeNewswire / Pear Health Labs - Pear Health Companion launch (Nov 16, 2026)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3403730/0/en/pear-health-labs-launches-pear-health-companion-an-agentic-ai-platform-for-health-plans-and-providers.html"
+    },
+    {
+      "name": "Apple - Apple Health AI Usage Study launch (Nov 15, 2026)",
+      "url": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/"
     }
   ],
   "freeTierDefaults": [
