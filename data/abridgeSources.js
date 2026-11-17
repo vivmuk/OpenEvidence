@@ -65,5 +65,7 @@ var abridgeSourcesData = [
   {name:"LexBlog - Patient consent for AI recording legal analysis (Nov 12, 2026)",url:"https://www.lexblog.com/2026/11/12/ai-in-the-exam-room-patient-consent-is-more-than-a-notice/"},
   {name:"AI Briefing - Abridge layoffs market analysis (Nov 10, 2026)",url:"https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/"},
   {name:"Abridge - Wiley/Cochrane partnership press release (Nov 16, 2026)",url:"https://www.abridge.com/press-release/abridge-wiley-cochrane-partnership"},
-  {name:"BusinessWire - Wiley and Abridge Cochrane partnership (Nov 16, 2026)",url:"https://www.businesswire.com/news/home/20261116095169/en/Wiley-and-Abridge-Partner-to-Bring-the-Evidence-that-Informs-Clinical-Guidelines-Worldwide-into-the-Abridge-Assistant"}
+  {name:"BusinessWire - Wiley and Abridge Cochrane partnership (Nov 16, 2026)",url:"https://www.businesswire.com/news/home/20261116095169/en/Wiley-and-Abridge-Partner-to-Bring-the-Evidence-that-Informs-Clinical-Guidelines-Worldwide-into-the-Abridge-Assistant"},
+  {name:"Modern Healthcare - Shiv Rao on moving beyond AI scribing (Nov 17, 2026)",url:"https://www.modernhealthcare.com/health-tech/mh-abridge-shiv-rao-ai-scribing/"},
+  {name:"Abridge - Healthcare Is Presence: Learning Health System blog post (Nov 16, 2026)",url:"https://www.abridge.com/blog/learning-health-system"}
 ];

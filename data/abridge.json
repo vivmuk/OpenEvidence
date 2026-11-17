@@ -79,7 +79,7 @@
       "name": "Abridge Assistant",
       "status": "live",
       "date": "Oct 13, 2026",
-      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO, Cochrane), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. October 2026 release added Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic's Heard in Visit Recording module as discussed), patient visit summary editing via Assistant (reading level, plain language, tone, length), chart-informed inpatient H&P and progress notes citing chart sources inline, outpatient CDI queries and cues via the Query Engine, inpatient diagnosis write-back at note signature, and an Evaluation Dashboard for governance teams. November 2026 added Visit Dx enhancements (diagnosis organization under problem headers, search-and-replace, specificity modifiers) and Local Pathways (institution-specific care guidance surfaced alongside published evidence, with links to source documents). Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries. UC Irvine Health and Dayton Children's Hospital cited as Local Pathways design partners.",
+      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO, Cochrane), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. October 2026 release added Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic's Heard in Visit Recording module as discussed), patient visit summary editing via Assistant (reading level, plain language, tone, length), chart-informed inpatient H&P and progress notes citing chart sources inline, outpatient CDI queries and cues via the Query Engine, inpatient diagnosis write-back at note signature, and an Evaluation Dashboard for governance teams. November 2026 added Visit Dx enhancements (diagnosis organization under problem headers, search-and-replace, specificity modifiers) and Local Pathways (institution-specific care guidance surfaced alongside published evidence, with links to source documents). Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries. UC Irvine Health and Dayton Children's Hospital cited as Local Pathways design partners. At Abridge's annual customer event The Conversation in San Diego, Rao demoed an agentic AI assistant that coordinates work across fragmented systems — entering registry data, calling pharmacies, navigating payer portals for prior auths, and scheduling follow-ups — live in early environments with select partners.",
       "url": "https://www.abridge.com/platform/assistant"
     },
     {
@@ -644,6 +644,24 @@
   ],
   "timeline": [
     {
+      "date": "2026-11-17",
+      "cat": "Company",
+      "title": "Modern Healthcare: Shiv Rao on Why Abridge Is Moving Beyond AI Scribing",
+      "desc": "Modern Healthcare profiles CEO Shiv Rao on Abridge's strategic shift from ambient documentation toward a full clinical AI platform. Despite leading one of the most well-funded AI clinical documentation companies, Rao sees room for further growth and outlines the company's push into clinical decision support, revenue cycle, and agentic workflows that coordinate work across fragmented systems.",
+      "src": "Modern Healthcare",
+      "url": "https://www.modernhealthcare.com/health-tech/mh-abridge-shiv-rao-ai-scribing/",
+      "new": true
+    },
+    {
+      "date": "2026-11-16",
+      "cat": "Product",
+      "title": "Shiv Rao Unveils Agentic AI Assistant Vision at The Conversation Customer Event",
+      "desc": "In a blog post titled Healthcare Is Presence, Shiv Rao revealed Abridge is building an enterprise-grade AI assistant that coordinates work across fragmented systems — entering registry data, calling pharmacies, navigating payer portals for prior auths, and scheduling follow-ups. The assistant tracks task completion, recognizes when work is unfinished, and brings clinicians back in when judgment is needed. Rao demoed the experience at Abridge's annual customer event in San Diego; it is live in early environments with select partners. The vision extends Abridge from documentation and CDS into autonomous clinical workflow coordination.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/blog/learning-health-system",
+      "new": true
+    },
+    {
       "date": "2026-11-16",
       "cat": "Partnership",
       "title": "Wiley and Abridge Partner to Bring Cochrane Evidence into the Abridge Assistant",
@@ -713,24 +731,6 @@
       "desc": "Abridge and the National Association of Community Health Centers (NACHC) announced the Abridge Assistant will be available at no cost to 108,000 clinicians at all NACHC member community health centers, serving approximately 52 million patients - nearly one in seven Americans and one in three rural residents. Clinicians can use the Assistant for clinical decision support with cited evidence regardless of whether they use Abridge's documentation product. CEO Shiv Rao framed it as expanding access and equity through AI. NACHC's Sean Roddy cited the partnership's potential to put practical AI tools within reach of more community health center clinicians.",
       "src": "Abridge",
       "url": "https://www.abridge.com/press-release/abridge-national-association-community-health-centers",
-      "new": true
-    },
-    {
-      "date": "2026-11-12",
-      "cat": "Product",
-      "title": "Abridge Assistant Adds Local Pathways: Health System Care Guidance at the Point of Care",
-      "desc": "Abridge announced support for local pathways within the Abridge Assistant, surfacing a health system's own preferred care plans alongside published medical literature. When an applicable institutional pathway is found, the Assistant shows the relevant content with a link to the original source for clinician review. Dr. Shiv Rao framed the goal as turning standards of care into more consistent care at the moment of decision. Dr. Deepti Pandita (UC Irvine Health) and Dr. Abiodun Omoloja (Dayton Children's) endorsed the workflow-integrated approach. The capability runs on existing Abridge enterprise infrastructure that has already passed each institution's security review.",
-      "src": "Abridge",
-      "url": "https://www.abridge.com/press-release/local-pathways-abridge-assistant",
-      "new": true
-    },
-    {
-      "date": "2026-11-09",
-      "cat": "Product",
-      "title": "Abridge Visit Dx Enhancements: Organize, Search, and Refine Diagnoses in the Note",
-      "desc": "Abridge released Visit Dx enhancements giving clinicians more control over diagnoses in the generated note. New capabilities include organizing diagnoses under problem headers so the assessment reads the way clinicians think, searching and replacing diagnoses without leaving the note, and refining diagnoses with specificity modifiers like laterality and acuity. The update continues Abridge's push to make the AI-generated note editable and clinically precise at the point of care rather than requiring post-visit cleanup.",
-      "src": "Abridge / LinkedIn",
-      "url": "https://www.linkedin.com/posts/abridgehq_new-abridge-visit-dx-enhancements-give-clinicians-activity-7525593317217255425-gVyy",
       "new": true
     },
     {
@@ -1487,7 +1487,15 @@
     {
       "name": "BusinessWire - Wiley and Abridge Cochrane partnership (Nov 16, 2026)",
       "url": "https://www.businesswire.com/news/home/20261116095169/en/Wiley-and-Abridge-Partner-to-Bring-the-Evidence-that-Informs-Clinical-Guidelines-Worldwide-into-the-Abridge-Assistant"
+    },
+    {
+      "name": "Modern Healthcare - Shiv Rao on moving beyond AI scribing (Nov 17, 2026)",
+      "url": "https://www.modernhealthcare.com/health-tech/mh-abridge-shiv-rao-ai-scribing/"
+    },
+    {
+      "name": "Abridge - Healthcare Is Presence: Learning Health System blog post (Nov 16, 2026)",
+      "url": "https://www.abridge.com/blog/learning-health-system"
     }
   ],
-  "updated": "2026-11-16"
+  "updated": "2026-11-17"
 }
