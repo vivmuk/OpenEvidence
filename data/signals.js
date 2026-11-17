@@ -310,6 +310,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-11-16",
+  "cat": "Partnership",
+  "title": "Every Cure and OpenEvidence Partner to Repurpose Drugs Where Commercial Incentives Fall Short",
+  "desc": "Every Cure, a nonprofit biotech organization dedicated to saving and improving lives through drug repurposing, partnered with OpenEvidence to turn existing medicines into new treatments for patients who have run out of options. The collaboration connects Every Cure's AI-driven engine with OpenEviden",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/every-cure-and-openevidence-partner-to-repurpose-drugs-where-commercial-incentives-fall-short",
+  "score": 81,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-11-06",
   "cat": "Partnership",
   "title": "American College of Rheumatology and OpenEvidence Collaborate to Expand Access to Trusted Patient Education Resources",
@@ -724,18 +736,6 @@ var signalsData = [
   "desc": "OpenEvidence launches Patient Take-Homes - a fully optional way for physicians to share specific, curated clinical evidence with patients by converting OpenEvidence answers into patient handouts. Sharing is entirely at the physician's discretion: appropriate, high-quality, evidence-based medical inf",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/openevidence-launches-patient-take-homes",
-  "score": 73,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-08-10",
-  "cat": "Product",
-  "title": "OpenEvidence Games Launched - MedMini and Synapses",
-  "desc": "OpenEvidence launches OpenEvidence Games - a new suite of puzzles built for clinicians, live now in Discover on web and in the OpenEvidence app. The lineup starts with two games: MedMini and Synapses, bringing gamified medical knowledge reinforcement to hundreds of thousands of verified clinicians o",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements",
   "score": 73,
   "confidence": "confirmed",
   "competitors": [],
