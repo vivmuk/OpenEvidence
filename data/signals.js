@@ -406,30 +406,6 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-11-04",
-  "cat": "Product",
-  "title": "OpenEvidence launches Learn personalized medical education platform",
-  "desc": "Free, personalized medical education platform built to support trainees and clinicians across entire careers. As AI transforms practice, technology must strengthen learning too.",
-  "src": "Launch Archive",
-  "url": "https://launcharchive.ai/launches/learn-openevidence-s-personalized-medical-education-platform--x_2118026572829745633",
-  "score": 77,
-  "confidence": "reported",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-11-04",
-  "cat": "Product",
-  "title": "OpenEvidence Launches Learn, a Free Personalized Medical Education Platform",
-  "desc": "OpenEvidence launches Learn, a free personalized medical education platform extending its AI from point-of-care support into how doctors learn medicine. Four tools available today: Test Prep (50,000+ board-style questions for USMLE, COMLEX, and specialty/subspecialty boards), Preceptor (Socratic cas",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/announcing-learn",
-  "score": 77,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
   "date": "2026-10-29",
   "cat": "Partnership",
   "title": "OpenEvidence and NYU Langone Health Partner to Bring Patient-Aware Intelligence to 12 Million Visits in New York City",
@@ -713,6 +689,30 @@ var signalsData = [
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows",
   "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "Product",
+  "title": "OpenEvidence launches Learn personalized medical education platform",
+  "desc": "Free, personalized medical education platform built to support trainees and clinicians across entire careers. As AI transforms practice, technology must strengthen learning too.",
+  "src": "Launch Archive",
+  "url": "https://launcharchive.ai/launches/learn-openevidence-s-personalized-medical-education-platform--x_2118026572829745633",
+  "score": 73,
+  "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-11-04",
+  "cat": "Product",
+  "title": "OpenEvidence Launches Learn, a Free Personalized Medical Education Platform",
+  "desc": "OpenEvidence launches Learn, a free personalized medical education platform extending its AI from point-of-care support into how doctors learn medicine. Four tools available today: Test Prep (50,000+ board-style questions for USMLE, COMLEX, and specialty/subspecialty boards), Preceptor (Socratic cas",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/announcing-learn",
+  "score": 73,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
