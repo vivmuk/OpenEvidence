@@ -87,6 +87,50 @@ if [ -f scripts/build_frontend_data.js ] && command -v node >/dev/null 2>&1; the
   fi
 fi
 
+# The semantic chat index (data/chatCorpus.js + data/chatVectors.js) is the one
+# derived artefact that was NOT regenerated here, and it went stale for 9 days
+# because of it: the daily tracker jobs committed fresh content while the
+# corpus kept answering from Nov 8. The index is a projection of 35 source
+# files, so it has to be rebuilt whenever any of them change.
+#
+# Rebuilding needs @xenova/transformers and the cached MiniLM weights, both
+# of which are gitignored (node_modules/, .cache/) -- so a fresh clone cannot
+# rebuild. That is a host-setup problem, not a data problem, so a missing
+# dependency warns instead of blocking; a rebuild that actually runs and fails
+# is a real error and blocks.
+CHAT_SOURCES="data/abridgePartners.js data/abridgeProducts.js data/abridgeResearch.js data/abridgeSources.js data/abridgeTimeline.js data/benchmarks.js data/benchmarks.json data/competitors.js data/dxTimeline.js data/emergingTrends.js data/future.js data/globalMatrix.js data/globalRegions.js data/globalTimeline.js data/modelStack.js data/oeFeatures.js data/partners.js data/phaFreeTier.js data/phaPlayers.js data/phaResearch.js data/phaSources.js data/phaTimeline.js data/pharma.js data/products.js data/publications.js data/publishers.js data/regulatory.js data/research.json data/sctPublished.js data/sctResults.js data/signals.js data/sources.js data/timeline.js"
+
+if [ -f scripts/build_chat_index.js ] && command -v node >/dev/null 2>&1; then
+  CHAT_CHANGED=0
+  for f in $CHAT_SOURCES; do
+    [ -e "$f" ] || continue
+    if git diff --cached --name-only | grep -qx "$f" || git status --porcelain -- "$f" | grep -q .; then
+      CHAT_CHANGED=1
+      break
+    fi
+  done
+
+  if [ "$CHAT_CHANGED" -eq 1 ]; then
+    if [ -d node_modules/@xenova/transformers ]; then
+      if node scripts/build_chat_index.js >/tmp/oe-chatindex.out 2>&1; then
+        git add data/chatCorpus.js data/chatVectors.js 2>/dev/null || true
+      else
+        echo "" >&2
+        echo "COMMIT BLOCKED - the semantic chat index failed to rebuild." >&2
+        tail -15 /tmp/oe-chatindex.out >&2
+        echo "" >&2
+        echo "The chat corpus would ship stale and answer from old content." >&2
+        echo "Fix the build, then commit again." >&2
+        exit 1
+      fi
+    else
+      echo "WARNING: node_modules/@xenova/transformers is missing, so the" >&2
+      echo "         semantic chat index could not be rebuilt and may be stale." >&2
+      echo "         npm install @xenova/transformers  (in the repo root)" >&2
+    fi
+  fi
+fi
+
 # The stat cards and chart captions render from data/metrics.js, generated from
 # data/metrics.csv. Regenerate on every commit so a search agent that only
 # appends a CSV row still leaves the site's numbers current.
