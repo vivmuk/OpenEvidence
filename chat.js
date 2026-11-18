@@ -76,7 +76,14 @@
       var dot = 0;
       var a = rows[i], b = queryVec;
       for (var j = 0; j < a.length; j++) dot += a[j] * b[j];
-      scored.push({ i: i, score: dot });
+      // The corpus carries a per-passage prior: tracker content (the site's
+      // own findings) scores higher than the bulk research corpus, whose
+      // jargon otherwise matches almost any medical query and drowns out the
+      // answer. Research still wins when the question is genuinely about
+      // studies, because a strong cosine match outranks the flat bonus.
+      var p = corpus[i];
+      var bonus = (p && typeof p.pri === 'number') ? p.pri : 0;
+      scored.push({ i: i, score: dot + bonus, cos: dot });
     }
     scored.sort(function (x, y) { return y.score - x.score; });
     return scored.slice(0, limit || 40).map(function (s) {
