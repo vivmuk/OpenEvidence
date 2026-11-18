@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -508,6 +508,14 @@
       "desc": "A scoping review published in JMIR Medical Informatics synthesised literature on technology-enhanced health care (TEH) integration within smart homes, examining global deployment patterns, technological maturity, biomedical sensor integration, machine learning applications, and health outcomes. The review covers the Internet of Medical Things, wearable biosensors and AI-driven analytics for proactive care delivery, particularly for older adults and individuals with chronic conditions living independently.",
       "src": "JMIR Medical Informatics",
       "url": "https://medinform.jmir.org/2026/1/e89189/"
+    },
+    {
+      "date": "2026-09-29",
+      "cat": "Research",
+      "title": "Digital Health: Symptom Checkers Have Gaps in Evidence Base, Researchers Say",
+      "desc": "A perspective published in Digital Health by researchers from the University of Marburg and University of Exeter argues that symptom checkers lack a robust evidence base and proposes a structured approach to accuracy evaluation. The authors highlight that most evaluations rely on vignette-based methodologies criticized since 2015 and call for standardized reporting frameworks. Extends the ongoing methodological debate about symptom checker evaluation quality.",
+      "src": "Digital Health (SAGE)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"
     },
     {
       "date": "2026-09-25",
@@ -2088,6 +2096,33 @@
       "finding": "A study from Amsterdam UMC and OLVG Hospital evaluated concordance between an AI self-triage programme and physical triage in the emergency department. The study compares AI-assisted triage recommendations with in-person triage outcomes, providing real-world concordance data for AI triage tools deployed outside controlled vignette settings.",
       "caveat": "Single-centre study from the Netherlands. Concordance with physical triage is not the same as triage correctness or improved outcomes. Generalisability to other healthcare systems and triage protocols is not established.",
       "url": "https://emj.bmj.com/content/emermed/early/2026/06/22/emermed-2024-214212.full.pdf"
+    },
+    {
+      "title": "GlucoAgent: Personalized Glucose Forecasting from Multimodal Personal Context",
+      "type": "arXiv preprint · agent architecture",
+      "date": "Nov 3, 2026",
+      "venue": "arXiv (cs.AI) — GenAI for Health Workshop @ NeurIPS 2026",
+      "finding": "Presents GlucoAgent, a system that combines continuous glucose monitor data, smartwatch data, meal logs and health profiles for personalized glucose forecasting. The agent-based approach handles multimodal personal context, addressing the challenge that the relevance of different signals varies across individuals and situations. Accepted at the GenAI for Health Workshop at NeurIPS 2026, Sydney.",
+      "caveat": "Preprint, not peer-reviewed. Workshop paper, not a full conference paper. The system has not been validated in a clinical trial or with a large user study.",
+      "url": "https://arxiv.org/abs/2611.04126"
+    },
+    {
+      "title": "FITTER: A Guideline-Grounded Multi-Agent Framework for Personalized Exercise Prescription from Clinical and Wearable Data",
+      "type": "arXiv preprint · multi-agent system",
+      "date": "Nov 2, 2026",
+      "venue": "arXiv (cs.AI)",
+      "finding": "Presents FITTER, a multi-agent framework that integrates clinical and wearable data including diagnoses, medications, functional limitations and baseline activity with condition-specific recommendations to generate personalized exercise prescriptions. The system aims to scale specialist rehabilitation guidance beyond clinical settings, translating population-level exercise guidance into individualized prescriptions.",
+      "caveat": "Preprint, not peer-reviewed. The framework has not been validated in a clinical trial. Real-world effectiveness of AI-generated exercise prescriptions is not demonstrated.",
+      "url": "https://arxiv.org/abs/2611.03983v1"
+    },
+    {
+      "title": "Symptom Checkers: Gaps in Their Evidence Base and Suggestions for Accuracy Evaluation",
+      "type": "Peer-reviewed · perspective",
+      "date": "Sep 29, 2026",
+      "venue": "Digital Health (SAGE)",
+      "finding": "Researchers from the University of Marburg and University of Exeter argue that symptom checkers lack a robust evidence base and propose a structured approach to accuracy evaluation. The authors highlight that most evaluations rely on vignette-based methodologies criticized since 2015 and call for standardized reporting frameworks for accuracy, safety, and performance metrics.",
+      "caveat": "Perspective article, not an empirical study. The authors' proposed evaluation framework has not been validated or adopted by symptom checker developers.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"
     }
   ],
   "sources": [
@@ -2614,6 +2649,22 @@
     {
       "name": "Apple - Apple Health AI Usage Study launch (Nov 15, 2026)",
       "url": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/"
+    },
+    {
+      "name": "Health Chosun - Big Tech races to build AI health assistants (Nov 18, 2026)",
+      "url": "https://health.chosun.com/english/site/data/html_dir/2026/11/18/2026111801478.html"
+    },
+    {
+      "name": "arXiv - GlucoAgent: Personalized Glucose Forecasting (Nov 3, 2026)",
+      "url": "https://arxiv.org/abs/2611.04126"
+    },
+    {
+      "name": "arXiv - FITTER: Multi-Agent Exercise Prescription Framework (Nov 2, 2026)",
+      "url": "https://arxiv.org/abs/2611.03983v1"
+    },
+    {
+      "name": "Digital Health (SAGE) - Symptom checker evidence gaps (Sep 29, 2026)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"
     }
   ],
   "freeTierDefaults": [

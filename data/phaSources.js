@@ -131,4 +131,8 @@ var phaSourcesData = [
   {name:"9to5Mac - Siri AI confirmed to access Health app data in iOS 27.3 beta 2 (Nov 16, 2026)", url:"https://9to5mac.com/2026/11/16/siri-ai-health-app-questions-ios-27/"},
   {name:"GlobeNewswire / Pear Health Labs - Pear Health Companion launch (Nov 16, 2026)", url:"https://www.globenewswire.com/news-release/2026/11/16/3403730/0/en/pear-health-labs-launches-pear-health-companion-an-agentic-ai-platform-for-health-plans-and-providers.html"},
   {name:"Apple - Apple Health AI Usage Study launch (Nov 15, 2026)", url:"https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/"},
+  {name:"Health Chosun - Big Tech races to build AI health assistants (Nov 18, 2026)", url:"https://health.chosun.com/english/site/data/html_dir/2026/11/18/2026111801478.html"},
+  {name:"arXiv - GlucoAgent: Personalized Glucose Forecasting (Nov 3, 2026)", url:"https://arxiv.org/abs/2611.04126"},
+  {name:"arXiv - FITTER: Multi-Agent Exercise Prescription Framework (Nov 2, 2026)", url:"https://arxiv.org/abs/2611.03983v1"},
+  {name:"Digital Health (SAGE) - Symptom checker evidence gaps (Sep 29, 2026)", url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"},
 ];

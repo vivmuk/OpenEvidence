@@ -258,4 +258,19 @@ var phaResearchData = [
    caveat:"Single-centre study from the Netherlands. Concordance with physical triage is not the same as triage correctness or improved outcomes. Generalisability to other healthcare systems and triage protocols is not established.",
    url:"https://emj.bmj.com/content/emermed/early/2026/06/22/emermed-2024-214212.full.pdf"},
 
+  {title:"GlucoAgent: Personalized Glucose Forecasting from Multimodal Personal Context", type:"arXiv preprint · agent architecture", date:"Nov 3, 2026", venue:"arXiv (cs.AI) — GenAI for Health Workshop @ NeurIPS 2026",
+   finding:"Presents GlucoAgent, a system that combines continuous glucose monitor data, smartwatch data, meal logs and health profiles for personalized glucose forecasting. The agent-based approach handles multimodal personal context, addressing the challenge that the relevance of different signals varies across individuals and situations. Accepted at the GenAI for Health Workshop at NeurIPS 2026, Sydney.",
+   caveat:"Preprint, not peer-reviewed. Workshop paper, not a full conference paper. The system has not been validated in a clinical trial or with a large user study.",
+   url:"https://arxiv.org/abs/2611.04126"},
+
+  {title:"FITTER: A Guideline-Grounded Multi-Agent Framework for Personalized Exercise Prescription from Clinical and Wearable Data", type:"arXiv preprint · multi-agent system", date:"Nov 2, 2026", venue:"arXiv (cs.AI)",
+   finding:"Presents FITTER, a multi-agent framework that integrates clinical and wearable data including diagnoses, medications, functional limitations and baseline activity with condition-specific recommendations to generate personalized exercise prescriptions. The system aims to scale specialist rehabilitation guidance beyond clinical settings, translating population-level exercise guidance into individualized prescriptions.",
+   caveat:"Preprint, not peer-reviewed. The framework has not been validated in a clinical trial. Real-world effectiveness of AI-generated exercise prescriptions is not demonstrated.",
+   url:"https://arxiv.org/abs/2611.03983v1"},
+
+  {title:"Symptom Checkers: Gaps in Their Evidence Base and Suggestions for Accuracy Evaluation", type:"Peer-reviewed · perspective", date:"Sep 29, 2026", venue:"Digital Health (SAGE)",
+   finding:"Researchers from the University of Marburg and University of Exeter argue that symptom checkers lack a robust evidence base and propose a structured approach to accuracy evaluation. The authors highlight that most evaluations rely on vignette-based methodologies criticized since 2015 and call for standardized reporting frameworks for accuracy, safety, and performance metrics.",
+   caveat:"Perspective article, not an empirical study. The authors' proposed evaluation framework has not been validated or adopted by symptom checker developers.",
+   url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"},
+
 ];
