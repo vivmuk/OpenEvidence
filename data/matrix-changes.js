@@ -6,8 +6,714 @@ var matrixChangesData = {
  "baselineWeek": "2026-W46",
  "baselineDate": "2026-11-15",
  "statusChangeCount": 0,
- "newPlatformCount": 0,
- "newPlatforms": [],
- "changeCount": 0,
- "changes": []
+ "newPlatformCount": 11,
+ "newPlatforms": [
+  "CorVista Health",
+  "Aevius",
+  "Knit Health",
+  "Photon",
+  "Aila (Owkin)",
+  "Medelix",
+  "Synapse Medicine MedGPT",
+  "Corti Symphony",
+  "Tom Health",
+  "Amal",
+  "Idana AI Assist"
+ ],
+ "changeCount": 99,
+ "changes": [
+  {
+   "platform": "CorVista Health",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "CorVista Health",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CorVista Health",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CorVista Health",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CorVista Health",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CorVista Health",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CorVista Health",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CorVista Health",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CorVista Health",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aevius",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Knit Health",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Photon",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Aila (Owkin)",
+   "region": "mea",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "eu",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "uk",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Medelix",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "eu",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "uk",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Synapse Medicine MedGPT",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "eu",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "uk",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Corti Symphony",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Tom Health",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Amal",
+   "region": "mea",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "eu",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "uk",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Idana AI Assist",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  }
+ ]
 };

@@ -4625,6 +4625,127 @@
      "sea": "no",
      "latam": "no",
      "mea": "no"
+    },
+    "CorVista Health": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Aevius": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Knit Health": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Photon": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Aila (Owkin)": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "yes"
+    },
+    "Medelix": {
+     "us": "no",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Synapse Medicine MedGPT": {
+     "us": "no",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Corti Symphony": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Tom Health": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Amal": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "yes"
+    },
+    "Idana AI Assist": {
+     "us": "no",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
     }
    }
   }

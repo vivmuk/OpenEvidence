@@ -98,4 +98,15 @@ var globalMatrixData = [
 {platform:"TwentySix Triage",us:"no",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 {platform:"Oracle Health Clinical AI Agent",us:"yes",eu:"no",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
 {platform:"Mayo Clinic Platform CDS",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"CorVista Health",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Aevius",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Knit Health",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Photon",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Aila (Owkin)",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"yes"},
+{platform:"Medelix",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Synapse Medicine MedGPT",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Corti Symphony",us:"yes",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Tom Health",us:"yes",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"},
+{platform:"Amal",us:"no",eu:"no",uk:"no",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"yes"},
+{platform:"Idana AI Assist",us:"no",eu:"yes",uk:"yes",cn:"no",in:"no",jp:"no",sea:"no",latam:"no",mea:"no"}
 ];;
