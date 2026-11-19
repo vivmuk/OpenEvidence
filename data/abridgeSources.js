@@ -67,5 +67,8 @@ var abridgeSourcesData = [
   {name:"Abridge - Wiley/Cochrane partnership press release (Nov 16, 2026)",url:"https://www.abridge.com/press-release/abridge-wiley-cochrane-partnership"},
   {name:"BusinessWire - Wiley and Abridge Cochrane partnership (Nov 16, 2026)",url:"https://www.businesswire.com/news/home/20261116095169/en/Wiley-and-Abridge-Partner-to-Bring-the-Evidence-that-Informs-Clinical-Guidelines-Worldwide-into-the-Abridge-Assistant"},
   {name:"Modern Healthcare - Shiv Rao on moving beyond AI scribing (Nov 17, 2026)",url:"https://www.modernhealthcare.com/health-tech/mh-abridge-shiv-rao-ai-scribing/"},
-  {name:"Abridge - Healthcare Is Presence: Learning Health System blog post (Nov 16, 2026)",url:"https://www.abridge.com/blog/learning-health-system"}
+  {name:"Abridge - Healthcare Is Presence: Learning Health System blog post (Nov 16, 2026)",url:"https://www.abridge.com/blog/learning-health-system"},
+  {name:"Fierce Healthcare - Abridge collaborating with OpenAI on computer-use agents (Nov 16, 2026)",url:"https://www.fiercehealthcare.com/ai-and-machine-learning/hlth26-cvs-health-cigna-and-ambience-collaborating-openai-test-computer-use"},
+  {name:"MedCity News - Abridge HLTH announcements emphasize clinical evidence trend (Nov 18, 2026)",url:"https://medcitynews.com/2026/11/abridge-announcements-during-hlth-emphasize-growing-healthcare-trend/"},
+  {name:"MedCity News - Viz.ai partners with Wolters Kluwer Health for UpToDate (Nov 18, 2026)",url:"https://medcitynews.com/2026/11/viz-ai-partners-with-wolters-kluwer-health-to-add-uptodate-resource-to-its-platform/"}
 ];

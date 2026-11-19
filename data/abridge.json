@@ -79,7 +79,7 @@
       "name": "Abridge Assistant",
       "status": "live",
       "date": "Oct 13, 2026",
-      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO, Cochrane), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. October 2026 release added Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic's Heard in Visit Recording module as discussed), patient visit summary editing via Assistant (reading level, plain language, tone, length), chart-informed inpatient H&P and progress notes citing chart sources inline, outpatient CDI queries and cues via the Query Engine, inpatient diagnosis write-back at note signature, and an Evaluation Dashboard for governance teams. November 2026 added Visit Dx enhancements (diagnosis organization under problem headers, search-and-replace, specificity modifiers) and Local Pathways (institution-specific care guidance surfaced alongside published evidence, with links to source documents). Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries. UC Irvine Health and Dayton Children's Hospital cited as Local Pathways design partners. At Abridge's annual customer event The Conversation in San Diego, Rao demoed an agentic AI assistant that coordinates work across fragmented systems — entering registry data, calling pharmacies, navigating payer portals for prior auths, and scheduling follow-ups — live in early environments with select partners.",
+      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO, Cochrane), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. October 2026 release added Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic's Heard in Visit Recording module as discussed), patient visit summary editing via Assistant (reading level, plain language, tone, length), chart-informed inpatient H&P and progress notes citing chart sources inline, outpatient CDI queries and cues via the Query Engine, inpatient diagnosis write-back at note signature, and an Evaluation Dashboard for governance teams. November 2026 added Visit Dx enhancements (diagnosis organization under problem headers, search-and-replace, specificity modifiers) and Local Pathways (institution-specific care guidance surfaced alongside published evidence, with links to source documents). Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries. UC Irvine Health and Dayton Children's Hospital cited as Local Pathways design partners. At Abridge's annual customer event The Conversation in San Diego, Rao demoed an agentic AI assistant that coordinates work across fragmented systems - entering registry data, calling pharmacies, navigating payer portals for prior auths, and scheduling follow-ups - live in early environments with select partners.",
       "url": "https://www.abridge.com/platform/assistant"
     },
     {
@@ -226,10 +226,10 @@
     },
     {
       "name": "OpenAI",
-      "type": "Technology · Physician Builder Challenge co-sponsor at HLTH 2026",
+      "type": "Technology · Physician Builder Challenge co-sponsor + computer-use agent collaboration",
       "date": "Oct 9, 2026",
-      "url": "https://www.abridge.com/hlth2026",
-      "new": false
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/hlth26-cvs-health-cigna-and-ambience-collaborating-openai-test-computer-use",
+      "new": true
     },
     {
       "name": "Physician Side Gigs",
@@ -644,6 +644,24 @@
   ],
   "timeline": [
     {
+      "date": "2026-11-18",
+      "cat": "Company",
+      "title": "MedCity News: Abridge HLTH Announcements Emphasize Clinical Evidence Trend",
+      "desc": "MedCity News synthesizes Abridge's three HLTH announcements — Local Pathways, NACHC partnership, and Wiley/Cochrane licensing — as part of a broader trend of arming clinicians with AI-powered evidence at the point of care. The article reveals the Abridge Assistant answered more than 40,000 questions from VA clinicians last month alone, and is available across 300+ health systems representing 250M+ patients and 75+ VA medical centers. Matt Troup, clinical strategy principal, framed Local Pathways as reducing clinician workload by surfacing system-specific guidance in-workflow rather than requiring separate PDF or directory searches.",
+      "src": "MedCity News",
+      "url": "https://medcitynews.com/2026/11/abridge-announcements-during-hlth-emphasize-growing-healthcare-trend/",
+      "new": true
+    },
+    {
+      "date": "2026-11-18",
+      "cat": "Competitor",
+      "title": "Viz.ai Partners with Wolters Kluwer Health to Add UpToDate to Viz.ai One Platform",
+      "desc": "Viz.ai and Wolters Kluwer Health announced a partnership to bring UpToDate clinical decision support content into the Viz.ai One platform, mirroring Abridge's strategy of embedding licensed evidence inside clinical AI workflows. The move signals the knowledge layer of clinical AI is becoming a contested space, with multiple vendors competing to be the clinician's first stop for evidence at the point of care.",
+      "src": "MedCity News",
+      "url": "https://medcitynews.com/2026/11/viz-ai-partners-with-wolters-kluwer-health-to-add-uptodate-resource-to-its-platform/",
+      "new": true
+    },
+    {
       "date": "2026-11-17",
       "cat": "Company",
       "title": "Modern Healthcare: Shiv Rao on Why Abridge Is Moving Beyond AI Scribing",
@@ -656,7 +674,7 @@
       "date": "2026-11-16",
       "cat": "Product",
       "title": "Shiv Rao Unveils Agentic AI Assistant Vision at The Conversation Customer Event",
-      "desc": "In a blog post titled Healthcare Is Presence, Shiv Rao revealed Abridge is building an enterprise-grade AI assistant that coordinates work across fragmented systems — entering registry data, calling pharmacies, navigating payer portals for prior auths, and scheduling follow-ups. The assistant tracks task completion, recognizes when work is unfinished, and brings clinicians back in when judgment is needed. Rao demoed the experience at Abridge's annual customer event in San Diego; it is live in early environments with select partners. The vision extends Abridge from documentation and CDS into autonomous clinical workflow coordination.",
+      "desc": "In a blog post titled Healthcare Is Presence, Shiv Rao revealed Abridge is building an enterprise-grade AI assistant that coordinates work across fragmented systems - entering registry data, calling pharmacies, navigating payer portals for prior auths, and scheduling follow-ups. The assistant tracks task completion, recognizes when work is unfinished, and brings clinicians back in when judgment is needed. Rao demoed the experience at Abridge's annual customer event in San Diego; it is live in early environments with select partners. The vision extends Abridge from documentation and CDS into autonomous clinical workflow coordination.",
       "src": "Abridge",
       "url": "https://www.abridge.com/blog/learning-health-system",
       "new": true
@@ -668,6 +686,15 @@
       "desc": "Abridge announced a multi-year partnership with Wiley to license Cochrane's Database of Systematic Reviews (nearly 10,000 reviews) and Cochrane Clinical Answers (about 4,000) for use within the Abridge Assistant. Cochrane evidence will appear as concise, cited summaries alongside existing sources like UpToDate, NEJM, and JAMA. The deal adds a gold-standard evidence synthesis layer to Abridge's clinical decision support and positions Wiley's content in leading-edge healthcare AI workflows across 300+ U.S. health systems.",
       "src": "Abridge / BusinessWire",
       "url": "https://www.businesswire.com/news/home/20261116095169/en/Wiley-and-Abridge-Partner-to-Bring-the-Evidence-that-Informs-Clinical-Guidelines-Worldwide-into-the-Abridge-Assistant",
+      "new": true
+    },
+    {
+      "date": "2026-11-16",
+      "cat": "Partnership",
+      "title": "Abridge Collaborating with OpenAI on Computer-Use Agents for Healthcare Workflows",
+      "desc": "Fierce Healthcare reports Abridge is building computer-use agents with OpenAI to help clinicians carry out care plans across applications without APIs — navigating EHRs, payer portals, and other software the way a human does. Abridge plans an inpatient use case where agents work concurrently on medication access and home health coordination using computer interaction alongside calls and messages. OpenAI's GPT-6 Astra model was evaluated on EHR inbox tasks: 99% of 325 reviewed tasks rated clinically safe, and physicians rated the model 'very helpful' or 'extremely helpful' in 93% of 646 assessments. CVS Health, Cigna Healthcare, and Ambience are also collaborating with OpenAI on computer-use agents for referrals, prior authorizations, and care coordination.",
+      "src": "Fierce Healthcare",
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/hlth26-cvs-health-cigna-and-ambience-collaborating-openai-test-computer-use",
       "new": true
     },
     {
@@ -1495,7 +1522,19 @@
     {
       "name": "Abridge - Healthcare Is Presence: Learning Health System blog post (Nov 16, 2026)",
       "url": "https://www.abridge.com/blog/learning-health-system"
+    },
+    {
+      "name": "Fierce Healthcare - Abridge collaborating with OpenAI on computer-use agents (Nov 16, 2026)",
+      "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/hlth26-cvs-health-cigna-and-ambience-collaborating-openai-test-computer-use"
+    },
+    {
+      "name": "MedCity News - Abridge HLTH announcements emphasize clinical evidence trend (Nov 18, 2026)",
+      "url": "https://medcitynews.com/2026/11/abridge-announcements-during-hlth-emphasize-growing-healthcare-trend/"
+    },
+    {
+      "name": "MedCity News - Viz.ai partners with Wolters Kluwer Health for UpToDate (Nov 18, 2026)",
+      "url": "https://medcitynews.com/2026/11/viz-ai-partners-with-wolters-kluwer-health-to-add-uptodate-resource-to-its-platform/"
     }
   ],
-  "updated": "2026-11-17"
+  "updated": "2026-11-19"
 }

@@ -10,7 +10,7 @@ var abridgePartnersData = [
   {name:"OCHIN",type:"Health system · rural/community health network",date:"Jun 11, 2026",url:"https://www.abridge.com/press-release/patient-centered-clinician-intelligence-platform-keynote",new:false},
   {name:"Akron Children's Hospital",type:"Pediatric health system · multilingual",date:"Aug 28, 2026",url:"https://www.abridge.com/blog/now-in-practice-august-2026",new:false},
   {name:"CHRISTUS Health",type:"Health system · 60+ hospitals, unlimited enterprise agreement, inpatient + nursing pilot",date:"Jul 20, 2026",url:"https://www.abridge.com/blog/christus-health-expanding-with-trusted-ai-partner-abridge",new:false},
-  {name:"OpenAI",type:"Technology · Physician Builder Challenge co-sponsor at HLTH 2026",date:"Oct 9, 2026",url:"https://www.abridge.com/hlth2026",new:false},
+  {name:"OpenAI",type:"Technology · Physician Builder Challenge co-sponsor + computer-use agent collaboration",date:"Oct 9, 2026",url:"https://www.fiercehealthcare.com/ai-and-machine-learning/hlth26-cvs-health-cigna-and-ambience-collaborating-openai-test-computer-use",new:true},
   {name:"Physician Side Gigs",type:"Technology · Physician Builder Challenge co-sponsor at HLTH 2026",date:"Oct 9, 2026",url:"https://www.abridge.com/hlth2026",new:false},
   {name:"Geisinger",type:"Health system · 1,000+ clinicians in 10 months",date:"2026",url:"https://www.abridge.com/customers",new:false},
   {name:"Cambridge Health Alliance",type:"Health system · multilingual patient population",date:"2026",url:"https://www.abridge.com/customers",new:false},
