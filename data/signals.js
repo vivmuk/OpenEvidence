@@ -310,6 +310,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-11-19",
+  "cat": "Partnership",
+  "title": "OpenEvidence partners with Oncology Brothers for community oncology expertise",
+  "desc": "The Oncology Brothers (@OncBrothers) announced a partnership with OpenEvidence to incorporate expert quotes and community practices 'in the right context, especially where data is limited.' They emphasized collaboration: 'It's not AI vs us, but how we incorporate these tools together to deliver bett",
+  "src": "X/Twitter",
+  "url": "https://x.com/OncBrothers/status/2123230104155238862",
+  "score": 81,
+  "confidence": "reported",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-11-16",
   "cat": "Partnership",
   "title": "Every Cure and OpenEvidence Partner to Repurpose Drugs Where Commercial Incentives Fall Short",
@@ -724,18 +736,6 @@ var signalsData = [
   "desc": "OpenEvidence releases a new family of medical AI models named for founders of modern medicine. Osler (~5s answer) is the fastest model, built for the pace of the patient encounter, and becomes the new default. Sackett (~30s) is a deeper search model that interactively asks clinicians for context and",
   "src": "OpenEvidence",
   "url": "https://www.businesswire.com/news/home/20260903878517/en/Introducing-the-OpenEvidence-Model-Family",
-  "score": 73,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-08-19",
-  "cat": "Product",
-  "title": "Patient Take-Homes Launched",
-  "desc": "OpenEvidence launches Patient Take-Homes - a fully optional way for physicians to share specific, curated clinical evidence with patients by converting OpenEvidence answers into patient handouts. Sharing is entirely at the physician's discretion: appropriate, high-quality, evidence-based medical inf",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/openevidence-launches-patient-take-homes",
   "score": 73,
   "confidence": "confirmed",
   "competitors": [],
