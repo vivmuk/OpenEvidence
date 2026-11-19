@@ -273,4 +273,9 @@ var phaResearchData = [
    caveat:"Perspective article, not an empirical study. The authors' proposed evaluation framework has not been validated or adopted by symptom checker developers.",
    url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"},
 
+  {title:"Kicker: Safe Personal RSI for Personal Health Assistant Instruction Updates", type:"arXiv preprint · safety evaluation", date:"Nov 18, 2026", venue:"arXiv (cs.AI)",
+   finding:"Presents Safe Personal RSI, an update-evaluation component for Kicker, a personal health assistant. The system restricts recursive self-improvement (RSI) to prompt updates only, with model weights and runtime code fixed. The procedure tests proposed and current instructions, repeats failing cases, temporarily undoes changes to guide repairs, and checks safety and task performance before adoption. If no version passes, the current instructions stay in use. The executable benchmark contains 29 email, calendar and health tasks. The work addresses the safety risk that changes to an assistant's reusable instructions can improve task handling while changing what it discloses, which requests it follows, and how it reports actions.",
+   caveat:"Preprint, not peer-reviewed. The benchmark is small (29 tasks) and focuses on prompt-level RSI, not model weight or runtime code changes. The system is a research prototype and has not been deployed at scale.",
+   url:"https://arxiv.org/abs/2611.23651"},
+
 ];

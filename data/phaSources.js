@@ -135,4 +135,6 @@ var phaSourcesData = [
   {name:"arXiv - GlucoAgent: Personalized Glucose Forecasting (Nov 3, 2026)", url:"https://arxiv.org/abs/2611.04126"},
   {name:"arXiv - FITTER: Multi-Agent Exercise Prescription Framework (Nov 2, 2026)", url:"https://arxiv.org/abs/2611.03983v1"},
   {name:"Digital Health (SAGE) - Symptom checker evidence gaps (Sep 29, 2026)", url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"},
+  {name:"arXiv - Kicker: Safe Personal RSI for personal health assistant (Nov 18, 2026)", url:"https://arxiv.org/abs/2611.23651"},
+  {name:"9to5Mac - iOS 27.3 Apple Health app requires AI-compatible iPhone (Nov 17, 2026)", url:"https://9to5mac.com/2026/11/17/ios-27-3s-redesigned-apple-health-app-requires-newer-iphone-model/"},
 ];

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,24 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-18",
+      "cat": "Research",
+      "title": "Kicker: Safe Personal RSI for Personal Health Assistant Instruction Updates",
+      "desc": "arXiv preprint presenting Safe Personal RSI, an update-evaluation component for Kicker, a personal health assistant. The system restricts recursive self-improvement (RSI) to prompt updates only, with model weights and runtime code fixed. The procedure tests proposed and current instructions, repeats failing cases, temporarily undoes changes to guide repairs, and checks safety and task performance before adoption. If no version passes, current instructions stay in use. The benchmark contains 29 email, calendar and health tasks. Represents a safety-first approach to evolving personal health agent instructions without compromising disclosure or request-handling behaviour. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2611.23651",
+      "new": true
+    },
+    {
+      "date": "2026-11-17",
+      "cat": "Product",
+      "title": "iOS 27.3 Redesigned Apple Health App Requires AI-Compatible iPhone, Limiting Availability",
+      "desc": "9to5Mac reports that iOS 27.3's all-new Apple Health app, built with Apple Intelligence at its core, will require an AI-compatible iPhone to run. The redesigned app features personalized insights, a Longevity tab, and Health Age scoring, but users with older iPhones that lack Apple Intelligence support will not have access. The requirement narrows the addressable audience for Apple's most significant health AI upgrade to date and raises questions about equitable access to AI-driven health features. Vendor claim: hardware requirement for AI features, not a medical device.",
+      "src": "9to5Mac",
+      "url": "https://9to5mac.com/2026/11/17/ios-27-3s-redesigned-apple-health-app-requires-newer-iphone-model/",
+      "new": true
+    },
     {
       "date": "2026-11-16",
       "cat": "Product",
@@ -2101,7 +2119,7 @@
       "title": "GlucoAgent: Personalized Glucose Forecasting from Multimodal Personal Context",
       "type": "arXiv preprint · agent architecture",
       "date": "Nov 3, 2026",
-      "venue": "arXiv (cs.AI) — GenAI for Health Workshop @ NeurIPS 2026",
+      "venue": "arXiv (cs.AI) - GenAI for Health Workshop @ NeurIPS 2026",
       "finding": "Presents GlucoAgent, a system that combines continuous glucose monitor data, smartwatch data, meal logs and health profiles for personalized glucose forecasting. The agent-based approach handles multimodal personal context, addressing the challenge that the relevance of different signals varies across individuals and situations. Accepted at the GenAI for Health Workshop at NeurIPS 2026, Sydney.",
       "caveat": "Preprint, not peer-reviewed. Workshop paper, not a full conference paper. The system has not been validated in a clinical trial or with a large user study.",
       "url": "https://arxiv.org/abs/2611.04126"
@@ -2123,6 +2141,15 @@
       "finding": "Researchers from the University of Marburg and University of Exeter argue that symptom checkers lack a robust evidence base and propose a structured approach to accuracy evaluation. The authors highlight that most evaluations rely on vignette-based methodologies criticized since 2015 and call for standardized reporting frameworks for accuracy, safety, and performance metrics.",
       "caveat": "Perspective article, not an empirical study. The authors' proposed evaluation framework has not been validated or adopted by symptom checker developers.",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"
+    },
+    {
+      "title": "Kicker: Safe Personal RSI for Personal Health Assistant Instruction Updates",
+      "type": "arXiv preprint · safety evaluation",
+      "date": "Nov 18, 2026",
+      "venue": "arXiv (cs.AI)",
+      "finding": "Presents Safe Personal RSI, an update-evaluation component for Kicker, a personal health assistant. The system restricts recursive self-improvement (RSI) to prompt updates only, with model weights and runtime code fixed. The procedure tests proposed and current instructions, repeats failing cases, temporarily undoes changes to guide repairs, and checks safety and task performance before adoption. If no version passes, the current instructions stay in use. The executable benchmark contains 29 email, calendar and health tasks. The work addresses the safety risk that changes to an assistant's reusable instructions can improve task handling while changing what it discloses, which requests it follows, and how it reports actions.",
+      "caveat": "Preprint, not peer-reviewed. The benchmark is small (29 tasks) and focuses on prompt-level RSI, not model weight or runtime code changes. The system is a research prototype and has not been deployed at scale.",
+      "url": "https://arxiv.org/abs/2611.23651"
     }
   ],
   "sources": [
@@ -2665,6 +2692,14 @@
     {
       "name": "Digital Health (SAGE) - Symptom checker evidence gaps (Sep 29, 2026)",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13769915/"
+    },
+    {
+      "name": "arXiv - Kicker: Safe Personal RSI for personal health assistant (Nov 18, 2026)",
+      "url": "https://arxiv.org/abs/2611.23651"
+    },
+    {
+      "name": "9to5Mac - iOS 27.3 Apple Health app requires AI-compatible iPhone (Nov 17, 2026)",
+      "url": "https://9to5mac.com/2026/11/17/ios-27-3s-redesigned-apple-health-app-requires-newer-iphone-model/"
     }
   ],
   "freeTierDefaults": [
