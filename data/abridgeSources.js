@@ -70,5 +70,6 @@ var abridgeSourcesData = [
   {name:"Abridge - Healthcare Is Presence: Learning Health System blog post (Nov 16, 2026)",url:"https://www.abridge.com/blog/learning-health-system"},
   {name:"Fierce Healthcare - Abridge collaborating with OpenAI on computer-use agents (Nov 16, 2026)",url:"https://www.fiercehealthcare.com/ai-and-machine-learning/hlth26-cvs-health-cigna-and-ambience-collaborating-openai-test-computer-use"},
   {name:"MedCity News - Abridge HLTH announcements emphasize clinical evidence trend (Nov 18, 2026)",url:"https://medcitynews.com/2026/11/abridge-announcements-during-hlth-emphasize-growing-healthcare-trend/"},
-  {name:"MedCity News - Viz.ai partners with Wolters Kluwer Health for UpToDate (Nov 18, 2026)",url:"https://medcitynews.com/2026/11/viz-ai-partners-with-wolters-kluwer-health-to-add-uptodate-resource-to-its-platform/"}
+  {name:"MedCity News - Viz.ai partners with Wolters Kluwer Health for UpToDate (Nov 18, 2026)",url:"https://medcitynews.com/2026/11/viz-ai-partners-with-wolters-kluwer-health-to-add-uptodate-resource-to-its-platform/"},
+  {name:"The Inference - Abridge lost AI scribing to Microsoft and Epic; CDS market priced at $100M (Nov 19, 2026)",url:"https://theinference.org/article/abridge-lost-ai-scribing-to-microsoft-and-epic-its-next-market-has-a-100-million-price-from-wolters-kluwer"}
 ];

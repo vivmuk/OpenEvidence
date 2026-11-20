@@ -644,10 +644,19 @@
   ],
   "timeline": [
     {
+      "date": "2026-11-19",
+      "cat": "Competitor",
+      "title": "The Inference: Abridge Lost AI Scribing to Microsoft and Epic; CDS Market Gets a $100M Price Tag",
+      "desc": "The Inference analyzes how Microsoft and Epic captured two of every three new AI-scribe dollars this year, forcing Abridge to sell what comes after the note. The decision-support category Abridge is escaping into just got its first public price: Wolters Kluwer's up-to-$100M acquisition of AgileMD, a 23-person CDS firm with $7M revenue. The article cites Menlo Ventures data showing clinical copilots grew 5.5x year-over-year while ambient scribing grew only 1.6x, names OpenEvidence as the clinical copilot providers already choose most, and notes OpenAI prices prior-authorization tasks at 8.5 cents. Abridge's $6.69B private valuation must outrun the CDS market price one health system at a time.",
+      "src": "The Inference",
+      "url": "https://theinference.org/article/abridge-lost-ai-scribing-to-microsoft-and-epic-its-next-market-has-a-100-million-price-from-wolters-kluwer",
+      "new": true
+    },
+    {
       "date": "2026-11-18",
       "cat": "Company",
       "title": "MedCity News: Abridge HLTH Announcements Emphasize Clinical Evidence Trend",
-      "desc": "MedCity News synthesizes Abridge's three HLTH announcements — Local Pathways, NACHC partnership, and Wiley/Cochrane licensing — as part of a broader trend of arming clinicians with AI-powered evidence at the point of care. The article reveals the Abridge Assistant answered more than 40,000 questions from VA clinicians last month alone, and is available across 300+ health systems representing 250M+ patients and 75+ VA medical centers. Matt Troup, clinical strategy principal, framed Local Pathways as reducing clinician workload by surfacing system-specific guidance in-workflow rather than requiring separate PDF or directory searches.",
+      "desc": "MedCity News synthesizes Abridge's three HLTH announcements - Local Pathways, NACHC partnership, and Wiley/Cochrane licensing - as part of a broader trend of arming clinicians with AI-powered evidence at the point of care. The article reveals the Abridge Assistant answered more than 40,000 questions from VA clinicians last month alone, and is available across 300+ health systems representing 250M+ patients and 75+ VA medical centers. Matt Troup, clinical strategy principal, framed Local Pathways as reducing clinician workload by surfacing system-specific guidance in-workflow rather than requiring separate PDF or directory searches.",
       "src": "MedCity News",
       "url": "https://medcitynews.com/2026/11/abridge-announcements-during-hlth-emphasize-growing-healthcare-trend/",
       "new": true
@@ -692,7 +701,7 @@
       "date": "2026-11-16",
       "cat": "Partnership",
       "title": "Abridge Collaborating with OpenAI on Computer-Use Agents for Healthcare Workflows",
-      "desc": "Fierce Healthcare reports Abridge is building computer-use agents with OpenAI to help clinicians carry out care plans across applications without APIs — navigating EHRs, payer portals, and other software the way a human does. Abridge plans an inpatient use case where agents work concurrently on medication access and home health coordination using computer interaction alongside calls and messages. OpenAI's GPT-6 Astra model was evaluated on EHR inbox tasks: 99% of 325 reviewed tasks rated clinically safe, and physicians rated the model 'very helpful' or 'extremely helpful' in 93% of 646 assessments. CVS Health, Cigna Healthcare, and Ambience are also collaborating with OpenAI on computer-use agents for referrals, prior authorizations, and care coordination.",
+      "desc": "Fierce Healthcare reports Abridge is building computer-use agents with OpenAI to help clinicians carry out care plans across applications without APIs - navigating EHRs, payer portals, and other software the way a human does. Abridge plans an inpatient use case where agents work concurrently on medication access and home health coordination using computer interaction alongside calls and messages. OpenAI's GPT-6 Astra model was evaluated on EHR inbox tasks: 99% of 325 reviewed tasks rated clinically safe, and physicians rated the model 'very helpful' or 'extremely helpful' in 93% of 646 assessments. CVS Health, Cigna Healthcare, and Ambience are also collaborating with OpenAI on computer-use agents for referrals, prior authorizations, and care coordination.",
       "src": "Fierce Healthcare",
       "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/hlth26-cvs-health-cigna-and-ambience-collaborating-openai-test-computer-use",
       "new": true
@@ -1534,7 +1543,11 @@
     {
       "name": "MedCity News - Viz.ai partners with Wolters Kluwer Health for UpToDate (Nov 18, 2026)",
       "url": "https://medcitynews.com/2026/11/viz-ai-partners-with-wolters-kluwer-health-to-add-uptodate-resource-to-its-platform/"
+    },
+    {
+      "name": "The Inference - Abridge lost AI scribing to Microsoft and Epic; CDS market priced at $100M (Nov 19, 2026)",
+      "url": "https://theinference.org/article/abridge-lost-ai-scribing-to-microsoft-and-epic-its-next-market-has-a-100-million-price-from-wolters-kluwer"
     }
   ],
-  "updated": "2026-11-19"
+  "updated": "2026-11-20"
 }
