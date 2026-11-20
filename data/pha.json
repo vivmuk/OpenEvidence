@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -696,6 +696,14 @@
       "url": "https://doi.org/10.2196/103419"
     },
     {
+      "date": "2026-07-28",
+      "cat": "Research",
+      "title": "PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents",
+      "desc": "arXiv preprint from Amazon Science introducing PatientAgentBench, a benchmark for patient-facing agentic healthcare that evaluates a foundation model wrapped in an agent with a sandbox of healthcare tools, conversing with a simulated patient. Each conversation is scored by an LLM-as-a-Jury across six dimensions via over 100 clinician-grounded criteria. Clinicians annotated shared conversations, yielding 79-93% adjacent agreement between jury and expert raters. Benchmarked 10 models across four families on 1,200 scenarios: triage quality pass rates rose from 32% (weakest) to 88% (strongest), with agents often acting on administrative requests without clinical screening. Frontier models failed on only 1-3% of cases but still scored 4.25/5 overall at best. Confirms static benchmarks are insufficient as healthcare agentic systems gain autonomy. Preprint, not peer-reviewed.",
+      "src": "arXiv (Amazon Science)",
+      "url": "https://arxiv.org/abs/2607.25485"
+    },
+    {
       "date": "2026-07-23",
       "cat": "Product",
       "title": "OpenAI Launches 'Health in ChatGPT' with Records and Apple Health",
@@ -710,6 +718,14 @@
       "desc": "arXiv preprint introducing HealthClaw, an open-source agent architecture that separates shared safety rules and medical knowledge from private longitudinal memory (profile facts, reusable procedures, episodic traces). After each interaction, an induction step decides what to retain, revise, or discard. Across 900 longitudinal support probes, answer accuracy rose from 0.2% with current-query prompting to 45.7% with HealthClaw, while context exposure was 71.7% lower than full-history prompting. In 100 privacy probes, HealthClaw produced fewer unsafe disclosures than both baselines. Code is publicly available on GitHub.",
       "src": "arXiv",
       "url": "https://arxiv.org/abs/2607.13940"
+    },
+    {
+      "date": "2026-07-15",
+      "cat": "Research",
+      "title": "Nature Health: DAS Red-Teaming Audit Finds Safety Gaps Across 15 Health LLMs",
+      "desc": "A study published in Nature Health introduced DAS (Dynamic, Automatic and Systematic), a red-teaming audit framework that continuously stress-tests LLMs for health across four safety-critical axes: robustness, privacy, bias and hallucination. Validated against board-certified clinicians, adversarial agents autonomously mutate health-related test cases to uncover vulnerabilities in real time. Applying DAS to 15 state-of-the-art LLMs revealed safety gaps across all models, addressing the problem that static benchmarks can become obsolete or be optimized against. Peer-reviewed.",
+      "src": "Nature Health",
+      "url": "https://www.nature.com/articles/s44360-026-00152-8"
     },
     {
       "date": "2026-07-10",
@@ -2150,6 +2166,24 @@
       "finding": "Presents Safe Personal RSI, an update-evaluation component for Kicker, a personal health assistant. The system restricts recursive self-improvement (RSI) to prompt updates only, with model weights and runtime code fixed. The procedure tests proposed and current instructions, repeats failing cases, temporarily undoes changes to guide repairs, and checks safety and task performance before adoption. If no version passes, the current instructions stay in use. The executable benchmark contains 29 email, calendar and health tasks. The work addresses the safety risk that changes to an assistant's reusable instructions can improve task handling while changing what it discloses, which requests it follows, and how it reports actions.",
       "caveat": "Preprint, not peer-reviewed. The benchmark is small (29 tasks) and focuses on prompt-level RSI, not model weight or runtime code changes. The system is a research prototype and has not been deployed at scale.",
       "url": "https://arxiv.org/abs/2611.23651"
+    },
+    {
+      "title": "PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents",
+      "type": "arXiv preprint · patient-facing agent benchmark",
+      "date": "Jul 28, 2026",
+      "venue": "arXiv (cs.AI) - Amazon Science",
+      "finding": "Introduces PatientAgentBench, a benchmark for patient-facing agentic healthcare. Evaluates a foundation model wrapped in an agent with a sandbox of healthcare tools, conversing with a simulated patient. Each conversation scored by an LLM-as-a-Jury across six dimensions via over 100 clinician-grounded criteria. Clinicians annotated shared conversations, yielding 79-93% adjacent agreement between jury and expert raters. Benchmarked 10 models across four families on 1,200 scenarios: triage quality pass rates rose from 32% (weakest) to 88% (strongest). Frontier models failed on only 1-3% of cases but still scored 4.25/5 overall at best. Agents often acted on administrative requests without clinical screening. Confirms static benchmarks are insufficient as healthcare agentic systems gain autonomy. Code released on GitHub.",
+      "caveat": "Preprint, not peer-reviewed. LLM-as-a-Jury evaluation may not fully align with clinical safety assessment. Simulated patient conversations may not capture real-world patient behaviour and variability. Amazon Science affiliation (potential conflict of interest for benchmarking commercial AI agents).",
+      "url": "https://arxiv.org/abs/2607.25485"
+    },
+    {
+      "title": "Addressing Benchmarking Gaps in Large Language Models for Health and Medicine with Dynamic Red-Teaming",
+      "type": "Peer-reviewed · safety evaluation framework",
+      "date": "Jul 15, 2026",
+      "venue": "Nature Health",
+      "finding": "Introduces DAS (Dynamic, Automatic and Systematic), a red-teaming audit framework that continuously stress-tests LLMs for health across four safety-critical axes: robustness, privacy, bias and hallucination. Validated against board-certified clinicians, a suite of adversarial agents autonomously mutates health-related test cases to uncover vulnerabilities in real time. Applying DAS to 15 state-of-the-art LLMs revealed profound safety gaps across all models, demonstrating that static benchmarks rapidly become obsolete or can be optimized against.",
+      "caveat": "The framework focuses on LLMs in isolation, not agentic systems with tools and memory. Adversarial mutation strategies may not cover all real-world failure modes. The 15 models tested may not represent the full landscape of health AI tools.",
+      "url": "https://www.nature.com/articles/s44360-026-00152-8"
     }
   ],
   "sources": [
@@ -2700,6 +2734,14 @@
     {
       "name": "9to5Mac - iOS 27.3 Apple Health app requires AI-compatible iPhone (Nov 17, 2026)",
       "url": "https://9to5mac.com/2026/11/17/ios-27-3s-redesigned-apple-health-app-requires-newer-iphone-model/"
+    },
+    {
+      "name": "arXiv - PatientAgentBench: Patient-facing health AI agent benchmark (Jul 28, 2026)",
+      "url": "https://arxiv.org/abs/2607.25485"
+    },
+    {
+      "name": "Nature Health - DAS dynamic red-teaming audit for health LLMs (Jul 15, 2026)",
+      "url": "https://www.nature.com/articles/s44360-026-00152-8"
     }
   ],
   "freeTierDefaults": [
