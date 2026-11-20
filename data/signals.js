@@ -334,18 +334,6 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-11-06",
-  "cat": "Partnership",
-  "title": "American College of Rheumatology and OpenEvidence Collaborate to Expand Access to Trusted Patient Education Resources",
-  "desc": "The American College of Rheumatology (ACR) and OpenEvidence announce a collaboration at ACR Convergence 2026 to bring ACR's English- and Spanish-language disease and treatment fact sheets to clinicians within OpenEvidence, supporting point-of-care education for people with rheumatic conditions. ACR ",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources",
-  "score": 81,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
   "date": "2026-09-24",
   "cat": "Funding",
   "title": "OpenEvidence Raises $250M at $15B Valuation, Pivots Into Drug Development",
@@ -412,6 +400,18 @@ var signalsData = [
   "desc": "OpenEvidence launched Access Intelligence, a suite of tools built directly into the platform that helps clinicians ensure their patients can access and afford the care they need. Components available now, free for all clinicians: (1) Support program information in the flow of care - availability and",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/introducing-openevidence-access-intelligence-bringing-affordability-and-access-to-the-point-of-care",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "Partnership",
+  "title": "American College of Rheumatology and OpenEvidence Collaborate to Expand Access to Trusted Patient Education Resources",
+  "desc": "The American College of Rheumatology (ACR) and OpenEvidence announce a collaboration at ACR Convergence 2026 to bring ACR's English- and Spanish-language disease and treatment fact sheets to clinicians within OpenEvidence, supporting point-of-care education for people with rheumatic conditions. ACR ",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
