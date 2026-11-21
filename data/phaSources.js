@@ -138,5 +138,12 @@ var phaSourcesData = [
   {name:"arXiv - Kicker: Safe Personal RSI for personal health assistant (Nov 18, 2026)", url:"https://arxiv.org/abs/2611.23651"},
   {name:"9to5Mac - iOS 27.3 Apple Health app requires AI-compatible iPhone (Nov 17, 2026)", url:"https://9to5mac.com/2026/11/17/ios-27-3s-redesigned-apple-health-app-requires-newer-iphone-model/"},  {name:"arXiv - PatientAgentBench: Patient-facing health AI agent benchmark (Jul 28, 2026)", url:"https://arxiv.org/abs/2607.25485"},
   {name:"Nature Health - DAS dynamic red-teaming audit for health LLMs (Jul 15, 2026)", url:"https://www.nature.com/articles/s44360-026-00152-8"},
+  {name:"arXiv - MedGraph: Graph Memory for Long-Term Medical Dialogue (Nov 5, 2026)", url:"https://arxiv.org/abs/2611.08433"},
+  {name:"Glass Health / LinkedIn - Glass for Patients personal AI agent (Oct 20, 2026)", url:"https://www.linkedin.com/posts/dereckwpaul_glass-for-patients-our-personal-ai-agent-activity-7518402400311824384-36oA"},
+  {name:"arXiv - Evaluation format shapes triage failure (Oct 20, 2026)", url:"https://arxiv.org/html/2603.11413"},
+  {name:"PR Newswire / Ferry Health - $9M seed launch (Sep 16, 2026)", url:"https://www.prnewswire.com/news-releases/ferry-health-launches-out-of-stealth-with-9m-in-funding-for-its-ai-powered-healthcare-personal-assistant-302880048.html"},
+  {name:"Hims & Hers - Labs AI care agent launch (May 7, 2026)", url:"https://news.hims.com/newsroom/meet-labs-ai-the-first-ai-care-agent-from-hims-hers"},
+  {name:"UC Merced - NIH $1.1M HOME Project for geriatric care (Nov 5, 2026)", url:"https://www.ucmerced.edu/news/2026/nih-grant-funds-project-revolutionize-care-older-adults"},
+  {name:"Springer - Ambient intelligence for active aging IoT solution (Nov 18, 2026)", url:"https://link.springer.com/article/10.1007/s10209-026-01393-w"},
 
 ];

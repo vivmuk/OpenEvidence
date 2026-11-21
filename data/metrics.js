@@ -220,10 +220,10 @@ var siteMetrics = {
   "counts": {
     "partners": 60,
     "competitors": 42,
-    "research": 744,
-    "benchmarks": 352,
+    "research": 753,
+    "benchmarks": 360,
     "publications": 143,
-    "timeline": 213,
+    "timeline": 214,
     "sources": 67
   }
 };

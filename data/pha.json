@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -29,6 +29,15 @@
       "desc": "arXiv preprint presenting Safe Personal RSI, an update-evaluation component for Kicker, a personal health assistant. The system restricts recursive self-improvement (RSI) to prompt updates only, with model weights and runtime code fixed. The procedure tests proposed and current instructions, repeats failing cases, temporarily undoes changes to guide repairs, and checks safety and task performance before adoption. If no version passes, current instructions stay in use. The benchmark contains 29 email, calendar and health tasks. Represents a safety-first approach to evolving personal health agent instructions without compromising disclosure or request-handling behaviour. Preprint, not peer-reviewed.",
       "src": "arXiv",
       "url": "https://arxiv.org/abs/2611.23651",
+      "new": true
+    },
+    {
+      "date": "2026-11-18",
+      "cat": "Research",
+      "title": "Ambient Intelligence for Active Aging: Non-Intrusive IoT Solution for Independent Living",
+      "desc": "Springer published a peer-reviewed paper presenting an IoT-based Ambient Assisted Living system using non-intrusive sensors to support older adults living independently. The system integrates information technology with physical objects in daily life to address insecurity and loneliness in aging populations. Extends ambient home health monitoring from physical safety to social connectedness and quality of life for aging in place.",
+      "src": "Springer - Universal Access in the Information Society",
+      "url": "https://link.springer.com/article/10.1007/s10209-026-01393-w",
       "new": true
     },
     {
@@ -155,13 +164,28 @@
       "new": true
     },
     {
+      "date": "2026-11-05",
+      "cat": "Research",
+      "title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
+      "desc": "arXiv preprint examining errors in five memory systems on longitudinal medical dialogue, identifying three recurring causes: retrieved evidence gives outdated state, includes another person's health facts, or omits current changes. Proposes graph memory to maintain correct patient state across visits. Addresses the memory problem that limits personal health agents from supporting longitudinal care. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2611.08433"
+    },
+    {
+      "date": "2026-11-05",
+      "cat": "Research",
+      "title": "NIH Awards $1.1M for HOME Project: Multimodal Cyber-Physical Systems for Geriatric Care",
+      "desc": "UC Merced and UC Davis received a four-year, $1.1 million R01 award from NIH for \"SCH: HOME: Health-Oriented Monitoring Empowered by Multimodal Cyber-Physical Systems for Geriatric Care.\" The project will develop a plug-and-play, multi-agent system integrating multimodal sensing, adaptive learning, and real-time health updates for aging in place. Represents federal investment in ambient home health monitoring research.",
+      "src": "UC Merced",
+      "url": "https://www.ucmerced.edu/news/2026/nih-grant-funds-project-revolutionize-care-older-adults"
+    },
+    {
       "date": "2026-11-06",
       "cat": "Product",
       "title": "Insilico Medicine Open-Sources Longevity Grok, a Personal Longevity Superintelligence",
       "desc": "Insilico Medicine open-sourced Longevity Grok (PLSI), a 24/7 personal longevity AI that turns quantified-self data into predictive health states and aging research, in collaboration with David Sinclair of Harvard Medical School. Represents a new category of personal health agents focused on longevity and aging trajectories rather than acute care or general wellness. Open-source release aims to accelerate research adoption. Vendor claim: personal longevity superintelligence, not a medical device.",
       "src": "Insilico Medicine / PR Newswire",
-      "url": "https://www.prnewswire.com/news-releases/insilico-open-sources-247-personal-longevity-superintelligence-to-turn-quantified-self-data-into-predictive-health-states-and-aging-research-302931941.html",
-      "new": true
+      "url": "https://www.prnewswire.com/news-releases/insilico-open-sources-247-personal-longevity-superintelligence-to-turn-quantified-self-data-into-predictive-health-states-and-aging-research-302931941.html"
     },
     {
       "date": "2026-10-26",
@@ -209,8 +233,7 @@
       "title": "Octo Health Launches Beta Combining 100+ Biomarker Testing with Unified Health Data Timeline",
       "desc": "Octo Health launched a beta platform that brings medical records, lab results, medications and health data into one health timeline. Combines annual testing of 100+ biomarkers with unified health data so members can identify patterns and track health trends over time. Gives consumers greater ownership of their data and helps them understand what it means. Vendor claim: proactive personalized healthcare, not a medical device.",
       "src": "GlobeNewswire / Octo Health",
-      "url": "https://www.globenewswire.com/news-release/2026/11/05/3396534/0/en/octo-health-launches-beta-to-make-proactive-personalized-healthcare-more-accessible.html",
-      "new": true
+      "url": "https://www.globenewswire.com/news-release/2026/11/05/3396534/0/en/octo-health-launches-beta-to-make-proactive-personalized-healthcare-more-accessible.html"
     },
     {
       "date": "2026-11-04",
@@ -218,8 +241,7 @@
       "title": "Felix Health Launches 'Ask Felix' AI Assistant Paired with Human Care Teams",
       "desc": "Canadian digital health company Felix Health launched Ask Felix, an AI assistant that pairs with each patient's Felix human care team to answer care-related questions, act on everyday requests and bring concerns to their healthcare practitioner. Built on Felix's newly published Patient-First AI Principles. Represents a hybrid model where AI extends rather than replaces the care team. Vendor claim: AI assistant integrated with human care team, not a replacement for medical care.",
       "src": "CNW / Felix Health",
-      "url": "https://www.newswire.ca/news-releases/most-health-ai-ends-with-talk-to-your-doctor-felix-s-new-ai-assistant-brings-yours-in--855533177.html",
-      "new": true
+      "url": "https://www.newswire.ca/news-releases/most-health-ai-ends-with-talk-to-your-doctor-felix-s-new-ai-assistant-brings-yours-in--855533177.html"
     },
     {
       "date": "2026-11-04",
@@ -227,8 +249,7 @@
       "title": "Google Publishes Whitepaper on End-to-End Evaluation Framework for Health AI",
       "desc": "Google Research, in partnership with health experts Dr. Elizabeth McGlynn and Dr. Dana Gelb Safran, published a whitepaper detailing an end-to-end evaluation approach for AI in health. The framework evaluates models across three areas: accuracy, safety, and usefulness, combining closed-question benchmarks, autoraters, and expert human review to assess common and high-risk health scenarios. Addresses the evaluation bottleneck as health AI deployment outpaces safety validation.",
       "src": "Google Research Blog",
-      "url": "https://blog.google/innovation-and-ai/technology/health/evaluating-health-ai-at-scale/",
-      "new": true
+      "url": "https://blog.google/innovation-and-ai/technology/health/evaluating-health-ai-at-scale/"
     },
     {
       "date": "2026-11-03",
@@ -236,8 +257,7 @@
       "title": "Apple's Redesigned AI Health App Returns in iOS 27.3 Beta with Insights and Longevity Tabs",
       "desc": "iOS 27.3 reintroduces Apple's redesigned Health app, which was pulled from iOS 27.2 beta in October. Built with Apple Intelligence at its core, the app features an Insights tab with AI-generated summaries and Personal Guidance, and a Longevity tab analyzing longitudinal health data including Health Age. Language support expanded to global English, Chinese, French, Japanese, Korean, Norwegian, Portuguese, Spanish, Turkish and Vietnamese. Available to users as a free software update by end of 2026.",
       "src": "Apple / MacRumors",
-      "url": "https://www.apple.com/newsroom/2026/11/redesigned-health-app-expands-language-support/",
-      "new": true
+      "url": "https://www.apple.com/newsroom/2026/11/redesigned-health-app-expands-language-support/"
     },
     {
       "date": "2026-11-02",
@@ -280,6 +300,14 @@
       "url": "https://joined.bio/news/joined-bio-introduces-nova-ai-assistant/"
     },
     {
+      "date": "2026-09-16",
+      "cat": "Product",
+      "title": "Ferry Health Launches Out of Stealth with $9M Seed for AI Healthcare Personal Assistant",
+      "desc": "Ferry Health launched out of stealth with an AI personal assistant that handles healthcare tasks for patients, starting with finding and scheduling care. The company raised $9M in seed funding from Andreessen Horowitz (a16z), Index Ventures, Avid Ventures, Layout Ventures, and SV Angel. Represents the task-automation design pattern for personal health agents: the agent does things for you rather than telling you what to do. Vendor claim: AI healthcare personal assistant, not a medical device.",
+      "src": "PR Newswire / Ferry Health",
+      "url": "https://www.prnewswire.com/news-releases/ferry-health-launches-out-of-stealth-with-9m-in-funding-for-its-ai-powered-healthcare-personal-assistant-302880048.html"
+    },
+    {
       "date": "2026-09-10",
       "cat": "Product",
       "title": "Dimer Health Launches AiME, a Personalised AI Health Agent for Post-Discharge Care",
@@ -318,6 +346,22 @@
       "desc": "California enacted AB 1979, extending the Confidentiality of Medical Information Act (CMIA) to businesses offering consumer-facing health care chatbots. Starting January 1, 2027, companies providing chatbots for managing health information or for diagnosis, treatment or management of a medical condition will be deemed health care providers under CMIA, required to maintain the same confidentiality standards as providers. The law also limits how health care providers may use AI in clinical care. Represents the first state law to explicitly bring consumer health AI chatbots under medical privacy protections equivalent to those covering providers.",
       "src": "Hunton Andrews Kurth",
       "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/california-law-extends-cmia-protections-to-health-care-chatbots-and-enacts-new-guardrails-on-ai-use-in-clinical-care"
+    },
+    {
+      "date": "2026-10-20",
+      "cat": "Product",
+      "title": "Glass Health Launches Glass for Patients, a Personal AI Health Agent on iOS and Android",
+      "desc": "Glass Health launched Glass for Patients, a personal AI agent for health, now available on iOS and Android. The app brings Glass's clinical AI to individuals for understanding their health and working toward health goals. Glass Health, originally built for clinicians, extends its AI agent to the consumer side, representing the clinician-to-consumer pipeline for personal health agents. Vendor claim: personal AI health agent, not a medical device.",
+      "src": "Glass Health / LinkedIn",
+      "url": "https://www.linkedin.com/posts/dereckwpaul_glass-for-patients-our-personal-ai-agent-activity-7518402400311824384-36oA"
+    },
+    {
+      "date": "2026-10-20",
+      "cat": "Research",
+      "title": "Evaluation Format Shapes Measured Triage Failure: Methodological Critique of ChatGPT Health Study",
+      "desc": "arXiv preprint finding that the measurement protocol, not just model capability, drives reported triage error rates. Five frontier LLMs scored 6.4 points higher under naturalistic patient-style messages than under the constrained exam-style scaffold used in the Nature Medicine ChatGPT Health study (p=0.015). The study asks how much of the headline 51.6% undertriage rate is a property of the measurement rather than the models. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/html/2603.11413"
     },
     {
       "date": "2026-10-20",
@@ -934,6 +978,14 @@
       "desc": "A systematic literature review of safety issues in agentic AI systems deployed in clinical environments. Unlike conventional single-turn AI tools, agentic systems autonomously plan multistep tasks, invoke external tools, retain memory, and pursue clinical goals with minimal human intervention, introducing a qualitatively distinct safety profile. The review covers hallucination, tool misuse, memory corruption, and escalation failures across radiology, clinical decision support, intensive care monitoring, drug discovery, and patient-facing care.",
       "src": "Preprints.org",
       "url": "https://doi.org/10.20944/preprints202604.1409.v1"
+    },
+    {
+      "date": "2026-05-07",
+      "cat": "Product",
+      "title": "Hims & Hers Launches Labs AI, an AI Care Agent for Lab Result Interpretation",
+      "desc": "Hims & Hers launched Labs AI, an AI care agent embedded in the Hims & Hers platform that makes lab results clearer, more useful, and easier to engage with. Labs AI was introduced alongside Labs by Hims & Hers biomarker testing. Represents the telehealth-platform model for personal health agents: the agent is embedded in the commercial health platform and extends the service from prescribing to data interpretation. Vendor claim: AI care agent for lab results, not a medical device.",
+      "src": "Hims & Hers",
+      "url": "https://news.hims.com/newsroom/meet-labs-ai-the-first-ai-care-agent-from-hims-hers"
     }
   ],
   "players": [
@@ -2742,6 +2794,34 @@
     {
       "name": "Nature Health - DAS dynamic red-teaming audit for health LLMs (Jul 15, 2026)",
       "url": "https://www.nature.com/articles/s44360-026-00152-8"
+    },
+    {
+      "name": "arXiv - MedGraph: Graph Memory for Long-Term Medical Dialogue (Nov 5, 2026)",
+      "url": "https://arxiv.org/abs/2611.08433"
+    },
+    {
+      "name": "Glass Health / LinkedIn - Glass for Patients personal AI agent (Oct 20, 2026)",
+      "url": "https://www.linkedin.com/posts/dereckwpaul_glass-for-patients-our-personal-ai-agent-activity-7518402400311824384-36oA"
+    },
+    {
+      "name": "arXiv - Evaluation format shapes triage failure (Oct 20, 2026)",
+      "url": "https://arxiv.org/html/2603.11413"
+    },
+    {
+      "name": "PR Newswire / Ferry Health - $9M seed launch (Sep 16, 2026)",
+      "url": "https://www.prnewswire.com/news-releases/ferry-health-launches-out-of-stealth-with-9m-in-funding-for-its-ai-powered-healthcare-personal-assistant-302880048.html"
+    },
+    {
+      "name": "Hims & Hers - Labs AI care agent launch (May 7, 2026)",
+      "url": "https://news.hims.com/newsroom/meet-labs-ai-the-first-ai-care-agent-from-hims-hers"
+    },
+    {
+      "name": "UC Merced - NIH $1.1M HOME Project for geriatric care (Nov 5, 2026)",
+      "url": "https://www.ucmerced.edu/news/2026/nih-grant-funds-project-revolutionize-care-older-adults"
+    },
+    {
+      "name": "Springer - Ambient intelligence for active aging IoT solution (Nov 18, 2026)",
+      "url": "https://link.springer.com/article/10.1007/s10209-026-01393-w"
     }
   ],
   "freeTierDefaults": [
