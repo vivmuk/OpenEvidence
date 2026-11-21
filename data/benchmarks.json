@@ -8010,5 +8010,138 @@
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/43054086/",
     "pmid": "43054086"
+  },
+  {
+    "id": "pmid:43064677",
+    "source": "pubmed",
+    "title": "CDSS-PIRM for Pressure Injury Risk Management in ICU Nursing",
+    "authors": "Adibelli S, Korkmaz F",
+    "journal": "J Adv Nurs",
+    "date": "2026-11-20",
+    "key_metric": "Risk assessment practice scores improved (p=0.016); wound care improved (p=0.015); pressure injury incidence unchanged (10.9%, p=0.920)",
+    "scale": "71 observations, 9 ICU nurses, 165 patients",
+    "finding": "CDSS strengthened specific nursing practices but contextual/organisational barriers constrained translation into clinical outcomes",
+    "tools": [
+      "CDSS-PIRM"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43064677/",
+    "pmid": "43064677"
+  },
+  {
+    "id": "pmid:43064362",
+    "source": "pubmed",
+    "title": "LLM-Based EHR Summarization Tool (Inpatient Insights Summary) Feasibility",
+    "authors": "Smith KD, Silverman RS, Himelhoch HL, Kao CK",
+    "journal": "Appl Clin Inform",
+    "date": "2026-11-20",
+    "key_metric": "Hallucinations detected in 6.2% of summaries; PDQI-9 quality assessment; significant improvement through prompt engineering",
+    "scale": "32 providers, 7 specialties, Epic Hyperdrive EHR",
+    "finding": "LLM-based EHR summarization produces accurate/comprehensive summaries with infrequent hallucinations; may support clinical workflow efficiency",
+    "tools": [
+      "LLM",
+      "Epic Hyperdrive"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43064362/",
+    "pmid": "43064362"
+  },
+  {
+    "id": "pmid:43062341",
+    "source": "pubmed",
+    "title": "LLMs Preserve Surgical Sensitivity at Cost of Diagnostic Specificity in Acute Abdominal Pain",
+    "authors": "Serin SO, Ba\u015fak F",
+    "journal": "Am Surg",
+    "date": "2026-11-20",
+    "key_metric": "Safety-stewardship trade-off: LLMs preserve surgical sensitivity while reducing specificity",
+    "scale": "50 acute abdominal pain cases",
+    "finding": "Frontier LLMs play it safe by preserving surgical sensitivity at the cost of increased resource use through reduced specificity",
+    "tools": [
+      "frontier LLMs"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43062341/",
+    "pmid": "43062341"
+  },
+  {
+    "id": "pmid:43061675",
+    "source": "pubmed",
+    "title": "RadOnc-GPT: LLM Agent for Radiation Oncology Outcomes Labeling and Registry Auditing",
+    "authors": "Unknown",
+    "journal": "Unknown",
+    "date": "2026-10-15",
+    "key_metric": "Feasibility of prototype LLM agent for outcomes labeling and registry auditing",
+    "scale": "Radiation oncology registry",
+    "finding": "Exploratory feasibility study of LLM agent for automated radiation oncology registry tasks",
+    "tools": [
+      "RadOnc-GPT",
+      "LLM agent"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43061675/",
+    "pmid": "43061675"
+  },
+  {
+    "id": "pmid:43060726",
+    "source": "pubmed",
+    "title": "LLM-Enhanced Electronic Frailty Assessment Prognostic Performance",
+    "authors": "Unknown",
+    "journal": "Unknown",
+    "date": "2026-11-05",
+    "key_metric": "Prognostic performance of LLM-enhanced electronic frailty assessment in hospitalized adults",
+    "scale": "Retrospective cohort, hospitalized adults",
+    "finding": "LLM enhancement of electronic frailty assessment improves prognostic performance",
+    "tools": [
+      "LLM"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43060726/",
+    "pmid": "43060726"
+  },
+  {
+    "id": "pmid:43060693",
+    "source": "pubmed",
+    "title": "LLM Identification of Interstitial Lung Disease from Clinical Notes and Claims",
+    "authors": "Unknown",
+    "journal": "Unknown",
+    "date": "2026-11-02",
+    "key_metric": "Automated ILD identification from unstructured clinical text and claims data",
+    "scale": "Clinical notes and claims data",
+    "finding": "LLMs can identify interstitial lung disease from clinical notes and claims data",
+    "tools": [
+      "LLM"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43060693/",
+    "pmid": "43060693"
+  },
+  {
+    "id": "pmid:43060673",
+    "source": "pubmed",
+    "title": "MERIT: Multi-agent EHR-grounded Risk Identification for Early Cognitive Decline",
+    "authors": "Unknown",
+    "journal": "Unknown",
+    "date": "2026-11-03",
+    "key_metric": "Multi-agent LLM system for EHR-grounded risk identification and tailored care",
+    "scale": "Primary care, early cognitive decline",
+    "finding": "Multi-agent LLM system identifies risk and generates tailored care for early cognitive decline in primary care",
+    "tools": [
+      "LLM",
+      "multi-agent system",
+      "EHR"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43060673/",
+    "pmid": "43060673"
+  },
+  {
+    "id": "pmid:43060237",
+    "source": "pubmed",
+    "title": "Detecting Contradictory Evidence on Drug-Disease Associations at Scale",
+    "authors": "Unknown",
+    "journal": "Unknown",
+    "date": "2026-11-12",
+    "key_metric": "Automated detection of contradictory evidence at scale",
+    "scale": "Drug-disease associations across clinical literature",
+    "finding": "AI system for detecting contradictory evidence on drug-disease associations at scale",
+    "tools": [
+      "AI",
+      "NLP"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43060237/",
+    "pmid": "43060237"
   }
 ]
