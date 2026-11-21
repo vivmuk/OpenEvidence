@@ -645,6 +645,24 @@
   "timeline": [
     {
       "date": "2026-11-19",
+      "cat": "Product",
+      "title": "Abridge Demonstrates Structured Physical Exam Documentation from Spoken Findings",
+      "desc": "Dr. Casey Hribar, Clinical Success Director at Abridge, published a detailed walkthrough showing how Abridge converts spoken physical exam observations like 'lungs sound clear' into structured, specialty-appropriate documentation. The feature supports configurable templates (Ob/Gyn, Neurology, Ophthalmology, Dermatology, Pediatric Newborn and more), style settings that weight templates against verbalization, note preferences for recurring rules, and Abridge Assistant prompt editing for per-visit customization. The post reduces reliance on EHR template clicking and manual exam editing, moving another documentation step into the conversation itself.",
+      "src": "Abridge Blog",
+      "url": "https://www.abridge.com/blog/complete-physical-exam",
+      "new": true
+    },
+    {
+      "date": "2026-11-19",
+      "cat": "Competitor",
+      "title": "AssemblyAI Publishes Independent Comparison of 8 Ambient AI Scribes for 2026",
+      "desc": "AssemblyAI, a speech-to-text API provider, published an independent comparison of 8 ambient AI scribes including Abridge, Microsoft Dragon Copilot, Epic, Nabla, Suki, Ambience Healthcare, DeepScribe, and Commure. The comparison evaluates EHR fit, specialty support, and deployment options, concluding the category has matured from optional efficiency tool to default clinical infrastructure. The piece notes Abridge's enterprise focus and Epic integration depth as key differentiators, while flagging Epic's native AI charting as the primary competitive risk.",
+      "src": "AssemblyAI",
+      "url": "https://www.assemblyai.com/blog/the-best-7-ambient-ai-scribes",
+      "new": true
+    },
+    {
+      "date": "2026-11-19",
       "cat": "Competitor",
       "title": "The Inference: Abridge Lost AI Scribing to Microsoft and Epic; CDS Market Gets a $100M Price Tag",
       "desc": "The Inference analyzes how Microsoft and Epic captured two of every three new AI-scribe dollars this year, forcing Abridge to sell what comes after the note. The decision-support category Abridge is escaping into just got its first public price: Wolters Kluwer's up-to-$100M acquisition of AgileMD, a 23-person CDS firm with $7M revenue. The article cites Menlo Ventures data showing clinical copilots grew 5.5x year-over-year while ambient scribing grew only 1.6x, names OpenEvidence as the clinical copilot providers already choose most, and notes OpenAI prices prior-authorization tasks at 8.5 cents. Abridge's $6.69B private valuation must outrun the CDS market price one health system at a time.",
@@ -829,8 +847,7 @@
       "title": "Abridge VP Dr. Nadim Ilbawi on Becker's Podcast: Context-Aware Clinical Decision Support",
       "desc": "Dr. Nadim Ilbawi, VP of Clinical Success & Strategy at Abridge, appeared on Becker's Healthcare Podcast to discuss how AI-powered clinical decision support brings patient chart information and trusted medical evidence together. The conversation covers how Abridge Assistant helps clinicians prepare for visits, make informed decisions during encounters, and reduce cognitive burden by grounding responses in the patient conversation and licensed evidence sources.",
       "src": "Becker's Healthcare Podcast",
-      "url": "https://podfollow.com/beckers-healthcare-podcast/episode/c4a69900a3d33a968f6ae78fc615b9bab5029d1e/view",
-      "new": true
+      "url": "https://podfollow.com/beckers-healthcare-podcast/episode/c4a69900a3d33a968f6ae78fc615b9bab5029d1e/view"
     },
     {
       "date": "2026-11-06",
@@ -838,8 +855,7 @@
       "title": "Abridge Lays Off Employees in Company Realignment",
       "desc": "Modern Healthcare reports Abridge has laid off an unspecified number of employees as part of a company realignment. Abridge said the move will allow it to hire in priority areas and invest in new opportunities. No headcount, department, or percentage was disclosed. The layoff signals a shift in the ambient AI market from land-grab growth toward margin discipline as EHR-native competitors and model platforms pressure pricing.",
       "src": "Modern Healthcare",
-      "url": "https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/",
-      "new": true
+      "url": "https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/"
     },
     {
       "date": "2026-10-30",
@@ -1547,7 +1563,15 @@
     {
       "name": "The Inference - Abridge lost AI scribing to Microsoft and Epic; CDS market priced at $100M (Nov 19, 2026)",
       "url": "https://theinference.org/article/abridge-lost-ai-scribing-to-microsoft-and-epic-its-next-market-has-a-100-million-price-from-wolters-kluwer"
+    },
+    {
+      "name": "Abridge Blog - Turning 'Lungs Sound Clear' Into a Complete Exam (Nov 19, 2026)",
+      "url": "https://www.abridge.com/blog/complete-physical-exam"
+    },
+    {
+      "name": "AssemblyAI - Best ambient AI scribes in 2026: 8 tools compared (Nov 19, 2026)",
+      "url": "https://www.assemblyai.com/blog/the-best-7-ambient-ai-scribes"
     }
   ],
-  "updated": "2026-11-20"
+  "updated": "2026-11-21"
 }
