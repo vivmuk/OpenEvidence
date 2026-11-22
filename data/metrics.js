@@ -219,11 +219,11 @@ var siteMetrics = {
   },
   "counts": {
     "partners": 60,
-    "competitors": 42,
+    "competitors": 44,
     "research": 767,
     "benchmarks": 366,
     "publications": 143,
-    "timeline": 215,
+    "timeline": 219,
     "sources": 67
   }
 };
