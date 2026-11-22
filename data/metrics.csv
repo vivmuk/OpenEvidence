@@ -71,3 +71,8 @@ Date,Metric,Value,Unit,Source_URL
 2024-12-01,Annualized Revenue,7900000,USD,https://sacra.com/c/openevidence/
 2024-07-01,Monthly Consultations,358000,consultations/month,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
 2024-07-01,Registered Physicians,358000,physicians,https://www.prnewswire.com/news-releases/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation-302505806.html
+2026-11-17,2,010,000,consultations/day,Daily consultations,First 2M consultation day
+2026-11-16,47000000,monthly queries,October 2026,Monthly query volume,47M queries in October per WSJ
+2026-11-16,15000000,healthcare professionals,daily users US,Healthcare professionals using daily,15M healthcare professionals per WSJ profile
+2026-11-16,800000,physicians,total physicians,US physicians using OpenEvidence,800K physicians per Forbes
+2026-11-01,300000000,Americans treated,Americans treated,Americans treated by doctors using OE,300M Americans per Forbes

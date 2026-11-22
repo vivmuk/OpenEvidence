@@ -2381,13 +2381,18 @@
     ],
     "relevance": "high",
     "key_findings": "Sequential training with rubric-based RL yields 10%+ improvement on MedXpertQA. 30B model achieves 50.1% on HealthBench-Hard, surpassing GPT-5 (thinking). Uses 5.3k synthetic multi-turn clinical scenarios.",
-    "tools_evaluated": "",
+    "tools_evaluated": [],
     "scale": "",
     "status": "new",
     "arxiv_id": "2609.24480",
     "pub_date": "2026-09-21",
     "benchmark_type": "Medical Reasoning Benchmark",
-    "added_date": "2026-09-22"
+    "added_date": "2026-09-22",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ]
   },
   {
     "id": "pmid:42770666",
@@ -2618,7 +2623,12 @@
     ],
     "scale": "1,268 longitudinal patients, 5,602 encounters",
     "status": "preprint_v1",
-    "new": false
+    "new": false,
+    "arxiv_id": "2609.30027v2",
+    "categories": [
+      "cs.AI",
+      "cs.DB"
+    ]
   },
   {
     "id": "pmid:42784704",
@@ -2849,6 +2859,11 @@
       "LLM",
       "benchmark",
       "RAG"
+    ],
+    "arxiv_id": "2609.32810v2",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
     ]
   },
   {
@@ -2964,7 +2979,12 @@
       "base_qwen_any_shift": "16.02%",
       "task": "pediatric ESI triage"
     },
-    "dataset": "Pediatric Emergency Severity Index (ESI) clinical vignettes with counterfactual demographic variants"
+    "dataset": "Pediatric Emergency Severity Index (ESI) clinical vignettes with counterfactual demographic variants",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ]
   },
   {
     "id": "arxiv:2609.38543",
@@ -3002,7 +3022,12 @@
     ],
     "scale": "Multiple clinical evidence update scenarios",
     "status": "preprint_v1",
-    "new": false
+    "new": false,
+    "arxiv_id": "2609.38543v1",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ]
   },
   {
     "id": "arxiv:2609.25852",
@@ -3194,10 +3219,14 @@
       "LLM",
       "benchmark"
     ],
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ]
   },
   {
     "id": "pmid:42831263",
@@ -3297,7 +3326,16 @@
       "healthbench_total_onepo": "67.2",
       "training_samples": "20K"
     },
-    "dataset": "HealthBench, HealthBench Professional"
+    "dataset": "HealthBench, HealthBench Professional",
+    "type": "benchmark",
+    "abstract": "Domain adaptation aims to turn a general-purpose large language model (LLM) into an expert for a target domain. While the dominant SFT+RL pipeline offers a convenient cold start, it may reduce exploration diversity and introduces additional complexity through multi-stage optimization. These limitations motivate RL-only adaptation. However, pure on-policy RL suffers from a cold-start problem, while mixed-policy RL still falls short: informative tokens in teacher outputs are learned too slowly in early training, and stale teacher outputs can hinder later improvement. We identify these two failure modes as Gradient Starvation and Teacher-Distribution Anchoring. To address them, we propose One-stage Policy Optimization (OnePO), which treats teacher outputs as transient guidance for policy improvement. OnePO combines Adaptive Objective Evolution to strengthen learning on informative low-probability teacher tokens and Teacher Retirement to discard teacher outputs once the current policy can surpass them. On medical adaptation, OnePO achieves 67.2 on HealthBench (Total) with only 20K training samples, outperforming SFT+RL and pure RL by 2.7 and 7.4 points, respectively. We further scale OnePO to produce HuatuoGPT-3, an open-source medical LLM series whose 27B variant reaches 70.1 on HealthBench (Total) and 71.4 on HealthBench Professional, surpassing frontier models such as GPT-6 Astra. Models and code are available at https://github.com/FreedomIntelligence/HuatuoGPT-3.",
+    "pdf_url": "https://arxiv.org/pdf/2610.05966v1",
+    "updated": "2026-10-05",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "status": "preprint"
   },
   {
     "id": "pmid:42832766",
@@ -4703,21 +4741,34 @@
     "tools_evaluated": "Jev decision LM vs 12 LLM judges (Claude Opus 5.5, GPT-6, GPT-5.4)",
     "scale": "118 pediatric answers, HealthBench binary criteria, MedHELM open-ended tasks, HealthBench Professional",
     "status": "new",
-    "category": "clinical_ai_evaluation"
+    "category": "clinical_ai_evaluation",
+    "arxiv_id": "2610.28826v1",
+    "categories": [
+      "cs.AI"
+    ]
   },
   {
-    "id": "arxiv:2610.27099",
+    "id": "http://arxiv.org/abs/2610.27099v1",
     "source": "arxiv",
-    "type": "clinical_decision_model",
+    "arxiv_id": "2610.27099v1",
+    "type": "benchmark",
     "title": "A general-purpose System One decision model for clinical records",
-    "authors": "Andrew Zhang, Trinh T. L. Vuong, Sophia J. Wagner, et al.",
-    "url": "https://arxiv.org/abs/2610.27099v1",
+    "authors": "Andrew Zhang, Trinh T. L. Vuong, Sophia J. Wagner, Dongmin Bang, Tong Ding, Yuchang Su, Mary Cipperman, Christina S. Chen, Judith Lefkes, Ramin Kahidi, Ming Y. Lu, Caiwei Tian, Tianhao Luo, Jingnan Ma, Rowland Pettit, Long Phi Le, Faisal Mahmood",
+    "abstract": "Clinical care, health-system operations and biomedical discovery depend on extracting reliable answers from patient records, yet applying diverse clinical questions across entire populations remains computationally expensive. Here we present Clinical System One (CS1), a 4-billion-parameter decision model for fast, typed judgments from clinical records, along with two agentic harnesses in which CS1 works together with a generalist language model. CS1-4B is trained on 12.4 million questions and answers from 3.6 million patients across a multi-hospital health system, combining structured-data keys, observed outcomes and language-model supervision across clinical notes, diagnostic reports and patient timelines. It answers multiple typed questions in a single forward pass without task-specific retraining, and each answer carries a probability that can route uncertain cases to human review. On 963,408 held-out patients, CS1-4B outperformed open decision models up to 27 billion parameters on 13 of 14 tasks scored independently of its training teacher. Across 21 external data sets, its aggregate performance approached that of the strongest tested 27-billion-parameter model, with 6.4-fold faster inference in a matched workload. Integrating CS1-4B with a language model agent produced cited answers over complete multi-year patient histories and screened a patient population against the eligibility criteria of 17 registered clinical trials, placing four times as many judged-eligible patients among its top 20 candidates as keyword search while using 690-fold fewer language-model tokens than a language model reading every record. These findings support a division of labour in clinical AI, with small decision models performing repeated record reading and generative models formulating questions and synthesizing evidence.",
+    "url": "http://arxiv.org/abs/2610.27099v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.27099v1",
     "published": "2026-10-19",
     "updated": "2026-10-19",
-    "journal": "arXiv preprint (cs.AI)",
+    "categories": [
+      "cs.AI"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": "CS1-4B outperformed 27B on 13/14 tasks. 6.4x faster inference. Screening 17 clinical trial criteria placed 4x more eligible patients in top 20 vs keyword search, 690-fold fewer LLM tokens.",
     "tools_evaluated": "Clinical System One (CS1) 4B vs open decision models up to 27B",
     "scale": "12.4M Q&A from 3.6M patients, 963,408 held-out patients, 21 external datasets",
-    "key_findings": "CS1-4B outperformed 27B on 13/14 tasks. 6.4x faster inference. Screening 17 clinical trial criteria placed 4x more eligible patients in top 20 vs keyword search, 690-fold fewer LLM tokens.",
+    "status": "preprint",
     "category": "clinical_decision_model"
   },
   {
@@ -6240,8 +6291,8 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "Multiple medical MCQ datasets",
     "status": "new",
     "arxiv_id": "2611.13233",
@@ -6249,7 +6300,10 @@
     "models_evaluated": [
       "Multiple LLMs"
     ],
-    "task": "RAG-based differential evidence framework for medical MCQs - retrieval-grounded option-specific evidence extraction for clinical reasoning benchmark."
+    "task": "RAG-based differential evidence framework for medical MCQs - retrieval-grounded option-specific evidence extraction for clinical reasoning benchmark.",
+    "categories": [
+      "cs.AI"
+    ]
   },
   {
     "id": "bench:pmid:43009243",
@@ -6883,10 +6937,16 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2611.14935v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CY"
+    ]
   },
   {
     "id": "arxiv:2610.38215v1",
@@ -6908,10 +6968,15 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.38215v1",
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ]
   },
   {
     "id": "arxiv:2610.35847v2",
@@ -6933,10 +6998,14 @@
       "safety"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.35847v2",
+    "categories": [
+      "cs.AI"
+    ]
   },
   {
     "id": "arxiv:2610.36006v1",
@@ -6957,10 +7026,16 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.36006v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ]
   },
   {
     "id": "arxiv:2610.35558v1",
@@ -6981,10 +7056,14 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.35558v1",
+    "categories": [
+      "cs.CL"
+    ]
   },
   {
     "id": "arxiv:2610.34871v1",
@@ -7006,10 +7085,16 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.34871v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CV"
+    ]
   },
   {
     "id": "arxiv:2610.33788v1",
@@ -7030,10 +7115,15 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.33788v1",
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ]
   },
   {
     "id": "arxiv:2610.32258v1",
@@ -7055,10 +7145,14 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.32258v1",
+    "categories": [
+      "cs.AI"
+    ]
   },
   {
     "id": "arxiv:2610.31467v1",
@@ -7104,10 +7198,15 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.30947v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ]
   },
   {
     "id": "arxiv:2610.23721v1",
@@ -7128,10 +7227,14 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.23721v1",
+    "categories": [
+      "cs.CL"
+    ]
   },
   {
     "id": "arxiv:2610.22594v1",
@@ -7152,10 +7255,14 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.22594v1",
+    "categories": [
+      "cs.CL"
+    ]
   },
   {
     "id": "arxiv:2610.20191v2",
@@ -7178,10 +7285,15 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.20191v2",
+    "categories": [
+      "cs.AI",
+      "cs.IR"
+    ]
   },
   {
     "id": "arxiv:2610.18494v1",
@@ -7202,10 +7314,15 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.18494v1",
+    "categories": [
+      "eess.SP",
+      "cs.AI"
+    ]
   },
   {
     "id": "arxiv:2610.15912v1",
@@ -7227,10 +7344,14 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.15912v1",
+    "categories": [
+      "cs.CL"
+    ]
   },
   {
     "id": "arxiv:2610.14705v1",
@@ -7251,10 +7372,15 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.14705v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ]
   },
   {
     "id": "arxiv:2610.11069v1",
@@ -7276,10 +7402,14 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.11069v1",
+    "categories": [
+      "cs.CL"
+    ]
   },
   {
     "id": "arxiv:2610.09026v1",
@@ -7301,10 +7431,16 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.09026v1",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.IR"
+    ]
   },
   {
     "id": "arxiv:2610.08161v1",
@@ -7325,10 +7461,16 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.08161v1",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ]
   },
   {
     "id": "arxiv:2610.08093v1",
@@ -7350,10 +7492,15 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.08093v1",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ]
   },
   {
     "id": "arxiv:2610.04777v1",
@@ -7374,10 +7521,15 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.04777v1",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ]
   },
   {
     "id": "arxiv:2610.20632v1",
@@ -7399,10 +7551,15 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2610.20632v1",
+    "categories": [
+      "cs.CL",
+      "cs.CV"
+    ]
   },
   {
     "id": "arxiv:2609.31763v1",
@@ -7424,10 +7581,16 @@
       "RAG"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2609.31763v1",
+    "categories": [
+      "cs.AI",
+      "cs.ET",
+      "cs.SE"
+    ]
   },
   {
     "id": "arxiv:2609.25852v2",
@@ -7448,10 +7611,14 @@
       "benchmark"
     ],
     "relevance": "high",
-    "key_findings": "",
-    "tools_evaluated": "",
+    "key_findings": [],
+    "tools_evaluated": [],
     "scale": "",
-    "status": "new"
+    "status": "new",
+    "arxiv_id": "2609.25852v2",
+    "categories": [
+      "cs.AI"
+    ]
   },
   {
     "id": "arxiv:2609.22790v1",
@@ -7607,20 +7774,28 @@
     "pmid": "43035777"
   },
   {
-    "id": "arxiv:2611.19166",
-    "source": "arXiv",
+    "id": "http://arxiv.org/abs/2611.19166v1",
+    "source": "arxiv",
+    "arxiv_id": "2611.19166v1",
     "type": "benchmark",
     "title": "LABEL: Literature Asymmetry between Efficacy and Limits in Drug Knowledge and Language Models",
-    "authors": "Rayeed SM, Stewart CV, Ma Y",
-    "url": "https://arxiv.org/abs/2611.19166",
+    "authors": "S M Rayeed, Charles V. Stewart, Yao Ma",
+    "abstract": "Every medication comes with two types of medical facts: indications, which describe what conditions the drug treats (benefits), and contraindications, which describe who must avoid it to prevent serious harm (safety limits). Although contraindications are critical for patient safety and FDA regulations require listing them as rigorously as indications, we find that contraindications are far less documented than indications in general prose. In this paper, we measure how often these texts contain both facts across 574 drugs from PrimeKG by comparing a drug's indications against its own contraindications. Across Wikipedia articles and PubMed abstracts, we find that reference prose names a drug's benefits about twice as often as its safety limits (within-drug odds ratio 2.19). We call this documentation gap LABEL (Literature Asymmetry between Efficacy and Limits). Language models mirror this gap. As we scale Qwen2.5 from 0.5B to 14B, accuracy on indications rises by 18.3 points, whereas accuracy on contraindications remains flat near random guessing. However, when we provide models with a retrieved passage that states the answer, they use safety facts just as effectively as benefits. Furthermore, routing safety questions to official FDA labels boosts accuracy by 15.8 points whenever the label states the fact. Overall, our findings show that models fail on medication safety not because they cannot reason about risk, but because free-text corpora lack safety facts. Clinical AI systems should therefore route medication-safety questions to official regulatory labels and structured databases rather than relying on general public records. Code and data are available at https://github.com/SMRayeed/LABEL.",
+    "url": "http://arxiv.org/abs/2611.19166v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.19166v1",
     "published": "2026-11-14",
     "updated": "2026-11-14",
+    "categories": [
+      "cs.AI",
+      "cs.IR"
+    ],
     "journal": "arXiv",
+    "tags": [],
+    "relevance": "Medication safety LLM benchmark, RAG for clinical drug safety",
+    "key_findings": "Contraindications documented half as often as indications (odds ratio 2.19). LLM accuracy on indications rises 18.3pp with scale but contraindication accuracy flat near random. RAG with official passages equalizes safety/benefit. FDA label routing boosts accuracy 15.8pp.",
     "tools_evaluated": "Qwen2.5 (0.5B-14B)",
     "scale": "574 drugs from PrimeKG, Wikipedia + PubMed abstracts, FDA labels",
-    "key_findings": "Contraindications documented half as often as indications (odds ratio 2.19). LLM accuracy on indications rises 18.3pp with scale but contraindication accuracy flat near random. RAG with official passages equalizes safety/benefit. FDA label routing boosts accuracy 15.8pp.",
-    "relevance": "Medication safety LLM benchmark, RAG for clinical drug safety",
-    "status": "published"
+    "status": "preprint"
   },
   {
     "id": "pmid:43041177",
@@ -8253,5 +8428,249 @@
     ],
     "url": "https://pubmed.ncbi.nlm.nih.gov/43061080/",
     "pmid": "43061080"
+  },
+  {
+    "id": "http://arxiv.org/abs/2611.25898v1",
+    "source": "arxiv",
+    "arxiv_id": "2611.25898v1",
+    "type": "benchmark",
+    "title": "Verifiable Logic in Medical LLMs: A Critical Review of Agentic Clinical Reasoning Optimization and Neuro-Symbolic Grounding",
+    "authors": "Youssef ElNahas, Adel Ammar, Soumaya Chaffar, Wadii Boulila",
+    "abstract": "Clinical large language models are usually judged by whether the final answer is right. Yet a model can reach a fluent, plausible output through invalid reasoning that static benchmarks do not detect, and confident hallucination, causally invalid inference, and spurious demographic shortcuts can pass conventional evaluation. This critical review covers four paradigms in turn: how clinical hallucination arises and why static metrics miss it; the agentic hallucination cascade, in which multi-agent and tool-augmented systems propagate and amplify early reasoning errors; process reward modeling as step-level supervision; and neuro-symbolic grounding, in which formal logic engines, ontology reasoners, and knowledge graphs place verifiable constraints on neural output. Within their encoded domains, systems with symbolic veto layers offer guarantees that hold relative to their encoded knowledge, and they report large gains on the safety measures they use. These results come from single studies, mostly in simulated or small-sample settings, and are not directly comparable with neural baselines. Process reward models remain bounded by the statistics of their training data. We propose a conceptual framework that maps each agentic failure mode to a symbolic intervention point, and we argue that clinical AI safety depends substantially on system architecture. Because current regulation emphasizes performance and does not require verification of reasoning steps, we argue that responsible certification should also audit reasoning trajectories alongside accuracy on static benchmarks.",
+    "url": "http://arxiv.org/abs/2611.25898v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.25898v1",
+    "published": "2026-11-19",
+    "updated": "2026-11-19",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CY",
+      "cs.LG"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2611.22612v1",
+    "source": "arxiv",
+    "arxiv_id": "2611.22612v1",
+    "type": "benchmark",
+    "title": "Right Diagnosis, Unsafe Route: Auditing Clinical AI Decision Trajectories and Corrective Oversight for Validity and Potential Harm",
+    "authors": "Guanqiao Chen, Wei Jiang, Shu Zhang, Qian Lin, Guanxu Yu, Siran Li, Chunhui Wang, Tianyu Shi",
+    "abstract": "A clinical AI system can reach a correct final diagnosis through intermediate decisions that could have harmed the patient, and can repair an error while introducing new risks. Most evaluations score final diagnoses; even stepwise benchmarks, which release a case's evidence over time, score whether systems reach the right diagnosis or gather the right information, not whether the decisions a patient passes through are safe. We make patient safety the target of stepwise evaluation. A trajectory audit replays real admissions checkpoint by checkpoint, lets each system decide with only the evidence released so far, and rates every test, treatment and disposition for its potential harm to the patient and, separately, for clinical validity, against the documented final diagnosis and physician-written disease rubrics yet on the evidence available when the decision was made. An LLM judge scores every decision, and a physician reference standard (triple annotation and senior adjudication of a stratified sample) calibrates the rates. An oversight audit branches each trajectory at its first actionable error and measures, on the same branches, whether corrective feedback repairs the error and whether it introduces new harm. Across 300 cases from a hospital cardiology cohort, MIMIC-IV and the public ASCENT benchmark, with up to seven AI systems per source, 55.2% of hospital trajectories reaching an acceptable final diagnosis passed through a decision with moderate or severe potential harm and 24.8% through a clinically unacceptable one; the harm rates were 76.2% on MIMIC-IV and 39.6% on ASCENT. Structured corrections resolved 73.6% of first errors versus 24.8% after bare rejection, yet new potentially unsafe decisions followed 30.2% of corrections versus 19.7% of rejections. A correct final diagnosis does not certify a safe trajectory, and a successful correction does not certify a safe recovery.",
+    "url": "http://arxiv.org/abs/2611.22612v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.22612v1",
+    "published": "2026-11-17",
+    "updated": "2026-11-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2611.22252v1",
+    "source": "arxiv",
+    "arxiv_id": "2611.22252v1",
+    "type": "benchmark",
+    "title": "A Visual Information Extraction System Using Multimodal Large Language Models for Scanned Cognitive and Behavioral Assessments",
+    "authors": "Enshuo Hsu, Linh Nguyen, Sunyang Fu, Heath Goodrum, Sandra Stansberry, Kirk Roberts, Hongfang Liu, Yen-Chi L. Le",
+    "abstract": "Objective. Paper-based assessments are common in patient care, but handwriting and scanning artifacts make these forms difficult to process at scale. This study proposes a modular, multimodal LLM-based system with human oversight for extracting fields and scores. We conducted a qualitative analysis of the use of LLMs for hand-drawing analysis.\n  Materials and Methods. The system processes cognitive assessments (i.e., MMSE, MoCA, Mini-Cog) and the NICHQ Vanderbilt Assessment using two modules: 1) a form classifier that assigns a scanned page to a form type, followed by a corresponding 2) score extractor that extracts fields and scores into a schema. A human-in-the-loop design utilizing dual-model validation engages human annotators when two LLMs disagree, limiting manual review to challenging pages only.\n  Results. End-to-end accuracy for cognitive assessments was 88%, with most form types exceeding 90%. For the NICHQ Vanderbilt, overall accuracy reached 97.5%, with all form types above 96%. The human-in-the-loop design further improved cognitive assessment accuracy to 97.5% while reducing manual work by 63.8%. In the Mini-Cog Clock Drawing task, qualitative analysis showed that 62.3% of all extraction errors stemmed from ambiguous drawing, in which cases the LLM provided reasonable readings.\n  Discussion. Compared to current manual data extraction, our LLM-based system reduces processing time by 10 to 20 times and costs by over 12 times. The modular design allows seamless expansion to additional form types.\n  Conclusion. Our system provides an accurate, scalable, and cost-efficient solution for structuring data trapped in handwritten paper forms for clinical decision support.",
+    "url": "http://arxiv.org/abs/2611.22252v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.22252v1",
+    "published": "2026-11-17",
+    "updated": "2026-11-17",
+    "categories": [
+      "cs.AI"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2611.18297v1",
+    "source": "arxiv",
+    "arxiv_id": "2611.18297v1",
+    "type": "benchmark",
+    "title": "When evaluation becomes intervention in clinical AI",
+    "authors": "Anthony Abou Mrad, Aviona Conti, Samuel Schmidgall, Jayanth Pratap, Ruhika Iyer, Joseph Kim, King Shi, Yann Sakref, Luis M. Ahumada, Lisa Knowlton, Andrew M. Cameron, Khyzer Aziz, Jeffrey K. Jopling",
+    "abstract": "AI judges, models that grade another system's output against a rubric, extend clinical review to the scale at which clinical AI writes. When teams use judge assessments to select a prompt or train a model, the judge becomes part of the intervention. Selection can then favor errors the judge overlooks. We describe what a judge's report must contain and the independent clinical test each judge-driven change needs.",
+    "url": "http://arxiv.org/abs/2611.18297v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.18297v1",
+    "published": "2026-11-13",
+    "updated": "2026-11-13",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CY"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2611.17128v1",
+    "source": "arxiv",
+    "arxiv_id": "2611.17128v1",
+    "type": "benchmark",
+    "title": "Parameter-Efficient Conciseness Adaptation: Differentiable Length Control for Concise Clinical Reasoning in Smaller Language Models",
+    "authors": "Tanzeel Abbas, Ahmad Kamran Malik, Nafees Qamar, Sana Liaqat",
+    "abstract": "Smaller language models (SLMs) make it feasible to deploy clinical natural language processing where large proprietary models are too costly, and parameter-efficient fine-tuning allows them to be specialised on commodity hardware. One obstacle persists after training: on medical tasks these models answer at far greater length than the clinical question requires. In clinical decision support and point-of-care use, where time is short, such verbosity is hard to act on even when the underlying reasoning is sound. Existing length-control methods depend on preference optimisation, reward models, or proprietary teachers that undercut the accessibility making SLMs attractive. We introduce Parameter-Efficient Conciseness Adaptation (PECA), which adds a single differentiable conciseness term to the QLoRA supervised fine-tuning objective. Because the token count is discrete and non-differentiable, PECA instead raises the end-of-sequence probability once generation exceeds a token budget, a smooth signal optimised during ordinary training, with no preference data, no auxiliary model, and a single commodity GPU. On a 1.7-billion-parameter model fine-tuned on the medical-o1-reasoning-SFT corpus, PECA reduces mean response length by 72.8% while improving multiple-choice diagnostic accuracy from 40.8% to 44.0%. A sweep over the conciseness strength traces an interpretable accuracy-to-length frontier for balancing brevity and diagnostic completeness.",
+    "url": "http://arxiv.org/abs/2611.17128v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.17128v1",
+    "published": "2026-11-12",
+    "updated": "2026-11-12",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2611.16393v1",
+    "source": "arxiv",
+    "arxiv_id": "2611.16393v1",
+    "type": "benchmark",
+    "title": "TransXplainRRG: A Radiologist-Evaluated LVLM for Chest Radiograph Report Generation",
+    "authors": "Chayan Mondal, Duc-Son Pham, Tele Tan, Ashu Gupta, Vincent T. Y. Tiong, Shreya Ghosh, Tom Gedeon",
+    "abstract": "Recent advancements in Large Vision-Language Models (LVLM) enhance X-ray report generation, but often neglect clinical context, overlook workflow integration, and lack explainability, which hinders clinical adoption due to interpretability and reliability concerns. This paper addresses the dual challenges of performance and expert explainability in automated X-ray report generation for clinical AI applications. Our proposed approach, TransXplainRRG, utilises an off-the-shelf Swin Transformer model along with a transformer-based text encoder that incorporates patient medical history to generate a radiology report. Further, we explore an expert-guided `inside-out' approach and extract only abnormal findings for radiology report refinement. Thus, this study bridges the gap between high-performance automation and interpretability critical for clinical practice by combining state-of-the-art transformer-based vision encoders, text encoders, and LLMs. TransXplainRRG is trained and tested on the large-scale MIMIC-CXR dataset and further evaluated on the unseen IU X-Ray dataset to demonstrate its generalizability and robustness. We employed the GREEN metric as a complementary measure of clinical consistency, achieving scores of 0.327 on MIMIC-CXR and 0.605 on IU X-Ray, both higher than those achieved by MAIRA-2 under the same evaluation setting. It also performed competitively across standard evaluation metrics, frequently matching or surpassing state-of-the-art models. Additionally, we introduce qualitative evaluation metrics developed from radiologists' viewpoints and conduct a preliminary radiologist evaluation on 100 generated reports to assess their clinical relevance. Quantitative and qualitative analyses further demonstrate the potential of our TransXplainRRG framework for reliable and explainable radiology report generation.",
+    "url": "http://arxiv.org/abs/2611.16393v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.16393v1",
+    "published": "2026-11-12",
+    "updated": "2026-11-12",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.30229v1",
+    "source": "arxiv",
+    "arxiv_id": "2610.30229v1",
+    "type": "benchmark",
+    "title": "Automated screening of privacy risks in medical AI",
+    "authors": "Konstantinos Vrettos, Eleftherios Tzanis, Haridimos Kondylakis, Evangelia E. Vassalou, Florence X. Doo, Michail E. Klontzas",
+    "abstract": "Medical artificial intelligence (AI) models are often shared without their training data, assuming this protects the patients who contributed them. However, a model can reveal whether a patient's records were used in training, a privacy breach known as a membership inference attack. This risk is usually reported as a cohort average, which can appear negligible while individual patients are almost certainly exposed. Identifying potentially vulnerable records before developing a production model could make privacy assessment more practical. We measured each patient's vulnerability to membership inference attack, across 7,789 models trained on six clinical datasets in four modalities, including two adapted pretrained medical models. Training choices changed how many patients had high attack scores, but the patients who ranked highest by risk largely stayed the same across the configurations we tested. Stronger weight decay reduced the exposed cohort up to threefold, yet largely the same patients remained most at risk across training recipes, architectures and initializations, including foundation models. Therefore, we developed a lightweight screening tool that uses four small models to identify patients with high risk of exposure before production-model training. We also assessed if flagged patients could be protected without removing their data. Privacy screening should become incorporated into data preparation for clinical AI.",
+    "url": "http://arxiv.org/abs/2610.30229v1",
+    "pdf_url": "https://arxiv.org/pdf/2610.30229v1",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.16596v2",
+    "source": "arxiv",
+    "arxiv_id": "2610.16596v2",
+    "type": "benchmark",
+    "title": "Towards Modality-Agnostic Seizure Classification: A Unified Deep Learning Framework for Heterogeneous EEG and Intracranial EEG Signals",
+    "authors": "Ramya Sundaram, Muhammad Aslam Jarwar, M Uma, Sunder Ali Khowaja, Qurat-Ul-Ain Mastoi",
+    "abstract": "Seizure prediction and detection, essential for clinical treatment of epilepsy, remain the crucial task of this neurological disease. EEG and iEEG are widely used to analyze epilepsy due to its capability of capturing discriminative brain activities at high time resolution. However, existing works generally analyze either EEG or iEEG seizure activity separately, where EEG analysis has been well-researched, while more and more works consider iEEG for its higher specificity at the spatial level and signal quality. Currently, most of the existing seizure prediction systems are single-modal in nature, which limits its application to a variety of clinical conditions. Therefore, a common framework to analyze seizures with both EEG and iEEG signals needs to be developed. This paper presents a new framework of multimodal seizure classification integrating the heterogeneous EEG and iEEG recordings from different subjects and sources. A specific framework, called Unified Multimodal Signal Harmonization (UMSH), is developed for harmonizing signals with varied sampling rates and recording conditions. Moreover, to handle the extremely class-imbalanced problem in the data sets, we use a Conditional Generative Adversarial Network (cGAN) based data augmentation technique to generate synthetic samples to balance the class distribution. The proposed framework uses the EEGNet-Vision Transformer (EEGNet-ViT) as the feature extraction and classification network to learn the local discriminative patterns as well as global contextual information in the multimodal seizure data. Experimental results demonstrate the effectiveness of the proposed framework for robust seizure classification, emphasizing the potential of integrated EEG-iEEG multimodal learning in advancing next-generation epilepsy monitoring and clinical decision-support systems.",
+    "url": "http://arxiv.org/abs/2610.16596v2",
+    "pdf_url": "https://arxiv.org/pdf/2610.16596v2",
+    "published": "2026-10-12",
+    "updated": "2026-10-14",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2611.18634v1",
+    "source": "arxiv",
+    "arxiv_id": "2611.18634v1",
+    "type": "benchmark",
+    "title": "Brain AI Scientist: An Evidence-Based Multi-Agent System for Translational Neuroimaging in Precision Psychiatry",
+    "authors": "Zeyun Zhao, Lin Gu, Ruogu Fang",
+    "abstract": "Resting-state functional magnetic resonance imaging (rs-fMRI) has revealed widespread brain-network alterations in psychiatric disorders, yet translating these findings into individualized clinical decision support remains challenging. Here we introduce Brain AI Scientist, an autonomous multi-agent framework that integrates patient-specific fMRI, clinical information, and scientific evidence through retrieval, verification, and prioritization. Guided by Research Domain Criteria and evidence-based medicine, it builds traceable chains linking phenotypes, anatomical abnormalities, biomarkers, mechanisms, interventions, and validation strategies. In a representative autism case, Brain AI Scientist generated 37 anatomical hypotheses, retained 26 after literature verification, and derived 65 evidence-supported biomarkers from 90 unique publications to generate patient-specific treatment and validation guidance. Across 17 autism spectrum disorder cases, it outperformed GPT-3.5 baselines with and without fMRI impression in evidence grounding, personalization, clinical actionability, and biomarker-treatment reasoning. Brain AI Scientist therefore provides an auditable framework for translating patient-specific neuroimaging into individualized clinical decision support for precision psychiatry.",
+    "url": "http://arxiv.org/abs/2611.18634v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.18634v1",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "categories": [
+      "q-bio.QM",
+      "cs.AI",
+      "cs.IR",
+      "cs.MA",
+      "q-bio.NC"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.06549v2",
+    "source": "arxiv",
+    "arxiv_id": "2610.06549v2",
+    "type": "benchmark",
+    "title": "Proof-Grounded Patient-Specific Clinical Explanations from Knowledge-Graph Reasoning",
+    "authors": "Surajit Das",
+    "abstract": "Clinical decision support can lack auditable links from observations and encoded knowledge to conclusions and recommendations. Downstream of a frozen, training-free clinical knowledge-graph reasoner, the CKG Clinical Explanation Engine converts patient inference states and disease knowledge into typed facts, explicit rule traces, provenance-linked conclusions, and policy-licensed recommendations. Separate availability, representation completeness, and disease-specific activation distinguish observed zero-activation and partial evidence from unobserved evidence. Language-generation evaluation remains future work. Across six usable workbooks (11,289 patients, 33,867 patient-disease traces, 1,715,928 feature-evidence rows), IG-range validity, knowledge provenance, cross-sheet numerical fidelity (203,202/203,202), and exported fact/report field presence (33,867/33,867) reached 100.00%. Availability-representation consistency reached 99.29% (1,703,811/1,715,928), with 12,117 disagreements across five systematic feature-cohort patterns. Observed zero-activation and partial instances numbered 111,488 and 226,880, respectively. A separate seeded 30-patient end-to-end audit ran failure-free, passing all prespecified trace, licensing, provenance, and state-consistency checks. Paired comparisons (90 traces, fixed inherited diagnostic scores and policy catalogue) showed the availability-only baseline changed every report but no action sets. State collapse changed 20 action sets and removed 10 urgent-review occurrences. Rule replay reproduced all 40 action changes from reclassifying partial evidence as unobserved. The bounded validator detected all 450 single-fault mutants. Structural and implementation auditability were established. Clinical correctness and utility remain unestablished.",
+    "url": "http://arxiv.org/abs/2610.06549v2",
+    "pdf_url": "https://arxiv.org/pdf/2610.06549v2",
+    "published": "2026-10-05",
+    "updated": "2026-11-13",
+    "categories": [
+      "cs.AI"
+    ],
+    "journal": "arXiv",
+    "tags": [],
+    "relevance": "",
+    "key_findings": [],
+    "tools_evaluated": [],
+    "scale": "",
+    "status": "preprint"
   }
 ]

@@ -40,6 +40,18 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-11-09",
+  "cat": "Partnership",
+  "title": "ACP and OpenEvidence collaborate on trusted clinical guidance",
+  "desc": "American College of Physicians (largest medical specialty org in US) licenses clinical guidance and Annals of Internal Medicine content to OpenEvidence. Brings peer-reviewed evidence-based clinical content to physicians at point of care.",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/acp-and-openevidence-collaborate-to-enhance-physician-access-to-trusted-clinical-guidance",
+  "score": 91,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-06-23",
   "cat": "Media",
   "title": "Nature Medicine Study: General-Purpose LLMs Outperform Specialized Clinical AI",
@@ -324,6 +336,18 @@ var signalsData = [
  {
   "date": "2026-11-16",
   "cat": "Partnership",
+  "title": "Every Cure and OpenEvidence partner for drug repurposing",
+  "desc": "Every Cure nonprofit biotech partners with OpenEvidence to turn existing medicines into new treatments for patients who have run out of options. Focus on areas where no commercial incentive to repurpose. Connects Every Cure AI engine with OpenEvidence models and nationwide physician reach.",
+  "src": "BusinessWire",
+  "url": "https://www.openevidence.com/announcements/every-cure-and-openevidence-partner-to-repurpose-drugs-where-commercial-incentives-fall-short",
+  "score": 81,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-11-16",
+  "cat": "Partnership",
   "title": "Every Cure and OpenEvidence Partner to Repurpose Drugs Where Commercial Incentives Fall Short",
   "desc": "Every Cure, a nonprofit biotech organization dedicated to saving and improving lives through drug repurposing, partnered with OpenEvidence to turn existing medicines into new treatments for patients who have run out of options. The collaboration connects Every Cure's AI-driven engine with OpenEviden",
   "src": "OpenEvidence",
@@ -400,6 +424,18 @@ var signalsData = [
   "desc": "OpenEvidence launched Access Intelligence, a suite of tools built directly into the platform that helps clinicians ensure their patients can access and afford the care they need. Components available now, free for all clinicians: (1) Support program information in the flow of care - availability and",
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/introducing-openevidence-access-intelligence-bringing-affordability-and-access-to-the-point-of-care",
+  "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-11-06",
+  "cat": "Partnership",
+  "title": "ACR and OpenEvidence collaborate on patient education resources",
+  "desc": "American College of Rheumatology (10,600+ members) partners with OpenEvidence at ACR Convergence 2026. English- and Spanish-language disease and treatment fact sheets available within OpenEvidence for rheumatic condition management.",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/american-college-of-rheumatology-and-openevidence-collaborate-to-expand-access-to-trusted-patient-education-resources",
   "score": 77,
   "confidence": "confirmed",
   "competitors": [],
@@ -701,42 +737,6 @@ var signalsData = [
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows",
   "score": 77,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-11-04",
-  "cat": "Product",
-  "title": "OpenEvidence launches Learn personalized medical education platform",
-  "desc": "Free, personalized medical education platform built to support trainees and clinicians across entire careers. As AI transforms practice, technology must strengthen learning too.",
-  "src": "Launch Archive",
-  "url": "https://launcharchive.ai/launches/learn-openevidence-s-personalized-medical-education-platform--x_2118026572829745633",
-  "score": 73,
-  "confidence": "reported",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-11-04",
-  "cat": "Product",
-  "title": "OpenEvidence Launches Learn, a Free Personalized Medical Education Platform",
-  "desc": "OpenEvidence launches Learn, a free personalized medical education platform extending its AI from point-of-care support into how doctors learn medicine. Four tools available today: Test Prep (50,000+ board-style questions for USMLE, COMLEX, and specialty/subspecialty boards), Preceptor (Socratic cas",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/announcing-learn",
-  "score": 73,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-09-03",
-  "cat": "Product",
-  "title": "OpenEvidence Model Family Launched - Osler, Sackett, Snow, and Darwin",
-  "desc": "OpenEvidence releases a new family of medical AI models named for founders of modern medicine. Osler (~5s answer) is the fastest model, built for the pace of the patient encounter, and becomes the new default. Sackett (~30s) is a deeper search model that interactively asks clinicians for context and",
-  "src": "OpenEvidence",
-  "url": "https://www.businesswire.com/news/home/20260903878517/en/Introducing-the-OpenEvidence-Model-Family",
-  "score": 73,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
