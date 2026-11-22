@@ -145,5 +145,7 @@ var phaSourcesData = [
   {name:"Hims & Hers - Labs AI care agent launch (May 7, 2026)", url:"https://news.hims.com/newsroom/meet-labs-ai-the-first-ai-care-agent-from-hims-hers"},
   {name:"UC Merced - NIH $1.1M HOME Project for geriatric care (Nov 5, 2026)", url:"https://www.ucmerced.edu/news/2026/nih-grant-funds-project-revolutionize-care-older-adults"},
   {name:"Springer - Ambient intelligence for active aging IoT solution (Nov 18, 2026)", url:"https://link.springer.com/article/10.1007/s10209-026-01393-w"},
+  {name:"Y Combinator - Helios Intelligence at-home 1,000+ biomarker blood test launch (Nov 18, 2026)", url:"https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home"},
+  {name:"AACL-IJCNLP 2026 - CARE-Bench patient-facing LLM triage benchmark (Nov 10, 2026)", url:"https://aclanthology.org/2026.aacl-long.63.pdf"},
 
 ];

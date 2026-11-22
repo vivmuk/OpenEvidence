@@ -285,5 +285,9 @@ var phaResearchData = [
    finding:"Introduces DAS (Dynamic, Automatic and Systematic), a red-teaming audit framework that continuously stress-tests LLMs for health across four safety-critical axes: robustness, privacy, bias and hallucination. Validated against board-certified clinicians, a suite of adversarial agents autonomously mutates health-related test cases to uncover vulnerabilities in real time. Applying DAS to 15 state-of-the-art LLMs revealed profound safety gaps across all models, demonstrating that static benchmarks rapidly become obsolete or can be optimized against.",
    caveat:"The framework focuses on LLMs in isolation, not agentic systems with tools and memory. Adversarial mutation strategies may not cover all real-world failure modes. The 15 models tested may not represent the full landscape of health AI tools.",
    url:"https://www.nature.com/articles/s44360-026-00152-8"},
+  {title:"CARE-Bench: Source-Grounded Benchmark for Patient-Facing LLM Triage", type:"Peer-reviewed \u00b7 benchmark evaluation", date:"Nov 10, 2026", venue:"AACL-IJCNLP 2026 (15th International Joint Conference on Natural Language Processing and 5th AACL Conference)",
+   finding:"Introduces CARE-Bench, a source-grounded benchmark evaluating sequential patient-facing triage as a four-label per-turn current action task across 500 cases and 1,059 evaluated patient-disclosure prefixes. The benchmark addresses the key safety question in patient-facing AI: what action the user should take next. Grounded in source documents rather than open-ended generation. Extends triage evaluation beyond single-turn vignettes to multi-turn conversational disclosure.",
+   caveat:"Conference paper, peer-reviewed. The benchmark uses simulated patient disclosures, not real clinical encounters. Generalisability across languages, clinical settings, and model architectures beyond those tested is not established.",
+   url:"https://aclanthology.org/2026.aacl-long.63.pdf"},
 
 ];

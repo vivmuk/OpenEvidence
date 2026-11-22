@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,24 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-18",
+      "cat": "Product",
+      "title": "Helios Intelligence Launches At-Home 1,000+ Biomarker Blood Test on Y Combinator",
+      "desc": "Helios Intelligence launched on Y Combinator with an at-home blood test that measures 1,000+ biomarkers from a single drop of blood, providing scores for 70+ organs and pathways, disease risk assessments, and a personalized improvement plan tracked by retesting. Founded by Omar Abudayyeh, co-inventor of SHERLOCK (the first FDA-authorized CRISPR test), the company extends the lab-first consumer health model to unprecedented biomarker density. Represents the frontier of the consumer diagnostics plus AI interpretation pattern: dense longitudinal biomarker data as the grounding layer for personal health agents. Vendor claim: wellness insights, not a medical device.",
+      "src": "Y Combinator",
+      "url": "https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home",
+      "new": true
+    },
+    {
+      "date": "2026-11-10",
+      "cat": "Research",
+      "title": "CARE-Bench: Source-Grounded Benchmark for Patient-Facing LLM Triage",
+      "desc": "CARE-Bench, presented at AACL-IJCNLP 2026, evaluates sequential patient-facing triage as a four-label per-turn current action task across 500 cases and 1,059 patient-disclosure prefixes. The benchmark addresses the key safety question of what action a patient should take next, grounding evaluation in source documents. Extends the triage evaluation landscape beyond single-turn vignettes toward multi-turn conversational safety. Peer-reviewed at the 15th International Joint Conference on Natural Language Processing and the 5th AACL Conference.",
+      "src": "AACL-IJCNLP 2026",
+      "url": "https://aclanthology.org/2026.aacl-long.63.pdf",
+      "new": true
+    },
     {
       "date": "2026-11-18",
       "cat": "Research",
@@ -2236,6 +2254,15 @@
       "finding": "Introduces DAS (Dynamic, Automatic and Systematic), a red-teaming audit framework that continuously stress-tests LLMs for health across four safety-critical axes: robustness, privacy, bias and hallucination. Validated against board-certified clinicians, a suite of adversarial agents autonomously mutates health-related test cases to uncover vulnerabilities in real time. Applying DAS to 15 state-of-the-art LLMs revealed profound safety gaps across all models, demonstrating that static benchmarks rapidly become obsolete or can be optimized against.",
       "caveat": "The framework focuses on LLMs in isolation, not agentic systems with tools and memory. Adversarial mutation strategies may not cover all real-world failure modes. The 15 models tested may not represent the full landscape of health AI tools.",
       "url": "https://www.nature.com/articles/s44360-026-00152-8"
+    },
+    {
+      "title": "CARE-Bench: Source-Grounded Benchmark for Patient-Facing LLM Triage",
+      "type": "Peer-reviewed · benchmark evaluation",
+      "date": "Nov 10, 2026",
+      "venue": "AACL-IJCNLP 2026 (15th International Joint Conference on Natural Language Processing and 5th AACL Conference)",
+      "finding": "Introduces CARE-Bench, a source-grounded benchmark evaluating sequential patient-facing triage as a four-label per-turn current action task across 500 cases and 1,059 evaluated patient-disclosure prefixes. The benchmark addresses the key safety question in patient-facing AI: what action the user should take next. Grounded in source documents rather than open-ended generation. Extends triage evaluation beyond single-turn vignettes to multi-turn conversational disclosure.",
+      "caveat": "Conference paper, peer-reviewed. The benchmark uses simulated patient disclosures, not real clinical encounters. Generalisability across languages, clinical settings, and model architectures beyond those tested is not established.",
+      "url": "https://aclanthology.org/2026.aacl-long.63.pdf"
     }
   ],
   "sources": [
@@ -2822,6 +2849,14 @@
     {
       "name": "Springer - Ambient intelligence for active aging IoT solution (Nov 18, 2026)",
       "url": "https://link.springer.com/article/10.1007/s10209-026-01393-w"
+    },
+    {
+      "name": "Y Combinator - Helios Intelligence at-home 1,000+ biomarker blood test launch (Nov 18, 2026)",
+      "url": "https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home"
+    },
+    {
+      "name": "AACL-IJCNLP 2026 - CARE-Bench patient-facing LLM triage benchmark (Nov 10, 2026)",
+      "url": "https://aclanthology.org/2026.aacl-long.63.pdf"
     }
   ],
   "freeTierDefaults": [
