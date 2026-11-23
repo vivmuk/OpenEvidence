@@ -2,7 +2,7 @@
 // Source of truth: data/metrics.csv and the entity files next to it.
 // Regenerated on every commit by .git/hooks/pre-commit.
 var siteMetrics = {
-  "dataThrough": "2026-10-21",
+  "dataThrough": "2026-11-17",
   "latest": {
     "total_funding": {
       "value": 1000000000,
@@ -218,12 +218,12 @@ var siteMetrics = {
     }
   },
   "counts": {
-    "partners": 60,
-    "competitors": 44,
-    "research": 767,
-    "benchmarks": 366,
-    "publications": 143,
-    "timeline": 219,
+    "partners": 65,
+    "competitors": 49,
+    "research": 783,
+    "benchmarks": 379,
+    "publications": 148,
+    "timeline": 229,
     "sources": 67
   }
 };

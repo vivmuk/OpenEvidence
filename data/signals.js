@@ -2,18 +2,6 @@
 // Materiality-ranked events. score 1-100; confidence: confirmed|reported|inferred.
 var signalsData = [
  {
-  "date": "2026-11-09",
-  "cat": "Partnership",
-  "title": "ACP and OpenEvidence Collaborate to Enhance Physician Access to Trusted Clinical Guidance",
-  "desc": "OpenEvidence and the American College of Physicians (ACP) announce a collaboration to bring ACP's evidence-based clinical guidance and published content from its peer-reviewed journal Annals of Internal Medicine into OpenEvidence's clinical decision support platform at the point of care. Under the l",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/acp-and-openevidence-collaborate-to-enhance-physician-access-to-trusted-clinical-guidance",
-  "score": 97,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
   "date": "2026-06-16",
   "cat": "Media",
   "title": "Beckers covers Nature Medicine benchmarking study",
@@ -28,6 +16,18 @@ var signalsData = [
   "comparative": true
  },
  {
+  "date": "2026-11-09",
+  "cat": "Partnership",
+  "title": "ACP and OpenEvidence Collaborate to Enhance Physician Access to Trusted Clinical Guidance",
+  "desc": "OpenEvidence and the American College of Physicians (ACP) announce a collaboration to bring ACP's evidence-based clinical guidance and published content from its peer-reviewed journal Annals of Internal Medicine into OpenEvidence's clinical decision support platform at the point of care. Under the l",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/acp-and-openevidence-collaborate-to-enhance-physician-access-to-trusted-clinical-guidance",
+  "score": 93,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
   "date": "2026-11-16",
   "cat": "Partnership",
   "title": "Apple and OpenEvidence launch health AI study app",
@@ -36,18 +36,6 @@ var signalsData = [
   "url": "https://ai123.com/newshub/18263",
   "score": 91,
   "confidence": "reported",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-11-09",
-  "cat": "Partnership",
-  "title": "ACP and OpenEvidence collaborate on trusted clinical guidance",
-  "desc": "American College of Physicians (largest medical specialty org in US) licenses clinical guidance and Annals of Internal Medicine content to OpenEvidence. Brings peer-reviewed evidence-based clinical content to physicians at point of care.",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/acp-and-openevidence-collaborate-to-enhance-physician-access-to-trusted-clinical-guidance",
-  "score": 91,
-  "confidence": "confirmed",
   "competitors": [],
   "comparative": false
  },
@@ -96,10 +84,10 @@ var signalsData = [
  {
   "date": "2026-11-09",
   "cat": "Partnership",
-  "title": "ACP and OpenEvidence collaborate to enhance physician access to trusted clinical guidance",
-  "desc": "American College of Physicians, largest medical specialty organization in US. Licensing agreement integrates ACP content into OpenEvidence platform.",
-  "src": "PR Newswire",
-  "url": "https://www.prnewswire.com/news-releases/acp-and-openevidence-collaborate-to-enhance-physician-access-to-trusted-clinical-guidance-302929717.html",
+  "title": "ACP and OpenEvidence collaborate on trusted clinical guidance",
+  "desc": "American College of Physicians (largest medical specialty org in US) licenses clinical guidance and Annals of Internal Medicine content to OpenEvidence. Brings peer-reviewed evidence-based clinical content to physicians at point of care.",
+  "src": "OpenEvidence",
+  "url": "https://www.openevidence.com/announcements/acp-and-openevidence-collaborate-to-enhance-physician-access-to-trusted-clinical-guidance",
   "score": 87,
   "confidence": "confirmed",
   "competitors": [],
@@ -144,6 +132,18 @@ var signalsData = [
    "UpToDate"
   ],
   "comparative": true
+ },
+ {
+  "date": "2026-11-09",
+  "cat": "Partnership",
+  "title": "ACP and OpenEvidence collaborate to enhance physician access to trusted clinical guidance",
+  "desc": "American College of Physicians, largest medical specialty organization in US. Licensing agreement integrates ACP content into OpenEvidence platform.",
+  "src": "PR Newswire",
+  "url": "https://www.prnewswire.com/news-releases/acp-and-openevidence-collaborate-to-enhance-physician-access-to-trusted-clinical-guidance-302929717.html",
+  "score": 83,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
  },
  {
   "date": "2026-10-22",

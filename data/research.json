@@ -21400,5 +21400,205 @@
     "tools_evaluated": [],
     "scale": "",
     "status": "published"
+  },
+  {
+    "id": "pmid:43070045",
+    "source": "pubmed",
+    "pmid": "43070045",
+    "type": "research",
+    "title": "Impact of a sepsis clinical decision support system and workflow on sepsis-associated mortality or hospice discharge: A multihospital quasi-experimental study from 2018 to 2024.",
+    "authors": "Chang C, Hoeflich CC, Gerac J, Ulrich J, Gainey C, Taylor C, Gregg J, Perkins N, Blackhurst DW, Heo M, Litwin AH",
+    "abstract": "Retrospective quasi-experimental study utilizing EHR data from 631,620 adult acute care hospitalizations from 10 hospitals (2018-2024). Sepsis present in 50,911 (8.1%). Following SNT (sepsis navigation tool) implementation, mortality/hospice declined among sepsis (18.8%-16.3%; p<.001) and septic shock (40.0%-36.4%; p<.001) hospitalizations. Adjusted OR for mortality/hospice = 0.73 (95% CI 0.69-0.77) for sepsis. ICU admission rates, order set utilization, LOS, blood culture timing, and antibiotic timing also improved.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43070045/",
+    "pdf_url": null,
+    "doi": "10.1002/jhm.70559",
+    "journal": "J Hosp Med",
+    "published_date": "2026 Nov 23",
+    "tags": [
+      "CDSS",
+      "sepsis",
+      "quasi-experimental",
+      "multihospital",
+      "mortality"
+    ],
+    "relevance": "Clinical decision support system evaluation - multihospital quasi-experimental study demonstrating mortality reduction with sepsis CDSS",
+    "key_findings": [
+      "Sepsis CDSS reduced mortality/hospice from 18.8% to 16.3% (p<.001)",
+      "aOR 0.73 for mortality/hospice with CDSS implementation",
+      "Improved ICU admission rates, order set utilization, LOS, and antibiotic timing"
+    ],
+    "tools_evaluated": [
+      "Sepsis Navigation Tool (SNT)"
+    ],
+    "scale": "631,620 hospitalizations, 50,911 sepsis cases, 10 hospitals",
+    "status": "published"
+  },
+  {
+    "id": "pmid:43069807",
+    "source": "pubmed",
+    "pmid": "43069807",
+    "type": "research",
+    "title": "The arc of uncertainty across clinicians' interactions with AI.",
+    "authors": "Hunton RW, The T, Ilgen J",
+    "abstract": "Conceptual paper examining how LLMs are used in clinical settings to support reasoning and decision-making. Views AI-clinician interaction as a process: whether to use AI, how to engage, how to interpret output, and whether to act. Each stage introduces distinct risks including inappropriate tool selection, incomplete inputs, overconfidence, and failure to recognize error. Safe use depends on clinician's ability to recognize when AI outputs should be questioned, verified, or set aside.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43069807/",
+    "pdf_url": null,
+    "doi": "10.1007/s44163-026-02851-3",
+    "journal": "Discov Artif Intell",
+    "published_date": "2026 Nov 21",
+    "tags": [
+      "LLM",
+      "clinical reasoning",
+      "physician-AI interaction",
+      "uncertainty",
+      "safety"
+    ],
+    "relevance": "Physician-AI teaming - conceptual framework for clinician-AI interaction risks and uncertainties across the decision sequence",
+    "key_findings": [
+      "AI-clinician interaction is a multi-stage process with distinct risks at each stage",
+      "Safe use depends more on clinician's ability to question AI than on model quality",
+      "Risks shaped by experience, workload, and uncertainty management"
+    ],
+    "tools_evaluated": [],
+    "scale": "Conceptual/perspective paper",
+    "status": "published"
+  },
+  {
+    "id": "pmid:43069390",
+    "source": "pubmed",
+    "pmid": "43069390",
+    "type": "benchmark",
+    "title": "Reproducibility and guideline concordance of next-generation large language models on ESE S3-based endodontic questions: a multi-account, multi-timepoint evaluation.",
+    "authors": "Akça S, Falakaloğlu Görgen S",
+    "abstract": "50 questions (20 MCQ, 30 dichotomous) from ESE S3-level guidelines evaluated across 8 LLMs (ChatGPT-4o, ChatGPT-5, Gemini 2.5 Pro, DeepSeek V3.2-Exp, Claude Sonnet 4.5, Claude Haiku 4.5, Copilot, Grok 4) using 3 independent accounts and 3 time points. Overall accuracy 86.7%-97.3%. Accuracy decreased with weaker recommendations (99.8% strong vs 84.7% weak). Inter-account and temporal agreement stable. LLMs accurate and reproducible on structured guideline questions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43069390/",
+    "pdf_url": null,
+    "doi": "10.1007/s10266-026-01631-w",
+    "journal": "Odontology",
+    "published_date": "2026 Nov 22",
+    "tags": [
+      "LLM benchmark",
+      "endodontics",
+      "guideline concordance",
+      "reproducibility",
+      "multi-model"
+    ],
+    "relevance": "LLM benchmark on medical knowledge - 8 LLMs evaluated on 50 guideline-derived dental questions across multiple accounts and time points",
+    "key_findings": [
+      "Accuracy 86.7%-97.3% across 8 LLMs",
+      "Accuracy drops from 99.8% for strong recommendations to 84.7% for weak",
+      "Inter-account and temporal agreement stable",
+      "Question format and difficulty had minimal influence"
+    ],
+    "tools_evaluated": [
+      "ChatGPT-4o",
+      "ChatGPT-5",
+      "Gemini 2.5 Pro",
+      "DeepSeek V3.2-Exp",
+      "Claude Sonnet 4.5",
+      "Claude Haiku 4.5",
+      "Copilot",
+      "Grok 4"
+    ],
+    "scale": "50 questions, 8 LLMs, 3 accounts, 3 time points",
+    "status": "published"
+  },
+  {
+    "id": "pmid:43069139",
+    "source": "pubmed",
+    "pmid": "43069139",
+    "type": "benchmark",
+    "title": "Safety of patient-facing AI-generated medical advice: a structured clinical evaluation using acute appendicitis scenarios.",
+    "authors": "Erdoğan AR, Martlı F, Ekici MF, Erdoğan P",
+    "abstract": "540 AI-generated responses evaluated across 30 patient-style questions, 3 AI models (ChatGPT GPT-5.2 Instant, Gemini 3 Flash, Microsoft Copilot), 2 prompting conditions, 3 repeated responses. Harmful advice most frequent in medication scenarios (H_any 28.8%, H_maj 23.8%) vs symptom interpretation (19.4%/16.8%) and home observation (15.9%/13.5%). Structured prompting did not consistently reduce harm. Worst-case repeat analysis showed harmful advice could recur.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43069139/",
+    "pdf_url": null,
+    "doi": "10.1186/s12911-026-03800-x",
+    "journal": "BMC Med Inform Decis Mak",
+    "published_date": "2026 Aug 29",
+    "tags": [
+      "AI safety",
+      "patient-facing",
+      "appendicitis",
+      "harm evaluation",
+      "multi-model"
+    ],
+    "relevance": "Medical AI safety evaluation - structured clinical evaluation of patient-facing AI advice safety in high-risk acute appendicitis scenarios",
+    "key_findings": [
+      "28.8% harmful advice in medication scenarios",
+      "Structured prompting did not consistently reduce harm",
+      "Harmful advice recurred across repeated responses",
+      "Clinically nuanced scenarios (comorbidities, pregnancy) more likely to elicit harmful advice"
+    ],
+    "tools_evaluated": [
+      "ChatGPT (GPT-5.2 Instant)",
+      "Gemini 3 Flash",
+      "Microsoft Copilot"
+    ],
+    "scale": "540 AI responses, 30 questions, 3 models, 2 prompting conditions, 3 repeats",
+    "status": "published"
+  },
+  {
+    "id": "pmid:43068679",
+    "source": "pubmed",
+    "pmid": "43068679",
+    "type": "research",
+    "title": "Bridging the experience gap: a national survey on clinicians' perceptions of medical artificial intelligence governance and institutional barriers.",
+    "authors": "Ha J, Kim KH, Lim JY, Moon S, Park H, Shinn J, Mun SK, Kim HS",
+    "abstract": "Nationwide survey of 2,125 physicians (Korean Medical Association, Oct 2025). AI-experienced group (n=1,013) reported significantly higher positive clinical impact (6.8 vs 6.0, p<.001). Legal liability framework confidence critically low in both groups (2.4 vs 2.3). Experienced users demanded government infrastructure, AI education, and reimbursement support. AIex_(+) identified legal liability ambiguity (69.1%) and data quality (51.5%) as barriers; AIex_(-) cited lack of information (54.4%) and accessibility (48.2%).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43068679/",
+    "pdf_url": null,
+    "doi": "10.3904/kjim.2026.207",
+    "journal": "Korean J Intern Med",
+    "published_date": "2026 Nov 20",
+    "tags": [
+      "physician-AI interaction",
+      "governance",
+      "survey",
+      "barriers",
+      "adoption"
+    ],
+    "relevance": "Physician-AI teaming - national survey on clinicians' perceptions of medical AI governance, barriers, and institutional support needs",
+    "key_findings": [
+      "2,125 physicians surveyed nationally",
+      "AI-experienced physicians more positive about clinical impact (6.8 vs 6.0, p<.001)",
+      "Legal liability confidence critically low (2.4/10) in both groups",
+      "Different barriers for experienced vs inexperienced users"
+    ],
+    "tools_evaluated": [],
+    "scale": "2,125 physicians, national survey (Korea)",
+    "status": "published"
+  },
+  {
+    "id": "pmid:43068358",
+    "source": "pubmed",
+    "pmid": "43068358",
+    "type": "research",
+    "title": "Large Language Model-Powered AI-Assisted Simulated Patient for Nursing Education: Quasi-Experimental Study.",
+    "authors": "Chan MCM, Hung DCK, Kwok TT, Wong JYH",
+    "abstract": "LLM-powered simulated patient system (GPT-4o via Microsoft AI Foundry) for nursing triage education in Traditional Chinese/Cantonese. Layered hallucination mitigation architecture. Script-inconsistent responses reduced from 62.4% (V1) to 16.8% (V2). 90% GPT-4o responses fully script-consistent. Addresses stateless API memory management, cloud safety filter calibration, and prompt engineering for role drift prevention.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43068358/",
+    "pdf_url": null,
+    "doi": "10.2196/98543",
+    "journal": "JMIR Nurs",
+    "published_date": "2026 Nov 19",
+    "tags": [
+      "LLM",
+      "nursing education",
+      "simulated patient",
+      "GPT-4o",
+      "hallucination mitigation"
+    ],
+    "relevance": "Medical AI tool evaluation - LLM-powered simulated patient system for nursing education with hallucination mitigation architecture",
+    "key_findings": [
+      "Script-inconsistent responses reduced from 62.4% to 16.8% between V1 and V2",
+      "90% GPT-4o responses fully script-consistent",
+      "Layered hallucination mitigation combining grounded prompts, few-shot exemplars, negative constraints, and calibrated parameters"
+    ],
+    "tools_evaluated": [
+      "GPT-4o"
+    ],
+    "scale": "2 tutorial cohorts of nursing students, 125 script-fidelity evaluations",
+    "status": "published"
   }
 ]

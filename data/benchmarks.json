@@ -8672,5 +8672,120 @@
     "tools_evaluated": [],
     "scale": "",
     "status": "preprint"
+  },
+  {
+    "id": "pmid:43070045",
+    "source": "pubmed",
+    "pmid": "43070045",
+    "type": "benchmark",
+    "title": "Impact of a sepsis clinical decision support system and workflow on sepsis-associated mortality or hospice discharge",
+    "authors": "Chang C, Hoeflich CC, et al.",
+    "abstract": "Multihospital quasi-experimental study of sepsis CDSS (SNT) across 10 hospitals, 631,620 hospitalizations. Mortality/hospice declined from 18.8% to 16.3% (p<.001). aOR 0.73 for mortality/hospice.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43070045/",
+    "pdf_url": null,
+    "doi": "10.1002/jhm.70559",
+    "journal": "J Hosp Med",
+    "published": "2026-11-23",
+    "updated": "2026-11-23",
+    "categories": [
+      "CDSS evaluation",
+      "sepsis"
+    ],
+    "tags": [
+      "CDSS",
+      "sepsis",
+      "quasi-experimental"
+    ],
+    "relevance": "CDSS evaluation - multihospital quasi-experimental study",
+    "key_findings": [
+      "Mortality/hospice 18.8% to 16.3%",
+      "aOR 0.73",
+      "10 hospitals, 631K hospitalizations"
+    ],
+    "tools_evaluated": [
+      "Sepsis Navigation Tool (SNT)"
+    ],
+    "scale": "631,620 hospitalizations, 10 hospitals",
+    "status": "published"
+  },
+  {
+    "id": "pmid:43069390",
+    "source": "pubmed",
+    "pmid": "43069390",
+    "type": "benchmark",
+    "title": "Reproducibility and guideline concordance of next-generation LLMs on ESE S3-based endodontic questions",
+    "authors": "Akça S, Falakaloğlu Görgen S",
+    "abstract": "8 LLMs evaluated on 50 endodontic guideline questions across 3 accounts and 3 time points. Accuracy 86.7%-97.3%. Strong recommendations 99.8% vs weak 84.7%.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43069390/",
+    "pdf_url": null,
+    "doi": "10.1007/s10266-026-01631-w",
+    "journal": "Odontology",
+    "published": "2026-11-22",
+    "updated": "2026-11-23",
+    "categories": [
+      "LLM benchmark",
+      "endodontics"
+    ],
+    "tags": [
+      "LLM benchmark",
+      "guideline concordance",
+      "reproducibility"
+    ],
+    "relevance": "LLM benchmark - 8 models on dental guideline questions",
+    "key_findings": [
+      "Accuracy 86.7%-97.3%",
+      "Strong recs 99.8% vs weak 84.7%",
+      "Stable across accounts and time"
+    ],
+    "tools_evaluated": [
+      "ChatGPT-4o",
+      "ChatGPT-5",
+      "Gemini 2.5 Pro",
+      "DeepSeek V3.2-Exp",
+      "Claude Sonnet 4.5",
+      "Claude Haiku 4.5",
+      "Copilot",
+      "Grok 4"
+    ],
+    "scale": "50 questions, 8 LLMs, 3 accounts, 3 time points",
+    "status": "published"
+  },
+  {
+    "id": "pmid:43069139",
+    "source": "pubmed",
+    "pmid": "43069139",
+    "type": "benchmark",
+    "title": "Safety of patient-facing AI-generated medical advice: structured clinical evaluation using acute appendicitis scenarios",
+    "authors": "Erdoğan AR, Martlı F, Ekici MF, Erdoğan P",
+    "abstract": "540 AI responses, 3 models, 2 prompting conditions, 3 repeats. Harmful advice 28.8% in medication scenarios. Structured prompting did not reduce harm.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43069139/",
+    "pdf_url": null,
+    "doi": "10.1186/s12911-026-03800-x",
+    "journal": "BMC Med Inform Decis Mak",
+    "published": "2026-08-29",
+    "updated": "2026-11-23",
+    "categories": [
+      "AI safety",
+      "patient-facing"
+    ],
+    "tags": [
+      "AI safety",
+      "patient-facing",
+      "appendicitis",
+      "harm evaluation"
+    ],
+    "relevance": "AI safety evaluation - patient-facing AI advice in high-risk clinical scenarios",
+    "key_findings": [
+      "28.8% harmful advice in medication scenarios",
+      "Structured prompting did not reduce harm",
+      "Harm recurred across repeats"
+    ],
+    "tools_evaluated": [
+      "ChatGPT (GPT-5.2 Instant)",
+      "Gemini 3 Flash",
+      "Microsoft Copilot"
+    ],
+    "scale": "540 responses, 30 questions, 3 models",
+    "status": "published"
   }
 ]
