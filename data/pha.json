@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,23 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-11",
+      "cat": "Research",
+      "title": "Google Research Introduces Coachable Health Age and Counterfactual Wearable Trajectories for Personalized Coaching",
+      "desc": "Google Research introduced an investigational framework translating passive wearable signals into a modifiable 'coachable health age' (CHA) built from resting heart rate, steps, sleep and active minutes. A Sensor World Model (SensorWM) pre-trained on 2.28 million person-weeks of Fitbit data simulates personalized 12-week 'what-if' habit trajectories, paired with a language model coaching agent. In a blinded study, certified lifestyle coaches preferred counterfactual-grounded plans 71.4% of the time (p<0.001); physicians rated 99.2% of plans within safe exercise limits. A companion study expands the framework to cardiovascular-kidney-metabolic (CKM) health age using wearable plus blood biomarker data. Validated across All of Us (n=22,748), longitudinal Fitbit (n=1,464) and WEAR-ME (n=819) cohorts. Investigational research prototype, not a clinical diagnostic tool.",
+      "src": "Google Research Blog",
+      "url": "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/",
+      "new": true
+    },
+    {
+      "date": "2026-11-05",
+      "cat": "Research",
+      "title": "Google Research and Harvard Publish Nature Paper on Passive Hypertension Detection from Smartwatch Sensors",
+      "desc": "Google Research, Beth Israel Deaconess Medical Center and Harvard Medical School published a Nature paper presenting AI-PPG-ACC-HTN, a multimodal AI system that passively detects hypertension using PPG and accelerometer signals from consumer smartwatches without cuff calibration. Validated against 24-hour ambulatory blood pressure monitoring (the clinical gold standard) in a prospective multi-center study of 196 participants. For confirmatory testing, the smartwatch achieved 78.4% sensitivity, 90.9% specificity and 96.7% PPV, competitive with multi-day home monitoring. Findings informed the blood pressure trends Health Guardian feature in the Google Health app. Research findings, not a commercial product diagnostic capability.",
+      "src": "Google Research Blog / Nature",
+      "url": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/"
+    },
     {
       "date": "2026-11-18",
       "cat": "Product",
@@ -1130,6 +1147,14 @@
         {
           "l": "Premium",
           "v": "$9.99/mo or $99.99/yr"
+        },
+        {
+          "l": "Hypertension AI",
+          "v": "Nature paper Nov 5"
+        },
+        {
+          "l": "CKM coaching",
+          "v": "CHA + SensorWM (Nov 11)"
         }
       ],
       "desc": "Google consolidated its consumer health stack across 2026: the Fitbit app became the Google Health app in May, Health Guardian features (blood pressure trends, insulin resistance trends, sleep breathing quality) went live for Pixel Watch users on Sep 24, the Fitbit Edge tracker launched Oct 12, and the Google Health app opened to Function Health lab results, Abbott Lingo CGM data and MyFitnessPal meal logs. A Flo Health partnership announced Oct 12 integrates cycle data from Flo's 80M+ monthly users with Google Health Coach for tailored women's health guidance. The Abbott partnership pairs Lingo glucose data with Google's AI Health Coach for personalised metabolic insights and plans a large-scale real-world metabolic health study. Vendor claim: Health Guardian features are for general wellness, not diagnosis.",
@@ -1676,6 +1701,24 @@
     }
   ],
   "research": [
+    {
+      "title": "Personalized health coaching via coachable health age and counterfactual wearable trajectories",
+      "type": "Preprint · investigational framework",
+      "date": "Nov 11, 2026",
+      "venue": "arXiv (Google Research)",
+      "finding": "Introduces a coachable health age (CHA) model built entirely from modifiable daily behaviors captured passively by consumer wearables (resting heart rate, steps, sleep duration, active zone minutes). A Sensor World Model (SensorWM) pre-trained on 2.28 million person-weeks of Fitbit data simulates personalized 12-week counterfactual health trajectories. Paired with a feasibility-constrained optimizer and LLM coaching agent, the system generates progressive 12-week plans. In a blinded evaluation by 5 lifestyle coaches and 5 physicians across 49 profiles (490 paired reviews), counterfactual-grounded plans were preferred 71.4% of the time (p<0.001) and rated 99.2% within safe exercise intensity limits. Validated across All of Us (n=22,748, 68,000+ person-years), longitudinal Fitbit (n=1,464), and WEAR-ME (n=819) cohorts. A companion study extends the framework to cardiovascular-kidney-metabolic (CKM) health age by combining wearable signals with cholesterol-to-HDL ratio, eGFR and HOMA-IR.",
+      "caveat": "Investigational research prototypes evaluated offline using retrospective research cohorts, not prospective trials. Not clinical diagnostic tools. Study conducted by Google Research employees (potential bias).",
+      "url": "https://arxiv.org/abs/2611.08568"
+    },
+    {
+      "title": "Wearable hypertension detection via PPG and accelerometer signals (AI-PPG-ACC-HTN)",
+      "type": "Peer-reviewed · prospective multi-center clinical study",
+      "date": "Nov 5, 2026",
+      "venue": "Nature",
+      "finding": "A multimodal AI system using photoplethysmography (PPG) and accelerometer (ACC) signals from consumer smartwatches to passively detect hypertension without cuff calibration. Self-supervised contrastive learning on 492,347 hours of sensor data from 2,109 participants. Validated against 24-hour ambulatory blood pressure monitoring (clinical gold standard) in a prospective multi-center study of 196 participants across 5 US sites. For initial screening: 65.8% sensitivity, 90.0% specificity, 80.6% PPV. For confirmatory testing (N=48 with elevated office BP): 78.4% sensitivity, 90.9% specificity, 96.7% PPV, competitive with multi-day home monitoring (89.2% / 81.8% / 94.3%). Findings informed the blood pressure trends Health Guardian feature in the Google Health app.",
+      "caveat": "Early feasibility research; methodologies are exploratory and not indicative of any existing or upcoming commercial product feature or device capability. Not intended to replace standard clinical arm cuffs or provide a definitive standalone medical diagnosis. Study population free from known cardiovascular disease and not taking BP medications, which may limit generalizability.",
+      "url": "https://www.nature.com/articles/s41586-026-11336-3"
+    },
     {
       "title": "ChatGPT Health Performance in a Structured Test of Triage Recommendations",
       "type": "Peer-reviewed · analytical validation",
@@ -2857,6 +2900,22 @@
     {
       "name": "AACL-IJCNLP 2026 - CARE-Bench patient-facing LLM triage benchmark (Nov 10, 2026)",
       "url": "https://aclanthology.org/2026.aacl-long.63.pdf"
+    },
+    {
+      "name": "Google Research - CKM risk profiling and coachable health age (Nov 11, 2026)",
+      "url": "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/"
+    },
+    {
+      "name": "arXiv - Personalized health coaching via coachable health age (Nov 2026)",
+      "url": "https://arxiv.org/abs/2611.08568"
+    },
+    {
+      "name": "Google Research - Detecting signs of hypertension using wearable sensors (Nov 5, 2026)",
+      "url": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/"
+    },
+    {
+      "name": "Nature - Wearable hypertension detection via PPG and accelerometer (Nov 2026)",
+      "url": "https://www.nature.com/articles/s41586-026-11336-3"
     }
   ],
   "freeTierDefaults": [

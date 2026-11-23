@@ -148,4 +148,8 @@ var phaSourcesData = [
   {name:"Y Combinator - Helios Intelligence at-home 1,000+ biomarker blood test launch (Nov 18, 2026)", url:"https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home"},
   {name:"AACL-IJCNLP 2026 - CARE-Bench patient-facing LLM triage benchmark (Nov 10, 2026)", url:"https://aclanthology.org/2026.aacl-long.63.pdf"},
 
+  {name:"Google Research - CKM risk profiling and coachable health age (Nov 11, 2026)", url:"https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/"},
+  {name:"arXiv - Personalized health coaching via coachable health age (Nov 2026)", url:"https://arxiv.org/abs/2611.08568"},
+  {name:"Google Research - Detecting signs of hypertension using wearable sensors (Nov 5, 2026)", url:"https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/"},
+  {name:"Nature - Wearable hypertension detection via PPG and accelerometer (Nov 2026)", url:"https://www.nature.com/articles/s41586-026-11336-3"},
 ];
