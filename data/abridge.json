@@ -79,7 +79,7 @@
       "name": "Abridge Assistant",
       "status": "live",
       "date": "Oct 13, 2026",
-      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO, Cochrane), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. October 2026 release added Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic's Heard in Visit Recording module as discussed), patient visit summary editing via Assistant (reading level, plain language, tone, length), chart-informed inpatient H&P and progress notes citing chart sources inline, outpatient CDI queries and cues via the Query Engine, inpatient diagnosis write-back at note signature, and an Evaluation Dashboard for governance teams. November 2026 added Visit Dx enhancements (diagnosis organization under problem headers, search-and-replace, specificity modifiers) and Local Pathways (institution-specific care guidance surfaced alongside published evidence, with links to source documents). Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries. UC Irvine Health and Dayton Children's Hospital cited as Local Pathways design partners. At Abridge's annual customer event The Conversation in San Diego, Rao demoed an agentic AI assistant that coordinates work across fragmented systems - entering registry data, calling pharmacies, navigating payer portals for prior auths, and scheduling follow-ups - live in early environments with select partners.",
+      "desc": "The AI assistant for healthcare. Clinicians ask questions and delegate tasks in natural language; Assistant pulls context from the chart, the clinical conversation, and licensed evidence (UpToDate, NEJM, JAMA Network, ADA, AAFP, Neurology, JCO, Cochrane), citing sources and opening calculators pre-filled with chart values. Runs inside the EHR and on mobile, under health-system security and governance. As of the September release, every clinician at all 300+ partner health systems has access, whether or not they use Abridge for documentation. Unifies and supersedes the prior Context-Aware Clinical Decision Support and Clinician Intelligence Agent capabilities. August 2026 release added AMA PRA Category 1 CME credits for eligible questions, voice input (Speak to Abridge AI), Voiceprint personalization, medical calculators pre-filled from chart context, pre-visit/pre-admission/pre-round summaries, and inline CPT Level of Service with evidence. September 2026 release added inpatient cues, inline diagnosis organization, expanded specialty support, and admin/CDI controls. October 2026 blog post detailed specialty-aware pre-visit summaries across outpatient, inpatient, and ED settings, with personalization via Abridge Assistant coming in a future release. October 2026 release added Visit Topics (chronic-condition tracking with Medicare Advantage HCC gap detection), In-Visit Orders (orders staged in Epic's Heard in Visit Recording module as discussed), patient visit summary editing via Assistant (reading level, plain language, tone, length), chart-informed inpatient H&P and progress notes citing chart sources inline, outpatient CDI queries and cues via the Query Engine, inpatient diagnosis write-back at note signature, and an Evaluation Dashboard for governance teams. November 2026 added Visit Dx enhancements (diagnosis organization under problem headers, search-and-replace, specificity modifiers) and Local Pathways (institution-specific care guidance surfaced alongside published evidence, with links to source documents). November 2026 release added an Impact Dashboard in the Enterprise Portal (adoption, engagement, utilization by setting and specialty), endocrinology note type (medication doses, insulin pump settings, CGM metrics), pre-visit summary persistence alongside the note, procedure/radiology/pathology results in pre-visit summaries, pre-round and pre-admission summaries in Epic Haiku, reduced Assistant prior-note window from 10 years to 18 months, user labels/tags for adoption reporting, and updated weekly export fields for Visit Diagnosis and CDI Query Engine activity. Maine Health and Children's Hospital of Philadelphia cited as using pre-visit summaries. UC Irvine Health and Dayton Children's Hospital cited as Local Pathways design partners. At Abridge's annual customer event The Conversation in San Diego, Rao demoed an agentic AI assistant that coordinates work across fragmented systems - entering registry data, calling pharmacies, navigating payer portals for prior auths, and scheduling follow-ups - live in early environments with select partners.",
       "url": "https://www.abridge.com/platform/assistant"
     },
     {
@@ -229,7 +229,7 @@
       "type": "Technology · Physician Builder Challenge co-sponsor + computer-use agent collaboration",
       "date": "Oct 9, 2026",
       "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/hlth26-cvs-health-cigna-and-ambience-collaborating-openai-test-computer-use",
-      "new": true
+      "new": false
     },
     {
       "name": "Physician Side Gigs",
@@ -643,6 +643,15 @@
     }
   ],
   "timeline": [
+    {
+      "date": "2026-11-24",
+      "cat": "Product",
+      "title": "Abridge November 2026 Release: Impact Dashboard, Endocrinology Notes, Enhanced Pre-Visit Summaries, Inpatient Summaries in Haiku",
+      "desc": "Abridge's November release adds an Impact Dashboard in the Enterprise Portal giving health system teams self-serve visibility into adoption, engagement, and utilization trends by active clinicians, note volume, care setting, and specialty. A new endocrinology note type captures medication doses, insulin pump settings, CGM metrics, and relevant labs as stated in the visit. Pre-visit summaries now persist alongside the note, include procedure/radiology/pathology results, and pre-round/pre-admission summaries are available in Epic Haiku. The Abridge Assistant's prior-note window is reduced from 10 years to 18 months to lower EHR compute costs and latency. Admin improvements include user labels/tags for adoption reporting and updated weekly export fields for Visit Diagnosis and CDI Query Engine activity. Abridge Hub is retired in favor of a new Support Center.",
+      "src": "Abridge",
+      "url": "https://www.abridge.com/release-notes",
+      "new": true
+    },
     {
       "date": "2026-11-19",
       "cat": "Product",
@@ -1571,7 +1580,11 @@
     {
       "name": "AssemblyAI - Best ambient AI scribes in 2026: 8 tools compared (Nov 19, 2026)",
       "url": "https://www.assemblyai.com/blog/the-best-7-ambient-ai-scribes"
+    },
+    {
+      "name": "Abridge - November 2026 Release Notes: Impact Dashboard, Endocrinology, Pre-Visit Summary enhancements (Nov 24, 2026)",
+      "url": "https://www.abridge.com/release-notes"
     }
   ],
-  "updated": "2026-11-21"
+  "updated": "2026-11-23"
 }
