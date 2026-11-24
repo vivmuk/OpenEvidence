@@ -188,11 +188,41 @@
 <script>
 function renderWhatsNew() {
   var el = document.getElementById('whatsNewContent');
-  if (!el || typeof whatsNewData === 'undefined') return;
+  if (!el || typeof whatsNewData === 'undefined' || !whatsNewData.length) return;
   var html = '';
-  whatsNewData.forEach(function(batch) {
+
+  // Normalise whatever shape data/whatsNew.js is in to a list of batches.
+  //
+  // The file has been written two ways: a flat array of
+  // {date, category, title, desc} entries (what the tracker jobs write) and
+  // an older array of {date, updated, items:[...]} batches. The renderer
+  // only understood the batch shape, so when a tracker rewrote the file in
+  // the flat shape the panel threw on batch.items.forEach and rendered
+  // EMPTY - the What's New modal on the homepage was silently blank while
+  // the data looked fine. Handle both, and group flat entries by date so the
+  // heading still reads like a batch.
+  var batches = [];
+  whatsNewData.forEach(function(entry) {
+    if (!entry) return;
+    if (entry.items && entry.items.length) {
+      batches.push({ date: entry.date, updated: entry.updated, items: entry.items });
+      return;
+    }
+    var item = { cat: entry.category || entry.cat || '',
+                 title: entry.title || '', desc: entry.desc || '' };
+    var last = batches[batches.length - 1];
+    if (last && !last.updated && last.date === entry.date) {
+      last.items.push(item);
+    } else {
+      batches.push({ date: entry.date, updated: null, items: [item] });
+    }
+  });
+
+  batches.forEach(function(batch) {
     html += '<h3>✦ What\'s New - ' + batch.date + '</h3>';
-    html += '<div class="wn-date">Updated ' + batch.date + ' · ' + batch.updated + '</div>';
+    if (batch.updated) {
+      html += '<div class="wn-date">Updated ' + batch.date + ' · ' + batch.updated + '</div>';
+    }
     html += '<div class="wn-grid">';
     batch.items.forEach(function(item) {
       html += '<div class="wn-item">';

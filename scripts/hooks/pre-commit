@@ -161,6 +161,30 @@ if [ "$DATA_CHANGED" -eq 1 ]; then
 fi
 
 # --------------------------------------------------------------------------
+# 4b. The homepage "What's New" panel must actually render. Block on real errors.
+# --------------------------------------------------------------------------
+# data/whatsNew.js and index.html's renderWhatsNew() disagreed about the data
+# shape: a tracker rewrote the file flat while the renderer still expected
+# batches, so batch.items.forEach threw and the panel rendered EMPTY - while
+# the data file looked perfectly healthy and every tracker job kept appending
+# to it. scripts/check_whats_new.js runs the page's own render function against
+# the real data file and fails if it throws or produces no items.
+if [ -f scripts/check_whats_new.js ] && command -v node >/dev/null 2>&1; then
+  if ! node scripts/check_whats_new.js >/tmp/oe-whatsnew.out 2>&1; then
+    echo "" >&2
+    echo "┌──────────────────────────────────────────────────────────────┐" >&2
+    echo "│  COMMIT BLOCKED - the What's New panel does not render        │" >&2
+    echo "└──────────────────────────────────────────────────────────────┘" >&2
+    cat /tmp/oe-whatsnew.out >&2
+    echo "" >&2
+    echo "The homepage panel would render empty. Either the renderer in" >&2
+    echo "index.html and data/whatsNew.js disagree about the data shape," >&2
+    echo "or a data entry is missing a field." >&2
+    exit 1
+  fi
+fi
+
+# --------------------------------------------------------------------------
 # 5. Reject root-relative asset paths. Block on real errors.
 # --------------------------------------------------------------------------
 # The site has TWO deployments: Railway (primary) serves it from the domain
