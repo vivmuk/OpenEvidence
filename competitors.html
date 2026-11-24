@@ -65,16 +65,35 @@
 
 window.addEventListener('load', function() {
   try {
-    document.getElementById('competitorGrid').innerHTML = competitorsData.map(c => `
+    // competitors.js holds two shapes: the original competitor PROFILES
+    // ({name, badge, type, stats:[{l,v}], desc, url}) and, since tracker
+    // sweeps started appending news items to it, {date, company, type, desc,
+    // url}. Rendering assumed profiles only, so c.stats.map threw on the first
+    // news entry and the WHOLE grid rendered empty. Render each shape, and
+    // never let one bad entry blank the page again.
+    document.getElementById('competitorGrid').innerHTML = competitorsData.map(function(c) {
+      if (!c) return '';
+      if (c.stats && c.stats.length) {
+        return `
       <div class="competitor-card">
-        <div class="badge">${c.badge}</div>
-        <h3>${c.name}</h3>
-        <div class="type">${c.type}</div>
+        <div class="badge">${c.badge || ''}</div>
+        <h3>${c.name || ''}</h3>
+        <div class="type">${c.type || ''}</div>
         <div class="stats">${c.stats.map(s => `<div class="stat"><span style="color:var(--oe-text-muted)">${s.l}:</span> <span class="v">${s.v}</span></div>`).join('')}</div>
-        <div class="desc">${c.desc}</div>
-        <div class="source"><a href="${c.url}" target="_blank" rel="noopener">Source →</a></div>
-      </div>
-    `).join('');
+        <div class="desc">${c.desc || ''}</div>
+        <div class="source"><a href="${c.url || '#'}" target="_blank" rel="noopener">Source →</a></div>
+      </div>`;
+      }
+      // News-shaped entry.
+      return `
+      <div class="competitor-card competitor-news">
+        <div class="badge">${c.type || 'News'}</div>
+        <h3>${c.company || c.name || ''}</h3>
+        <div class="type">${c.date || ''}</div>
+        <div class="desc">${c.desc || ''}</div>
+        <div class="source"><a href="${c.url || '#'}" target="_blank" rel="noopener">Source →</a></div>
+      </div>`;
+    }).join('');
   } catch(e) { console.error("[OE] competitors render failed:", e.message); }
 });
 

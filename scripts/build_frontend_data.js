@@ -207,7 +207,9 @@ function buildIndex({ timeline, competitors, partners, research, benchmarks }) {
   ];
   for (const [label, href] of PAGES) push('Page', label, 'Section', href);
 
-  for (const c of competitors) push('Competitor', c.name, c.type || '', '/competitors');
+  // competitors.js mixes profile entries (name) with news entries (company);
+  // using c.name alone put 'undefined' in the site search index.
+  for (const c of competitors) push('Competitor', c.name || c.company || '', c.type || '', '/competitors');
   for (const p of partners) push('Partner', p.name, p.type || '', '/partnerships');
 
   for (const r of research) {

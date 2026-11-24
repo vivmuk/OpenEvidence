@@ -191,12 +191,10 @@
 function buildPageCharts() {
   charts.forEach(c => { try { c.destroy(); } catch(e){} });
   charts = [];
-  try {
-    charts.push(makeChart('chartFunding',
-      ['Series A\nFeb 2025','Series B\nJul 2025','Series C\nOct 2025','Series D\nJan 2026'],
-      [75, 285, 485, 735],
-      'Cumulative Funding ($M)'));
-  } catch(e) { console.error("[OE-CHART] chartFunding failed:", e.message); }
+  // The cumulative-funding line chart was replaced by the waterfall below.
+  // The old makeChart('chartFunding', ...) call was left behind pointing at a
+  // canvas this page does not have, so it only logged a "canvas not found"
+  // warning on every load.
   try {
     const ctx6 = document.getElementById('chartFundingWaterfall');
     if (ctx6) {

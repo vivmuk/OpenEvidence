@@ -60,12 +60,12 @@ window.addEventListener('load', function() {
   try {
     document.getElementById('productsList').innerHTML = productsData.map(p => `
       <div class="feature-card">
-        <div class="icon">${p.icon}</div>
+        <div class="icon">${p.icon || '📦'}</div>
         <div class="content">
-          <h4>${p.name} <span class="status-badge status-released">${p.status}</span></h4>
-          <p><strong>Launched:</strong> ${p.date}</p>
-          <p>${p.desc}</p>
-          <div class="src-link"><a href="${p.url}" target="_blank" rel="noopener">Source →</a></div>
+          <h4>${p.name || ''} <span class="status-badge status-released">${p.status || 'Released'}</span></h4>
+          <p><strong>Launched:</strong> ${p.date || ''}</p>
+          <p>${p.desc || ''}</p>
+          <div class="src-link"><a href="${p.url || '#'}" target="_blank" rel="noopener">Source →</a></div>
         </div>
       </div>
     `).join('');
