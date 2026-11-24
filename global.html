@@ -139,7 +139,11 @@
 function renderGlobalTimeline(filter) {
   const el = document.getElementById('globalTimeline');
   if (!el) return;
-  const filtered = filter === 'all' ? globalTimelineData : globalTimelineData.filter(d => d.region === filter);
+  // A stray comma in the data file once left a hole in the array; the spread
+  // then produced an undefined entry and the sort below threw on it, blanking
+  // the entire section. Drop any falsy entry before rendering.
+  const all = (globalTimelineData || []).filter(Boolean);
+  const filtered = filter === 'all' ? all : all.filter(d => d.region === filter);
   const sorted = [...filtered].sort((a,b) => new Date(b.date) - new Date(a.date));
   el.innerHTML = sorted.map((d, i) => `
     <div class="global-tl-item" style="animation-delay: ${i * 0.03}s">
@@ -147,7 +151,7 @@ function renderGlobalTimeline(filter) {
       <div><span class="region-tag reg-${d.region}">${d.region}</span> <span class="category-tag cat-${d.cat === 'Trend' ? 'Milestone' : d.cat === 'Research' ? 'Research' : d.cat}">${d.cat}</span></div>
       <div class="gtl-title">${d.title}</div>
       <div class="gtl-desc">${d.desc}</div>
-      <div class="gtl-source">Source: <a href="${d.url}" target="_blank" rel="noopener">${d.src}</a></div>
+      <div class="gtl-source">Source: <a href="${d.url || '#'}" target="_blank" rel="noopener">${d.src || 'Source'}</a></div>
     </div>
   `).join('');
 }

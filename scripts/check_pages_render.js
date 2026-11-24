@@ -33,6 +33,8 @@ const PAGES = [
   ['publications.html', 'data/publications.js', 'publicationsData', null, 'pubList'],
   ['products.html', 'data/products.js', 'productsData', null, 'productsList'],
   ['benchmarks.html', 'data/benchmarks.js', 'benchmarksData', null, 'benchmarkList'],
+  ['partnerships.html', 'data/partners.js', 'partnersData', null, 'partnerGrid'],
+  ['global.html', 'data/globalTimeline.js', 'globalTimelineData', 'renderGlobalTimeline', 'globalTimeline'],
 ];
 
 let failures = 0;
@@ -48,8 +50,20 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
   const dataSrc = fs.readFileSync(dataPath, 'utf8');
 
   let rendered = '';
+  const stubEl = (id) => ({
+    id,
+    set innerHTML(v) { if (id === containerId) rendered = v; },
+    get innerHTML() { return ''; },
+    getContext: () => ({}),
+    addEventListener: () => {},
+    classList: { add: () => {}, remove: () => {}, contains: () => false },
+    dataset: {},
+    style: {},
+    querySelector: () => null,
+    querySelectorAll: () => [],
+  });
   const ctx = {
-    console,
+    console: { log: () => {}, warn: () => {}, error: () => {} },
     Date,
     String,
     Number,
@@ -57,18 +71,33 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
     Array,
     JSON,
     Object,
+    charts: [],
+    Chart: function () { this.destroy = () => {}; },
+    getThemeColors: () => ({ text: '#000', muted: '#888', grid: '#eee' }),
     document: {
-      getElementById: (id) => (id === containerId
-        ? { set innerHTML(v) { rendered = v; } }
-        : null),
-      querySelector: () => null,
+      getElementById: (id) => stubEl(id),
+      querySelector: () => stubEl('q'),
       querySelectorAll: () => [],
+      createElement: () => stubEl('c'),
+      addEventListener: () => {},
+      body: stubEl('body'),
     },
     window: { addEventListener: (ev, fn) => { if (ev === 'load') ctx.__load = fn; } },
     addEventListener: (ev, fn) => { if (ev === 'load') ctx.__load = fn; },
     oeNewBadge: () => '',
+    oeIsNew: () => false,
   };
   vm.createContext(ctx);
+
+  // Some pages pull in more than one data file; load them all so the render
+  // function sees the same globals the browser would.
+  const extraData = (fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8').match(
+    /src="data\/[a-zA-Z]+\.js"/g) || []).map((m) => m.replace(/src="data\//, '').replace(/"/, ''));
+  for (const f of extraData) {
+    const fp = path.join(ROOT, 'data', f);
+    if (!fs.existsSync(fp) || f === path.basename(dataFile)) continue;
+    try { vm.runInContext(fs.readFileSync(fp, 'utf8'), ctx, { filename: 'data/' + f }); } catch (e) { /* not fatal */ }
+  }
 
   try {
     vm.runInContext(dataSrc, ctx, { filename: dataFile });
@@ -87,7 +116,7 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
   // script block that assigns into the container.
   let code = '';
   if (fnName) {
-    const m = html.match(new RegExp(`function ${fnName}\\(\\)\\s*\\{[\\s\\S]*?\\n\\}`));
+    const m = html.match(new RegExp(`function ${fnName}\\([^)]*\\)\\s*\\{[\\s\\S]*?\\n\\}`));
     if (!m) { console.log(`FAIL ${page}: ${fnName}() not found`); failures++; continue; }
     code = m[0];
   } else {
@@ -99,7 +128,8 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
 
   try {
     vm.runInContext(code, ctx, { filename: page });
-    if (typeof ctx[fnName || '__anon'] === 'function') ctx[fnName || '__anon']();
+    if (fnName && typeof ctx[fnName] === 'function') ctx[fnName]('all');
+    else if (typeof ctx.__anon === 'function') ctx.__anon();
     else if (ctx.__load) ctx.__load();
   } catch (e) {
     console.log(`FAIL ${page} render threw against the real data:`);
@@ -107,6 +137,24 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
     console.log(`       The page and ${dataFile} disagree about the data shape.`);
     failures++;
     continue;
+  }
+
+  // A SPARSE array is the trap here: Array.prototype.map SKIPS holes, so a
+  // data file with a stray comma looks perfectly healthy to any loop that
+  // uses map - but spreading it yields undefined entries, and the page's
+  // sort() then throws on them and blanks the whole section. Check the
+  // indices explicitly.
+  const arr = ctx[varName];
+  if (Array.isArray(arr)) {
+    const holes = [];
+    for (let i = 0; i < arr.length; i++) if (!(i in arr)) holes.push(i);
+    if (holes.length) {
+      console.log(`FAIL ${dataFile}: SPARSE array - ${holes.length} hole(s) at index(es) ${holes.slice(0, 6).join(', ')}.`);
+      console.log(`       A stray comma leaves a hole; spreading the array yields undefined entries`);
+      console.log(`       and the page's sort() throws on them, blanking the section.`);
+      failures++;
+      continue;
+    }
   }
 
   const entries = Array.isArray(ctx[varName]) ? ctx[varName].length : 0;
