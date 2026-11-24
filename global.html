@@ -251,15 +251,20 @@ window.addEventListener('load', function() {
     `).join('');
   } catch(e) { console.error("[OE] regulatoryTimeline failed:", e.message); }
   try {
+    // emergingTrends.js holds two shapes: trend cards
+    // ({icon, name, metric, trajectory, trajectoryLabel, ...}) and timeline
+    // entries ({date, region, cat, title, desc, src, url}) that a tracker
+    // appended. Rendering assumed cards only, so those 9 entries printed
+    // 'undefined' for icon, name, metric and trajectory.
     document.getElementById('trendGrid').innerHTML = emergingTrendsData.map(t => `
       <div class="trend-card">
-        <div class="trend-icon">${t.icon}</div>
-        <div class="trend-name">${t.name}</div>
-        <div class="trend-metric">${t.metric}</div>
-        <div class="trend-desc">${t.desc}</div>
-        <div class="trend-region">📍 ${t.region}</div>
-        <div class="trend-trajectory ${t.trajectory}">${t.trajectoryLabel}</div>
-        <div class="trend-source"><a href="${t.url}" target="_blank" rel="noopener">${t.src} →</a></div>
+        <div class="trend-icon">${t.icon || '📈'}</div>
+        <div class="trend-name">${t.name || t.title || ''}</div>
+        <div class="trend-metric">${t.metric || ''}</div>
+        <div class="trend-desc">${t.desc || ''}</div>
+        <div class="trend-region">📍 ${t.region || ''}</div>
+        <div class="trend-trajectory ${t.trajectory || ''}">${t.trajectoryLabel || t.cat || ''}</div>
+        <div class="trend-source"><a href="${t.url || '#'}" target="_blank" rel="noopener">${t.src || 'Source'} →</a></div>
       </div>
     `).join('');
   } catch(e) { console.error("[OE] trendGrid failed:", e.message); }

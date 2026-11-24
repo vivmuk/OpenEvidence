@@ -84,12 +84,12 @@ window.addEventListener('load', function() {
       <div class="partner-timeline-item">
         <div class="partner-timeline-dot"></div>
         <div class="partner-timeline-date">${p.date}</div>
-        <div class="partner-timeline-name">${p.name}</div>
+        <div class="partner-timeline-name">${p.name || p.partner || ''}</div>
         <div class="partner-timeline-popup">
-          <div class="pop-name">${p.name}</div>
-          <div class="pop-type">${p.type}</div>
-          <div class="pop-date">${p.date}</div>
-          <div class="pop-link"><a href="${p.url}" target="_blank" rel="noopener">View announcement →</a></div>
+          <div class="pop-name">${p.name || p.partner || ''}</div>
+          <div class="pop-type">${p.type || ''}</div>
+          <div class="pop-date">${p.date || ''}</div>
+          <div class="pop-link"><a href="${p.url || '#'}" target="_blank" rel="noopener">View announcement →</a></div>
         </div>
       </div>
     `).join('');

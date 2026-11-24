@@ -27,19 +27,21 @@ const vm = require('vm');
 const ROOT = path.resolve(__dirname, '..');
 
 // [page, data file, exported var, render fn name in the page, id to read]
+// [page, data file, exported var, render fn name, [container ids to check]]
 const PAGES = [
-  ['index.html', 'data/whatsNew.js', 'whatsNewData', 'renderWhatsNew', 'whatsNewContent'],
-  ['competitors.html', 'data/competitors.js', 'competitorsData', null, 'competitorGrid'],
-  ['publications.html', 'data/publications.js', 'publicationsData', null, 'pubList'],
-  ['products.html', 'data/products.js', 'productsData', null, 'productsList'],
-  ['benchmarks.html', 'data/benchmarks.js', 'benchmarksData', null, 'benchmarkList'],
-  ['partnerships.html', 'data/partners.js', 'partnersData', null, 'partnerGrid'],
-  ['global.html', 'data/globalTimeline.js', 'globalTimelineData', 'renderGlobalTimeline', 'globalTimeline'],
+  ['index.html', 'data/whatsNew.js', 'whatsNewData', 'renderWhatsNew', ['whatsNewContent']],
+  ['competitors.html', 'data/competitors.js', 'competitorsData', null, ['competitorGrid']],
+  ['publications.html', 'data/publications.js', 'publicationsData', null, ['pubList']],
+  ['products.html', 'data/products.js', 'productsData', null, ['productsList']],
+  ['benchmarks.html', 'data/benchmarks.js', 'benchmarksData', null, ['benchmarkList']],
+  ['partnerships.html', 'data/partners.js', 'partnersData', null, ['partnerGrid', 'partnerTimelineTrack']],
+  ['global.html', 'data/globalTimeline.js', 'globalTimelineData', null,
+    ['globalTimeline', 'trendGrid', 'regionGrid', 'regulatoryTimeline']],
 ];
 
 let failures = 0;
 
-for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
+for (const [page, dataFile, varName, fnName, containerIds] of PAGES) {
   const pagePath = path.join(ROOT, page);
   const dataPath = path.join(ROOT, dataFile);
   if (!fs.existsSync(pagePath) || !fs.existsSync(dataPath)) {
@@ -49,10 +51,10 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
   const html = fs.readFileSync(pagePath, 'utf8');
   const dataSrc = fs.readFileSync(dataPath, 'utf8');
 
-  let rendered = '';
+  const rendered = {};
   const stubEl = (id) => ({
     id,
-    set innerHTML(v) { if (id === containerId) rendered = v; },
+    set innerHTML(v) { rendered[id] = v; },
     get innerHTML() { return ''; },
     getContext: () => ({}),
     addEventListener: () => {},
@@ -91,8 +93,8 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
 
   // Some pages pull in more than one data file; load them all so the render
   // function sees the same globals the browser would.
-  const extraData = (fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8').match(
-    /src="data\/[a-zA-Z]+\.js"/g) || []).map((m) => m.replace(/src="data\//, '').replace(/"/, ''));
+  const extraData = (html.match(/src="data\/[a-zA-Z]+\.js"/g) || []).map((m) =>
+    m.replace(/src="data\//, '').replace(/"/, ''));
   for (const f of extraData) {
     const fp = path.join(ROOT, 'data', f);
     if (!fs.existsSync(fp) || f === path.basename(dataFile)) continue;
@@ -122,8 +124,11 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
   } else {
     // take the last inline <script> block in the page
     const blocks = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
-    code = blocks.filter((b) => b.includes(containerId)).pop() || '';
-    if (!code) { console.log(`FAIL ${page}: no inline script writes ${containerId}`); failures++; continue; }
+    // Run EVERY matching inline block: a page can render several sections
+    // from separate blocks (global.html renders the timeline, the trend
+    // grid, the region grid and the regulatory timeline in different ones).
+    code = blocks.filter((b) => containerIds.some((c) => b.includes(c))).join('\n');
+    if (!code) { console.log(`FAIL ${page}: no inline script writes ${containerIds.join('/')}`); failures++; continue; }
   }
 
   try {
@@ -158,20 +163,24 @@ for (const [page, dataFile, varName, fnName, containerId] of PAGES) {
   }
 
   const entries = Array.isArray(ctx[varName]) ? ctx[varName].length : 0;
-  const cards = (rendered.match(/class="[a-z-]*(card|item|competitor|feature)/g) || []).length;
-  const undefinedCount = (rendered.match(/undefined/g) || []).length;
-
-  if (cards === 0) {
-    console.log(`FAIL ${page}: rendered NO items from ${entries} data entries - the section would be empty.`);
-    failures++;
-    continue;
+  let pageOk = true;
+  for (const cid of containerIds) {
+    const html = rendered[cid] || '';
+    const cards = (html.match(/class="[a-z-]*(card|item|competitor|feature|gtl-|trend-)/g) || []).length;
+    const undefinedCount = (html.match(/undefined/g) || []).length;
+    if (cards === 0) {
+      console.log(`FAIL ${page}: container #${cid} rendered NO items from ${entries} data entries - it would be empty.`);
+      pageOk = false; failures++;
+      continue;
+    }
+    if (undefinedCount > 0) {
+      console.log(`FAIL ${page}: container #${cid} rendered HTML contains "undefined" x${undefinedCount} - a field is missing.`);
+      pageOk = false; failures++;
+      continue;
+    }
+    console.log(`ok   ${page.padEnd(20)} #${cid.padEnd(20)} ${String(entries).padStart(4)} entries -> ${String(cards).padStart(3)} cards`);
   }
-  if (undefinedCount > 0) {
-    console.log(`FAIL ${page}: rendered HTML contains "undefined" x${undefinedCount} - a field is missing.`);
-    failures++;
-    continue;
-  }
-  console.log(`ok   ${page.padEnd(20)} ${String(entries).padStart(4)} entries -> ${String(cards).padStart(3)} rendered cards`);
+  if (!pageOk) continue;
 }
 
 if (failures) {
