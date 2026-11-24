@@ -152,4 +152,6 @@ var phaSourcesData = [
   {name:"arXiv - Personalized health coaching via coachable health age (Nov 2026)", url:"https://arxiv.org/abs/2611.08568"},
   {name:"Google Research - Detecting signs of hypertension using wearable sensors (Nov 5, 2026)", url:"https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/"},
   {name:"Nature - Wearable hypertension detection via PPG and accelerometer (Nov 2026)", url:"https://www.nature.com/articles/s41586-026-11336-3"},
+  {name:"arXiv - Triage Accuracy of Jev and System One decision models (Nov 23, 2026)", url:"https://arxiv.org/abs/2611.31012"},
+  {name:"Moraph Insights - Consumer health data privacy laws outside HIPAA by state (Nov 14, 2026)", url:"https://insights.moraph.com/states/consumer-health-data"},
 ];

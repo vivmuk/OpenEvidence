@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -22,6 +22,24 @@
     "safety": "independent coverage reported safety gaps in a meaningful share of generated summaries"
   },
   "timeline": [
+    {
+      "date": "2026-11-23",
+      "cat": "Research",
+      "title": "Triage Accuracy of Jev and Open-Weight System One Decision Models for Early Emergency Recognition in Symptom Assessment",
+      "desc": "arXiv preprint evaluating triage accuracy of Jev and open-weight System One decision models for early emergency recognition in symptom-assessment applications. Addresses the challenge that LLMs answer in variable free text, making them hard to evaluate for use in medical devices. Decision models assign probabilities to predefined triage categories, enabling standardized evaluation. Represents the push toward structured decision-model evaluation for consumer-facing triage tools. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2611.31012",
+      "new": true
+    },
+    {
+      "date": "2026-11-14",
+      "cat": "Regulatory",
+      "title": "Moraph Maps Consumer Health Data Privacy Laws Outside HIPAA Across Six States as of November 2026",
+      "desc": "Moraph Insights published a comprehensive state-by-state analysis finding six states with statutes protecting health data outside HIPAA as of November 14, 2026. Washington and Nevada have stand-alone acts in force since March 2024, Connecticut and Maryland include rules in their privacy acts, Vermont follows from January 2028, and Virginia covers only reproductive or sexual health information. Maps the fragmented regulatory landscape that consumer health AI products must navigate across US states.",
+      "src": "Moraph Insights",
+      "url": "https://insights.moraph.com/states/consumer-health-data",
+      "new": true
+    },
     {
       "date": "2026-11-11",
       "cat": "Research",
@@ -195,8 +213,7 @@
       "title": "Get Blue Launches Adaptive Health Platform with Real-Time Biomarker Analytics and Coaching",
       "desc": "Get Blue launched an adaptive health platform powered by Lifestyle Intelligence that bridges real-time biomarker analytics with personalized coaching from performance experts. Created by physicians, the platform adjusts to the body's signals in real time and targets high performers with actionable insights for long-term health gains. Represents the physician-created, performance-focused design pattern for personal health agents. Vendor claim: adaptive health platform, not a medical device.",
       "src": "Business Wire / Get Blue",
-      "url": "https://www.businesswire.com/news/home/20261102715379/en/Get-Blue-Launches-Adaptive-Health-Platform-That-Adjusts-to-Your-Bodys-Signals-in-Real-Time",
-      "new": true
+      "url": "https://www.businesswire.com/news/home/20261102715379/en/Get-Blue-Launches-Adaptive-Health-Platform-That-Adjusts-to-Your-Bodys-Signals-in-Real-Time"
     },
     {
       "date": "2026-11-05",
@@ -2916,6 +2933,14 @@
     {
       "name": "Nature - Wearable hypertension detection via PPG and accelerometer (Nov 2026)",
       "url": "https://www.nature.com/articles/s41586-026-11336-3"
+    },
+    {
+      "name": "arXiv - Triage Accuracy of Jev and System One decision models (Nov 23, 2026)",
+      "url": "https://arxiv.org/abs/2611.31012"
+    },
+    {
+      "name": "Moraph Insights - Consumer health data privacy laws outside HIPAA by state (Nov 14, 2026)",
+      "url": "https://insights.moraph.com/states/consumer-health-data"
     }
   ],
   "freeTierDefaults": [
