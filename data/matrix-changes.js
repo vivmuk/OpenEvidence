@@ -6,8 +6,1162 @@ var matrixChangesData = {
  "baselineWeek": "2026-W47",
  "baselineDate": "2026-11-22",
  "statusChangeCount": 0,
- "newPlatformCount": 0,
- "newPlatforms": [],
- "changeCount": 0,
- "changes": []
+ "newPlatformCount": 18,
+ "newPlatforms": [
+  "CarDIA-AI",
+  "Harrison.ai FrontierOS",
+  "medimo AI Chat",
+  "Mosaic Biodata Clara",
+  "Clinical Foresight AI",
+  "Bia",
+  "John Snow Labs Medical DMs",
+  "Ant Group AQ for Doctor",
+  "Fullscript Assist",
+  "OptiMantra AI Scribe",
+  "VirtualScribe AI",
+  "Cynaps Node 2.0",
+  "LIV (Sheba Psychiatric Triage)",
+  "EKAM",
+  "Sunlight AI",
+  "Fold Health",
+  "Prof. Valmed",
+  "EUREKA α"
+ ],
+ "changeCount": 162,
+ "changes": [
+  {
+   "platform": "CarDIA-AI",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CarDIA-AI",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CarDIA-AI",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CarDIA-AI",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CarDIA-AI",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CarDIA-AI",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CarDIA-AI",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CarDIA-AI",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "CarDIA-AI",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Harrison.ai FrontierOS",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "jp",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "medimo AI Chat",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Mosaic Biodata Clara",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Clinical Foresight AI",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Bia",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "eu",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "uk",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "in",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "jp",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "sea",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "latam",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "John Snow Labs Medical DMs",
+   "region": "mea",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "cn",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Ant Group AQ for Doctor",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fullscript Assist",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "OptiMantra AI Scribe",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "VirtualScribe AI",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "in",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Cynaps Node 2.0",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "LIV (Sheba Psychiatric Triage)",
+   "region": "mea",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EKAM",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Sunlight AI",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "us",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Fold Health",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "eu",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "jp",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "Prof. Valmed",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "us",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "eu",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "uk",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "cn",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "in",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "jp",
+   "from": null,
+   "to": "yes",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "sea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "latam",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  },
+  {
+   "platform": "EUREKA α",
+   "region": "mea",
+   "from": null,
+   "to": "no",
+   "kind": "added"
+  }
+ ]
 };

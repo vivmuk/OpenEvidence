@@ -5940,6 +5940,204 @@
      "sea": "no",
      "latam": "no",
      "mea": "no"
+    },
+    "CarDIA-AI": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Harrison.ai FrontierOS": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "medimo AI Chat": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "yes",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Mosaic Biodata Clara": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Clinical Foresight AI": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Bia": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "John Snow Labs Medical DMs": {
+     "us": "yes",
+     "eu": "yes",
+     "uk": "yes",
+     "cn": "no",
+     "in": "yes",
+     "jp": "yes",
+     "sea": "yes",
+     "latam": "yes",
+     "mea": "yes"
+    },
+    "Ant Group AQ for Doctor": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "yes",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Fullscript Assist": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "OptiMantra AI Scribe": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "VirtualScribe AI": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Cynaps Node 2.0": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "yes",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "LIV (Sheba Psychiatric Triage)": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "yes"
+    },
+    "EKAM": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Sunlight AI": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Fold Health": {
+     "us": "yes",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "Prof. Valmed": {
+     "us": "no",
+     "eu": "yes",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "no",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
+    },
+    "EUREKA α": {
+     "us": "no",
+     "eu": "no",
+     "uk": "no",
+     "cn": "no",
+     "in": "no",
+     "jp": "yes",
+     "sea": "no",
+     "latam": "no",
+     "mea": "no"
     }
    }
   }
