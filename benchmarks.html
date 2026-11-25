@@ -67,7 +67,7 @@ window.addEventListener('load', function() {
         <div class="content">
           <h4>${b.title} ${oeNewBadge(b)}</h4>
           <p><strong>${b.journal}</strong> · ${b.authors || ''} · ${b.date || b.published || ''}${b.updated && b.updated !== b.published ? ' (updated ' + b.updated + ')' : ''}</p>
-          <p style="margin-top:6px;font-size:13px;"><span style="background:${typeColors[b.type] || 'rgba(120,120,120,0.15)'};padding:2px 8px;border-radius:4px;font-size:11px;">${typeLabels[b.type] || 'Benchmark'}</span> · <strong>Tools:</strong> ${b.tools || '—'} · <strong>Scale:</strong> ${b.scale || '—'}</p>
+          <p style="margin-top:6px;font-size:13px;"><span style="background:${typeColors[b.type] || 'rgba(120,120,120,0.15)'};padding:2px 8px;border-radius:4px;font-size:11px;">${typeLabels[b.type] || 'Benchmark'}</span> · <strong>Tools:</strong> ${b.tools || ' - '} · <strong>Scale:</strong> ${b.scale || ' - '}</p>
           <ul style="margin-top:8px;padding-left:20px;font-size:13px;line-height:1.6;">${b.findings.map(f => `<li>${f}</li>`).join('')}</ul>
           <div class="src-link" style="margin-top:8px;"><a href="${b.url}" target="_blank" rel="noopener">${b.id} →</a></div>
         </div>

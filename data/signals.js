@@ -82,6 +82,20 @@ var signalsData = [
   "comparative": false
  },
  {
+  "date": "2026-11-24",
+  "cat": "Partnership",
+  "title": "Elsevier ends 3-year partnership with OpenEvidence",
+  "desc": "Multiple posts on X (Nov 23) discuss Elsevier ending its 3-year partnership with OpenEvidence. Coincides with Elsevier's moves around ClinicalKey AI, acquisition of Wellsheet for EHR integration/chart summarization, and efforts to compete on clinician mindshare and enterprise adoption. Analysts cont",
+  "src": "X/Twitter",
+  "url": "https://x.com/joshuapliu/status/2124874454467571772",
+  "score": 87,
+  "confidence": "reported",
+  "competitors": [
+   "Elsevier"
+  ],
+  "comparative": false
+ },
+ {
   "date": "2026-11-09",
   "cat": "Partnership",
   "title": "ACP and OpenEvidence collaborate on trusted clinical guidance",
@@ -406,30 +420,6 @@ var signalsData = [
   "comparative": false
  },
  {
-  "date": "2026-11-11",
-  "cat": "Product",
-  "title": "OpenEvidence launches Access Intelligence for medication affordability and access",
-  "desc": "Suite of tools showing clinicians copay savings, patient assistance programs, enrollment and prior authorization steps. Brings cost and coverage answers into the clinical conversation.",
-  "src": "BusinessWire",
-  "url": "https://www.businesswire.com/news/home/20261111598134/en/",
-  "score": 77,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
-  "date": "2026-11-11",
-  "cat": "Product",
-  "title": "OpenEvidence Launches Access Intelligence, Free Affordability and Access Tools for Clinicians",
-  "desc": "OpenEvidence launched Access Intelligence, a suite of tools built directly into the platform that helps clinicians ensure their patients can access and afford the care they need. Components available now, free for all clinicians: (1) Support program information in the flow of care - availability and",
-  "src": "OpenEvidence",
-  "url": "https://www.openevidence.com/announcements/introducing-openevidence-access-intelligence-bringing-affordability-and-access-to-the-point-of-care",
-  "score": 77,
-  "confidence": "confirmed",
-  "competitors": [],
-  "comparative": false
- },
- {
   "date": "2026-11-06",
   "cat": "Partnership",
   "title": "ACR and OpenEvidence collaborate on patient education resources",
@@ -737,6 +727,18 @@ var signalsData = [
   "src": "OpenEvidence",
   "url": "https://www.openevidence.com/announcements/sutter-health-collaborates-with-openevidence-to-bring-evidence-based-ai-powered-insights-into-physician-workflows",
   "score": 77,
+  "confidence": "confirmed",
+  "competitors": [],
+  "comparative": false
+ },
+ {
+  "date": "2026-11-11",
+  "cat": "Product",
+  "title": "OpenEvidence launches Access Intelligence for medication affordability and access",
+  "desc": "Suite of tools showing clinicians copay savings, patient assistance programs, enrollment and prior authorization steps. Brings cost and coverage answers into the clinical conversation.",
+  "src": "BusinessWire",
+  "url": "https://www.businesswire.com/news/home/20261111598134/en/",
+  "score": 73,
   "confidence": "confirmed",
   "competitors": [],
   "comparative": false
