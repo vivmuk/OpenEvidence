@@ -154,4 +154,6 @@ var phaSourcesData = [
   {name:"Nature - Wearable hypertension detection via PPG and accelerometer (Nov 2026)", url:"https://www.nature.com/articles/s41586-026-11336-3"},
   {name:"arXiv - Triage Accuracy of Jev and System One decision models (Nov 23, 2026)", url:"https://arxiv.org/abs/2611.31012"},
   {name:"Moraph Insights - Consumer health data privacy laws outside HIPAA by state (Nov 14, 2026)", url:"https://insights.moraph.com/states/consumer-health-data"},
+  {name:"arXiv - WARD: Evidence-to-State-to-Action Gap in longitudinal clinical agents (Nov 22, 2026)", url:"https://arxiv.org/abs/2611.29243v1"},
+  {name:"JMIR AI - Red teaming a patient-facing clinical AI platform (Nov 16, 2026)", url:"https://ai.jmir.org/2026/1/e101912"},
 ];
