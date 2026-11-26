@@ -653,6 +653,15 @@
       "new": true
     },
     {
+      "date": "2026-11-20",
+      "cat": "Company",
+      "title": "Federal Lawsuit Filed Against Dayton Children's Hospital and Abridge Over Recording Minor Patients",
+      "desc": "Bloomberg Law reports a federal lawsuit was filed Nov. 20 in the U.S. District Court for the Southern District of Ohio against Dayton Children's Hospital and Abridge Inc. The complaint, filed by a mother under the name Jane Doe, alleges the hospital used Abridge's AI transcription tool to record conversations between doctors and minor patients without consent, and that Abridge used those recordings for AI training purposes. The suit turns a child's 'most private disclosures into raw material for its products.' Dayton Children's is an Abridge Local Pathways design partner. The case follows similar class-action suits against Allegheny Health Network and California providers, expanding the legal risk for ambient AI deployments to pediatric and federal settings.",
+      "src": "Bloomberg Law",
+      "url": "https://news.bloomberglaw.com/business-and-practice/hospital-sued-over-using-child-patient-recordings-to-train-ai",
+      "new": true
+    },
+    {
       "date": "2026-11-19",
       "cat": "Product",
       "title": "Abridge Demonstrates Structured Physical Exam Documentation from Spoken Findings",
@@ -785,7 +794,7 @@
       "desc": "AI Briefing analyzes Abridge's November layoffs as evidence that the best-funded ambient documentation company is flattening its organization as the category commoditizes. The report advises health systems mid-contract to get roadmap and support commitments in writing, and treat the shakeout as a procurement risk. Two former employees with under one year tenure posted on LinkedIn about the cuts, which Abridge called an organization-wide realignment.",
       "src": "AI Briefing",
       "url": "https://aibriefing.io/health/abridge-layoffs-5-3-billion-ai-scribe-market-what-health-systems-should-ask/",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-11-13",
@@ -821,7 +830,7 @@
       "desc": "Refolk reports that Heidi Health, an Australian ambient AI scribe competitor, also cut staff in the same week as Abridge's layoffs. The analysis notes health systems employ approximately 4.8 analysts per vendor implementation seat, and frames the dual cuts as a signal that the ambient AI vendor market is consolidating as EHR-native tools compress pricing. The article provides transition guidance for displaced implementation and engineering staff moving from vendors to health systems.",
       "src": "Refolk",
       "url": "https://www.refolk.ai/candidates/blog/abridge-heidi-layoffs-move-from-healthcare-vendor-to-health-system",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-11-09",
@@ -830,7 +839,7 @@
       "desc": "Pittsburgh Business Times reports that Abridge, founded in Pittsburgh, laid off an undisclosed number of employees. The article notes the startup raised hundreds of millions in venture capital but has largely scaled elsewhere, and impacts to its Pittsburgh footprint were not disclosed. The local coverage adds geographic context to the company-wide realignment first reported by Modern Healthcare.",
       "src": "Pittsburgh Business Times",
       "url": "https://www.bizjournals.com/pittsburgh/news/2026/11/09/abridge-cuts-undisclosed-amount-of-staff.html",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-11-09",
@@ -839,7 +848,7 @@
       "desc": "Yale Daily News reports that Yale Health incorporated Abridge in 2024 to draft notes from patient-provider conversations. Two years in, students express varying levels of comfort with the technology, citing concerns about privacy and accuracy of AI-generated documentation. The article highlights patient-side acceptance as a continuing adoption risk for ambient AI, even as clinician adoption accelerates. Yale Health is a campus health clinic distinct from Yale New Haven Health System, which is a separate Abridge enterprise customer.",
       "src": "Yale Daily News",
       "url": "https://yaledailynews.com/articles/two-years-after-yale-health-adopted-ai-helpers-yalies-are-on-the-fence",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-11-09",
@@ -848,7 +857,7 @@
       "desc": "A technical hiring analysis by Refolk finds that Abridge's November layoffs affected speech recognition and LLM-evaluation engineers, based on job-board diffs and office geography. The report notes the headcount cut may never trigger a WARN notice due to its size, and identifies 19 engineering requisitions that were removed. The analysis suggests Abridge is trimming specialized AI talent as the market shifts from model-building to product integration.",
       "src": "Refolk",
       "url": "https://www.refolk.ai/blog/abridge-layoffs-november-2026-speech-ml-engineers",
-      "new": true
+      "new": false
     },
     {
       "date": "2026-11-06",
@@ -1584,7 +1593,11 @@
     {
       "name": "Abridge - November 2026 Release Notes: Impact Dashboard, Endocrinology, Pre-Visit Summary enhancements (Nov 24, 2026)",
       "url": "https://www.abridge.com/release-notes"
+    },
+    {
+      "name": "Bloomberg Law - Dayton Children's Hospital sued over Abridge AI recordings of minors (Nov 20, 2026)",
+      "url": "https://news.bloomberglaw.com/business-and-practice/hospital-sued-over-using-child-patient-recordings-to-train-ai"
     }
   ],
-  "updated": "2026-11-23"
+  "updated": "2026-11-26"
 }

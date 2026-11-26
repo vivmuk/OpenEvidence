@@ -74,5 +74,6 @@ var abridgeSourcesData = [
   {name:"The Inference - Abridge lost AI scribing to Microsoft and Epic; CDS market priced at $100M (Nov 19, 2026)",url:"https://theinference.org/article/abridge-lost-ai-scribing-to-microsoft-and-epic-its-next-market-has-a-100-million-price-from-wolters-kluwer"},
   {name:"Abridge Blog - Turning 'Lungs Sound Clear' Into a Complete Exam (Nov 19, 2026)",url:"https://www.abridge.com/blog/complete-physical-exam"},
   {name:"AssemblyAI - Best ambient AI scribes in 2026: 8 tools compared (Nov 19, 2026)",url:"https://www.assemblyai.com/blog/the-best-7-ambient-ai-scribes"},
-  {name:"Abridge - November 2026 Release Notes: Impact Dashboard, Endocrinology, Pre-Visit Summary enhancements (Nov 24, 2026)",url:"https://www.abridge.com/release-notes"}
+  {name:"Abridge - November 2026 Release Notes: Impact Dashboard, Endocrinology, Pre-Visit Summary enhancements (Nov 24, 2026)",url:"https://www.abridge.com/release-notes"},
+  {name:"Bloomberg Law - Dayton Children's Hospital sued over Abridge AI recordings of minors (Nov 20, 2026)",url:"https://news.bloomberglaw.com/business-and-practice/hospital-sued-over-using-child-patient-recordings-to-train-ai"}
 ];
