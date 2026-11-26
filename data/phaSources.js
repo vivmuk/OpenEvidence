@@ -156,4 +156,7 @@ var phaSourcesData = [
   {name:"Moraph Insights - Consumer health data privacy laws outside HIPAA by state (Nov 14, 2026)", url:"https://insights.moraph.com/states/consumer-health-data"},
   {name:"arXiv - WARD: Evidence-to-State-to-Action Gap in longitudinal clinical agents (Nov 22, 2026)", url:"https://arxiv.org/abs/2611.29243v1"},
   {name:"JMIR AI - Red teaming a patient-facing clinical AI platform (Nov 16, 2026)", url:"https://ai.jmir.org/2026/1/e101912"},
+  {name:"Becker's Hospital Review - OpenAI opens ChatGPT Health chats to model training (Nov 25, 2026)", url:"https://www.beckershospitalreview.com/healthcare-information-technology/ai/openai-opens-chatgpt-health-chats-to-model-training-reversing-pledge/"},
+  {name:"JMIR / PMC - Real-world ED triage LLM vs clinician cohort study (Nov 24, 2026)", url:"https://pmc.ncbi.nlm.nih.gov/articles/PMC13795786/"},
+  {name:"arXiv - MedicalRSI: Medical Recursive Self-Improving Agents (Nov 19, 2026)", url:"https://arxiv.org/abs/2611.26806v1"},
 ];

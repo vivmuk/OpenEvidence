@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "anchor_paper": {
     "title": "The anatomy of a personal health agent",
     "venue": "Nature",
@@ -23,9 +23,36 @@
   },
   "timeline": [
     {
+      "date": "2026-11-25",
+      "cat": "Regulatory",
+      "title": "OpenAI Reverses Privacy Pledge: ChatGPT Health Conversations Now Eligible for Model Training",
+      "desc": "Becker's Hospital Review reports that under an updated Health Privacy Notice effective Nov 19, OpenAI can now use ChatGPT conversations that draw on users' connected health data to improve its AI models, reversing a commitment made when Health in ChatGPT launched July 23. Connected Health Accounts include medical providers, Apple Health and Android Health Connect. Users can opt out by turning off model improvement in Settings. The reversal narrows the governance gap: once data leaves a provider, HIPAA no longer protects it, and now OpenAI's original no-training pledge no longer does either.",
+      "src": "Becker's Hospital Review",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/openai-opens-chatgpt-health-chats-to-model-training-reversing-pledge/",
+      "new": true
+    },
+    {
+      "date": "2026-11-24",
+      "cat": "Research",
+      "title": "Real-World ED Triage Study Compares LLM and Clinician Performance Across 305 Encounters",
+      "desc": "A retrospective cohort study published in JMIR analyzed 305 walk-in ED encounters at a German tertiary-care hospital, comparing clinician and LLM performance on triage accuracy, specialty assignment, diagnostic recommendations, and admission prediction. Provides rare real-world comparative evidence between human and AI triage in an emergency department setting, addressing the gap between vignette-based validation and actual clinical deployment.",
+      "src": "JMIR / PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13795786/",
+      "new": true
+    },
+    {
+      "date": "2026-11-19",
+      "cat": "Research",
+      "title": "MedicalRSI: Medical Recursive Self-Improving Agents via Clinical Model-Harness Co-Evolution",
+      "desc": "arXiv preprint from Northwestern University and University of Washington presenting MedicalRSI, a framework for medical agents that use experience to improve over time through recursive self-improvement. Addresses the problem that deployed medical LLM agents stay fixed once deployed and do not learn from errors, causing the same mistakes to recur. Extends self-improvement to medical agents where safety constraints make update evaluation critical. Preprint, not peer-reviewed.",
+      "src": "arXiv",
+      "url": "https://arxiv.org/abs/2611.26806v1",
+      "new": true
+    },
+    {
       "date": "2026-11-22",
       "cat": "Research",
-      "title": "WARD: Seeing Is Not Acting — Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents",
+      "title": "WARD: Seeing Is Not Acting - Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents",
       "desc": "arXiv preprint introducing WARD, a benchmark for evaluating how clinical agents translate accumulating evidence into patient-state judgments and timely, safe actions. Comprises 4,560 clinical tasks across seven clinical output domains, organized into 240 checkpoints from 40 longitudinal clinical trajectories spanning 95 hospitalizations. Found that evidence recognition consistently outpaces downstream state and action decisions, with linked-evidence nonresponse reaching 74.47-90.90%. In the Interactive Track, only 11.46% of executed actions advance a reference transition. Reveals a persistent evidence-to-state-to-action gap in longitudinal clinical AI agents and highlights the need for process-level evaluation. Preprint, not peer-reviewed.",
       "src": "arXiv",
       "url": "https://arxiv.org/abs/2611.29243v1",
@@ -64,8 +91,7 @@
       "title": "Google Research Introduces Coachable Health Age and Counterfactual Wearable Trajectories for Personalized Coaching",
       "desc": "Google Research introduced an investigational framework translating passive wearable signals into a modifiable 'coachable health age' (CHA) built from resting heart rate, steps, sleep and active minutes. A Sensor World Model (SensorWM) pre-trained on 2.28 million person-weeks of Fitbit data simulates personalized 12-week 'what-if' habit trajectories, paired with a language model coaching agent. In a blinded study, certified lifestyle coaches preferred counterfactual-grounded plans 71.4% of the time (p<0.001); physicians rated 99.2% of plans within safe exercise limits. A companion study expands the framework to cardiovascular-kidney-metabolic (CKM) health age using wearable plus blood biomarker data. Validated across All of Us (n=22,748), longitudinal Fitbit (n=1,464) and WEAR-ME (n=819) cohorts. Investigational research prototype, not a clinical diagnostic tool.",
       "src": "Google Research Blog",
-      "url": "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/",
-      "new": true
+      "url": "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/"
     },
     {
       "date": "2026-11-05",
@@ -170,8 +196,7 @@
       "title": "iOS 27.3 Beta Leak Suggests Siri Will Access and Search Health App Data Including Sleep, Workouts and Medications",
       "desc": "A leak from the first iOS 27.3 developer beta reveals disabled feature flags for Siri accessing and searching information stored in the Apple Health app, including sleep, workouts and medications data. Apple has not officially confirmed the capability. If shipped, it would mark the first time Siri can directly reason over a user's health data, extending Apple Intelligence from generating insights in the Health app to conversational health queries via Siri. The stable version of iOS 27.3 is expected in December. Vendor claim: leak, not officially confirmed.",
       "src": "Gadgets 360",
-      "url": "https://www.gadgets360.com/mobiles/news/apple-ios-27-3-beta-siri-ai-features-apple-health-leak-12312495",
-      "new": true
+      "url": "https://www.gadgets360.com/mobiles/news/apple-ios-27-3-beta-siri-ai-features-apple-health-leak-12312495"
     },
     {
       "date": "2026-11-10",
@@ -1083,9 +1108,13 @@
         {
           "l": "Sep 28 update",
           "v": "Personalized summaries"
+        },
+        {
+          "l": "Nov 19 update",
+          "v": "Training on health chats resumed"
         }
       ],
-      "desc": "Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. OpenAI reports more than 300 million people turn to ChatGPT with health-related questions weekly. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it.",
+      "desc": "Health in ChatGPT lets eligible US users connect medical records and Apple Health data so the assistant can interpret information in context and track changes over time. OpenAI reports more than 300 million people turn to ChatGPT with health-related questions weekly. The same period saw OpenAI connect ChatGPT to Epic records on the clinician side, putting one vendor on both sides of the physician - patient boundary. The governance gap is explicit: once data leaves a provider, HIPAA no longer protects it. On November 19, 2026, OpenAI updated its Health Privacy Notice to allow ChatGPT conversations referencing connected health data to be used for model training, reversing its July no-training pledge. Users can opt out in Settings.",
       "url": "https://openai.com/index/health-in-chatgpt/"
     },
     {
@@ -1733,6 +1762,24 @@
   ],
   "research": [
     {
+      "title": "Evaluating Human and AI-Based Triage Performance in the Emergency Department: Real-World Cohort Study",
+      "type": "Peer-reviewed · retrospective cohort study",
+      "date": "Nov 24, 2026",
+      "venue": "JMIR",
+      "finding": "A retrospective cohort study of 305 walk-in ED encounters at a German tertiary-care hospital compared clinician and LLM performance on ED triage accuracy, specialty assignment, diagnostic recommendations, and admission prediction. The study provides real-world comparative evidence between human and AI triage in an emergency department, addressing the gap between vignette-based evaluations and actual clinical deployment performance.",
+      "caveat": "Single-center retrospective study at a German tertiary-care hospital; generalisability to other ED settings and health systems is not established. LLM configuration may not reflect current model versions.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13795786/"
+    },
+    {
+      "title": "MedicalRSI: Medical Recursive Self-Improving Agents via Clinical Model-Harness Co-Evolution",
+      "type": "arXiv preprint · agent framework",
+      "date": "Nov 19, 2026",
+      "venue": "arXiv (cs.AI) - Northwestern University",
+      "finding": "Presents MedicalRSI, a framework for medical agents that use experience from completed cases to improve performance over time through recursive self-improvement. Addresses the problem that deployed medical LLM agents remain fixed once deployed and do not learn from prior errors, causing the same mistake types to recur across patients. The co-evolution approach improves both model and harness components.",
+      "caveat": "Preprint, not peer-reviewed. The framework has not been validated in a clinical deployment. Recursive self-improvement in medical agents raises safety questions about update evaluation and rollback that are distinct from static deployment.",
+      "url": "https://arxiv.org/abs/2611.26806v1"
+    },
+    {
       "title": "Personalized health coaching via coachable health age and counterfactual wearable trajectories",
       "type": "Preprint · investigational framework",
       "date": "Nov 11, 2026",
@@ -2339,7 +2386,7 @@
       "url": "https://aclanthology.org/2026.aacl-long.63.pdf"
     },
     {
-      "title": "WARD: Seeing Is Not Acting — Diagnosing the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents",
+      "title": "WARD: Seeing Is Not Acting - Diagnosing the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents",
       "type": "arXiv preprint · longitudinal agent benchmark",
       "date": "Nov 22, 2026",
       "venue": "arXiv (cs.CL) - Shanghai AI Laboratory, Carnegie Mellon, UC Santa Cruz, Tsinghua University",
@@ -2981,6 +3028,18 @@
     {
       "name": "JMIR AI - Red teaming a patient-facing clinical AI platform (Nov 16, 2026)",
       "url": "https://ai.jmir.org/2026/1/e101912"
+    },
+    {
+      "name": "Becker's Hospital Review - OpenAI opens ChatGPT Health chats to model training (Nov 25, 2026)",
+      "url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/openai-opens-chatgpt-health-chats-to-model-training-reversing-pledge/"
+    },
+    {
+      "name": "JMIR / PMC - Real-world ED triage LLM vs clinician cohort study (Nov 24, 2026)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13795786/"
+    },
+    {
+      "name": "arXiv - MedicalRSI: Medical Recursive Self-Improving Agents (Nov 19, 2026)",
+      "url": "https://arxiv.org/abs/2611.26806v1"
     }
   ],
   "freeTierDefaults": [
