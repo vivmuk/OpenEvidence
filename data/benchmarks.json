@@ -8869,5 +8869,70 @@
     "category": "Medical AI accuracy comparison across multiple systems",
     "abstract": "Blinded evaluation comparing patient-facing thyroid cancer information from clinicians, LLMs, and web search. Quality comparison across multiple sources.",
     "benchmark_type": "LLM evaluation"
+  },
+  {
+    "pmid": "43091503",
+    "title": "GPT vs Humans on Proximal Femoral Fracture Diagnosis and Treatment",
+    "journal": "Medicina (Kaunas)",
+    "pubdate": "2026-10-30",
+    "model": "GPT (multimodal)",
+    "comparison": "GPT vs trauma fellow vs orthopaedic resident",
+    "n_cases": 250,
+    "metric": "Diagnostic correctness, treatment correctness, severe treatment errors",
+    "key_result": "Correct dx: fellow 97.2%, resident 44.8%, GPT 14.0%. Severe tx errors: GPT 58.8%, resident 2.0%, fellow 0%",
+    "domain": "Orthopaedic surgery",
+    "category": "llm_vs_clinician"
+  },
+  {
+    "pmid": "43091123",
+    "title": "4 LLMs on Empiric Antibiotic Recommendations Under Stewardship Benchmark",
+    "journal": "J Clin Med",
+    "pubdate": "2026-11-20",
+    "model": "GPT-5.5, Claude Opus 4.7, Gemini 2.5 Pro, Mistral Large 2512",
+    "comparison": "4 LLMs vs clinician prescribing on 486 admissions",
+    "n_cases": 486,
+    "metric": "Contextually unsupported broad-spectrum escalation rate, weighted contextual escalation penalty",
+    "key_result": "Clinician 16.7%, GPT-5.5 13.0%, Gemini 15.0%, Claude 29.8%, Mistral 31.9%. Significant heterogeneity p<0.001",
+    "domain": "Internal medicine / antibiotic stewardship",
+    "category": "multi_llm_benchmark"
+  },
+  {
+    "pmid": "43090929",
+    "title": "5 LLMs Expert-Rated Quality on Aneurysmal Subarachnoid Hemorrhage Questions",
+    "journal": "J Clin Med",
+    "pubdate": "2026-11-13",
+    "model": "ChatGPT, Gemini, Claude, DeepSeek, Microsoft Copilot",
+    "comparison": "5 LLMs rated by 5 senior neurosurgeons on 30 standardized questions",
+    "n_cases": 150,
+    "metric": "Coverage, relevance, comprehensibility, clinical applicability, overall quality (1-10 scale)",
+    "key_result": "Overall: ChatGPT 7.68, Gemini 6.97, Claude 6.69, DeepSeek 5.92, Copilot 4.75. ICC 0.835-0.911",
+    "domain": "Neurosurgery / neurocritical care",
+    "category": "multi_llm_benchmark"
+  },
+  {
+    "pmid": "43090803",
+    "title": "4 LLM Platforms on Medical Nutrition Therapy for Autism Spectrum Disorder",
+    "journal": "J Clin Med",
+    "pubdate": "2026-11-10",
+    "model": "ChatGPT, ChatGPT Plus, Microsoft Copilot, Google Gemini",
+    "comparison": "4 LLM platforms assessed by 4 dietetics experts on 60 nutrition questions",
+    "n_cases": 240,
+    "metric": "QAMAI, GQS, guideline concordance (NICE/AAP), readability, hallucination rate",
+    "key_result": "ChatGPT Plus highest quality. Hallucinations: ChatGPT 0%, ChatGPT Plus 0%, Copilot 35.0%, Gemini 63.3%",
+    "domain": "Nutrition / autism spectrum disorder",
+    "category": "multi_llm_benchmark"
+  },
+  {
+    "pmid": "43088824",
+    "title": "8 LLMs vs FMF Competing-Risks Model for Preterm SGA Risk Estimation",
+    "journal": "Diagnostics (Basel)",
+    "pubdate": "2026-11-12",
+    "model": "GPT-6, Mistral, Grok, Claude, DeepSeek, Meta, Qwen, Copilot",
+    "comparison": "8 LLMs vs FMF competing-risks model on 108 synthetic pregnancy scenarios",
+    "n_cases": 108,
+    "metric": "Composite alignment score (directional concordance, Spearman, cosine, NRMSE)",
+    "key_result": "Alignment with FMF: GPT-6 0.999, Mistral 0.988, Grok 0.917, Claude 0.894. Others predicted 1.2-9x higher risks",
+    "domain": "Obstetrics / prenatal risk",
+    "category": "llm_vs_clinical_model"
   }
 ]
